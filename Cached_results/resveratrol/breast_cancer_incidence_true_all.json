@@ -1,0 +1,52 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Vitelli-Storelli F et al. (2020) [PMID: 32260135]",
+            "PMID": "32260135",
+            "Effect Size": 0.7,
+            "Lower CI": 0.56,
+            "Upper CI": 0.89,
+            "Population": "General",
+            "Reference": "Association between Polyphenol Intake and Breast Cancer Risk by Menopausal and Hormone Receptor Status.",
+            "Authors": "Vitelli-Storelli F, Zamora-Ros R, Molina AJ, Fern\u00e1ndez-Villa T, Castell\u00f3 A, Barrio JP, Amiano P, Ardanaz E, Ob\u00f3n-Santacana M, G\u00f3mez-Acebo I, Fern\u00e1ndez-Tard\u00f3n G, Molina-Barcel\u00f3 A, Alguacil J, Marcos-Gragera R, Ruiz-Moreno E, Pedraza M, Gil L, Guevara M, Casta\u00f1o-Vinyals G, Dierssen-Sotos T, Kogevinas M, Aragon\u00e9s N, Mart\u00edn V",
+            "Journal": "Nutrients",
+            "Year": "2020",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/32260135/",
+            "Effect Type": "OR",
+            "SE": 0.08418367346938775,
+            "Sample Size": 3049,
+            "Cases": 1472,
+            "Design": "Case-Control",
+            "Timing": "Retrospective",
+            "Continent": "Europe",
+            "Stage": null,
+            "Quality %": 80.0,
+            "Quality Score": "Moderate",
+            "comparison_type": "Q4 vs Q1",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Unclear",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Unclear",
+                "q10": "Yes"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>1472</td>\n      <td>3049</td>\n      <td>0.7</td>\n      <td>0.56</td>\n      <td>0.89</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.7,
+        "ci_low": 0.56,
+        "ci_upp": 0.89,
+        "interpretation": "Statistically Significant (Decreased Risk/Odds)"
+    },
+    "plot_url": "static/resveratrol/forest_breast_cancer_incidence_primary.png?t=5127",
+    "funnel_plot_url": "static/resveratrol/funnel_breast_cancer_incidence_primary.png?t=6421",
+    "baujat_plot_url": null,
+    "last_run": "2026-03-27 00:24:27"
+}

@@ -1,0 +1,53 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Pasqual E et al. (2022) [PMID: 35044839]",
+            "PMID": "35044839",
+            "Effect Size": 1.55,
+            "Lower CI": 1.03,
+            "Upper CI": 2.32,
+            "Population": "General",
+            "Reference": "Association Between Radioactive Iodine Treatment for Pediatric and Young Adulthood Differentiated Thyroid Cancer and Risk of Second Primary Malignancies.",
+            "Authors": "Pasqual E, Schonfeld S, Morton LM, Villoing D, Lee C, Berrington de Gonzalez A, Kitahara CM",
+            "Journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+            "Year": "2022",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/35044839/",
+            "Effect Type": "RR",
+            "SE": 0.3290816326530612,
+            "Sample Size": 27050,
+            "Cases": "Not specified",
+            "Design": "Cohort",
+            "Timing": "Retrospective",
+            "Continent": "North America",
+            "Stage": "Not specified",
+            "Quality %": 90.9,
+            "Quality Score": "Good",
+            "comparison_type": "Yes vs No",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Unclear",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes",
+                "q11": "Yes"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>Not specified</td>\n      <td>27050</td>\n      <td>1.55</td>\n      <td>1.03</td>\n      <td>2.32</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 1.55,
+        "ci_low": 1.03,
+        "ci_upp": 2.32,
+        "interpretation": "statistically significant (increased risk/odds)"
+    },
+    "plot_url": "static/iodine/forest_uterine_cancer_incidence_primary.png?t=3608",
+    "funnel_plot_url": "static/iodine/funnel_uterine_cancer_incidence_primary.png?t=6074",
+    "baujat_plot_url": null,
+    "last_run": "2026-05-20 01:53:45"
+}

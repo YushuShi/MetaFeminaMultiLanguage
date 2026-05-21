@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About MetaFemina: Women's Cancer & Nutrition</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .about-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        h2 {
+            font-family: 'Unbounded', sans-serif;
+            color: var(--text-primary);
+            margin-bottom: 24px;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+
+        .disclaimer-box {
+            background-color: #ffabc0;
+            /* Stronger Pink */
+            border: 1px solid #f48fb1;
+            /* Darker Pink Border */
+            color: #880e4f;
+            /* Pink 900 */
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .disclaimer-title {
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-globes">
+        <div class="globe globe-1"></div>
+        <div class="globe globe-2"></div>
+        <div class="globe globe-3"></div>
+    </div>
+
+    <div class="about-container">
+        <a href="/" class="back-link">← Back to Tool</a>
+
+        <h1>About MetaFemina: Women's Cancer & Nutrition</h1>
+
+        <div class="disclaimer-box">
+            <div class="disclaimer-title">
+                ⚠️ CAUTION: AI-Generated Results
+            </div>
+            <p>
+                <strong>This tool uses automated algorithms to extract data from scientific abstracts.</strong>
+                While we strive for accuracy, the extraction process may occasionally misinterpret extraction values,
+                sample sizes, or study designs.
+            </p>
+            <p style="margin-bottom: 0;">
+                <strong>Always verify the extracted data against the original publication before making any clinical or
+                    research decisions.</strong>
+                This tool is intended for exploratory and educational purposes only.
+            </p>
+        </div>
+
+        <h2>How It Works</h2>
+        <p>
+            MetaFemina pools the MetaMamm, MetaOvary, and MetaUturus evidence caches to facilitate rapid synthesis of evidence regarding nutritional
+            factors and <strong>breast, ovarian, or uterine cancer</strong>. When you enter a nutritional exposure (e.g., "Coffee", "Vitamin
+            D", "Soy"), the tool:
+        </p>
+        <ol>
+            <li><strong>Searches PubMed</strong> for relevant clinical trials and observational studies linking the
+                exposure to the selected cancer outcome.</li>
+            <li><strong>Finds Key Studies</strong> on PubMed using NLP to extract effect sizes (odds ratios, hazard
+                ratios) and confidence sizes.</li>
+            <li><strong>Synthesizes Evidence</strong> by pooling the results using a Random-Effects Meta-Analysis model.
+            </li>
+            <li><strong>Visualizes Results</strong> in a Forest Plot to show the overall trend.</li>
+        </ol>
+
+        <p style="font-size: 0.9rem; color: #666; font-style: italic; margin-top: 10px;">
+            Source of exposure list: National Institutes of Health, Office of Dietary Supplements (n.d.). Dietary
+            supplement fact sheets.
+        </p>
+
+        <h2>Understanding Meta-Analysis in Women's Cancers</h2>
+        <p>
+            A <strong>Meta-Analysis</strong> is a statistical technique that combines the results of multiple scientific
+            studies. By pooling data from various sources, we can get a more precise estimate of an effect than any
+            single study can provide.
+        </p>
+        
+        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; margin-top: 1.5rem; color: var(--text-primary);">Interpreting Heterogeneity (I²)</h3>
+        <p>
+            The <strong>I² statistic</strong> measures the percentage of variation across studies that is due to heterogeneity (true differences in effects) rather than chance. MetaFemina interprets I² based on standard guidelines:
+        </p>
+        <ul style="margin-bottom: 16px; padding-left: 20px;">
+            <li style="margin-bottom: 8px;"><strong>&lt; 25%:</strong> Low heterogeneity (indicating consistent findings across studies)</li>
+            <li style="margin-bottom: 8px;"><strong>25% to &lt; 50%:</strong> Moderate heterogeneity (suggesting some variability in results)</li>
+            <li style="margin-bottom: 8px;"><strong>50% to &lt; 75%:</strong> Substantial heterogeneity (reflecting considerable variability)</li>
+            <li style="margin-bottom: 8px;"><strong>&ge; 75%:</strong> Very high heterogeneity (reflecting highly inconsistent results)</li>
+        </ul>
+        <p>
+            If a pooled effect is statistically significant but has substantial or very high heterogeneity (I² &ge; 50%), the results are flagged to be interpreted with caution due to the high variability between the included studies.
+        </p>
+
+        <h2>JBI Quality Appraisal</h2>
+        <p>
+            Study quality is assessed using the <strong>JBI Critical Appraisal Tools</strong>, selected automatically
+            based on the study design identified by the LLM. Cross-Sectional is used as a fallback when the design is
+            unclear.
+        </p>
+
+        <!-- Tab Buttons -->
+        <div style="display: flex; gap: 0; border-bottom: 2px solid #ddd; margin-bottom: 1rem;">
+            <button class="jbi-tab active" onclick="showJbiTab('cross-sectional')"
+                style="padding: 0.6rem 1.2rem; border: none; background: none; cursor: pointer; font-weight: 600; font-size: 0.9rem; border-bottom: 3px solid var(--primary); color: var(--primary);"
+                id="tab-cross-sectional">Cross-Sectional (8 items)</button>
+            <button class="jbi-tab" onclick="showJbiTab('cohort')"
+                style="padding: 0.6rem 1.2rem; border: none; background: none; cursor: pointer; font-weight: 600; font-size: 0.9rem; border-bottom: 3px solid transparent; color: #666;"
+                id="tab-cohort">Cohort (11 items)</button>
+            <button class="jbi-tab" onclick="showJbiTab('case-control')"
+                style="padding: 0.6rem 1.2rem; border: none; background: none; cursor: pointer; font-weight: 600; font-size: 0.9rem; border-bottom: 3px solid transparent; color: #666;"
+                id="tab-case-control">Case-Control (10 items)</button>
+        </div>
+
+        <!-- Cross-Sectional Tab -->
+        <div id="jbi-cross-sectional" class="jbi-panel">
+            <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">JBI Checklist for Analytical Cross-Sectional Studies
+            </h3>
+            <ol>
+                <li>Were the criteria for inclusion in the sample clearly defined?</li>
+                <li>Were the study subjects and the setting described in detail?</li>
+                <li>Was the exposure measured in a valid and reliable way?</li>
+                <li>Were objective, standard criteria used for measurement of the condition?</li>
+                <li>Were confounding factors identified?</li>
+                <li>Were strategies to deal with confounding factors stated?</li>
+                <li>Were the outcomes measured in a valid and reliable way?</li>
+                <li>Was appropriate statistical analysis used?</li>
+            </ol>
+        </div>
+
+        <!-- Cohort Tab -->
+        <div id="jbi-cohort" class="jbi-panel" style="display: none;">
+            <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">JBI Checklist for Cohort Studies</h3>
+            <ol>
+                <li>Were the two groups similar and recruited from the same population?</li>
+                <li>Were the exposures measured similarly to assign people to both exposed and unexposed groups?</li>
+                <li>Was the exposure measured in a valid and reliable way?</li>
+                <li>Were confounding factors identified?</li>
+                <li>Were strategies to deal with confounding factors stated?</li>
+                <li>Were the groups/participants free of the outcome at the start of the study (or at the moment of
+                    exposure)?</li>
+                <li>Were the outcomes measured in a valid and reliable way?</li>
+                <li>Was the follow up time reported and sufficient to be long enough for outcomes to occur?</li>
+                <li>Was follow up complete, and if not, were the reasons to loss to follow up described and explored?
+                </li>
+                <li>Were strategies to address incomplete follow up utilized?</li>
+                <li>Was appropriate statistical analysis used?</li>
+            </ol>
+        </div>
+
+        <!-- Case-Control Tab -->
+        <div id="jbi-case-control" class="jbi-panel" style="display: none;">
+            <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">JBI Checklist for Case-Control Studies</h3>
+            <ol>
+                <li>Were the groups comparable other than the presence of disease in cases or the absence of disease in
+                    controls?</li>
+                <li>Were cases and controls matched appropriately?</li>
+                <li>Were the same criteria used for identification of cases and controls?</li>
+                <li>Was exposure measured in a standard, valid and reliable way?</li>
+                <li>Was exposure measured in the same way for cases and controls?</li>
+                <li>Were confounding factors identified?</li>
+                <li>Were strategies to deal with confounding factors stated?</li>
+                <li>Were outcomes assessed in a standard, valid and reliable way for cases and controls?</li>
+                <li>Was the exposure period of interest long enough to be meaningful?</li>
+                <li>Was appropriate statistical analysis used?</li>
+            </ol>
+        </div>
+
+        <p>
+            <strong>Scoring Criteria:</strong>
+        <ul>
+            <li><strong>Score %:</strong> Calculated as the percentage of items rated as "Yes" (items rated "NA" are
+                excluded from the calculation).</li>
+            <li><strong>Good:</strong> > 80% of items rated as "Yes".</li>
+            <li><strong>Moderate:</strong> 51% - 80% of items rated as "Yes".</li>
+            <li><strong>Fair:</strong>
+                < 50% of items rated as "Yes" .</li>
+        </ul>
+        </p>
+        <p style="font-size: 0.85rem; color: #666; font-style: italic; margin-top: 10px;">
+            Reference: Joanna Briggs Institute. Critical appraisal tools. <a
+                href="https://jbi.global/critical-appraisal-tools" target="_blank"
+                style="color: var(--primary);">https://jbi.global/critical-appraisal-tools</a>. Accessed 11 Feb 2026.
+        </p>
+
+        <script>
+            function showJbiTab(tabName) {
+                // Hide all panels
+                document.querySelectorAll('.jbi-panel').forEach(p => p.style.display = 'none');
+                // Reset all tabs
+                document.querySelectorAll('.jbi-tab').forEach(t => {
+                    t.style.borderBottom = '3px solid transparent';
+                    t.style.color = '#666';
+                });
+                // Show selected panel and highlight tab
+                document.getElementById('jbi-' + tabName).style.display = 'block';
+                const activeTab = document.getElementById('tab-' + tabName);
+                activeTab.style.borderBottom = '3px solid var(--primary)';
+                activeTab.style.color = 'var(--primary)';
+            }
+        </script>
+    </div>
+</body>
+
+</html>

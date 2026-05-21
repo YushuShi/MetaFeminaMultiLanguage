@@ -1,0 +1,53 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Moore K et al. (2018) [PMID: 30345884]",
+            "PMID": "30345884",
+            "Effect Size": 0.3,
+            "Lower CI": 0.23,
+            "Upper CI": 0.41,
+            "Population": "General",
+            "Reference": "Maintenance Olaparib in Patients with Newly Diagnosed Advanced Ovarian Cancer.",
+            "Authors": "Moore K, Colombo N, Scambia G, Kim BG, Oaknin A, Friedlander M, Lisyanskaya A, Floquet A, Leary A, Sonke GS, Gourley C, Banerjee S, Oza A, Gonz\u00e1lez-Mart\u00edn A, Aghajanian C, Bradley W, Mathews C, Liu J, Lowe ES, Bloomfield R, DiSilvestro P",
+            "Journal": "The New England journal of medicine",
+            "Year": "2018",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/30345884/",
+            "Effect Type": "HR",
+            "SE": 0.04591836734693877,
+            "Sample Size": 391,
+            "Cases": 388,
+            "Design": "Cohort",
+            "Timing": "Prospective",
+            "Continent": "International",
+            "Stage": "Advanced",
+            "Quality %": 100.0,
+            "Quality Score": "Good",
+            "comparison_type": "Olaparib vs Placebo",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes",
+                "q11": "Yes"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>388</td>\n      <td>391</td>\n      <td>0.314753</td>\n      <td>0.242483</td>\n      <td>0.426907</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.31,
+        "ci_low": 0.24,
+        "ci_upp": 0.43,
+        "interpretation": "statistically significant (decreased risk/odds)"
+    },
+    "plot_url": "static/ribose/forest_ovarian_cancer_incidence_primary.png?t=3520",
+    "funnel_plot_url": "static/ribose/funnel_ovarian_cancer_incidence_primary.png?t=2270",
+    "baujat_plot_url": null,
+    "last_run": "2026-05-19 17:58:15"
+}

@@ -1,0 +1,52 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Bosetti C et al. (2002) [PMID: 12146851]",
+            "PMID": "12146851",
+            "Effect Size": 0.68,
+            "Lower CI": 0.5,
+            "Upper CI": 0.93,
+            "Population": "General",
+            "Reference": "Olive oil, seed oils and other added fats in relation to ovarian cancer (Italy).",
+            "Authors": "Bosetti C, Negri E, Franceschi S, Talamini R, Montella M, Conti E, Lagiou P, Parazzini F, La Vecchia C",
+            "Journal": "Cancer causes & control : CCC",
+            "Year": "2002",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/12146851/",
+            "Effect Type": "OR",
+            "SE": 0.10969387755102042,
+            "Sample Size": 3442,
+            "Cases": 1031,
+            "Design": "Case-Control",
+            "Timing": "Retrospective",
+            "Continent": "Europe",
+            "Stage": "NA",
+            "Quality %": 90.0,
+            "Quality Score": "Good",
+            "comparison_type": "Highest vs Lowest",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Unclear",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>1031</td>\n      <td>3442</td>\n      <td>0.709516</td>\n      <td>0.534759</td>\n      <td>0.938541</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.71,
+        "ci_low": 0.53,
+        "ci_upp": 0.94,
+        "interpretation": "statistically significant (decreased risk/odds)"
+    },
+    "plot_url": "static/olive/forest_ovarian_cancer_incidence_primary.png?t=9104",
+    "funnel_plot_url": "static/olive/funnel_ovarian_cancer_incidence_primary.png?t=4129",
+    "baujat_plot_url": null,
+    "last_run": "2026-05-19 16:22:41"
+}

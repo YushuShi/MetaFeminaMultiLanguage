@@ -1,0 +1,53 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Li J et al. (2024) [PMID: 37939410]",
+            "PMID": "37939410",
+            "Effect Size": 0.45,
+            "Lower CI": 0.3,
+            "Upper CI": 0.7,
+            "Population": "General",
+            "Reference": "Structure and activity relationship analysis of xanthones from mangosteen: Identifying garcinone E as a potent dual EGFR and VEGFR2 inhibitor.",
+            "Authors": "Li J, Nie X, Panthakarn Rangsinth , Wu X, Zheng C, Cheng Y, Shiu PH, Li R, Lee SM, Fu C, Zhang J, Leung GP",
+            "Journal": "Phytomedicine : international journal of phytotherapy and phytopharmacology",
+            "Year": "2024",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/37939410/",
+            "Effect Type": "OR",
+            "SE": 0.1020408163265306,
+            "Sample Size": 50,
+            "Cases": 20,
+            "Design": "Cohort",
+            "Timing": "Prospective",
+            "Continent": "Asia",
+            "Stage": "Advanced",
+            "Quality %": 100.0,
+            "Quality Score": "Good",
+            "comparison_type": "High vs Low",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes",
+                "q11": "Yes"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>0.45</td>\n      <td>0.3</td>\n      <td>0.7</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.45,
+        "ci_low": 0.3,
+        "ci_upp": 0.7,
+        "interpretation": "Statistically Significant (Decreased Risk/Odds)"
+    },
+    "plot_url": "static/mangosteen/forest_breast_cancer_incidence_primary.png?t=5822",
+    "funnel_plot_url": "static/mangosteen/funnel_breast_cancer_incidence_primary.png?t=4603",
+    "baujat_plot_url": null,
+    "last_run": "2026-03-25 19:12:44"
+}

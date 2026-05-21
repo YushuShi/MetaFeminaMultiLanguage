@@ -1,0 +1,52 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Michels KA et al. (2019) [PMID: 31321379]",
+            "PMID": "31321379",
+            "Effect Size": 1.85,
+            "Lower CI": 1.06,
+            "Upper CI": 3.25,
+            "Population": "General",
+            "Reference": "Postmenopausal Androgen Metabolism and Endometrial Cancer Risk in the Women's Health Initiative Observational Study.",
+            "Authors": "Michels KA, Brinton LA, Wentzensen N, Pan K, Chen C, Anderson GL, Pfeiffer RM, Xu X, Rohan TE, Trabert B",
+            "Journal": "JNCI cancer spectrum",
+            "Year": "2019",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/31321379/",
+            "Effect Type": "OR",
+            "SE": 0.5586734693877551,
+            "Sample Size": 667.0,
+            "Cases": 313.0,
+            "Design": "Case-Control",
+            "Timing": "Retrospective",
+            "Continent": "North America",
+            "Stage": "NA",
+            "Quality %": 100.0,
+            "Quality Score": "Good",
+            "comparison_type": "5th vs 1st quintile",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>313.0</td>\n      <td>667.0</td>\n      <td>1.665916</td>\n      <td>1.051796</td>\n      <td>2.514507</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 1.67,
+        "ci_low": 1.05,
+        "ci_upp": 2.51,
+        "interpretation": "statistically significant (increased risk/odds)"
+    },
+    "plot_url": "static/dehydroepiandrosterone/forest_uterine_cancer_incidence_primary.png?t=3914",
+    "funnel_plot_url": "static/dehydroepiandrosterone/funnel_uterine_cancer_incidence_primary.png?t=3671",
+    "baujat_plot_url": null,
+    "last_run": "2026-05-19 22:13:58"
+}

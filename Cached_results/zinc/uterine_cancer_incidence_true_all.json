@@ -1,0 +1,50 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Peng JT et al. (2019) [PMID: 31599404]",
+            "PMID": "31599404",
+            "Effect Size": 1.31,
+            "Lower CI": 1.08,
+            "Upper CI": 1.6,
+            "Population": "General",
+            "Reference": "A functional Cis-eQTL locus in lncRNA ZNRD1-AS1 contributes to the susceptibility of endometrial cancer.",
+            "Authors": "Peng JT, Li MC",
+            "Journal": "European review for medical and pharmacological sciences",
+            "Year": "2019",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/31599404/",
+            "Effect Type": "OR",
+            "SE": 0.1326530612244898,
+            "Sample Size": "Not specified",
+            "Cases": "Not specified",
+            "Design": "Not specified",
+            "Timing": "Not specified",
+            "Continent": "Not specified",
+            "Stage": "Not specified",
+            "Quality %": 25.0,
+            "Quality Score": "Fair",
+            "comparison_type": "Minor allele vs Major allele",
+            "JBI": {
+                "q1": "Unclear",
+                "q2": "Unclear",
+                "q3": "Yes",
+                "q4": "Unclear",
+                "q5": "Unclear",
+                "q6": "Unclear",
+                "q7": "Yes",
+                "q8": "Unclear"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>Not specified</td>\n      <td>Not specified</td>\n      <td>1.259252</td>\n      <td>1.068884</td>\n      <td>1.48423</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 1.26,
+        "ci_low": 1.07,
+        "ci_upp": 1.48,
+        "interpretation": "statistically significant (increased risk/odds)"
+    },
+    "plot_url": "static/zinc/forest_uterine_cancer_incidence_primary.png?t=7885",
+    "funnel_plot_url": "static/zinc/funnel_uterine_cancer_incidence_primary.png?t=3438",
+    "baujat_plot_url": null,
+    "last_run": "2026-05-20 00:50:06"
+}

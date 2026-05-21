@@ -1,0 +1,52 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Galeone C et al. (2009) [PMID: 18986589]",
+            "PMID": "18986589",
+            "Effect Size": 0.62,
+            "Lower CI": 0.42,
+            "Upper CI": 0.92,
+            "Population": "General",
+            "Reference": "Allium vegetables intake and endometrial cancer risk.",
+            "Authors": "Galeone C, Pelucchi C, Dal Maso L, Negri E, Montella M, Zucchetto A, Talamini R, La Vecchia C",
+            "Journal": "Public health nutrition",
+            "Year": "2009",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/18986589/",
+            "Effect Type": "OR",
+            "SE": 0.12755102040816327,
+            "Sample Size": 1362,
+            "Cases": 454,
+            "Design": "Case-Control",
+            "Timing": "Retrospective",
+            "Continent": "Europe",
+            "Stage": "NA",
+            "Quality %": 90.0,
+            "Quality Score": "Good",
+            "comparison_type": "High vs Low",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Unclear",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>454</td>\n      <td>1362</td>\n      <td>0.65222</td>\n      <td>0.45425</td>\n      <td>0.929669</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.65,
+        "ci_low": 0.45,
+        "ci_upp": 0.93,
+        "interpretation": "statistically significant (decreased risk/odds)"
+    },
+    "plot_url": "static/garlic/forest_uterine_cancer_incidence_primary.png?t=3944",
+    "funnel_plot_url": "static/garlic/funnel_uterine_cancer_incidence_primary.png?t=2594",
+    "baujat_plot_url": null,
+    "last_run": "2026-05-19 22:30:28"
+}

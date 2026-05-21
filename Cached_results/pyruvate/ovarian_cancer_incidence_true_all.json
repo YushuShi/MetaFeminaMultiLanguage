@@ -1,0 +1,53 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Hjerpe E et al. (2013) [PMID: 24252137]",
+            "PMID": "24252137",
+            "Effect Size": 0.47,
+            "Lower CI": 0.23,
+            "Upper CI": 0.95,
+            "Population": "General",
+            "Reference": "Metabolic markers GAPDH, PKM2, ATP5B and BEC-index in advanced serous ovarian cancer.",
+            "Authors": "Hjerpe E, Egyhazi Brage S, Carlson J, Frostvik Stolt M, Schedvins K, Johansson H, Shoshan M, Avall-Lundqvist E",
+            "Journal": "BMC clinical pathology",
+            "Year": "2013",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/24252137/",
+            "Effect Type": "HR",
+            "SE": 0.1836734693877551,
+            "Sample Size": 56,
+            "Cases": 56,
+            "Design": "Cohort",
+            "Timing": "Prospective",
+            "Continent": "Not specified",
+            "Stage": "Advanced",
+            "Quality %": 100.0,
+            "Quality Score": "Good",
+            "comparison_type": "High vs Low",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes",
+                "q11": "Yes"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>56</td>\n      <td>56</td>\n      <td>0.487362</td>\n      <td>0.242483</td>\n      <td>0.953238</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.49,
+        "ci_low": 0.24,
+        "ci_upp": 0.95,
+        "interpretation": "statistically significant (decreased risk/odds)"
+    },
+    "plot_url": "static/pyruvate/forest_ovarian_cancer_incidence_primary.png?t=6515",
+    "funnel_plot_url": "static/pyruvate/funnel_ovarian_cancer_incidence_primary.png?t=1037",
+    "baujat_plot_url": null,
+    "last_run": "2026-05-19 16:39:03"
+}

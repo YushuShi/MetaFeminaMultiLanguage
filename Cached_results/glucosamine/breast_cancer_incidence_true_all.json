@@ -1,0 +1,53 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Suissa K et al. (2024) [PMID: 38973352]",
+            "PMID": "38973352",
+            "Effect Size": 1.07,
+            "Lower CI": 0.93,
+            "Upper CI": 1.23,
+            "Population": "General",
+            "Reference": "Glucosamine and Cancer Incidence in Osteoarthritis: A Prevalent New-User Cohort Design.",
+            "Authors": "Suissa K, Dell'Aniello S, Comin E, Hudson M, Suissa S",
+            "Journal": "Arthritis care & research",
+            "Year": "2024",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/38973352/",
+            "Effect Type": "HR",
+            "SE": 0.07653061224489795,
+            "Sample Size": 20541,
+            "Cases": "null",
+            "Design": "Cohort",
+            "Timing": "Prospective",
+            "Continent": "Europe",
+            "Stage": "null",
+            "Quality %": 100.0,
+            "Quality Score": "Good",
+            "comparison_type": "Yes vs No",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes",
+                "q11": "Yes"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>1.07</td>\n      <td>0.93</td>\n      <td>1.23</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 1.07,
+        "ci_low": 0.93,
+        "ci_upp": 1.23,
+        "interpretation": "Not Statistically Significant"
+    },
+    "plot_url": "static/glucosamine/forest_breast_cancer_incidence_primary.png?t=3510",
+    "funnel_plot_url": "static/glucosamine/funnel_breast_cancer_incidence_primary.png?t=5263",
+    "baujat_plot_url": null,
+    "last_run": "2026-03-25 10:38:36"
+}

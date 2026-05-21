@@ -1,0 +1,1691 @@
+{
+    "10070957": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_dehydroepiandrosterone_incidence": 2
+        },
+        "contexts": {}
+    },
+    "10206315": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_beta-carotene_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.6,
+                            "Lower CI": 0.38,
+                            "Upper CI": 0.95,
+                            "Cases": 1041,
+                            "Sample Size": 2043,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "Highest vs Lowest"
+                        },
+                        "timestamp": "2026-03-12 14:43:42"
+                    }
+                ],
+                "consensus_data": null
+            },
+            "breast_cancer_vitamin_a_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.6,
+                            "Lower CI": 0.38,
+                            "Upper CI": 0.95,
+                            "Cases": 1041,
+                            "Sample Size": 2043,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "Highest vs Lowest"
+                        },
+                        "timestamp": "2026-03-12 14:43:42"
+                    }
+                ],
+                "consensus_data": null
+            }
+        }
+    },
+    "10408688": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_beta-carotene_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.84,
+                            "Lower CI": 0.73,
+                            "Upper CI": 0.97,
+                            "Cases": 820,
+                            "Sample Size": 2368,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "per quintile increase"
+                        },
+                        "timestamp": "2026-03-12 14:43:42"
+                    }
+                ],
+                "consensus_data": null
+            },
+            "breast_cancer_vitamin_a_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.84,
+                            "Lower CI": 0.73,
+                            "Upper CI": 0.97,
+                            "Cases": 820,
+                            "Sample Size": 2368,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "per quintile increase"
+                        },
+                        "timestamp": "2026-03-12 14:43:42"
+                    }
+                ],
+                "consensus_data": null
+            }
+        }
+    },
+    "11319174": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_vitamin_e_incidence": 2
+        },
+        "contexts": {}
+    },
+    "11347286": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_mistletoe_incidence": 2
+        },
+        "contexts": {}
+    },
+    "11713032": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_vitamin_e_incidence": 2
+        },
+        "contexts": {
+            "breast_cancer_vitamin_e_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 1.37,
+                            "Lower CI": 0.99,
+                            "Upper CI": 1.89,
+                            "Cases": 838,
+                            "Sample Size": 65879,
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "Highest vs Lowest"
+                        },
+                        "timestamp": "2026-05-21 13:57:03"
+                    }
+                ],
+                "consensus_data": null
+            }
+        }
+    },
+    "11857389": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_fish_oil_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.31,
+                            "Lower CI": 0.13,
+                            "Upper CI": 0.75,
+                            "Cases": 241,
+                            "Sample Size": 329,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "Highest vs Lowest"
+                        },
+                        "timestamp": "2026-04-06 21:18:19"
+                    }
+                ],
+                "consensus_data": null
+            }
+        }
+    },
+    "12891146": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_vitamin_e_incidence": 3
+        },
+        "contexts": {}
+    },
+    "14659342": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_vitamin_e_incidence": 2
+        },
+        "contexts": {}
+    },
+    "15226762": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_flaxseed_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 1.6,
+                            "Lower CI": 0.7,
+                            "Upper CI": 3.4,
+                            "Cases": 417,
+                            "Sample Size": 14275,
+                            "Design": "Case-Control",
+                            "Timing": "Prospective"
+                        },
+                        "timestamp": "2026-02-24 20:44:06"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 1.6,
+                            "Lower CI": 0.7,
+                            "Upper CI": 3.4,
+                            "Cases": 417,
+                            "Sample Size": 14275,
+                            "Design": "Case-Control",
+                            "Timing": "Prospective"
+                        },
+                        "timestamp": "2026-02-24 20:44:10"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 1.6,
+                    "Lower CI": 0.7,
+                    "Upper CI": 3.4,
+                    "Cases": 417,
+                    "Sample Size": 14275,
+                    "Design": "Case-Control",
+                    "Timing": "Prospective"
+                }
+            },
+            "breast_cancer_soy_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 1.6,
+                            "Lower CI": 0.7,
+                            "Upper CI": 3.4,
+                            "Cases": 417,
+                            "Sample Size": 14275,
+                            "Design": "Case-Control",
+                            "Timing": "Prospective"
+                        },
+                        "timestamp": "2026-02-24 20:44:06"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 1.6,
+                            "Lower CI": 0.7,
+                            "Upper CI": 3.4,
+                            "Cases": 417,
+                            "Sample Size": 14275,
+                            "Design": "Case-Control",
+                            "Timing": "Prospective"
+                        },
+                        "timestamp": "2026-02-24 20:44:10"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 1.6,
+                    "Lower CI": 0.7,
+                    "Upper CI": 3.4,
+                    "Cases": 417,
+                    "Sample Size": 14275,
+                    "Design": "Case-Control",
+                    "Timing": "Prospective"
+                }
+            }
+        }
+    },
+    "15329916": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_vitamin_e_incidence": 2
+        },
+        "contexts": {}
+    },
+    "15353022": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "ovarian_cancer_zinc_incidence": 1
+        },
+        "contexts": {}
+    },
+    "15693849": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_bcaas_incidence": 3
+        },
+        "contexts": {}
+    },
+    "15860438": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_boron_incidence": 2
+        },
+        "contexts": {}
+    },
+    "15875887": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_mushrooms_incidence": 1
+        },
+        "contexts": {}
+    },
+    "17416109": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_black_cohosh_incidence": 2
+        },
+        "contexts": {}
+    },
+    "18056435": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_vitamin_e_incidence": 2
+        },
+        "contexts": {}
+    },
+    "18756015": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_fish_oil_incidence": 2
+        },
+        "contexts": {}
+    },
+    "19280355": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_vitamin_b12_incidence": 1
+        },
+        "contexts": {}
+    },
+    "20929592": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_vitamin_e_incidence": 3
+        },
+        "contexts": {}
+    },
+    "21178081": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_fish_oil_incidence": 2
+        },
+        "contexts": {}
+    },
+    "21850370": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_chondroitin_incidence": 2
+        },
+        "contexts": {}
+    },
+    "22894640": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_omega-3_fatty_acids_incidence": 2,
+            "breast_cancer_fish_oil_incidence": 2
+        },
+        "contexts": {}
+    },
+    "23281741": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_vitamin_b12_incidence": 1
+        },
+        "contexts": {}
+    },
+    "23410586": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_vitamin_b12_incidence": 1
+        },
+        "contexts": {}
+    },
+    "24175799": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_vitamin_b6_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.535,
+                            "Lower CI": 0.361,
+                            "Upper CI": 0.775,
+                            "Cases": 435,
+                            "Sample Size": 870,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "Low vs High (Low vitamin B6 intake vs High vitamin B6 intake, among MTHFR 665TT genotype)"
+                        },
+                        "timestamp": "2026-04-08 10:24:35"
+                    }
+                ],
+                "consensus_data": null
+            }
+        }
+    },
+    "24527419": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_vitamin_a_incidence": 2
+        },
+        "contexts": {}
+    },
+    "24669750": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_dehydroepiandrosterone_incidence": 2,
+            "breast_cancer_flaxseed_incidence": 2
+        },
+        "contexts": {}
+    },
+    "24695515": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "ovarian_cancer_ginger_incidence": 2
+        },
+        "contexts": {}
+    },
+    "25144633": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_vitamin_b12_incidence": 1
+        },
+        "contexts": {}
+    },
+    "25284450": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_quercetin_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.556,
+                            "Lower CI": 0.334,
+                            "Upper CI": 0.917,
+                            "Cases": 199,
+                            "Sample Size": 3209,
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "High intake vs Low intake (in women over 70) [inverted ⇒ high vs low]"
+                        },
+                        "timestamp": "2026-04-28 16:24:46"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.556,
+                            "Lower CI": 0.334,
+                            "Upper CI": 0.917,
+                            "Cases": 199,
+                            "Sample Size": 3209,
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "High intake vs Low intake (in women over 70) [inverted ⇒ high vs low]"
+                        },
+                        "timestamp": "2026-04-28 16:25:33"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.556,
+                    "Lower CI": 0.334,
+                    "Upper CI": 0.917,
+                    "Cases": 199,
+                    "Sample Size": 3209,
+                    "Design": "Cohort",
+                    "Timing": "Prospective",
+                    "Comparison Type": "High intake vs Low intake (in women over 70) [inverted ⇒ high vs low]"
+                }
+            }
+        }
+    },
+    "25687481": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {}
+    },
+    "25844696": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_vitamin_b12_incidence": 1
+        },
+        "contexts": {}
+    },
+    "26137879": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_omega-3_fatty_acids_incidence": 2,
+            "breast_cancer_fish_oil_incidence": 2
+        },
+        "contexts": {}
+    },
+    "26315396": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_glutamine_incidence": 2
+        },
+        "contexts": {}
+    },
+    "26791185": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_beta-carotene_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 2.37,
+                            "Lower CI": 1.2,
+                            "Upper CI": 4.67,
+                            "Cases": 1502,
+                            "Sample Size": 3004,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "Q1 vs Q5"
+                        },
+                        "timestamp": "2026-03-12 14:45:22"
+                    }
+                ],
+                "consensus_data": null
+            },
+            "breast_cancer_vitamin_a_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 2.37,
+                            "Lower CI": 1.2,
+                            "Upper CI": 4.67,
+                            "Cases": 1502,
+                            "Sample Size": 3004,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "Q1 vs Q5"
+                        },
+                        "timestamp": "2026-03-12 14:45:22"
+                    }
+                ],
+                "consensus_data": null
+            }
+        }
+    },
+    "2766288": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_grape_incidence": 2
+        },
+        "contexts": {
+            "breast_cancer_grape_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 1.9,
+                            "Lower CI": 1.1,
+                            "Upper CI": 3.3,
+                            "Cases": 250,
+                            "Sample Size": 749,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "High vs Low"
+                        },
+                        "timestamp": "2026-04-06 16:23:16"
+                    }
+                ],
+                "consensus_data": null
+            }
+        }
+    },
+    "27905104": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_vitamin_b12_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 1.26,
+                            "Lower CI": 1,
+                            "Upper CI": 1.58,
+                            "Cases": 2491,
+                            "Sample Size": "5012",
+                            "Design": "Case-Control",
+                            "Timing": "Prospective"
+                        },
+                        "timestamp": "2026-02-23 08:34:59"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 1.26,
+                            "Lower CI": 1,
+                            "Upper CI": 1.58,
+                            "Cases": 2491,
+                            "Sample Size": "5012",
+                            "Design": "Case-Control",
+                            "Timing": "Prospective"
+                        },
+                        "timestamp": "2026-02-23 08:35:13"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 1.26,
+                            "Lower CI": 1,
+                            "Upper CI": 1.58,
+                            "Cases": 2491,
+                            "Sample Size": "5012",
+                            "Design": "Case-Control",
+                            "Timing": "Prospective"
+                        },
+                        "timestamp": "2026-02-23 08:35:30"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 1.26,
+                    "Lower CI": 1,
+                    "Upper CI": 1.58,
+                    "Cases": 2491,
+                    "Sample Size": "5012",
+                    "Design": "Case-Control",
+                    "Timing": "Prospective"
+                }
+            }
+        }
+    },
+    "28002423": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_vitamin_a_incidence": 1
+        },
+        "contexts": {}
+    },
+    "28248635": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_vitamin_b12_incidence": 2
+        },
+        "contexts": {}
+    },
+    "28263368": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {}
+    },
+    "28683962": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_arginine_incidence": 2
+        },
+        "contexts": {}
+    },
+    "29230660": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {}
+    },
+    "29555862": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_vitamin_b12_incidence": 2
+        },
+        "contexts": {}
+    },
+    "2971432": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_dehydroepiandrosterone_incidence": 2
+        },
+        "contexts": {}
+    },
+    "29781707": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_coenzyme_q10_incidence": 2
+        },
+        "contexts": {}
+    },
+    "30373451": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_vitamin_e_incidence": 2
+        },
+        "contexts": {}
+    },
+    "30375890": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_flaxseed_incidence": 2
+        },
+        "contexts": {}
+    },
+    "30415629": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_omega-3_fatty_acids_incidence": 2
+        },
+        "contexts": {}
+    },
+    "30760301": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_manganese_incidence": 2
+        },
+        "contexts": {}
+    },
+    "30863841": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "uterine_cancer_vitamin_a_incidence": 2
+        },
+        "contexts": {}
+    },
+    "30892712": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_dehydroepiandrosterone_incidence": 2
+        },
+        "contexts": {}
+    },
+    "31694190": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_dehydroepiandrosterone_incidence": 2
+        },
+        "contexts": {}
+    },
+    "31959020": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_green_tea_incidence": 1
+        },
+        "contexts": {}
+    },
+    "31986320": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_melatonin_incidence": 1
+        },
+        "contexts": {}
+    },
+    "32239423": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_soy_incidence": 1
+        },
+        "contexts": {}
+    },
+    "32369545": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_coenzyme_q10_incidence": 2
+        },
+        "contexts": {}
+    },
+    "33543354": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_omega-7_fatty_acids_incidence": 3,
+            "breast_cancer_omega-6_fatty_acids_incidence": 2
+        },
+        "contexts": {}
+    },
+    "33770661": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {}
+    },
+    "34006878": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_creatine_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 1.13,
+                            "Lower CI": 1.01,
+                            "Upper CI": 1.22,
+                            "Cases": 1057,
+                            "Sample Size": 207,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "Continuous"
+                        },
+                        "timestamp": "2026-04-06 15:18:12"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 1.13,
+                            "Lower CI": 1.01,
+                            "Upper CI": 1.22,
+                            "Cases": 1057,
+                            "Sample Size": 207,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "Continuous"
+                        },
+                        "timestamp": "2026-04-06 15:18:17"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 1.13,
+                    "Lower CI": 1.01,
+                    "Upper CI": 1.22,
+                    "Cases": 1057,
+                    "Sample Size": 207,
+                    "Design": "Case-Control",
+                    "Timing": "Retrospective",
+                    "Comparison Type": "Continuous"
+                }
+            }
+        }
+    },
+    "34189868": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_boron_incidence": 2
+        },
+        "contexts": {}
+    },
+    "34324486": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "uterine_cancer_vitamin_a_incidence": 2
+        },
+        "contexts": {}
+    },
+    "34337061": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "uterine_cancer_vitamin_a_incidence": 2
+        },
+        "contexts": {}
+    },
+    "34558660": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_coenzyme_q10_incidence": 2,
+            "breast_cancer_fish_oil_incidence": 1
+        },
+        "contexts": {}
+    },
+    "34844025": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_vitamin_b12_incidence": 1
+        },
+        "contexts": {}
+    },
+    "35027466": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_lycopene_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.87,
+                            "Lower CI": 0.49,
+                            "Upper CI": 1.55,
+                            "Cases": 122977,
+                            "Sample Size": 228951,
+                            "Design": "Mendelian randomization",
+                            "Timing": "NA"
+                        },
+                        "timestamp": "2026-02-25 20:05:06"
+                    }
+                ],
+                "consensus_data": null
+            },
+            "breast_cancer_antioxidants_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.87,
+                            "Lower CI": 0.49,
+                            "Upper CI": 1.55,
+                            "Cases": 122977,
+                            "Sample Size": 228951,
+                            "Design": "Mendelian randomization",
+                            "Timing": "NA"
+                        },
+                        "timestamp": "2026-02-25 20:05:06"
+                    }
+                ],
+                "consensus_data": null
+            },
+            "breast_cancer_vitamin_e_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.87,
+                            "Lower CI": 0.49,
+                            "Upper CI": 1.55,
+                            "Cases": 122977,
+                            "Sample Size": 228951,
+                            "Design": "Mendelian randomization",
+                            "Timing": "NA"
+                        },
+                        "timestamp": "2026-02-25 20:05:06"
+                    }
+                ],
+                "consensus_data": null
+            },
+            "breast_cancer_vitamin_a_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.87,
+                            "Lower CI": 0.49,
+                            "Upper CI": 1.55,
+                            "Cases": 122977,
+                            "Sample Size": 228951,
+                            "Design": "Mendelian randomization",
+                            "Timing": "NA"
+                        },
+                        "timestamp": "2026-02-25 20:05:06"
+                    }
+                ],
+                "consensus_data": null
+            }
+        }
+    },
+    "35152526": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "uterine_cancer_vitamin_a_incidence": 2
+        },
+        "contexts": {}
+    },
+    "35477112": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_flaxseed_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": -49.2,
+                            "Lower CI": -85.5,
+                            "Upper CI": -13,
+                            "Cases": "NA",
+                            "Sample Size": 329,
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": null
+                        },
+                        "timestamp": "2026-03-02 11:50:39"
+                    }
+                ],
+                "consensus_data": null
+            },
+            "breast_cancer_soy_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": -49.2,
+                            "Lower CI": -85.5,
+                            "Upper CI": -13,
+                            "Cases": "NA",
+                            "Sample Size": 329,
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": null
+                        },
+                        "timestamp": "2026-03-02 11:50:39"
+                    }
+                ],
+                "consensus_data": null
+            }
+        }
+    },
+    "35807825": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_vitamin_b6_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.48,
+                            "Lower CI": 0.25,
+                            "Upper CI": 0.89,
+                            "Cases": 232,
+                            "Sample Size": 40432,
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "Above recommended intake vs Below recommended intake (Obese women, BMI ≥25 kg/m2)"
+                        },
+                        "timestamp": "2026-04-08 10:27:58"
+                    }
+                ],
+                "consensus_data": null
+            }
+        }
+    },
+    "35876294": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_vitamin_b12_incidence": 2
+        },
+        "contexts": {}
+    },
+    "35960075": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_astragalus_incidence": 2
+        },
+        "contexts": {
+            "breast_cancer_astragalus_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.25,
+                            "Lower CI": 0.17,
+                            "Upper CI": 0.36,
+                            "Cases": 17,
+                            "Sample Size": 248,
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "Yes vs No"
+                        },
+                        "timestamp": "2026-03-27 20:50:29"
+                    }
+                ],
+                "consensus_data": null
+            }
+        }
+    },
+    "36057072": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_vitamin_b12_incidence": 2
+        },
+        "contexts": {}
+    },
+    "36115208": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_berberine_incidence": 1
+        },
+        "contexts": {}
+    },
+    "36403211": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_omega-6_fatty_acids_incidence": 2
+        },
+        "contexts": {}
+    },
+    "36473423": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_vitamin_b12_incidence": 2,
+            "uterine_cancer_vitamin_a_incidence": 2
+        },
+        "contexts": {}
+    },
+    "37299574": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_zinc_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.55,
+                            "Lower CI": 0.41,
+                            "Upper CI": 0.75,
+                            "Cases": 514,
+                            "Sample Size": 1475,
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "Highest vs Lowest quartile"
+                        },
+                        "timestamp": "2026-03-22 13:18:26"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.55,
+                            "Lower CI": 0.41,
+                            "Upper CI": 0.75,
+                            "Cases": 514,
+                            "Sample Size": 1475,
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "Highest vs Lowest quartile"
+                        },
+                        "timestamp": "2026-03-22 13:18:35"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.55,
+                            "Lower CI": 0.41,
+                            "Upper CI": 0.75,
+                            "Cases": 514,
+                            "Sample Size": 1475,
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "Highest vs Lowest quartile"
+                        },
+                        "timestamp": "2026-03-22 13:18:47"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.55,
+                    "Lower CI": 0.41,
+                    "Upper CI": 0.75,
+                    "Cases": 514,
+                    "Sample Size": 1475,
+                    "Design": "Cohort",
+                    "Timing": "Prospective",
+                    "Comparison Type": "Highest vs Lowest quartile"
+                }
+            },
+            "breast_cancer_copper_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.55,
+                            "Lower CI": 0.41,
+                            "Upper CI": 0.75,
+                            "Cases": 514,
+                            "Sample Size": 1475,
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "Highest vs Lowest quartile"
+                        },
+                        "timestamp": "2026-03-22 13:18:26"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.55,
+                            "Lower CI": 0.41,
+                            "Upper CI": 0.75,
+                            "Cases": 514,
+                            "Sample Size": 1475,
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "Highest vs Lowest quartile"
+                        },
+                        "timestamp": "2026-03-22 13:18:35"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.55,
+                            "Lower CI": 0.41,
+                            "Upper CI": 0.75,
+                            "Cases": 514,
+                            "Sample Size": 1475,
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "Highest vs Lowest quartile"
+                        },
+                        "timestamp": "2026-03-22 13:18:47"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.55,
+                    "Lower CI": 0.41,
+                    "Upper CI": 0.75,
+                    "Cases": 514,
+                    "Sample Size": 1475,
+                    "Design": "Cohort",
+                    "Timing": "Prospective",
+                    "Comparison Type": "Highest vs Lowest quartile"
+                }
+            },
+            "breast_cancer_zinc_survival": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.55,
+                            "Lower CI": 0.41,
+                            "Upper CI": 0.75,
+                            "Cases": 514,
+                            "Sample Size": 1475,
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "Highest vs Lowest quartile"
+                        },
+                        "timestamp": "2026-03-22 13:18:26"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.55,
+                            "Lower CI": 0.41,
+                            "Upper CI": 0.75,
+                            "Cases": 514,
+                            "Sample Size": 1475,
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "Highest vs Lowest quartile"
+                        },
+                        "timestamp": "2026-03-22 13:18:35"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.55,
+                            "Lower CI": 0.41,
+                            "Upper CI": 0.75,
+                            "Cases": 514,
+                            "Sample Size": 1475,
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "Highest vs Lowest quartile"
+                        },
+                        "timestamp": "2026-03-22 13:18:47"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.55,
+                    "Lower CI": 0.41,
+                    "Upper CI": 0.75,
+                    "Cases": 514,
+                    "Sample Size": 1475,
+                    "Design": "Cohort",
+                    "Timing": "Prospective",
+                    "Comparison Type": "Highest vs Lowest quartile"
+                }
+            }
+        }
+    },
+    "37686766": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_phosphorus_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 2.3,
+                            "Lower CI": 0.94,
+                            "Upper CI": 5.61,
+                            "Cases": 74,
+                            "Sample Size": 296,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "High vs Low"
+                        },
+                        "timestamp": "2026-04-08 14:34:02"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 2.3,
+                            "Lower CI": 0.94,
+                            "Upper CI": 5.61,
+                            "Cases": 74,
+                            "Sample Size": 370,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "High vs Low"
+                        },
+                        "timestamp": "2026-04-08 14:34:32"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 2.3,
+                    "Lower CI": 0.94,
+                    "Upper CI": 5.61,
+                    "Cases": 74,
+                    "Sample Size": 370,
+                    "Design": "Case-Control",
+                    "Timing": "Retrospective",
+                    "Comparison Type": "High vs Low"
+                }
+            }
+        }
+    },
+    "37909916": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "uterine_cancer_vitamin_a_incidence": 2
+        },
+        "contexts": {}
+    },
+    "37922693": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_isoleucine_incidence": 1
+        },
+        "contexts": {}
+    },
+    "38017130": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_multivitamin_incidence": 1
+        },
+        "contexts": {}
+    },
+    "38070485": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_green_tea_incidence": 1
+        },
+        "contexts": {}
+    },
+    "38436219": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_lycopene_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.76,
+                            "Lower CI": 0.62,
+                            "Upper CI": 0.93,
+                            "Cases": 7608,
+                            "Sample Size": 20188,
+                            "Design": "Case-Control",
+                            "Timing": "Prospective",
+                            "Comparison Type": "Highest vs Lowest"
+                        },
+                        "timestamp": "2026-03-12 14:44:34"
+                    }
+                ],
+                "consensus_data": null
+            },
+            "breast_cancer_vitamin_a_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.76,
+                            "Lower CI": 0.62,
+                            "Upper CI": 0.93,
+                            "Cases": 7608,
+                            "Sample Size": 20188,
+                            "Design": "Case-Control",
+                            "Timing": "Prospective",
+                            "Comparison Type": "Highest vs Lowest"
+                        },
+                        "timestamp": "2026-03-12 14:44:34"
+                    }
+                ],
+                "consensus_data": null
+            }
+        }
+    },
+    "38613033": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_zinc_survival": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 2.07,
+                            "Lower CI": 1.17,
+                            "Upper CI": 3.63,
+                            "Cases": 115,
+                            "Sample Size": 583,
+                            "Design": "Cohort",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "Highest vs Lowest"
+                        },
+                        "timestamp": "2026-03-22 13:13:51"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 2.07,
+                            "Lower CI": 1.17,
+                            "Upper CI": 3.63,
+                            "Cases": 115,
+                            "Sample Size": 583,
+                            "Design": "Cohort",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "Highest vs Lowest"
+                        },
+                        "timestamp": "2026-03-22 13:15:45"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 2.07,
+                    "Lower CI": 1.17,
+                    "Upper CI": 3.63,
+                    "Cases": 115,
+                    "Sample Size": 583,
+                    "Design": "Cohort",
+                    "Timing": "Retrospective",
+                    "Comparison Type": "Highest vs Lowest"
+                }
+            }
+        }
+    },
+    "38652345": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_bcaas_incidence": 2
+        },
+        "contexts": {}
+    },
+    "39218868": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_vitamin_b12_incidence": 2
+        },
+        "contexts": {}
+    },
+    "39361532": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_vitamin_b12_incidence": 2
+        },
+        "contexts": {}
+    },
+    "39796571": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {}
+    },
+    "40121496": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_omega-6_fatty_acids_incidence": 2
+        },
+        "contexts": {}
+    },
+    "40643840": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_green_tea_incidence": 1
+        },
+        "contexts": {}
+    },
+    "40751295": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_cannabidiol_incidence": 2
+        },
+        "contexts": {}
+    },
+    "40761398": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_ginkgo_incidence": 2
+        },
+        "contexts": {}
+    },
+    "41033584": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_multivitamin_incidence": 1
+        },
+        "contexts": {}
+    },
+    "41105334": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_carnitine_survival": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.72,
+                            "Lower CI": 0.64,
+                            "Upper CI": 0.83,
+                            "Cases": null,
+                            "Sample Size": null,
+                            "Design": "Mendelian randomization (two-sample)",
+                            "Timing": "Prospective",
+                            "Comparison Type": "per genetically determined increase"
+                        },
+                        "timestamp": "2026-03-23 12:51:33"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.72,
+                            "Lower CI": 0.64,
+                            "Upper CI": 0.83,
+                            "Cases": null,
+                            "Sample Size": null,
+                            "Design": "Mendelian randomization (two-sample)",
+                            "Timing": "Prospective",
+                            "Comparison Type": "per genetically determined increase"
+                        },
+                        "timestamp": "2026-03-23 12:51:34"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.72,
+                    "Lower CI": 0.64,
+                    "Upper CI": 0.83,
+                    "Cases": null,
+                    "Sample Size": null,
+                    "Design": "Mendelian randomization (two-sample)",
+                    "Timing": "Prospective",
+                    "Comparison Type": "per genetically determined increase"
+                }
+            },
+            "breast_cancer_carnitine_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.72,
+                            "Lower CI": 0.64,
+                            "Upper CI": 0.83,
+                            "Cases": null,
+                            "Sample Size": null,
+                            "Design": "Mendelian randomization (two-sample)",
+                            "Timing": "Prospective",
+                            "Comparison Type": "per genetically determined increase"
+                        },
+                        "timestamp": "2026-03-23 13:43:21"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.72,
+                            "Lower CI": 0.64,
+                            "Upper CI": 0.83,
+                            "Cases": null,
+                            "Sample Size": null,
+                            "Design": "Mendelian randomization (two-sample)",
+                            "Timing": "Prospective",
+                            "Comparison Type": "per genetically determined increase"
+                        },
+                        "timestamp": "2026-03-23 13:43:25"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.72,
+                    "Lower CI": 0.64,
+                    "Upper CI": 0.83,
+                    "Cases": null,
+                    "Sample Size": null,
+                    "Design": "Mendelian randomization (two-sample)",
+                    "Timing": "Prospective",
+                    "Comparison Type": "per genetically determined increase"
+                }
+            }
+        }
+    },
+    "41189935": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_isoleucine_incidence": 2,
+            "breast_cancer_bcaas_incidence": 2
+        },
+        "contexts": {}
+    },
+    "41482078": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_dehydroepiandrosterone_incidence": 2
+        },
+        "contexts": {}
+    },
+    "41748939": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_vitamin_b12_incidence": 2
+        },
+        "contexts": {}
+    },
+    "41830449": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_lutein_incidence": 2
+        },
+        "contexts": {}
+    },
+    "8681441": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_vitamin_e_incidence": 2
+        },
+        "contexts": {}
+    },
+    "9498489": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_vitamin_e_incidence": 2
+        },
+        "contexts": {}
+    },
+    "9508101": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {
+            "breast_cancer_fish_oil_incidence": 1
+        },
+        "contexts": {
+            "breast_cancer_omega-6_fatty_acids_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 3.125,
+                            "Lower CI": 1.22,
+                            "Upper CI": 7.69,
+                            "Cases": 317,
+                            "Sample Size": 684,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "Highest vs Lowest"
+                        },
+                        "timestamp": "2026-04-06 17:27:30"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 3.125,
+                    "Lower CI": 1.22,
+                    "Upper CI": 7.69,
+                    "Cases": 317,
+                    "Sample Size": 684,
+                    "Design": "Case-Control",
+                    "Timing": "Retrospective",
+                    "Comparison Type": "Highest vs Lowest"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Grossarth-Maticek R et al. (2001) [PMID: 11347286]",
+            "PMID": "11347286",
+            "Effect Size": 1.4,
+            "Lower CI": 1.2,
+            "Upper CI": 1.6,
+            "Population": "General",
+            "Reference": "Use of Iscador, an extract of European mistletoe (Viscum album), in cancer treatment: prospective nonrandomized and randomized matched-pair studies nested within a cohort study.",
+            "Authors": "Grossarth-Maticek R, Kiene H, Baumgartner SM, Ziegler R",
+            "Journal": "Alternative therapies in health and medicine",
+            "Year": "2001",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/11347286/",
+            "Effect Type": "RR",
+            "SE": 0.10204081632653064,
+            "Sample Size": 10226,
+            "Cases": 1668,
+            "Design": "Cohort",
+            "Timing": "Prospective",
+            "Continent": "Europe",
+            "Stage": "Advanced",
+            "Quality %": 100.0,
+            "Quality Score": "Good",
+            "comparison_type": "Iscador vs Control",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes",
+                "q11": "Yes"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>1.4</td>\n      <td>1.2</td>\n      <td>1.6</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 1.4,
+        "ci_low": 1.2,
+        "ci_upp": 1.6,
+        "interpretation": "Statistically Significant (Increased Risk/Odds)"
+    },
+    "plot_url": "static/mistletoe/forest_breast_cancer_incidence_primary.png?t=4466",
+    "funnel_plot_url": "static/mistletoe/funnel_breast_cancer_incidence_primary.png?t=7106",
+    "baujat_plot_url": null,
+    "last_run": "2026-03-25 19:54:04"
+}

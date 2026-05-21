@@ -1,0 +1,35 @@
+GENETIC STUDY EXCLUSION — KEYWORD LIST
+=======================================
+
+TRIGGER KEYWORDS (title contains any of these → apply filter)
+--------------------------------------------------------------
+receptor
+variant
+polymorphism
+snp
+genotype
+allele
+gwas
+locus
+
+
+OVERRIDE KEYWORDS (title+abstract contains any of these → do NOT exclude)
+--------------------------------------------------------------------------
+intake
+dietary
+diet
+serum
+plasma
+supplement
+consumption
+level
+concentration
+food
+
+
+FILTER LOGIC
+------------
+Exclude article IF:
+  - Title contains >= 1 trigger keyword
+  AND
+  - Title + abstract contains 0 override keywords

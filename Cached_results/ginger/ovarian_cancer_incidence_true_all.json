@@ -1,0 +1,50 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Sim KS et al. (2014) [PMID: 24695515]",
+            "PMID": "24695515",
+            "Effect Size": 5.2,
+            "Lower CI": 5.2,
+            "Upper CI": 16.7,
+            "Population": "General",
+            "Reference": "Cytotoxic activity of Alpinia murdochii Ridl.: A mountain ginger species from Peninsular Malaysia.",
+            "Authors": "Sim KS, Ibrahim H, Malek SN, Syamsir DR, Awang K",
+            "Journal": "Pharmacognosy magazine",
+            "Year": "2014",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/24695515/",
+            "Effect Type": "IC50",
+            "SE": 2.933673469387755,
+            "Sample Size": "N/A",
+            "Cases": "N/A",
+            "Design": "In vitro",
+            "Timing": "N/A",
+            "Continent": "Asia",
+            "Stage": "N/A",
+            "Quality %": 50.0,
+            "Quality Score": "Fair",
+            "comparison_type": "N/A",
+            "JBI": {
+                "q1": "Unclear",
+                "q2": "Unclear",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Unclear",
+                "q6": "Unclear",
+                "q7": "Yes",
+                "q8": "Yes"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>5.2</td>\n      <td>5.2</td>\n      <td>16.7</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 5.2,
+        "ci_low": 5.2,
+        "ci_upp": 16.7,
+        "interpretation": "statistically significant (increased risk/odds)"
+    },
+    "plot_url": "static/ginger/forest_ovarian_cancer_incidence_primary.png?t=6698",
+    "funnel_plot_url": "static/ginger/funnel_ovarian_cancer_incidence_primary.png?t=2920",
+    "baujat_plot_url": null,
+    "last_run": "2026-05-18 15:20:07"
+}

@@ -1,0 +1,52 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Dehghani F et al. (2024) [PMID: 39334412]",
+            "PMID": "39334412",
+            "Effect Size": 0.7,
+            "Lower CI": 0.5,
+            "Upper CI": 0.97,
+            "Population": "General",
+            "Reference": "Association between empirically derived nutrient patterns and breast cancer: a case-control study in a Middle Eastern country.",
+            "Authors": "Dehghani F, Sasanfar B, Toorang F, Zendehdel K, Salehi-Abargouei A",
+            "Journal": "BMC nutrition",
+            "Year": "2024",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/39334412/",
+            "Effect Type": "OR",
+            "SE": 0.11989795918367346,
+            "Sample Size": 969,
+            "Cases": 453,
+            "Design": "Case-Control",
+            "Timing": "Retrospective",
+            "Continent": "Asia",
+            "Stage": "NA",
+            "Quality %": 90.0,
+            "Quality Score": "Good",
+            "comparison_type": "High vs Low",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Unclear",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>0.7</td>\n      <td>0.5</td>\n      <td>0.97</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.7,
+        "ci_low": 0.5,
+        "ci_upp": 0.97,
+        "interpretation": "Statistically Significant (Decreased Risk/Odds)"
+    },
+    "plot_url": "static/pantothenic_acid/forest_breast_cancer_incidence_primary.png?t=6037",
+    "funnel_plot_url": "static/pantothenic_acid/funnel_breast_cancer_incidence_primary.png?t=745",
+    "baujat_plot_url": null,
+    "last_run": "2026-03-25 21:04:42"
+}

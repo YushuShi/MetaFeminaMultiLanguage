@@ -1,0 +1,52 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Lee AH et al. (2013) [PMID: 24257554]",
+            "PMID": "24257554",
+            "Effect Size": 0.68,
+            "Lower CI": 0.52,
+            "Upper CI": 0.89,
+            "Population": "General",
+            "Reference": "Mushroom intake and risk of epithelial ovarian cancer in southern Chinese women.",
+            "Authors": "Lee AH, Pasalich M, Su D, Tang L, Tran VD, Binns CW",
+            "Journal": "International journal of gynecological cancer : official journal of the International Gynecological Cancer Society",
+            "Year": "2013",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/24257554/",
+            "Effect Type": "OR",
+            "SE": 0.09438775510204081,
+            "Sample Size": 1000,
+            "Cases": 500,
+            "Design": "Case-Control",
+            "Timing": "Retrospective",
+            "Continent": "Asia",
+            "Stage": "Not specified",
+            "Quality %": 90.0,
+            "Quality Score": "Good",
+            "comparison_type": "High vs Low",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Unclear",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>500</td>\n      <td>1000</td>\n      <td>0.709516</td>\n      <td>0.554608</td>\n      <td>0.902912</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.71,
+        "ci_low": 0.55,
+        "ci_upp": 0.9,
+        "interpretation": "statistically significant (decreased risk/odds)"
+    },
+    "plot_url": "static/mushrooms/forest_ovarian_cancer_incidence_primary.png?t=7140",
+    "funnel_plot_url": "static/mushrooms/funnel_ovarian_cancer_incidence_primary.png?t=7657",
+    "baujat_plot_url": null,
+    "last_run": "2026-05-19 16:19:41"
+}

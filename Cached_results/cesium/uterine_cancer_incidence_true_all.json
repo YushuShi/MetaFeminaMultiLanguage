@@ -1,0 +1,53 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Korsakov AV et al. (2022) [PMID: 36294923]",
+            "PMID": "36294923",
+            "Effect Size": 1.17,
+            "Lower CI": 1.08,
+            "Upper CI": 1.27,
+            "Population": "General",
+            "Reference": "Cervical and Endometrial Cancer Incidence in the Female Population from the Bryansk Region Living in Conditions of Chemical, Radioactive and Combined Environmental Contamination (2000-2020).",
+            "Authors": "Korsakov AV, Kryukova AE, Troshin VP, Milushkina OY, Lagerev DG",
+            "Journal": "Life (Basel, Switzerland)",
+            "Year": "2022",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/36294923/",
+            "Effect Type": "RR",
+            "SE": 0.048469387755102025,
+            "Sample Size": "Not specified",
+            "Cases": "Not specified",
+            "Design": "Cohort",
+            "Timing": "Retrospective",
+            "Continent": "Europe",
+            "Stage": "Endometrial",
+            "Quality %": 72.7,
+            "Quality Score": "Moderate",
+            "comparison_type": "Environmental Unfavorable vs Environmental Safe",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Unclear",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Unclear",
+                "q9": "Unclear",
+                "q10": "Yes",
+                "q11": "Yes"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>Not specified</td>\n      <td>Not specified</td>\n      <td>1.17</td>\n      <td>1.08</td>\n      <td>1.27</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 1.17,
+        "ci_low": 1.08,
+        "ci_upp": 1.27,
+        "interpretation": "statistically significant (increased risk/odds)"
+    },
+    "plot_url": "static/cesium/forest_uterine_cancer_incidence_primary.png?t=2083",
+    "funnel_plot_url": "static/cesium/funnel_uterine_cancer_incidence_primary.png?t=4054",
+    "baujat_plot_url": null,
+    "last_run": "2026-05-19 21:51:59"
+}

@@ -1,0 +1,41 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Yang C et al. (2025) [PMID: 39939905]",
+            "PMID": "39939905",
+            "Effect Size": 1.1,
+            "Lower CI": 1.01,
+            "Upper CI": 1.19,
+            "Population": "General",
+            "Reference": "The causal relationship between the gut microbiota and endometrial cancer: a mendelian randomization study.",
+            "Authors": "Yang C, Qin LH, Li L, Wei QY, Long L, Liao JY",
+            "Journal": "BMC cancer",
+            "Year": "2025",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/39939905/",
+            "Effect Type": "OR",
+            "SE": 0.04591836734693876,
+            "Sample Size": "N/A",
+            "Cases": "N/A",
+            "Design": "Unknown",
+            "Timing": "Unknown",
+            "Continent": "Asia",
+            "Stage": "Unspecified",
+            "Quality %": 0,
+            "Quality Score": "Fair",
+            "comparison_type": "-",
+            "JBI": "-"
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>1.085884</td>\n      <td>1.008689</td>\n      <td>1.161316</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 1.09,
+        "ci_low": 1.01,
+        "ci_upp": 1.16,
+        "interpretation": "statistically significant (increased risk/odds)"
+    },
+    "plot_url": "static/lactobacillus/forest_uterine_cancer_incidence_primary.png?t=2229",
+    "funnel_plot_url": "static/lactobacillus/funnel_uterine_cancer_incidence_primary.png?t=3881",
+    "baujat_plot_url": null,
+    "last_run": "2026-05-19 23:09:39"
+}

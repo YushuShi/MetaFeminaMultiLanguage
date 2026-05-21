@@ -1,0 +1,50 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Zhu G et al. (2022) [PMID: 36501056]",
+            "PMID": "36501056",
+            "Effect Size": 0.997,
+            "Lower CI": 0.996,
+            "Upper CI": 0.999,
+            "Population": "General",
+            "Reference": "Associations of Dietary Intakes with Gynecological Cancers: Findings from a Cross-Sectional Study.",
+            "Authors": "Zhu G, Li Z, Tang L, Shen M, Zhou Z, Wei Y, Zhao Y, Bai S, Song L",
+            "Journal": "Nutrients",
+            "Year": "2022",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/36501056/",
+            "Effect Type": "OR",
+            "SE": 0.0007653061224489803,
+            "Sample Size": 12437,
+            "Cases": "Not specified",
+            "Design": "Cross-Sectional",
+            "Timing": "Retrospective",
+            "Continent": "North America",
+            "Stage": "Not specified",
+            "Quality %": 87.5,
+            "Quality Score": "Good",
+            "comparison_type": "Continuous",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Unclear",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>Not specified</td>\n      <td>12437</td>\n      <td>0.997389</td>\n      <td>0.996518</td>\n      <td>0.99913</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 1.0,
+        "ci_low": 1.0,
+        "ci_upp": 1.0,
+        "interpretation": "statistically significant (decreased risk/odds)"
+    },
+    "plot_url": "static/phosphorus/forest_uterine_cancer_incidence_primary.png?t=5875",
+    "funnel_plot_url": "static/phosphorus/funnel_uterine_cancer_incidence_primary.png?t=361",
+    "baujat_plot_url": null,
+    "last_run": "2026-05-19 23:44:11"
+}

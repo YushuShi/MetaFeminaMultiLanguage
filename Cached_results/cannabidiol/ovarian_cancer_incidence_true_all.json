@@ -1,0 +1,53 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Reece AS et al. (2022) [PMID: 35354495]",
+            "PMID": "35354495",
+            "Effect Size": 1.397,
+            "Lower CI": 1.392,
+            "Upper CI": 1.402,
+            "Population": "General",
+            "Reference": "Geotemporospatial and causal inferential epidemiological overview and survey of USA cannabis, cannabidiol and cannabinoid genotoxicity expressed in cancer incidence 2003-2017: part 2 - categorical bivariate analysis and attributable fractions.",
+            "Authors": "Reece AS, Hulse GK",
+            "Journal": "Archives of public health = Archives belges de sante publique",
+            "Year": "2022",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/35354495/",
+            "Effect Type": "RR",
+            "SE": 0.0025510204081632677,
+            "Sample Size": 124896418350,
+            "Cases": 51623922,
+            "Design": "Cohort",
+            "Timing": "Retrospective",
+            "Continent": "North America",
+            "Stage": "NA",
+            "Quality %": 100.0,
+            "Quality Score": "Good",
+            "comparison_type": "Highest vs Lowest",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes",
+                "q11": "Yes"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>51623922</td>\n      <td>124896418350</td>\n      <td>1.397</td>\n      <td>1.392</td>\n      <td>1.402</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 1.4,
+        "ci_low": 1.39,
+        "ci_upp": 1.4,
+        "interpretation": "statistically significant (increased risk/odds)"
+    },
+    "plot_url": "static/cannabidiol/forest_ovarian_cancer_incidence_primary.png?t=5692",
+    "funnel_plot_url": "static/cannabidiol/funnel_ovarian_cancer_incidence_primary.png?t=2317",
+    "baujat_plot_url": null,
+    "last_run": "2026-05-19 12:23:14"
+}

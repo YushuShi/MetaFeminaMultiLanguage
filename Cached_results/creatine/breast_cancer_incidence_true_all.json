@@ -1,0 +1,52 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Zeleznik OA et al. (2021) [PMID: 34006878]",
+            "PMID": "34006878",
+            "Effect Size": 1.11,
+            "Lower CI": 1.01,
+            "Upper CI": 1.22,
+            "Population": "General",
+            "Reference": "Circulating amino acids and amino acid-related metabolites and risk of breast cancer among predominantly premenopausal women.",
+            "Authors": "Zeleznik OA, Balasubramanian R, Zhao Y, Frueh L, Jeanfavre S, Avila-Pacheco J, Clish CB, Tworoger SS, Eliassen AH",
+            "Journal": "NPJ breast cancer",
+            "Year": "2021",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/34006878/",
+            "Effect Type": "OR",
+            "SE": 0.05357142857142856,
+            "Sample Size": 207,
+            "Cases": 1057,
+            "Design": "Case-Control",
+            "Timing": "Retrospective",
+            "Continent": "North America",
+            "Stage": "NA",
+            "Quality %": 90.0,
+            "Quality Score": "Good",
+            "comparison_type": "Continuous",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Unclear",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>1.11</td>\n      <td>1.01</td>\n      <td>1.22</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 1.11,
+        "ci_low": 1.01,
+        "ci_upp": 1.22,
+        "interpretation": "Statistically Significant (Increased Risk/Odds)"
+    },
+    "plot_url": "static/creatine/forest_breast_cancer_incidence_primary.png?t=7688",
+    "funnel_plot_url": "static/creatine/funnel_breast_cancer_incidence_primary.png?t=2889",
+    "baujat_plot_url": null,
+    "last_run": "2026-03-25 03:59:39"
+}
