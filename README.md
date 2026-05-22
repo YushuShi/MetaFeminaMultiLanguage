@@ -2,7 +2,7 @@
 
 **Meta-Analysis Tool for Women's Cancers & Nutrition**
 
-MetaFemina pools nutritional exposure meta-analyses across breast, ovarian, and uterine cancer. Cached results and generated plots keep their disease-specific filenames, so each selected disease scope resolves to the matching cached outcome.
+MetaFemina conducts nutritional exposure meta-analyses across breast, ovarian, and uterine cancer. Cached results and generated plots keep their disease-specific filenames, so each selected disease scope resolves to the matching cached outcome.
 
 ## Key Features
 
