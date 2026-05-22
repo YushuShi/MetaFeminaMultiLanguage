@@ -1,0 +1,69 @@
+2026-05-21 15:53:41 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Vitamin A, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o-mini
+2026-05-21 15:53:41 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-05-21 15:53:41 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-05-21 15:53:41 [MetaFemina] Analyze complete in 0.0s: studies=32, error=None
+2026-05-22 10:00:38 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Vitamin A, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o-mini
+2026-05-22 10:00:38 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\ovarian_cancer_incidence_true_all.json
+2026-05-22 10:00:38 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\ovarian_cancer_incidence_true_all.json
+2026-05-22 10:00:38 [MetaFemina] Analyze complete in 0.0s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-05-22 10:00:40 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Vitamin A, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o-mini
+2026-05-22 10:00:40 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-05-22 10:00:40 [MetaFemina] Running new analysis for Ovarian cancer / vitamin a (from 'Vitamin A') using model: openai.gpt-4o-mini
+2026-05-22 10:00:40 [MetaFemina] Analyzing: Ovarian cancer vs vitamin a (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+2026-05-22 10:00:40 [MetaFemina] Stage 1/4: Searching PubMed...
+2026-05-22 10:00:43 [MetaFemina] Stage 2/4: Fetching details for 140 PubMed records...
+2026-05-22 10:00:44 [MetaFemina] Stage 3/4: Extracting study data from 140 records with LLM assistance...
+2026-05-22 10:00:44 [MetaFemina] Falling back to Regex extraction...
+2026-05-22 10:00:44 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\ovarian_cancer_incidence_true_all.json
+2026-05-22 10:00:44 [MetaFemina] Analyze complete in 3.8s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-05-22 10:23:12 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Vitamin A, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o-mini
+2026-05-22 10:23:12 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\ovarian_cancer_incidence_true_all.json
+2026-05-22 10:23:12 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\ovarian_cancer_incidence_true_all.json
+2026-05-22 10:23:12 [MetaFemina] Analyze complete in 0.0s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-05-22 10:23:15 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Vitamin A, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o-mini
+2026-05-22 10:23:15 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-05-22 10:23:15 [MetaFemina] Running new analysis for Ovarian cancer / vitamin a (from 'Vitamin A') using model: openai.gpt-4o-mini
+2026-05-22 10:23:15 [MetaFemina] Analyzing: Ovarian cancer vs vitamin a (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+2026-05-22 10:23:15 [MetaFemina] Stage 1/4: Searching PubMed...
+2026-05-22 10:23:17 [MetaFemina] Stage 2/4: Fetching details for 140 PubMed records...
+2026-05-22 10:23:18 [MetaFemina] Stage 3/4: Extracting study data from 140 records with LLM assistance...
+2026-05-22 10:23:18 [MetaFemina] Falling back to Regex extraction...
+2026-05-22 10:23:18 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\ovarian_cancer_incidence_true_all.json
+2026-05-22 10:23:18 [MetaFemina] Analyze complete in 3.0s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-05-22 10:23:24 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Vitamin A, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o-mini
+2026-05-22 10:23:24 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-05-22 10:23:24 [MetaFemina] Running new analysis for Ovarian cancer / vitamin a (from 'Vitamin A') using model: openai.gpt-4o-mini
+2026-05-22 10:23:24 [MetaFemina] Analyzing: Ovarian cancer vs vitamin a (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+2026-05-22 10:23:24 [MetaFemina] Stage 1/4: Searching PubMed...
+2026-05-22 10:23:26 [MetaFemina] Stage 2/4: Fetching details for 140 PubMed records...
+2026-05-22 10:23:27 [MetaFemina] Stage 3/4: Extracting study data from 140 records with LLM assistance...
+2026-05-22 10:23:27 [MetaFemina] Falling back to Regex extraction...
+2026-05-22 10:23:27 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\ovarian_cancer_incidence_true_all.json
+2026-05-22 10:23:27 [MetaFemina] Analyze complete in 3.0s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-05-22 10:24:28 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Vitamin A, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o-mini
+2026-05-22 10:24:28 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\ovarian_cancer_incidence_true_all.json
+2026-05-22 10:24:28 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\ovarian_cancer_incidence_true_all.json
+2026-05-22 10:24:28 [MetaFemina] Analyze complete in 0.0s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-05-22 10:24:32 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Vitamin A, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o-mini
+2026-05-22 10:24:32 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-05-22 10:24:32 [MetaFemina] Running new analysis for Ovarian cancer / vitamin a (from 'Vitamin A') using model: openai.gpt-4o-mini
+2026-05-22 10:38:35 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\ovarian_cancer_incidence_true_all.json
+2026-05-22 10:38:35 [MetaFemina] Analyze complete in 843.1s: studies=11, error=None
+2026-05-22 10:43:17 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o-mini
+2026-05-22 10:43:17 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-22 10:43:17 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-22 10:43:17 [MetaFemina] Analyze complete in 0.0s: studies=66, error=None
+2026-05-22 10:43:46 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o-mini
+2026-05-22 10:43:46 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-05-22 10:43:46 [MetaFemina] Running new analysis for Breast cancer / folic acid (from 'Folic acid') using model: openai.gpt-4o-mini
+2026-05-22 11:17:14 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Vitamin A, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o-mini
+2026-05-22 11:17:14 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-05-22 11:17:14 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-05-22 11:17:14 [MetaFemina] Analyze complete in 0.0s: studies=32, error=None
+2026-05-22 11:17:19 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o-mini
+2026-05-22 11:17:19 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-22 11:17:19 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-22 11:17:19 [MetaFemina] Analyze complete in 0.0s: studies=66, error=None
+2026-05-22 11:17:21 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o-mini
+2026-05-22 11:17:21 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-05-22 11:17:21 [MetaFemina] Running new analysis for Breast cancer / folic acid (from 'Folic acid') using model: openai.gpt-4o-mini

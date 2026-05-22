@@ -24,7 +24,7 @@ DATA_DIR = os.path.join(BASE_DIR, 'data')
 
 DISEASE_ALIASES = {
     "breast cancer": {
-        "query": '"Breast Cancer"',
+        "query": '(Breast AND Cancer)',
         "terms": ["breast", "mammary"],
         "patient_phrases": ["breast cancer survivors", "breast cancer patients", "cancer survivors", "cancer patients"],
         "pattern": r'breast\s*(?:and\s*)?(?:cancer|tumou?r|carcinoma)|mammary\s*(?:and\s*)?(?:cancer|tumou?r|carcinoma)',
@@ -1251,6 +1251,7 @@ def extract_data(articles, exclude_meta=False, exposure_keyword=None, disease_ke
         
         try:
             medline = article['MedlineCitation']
+            pmid = str(medline.get('PMID', ''))
             article_data = medline['Article']
             
             # Title Check
@@ -1926,6 +1927,7 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
     for article in articles:
         try:
             medline = article['MedlineCitation']
+            pmid = str(medline.get('PMID', ''))
             article_data = medline['Article']
             
             title = article_data.get('ArticleTitle', 'No Title')

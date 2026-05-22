@@ -11,6 +11,17 @@ from datetime import datetime
 print = partial(print, flush=True)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+LOG_FILE = os.path.join(BASE_DIR, 'metafemina_runtime.log')
+
+def log_event(message):
+    """Write progress to stdout and the project refresh log."""
+    line = f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} {message}"
+    print(line)
+    try:
+        with open(LOG_FILE, 'a', encoding='utf-8') as f:
+            f.write(line + "\n")
+    except Exception:
+        pass
 
 # Define absolute paths for templates and static files based on current directory
 try:
@@ -134,7 +145,7 @@ def analyze():
     force_refresh = data.get('force_refresh', False)
 
     started_at = time.time()
-    print(
+    log_event(
         f"[MetaFemina] Analyze request: disease={disease}, exposure={exposure}, "
         f"outcome={outcome}, exclude_meta={exclude_meta}, force_refresh={force_refresh}, model={model}"
     )
@@ -143,20 +154,20 @@ def analyze():
     if not force_refresh:
         for p_model in model_cache_priority(model):
             p_path = get_cache_path(disease, exposure, outcome, exclude_meta, use_downstream, p_model)
-            print(f"[MetaFemina] Checking cache candidate: {p_path}")
+            log_event(f"[MetaFemina] Checking cache candidate: {p_path}")
             if os.path.exists(p_path):
                 best_cache_path = p_path
                 break
     else:
-        print("[MetaFemina] Force refresh requested; bypassing cached result lookup.")
+        log_event("[MetaFemina] Force refresh requested; bypassing cached result lookup.")
 
     if best_cache_path:
-        print(f"[MetaFemina] Returning best available cached results from {best_cache_path}")
+        log_event(f"[MetaFemina] Returning best available cached results from {best_cache_path}")
         result = load_json(best_cache_path, {})
     else:
         # Resolve canonical name for analysis engine consumption
         canonical_exposure = meta_analysis.get_canonical_name(exposure)
-        print(f"[MetaFemina] Running new analysis for {disease} / {canonical_exposure} (from '{exposure}') using model: {model}")
+        log_event(f"[MetaFemina] Running new analysis for {disease} / {canonical_exposure} (from '{exposure}') using model: {model}")
         result = meta_analysis.get_analysis_data(disease, canonical_exposure, outcome=outcome, exclude_meta=exclude_meta, use_downstream=use_downstream, model=model)
         
         # Cache successful analyses OR empty results
@@ -166,9 +177,9 @@ def analyze():
             # Save using the model that actually ran
             target_cache_path = get_cache_path(disease, exposure, outcome, exclude_meta, use_downstream, model)
             save_json(target_cache_path, result)
-            print(f"[MetaFemina] Saved refreshed result cache to {target_cache_path}")
+            log_event(f"[MetaFemina] Saved refreshed result cache to {target_cache_path}")
         else:
-            print(f"[MetaFemina] Analysis returned an error; not caching: {result.get('error')}")
+            log_event(f"[MetaFemina] Analysis returned an error; not caching: {result.get('error')}")
     
     # Inject verification counts and consensus data
     verifications = load_json(VERIFICATIONS_FILE, {})
@@ -235,7 +246,7 @@ def analyze():
             result['summary_html'] = None
             result['error'] = "No relevant evidence was identified in the reviewed sources after verification filtering."
         elif num_after < num_before or consensus_applied or has_flagged:
-            print(f"[MetaFemina] Re-analyzing {exposure} due to verification filtering/consensus/flags...")
+            log_event(f"[MetaFemina] Re-analyzing {exposure} due to verification filtering/consensus/flags...")
             # Only include valid studies in the recalculated meta-analysis
             valid_studies = [s for s in result['studies'] if s.get('exclusions', 0) < 2]
             df_new = pd.DataFrame(valid_studies)
@@ -256,7 +267,7 @@ def analyze():
                 result['summary_html'] = None
                 result['error'] = "No relevant evidence was identified in the reviewed sources after verification filtering."
             
-    print(
+    log_event(
         f"[MetaFemina] Analyze complete in {time.time() - started_at:.1f}s: "
         f"studies={len(result.get('studies', []))}, error={result.get('error')}"
     )
