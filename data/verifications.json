@@ -453,7 +453,7 @@
                             "Sample Size": 3209,
                             "Design": "Cohort",
                             "Timing": "Prospective",
-                            "Comparison Type": "High intake vs Low intake (in women over 70) [inverted ⇒ high vs low]"
+                            "Comparison Type": "High intake vs Low intake (in women over 70) [inverted \u21d2 high vs low]"
                         },
                         "timestamp": "2026-04-28 16:24:46"
                     },
@@ -466,7 +466,7 @@
                             "Sample Size": 3209,
                             "Design": "Cohort",
                             "Timing": "Prospective",
-                            "Comparison Type": "High intake vs Low intake (in women over 70) [inverted ⇒ high vs low]"
+                            "Comparison Type": "High intake vs Low intake (in women over 70) [inverted \u21d2 high vs low]"
                         },
                         "timestamp": "2026-04-28 16:25:33"
                     }
@@ -479,7 +479,7 @@
                     "Sample Size": 3209,
                     "Design": "Cohort",
                     "Timing": "Prospective",
-                    "Comparison Type": "High intake vs Low intake (in women over 70) [inverted ⇒ high vs low]"
+                    "Comparison Type": "High intake vs Low intake (in women over 70) [inverted \u21d2 high vs low]"
                 }
             }
         }
@@ -1034,7 +1034,7 @@
                             "Sample Size": 40432,
                             "Design": "Cohort",
                             "Timing": "Prospective",
-                            "Comparison Type": "Above recommended intake vs Below recommended intake (Obese women, BMI ≥25 kg/m2)"
+                            "Comparison Type": "Above recommended intake vs Below recommended intake (Obese women, BMI \u226525 kg/m2)"
                         },
                         "timestamp": "2026-04-08 10:27:58"
                     }
@@ -1683,6 +1683,163 @@
                     "Sample Size": 684,
                     "Design": "Case-Control",
                     "Timing": "Retrospective",
+                    "Comparison Type": "Highest vs Lowest"
+                }
+            }
+        }
+    },
+    "15017123": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_folic_acid_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.452,
+                            "Lower CI": 0.699,
+                            "Upper CI": 0.293,
+                            "Cases": 1823,
+                            "Sample Size": 33552,
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "High vs Low"
+                        },
+                        "timestamp": "2026-05-22 17:30:13"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.452,
+                            "Lower CI": 0.293,
+                            "Upper CI": 0.699,
+                            "Cases": 1823,
+                            "Sample Size": 33552,
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "High vs Low"
+                        },
+                        "timestamp": "2026-05-22 17:31:51"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.452,
+                            "Lower CI": 0.293,
+                            "Upper CI": 0.699,
+                            "Cases": 1823,
+                            "Sample Size": 33552,
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "High vs Low"
+                        },
+                        "timestamp": "2026-05-22 17:52:34"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.452,
+                    "Lower CI": 0.293,
+                    "Upper CI": 0.699,
+                    "Cases": 1823,
+                    "Sample Size": 33552,
+                    "Design": "Cohort",
+                    "Timing": "Prospective",
+                    "Comparison Type": "High vs Low"
+                }
+            }
+        }
+    },
+    "12376515": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_folic_acid_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.699,
+                            "Lower CI": 0.495,
+                            "Upper CI": 0.98,
+                            "Cases": 1875,
+                            "Sample Size": 34393,
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "Low vs High"
+                        },
+                        "timestamp": "2026-05-22 18:19:33"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.699,
+                            "Lower CI": 0.495,
+                            "Upper CI": 0.98,
+                            "Cases": 1875,
+                            "Sample Size": 34393,
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "Low vs High"
+                        },
+                        "timestamp": "2026-05-22 18:20:35"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.699,
+                    "Lower CI": 0.495,
+                    "Upper CI": 0.98,
+                    "Cases": 1875,
+                    "Sample Size": 34393,
+                    "Design": "Cohort",
+                    "Timing": "Prospective",
+                    "Comparison Type": "Low vs High"
+                }
+            }
+        }
+    },
+    "11416780": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_folic_acid_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.826,
+                            "Lower CI": 0.621,
+                            "Upper CI": 1.099,
+                            "Cases": 1586,
+                            "Sample Size": 34387,
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "Highest vs Lowest"
+                        },
+                        "timestamp": "2026-05-22 18:19:34"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.826,
+                            "Lower CI": 0.621,
+                            "Upper CI": 1.099,
+                            "Cases": 1586,
+                            "Sample Size": 34387,
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "Highest vs Lowest"
+                        },
+                        "timestamp": "2026-05-22 18:20:36"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.826,
+                    "Lower CI": 0.621,
+                    "Upper CI": 1.099,
+                    "Cases": 1586,
+                    "Sample Size": 34387,
+                    "Design": "Cohort",
+                    "Timing": "Prospective",
                     "Comparison Type": "Highest vs Lowest"
                 }
             }

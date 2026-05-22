@@ -69,3 +69,38 @@
 2026-05-22 11:17:21 [MetaFemina] Running new analysis for Breast cancer / folic acid (from 'Folic acid') using model: openai.gpt-4o-mini
 2026-05-22 12:30:40 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
 2026-05-22 12:30:40 [MetaFemina] Analyze complete in 4399.0s: studies=49, error=None
+2026-05-22 17:28:12 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o-mini
+2026-05-22 17:28:12 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-22 17:28:12 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-22 17:28:12 [MetaFemina] Analyze complete in 0.0s: studies=49, error=None
+2026-05-22 17:30:21 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o-mini
+2026-05-22 17:30:21 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-22 17:30:21 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-22 17:30:21 [MetaFemina] Analyze complete in 0.0s: studies=49, error=None
+2026-05-22 17:31:00 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o-mini
+2026-05-22 17:31:00 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-22 17:31:00 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-22 17:31:00 [MetaFemina] Analyze complete in 0.0s: studies=49, error=None
+2026-05-22 17:31:24 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o-mini
+2026-05-22 17:31:24 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-22 17:31:24 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-22 17:31:24 [MetaFemina] Analyze complete in 0.0s: studies=49, error=None
+2026-05-22 17:31:57 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o-mini
+2026-05-22 17:31:57 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-22 17:31:57 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-22 17:31:57 [MetaFemina] Analyze complete in 0.0s: studies=49, error=None
+2026-05-22 17:52:49 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o-mini
+2026-05-22 17:52:49 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-22 17:52:49 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-22 17:52:49 [MetaFemina] Re-analyzing Folic acid due to verification filtering/consensus/flags...
+2026-05-22 17:52:50 [MetaFemina] Analyze complete in 1.1s: studies=49, error=None
+2026-05-22 18:19:39 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o-mini
+2026-05-22 18:19:39 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-22 18:19:39 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-22 18:19:39 [MetaFemina] Re-analyzing Folic acid due to verification filtering/consensus/flags...
+2026-05-22 18:19:40 [MetaFemina] Analyze complete in 1.0s: studies=49, error=None
+2026-05-22 18:20:42 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o-mini
+2026-05-22 18:20:42 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-22 18:20:42 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-22 18:20:42 [MetaFemina] Re-analyzing Folic acid due to verification filtering/consensus/flags...
+2026-05-22 18:20:43 [MetaFemina] Analyze complete in 1.0s: studies=49, error=None
