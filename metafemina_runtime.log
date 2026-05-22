@@ -67,3 +67,5 @@
 2026-05-22 11:17:21 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o-mini
 2026-05-22 11:17:21 [MetaFemina] Force refresh requested; bypassing cached result lookup.
 2026-05-22 11:17:21 [MetaFemina] Running new analysis for Breast cancer / folic acid (from 'Folic acid') using model: openai.gpt-4o-mini
+2026-05-22 12:30:40 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-22 12:30:40 [MetaFemina] Analyze complete in 4399.0s: studies=49, error=None
