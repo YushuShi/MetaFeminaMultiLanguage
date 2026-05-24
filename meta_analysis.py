@@ -431,6 +431,63 @@ def get_analysis_data(disease, exposure, outcome="Incidence", exclude_meta=False
     if df.empty:
         return {"error": "No relevant evidence was identified in the reviewed sources."}
 
+    # Initialize exclusions column to 0
+    df['exclusions'] = 0
+    
+    # Apply verification consensus and exclusions overlay if available
+    verifications_file = os.path.join(DATA_DIR, "verifications.json")
+    if os.path.exists(verifications_file):
+        try:
+            with open(verifications_file, 'r', encoding='utf-8') as f:
+                verifications = json.load(f)
+            
+            canonical_exp = get_canonical_name(exposure)
+            context_key = f"{disease}_{canonical_exp}_{outcome}".lower().replace(" ", "_")
+            
+            overlay_count = 0
+            for idx, row in df.iterrows():
+                pmid = str(row.get("PMID", ""))
+                if pmid in verifications:
+                    v_info = verifications[pmid]
+                    
+                    # Set exclusions
+                    context_excl = v_info.get("context_exclusions", {})
+                    exclusion_val = context_excl.get(context_key, 0)
+                    df.at[idx, 'exclusions'] = exclusion_val
+                    
+                    # Apply consensus data
+                    contexts = v_info.get("contexts", {})
+                    if context_key in contexts:
+                        consensus = contexts[context_key].get("consensus_data")
+                        if consensus:
+                            for key, val in consensus.items():
+                                if val is not None and val != "":
+                                    df_col = key
+                                    if key == "Comparison Type":
+                                        df_col = "comparison_type"
+                                    
+                                    if df_col in df.columns:
+                                        # Cast appropriately
+                                        if df_col in ["Effect Size", "Lower CI", "Upper CI", "Cases", "Sample Size"]:
+                                            try:
+                                                df.at[idx, df_col] = float(val) if df_col not in ["Cases", "Sample Size"] else int(val)
+                                            except (ValueError, TypeError):
+                                                df.at[idx, df_col] = val
+                                        else:
+                                            df.at[idx, df_col] = val
+                            overlay_count += 1
+            if overlay_count > 0:
+                print(f"  [Overlay] Applied verification consensus to {overlay_count} studies in get_analysis_data")
+        except Exception as e:
+            print(f"Error applying verification overlay to dataframe: {e}")
+            
+    # Filter out studies that have been excluded (exclusions >= 2)
+    df_len_before = len(df)
+    df = df[df['exclusions'] < 2].copy()
+    df_len_after = len(df)
+    if df_len_after < df_len_before:
+        print(f"  [Overlay] Filtered out {df_len_before - df_len_after} excluded studies (exclusions >= 2) from analysis.")
+
     df['SE'] = df.apply(calculate_se, axis=1)
     df_clean = df.dropna(subset=['Effect Size', 'SE'])
 
@@ -972,7 +1029,8 @@ Core: no more than 10 terms. Downstream: no more than 4 terms. If no downstream 
         elif client:
             response = client.chat.completions.create(
                 model="gpt-4.1",
-                messages=[{"role": "user", "content": prompt}]
+                messages=[{"role": "user", "content": prompt}],
+                timeout=30.0
             )
             synonyms = response.choices[0].message.content.strip()
             if hasattr(response, 'usage'):
@@ -1108,7 +1166,7 @@ def search_pubmed(disease, exposure, outcome="Incidence", exclude_meta=False, ma
     negative_constraints = (' NOT "SNP"[Title]'
                            ' NOT (polymorphism[Title] OR polymorphisms[Title]'
                            ' OR variant[Title] OR variants[Title]'
-                           ' OR mutation[Title] OR transferase[Title])')
+                           ' OR transferase[Title])')
     if exposure.lower() == "zinc":
         negative_constraints += ' NOT ("zinc finger" OR "tristetraprolin")'
     if exposure.lower() == "manganese":
@@ -2106,13 +2164,14 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
         except Exception as e:
             print(f"  [Priority] Direct fetch failed: {e}")
     
-    # Track labels to handle duplicates
-    study_counts = {}
+    import threading
+    import concurrent.futures
     
-    for i, article in enumerate(filtered_articles):
-        if (i + 1) % 10 == 0:
-            print(f"  [Progress] Processing article {i + 1} of {len(filtered_articles)}...")
-
+    data = []
+    data_lock = threading.Lock()
+    
+    def process_single_article(args):
+        i, article = args
         try:
             medline = article['MedlineCitation']
             article_data = medline['Article']
@@ -2148,45 +2207,32 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
             short_author = f"{authors.split(',')[0]} et al." if ',' in authors else authors
             study_label = f"{short_author} ({year}) [PMID: {pmid}]"
 
-
             # --- LLM EXTRACTION ---
-
             extracted = None
             used_llm = "None"
             oai_extracted = None
             gemini_extracted = None
-            
-            import concurrent.futures
 
-            def fetch_openai():
-                if client:
-                    try:
-                        raw_extracted = extract_info_llm(client, abstract, title, disease_keyword or "Cancer", exposure_keyword or "Exposure", outcome_keyword or "Incidence", model_override=model)
-                        return flatten_json(raw_extracted)
-                    except Exception as e:
-                        print(f"  [LLM] OpenAI Error for {study_label}: {e}")
-                return None
+            # Sequential calls inside the article worker thread to avoid nested deadlocks
+            if client:
+                try:
+                    raw_extracted = extract_info_llm(client, abstract, title, disease_keyword or "Cancer", exposure_keyword or "Exposure", outcome_keyword or "Incidence", model_override=model)
+                    oai_extracted = flatten_json(raw_extracted)
+                except Exception as e:
+                    print(f"  [LLM] OpenAI Error for {study_label}: {e}")
 
-            def fetch_gemini():
-                if os.getenv("OPENAI_BASE_URL") and client:
-                    try:
-                        raw_gemini = extract_info_llm(client, abstract, title, disease_keyword or "Cancer", exposure_keyword or "Exposure", outcome_keyword or "Incidence", model_override="google.gemini-2.5-flash")
-                        return flatten_json(raw_gemini)
-                    except Exception as e:
-                        print(f"  [LLM] Gemini (Cornell) Error for {study_label}: {e}")
-                elif gemini_client:
-                    try:
-                        raw_gemini = extract_info_gemini(gemini_client, gemini_model_name, abstract, title, disease_keyword or "Cancer", exposure_keyword or "Exposure", outcome_keyword or "Incidence")
-                        return flatten_json(raw_gemini)
-                    except Exception as e:
-                        print(f"  [LLM] Gemini Error for {study_label}: {e}")
-                return None
-
-            with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
-                future_oai = executor.submit(fetch_openai)
-                future_gemini = executor.submit(fetch_gemini)
-                oai_extracted = future_oai.result()
-                gemini_extracted = future_gemini.result()
+            if os.getenv("OPENAI_BASE_URL") and client:
+                try:
+                    raw_gemini = extract_info_llm(client, abstract, title, disease_keyword or "Cancer", exposure_keyword or "Exposure", outcome_keyword or "Incidence", model_override="google.gemini-2.5-flash")
+                    gemini_extracted = flatten_json(raw_gemini)
+                except Exception as e:
+                    print(f"  [LLM] Gemini (Cornell) Error for {study_label}: {e}")
+            elif gemini_client:
+                try:
+                    raw_gemini = extract_info_gemini(gemini_client, gemini_model_name, abstract, title, disease_keyword or "Cancer", exposure_keyword or "Exposure", outcome_keyword or "Incidence")
+                    gemini_extracted = flatten_json(raw_gemini)
+                except Exception as e:
+                    print(f"  [LLM] Gemini Error for {study_label}: {e}")
 
             if oai_extracted and oai_extracted.get('effect_size'):
                 extracted = oai_extracted
@@ -2199,6 +2245,7 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
 
             if not extracted and not client and not gemini_client:
                  print("Error: No LLM Client initialized.")
+                 return
                  
             # Consensus check for inversion
             if extracted and extracted.get('effect_size'):
@@ -2211,11 +2258,8 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
                     else:
                         extracted['needs_inversion'] = oai_inv
                 elif extracted.get('needs_inversion'):
-                    # If only one LLM succeeded, we trust it rather than cancelling.
-                    # This ensures we don't lose directionality information when one API is down.
                     print(f"  [Direction] Only {used_llm} succeeded. Proceeding with flagged inversion (needs_inversion=True).")
                     extracted['needs_inversion'] = True
-
 
             if extracted and extracted.get('effect_size'):
                  # Quality Score Calculation
@@ -2223,7 +2267,6 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
                  jbi_type = extracted.get('jbi_checklist_type', 'cross_sectional')
                  yes_count = sum(1 for v in jbi.values() if str(v).lower() == 'yes')
                  na_count = sum(1 for v in jbi.values() if str(v).lower() == 'na')
-                 # Dynamic total based on checklist type
                  checklist_totals = {'cohort': 11, 'case_control': 10, 'cross_sectional': 8}
                  base_total = checklist_totals.get(jbi_type, 8)
                  total_potential = base_total - na_count
@@ -2236,10 +2279,8 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
                      elif quality_percentage >= 51: quality_score = "Moderate"
                      else: quality_score = "Fair"
 
-                 # Merge LLM data with metadata
                  comparison_type = extracted.get('comparison_type') or "-"
                  
-                 # Regex fallback within LLM loop if both LLMs failed to find comparison_type but found effect_size
                  if comparison_type == "-" or not comparison_type:
                      comp_patterns = [
                          r'(Q\d+\s+vs\.?\s+Q\d+)',
@@ -2263,10 +2304,30 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
                  relevance_verdict = relevance_info.get('verdict', 'Relevant') if isinstance(relevance_info, dict) else 'Relevant'
                  relevance_reason = relevance_info.get('reason', '') if isinstance(relevance_info, dict) else ''
 
-                 # Skip studies the LLM deems not relevant
-                 if relevance_verdict == 'Not Relevant':
+                 # Skip studies the LLM deems not relevant, unless we have a verification consensus on disk
+                 has_consensus = False
+                 verifications_file = os.path.join(DATA_DIR, "verifications.json")
+                 if os.path.exists(verifications_file):
+                     try:
+                         with open(verifications_file, 'r', encoding='utf-8') as f:
+                             verifications = json.load(f)
+                         canonical_exp = get_canonical_name(exposure_keyword)
+                         context_key = f"{disease_keyword}_{canonical_exp}_{outcome_keyword}".lower().replace(" ", "_")
+                         if str(pmid) in verifications:
+                             v_info = verifications[str(pmid)]
+                             if context_key in v_info.get("contexts", {}):
+                                 consensus = v_info["contexts"][context_key].get("consensus_data")
+                                 if consensus:
+                                     has_consensus = True
+                     except Exception:
+                         pass
+
+                 if relevance_verdict == 'Not Relevant' and not has_consensus:
                      print(f"  [Relevance] Skipping '{study_label}': {relevance_reason}")
-                     continue
+                     return
+                 elif relevance_verdict == 'Not Relevant' and has_consensus:
+                     print(f"  [Relevance] Bypassing skip for '{study_label}' due to existing consensus in verifications.json")
+                     relevance_verdict = 'Relevant'
 
                  # --- Direction standardisation: always HIGH vs LOW ---
                  raw_es     = extracted.get('effect_size')
@@ -2280,11 +2341,10 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
                          new_lower = round(1.0 / raw_upper, 4)
                          new_upper = round(1.0 / raw_lower, 4)
                          raw_lower, raw_upper = new_lower, new_upper
-                         # Flip comparison label so UI is not misleading
                          comparison_type = comparison_type + " [inverted \u21d2 high vs low]"
                          print(f"  [Direction] Inverted ES for {study_label}: LLM flagged needs_inversion=True")
                      except (ZeroDivisionError, TypeError):
-                         pass  # Leave as-is if inversion fails
+                         pass
 
                  row = {
                      "Study": study_label,
@@ -2295,7 +2355,7 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
                      "Cases": extracted.get('cases'),
                      "Lower CI": raw_lower,
                      "Upper CI": raw_upper,
-                     "Population": "General", # Could extract this too
+                     "Population": "General",
                      "Authors": authors,
                      "Reference": title,
                      "Journal": article_data.get('Journal', {}).get('Title', 'Unknown'),
@@ -2313,15 +2373,16 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
                      "Relevance Reason": relevance_reason,
                  }
                  
-                 # Calculate SE for backend calculation consistency
                  row["SE"] = calculate_se(row)
-                 data.append(row)
+                 with data_lock:
+                     data.append(row)
                  print(f"  [{used_llm}] Extracted: {study_label} - ES: {row['Effect Size']} (Cases: {row['Cases']})")
-                 
-            
+
         except Exception as e:
             print(f"Error processing article {i}: {e}")
-            continue
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+        executor.map(process_single_article, enumerate(filtered_articles))
 
     return pd.DataFrame(data)
 
@@ -2344,12 +2405,15 @@ def extract_info_gemini(client, model_name, abstract, title, disease, exposure, 
         - If '{outcome}' is 'Progression-Free Survival', focus on time to recurrence or progression.
     - If the abstract DOES NOT MENTION the exposure '{exposure}' or a very direct synonym, return NULL for effect_size. DO NOT guess or use unrelated numbers like MRI AUCs, p-values, or other coefficients.
     - If there are multiple estimates (e.g., age-adjusted and multivariable adjusted), PRIORITIZE THE MULTIVARIABLE ADJUSTED estimate.
+    Synonyms and Matches:
     - If the abstract mentions an exposure like "Vitamin D supplementation" or "25(OH)D levels", and the user asked for "Vitamin D", consider these a MATCH.
+    - If the user asked for "folic acid" and the study mentions "folate" or "dietary folate" or "folate intake", consider these a MATCH.
+    - If the study examines the requested exposure as a modifier, interaction partner, or in combination with another factor (for example, looking at the interaction between alcohol and folate/folic acid), this is considered a MATCH and is Relevant.
 
     Return a JSON object with the following keys:
-    - effect_size: (float/number) The central estimate (HR, OR, RR).
+    - effect_size: (float/number) The central estimate (HR, OR, RR). If the study reports results stratified by the exposure (e.g. effect of alcohol under low folate vs high folate), extract the effect size that represents the higher risk or the key finding reported for the interaction.
     - effect_type: (string) "HR", "OR", or "RR".
-    - comparison_type: (string) Context of the comparison (e.g., "per SD increase", "Q1 vs Q4", "Q1 vs Q5", "Highest vs Lowest", "Continuous", "Yes vs No").
+    - comparison_type: (string) Context of the comparison (e.g., "per SD increase", "Q1 vs Q4", "Q1 vs Q5", "Highest vs Lowest", "Continuous", "Yes vs No", or the specific interaction/stratification context).
     - ci_lower: (float/number) Lower 95% Confidence Interval.
     - ci_upper: (float/number) Upper 95% Confidence Interval.
     - total_n: (string/int) Total number of participants in the study (Sample Size).
@@ -2409,10 +2473,10 @@ def extract_info_gemini(client, model_name, abstract, title, disease, exposure, 
 
     Also return a relevance_check object:
     - relevance_check.verdict: one of "Relevant", "Questionable", or "Not Relevant"
-        - "Relevant": study clearly measures the requested '{exposure}' → '{disease}' → '{outcome}' relationship in humans with an extractable effect size. CRITICAL: A study that finds NO association (null finding) between '{exposure}' and '{disease}' is STILL Relevant — null results are valid scientific data and must be included.
+        - "Relevant": study clearly measures the requested '{exposure}' (or recognized synonym/biomarker/modifier) -> '{disease}' -> '{outcome}' relationship. This includes studies where '{exposure}' is studied as a modifier/interaction partner with another factor (e.g. alcohol). CRITICAL: A study that finds NO association (null finding) between '{exposure}' and '{disease}' is STILL Relevant.
         - "Questionable": study seems related but has a scope mismatch (e.g. wrong population subgroup, indirect endpoint, surrogate marker only).
-        - "Not Relevant": the study's PRIMARY EXPOSURE is NOT '{exposure}' or a recognized direct synonym/biomarker of it. For example, a study of grip strength and uterine cancer would be 'Not Relevant' when asked for folic acid, even though it reports a uterine cancer HR — because grip strength is the exposure, not folic acid. Similarly, studies about sarcopenia, menarche age, antiviral drugs, or occupational exposures are 'Not Relevant' for a dietary nutrient exposure. IMPORTANT: Only judge the exposure, NOT the direction or magnitude of the association.
-    - relevance_check.reason: one sentence identifying the primary exposure and explaining why it does or does not match '{exposure}'.
+        - "Not Relevant": the study does not examine '{exposure}' or its synonyms at all, or only mentions it in passing without any analysis or data. Only judge the exposure, NOT the direction or magnitude of the association.
+    - relevance_check.reason: one sentence explaining why it matches or doesn't match.
 
     Also return:
     - needs_inversion: (boolean) Evaluating if the effect size must be mathematically inverted (1/x). 
@@ -2468,13 +2532,15 @@ def extract_info_llm(client, abstract, title, disease, exposure, outcome, model_
     Abstract: "{abstract}"
     Title: "{title}"
     
+    Synonyms and Matches:
     - If the abstract mentions an exposure like "Vitamin D supplementation" or "25(OH)D levels", and the user asked for "Vitamin D", consider these a MATCH.
-
+    - If the user asked for "folic acid" and the study mentions "folate" or "dietary folate" or "folate intake", consider these a MATCH.
+    - If the study examines the requested exposure as a modifier, interaction partner, or in combination with another factor (for example, looking at the interaction between alcohol and folate/folic acid), this is considered a MATCH and is Relevant.
 
     Return a JSON object with the following keys:
-    - effect_size: (float/number) The central estimate (HR, OR, RR).
+    - effect_size: (float/number) The central estimate (HR, OR, RR). If the study reports results stratified by the exposure (e.g. effect of alcohol under low folate vs high folate), extract the effect size that represents the higher risk or the key finding reported for the interaction.
     - effect_type: (string) "HR", "OR", or "RR".
-    - comparison_type: (string) Context of the comparison (e.g., "per SD increase", "Q1 vs Q4", "Q1 vs Q5", "Highest vs Lowest", "Continuous", "Yes vs No").
+    - comparison_type: (string) Context of the comparison (e.g., "per SD increase", "Q1 vs Q4", "Q1 vs Q5", "Highest vs Lowest", "Continuous", "Yes vs No", or the specific interaction/stratification context).
     - ci_lower: (float/number) Lower 95% Confidence Interval.
     - ci_upper: (float/number) Upper 95% Confidence Interval.
     - total_n: (string/int) Total number of participants in the study (Sample Size).
@@ -2534,10 +2600,10 @@ def extract_info_llm(client, abstract, title, disease, exposure, outcome, model_
 
     Also return a relevance_check object:
     - relevance_check.verdict: one of "Relevant", "Questionable", or "Not Relevant"
-        - "Relevant": study clearly measures the requested '{exposure}' → '{disease}' → '{outcome}' relationship in humans with an extractable effect size. CRITICAL: A study that finds NO association (null finding) between '{exposure}' and '{disease}' is STILL Relevant — null results are valid scientific data and must be included.
+        - "Relevant": study clearly measures the requested '{exposure}' (or recognized synonym/biomarker/modifier) -> '{disease}' -> '{outcome}' relationship. This includes studies where '{exposure}' is studied as a modifier/interaction partner with another factor (e.g. alcohol). CRITICAL: A study that finds NO association (null finding) between '{exposure}' and '{disease}' is STILL Relevant.
         - "Questionable": study seems related but has a scope mismatch (e.g. wrong population subgroup, indirect endpoint, surrogate marker only).
-        - "Not Relevant": the study's PRIMARY EXPOSURE is NOT '{exposure}' or a recognized direct synonym/biomarker of it. For example, a study of grip strength and uterine cancer would be 'Not Relevant' when asked for folic acid, even though it reports a uterine cancer HR — because grip strength is the exposure, not folic acid. Similarly, studies about sarcopenia, menarche age, antiviral drugs, or occupational exposures are 'Not Relevant' for a dietary nutrient exposure. IMPORTANT: Only judge the exposure, NOT the direction or magnitude of the association.
-    - relevance_check.reason: one sentence identifying the primary exposure and explaining why it does or does not match '{exposure}'.
+        - "Not Relevant": the study does not examine '{exposure}' or its synonyms at all, or only mentions it in passing without any analysis or data. Only judge the exposure, NOT the direction or magnitude of the association.
+    - relevance_check.reason: one sentence explaining why it matches or doesn't match.
 
     Also return:
     - needs_inversion: (boolean) Evaluating if the effect size must be mathematically inverted (1/x). 
@@ -2549,7 +2615,7 @@ def extract_info_llm(client, abstract, title, disease, exposure, outcome, model_
     
     import time
     max_retries = 5
-    model_name = model_override or os.getenv("OPENAI_MODEL_NAME", "gpt-4o-mini")
+    model_name = model_override or os.getenv("OPENAI_MODEL_NAME", "openai.gpt-4o")
     
     for attempt in range(max_retries):
         try:
@@ -2560,7 +2626,8 @@ def extract_info_llm(client, abstract, title, disease, exposure, outcome, model_
                     {"role": "user", "content": prompt}
                 ],
                 temperature=0,
-                response_format={"type": "json_object"}
+                response_format={"type": "json_object"},
+                timeout=30.0
             )
             if hasattr(response, 'usage'):
                 track_usage(model_name, response.usage.prompt_tokens, response.usage.completion_tokens)

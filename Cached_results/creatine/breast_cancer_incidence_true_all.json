@@ -4,7 +4,7 @@
         {
             "Study": "Zeleznik OA et al. (2021) [PMID: 34006878]",
             "PMID": "34006878",
-            "Effect Size": 1.11,
+            "Effect Size": 1.13,
             "Lower CI": 1.01,
             "Upper CI": 1.22,
             "Population": "General",
@@ -38,15 +38,15 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>1.11</td>\n      <td>1.01</td>\n      <td>1.22</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>1057</td>\n      <td>207</td>\n      <td>1.11122</td>\n      <td>1.008689</td>\n      <td>1.186078</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 1.11,
         "ci_low": 1.01,
-        "ci_upp": 1.22,
-        "interpretation": "Statistically Significant (Increased Risk/Odds)"
+        "ci_upp": 1.19,
+        "interpretation": "statistically significant (increased risk/odds)"
     },
-    "plot_url": "static/creatine/forest_breast_cancer_incidence_primary.png?t=7688",
-    "funnel_plot_url": "static/creatine/funnel_breast_cancer_incidence_primary.png?t=2889",
+    "plot_url": "static/creatine/forest_breast_cancer_incidence_primary.png?t=4118",
+    "funnel_plot_url": "static/creatine/funnel_breast_cancer_incidence_primary.png?t=8978",
     "baujat_plot_url": null,
     "last_run": "2026-03-25 03:59:39"
 }

@@ -36,7 +36,8 @@
                 "q9": "Yes",
                 "q10": "Yes",
                 "q11": "Yes"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Rebbeck TR et al. (2007) [PMID: 17205521]",
@@ -75,21 +76,15 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Rebbeck TR et al. (2007) [PMID: 17205521]</th>\n      <td>-0.9416</td>\n      <td>0.2953</td>\n      <td>-1.5203</td>\n      <td>-0.3629</td>\n    </tr>\n    <tr>\n      <th>Henneicke-von Zepelin HH et al. (2007) [PMID: 17416109]</th>\n      <td>-0.1863</td>\n      <td>0.0921</td>\n      <td>-0.3668</td>\n      <td>-0.0058</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>949</td>\n      <td>2473</td>\n      <td>0.423591</td>\n      <td>0.244825</td>\n      <td>0.728408</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.6,
-        "ci_low": 0.29,
-        "ci_upp": 1.25,
-        "interpretation": "Not Statistically Significant",
-        "i2": 83.23,
-        "tau2": 0.24,
-        "eggers_p": null,
-        "funnel_interpretation": "Given only two studies, a funnel plot cannot reliably assess publication bias, and formal statistical tests for asymmetry are inapplicable. This means the presence or absence of publication bias remains unevaluable, significantly limiting the confidence in the reliability and generalizability of any pooled estimate regarding Black cohosh and breast cancer.",
-        "loo_results": [],
-        "results_interpretation": "The pooled analysis investigating the relationship between Black cohosh and breast cancer incidence indicates a pooled effect size of 0.6, suggesting a potential inverse relationship; however, the 95% confidence interval ranges from 0.29 to 1.25, crossing the null value of 1.0, which denotes that the exposure is not associated with the disease. The high heterogeneity, indicated by an I\u00b2 value of 83.23%, suggests substantial variation between the studies included, raising concerns about the consistency and reliability of the findings. Given these factors, the conclusion remains that there is insufficient evidence to support an association between Black cohosh and breast cancer incidence. Further research with more studies and lower heterogeneity may be necessary to clarify this relationship."
+        "pooled_es": 0.42,
+        "ci_low": 0.24,
+        "ci_upp": 0.73,
+        "interpretation": "statistically significant (decreased risk/odds)"
     },
-    "plot_url": "static/black_cohosh/forest_breast_cancer_incidence_primary.png?t=451",
-    "funnel_plot_url": "static/black_cohosh/funnel_breast_cancer_incidence_primary.png?t=1131",
+    "plot_url": "static/black_cohosh/forest_breast_cancer_incidence_primary.png?t=1243",
+    "funnel_plot_url": "static/black_cohosh/funnel_breast_cancer_incidence_primary.png?t=399",
     "baujat_plot_url": null,
     "last_run": "2026-03-24 18:09:28"
 }

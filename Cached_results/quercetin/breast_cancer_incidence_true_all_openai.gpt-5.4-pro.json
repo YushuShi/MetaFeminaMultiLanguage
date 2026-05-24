@@ -113,9 +113,9 @@
         {
             "Study": "Pantavos A et al. (2015) [PMID: 25284450]",
             "PMID": "25284450",
-            "Effect Size": 1.7857,
-            "Lower CI": 1.087,
-            "Upper CI": 3.0303,
+            "Effect Size": 0.556,
+            "Lower CI": 0.334,
+            "Upper CI": 0.917,
             "Population": "General",
             "Reference": "Total dietary antioxidant capacity, individual antioxidant intake and breast cancer risk: the Rotterdam Study.",
             "Authors": "Pantavos A, Ruiter R, Feskens EF, de Keyser CE, Hofman A, Stricker BH, Franco OH, Kiefte-de Jong JC",
@@ -221,51 +221,46 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Torres-Sanchez L et al. (2009) [PMID: 18647433]</th>\n      <td>-1.4523</td>\n      <td>0.5288</td>\n      <td>-2.4888</td>\n      <td>-0.4158</td>\n      <td>141</td>\n      <td>282</td>\n    </tr>\n    <tr>\n      <th>Touvier M et al. (2013) [PMID: 23132534]</th>\n      <td>-0.9778</td>\n      <td>0.3508</td>\n      <td>-1.6653</td>\n      <td>-0.2902</td>\n      <td>152</td>\n      <td>4141</td>\n    </tr>\n    <tr>\n      <th>Feng XL et al. (2020) [PMID: 31738218]</th>\n      <td>-0.6075</td>\n      <td>0.1018</td>\n      <td>-0.8070</td>\n      <td>-0.4080</td>\n      <td>1522</td>\n      <td>3069</td>\n    </tr>\n    <tr>\n      <th>Fink BN et al. (2007) [PMID: 17158855]</th>\n      <td>-0.5545</td>\n      <td>0.1419</td>\n      <td>-0.8326</td>\n      <td>-0.2765</td>\n      <td>1434</td>\n      <td>2874</td>\n    </tr>\n    <tr>\n      <th>Liu F et al. (2024) [PMID: 39151264]</th>\n      <td>-0.1090</td>\n      <td>0.0511</td>\n      <td>-0.2091</td>\n      <td>-0.0090</td>\n      <td>3392</td>\n      <td>187350</td>\n    </tr>\n    <tr>\n      <th>Pantavos A et al. (2015) [PMID: 25284450]</th>\n      <td>0.5269</td>\n      <td>0.2287</td>\n      <td>0.0787</td>\n      <td>0.9751</td>\n      <td>199</td>\n      <td>3209</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Torres-Sanchez L et al. (2009) [PMID: 18647433]</th>\n      <td>-1.4523</td>\n      <td>0.5288</td>\n      <td>-2.4888</td>\n      <td>-0.4158</td>\n      <td>141.0</td>\n      <td>282.0</td>\n    </tr>\n    <tr>\n      <th>Touvier M et al. (2013) [PMID: 23132534]</th>\n      <td>-0.9778</td>\n      <td>0.3508</td>\n      <td>-1.6653</td>\n      <td>-0.2902</td>\n      <td>152.0</td>\n      <td>4141.0</td>\n    </tr>\n    <tr>\n      <th>Feng XL et al. (2020) [PMID: 31738218]</th>\n      <td>-0.6075</td>\n      <td>0.1018</td>\n      <td>-0.8070</td>\n      <td>-0.4080</td>\n      <td>1522.0</td>\n      <td>3069.0</td>\n    </tr>\n    <tr>\n      <th>Fink BN et al. (2007) [PMID: 17158855]</th>\n      <td>-0.5545</td>\n      <td>0.1419</td>\n      <td>-0.8326</td>\n      <td>-0.2765</td>\n      <td>1434.0</td>\n      <td>2874.0</td>\n    </tr>\n    <tr>\n      <th>Pantavos A et al. (2015) [PMID: 25284450]</th>\n      <td>-0.5566</td>\n      <td>0.2474</td>\n      <td>-1.0416</td>\n      <td>-0.0717</td>\n      <td>199.0</td>\n      <td>3209.0</td>\n    </tr>\n    <tr>\n      <th>Liu F et al. (2024) [PMID: 39151264]</th>\n      <td>-0.1090</td>\n      <td>0.0511</td>\n      <td>-0.2091</td>\n      <td>-0.0090</td>\n      <td>3392.0</td>\n      <td>187350.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.66,
-        "ci_low": 0.47,
-        "ci_upp": 0.95,
+        "pooled_es": 0.56,
+        "ci_low": 0.41,
+        "ci_upp": 0.78,
+        "pi_low": 0.2,
+        "pi_upp": 1.59,
         "interpretation": "Statistically significant (decreased risk/odds)",
-        "i2": 88.99,
-        "tau2": 0.15,
-        "eggers_p": 0.37150277353665306,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.3715). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "i2": 85.86,
+        "tau2": 0.11,
+        "eggers_p": 0.037102412455420584,
+        "funnel_interpretation": "The significant funnel plot asymmetry (egger's p=0.0371) indicates substantial publication bias in this meta-analysis on quercetin and breast cancer. This specific pattern suggests that smaller studies with smaller or null effects may be underrepresented, compromising the reliability of the pooled estimate and potentially leading to an overestimation of the true association.",
         "loo_results": [
             {
                 "omitted": "Torres-Sanchez L et al. (2009) [PMID: 18647433]",
-                "pooled_es": 0.7266235761524529,
-                "ci_low": 0.45594693484320875,
-                "ci_upp": 1.157989627898567,
-                "is_significant": false
+                "pooled_es": 0.6050479886892779,
+                "ci_low": 0.4665497635861269,
+                "ci_upp": 0.7846602810449398,
+                "is_significant": true
             },
             {
                 "omitted": "Touvier M et al. (2013) [PMID: 23132534]",
-                "pooled_es": 0.7211751603053888,
-                "ci_low": 0.42529830769359006,
-                "ci_upp": 1.2228913269417694,
-                "is_significant": false
+                "pooled_es": 0.5970366389097187,
+                "ci_low": 0.4294110388002973,
+                "ci_upp": 0.8300968442648404,
+                "is_significant": true
             },
             {
                 "omitted": "Feng XL et al. (2020) [PMID: 31738218]",
-                "pooled_es": 0.6913765235113042,
-                "ci_low": 0.376883593879771,
-                "ci_upp": 1.2683000932512423,
-                "is_significant": false
+                "pooled_es": 0.562198766987132,
+                "ci_low": 0.3791589157381362,
+                "ci_upp": 0.8336015335061822,
+                "is_significant": true
             },
             {
                 "omitted": "Fink BN et al. (2007) [PMID: 17158855]",
-                "pooled_es": 0.6811920844317544,
-                "ci_low": 0.3713026688262219,
-                "ci_upp": 1.2497153800681449,
-                "is_significant": false
-            },
-            {
-                "omitted": "Liu F et al. (2024) [PMID: 39151264]",
-                "pooled_es": 0.6002834159194665,
-                "ci_low": 0.3299491433303998,
-                "ci_upp": 1.0921082436850302,
-                "is_significant": false
+                "pooled_es": 0.5535266645811643,
+                "ci_low": 0.37438714729471395,
+                "ci_upp": 0.8183821763548954,
+                "is_significant": true
             },
             {
                 "omitted": "Pantavos A et al. (2015) [PMID: 25284450]",
@@ -273,12 +268,19 @@
                 "ci_low": 0.38365798626433045,
                 "ci_upp": 0.81570653857282,
                 "is_significant": true
+            },
+            {
+                "omitted": "Liu F et al. (2024) [PMID: 39151264]",
+                "pooled_es": 0.5383626921158845,
+                "ci_low": 0.4698115622826991,
+                "ci_upp": 0.6169162522395756,
+                "is_significant": true
             }
         ],
-        "results_interpretation": "The pooled analysis of 6 studies yielded an overall effect size of 0.66 (95% ci: 0.47\u20130.95), suggesting that quercetin is associated with a lower risk of breast cancer incidence. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (i\u00b2 = 88.99%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 6 studies yielded an overall effect size of 0.56 (95% CI: 0.41\u20130.78), suggesting that quercetin is associated with a lower risk of breast cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 85.86%), reflecting highly inconsistent results across studies."
     },
-    "plot_url": "static/quercetin/forest_breast_cancer_incidence_primary.png?t=1462",
-    "funnel_plot_url": "static/quercetin/funnel_breast_cancer_incidence_primary.png?t=3146",
-    "baujat_plot_url": "static\\quercetin\\baujat_breast_cancer_incidence_primary.png?t=2361",
+    "plot_url": "static/quercetin/forest_breast_cancer_incidence_primary.png?t=9237",
+    "funnel_plot_url": "static/quercetin/funnel_breast_cancer_incidence_primary.png?t=6895",
+    "baujat_plot_url": "static\\quercetin\\baujat_breast_cancer_incidence_primary.png?t=5738",
     "last_run": "2026-04-28 10:02:56"
 }

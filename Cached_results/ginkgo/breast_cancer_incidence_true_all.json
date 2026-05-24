@@ -36,7 +36,8 @@
                 "q9": "Yes",
                 "q10": "Yes",
                 "q11": "Yes"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Biggs ML et al. (2010) [PMID: 20582906]",
@@ -76,21 +77,15 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Chen J et al. (2025) [PMID: 40761398]</th>\n      <td>-0.2971</td>\n      <td>0.1027</td>\n      <td>-0.4984</td>\n      <td>-0.0957</td>\n    </tr>\n    <tr>\n      <th>Biggs ML et al. (2010) [PMID: 20582906]</th>\n      <td>0.7655</td>\n      <td>0.4079</td>\n      <td>-0.0341</td>\n      <td>1.5650</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>162</td>\n      <td>3069</td>\n      <td>1.990362</td>\n      <td>0.971982</td>\n      <td>3.750013</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 1.17,
-        "ci_low": 0.42,
-        "ci_upp": 3.29,
-        "interpretation": "Not Statistically Significant",
-        "i2": 84.33,
-        "tau2": 0.48,
-        "eggers_p": null,
-        "funnel_interpretation": "With only two studies, a funnel plot cannot be reliably interpreted to assess for publication bias. This limitation means we are unable to evaluate potential reporting biases, which consequently diminishes the confidence in the pooled estimate regarding the association between Ginkgo and breast cancer.",
-        "loo_results": [],
-        "results_interpretation": "The pooled analysis of two studies examining the relationship between Ginkgo and breast cancer incidence yielded a pooled effect size of 1.17, suggesting a potential association; however, the 95% confidence interval (0.42, 3.29) is wide and includes values both below and above one, indicating that the association is not statistically significant. The high heterogeneity value (I\u00b2 = 84.33%) reflects considerable variability among the included studies, which may complicate the interpretation of pooled results. This level of heterogeneity suggests that differences in study design, population characteristics, or measurement of exposures could influence the observed effect. Consequently, based on these findings, Ginkgo exposure is not statistically associated with breast cancer incidence."
+        "pooled_es": 1.99,
+        "ci_low": 0.97,
+        "ci_upp": 3.75,
+        "interpretation": "not statistically significant"
     },
-    "plot_url": "static/ginkgo/forest_breast_cancer_incidence_primary.png?t=9669",
-    "funnel_plot_url": "static/ginkgo/funnel_breast_cancer_incidence_primary.png?t=174",
+    "plot_url": "static/ginkgo/forest_breast_cancer_incidence_primary.png?t=2130",
+    "funnel_plot_url": "static/ginkgo/funnel_breast_cancer_incidence_primary.png?t=8488",
     "baujat_plot_url": null,
     "last_run": "2026-03-25 10:26:54"
 }

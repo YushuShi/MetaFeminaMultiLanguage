@@ -4,9 +4,9 @@
         {
             "Study": "Simonsen N et al. (1998) [PMID: 9508101]",
             "PMID": "9508101",
-            "Effect Size": 0.32,
-            "Lower CI": 0.13,
-            "Upper CI": 0.82,
+            "Effect Size": 3.125,
+            "Lower CI": 1.22,
+            "Upper CI": 7.69,
             "Population": "General",
             "Reference": "Adipose tissue omega-3 and omega-6 fatty acid content and breast cancer in the EURAMIC study. European Community Multicenter Study on Antioxidants, Myocardial Infarction, and Breast Cancer.",
             "Authors": "Simonsen N, van't Veer P, Strain JJ, Martin-Moreno JM, Huttunen JK, Navajas JF, Martin BC, Thamm M, Kardinaal AF, Kok FJ, Kohlmeier L",
@@ -15,8 +15,8 @@
             "Link": "https://pubmed.ncbi.nlm.nih.gov/9508101/",
             "Effect Type": "OR",
             "SE": 0.1760204081632653,
-            "Sample Size": "Not specified",
-            "Cases": "Not specified",
+            "Sample Size": 684,
+            "Cases": 317,
             "Design": "Case-Control",
             "Timing": "Retrospective",
             "Continent": "Europe",
@@ -35,7 +35,8 @@
                 "q8": "Yes",
                 "q9": "Unclear",
                 "q10": "Yes"
-            }
+            },
+            "Participants": 684
         },
         {
             "Study": "Shafie F et al. (2022) [PMID: 36741722]",
@@ -108,18 +109,27 @@
                 "q9": "Unclear",
                 "q10": "Yes",
                 "q11": "Yes"
-            }
+            },
+            "exclusions": 2
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>120</td>\n      <td>360</td>\n      <td>1.16</td>\n      <td>1.01</td>\n      <td>1.33</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Shafie F et al. (2022) [PMID: 36741722]</th>\n      <td>0.1278</td>\n      <td>0.0598</td>\n      <td>0.0106</td>\n      <td>0.2451</td>\n      <td>120.0</td>\n      <td>360.0</td>\n    </tr>\n    <tr>\n      <th>Simonsen N et al. (1998) [PMID: 9508101]</th>\n      <td>0.8955</td>\n      <td>0.3172</td>\n      <td>0.2738</td>\n      <td>1.5172</td>\n      <td>317.0</td>\n      <td>684.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 1.16,
-        "ci_low": 1.01,
-        "ci_upp": 1.33,
-        "interpretation": "Statistically Significant (Increased Risk/Odds)"
+        "pooled_es": 1.57,
+        "ci_low": 0.75,
+        "ci_upp": 3.29,
+        "pi_low": null,
+        "pi_upp": null,
+        "interpretation": "Not statistically significant",
+        "i2": 82.32,
+        "tau2": 0.24,
+        "eggers_p": null,
+        "funnel_interpretation": "Insufficient studies to perform formal publication bias testing.",
+        "loo_results": [],
+        "results_interpretation": "The pooled analysis of 2 studies yielded an effect size of 1.57 (95% CI: 0.75\u20133.29), indicating no statistically significant association between omega-6 fatty acids and breast cancer. Although the point estimate suggests a potential positive relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 82.32%), reflecting highly inconsistent results across studies."
     },
-    "plot_url": "static/omega_6_fatty_acids/forest_breast_cancer_incidence_primary.png?t=4847",
-    "funnel_plot_url": "static/omega_6_fatty_acids/funnel_breast_cancer_incidence_primary.png?t=9374",
+    "plot_url": "static/omega_6_fatty_acids/forest_breast_cancer_incidence_primary.png?t=8207",
+    "funnel_plot_url": "static/omega_6_fatty_acids/funnel_breast_cancer_incidence_primary.png?t=3923",
     "baujat_plot_url": null,
     "last_run": "2026-04-06 17:11:39"
 }

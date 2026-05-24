@@ -71,24 +71,19 @@
                 "q8": "Yes",
                 "q9": "Yes",
                 "q10": "Yes"
-            }
+            },
+            "exclusions": 2
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Do MH et al. (2007) [PMID: 17896586]</th>\n      <td>-0.5276</td>\n      <td>0.2547</td>\n      <td>-1.0269</td>\n      <td>-0.0284</td>\n    </tr>\n    <tr>\n      <th>Toniolo P et al. (1989) [PMID: 2766288]</th>\n      <td>0.6419</td>\n      <td>0.2803</td>\n      <td>0.0926</td>\n      <td>1.1911</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>359</td>\n      <td>1067</td>\n      <td>0.623217</td>\n      <td>0.382305</td>\n      <td>0.956215</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 1.05,
-        "ci_low": 0.33,
-        "ci_upp": 3.31,
-        "interpretation": "Not Statistically Significant",
-        "i2": 89.51,
-        "tau2": 0.61,
-        "eggers_p": null,
-        "funnel_interpretation": "With only two included studies, a funnel plot cannot be meaningfully interpreted to assess publication bias, nor can formal statistical tests like Egger's test be performed. This severely limits the reliability of any pooled estimate regarding grape and breast cancer, as the potential for unaddressed publication bias and small study effects remains high.",
-        "loo_results": [],
-        "results_interpretation": "The pooled effect size of 1.05 suggests a non-significant association between grape consumption and breast cancer incidence, as indicated by a 95% confidence interval of (0.33, 3.31) which encompasses the null value of 1. Furthermore, the high heterogeneity value of 89.51% indicates substantial variability among the studies included, raising concerns about the consistency of the findings. This variability suggests that differences in study design, population characteristics, or grape measurement methods may influence the observed results. Consequently, the current evidence does not support a statistically significant association between grape intake and breast cancer incidence."
+        "pooled_es": 0.62,
+        "ci_low": 0.38,
+        "ci_upp": 0.96,
+        "interpretation": "statistically significant (decreased risk/odds)"
     },
-    "plot_url": "static/grape/forest_breast_cancer_incidence_primary.png?t=6189",
-    "funnel_plot_url": "static/grape/funnel_breast_cancer_incidence_primary.png?t=5901",
+    "plot_url": "static/grape/forest_breast_cancer_incidence_primary.png?t=2925",
+    "funnel_plot_url": "static/grape/funnel_breast_cancer_incidence_primary.png?t=6473",
     "baujat_plot_url": null,
     "last_run": "2026-03-25 11:18:57"
 }

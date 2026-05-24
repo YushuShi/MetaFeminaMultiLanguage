@@ -42,7 +42,7 @@ USAGE_FILE = os.path.join(DATA_DIR, 'usage_stats.json')
 
 os.makedirs(CACHE_DIR, exist_ok=True)
 
-DEFAULT_MODEL = 'openai.gpt-4o-mini'
+DEFAULT_MODEL = 'openai.gpt-4o'
 DEFAULT_DISEASE = 'Breast cancer'
 
 def safe_path_component(value):
@@ -108,6 +108,7 @@ def sanitize_data(data):
     """Recursively replace NaN/Inf values and convert numpy types for JSON compatibility."""
     if isinstance(data, dict):
         return {k: sanitize_data(v) for k, v in data.items()}
+
     elif isinstance(data, list):
         return [sanitize_data(x) for x in data]
     elif isinstance(data, (np.bool_,)):
@@ -124,6 +125,102 @@ def sanitize_data(data):
             return None
     return data
 
+def update_cache_from_verifications(disease, exposure, outcome):
+    """
+    Finds all cache files under Cached_results/<exposure> and updates their studies'
+    Effect Size, CIs, and comparison_types according to verifications.json, then
+    re-runs perform_meta_analysis on each cache file and saves it back to disk.
+    """
+    canonical_exp = meta_analysis.get_canonical_name(exposure)
+    safe_exposure = safe_path_component(canonical_exp)
+    exposure_dir = os.path.join(CACHE_DIR, safe_exposure)
+    
+    if not os.path.exists(exposure_dir):
+        return
+        
+    verifications = load_json(VERIFICATIONS_FILE, {})
+    context_key = f"{disease}_{canonical_exp}_{outcome}".lower().replace(" ", "_")
+    
+    # Loop over all json files in exposure_dir
+    for filename in os.listdir(exposure_dir):
+        if filename.endswith(".json"):
+            filepath = os.path.join(exposure_dir, filename)
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    cache = json.load(f)
+                
+                if "studies" not in cache:
+                    continue
+                    
+                # Apply consensus and exclusion overlay to studies list
+                cache_updated = False
+                for study in cache["studies"]:
+                    pmid = str(study.get("PMID"))
+                    v_info = verifications.get(pmid, {})
+                    contexts = v_info.get("contexts", {})
+                    current_context_data = contexts.get(context_key, {})
+                    
+                    # Handle exclusion
+                    context_excl = v_info.get("context_exclusions", {})
+                    exclusion_val = context_excl.get(context_key, 0)
+                    if study.get("exclusions", 0) != exclusion_val:
+                        study["exclusions"] = exclusion_val
+                        cache_updated = True
+                        
+                    # Handle consensus overlay
+                    consensus = current_context_data.get("consensus_data")
+                    if consensus:
+                        for key, val in consensus.items():
+                            if val is not None and val != "":
+                                cache_key = key
+                                if key == "Comparison Type":
+                                    cache_key = "comparison_type"
+                                if str(study.get(cache_key)) != str(val):
+                                    study[cache_key] = val
+                                    # N/Cases/Participants sync
+                                    if cache_key == 'Sample Size':
+                                        study['Participants'] = val
+                                    if cache_key == 'Participants':
+                                        study['Sample Size'] = val
+                                    cache_updated = True
+                
+                if cache_updated:
+                    # Convert to df and re-run meta-analysis
+                    valid_studies = [s for s in cache["studies"] if s.get("exclusions", 0) < 2]
+                    df_new = pd.DataFrame(valid_studies)
+                    
+                    # Ensure numeric precision
+                    if len(df_new) > 0:
+                        for col in ['Effect Size', 'Lower CI', 'Upper CI', 'SE']:
+                            if col in df_new.columns:
+                                df_new[col] = pd.to_numeric(df_new[col], errors='coerce')
+                                
+                        exclude_meta = "true" in filename.lower()
+                        new_meta = meta_analysis.perform_meta_analysis(
+                            df_new, 
+                            disease, 
+                            exposure, 
+                            outcome=outcome, 
+                            exclude_meta=exclude_meta
+                        )
+                        # Update key result fields
+                        for key in ['headline', 'summary_html', 'plot_url', 'funnel_plot_url', 'baujat_plot_url']:
+                            cache[key] = new_meta.get(key)
+                    else:
+                        cache['headline'] = None
+                        cache['summary_html'] = None
+                        cache['plot_url'] = None
+                        cache['funnel_plot_url'] = None
+                        cache['baujat_plot_url'] = None
+                        
+                    # Save updated cache safely
+                    cache_str = json.dumps(sanitize_data(cache), indent=4)
+                    with open(filepath, 'w', encoding='utf-8') as f:
+                        f.write(cache_str)
+                    log_event(f"[MetaFemina] Updated cache file and regenerated plots for {filepath}")
+            except Exception as e:
+                log_event(f"Error updating cache file {filepath}: {e}")
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -139,7 +236,9 @@ def analyze():
     exposure = data.get('exposure', 'Coffee')
     outcome = data.get('outcome', 'Incidence')
     exclude_meta = data.get('exclude_meta', False)
-    model = data.get('model', 'openai.gpt-4o-mini')
+    model = data.get('model', DEFAULT_MODEL)
+    if model == 'openai.gpt-4o-mini':
+        model = DEFAULT_MODEL
     # The UI toggle is removed, so we always enforce True for downstream terms
     use_downstream = True
     force_refresh = data.get('force_refresh', False)
@@ -367,6 +466,7 @@ def verify():
                     break
  
     save_json(VERIFICATIONS_FILE, verifications)
+    update_cache_from_verifications(disease, exposure, outcome)
     
     # Count includes legacy count + new structured submissions
     total_count = len(verifications[pmid]["contexts"][context_key]["submissions"]) + verifications[pmid].get("legacy_count", 0)
@@ -412,6 +512,7 @@ def exclude():
             
     verifications[pmid]["context_exclusions"][context_key] += 1
     save_json(VERIFICATIONS_FILE, verifications)
+    update_cache_from_verifications(disease, exposure, outcome)
     
     return jsonify({
         "success": True,

@@ -1737,14 +1737,15 @@
                     }
                 ],
                 "consensus_data": {
-                    "Effect Size": 0.452,
+                    "Effect Size": 0.4525,
                     "Lower CI": 0.293,
                     "Upper CI": 0.699,
                     "Cases": 1823,
                     "Sample Size": 33552,
                     "Design": "Cohort",
                     "Timing": "Prospective",
-                    "Comparison Type": "High vs Low"
+                    "Comparison Type": "High vs Low [inverted \u21d2 high vs low]",
+                    "comparison_type": "High vs Low [inverted \u21d2 high vs low]"
                 }
             }
         }
@@ -1759,40 +1760,29 @@
                 "submissions": [
                     {
                         "data": {
-                            "Effect Size": 0.699,
+                            "Effect Size": 0.6993,
                             "Lower CI": 0.495,
-                            "Upper CI": 0.98,
-                            "Cases": 1875,
-                            "Sample Size": 34393,
-                            "Design": "Cohort",
-                            "Timing": "Prospective",
-                            "Comparison Type": "Low vs High"
+                            "Upper CI": 0.9804,
+                            "Comparison Type": "Low vs High [inverted \u21d2 high vs low]"
                         },
-                        "timestamp": "2026-05-22 18:19:33"
+                        "timestamp": "2026-05-23 15:59:27"
                     },
                     {
                         "data": {
-                            "Effect Size": 0.699,
+                            "Effect Size": 0.6993,
                             "Lower CI": 0.495,
-                            "Upper CI": 0.98,
-                            "Cases": 1875,
-                            "Sample Size": 34393,
-                            "Design": "Cohort",
-                            "Timing": "Prospective",
-                            "Comparison Type": "Low vs High"
+                            "Upper CI": 0.9804,
+                            "Comparison Type": "Low vs High [inverted \u21d2 high vs low]"
                         },
-                        "timestamp": "2026-05-22 18:20:35"
+                        "timestamp": "2026-05-23 15:59:28"
                     }
                 ],
                 "consensus_data": {
-                    "Effect Size": 0.699,
+                    "Effect Size": 0.6993,
                     "Lower CI": 0.495,
-                    "Upper CI": 0.98,
-                    "Cases": 1875,
-                    "Sample Size": 34393,
-                    "Design": "Cohort",
-                    "Timing": "Prospective",
-                    "Comparison Type": "Low vs High"
+                    "Upper CI": 0.9804,
+                    "Comparison Type": "Low vs High [inverted \u21d2 high vs low]",
+                    "comparison_type": "Low vs High [inverted \u21d2 high vs low]"
                 }
             }
         }
@@ -1833,14 +1823,475 @@
                     }
                 ],
                 "consensus_data": {
-                    "Effect Size": 0.826,
+                    "Effect Size": 0.8264,
                     "Lower CI": 0.621,
                     "Upper CI": 1.099,
                     "Cases": 1586,
                     "Sample Size": 34387,
                     "Design": "Cohort",
                     "Timing": "Prospective",
-                    "Comparison Type": "Highest vs Lowest"
+                    "Comparison Type": "Highest vs Lowest [inverted \u21d2 high vs low]",
+                    "comparison_type": "Highest vs Lowest [inverted \u21d2 high vs low]"
+                }
+            }
+        }
+    },
+    "20155314": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_folic_acid_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.5025,
+                            "Lower CI": 0.3165,
+                            "Upper CI": 0.7937,
+                            "Comparison Type": "Lower vs Higher Folate Intake [inverted \u21d2 high vs low]"
+                        },
+                        "timestamp": "2026-05-23 09:43:46"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.5025,
+                            "Lower CI": 0.3165,
+                            "Upper CI": 0.7937,
+                            "Comparison Type": "Lower vs Higher Folate Intake [inverted \u21d2 high vs low]"
+                        },
+                        "timestamp": "2026-05-23 09:43:47"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.5025,
+                    "Lower CI": 0.3165,
+                    "Upper CI": 0.7937,
+                    "Comparison Type": "Lower vs Higher Folate Intake [inverted \u21d2 high vs low]",
+                    "comparison_type": "Lower vs Higher Folate Intake [inverted \u21d2 high vs low]"
+                }
+            }
+        }
+    },
+    "14682440": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_folic_acid_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.5,
+                            "Lower CI": 0.2083,
+                            "Upper CI": 1.25,
+                            "Comparison Type": "Low vs High [inverted \u21d2 high vs low]"
+                        },
+                        "timestamp": "2026-05-23 09:43:46"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.5,
+                            "Lower CI": 0.2083,
+                            "Upper CI": 1.25,
+                            "Comparison Type": "Low vs High [inverted \u21d2 high vs low]"
+                        },
+                        "timestamp": "2026-05-23 09:43:47"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.5,
+                    "Lower CI": 0.2083,
+                    "Upper CI": 1.25,
+                    "Comparison Type": "Low vs High [inverted \u21d2 high vs low]",
+                    "comparison_type": "Low vs High [inverted \u21d2 high vs low]"
+                }
+            }
+        }
+    },
+    "16599372": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_folic_acid_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.4762,
+                            "Lower CI": 0.2252,
+                            "Upper CI": 1.0101,
+                            "Comparison Type": "Yes vs No [inverted \u21d2 high vs low]"
+                        },
+                        "timestamp": "2026-05-23 09:43:46"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.4762,
+                            "Lower CI": 0.2252,
+                            "Upper CI": 1.0101,
+                            "Comparison Type": "Yes vs No [inverted \u21d2 high vs low]"
+                        },
+                        "timestamp": "2026-05-23 09:43:47"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.4762,
+                    "Lower CI": 0.2252,
+                    "Upper CI": 1.0101,
+                    "Comparison Type": "Yes vs No [inverted \u21d2 high vs low]",
+                    "comparison_type": "Yes vs No [inverted \u21d2 high vs low]"
+                }
+            }
+        }
+    },
+    "31757629": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_folic_acid_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.1089,
+                            "Lower CI": 0.0304,
+                            "Upper CI": 0.3906,
+                            "Comparison Type": "Highest vs Lowest [inverted \u21d2 high vs low]"
+                        },
+                        "timestamp": "2026-05-23 09:43:46"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.1089,
+                            "Lower CI": 0.0304,
+                            "Upper CI": 0.3906,
+                            "Comparison Type": "Highest vs Lowest [inverted \u21d2 high vs low]"
+                        },
+                        "timestamp": "2026-05-23 09:43:47"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.1089,
+                    "Lower CI": 0.0304,
+                    "Upper CI": 0.3906,
+                    "Comparison Type": "Highest vs Lowest [inverted \u21d2 high vs low]",
+                    "comparison_type": "Highest vs Lowest [inverted \u21d2 high vs low]"
+                }
+            }
+        }
+    },
+    "20030812": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_folic_acid_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.6173,
+                            "Lower CI": 0.4032,
+                            "Upper CI": 0.9524,
+                            "Comparison Type": "Lowest vs Highest [inverted \u21d2 high vs low]"
+                        },
+                        "timestamp": "2026-05-23 15:59:27"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.6173,
+                            "Lower CI": 0.4032,
+                            "Upper CI": 0.9524,
+                            "Comparison Type": "Lowest vs Highest [inverted \u21d2 high vs low]"
+                        },
+                        "timestamp": "2026-05-23 15:59:28"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.6173,
+                    "Lower CI": 0.4032,
+                    "Upper CI": 0.9524,
+                    "Comparison Type": "Lowest vs Highest [inverted \u21d2 high vs low]",
+                    "comparison_type": "Lowest vs Highest [inverted \u21d2 high vs low]"
+                }
+            }
+        }
+    },
+    "21161404": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_folic_acid_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.7246,
+                            "Lower CI": 0.5525,
+                            "Upper CI": 0.9434,
+                            "Comparison Type": "Low vs High [inverted \u21d2 high vs low]"
+                        },
+                        "timestamp": "2026-05-23 15:59:27"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.7246,
+                            "Lower CI": 0.5525,
+                            "Upper CI": 0.9434,
+                            "Comparison Type": "Low vs High [inverted \u21d2 high vs low]"
+                        },
+                        "timestamp": "2026-05-23 15:59:28"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.7246,
+                    "Lower CI": 0.5525,
+                    "Upper CI": 0.9434,
+                    "Comparison Type": "Low vs High [inverted \u21d2 high vs low]",
+                    "comparison_type": "Low vs High [inverted \u21d2 high vs low]"
+                }
+            }
+        }
+    },
+    "24639841": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_folic_acid_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.4082,
+                            "Lower CI": 0.1718,
+                            "Upper CI": 0.9174,
+                            "Comparison Type": "Folate intake < 450 ug/day [inverted \u21d2 high vs low]"
+                        },
+                        "timestamp": "2026-05-23 15:59:27"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.4082,
+                            "Lower CI": 0.1718,
+                            "Upper CI": 0.9174,
+                            "Comparison Type": "Folate intake < 450 ug/day [inverted \u21d2 high vs low]"
+                        },
+                        "timestamp": "2026-05-23 15:59:28"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.4082,
+                    "Lower CI": 0.1718,
+                    "Upper CI": 0.9174,
+                    "Comparison Type": "Folate intake < 450 ug/day [inverted \u21d2 high vs low]",
+                    "comparison_type": "Folate intake < 450 ug/day [inverted \u21d2 high vs low]"
+                }
+            }
+        }
+    },
+    "20410093": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_folic_acid_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 1.12,
+                            "Lower CI": 1.01,
+                            "Upper CI": 1.24,
+                            "Comparison Type": "Q5 vs Q1"
+                        },
+                        "timestamp": "2026-05-23 15:59:27"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 1.12,
+                            "Lower CI": 1.01,
+                            "Upper CI": 1.24,
+                            "Comparison Type": "Q5 vs Q1"
+                        },
+                        "timestamp": "2026-05-23 15:59:28"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 1.12,
+                    "Lower CI": 1.01,
+                    "Upper CI": 1.24,
+                    "Comparison Type": "Q5 vs Q1",
+                    "comparison_type": "Q5 vs Q1"
+                }
+            }
+        }
+    },
+    "17006726": {
+        "legacy_count": 0,
+        "submissions": [],
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_folic_acid_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.78,
+                            "Lower CI": 0.67,
+                            "Upper CI": 0.9,
+                            "Comparison Type": "Q5 vs Q1"
+                        },
+                        "timestamp": "2026-05-23 15:59:27"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.78,
+                            "Lower CI": 0.67,
+                            "Upper CI": 0.9,
+                            "Comparison Type": "Q5 vs Q1"
+                        },
+                        "timestamp": "2026-05-23 15:59:28"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.78,
+                    "Lower CI": 0.67,
+                    "Upper CI": 0.9,
+                    "Comparison Type": "Q5 vs Q1",
+                    "comparison_type": "Q5 vs Q1"
+                }
+            }
+        }
+    },
+    "16234832": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_folic_acid_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 1.19,
+                            "Lower CI": 0.99,
+                            "Upper CI": 1.42,
+                            "Comparison Type": "per 10 g average daily alcohol intake for low folate intake",
+                            "comparison_type": "per 10 g average daily alcohol intake for low folate intake",
+                            "Cases": 388,
+                            "Sample Size": 24697,
+                            "Design": "Case-Control",
+                            "Timing": "Prospective",
+                            "Effect Type": "RR"
+                        },
+                        "timestamp": "2026-05-24 01:06:05"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 1.19,
+                            "Lower CI": 0.99,
+                            "Upper CI": 1.42,
+                            "Comparison Type": "per 10 g average daily alcohol intake for low folate intake",
+                            "comparison_type": "per 10 g average daily alcohol intake for low folate intake",
+                            "Cases": 388,
+                            "Sample Size": 24697,
+                            "Design": "Case-Control",
+                            "Timing": "Prospective",
+                            "Effect Type": "RR"
+                        },
+                        "timestamp": "2026-05-24 01:06:06"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 1.19,
+                    "Lower CI": 0.99,
+                    "Upper CI": 1.42,
+                    "Comparison Type": "per 10 g average daily alcohol intake for low folate intake",
+                    "comparison_type": "per 10 g average daily alcohol intake for low folate intake",
+                    "Cases": 388,
+                    "Sample Size": 24697,
+                    "Design": "Case-Control",
+                    "Timing": "Prospective",
+                    "Effect Type": "RR"
+                }
+            }
+        }
+    },
+    "31599404": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "uterine_cancer_zinc_incidence": 2
+        }
+    },
+    "22952183": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {},
+        "contexts": {
+            "uterine_cancer_zinc_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 1.24,
+                            "Lower CI": 1.01,
+                            "Upper CI": 1.53,
+                            "Cases": "N/A",
+                            "Sample Size": "60,895",
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "-"
+                        },
+                        "timestamp": "2026-05-23 21:49:26"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 1.24,
+                            "Lower CI": 1.01,
+                            "Upper CI": 1.53,
+                            "Cases": "N/A",
+                            "Sample Size": "60,895",
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "-"
+                        },
+                        "timestamp": "2026-05-23 21:49:58"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 1.24,
+                            "Lower CI": 1.01,
+                            "Upper CI": 1.53,
+                            "Cases": 720,
+                            "Sample Size": "60,895",
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "-"
+                        },
+                        "timestamp": "2026-05-23 21:50:15"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 1.24,
+                            "Lower CI": 1.01,
+                            "Upper CI": 1.53,
+                            "Cases": 720,
+                            "Sample Size": "60,895",
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "-"
+                        },
+                        "timestamp": "2026-05-23 21:50:25"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 1.24,
+                    "Lower CI": 1.01,
+                    "Upper CI": 1.53,
+                    "Cases": 720,
+                    "Sample Size": "60,895",
+                    "Design": "Cohort",
+                    "Timing": "Prospective",
+                    "Comparison Type": "-"
                 }
             }
         }

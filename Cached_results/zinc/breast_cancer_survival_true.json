@@ -16,9 +16,9 @@
             "Effect Type": "HR",
             "SE": 0.6275510204081632,
             "Sample Size": 583,
-            "Cases": "NA",
+            "Cases": 115,
             "Design": "Cohort",
-            "Timing": "Prospective",
+            "Timing": "Retrospective",
             "Continent": "Europe",
             "Stage": "NA",
             "Quality %": 100.0,
@@ -275,14 +275,14 @@
             "Effect Type": "HR",
             "SE": 0.08673469387755103,
             "Sample Size": 1475,
-            "Cases": "NA",
+            "Cases": 514,
             "Design": "Cohort",
             "Timing": "Prospective",
             "Continent": "Europe",
             "Stage": "Breast",
             "Quality %": 100.0,
             "Quality Score": "Good",
-            "comparison_type": "Highest vs Lowest",
+            "comparison_type": "Highest vs Lowest quartile",
             "JBI": {
                 "q1": "Yes",
                 "q2": "Yes",
@@ -437,92 +437,108 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Barrios-Rodr\u00edguez R et al. (2020) [PMID: 32668662]</th>\n      <td>-1.3093</td>\n      <td>0.6258</td>\n      <td>-2.5359</td>\n      <td>-0.0828</td>\n    </tr>\n    <tr>\n      <th>Bengtsson Y et al. (2022) [PMID: 35807763]</th>\n      <td>-0.8916</td>\n      <td>0.2946</td>\n      <td>-1.4691</td>\n      <td>-0.3141</td>\n    </tr>\n    <tr>\n      <th>Cannioto RA et al. (2023) [PMID: 37140922]</th>\n      <td>-0.8675</td>\n      <td>0.1725</td>\n      <td>-1.2057</td>\n      <td>-0.5293</td>\n    </tr>\n    <tr>\n      <th>Lubi\u0144ski J et al. (2023) [PMID: 37299574]</th>\n      <td>-0.5978</td>\n      <td>0.1541</td>\n      <td>-0.8998</td>\n      <td>-0.2959</td>\n    </tr>\n    <tr>\n      <th>Yang YW et al. (2021) [PMID: 34349873]</th>\n      <td>-0.1508</td>\n      <td>0.0297</td>\n      <td>-0.2090</td>\n      <td>-0.0926</td>\n    </tr>\n    <tr>\n      <th>Zeraatkar D et al. (2019) [PMID: 31569236]</th>\n      <td>-0.0305</td>\n      <td>0.0369</td>\n      <td>-0.1027</td>\n      <td>0.0418</td>\n    </tr>\n    <tr>\n      <th>Fernandez-Lazaro CI et al. (2021) [PMID: 33668391]</th>\n      <td>0.0100</td>\n      <td>0.2600</td>\n      <td>-0.4996</td>\n      <td>0.5195</td>\n    </tr>\n    <tr>\n      <th>Sotos-Prieto M et al. (2018) [PMID: 30373451]</th>\n      <td>0.3716</td>\n      <td>0.1249</td>\n      <td>0.1268</td>\n      <td>0.6163</td>\n    </tr>\n    <tr>\n      <th>Lesperance ML et al. (2002) [PMID: 12452451]</th>\n      <td>0.5596</td>\n      <td>0.3000</td>\n      <td>-0.0283</td>\n      <td>1.1475</td>\n    </tr>\n    <tr>\n      <th>Szwiec M et al. (2024) [PMID: 38613033]</th>\n      <td>0.7275</td>\n      <td>0.2888</td>\n      <td>0.1614</td>\n      <td>1.2937</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Barrios-Rodr\u00edguez R et al. (2020) [PMID: 32668662]</th>\n      <td>-1.2593</td>\n      <td>0.6109</td>\n      <td>-2.4566</td>\n      <td>-0.0619</td>\n      <td>Not specified</td>\n      <td>10930</td>\n    </tr>\n    <tr>\n      <th>Bengtsson Y et al. (2022) [PMID: 35807763]</th>\n      <td>-0.8512</td>\n      <td>0.2859</td>\n      <td>-1.4114</td>\n      <td>-0.2909</td>\n      <td>205</td>\n      <td>1062</td>\n    </tr>\n    <tr>\n      <th>Cannioto RA et al. (2023) [PMID: 37140922]</th>\n      <td>-0.8278</td>\n      <td>0.1674</td>\n      <td>-1.1560</td>\n      <td>-0.4996</td>\n      <td>NA</td>\n      <td>1340</td>\n    </tr>\n    <tr>\n      <th>Lubi\u0144ski J et al. (2023) [PMID: 37299574]</th>\n      <td>-0.5671</td>\n      <td>0.1481</td>\n      <td>-0.8573</td>\n      <td>-0.2768</td>\n      <td>514</td>\n      <td>1475</td>\n    </tr>\n    <tr>\n      <th>Yang YW et al. (2021) [PMID: 34349873]</th>\n      <td>-0.1325</td>\n      <td>0.0263</td>\n      <td>-0.1840</td>\n      <td>-0.0809</td>\n      <td>Not specified</td>\n      <td>1143</td>\n    </tr>\n    <tr>\n      <th>Zeraatkar D et al. (2019) [PMID: 31569236]</th>\n      <td>-0.0284</td>\n      <td>0.0345</td>\n      <td>-0.0959</td>\n      <td>0.0391</td>\n      <td>NA</td>\n      <td>48835</td>\n    </tr>\n    <tr>\n      <th>Fernandez-Lazaro CI et al. (2021) [PMID: 33668391]</th>\n      <td>0.0093</td>\n      <td>0.2413</td>\n      <td>-0.4636</td>\n      <td>0.4822</td>\n      <td>107</td>\n      <td>9983</td>\n    </tr>\n    <tr>\n      <th>Sotos-Prieto M et al. (2018) [PMID: 30373451]</th>\n      <td>0.3411</td>\n      <td>0.1125</td>\n      <td>0.1205</td>\n      <td>0.5617</td>\n      <td>NA</td>\n      <td>58319</td>\n    </tr>\n    <tr>\n      <th>Lesperance ML et al. (2002) [PMID: 12452451]</th>\n      <td>0.5091</td>\n      <td>0.2683</td>\n      <td>-0.0168</td>\n      <td>1.0349</td>\n      <td>Unclear</td>\n      <td>90</td>\n    </tr>\n    <tr>\n      <th>Sakshi S et al. (2023) [PMID: 38010148]</th>\n      <td>2.0000</td>\n      <td>0.2551</td>\n      <td>1.5000</td>\n      <td>2.5000</td>\n      <td>Not specified</td>\n      <td>Not specified</td>\n    </tr>\n    <tr>\n      <th>Szwiec M et al. (2024) [PMID: 38613033]</th>\n      <td>0.6557</td>\n      <td>0.2476</td>\n      <td>0.1705</td>\n      <td>1.1409</td>\n      <td>115</td>\n      <td>583</td>\n    </tr>\n    <tr>\n      <th>Shit M et al. (2025) [PMID: 40514346]</th>\n      <td>14.6200</td>\n      <td>0.7602</td>\n      <td>13.1300</td>\n      <td>16.1100</td>\n      <td>MCF-7</td>\n      <td>4</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.86,
-        "ci_low": 0.71,
-        "ci_upp": 1.04,
-        "interpretation": "Not Statistically Significant",
-        "i2": 88.0,
-        "tau2": 0.06,
-        "eggers_p": 0.776094162518498,
-        "funnel_interpretation": "The funnel plot appears symmetrical, supported by a non-significant Egger's test (p=0.7761), indicating a low likelihood of publication bias influencing the results on Zinc and breast cancer. Consequently, the pooled estimate from this meta-analysis is likely to be reliable, as the absence of significant asymmetry suggests that the included studies provide a balanced representation of the available evidence.",
+        "pooled_es": 1.8,
+        "ci_low": 1.24,
+        "ci_upp": 2.61,
+        "pi_low": 0.45,
+        "pi_upp": 7.27,
+        "interpretation": "Statistically significant (increased risk/odds)",
+        "i2": 97.87,
+        "tau2": 0.36,
+        "eggers_p": 0.22252950868192245,
+        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.2225). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
         "loo_results": [
             {
                 "omitted": "Barrios-Rodr\u00edguez R et al. (2020) [PMID: 32668662]",
-                "pooled_es": 0.8829421785492567,
-                "ci_low": 0.6251747301732178,
-                "ci_upp": 1.2469904060986385,
+                "pooled_es": 1.9795709717586198,
+                "ci_low": 0.3153530239681805,
+                "ci_upp": 12.426394974492991,
                 "is_significant": false
             },
             {
                 "omitted": "Bengtsson Y et al. (2022) [PMID: 35807763]",
-                "pooled_es": 0.9075385163055671,
-                "ci_low": 0.6431720450844588,
-                "ci_upp": 1.2805689626481742,
+                "pooled_es": 2.0473658281795837,
+                "ci_low": 0.31567947396456103,
+                "ci_upp": 13.278363593788947,
                 "is_significant": false
             },
             {
                 "omitted": "Cannioto RA et al. (2023) [PMID: 37140922]",
-                "pooled_es": 0.9429976541038405,
-                "ci_low": 0.6825701921442978,
-                "ci_upp": 1.3027884690536806,
+                "pooled_es": 2.081846537597172,
+                "ci_low": 0.3183399880461741,
+                "ci_upp": 13.61464210860211,
                 "is_significant": false
             },
             {
                 "omitted": "Lubi\u0144ski J et al. (2023) [PMID: 37299574]",
-                "pooled_es": 0.9160736030672753,
-                "ci_low": 0.6374894658341806,
-                "ci_upp": 1.3163995504436214,
+                "pooled_es": 2.0474454761414314,
+                "ci_low": 0.30657971187392546,
+                "ci_upp": 13.673549864564752,
                 "is_significant": false
             },
             {
                 "omitted": "Yang YW et al. (2021) [PMID: 34349873]",
-                "pooled_es": 0.8489323619781132,
-                "ci_low": 0.5532651028475596,
-                "ci_upp": 1.302605480635759,
+                "pooled_es": 2.6964758581130517,
+                "ci_low": 0.26595858446943604,
+                "ci_upp": 27.338775576248032,
                 "is_significant": false
             },
             {
                 "omitted": "Zeraatkar D et al. (2019) [PMID: 31569236]",
-                "pooled_es": 0.8349095392609935,
-                "ci_low": 0.5460323960803426,
-                "ci_upp": 1.2766164494138141,
+                "pooled_es": 2.647777908978153,
+                "ci_low": 0.26303621514886655,
+                "ci_upp": 26.653089770566257,
                 "is_significant": false
             },
             {
                 "omitted": "Fernandez-Lazaro CI et al. (2021) [PMID: 33668391]",
-                "pooled_es": 0.8491689902143205,
-                "ci_low": 0.5822179753145287,
-                "ci_upp": 1.238518913044653,
+                "pooled_es": 1.9124237964587958,
+                "ci_low": 0.28615651177189083,
+                "ci_upp": 12.780994409721265,
                 "is_significant": false
             },
             {
                 "omitted": "Sotos-Prieto M et al. (2018) [PMID: 30373451]",
-                "pooled_es": 0.7950039093565622,
-                "ci_low": 0.5593317244318077,
-                "ci_upp": 1.129975626779011,
+                "pooled_es": 1.878937169729273,
+                "ci_low": 0.27313751092399063,
+                "ci_upp": 12.925375485217407,
                 "is_significant": false
             },
             {
                 "omitted": "Lesperance ML et al. (2002) [PMID: 12452451]",
-                "pooled_es": 0.8201587853872938,
-                "ci_low": 0.5788402118349988,
-                "ci_upp": 1.162083109456995,
+                "pooled_es": 1.8166999963168289,
+                "ci_low": 0.27307059996484195,
+                "ci_upp": 12.086247574958621,
+                "is_significant": false
+            },
+            {
+                "omitted": "Sakshi S et al. (2023) [PMID: 38010148]",
+                "pooled_es": 1.5247417803173717,
+                "ci_low": 0.2470415444001936,
+                "ci_upp": 9.410714713146714,
                 "is_significant": false
             },
             {
                 "omitted": "Szwiec M et al. (2024) [PMID: 38613033]",
-                "pooled_es": 0.8095741899284455,
-                "ci_low": 0.5812586322457557,
-                "ci_upp": 1.127570985855384,
+                "pooled_es": 1.7893263199747742,
+                "ci_low": 0.26896839576673715,
+                "ci_upp": 11.903586925993837,
+                "is_significant": false
+            },
+            {
+                "omitted": "Shit M et al. (2025) [PMID: 40514346]",
+                "pooled_es": 1.0277976658973458,
+                "ci_low": 0.6412915954437864,
+                "ci_upp": 1.6472507195311121,
                 "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled results from ten studies indicate that zinc is not associated with breast cancer survival, as the effect size of 0.86 (95% CI: 0.71, 1.04) is not statistically significant, given that the confidence interval includes the null value of 1. Additionally, the high heterogeneity (I\u00b2 = 88.0%) suggests substantial variability among the studies, which may affect the reliability of the pooled effect size. Thus, further investigation is needed to clarify the relationship between zinc and breast cancer survival."
+        "results_interpretation": "The pooled analysis of 12 studies yielded an overall effect size of 1.8 (95% CI: 1.24\u20132.61), suggesting that zinc is associated with a higher risk of breast cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 97.87%), reflecting highly inconsistent results across studies."
     },
-    "plot_url": "static/zinc/forest_breast_cancer_survival_primary.png?t=2481",
-    "funnel_plot_url": "static/zinc/funnel_breast_cancer_survival_primary.png?t=8459",
-    "baujat_plot_url": "static\\zinc\\baujat_breast_cancer_survival_primary.png?t=438",
+    "plot_url": "static/zinc/forest_breast_cancer_survival_primary.png?t=2517",
+    "funnel_plot_url": "static/zinc/funnel_breast_cancer_survival_primary.png?t=5378",
+    "baujat_plot_url": "static\\zinc\\baujat_breast_cancer_survival_primary.png?t=2858",
     "last_run": "2026-03-19 12:09:00"
 }

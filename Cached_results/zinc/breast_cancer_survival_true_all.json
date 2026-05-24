@@ -16,7 +16,7 @@
             "Effect Type": "HR",
             "SE": 0.6275510204081632,
             "Sample Size": 583,
-            "Cases": "Unclear",
+            "Cases": 115,
             "Design": "Cohort",
             "Timing": "Retrospective",
             "Continent": "Europe",
@@ -127,7 +127,7 @@
             "Effect Type": "HR",
             "SE": 0.08673469387755103,
             "Sample Size": 1475,
-            "Cases": null,
+            "Cases": 514,
             "Design": "Cohort",
             "Timing": "Prospective",
             "Continent": "Europe",
@@ -150,50 +150,52 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Bengtsson Y et al. (2022) [PMID: 35807763]</th>\n      <td>-0.8916</td>\n      <td>0.2946</td>\n      <td>-1.4691</td>\n      <td>-0.3141</td>\n    </tr>\n    <tr>\n      <th>Lubi\u0144ski J et al. (2023) [PMID: 37299574]</th>\n      <td>-0.5978</td>\n      <td>0.1541</td>\n      <td>-0.8998</td>\n      <td>-0.2959</td>\n    </tr>\n    <tr>\n      <th>Fernandez-Lazaro CI et al. (2021) [PMID: 33668391]</th>\n      <td>0.0100</td>\n      <td>0.2600</td>\n      <td>-0.4996</td>\n      <td>0.5195</td>\n    </tr>\n    <tr>\n      <th>Szwiec M et al. (2024) [PMID: 38613033]</th>\n      <td>0.7275</td>\n      <td>0.2888</td>\n      <td>0.1614</td>\n      <td>1.2937</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Bengtsson Y et al. (2022) [PMID: 35807763]</th>\n      <td>-0.8512</td>\n      <td>0.2859</td>\n      <td>-1.4114</td>\n      <td>-0.2909</td>\n      <td>205.0</td>\n      <td>1062.0</td>\n    </tr>\n    <tr>\n      <th>Lubi\u0144ski J et al. (2023) [PMID: 37299574]</th>\n      <td>-0.5671</td>\n      <td>0.1481</td>\n      <td>-0.8573</td>\n      <td>-0.2768</td>\n      <td>514.0</td>\n      <td>1475.0</td>\n    </tr>\n    <tr>\n      <th>Fernandez-Lazaro CI et al. (2021) [PMID: 33668391]</th>\n      <td>0.0093</td>\n      <td>0.2413</td>\n      <td>-0.4636</td>\n      <td>0.4822</td>\n      <td>107.0</td>\n      <td>9983.0</td>\n    </tr>\n    <tr>\n      <th>Szwiec M et al. (2024) [PMID: 38613033]</th>\n      <td>0.6557</td>\n      <td>0.2476</td>\n      <td>0.1705</td>\n      <td>1.1409</td>\n      <td>115.0</td>\n      <td>583.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.82,
-        "ci_low": 0.43,
-        "ci_upp": 1.55,
-        "interpretation": "Not Statistically Significant",
-        "i2": 86.22,
-        "tau2": 0.36,
-        "eggers_p": 0.49801952774012914,
-        "funnel_interpretation": "Egger's test (p=0.4980) indicates no significant funnel plot asymmetry among the four included studies on Zinc and Breast Cancer. This suggests a low risk of publication bias, which enhances confidence in the reliability and validity of the pooled effect estimate derived from this meta-analysis.",
+        "pooled_es": 0.83,
+        "ci_low": 0.45,
+        "ci_upp": 1.53,
+        "pi_low": 0.05,
+        "pi_upp": 14.11,
+        "interpretation": "Not statistically significant",
+        "i2": 87.22,
+        "tau2": 0.34,
+        "eggers_p": 0.6051892280746731,
+        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.6052). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
         "loo_results": [
             {
                 "omitted": "Bengtsson Y et al. (2022) [PMID: 35807763]",
-                "pooled_es": 1.0183734471237755,
-                "ci_low": 0.47980985798119513,
-                "ci_upp": 2.1614488751237935,
+                "pooled_es": 1.0132073555128178,
+                "ci_low": 0.505245989710228,
+                "ci_upp": 2.0318600566311344,
                 "is_significant": false
             },
             {
                 "omitted": "Lubi\u0144ski J et al. (2023) [PMID: 37299574]",
-                "pooled_es": 0.9518928075807666,
-                "ci_low": 0.3818007885173747,
-                "ci_upp": 2.3732269402653685,
+                "pooled_es": 0.9494184597720459,
+                "ci_low": 0.40537869883976996,
+                "ci_upp": 2.2235884972145747,
                 "is_significant": false
             },
             {
                 "omitted": "Fernandez-Lazaro CI et al. (2021) [PMID: 33668391]",
-                "pooled_es": 0.7671290780252404,
-                "ci_low": 0.2929147071125583,
-                "ci_upp": 2.0090729760650685,
+                "pooled_es": 0.7748448467460846,
+                "ci_low": 0.3156545620678238,
+                "ci_upp": 1.9020302846120765,
                 "is_significant": false
             },
             {
                 "omitted": "Szwiec M et al. (2024) [PMID: 38613033]",
-                "pooled_es": 0.6115305290022544,
-                "ci_low": 0.3732352188540793,
-                "ci_upp": 1.0019675770415033,
+                "pooled_es": 0.6292405579837245,
+                "ci_low": 0.3922740861995452,
+                "ci_upp": 1.0093546674155198,
                 "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled analysis of four studies assessing the association between zinc exposure and breast cancer survival yields an effect size of 0.82, with a wide 95% confidence interval ranging from 0.43 to 1.55. This broad interval includes the null value, and the association is not statistically significant, indicating that zinc exposure is not associated with improved breast cancer survival based on current evidence. Moreover, the heterogeneity is substantial (I\u00b2 = 86.22%), suggesting that there is considerable variability among the included studies, which may affect the reliability of the pooled estimate. Therefore, further research is warranted to clarify these findings due to the observed inconsistency between studies."
+        "results_interpretation": "The pooled analysis of 4 studies yielded an effect size of 0.83 (95% CI: 0.45\u20131.53), indicating no statistically significant association between zinc and breast cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 87.22%), reflecting highly inconsistent results across studies."
     },
-    "plot_url": "static/zinc/forest_breast_cancer_survival_primary.png?t=5106",
-    "funnel_plot_url": "static/zinc/funnel_breast_cancer_survival_primary.png?t=321",
-    "baujat_plot_url": "static\\zinc\\baujat_breast_cancer_survival_primary.png?t=9768",
+    "plot_url": "static/zinc/forest_breast_cancer_survival_primary.png?t=4216",
+    "funnel_plot_url": "static/zinc/funnel_breast_cancer_survival_primary.png?t=5706",
+    "baujat_plot_url": "static\\zinc\\baujat_breast_cancer_survival_primary.png?t=1906",
     "last_run": "2026-03-22 10:04:56"
 }

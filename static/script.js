@@ -378,7 +378,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const exposure = elements.exposure.value;
         const outcome = elements.outcome.value;
         const excludeMeta = elements.excludeMeta.checked;
-        const model = elements.model ? elements.model.value : "openai.gpt-4o-mini";
+        const model = elements.model ? elements.model.value : "openai.gpt-4o";
 
         if (!disease || !exposure) {
             alert("Please enter both disease and exposure.");

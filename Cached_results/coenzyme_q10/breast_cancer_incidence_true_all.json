@@ -72,7 +72,8 @@
                 "q9": "Yes",
                 "q10": "Yes",
                 "q11": "Yes"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Partula V et al. (2020) [PMID: 32369545]",
@@ -109,7 +110,8 @@
                 "q9": "Yes",
                 "q10": "Yes",
                 "q11": "Yes"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Makarem N et al. (2018) [PMID: 29781707]",
@@ -146,53 +148,19 @@
                 "q9": "Yes",
                 "q10": "Yes",
                 "q11": "Yes"
-            }
+            },
+            "exclusions": 2
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Makarem N et al. (2018) [PMID: 29781707]</th>\n      <td>-0.4943</td>\n      <td>0.2417</td>\n      <td>-0.9680</td>\n      <td>-0.0206</td>\n    </tr>\n    <tr>\n      <th>Partula V et al. (2020) [PMID: 32369545]</th>\n      <td>-0.2357</td>\n      <td>0.1884</td>\n      <td>-0.6049</td>\n      <td>0.1335</td>\n    </tr>\n    <tr>\n      <th>Liu Z et al. (2022) [PMID: 34558660]</th>\n      <td>0.1484</td>\n      <td>0.0683</td>\n      <td>0.0146</td>\n      <td>0.2823</td>\n    </tr>\n    <tr>\n      <th>Chai W et al. (2010) [PMID: 20668119]</th>\n      <td>0.8154</td>\n      <td>0.3148</td>\n      <td>0.1985</td>\n      <td>1.4323</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>160</td>\n      <td>449</td>\n      <td>1.941914</td>\n      <td>1.186078</td>\n      <td>2.961759</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 1.03,
-        "ci_low": 0.69,
-        "ci_upp": 1.53,
-        "interpretation": "Not Statistically Significant",
-        "i2": 79.83,
-        "tau2": 0.12,
-        "eggers_p": 0.7550177871782803,
-        "funnel_interpretation": "Egger's test (p=0.7550) indicates no significant funnel plot asymmetry, despite the small number of included studies (n=4) on 'Coenzyme Q10' and 'Breast cancer'. This suggests a lower risk of publication bias influencing the meta-analysis findings, which in turn strengthens the reliability and trustworthiness of the pooled estimate.",
-        "loo_results": [
-            {
-                "omitted": "Makarem N et al. (2018) [PMID: 29781707]",
-                "pooled_es": 1.1866077704978302,
-                "ci_low": 0.6934758721732938,
-                "ci_upp": 2.0304066190409205,
-                "is_significant": false
-            },
-            {
-                "omitted": "Partula V et al. (2020) [PMID: 32369545]",
-                "pooled_es": 1.1346213405292915,
-                "ci_low": 0.5648570562113796,
-                "ci_upp": 2.279099769097567,
-                "is_significant": false
-            },
-            {
-                "omitted": "Liu Z et al. (2022) [PMID: 34558660]",
-                "pooled_es": 0.9938256867148902,
-                "ci_low": 0.46358171090899525,
-                "ci_upp": 2.1305618240151287,
-                "is_significant": false
-            },
-            {
-                "omitted": "Chai W et al. (2010) [PMID: 20668119]",
-                "pooled_es": 0.8642966557903796,
-                "ci_low": 0.5972421156679502,
-                "ci_upp": 1.250763617657784,
-                "is_significant": false
-            }
-        ],
-        "results_interpretation": "The pooled analysis of four studies evaluating the relationship between Coenzyme Q10 and breast cancer incidence yielded an effect size of 1.03, accompanied by a 95% confidence interval ranging from 0.69 to 1.53. This confidence interval, which spans both below and above the null value of 1, indicates that the exposure is not associated with the disease. Additionally, the high heterogeneity value of 79.83% reflects considerable variability across the studies, suggesting that the observed results may differ significantly based on study design or population characteristics. Consequently, the findings underscore the need for further investigation to clarify the potential relationship between Coenzyme Q10 and breast cancer incidence."
+        "pooled_es": 1.94,
+        "ci_low": 1.19,
+        "ci_upp": 2.96,
+        "interpretation": "statistically significant (increased risk/odds)"
     },
-    "plot_url": "static/coenzyme_q10/forest_breast_cancer_incidence_primary.png?t=1862",
-    "funnel_plot_url": "static/coenzyme_q10/funnel_breast_cancer_incidence_primary.png?t=6835",
-    "baujat_plot_url": "static\\coenzyme_q10\\baujat_breast_cancer_incidence_primary.png?t=1347",
+    "plot_url": "static/coenzyme_q10/forest_breast_cancer_incidence_primary.png?t=1407",
+    "funnel_plot_url": "static/coenzyme_q10/funnel_breast_cancer_incidence_primary.png?t=3161",
+    "baujat_plot_url": null,
     "last_run": "2026-03-25 02:39:03"
 }

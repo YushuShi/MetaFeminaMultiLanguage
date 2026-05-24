@@ -36,7 +36,8 @@
                 "q9": "Yes",
                 "q10": "Yes",
                 "q11": "Yes"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Reece AS et al. (2022) [PMID: 35354495]",
@@ -110,15 +111,23 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>51623922</td>\n      <td>124896418350</td>\n      <td>1.397</td>\n      <td>1.392</td>\n      <td>1.402</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Reece AS et al. (2022) [PMID: 35354495]</th>\n      <td>0.3343</td>\n      <td>0.0018</td>\n      <td>0.3307</td>\n      <td>0.3379</td>\n      <td>51623922</td>\n      <td>124896418350</td>\n    </tr>\n    <tr>\n      <th>Reece AS et al. (2022) [PMID: 35386387]</th>\n      <td>2.7825</td>\n      <td>1.1238</td>\n      <td>0.5800</td>\n      <td>4.9851</td>\n      <td>NA</td>\n      <td>NA</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 1.4,
-        "ci_low": 1.39,
-        "ci_upp": 1.4,
-        "interpretation": "Statistically Significant (Increased Risk/Odds)"
+        "pooled_es": 3.67,
+        "ci_low": 0.35,
+        "ci_upp": 38.32,
+        "pi_low": null,
+        "pi_upp": null,
+        "interpretation": "Not statistically significant",
+        "i2": 78.93,
+        "tau2": 2.37,
+        "eggers_p": null,
+        "funnel_interpretation": "Insufficient studies to perform formal publication bias testing.",
+        "loo_results": [],
+        "results_interpretation": "The pooled analysis of 2 studies yielded an effect size of 3.67 (95% CI: 0.35\u201338.32), indicating no statistically significant association between cannabidiol and breast cancer. Although the point estimate suggests a potential positive relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 78.93%), reflecting highly inconsistent results across studies."
     },
-    "plot_url": "static/cannabidiol/forest_breast_cancer_incidence_primary.png?t=5654",
-    "funnel_plot_url": "static/cannabidiol/funnel_breast_cancer_incidence_primary.png?t=8436",
+    "plot_url": "static/cannabidiol/forest_breast_cancer_incidence_primary.png?t=2308",
+    "funnel_plot_url": "static/cannabidiol/funnel_breast_cancer_incidence_primary.png?t=9055",
     "baujat_plot_url": null,
     "last_run": "2026-03-26 10:24:08"
 }

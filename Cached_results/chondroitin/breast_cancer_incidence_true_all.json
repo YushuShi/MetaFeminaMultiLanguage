@@ -36,18 +36,14 @@
                 "q9": "Yes",
                 "q10": "Yes",
                 "q11": "Yes"
-            }
+            },
+            "exclusions": 2
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>2.28</td>\n      <td>1.08</td>\n      <td>4.81</td>\n    </tr>\n  </tbody>\n</table>",
-    "headline": {
-        "pooled_es": 2.28,
-        "ci_low": 1.08,
-        "ci_upp": 4.81,
-        "interpretation": "Statistically Significant (Increased Risk/Odds)"
-    },
-    "plot_url": "static/chondroitin/forest_breast_cancer_incidence_primary.png?t=6099",
-    "funnel_plot_url": "static/chondroitin/funnel_breast_cancer_incidence_primary.png?t=1958",
+    "summary_html": null,
+    "headline": null,
+    "plot_url": null,
+    "funnel_plot_url": null,
     "baujat_plot_url": null,
     "last_run": "2026-03-25 02:08:14"
 }

@@ -33,18 +33,14 @@
                 "q6": "Unclear",
                 "q7": "Yes",
                 "q8": "Yes"
-            }
+            },
+            "exclusions": 2
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>5.2</td>\n      <td>5.2</td>\n      <td>16.7</td>\n    </tr>\n  </tbody>\n</table>",
-    "headline": {
-        "pooled_es": 5.2,
-        "ci_low": 5.2,
-        "ci_upp": 16.7,
-        "interpretation": "statistically significant (increased risk/odds)"
-    },
-    "plot_url": "static/ginger/forest_ovarian_cancer_incidence_primary.png?t=6698",
-    "funnel_plot_url": "static/ginger/funnel_ovarian_cancer_incidence_primary.png?t=2920",
+    "summary_html": null,
+    "headline": null,
+    "plot_url": null,
+    "funnel_plot_url": null,
     "baujat_plot_url": null,
     "last_run": "2026-05-18 15:20:07"
 }

@@ -36,7 +36,8 @@
                 "q9": "Yes",
                 "q10": "Yes",
                 "q11": "Yes"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Touillaud MS et al. (2005) [PMID: 15860438]",
@@ -72,24 +73,14 @@
                 "q8": "Yes",
                 "q9": "Unclear",
                 "q10": "Yes"
-            }
+            },
+            "exclusions": 2
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Zeng L et al. (2021) [PMID: 34189868]</th>\n      <td>-3.5066</td>\n      <td>0.4106</td>\n      <td>-4.3113</td>\n      <td>-2.7019</td>\n    </tr>\n    <tr>\n      <th>Touillaud MS et al. (2005) [PMID: 15860438]</th>\n      <td>-1.1087</td>\n      <td>0.4729</td>\n      <td>-2.0356</td>\n      <td>-0.1817</td>\n    </tr>\n  </tbody>\n</table>",
-    "headline": {
-        "pooled_es": 0.1,
-        "ci_low": 0.01,
-        "ci_upp": 1.03,
-        "interpretation": "Not Statistically Significant",
-        "i2": 93.18,
-        "tau2": 2.68,
-        "eggers_p": null,
-        "funnel_interpretation": "Due to the extremely limited number of included studies (n=2), a funnel plot cannot be meaningfully interpreted for the assessment of publication bias. This significantly compromises the ability to gauge the reliability of any pooled estimate, as the potential for unassessed publication bias introduces substantial uncertainty into the findings.",
-        "loo_results": [],
-        "results_interpretation": "The pooled analysis of the two studies indicates an effect size of 0.1, suggesting a potential association between Boron exposure and breast cancer incidence; however, this association is not statistically significant, as evidenced by the 95% confidence interval of (0.01, 1.03), which includes 1. This lack of significance implies that we cannot assert a reliable relationship based on the available data. Furthermore, the high heterogeneity (I\u00b2 = 93.18%) highlights considerable variability between the studies included, indicating that the findings may not be consistent across different populations or methodologies, thereby complicating the interpretation of Boron's role in breast cancer incidence."
-    },
-    "plot_url": "static/boron/forest_breast_cancer_incidence_primary.png?t=7864",
-    "funnel_plot_url": "static/boron/funnel_breast_cancer_incidence_primary.png?t=5918",
+    "summary_html": null,
+    "headline": null,
+    "plot_url": null,
+    "funnel_plot_url": null,
     "baujat_plot_url": null,
     "last_run": "2026-03-24 18:13:53"
 }

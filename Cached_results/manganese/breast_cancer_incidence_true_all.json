@@ -33,18 +33,14 @@
                 "q6": "Yes",
                 "q7": "Yes",
                 "q8": "Yes"
-            }
+            },
+            "exclusions": 2
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n  </tbody>\n</table>",
-    "headline": {
-        "pooled_es": 0.0,
-        "ci_low": 0.0,
-        "ci_upp": 0.0,
-        "interpretation": "Statistically Significant (Decreased Risk/Odds)"
-    },
-    "plot_url": "static/manganese/forest_breast_cancer_incidence_primary.png?t=8775",
-    "funnel_plot_url": "static/manganese/funnel_breast_cancer_incidence_primary.png?t=6850",
+    "summary_html": null,
+    "headline": null,
+    "plot_url": null,
+    "funnel_plot_url": null,
     "baujat_plot_url": null,
     "last_run": "2026-04-06 14:47:16"
 }

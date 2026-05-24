@@ -15,8 +15,8 @@
             "Link": "https://pubmed.ncbi.nlm.nih.gov/37686766/",
             "Effect Type": "RR",
             "SE": 1.191326530612245,
-            "Sample Size": "Not specified",
-            "Cases": "Not specified",
+            "Sample Size": 370,
+            "Cases": 74,
             "Design": "Case-Control",
             "Timing": "Retrospective",
             "Continent": "North America",
@@ -35,7 +35,8 @@
                 "q8": "Yes",
                 "q9": "Unclear",
                 "q10": "Yes"
-            }
+            },
+            "Participants": 370
         },
         {
             "Study": "Park YM et al. (2019) [PMID: 30247761]",
@@ -109,15 +110,45 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>1.21</td>\n      <td>1.04</td>\n      <td>1.41</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Park YM et al. (2019) [PMID: 30247761]</th>\n      <td>0.1764</td>\n      <td>0.0713</td>\n      <td>0.0367</td>\n      <td>0.3160</td>\n      <td>1614</td>\n      <td>43570</td>\n    </tr>\n    <tr>\n      <th>Zhao J et al. (2024) [PMID: 39773504]</th>\n      <td>0.3784</td>\n      <td>0.0970</td>\n      <td>0.1883</td>\n      <td>0.5686</td>\n      <td>Not specified</td>\n      <td>Not specified</td>\n    </tr>\n    <tr>\n      <th>Brown RB et al. (2023) [PMID: 37686766]</th>\n      <td>0.8329</td>\n      <td>0.4557</td>\n      <td>-0.0603</td>\n      <td>1.7261</td>\n      <td>74</td>\n      <td>370</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 1.21,
-        "ci_low": 1.04,
-        "ci_upp": 1.41,
-        "interpretation": "Statistically Significant (Increased Risk/Odds)"
+        "pooled_es": 1.35,
+        "ci_low": 1.09,
+        "ci_upp": 1.66,
+        "pi_low": 0.16,
+        "pi_upp": 11.34,
+        "interpretation": "Statistically significant (increased risk/odds)",
+        "i2": 54.99,
+        "tau2": 0.02,
+        "eggers_p": 0.42331021060227725,
+        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.4233). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "loo_results": [
+            {
+                "omitted": "Park YM et al. (2019) [PMID: 30247761]",
+                "pooled_es": 1.4733585261708493,
+                "ci_low": 1.3004553294621974,
+                "ci_upp": 1.6692502214113456,
+                "is_significant": true
+            },
+            {
+                "omitted": "Zhao J et al. (2024) [PMID: 39773504]",
+                "pooled_es": 1.4195551870755874,
+                "ci_low": 0.8044899704798165,
+                "ci_upp": 2.504862711900972,
+                "is_significant": false
+            },
+            {
+                "omitted": "Brown RB et al. (2023) [PMID: 37686766]",
+                "pooled_es": 1.3056133055776011,
+                "ci_low": 1.0722662233786624,
+                "ci_upp": 1.5897414900658446,
+                "is_significant": true
+            }
+        ],
+        "results_interpretation": "The pooled analysis of 3 studies yielded an overall effect size of 1.35 (95% CI: 1.09\u20131.66), suggesting that phosphorus is associated with a higher risk of breast cancer. However, this association should be interpreted with caution, as there was substantial between-study heterogeneity (I\u00b2 = 54.99%), reflecting considerable variability across studies."
     },
-    "plot_url": "static/phosphorus/forest_breast_cancer_incidence_primary.png?t=9607",
-    "funnel_plot_url": "static/phosphorus/funnel_breast_cancer_incidence_primary.png?t=5849",
-    "baujat_plot_url": null,
+    "plot_url": "static/phosphorus/forest_breast_cancer_incidence_primary.png?t=4975",
+    "funnel_plot_url": "static/phosphorus/funnel_breast_cancer_incidence_primary.png?t=2467",
+    "baujat_plot_url": "static\\phosphorus\\baujat_breast_cancer_incidence_primary.png?t=1357",
     "last_run": "2026-03-25 21:13:42"
 }
