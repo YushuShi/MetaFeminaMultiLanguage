@@ -21,19 +21,19 @@
             "Timing": "Retrospective",
             "Continent": "North America",
             "Stage": "NA",
-            "Quality %": 100.0,
-            "Quality Score": "Good",
+            "Quality %": 80.0,
+            "Quality Score": "Moderate",
             "comparison_type": "Highest vs Lowest",
             "JBI": {
                 "q1": "Yes",
                 "q2": "Yes",
                 "q3": "Yes",
-                "q4": "Yes",
+                "q4": "Unclear",
                 "q5": "Yes",
                 "q6": "Yes",
                 "q7": "Yes",
                 "q8": "Yes",
-                "q9": "Yes",
+                "q9": "Unclear",
                 "q10": "Yes"
             }
         },
@@ -56,13 +56,13 @@
             "Design": "Case-Control",
             "Timing": "Retrospective",
             "Continent": "North America",
-            "Stage": "Epithelial",
-            "Quality %": 90.0,
+            "Stage": "Unclear",
+            "Quality %": 100.0,
             "Quality Score": "Good",
-            "comparison_type": "Highest vs Lowest",
+            "comparison_type": "Highest vs Lowest Tertile",
             "JBI": {
                 "q1": "Yes",
-                "q2": "Unclear",
+                "q2": "Yes",
                 "q3": "Yes",
                 "q4": "Yes",
                 "q5": "Yes",
@@ -89,8 +89,8 @@
         "loo_results": [],
         "results_interpretation": "The pooled analysis of 2 studies yielded an overall effect size of 0.62 (95% CI: 0.41\u20130.92), suggesting that selenium is associated with a lower risk of ovarian cancer. These findings were supported by moderate between-study heterogeneity (I\u00b2 = 27.77%), suggesting some variability in the results across studies."
     },
-    "plot_url": "static/selenium/forest_ovarian_cancer_incidence_primary.png?t=5603",
-    "funnel_plot_url": "static/selenium/funnel_ovarian_cancer_incidence_primary.png?t=9064",
+    "plot_url": "static/selenium/forest_ovarian_cancer_incidence_primary.png?t=8424",
+    "funnel_plot_url": "static/selenium/funnel_ovarian_cancer_incidence_primary.png?t=1687",
     "baujat_plot_url": null,
-    "last_run": "2026-05-19 18:04:21"
+    "last_run": "2026-05-25 01:10:47"
 }

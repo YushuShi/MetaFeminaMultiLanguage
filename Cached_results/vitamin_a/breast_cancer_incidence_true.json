@@ -109,7 +109,7 @@
                 "q9": "Yes",
                 "q10": "Yes"
             },
-            "exclusions": 1
+            "exclusions": 0
         },
         {
             "Study": "Bakker MF et al. (2016) [PMID: 26791185]",
@@ -2575,10 +2575,10 @@
                 "is_significant": true
             }
         ],
-        "results_interpretation": "The pooled analysis of 59 studies yielded an overall effect size of 0.76 (95% CI: 0.69\u20130.85), suggesting that Vitamin A is associated with a lower risk of breast cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 92.26%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 59 studies yielded an overall effect size of 0.76 (95% CI: 0.69\u20130.85), suggesting that Vitamin A is associated with a lower risk of uterine cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 92.26%), reflecting highly inconsistent results across studies."
     },
-    "plot_url": "static/vitamin_a/forest_breast_cancer_incidence_primary.png?t=1251",
-    "funnel_plot_url": "static/vitamin_a/funnel_breast_cancer_incidence_primary.png?t=8736",
-    "baujat_plot_url": "static\\vitamin_a\\baujat_breast_cancer_incidence_primary.png?t=1935",
+    "plot_url": "static/vitamin_a/forest_uterine_cancer_incidence_primary.png?t=1388",
+    "funnel_plot_url": "static/vitamin_a/funnel_uterine_cancer_incidence_primary.png?t=6976",
+    "baujat_plot_url": "static\\vitamin_a\\baujat_uterine_cancer_incidence_primary.png?t=2359",
     "last_run": "2026-03-08 21:13:12"
 }

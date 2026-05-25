@@ -20,7 +20,7 @@
             "Design": "Case-Control",
             "Timing": "Retrospective",
             "Continent": "Europe",
-            "Stage": "NA",
+            "Stage": null,
             "Quality %": 90.0,
             "Quality Score": "Good",
             "comparison_type": "Highest vs Lowest",
@@ -45,8 +45,8 @@
         "ci_upp": 0.94,
         "interpretation": "statistically significant (decreased risk/odds)"
     },
-    "plot_url": "static/olive/forest_ovarian_cancer_incidence_primary.png?t=9104",
-    "funnel_plot_url": "static/olive/funnel_ovarian_cancer_incidence_primary.png?t=4129",
+    "plot_url": "static/olive/forest_ovarian_cancer_incidence_primary.png?t=1263",
+    "funnel_plot_url": "static/olive/funnel_ovarian_cancer_incidence_primary.png?t=5860",
     "baujat_plot_url": null,
-    "last_run": "2026-05-19 16:22:41"
+    "last_run": "2026-05-25 00:28:04"
 }

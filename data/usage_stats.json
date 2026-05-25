@@ -1,12 +1,27 @@
 {
-    "google.gemini-2.5-flash": {
-        "input_tokens": 97371,
-        "output_tokens": 59471,
-        "calls": 44
+    "gemini-2.5-flash": {
+        "input_tokens": 1411561,
+        "output_tokens": 148646,
+        "calls": 545
+    },
+    "gpt-4o": {
+        "input_tokens": 1100544,
+        "output_tokens": 110364,
+        "calls": 499
+    },
+    "openai.gpt-4.1": {
+        "input_tokens": 3992,
+        "output_tokens": 499,
+        "calls": 2
     },
     "openai.gpt-4o": {
-        "input_tokens": 77214,
-        "output_tokens": 6501,
-        "calls": 36
+        "input_tokens": 1509837,
+        "output_tokens": 141571,
+        "calls": 692
+    },
+    "google.gemini-2.5-flash": {
+        "input_tokens": 1568557,
+        "output_tokens": 962474,
+        "calls": 690
     }
 }

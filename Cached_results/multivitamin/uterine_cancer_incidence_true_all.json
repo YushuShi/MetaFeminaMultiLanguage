@@ -16,12 +16,12 @@
             "Effect Type": "HR",
             "SE": 0.07908163265306122,
             "Sample Size": 161808,
-            "Cases": "Unclear",
+            "Cases": null,
             "Design": "Cohort",
             "Timing": "Prospective",
             "Continent": "North America",
-            "Stage": "Unclear",
-            "Quality %": 100.0,
+            "Stage": null,
+            "Quality %": 81.8,
             "Quality Score": "Good",
             "comparison_type": "Yes vs No",
             "JBI": {
@@ -33,21 +33,21 @@
                 "q6": "Yes",
                 "q7": "Yes",
                 "q8": "Yes",
-                "q9": "Yes",
-                "q10": "Yes",
+                "q9": "Unclear",
+                "q10": "No",
                 "q11": "Yes"
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>Unclear</td>\n      <td>161808</td>\n      <td>1.046437</td>\n      <td>0.90615</td>\n      <td>1.192883</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>None</td>\n      <td>161808</td>\n      <td>1.046437</td>\n      <td>0.90615</td>\n      <td>1.192883</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 1.05,
         "ci_low": 0.91,
         "ci_upp": 1.19,
         "interpretation": "not statistically significant"
     },
-    "plot_url": "static/multivitamin/forest_uterine_cancer_incidence_primary.png?t=7729",
-    "funnel_plot_url": "static/multivitamin/funnel_uterine_cancer_incidence_primary.png?t=4449",
+    "plot_url": "static/multivitamin/forest_uterine_cancer_incidence_primary.png?t=2325",
+    "funnel_plot_url": "static/multivitamin/funnel_uterine_cancer_incidence_primary.png?t=2534",
     "baujat_plot_url": null,
-    "last_run": "2026-05-19 23:39:04"
+    "last_run": "2026-05-25 00:25:48"
 }

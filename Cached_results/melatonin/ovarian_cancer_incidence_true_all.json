@@ -15,12 +15,12 @@
             "Link": "https://pubmed.ncbi.nlm.nih.gov/26223889/",
             "Effect Type": "OR",
             "SE": 0.2959183673469388,
-            "Sample Size": 299,
+            "Sample Size": 456,
             "Cases": 152,
             "Design": "Case-Control",
-            "Timing": "Retrospective",
+            "Timing": "Prospective",
             "Continent": "North America",
-            "Stage": "NA",
+            "Stage": null,
             "Quality %": 100.0,
             "Quality Score": "Good",
             "comparison_type": "Highest vs Lowest",
@@ -38,15 +38,15 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>152</td>\n      <td>299</td>\n      <td>0.812172</td>\n      <td>0.433839</td>\n      <td>1.454139</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>152</td>\n      <td>456</td>\n      <td>0.812172</td>\n      <td>0.433839</td>\n      <td>1.454139</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 0.81,
         "ci_low": 0.43,
         "ci_upp": 1.45,
         "interpretation": "not statistically significant"
     },
-    "plot_url": "static/melatonin/forest_ovarian_cancer_incidence_primary.png?t=5784",
-    "funnel_plot_url": "static/melatonin/funnel_ovarian_cancer_incidence_primary.png?t=9597",
+    "plot_url": "static/melatonin/forest_ovarian_cancer_incidence_primary.png?t=436",
+    "funnel_plot_url": "static/melatonin/funnel_ovarian_cancer_incidence_primary.png?t=4725",
     "baujat_plot_url": null,
-    "last_run": "2026-05-19 15:17:10"
+    "last_run": "2026-05-24 23:59:02"
 }

@@ -1,4 +1,53 @@
 {
-    "error": "No relevant evidence was identified in the reviewed sources.",
-    "last_run": "2026-05-19 11:24:35"
+    "success": true,
+    "studies": [
+        {
+            "Study": "Matuszczak M et al. (2024) [PMID: 38790714]",
+            "PMID": "38790714",
+            "Effect Size": 1.6393,
+            "Lower CI": 0.8,
+            "Upper CI": 3.4483,
+            "Population": "General",
+            "Reference": "Zinc and Its Antioxidant Properties: The Potential Use of Blood Zinc Levels as a Marker of Cancer Risk in BRCA1 Mutation Carriers.",
+            "Authors": "Matuszczak M, Kilja\u0144czyk A, Marciniak W, Derkacz R, Stempa K, Baszuk P, Bry\u015bkiewicz M, Sun P, Cheriyan A, Cybulski C, D\u0119bniak T, Gronwald J, Huzarski T, Lener MR, Jakubowska A, Szwiec M, Stawicka-Nie\u0142acna M, Godlewski D, Prusaczyk A, Jasiewicz A, Kluz T, Tomiczek-Szwiec J, Kilar-Kobierzycka E, Sio\u0142ek M, Wi\u015bniowski R, Posmyk R, Jarkiewicz-Tretyn J, Scott RJ, Narod SA, Lubi\u0144ski J",
+            "Journal": "Antioxidants (Basel, Switzerland)",
+            "Year": "2024",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/38790714/",
+            "Effect Type": "HR",
+            "SE": 0.6755867346938775,
+            "Sample Size": 989,
+            "Cases": 29,
+            "Design": "Cohort",
+            "Timing": "Prospective",
+            "Continent": null,
+            "Stage": null,
+            "Quality %": 45.5,
+            "Quality Score": "Fair",
+            "comparison_type": "Upper two tertiles vs Lowest tertile [inverted \u21d2 high vs low]",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Unclear",
+                "q4": "Unclear",
+                "q5": "No",
+                "q6": "Yes",
+                "q7": "Unclear",
+                "q8": "Yes",
+                "q9": "Unclear",
+                "q10": "Unclear",
+                "q11": "Yes"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>29</td>\n      <td>989</td>\n      <td>1.570065</td>\n      <td>0.810983</td>\n      <td>2.93347</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 1.57,
+        "ci_low": 0.81,
+        "ci_upp": 2.93,
+        "interpretation": "not statistically significant"
+    },
+    "plot_url": "static/zinc/forest_ovarian_cancer_incidence_primary.png?t=1557",
+    "funnel_plot_url": "static/zinc/funnel_ovarian_cancer_incidence_primary.png?t=784",
+    "baujat_plot_url": null,
+    "last_run": "2026-05-25 01:31:59"
 }

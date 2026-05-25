@@ -20,15 +20,15 @@
             "Design": "Case-Control",
             "Timing": "Retrospective",
             "Continent": "North America",
-            "Stage": "NA",
-            "Quality %": 90.0,
-            "Quality Score": "Good",
+            "Stage": null,
+            "Quality %": 80.0,
+            "Quality Score": "Moderate",
             "comparison_type": "Highest vs Lowest",
             "JBI": {
                 "q1": "Yes",
-                "q2": "No",
+                "q2": "Unclear",
                 "q3": "Yes",
-                "q4": "Yes",
+                "q4": "Unclear",
                 "q5": "Yes",
                 "q6": "Yes",
                 "q7": "Yes",
@@ -45,8 +45,8 @@
         "ci_upp": 1.01,
         "interpretation": "not statistically significant"
     },
-    "plot_url": "static/quercetin/forest_uterine_cancer_incidence_primary.png?t=7404",
-    "funnel_plot_url": "static/quercetin/funnel_uterine_cancer_incidence_primary.png?t=110",
+    "plot_url": "static/quercetin/forest_uterine_cancer_incidence_primary.png?t=7103",
+    "funnel_plot_url": "static/quercetin/funnel_uterine_cancer_incidence_primary.png?t=7668",
     "baujat_plot_url": null,
-    "last_run": "2026-05-19 23:51:44"
+    "last_run": "2026-05-25 00:34:40"
 }

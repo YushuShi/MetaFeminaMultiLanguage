@@ -20,10 +20,10 @@
             "Design": "Case-Control",
             "Timing": "Retrospective",
             "Continent": "Asia",
-            "Stage": "Not specified",
+            "Stage": "Epithelial",
             "Quality %": 90.0,
             "Quality Score": "Good",
-            "comparison_type": "High vs Low",
+            "comparison_type": "More than 2g/day vs Less than 2g/day",
             "JBI": {
                 "q1": "Yes",
                 "q2": "Unclear",
@@ -45,8 +45,8 @@
         "ci_upp": 0.9,
         "interpretation": "statistically significant (decreased risk/odds)"
     },
-    "plot_url": "static/mushrooms/forest_ovarian_cancer_incidence_primary.png?t=7140",
-    "funnel_plot_url": "static/mushrooms/funnel_ovarian_cancer_incidence_primary.png?t=7657",
+    "plot_url": "static/mushrooms/forest_ovarian_cancer_incidence_primary.png?t=1364",
+    "funnel_plot_url": "static/mushrooms/funnel_ovarian_cancer_incidence_primary.png?t=7005",
     "baujat_plot_url": null,
-    "last_run": "2026-05-19 16:19:41"
+    "last_run": "2026-05-25 00:26:31"
 }

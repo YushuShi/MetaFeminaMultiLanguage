@@ -16,35 +16,35 @@
             "Effect Type": "OR",
             "SE": 0.0007653061224489803,
             "Sample Size": 12437,
-            "Cases": "Not specified",
+            "Cases": null,
             "Design": "Cross-Sectional",
-            "Timing": "Retrospective",
+            "Timing": null,
             "Continent": "North America",
-            "Stage": "Not specified",
-            "Quality %": 87.5,
-            "Quality Score": "Good",
+            "Stage": null,
+            "Quality %": 37.5,
+            "Quality Score": "Fair",
             "comparison_type": "Continuous",
             "JBI": {
                 "q1": "Yes",
                 "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
+                "q3": "Unclear",
+                "q4": "Unclear",
                 "q5": "Unclear",
-                "q6": "Yes",
-                "q7": "Yes",
+                "q6": "Unclear",
+                "q7": "Unclear",
                 "q8": "Yes"
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>Not specified</td>\n      <td>12437</td>\n      <td>0.997389</td>\n      <td>0.996518</td>\n      <td>0.99913</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>None</td>\n      <td>12437</td>\n      <td>0.997389</td>\n      <td>0.996518</td>\n      <td>0.99913</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 1.0,
         "ci_low": 1.0,
         "ci_upp": 1.0,
         "interpretation": "statistically significant (decreased risk/odds)"
     },
-    "plot_url": "static/phosphorus/forest_uterine_cancer_incidence_primary.png?t=5875",
-    "funnel_plot_url": "static/phosphorus/funnel_uterine_cancer_incidence_primary.png?t=361",
+    "plot_url": "static/phosphorus/forest_uterine_cancer_incidence_primary.png?t=5182",
+    "funnel_plot_url": "static/phosphorus/funnel_uterine_cancer_incidence_primary.png?t=8190",
     "baujat_plot_url": null,
-    "last_run": "2026-05-19 23:44:11"
+    "last_run": "2026-05-25 00:30:29"
 }

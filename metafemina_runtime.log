@@ -229,3 +229,142 @@
 2026-05-23 21:51:11 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
 2026-05-23 21:51:11 [MetaFemina] Re-analyzing Folic acid due to verification filtering/consensus/flags...
 2026-05-23 21:51:12 [MetaFemina] Analyze complete in 0.7s: studies=50, error=None
+2026-05-24 20:28:17 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-05-24 20:28:17 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-24 20:28:17 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-24 20:28:17 [MetaFemina] Re-analyzing Folic acid due to verification filtering/consensus/flags...
+2026-05-24 20:28:20 [MetaFemina] Analyze complete in 3.4s: studies=50, error=None
+2026-05-24 20:36:48 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all - backup.json
+2026-05-24 20:36:49 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all - Copy.json
+2026-05-24 20:36:50 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-24 20:38:17 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-24 20:38:26 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-24 20:38:28 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-24 20:40:23 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-24 20:40:31 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-05-24 20:40:31 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-24 20:40:31 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-24 20:40:31 [MetaFemina] Re-analyzing Folic acid due to verification filtering/consensus/flags...
+2026-05-24 20:40:32 [MetaFemina] Analyze complete in 1.0s: studies=50, error=None
+2026-05-24 20:41:19 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all - backup.json
+2026-05-24 20:41:21 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all - Copy.json
+2026-05-24 20:41:22 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all - backup.json
+2026-05-24 20:41:23 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-24 20:41:23 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all - Copy.json
+2026-05-24 20:41:25 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-24 20:41:25 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all - backup.json
+2026-05-24 20:41:27 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all - Copy.json
+2026-05-24 20:41:27 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all - backup.json
+2026-05-24 20:41:29 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-24 20:41:29 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all - Copy.json
+2026-05-24 20:41:30 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-24 20:51:08 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all - backup.json
+2026-05-24 20:51:09 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all - Copy.json
+2026-05-24 20:51:12 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-24 20:51:12 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-24 21:23:52 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all - backup.json
+2026-05-24 21:23:53 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all - Copy.json
+2026-05-24 21:23:54 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-24 22:35:21 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-05-24 22:35:21 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-24 22:35:21 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-24 22:35:21 [MetaFemina] Re-analyzing Folic acid due to verification filtering/consensus/flags...
+2026-05-24 22:35:23 [MetaFemina] Analyze complete in 1.9s: studies=50, error=None
+2026-05-24 22:44:23 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=5-HTP, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-05-24 22:44:23 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-05-24 22:44:23 [MetaFemina] Running new analysis for Ovarian cancer / 5-htp (from '5-HTP') using model: openai.gpt-4o
+2026-05-24 22:44:25 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\5-htp\ovarian_cancer_incidence_true_all.json
+2026-05-24 22:44:25 [MetaFemina] Analyze complete in 2.2s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-05-24 22:44:34 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=5-HTP, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-05-24 22:44:34 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-05-24 22:44:34 [MetaFemina] Running new analysis for Uterine cancer / 5-htp (from '5-HTP') using model: openai.gpt-4o
+2026-05-24 22:44:36 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\5-htp\uterine_cancer_incidence_true_all.json
+2026-05-24 22:44:36 [MetaFemina] Analyze complete in 2.5s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-05-24 22:57:39 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\astragalus\breast_cancer_incidence_true_all.json
+2026-05-24 22:58:30 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\bcaas\breast_cancer_incidence_true_all.json
+2026-05-24 22:59:48 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\berberine\breast_cancer_incidence_true_all.json
+2026-05-24 23:02:41 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\black_cohosh\breast_cancer_incidence_true_all.json
+2026-05-24 23:03:33 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\boron\breast_cancer_incidence_true_all.json
+2026-05-24 23:12:31 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\cannabidiol\breast_cancer_incidence_true_all.json
+2026-05-24 23:18:35 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\chondroitin\breast_cancer_incidence_true_all.json
+2026-05-24 23:20:44 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\coenzyme_q10\breast_cancer_incidence_true_all.json
+2026-05-24 23:25:52 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dehydroepiandrosterone\breast_cancer_incidence_true_all.json
+2026-05-24 23:28:36 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\fish_oil\breast_cancer_incidence_true_all.json
+2026-05-24 23:29:03 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\flaxseed\breast_cancer_incidence_true_all.json
+2026-05-24 23:30:46 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all - backup.json
+2026-05-24 23:30:46 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all - Copy.json
+2026-05-24 23:30:47 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-05-24 23:36:16 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\ginger\ovarian_cancer_incidence_true_all.json
+2026-05-24 23:37:57 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\glutamine\breast_cancer_incidence_true_all.json
+2026-05-24 23:39:05 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\grape\breast_cancer_incidence_true_all.json
+2026-05-24 23:39:56 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\green_tea\breast_cancer_incidence_true.json
+2026-05-24 23:39:57 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\green_tea\breast_cancer_incidence_true_all.json
+2026-05-24 23:50:13 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\isoleucine\breast_cancer_incidence_true_all.json
+2026-05-24 23:53:58 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\breast_cancer_incidence_true_all.json
+2026-05-24 23:56:47 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\manganese\breast_cancer_incidence_true_all.json
+2026-05-25 00:24:52 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mistletoe\breast_cancer_incidence_true_all.json
+2026-05-25 00:26:13 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mushrooms\breast_cancer_incidence_true_all.json
+2026-05-25 00:28:24 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-3_fatty_acids\breast_cancer_incidence_true_all.json
+2026-05-25 00:29:00 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-6_fatty_acids\breast_cancer_incidence_true_all.json
+2026-05-25 01:18:38 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true.json
+2026-05-25 01:28:13 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all.json
+2026-05-25 09:34:37 [MetaFemina] Analyze request: disease=Breast cancer, exposure=5-HTP, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-05-25 09:34:37 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\5-htp\breast_cancer_incidence_true_all.json
+2026-05-25 09:34:37 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\5-htp\breast_cancer_incidence_true_all.json
+2026-05-25 09:34:37 [MetaFemina] Analyze complete in 0.0s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-05-25 09:34:57 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Carnitine, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-05-25 09:34:57 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\carnitine\breast_cancer_incidence_true_all.json
+2026-05-25 09:34:57 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\carnitine\breast_cancer_incidence_true_all.json
+2026-05-25 09:34:57 [MetaFemina] Re-analyzing Carnitine due to verification filtering/consensus/flags...
+2026-05-25 09:34:57 [MetaFemina] Analyze complete in 0.4s: studies=6, error=None
+2026-05-25 09:36:15 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Mediterranean diet, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-05-25 09:36:15 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-05-25 09:36:15 [MetaFemina] Running new analysis for Breast cancer / mediterranean diet (from 'Mediterranean diet') using model: openai.gpt-4o
+2026-05-25 09:36:21 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\breast_cancer_incidence_true_all.json
+2026-05-25 09:36:21 [MetaFemina] Analyze complete in 5.8s: studies=11, error=None
+2026-05-25 09:53:16 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Mediterranean diet, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-05-25 09:53:16 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\breast_cancer_incidence_true_all.json
+2026-05-25 09:53:16 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\breast_cancer_incidence_true_all.json
+2026-05-25 09:53:16 [MetaFemina] Analyze complete in 0.0s: studies=11, error=None
+2026-05-25 09:53:20 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Mediterranean diet, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-05-25 09:53:20 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-05-25 09:53:20 [MetaFemina] Running new analysis for Breast cancer / mediterranean diet (from 'Mediterranean diet') using model: openai.gpt-4o
+2026-05-25 10:14:37 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Mediterranean diet, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-05-25 10:14:37 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-05-25 10:14:37 [MetaFemina] Running new analysis for Breast cancer / mediterranean diet (from 'Mediterranean diet') using model: openai.gpt-4o
+2026-05-25 10:17:12 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Mediterranean diet, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-05-25 10:17:12 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-05-25 10:17:12 [MetaFemina] Running new analysis for Breast cancer / mediterranean diet (from 'Mediterranean diet') using model: openai.gpt-4o
+2026-05-25 10:26:38 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\breast_cancer_incidence_true_all.json
+2026-05-25 10:26:38 [MetaFemina] Analyze complete in 566.9s: studies=30, error=None
+2026-05-25 10:48:33 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Mediterranean diet, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-05-25 10:48:33 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-05-25 10:48:33 [MetaFemina] Running new analysis for Breast cancer / mediterranean diet (from 'Mediterranean diet') using model: openai.gpt-4o
+2026-05-25 11:03:23 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\breast_cancer_incidence_true_all.json
+2026-05-25 11:03:23 [MetaFemina] Analyze complete in 889.5s: studies=34, error=None
+2026-05-25 13:21:32 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Mediterranean diet, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-05-25 13:21:32 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\breast_cancer_incidence_true_all.json
+2026-05-25 13:21:32 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\breast_cancer_incidence_true_all.json
+2026-05-25 13:21:32 [MetaFemina] Analyze complete in 0.0s: studies=34, error=None
+2026-05-25 13:22:01 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\breast_cancer_incidence_true_all.json
+2026-05-25 13:22:02 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\breast_cancer_incidence_true_all_old.json
+2026-05-25 13:22:04 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\breast_cancer_incidence_true_all.json
+2026-05-25 13:22:05 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\breast_cancer_incidence_true_all_old.json
+2026-05-25 14:20:48 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Mediterranean diet, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-05-25 14:20:48 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-05-25 14:20:48 [MetaFemina] Running new analysis for Breast cancer / mediterranean diet (from 'Mediterranean diet') using model: openai.gpt-4o
+2026-05-25 14:34:31 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\breast_cancer_incidence_true_all.json
+2026-05-25 14:34:31 [MetaFemina] Analyze complete in 822.8s: studies=33, error=None
+2026-05-25 17:25:30 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Mediterranean diet, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-05-25 17:25:30 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-05-25 17:25:30 [MetaFemina] Running new analysis for Breast cancer / mediterranean diet (from 'Mediterranean diet') using model: openai.gpt-4o
+2026-05-25 17:39:34 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Mediterranean diet, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-05-25 17:39:34 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-05-25 17:39:34 [MetaFemina] Running new analysis for Breast cancer / mediterranean diet (from 'Mediterranean diet') using model: openai.gpt-4o
+2026-05-25 17:51:18 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\breast_cancer_incidence_true_all.json
+2026-05-25 17:51:18 [MetaFemina] Analyze complete in 703.9s: studies=36, error=None
+2026-05-25 18:07:24 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Vitamin E, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-05-25 18:07:24 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-05-25 18:07:24 [MetaFemina] Running new analysis for Breast cancer / vitamin e (from 'Vitamin E') using model: openai.gpt-4o
+2026-05-25 18:29:02 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all.json
+2026-05-25 18:29:02 [MetaFemina] Analyze complete in 1298.7s: studies=25, error=None

@@ -20,13 +20,13 @@
             "Design": "Case-Control",
             "Timing": "Retrospective",
             "Continent": "Europe",
-            "Stage": "NA",
+            "Stage": null,
             "Quality %": 90.0,
             "Quality Score": "Good",
             "comparison_type": "per SD increase",
             "JBI": {
                 "q1": "Yes",
-                "q2": "Unclear",
+                "q2": "No",
                 "q3": "Yes",
                 "q4": "Yes",
                 "q5": "Yes",
@@ -45,8 +45,8 @@
         "ci_upp": 1.25,
         "interpretation": "not statistically significant"
     },
-    "plot_url": "static/olive/forest_uterine_cancer_incidence_primary.png?t=5204",
-    "funnel_plot_url": "static/olive/funnel_uterine_cancer_incidence_primary.png?t=1255",
+    "plot_url": "static/olive/forest_uterine_cancer_incidence_primary.png?t=6680",
+    "funnel_plot_url": "static/olive/funnel_uterine_cancer_incidence_primary.png?t=1802",
     "baujat_plot_url": null,
-    "last_run": "2026-05-19 23:40:54"
+    "last_run": "2026-05-25 00:27:50"
 }

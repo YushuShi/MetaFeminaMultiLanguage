@@ -64,12 +64,32 @@ def get_disease_alias(disease):
         "score_terms": [key] if key else [],
     })
 
+def get_openai_model_name(model_override=None):
+    model_name = model_override or os.getenv("OPENAI_MODEL_NAME", "openai.gpt-4o")
+    base_url = os.getenv("OPENAI_BASE_URL")
+    if not base_url:
+        if model_name.startswith("openai."):
+            model_name = model_name[7:]
+        if model_name == "gpt-4.1":
+            model_name = "gpt-4o"
+    return model_name
+
 def is_disease_relevant(text, disease):
     alias = get_disease_alias(disease)
     if alias["pattern"] and re.search(alias["pattern"], text, re.IGNORECASE):
         return True
     disease_lower = str(disease or "").lower().strip()
-    return bool(disease_lower and disease_lower in text)
+    if disease_lower and disease_lower in text:
+        return True
+    
+    # Allow matches where a disease-specific term (e.g., 'breast') and a cancer term both appear in the text
+    text_lower = text.lower()
+    cancer_terms = ["cancer", "carcinoma", "tumour", "tumor"]
+    if any(ct in text_lower for ct in cancer_terms):
+        if alias.get("terms") and any(term.lower() in text_lower for term in alias["terms"]):
+            return True
+            
+    return False
 
 def has_other_disease_conflict(title, disease):
     alias_terms = set(get_disease_alias(disease)["terms"])
@@ -1027,14 +1047,15 @@ Core: no more than 10 terms. Downstream: no more than 4 terms. If no downstream 
             if response.usage_metadata:
                 track_usage(gemini_model_name, response.usage_metadata.prompt_token_count, response.usage_metadata.candidates_token_count)
         elif client:
+            model_to_use = get_openai_model_name()
             response = client.chat.completions.create(
-                model="gpt-4.1",
+                model=model_to_use,
                 messages=[{"role": "user", "content": prompt}],
                 timeout=30.0
             )
             synonyms = response.choices[0].message.content.strip()
             if hasattr(response, 'usage'):
-                track_usage("gpt-4.1", response.usage.prompt_tokens, response.usage.completion_tokens)
+                track_usage(model_to_use, response.usage.prompt_tokens, response.usage.completion_tokens)
     except Exception as e:
         if "429" in str(e):
             print(f"Synonym curation rate limited (429). Using original term: {exposure}")
@@ -2214,7 +2235,8 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
             gemini_extracted = None
 
             # Sequential calls inside the article worker thread to avoid nested deadlocks
-            if client:
+            is_openai_model = (model or "").startswith("openai.") or (model or "").startswith("gpt-")
+            if client and (is_openai_model or os.getenv("OPENAI_BASE_URL")):
                 try:
                     raw_extracted = extract_info_llm(client, abstract, title, disease_keyword or "Cancer", exposure_keyword or "Exposure", outcome_keyword or "Incidence", model_override=model)
                     oai_extracted = flatten_json(raw_extracted)
@@ -2381,7 +2403,7 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
         except Exception as e:
             print(f"Error processing article {i}: {e}")
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
         executor.map(process_single_article, enumerate(filtered_articles))
 
     return pd.DataFrame(data)
@@ -2615,7 +2637,7 @@ def extract_info_llm(client, abstract, title, disease, exposure, outcome, model_
     
     import time
     max_retries = 5
-    model_name = model_override or os.getenv("OPENAI_MODEL_NAME", "openai.gpt-4o")
+    model_name = get_openai_model_name(model_override)
     
     for attempt in range(max_retries):
         try:

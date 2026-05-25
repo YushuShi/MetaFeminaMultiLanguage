@@ -18,9 +18,9 @@
             "Sample Size": 667.0,
             "Cases": 313.0,
             "Design": "Case-Control",
-            "Timing": "Retrospective",
+            "Timing": "Prospective",
             "Continent": "North America",
-            "Stage": "NA",
+            "Stage": null,
             "Quality %": 100.0,
             "Quality Score": "Good",
             "comparison_type": "5th vs 1st quintile",
@@ -45,8 +45,8 @@
         "ci_upp": 2.51,
         "interpretation": "statistically significant (increased risk/odds)"
     },
-    "plot_url": "static/dehydroepiandrosterone/forest_uterine_cancer_incidence_primary.png?t=3914",
-    "funnel_plot_url": "static/dehydroepiandrosterone/funnel_uterine_cancer_incidence_primary.png?t=3671",
+    "plot_url": "static/dehydroepiandrosterone/forest_uterine_cancer_incidence_primary.png?t=5566",
+    "funnel_plot_url": "static/dehydroepiandrosterone/funnel_uterine_cancer_incidence_primary.png?t=7958",
     "baujat_plot_url": null,
-    "last_run": "2026-05-19 22:13:58"
+    "last_run": "2026-05-24 23:25:51"
 }

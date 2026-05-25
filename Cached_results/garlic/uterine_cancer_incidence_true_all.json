@@ -20,20 +20,20 @@
             "Design": "Case-Control",
             "Timing": "Retrospective",
             "Continent": "Europe",
-            "Stage": "NA",
-            "Quality %": 90.0,
-            "Quality Score": "Good",
-            "comparison_type": "High vs Low",
+            "Stage": null,
+            "Quality %": 80.0,
+            "Quality Score": "Moderate",
+            "comparison_type": "High use vs Non-users",
             "JBI": {
                 "q1": "Yes",
-                "q2": "Unclear",
+                "q2": "No",
                 "q3": "Yes",
                 "q4": "Yes",
                 "q5": "Yes",
                 "q6": "Yes",
                 "q7": "Yes",
                 "q8": "Yes",
-                "q9": "Yes",
+                "q9": "Unclear",
                 "q10": "Yes"
             }
         }
@@ -45,8 +45,8 @@
         "ci_upp": 0.93,
         "interpretation": "statistically significant (decreased risk/odds)"
     },
-    "plot_url": "static/garlic/forest_uterine_cancer_incidence_primary.png?t=3944",
-    "funnel_plot_url": "static/garlic/funnel_uterine_cancer_incidence_primary.png?t=2594",
+    "plot_url": "static/garlic/forest_uterine_cancer_incidence_primary.png?t=587",
+    "funnel_plot_url": "static/garlic/funnel_uterine_cancer_incidence_primary.png?t=4733",
     "baujat_plot_url": null,
-    "last_run": "2026-05-19 22:30:28"
+    "last_run": "2026-05-24 23:34:59"
 }

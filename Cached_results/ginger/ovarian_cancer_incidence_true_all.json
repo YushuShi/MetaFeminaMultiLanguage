@@ -1,46 +1,4 @@
 {
-    "success": true,
-    "studies": [
-        {
-            "Study": "Sim KS et al. (2014) [PMID: 24695515]",
-            "PMID": "24695515",
-            "Effect Size": 5.2,
-            "Lower CI": 5.2,
-            "Upper CI": 16.7,
-            "Population": "General",
-            "Reference": "Cytotoxic activity of Alpinia murdochii Ridl.: A mountain ginger species from Peninsular Malaysia.",
-            "Authors": "Sim KS, Ibrahim H, Malek SN, Syamsir DR, Awang K",
-            "Journal": "Pharmacognosy magazine",
-            "Year": "2014",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/24695515/",
-            "Effect Type": "IC50",
-            "SE": 2.933673469387755,
-            "Sample Size": "N/A",
-            "Cases": "N/A",
-            "Design": "In vitro",
-            "Timing": "N/A",
-            "Continent": "Asia",
-            "Stage": "N/A",
-            "Quality %": 50.0,
-            "Quality Score": "Fair",
-            "comparison_type": "N/A",
-            "JBI": {
-                "q1": "Unclear",
-                "q2": "Unclear",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Unclear",
-                "q6": "Unclear",
-                "q7": "Yes",
-                "q8": "Yes"
-            },
-            "exclusions": 2
-        }
-    ],
-    "summary_html": null,
-    "headline": null,
-    "plot_url": null,
-    "funnel_plot_url": null,
-    "baujat_plot_url": null,
-    "last_run": "2026-05-18 15:20:07"
+    "error": "No relevant evidence was identified in the reviewed sources.",
+    "last_run": "2026-05-24 23:36:32"
 }

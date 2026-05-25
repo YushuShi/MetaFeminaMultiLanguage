@@ -2197,19 +2197,82 @@
                             "Effect Type": "RR"
                         },
                         "timestamp": "2026-05-24 01:06:06"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 1.01,
+                            "Lower CI": 0.85,
+                            "Upper CI": 1.2,
+                            "Cases": 388,
+                            "Sample Size": 24697,
+                            "Design": "Case-Control",
+                            "Timing": "Prospective",
+                            "Comparison Type": "per 10 g average daily alcohol intake for low folate intake"
+                        },
+                        "timestamp": "2026-05-24 20:51:06"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 1.01,
+                            "Lower CI": 0.85,
+                            "Upper CI": 1.2,
+                            "Cases": 388,
+                            "Sample Size": 24697,
+                            "Design": "Case-Control",
+                            "Timing": "Prospective",
+                            "Comparison Type": "per 10 g average daily alcohol intake for low folate intake"
+                        },
+                        "timestamp": "2026-05-24 20:51:07"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 1.01,
+                            "Lower CI": 0.85,
+                            "Upper CI": 1.2,
+                            "Cases": 388,
+                            "Sample Size": 24697,
+                            "Design": "Case-Control",
+                            "Timing": "Prospective",
+                            "Comparison Type": "per 10 g average daily alcohol intake for low folate intake"
+                        },
+                        "timestamp": "2026-05-24 20:51:10"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 1.01,
+                            "Lower CI": 0.85,
+                            "Upper CI": 1.2,
+                            "Cases": 388,
+                            "Sample Size": 24697,
+                            "Design": "Case-Control",
+                            "Timing": "Prospective",
+                            "Comparison Type": "per 10 g average daily alcohol intake for low folate intake"
+                        },
+                        "timestamp": "2026-05-24 20:51:12"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 1.01,
+                            "Lower CI": 0.85,
+                            "Upper CI": 1.2,
+                            "Cases": 388,
+                            "Sample Size": 24697,
+                            "Design": "Case-Control",
+                            "Timing": "Prospective",
+                            "Comparison Type": "per 10 g average daily alcohol intake for low folate intake"
+                        },
+                        "timestamp": "2026-05-24 20:51:12"
                     }
                 ],
                 "consensus_data": {
-                    "Effect Size": 1.19,
-                    "Lower CI": 0.99,
-                    "Upper CI": 1.42,
-                    "Comparison Type": "per 10 g average daily alcohol intake for low folate intake",
-                    "comparison_type": "per 10 g average daily alcohol intake for low folate intake",
+                    "Effect Size": 1.01,
+                    "Lower CI": 0.85,
+                    "Upper CI": 1.2,
                     "Cases": 388,
                     "Sample Size": 24697,
                     "Design": "Case-Control",
                     "Timing": "Prospective",
-                    "Effect Type": "RR"
+                    "Comparison Type": "per 10 g average daily alcohol intake for low folate intake"
                 }
             }
         }
@@ -2294,6 +2357,187 @@
                     "Comparison Type": "-"
                 }
             }
+        }
+    },
+    "25023197": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_folic_acid_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.092,
+                            "Lower CI": 0.495,
+                            "Upper CI": 0.98,
+                            "Cases": 354,
+                            "Sample Size": null,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "at least 3 combined genetic and nutritional risk factors (including folate deficiency) vs. fewer risk factors"
+                        },
+                        "timestamp": "2026-05-24 20:36:47"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.092,
+                            "Lower CI": 0.495,
+                            "Upper CI": 0.98,
+                            "Cases": 354,
+                            "Sample Size": null,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "at least 3 combined genetic and nutritional risk factors (including folate deficiency) vs. fewer risk factors"
+                        },
+                        "timestamp": "2026-05-24 20:38:16"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.092,
+                    "Lower CI": 0.495,
+                    "Upper CI": 0.98,
+                    "Cases": 354,
+                    "Sample Size": null,
+                    "Design": "Case-Control",
+                    "Timing": "Retrospective",
+                    "Comparison Type": "at least 3 combined genetic and nutritional risk factors (including folate deficiency) vs. fewer risk factors"
+                }
+            }
+        }
+    },
+    "25078601": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_folic_acid_incidence": 2
+        }
+    },
+    "16087654": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_folic_acid_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.77,
+                            "Lower CI": 0.33,
+                            "Upper CI": 1.8,
+                            "Cases": 537,
+                            "Sample Size": 17447,
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "Alcohol consumption of 40 g/day or more with 200 \u00b5g/day folate intake vs 400 \u00b5g/day folate intake"
+                        },
+                        "timestamp": "2026-05-24 20:40:22"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.77,
+                            "Lower CI": 0.33,
+                            "Upper CI": 1.8,
+                            "Cases": 537,
+                            "Sample Size": 17447,
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "Alcohol consumption of 40 g/day or more with 200 \u00b5g/day folate intake vs 400 \u00b5g/day folate intake"
+                        },
+                        "timestamp": "2026-05-24 20:40:22"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.77,
+                    "Lower CI": 0.33,
+                    "Upper CI": 1.8,
+                    "Cases": 537,
+                    "Sample Size": 17447,
+                    "Design": "Cohort",
+                    "Timing": "Prospective",
+                    "Comparison Type": "Alcohol consumption of 40 g/day or more with 200 \u00b5g/day folate intake vs 400 \u00b5g/day folate intake"
+                }
+            }
+        }
+    },
+    "40890881": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_folic_acid_incidence": 4
+        }
+    },
+    "10933412": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_folic_acid_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.79,
+                            "Lower CI": 0.51,
+                            "Upper CI": 1.21,
+                            "Cases": 43,
+                            "Sample Size": 149,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "Energy-adjusted, High vs Low"
+                        },
+                        "timestamp": "2026-05-24 21:23:49"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.79,
+                            "Lower CI": 0.51,
+                            "Upper CI": 1.21,
+                            "Cases": 43,
+                            "Sample Size": 149,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "Energy-adjusted, High vs Low"
+                        },
+                        "timestamp": "2026-05-24 21:23:51"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.79,
+                            "Lower CI": 0.51,
+                            "Upper CI": 1.21,
+                            "Cases": 43,
+                            "Sample Size": 149,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "Energy-adjusted, High vs Low"
+                        },
+                        "timestamp": "2026-05-24 21:23:54"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.79,
+                    "Lower CI": 0.51,
+                    "Upper CI": 1.21,
+                    "Cases": 43,
+                    "Sample Size": 149,
+                    "Design": "Case-Control",
+                    "Timing": "Retrospective",
+                    "Comparison Type": "Energy-adjusted, High vs Low"
+                }
+            }
+        }
+    },
+    "41960842": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_mediterranean_diet_incidence": 2
         }
     }
 }

@@ -75,79 +75,47 @@
             "Quality Score": "Fair",
             "comparison_type": "-",
             "JBI": "-"
-        },
-        {
-            "Study": "Park J et al. (2025) [PMID: 40521571]",
-            "PMID": "40521571",
-            "Effect Size": 7.44,
-            "Lower CI": 1.39,
-            "Upper CI": 39.9,
-            "Population": "General",
-            "Reference": "Diagnostic Laparoscopy for Advanced Ovarian, Fallopian Tube, and Peritoneal Cancers: A Retrospective Study.",
-            "Authors": "Park J, Seike T, Sugi H, Hori H, Gondo K, Terada A",
-            "Journal": "Gynecology and minimally invasive therapy",
-            "Year": "2025",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/40521571/",
-            "Effect Type": "HR",
-            "SE": 9.823979591836734,
-            "Sample Size": "36",
-            "Cases": "N/A",
-            "Design": "Unknown",
-            "Timing": "Retrospective",
-            "Continent": "Asia",
-            "Stage": "Advanced/Metastatic",
-            "Quality %": 0,
-            "Quality Score": "Fair",
-            "comparison_type": "-",
-            "JBI": "-"
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Shibutani T et al. (2020) [PMID: 31677021]</th>\n      <td>-0.3362</td>\n      <td>0.1657</td>\n      <td>-0.6610</td>\n      <td>-0.0114</td>\n      <td>N/A</td>\n      <td>171</td>\n    </tr>\n    <tr>\n      <th>Mayba J et al. (2018) [PMID: 29276164]</th>\n      <td>-0.3041</td>\n      <td>0.1185</td>\n      <td>-0.5364</td>\n      <td>-0.0718</td>\n      <td>N/A</td>\n      <td>391</td>\n    </tr>\n    <tr>\n      <th>Thrall MM et al. (2011) [PMID: 21945309]</th>\n      <td>0.1484</td>\n      <td>0.0721</td>\n      <td>0.0071</td>\n      <td>0.2898</td>\n      <td>N/A</td>\n      <td>6844</td>\n    </tr>\n    <tr>\n      <th>Park J et al. (2025) [PMID: 40521571]</th>\n      <td>1.6020</td>\n      <td>0.4422</td>\n      <td>0.7353</td>\n      <td>2.4687</td>\n      <td>N/A</td>\n      <td>36</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Shibutani T et al. (2020) [PMID: 31677021]</th>\n      <td>-0.3362</td>\n      <td>0.1657</td>\n      <td>-0.6610</td>\n      <td>-0.0114</td>\n      <td>N/A</td>\n      <td>171</td>\n    </tr>\n    <tr>\n      <th>Mayba J et al. (2018) [PMID: 29276164]</th>\n      <td>-0.3041</td>\n      <td>0.1185</td>\n      <td>-0.5364</td>\n      <td>-0.0718</td>\n      <td>N/A</td>\n      <td>391</td>\n    </tr>\n    <tr>\n      <th>Thrall MM et al. (2011) [PMID: 21945309]</th>\n      <td>0.1484</td>\n      <td>0.0721</td>\n      <td>0.0071</td>\n      <td>0.2898</td>\n      <td>N/A</td>\n      <td>6844</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 1.09,
-        "ci_low": 0.71,
-        "ci_upp": 1.68,
-        "pi_low": 0.16,
-        "pi_upp": 7.58,
+        "pooled_es": 0.86,
+        "ci_low": 0.61,
+        "ci_upp": 1.23,
+        "pi_low": 0.01,
+        "pi_upp": 64.41,
         "interpretation": "Not statistically significant",
-        "i2": 89.3,
-        "tau2": 0.15,
-        "eggers_p": 0.8429959553970984,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.8430). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "i2": 86.52,
+        "tau2": 0.08,
+        "eggers_p": 0.24152107815296342,
+        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.2415). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
         "loo_results": [
             {
                 "omitted": "Shibutani T et al. (2020) [PMID: 31677021]",
-                "pooled_es": 1.3105519218861492,
-                "ci_low": 0.49299652687362916,
-                "ci_upp": 3.483891358933937,
+                "pooled_es": 0.9342190806561594,
+                "ci_low": 0.5998632133198191,
+                "ci_upp": 1.4549405119075405,
                 "is_significant": false
             },
             {
                 "omitted": "Mayba J et al. (2018) [PMID: 29276164]",
-                "pooled_es": 1.3500088588005248,
-                "ci_low": 0.48546238612575304,
-                "ci_upp": 3.7542021193126853,
+                "pooled_es": 0.931531278657049,
+                "ci_low": 0.5805933744430843,
+                "ci_upp": 1.494592534661283,
                 "is_significant": false
             },
             {
                 "omitted": "Thrall MM et al. (2011) [PMID: 21945309]",
-                "pooled_es": 1.1553498657380445,
-                "ci_low": 0.36945418679879766,
-                "ci_upp": 3.612987374231217,
-                "is_significant": false
-            },
-            {
-                "omitted": "Park J et al. (2025) [PMID: 40521571]",
-                "pooled_es": 0.8638562982952812,
-                "ci_low": 0.6315514141554268,
-                "ci_upp": 1.1816103762547698,
+                "pooled_es": 0.8944976807674087,
+                "ci_low": null,
+                "ci_upp": null,
                 "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled analysis of 4 studies yielded an effect size of 1.09 (95% CI: 0.71\u20131.68), indicating no statistically significant association between n-acetylcysteine and ovarian cancer. Although the point estimate suggests a potential positive relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 89.30%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 3 studies yielded an effect size of 0.86 (95% CI: 0.61\u20131.23), indicating no statistically significant association between n-acetylcysteine and ovarian cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 86.52%), reflecting highly inconsistent results across studies."
     },
-    "plot_url": "static/n_acetylcysteine/forest_ovarian_cancer_incidence_primary.png?t=7989",
-    "funnel_plot_url": "static/n_acetylcysteine/funnel_ovarian_cancer_incidence_primary.png?t=3092",
-    "baujat_plot_url": "static\\n_acetylcysteine\\baujat_ovarian_cancer_incidence_primary.png?t=3148",
-    "last_run": "2026-05-19 16:22:04"
+    "plot_url": "static/n_acetylcysteine/forest_ovarian_cancer_incidence_primary.png?t=3865",
+    "funnel_plot_url": "static/n_acetylcysteine/funnel_ovarian_cancer_incidence_primary.png?t=3004",
+    "baujat_plot_url": "static\\n_acetylcysteine\\baujat_ovarian_cancer_incidence_primary.png?t=4941",
+    "last_run": "2026-05-25 00:27:12"
 }
