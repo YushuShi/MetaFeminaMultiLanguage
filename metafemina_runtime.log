@@ -368,3 +368,8 @@
 2026-05-25 18:07:24 [MetaFemina] Running new analysis for Breast cancer / vitamin e (from 'Vitamin E') using model: openai.gpt-4o
 2026-05-25 18:29:02 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all.json
 2026-05-25 18:29:02 [MetaFemina] Analyze complete in 1298.7s: studies=25, error=None
+2026-05-25 18:40:36 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Vitamin E, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-05-25 18:40:36 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all.json
+2026-05-25 18:40:36 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all.json
+2026-05-25 18:40:36 [MetaFemina] Re-analyzing Vitamin E due to verification filtering/consensus/flags...
+2026-05-25 18:40:37 [MetaFemina] Analyze complete in 1.0s: studies=36, error=None
