@@ -20,7 +20,7 @@ for (pkg in c("ggtext", "cowplot", "ggrepel", "patchwork")) {
 # 1. Read & clean data
 # =============================================================================
 
-raw <- read_excel("exposures_meta_analysis_final_combined.xlsx")
+raw <- read_excel("C:/Users/mde4023/Downloads/MetaFemina/exposures_meta_analysis_final_combined.xlsx")
 
 # Standardise column names
 names(raw) <- c(
@@ -54,7 +54,14 @@ dat_clean <- raw %>%
 
 group_map <- tribble(
   ~Exposure,                  ~Group,
-  "black_cohosh",             "Herbal & Botanical",
+  "fermented_foods",          "Dietary Patterns",
+  "skyr",                     "Dietary Patterns",
+  "hemp_seeds",               "Fatty Acids & Lipids",
+  "kefir",                    "Dietary Patterns",
+  "legumes",                  "Fruits & Vegetables",
+  "chia_seeds",               "Fatty Acids & Lipids",
+  "oats",                     "Dietary Patterns",
+  "flax",                     "Phytoestrogens",
   "vitamin_b2",               "B Vitamins",
   "cesium",                   "Minerals & Trace Elements",
   "quercetin",                "Polyphenols & Flavonoids",
@@ -301,42 +308,51 @@ make_table_panel <- function(df, label_df, total_rows, title_text, fs = 3.8) {
 make_forest_panel <- function(df, label_df, total_rows, xlim_max = 2.5, fs = 3.8) {
   header_y <- 0
   y_lim    <- c(total_rows + 0.6, -0.65)
-  
+  # Forest panel x-axis settings
+  xlim_min <- 0.15
+  x_breaks_all <- c(0.2, 0.25, 0.5, 1, 2, 4)
+  x_breaks <- x_breaks_all[x_breaks_all >= xlim_min & x_breaks_all <= xlim_max]
   ggplot() +
     geom_rect(data = df,
               aes(ymin = plot_row - 0.5, ymax = plot_row + 0.5,
-                  xmin = 0.22, xmax = xlim_max, fill = as.character(Group)),
+                  xmin = xlim_min, xmax = xlim_max, fill = as.character(Group)),
               alpha = 0.28, inherit.aes = FALSE) +
     scale_fill_manual(values = group_bg, guide = "none") +
     geom_hline(yintercept = seq(0.5, total_rows + 0.5, 1),
                color = "white", linewidth = 0.6) +
     geom_rect(data = label_df,
               aes(ymin = plot_row - 0.5, ymax = plot_row + 0.5,
-                  xmin = 0.22, xmax = xlim_max, fill = Group),
+                  xmin = xlim_min, xmax = xlim_max, fill = Group),
               alpha = 0.65, inherit.aes = FALSE) +
-    geom_vline(xintercept = c(0.25, 0.5, 2, 4),
+    geom_vline(xintercept = x_breaks[x_breaks != 1],
                color = "grey78", linewidth = 0.3, linetype = "dotted") +
     geom_vline(xintercept = 1,
                linetype = "dashed", linewidth = 0.7, color = "#1A1A2E") +
     # CI whiskers
+    # CI whisker (main horizontal line)
     geom_segment(data = df,
-                 aes(x = ci_low, xend = ci_high,
+                 aes(x    = pmax(ci_low,  xlim_min),
+                     xend = pmin(ci_high, xlim_max),
                      y = plot_row, yend = plot_row,
                      color = as.character(Group)),
                  linewidth = 1.1, lineend = "round", inherit.aes = FALSE) +
-    geom_segment(data = df,
+    
+    # Left end-cap tick — only draw if ci_low is within range
+    geom_segment(data = df %>% filter(ci_low >= xlim_min),
                  aes(x = ci_low, xend = ci_low,
                      y = plot_row - 0.18, yend = plot_row + 0.18,
                      color = as.character(Group)),
                  linewidth = 0.7, inherit.aes = FALSE) +
-    geom_segment(data = df,
+    
+    # Right end-cap tick — only draw if ci_high is within range
+    geom_segment(data = df %>% filter(ci_high <= xlim_max),
                  aes(x = ci_high, xend = ci_high,
                      y = plot_row - 0.18, yend = plot_row + 0.18,
                      color = as.character(Group)),
                  linewidth = 0.7, inherit.aes = FALSE) +
     # Prediction interval whiskers (dashed, thinner) — only where available
     geom_segment(data = df %>% filter(!is.na(pi_low) & !is.na(pi_high)),
-                 aes(x = pmax(pi_low, 0.22), xend = pmin(pi_high, xlim_max),
+                 aes(x = pmax(pi_low, xlim_min), xend = pmin(pi_high, xlim_max),
                      y = plot_row, yend = plot_row,
                      color = as.character(Group)),
                  linewidth = 0.45, linetype = "dashed",
@@ -360,16 +376,16 @@ make_forest_panel <- function(df, label_df, total_rows, xlim_max = 2.5, fs = 3.8
                inherit.aes = FALSE) +
     # Header bar
     annotate("rect",
-             xmin = 0.22, xmax = xlim_max, ymin = -0.60, ymax = 0.50,
+             xmin = xlim_min, xmax = xlim_max, ymin = -0.60, ymax = 0.50,
              fill = "#1A1A2E", alpha = 0.93) +
     annotate("text", x = 1, y = header_y, label = "Effect size", hjust = 0.5,
              fontface = "bold", size = fs + 0.5, color = "white") +
     scale_x_log10(
-      limits = c(0.22, xlim_max),
-      breaks = c(0.25, 0.5, 1, 2, 4),
-      labels = c("0.25", "0.5", "1.0", "2.0", "4.0"),
+      limits = c(xlim_min, xlim_max),
+      breaks = x_breaks,
+      labels = as.character(x_breaks),
       expand = c(0, 0)
-    ) +
+    )+
     scale_y_continuous(limits = y_lim, trans = "reverse", expand = c(0, 0)) +
     scale_color_manual(
       values = group_colors,
@@ -568,3 +584,5 @@ make_eggers_heterogeneity_plot(
 )
 
 message("All figures saved.")
+
+

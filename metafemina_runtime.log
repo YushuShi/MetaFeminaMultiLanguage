@@ -565,3 +565,45 @@
 2026-06-01 11:08:15 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\uterine_cancer_incidence_true_all.json
 2026-06-01 11:08:15 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\uterine_cancer_incidence_true_all.json
 2026-06-01 11:08:15 [MetaFemina] Analyze complete in 0.0s: studies=2, error=None
+2026-06-01 11:20:16 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Kefir, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-01 11:20:16 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\kefir\breast_cancer_incidence_true_all.json
+2026-06-01 11:20:16 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\kefir\breast_cancer_incidence_true_all.json
+2026-06-01 11:20:16 [MetaFemina] Analyze complete in 0.0s: studies=2, error=None
+2026-06-01 11:52:10 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Melatonin, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-01 11:52:10 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\melatonin\ovarian_cancer_incidence_true_all.json
+2026-06-01 11:52:10 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\melatonin\ovarian_cancer_incidence_true_all.json
+2026-06-01 11:52:10 [MetaFemina] Analyze complete in 0.0s: studies=1, error=None
+2026-06-01 11:52:14 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Melatonin, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-01 11:52:14 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\melatonin\uterine_cancer_incidence_true_all.json
+2026-06-01 11:52:14 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\melatonin\uterine_cancer_incidence_true_all.json
+2026-06-01 11:52:14 [MetaFemina] Analyze complete in 0.0s: studies=1, error=None
+2026-06-01 14:22:01 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Carnitine, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-01 14:22:01 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\carnitine\uterine_cancer_incidence_true_all.json
+2026-06-01 14:22:01 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\carnitine\uterine_cancer_incidence_true_all.json
+2026-06-01 14:22:01 [MetaFemina] Analyze complete in 0.0s: studies=1, error=None
+2026-06-01 14:22:10 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Carnitine, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-01 14:22:10 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\carnitine\ovarian_cancer_incidence_true_all.json
+2026-06-01 14:22:10 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\carnitine\ovarian_cancer_incidence_true_all.json
+2026-06-01 14:22:10 [MetaFemina] Analyze complete in 0.0s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-01 14:22:14 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Carnitine, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-01 14:22:14 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\carnitine\breast_cancer_incidence_true_all.json
+2026-06-01 14:22:14 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\carnitine\breast_cancer_incidence_true_all.json
+2026-06-01 14:22:14 [MetaFemina] Re-analyzing Carnitine due to verification filtering/consensus/flags...
+2026-06-01 14:22:14 [MetaFemina] Analyze complete in 0.5s: studies=6, error=None
+2026-06-01 14:22:23 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Carnitine, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-01 14:22:23 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\carnitine\ovarian_cancer_incidence_true_all.json
+2026-06-01 14:22:23 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\carnitine\ovarian_cancer_incidence_true_all.json
+2026-06-01 14:22:23 [MetaFemina] Analyze complete in 0.0s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-01 14:22:25 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Carnitine, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-01 14:22:25 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\carnitine\uterine_cancer_incidence_true_all.json
+2026-06-01 14:22:25 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\carnitine\uterine_cancer_incidence_true_all.json
+2026-06-01 14:22:25 [MetaFemina] Analyze complete in 0.0s: studies=1, error=None
+2026-06-01 14:22:32 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Carnitine, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-01 14:22:32 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\carnitine\ovarian_cancer_incidence_true_all.json
+2026-06-01 14:22:32 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\carnitine\ovarian_cancer_incidence_true_all.json
+2026-06-01 14:22:32 [MetaFemina] Analyze complete in 0.0s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-01 14:22:34 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Carnitine, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-01 14:22:34 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\carnitine\breast_cancer_incidence_true_all.json
+2026-06-01 14:22:34 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\carnitine\breast_cancer_incidence_true_all.json
+2026-06-01 14:22:34 [MetaFemina] Re-analyzing Carnitine due to verification filtering/consensus/flags...
+2026-06-01 14:22:35 [MetaFemina] Analyze complete in 0.6s: studies=6, error=None
