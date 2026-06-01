@@ -37,7 +37,7 @@
                 "q10": "Yes",
                 "q11": "Yes"
             },
-            "exclusions": 0
+            "exclusions": 2
         },
         {
             "Study": "Rebbeck TR et al. (2007) [PMID: 17205521]",
@@ -76,23 +76,15 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Rebbeck TR et al. (2007) [PMID: 17205521]</th>\n      <td>-0.8590</td>\n      <td>0.2781</td>\n      <td>-1.4041</td>\n      <td>-0.3138</td>\n      <td>949.0</td>\n      <td>2473.0</td>\n    </tr>\n    <tr>\n      <th>Henneicke-von Zepelin HH et al. (2007) [PMID: 17416109]</th>\n      <td>-0.1747</td>\n      <td>0.0869</td>\n      <td>-0.3450</td>\n      <td>-0.0045</td>\n      <td>1102.0</td>\n      <td>18861.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>949</td>\n      <td>2473</td>\n      <td>0.423591</td>\n      <td>0.244825</td>\n      <td>0.728408</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.63,
-        "ci_low": 0.32,
-        "ci_upp": 1.22,
-        "pi_low": null,
-        "pi_upp": null,
-        "interpretation": "Not statistically significant",
-        "i2": 81.86,
-        "tau2": 0.19,
-        "eggers_p": null,
-        "funnel_interpretation": "Insufficient studies to perform formal publication bias testing.",
-        "loo_results": [],
-        "results_interpretation": "The pooled analysis of 2 studies yielded an effect size of 0.63 (95% CI: 0.32\u20131.22), indicating no statistically significant association between black cohosh and uterine cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 81.86%), reflecting highly inconsistent results across studies."
+        "pooled_es": 0.42,
+        "ci_low": 0.24,
+        "ci_upp": 0.73,
+        "interpretation": "statistically significant (decreased risk/odds)"
     },
-    "plot_url": "static/black_cohosh/forest_uterine_cancer_incidence_primary.png?t=7117",
-    "funnel_plot_url": "static/black_cohosh/funnel_uterine_cancer_incidence_primary.png?t=1173",
+    "plot_url": "static/black_cohosh/forest_breast_cancer_incidence_primary.png?t=8437",
+    "funnel_plot_url": "static/black_cohosh/funnel_breast_cancer_incidence_primary.png?t=7094",
     "baujat_plot_url": null,
     "last_run": "2026-03-24 18:09:28"
 }

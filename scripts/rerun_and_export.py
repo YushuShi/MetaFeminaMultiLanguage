@@ -301,27 +301,14 @@ def export_disease_results(disease, disease_label, outcome="Incidence", exclude_
     else:
         print(f"  No combined results to export for {disease}.")
         
-    # Write fixed results
-    if all_fixed_results:
-        fixed_df = pd.DataFrame(all_fixed_results)
-        fixed_df = fixed_df.sort_values(by="Pooled ES", ascending=True)
-        fixed_df["Pooled ES (95% CI)"] = fixed_df.apply(
-            lambda x: f"{x['Pooled ES']:.2f} ({x['CI Low']:.2f}–{x['CI Upp']:.2f})", axis=1
-        )
-        columns_to_export = [
-            "Exposure", 
-            "$n$ studies", 
-            "Pooled ES (95% CI)", 
-            "$I^2$ (%)", 
-            "Total $N$", 
-            "N cases"
-        ]
-        export_df = fixed_df[columns_to_export]
-        output_file_fixed = f'exposures_meta_analysis_{disease_label}_FIXED.xlsx'
-        export_df.to_excel(output_file_fixed, index=False)
-        print(f"  Exported {len(export_df)} exposures to {output_file_fixed}")
-    else:
-        print(f"  No fixed results to export for {disease}.")
+    # Delete obsolete fixed results if they exist
+    output_file_fixed = f'exposures_meta_analysis_{disease_label}_FIXED.xlsx'
+    if os.path.exists(output_file_fixed):
+        try:
+            os.remove(output_file_fixed)
+            print(f"  Removed obsolete file: {output_file_fixed}")
+        except Exception as e:
+            print(f"  Failed to remove {output_file_fixed}: {e}")
 
 def main():
     diseases = [

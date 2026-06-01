@@ -607,3 +607,80 @@
 2026-06-01 14:22:34 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\carnitine\breast_cancer_incidence_true_all.json
 2026-06-01 14:22:34 [MetaFemina] Re-analyzing Carnitine due to verification filtering/consensus/flags...
 2026-06-01 14:22:35 [MetaFemina] Analyze complete in 0.6s: studies=6, error=None
+2026-06-01 14:53:36 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Red meat, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-01 14:53:36 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-01 14:53:36 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-01 14:53:36 [MetaFemina] Analyze complete in 0.0s: studies=43, error=None
+2026-06-01 14:54:24 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-01 14:54:27 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-01 14:54:58 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-01 14:55:01 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-01 14:55:44 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-01 14:55:48 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-01 15:27:25 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-01 15:27:27 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-01 15:52:57 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-01 15:52:58 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-01 15:53:06 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Red meat, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-01 15:53:06 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-01 15:53:06 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-01 15:53:06 [MetaFemina] Re-analyzing Red meat due to verification filtering/consensus/flags...
+2026-06-01 15:53:07 [MetaFemina] Analyze complete in 1.3s: studies=43, error=None
+2026-06-01 15:54:53 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-01 15:54:55 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-01 15:55:09 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Red meat, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-01 15:55:09 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-01 15:55:09 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-01 15:55:09 [MetaFemina] Re-analyzing Red meat due to verification filtering/consensus/flags...
+2026-06-01 15:55:10 [MetaFemina] Analyze complete in 1.2s: studies=43, error=None
+2026-06-01 15:55:20 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Red meat, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-01 15:55:20 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\ovarian_cancer_incidence_true_all.json
+2026-06-01 15:55:20 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\ovarian_cancer_incidence_true_all.json
+2026-06-01 15:55:20 [MetaFemina] Analyze complete in 0.0s: studies=1, error=None
+2026-06-01 15:55:33 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Red meat, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-01 15:55:33 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\uterine_cancer_incidence_true_all.json
+2026-06-01 15:55:33 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\uterine_cancer_incidence_true_all.json
+2026-06-01 15:55:33 [MetaFemina] Analyze complete in 0.0s: studies=3, error=None
+2026-06-01 16:17:57 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-01 16:17:57 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\uterine_cancer_incidence_true_all.json
+2026-06-01 16:17:58 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\uterine_cancer_incidence_true_all.json
+2026-06-01 16:21:04 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\astragalus\breast_cancer_incidence_true_all.json
+2026-06-01 16:21:04 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\bcaas\breast_cancer_incidence_true_all.json
+2026-06-01 16:21:04 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\berberine\breast_cancer_incidence_true_all.json
+2026-06-01 16:21:04 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\black_cohosh\breast_cancer_incidence_true_all.json
+2026-06-01 16:21:04 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\boron\breast_cancer_incidence_true_all.json
+2026-06-01 16:21:04 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\cannabidiol\breast_cancer_incidence_true_all.json
+2026-06-01 16:21:04 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\chondroitin\breast_cancer_incidence_true_all.json
+2026-06-01 16:21:05 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\coenzyme_q10\breast_cancer_incidence_true_all.json
+2026-06-01 16:21:05 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\dehydroepiandrosterone\breast_cancer_incidence_true_all.json
+2026-06-01 16:21:05 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\fish_oil\breast_cancer_incidence_true_all.json
+2026-06-01 16:21:05 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\flaxseed\breast_cancer_incidence_true_all.json
+2026-06-01 16:21:06 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all - backup.json
+2026-06-01 16:21:07 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all - Copy.json
+2026-06-01 16:21:07 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-01 16:21:08 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\glutamine\breast_cancer_incidence_true_all.json
+2026-06-01 16:21:08 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\grape\breast_cancer_incidence_true_all.json
+2026-06-01 16:21:08 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\green_tea\breast_cancer_incidence_true.json
+2026-06-01 16:21:09 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\green_tea\breast_cancer_incidence_true_all.json
+2026-06-01 16:21:09 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\isoleucine\breast_cancer_incidence_true_all.json
+2026-06-01 16:21:09 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\isoleucine\ovarian_cancer_incidence_true_all.json
+2026-06-01 16:21:10 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\breast_cancer_incidence_true_all.json
+2026-06-01 16:21:10 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\manganese\breast_cancer_incidence_true_all.json
+2026-06-01 16:21:10 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\mistletoe\breast_cancer_incidence_true_all.json
+2026-06-01 16:21:10 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\mushrooms\breast_cancer_incidence_true_all.json
+2026-06-01 16:21:10 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-3_fatty_acids\breast_cancer_incidence_true_all.json
+2026-06-01 16:21:10 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-6_fatty_acids\breast_cancer_incidence_true_all.json
+2026-06-01 16:21:11 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-01 16:21:11 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\uterine_cancer_incidence_true_all.json
+2026-06-01 16:21:12 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true.json
+2026-06-01 16:21:12 Error updating cache file c:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all_old.json: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2026-06-01 16:42:35 [MetaFemina] Analyze request: disease=Breast cancer, exposure=red meat, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-01 16:42:35 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-01 16:42:35 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-01 16:42:35 [MetaFemina] Re-analyzing red meat due to verification filtering/consensus/flags...
+2026-06-01 16:42:36 [MetaFemina] Analyze complete in 1.7s: studies=43, error=None
+2026-06-01 16:43:03 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=red meat, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-01 16:43:03 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\uterine_cancer_incidence_true_all.json
+2026-06-01 16:43:03 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\uterine_cancer_incidence_true_all.json
+2026-06-01 16:43:03 [MetaFemina] Re-analyzing red meat due to verification filtering/consensus/flags...
+2026-06-01 16:43:04 [MetaFemina] Analyze complete in 0.4s: studies=3, error=None

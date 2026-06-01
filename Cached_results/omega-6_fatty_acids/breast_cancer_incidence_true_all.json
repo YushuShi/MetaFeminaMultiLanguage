@@ -110,48 +110,26 @@
                 "q10": "Yes",
                 "q11": "Yes"
             },
-            "exclusions": 0
+            "exclusions": 2
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Grill S et al. (2021) [PMID: 33543354]</th>\n      <td>-37.9000</td>\n      <td>0.1281</td>\n      <td>-38.1510</td>\n      <td>-37.6490</td>\n      <td>NA</td>\n      <td>68.0</td>\n    </tr>\n    <tr>\n      <th>Shafie F et al. (2022) [PMID: 36741722]</th>\n      <td>0.1278</td>\n      <td>0.0598</td>\n      <td>0.0106</td>\n      <td>0.2451</td>\n      <td>120</td>\n      <td>360.0</td>\n    </tr>\n    <tr>\n      <th>Simonsen N et al. (1998) [PMID: 9508101]</th>\n      <td>0.8955</td>\n      <td>0.3172</td>\n      <td>0.2738</td>\n      <td>1.5172</td>\n      <td>317</td>\n      <td>684.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Shafie F et al. (2022) [PMID: 36741722]</th>\n      <td>0.1278</td>\n      <td>0.0598</td>\n      <td>0.0106</td>\n      <td>0.2451</td>\n      <td>120.0</td>\n      <td>360.0</td>\n    </tr>\n    <tr>\n      <th>Simonsen N et al. (1998) [PMID: 9508101]</th>\n      <td>0.8955</td>\n      <td>0.3172</td>\n      <td>0.2738</td>\n      <td>1.5172</td>\n      <td>317.0</td>\n      <td>684.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.0,
-        "ci_low": 0.0,
-        "ci_upp": 8995185.07,
-        "pi_low": 0.0,
-        "pi_upp": 1.1002701141730346e+154,
+        "pooled_es": 1.57,
+        "ci_low": 0.75,
+        "ci_upp": 3.29,
+        "pi_low": null,
+        "pi_upp": null,
         "interpretation": "Not statistically significant",
-        "i2": 100.0,
-        "tau2": 625.64,
-        "eggers_p": 0.6960290622077331,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.6960). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
-        "loo_results": [
-            {
-                "omitted": "Grill S et al. (2021) [PMID: 33543354]",
-                "pooled_es": 1.565902233735306,
-                "ci_low": 0.7455935382040337,
-                "ci_upp": 3.288721910766091,
-                "is_significant": false
-            },
-            {
-                "omitted": "Shafie F et al. (2022) [PMID: 36741722]",
-                "pooled_es": 9.206726966881938e-09,
-                "ci_low": 2.8360054958353346e-25,
-                "ci_upp": 298884545.7711084,
-                "is_significant": false
-            },
-            {
-                "omitted": "Simonsen N et al. (1998) [PMID: 9508101]",
-                "pooled_es": 6.279881359796243e-09,
-                "ci_low": 4.104650785630789e-25,
-                "ci_upp": 96078599.50272393,
-                "is_significant": false
-            }
-        ],
-        "results_interpretation": "The pooled analysis of 3 studies yielded an effect size of 0.0 (95% CI: 0.0\u20138995185.07), indicating no statistically significant association between omega-6 fatty acids and uterine cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 100.00%), reflecting highly inconsistent results across studies."
+        "i2": 82.32,
+        "tau2": 0.24,
+        "eggers_p": null,
+        "funnel_interpretation": "Insufficient studies to perform formal publication bias testing.",
+        "loo_results": [],
+        "results_interpretation": "The pooled analysis of 2 studies yielded an effect size of 1.57 (95% CI: 0.75\u20133.29), indicating no statistically significant association between omega-6 fatty acids and breast cancer. Although the point estimate suggests a potential positive relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 82.32%), reflecting highly inconsistent results across studies."
     },
-    "plot_url": "static/omega_6_fatty_acids/forest_uterine_cancer_incidence_primary.png?t=7627",
-    "funnel_plot_url": "static/omega_6_fatty_acids/funnel_uterine_cancer_incidence_primary.png?t=6810",
-    "baujat_plot_url": "static\\omega_6_fatty_acids\\baujat_uterine_cancer_incidence_primary.png?t=9221",
+    "plot_url": "static/omega_6_fatty_acids/forest_breast_cancer_incidence_primary.png?t=2233",
+    "funnel_plot_url": "static/omega_6_fatty_acids/funnel_breast_cancer_incidence_primary.png?t=4119",
+    "baujat_plot_url": null,
     "last_run": "2026-04-06 17:11:39"
 }

@@ -1,1 +1,12 @@
-{}
+{
+    "anthropic.claude-4.6-sonnet": {
+        "input_tokens": 43569,
+        "output_tokens": 5549,
+        "calls": 18
+    },
+    "google.gemini-2.5-flash": {
+        "input_tokens": 40640,
+        "output_tokens": 31854,
+        "calls": 18
+    }
+}

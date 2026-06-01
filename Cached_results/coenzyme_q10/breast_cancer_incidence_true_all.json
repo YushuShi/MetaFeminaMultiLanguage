@@ -73,7 +73,7 @@
                 "q10": "Yes",
                 "q11": "Yes"
             },
-            "exclusions": 0
+            "exclusions": 2
         },
         {
             "Study": "Partula V et al. (2020) [PMID: 32369545]",
@@ -111,7 +111,7 @@
                 "q10": "Yes",
                 "q11": "Yes"
             },
-            "exclusions": 0
+            "exclusions": 2
         },
         {
             "Study": "Makarem N et al. (2018) [PMID: 29781707]",
@@ -149,55 +149,18 @@
                 "q10": "Yes",
                 "q11": "Yes"
             },
-            "exclusions": 0
+            "exclusions": 2
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Makarem N et al. (2018) [PMID: 29781707]</th>\n      <td>-0.4676</td>\n      <td>0.2312</td>\n      <td>-0.9208</td>\n      <td>-0.0145</td>\n      <td>565</td>\n      <td>3184.0</td>\n    </tr>\n    <tr>\n      <th>Partula V et al. (2020) [PMID: 32369545]</th>\n      <td>-0.2214</td>\n      <td>0.1781</td>\n      <td>-0.5705</td>\n      <td>0.1276</td>\n      <td>Not specified</td>\n      <td>107377.0</td>\n    </tr>\n    <tr>\n      <th>Liu Z et al. (2022) [PMID: 34558660]</th>\n      <td>0.1376</td>\n      <td>0.0629</td>\n      <td>0.0142</td>\n      <td>0.2609</td>\n      <td>Unspecified</td>\n      <td>470804.0</td>\n    </tr>\n    <tr>\n      <th>Chai W et al. (2010) [PMID: 20668119]</th>\n      <td>0.6637</td>\n      <td>0.2335</td>\n      <td>0.2061</td>\n      <td>1.1212</td>\n      <td>160</td>\n      <td>449.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>160</td>\n      <td>449</td>\n      <td>1.941914</td>\n      <td>1.186078</td>\n      <td>2.961759</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 1.03,
-        "ci_low": 0.71,
-        "ci_upp": 1.48,
-        "pi_low": 0.2,
-        "pi_upp": 5.18,
-        "interpretation": "Not statistically significant",
-        "i2": 80.61,
-        "tau2": 0.11,
-        "eggers_p": 0.7275832009506574,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.7276). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
-        "loo_results": [
-            {
-                "omitted": "Makarem N et al. (2018) [PMID: 29781707]",
-                "pooled_es": 1.1766441167008865,
-                "ci_low": 0.7380826924280125,
-                "ci_upp": 1.875794394815515,
-                "is_significant": false
-            },
-            {
-                "omitted": "Partula V et al. (2020) [PMID: 32369545]",
-                "pooled_es": 1.1195377859811175,
-                "ci_low": 0.6093473643579224,
-                "ci_upp": 2.0568971452928,
-                "is_significant": false
-            },
-            {
-                "omitted": "Liu Z et al. (2022) [PMID: 34558660]",
-                "pooled_es": 0.9857788940812164,
-                "ci_low": 0.506314627465346,
-                "ci_upp": 1.919280967410915,
-                "is_significant": false
-            },
-            {
-                "omitted": "Chai W et al. (2010) [PMID: 20668119]",
-                "pooled_es": 0.8721672537265287,
-                "ci_low": 0.6162451135230144,
-                "ci_upp": 1.234372008443466,
-                "is_significant": false
-            }
-        ],
-        "results_interpretation": "The pooled analysis of 4 studies yielded an effect size of 1.03 (95% CI: 0.71\u20131.48), indicating no statistically significant association between coenzyme q10 and uterine cancer. Although the point estimate suggests a potential positive relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 80.61%), reflecting highly inconsistent results across studies."
+        "pooled_es": 1.94,
+        "ci_low": 1.19,
+        "ci_upp": 2.96,
+        "interpretation": "statistically significant (increased risk/odds)"
     },
-    "plot_url": "static/coenzyme_q10/forest_uterine_cancer_incidence_primary.png?t=5667",
-    "funnel_plot_url": "static/coenzyme_q10/funnel_uterine_cancer_incidence_primary.png?t=2530",
-    "baujat_plot_url": "static\\coenzyme_q10\\baujat_uterine_cancer_incidence_primary.png?t=5208",
+    "plot_url": "static/coenzyme_q10/forest_breast_cancer_incidence_primary.png?t=7270",
+    "funnel_plot_url": "static/coenzyme_q10/funnel_breast_cancer_incidence_primary.png?t=3115",
+    "baujat_plot_url": null,
     "last_run": "2026-03-25 02:39:03"
 }

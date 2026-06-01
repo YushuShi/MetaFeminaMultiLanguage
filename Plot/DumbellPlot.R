@@ -52,6 +52,7 @@ dat_plot <- dat_all %>%
 
 group_map <- tribble(
   ~Exposure,                  ~Group,
+  "red_meat",             "Dietary Patterns",
   "fermented_foods",          "Dietary Patterns",
   "skyr",                     "Dietary Patterns",
   "hemp_seeds",               "Fatty Acids & Lipids",
@@ -263,7 +264,7 @@ p <- ggplot() +
   geom_point(
     data = dat_plot,
     aes(x = pooled_es_num, y = Exposure_label,
-        color = cancer, size = pooled_es_num,
+        color = cancer, size = n_studies,         # <-- now driven by n_studies
         shape = sig),
     alpha = 0.92
   ) +
@@ -284,7 +285,7 @@ p <- ggplot() +
   ) +
   scale_size_continuous(
     range  = c(2, 7),
-    name   = "Pooled RR (size)",
+    name   = "Number of studies (k)",             # <-- was "Pooled RR (size)"
     guide  = guide_legend(override.aes = list(shape = 16, color = "grey40"))
   ) +
   scale_shape_manual(

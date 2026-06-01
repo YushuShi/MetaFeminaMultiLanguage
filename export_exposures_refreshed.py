@@ -123,27 +123,14 @@ def main():
         print("No results to export.")
         return
         
-    results_df = pd.DataFrame(all_results)
-    results_df = results_df.sort_values(by="Pooled ES", ascending=True)
-    
-    # Format "Pooled ES (95% CI)" column (escaped for LaTeX/Excel compatibility)
-    results_df["Pooled ES (95% CI)"] = results_df.apply(
-        lambda x: f"{x['Pooled ES']:.2f} ({x['CI Low']:.2f}–{x['CI Upp']:.2f})", axis=1
-    )
-    
-    columns_to_export = [
-        "Exposure", 
-        "$n$ studies", 
-        "Pooled ES (95% CI)", 
-        "$I^2$ (%)", 
-        "Total $N$", 
-        "N cases"
-    ]
-    export_df = results_df[columns_to_export]
-    
+    # Delete obsolete fixed results if they exist
     output_file = 'exposures_meta_analysis_final_FIXED.xlsx'
-    export_df.to_excel(output_file, index=False)
-    print(f"Exported {len(export_df)} exposures to {output_file}")
+    if os.path.exists(output_file):
+        try:
+            os.remove(output_file)
+            print(f"Removed obsolete file: {output_file}")
+        except Exception as e:
+            print(f"Failed to remove {output_file}: {e}")
 
 if __name__ == '__main__':
     main()

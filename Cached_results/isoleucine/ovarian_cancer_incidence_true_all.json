@@ -24,7 +24,8 @@
             "Quality %": 0,
             "Quality Score": "Fair",
             "comparison_type": "-",
-            "JBI": "-"
+            "JBI": "-",
+            "exclusions": 0
         },
         {
             "Study": "Wu X et al. (2023) [PMID: 36785673]",
@@ -67,8 +68,8 @@
         "loo_results": [],
         "results_interpretation": "The pooled analysis of 2 studies yielded an overall effect size of 2.04 (95% CI: 1.4\u20132.97), suggesting that isoleucine is associated with a higher risk of ovarian cancer. However, this association should be interpreted with caution, as there was substantial between-study heterogeneity (I\u00b2 = 54.39%), reflecting considerable variability across studies."
     },
-    "plot_url": "static/isoleucine/forest_ovarian_cancer_incidence_primary.png?t=6643",
-    "funnel_plot_url": "static/isoleucine/funnel_ovarian_cancer_incidence_primary.png?t=8759",
+    "plot_url": "static/isoleucine/forest_ovarian_cancer_incidence_primary.png?t=9370",
+    "funnel_plot_url": "static/isoleucine/funnel_ovarian_cancer_incidence_primary.png?t=5263",
     "baujat_plot_url": null,
     "last_run": "2026-05-24 23:50:31"
 }

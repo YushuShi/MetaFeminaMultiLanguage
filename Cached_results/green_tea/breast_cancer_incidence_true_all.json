@@ -542,7 +542,7 @@
                 "q10": "Yes",
                 "q11": "Yes"
             },
-            "exclusions": 0
+            "exclusions": 1
         },
         {
             "Study": "Yu S et al. (2019) [PMID: 31277115]",
@@ -905,7 +905,7 @@
                 "q10": "Yes",
                 "q11": "Yes"
             },
-            "exclusions": 0
+            "exclusions": 1
         },
         {
             "Study": "Romanos-Nanclares A et al. (2020) [PMID: 31982373]",
@@ -1312,7 +1312,7 @@
                 "q10": "Yes",
                 "q11": "Yes"
             },
-            "exclusions": 0
+            "exclusions": 1
         },
         {
             "Study": "Liu CY et al. (2023) [PMID: 37482703]",
@@ -2090,7 +2090,7 @@
         "i2": 86.31,
         "tau2": 0.01,
         "eggers_p": 1.3373059961570414e-07,
-        "funnel_interpretation": "The significant funnel plot asymmetry (egger's p=0.0000) indicates substantial publication bias in this meta-analysis on green tea and uterine cancer. This specific pattern suggests that smaller studies with smaller or null effects may be underrepresented, compromising the reliability of the pooled estimate and potentially leading to an overestimation of the true association.",
+        "funnel_interpretation": "The significant funnel plot asymmetry (egger's p=0.0000) indicates substantial publication bias in this meta-analysis on green tea and breast cancer. This specific pattern suggests that smaller studies with smaller or null effects may be underrepresented, compromising the reliability of the pooled estimate and potentially leading to an overestimation of the true association.",
         "loo_results": [
             {
                 "omitted": "Li L et al. (2011) [PMID: 22171783]",
@@ -2492,10 +2492,10 @@
                 "is_significant": true
             }
         ],
-        "results_interpretation": "The pooled analysis of 57 studies yielded an overall effect size of 0.85 (95% CI: 0.82\u20130.89), suggesting that green tea is associated with a lower risk of uterine cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 86.31%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 57 studies yielded an overall effect size of 0.85 (95% CI: 0.82\u20130.89), suggesting that green tea is associated with a lower risk of breast cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 86.31%), reflecting highly inconsistent results across studies."
     },
-    "plot_url": "static/green_tea/forest_uterine_cancer_incidence_primary.png?t=5829",
-    "funnel_plot_url": "static/green_tea/funnel_uterine_cancer_incidence_primary.png?t=6787",
-    "baujat_plot_url": "static\\green_tea\\baujat_uterine_cancer_incidence_primary.png?t=4820",
+    "plot_url": "static/green_tea/forest_breast_cancer_incidence_primary.png?t=7072",
+    "funnel_plot_url": "static/green_tea/funnel_breast_cancer_incidence_primary.png?t=7350",
+    "baujat_plot_url": "static\\green_tea\\baujat_breast_cancer_incidence_primary.png?t=9929",
     "last_run": "2026-03-20 10:24:40"
 }
