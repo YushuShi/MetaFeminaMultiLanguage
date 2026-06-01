@@ -120,7 +120,7 @@
         "downstream": "flavonol, flavonoid, onions, apples, berries, capers"
     },
     "flaxseed": {
-        "core": "flax seed, flax-seed, flaxseed, linseed, linum usitatissimum",
+        "core": "flax, flax seed, flax-seed, flaxseed, flaxseeds, linseed, linum usitatissimum",
         "downstream": ""
     },
     "olive oil": {
@@ -914,6 +914,108 @@
         "anchored": ""
     },
     "st. john\u00e3\u00a2\u00e2\u201a\u00ac\u00e2\u201e\u00a2s wort": {
+        "core": "",
+        "downstream": "",
+        "anchored": ""
+    },
+    "fermented foods": {
+        "core": "fermented food, fermented foods, fermented product, fermented products, kimchi, sauerkraut, kefir, yogurt, tempeh, miso, kombucha",
+        "downstream": ""
+    },
+    "skyr": {
+        "core": "skyr, icelandic yogurt, icelandic skyr, strained yogurt",
+        "downstream": ""
+    },
+    "hemp seeds": {
+        "core": "hemp seed, hemp seeds, hempseed, hempseeds, cannabis sativa seeds, hemp heart, hemp hearts",
+        "downstream": ""
+    },
+    "kefir": {
+        "core": "kefir, milk kefir, water kefir, kefir grains, fermented milk",
+        "downstream": ""
+    },
+    "legumes": {
+        "core": "legume, legumes, lentil, lentils, bean, beans, chickpea, chickpeas, pea, peas, pulses, fabaceae",
+        "downstream": ""
+    },
+    "chia seeds": {
+        "core": "chia seed, chia seeds, salvia hispanica",
+        "downstream": ""
+    },
+    "oats": {
+        "core": "oats, oatmeal, oat, avena sativa, rolled oats, steel cut oats, oat bran, beta-glucan",
+        "downstream": ""
+    },
+    "flax": {
+        "core": "flax, flax seed, flax seeds, flaxseed, flaxseeds, linseed, linum usitatissimum",
+        "downstream": ""
+    },
+    "alcohol": {
+        "core": "",
+        "downstream": "",
+        "anchored": ""
+    },
+    "red meat": {
+        "core": "",
+        "downstream": "",
+        "anchored": ""
+    },
+    "processed meat": {
+        "core": "",
+        "downstream": "",
+        "anchored": ""
+    },
+    "dairy": {
+        "core": "",
+        "downstream": "",
+        "anchored": ""
+    },
+    "fiber": {
+        "core": "",
+        "downstream": "",
+        "anchored": ""
+    },
+    "whole grains": {
+        "core": "",
+        "downstream": "",
+        "anchored": ""
+    },
+    "cruciferous vegetables": {
+        "core": "",
+        "downstream": "",
+        "anchored": ""
+    },
+    "broccoli": {
+        "core": "",
+        "downstream": "",
+        "anchored": ""
+    },
+    "lignans": {
+        "core": "",
+        "downstream": "",
+        "anchored": ""
+    },
+    "phytoestrogens": {
+        "core": "",
+        "downstream": "",
+        "anchored": ""
+    },
+    "isoflavones": {
+        "core": "",
+        "downstream": "",
+        "anchored": ""
+    },
+    "genistein": {
+        "core": "",
+        "downstream": "",
+        "anchored": ""
+    },
+    "daidzein": {
+        "core": "",
+        "downstream": "",
+        "anchored": ""
+    },
+    "physical activity": {
         "core": "",
         "downstream": "",
         "anchored": ""

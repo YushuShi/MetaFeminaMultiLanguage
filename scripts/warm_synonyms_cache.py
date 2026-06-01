@@ -70,6 +70,14 @@ EXPOSURES = [
     "olive oil",
     "mediterranean diet",
     "physical activity",
+    "fermented foods",
+    "skyr",
+    "hemp seeds",
+    "kefir",
+    "legumes",
+    "chia seeds",
+    "oats",
+    "flax",
 ]
 
 def main():

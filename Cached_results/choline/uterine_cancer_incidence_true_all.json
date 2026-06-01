@@ -27,15 +27,15 @@
             "JBI": "-"
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>N/A</td>\n      <td>572</td>\n      <td>0.810983</td>\n      <td>0.69502</td>\n      <td>0.943847</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>NaN</td>\n      <td>572</td>\n      <td>0.810983</td>\n      <td>0.69502</td>\n      <td>0.943847</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 0.81,
         "ci_low": 0.7,
         "ci_upp": 0.94,
         "interpretation": "statistically significant (decreased risk/odds)"
     },
-    "plot_url": "static/choline/forest_uterine_cancer_incidence_primary.png?t=2909",
-    "funnel_plot_url": "static/choline/funnel_uterine_cancer_incidence_primary.png?t=6485",
+    "plot_url": "static/choline/forest_uterine_cancer_incidence_primary.png?t=7676",
+    "funnel_plot_url": "static/choline/funnel_uterine_cancer_incidence_primary.png?t=8197",
     "baujat_plot_url": null,
     "last_run": "2026-05-24 23:17:58"
 }

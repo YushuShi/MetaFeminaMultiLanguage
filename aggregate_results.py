@@ -9,8 +9,8 @@ import meta_analysis
 is_genetic = meta_analysis.is_genetic
 
 def main():
-    root_dir = r'c:\Users\mde4023\Downloads\MetaMamm\Cached_results'
-    exposures_json_path = r'c:\Users\mde4023\Downloads\MetaMamm\static\exposures.json'
+    root_dir = 'Cached_results'
+    exposures_json_path = os.path.join('static', 'exposures.json')
     all_results = []
     
     if not os.path.exists(root_dir):

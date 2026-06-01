@@ -72,7 +72,7 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Sturgeon SR et al. (1997) [PMID: 9222773]</th>\n      <td>0.0770</td>\n      <td>0.9142</td>\n      <td>-1.7148</td>\n      <td>1.8687</td>\n      <td>405</td>\n      <td>702.0</td>\n    </tr>\n    <tr>\n      <th>Zhu G et al. (2022) [PMID: 36501056]</th>\n      <td>0.8077</td>\n      <td>0.2649</td>\n      <td>0.2884</td>\n      <td>1.3269</td>\n      <td>Unclear</td>\n      <td>12437.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Sturgeon SR et al. (1997) [PMID: 9222773]</th>\n      <td>0.0770</td>\n      <td>0.9142</td>\n      <td>-1.7148</td>\n      <td>1.8687</td>\n      <td>405.0</td>\n      <td>702.0</td>\n    </tr>\n    <tr>\n      <th>Zhu G et al. (2022) [PMID: 36501056]</th>\n      <td>0.8077</td>\n      <td>0.2649</td>\n      <td>0.2884</td>\n      <td>1.3269</td>\n      <td>-</td>\n      <td>12437.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 2.12,
         "ci_low": 1.29,
@@ -87,8 +87,8 @@
         "loo_results": [],
         "results_interpretation": "The pooled analysis of 2 studies yielded an overall effect size of 2.12 (95% CI: 1.29\u20133.49), suggesting that copper is associated with a higher risk of uterine cancer. These findings were supported by low between-study heterogeneity (I\u00b2 = 0.00%), indicating consistent findings across the included studies."
     },
-    "plot_url": "static/copper/forest_uterine_cancer_incidence_primary.png?t=1478",
-    "funnel_plot_url": "static/copper/funnel_uterine_cancer_incidence_primary.png?t=4402",
+    "plot_url": "static/copper/forest_uterine_cancer_incidence_primary.png?t=7842",
+    "funnel_plot_url": "static/copper/funnel_uterine_cancer_incidence_primary.png?t=7790",
     "baujat_plot_url": null,
     "last_run": "2026-05-24 23:22:26"
 }

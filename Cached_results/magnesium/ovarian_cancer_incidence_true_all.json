@@ -27,15 +27,15 @@
             "JBI": "-"
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>N/A</td>\n      <td>1031</td>\n      <td>1.27529</td>\n      <td>1.043219</td>\n      <td>1.550886</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>NaN</td>\n      <td>1031</td>\n      <td>1.27529</td>\n      <td>1.043219</td>\n      <td>1.550886</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 1.28,
         "ci_low": 1.04,
         "ci_upp": 1.55,
         "interpretation": "statistically significant (increased risk/odds)"
     },
-    "plot_url": "static/magnesium/forest_ovarian_cancer_incidence_primary.png?t=9350",
-    "funnel_plot_url": "static/magnesium/funnel_ovarian_cancer_incidence_primary.png?t=4977",
+    "plot_url": "static/magnesium/forest_ovarian_cancer_incidence_primary.png?t=7282",
+    "funnel_plot_url": "static/magnesium/funnel_ovarian_cancer_incidence_primary.png?t=7444",
     "baujat_plot_url": null,
     "last_run": "2026-05-24 23:56:35"
 }

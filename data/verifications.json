@@ -2539,5 +2539,144 @@
         "context_exclusions": {
             "breast_cancer_mediterranean_diet_incidence": 2
         }
+    },
+    "8781740": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {}
+    },
+    "19358284": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_vitamin_e_incidence": 2
+        }
+    },
+    "11415490": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_vitamin_e_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.81,
+                            "Lower CI": 0.49,
+                            "Upper CI": 1.13,
+                            "Cases": 861,
+                            "Sample Size": 1651,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "Yes vs No"
+                        },
+                        "timestamp": "2026-05-29 16:29:25"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.81,
+                            "Lower CI": 0.49,
+                            "Upper CI": 1.13,
+                            "Cases": 861,
+                            "Sample Size": 1651,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "Yes vs No"
+                        },
+                        "timestamp": "2026-05-29 16:29:41"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.81,
+                            "Lower CI": 0.49,
+                            "Upper CI": 1.13,
+                            "Cases": 861,
+                            "Sample Size": 1651,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "Yes vs No"
+                        },
+                        "timestamp": "2026-05-29 16:29:43"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.81,
+                    "Lower CI": 0.49,
+                    "Upper CI": 1.13,
+                    "Cases": 861,
+                    "Sample Size": 1651,
+                    "Design": "Case-Control",
+                    "Timing": "Retrospective",
+                    "Comparison Type": "Yes vs No"
+                }
+            }
+        }
+    },
+    "12131659": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_vitamin_e_incidence": 2
+        }
+    },
+    "29574860": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_fermented_foods_incidence": 2
+        }
+    },
+    "29955696": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_fermented_foods_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.61,
+                            "Lower CI": 0.46,
+                            "Upper CI": 0.82,
+                            "Cases": 1941,
+                            "Sample Size": 3178,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "Higher vs Lower"
+                        },
+                        "timestamp": "2026-06-01 10:37:34"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.61,
+                            "Lower CI": 0.46,
+                            "Upper CI": 0.82,
+                            "Cases": 1941,
+                            "Sample Size": 3178,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "Higher vs Lower"
+                        },
+                        "timestamp": "2026-06-01 10:37:36"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.61,
+                    "Lower CI": 0.46,
+                    "Upper CI": 0.82,
+                    "Cases": 1941,
+                    "Sample Size": 3178,
+                    "Design": "Case-Control",
+                    "Timing": "Retrospective",
+                    "Comparison Type": "Higher vs Lower"
+                }
+            }
+        }
     }
 }

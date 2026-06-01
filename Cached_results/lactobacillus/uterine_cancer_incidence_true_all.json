@@ -27,15 +27,15 @@
             "JBI": "-"
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>1.085884</td>\n      <td>1.008689</td>\n      <td>1.161316</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>NaN</td>\n      <td>NaN</td>\n      <td>1.085884</td>\n      <td>1.008689</td>\n      <td>1.161316</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 1.09,
         "ci_low": 1.01,
         "ci_upp": 1.16,
         "interpretation": "statistically significant (increased risk/odds)"
     },
-    "plot_url": "static/lactobacillus/forest_uterine_cancer_incidence_primary.png?t=9136",
-    "funnel_plot_url": "static/lactobacillus/funnel_uterine_cancer_incidence_primary.png?t=3635",
+    "plot_url": "static/lactobacillus/forest_uterine_cancer_incidence_primary.png?t=9201",
+    "funnel_plot_url": "static/lactobacillus/funnel_uterine_cancer_incidence_primary.png?t=6539",
     "baujat_plot_url": null,
     "last_run": "2026-05-24 23:51:46"
 }

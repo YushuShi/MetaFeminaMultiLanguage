@@ -39,15 +39,15 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>None</td>\n      <td>989</td>\n      <td>4.140998</td>\n      <td>1.527887</td>\n      <td>7.176212</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>NaN</td>\n      <td>989</td>\n      <td>4.140998</td>\n      <td>1.527887</td>\n      <td>7.176212</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 4.14,
         "ci_low": 1.53,
         "ci_upp": 7.18,
         "interpretation": "statistically significant (increased risk/odds)"
     },
-    "plot_url": "static/molybdenum/forest_ovarian_cancer_incidence_primary.png?t=9592",
-    "funnel_plot_url": "static/molybdenum/funnel_ovarian_cancer_incidence_primary.png?t=2623",
+    "plot_url": "static/molybdenum/forest_ovarian_cancer_incidence_primary.png?t=5358",
+    "funnel_plot_url": "static/molybdenum/funnel_ovarian_cancer_incidence_primary.png?t=8813",
     "baujat_plot_url": null,
     "last_run": "2026-05-25 00:25:26"
 }

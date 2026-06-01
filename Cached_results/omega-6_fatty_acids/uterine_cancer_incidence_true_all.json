@@ -27,15 +27,15 @@
             "JBI": "-"
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>N/A</td>\n      <td>556</td>\n      <td>0.60375</td>\n      <td>0.423591</td>\n      <td>0.857843</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>NaN</td>\n      <td>556</td>\n      <td>0.60375</td>\n      <td>0.423591</td>\n      <td>0.857843</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 0.6,
         "ci_low": 0.42,
         "ci_upp": 0.86,
         "interpretation": "statistically significant (decreased risk/odds)"
     },
-    "plot_url": "static/omega_6_fatty_acids/forest_uterine_cancer_incidence_primary.png?t=4713",
-    "funnel_plot_url": "static/omega_6_fatty_acids/funnel_uterine_cancer_incidence_primary.png?t=5368",
+    "plot_url": "static/omega_6_fatty_acids/forest_uterine_cancer_incidence_primary.png?t=2639",
+    "funnel_plot_url": "static/omega_6_fatty_acids/funnel_uterine_cancer_incidence_primary.png?t=8440",
     "baujat_plot_url": null,
     "last_run": "2026-05-25 00:28:59"
 }

@@ -27,15 +27,15 @@
             "JBI": "-"
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>N/A</td>\n      <td>832</td>\n      <td>0.718975</td>\n      <td>0.534759</td>\n      <td>0.965018</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>NaN</td>\n      <td>832</td>\n      <td>0.718975</td>\n      <td>0.534759</td>\n      <td>0.965018</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 0.72,
         "ci_low": 0.53,
         "ci_upp": 0.97,
         "interpretation": "statistically significant (decreased risk/odds)"
     },
-    "plot_url": "static/magnesium/forest_uterine_cancer_incidence_primary.png?t=2131",
-    "funnel_plot_url": "static/magnesium/funnel_uterine_cancer_incidence_primary.png?t=5624",
+    "plot_url": "static/magnesium/forest_uterine_cancer_incidence_primary.png?t=2978",
+    "funnel_plot_url": "static/magnesium/funnel_uterine_cancer_incidence_primary.png?t=7632",
     "baujat_plot_url": null,
     "last_run": "2026-05-24 23:55:53"
 }

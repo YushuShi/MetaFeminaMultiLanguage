@@ -147,10 +147,10 @@
                 "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled analysis of 3 studies yielded an effect size of 0.72 (95% CI: 0.41\u20131.29), indicating no statistically significant association between Vitamin C and ovarian cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 91.57%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 3 studies yielded an effect size of 0.72 (95% CI: 0.41\u20131.29), indicating no statistically significant association between vitamin_c and ovarian cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 91.57%), reflecting highly inconsistent results across studies."
     },
-    "plot_url": "static/vitamin_c/forest_ovarian_cancer_incidence_primary.png?t=1920",
-    "funnel_plot_url": "static/vitamin_c/funnel_ovarian_cancer_incidence_primary.png?t=2525",
-    "baujat_plot_url": "static\\vitamin_c\\baujat_ovarian_cancer_incidence_primary.png?t=9774",
+    "plot_url": "static/vitamin_c/forest_ovarian_cancer_incidence_primary.png?t=5263",
+    "funnel_plot_url": "static/vitamin_c/funnel_ovarian_cancer_incidence_primary.png?t=6903",
+    "baujat_plot_url": "static\\vitamin_c\\baujat_ovarian_cancer_incidence_primary.png?t=9932",
     "last_run": "2026-05-25 01:25:10"
 }

@@ -267,7 +267,7 @@
         "i2": 87.94,
         "tau2": 0.13,
         "eggers_p": 0.0032533021661185456,
-        "funnel_interpretation": "The significant funnel plot asymmetry (egger's p=0.0033) indicates substantial publication bias in this meta-analysis on Vitamin E and ovarian cancer. This specific pattern suggests that smaller studies with smaller or null effects may be underrepresented, compromising the reliability of the pooled estimate and potentially leading to an overestimation of the true association.",
+        "funnel_interpretation": "The significant funnel plot asymmetry (egger's p=0.0033) indicates substantial publication bias in this meta-analysis on vitamin_e and ovarian cancer. This specific pattern suggests that smaller studies with smaller or null effects may be underrepresented, compromising the reliability of the pooled estimate and potentially leading to an overestimation of the true association.",
         "loo_results": [
             {
                 "omitted": "Jeong NH et al. (2009) [PMID: 19266359]",
@@ -319,10 +319,10 @@
                 "is_significant": true
             }
         ],
-        "results_interpretation": "The pooled analysis of 7 studies yielded an overall effect size of 0.63 (95% CI: 0.46\u20130.86), suggesting that Vitamin E is associated with a lower risk of ovarian cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 87.94%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 7 studies yielded an overall effect size of 0.63 (95% CI: 0.46\u20130.86), suggesting that vitamin_e is associated with a lower risk of ovarian cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 87.94%), reflecting highly inconsistent results across studies."
     },
-    "plot_url": "static/vitamin_e/forest_ovarian_cancer_incidence_primary.png?t=9109",
-    "funnel_plot_url": "static/vitamin_e/funnel_ovarian_cancer_incidence_primary.png?t=7565",
-    "baujat_plot_url": "static\\vitamin_e\\baujat_ovarian_cancer_incidence_primary.png?t=1420",
+    "plot_url": "static/vitamin_e/forest_ovarian_cancer_incidence_primary.png?t=6564",
+    "funnel_plot_url": "static/vitamin_e/funnel_ovarian_cancer_incidence_primary.png?t=9157",
+    "baujat_plot_url": "static\\vitamin_e\\baujat_ovarian_cancer_incidence_primary.png?t=307",
     "last_run": "2026-05-25 01:29:13"
 }

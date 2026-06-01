@@ -36,15 +36,15 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>None</td>\n      <td>12437</td>\n      <td>0.997389</td>\n      <td>0.996518</td>\n      <td>0.99913</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>NaN</td>\n      <td>12437</td>\n      <td>0.997389</td>\n      <td>0.996518</td>\n      <td>0.99913</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 1.0,
         "ci_low": 1.0,
         "ci_upp": 1.0,
         "interpretation": "statistically significant (decreased risk/odds)"
     },
-    "plot_url": "static/phosphorus/forest_uterine_cancer_incidence_primary.png?t=5182",
-    "funnel_plot_url": "static/phosphorus/funnel_uterine_cancer_incidence_primary.png?t=8190",
+    "plot_url": "static/phosphorus/forest_uterine_cancer_incidence_primary.png?t=8119",
+    "funnel_plot_url": "static/phosphorus/funnel_uterine_cancer_incidence_primary.png?t=989",
     "baujat_plot_url": null,
     "last_run": "2026-05-25 00:30:29"
 }

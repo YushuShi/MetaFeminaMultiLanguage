@@ -39,15 +39,15 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>None</td>\n      <td>27050</td>\n      <td>1.55</td>\n      <td>1.03</td>\n      <td>2.32</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>NaN</td>\n      <td>27050</td>\n      <td>1.55</td>\n      <td>1.03</td>\n      <td>2.32</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 1.55,
         "ci_low": 1.03,
         "ci_upp": 2.32,
         "interpretation": "statistically significant (increased risk/odds)"
     },
-    "plot_url": "static/iodine/forest_uterine_cancer_incidence_primary.png?t=2435",
-    "funnel_plot_url": "static/iodine/funnel_uterine_cancer_incidence_primary.png?t=646",
+    "plot_url": "static/iodine/forest_uterine_cancer_incidence_primary.png?t=9377",
+    "funnel_plot_url": "static/iodine/funnel_uterine_cancer_incidence_primary.png?t=8372",
     "baujat_plot_url": null,
     "last_run": "2026-05-24 23:43:28"
 }
