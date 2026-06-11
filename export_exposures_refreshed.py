@@ -81,16 +81,17 @@ def main():
             df = pd.DataFrame(cleaned_studies)
             
             # Numeric conversion
-            for col in ['Effect Size', 'Lower CI', 'Upper CI', 'Cases', 'Sample Size']:
+            for col in ['Effect Size', 'Lower CI', 'Upper CI', 'Cases', 'Sample Size', 'Estimated Cases']:
                 if col in df.columns:
                     df[col] = pd.to_numeric(df[col].astype(str).str.replace(',', '').str.strip(), errors='coerce')
             
             # Filter Cases >= 50 (Standardized)
+            cases_col = df['Cases'].fillna(df.get('Estimated Cases', np.nan)) if 'Cases' in df.columns else df.get('Estimated Cases', np.nan)
             df_valid = df[
                 (df['Effect Size'] > 0) & 
                 (df['Lower CI'] > 0) & 
                 (df['Upper CI'] > 0) &
-                (df['Cases'] >= 50)
+                (cases_col >= 50)
             ].copy()
             
             if len(df_valid) == 0:
@@ -103,7 +104,7 @@ def main():
             
             if not headline:
                 continue
-
+ 
             all_results.append({
                 "Exposure": folder,
                 "$n$ studies": int(len(df_valid)),
@@ -112,7 +113,7 @@ def main():
                 "CI Upp": headline.get('ci_upp', 0.0),
                 "$I^2$ (%)": round(headline.get('i2', 0.0), 1),
                 "Total $N$": int(df_valid['Sample Size'].sum() if 'Sample Size' in df_valid.columns else 0),
-                "N cases": int(df_valid['Cases'].sum() if 'Cases' in df_valid.columns else 0)
+                "N cases": int((df_valid['Cases'].fillna(df_valid.get('Estimated Cases', 0))).sum() if 'Cases' in df_valid.columns else 0)
             })
             
         except Exception as e:

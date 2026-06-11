@@ -2404,6 +2404,46 @@
                     "Timing": "Retrospective",
                     "Comparison Type": "at least 3 combined genetic and nutritional risk factors (including folate deficiency) vs. fewer risk factors"
                 }
+            },
+            "breast_cancer_folate_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.092,
+                            "Lower CI": 0.03,
+                            "Upper CI": 0.286,
+                            "Cases": 354,
+                            "Sample Size": 354,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "At least 3 risk factors (genetic and nutritional) vs None"
+                        },
+                        "timestamp": "2026-06-11 11:24:16"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.092,
+                            "Lower CI": 0.03,
+                            "Upper CI": 0.286,
+                            "Cases": 354,
+                            "Sample Size": 354,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "At least 3 risk factors (genetic and nutritional) vs None"
+                        },
+                        "timestamp": "2026-06-11 11:24:19"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.092,
+                    "Lower CI": 0.03,
+                    "Upper CI": 0.286,
+                    "Cases": 354,
+                    "Sample Size": 354,
+                    "Design": "Case-Control",
+                    "Timing": "Retrospective",
+                    "Comparison Type": "At least 3 risk factors (genetic and nutritional) vs None"
+                }
             }
         }
     },
@@ -2725,6 +2765,22 @@
         "legacy_count": 0,
         "context_exclusions": {
             "uterine_cancer_red_meat_incidence": 2
+        }
+    },
+    "12076885": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "ovarian_cancer_eggs_incidence": 2
+        }
+    },
+    "9371506": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "uterine_cancer_eggs_incidence": 2
         }
     }
 }

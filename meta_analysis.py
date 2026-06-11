@@ -941,7 +941,7 @@ def perform_meta_analysis(df_clean, disease, exposure, outcome="Incidence", excl
         # Convert df to records
         # Use df_all for the return list so the table shows everything
         # Gracefully handle missing columns (like 'Sample Size' or 'Cases' if regex/llm both missed them)
-        cols_to_keep = ['Study', 'PMID', 'Effect Size', 'Lower CI', 'Upper CI', 'Population', 'Reference', 'Authors', 'Journal', 'Year', 'Link', 'Effect Type', 'SE', 'Sample Size', 'Cases', 'Design', 'Timing', 'Continent', 'Stage', 'Quality %', 'Quality Score', 'comparison_type', 'JBI']
+        cols_to_keep = ['Study', 'PMID', 'Effect Size', 'Lower CI', 'Upper CI', 'Population', 'Reference', 'Authors', 'Journal', 'Year', 'Link', 'Effect Type', 'SE', 'Sample Size', 'Cases', 'Estimated Cases', 'Design', 'Timing', 'Continent', 'Stage', 'Quality %', 'Quality Score', 'comparison_type', 'JBI']
         
         # Ensure columns exist in df_all
         for col in cols_to_keep:
@@ -1004,7 +1004,7 @@ def get_equivalent_terms(exposure):
     if cached is not None:
         # Handle both new dict format and legacy flat string
         if isinstance(cached, dict):
-            if "core" in cached or "downstream" in cached:
+            if cached.get("core", "").strip() or cached.get("downstream", "").strip():
                 return cached
         elif isinstance(cached, str) and cached.strip():
             return {"core": cached.strip(), "downstream": ""}
@@ -1062,8 +1062,11 @@ Core: no more than 10 terms. Downstream: no more than 4 terms. If no downstream 
         else:
             print(f"Synonym curation failed: {e}")
         
-    # Clean up response (remove code blocks if any)
-    synonyms = re.sub(r'```.*?```', '', synonyms, flags=re.DOTALL).strip()
+    # Clean up response (remove code block wrappers if any)
+    if synonyms.startswith("```"):
+        synonyms = re.sub(r'^```[a-zA-Z0-9]*\s*', '', synonyms)
+        synonyms = re.sub(r'\s*```$', '', synonyms)
+    synonyms = synonyms.strip()
 
     # Parse JSON response
     result = {"core": "", "downstream": "", "anchored": ""}
@@ -1757,7 +1760,7 @@ def extract_data(articles, exclude_meta=False, exposure_keyword=None, disease_ke
                              sample_size = part_match.group(1)
                 
             # Cases / Events
-            cases = "N/A"
+            cases = None
             term = "events" if outcome_keyword == "Survival" else "cases"
             case_pattern = re.compile(rf'(\d+(?:,\d{{3}})*)\s+(?:cancer\s+)?{term}', re.IGNORECASE)
             case_cc_match = case_pattern.search(abstract)
@@ -1838,7 +1841,7 @@ def extract_data(articles, exclude_meta=False, exposure_keyword=None, disease_ke
                     comparison_type = match.group(1)
                     break
 
-            data.append({
+            row = {
                 "Study": study_label,
                 "Effect Size": effect_size,
                 "Effect Type": es_type,
@@ -1860,7 +1863,9 @@ def extract_data(articles, exclude_meta=False, exposure_keyword=None, disease_ke
                 "comparison_type": comparison_type,
                 "Quality %": 0, # Default for non-LLM extraction
                 "Quality Score": "Fair" # Default for non-LLM extraction
-            })
+            }
+            row = add_estimated_cases_to_row(row, disease_keyword)
+            data.append(row)
             
         except Exception as e:
             continue
@@ -1872,6 +1877,44 @@ def extract_data(articles, exclude_meta=False, exposure_keyword=None, disease_ke
             print(last_abstract_debug[:200])
             
     return pd.DataFrame(data)
+            
+def add_estimated_cases_to_row(row, disease_keyword):
+    # Check if Cases is empty or not a number
+    raw_cases = row.get("Cases")
+    clean_cases = None
+    if raw_cases is not None:
+        try:
+            # Clean string like '1,200' to 1200
+            clean_cases = int(str(raw_cases).replace(',', '').strip())
+        except ValueError:
+            pass
+            
+    sample_size = row.get("Sample Size")
+    clean_n = None
+    if sample_size is not None:
+        try:
+            clean_n = int(str(sample_size).replace(',', '').strip())
+        except ValueError:
+            pass
+
+    estimated_cases = None
+    if clean_cases is None and clean_n is not None:
+        d_lower = str(disease_keyword or "").lower()
+        if "breast" in d_lower:
+            prev = 0.13
+        elif "ovarian" in d_lower or "ovary" in d_lower:
+            prev = 0.013
+        elif "uterine" in d_lower or "uterus" in d_lower or "endometrial" in d_lower:
+            prev = 0.03
+        else:
+            prev = 0.0
+            
+        if prev > 0:
+            estimated_cases = int(round(clean_n * prev))
+
+    row["Cases"] = clean_cases if clean_cases is not None else None
+    row["Estimated Cases"] = estimated_cases
+    return row
 
 def calculate_se(row):
     """Calculate Standard Error from CI if available."""
@@ -2228,6 +2271,48 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
             short_author = f"{authors.split(',')[0]} et al." if ',' in authors else authors
             study_label = f"{short_author} ({year}) [PMID: {pmid}]"
 
+            # Check for existing consensus in verifications.json to bypass screening
+            has_consensus = False
+            verifications_file = os.path.join(DATA_DIR, "verifications.json")
+            if os.path.exists(verifications_file):
+                try:
+                    with open(verifications_file, 'r', encoding='utf-8') as f:
+                        verifications = json.load(f)
+                    canonical_exp = get_canonical_name(exposure_keyword)
+                    context_key = f"{disease_keyword}_{canonical_exp}_{outcome_keyword}".lower().replace(" ", "_")
+                    if str(pmid) in verifications:
+                        v_info = verifications[str(pmid)]
+                        if context_key in v_info.get("contexts", {}):
+                            consensus = v_info["contexts"][context_key].get("consensus_data")
+                            if consensus:
+                                has_consensus = True
+                except Exception:
+                    pass
+
+            is_associated = True
+            screening_reason = ""
+            if not has_consensus:
+                try:
+                    screen_res = screen_article_relevance_llm(
+                        client=client,
+                        gemini_client=gemini_client,
+                        abstract=abstract,
+                        title=title,
+                        exposure=exposure_keyword,
+                        model_override=model
+                    )
+                    if screen_res:
+                        is_associated = screen_res.get('is_directly_associated', True)
+                        screening_reason = screen_res.get('reason', '')
+                except Exception as e:
+                    print(f"  [Screening] Error screening {study_label}: {e}")
+            else:
+                print(f"  [Screening] Bypassing screening for '{study_label}' due to existing consensus in verifications.json")
+
+            if not is_associated:
+                print(f"  [Screening] Skipping '{study_label}': Not directly associated with exposure '{exposure_keyword}'. Reason: {screening_reason}")
+                return
+
             # --- LLM EXTRACTION ---
             extracted = None
             used_llm = "None"
@@ -2388,13 +2473,14 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
                      "Timing": extracted.get('timing', 'Unknown'),
                      "Continent": extracted.get('continent', 'Other'),
                      "Stage": extracted.get('stage', 'Unspecified'),
-                     "Quality %": quality_percentage,
+                    "Quality %": quality_percentage,
                      "Quality Score": quality_score,
                      "JBI": jbi,
                      "Relevance": relevance_verdict,
                      "Relevance Reason": relevance_reason,
                  }
                  
+                 row = add_estimated_cases_to_row(row, disease_keyword)
                  row["SE"] = calculate_se(row)
                  with data_lock:
                      data.append(row)
@@ -2674,6 +2760,67 @@ def extract_info_llm(client, abstract, title, disease, exposure, outcome, model_
                 print(f"LLM Error: {e}")
             return None
     return None
+
+def screen_article_relevance_llm(client, gemini_client, abstract, title, exposure, model_override=None):
+    """
+    Use LLM to determine if the article title/abstract is directly associated with the exposure of interest.
+    Specifically excludes radioactive iodine / radioiodine therapy if exposure is iodine.
+    """
+    exposure_lower = (exposure or "").lower()
+    prompt = f"""
+    You are a screening layer for a systematic review. Determine if the following article is DIRECTLY associated with the exposure of interest: "{exposure}".
+    
+    Article Title: "{title}"
+    Article Abstract: "{abstract}"
+    
+    Guidelines:
+    - The study MUST examine "{exposure}" (or its direct nutritional synonyms/biomarkers, e.g. iodide/urinary iodine/iodized salt for iodine).
+    - If the exposure of interest is "{exposure}" and contains the word "iodine" (e.g. iodine, iodine intake, iodine status, iodine supplementation, iodine levels, urinary iodine, iodide, etc.), it MUST NOT be about radioactive iodine (RAI) therapy, radioiodine treatment, I-131 therapy, thyroid ablation, or medical radiation treatment for thyroid disease. These are medical radiation procedures and NOT dietary/nutritional exposure.
+    - If the study is about an entirely different concept that happens to share a synonym or substring, or is only about a medical treatment using that substance (like radioactive isotopes), classify it as NOT directly associated.
+    
+    Return a JSON object with the following keys:
+    - is_directly_associated: (boolean) true if the study is directly associated with the exposure of interest, false otherwise.
+    - reason: (string) A one-sentence explanation of the verdict.
+    """
+
+    # We try OpenAI first if client is available
+    if client:
+        try:
+            model_name = get_openai_model_name(model_override)
+            response = client.chat.completions.create(
+                model=model_name,
+                messages=[
+                    {"role": "system", "content": "You are a helpful screening assistant. Outcome response must be purely JSON."},
+                    {"role": "user", "content": prompt}
+                ],
+                temperature=0,
+                response_format={"type": "json_object"},
+                timeout=20.0
+            )
+            if hasattr(response, 'usage'):
+                track_usage(model_name, response.usage.prompt_tokens, response.usage.completion_tokens)
+            content = response.choices[0].message.content
+            return json.loads(content)
+        except Exception as e:
+            print(f"  [Screening LLM] OpenAI screening error: {e}")
+
+    # Fallback to Gemini if gemini_client is available
+    if gemini_client:
+        try:
+            m_name = globals().get('gemini_model_name') or 'gemini-2.5-flash'
+            response = gemini_client.models.generate_content(
+                model=m_name,
+                contents=prompt,
+                config={'response_mime_type': 'application/json'}
+            )
+            if response.usage_metadata:
+                track_usage(m_name, response.usage_metadata.prompt_token_count, response.usage_metadata.candidates_token_count)
+            return json.loads(response.text)
+        except Exception as e:
+            print(f"  [Screening LLM] Gemini screening error: {e}")
+            
+    # Default return when no LLM succeeded or was configured
+    return {"is_directly_associated": True, "reason": "No LLM client succeeded; bypassed screening."}
 
 if __name__ == "__main__":
     main()

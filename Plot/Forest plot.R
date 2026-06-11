@@ -35,6 +35,8 @@ dat_clean <- dat %>%
 
 group_map <- tribble(
   ~Exposure,                  ~Group,
+  "eggs",                     "Dietary Patterns",
+  "dairy",                    "Dietary Patterns",
   "black_cohosh",             "Herbal & Botanical",
   "vitamin_b2",               "B Vitamins",
   "cesium",                   "Minerals & Trace Elements",

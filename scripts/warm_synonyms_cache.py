@@ -37,6 +37,7 @@ EXPOSURES = [
     "multivitamin",
     "mineral supplements",
     "dairy",
+    "eggs",
     "calcium",
     "vitamin c",
     "vitamin e",

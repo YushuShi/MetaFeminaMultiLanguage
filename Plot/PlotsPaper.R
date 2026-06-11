@@ -54,6 +54,8 @@ dat_clean <- raw %>%
 
 group_map <- tribble(
   ~Exposure,                  ~Group,
+  "eggs",                     "Dietary Patterns",
+  "dairy",                    "Dietary Patterns",
   "red_meat",             "Dietary Patterns",
   "fermented_foods",          "Dietary Patterns",
   "skyr",                     "Dietary Patterns",

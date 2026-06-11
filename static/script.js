@@ -488,25 +488,47 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         currentStudies.forEach((study, index) => {
             const tr = document.createElement('tr');
-            if (study.verification_status === 'consensus') tr.style.backgroundColor = '#f0fff4';
-
             const outcomeTerm = elements.outcome ? (elements.outcome.value === 'Survival' ? 'Events' : 'Cases') : 'Cases';
 
+            if (study.verification_status === 'consensus') tr.style.backgroundColor = '#f0fff4';
+
+
             // Checkbox logic
-            const rawCases = String(study['Cases'] || '').replace(/,/g, '');
+            const rawCases = String(study['Cases'] !== undefined && study['Cases'] !== null ? study['Cases'] : '').replace(/,/g, '');
             const casesVal = parseInt(rawCases);
+            
+            let estCasesVal = parseInt(study['Estimated Cases']);
+            if (isNaN(estCasesVal)) {
+                const totalN = parseInt(String(study.Participants || study['Sample Size'] || '').replace(/,/g, ''));
+                if (!isNaN(totalN)) {
+                    const dScope = document.getElementById('disease') ? document.getElementById('disease').value.toLowerCase() : 'breast cancer';
+                    let prev = 0.0;
+                    if (dScope.includes('breast')) prev = 0.13;
+                    else if (dScope.includes('ovarian') || dScope.includes('ovary')) prev = 0.013;
+                    else if (dScope.includes('uterine') || dScope.includes('uterus') || dScope.includes('endometrial')) prev = 0.03;
+                    
+                    if (prev > 0) {
+                        estCasesVal = Math.round(totalN * prev);
+                        study['Estimated Cases'] = estCasesVal; // Cache it dynamically
+                    }
+                }
+            }
+            const finalCasesVal = !isNaN(casesVal) ? casesVal : (!isNaN(estCasesVal) ? estCasesVal : NaN);
             const isARR = (study['Effect Type'] || '').toUpperCase() === 'ARR';
             const minCases = elements.filterMinCases ? (parseInt(elements.filterMinCases.value) || 0) : 50;
             const isExcludedByFlag = (study.exclusions || 0) >= 2;
-            const isChecked = (!isARR && !isNaN(casesVal) && casesVal > minCases && !isExcludedByFlag) ? 'checked' : '';
+            const isChecked = (!isARR && !isNaN(finalCasesVal) && finalCasesVal > minCases && !isExcludedByFlag) ? 'checked' : '';
 
             // Build Exclusion Reason Title
             let unselectedReason = "";
             if (!isChecked) {
                 if (isExcludedByFlag) unselectedReason = "Excluded: Flagged for removal by users";
                 else if (isARR) unselectedReason = "Excluded: Effect type is ARR";
-                else if (isNaN(casesVal)) unselectedReason = "Excluded: Cases not specified or invalid";
-                else if (casesVal <= minCases) unselectedReason = `Excluded: Cases ≤ ${minCases}`;
+                else if (isNaN(finalCasesVal)) unselectedReason = "Excluded: Cases not specified or invalid";
+                else if (finalCasesVal <= minCases) {
+                    const isEst = isNaN(casesVal);
+                    unselectedReason = `Excluded: Cases ≤ ${minCases}${isEst ? ' (estimated)' : ''}`;
+                }
             }
 
             // Build Quality Hover Details
@@ -594,16 +616,20 @@ document.addEventListener('DOMContentLoaded', async () => {
                         </div>
                         <div style="display:flex; align-items:center; gap:3px; font-size:0.75em;">
                             <span style="opacity:0.65;">${outcomeTerm}:</span>
-                            <input type="number" step="1" value="${parseInt(String(study.Cases||'').replace(/,/g,''))||''}"
+                            <input type="number" step="1" 
+                                   value="${study.Cases !== undefined && study.Cases !== null ? parseInt(String(study.Cases).replace(/,/g,'')) : ''}"
+                                   placeholder="${study['Estimated Cases'] !== undefined && study['Estimated Cases'] !== null ? 'est. ' + study['Estimated Cases'] : ''}"
                                    style="width:68px; font-size:0.95em;"
                                    onchange="(function(inp, idx){
                                        const v = parseInt(inp.value);
                                        currentStudies[idx]['Cases'] = isNaN(v) ? inp.value : v;
+                                       const est = parseInt(currentStudies[idx]['Estimated Cases']);
+                                       const finalVal = !isNaN(v) ? v : (!isNaN(est) ? est : NaN);
                                        const minC = document.getElementById('filter-min-cases') ? (parseInt(document.getElementById('filter-min-cases').value)||0) : 50;
-                                       const cb = document.querySelector('.study-checkbox[data-index=\\''+idx+'\\']');
+                                       const cb = document.querySelector('.study-checkbox[data-index=\''+idx+'\']');
                                        const row = cb ? cb.closest('tr') : null;
                                        if(cb){
-                                           const shouldCheck = !isNaN(v) && v > minC;
+                                           const shouldCheck = !isNaN(finalVal) && finalVal > minC;
                                            cb.checked = shouldCheck;
                                            if(row){ row.style.opacity = shouldCheck ? '' : '0.6'; row.style.backgroundColor = shouldCheck ? '' : 'rgba(200,200,200,0.15)'; }
                                        }

@@ -693,3 +693,177 @@
 2026-06-04 18:45:17 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\melatonin\breast_cancer_incidence_true_all.json
 2026-06-04 18:45:17 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\melatonin\breast_cancer_incidence_true_all.json
 2026-06-04 18:45:17 [MetaFemina] Analyze complete in 0.0s: studies=26, error=None
+2026-06-10 19:28:16 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Iodine, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-10 19:28:16 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\breast_cancer_incidence_true_all.json
+2026-06-10 19:28:16 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\breast_cancer_incidence_true_all.json
+2026-06-10 19:28:16 [MetaFemina] Analyze complete in 0.0s: studies=26, error=None
+2026-06-10 19:32:10 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Eggs, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-10 19:32:10 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\breast_cancer_incidence_true_all.json
+2026-06-10 19:32:10 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\breast_cancer_incidence_true_all_openai.gpt-5.4-pro.json
+2026-06-10 19:32:11 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\breast_cancer_incidence_true_all_google.gemini-2.5-pro.json
+2026-06-10 19:32:11 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\breast_cancer_incidence_true_all_google.gemini-2.5-flash.json
+2026-06-10 19:32:11 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\breast_cancer_incidence_true_all_google.gemini-2.0-flash.json
+2026-06-10 19:32:11 [MetaFemina] Running new analysis for Breast cancer / eggs (from 'Eggs') using model: openai.gpt-4o
+2026-06-10 19:36:49 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\breast_cancer_incidence_true_all.json
+2026-06-10 19:36:49 [MetaFemina] Analyze complete in 278.5s: studies=9, error=None
+2026-06-10 19:41:45 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Eggs, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-10 19:41:45 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\breast_cancer_incidence_true_all.json
+2026-06-10 19:41:45 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\breast_cancer_incidence_true_all.json
+2026-06-10 19:41:45 [MetaFemina] Analyze complete in 0.0s: studies=9, error=None
+2026-06-10 20:20:16 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Eggs, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-10 20:20:16 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\breast_cancer_incidence_true_all.json
+2026-06-10 20:20:16 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\breast_cancer_incidence_true_all.json
+2026-06-10 20:20:16 [MetaFemina] Analyze complete in 0.0s: studies=9, error=None
+2026-06-10 20:21:05 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Eggs, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-10 20:21:05 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\ovarian_cancer_incidence_true_all.json
+2026-06-10 20:21:05 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\ovarian_cancer_incidence_true_all_openai.gpt-5.4-pro.json
+2026-06-10 20:21:05 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\ovarian_cancer_incidence_true_all_google.gemini-2.5-pro.json
+2026-06-10 20:21:05 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\ovarian_cancer_incidence_true_all_google.gemini-2.5-flash.json
+2026-06-10 20:21:05 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\ovarian_cancer_incidence_true_all_google.gemini-2.0-flash.json
+2026-06-10 20:21:05 [MetaFemina] Running new analysis for Ovarian cancer / eggs (from 'Eggs') using model: openai.gpt-4o
+2026-06-10 20:33:18 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\ovarian_cancer_incidence_true_all.json
+2026-06-10 20:33:18 [MetaFemina] Analyze complete in 732.8s: studies=2, error=None
+2026-06-10 20:36:08 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\ovarian_cancer_incidence_true_all.json
+2026-06-10 20:36:09 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\ovarian_cancer_incidence_true_all.json
+2026-06-10 20:36:27 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Eggs, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-10 20:36:27 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\uterine_cancer_incidence_true_all.json
+2026-06-10 20:36:27 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\uterine_cancer_incidence_true_all_openai.gpt-5.4-pro.json
+2026-06-10 20:36:27 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\uterine_cancer_incidence_true_all_google.gemini-2.5-pro.json
+2026-06-10 20:36:27 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\uterine_cancer_incidence_true_all_google.gemini-2.5-flash.json
+2026-06-10 20:36:27 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\uterine_cancer_incidence_true_all_google.gemini-2.0-flash.json
+2026-06-10 20:36:27 [MetaFemina] Running new analysis for Uterine cancer / eggs (from 'Eggs') using model: openai.gpt-4o
+2026-06-10 20:45:25 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\uterine_cancer_incidence_true_all.json
+2026-06-10 20:45:25 [MetaFemina] Analyze complete in 538.0s: studies=3, error=None
+2026-06-10 20:46:34 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\ovarian_cancer_incidence_true_all.json
+2026-06-10 20:46:34 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\uterine_cancer_incidence_true_all.json
+2026-06-10 20:46:36 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\eggs\uterine_cancer_incidence_true_all.json
+2026-06-10 20:47:04 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Dairy, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-10 20:47:04 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\breast_cancer_incidence_true_all.json
+2026-06-10 20:47:04 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\breast_cancer_incidence_true_all_openai.gpt-5.4-pro.json
+2026-06-10 20:47:04 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\breast_cancer_incidence_true_all_google.gemini-2.5-pro.json
+2026-06-10 20:47:04 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\breast_cancer_incidence_true_all_google.gemini-2.5-flash.json
+2026-06-10 20:47:04 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\breast_cancer_incidence_true_all_google.gemini-2.0-flash.json
+2026-06-10 20:47:04 [MetaFemina] Running new analysis for Breast cancer / dairy (from 'Dairy') using model: openai.gpt-4o
+2026-06-10 21:34:41 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\breast_cancer_incidence_true_all.json
+2026-06-10 21:34:41 [MetaFemina] Analyze complete in 2857.4s: studies=63, error=None
+2026-06-10 21:48:18 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Dairy, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-10 21:48:18 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\ovarian_cancer_incidence_true_all.json
+2026-06-10 21:48:18 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\ovarian_cancer_incidence_true_all_openai.gpt-5.4-pro.json
+2026-06-10 21:48:18 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\ovarian_cancer_incidence_true_all_google.gemini-2.5-pro.json
+2026-06-10 21:48:18 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\ovarian_cancer_incidence_true_all_google.gemini-2.5-flash.json
+2026-06-10 21:48:18 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\ovarian_cancer_incidence_true_all_google.gemini-2.0-flash.json
+2026-06-10 21:48:18 [MetaFemina] Running new analysis for Ovarian cancer / dairy (from 'Dairy') using model: openai.gpt-4o
+2026-06-10 21:55:33 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\ovarian_cancer_incidence_true_all.json
+2026-06-10 21:55:33 [MetaFemina] Analyze complete in 434.5s: studies=16, error=None
+2026-06-10 22:16:46 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Dairy, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-10 22:16:46 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\uterine_cancer_incidence_true_all.json
+2026-06-10 22:16:46 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\uterine_cancer_incidence_true_all_openai.gpt-5.4-pro.json
+2026-06-10 22:16:46 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\uterine_cancer_incidence_true_all_google.gemini-2.5-pro.json
+2026-06-10 22:16:46 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\uterine_cancer_incidence_true_all_google.gemini-2.5-flash.json
+2026-06-10 22:16:46 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\uterine_cancer_incidence_true_all_google.gemini-2.0-flash.json
+2026-06-10 22:16:46 [MetaFemina] Running new analysis for Uterine cancer / dairy (from 'Dairy') using model: openai.gpt-4o
+2026-06-10 22:20:28 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\uterine_cancer_incidence_true_all.json
+2026-06-10 22:20:28 [MetaFemina] Analyze complete in 222.2s: studies=6, error=None
+2026-06-11 07:25:05 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Dairy, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 07:25:05 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\breast_cancer_incidence_true_all.json
+2026-06-11 07:25:05 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\breast_cancer_incidence_true_all.json
+2026-06-11 07:25:05 [MetaFemina] Analyze complete in 0.0s: studies=63, error=None
+2026-06-11 08:52:55 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Dairy, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 08:52:55 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\breast_cancer_incidence_true_all.json
+2026-06-11 08:52:55 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\breast_cancer_incidence_true_all.json
+2026-06-11 08:52:55 [MetaFemina] Analyze complete in 0.0s: studies=63, error=None
+2026-06-11 09:03:44 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 09:03:44 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folate\breast_cancer_incidence_true_all.json
+2026-06-11 09:03:44 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folate\breast_cancer_incidence_true_all_openai.gpt-5.4-pro.json
+2026-06-11 09:03:44 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folate\breast_cancer_incidence_true_all_google.gemini-2.5-pro.json
+2026-06-11 09:03:44 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folate\breast_cancer_incidence_true_all_google.gemini-2.5-flash.json
+2026-06-11 09:03:44 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folate\breast_cancer_incidence_true_all_google.gemini-2.0-flash.json
+2026-06-11 09:03:44 [MetaFemina] Running new analysis for Breast cancer / folate (from 'Folic acid') using model: openai.gpt-4o
+2026-06-11 09:42:34 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folate\breast_cancer_incidence_true_all.json
+2026-06-11 09:42:34 [MetaFemina] Analyze complete in 2329.5s: studies=55, error=None
+2026-06-11 10:35:39 [MetaFemina] Analyze request: disease=Breast cancer, exposure=folate, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 10:35:39 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folate\breast_cancer_incidence_true_all.json
+2026-06-11 10:35:39 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folate\breast_cancer_incidence_true_all.json
+2026-06-11 10:35:39 [MetaFemina] Analyze complete in 0.0s: studies=55, error=None
+2026-06-11 11:17:09 [MetaFemina] Analyze request: disease=Breast cancer, exposure=folate, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 11:17:09 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folate\breast_cancer_incidence_true_all.json
+2026-06-11 11:17:09 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folate\breast_cancer_incidence_true_all.json
+2026-06-11 11:17:09 [MetaFemina] Analyze complete in 0.0s: studies=55, error=None
+2026-06-11 11:23:22 [MetaFemina] Analyze request: disease=Breast cancer, exposure=folate, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 11:23:22 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folate\breast_cancer_incidence_true_all.json
+2026-06-11 11:23:22 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folate\breast_cancer_incidence_true_all.json
+2026-06-11 11:23:22 [MetaFemina] Analyze complete in 0.0s: studies=55, error=None
+2026-06-11 11:24:20 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folate\breast_cancer_incidence_true_all.json
+2026-06-11 11:24:28 [MetaFemina] Analyze request: disease=Breast cancer, exposure=folate, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 11:24:28 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folate\breast_cancer_incidence_true_all.json
+2026-06-11 11:24:28 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folate\breast_cancer_incidence_true_all.json
+2026-06-11 11:24:28 [MetaFemina] Re-analyzing folate due to verification filtering/consensus/flags...
+2026-06-11 11:24:29 [MetaFemina] Analyze complete in 1.0s: studies=55, error=None
+2026-06-11 11:29:34 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 11:29:34 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folate\breast_cancer_incidence_true_all.json
+2026-06-11 11:29:34 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folate\breast_cancer_incidence_true_all.json
+2026-06-11 11:29:34 [MetaFemina] Re-analyzing Folic acid due to verification filtering/consensus/flags...
+2026-06-11 11:29:35 [MetaFemina] Analyze complete in 1.0s: studies=55, error=None
+2026-06-11 11:36:28 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Iodine, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 11:36:28 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\breast_cancer_incidence_true_all.json
+2026-06-11 11:36:28 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\breast_cancer_incidence_true_all.json
+2026-06-11 11:36:28 [MetaFemina] Analyze complete in 0.0s: studies=26, error=None
+2026-06-11 11:40:22 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Iodine, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-11 11:40:22 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-11 11:40:22 [MetaFemina] Running new analysis for Breast cancer / iodine (from 'Iodine') using model: openai.gpt-4o
+2026-06-11 12:01:53 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\breast_cancer_incidence_true_all.json
+2026-06-11 12:01:53 [MetaFemina] Analyze complete in 1291.3s: studies=8, error=None
+2026-06-11 12:09:03 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Iodine, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 12:09:03 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\ovarian_cancer_incidence_true_all.json
+2026-06-11 12:09:03 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\ovarian_cancer_incidence_true_all.json
+2026-06-11 12:09:03 [MetaFemina] Analyze complete in 0.0s: studies=1, error=None
+2026-06-11 12:09:11 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Iodine, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 12:09:11 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\uterine_cancer_incidence_true_all.json
+2026-06-11 12:09:11 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\uterine_cancer_incidence_true_all.json
+2026-06-11 12:09:11 [MetaFemina] Analyze complete in 0.0s: studies=1, error=None
+2026-06-11 14:47:41 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Iodine, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 14:47:41 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\breast_cancer_incidence_true_all.json
+2026-06-11 14:47:41 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\breast_cancer_incidence_true_all.json
+2026-06-11 14:47:41 [MetaFemina] Analyze complete in 0.0s: studies=1, error=None
+2026-06-11 14:47:56 [MetaFemina] Analyze request: disease=Breast cancer, exposure=folate, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 14:47:56 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folate\breast_cancer_incidence_true_all.json
+2026-06-11 14:47:56 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folate\breast_cancer_incidence_true_all.json
+2026-06-11 14:47:56 [MetaFemina] Re-analyzing folate due to verification filtering/consensus/flags...
+2026-06-11 14:47:57 [MetaFemina] Analyze complete in 1.1s: studies=55, error=None
+2026-06-11 14:48:10 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Iodine, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 14:48:10 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\breast_cancer_incidence_true_all.json
+2026-06-11 14:48:10 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\breast_cancer_incidence_true_all.json
+2026-06-11 14:48:10 [MetaFemina] Analyze complete in 0.0s: studies=1, error=None
+2026-06-11 14:48:12 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Iodine, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 14:48:12 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\ovarian_cancer_incidence_true_all.json
+2026-06-11 14:48:12 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\ovarian_cancer_incidence_true_all.json
+2026-06-11 14:48:12 [MetaFemina] Analyze complete in 0.0s: studies=1, error=None
+2026-06-11 14:48:22 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Iodine, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 14:48:22 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\uterine_cancer_incidence_true_all.json
+2026-06-11 14:48:22 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\uterine_cancer_incidence_true_all.json
+2026-06-11 14:48:22 [MetaFemina] Analyze complete in 0.0s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-11 14:48:25 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Iodine, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 14:48:25 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\ovarian_cancer_incidence_true_all.json
+2026-06-11 14:48:25 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\ovarian_cancer_incidence_true_all.json
+2026-06-11 14:48:25 [MetaFemina] Analyze complete in 0.0s: studies=1, error=None
+2026-06-11 14:48:33 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Iodine, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 14:48:33 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\breast_cancer_incidence_true_all.json
+2026-06-11 14:48:33 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\breast_cancer_incidence_true_all.json
+2026-06-11 14:48:33 [MetaFemina] Analyze complete in 0.0s: studies=1, error=None
+2026-06-11 14:59:40 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Red meat, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 14:59:40 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\uterine_cancer_incidence_true_all.json
+2026-06-11 14:59:40 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\uterine_cancer_incidence_true_all.json
+2026-06-11 14:59:40 [MetaFemina] Re-analyzing Red meat due to verification filtering/consensus/flags...
+2026-06-11 14:59:41 [MetaFemina] Analyze complete in 0.5s: studies=3, error=None
+2026-06-11 15:01:11 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Dairy, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 15:01:11 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\uterine_cancer_incidence_true_all.json
+2026-06-11 15:01:11 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\uterine_cancer_incidence_true_all.json
+2026-06-11 15:01:11 [MetaFemina] Analyze complete in 0.0s: studies=6, error=None
+2026-06-11 15:03:34 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Dairy, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 15:03:34 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\ovarian_cancer_incidence_true_all.json
+2026-06-11 15:03:34 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\ovarian_cancer_incidence_true_all.json
+2026-06-11 15:03:34 [MetaFemina] Analyze complete in 0.0s: studies=16, error=None
+2026-06-11 15:04:22 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Iodine, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 15:04:22 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\breast_cancer_incidence_true_all.json
+2026-06-11 15:04:22 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\breast_cancer_incidence_true_all.json
+2026-06-11 15:04:22 [MetaFemina] Analyze complete in 0.0s: studies=1, error=None

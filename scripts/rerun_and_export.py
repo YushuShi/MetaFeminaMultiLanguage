@@ -224,16 +224,17 @@ def export_disease_results(disease, disease_label, outcome="Incidence", exclude_
             df = pd.DataFrame(cleaned_studies)
             
             # Numeric conversion
-            for col in ['Effect Size', 'Lower CI', 'Upper CI', 'Cases', 'Sample Size']:
+            for col in ['Effect Size', 'Lower CI', 'Upper CI', 'Cases', 'Sample Size', 'Estimated Cases']:
                 if col in df.columns:
                     df[col] = pd.to_numeric(df[col].astype(str).str.replace(',', '').str.strip(), errors='coerce')
                     
             # Filter Cases >= 50
+            cases_col = df['Cases'].fillna(df.get('Estimated Cases', np.nan)) if 'Cases' in df.columns else df.get('Estimated Cases', np.nan)
             df_valid = df[
                 (df['Effect Size'] > 0) & 
                 (df['Lower CI'] > 0) & 
                 (df['Upper CI'] > 0) &
-                (df['Cases'] >= 50)
+                (cases_col >= 50)
             ].copy()
             
             if len(df_valid) == 0:
@@ -258,7 +259,7 @@ def export_disease_results(disease, disease_label, outcome="Incidence", exclude_
                 "I^2 (%)": round(headline.get('i2', 0.0), 1),
                 "eggers p-value": headline.get('eggers_p'),
                 "total N": int(df_valid['Sample Size'].sum() if 'Sample Size' in df_valid.columns else 0),
-                "total Cases": int(df_valid['Cases'].sum() if 'Cases' in df_valid.columns else 0)
+                "total Cases": int((df_valid['Cases'].fillna(df_valid.get('Estimated Cases', 0))).sum() if 'Cases' in df_valid.columns else 0)
             })
             
             # Format results for FIXED Excel (style of export_exposures_refreshed.py)
@@ -270,7 +271,7 @@ def export_disease_results(disease, disease_label, outcome="Incidence", exclude_
                 "CI Upp": headline.get('ci_upp', 0.0),
                 "$I^2$ (%)": round(headline.get('i2', 0.0), 1),
                 "Total $N$": int(df_valid['Sample Size'].sum() if 'Sample Size' in df_valid.columns else 0),
-                "N cases": int(df_valid['Cases'].sum() if 'Cases' in df_valid.columns else 0)
+                "N cases": int((df_valid['Cases'].fillna(df_valid.get('Estimated Cases', 0))).sum() if 'Cases' in df_valid.columns else 0)
             })
             
         except Exception as e:
