@@ -360,6 +360,24 @@ document.addEventListener('DOMContentLoaded', async () => {
         renderStudiesTable();
     }
 
+    function updateBaselineIncidence() {
+        if (!elements.disease || !elements.pooledIncidence) return;
+        const disease = elements.disease.value.toLowerCase();
+        let val = 13.0; // default/breast cancer
+        if (disease.includes('uterine') || disease.includes('uterus') || disease.includes('endometrial')) {
+            val = 3.1;
+        } else if (disease.includes('ovarian') || disease.includes('ovary')) {
+            val = 1.3;
+        }
+        elements.pooledIncidence.value = val;
+        updatePooledPowerAnalysis();
+    }
+
+    if (elements.disease) {
+        elements.disease.addEventListener('change', updateBaselineIncidence);
+        updateBaselineIncidence();
+    }
+
     if (elements.analyzeBtn) {
         elements.analyzeBtn.addEventListener('click', () => runAnalysis(false));
     }
@@ -505,7 +523,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     let prev = 0.0;
                     if (dScope.includes('breast')) prev = 0.13;
                     else if (dScope.includes('ovarian') || dScope.includes('ovary')) prev = 0.013;
-                    else if (dScope.includes('uterine') || dScope.includes('uterus') || dScope.includes('endometrial')) prev = 0.03;
+                    else if (dScope.includes('uterine') || dScope.includes('uterus') || dScope.includes('endometrial')) prev = 0.031;
                     
                     if (prev > 0) {
                         estCasesVal = Math.round(totalN * prev);
@@ -587,13 +605,20 @@ document.addEventListener('DOMContentLoaded', async () => {
                             const es = parseFloat(study['Effect Size']);
                             const type = (study['Effect Type'] || 'OR').toUpperCase();
                             if (!isNaN(es)) {
-                                const p0 = 0.13;
+                                const dScope = document.getElementById('disease') ? document.getElementById('disease').value.toLowerCase() : 'breast cancer';
+                                let p0 = 0.13;
+                                if (dScope.includes('uterine') || dScope.includes('uterus') || dScope.includes('endometrial')) {
+                                    p0 = 0.031;
+                                } else if (dScope.includes('ovarian') || dScope.includes('ovary')) {
+                                    p0 = 0.013;
+                                }
+                                const pctText = (p0 * 100).toFixed(1).replace('.0', '') + '%';
                                 if (type === 'OR' || type === 'ODDS RATIO') {
                                     const rr = es / (1 - p0 + (p0 * es));
-                                    return `<div style="font-size: 0.65em; color: #777; padding-left: 2px;" title="Estimated Relative Risk (assuming 13% baseline risk)">Est. RR: ${rr.toFixed(3)}</div>`;
+                                    return `<div style="font-size: 0.65em; color: #777; padding-left: 2px;" title="Estimated Relative Risk (assuming ${pctText} baseline risk)">Est. RR: ${rr.toFixed(3)}</div>`;
                                 } else if (type === 'HR' || type === 'HAZARD RATIO') {
                                     const rr = (1 / p0) * (1 - Math.exp(es * Math.log(1 - p0)));
-                                    return `<div style="font-size: 0.65em; color: #777; padding-left: 2px;" title="Estimated Relative Risk (assuming 13% baseline risk)">Est. RR: ${rr.toFixed(3)}</div>`;
+                                    return `<div style="font-size: 0.65em; color: #777; padding-left: 2px;" title="Estimated Relative Risk (assuming ${pctText} baseline risk)">Est. RR: ${rr.toFixed(3)}</div>`;
                                 }
                             }
                             return '';
@@ -785,7 +810,13 @@ document.addEventListener('DOMContentLoaded', async () => {
             elements.interpretation.textContent = data.headline.interpretation;
 
             // Estimated RR
-            const p0 = 0.13;
+            const dScope = document.getElementById('disease') ? document.getElementById('disease').value.toLowerCase() : 'breast cancer';
+            let p0 = 0.13;
+            if (dScope.includes('uterine') || dScope.includes('uterus') || dScope.includes('endometrial')) {
+                p0 = 0.031;
+            } else if (dScope.includes('ovarian') || dScope.includes('ovary')) {
+                p0 = 0.013;
+            }
             const es = parseFloat(data.headline.pooled_es);
             const ciLow = parseFloat(data.headline.ci_low);
             const ciUpp = parseFloat(data.headline.ci_upp);
@@ -895,7 +926,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (!lastHeadlineData || !elements.pooledEs || !elements.pooledCi) return;
 
         const measure = elements.displayMeasure ? elements.displayMeasure.value : 'RR';
-        const p0 = 0.13;
+        const dScope = document.getElementById('disease') ? document.getElementById('disease').value.toLowerCase() : 'breast cancer';
+        let p0 = 0.13;
+        if (dScope.includes('uterine') || dScope.includes('uterus') || dScope.includes('endometrial')) {
+            p0 = 0.031;
+        } else if (dScope.includes('ovarian') || dScope.includes('ovary')) {
+            p0 = 0.013;
+        }
         let es = parseFloat(lastHeadlineData.pooled_es);
         let low = parseFloat(lastHeadlineData.ci_low);
         let upp = parseFloat(lastHeadlineData.ci_upp);

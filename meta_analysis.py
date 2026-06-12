@@ -1905,7 +1905,7 @@ def add_estimated_cases_to_row(row, disease_keyword):
         elif "ovarian" in d_lower or "ovary" in d_lower:
             prev = 0.013
         elif "uterine" in d_lower or "uterus" in d_lower or "endometrial" in d_lower:
-            prev = 0.03
+            prev = 0.031
         else:
             prev = 0.0
             

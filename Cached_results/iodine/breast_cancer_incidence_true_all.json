@@ -22,7 +22,7 @@
             "Timing": "Prospective",
             "Continent": null,
             "Stage": null,
-            "Quality %": 81.8,
+            "Quality %": 100.0,
             "Quality Score": "Good",
             "comparison_type": "Q4 vs Q1",
             "JBI": {
@@ -34,8 +34,8 @@
                 "q6": "Yes",
                 "q7": "Yes",
                 "q8": "Yes",
-                "q9": "Unclear",
-                "q10": "Unclear",
+                "q9": "Yes",
+                "q10": "Yes",
                 "q11": "Yes"
             }
         }
@@ -47,8 +47,8 @@
         "ci_upp": 0.88,
         "interpretation": "statistically significant (decreased risk/odds)"
     },
-    "plot_url": "static/iodine/forest_breast_cancer_incidence_primary.png?t=5954",
-    "funnel_plot_url": "static/iodine/funnel_breast_cancer_incidence_primary.png?t=8082",
+    "plot_url": "static/iodine/forest_breast_cancer_incidence_primary.png?t=8976",
+    "funnel_plot_url": "static/iodine/funnel_breast_cancer_incidence_primary.png?t=6774",
     "baujat_plot_url": null,
-    "last_run": "2026-06-11 14:37:40"
+    "last_run": "2026-06-11 18:11:25"
 }

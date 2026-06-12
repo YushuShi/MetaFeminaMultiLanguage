@@ -867,3 +867,63 @@
 2026-06-11 15:04:22 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\breast_cancer_incidence_true_all.json
 2026-06-11 15:04:22 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\breast_cancer_incidence_true_all.json
 2026-06-11 15:04:22 [MetaFemina] Analyze complete in 0.0s: studies=1, error=None
+2026-06-11 16:08:02 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Iodine, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 16:08:02 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\breast_cancer_incidence_true_all.json
+2026-06-11 16:08:02 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\breast_cancer_incidence_true_all.json
+2026-06-11 16:08:02 [MetaFemina] Analyze complete in 0.0s: studies=1, error=None
+2026-06-11 16:08:06 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Iodine, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 16:08:06 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\uterine_cancer_incidence_true_all.json
+2026-06-11 16:08:06 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\uterine_cancer_incidence_true_all.json
+2026-06-11 16:08:06 [MetaFemina] Analyze complete in 0.0s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-11 16:08:33 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Dairy, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 16:08:33 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\breast_cancer_incidence_true_all.json
+2026-06-11 16:08:33 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\dairy\breast_cancer_incidence_true_all.json
+2026-06-11 16:08:33 [MetaFemina] Analyze complete in 0.0s: studies=63, error=None
+2026-06-11 16:46:21 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Vitamin A, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 16:46:21 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-11 16:46:21 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-11 16:46:21 [MetaFemina] Analyze complete in 0.0s: studies=32, error=None
+2026-06-11 16:46:30 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Vitamin A, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 16:46:30 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\ovarian_cancer_incidence_true_all.json
+2026-06-11 16:46:30 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\ovarian_cancer_incidence_true_all.json
+2026-06-11 16:46:30 [MetaFemina] Analyze complete in 0.0s: studies=6, error=None
+2026-06-11 16:46:51 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Vitamin A, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 16:46:51 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\uterine_cancer_incidence_true_all.json
+2026-06-11 16:46:51 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\uterine_cancer_incidence_true_all.json
+2026-06-11 16:46:51 [MetaFemina] Analyze complete in 0.0s: studies=3, error=None
+2026-06-11 16:46:58 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Beta-carotene, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 16:46:58 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\beta-carotene\uterine_cancer_incidence_true_all.json
+2026-06-11 16:46:58 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\beta-carotene\uterine_cancer_incidence_true_all.json
+2026-06-11 16:46:58 [MetaFemina] Analyze complete in 0.0s: studies=4, error=None
+2026-06-11 16:47:04 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Beta-carotene, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 16:47:04 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\beta-carotene\ovarian_cancer_incidence_true_all.json
+2026-06-11 16:47:04 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\beta-carotene\ovarian_cancer_incidence_true_all.json
+2026-06-11 16:47:04 [MetaFemina] Analyze complete in 0.0s: studies=9, error=None
+2026-06-11 16:47:17 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Caffeine, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 16:47:17 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\caffeine\ovarian_cancer_incidence_true_all.json
+2026-06-11 16:47:17 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\caffeine\ovarian_cancer_incidence_true_all.json
+2026-06-11 16:47:17 [MetaFemina] Analyze complete in 0.0s: studies=12, error=None
+2026-06-11 16:47:24 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Caffeine, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 16:47:24 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\caffeine\uterine_cancer_incidence_true_all.json
+2026-06-11 16:47:24 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\caffeine\uterine_cancer_incidence_true_all.json
+2026-06-11 16:47:24 [MetaFemina] Analyze complete in 0.0s: studies=12, error=None
+2026-06-11 16:52:33 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Caffeine, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 16:52:33 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\caffeine\breast_cancer_incidence_true_all.json
+2026-06-11 16:52:33 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\caffeine\breast_cancer_incidence_true_all.json
+2026-06-11 16:52:33 [MetaFemina] Analyze complete in 0.0s: studies=17, error=None
+2026-06-11 16:53:03 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Caffeine, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 16:53:03 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\caffeine\ovarian_cancer_incidence_true_all.json
+2026-06-11 16:53:03 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\caffeine\ovarian_cancer_incidence_true_all.json
+2026-06-11 16:53:03 [MetaFemina] Analyze complete in 0.0s: studies=12, error=None
+2026-06-11 21:18:27 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Tea, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 21:18:27 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\tea\breast_cancer_incidence_true_all.json
+2026-06-11 21:18:27 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\tea\breast_cancer_incidence_true_all.json
+2026-06-11 21:18:27 [MetaFemina] Analyze complete in 0.0s: studies=33, error=None
+2026-06-11 21:19:01 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Tea, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 21:19:01 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\tea\ovarian_cancer_incidence_true_all.json
+2026-06-11 21:19:01 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\tea\ovarian_cancer_incidence_true_all.json
+2026-06-11 21:19:01 [MetaFemina] Analyze complete in 0.0s: studies=7, error=None
+2026-06-11 21:25:08 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Tea, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 21:25:08 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\tea\uterine_cancer_incidence_true_all.json
+2026-06-11 21:25:08 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\tea\uterine_cancer_incidence_true_all.json
+2026-06-11 21:25:08 [MetaFemina] Analyze complete in 0.0s: studies=4, error=None
