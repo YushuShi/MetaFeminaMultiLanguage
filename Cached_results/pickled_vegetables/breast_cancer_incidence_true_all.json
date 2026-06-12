@@ -1,0 +1,80 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Yu H et al. (2010) [PMID: 20432165]",
+            "PMID": "20432165",
+            "Effect Size": 6.24,
+            "Lower CI": 3.55,
+            "Upper CI": 10.97,
+            "Population": "General",
+            "Reference": "Vegetables, but not pickled vegetables, are negatively associated with the risk of breast cancer.",
+            "Authors": "Yu H, Hwang JY, Ro J, Kim J, Chang N",
+            "Journal": "Nutrition and cancer",
+            "Year": "2010",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/20432165/",
+            "Effect Type": "OR",
+            "SE": 1.892857142857143,
+            "Sample Size": 718,
+            "Cases": 358,
+            "Estimated Cases": null,
+            "Design": "Case-Control",
+            "Timing": "Retrospective",
+            "Continent": "Asia",
+            "Stage": null,
+            "Quality %": 100.0,
+            "Quality Score": "Good",
+            "comparison_type": "Highest vs Lowest",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes"
+            },
+            "exposure_measurement_type": "dietary_intake",
+            "exposure_measurement_supporting_text": "Pickled vegetable consumption was assessed using a validated food frequency questionnaire.",
+            "extraction_supporting_text": {
+                "sample_size": "A total of 358 patients with breast cancer who were matched to 360 healthy controls by age.",
+                "effect_size": "OR = 6.24, 95% confidence interval [CI] = 3.55-10.97.",
+                "effect_direction": "Pickled vegetable intake was positively associated with the risk of breast cancer.",
+                "p_value": "P for trend <0.001 for highest vs. lowest quartiles of intake.",
+                "confidence_interval": "95% confidence interval [CI] = 3.55-10.97.",
+                "outcome_definition": "The risk of breast cancer was investigated.",
+                "exposure_definition": "Pickled vegetable consumption was assessed using a validated food frequency questionnaire."
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>358</td>\n      <td>718</td>\n      <td>3.711635</td>\n      <td>2.666166</td>\n      <td>4.777666</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 3.71,
+        "ci_low": 2.67,
+        "ci_upp": 4.78,
+        "interpretation": "statistically significant (increased risk/odds)"
+    },
+    "screening_stats": {
+        "llm_screened_out": 48,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 2,
+        "total_fetched": 1042,
+        "after_prefilter": 50,
+        "prefilter_skip": {
+            "disease": 128,
+            "conflict": 36,
+            "exposure": 19,
+            "outcome": 30,
+            "animal": 172,
+            "meta": 150
+        },
+        "extracted": 2
+    },
+    "plot_url": "static/pickled_vegetables/forest_breast_cancer_incidence_primary.png?t=8568",
+    "funnel_plot_url": "static/pickled_vegetables/funnel_breast_cancer_incidence_primary.png?t=823",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-12 15:33:01"
+}

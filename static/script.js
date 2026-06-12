@@ -436,7 +436,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         const exposureType = elements.filterExposureType ? elements.filterExposureType.value : 'Anything';
 
         currentStudies = allStudies.filter(study => {
-            if (timing !== 'All' && study.Timing !== timing) return false;
+            if (timing !== 'All') {
+                if (timing === 'Clinical Trials') {
+                    if (study.Design !== 'Clinical Trials') return false;
+                } else if (study.Timing !== timing) {
+                    return false;
+                }
+            }
             if (stage !== 'All' && study.Stage !== stage) return false;
             if (quality === 'Moderate+') {
                 const score = (study['Quality Score'] || 'Fair');

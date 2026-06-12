@@ -227,6 +227,13 @@ def update_cache_from_verifications(disease, exposure, outcome):
 def index():
     return render_template('index.html')
 
+@app.after_request
+def add_cors_headers(response):
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    response.headers['Access-Control-Allow-Methods'] = 'GET,POST,OPTIONS'
+    response.headers['Access-Control-Allow-Headers'] = 'Content-Type,Authorization'
+    return response
+
 @app.route('/about')
 def about():
     return render_template('about.html')
@@ -258,6 +265,7 @@ def analyze():
             log_event(f"[MetaFemina] Checking cache candidate: {p_path}")
             if os.path.exists(p_path):
                 best_cache_path = p_path
+                log_event(f"[MetaFemina] Cache hit found: {best_cache_path}")
                 break
     else:
         log_event("[MetaFemina] Force refresh requested; bypassing cached result lookup.")
@@ -265,6 +273,7 @@ def analyze():
             return jsonify({"error": "Refreshing evidence is disabled in the public demonstration version."}), 400
 
     if READ_ONLY_MODE and not best_cache_path:
+        log_event("[MetaFemina] No cached result found for request in read-only mode.")
         return jsonify({"error": "This exposure has not been pre-analyzed yet. In the public demonstration version, only pre-analyzed exposures are available to search."}), 400
 
     if best_cache_path:
@@ -648,13 +657,12 @@ def usage():
 
 @app.route('/api/config')
 def get_config():
-    """Return read-only status and the list of pre-cached exposures."""
+    """Return read-only status and the list of pre‑cached exposures."""
     exposures = []
     if os.path.exists(CACHE_DIR):
         for d in os.listdir(CACHE_DIR):
             d_path = os.path.join(CACHE_DIR, d)
             if os.path.isdir(d_path):
-                # Only include if the directory contains at least one .json file
                 try:
                     if any(f.endswith('.json') for f in os.listdir(d_path)):
                         exposures.append(d)
@@ -663,6 +671,24 @@ def get_config():
     return jsonify({
         "read_only": READ_ONLY_MODE,
         "cached_exposures": sorted(exposures)
+    })
+
+# Diagnostic endpoint for cache status
+@app.route('/debug/cache_status', methods=['POST'])
+def debug_cache_status():
+    data = request.json or {}
+    disease = data.get('disease', DEFAULT_DISEASE)
+    exposure = data.get('exposure', 'Coffee')
+    outcome = data.get('outcome', 'Incidence')
+    exclude_meta = data.get('exclude_meta', False)
+    model = data.get('model', DEFAULT_MODEL)
+    use_downstream = data.get('use_downstream', True)
+    path = get_cache_path(disease, exposure, outcome, exclude_meta, use_downstream, model)
+    exists = os.path.exists(path)
+    return jsonify({
+        "cache_path": path,
+        "exists": exists,
+        "message": f"Cache {'found' if exists else 'not found'} for exposure '{exposure}'"
     })
 
 @app.route('/api/synonyms')
