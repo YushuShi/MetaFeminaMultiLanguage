@@ -2205,9 +2205,13 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
     print(f"  [Pre-filter] {len(filtered_articles)} relevant articles from {len(articles)} total")
     print(f"  [Pre-filter] Skipped: disease={skip_counts['disease']}, conflict={skip_counts['conflict']}, exposure={skip_counts['exposure']}, outcome={skip_counts['outcome']}, animal={skip_counts['animal']}, meta={skip_counts['meta']}")
     
-    # --- PHASE 2: Extraction cap ---
     # Sort by score so highest relevant articles are processed first
     filtered_articles.sort(key=lambda x: x[1], reverse=True)
+
+    # Apply safety cap to prevent excessive LLM calls on very broad queries (e.g. alcohol)
+    if len(filtered_articles) > 50:
+        print(f"  [Safety Cap] Limiting LLM extraction to the top 50 most relevant articles (out of {len(filtered_articles)})")
+        filtered_articles = filtered_articles[:50]
 
     print(f"  [LLM] Extracting from all {len(filtered_articles)} relevant articles.")
     

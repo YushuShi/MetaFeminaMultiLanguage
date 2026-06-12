@@ -55,8 +55,8 @@
         "anchored": ""
     },
     "alcohol": {
-        "core": "ethanol, ethyl alcohol, alcohol intake, alcohol consumption, ethanol intake, ethanol levels, blood alcohol concentration",
-        "downstream": "alcoholic beverages, wine, beer, spirits",
+        "core": "alcohol, ethanol, ethyl alcohol, alcohol intake, alcohol consumption, alcoholic beverages, beer, wine, white wine, red wine, rosé wine, sparkling wine, sake, spirits, whiskey, whisky, vodka, rum, gin, brandy, baijiu, liquor, distilled spirits",
+        "downstream": "low-alcohol beverages, medium-alcohol beverages, high-alcohol beverages",
         "anchored": ""
     },
     "red meat": {
@@ -252,6 +252,11 @@
     "fermented foods": {
         "core": "fermented foods, fermentation, yogurt, kefir, sauerkraut, kimchi, kombucha, tempeh, miso, sourdough",
         "downstream": "probiotics, postbiotics, short-chain fatty acids, lactic acid bacteria",
+        "anchored": ""
+    },
+    "non-alcoholic fermented foods": {
+        "core": "non-alcoholic fermented foods, fermented foods, yogurt, yoghurt, kefir, kimchi, sauerkraut, pickled vegetables, miso, tempeh, natto, kombucha, pu-erh tea, fermented milk, fermented vegetables, fermented bean, fermented tea",
+        "downstream": "probiotics, dairy fermented foods, vegetable fermented foods, fermented bean products, fermented tea products",
         "anchored": ""
     },
     "skyr": {

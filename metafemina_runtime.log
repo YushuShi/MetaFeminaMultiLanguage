@@ -1138,3 +1138,39 @@
 2026-06-12 12:12:42 ============================================================
 
 2026-06-12 12:12:42 [MetaFemina] Analyze complete in 0.0s: studies=14, error=None
+2026-06-12 13:28:05 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Non-alcoholic fermented foods, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-12 13:28:05 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\non-alcoholic_fermented_foods\breast_cancer_incidence_true_all.json
+2026-06-12 13:28:05 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\non-alcoholic_fermented_foods\breast_cancer_incidence_true_all.json
+2026-06-12 13:28:05 
+============================================================
+2026-06-12 13:28:05 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-12 13:28:05   - Total Articles Fetched from PubMed: 189
+2026-06-12 13:28:05   - Articles Remaining After Pre-filter: 72
+2026-06-12 13:28:05     (Pre-filter skips: disease=28, conflict=1, exposure=3, animal=16, meta=69)
+2026-06-12 13:28:05   - LLM Screening:
+2026-06-12 13:28:05     * Screened IN / Accepted:   18
+2026-06-12 13:28:05     * Screened OUT / Rejected:  54
+2026-06-12 13:28:05     * Consensus Bypassed:       0
+2026-06-12 13:28:05   - Final Extracted Studies: 7
+2026-06-12 13:28:05 ============================================================
+
+2026-06-12 13:28:05 [MetaFemina] Analyze complete in 0.0s: studies=7, error=None
+2026-06-12 13:30:28 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Alcohol, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-12 13:30:28 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alcohol\breast_cancer_incidence_true_all.json
+2026-06-12 13:30:28 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alcohol\breast_cancer_incidence_true_all.json
+2026-06-12 13:30:28 
+============================================================
+2026-06-12 13:30:28 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-12 13:30:28   - Total Articles Fetched from PubMed: 3317
+2026-06-12 13:30:28   - Articles Remaining After Pre-filter: 50
+2026-06-12 13:30:28     (Pre-filter skips: disease=197, conflict=81, exposure=19, outcome=165, animal=244, meta=498)
+2026-06-12 13:30:28   - LLM Screening:
+2026-06-12 13:30:28     * Screened IN / Accepted:   49
+2026-06-12 13:30:28     * Screened OUT / Rejected:  1
+2026-06-12 13:30:28     * Consensus Bypassed:       0
+2026-06-12 13:30:28   - Final Extracted Studies: 46
+2026-06-12 13:30:28 ============================================================
+
+2026-06-12 13:30:28 [MetaFemina] Analyze complete in 0.0s: studies=42, error=None
+2026-06-12 13:31:47 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alcohol\breast_cancer_incidence_true_all.json
+2026-06-12 13:31:49 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alcohol\breast_cancer_incidence_true_all.json

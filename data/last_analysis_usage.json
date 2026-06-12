@@ -1,12 +1,12 @@
 {
     "openai.gpt-4o": {
-        "input_tokens": 169943,
-        "output_tokens": 19214,
-        "calls": 133
+        "input_tokens": 130081,
+        "output_tokens": 18253,
+        "calls": 87
     },
     "google.gemini-2.5-flash": {
-        "input_tokens": 109621,
-        "output_tokens": 82577,
-        "calls": 41
+        "input_tokens": 100128,
+        "output_tokens": 82834,
+        "calls": 37
     }
 }
