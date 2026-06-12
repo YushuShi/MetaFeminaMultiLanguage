@@ -945,3 +945,43 @@
 2026-06-11 22:01:13 [MetaFemina] Running new analysis for Uterine cancer / folate (from 'folate') using model: openai.gpt-4o
 2026-06-11 22:04:53 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folate\uterine_cancer_incidence_true_all.json
 2026-06-11 22:04:53 [MetaFemina] Analyze complete in 220.0s: studies=4, error=None
+2026-06-12 08:53:03 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Iodine, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-12 08:53:03 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\breast_cancer_incidence_true_all.json
+2026-06-12 08:53:03 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iodine\breast_cancer_incidence_true_all.json
+2026-06-12 08:53:03 [MetaFemina] Analyze complete in 0.0s: studies=1, error=None
+2026-06-12 08:53:45 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Chamomile, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-12 08:53:45 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\chamomile\breast_cancer_incidence_true_all.json
+2026-06-12 08:53:45 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\chamomile\breast_cancer_incidence_true_all.json
+2026-06-12 08:53:45 [MetaFemina] Analyze complete in 0.0s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-12 08:53:50 [MetaFemina] Analyze request: disease=Breast cancer, exposure=5-HTP, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-12 08:53:50 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-12 08:53:50 [MetaFemina] Running new analysis for Breast cancer / 5-htp (from '5-HTP') using model: openai.gpt-4o
+2026-06-12 08:54:20 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\5-htp\breast_cancer_incidence_true_all.json
+2026-06-12 08:54:20 [MetaFemina] Analyze complete in 29.9s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-12 08:55:54 [MetaFemina] Analyze request: disease=Breast cancer, exposure=African mango, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-12 08:55:54 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\african_mango\breast_cancer_incidence_true_all.json
+2026-06-12 08:55:54 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\african_mango\breast_cancer_incidence_true_all.json
+2026-06-12 08:55:54 [MetaFemina] Analyze complete in 0.0s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-12 08:56:06 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Zinc, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-12 08:56:06 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\zinc\breast_cancer_incidence_true_all.json
+2026-06-12 08:56:06 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\zinc\breast_cancer_incidence_true_all.json
+2026-06-12 08:56:06 [MetaFemina] Analyze complete in 0.0s: studies=14, error=None
+2026-06-12 08:56:11 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Zinc, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-12 08:56:11 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-12 08:56:11 [MetaFemina] Running new analysis for Breast cancer / zinc (from 'Zinc') using model: openai.gpt-4o
+2026-06-12 09:12:41 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\zinc\breast_cancer_incidence_true_all.json
+2026-06-12 09:12:41 [MetaFemina] Analyze complete in 990.2s: studies=14, error=None
+2026-06-12 09:20:52 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Vitamin E, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-12 09:20:52 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all.json
+2026-06-12 09:20:52 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all.json
+2026-06-12 09:20:52 [MetaFemina] Re-analyzing Vitamin E due to verification filtering/consensus/flags...
+2026-06-12 09:20:52 [MetaFemina] Analyze complete in 0.8s: studies=25, error=None
+2026-06-12 09:22:31 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Vitamin B1, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-12 09:22:31 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_b1\breast_cancer_incidence_true_all.json
+2026-06-12 09:22:31 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_b1\breast_cancer_incidence_true_all.json
+2026-06-12 09:22:31 [MetaFemina] Analyze complete in 0.0s: studies=3, error=None
+2026-06-12 09:23:24 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Vitamin B1, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-12 09:23:24 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-12 09:23:24 [MetaFemina] Running new analysis for Breast cancer / vitamin b1 (from 'Vitamin B1') using model: openai.gpt-4o
+2026-06-12 09:26:08 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_b1\breast_cancer_incidence_true_all.json
+2026-06-12 09:26:08 [MetaFemina] Analyze complete in 163.7s: studies=3, error=None
