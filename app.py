@@ -45,6 +45,10 @@ os.makedirs(CACHE_DIR, exist_ok=True)
 DEFAULT_MODEL = 'openai.gpt-4o'
 DEFAULT_DISEASE = 'Breast cancer'
 
+has_openai = bool(os.environ.get("OPENAI_API_KEY"))
+has_gemini = bool(os.environ.get("GOOGLE_API_KEY"))
+READ_ONLY_MODE = os.environ.get('READ_ONLY_MODE', 'false').lower() == 'true' or not (has_openai or has_gemini)
+
 def safe_path_component(value):
     """Return a stable filesystem-safe path component for cache names."""
     chars = []
@@ -82,8 +86,6 @@ def get_cache_path(disease, exposure, outcome, exclude_meta, use_downstream=True
     safe_analysis = safe_path_component(f"{disease}_{outcome}_{exclude_meta}_{downstream_tag}{model_tag}")
     
     exposure_dir = os.path.join(CACHE_DIR, safe_exposure)
-    os.makedirs(exposure_dir, exist_ok=True)
-        
     return os.path.join(exposure_dir, f"{safe_analysis}.json")
 
 def load_json(filepath, default_val):
@@ -259,10 +261,42 @@ def analyze():
                 break
     else:
         log_event("[MetaFemina] Force refresh requested; bypassing cached result lookup.")
+        if READ_ONLY_MODE:
+            return jsonify({"error": "Refreshing evidence is disabled in the public demonstration version."}), 400
+
+    if READ_ONLY_MODE and not best_cache_path:
+        return jsonify({"error": "This exposure has not been pre-analyzed yet. In the public demonstration version, only pre-analyzed exposures are available to search."}), 400
 
     if best_cache_path:
         log_event(f"[MetaFemina] Returning best available cached results from {best_cache_path}")
         result = load_json(best_cache_path, {})
+        screening_stats = result.get("screening_stats")
+        if not screening_stats and "studies" in result:
+            screening_stats = {
+                "total_fetched": "N/A (Legacy Cache)",
+                "after_prefilter": "N/A (Legacy Cache)",
+                "prefilter_skip": {},
+                "llm_screened_in": len(result["studies"]),
+                "llm_screened_out": 0,
+                "consensus_bypassed": 0,
+                "extracted": len(result["studies"])
+            }
+        if screening_stats:
+            log_event("\n" + "="*60)
+            log_event("[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):")
+            log_event(f"  - Total Articles Fetched from PubMed: {screening_stats.get('total_fetched', 0)}")
+            log_event(f"  - Articles Remaining After Pre-filter: {screening_stats.get('after_prefilter', 0)}")
+            skips = screening_stats.get('prefilter_skip', {})
+            if skips:
+                skips_str = ", ".join([f"{k}={v}" for k, v in skips.items() if v > 0])
+                if skips_str:
+                    log_event(f"    (Pre-filter skips: {skips_str})")
+            log_event(f"  - LLM Screening:")
+            log_event(f"    * Screened IN / Accepted:   {screening_stats.get('llm_screened_in', 0)}")
+            log_event(f"    * Screened OUT / Rejected:  {screening_stats.get('llm_screened_out', 0)}")
+            log_event(f"    * Consensus Bypassed:       {screening_stats.get('consensus_bypassed', 0)}")
+            log_event(f"  - Final Extracted Studies: {screening_stats.get('extracted', 0)}")
+            log_event("="*60 + "\n")
     else:
         # Resolve canonical name for analysis engine consumption
         canonical_exposure = meta_analysis.get_canonical_name(exposure)
@@ -298,6 +332,21 @@ def analyze():
                 study['exposure_measurement_type'] = 'unclear'
             if 'exposure_measurement_supporting_text' not in study or study['exposure_measurement_supporting_text'] is None:
                 study['exposure_measurement_supporting_text'] = ''
+            if 'extraction_supporting_text' not in study or not isinstance(study.get('extraction_supporting_text'), dict):
+                study['extraction_supporting_text'] = {
+                    "sample_size": "",
+                    "effect_size": "",
+                    "effect_direction": "",
+                    "p_value": "",
+                    "confidence_interval": "",
+                    "outcome_definition": "",
+                    "exposure_definition": ""
+                }
+            else:
+                est = study['extraction_supporting_text']
+                for k in ["sample_size", "effect_size", "effect_direction", "p_value", "confidence_interval", "outcome_definition", "exposure_definition"]:
+                    if k not in est or est[k] is None:
+                        est[k] = ""
             pmid = str(study.get('PMID'))
             v_info = verifications.get(pmid, {})
             
@@ -595,6 +644,25 @@ def usage():
         "models": detailed_stats,
         "last_analysis_cost": last_cost,
         "last_analysis_models": last_detailed,
+    })
+
+@app.route('/api/config')
+def get_config():
+    """Return read-only status and the list of pre-cached exposures."""
+    exposures = []
+    if os.path.exists(CACHE_DIR):
+        for d in os.listdir(CACHE_DIR):
+            d_path = os.path.join(CACHE_DIR, d)
+            if os.path.isdir(d_path):
+                # Only include if the directory contains at least one .json file
+                try:
+                    if any(f.endswith('.json') for f in os.listdir(d_path)):
+                        exposures.append(d)
+                except Exception:
+                    pass
+    return jsonify({
+        "read_only": READ_ONLY_MODE,
+        "cached_exposures": sorted(exposures)
     })
 
 @app.route('/api/synonyms')

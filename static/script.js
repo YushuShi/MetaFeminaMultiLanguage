@@ -88,9 +88,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 
-    // Initialize Last Updated & Cost
+    // Initialize Last Updated
     updateLastUpdated();
-    updateCost();
 
     // Toggle Stage Filter
     function toggleStageFilter() {
@@ -116,15 +115,95 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         let exposures = [];
         let synonymsMap = {}; // { "soy": {core: "...", downstream: "..."}, ... }
+        let isReadOnly = false;
+        let cachedExposures = [];
+
+        function safePathComponent(val) {
+            return (val || '').toLowerCase()
+                .replace(/[^a-z0-9._-]/g, '_')
+                .replace(/_+/g, '_')
+                .replace(/(^_|_$)/g, '');
+        }
+
         try {
-            const [expRes, synRes] = await Promise.all([
+            const [expRes, synRes, configRes] = await Promise.all([
                 fetch('/static/exposures.json'),
-                fetch('/api/synonyms')
+                fetch('/api/synonyms'),
+                fetch('/api/config')
             ]);
             if (expRes.ok) exposures = await expRes.json();
             if (synRes.ok) synonymsMap = await synRes.json();
+            if (configRes.ok) {
+                const configData = await configRes.json();
+                isReadOnly = configData.read_only;
+                cachedExposures = configData.cached_exposures;
+            }
         } catch (e) {
-            console.error("Error fetching exposures/synonyms:", e);
+            console.error("Error fetching exposures/synonyms/config:", e);
+        }
+
+        if (isReadOnly) {
+            // Filter exposures list to only include those present in cachedExposures
+            exposures = exposures.filter(e => {
+                const safeE = safePathComponent(e);
+                return cachedExposures.some(cached => {
+                    const safeCached = safePathComponent(cached);
+                    return safeE === safeCached || safeCached.includes(safeE) || safeE.includes(safeCached);
+                });
+            });
+
+            // Hide refresh button
+            if (elements.refreshBtn) {
+                elements.refreshBtn.style.display = 'none';
+            }
+
+            // Show Read-Only banner
+            const banner = document.getElementById('read-only-banner');
+            if (banner) banner.classList.remove('hidden');
+
+            // Show suggestions container
+            const suggContainer = document.getElementById('cached-suggestions-container');
+            if (suggContainer) suggContainer.classList.remove('hidden');
+
+            // Render clickable badges for cached exposures
+            const badgesEl = document.getElementById('cached-badges');
+            if (badgesEl) {
+                badgesEl.innerHTML = '';
+                // Limit to 18 badges for a nice layout
+                const displayExposures = exposures.slice(0, 18);
+                displayExposures.forEach(exp => {
+                    const badge = document.createElement('span');
+                    badge.textContent = exp;
+                    badge.style.cssText = `
+                        background: rgba(233,30,99,0.06);
+                        border: 1px solid rgba(233,30,99,0.18);
+                        color: var(--primary);
+                        padding: 0.35rem 0.75rem;
+                        border-radius: 20px;
+                        font-size: 0.8rem;
+                        font-weight: 600;
+                        cursor: pointer;
+                        transition: all 0.2s ease;
+                        user-select: none;
+                    `;
+                    badge.addEventListener('mouseover', () => {
+                        badge.style.background = 'var(--primary)';
+                        badge.style.color = '#fff';
+                        badge.style.borderColor = 'var(--primary)';
+                    });
+                    badge.addEventListener('mouseout', () => {
+                        badge.style.background = 'rgba(233,30,99,0.06)';
+                        badge.style.color = 'var(--primary)';
+                        badge.style.borderColor = 'rgba(233,30,99,0.18)';
+                    });
+                    badge.addEventListener('click', () => {
+                        elements.exposure.value = exp;
+                        updateSynonymsBox(exp);
+                        if (elements.analyzeBtn) elements.analyzeBtn.click();
+                    });
+                    badgesEl.appendChild(badge);
+                });
+            }
         }
 
         // Show synonyms for current exposure value on load
@@ -439,17 +518,24 @@ document.addEventListener('DOMContentLoaded', async () => {
                 })
             });
 
-            if (!response.ok) {
-                throw new Error(`Server returned ${response.status}: ${response.statusText}`);
+            let data;
+            try {
+                data = await response.json();
+            } catch (jsonErr) {
+                // Ignore json parse error if not JSON
             }
 
-            const data = await response.json();
+            if (!response.ok) {
+                const errMsg = (data && data.error) ? data.error : `Server returned ${response.status}: ${response.statusText}`;
+                throw new Error(errMsg);
+            }
 
-            if (data.error) {
+            if (data && data.error) {
                 elements.errorMsg.textContent = data.error;
                 elements.errorMsg.classList.remove('hidden');
             } else {
                 allStudies = data.studies;
+
                 currentStudies = data.studies;
                 updateResultsUI(data);
                 renderStudiesTable();
@@ -590,6 +676,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
 
             tr.innerHTML = `
+                <td style="text-align: center; padding: 0.75rem; vertical-align: middle;">
+                    <button class="expand-btn" data-index="${index}" style="background: none; border: none; color: var(--primary); padding: 0; cursor: pointer; font-size: 1.1rem; width: 100%; display: flex; align-items: center; justify-content: center; transition: transform 0.2s;" onclick="window.toggleStudyDetails(${index}, this)">▶</button>
+                </td>
                 <td><input type="checkbox" class="study-checkbox" data-index="${index}" ${isChecked}></td>
                 <td>${index + 1}</td>
                 <td title="${unselectedReason}">
@@ -663,19 +752,19 @@ document.addEventListener('DOMContentLoaded', async () => {
                                    placeholder="${study['Estimated Cases'] !== undefined && study['Estimated Cases'] !== null ? 'est. ' + study['Estimated Cases'] : ''}"
                                    style="width:68px; font-size:0.95em;"
                                    onchange="(function(inp, idx){
-                                       const v = parseInt(inp.value);
-                                       currentStudies[idx]['Cases'] = isNaN(v) ? inp.value : v;
-                                       const est = parseInt(currentStudies[idx]['Estimated Cases']);
-                                       const finalVal = !isNaN(v) ? v : (!isNaN(est) ? est : NaN);
-                                       const minC = document.getElementById('filter-min-cases') ? (parseInt(document.getElementById('filter-min-cases').value)||0) : 50;
-                                       const cb = document.querySelector('.study-checkbox[data-index=\''+idx+'\']');
-                                       const row = cb ? cb.closest('tr') : null;
-                                       if(cb){
-                                           const shouldCheck = !isNaN(finalVal) && finalVal > minC;
-                                           cb.checked = shouldCheck;
-                                           if(row){ row.style.opacity = shouldCheck ? '' : '0.6'; row.style.backgroundColor = shouldCheck ? '' : 'rgba(200,200,200,0.15)'; }
-                                       }
-                                   })(this, ${index})">
+                                        const v = parseInt(inp.value);
+                                        currentStudies[idx]['Cases'] = isNaN(v) ? inp.value : v;
+                                        const est = parseInt(currentStudies[idx]['Estimated Cases']);
+                                        const finalVal = !isNaN(v) ? v : (!isNaN(est) ? est : NaN);
+                                        const minC = document.getElementById('filter-min-cases') ? (parseInt(document.getElementById('filter-min-cases').value)||0) : 50;
+                                        const cb = document.querySelector('.study-checkbox[data-index=\''+idx+'\']');
+                                        const row = cb ? cb.closest('tr') : null;
+                                        if(cb){
+                                            const shouldCheck = !isNaN(finalVal) && finalVal > minC;
+                                            cb.checked = shouldCheck;
+                                            if(row){ row.style.opacity = shouldCheck ? '' : '0.6'; row.style.backgroundColor = shouldCheck ? '' : 'rgba(200,200,200,0.15)'; }
+                                        }
+                                    })(this, ${index})">
                         </div>
                     </div>
                 </td>
@@ -683,7 +772,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     <div class="quality-badge quality-${(study['Quality Score'] || 'fair').toLowerCase()}" 
                          title="${qualityDetails}"
                          style="font-size: 0.7rem; padding: 2px 6px; border-radius: 12px; color: white; cursor: help;">
-                        ${study['Quality Score'] || 'Fair'}
+                         ${study['Quality Score'] || 'Fair'}
                     </div>
                 </td>
                 <td>
@@ -715,16 +804,92 @@ document.addEventListener('DOMContentLoaded', async () => {
                             label = 'Unclear';
                             color = '#e65100';
                         }
-                        const support = study.exposure_measurement_supporting_text ? ` title="${study.exposure_measurement_supporting_text.replace(/"/g, '&quot;')}"` : '';
-                        return `<span style="color: ${color}; font-weight: bold; cursor: help;"${support}>${label} ℹ️</span>`;
+                        return `<span style="color: ${color}; font-weight: bold;">${label}</span>`;
                     })()}
                 </td>
                 <td style="font-size: 0.75em;" title="${unselectedReason}">${study.Journal || '-'} (${study.Year || '-'})</td>
             `;
+
+            // Build Details row
+            const detailsTr = document.createElement('tr');
+            detailsTr.className = 'details-row hidden';
+            detailsTr.id = `details-row-${index}`;
+            if (study.verification_status === 'consensus') detailsTr.style.backgroundColor = '#f0fff4';
+            else if (isExcludedByFlag) detailsTr.style.backgroundColor = 'rgba(255, 0, 0, 0.08)';
+            else if (!isChecked) detailsTr.style.backgroundColor = 'rgba(200, 200, 200, 0.15)';
+            else detailsTr.style.backgroundColor = '#fafafa';
+
+            // Get supporting text dictionary safely
+            const est = study.extraction_supporting_text || {
+                "sample_size": "",
+                "effect_size": "",
+                "effect_direction": "",
+                "p_value": "",
+                "confidence_interval": "",
+                "outcome_definition": "",
+                "exposure_definition": ""
+            };
+
+            detailsTr.innerHTML = `
+                <td colspan="13" style="padding: 1.25rem 2rem; border-bottom: 1px solid var(--border);">
+                    <div class="snippets-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; border-left: 4px solid var(--primary); padding-left: 1.25rem; margin-left: 0.5rem;">
+                        <div class="snippet-item" style="display: flex; flex-direction: column; gap: 0.25rem;">
+                            <span style="font-weight: 700; color: #555; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em;">Exposure Measurement Explanation</span>
+                            <span style="font-size: 0.88rem; font-style: italic; color: #111; line-height: 1.45;">${study.exposure_measurement_supporting_text ? `"${study.exposure_measurement_supporting_text}"` : '<i>Not available</i>'}</span>
+                        </div>
+                        <div class="snippet-item" style="display: flex; flex-direction: column; gap: 0.25rem;">
+                            <span style="font-weight: 700; color: #555; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em;">Sample Size Quote</span>
+                            <span style="font-size: 0.88rem; font-style: italic; color: #111; line-height: 1.45;">${est.sample_size ? `"${est.sample_size}"` : '<i>Not available</i>'}</span>
+                        </div>
+                        <div class="snippet-item" style="display: flex; flex-direction: column; gap: 0.25rem;">
+                            <span style="font-weight: 700; color: #555; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em;">Effect Size Quote</span>
+                            <span style="font-size: 0.88rem; font-style: italic; color: #111; line-height: 1.45;">${est.effect_size ? `"${est.effect_size}"` : '<i>Not available</i>'}</span>
+                        </div>
+                        <div class="snippet-item" style="display: flex; flex-direction: column; gap: 0.25rem;">
+                            <span style="font-weight: 700; color: #555; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em;">Effect Direction Quote</span>
+                            <span style="font-size: 0.88rem; font-style: italic; color: #111; line-height: 1.45;">${est.effect_direction ? `"${est.effect_direction}"` : '<i>Not available</i>'}</span>
+                        </div>
+                        <div class="snippet-item" style="display: flex; flex-direction: column; gap: 0.25rem;">
+                            <span style="font-weight: 700; color: #555; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em;">P-Value Quote</span>
+                            <span style="font-size: 0.88rem; font-style: italic; color: #111; line-height: 1.45;">${est.p_value ? `"${est.p_value}"` : '<i>Not available</i>'}</span>
+                        </div>
+                        <div class="snippet-item" style="display: flex; flex-direction: column; gap: 0.25rem;">
+                            <span style="font-weight: 700; color: #555; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em;">Confidence Interval Quote</span>
+                            <span style="font-size: 0.88rem; font-style: italic; color: #111; line-height: 1.45;">${est.confidence_interval ? `"${est.confidence_interval}"` : '<i>Not available</i>'}</span>
+                        </div>
+                        <div class="snippet-item" style="display: flex; flex-direction: column; gap: 0.25rem;">
+                            <span style="font-weight: 700; color: #555; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em;">Outcome Definition Quote</span>
+                            <span style="font-size: 0.88rem; font-style: italic; color: #111; line-height: 1.45;">${est.outcome_definition ? `"${est.outcome_definition}"` : '<i>Not available</i>'}</span>
+                        </div>
+                        <div class="snippet-item" style="display: flex; flex-direction: column; gap: 0.25rem;">
+                            <span style="font-weight: 700; color: #555; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em;">Exposure Definition Quote</span>
+                            <span style="font-size: 0.88rem; font-style: italic; color: #111; line-height: 1.45;">${est.exposure_definition ? `"${est.exposure_definition}"` : '<i>Not available</i>'}</span>
+                        </div>
+                    </div>
+                </td>
+            `;
+
             elements.studiesTbody.appendChild(tr);
+            elements.studiesTbody.appendChild(detailsTr);
         });
         updateSortIcons();
     }
+
+    // Toggle details row visibility
+    window.toggleStudyDetails = (index, btn) => {
+        const detailsRow = document.getElementById(`details-row-${index}`);
+        if (!detailsRow) return;
+        
+        if (detailsRow.classList.contains('hidden')) {
+            detailsRow.classList.remove('hidden');
+            btn.textContent = '▼';
+            btn.style.color = 'var(--primary-hover)';
+        } else {
+            detailsRow.classList.add('hidden');
+            btn.textContent = '▶';
+            btn.style.color = 'var(--primary)';
+        }
+    };
 
     // Verify Study (attached to window for inline onclick)
     window.verifyStudy = async (pmid, btn) => {
@@ -820,23 +985,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         const date = ts ? new Date(ts) : new Date();
         elements.lastUpdated.textContent = date.toLocaleString();
     }
-
-    async function updateCost() {
-        try {
-            const res = await fetch('/usage');
-            if (res.ok) {
-                const data = await res.json();
-                const costEl = document.getElementById('total-cost');
-                if (costEl) costEl.textContent = (data && data.total_cost !== undefined) ? data.total_cost.toFixed(2) : '0.00';
-                
-                const lastCostEl = document.getElementById('last-cost');
-                if (lastCostEl) lastCostEl.textContent = (data && data.last_analysis_cost !== undefined) ? data.last_analysis_cost.toFixed(2) : '0.00';
-            }
-        } catch (e) {
-            console.error("Error updating cost:", e);
-        }
-    }
-
     function updateResultsUI(data) {
         if (elements.forestPlot) elements.forestPlot.src = `/${data.plot_url}?t=${Date.now()}`;
         if (elements.funnelPlot && data.funnel_plot_url) elements.funnelPlot.src = `/${data.funnel_plot_url}?t=${Date.now()}`;
@@ -945,7 +1093,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         }
         updateLastUpdated(data.last_run);
-        updateCost();
+
 
         // Update Table Head
         const thCases = document.getElementById('th-n-cases');

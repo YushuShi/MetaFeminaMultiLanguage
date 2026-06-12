@@ -437,9 +437,10 @@ def get_analysis_data(disease, exposure, outcome="Incidence", exclude_meta=False
 
     # Try LLM Extraction First
     df = pd.DataFrame()
+    screening_stats = {}
     try:
         print(f"[MetaFemina] Stage 3/4: Extracting study data from {len(articles)} records with LLM assistance...")
-        df = extract_data_llm(articles, exclude_meta=exclude_meta, exposure_keyword=exposure, disease_keyword=disease, outcome_keyword=outcome, synonyms=synonyms, use_downstream=use_downstream, core_synonyms=core_synonyms, model=model)
+        df, screening_stats = extract_data_llm(articles, exclude_meta=exclude_meta, exposure_keyword=exposure, disease_keyword=disease, outcome_keyword=outcome, synonyms=synonyms, use_downstream=use_downstream, core_synonyms=core_synonyms, model=model)
     except Exception as e:
         print(f"LLM Extraction failed: {e}")
 
@@ -447,6 +448,25 @@ def get_analysis_data(disease, exposure, outcome="Incidence", exclude_meta=False
     if df.empty:
         print("[MetaFemina] Falling back to Regex extraction...")
         df = extract_data(articles, exclude_meta=exclude_meta, exposure_keyword=exposure, disease_keyword=disease, outcome_keyword=outcome, synonyms=synonyms, use_downstream=use_downstream, core_synonyms=core_synonyms)
+        screening_stats = {"total_fetched": len(articles), "after_prefilter": len(df), "extracted": len(df), "prefilter_skip": {}, "llm_screened_out": 0, "llm_screened_in": len(df), "consensus_bypassed": 0}
+
+    # Print screening statistics in the terminal
+    if screening_stats:
+        print("\n" + "="*60)
+        print("[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:")
+        print(f"  - Total Articles Fetched from PubMed: {screening_stats.get('total_fetched', 0)}")
+        print(f"  - Articles Remaining After Pre-filter: {screening_stats.get('after_prefilter', 0)}")
+        skips = screening_stats.get('prefilter_skip', {})
+        if skips:
+            skips_str = ", ".join([f"{k}={v}" for k, v in skips.items() if v > 0])
+            if skips_str:
+                print(f"    (Pre-filter skips: {skips_str})")
+        print(f"  - LLM Screening:")
+        print(f"    * Screened IN / Accepted:   {screening_stats.get('llm_screened_in', 0)}")
+        print(f"    * Screened OUT / Rejected:  {screening_stats.get('llm_screened_out', 0)}")
+        print(f"    * Consensus Bypassed:       {screening_stats.get('consensus_bypassed', 0)}")
+        print(f"  - Final Extracted Studies: {screening_stats.get('extracted', 0)}")
+        print("="*60 + "\n")
 
     if df.empty:
         return {"error": "No relevant evidence was identified in the reviewed sources."}
@@ -515,9 +535,9 @@ def get_analysis_data(disease, exposure, outcome="Incidence", exclude_meta=False
         return {"error": "No relevant evidence was identified in the reviewed sources."}
 
     print(f"[MetaFemina] Stage 4/4: Running meta-analysis on {len(df_clean)} extracted studies...")
-    return perform_meta_analysis(df_clean, disease, exposure=exposure, outcome=outcome, exclude_meta=exclude_meta, df_all=df_clean)
+    return perform_meta_analysis(df_clean, disease, exposure=exposure, outcome=outcome, exclude_meta=exclude_meta, df_all=df_clean, screening_stats=screening_stats)
 
-def perform_meta_analysis(df_clean, disease, exposure, outcome="Incidence", exclude_meta=False, df_all=None):
+def perform_meta_analysis(df_clean, disease, exposure, outcome="Incidence", exclude_meta=False, df_all=None, screening_stats=None):
     """
     Performs random-effects meta-analysis on the provided DataFrame.
     """
@@ -941,7 +961,7 @@ def perform_meta_analysis(df_clean, disease, exposure, outcome="Incidence", excl
         # Convert df to records
         # Use df_all for the return list so the table shows everything
         # Gracefully handle missing columns (like 'Sample Size' or 'Cases' if regex/llm both missed them)
-        cols_to_keep = ['Study', 'PMID', 'Effect Size', 'Lower CI', 'Upper CI', 'Population', 'Reference', 'Authors', 'Journal', 'Year', 'Link', 'Effect Type', 'SE', 'Sample Size', 'Cases', 'Estimated Cases', 'Design', 'Timing', 'Continent', 'Stage', 'Quality %', 'Quality Score', 'comparison_type', 'JBI', 'exposure_measurement_type', 'exposure_measurement_supporting_text']
+        cols_to_keep = ['Study', 'PMID', 'Effect Size', 'Lower CI', 'Upper CI', 'Population', 'Reference', 'Authors', 'Journal', 'Year', 'Link', 'Effect Type', 'SE', 'Sample Size', 'Cases', 'Estimated Cases', 'Design', 'Timing', 'Continent', 'Stage', 'Quality %', 'Quality Score', 'comparison_type', 'JBI', 'exposure_measurement_type', 'exposure_measurement_supporting_text', 'extraction_supporting_text']
         
         # Ensure columns exist in df_all
         for col in cols_to_keep:
@@ -950,6 +970,8 @@ def perform_meta_analysis(df_clean, disease, exposure, outcome="Incidence", excl
                     df_all[col] = 'unclear'
                 elif col == 'exposure_measurement_supporting_text':
                     df_all[col] = ''
+                elif col == 'extraction_supporting_text':
+                    df_all[col] = None
                 else:
                     df_all[col] = "-"
                 
@@ -960,6 +982,7 @@ def perform_meta_analysis(df_clean, disease, exposure, outcome="Incidence", excl
             "studies": studies_data,
             "summary_html": summary,
             "headline": headline,
+            "screening_stats": screening_stats,
             "plot_url": f"static/{safe_exposure}/forest_{safe_disease}_{safe_outcome}_{safe_meta}.png?t=" + str(np.random.randint(0,10000)),
             "funnel_plot_url": f"static/{safe_exposure}/funnel_{safe_disease}_{safe_outcome}_{safe_meta}.png?t=" + str(np.random.randint(0,10000)),
             "baujat_plot_url": baujat_url
@@ -1869,7 +1892,16 @@ def extract_data(articles, exclude_meta=False, exposure_keyword=None, disease_ke
                 "Quality %": 0, # Default for non-LLM extraction
                 "Quality Score": "Fair", # Default for non-LLM extraction
                 "exposure_measurement_type": "unclear",
-                "exposure_measurement_supporting_text": "Not assessed (Regex extraction fallback)"
+                "exposure_measurement_supporting_text": "Not assessed (Regex extraction fallback)",
+                "extraction_supporting_text": {
+                    "sample_size": "",
+                    "effect_size": "",
+                    "effect_direction": "",
+                    "p_value": "",
+                    "confidence_interval": "",
+                    "outcome_definition": "",
+                    "exposure_definition": ""
+                }
             }
             row = add_estimated_cases_to_row(row, disease_keyword)
             data.append(row)
@@ -2240,6 +2272,8 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
     
     data = []
     data_lock = threading.Lock()
+    screening_stats = {"llm_screened_out": 0, "consensus_bypassed": 0, "llm_screened_in": 0}
+    stats_lock = threading.Lock()
     
     def process_single_article(args):
         i, article = args
@@ -2312,13 +2346,20 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
                         is_associated = screen_res.get('is_directly_associated', True)
                         screening_reason = screen_res.get('reason', '')
                 except Exception as e:
-                    print(f"  [Screening] Error screening {study_label}: {e}")
+                    print(f"  [Screening] Error screening article {i+1}/{len(filtered_articles)} {study_label}: {e}")
             else:
-                print(f"  [Screening] Bypassing screening for '{study_label}' due to existing consensus in verifications.json")
+                print(f"  [Screening] Bypassing screening for article {i+1}/{len(filtered_articles)} '{study_label}' due to existing consensus in verifications.json")
+                with stats_lock:
+                    screening_stats["consensus_bypassed"] += 1
 
             if not is_associated:
-                print(f"  [Screening] Skipping '{study_label}': Not directly associated with exposure '{exposure_keyword}'. Reason: {screening_reason}")
+                print(f"  [Screening] Skipping article {i+1}/{len(filtered_articles)} '{study_label}': Not directly associated with exposure '{exposure_keyword}'. Reason: {screening_reason}")
+                with stats_lock:
+                    screening_stats["llm_screened_out"] += 1
                 return
+            
+            with stats_lock:
+                screening_stats["llm_screened_in"] += 1
 
             # --- LLM EXTRACTION ---
             extracted = None
@@ -2487,21 +2528,34 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
                      "Relevance Reason": relevance_reason,
                      "exposure_measurement_type": extracted.get('exposure_measurement_type', 'unclear'),
                      "exposure_measurement_supporting_text": extracted.get('exposure_measurement_supporting_text', ''),
+                     "extraction_supporting_text": extracted.get('extraction_supporting_text') or {
+                          "sample_size": "",
+                          "effect_size": "",
+                          "effect_direction": "",
+                          "p_value": "",
+                          "confidence_interval": "",
+                          "outcome_definition": "",
+                          "exposure_definition": ""
+                      },
                  }
                  
                  row = add_estimated_cases_to_row(row, disease_keyword)
                  row["SE"] = calculate_se(row)
                  with data_lock:
                      data.append(row)
-                 print(f"  [{used_llm}] Extracted: {study_label} - ES: {row['Effect Size']} (Cases: {row['Cases']})")
+                 print(f"  [{used_llm}] Extracted article {i+1}/{len(filtered_articles)}: {study_label} - ES: {row['Effect Size']} (Cases: {row['Cases']})")
 
         except Exception as e:
-            print(f"Error processing article {i}: {e}")
+            print(f"Error processing article {i+1}/{len(filtered_articles)}: {e}")
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
         executor.map(process_single_article, enumerate(filtered_articles))
 
-    return pd.DataFrame(data)
+    screening_stats["total_fetched"] = len(articles)
+    screening_stats["after_prefilter"] = len(filtered_articles)
+    screening_stats["prefilter_skip"] = skip_counts
+    screening_stats["extracted"] = len(data)
+    return pd.DataFrame(data), screening_stats
 
 def extract_info_gemini(client, model_name, abstract, title, disease, exposure, outcome):
     """
@@ -2544,6 +2598,14 @@ def extract_info_gemini(client, model_name, abstract, title, disease, exposure, 
         - "human_biospecimen": exposure was measured from human biological specimens, such as blood, serum, plasma, urine, saliva, tissue, fecal samples, metabolomics, biomarker concentration, nutrient level, or similar biological measurements.
         - "unclear": the abstract does not provide enough information to determine whether the exposure was dietary intake or biospecimen-based.
     - exposure_measurement_supporting_text: (string) A short explanation or direct supporting text from the abstract when available (e.g., "Dietary intake was assessed using a food-frequency questionnaire.").
+    - extraction_supporting_text: (dict) A JSON object containing short supporting text snippets directly from the abstract for the key extracted quantities. Do NOT hallucinate supporting text; if a quantity is unavailable or unsupported in the abstract, store null or an empty string. Each snippet must be extremely concise and under 50 words:
+        - sample_size: (string) supporting text/quotes for total number of participants
+        - effect_size: (string) supporting text/quotes for effect size
+        - effect_direction: (string) supporting text/quotes for effect direction / association direction (e.g. protective/harmful or risk association)
+        - p_value: (string) supporting text/quotes for p-value (or equivalent significance test details)
+        - confidence_interval: (string) supporting text/quotes for confidence interval
+        - outcome_definition: (string) supporting text/quotes/details for how the outcome (cancer/disease type) was defined or referenced in the abstract
+        - exposure_definition: (string) supporting text/quotes/details for how the exposure was defined or referenced in the abstract
     - jbi_checklist_type: (string) Which JBI checklist was used: "cohort", "case_control", or "cross_sectional".
     - jbi_answers: (dict) Answers to JBI critical appraisal questions. Choose the checklist based on the study design:
     
@@ -2676,6 +2738,14 @@ def extract_info_llm(client, abstract, title, disease, exposure, outcome, model_
         - "human_biospecimen": exposure was measured from human biological specimens, such as blood, serum, plasma, urine, saliva, tissue, fecal samples, metabolomics, biomarker concentration, nutrient level, or similar biological measurements.
         - "unclear": the abstract does not provide enough information to determine whether the exposure was dietary intake or biospecimen-based.
     - exposure_measurement_supporting_text: (string) A short explanation or direct supporting text from the abstract when available (e.g., "Dietary intake was assessed using a food-frequency questionnaire.").
+    - extraction_supporting_text: (dict) A JSON object containing short supporting text snippets directly from the abstract for the key extracted quantities. Do NOT hallucinate supporting text; if a quantity is unavailable or unsupported in the abstract, store null or an empty string. Each snippet must be extremely concise and under 50 words:
+        - sample_size: (string) supporting text/quotes for total number of participants
+        - effect_size: (string) supporting text/quotes for effect size
+        - effect_direction: (string) supporting text/quotes for effect direction / association direction (e.g. protective/harmful or risk association)
+        - p_value: (string) supporting text/quotes for p-value (or equivalent significance test details)
+        - confidence_interval: (string) supporting text/quotes for confidence interval
+        - outcome_definition: (string) supporting text/quotes/details for how the outcome (cancer/disease type) was defined or referenced in the abstract
+        - exposure_definition: (string) supporting text/quotes/details for how the exposure was defined or referenced in the abstract
     - jbi_checklist_type: (string) Which JBI checklist was used: "cohort", "case_control", or "cross_sectional".
     - jbi_answers: (dict) Answers to JBI critical appraisal questions. Choose the checklist based on the study design:
     

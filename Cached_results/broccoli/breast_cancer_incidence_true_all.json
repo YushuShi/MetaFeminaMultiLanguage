@@ -1,0 +1,80 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Ambrosone CB et al. (2004) [PMID: 15113959]",
+            "PMID": "15113959",
+            "Effect Size": 0.6,
+            "Lower CI": 0.4,
+            "Upper CI": 1.01,
+            "Population": "General",
+            "Reference": "Breast cancer risk in premenopausal women is inversely associated with consumption of broccoli, a source of isothiocyanates, but is not modified by GST genotype.",
+            "Authors": "Ambrosone CB, McCann SE, Freudenheim JL, Marshall JR, Zhang Y, Shields PG",
+            "Journal": "The Journal of nutrition",
+            "Year": "2004",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/15113959/",
+            "Effect Type": "OR",
+            "SE": 0.1556122448979592,
+            "Sample Size": 1550,
+            "Cases": 740,
+            "Estimated Cases": null,
+            "Design": "Case-Control",
+            "Timing": "Retrospective",
+            "Continent": "North America",
+            "Stage": "Premenopausal",
+            "Quality %": 100.0,
+            "Quality Score": "Good",
+            "comparison_type": "Q4 vs Q1",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes"
+            },
+            "exposure_measurement_type": "dietary_intake",
+            "exposure_measurement_supporting_text": "An in-depth interview including a validated FFQ was administered in person.",
+            "extraction_supporting_text": {
+                "sample_size": "Cases (n = 740) were Caucasian women with incident breast cancer identified from all major hospitals in Erie and Niagara counties. Community controls (n = 810) were frequency matched to cases by age and county.",
+                "effect_size": "Consumption of cruciferous vegetables, particularly broccoli, was marginally inversely associated with breast cancer risk in premenopausal women [4th quartile OR = 0.6, 95% CI (0.40-1.01), P = 0.058].",
+                "effect_direction": "Consumption of cruciferous vegetables, particularly broccoli, was marginally inversely associated with breast cancer risk in premenopausal women.",
+                "p_value": "P = 0.058",
+                "confidence_interval": "95% CI (0.40-1.01)",
+                "outcome_definition": "Cases (n = 740) were Caucasian women with incident breast cancer identified from all major hospitals in Erie and Niagara counties.",
+                "exposure_definition": "Cruciferous vegetables contain precursors of isothiocyanates (ITCs), which may be chemopreventive through potent inhibition of phase I, and induction of phase II enzymes, such as glutathione S-transferases (GSTs)."
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>740</td>\n      <td>1550</td>\n      <td>0.632911</td>\n      <td>0.433839</td>\n      <td>1.008689</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.63,
+        "ci_low": 0.43,
+        "ci_upp": 1.01,
+        "interpretation": "not statistically significant"
+    },
+    "screening_stats": {
+        "llm_screened_out": 51,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 41,
+        "total_fetched": 221,
+        "after_prefilter": 92,
+        "prefilter_skip": {
+            "disease": 10,
+            "conflict": 6,
+            "exposure": 2,
+            "outcome": 1,
+            "animal": 36,
+            "meta": 74
+        },
+        "extracted": 2
+    },
+    "plot_url": "static/broccoli/forest_breast_cancer_incidence_primary.png?t=5778",
+    "funnel_plot_url": "static/broccoli/funnel_breast_cancer_incidence_primary.png?t=7460",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-12 11:34:44"
+}
