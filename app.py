@@ -294,6 +294,10 @@ def analyze():
         # so we no longer drop them from the result array here.
 
         for study in result['studies']:
+            if 'exposure_measurement_type' not in study or study['exposure_measurement_type'] in [None, '', '-']:
+                study['exposure_measurement_type'] = 'unclear'
+            if 'exposure_measurement_supporting_text' not in study or study['exposure_measurement_supporting_text'] is None:
+                study['exposure_measurement_supporting_text'] = ''
             pmid = str(study.get('PMID'))
             v_info = verifications.get(pmid, {})
             

@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         filterStage: document.getElementById('filter-stage'),
         filterQuality: document.getElementById('filter-quality'),
         filterMeasure: document.getElementById('filter-measure'),
+        filterExposureType: document.getElementById('filter-exposure-type'),
         selectAllCheckbox: document.getElementById('select-all-checkbox'),
         selectAllBtn: document.getElementById('select-all-btn'),
         deselectAllBtn: document.getElementById('deselect-all-btn'),
@@ -339,12 +340,21 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (elements.filterStage) elements.filterStage.addEventListener('change', applyFilters);
     if (elements.filterQuality) elements.filterQuality.addEventListener('change', applyFilters);
     if (elements.filterMeasure) elements.filterMeasure.addEventListener('change', applyFilters);
+    if (elements.filterExposureType) {
+        elements.filterExposureType.addEventListener('change', () => {
+            applyFilters();
+            if (elements.updateBtn) {
+                elements.updateBtn.click();
+            }
+        });
+    }
 
     function applyFilters() {
         const timing = elements.filterTiming ? elements.filterTiming.value : 'All';
         const stage = elements.filterStage ? elements.filterStage.value : 'All';
         const quality = elements.filterQuality ? elements.filterQuality.value : 'All';
         const measure = elements.filterMeasure ? elements.filterMeasure.value : 'All';
+        const exposureType = elements.filterExposureType ? elements.filterExposureType.value : 'Anything';
 
         currentStudies = allStudies.filter(study => {
             if (timing !== 'All' && study.Timing !== timing) return false;
@@ -354,6 +364,13 @@ document.addEventListener('DOMContentLoaded', async () => {
                 if (score !== 'Good' && score !== 'Moderate') return false;
             } else if (quality !== 'All' && quality !== 'Fair+' && (study['Quality Score'] || 'Fair') !== quality) return false;
             if (measure !== 'All' && (study['Effect Type'] || '').toUpperCase() !== measure) return false;
+            
+            const studyExpType = study.exposure_measurement_type || 'unclear';
+            if (exposureType === 'Dietary intake only') {
+                if (studyExpType !== 'dietary_intake') return false;
+            } else if (exposureType === 'Human biospecimen only') {
+                if (studyExpType !== 'human_biospecimen') return false;
+            }
             return true;
         });
 
@@ -680,7 +697,28 @@ document.addEventListener('DOMContentLoaded', async () => {
                     </button>
                 </td>
                 <td style="font-size: 0.75em;" title="${unselectedReason}">${study.Reference || '-'}</td>
-                <td style="font-size: 0.75em;" title="${unselectedReason}"><b>Context:</b> ${study.comparison_type || '-'}<br>${study.Design || '-'}<br>${study.Continent || '-'}</td>
+                <td style="font-size: 0.75em;" title="${unselectedReason}">
+                    <b>Context:</b> ${study.comparison_type || '-'}<br>
+                    <b>Design:</b> ${study.Design || '-'}<br>
+                    <b>Location:</b> ${study.Continent || '-'}<br>
+                    <b>Exposure Quant:</b> ${(() => {
+                        const t = study.exposure_measurement_type || 'unclear';
+                        let label = t;
+                        let color = '#777';
+                        if (t === 'dietary_intake') {
+                            label = 'Dietary Intake';
+                            color = '#2e7d32';
+                        } else if (t === 'human_biospecimen') {
+                            label = 'Human Biospecimen';
+                            color = '#1565c0';
+                        } else {
+                            label = 'Unclear';
+                            color = '#e65100';
+                        }
+                        const support = study.exposure_measurement_supporting_text ? ` title="${study.exposure_measurement_supporting_text.replace(/"/g, '&quot;')}"` : '';
+                        return `<span style="color: ${color}; font-weight: bold; cursor: help;"${support}>${label} ℹ️</span>`;
+                    })()}
+                </td>
                 <td style="font-size: 0.75em;" title="${unselectedReason}">${study.Journal || '-'} (${study.Year || '-'})</td>
             `;
             elements.studiesTbody.appendChild(tr);

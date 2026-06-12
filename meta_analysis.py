@@ -941,12 +941,17 @@ def perform_meta_analysis(df_clean, disease, exposure, outcome="Incidence", excl
         # Convert df to records
         # Use df_all for the return list so the table shows everything
         # Gracefully handle missing columns (like 'Sample Size' or 'Cases' if regex/llm both missed them)
-        cols_to_keep = ['Study', 'PMID', 'Effect Size', 'Lower CI', 'Upper CI', 'Population', 'Reference', 'Authors', 'Journal', 'Year', 'Link', 'Effect Type', 'SE', 'Sample Size', 'Cases', 'Estimated Cases', 'Design', 'Timing', 'Continent', 'Stage', 'Quality %', 'Quality Score', 'comparison_type', 'JBI']
+        cols_to_keep = ['Study', 'PMID', 'Effect Size', 'Lower CI', 'Upper CI', 'Population', 'Reference', 'Authors', 'Journal', 'Year', 'Link', 'Effect Type', 'SE', 'Sample Size', 'Cases', 'Estimated Cases', 'Design', 'Timing', 'Continent', 'Stage', 'Quality %', 'Quality Score', 'comparison_type', 'JBI', 'exposure_measurement_type', 'exposure_measurement_supporting_text']
         
         # Ensure columns exist in df_all
         for col in cols_to_keep:
             if col not in df_all.columns:
-                df_all[col] = "-"
+                if col == 'exposure_measurement_type':
+                    df_all[col] = 'unclear'
+                elif col == 'exposure_measurement_supporting_text':
+                    df_all[col] = ''
+                else:
+                    df_all[col] = "-"
                 
         studies_data = df_all[cols_to_keep].to_dict(orient='records')
         
@@ -1862,7 +1867,9 @@ def extract_data(articles, exclude_meta=False, exposure_keyword=None, disease_ke
                 "Stage": stage,
                 "comparison_type": comparison_type,
                 "Quality %": 0, # Default for non-LLM extraction
-                "Quality Score": "Fair" # Default for non-LLM extraction
+                "Quality Score": "Fair", # Default for non-LLM extraction
+                "exposure_measurement_type": "unclear",
+                "exposure_measurement_supporting_text": "Not assessed (Regex extraction fallback)"
             }
             row = add_estimated_cases_to_row(row, disease_keyword)
             data.append(row)
@@ -2473,11 +2480,13 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
                      "Timing": extracted.get('timing', 'Unknown'),
                      "Continent": extracted.get('continent', 'Other'),
                      "Stage": extracted.get('stage', 'Unspecified'),
-                    "Quality %": quality_percentage,
+                     "Quality %": quality_percentage,
                      "Quality Score": quality_score,
                      "JBI": jbi,
                      "Relevance": relevance_verdict,
                      "Relevance Reason": relevance_reason,
+                     "exposure_measurement_type": extracted.get('exposure_measurement_type', 'unclear'),
+                     "exposure_measurement_supporting_text": extracted.get('exposure_measurement_supporting_text', ''),
                  }
                  
                  row = add_estimated_cases_to_row(row, disease_keyword)
@@ -2530,6 +2539,11 @@ def extract_info_gemini(client, model_name, abstract, title, disease, exposure, 
     - timing: (string) Prospective or Retrospective.
     - continent: (string) Continent of study (North America, Europe, Asia, etc.).
     - stage: (string) Cancer stage/subtype if specified (e.g., "Early", "Advanced").
+    - exposure_measurement_type: (string) How the exposure was quantified. MUST be one of:
+        - "dietary_intake": exposure was measured by food frequency questionnaire, diet recall, diet record, supplement intake report, self-reported intake, dietary pattern, servings, grams/day, frequency of consumption, or similar intake-based measures.
+        - "human_biospecimen": exposure was measured from human biological specimens, such as blood, serum, plasma, urine, saliva, tissue, fecal samples, metabolomics, biomarker concentration, nutrient level, or similar biological measurements.
+        - "unclear": the abstract does not provide enough information to determine whether the exposure was dietary intake or biospecimen-based.
+    - exposure_measurement_supporting_text: (string) A short explanation or direct supporting text from the abstract when available (e.g., "Dietary intake was assessed using a food-frequency questionnaire.").
     - jbi_checklist_type: (string) Which JBI checklist was used: "cohort", "case_control", or "cross_sectional".
     - jbi_answers: (dict) Answers to JBI critical appraisal questions. Choose the checklist based on the study design:
     
@@ -2657,6 +2671,11 @@ def extract_info_llm(client, abstract, title, disease, exposure, outcome, model_
     - timing: (string) Prospective or Retrospective.
     - continent: (string) Continent of study (North America, Europe, Asia, etc.).
     - stage: (string) Cancer stage/subtype if specified (e.g., "Early", "Advanced").
+    - exposure_measurement_type: (string) How the exposure was quantified. MUST be one of:
+        - "dietary_intake": exposure was measured by food frequency questionnaire, diet recall, diet record, supplement intake report, self-reported intake, dietary pattern, servings, grams/day, frequency of consumption, or similar intake-based measures.
+        - "human_biospecimen": exposure was measured from human biological specimens, such as blood, serum, plasma, urine, saliva, tissue, fecal samples, metabolomics, biomarker concentration, nutrient level, or similar biological measurements.
+        - "unclear": the abstract does not provide enough information to determine whether the exposure was dietary intake or biospecimen-based.
+    - exposure_measurement_supporting_text: (string) A short explanation or direct supporting text from the abstract when available (e.g., "Dietary intake was assessed using a food-frequency questionnaire.").
     - jbi_checklist_type: (string) Which JBI checklist was used: "cohort", "case_control", or "cross_sectional".
     - jbi_answers: (dict) Answers to JBI critical appraisal questions. Choose the checklist based on the study design:
     

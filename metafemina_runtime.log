@@ -927,3 +927,21 @@
 2026-06-11 21:25:08 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\tea\uterine_cancer_incidence_true_all.json
 2026-06-11 21:25:08 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\tea\uterine_cancer_incidence_true_all.json
 2026-06-11 21:25:08 [MetaFemina] Analyze complete in 0.0s: studies=4, error=None
+2026-06-11 21:56:58 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Tea, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-11 21:56:58 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-11 21:56:58 [MetaFemina] Running new analysis for Uterine cancer / tea (from 'Tea') using model: openai.gpt-4o
+2026-06-11 21:59:03 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\tea\uterine_cancer_incidence_true_all.json
+2026-06-11 21:59:03 [MetaFemina] Analyze complete in 124.2s: studies=4, error=None
+2026-06-11 22:00:46 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Tea, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 22:00:46 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\tea\uterine_cancer_incidence_true_all.json
+2026-06-11 22:00:46 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\tea\uterine_cancer_incidence_true_all.json
+2026-06-11 22:00:46 [MetaFemina] Analyze complete in 0.0s: studies=4, error=None
+2026-06-11 22:01:13 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=folate, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-11 22:01:13 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folate\uterine_cancer_incidence_true_all.json
+2026-06-11 22:01:13 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folate\uterine_cancer_incidence_true_all_openai.gpt-5.4-pro.json
+2026-06-11 22:01:13 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folate\uterine_cancer_incidence_true_all_google.gemini-2.5-pro.json
+2026-06-11 22:01:13 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folate\uterine_cancer_incidence_true_all_google.gemini-2.5-flash.json
+2026-06-11 22:01:13 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folate\uterine_cancer_incidence_true_all_google.gemini-2.0-flash.json
+2026-06-11 22:01:13 [MetaFemina] Running new analysis for Uterine cancer / folate (from 'folate') using model: openai.gpt-4o
+2026-06-11 22:04:53 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folate\uterine_cancer_incidence_true_all.json
+2026-06-11 22:04:53 [MetaFemina] Analyze complete in 220.0s: studies=4, error=None
