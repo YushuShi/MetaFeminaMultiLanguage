@@ -8,11 +8,11 @@
         "anchored": ""
     },
     "Alcohol": {
-        "core": "alcohol, ethanol, ethyl alcohol, alcohol intake, alcohol consumption, alcoholic beverages, beer, ale, lager, stout, porter, pilsner, draft beer, wine, red wine, white wine, rosÃ© wine, sparkling wine, champagne, sake, spirits, whiskey, whisky, vodka, rum, gin, brandy, baijiu, Chinese liquor, Chinese spirits, Chinese white spirits, shaochiu, liquor, distilled spirits",
+        "core": "alcohol, ethanol, ethyl alcohol, alcohol intake, alcohol consumption, alcoholic beverages, beer, ale, lager, stout, porter, pilsner, draft beer, wine, red wine, white wine, ros\u00c3\u0192\u00c2\u00a9 wine, sparkling wine, champagne, sake, spirits, whiskey, whisky, vodka, rum, gin, brandy, baijiu, Chinese liquor, Chinese spirits, Chinese white spirits, shaochiu, liquor, distilled spirits",
         "anchored": ""
     },
     "Beta-carotene": {
-        "core": "beta-carotene, β-carotene, all-trans-beta-carotene, cis-beta-carotene, provitamin A, serum beta-carotene, plasma beta-carotene, dietary beta-carotene, beta-carotene intake, beta-carotene supplementation",
+        "core": "beta-carotene, \u00ce\u00b2-carotene, all-trans-beta-carotene, cis-beta-carotene, provitamin A, serum beta-carotene, plasma beta-carotene, dietary beta-carotene, beta-carotene intake, beta-carotene supplementation",
         "anchored": ""
     },
     "Calcium": {
@@ -202,6 +202,11 @@
     },
     "Zinc": {
         "core": "zinc, dietary zinc, zinc intake, zinc supplementation, serum zinc, plasma zinc, zinc levels, zinc status, red blood cell zinc",
+        "anchored": ""
+    },
+    "activated charcoal": {
+        "core": "activated charcoal, medicinal charcoal, activated carbon, charcoal intake, charcoal consumption, charcoal supplementation, charcoal dose, carbon active",
+        "downstream": "",
         "anchored": ""
     }
 }

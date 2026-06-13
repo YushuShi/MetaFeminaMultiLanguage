@@ -1229,11 +1229,18 @@ def search_pubmed(disease, exposure, outcome="Incidence", exclude_meta=False, ma
 
     animal_exclusion = ' NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title])'
 
-    # Negative constraints for common non-nutritional false positives
+    # Negative constraints for common non-nutritional false positives and genetic-nutrient interactions
     negative_constraints = (' NOT "SNP"[Title]'
                            ' NOT (polymorphism[Title] OR polymorphisms[Title]'
                            ' OR variant[Title] OR variants[Title]'
-                           ' OR transferase[Title])')
+                           ' OR transferase[Title]'
+                           ' OR genotype[Title] OR genotypes[Title]'
+                           ' OR "telomere length"[Title]'
+                           ' OR "family history"[Title]'
+                           ' OR "gene-diet"[Title] OR "gene-nutrient"[Title]'
+                           ' OR "gene-supplement"[Title] OR "genotype-exposure"[Title]'
+                           ' OR "genetic-nutrient"[Title])'
+                           ' NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title]))')
     if exposure.lower() == "zinc":
         negative_constraints += ' NOT ("zinc finger" OR "tristetraprolin")'
     if exposure.lower() == "manganese":
@@ -1515,6 +1522,13 @@ def extract_data(articles, exclude_meta=False, exposure_keyword=None, disease_ke
             # but are still valid human epidemiology studies.
             animal_keywords = ["mice", "mouse", "rat", "murine", "in vitro", "cell line", "in-vitro", "xenograft"]
             if any(kw in title_lower for kw in animal_keywords):
+                continue
+
+            # --- GENETIC-NUTRIENT INTERACTION FILTER (TITLE ONLY) ---
+            genetic_keywords = ["gene-supplement", "genetic-nutrient", "gene-diet", "gene-exposure", "genotype-exposure", "gene-nutrient", "telomere length", "family history", "polymorphism", "genetics", "single nucleotide polymorphism"]
+            has_genetic_term = any(kw in title_lower for kw in genetic_keywords)
+            has_interaction = ("interaction" in title_lower or "interactions" in title_lower or "interactive" in title_lower) and any(gkw in title_lower for gkw in ["gene", "genotype", "polymorphism", "genetic", "telomere", "comt", "mthfr", "variant"])
+            if has_genetic_term or has_interaction:
                 continue
             
             # --- Exposure-Aware Extraction Logic ---
@@ -2098,10 +2112,10 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
     exp_syns = list(set([s for s in exp_syns if len(s) > 2]))
     
     filtered_articles = []
-    skip_counts = {"disease": 0, "conflict": 0, "exposure": 0, "outcome": 0, "animal": 0, "meta": 0}
+    skip_counts = {"disease": 0, "conflict": 0, "exposure": 0, "outcome": 0, "animal": 0, "meta": 0, "genetic": 0}
     
     # Set to True to temporarily drop/bypass the first rule-based pre-filter for testing
-    BYPASS_PREFILTER = False
+    BYPASS_PREFILTER = True
     
     for article in articles:
         try:
@@ -2119,6 +2133,15 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
             title_lower = title.lower()
             all_text = abstract_lower + " " + title_lower
             
+            # --- GENETIC-NUTRIENT INTERACTION FILTER (TITLE ONLY) ---
+            # Run this check unconditionally, even if BYPASS_PREFILTER is True, to keep genetic interactions excluded.
+            genetic_keywords = ["gene-supplement", "genetic-nutrient", "gene-diet", "gene-exposure", "genotype-exposure", "gene-nutrient", "telomere length", "family history", "polymorphism", "genetics", "single nucleotide polymorphism"]
+            has_genetic_term = any(kw in title_lower for kw in genetic_keywords)
+            has_interaction = ("interaction" in title_lower or "interactions" in title_lower or "interactive" in title_lower) and any(gkw in title_lower for gkw in ["gene", "genotype", "polymorphism", "genetic", "telomere", "comt", "mthfr", "variant"])
+            if has_genetic_term or has_interaction:
+                skip_counts["genetic"] += 1
+                continue
+
             if BYPASS_PREFILTER:
                 # Calculate basic relevance score for sorting
                 score = 0
@@ -2202,6 +2225,8 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
                     skip_counts["meta"] += 1
                     continue
 
+            # (Genetic-nutrient interactions filter is now run unconditionally at the top of the loop)
+
             # --- EXPOSURE KEYWORD GATE ---
             # Require the article to mention the exposure (or a direct synonym) somewhere
             # in the title or abstract. This is the single most important pre-filter:
@@ -2232,7 +2257,7 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
             continue
     
     print(f"  [Pre-filter] {len(filtered_articles)} relevant articles from {len(articles)} total")
-    print(f"  [Pre-filter] Skipped: disease={skip_counts['disease']}, conflict={skip_counts['conflict']}, exposure={skip_counts['exposure']}, outcome={skip_counts['outcome']}, animal={skip_counts['animal']}, meta={skip_counts['meta']}")
+    print(f"  [Pre-filter] Skipped: disease={skip_counts['disease']}, conflict={skip_counts['conflict']}, exposure={skip_counts['exposure']}, outcome={skip_counts['outcome']}, animal={skip_counts['animal']}, meta={skip_counts['meta']}, genetic={skip_counts['genetic']}")
     
     # Sort by score so highest relevant articles are processed first
     filtered_articles.sort(key=lambda x: x[1], reverse=True)
@@ -2629,6 +2654,8 @@ def extract_info_gemini(client, model_name, abstract, title, disease, exposure, 
         - If '{outcome}' is 'Progression-Free Survival', focus on time to recurrence or progression.
     - DIETARY INDEX RULE:
         * DO NOT include studies where the exposure is a component of a composite dietary/antioxidant index or score (e.g., Dietary Antioxidant Index (DAI), Dietary Inflammatory Index (DII), Healthy Eating Index, etc.) rather than measuring the exposure '{exposure}' directly. If the effect size is for a composite index/score of which '{exposure}' is only one component, you MUST return null for effect_size.
+    - GENETIC-NUTRIENT INTERACTION RULE:
+        * DO NOT include studies where the primary focus is evaluating genetic-nutrient interactions, gene-supplement interactions, or genotype-exposure interactions (e.g. evaluating cancer risk stratified by genotype, genetic variant, polymorphism, gene expression, or family history in combination with the exposure, or evaluating the interaction effect itself), rather than evaluating the main effect of the exposure on the disease risk across the study population. If the study only reports results stratified by genotype/variant/family history or focuses on the interaction itself, you MUST return null for effect_size and set relevance_check.verdict to "Not Relevant".
     - If the abstract DOES NOT MENTION the exposure '{exposure}' or a very direct synonym, return NULL for effect_size. DO NOT guess or use unrelated numbers like MRI AUCs, p-values, or other coefficients.
     - If there are multiple estimates (e.g., age-adjusted and multivariable adjusted), PRIORITIZE THE MULTIVARIABLE ADJUSTED estimate.
     Synonyms and Matches:
@@ -2725,12 +2752,12 @@ def extract_info_gemini(client, model_name, abstract, title, disease, exposure, 
     - Handle standard text like "HR 1.2 (0.9-1.5)".
     - Convert text "reference" or "null" to None.
     - Return ONLY valid JSON.
-
+ 
     Also return a relevance_check object:
     - relevance_check.verdict: one of "Relevant", "Questionable", or "Not Relevant"
         - "Relevant": study clearly measures the requested '{exposure}' (or recognized synonym/biomarker/modifier) -> '{disease}' -> '{outcome}' relationship. This includes studies where '{exposure}' is studied as a modifier/interaction partner with another factor (e.g. alcohol). CRITICAL: A study that finds NO association (null finding) between '{exposure}' and '{disease}' is STILL Relevant.
         - "Questionable": study seems related but has a scope mismatch (e.g. wrong population subgroup, indirect endpoint, surrogate marker only).
-        - "Not Relevant": the study does not examine '{exposure}' or its synonyms at all, or only mentions it in passing without any analysis or data, OR examines the exposure AFTER diagnosis (post-diagnosis/post-treatment) when the outcome is Incidence, OR uses a composite dietary index where the exposure is only one of many components.
+        - "Not Relevant": the study does not examine '{exposure}' or its synonyms at all, or only mentions it in passing without any analysis or data, OR examines the exposure AFTER diagnosis (post-diagnosis/post-treatment) when the outcome is Incidence, OR uses a composite dietary index where the exposure is only one of many components, OR evaluates genetic-nutrient interactions / gene-supplement interactions / genotype-exposure interactions (e.g., investigating interactions with gene polymorphisms like COMT, family history of cancer, or telomere length).
     - relevance_check.reason: one sentence explaining why it matches or doesn't match.
 
     Also return:
@@ -2798,6 +2825,8 @@ def extract_info_llm(client, abstract, title, disease, exposure, outcome, model_
         - If '{outcome}' is 'Progression-Free Survival', focus on time to recurrence or progression.
     - DIETARY INDEX RULE:
         * DO NOT include studies where the exposure is a component of a composite dietary/antioxidant index or score (e.g., Dietary Antioxidant Index (DAI), Dietary Inflammatory Index (DII), Healthy Eating Index, etc.) rather than measuring the exposure '{exposure}' directly. If the effect size is for a composite index/score of which '{exposure}' is only one component, you MUST return null for effect_size.
+    - GENETIC-NUTRIENT INTERACTION RULE:
+        * DO NOT include studies where the primary focus is evaluating genetic-nutrient interactions, gene-supplement interactions, or genotype-exposure interactions (e.g. evaluating cancer risk stratified by genotype, genetic variant, polymorphism, gene expression, or family history in combination with the exposure, or evaluating the interaction effect itself), rather than evaluating the main effect of the exposure on the disease risk across the study population. If the study only reports results stratified by genotype/variant/family history or focuses on the interaction itself, you MUST return null for effect_size and set relevance_check.verdict to "Not Relevant".
         
     Synonyms and Matches:
     - If the abstract mentions an exposure like "Vitamin D supplementation" or "25(OH)D levels", and the user asked for "Vitamin D", consider these a MATCH.
@@ -2898,7 +2927,8 @@ def extract_info_llm(client, abstract, title, disease, exposure, outcome, model_
     - relevance_check.verdict: one of "Relevant", "Questionable", or "Not Relevant"
         - "Relevant": study clearly measures the requested '{exposure}' (or recognized synonym/biomarker/modifier) -> '{disease}' -> '{outcome}' relationship. This includes studies where '{exposure}' is studied as a modifier/interaction partner with another factor (e.g. alcohol). CRITICAL: A study that finds NO association (null finding) between '{exposure}' and '{disease}' is STILL Relevant.
         - "Questionable": study seems related but has a scope mismatch (e.g. wrong population subgroup, indirect endpoint, surrogate marker only).
-        - "Not Relevant": the study does not examine '{exposure}' or its synonyms at all, or only mentions it in passing without any analysis or data, OR examines the exposure AFTER diagnosis (post-diagnosis/post-treatment) when the outcome is Incidence, OR uses a composite dietary index where the exposure is only one of many components.
+        - "Not Relevant": the study does not examine '{exposure}' or its synonyms at all, or only mentions it in passing without any analysis or data, OR examines the exposure AFTER diagnosis (post-diagnosis/post-treatment) when the outcome is Incidence, OR uses a composite dietary index where the exposure is only one of many components, OR evaluates genetic-nutrient interactions / gene-supplement interactions / genotype-exposure interactions (e.g., investigating interactions with gene polymorphisms like COMT, family history of cancer, or telomere length).
+    - relevance_check.reason: one sentence explaining why it matches or doesn't match.
     - relevance_check.reason: one sentence explaining why it matches or doesn't match.
 
     Also return:

@@ -1896,14 +1896,74 @@
                             "Comparison Type": "Low vs High [inverted \u21d2 high vs low]"
                         },
                         "timestamp": "2026-05-23 09:43:47"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.5,
+                            "Lower CI": 0.2083,
+                            "Upper CI": 1.25,
+                            "Cases": null,
+                            "Sample Size": null,
+                            "Design": null,
+                            "Timing": null,
+                            "Comparison Type": "Low vs High [inverted \u21d2 high vs low]",
+                            "exposure_measurement_type": "dietary_intake"
+                        },
+                        "timestamp": "2026-06-13 18:39:48"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.5,
+                            "Lower CI": 0.2083,
+                            "Upper CI": 1.25,
+                            "Cases": null,
+                            "Sample Size": null,
+                            "Design": null,
+                            "Timing": null,
+                            "Comparison Type": "Low vs High [inverted \u21d2 high vs low]",
+                            "exposure_measurement_type": "dietary_intake"
+                        },
+                        "timestamp": "2026-06-13 18:39:49"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.5,
+                            "Lower CI": 0.2083,
+                            "Upper CI": 1.25,
+                            "Cases": null,
+                            "Sample Size": 609,
+                            "Design": null,
+                            "Timing": null,
+                            "Comparison Type": "Low vs High [inverted \u21d2 high vs low]",
+                            "exposure_measurement_type": "dietary_intake"
+                        },
+                        "timestamp": "2026-06-13 18:40:08"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.5,
+                            "Lower CI": 0.2083,
+                            "Upper CI": 1.25,
+                            "Cases": null,
+                            "Sample Size": 609,
+                            "Design": null,
+                            "Timing": null,
+                            "Comparison Type": "Low vs High [inverted \u21d2 high vs low]",
+                            "exposure_measurement_type": "dietary_intake"
+                        },
+                        "timestamp": "2026-06-13 18:40:09"
                     }
                 ],
                 "consensus_data": {
                     "Effect Size": 0.5,
                     "Lower CI": 0.2083,
                     "Upper CI": 1.25,
+                    "Cases": null,
+                    "Sample Size": 609,
+                    "Design": null,
+                    "Timing": null,
                     "Comparison Type": "Low vs High [inverted \u21d2 high vs low]",
-                    "comparison_type": "Low vs High [inverted \u21d2 high vs low]"
+                    "exposure_measurement_type": "dietary_intake"
                 }
             }
         }
@@ -1911,7 +1971,9 @@
     "16599372": {
         "legacy_count": 0,
         "submissions": [],
-        "context_exclusions": {},
+        "context_exclusions": {
+            "breast_cancer_vitamin_e_incidence": 2
+        },
         "contexts": {
             "breast_cancer_folic_acid_incidence": {
                 "submissions": [
@@ -2262,6 +2324,34 @@
                             "Comparison Type": "per 10 g average daily alcohol intake for low folate intake"
                         },
                         "timestamp": "2026-05-24 20:51:12"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 1.01,
+                            "Lower CI": 0.85,
+                            "Upper CI": 1.2,
+                            "Cases": 388,
+                            "Sample Size": 24697,
+                            "Design": "Case-Control",
+                            "Timing": "Prospective",
+                            "Comparison Type": "per 10 g average daily alcohol intake for low folate intake",
+                            "exposure_measurement_type": "dietary_intake"
+                        },
+                        "timestamp": "2026-06-13 18:38:20"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 1.01,
+                            "Lower CI": 0.85,
+                            "Upper CI": 1.2,
+                            "Cases": 388,
+                            "Sample Size": 24697,
+                            "Design": "Case-Control",
+                            "Timing": "Prospective",
+                            "Comparison Type": "per 10 g average daily alcohol intake for low folate intake",
+                            "exposure_measurement_type": "dietary_intake"
+                        },
+                        "timestamp": "2026-06-13 18:38:23"
                     }
                 ],
                 "consensus_data": {
@@ -2272,7 +2362,8 @@
                     "Sample Size": 24697,
                     "Design": "Case-Control",
                     "Timing": "Prospective",
-                    "Comparison Type": "per 10 g average daily alcohol intake for low folate intake"
+                    "Comparison Type": "per 10 g average daily alcohol intake for low folate intake",
+                    "exposure_measurement_type": "dietary_intake"
                 }
             }
         }
@@ -2904,6 +2995,120 @@
                     "exposure_measurement_type": "human_biospecimen"
                 }
             }
+        }
+    },
+    "30624689": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_vitamin_e_incidence": 2
+        },
+        "contexts": {
+            "breast_cancer_vitamin_e_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.88,
+                            "Lower CI": 0.8,
+                            "Upper CI": 0.97,
+                            "Cases": null,
+                            "Sample Size": 29294,
+                            "Design": "Randomized Controlled Trial",
+                            "Timing": "Prospective",
+                            "Comparison Type": "met/met genotype vs placebo",
+                            "exposure_measurement_type": "dietary_intake"
+                        },
+                        "timestamp": "2026-06-13 16:17:22"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.88,
+                            "Lower CI": 0.8,
+                            "Upper CI": 0.97,
+                            "Cases": null,
+                            "Sample Size": 29294,
+                            "Design": "Randomized Controlled Trial",
+                            "Timing": "Prospective",
+                            "Comparison Type": "met/met genotype vs placebo",
+                            "exposure_measurement_type": "dietary_intake"
+                        },
+                        "timestamp": "2026-06-13 16:17:23"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.88,
+                    "Lower CI": 0.8,
+                    "Upper CI": 0.97,
+                    "Cases": null,
+                    "Sample Size": 29294,
+                    "Design": "Randomized Controlled Trial",
+                    "Timing": "Prospective",
+                    "Comparison Type": "met/met genotype vs placebo",
+                    "exposure_measurement_type": "dietary_intake"
+                }
+            }
+        }
+    },
+    "8547538": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_vitamin_e_incidence": 2
+        },
+        "contexts": {
+            "breast_cancer_vitamin_e_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.7,
+                            "Lower CI": 0.4,
+                            "Upper CI": 1.2,
+                            "Cases": 262,
+                            "Sample Size": 633,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "Q4 vs Q1 (FH+ premenopausal women)",
+                            "exposure_measurement_type": "dietary_intake"
+                        },
+                        "timestamp": "2026-06-13 16:23:15"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.7,
+                            "Lower CI": 0.4,
+                            "Upper CI": 1.2,
+                            "Cases": 262,
+                            "Sample Size": 633,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "Q4 vs Q1 (FH+ premenopausal women)",
+                            "exposure_measurement_type": "dietary_intake"
+                        },
+                        "timestamp": "2026-06-13 16:23:16"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.7,
+                    "Lower CI": 0.4,
+                    "Upper CI": 1.2,
+                    "Cases": 262,
+                    "Sample Size": 633,
+                    "Design": "Case-Control",
+                    "Timing": "Retrospective",
+                    "Comparison Type": "Q4 vs Q1 (FH+ premenopausal women)",
+                    "exposure_measurement_type": "dietary_intake"
+                }
+            }
+        }
+    },
+    "19089916": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_vitamin_e_incidence": 2
         }
     }
 }
