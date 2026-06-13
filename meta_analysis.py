@@ -1033,14 +1033,23 @@ def get_equivalent_terms(exposure):
         except:
             pass
             
-    cached = cache.get(exposure.lower())
+    exposure_lower = exposure.lower().strip()
+    cached = None
+    for k, v in cache.items():
+        if k.lower().strip() == exposure_lower:
+            cached = v
+            break
+            
     if cached is not None:
         # Handle both new dict format and legacy flat string
         if isinstance(cached, dict):
-            if cached.get("core", "").strip() or cached.get("downstream", "").strip():
-                return cached
-        elif isinstance(cached, str) and cached.strip():
-            return {"core": cached.strip(), "downstream": ""}
+            return {
+                "core": cached.get("core", "").strip(),
+                "downstream": cached.get("downstream", "").strip(),
+                "anchored": cached.get("anchored", "").strip()
+            }
+        elif isinstance(cached, str):
+            return {"core": cached.strip(), "downstream": "", "anchored": ""}
 
     print(f"Curating synonyms for: {exposure}")
     prompt = f"""Acting as a nutritional epidemiology researcher, for the nutritional exposure: "{exposure}"
@@ -1137,9 +1146,10 @@ def get_canonical_name(exposure):
             with open(SYNONYMS_CACHE, 'r') as f:
                 cache = json.load(f)
                 
-            # 1. Direct match with key
-            if exposure_lower in cache:
-                return exposure_lower
+            # 1. Direct match with key (case-insensitive)
+            for k in cache.keys():
+                if k.lower().strip() == exposure_lower:
+                    return k
                 
             # 2. Check if exposure is in any core list
             for canonical, terms in cache.items():
@@ -2090,6 +2100,9 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
     filtered_articles = []
     skip_counts = {"disease": 0, "conflict": 0, "exposure": 0, "outcome": 0, "animal": 0, "meta": 0}
     
+    # Set to True to temporarily drop/bypass the first rule-based pre-filter for testing
+    BYPASS_PREFILTER = False
+    
     for article in articles:
         try:
             medline = article['MedlineCitation']
@@ -2106,6 +2119,17 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
             title_lower = title.lower()
             all_text = abstract_lower + " " + title_lower
             
+            if BYPASS_PREFILTER:
+                # Calculate basic relevance score for sorting
+                score = 0
+                if any(term in title_lower for term in exp_syns): score += 10
+                if "soy" in title_lower or "soya" in title_lower: score += 5
+                if any(term in title_lower for term in get_disease_alias(disease_keyword)["score_terms"]): score += 5
+                cohort_keywords = ["cohort", "prospective", "300,000", "adventist", "health study", "uk women", "shanghai", "kadoorie", "jphc"]
+                if any(ck in all_text for ck in cohort_keywords): score += 5
+                
+                filtered_articles.append((article, score))
+                continue
 
             # Disease relevance check
             should_process = is_disease_relevant(all_text, disease_keyword)
@@ -2318,6 +2342,7 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
 
             # Check for existing consensus in verifications.json to bypass screening
             has_consensus = False
+            consensus = None
             verifications_file = os.path.join(DATA_DIR, "verifications.json")
             if os.path.exists(verifications_file):
                 try:
@@ -2405,6 +2430,28 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
             if not extracted and not client and not gemini_client:
                  print("Error: No LLM Client initialized.")
                  return
+
+            # If extraction failed or has no effect size, but we have consensus, construct a fallback extraction result
+            if (not extracted or not extracted.get('effect_size')) and has_consensus and consensus:
+                print(f"  [Extraction] Extraction yielded no effect size for '{study_label}', but using consensus data as fallback.")
+                extracted = {
+                    "effect_size": consensus.get("Effect Size"),
+                    "effect_type": consensus.get("Effect Type") or ("OR" if consensus.get("Design") == "Case-Control" else "RR"),
+                    "comparison_type": consensus.get("Comparison Type"),
+                    "ci_lower": consensus.get("Lower CI"),
+                    "ci_upper": consensus.get("Upper CI"),
+                    "total_n": consensus.get("Sample Size"),
+                    "cases": consensus.get("Cases"),
+                    "design": consensus.get("Design"),
+                    "timing": consensus.get("Timing"),
+                    "continent": consensus.get("Continent") or "Other",
+                    "stage": consensus.get("Stage") or "NA",
+                    "exposure_measurement_type": consensus.get("exposure_measurement_type") or "unclear",
+                    "exposure_measurement_supporting_text": consensus.get("exposure_measurement_supporting_text") or "",
+                    "relevance_check": {"verdict": "Relevant", "reason": "Bypassed via verification consensus"},
+                    "needs_inversion": False
+                }
+                used_llm = "Consensus"
                  
             # Consensus check for inversion
             if extracted and extracted.get('effect_size'):
@@ -2575,9 +2622,13 @@ def extract_info_gemini(client, model_name, abstract, title, disease, exposure, 
     - Some abstracts report results for MULTIPLE exposures or MULTIPLE diseases (e.g., Vitamin D vs Breast Cancer AND Vitamin D vs Ovarian Cancer).
     - You MUST only extract the result that corresponds to the REQUESTED exposure and REQUESTED disease.
     - IMPORTANT - OUTCOME TYPE: The requested outcome is '{outcome}'. 
-        - If '{outcome}' is 'Incidence', you MUST ONLY extract results for the RISK of DEVELOPING the disease in a baseline-healthy population. DO NOT extract results for 'Survival', 'Recurrence', or 'Mortality' in patients already diagnosed.
+        - If '{outcome}' is 'Incidence', you MUST ONLY extract results for the RISK of DEVELOPING the disease in a baseline-healthy population. 
+          * DO NOT extract results for 'Survival', 'Recurrence' (recurrence risk), 'Prognosis', or 'Mortality' (mortality risk) in patients already diagnosed.
+          * Be extremely careful about post-diagnosis use, post-treatment supplement use, or supplement use after diagnosis/treatment: if the exposure is administered or measured AFTER diagnosis/treatment of the cancer, it MUST NOT be included (return null for effect_size).
         - If '{outcome}' is 'Survival', you MUST ONLY extract results for length of life, risk of death, or overall survival in diagnosed patients. DO NOT extract results for 'Incidence' or 'Risk of Development'.
         - If '{outcome}' is 'Progression-Free Survival', focus on time to recurrence or progression.
+    - DIETARY INDEX RULE:
+        * DO NOT include studies where the exposure is a component of a composite dietary/antioxidant index or score (e.g., Dietary Antioxidant Index (DAI), Dietary Inflammatory Index (DII), Healthy Eating Index, etc.) rather than measuring the exposure '{exposure}' directly. If the effect size is for a composite index/score of which '{exposure}' is only one component, you MUST return null for effect_size.
     - If the abstract DOES NOT MENTION the exposure '{exposure}' or a very direct synonym, return NULL for effect_size. DO NOT guess or use unrelated numbers like MRI AUCs, p-values, or other coefficients.
     - If there are multiple estimates (e.g., age-adjusted and multivariable adjusted), PRIORITIZE THE MULTIVARIABLE ADJUSTED estimate.
     Synonyms and Matches:
@@ -2679,7 +2730,7 @@ def extract_info_gemini(client, model_name, abstract, title, disease, exposure, 
     - relevance_check.verdict: one of "Relevant", "Questionable", or "Not Relevant"
         - "Relevant": study clearly measures the requested '{exposure}' (or recognized synonym/biomarker/modifier) -> '{disease}' -> '{outcome}' relationship. This includes studies where '{exposure}' is studied as a modifier/interaction partner with another factor (e.g. alcohol). CRITICAL: A study that finds NO association (null finding) between '{exposure}' and '{disease}' is STILL Relevant.
         - "Questionable": study seems related but has a scope mismatch (e.g. wrong population subgroup, indirect endpoint, surrogate marker only).
-        - "Not Relevant": the study does not examine '{exposure}' or its synonyms at all, or only mentions it in passing without any analysis or data. Only judge the exposure, NOT the direction or magnitude of the association.
+        - "Not Relevant": the study does not examine '{exposure}' or its synonyms at all, or only mentions it in passing without any analysis or data, OR examines the exposure AFTER diagnosis (post-diagnosis/post-treatment) when the outcome is Incidence, OR uses a composite dietary index where the exposure is only one of many components.
     - relevance_check.reason: one sentence explaining why it matches or doesn't match.
 
     Also return:
@@ -2736,6 +2787,18 @@ def extract_info_llm(client, abstract, title, disease, exposure, outcome, model_
     Abstract: "{abstract}"
     Title: "{title}"
     
+    IMPORTANT: 
+    - Some abstracts report results for MULTIPLE exposures or MULTIPLE diseases (e.g., Vitamin D vs Breast Cancer AND Vitamin D vs Ovarian Cancer).
+    - You MUST only extract the result that corresponds to the REQUESTED exposure and REQUESTED disease.
+    - IMPORTANT - OUTCOME TYPE: The requested outcome is '{outcome}'. 
+        - If '{outcome}' is 'Incidence', you MUST ONLY extract results for the RISK of DEVELOPING the disease in a baseline-healthy population. 
+          * DO NOT extract results for 'Survival', 'Recurrence' (recurrence risk), 'Prognosis', or 'Mortality' (mortality risk) in patients already diagnosed.
+          * Be extremely careful about post-diagnosis use, post-treatment supplement use, or supplement use after diagnosis/treatment: if the exposure is administered or measured AFTER diagnosis/treatment of the cancer, it MUST NOT be included (return null for effect_size).
+        - If '{outcome}' is 'Survival', you MUST ONLY extract results for length of life, risk of death, or overall survival in diagnosed patients. DO NOT extract results for 'Incidence' or 'Risk of Development'.
+        - If '{outcome}' is 'Progression-Free Survival', focus on time to recurrence or progression.
+    - DIETARY INDEX RULE:
+        * DO NOT include studies where the exposure is a component of a composite dietary/antioxidant index or score (e.g., Dietary Antioxidant Index (DAI), Dietary Inflammatory Index (DII), Healthy Eating Index, etc.) rather than measuring the exposure '{exposure}' directly. If the effect size is for a composite index/score of which '{exposure}' is only one component, you MUST return null for effect_size.
+        
     Synonyms and Matches:
     - If the abstract mentions an exposure like "Vitamin D supplementation" or "25(OH)D levels", and the user asked for "Vitamin D", consider these a MATCH.
     - If the user asked for "folic acid" and the study mentions "folate" or "dietary folate" or "folate intake", consider these a MATCH.
@@ -2835,7 +2898,7 @@ def extract_info_llm(client, abstract, title, disease, exposure, outcome, model_
     - relevance_check.verdict: one of "Relevant", "Questionable", or "Not Relevant"
         - "Relevant": study clearly measures the requested '{exposure}' (or recognized synonym/biomarker/modifier) -> '{disease}' -> '{outcome}' relationship. This includes studies where '{exposure}' is studied as a modifier/interaction partner with another factor (e.g. alcohol). CRITICAL: A study that finds NO association (null finding) between '{exposure}' and '{disease}' is STILL Relevant.
         - "Questionable": study seems related but has a scope mismatch (e.g. wrong population subgroup, indirect endpoint, surrogate marker only).
-        - "Not Relevant": the study does not examine '{exposure}' or its synonyms at all, or only mentions it in passing without any analysis or data. Only judge the exposure, NOT the direction or magnitude of the association.
+        - "Not Relevant": the study does not examine '{exposure}' or its synonyms at all, or only mentions it in passing without any analysis or data, OR examines the exposure AFTER diagnosis (post-diagnosis/post-treatment) when the outcome is Incidence, OR uses a composite dietary index where the exposure is only one of many components.
     - relevance_check.reason: one sentence explaining why it matches or doesn't match.
 
     Also return:

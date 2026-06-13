@@ -486,7 +486,8 @@ def verify():
             "Sample Size": study_data.get("Sample Size"),
             "Design": study_data.get("Design"),
             "Timing": study_data.get("Timing"),
-            "Comparison Type": study_data.get("comparison_type")
+            "Comparison Type": study_data.get("comparison_type"),
+            "exposure_measurement_type": study_data.get("exposure_measurement_type")
         }
         
         # Add new submission
@@ -508,7 +509,7 @@ def verify():
                     
                     # Compare key metric fields
                     is_match = True
-                    for field in ["Effect Size", "Lower CI", "Upper CI", "Cases", "Sample Size"]:
+                    for field in ["Effect Size", "Lower CI", "Upper CI", "Cases", "Sample Size", "exposure_measurement_type"]:
                         v1 = str(d1.get(field)).strip().lower()
                         v2 = str(d2.get(field)).strip().lower()
                         

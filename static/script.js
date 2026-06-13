@@ -812,22 +812,24 @@ document.addEventListener('DOMContentLoaded', async () => {
                     <b>Context:</b> ${study.comparison_type || '-'}<br>
                     <b>Design:</b> ${study.Design || '-'}<br>
                     <b>Location:</b> ${study.Continent || '-'}<br>
-                    <b>Exposure Quant:</b> ${(() => {
-                        const t = study.exposure_measurement_type || 'unclear';
-                        let label = t;
-                        let color = '#777';
-                        if (t === 'dietary_intake') {
-                            label = 'Dietary Intake';
-                            color = '#2e7d32';
-                        } else if (t === 'human_biospecimen') {
-                            label = 'Human Biospecimen';
-                            color = '#1565c0';
-                        } else {
-                            label = 'Unclear';
-                            color = '#e65100';
-                        }
-                        return `<span style="color: ${color}; font-weight: bold;">${label}</span>`;
-                    })()}
+                    <b>Exposure Quant:</b>
+                    <select onchange="currentStudies[${index}]['exposure_measurement_type'] = this.value; (function(selectEl) {
+                        const val = selectEl.value;
+                        if (val === 'dietary_intake') selectEl.style.color = '#2e7d32';
+                        else if (val === 'human_biospecimen') selectEl.style.color = '#1565c0';
+                        else selectEl.style.color = '#e65100';
+                    })(this)" style="font-weight: bold; border: 1px solid #ccc; border-radius: 4px; padding: 2px; font-size: 0.95em; color: ${
+                        (() => {
+                            const t = study.exposure_measurement_type || 'unclear';
+                            if (t === 'dietary_intake') return '#2e7d32';
+                            if (t === 'human_biospecimen') return '#1565c0';
+                            return '#e65100';
+                        })()
+                    }">
+                        <option value="unclear" ${(!study.exposure_measurement_type || study.exposure_measurement_type === 'unclear') ? 'selected' : ''}>Unclear</option>
+                        <option value="dietary_intake" ${study.exposure_measurement_type === 'dietary_intake' ? 'selected' : ''}>Dietary Intake</option>
+                        <option value="human_biospecimen" ${study.exposure_measurement_type === 'human_biospecimen' ? 'selected' : ''}>Human Biospecimen</option>
+                    </select>
                 </td>
                 <td style="font-size: 0.75em;" title="${unselectedReason}">${study.Journal || '-'} (${study.Year || '-'})</td>
             `;

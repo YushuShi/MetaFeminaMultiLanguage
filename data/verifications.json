@@ -2798,5 +2798,112 @@
         "context_exclusions": {
             "breast_cancer_pickled_vegetables_incidence": 2
         }
+    },
+    "37513671": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_red_meat_incidence": 1
+        }
+    },
+    "26081425": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_vitamin_a_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.6,
+                            "Lower CI": 0.41,
+                            "Upper CI": 0.87,
+                            "Cases": 496,
+                            "Sample Size": 992,
+                            "Design": "Case-Control",
+                            "Timing": "Prospective",
+                            "Comparison Type": "Q4 vs Q1"
+                        },
+                        "timestamp": "2026-06-13 12:57:12"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.6,
+                            "Lower CI": 0.41,
+                            "Upper CI": 0.87,
+                            "Cases": 496,
+                            "Sample Size": 992,
+                            "Design": "Case-Control",
+                            "Timing": "Prospective",
+                            "Comparison Type": "Q4 vs Q1"
+                        },
+                        "timestamp": "2026-06-13 12:57:14"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.6,
+                    "Lower CI": 0.41,
+                    "Upper CI": 0.87,
+                    "Cases": 496,
+                    "Sample Size": 992,
+                    "Design": "Case-Control",
+                    "Timing": "Prospective",
+                    "Comparison Type": "Q4 vs Q1"
+                }
+            }
+        }
+    },
+    "25877493": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_vitamin_a_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.72,
+                            "Lower CI": 0.59,
+                            "Upper CI": 0.88,
+                            "Cases": 2188,
+                            "Sample Size": 32826,
+                            "Design": "Nested Case-Control",
+                            "Timing": "Prospective",
+                            "Comparison Type": "Top vs Bottom Quintile",
+                            "exposure_measurement_type": "human_biospecimen"
+                        },
+                        "timestamp": "2026-06-13 14:07:47"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.72,
+                            "Lower CI": 0.59,
+                            "Upper CI": 0.88,
+                            "Cases": 2188,
+                            "Sample Size": 32826,
+                            "Design": "Nested Case-Control",
+                            "Timing": "Prospective",
+                            "Comparison Type": "Top vs Bottom Quintile",
+                            "exposure_measurement_type": "human_biospecimen"
+                        },
+                        "timestamp": "2026-06-13 14:07:49"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.72,
+                    "Lower CI": 0.59,
+                    "Upper CI": 0.88,
+                    "Cases": 2188,
+                    "Sample Size": 32826,
+                    "Design": "Nested Case-Control",
+                    "Timing": "Prospective",
+                    "Comparison Type": "Top vs Bottom Quintile",
+                    "exposure_measurement_type": "human_biospecimen"
+                }
+            }
+        }
     }
 }

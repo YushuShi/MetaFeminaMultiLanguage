@@ -1539,3 +1539,157 @@
 2026-06-12 20:38:12 [MetaFemina] Running new analysis for Breast cancer / evening primrose oil (from 'Evening primrose oil') using model: openai.gpt-4o
 2026-06-12 20:39:22 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\evening_primrose_oil\breast_cancer_incidence_true_all.json
 2026-06-12 20:39:22 [MetaFemina] Analyze complete in 70.0s: studies=3, error=None
+2026-06-13 09:55:15 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Red meat, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-13 09:55:15 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-13 09:55:15 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-13 09:55:15 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-13 09:55:15 
+============================================================
+2026-06-13 09:55:15 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-13 09:55:15   - Total Articles Fetched from PubMed: N/A (Legacy Cache)
+2026-06-13 09:55:15   - Articles Remaining After Pre-filter: N/A (Legacy Cache)
+2026-06-13 09:55:15   - LLM Screening:
+2026-06-13 09:55:15     * Screened IN / Accepted:   43
+2026-06-13 09:55:15     * Screened OUT / Rejected:  0
+2026-06-13 09:55:15     * Consensus Bypassed:       0
+2026-06-13 09:55:15   - Final Extracted Studies: 43
+2026-06-13 09:55:15 ============================================================
+
+2026-06-13 09:55:15 [MetaFemina] Re-analyzing Red meat due to verification filtering/consensus/flags...
+2026-06-13 09:55:16 [MetaFemina] Analyze complete in 0.9s: studies=43, error=None
+2026-06-13 09:55:59 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-13 09:55:59 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\uterine_cancer_incidence_true_all.json
+2026-06-13 09:56:09 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Legumes, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-13 09:56:09 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\breast_cancer_incidence_true_all.json
+2026-06-13 09:56:09 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\breast_cancer_incidence_true_all.json
+2026-06-13 09:56:09 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\breast_cancer_incidence_true_all.json
+2026-06-13 09:56:09 
+============================================================
+2026-06-13 09:56:09 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-13 09:56:09   - Total Articles Fetched from PubMed: N/A (Legacy Cache)
+2026-06-13 09:56:09   - Articles Remaining After Pre-filter: N/A (Legacy Cache)
+2026-06-13 09:56:09   - LLM Screening:
+2026-06-13 09:56:09     * Screened IN / Accepted:   26
+2026-06-13 09:56:09     * Screened OUT / Rejected:  0
+2026-06-13 09:56:09     * Consensus Bypassed:       0
+2026-06-13 09:56:09   - Final Extracted Studies: 26
+2026-06-13 09:56:09 ============================================================
+
+2026-06-13 09:56:09 [MetaFemina] Analyze complete in 0.0s: studies=26, error=None
+2026-06-13 11:01:25 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Vitamin E, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-13 11:01:25 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all.json
+2026-06-13 11:01:25 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all.json
+2026-06-13 11:01:25 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all.json
+2026-06-13 11:01:25 
+============================================================
+2026-06-13 11:01:25 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-13 11:01:25   - Total Articles Fetched from PubMed: N/A (Legacy Cache)
+2026-06-13 11:01:25   - Articles Remaining After Pre-filter: N/A (Legacy Cache)
+2026-06-13 11:01:25   - LLM Screening:
+2026-06-13 11:01:25     * Screened IN / Accepted:   25
+2026-06-13 11:01:25     * Screened OUT / Rejected:  0
+2026-06-13 11:01:25     * Consensus Bypassed:       0
+2026-06-13 11:01:25   - Final Extracted Studies: 25
+2026-06-13 11:01:25 ============================================================
+
+2026-06-13 11:01:25 [MetaFemina] Re-analyzing Vitamin E due to verification filtering/consensus/flags...
+2026-06-13 11:01:26 [MetaFemina] Analyze complete in 0.7s: studies=25, error=None
+2026-06-13 11:01:44 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Vitamin E, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-13 11:01:44 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-13 11:01:44 [MetaFemina] Running new analysis for Breast cancer / vitamin e (from 'Vitamin E') using model: openai.gpt-4o
+2026-06-13 11:32:43 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all.json
+2026-06-13 11:32:43 [MetaFemina] Analyze complete in 1859.9s: studies=31, error=None
+2026-06-13 12:56:11 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Vitamin A, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-13 12:56:11 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-13 12:56:11 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-13 12:56:11 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-13 12:56:11 
+============================================================
+2026-06-13 12:56:11 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-13 12:56:11   - Total Articles Fetched from PubMed: N/A (Legacy Cache)
+2026-06-13 12:56:11   - Articles Remaining After Pre-filter: N/A (Legacy Cache)
+2026-06-13 12:56:11   - LLM Screening:
+2026-06-13 12:56:11     * Screened IN / Accepted:   32
+2026-06-13 12:56:11     * Screened OUT / Rejected:  0
+2026-06-13 12:56:11     * Consensus Bypassed:       0
+2026-06-13 12:56:11   - Final Extracted Studies: 32
+2026-06-13 12:56:11 ============================================================
+
+2026-06-13 12:56:11 [MetaFemina] Analyze complete in 0.0s: studies=32, error=None
+2026-06-13 12:57:15 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true.json
+2026-06-13 12:57:18 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Vitamin A, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-13 12:57:18 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-13 12:57:18 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-13 12:57:18 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-13 12:57:18 
+============================================================
+2026-06-13 12:57:18 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-13 12:57:18   - Total Articles Fetched from PubMed: N/A (Legacy Cache)
+2026-06-13 12:57:18   - Articles Remaining After Pre-filter: N/A (Legacy Cache)
+2026-06-13 12:57:18   - LLM Screening:
+2026-06-13 12:57:18     * Screened IN / Accepted:   32
+2026-06-13 12:57:18     * Screened OUT / Rejected:  0
+2026-06-13 12:57:18     * Consensus Bypassed:       0
+2026-06-13 12:57:18   - Final Extracted Studies: 32
+2026-06-13 12:57:18 ============================================================
+
+2026-06-13 12:57:18 [MetaFemina] Re-analyzing Vitamin A due to verification filtering/consensus/flags...
+2026-06-13 12:57:19 [MetaFemina] Analyze complete in 0.7s: studies=32, error=None
+2026-06-13 12:59:21 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all.json
+2026-06-13 12:59:21 Error updating cache file c:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all_old.json: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2026-06-13 12:59:22 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all_backup.json
+2026-06-13 12:59:23 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all_MM.json
+2026-06-13 12:59:23 Error updating cache file c:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all_old.json: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2026-06-13 12:59:24 [MetaFemina] Updated cache file and regenerated plots for c:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all_rerun.json
+2026-06-13 14:07:37 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Vitamin A, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-13 14:07:37 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-13 14:07:37 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-13 14:07:37 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-13 14:07:37 
+============================================================
+2026-06-13 14:07:37 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-13 14:07:37   - Total Articles Fetched from PubMed: N/A (Legacy Cache)
+2026-06-13 14:07:37   - Articles Remaining After Pre-filter: N/A (Legacy Cache)
+2026-06-13 14:07:37   - LLM Screening:
+2026-06-13 14:07:37     * Screened IN / Accepted:   32
+2026-06-13 14:07:37     * Screened OUT / Rejected:  0
+2026-06-13 14:07:37     * Consensus Bypassed:       0
+2026-06-13 14:07:37   - Final Extracted Studies: 32
+2026-06-13 14:07:37 ============================================================
+
+2026-06-13 14:07:37 [MetaFemina] Re-analyzing Vitamin A due to verification filtering/consensus/flags...
+2026-06-13 14:07:38 [MetaFemina] Analyze complete in 0.8s: studies=32, error=None
+2026-06-13 14:07:50 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true.json
+2026-06-13 14:07:51 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-13 14:07:53 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Vitamin A, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-13 14:07:53 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-13 14:07:53 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-13 14:07:53 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-13 14:07:53 
+============================================================
+2026-06-13 14:07:53 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-13 14:07:53   - Total Articles Fetched from PubMed: N/A (Legacy Cache)
+2026-06-13 14:07:53   - Articles Remaining After Pre-filter: N/A (Legacy Cache)
+2026-06-13 14:07:53   - LLM Screening:
+2026-06-13 14:07:53     * Screened IN / Accepted:   32
+2026-06-13 14:07:53     * Screened OUT / Rejected:  0
+2026-06-13 14:07:53     * Consensus Bypassed:       0
+2026-06-13 14:07:53   - Final Extracted Studies: 32
+2026-06-13 14:07:53 ============================================================
+
+2026-06-13 14:07:53 [MetaFemina] Re-analyzing Vitamin A due to verification filtering/consensus/flags...
+2026-06-13 14:07:54 [MetaFemina] Analyze complete in 0.7s: studies=32, error=None
+2026-06-13 14:24:20 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Vitamin E, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-13 14:24:20 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all.json
+2026-06-13 14:24:20 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all_openai.gpt-5.4-pro.json
+2026-06-13 14:24:20 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all_google.gemini-2.5-pro.json
+2026-06-13 14:24:20 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all_google.gemini-2.5-flash.json
+2026-06-13 14:24:20 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all_google.gemini-2.0-flash.json
+2026-06-13 14:24:20 [MetaFemina] Running new analysis for Breast cancer / Vitamin E (from 'Vitamin E') using model: openai.gpt-4o
+2026-06-13 14:37:42 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Vitamin E, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-13 14:37:42 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all.json
+2026-06-13 14:37:42 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all_openai.gpt-5.4-pro.json
+2026-06-13 14:37:42 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all_google.gemini-2.5-pro.json
+2026-06-13 14:37:42 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all_google.gemini-2.5-flash.json
+2026-06-13 14:37:42 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all_google.gemini-2.0-flash.json
+2026-06-13 14:37:42 [MetaFemina] Running new analysis for Breast cancer / Vitamin E (from 'Vitamin E') using model: openai.gpt-4o

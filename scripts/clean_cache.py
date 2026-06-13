@@ -58,8 +58,12 @@ def clean_cache():
             return re.sub(r'\s*\(.*\)', '', k).strip()
         
         # No brackets
-        if k in primary_to_full: return k
-        if k in synonym_map: return synonym_map[k]
+        if k in primary_to_full: return primary_to_full[k]
+        if k in synonym_map:
+            resolved = synonym_map[k]
+            if resolved in primary_to_full:
+                return primary_to_full[resolved]
+            return resolved
         return k
 
     for key, val in cache.items():

@@ -102,16 +102,14 @@ def main():
     for exposure in EXPOSURES:
         key = exposure.lower()
         
-        # Skip if already in cache AND not empty
-        cached_val = current_cache.get(key)
-        is_cached = False
-        if isinstance(cached_val, dict):
-            if cached_val.get("core", "").strip():
-                is_cached = True
-        elif isinstance(cached_val, str) and cached_val.strip():
-            is_cached = True
+        # Skip if already in cache (case-insensitive lookup)
+        cached_val = None
+        for k, v in current_cache.items():
+            if k.lower().strip() == key:
+                cached_val = v
+                break
 
-        if is_cached:
+        if cached_val is not None:
             print(f"[CACHED] {exposure}")
             results[exposure] = cached_val
             continue
