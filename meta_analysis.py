@@ -444,8 +444,13 @@ def get_analysis_data(disease, exposure, outcome="Incidence", exclude_meta=False
     except Exception as e:
         print(f"LLM Extraction failed: {e}")
 
-    # Fallback to Regex if LLM failed or returned no data
-    if df.empty:
+    # Fallback to Regex only if the LLM screening did not run successfully, or if we screened in
+    # articles but failed to extract any data. Do not fallback if the LLM successfully screened out all articles.
+    llm_ran_successfully = bool(screening_stats and "llm_screened_in" in screening_stats)
+    llm_screened_any_in = bool(screening_stats.get("llm_screened_in", 0) > 0 or screening_stats.get("consensus_bypassed", 0) > 0)
+    should_fallback_to_regex = (not llm_ran_successfully) or (df.empty and llm_screened_any_in)
+
+    if should_fallback_to_regex:
         print("[MetaFemina] Falling back to Regex extraction...")
         df = extract_data(articles, exclude_meta=exclude_meta, exposure_keyword=exposure, disease_keyword=disease, outcome_keyword=outcome, synonyms=synonyms, use_downstream=use_downstream, core_synonyms=core_synonyms)
         screening_stats = {"total_fetched": len(articles), "after_prefilter": len(df), "extracted": len(df), "prefilter_skip": {}, "llm_screened_out": 0, "llm_screened_in": len(df), "consensus_bypassed": 0}
@@ -2208,11 +2213,6 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
     # Sort by score so highest relevant articles are processed first
     filtered_articles.sort(key=lambda x: x[1], reverse=True)
 
-    # Apply safety cap to prevent excessive LLM calls on very broad queries (e.g. alcohol)
-    if len(filtered_articles) > 50:
-        print(f"  [Safety Cap] Limiting LLM extraction to the top 50 most relevant articles (out of {len(filtered_articles)})")
-        filtered_articles = filtered_articles[:50]
-
     print(f"  [LLM] Extracting from all {len(filtered_articles)} relevant articles.")
     
     # Unwrap back to articles for processing
@@ -2426,7 +2426,7 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
                  jbi_type = extracted.get('jbi_checklist_type', 'cross_sectional')
                  yes_count = sum(1 for v in jbi.values() if str(v).lower() == 'yes')
                  na_count = sum(1 for v in jbi.values() if str(v).lower() == 'na')
-                 checklist_totals = {'cohort': 11, 'case_control': 10, 'cross_sectional': 8}
+                 checklist_totals = {'cohort': 11, 'case_control': 10, 'cross_sectional': 8, 'rct': 13}
                  base_total = checklist_totals.get(jbi_type, 8)
                  total_potential = base_total - na_count
                  
@@ -2610,9 +2610,25 @@ def extract_info_gemini(client, model_name, abstract, title, disease, exposure, 
         - confidence_interval: (string) supporting text/quotes for confidence interval
         - outcome_definition: (string) supporting text/quotes/details for how the outcome (cancer/disease type) was defined or referenced in the abstract
         - exposure_definition: (string) supporting text/quotes/details for how the exposure was defined or referenced in the abstract
-    - jbi_checklist_type: (string) Which JBI checklist was used: "cohort", "case_control", or "cross_sectional".
+    - jbi_checklist_type: (string) Which JBI checklist was used: "rct", "cohort", "case_control", or "cross_sectional".
     - jbi_answers: (dict) Answers to JBI critical appraisal questions. Choose the checklist based on the study design:
     
+        IF the study is a RANDOMIZED CONTROLLED TRIAL or CLINICAL TRIAL, answer these 13 questions (keys "q1" through "q13") from the revised 2023 JBI tool:
+            Q1: Was true randomization used for assignment of participants to treatment groups?
+            Q2: Was allocation to treatment groups concealed?
+            Q3: Were treatment groups similar at baseline?
+            Q4: Were participants blind to treatment assignment?
+            Q5: Were those delivering the treatment blind to treatment assignment?
+            Q6: Were treatment groups treated identically other than the intervention of interest?
+            Q7: Were outcome assessors blind to treatment assignment?
+            Q8: Were outcomes measured in the same way for treatment groups?
+            Q9: Were outcomes measured in a reliable way?
+            Q10: Was follow-up complete and, if not, were differences between groups in terms of their follow-up adequately described and analyzed?
+            Q11: Were participants analyzed in the groups to which they were randomized?
+            Q12: Was appropriate statistical analysis used?
+            Q13: Was the trial design appropriate, and were any deviations from the standard RCT design accounted for in the conduct and analysis of the trial?
+            Set jbi_checklist_type to "rct". MUST RETURN EXACTLY 13 KEYS ("q1" to "q13") in the jbi_answers object.
+        
         IF the study is a COHORT STUDY, answer these 11 questions (keys "q1" through "q11"):
             Q1: Were the two groups similar and recruited from the same population?
             Q2: Were the exposures measured similarly to assign people to both exposed and unexposed groups?
@@ -2750,9 +2766,25 @@ def extract_info_llm(client, abstract, title, disease, exposure, outcome, model_
         - confidence_interval: (string) supporting text/quotes for confidence interval
         - outcome_definition: (string) supporting text/quotes/details for how the outcome (cancer/disease type) was defined or referenced in the abstract
         - exposure_definition: (string) supporting text/quotes/details for how the exposure was defined or referenced in the abstract
-    - jbi_checklist_type: (string) Which JBI checklist was used: "cohort", "case_control", or "cross_sectional".
+    - jbi_checklist_type: (string) Which JBI checklist was used: "rct", "cohort", "case_control", or "cross_sectional".
     - jbi_answers: (dict) Answers to JBI critical appraisal questions. Choose the checklist based on the study design:
     
+        IF the study is a RANDOMIZED CONTROLLED TRIAL or CLINICAL TRIAL, answer these 13 questions (keys "q1" through "q13") from the revised 2023 JBI tool:
+            Q1: Was true randomization used for assignment of participants to treatment groups?
+            Q2: Was allocation to treatment groups concealed?
+            Q3: Were treatment groups similar at baseline?
+            Q4: Were participants blind to treatment assignment?
+            Q5: Were those delivering the treatment blind to treatment assignment?
+            Q6: Were treatment groups treated identically other than the intervention of interest?
+            Q7: Were outcome assessors blind to treatment assignment?
+            Q8: Were outcomes measured in the same way for treatment groups?
+            Q9: Were outcomes measured in a reliable way?
+            Q10: Was follow-up complete and, if not, were differences between groups in terms of their follow-up adequately described and analyzed?
+            Q11: Were participants analyzed in the groups to which they were randomized?
+            Q12: Was appropriate statistical analysis used?
+            Q13: Was the trial design appropriate, and were any deviations from the standard RCT design accounted for in the conduct and analysis of the trial?
+            Set jbi_checklist_type to "rct". MUST RETURN EXACTLY 13 KEYS ("q1" to "q13") in the jbi_answers object.
+        
         IF the study is a COHORT STUDY, answer these 11 questions (keys "q1" through "q11"):
             Q1: Were the two groups similar and recruited from the same population?
             Q2: Were the exposures measured similarly to assign people to both exposed and unexposed groups?

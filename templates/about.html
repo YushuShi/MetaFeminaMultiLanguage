@@ -148,7 +148,10 @@
         </p>
 
         <!-- Tab Buttons -->
-        <div style="display: flex; gap: 0; border-bottom: 2px solid #ddd; margin-bottom: 1rem;">
+        <div style="display: flex; gap: 0; border-bottom: 2px solid #ddd; margin-bottom: 1rem; flex-wrap: wrap;">
+            <button class="jbi-tab" onclick="showJbiTab('rct')"
+                style="padding: 0.6rem 1.2rem; border: none; background: none; cursor: pointer; font-weight: 600; font-size: 0.9rem; border-bottom: 3px solid transparent; color: #666;"
+                id="tab-rct">Clinical Trials (RCTs) (13 items)</button>
             <button class="jbi-tab active" onclick="showJbiTab('cross-sectional')"
                 style="padding: 0.6rem 1.2rem; border: none; background: none; cursor: pointer; font-weight: 600; font-size: 0.9rem; border-bottom: 3px solid var(--primary); color: var(--primary);"
                 id="tab-cross-sectional">Cross-Sectional (8 items)</button>
@@ -158,6 +161,26 @@
             <button class="jbi-tab" onclick="showJbiTab('case-control')"
                 style="padding: 0.6rem 1.2rem; border: none; background: none; cursor: pointer; font-weight: 600; font-size: 0.9rem; border-bottom: 3px solid transparent; color: #666;"
                 id="tab-case-control">Case-Control (10 items)</button>
+        </div>
+
+        <!-- RCT Tab -->
+        <div id="jbi-rct" class="jbi-panel" style="display: none;">
+            <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">JBI Checklist for Randomized Controlled Trials (2023 Revision)</h3>
+            <ol>
+                <li>Was true randomization used for assignment of participants to treatment groups?</li>
+                <li>Was allocation to treatment groups concealed?</li>
+                <li>Were treatment groups similar at baseline?</li>
+                <li>Were participants blind to treatment assignment?</li>
+                <li>Were those delivering the treatment blind to treatment assignment?</li>
+                <li>Were treatment groups treated identically other than the intervention of interest?</li>
+                <li>Were outcome assessors blind to treatment assignment?</li>
+                <li>Were outcomes measured in the same way for treatment groups?</li>
+                <li>Were outcomes measured in a reliable way?</li>
+                <li>Was follow-up complete and, if not, were differences between groups in terms of their follow-up adequately described and analyzed?</li>
+                <li>Were participants analyzed in the groups to which they were randomized?</li>
+                <li>Was appropriate statistical analysis used?</li>
+                <li>Was the trial design appropriate, and were any deviations from the standard RCT design (e.g., crossover, cluster) accounted for in the conduct and analysis of the trial?</li>
+            </ol>
         </div>
 
         <!-- Cross-Sectional Tab -->
@@ -225,10 +248,10 @@
                 < 50% of items rated as "Yes" .</li>
         </ul>
         </p>
-        <p style="font-size: 0.85rem; color: #666; font-style: italic; margin-top: 10px;">
-            Reference: Joanna Briggs Institute. Critical appraisal tools. <a
-                href="https://jbi.global/critical-appraisal-tools" target="_blank"
-                style="color: var(--primary);">https://jbi.global/critical-appraisal-tools</a>. Accessed 11 Feb 2026.
+        <p style="font-size: 0.85rem; color: #666; font-style: italic; margin-top: 10px; line-height: 1.5;">
+            References:<br>
+            • Barker, T. H., Stone, J. C., Sears, K., et al. (2023). The revised JBI critical appraisal tool for the assessment of risk of bias for randomized controlled trials. <i>JBI Evidence Synthesis</i>, 21(3), 494–506. <a href="https://journals.lww.com/jbisrir/Fulltext/2023/03000/The_revised_JBI_critical_appraisal_tool_for_the.5.aspx?context=FeaturedArticles&collectionId=2" target="_blank" style="color: var(--primary);">Journal Article Link</a>.<br>
+            • Joanna Briggs Institute. Critical appraisal tools. <a href="https://jbi.global/critical-appraisal-tools" target="_blank" style="color: var(--primary);">https://jbi.global/critical-appraisal-tools</a>. Accessed 11 Feb 2026.
         </p>
 
         <script>

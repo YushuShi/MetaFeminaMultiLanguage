@@ -1358,3 +1358,184 @@
 
 2026-06-12 16:44:08 [MetaFemina] Re-analyzing Vitamin B12 due to verification filtering/consensus/flags...
 2026-06-12 16:44:09 [MetaFemina] Analyze complete in 0.5s: studies=9, error=None
+2026-06-12 16:45:13 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Tempeh, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-12 16:45:13 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\breast_cancer_incidence_true_all.json
+2026-06-12 16:45:13 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\breast_cancer_incidence_true_all.json
+2026-06-12 16:45:13 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\breast_cancer_incidence_true_all.json
+2026-06-12 16:45:13 
+============================================================
+2026-06-12 16:45:13 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-12 16:45:13   - Total Articles Fetched from PubMed: N/A (Legacy Cache)
+2026-06-12 16:45:13   - Articles Remaining After Pre-filter: N/A (Legacy Cache)
+2026-06-12 16:45:13   - LLM Screening:
+2026-06-12 16:45:13     * Screened IN / Accepted:   55
+2026-06-12 16:45:13     * Screened OUT / Rejected:  0
+2026-06-12 16:45:13     * Consensus Bypassed:       0
+2026-06-12 16:45:13   - Final Extracted Studies: 55
+2026-06-12 16:45:13 ============================================================
+
+2026-06-12 16:45:13 [MetaFemina] Analyze complete in 0.0s: studies=55, error=None
+2026-06-12 16:45:25 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Tempeh, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-12 16:45:25 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-12 16:45:25 [MetaFemina] Running new analysis for Breast cancer / soy (from 'Tempeh') using model: openai.gpt-4o
+2026-06-12 16:48:08 [MetaFemina] Analyze request: disease=Breast cancer, exposure=genistein, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-12 16:48:08 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\genistein\breast_cancer_incidence_true_all.json
+2026-06-12 16:48:08 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\genistein\breast_cancer_incidence_true_all_openai.gpt-5.4-pro.json
+2026-06-12 16:48:08 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\genistein\breast_cancer_incidence_true_all_google.gemini-2.5-pro.json
+2026-06-12 16:48:08 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\genistein\breast_cancer_incidence_true_all_google.gemini-2.5-flash.json
+2026-06-12 16:48:08 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\genistein\breast_cancer_incidence_true_all_google.gemini-2.0-flash.json
+2026-06-12 16:48:08 [MetaFemina] Running new analysis for Breast cancer / genistein (from 'genistein') using model: openai.gpt-4o
+2026-06-12 16:48:56 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Kombucha, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-12 16:48:56 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\fermented_foods\breast_cancer_incidence_true_all.json
+2026-06-12 16:48:56 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\fermented_foods\breast_cancer_incidence_true_all.json
+2026-06-12 16:48:56 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\fermented_foods\breast_cancer_incidence_true_all.json
+2026-06-12 16:48:56 
+============================================================
+2026-06-12 16:48:56 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-12 16:48:56   - Total Articles Fetched from PubMed: N/A (Legacy Cache)
+2026-06-12 16:48:56   - Articles Remaining After Pre-filter: N/A (Legacy Cache)
+2026-06-12 16:48:56   - LLM Screening:
+2026-06-12 16:48:56     * Screened IN / Accepted:   10
+2026-06-12 16:48:56     * Screened OUT / Rejected:  0
+2026-06-12 16:48:56     * Consensus Bypassed:       0
+2026-06-12 16:48:56   - Final Extracted Studies: 10
+2026-06-12 16:48:56 ============================================================
+
+2026-06-12 16:48:56 [MetaFemina] Re-analyzing Kombucha due to verification filtering/consensus/flags...
+2026-06-12 16:48:57 [MetaFemina] Analyze complete in 0.5s: studies=10, error=None
+2026-06-12 16:49:12 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Kombucha, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-12 16:49:12 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-12 16:49:12 [MetaFemina] Running new analysis for Breast cancer / fermented foods (from 'Kombucha') using model: openai.gpt-4o
+2026-06-12 16:53:51 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Kombucha, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-12 16:53:51 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-12 16:53:51 [MetaFemina] Running new analysis for Breast cancer / kombucha (from 'Kombucha') using model: openai.gpt-4o
+2026-06-12 16:54:40 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Kombucha, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-12 16:54:40 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-12 16:54:40 [MetaFemina] Running new analysis for Breast cancer / kombucha (from 'Kombucha') using model: openai.gpt-4o
+2026-06-12 16:55:25 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\kombucha\breast_cancer_incidence_true_all.json
+2026-06-12 16:55:25 [MetaFemina] Analyze complete in 45.7s: studies=1, error=None
+2026-06-12 17:01:11 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Kombucha, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-12 17:01:11 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\kombucha\breast_cancer_incidence_true_all.json
+2026-06-12 17:01:11 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\kombucha\breast_cancer_incidence_true_all.json
+2026-06-12 17:01:11 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\kombucha\breast_cancer_incidence_true_all.json
+2026-06-12 17:01:11 
+============================================================
+2026-06-12 17:01:11 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-12 17:01:11   - Total Articles Fetched from PubMed: 254
+2026-06-12 17:01:11   - Articles Remaining After Pre-filter: 23
+2026-06-12 17:01:11   - LLM Screening:
+2026-06-12 17:01:11     * Screened IN / Accepted:   23
+2026-06-12 17:01:11     * Screened OUT / Rejected:  0
+2026-06-12 17:01:11     * Consensus Bypassed:       0
+2026-06-12 17:01:11   - Final Extracted Studies: 23
+2026-06-12 17:01:11 ============================================================
+
+2026-06-12 17:01:11 [MetaFemina] Analyze complete in 0.0s: studies=1, error=None
+2026-06-12 17:01:17 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Kombucha, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-12 17:01:17 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-12 17:01:17 [MetaFemina] Running new analysis for Breast cancer / kombucha (from 'Kombucha') using model: openai.gpt-4o
+2026-06-12 17:02:04 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\kombucha\breast_cancer_incidence_true_all.json
+2026-06-12 17:02:04 [MetaFemina] Analyze complete in 46.9s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-12 17:02:39 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Kombucha, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-12 17:02:39 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-12 17:02:39 [MetaFemina] Running new analysis for Breast cancer / kombucha (from 'Kombucha') using model: openai.gpt-4o
+2026-06-12 17:02:47 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Kombucha, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-12 17:02:47 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-12 17:02:47 [MetaFemina] Running new analysis for Breast cancer / kombucha (from 'Kombucha') using model: openai.gpt-4o
+2026-06-12 17:03:31 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\kombucha\breast_cancer_incidence_true_all.json
+2026-06-12 17:03:31 [MetaFemina] Analyze complete in 44.3s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-12 17:03:41 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Kimchi, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-12 17:03:41 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-12 17:03:41 [MetaFemina] Running new analysis for Breast cancer / kimchi (from 'Kimchi') using model: openai.gpt-4o
+2026-06-12 17:09:41 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Kimchi, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-12 17:09:41 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-12 17:09:41 [MetaFemina] Running new analysis for Breast cancer / kimchi (from 'Kimchi') using model: openai.gpt-4o
+2026-06-12 17:09:59 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\kimchi\breast_cancer_incidence_true_all.json
+2026-06-12 17:09:59 [MetaFemina] Analyze complete in 18.4s: studies=1, error=None
+2026-06-12 17:19:16 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Pu-erh tea, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-12 17:19:16 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\pu-erh_tea\breast_cancer_incidence_true_all.json
+2026-06-12 17:19:16 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\pu-erh_tea\breast_cancer_incidence_true_all_openai.gpt-5.4-pro.json
+2026-06-12 17:19:16 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\pu-erh_tea\breast_cancer_incidence_true_all_google.gemini-2.5-pro.json
+2026-06-12 17:19:16 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\pu-erh_tea\breast_cancer_incidence_true_all_google.gemini-2.5-flash.json
+2026-06-12 17:19:16 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\pu-erh_tea\breast_cancer_incidence_true_all_google.gemini-2.0-flash.json
+2026-06-12 17:19:16 [MetaFemina] Running new analysis for Breast cancer / pu-erh tea (from 'Pu-erh tea') using model: openai.gpt-4o
+2026-06-12 17:19:18 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\pu-erh_tea\breast_cancer_incidence_true_all.json
+2026-06-12 17:19:18 [MetaFemina] Analyze complete in 2.1s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-12 17:19:22 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Pu-erh tea, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-12 17:19:22 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-12 17:19:22 [MetaFemina] Running new analysis for Breast cancer / pu-erh tea (from 'Pu-erh tea') using model: openai.gpt-4o
+2026-06-12 17:19:24 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\pu-erh_tea\breast_cancer_incidence_true_all.json
+2026-06-12 17:19:24 [MetaFemina] Analyze complete in 2.1s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-12 17:19:31 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Pu-erh tea, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-12 17:19:31 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-12 17:19:31 [MetaFemina] Running new analysis for Ovarian cancer / pu-erh tea (from 'Pu-erh tea') using model: openai.gpt-4o
+2026-06-12 17:19:34 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\pu-erh_tea\ovarian_cancer_incidence_true_all.json
+2026-06-12 17:19:34 [MetaFemina] Analyze complete in 2.4s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-12 17:20:07 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Pu-erh tea, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-12 17:20:07 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-12 17:20:07 [MetaFemina] Running new analysis for Uterine cancer / pu-erh tea (from 'Pu-erh tea') using model: openai.gpt-4o
+2026-06-12 17:20:09 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\pu-erh_tea\uterine_cancer_incidence_true_all.json
+2026-06-12 17:20:09 [MetaFemina] Analyze complete in 2.2s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-12 17:20:47 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Beer, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-12 17:20:47 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alcohol\breast_cancer_incidence_true_all.json
+2026-06-12 17:20:47 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alcohol\breast_cancer_incidence_true_all.json
+2026-06-12 17:20:47 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alcohol\breast_cancer_incidence_true_all.json
+2026-06-12 17:20:47 
+============================================================
+2026-06-12 17:20:47 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-12 17:20:47   - Total Articles Fetched from PubMed: 3317
+2026-06-12 17:20:47   - Articles Remaining After Pre-filter: 50
+2026-06-12 17:20:47     (Pre-filter skips: disease=197, conflict=81, exposure=19, outcome=165, animal=244, meta=498)
+2026-06-12 17:20:47   - LLM Screening:
+2026-06-12 17:20:47     * Screened IN / Accepted:   49
+2026-06-12 17:20:47     * Screened OUT / Rejected:  1
+2026-06-12 17:20:47     * Consensus Bypassed:       0
+2026-06-12 17:20:47   - Final Extracted Studies: 46
+2026-06-12 17:20:47 ============================================================
+
+2026-06-12 17:20:47 [MetaFemina] Re-analyzing Beer due to verification filtering/consensus/flags...
+2026-06-12 17:20:47 [MetaFemina] Analyze complete in 0.9s: studies=42, error=None
+2026-06-12 18:38:56 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Beer, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-12 18:38:56 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alcohol\breast_cancer_incidence_true_all.json
+2026-06-12 18:38:56 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alcohol\breast_cancer_incidence_true_all.json
+2026-06-12 18:38:56 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alcohol\breast_cancer_incidence_true_all.json
+2026-06-12 18:38:56 
+============================================================
+2026-06-12 18:38:56 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-12 18:38:56   - Total Articles Fetched from PubMed: 3317
+2026-06-12 18:38:56   - Articles Remaining After Pre-filter: 50
+2026-06-12 18:38:56     (Pre-filter skips: disease=197, conflict=81, exposure=19, outcome=165, animal=244, meta=498)
+2026-06-12 18:38:56   - LLM Screening:
+2026-06-12 18:38:56     * Screened IN / Accepted:   49
+2026-06-12 18:38:56     * Screened OUT / Rejected:  1
+2026-06-12 18:38:56     * Consensus Bypassed:       0
+2026-06-12 18:38:56   - Final Extracted Studies: 46
+2026-06-12 18:38:56 ============================================================
+
+2026-06-12 18:38:56 [MetaFemina] Re-analyzing Beer due to verification filtering/consensus/flags...
+2026-06-12 18:38:58 [MetaFemina] Analyze complete in 1.6s: studies=42, error=None
+2026-06-12 18:39:21 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Beer, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-12 18:39:21 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-12 18:39:21 [MetaFemina] Running new analysis for Breast cancer / alcohol (from 'Beer') using model: openai.gpt-4o
+2026-06-12 20:37:01 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Oats, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-12 20:37:01 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\oats\breast_cancer_incidence_true_all.json
+2026-06-12 20:37:01 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\oats\breast_cancer_incidence_true_all.json
+2026-06-12 20:37:01 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\oats\breast_cancer_incidence_true_all.json
+2026-06-12 20:37:01 
+============================================================
+2026-06-12 20:37:01 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-12 20:37:01   - Total Articles Fetched from PubMed: N/A (Legacy Cache)
+2026-06-12 20:37:01   - Articles Remaining After Pre-filter: N/A (Legacy Cache)
+2026-06-12 20:37:01   - LLM Screening:
+2026-06-12 20:37:01     * Screened IN / Accepted:   1
+2026-06-12 20:37:01     * Screened OUT / Rejected:  0
+2026-06-12 20:37:01     * Consensus Bypassed:       0
+2026-06-12 20:37:01   - Final Extracted Studies: 1
+2026-06-12 20:37:01 ============================================================
+
+2026-06-12 20:37:01 [MetaFemina] Analyze complete in 0.0s: studies=1, error=None
+2026-06-12 20:38:12 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Evening primrose oil, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-12 20:38:12 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-12 20:38:12 [MetaFemina] Running new analysis for Breast cancer / evening primrose oil (from 'Evening primrose oil') using model: openai.gpt-4o
+2026-06-12 20:39:22 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\evening_primrose_oil\breast_cancer_incidence_true_all.json
+2026-06-12 20:39:22 [MetaFemina] Analyze complete in 70.0s: studies=3, error=None

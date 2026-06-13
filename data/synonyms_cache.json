@@ -55,7 +55,7 @@
         "anchored": ""
     },
     "alcohol": {
-        "core": "alcohol, ethanol, ethyl alcohol, alcohol intake, alcohol consumption, alcoholic beverages, beer, wine, white wine, red wine, rosé wine, sparkling wine, sake, spirits, whiskey, whisky, vodka, rum, gin, brandy, baijiu, liquor, distilled spirits",
+        "core": "alcohol, ethanol, ethyl alcohol, alcohol intake, alcohol consumption, alcoholic beverages, beer, ale, lager, stout, porter, pilsner, draft beer, wine, red wine, white wine, ros\u00c3\u00a9 wine, sparkling wine, champagne, sake, spirits, whiskey, whisky, vodka, rum, gin, brandy, baijiu, Chinese liquor, Chinese spirits, Chinese white spirits, shaochiu, liquor, distilled spirits",
         "downstream": "low-alcohol beverages, medium-alcohol beverages, high-alcohol beverages",
         "anchored": ""
     },
@@ -302,6 +302,31 @@
     "grapefruit": {
         "core": "grapefruit, Citrus paradisi, grapefruit juice, fresh grapefruit, red grapefruit, pink grapefruit, white grapefruit, ruby red grapefruit, grapefruit consumption",
         "downstream": "naringin, furanocoumarins, lycopene, naringenin",
+        "anchored": ""
+    },
+    "kombucha": {
+        "core": "kombucha, kombucha tea, fermented tea, kombucha beverage",
+        "downstream": "probiotics, glucuronic acid, acetic acid",
+        "anchored": ""
+    },
+    "kimchi": {
+        "core": "kimchi, gimchi, kimchee, fermented cabbage, Korean pickled cabbage",
+        "downstream": "",
+        "anchored": ""
+    },
+    "sourdough": {
+        "core": "sourdough, sourdough bread, sourdough fermentation",
+        "downstream": "lactic acid bacteria, wild yeast, sourdough starter",
+        "anchored": ""
+    },
+    "pu-erh tea": {
+        "core": "pu-erh tea, pu-erh, puerh, puer tea",
+        "downstream": "",
+        "anchored": ""
+    },
+    "evening primrose oil": {
+        "core": "evening primrose oil, EPO, evening primrose seed oil, Oenothera biennis oil, evening primrose oil supplementation, evening primrose oil intake, evening primrose oil consumption",
+        "downstream": "gamma-linolenic acid, GLA, linoleic acid, n-6 fatty acids",
         "anchored": ""
     }
 }

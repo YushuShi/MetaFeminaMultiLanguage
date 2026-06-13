@@ -220,8 +220,24 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         function getSynEntry(val) {
             const lc = (val || '').toLowerCase().trim();
-            const matchKey = Object.keys(synonymsMap).find(k => k.toLowerCase() === lc)
-                          || Object.keys(synonymsMap).find(k => lc.includes(k.toLowerCase()) || k.toLowerCase().includes(lc));
+            // 1. Direct match with key
+            let matchKey = Object.keys(synonymsMap).find(k => k.toLowerCase() === lc);
+            
+            // 2. Resolve to canonical key if the value is listed inside any core synonym list
+            if (!matchKey) {
+                matchKey = Object.keys(synonymsMap).find(k => {
+                    const entry = synonymsMap[k];
+                    if (!entry || !entry.core) return false;
+                    const coreTerms = entry.core.split(',').map(t => t.trim().toLowerCase());
+                    return coreTerms.includes(lc);
+                });
+            }
+            
+            // 3. Fallback to substring matching
+            if (!matchKey) {
+                matchKey = Object.keys(synonymsMap).find(k => lc.includes(k.toLowerCase()) || k.toLowerCase().includes(lc));
+            }
+            
             if (!matchKey) return null;
             const entry = synonymsMap[matchKey];
             // Handle both legacy flat string and new dict format
