@@ -1918,3 +1918,129 @@
 2026-06-13 18:49:21 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\activated_charcoal\breast_cancer_incidence_true_all_google.gemini-2.5-flash.json
 2026-06-13 18:49:21 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\activated_charcoal\breast_cancer_incidence_true_all_google.gemini-2.0-flash.json
 2026-06-13 18:49:21 [MetaFemina] Running new analysis for Breast cancer / activated charcoal (from 'Activated charcoal') using model: openai.gpt-4o
+2026-06-13 18:49:47 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\activated_charcoal\breast_cancer_incidence_true_all.json
+2026-06-13 18:49:47 [MetaFemina] Analyze complete in 26.4s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-13 18:49:54 [MetaFemina] Analyze request: disease=Breast cancer, exposure=African mango, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-13 18:49:54 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\african_mango\breast_cancer_incidence_true_all.json
+2026-06-13 18:49:54 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\african_mango\breast_cancer_incidence_true_all_openai.gpt-5.4-pro.json
+2026-06-13 18:49:54 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\african_mango\breast_cancer_incidence_true_all_google.gemini-2.5-pro.json
+2026-06-13 18:49:54 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\african_mango\breast_cancer_incidence_true_all_google.gemini-2.5-flash.json
+2026-06-13 18:49:54 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\african_mango\breast_cancer_incidence_true_all_google.gemini-2.0-flash.json
+2026-06-13 18:49:54 [MetaFemina] Running new analysis for Breast cancer / african mango (from 'African mango') using model: openai.gpt-4o
+2026-06-13 18:59:37 [MetaFemina] Analyze request: disease=Breast cancer, exposure=African mango, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-13 18:59:37 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\african_mango\breast_cancer_incidence_true_core.json
+2026-06-13 18:59:37 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\african_mango\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-13 18:59:37 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\african_mango\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-13 18:59:37 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\african_mango\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-13 18:59:37 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\african_mango\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-13 18:59:37 [MetaFemina] Running new analysis for Breast cancer / african mango (from 'African mango') using model: openai.gpt-4o
+2026-06-13 18:59:42 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\african_mango\breast_cancer_incidence_true_core.json
+2026-06-13 18:59:42 [MetaFemina] Analyze complete in 5.1s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-13 18:59:53 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=African mango, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-13 18:59:53 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\african_mango\ovarian_cancer_incidence_true_core.json
+2026-06-13 18:59:53 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\african_mango\ovarian_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-13 18:59:53 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\african_mango\ovarian_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-13 18:59:53 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\african_mango\ovarian_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-13 18:59:53 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\african_mango\ovarian_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-13 18:59:53 [MetaFemina] Running new analysis for Ovarian cancer / african mango (from 'African mango') using model: openai.gpt-4o
+2026-06-13 18:59:55 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\african_mango\ovarian_cancer_incidence_true_core.json
+2026-06-13 18:59:55 [MetaFemina] Analyze complete in 2.1s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-13 18:59:58 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=African mango, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-13 18:59:58 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\african_mango\uterine_cancer_incidence_true_core.json
+2026-06-13 18:59:58 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\african_mango\uterine_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-13 18:59:58 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\african_mango\uterine_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-13 18:59:58 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\african_mango\uterine_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-13 18:59:58 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\african_mango\uterine_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-13 18:59:58 [MetaFemina] Running new analysis for Uterine cancer / african mango (from 'African mango') using model: openai.gpt-4o
+2026-06-13 19:00:00 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\african_mango\uterine_cancer_incidence_true_core.json
+2026-06-13 19:00:00 [MetaFemina] Analyze complete in 2.1s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-13 19:00:05 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Alfalfa, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-13 19:00:05 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\uterine_cancer_incidence_true_core.json
+2026-06-13 19:00:05 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\uterine_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-13 19:00:05 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\uterine_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-13 19:00:05 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\uterine_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-13 19:00:05 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\uterine_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-13 19:00:05 [MetaFemina] Running new analysis for Uterine cancer / alfalfa (from 'Alfalfa') using model: openai.gpt-4o
+2026-06-13 19:00:19 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\uterine_cancer_incidence_true_core.json
+2026-06-13 19:00:19 [MetaFemina] Analyze complete in 14.0s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-13 19:00:31 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Alfalfa, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-13 19:00:31 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\breast_cancer_incidence_true_core.json
+2026-06-13 19:00:31 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-13 19:00:31 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-13 19:00:31 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-13 19:00:31 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-13 19:00:31 [MetaFemina] Running new analysis for Breast cancer / alfalfa (from 'Alfalfa') using model: openai.gpt-4o
+2026-06-13 19:01:23 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\breast_cancer_incidence_true_core.json
+2026-06-13 19:01:23 [MetaFemina] Analyze complete in 52.0s: studies=1, error=None
+2026-06-13 19:02:38 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Alfalfa, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-13 19:02:38 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\breast_cancer_incidence_true_core.json
+2026-06-13 19:02:38 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\breast_cancer_incidence_true_core.json
+2026-06-13 19:02:38 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\breast_cancer_incidence_true_core.json
+2026-06-13 19:02:38 
+============================================================
+2026-06-13 19:02:38 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-13 19:02:38   - Total Articles Fetched from PubMed: 105
+2026-06-13 19:02:38   - Articles Remaining After Pre-filter: 48
+2026-06-13 19:02:38   - LLM Screening:
+2026-06-13 19:02:38     * Screened IN / Accepted:   48
+2026-06-13 19:02:38     * Screened OUT / Rejected:  0
+2026-06-13 19:02:38     * Consensus Bypassed:       0
+2026-06-13 19:02:38   - Final Extracted Studies: 48
+2026-06-13 19:02:38 ============================================================
+
+2026-06-13 19:02:38 [MetaFemina] Analyze complete in 0.0s: studies=1, error=None
+2026-06-13 19:08:29 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Alfalfa, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-13 19:08:29 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\breast_cancer_incidence_true_core.json
+2026-06-13 19:08:29 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\breast_cancer_incidence_true_core.json
+2026-06-13 19:08:29 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\breast_cancer_incidence_true_core.json
+2026-06-13 19:08:29 
+============================================================
+2026-06-13 19:08:29 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-13 19:08:29   - Total Articles Fetched from PubMed: 105
+2026-06-13 19:08:29   - Articles Remaining After Pre-filter: 48
+2026-06-13 19:08:29   - LLM Screening:
+2026-06-13 19:08:29     * Screened IN / Accepted:   48
+2026-06-13 19:08:29     * Screened OUT / Rejected:  0
+2026-06-13 19:08:29     * Consensus Bypassed:       0
+2026-06-13 19:08:29   - Final Extracted Studies: 48
+2026-06-13 19:08:29 ============================================================
+
+2026-06-13 19:08:29 [MetaFemina] Analyze complete in 0.0s: studies=1, error=None
+2026-06-13 19:08:33 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Alfalfa, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-13 19:08:33 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-13 19:08:33 [MetaFemina] Running new analysis for Breast cancer / alfalfa (from 'Alfalfa') using model: openai.gpt-4o
+2026-06-13 19:09:09 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\breast_cancer_incidence_true_core.json
+2026-06-13 19:09:09 [MetaFemina] Analyze complete in 36.2s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-13 19:18:16 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Alfalfa, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-13 19:18:16 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\breast_cancer_incidence_true_core.json
+2026-06-13 19:18:16 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\breast_cancer_incidence_true_core.json
+2026-06-13 19:18:16 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\breast_cancer_incidence_true_core.json
+2026-06-13 19:18:16 [MetaFemina] Analyze complete in 0.0s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-13 19:18:18 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Alfalfa, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-13 19:18:18 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\ovarian_cancer_incidence_true_core.json
+2026-06-13 19:18:18 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\ovarian_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-13 19:18:18 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\ovarian_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-13 19:18:18 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\ovarian_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-13 19:18:18 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\ovarian_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-13 19:18:18 [MetaFemina] Running new analysis for Ovarian cancer / Alfalfa (from 'Alfalfa') using model: openai.gpt-4o
+2026-06-13 19:18:24 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\ovarian_cancer_incidence_true_core.json
+2026-06-13 19:18:24 [MetaFemina] Analyze complete in 5.5s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-13 19:18:43 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Alfalfa, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-13 19:18:43 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\uterine_cancer_incidence_true_core.json
+2026-06-13 19:18:43 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\uterine_cancer_incidence_true_core.json
+2026-06-13 19:18:43 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\uterine_cancer_incidence_true_core.json
+2026-06-13 19:18:43 [MetaFemina] Analyze complete in 0.0s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-13 19:20:34 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Alfalfa, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-13 19:20:34 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\breast_cancer_incidence_true_core.json
+2026-06-13 19:20:34 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\breast_cancer_incidence_true_core.json
+2026-06-13 19:20:34 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alfalfa\breast_cancer_incidence_true_core.json
+2026-06-13 19:20:34 [MetaFemina] Analyze complete in 0.0s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-13 19:20:40 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Alcohol, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-13 19:20:40 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alcohol\breast_cancer_incidence_true_core.json
+2026-06-13 19:20:40 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alcohol\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-13 19:20:40 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alcohol\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-13 19:20:40 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alcohol\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-13 19:20:40 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alcohol\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-13 19:20:40 [MetaFemina] Running new analysis for Breast cancer / Alcohol (from 'Alcohol') using model: openai.gpt-4o
+2026-06-13 21:53:58 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alcohol\breast_cancer_incidence_true_core.json
+2026-06-13 21:53:58 [MetaFemina] Analyze complete in 9197.3s: studies=237, error=None

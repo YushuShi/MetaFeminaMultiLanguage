@@ -2,7 +2,7 @@
 let currentStudies = [];
 let allStudies = []; // Store full dataset
 let currentSort = { field: null, direction: 'asc' };
-let useDownstream = true;
+let useDownstream = false;
 let lastHeadlineData = null; // Store original RR results for transformation
 
 // Global Error Handler for Debugging

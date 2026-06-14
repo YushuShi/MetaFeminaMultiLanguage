@@ -25,6 +25,8 @@ def main():
     missing_count = 0
 
     for i, exposure in enumerate(exposures):
+        if exposure.lower().strip() == "alcohol":
+            continue
         cache_path = app.get_cache_path(disease, exposure, outcome, exclude_meta, use_downstream)
         if os.path.exists(cache_path):
             continue
@@ -33,6 +35,9 @@ def main():
     print(f"Found {missing_count} exposures missing from cache.")
 
     for i, exposure in enumerate(exposures):
+        if exposure.lower().strip() == "alcohol":
+            print(f"[{i+1}/{len(exposures)}] SKIP (User requested): {exposure}")
+            continue
         cache_path = app.get_cache_path(disease, exposure, outcome, exclude_meta, use_downstream)
         if os.path.exists(cache_path):
             print(f"[{i+1}/{len(exposures)}] SKIP (Cached): {exposure}")

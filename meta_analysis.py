@@ -391,7 +391,7 @@ def is_genetic(row):
             
     return False
 
-def get_analysis_data(disease, exposure, outcome="Incidence", exclude_meta=False, use_downstream=True, model=None):
+def get_analysis_data(disease, exposure, outcome="Incidence", exclude_meta=False, use_downstream=False, model=None):
     """
     Main entry point for web app. Returns a dict with results.
     """
@@ -1348,7 +1348,7 @@ def fetch_details(id_list):
                     
     return all_articles
 
-def extract_data(articles, exclude_meta=False, exposure_keyword=None, disease_keyword=None, outcome_keyword=None, synonyms=None, use_downstream=True, core_synonyms=None):
+def extract_data(articles, exclude_meta=False, exposure_keyword=None, disease_keyword=None, outcome_keyword=None, synonyms=None, use_downstream=False, core_synonyms=None):
     """
     Extract relevant data from the articles.
     """
@@ -2086,7 +2086,7 @@ def matches_exposure(all_text, exposure, synonyms):
     except:
         return any(t in all_text.lower() for t in unique_terms)
 
-def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, disease_keyword=None, outcome_keyword=None, synonyms=None, use_downstream=True, core_synonyms=None, model=None):
+def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, disease_keyword=None, outcome_keyword=None, synonyms=None, use_downstream=False, core_synonyms=None, model=None):
     """
     Extract relevant data from the articles using LLM.
     """

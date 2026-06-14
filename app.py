@@ -74,7 +74,7 @@ def model_cache_priority(requested_model):
     ]
     return list(dict.fromkeys(priority))
 
-def get_cache_path(disease, exposure, outcome, exclude_meta, use_downstream=True, model=None):
+def get_cache_path(disease, exposure, outcome, exclude_meta, use_downstream=False, model=None):
     """Construct a file path for the specific analysis cache and resolve synonyms."""
     # Resolve canonical name first to avoid DHEA vs dehydroepiandrosterone duplicate caches
     canonical_exposure = meta_analysis.get_canonical_name(exposure)
@@ -248,8 +248,8 @@ def analyze():
     model = data.get('model', DEFAULT_MODEL)
     if model == 'openai.gpt-4o-mini':
         model = DEFAULT_MODEL
-    # The UI toggle is removed, so we always enforce True for downstream terms
-    use_downstream = True
+    # The UI toggle is removed, so we default to False for downstream terms
+    use_downstream = data.get('use_downstream', False)
     force_refresh = data.get('force_refresh', False)
 
     started_at = time.time()
@@ -683,7 +683,7 @@ def debug_cache_status():
     outcome = data.get('outcome', 'Incidence')
     exclude_meta = data.get('exclude_meta', False)
     model = data.get('model', DEFAULT_MODEL)
-    use_downstream = data.get('use_downstream', True)
+    use_downstream = data.get('use_downstream', False)
     path = get_cache_path(disease, exposure, outcome, exclude_meta, use_downstream, model)
     exists = os.path.exists(path)
     return jsonify({
