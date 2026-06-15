@@ -1,0 +1,62 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Zhang K et al. (2023) [PMID: 38187059]",
+            "PMID": "38187059",
+            "Effect Size": 0.667,
+            "Lower CI": 0.541,
+            "Upper CI": 0.822,
+            "Population": "General",
+            "Reference": "Genetic estimation of correlations between circulating glutamine and cancer.",
+            "Authors": "Zhang K, Liang H",
+            "Journal": "American journal of cancer research",
+            "Year": "2023",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/38187059/",
+            "Effect Type": "OR",
+            "SE": 0.07168367346938774,
+            "Sample Size": "114,750",
+            "Cases": null,
+            "Estimated Cases": 3557.0,
+            "Design": "Cohort",
+            "Timing": "Unknown",
+            "Continent": "Asia",
+            "Stage": "Unspecified",
+            "Quality %": 0,
+            "Quality Score": "Fair",
+            "comparison_type": "-",
+            "JBI": "-",
+            "exposure_measurement_type": "unclear",
+            "exposure_measurement_supporting_text": "Not assessed (Regex extraction fallback)",
+            "extraction_supporting_text": {
+                "sample_size": "",
+                "effect_size": "",
+                "effect_direction": "",
+                "p_value": "",
+                "confidence_interval": "",
+                "outcome_definition": "",
+                "exposure_definition": ""
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>NaN</td>\n      <td>114,750</td>\n      <td>0.697181</td>\n      <td>0.57533</td>\n      <td>0.841472</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.7,
+        "ci_low": 0.58,
+        "ci_upp": 0.84,
+        "interpretation": "statistically significant (decreased risk/odds)"
+    },
+    "screening_stats": {
+        "total_fetched": 49,
+        "after_prefilter": 5,
+        "extracted": 5,
+        "prefilter_skip": {},
+        "llm_screened_out": 0,
+        "llm_screened_in": 5,
+        "consensus_bypassed": 0
+    },
+    "plot_url": "static/glutamine/forest_uterine_cancer_incidence_primary.png?t=197",
+    "funnel_plot_url": "static/glutamine/funnel_uterine_cancer_incidence_primary.png?t=157",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-15 13:43:49"
+}

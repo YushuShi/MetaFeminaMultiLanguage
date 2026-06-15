@@ -1,0 +1,81 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Dossus L et al. (2021) [PMID: 34099314]",
+            "PMID": "34099314",
+            "Effect Size": 0.91,
+            "Lower CI": 0.81,
+            "Upper CI": 1.0,
+            "Population": "General",
+            "Reference": "Prospective analysis of circulating metabolites and endometrial cancer risk.",
+            "Authors": "Dossus L, Kouloura E, Biessy C, Viallon V, Siskos AP, Dimou N, Rinaldi S, Merritt MA, Allen N, Fortner R, Kaaks R, Weiderpass E, Gram IT, Rothwell JA, L\u00e9cuyer L, Severi G, Schulze MB, N\u00f8st TH, Crous-Bou M, S\u00e1nchez MJ, Amiano P, Colorado-Yohar SM, Gurrea AB, Schmidt JA, Palli D, Agnoli C, Tumino R, Sacerdote C, Mattiello A, Vermeulen R, Heath AK, Christakoudi S, Tsilidis KK, Travis RC, Gunter MJ, Keun HC",
+            "Journal": "Gynecologic oncology",
+            "Year": "2021",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/34099314/",
+            "Effect Type": "OR",
+            "SE": 0.048469387755102025,
+            "Sample Size": 1706,
+            "Cases": 853,
+            "Estimated Cases": null,
+            "Design": "Case-Control",
+            "Timing": "Prospective",
+            "Continent": "Europe",
+            "Stage": "",
+            "Quality %": 100.0,
+            "Quality Score": "Good",
+            "comparison_type": "per SD increase",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes"
+            },
+            "exposure_measurement_type": "human_biospecimen",
+            "exposure_measurement_supporting_text": "metabolomic analyses on pre-diagnostic plasma samples ... 129 metabolites ... measured by liquid chromatography-mass spectrometry",
+            "extraction_supporting_text": {
+                "sample_size": "853 case-control pairs",
+                "effect_size": "free carnitine (C0) ... OR1SD: 0.91",
+                "effect_direction": "free carnitine (C0) were inversely ... associated with endometrial cancer risk",
+                "p_value": "",
+                "confidence_interval": "OR1SD: 0.91, 95% CI: 0.81-1.00",
+                "outcome_definition": "endometrial cancer risk",
+                "exposure_definition": "free carnitine (C0)"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>853</td>\n      <td>1706</td>\n      <td>0.920773</td>\n      <td>0.830514</td>\n      <td>1.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.92,
+        "ci_low": 0.83,
+        "ci_upp": 1.0,
+        "interpretation": "not statistically significant"
+    },
+    "screening_stats": {
+        "llm_screened_out": 1,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 6,
+        "total_fetched": 7,
+        "after_prefilter": 7,
+        "prefilter_skip": {
+            "disease": 0,
+            "conflict": 0,
+            "exposure": 0,
+            "outcome": 0,
+            "animal": 0,
+            "meta": 0,
+            "genetic": 0
+        },
+        "extracted": 1
+    },
+    "plot_url": "static/carnitine/forest_uterine_cancer_incidence_primary.png?t=2438",
+    "funnel_plot_url": "static/carnitine/funnel_uterine_cancer_incidence_primary.png?t=9967",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-15 12:45:13"
+}

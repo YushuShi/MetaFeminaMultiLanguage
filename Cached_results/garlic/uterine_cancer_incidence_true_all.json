@@ -1,0 +1,81 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Galeone C et al. (2009) [PMID: 18986589]",
+            "PMID": "18986589",
+            "Effect Size": 0.62,
+            "Lower CI": 0.42,
+            "Upper CI": 0.92,
+            "Population": "General",
+            "Reference": "Allium vegetables intake and endometrial cancer risk.",
+            "Authors": "Galeone C, Pelucchi C, Dal Maso L, Negri E, Montella M, Zucchetto A, Talamini R, La Vecchia C",
+            "Journal": "Public health nutrition",
+            "Year": "2009",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/18986589/",
+            "Effect Type": "OR",
+            "SE": 0.12755102040816327,
+            "Sample Size": 1362,
+            "Cases": 454,
+            "Estimated Cases": null,
+            "Design": "Case-Control",
+            "Timing": "Retrospective",
+            "Continent": "Europe",
+            "Stage": "",
+            "Quality %": 100.0,
+            "Quality Score": "Good",
+            "comparison_type": "High vs Low",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes"
+            },
+            "exposure_measurement_type": "dietary_intake",
+            "exposure_measurement_supporting_text": "Information was collected by trained interviewers using a validated and reproducible FFQ.",
+            "extraction_supporting_text": {
+                "sample_size": "454 endometrial cancer cases and 908 controls",
+                "effect_size": "The OR for successive categories of intake were 0.89 (95% CI 0.68, 1.15) for intermediate use and 0.62 (95% CI 0.42, 0.92) for high use",
+                "effect_direction": "a significant inverse trend in risk (P = 0.02)",
+                "p_value": "a significant inverse trend in risk (P = 0.02)",
+                "confidence_interval": "0.62 (95% CI 0.42, 0.92)",
+                "outcome_definition": "endometrial cancer cases",
+                "exposure_definition": "garlic intake"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>454</td>\n      <td>1362</td>\n      <td>0.65222</td>\n      <td>0.45425</td>\n      <td>0.929669</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.65,
+        "ci_low": 0.45,
+        "ci_upp": 0.93,
+        "interpretation": "statistically significant (decreased risk/odds)"
+    },
+    "screening_stats": {
+        "llm_screened_out": 2,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 5,
+        "total_fetched": 7,
+        "after_prefilter": 7,
+        "prefilter_skip": {
+            "disease": 0,
+            "conflict": 0,
+            "exposure": 0,
+            "outcome": 0,
+            "animal": 0,
+            "meta": 0,
+            "genetic": 0
+        },
+        "extracted": 1
+    },
+    "plot_url": "static/garlic/forest_uterine_cancer_incidence_primary.png?t=5933",
+    "funnel_plot_url": "static/garlic/funnel_uterine_cancer_incidence_primary.png?t=813",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-15 13:36:43"
+}

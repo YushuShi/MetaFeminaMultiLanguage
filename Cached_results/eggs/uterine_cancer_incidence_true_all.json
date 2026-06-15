@@ -1,0 +1,81 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Takayama S et al. (2013) [PMID: 24053697]",
+            "PMID": "24053697",
+            "Effect Size": 0.24,
+            "Lower CI": 0.33,
+            "Upper CI": 0.92,
+            "Population": "General",
+            "Reference": "Food intake and the risk of endometrial endometrioid adenocarcinoma in Japanese women.",
+            "Authors": "Takayama S, Monma Y, Tsubota-Utsugi M, Nagase S, Tsubono Y, Numata T, Toyoshima M, Utsunomiya H, Sugawara J, Yaegashi N",
+            "Journal": "Nutrition and cancer",
+            "Year": "2013",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/24053697/",
+            "Effect Type": "OR",
+            "SE": 0.15051020408163268,
+            "Sample Size": 541,
+            "Cases": 161,
+            "Estimated Cases": null,
+            "Design": "Case-Control",
+            "Timing": "Retrospective",
+            "Continent": "Asia",
+            "Stage": "Endometrial endometrioid adenocarcinoma (EEA)",
+            "Quality %": 80.0,
+            "Quality Score": "Moderate",
+            "comparison_type": "Highest vs Lowest",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Unclear",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Unclear",
+                "q10": "Yes"
+            },
+            "exposure_measurement_type": "dietary_intake",
+            "exposure_measurement_supporting_text": "completed a questionnaire regarding demographic, lifestyle, and food frequency questionnaire",
+            "extraction_supporting_text": {
+                "sample_size": "One hundred sixty-one cases and 380 controls who completed a questionnaire",
+                "effect_size": "boiled egg (OR = 0.24, CI = 0.33-0.92)",
+                "effect_direction": "Higher intake of ... boiled egg was associated with a reduced risk for EEA",
+                "p_value": "",
+                "confidence_interval": "boiled egg (OR = 0.24, CI = 0.33-0.92)",
+                "outcome_definition": "endometrial endometrioid adenocarcinoma (EEA)",
+                "exposure_definition": "boiled egg"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>161</td>\n      <td>541</td>\n      <td>0.266312</td>\n      <td>0.361485</td>\n      <td>0.929669</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.27,
+        "ci_low": 0.36,
+        "ci_upp": 0.93,
+        "interpretation": "statistically significant (decreased risk/odds)"
+    },
+    "screening_stats": {
+        "llm_screened_out": 97,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 12,
+        "total_fetched": 110,
+        "after_prefilter": 110,
+        "prefilter_skip": {
+            "disease": 0,
+            "conflict": 0,
+            "exposure": 0,
+            "outcome": 0,
+            "animal": 0,
+            "meta": 0,
+            "genetic": 0
+        },
+        "extracted": 2
+    },
+    "plot_url": "static/eggs/forest_uterine_cancer_incidence_primary.png?t=5911",
+    "funnel_plot_url": "static/eggs/funnel_uterine_cancer_incidence_primary.png?t=426",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-15 13:18:13"
+}
