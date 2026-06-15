@@ -1,0 +1,1407 @@
+Loaded 226 exposures. Checking cache for Disease='Uterine cancer', Outcome='Incidence'...
+Found 222 exposures missing from cache.
+[1/226] SKIP (Cached): 5-HTP
+[2/226] SKIP (Cached): Acai
+[3/226] SKIP (Cached): Activated charcoal
+[4/226] RUN: African mango
+[MetaFemina] Analyzing: Uterine cancer vs African mango (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND ("African mango"[Title/Abstract] OR "Irvingia gabonensis"[Title/Abstract] OR "wild mango"[Title/Abstract] OR "bush mango"[Title/Abstract] OR "dika nut"[Title/Abstract] OR "Irvingia gabonensis extract"[Title/Abstract] OR "African mango extract"[Title/Abstract]) AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 0 results (0 new)
+  [2001�2010] 0 results (0 new)
+  [2011�2020] 0 results (0 new)
+  [2021�2030] 0 results (0 new)
+Found 0 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 0 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 0 records with LLM assistance...
+Extracting data from 0 articles using LLM...
+  [Pre-filter] 0 relevant articles from 0 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 0 relevant articles.
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 0
+  - Articles Remaining After Pre-filter: 0
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  0
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[5/226] RUN: Alfalfa
+[MetaFemina] Analyzing: Uterine cancer vs Alfalfa (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "Alfalfa"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 0 results (0 new)
+  [2001�2010] 1 results (1 new)
+  [2011�2020] 2 results (2 new)
+  [2021�2030] 0 results (0 new)
+Found 3 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 3 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 2 records with LLM assistance...
+Extracting data from 2 articles using LLM...
+  [Pre-filter] 2 relevant articles from 2 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 2 relevant articles.
+  [Screening] Skipping article 1/2 'Cardoso JR et al. (2007) [PMID: 16530993]': Not directly associated with exposure 'Alfalfa'. Reason: The study examines soy meal and soy isoflavones, specifically using soy- and alfalfa-free diets, and does not directly investigate alfalfa as an exposure.
+  [Screening] Skipping article 2/2 'G�mez-Zorita S et al. (2020) [PMID: 33348600]': Not directly associated with exposure 'Alfalfa'. Reason: The article discusses isoflavones in general and mentions alfalfa only as one of several sources, but does not specifically examine alfalfa as the exposure of interest.
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 2
+  - Articles Remaining After Pre-filter: 2
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  2
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[6/226] SKIP (User requested): Alcohol
+[7/226] RUN: Aloe vera
+[MetaFemina] Analyzing: Uterine cancer vs Aloe vera (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "Aloe vera"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 0 results (0 new)
+  [2001�2010] 0 results (0 new)
+  [2011�2020] 1 results (1 new)
+  [2021�2030] 0 results (0 new)
+Found 1 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 1 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 1 records with LLM assistance...
+Extracting data from 1 articles using LLM...
+  [Pre-filter] 1 relevant articles from 1 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 1 relevant articles.
+[MetaFemina] Falling back to Regex extraction...
+Extracting data from 1 articles using Regex...
+DEBUG: No data found. Showing snippet of last abstract processed to help debug:
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 1
+  - Articles Remaining After Pre-filter: 0
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  0
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[8/226] RUN: Andrographis
+[MetaFemina] Analyzing: Uterine cancer vs Andrographis (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "Andrographis"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 0 results (0 new)
+  [2001�2010] 0 results (0 new)
+  [2011�2020] 0 results (0 new)
+  [2021�2030] 2 results (2 new)
+Found 2 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 2 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 2 records with LLM assistance...
+Extracting data from 2 articles using LLM...
+  [Pre-filter] 2 relevant articles from 2 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 2 relevant articles.
+[MetaFemina] Falling back to Regex extraction...
+Extracting data from 2 articles using Regex...
+DEBUG: No data found. Showing snippet of last abstract processed to help debug:
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 2
+  - Articles Remaining After Pre-filter: 0
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  0
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[9/226] RUN: Antioxidants
+[MetaFemina] Analyzing: Uterine cancer vs Antioxidants (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "Antioxidants"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 1 results (1 new)
+  [1991�2000] 11 results (11 new)
+  [2001�2010] 15 results (15 new)
+  [2011�2020] 27 results (27 new)
+  [2021�2030] 26 results (22 new)
+Found 76 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 76 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 76 records with LLM assistance...
+Extracting data from 76 articles using LLM...
+  [Pre-filter] 76 relevant articles from 76 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 76 relevant articles.
+  [Screening] Skipping article 17/76 'Filomeno M et al. (2015) [PMID: 26010500]': Not directly associated with exposure 'Antioxidants'. Reason: The study examines adherence to the Mediterranean diet as a whole and only mentions antioxidants as part of a combination of dietary factors, without directly examining antioxidants as the exposure of interest.
+  [OpenAI] Extracted article 18/76: Gifkins D et al. (2012) [PMID: 22527166] - ES: 0.62 (Cases: 417)
+  [Gemini] Extracted article 26/76: Goodman MT et al. (1998) [PMID: 9641499] - ES: 0.3 (Cases: 147)
+  [Screening] Skipping article 30/76 'Bharti AC et al. (2009) [PMID: 19901439]': Not directly associated with exposure 'Antioxidants'. Reason: Although antioxidants are mentioned as a potential therapeutic approach, the article does not directly examine antioxidants as the main exposure of interest but rather provides a general overview of various anti-HPV therapies.
+  [Relevance] Skipping 'Tomita LY et al. (2010) [PMID: 19642096]': The study examines antioxidants and risk of cervical cancer, not uterine cancer as requested.
+  [OpenAI] Extracted article 36/76: Basu J et al. (2005) [PMID: 15749626] - ES: 0.69 (Cases: 311)
+  [Screening] Skipping article 46/76 'Wendremaire M et al. (2020) [PMID: 32167534]': Not directly associated with exposure 'Antioxidants'. Reason: The study discusses reactive oxygen species and mentions antioxidants as a potential future intervention, but does not directly examine antioxidants as an exposure.
+Error processing article 54/76: 'charmap' codec can't encode character '\u03b2' in position 192: character maps to <undefined>
+  [Screening] Skipping article 56/76 'Yi SS et al. (2015) [PMID: 26793675]': Not directly associated with exposure 'Antioxidants'. Reason: The article discusses various bioactive natural materials and their effects on women's diseases but does not specifically examine antioxidants or their direct nutritional synonyms/biomarkers as the exposure of interest.
+  [Screening] Skipping article 63/76 'Yu Q et al. (2026) [PMID: 41340874]': Not directly associated with exposure 'Antioxidants'. Reason: The article discusses oxidative stress and the depletion of antioxidants as a mechanism in endometrial cancer but does not directly examine antioxidants as an exposure or intervention.
+  [Screening] Skipping article 68/76 'Lin HY et al. (2023) [PMID: 37161924]': Not directly associated with exposure 'Antioxidants'. Reason: The study examines overall dietary quality and specific food groups but does not directly assess antioxidants or their biomarkers as the exposure of interest.
+  [Screening] Skipping article 73/76 'Sleiman HK et al. (2021) [PMID: 34130202]': Not directly associated with exposure 'Antioxidants'. Reason: The study focuses on isoflavones as phytoestrogens and endocrine disruptors affecting fertility, mentioning their antioxidant properties only peripherally rather than examining antioxidants as the primary exposure of interest.
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 76
+  - Articles Remaining After Pre-filter: 76
+  - LLM Screening:
+    * Screened IN / Accepted:   68
+    * Screened OUT / Rejected:  7
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 3
+============================================================
+
+[MetaFemina] Stage 4/4: Running meta-analysis on 2 extracted studies...
+DEBUG: re_row type: <class 'pandas.core.series.Series'>
+DEBUG: log_eff: -0.6363 (type: <class 'float'>)
+DEBUG: i2: 0.4148586119369626 (type: <class 'numpy.float64'>), tau2: 0.09625095046602786 (type: <class 'numpy.float64'>)
+DEBUG: eggers_p: None (type: <class 'NoneType'>)
+DEBUG Baujat: Called with 2 studies, columns: ['Effect Size', 'Effect Type', 'comparison_type', 'Sample Size', 'Cases', 'Lower CI', 'Upper CI', 'Population', 'Authors', 'Reference', 'Journal', 'Year', 'Link', 'PMID', 'Design', 'Timing', 'Continent', 'Stage', 'Quality %', 'Quality Score', 'JBI', 'Relevance', 'Relevance Reason', 'exposure_measurement_type', 'exposure_measurement_supporting_text', 'extraction_supporting_text', 'Estimated Cases', 'SE', 'exclusions', 'converted_ES', 'converted_Lower_CI', 'converted_Upper_CI', 'log_ES', 'log_SE', 'var']
+DEBUG Baujat: Skipping, need >= 3 studies, got 2
+  -> Saved successfully.
+[10/226] RUN: Apple cider vinegar
+[MetaFemina] Analyzing: Uterine cancer vs Apple cider vinegar (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "Apple cider vinegar"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 0 results (0 new)
+  [2001�2010] 0 results (0 new)
+  [2011�2020] 0 results (0 new)
+  [2021�2030] 0 results (0 new)
+Found 0 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 0 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 0 records with LLM assistance...
+Extracting data from 0 articles using LLM...
+  [Pre-filter] 0 relevant articles from 0 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 0 relevant articles.
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 0
+  - Articles Remaining After Pre-filter: 0
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  0
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[11/226] RUN: Ashwagandha
+[MetaFemina] Analyzing: Uterine cancer vs Ashwagandha (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "Ashwagandha"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 0 results (0 new)
+  [2001�2010] 0 results (0 new)
+  [2011�2020] 0 results (0 new)
+  [2021�2030] 0 results (0 new)
+Found 0 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 0 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 0 records with LLM assistance...
+Extracting data from 0 articles using LLM...
+  [Pre-filter] 0 relevant articles from 0 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 0 relevant articles.
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 0
+  - Articles Remaining After Pre-filter: 0
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  0
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[12/226] RUN: Astragalus
+[MetaFemina] Analyzing: Uterine cancer vs Astragalus (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "Astragalus"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 0 results (0 new)
+  [2001�2010] 0 results (0 new)
+  [2011�2020] 2 results (2 new)
+  [2021�2030] 3 results (3 new)
+Found 5 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 5 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 5 records with LLM assistance...
+Extracting data from 5 articles using LLM...
+  [Pre-filter] 5 relevant articles from 5 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 5 relevant articles.
+[MetaFemina] Falling back to Regex extraction...
+Extracting data from 5 articles using Regex...
+DEBUG: No data found. Showing snippet of last abstract processed to help debug:
+The most effective way to improve menopausal symptoms is to supplement deficient oestrogen; however, long-term administration of synthetic oestrogen increases the risk for breast and uterine cancers. 
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 5
+  - Articles Remaining After Pre-filter: 0
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  0
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[13/226] RUN: Bacopa monnieri
+[MetaFemina] Analyzing: Uterine cancer vs Bacopa monnieri (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "Bacopa monnieri"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 0 results (0 new)
+  [2001�2010] 0 results (0 new)
+  [2011�2020] 0 results (0 new)
+  [2021�2030] 0 results (0 new)
+Found 0 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 0 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 0 records with LLM assistance...
+Extracting data from 0 articles using LLM...
+  [Pre-filter] 0 relevant articles from 0 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 0 relevant articles.
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 0
+  - Articles Remaining After Pre-filter: 0
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  0
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[14/226] RUN: BCAAs
+[MetaFemina] Analyzing: Uterine cancer vs BCAAs (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "BCAAs"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 0 results (0 new)
+  [2001�2010] 0 results (0 new)
+  [2011�2020] 0 results (0 new)
+  [2021�2030] 0 results (0 new)
+Found 0 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 0 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 0 records with LLM assistance...
+Extracting data from 0 articles using LLM...
+  [Pre-filter] 0 relevant articles from 0 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 0 relevant articles.
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 0
+  - Articles Remaining After Pre-filter: 0
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  0
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[15/226] RUN: Bee pollen
+[MetaFemina] Analyzing: Uterine cancer vs Bee pollen (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "Bee pollen"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 0 results (0 new)
+  [2001�2010] 0 results (0 new)
+  [2011�2020] 0 results (0 new)
+  [2021�2030] 0 results (0 new)
+Found 0 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 0 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 0 records with LLM assistance...
+Extracting data from 0 articles using LLM...
+  [Pre-filter] 0 relevant articles from 0 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 0 relevant articles.
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 0
+  - Articles Remaining After Pre-filter: 0
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  0
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[16/226] RUN: Beetroot
+[MetaFemina] Analyzing: Uterine cancer vs Beetroot (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "Beetroot"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 0 results (0 new)
+  [2001�2010] 0 results (0 new)
+  [2011�2020] 0 results (0 new)
+  [2021�2030] 0 results (0 new)
+Found 0 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 0 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 0 records with LLM assistance...
+Extracting data from 0 articles using LLM...
+  [Pre-filter] 0 relevant articles from 0 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 0 relevant articles.
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 0
+  - Articles Remaining After Pre-filter: 0
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  0
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[17/226] RUN: Berberine
+[MetaFemina] Analyzing: Uterine cancer vs Berberine (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "Berberine"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 0 results (0 new)
+  [2001�2010] 1 results (1 new)
+  [2011�2020] 6 results (6 new)
+  [2021�2030] 6 results (6 new)
+Found 13 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 13 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 13 records with LLM assistance...
+Extracting data from 13 articles using LLM...
+  [Pre-filter] 13 relevant articles from 13 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 13 relevant articles.
+  [Screening] Skipping article 4/13 'Xiong YX et al. (2015) [PMID: 26462146]': Not directly associated with exposure 'Berberine'. Reason: The study investigates a berberine derivative (Ber8), not berberine itself or its direct nutritional synonyms/biomarkers.
+  [Screening] Skipping article 7/13 'Dandekar MP et al. (2025) [PMID: 40209846]': Not directly associated with exposure 'Berberine'. Reason: The study investigates oxyberberine, a derivative of berberine, rather than berberine itself, so it is not directly associated with the exposure of interest.
+  [Screening] Skipping article 11/13 'Moteetee A et al. (2016) [PMID: 27780751]': Not directly associated with exposure 'Berberine'. Reason: The article does not mention berberine or examine its effects; it is a general survey of medicinal plants used for reproductive health in Lesotho.
+[MetaFemina] Falling back to Regex extraction...
+Extracting data from 13 articles using Regex...
+DEBUG: No data found. Showing snippet of last abstract processed to help debug:
+Endometrial carcinoma (EC) is a common malignant tumour in women. Berberin (BBR) is an alkaloid with anti-tumour activity, and circular RNA (circRNAs) has been extensively studied in cancers. However,
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 13
+  - Articles Remaining After Pre-filter: 0
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  0
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[18/226] RUN: Beta-alanine
+[MetaFemina] Analyzing: Uterine cancer vs Beta-alanine (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "Beta-alanine"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 0 results (0 new)
+  [2001�2010] 0 results (0 new)
+  [2011�2020] 0 results (0 new)
+  [2021�2030] 1 results (1 new)
+Found 1 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 1 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 1 records with LLM assistance...
+Extracting data from 1 articles using LLM...
+  [Pre-filter] 1 relevant articles from 1 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 1 relevant articles.
+  [Screening] Skipping article 1/1 'Kavya KV et al. (2022) [PMID: 35617878]': Not directly associated with exposure 'Beta-alanine'. Reason: The study investigates a polymer nanocarrier synthesized from methacryloyl beta-alanine for drug delivery, not the direct exposure or effects of beta-alanine itself as a nutritional or dietary compound.
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 1
+  - Articles Remaining After Pre-filter: 1
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  1
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[19/226] RUN: Beta-carotene
+[MetaFemina] Analyzing: Uterine cancer vs Beta-carotene (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND ("Beta-carotene"[Title/Abstract] OR "Î²-carotene"[Title/Abstract] OR "all-trans-beta-carotene"[Title/Abstract] OR "cis-beta-carotene"[Title/Abstract] OR "provitamin A"[Title/Abstract] OR "serum beta-carotene"[Title/Abstract] OR "plasma beta-carotene"[Title/Abstract] OR "dietary beta-carotene"[Title/Abstract] OR "beta-carotene intake"[Title/Abstract] OR "beta-carotene supplementation"[Title/Abstract]) AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 15 results (15 new)
+  [1991�2000] 37 results (37 new)
+  [2001�2010] 16 results (16 new)
+  [2011�2020] 7 results (6 new)
+  [2021�2030] 5 results (4 new)
+Found 78 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 78 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 78 records with LLM assistance...
+Extracting data from 78 articles using LLM...
+  [Pre-filter] 78 relevant articles from 78 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 78 relevant articles.
+  [OpenAI] Extracted article 2/78: Kim J et al. (2010) [PMID: 20099192] - ES: 0.48 (Cases: 144)
+  [Relevance] Skipping 'de Vet HC et al. (1993) [PMID: 8501477]': This study does not report the effect of beta-carotene exposure on uterine cancer incidence in humans; it measures change in belief among researchers, not disease risk.
+  [Screening] Skipping article 19/78 'Hirayama T (1986) [PMID: 3747136]': Not directly associated with exposure 'Beta-carotene'. Reason: The study examines dietary habits and green-yellow vegetable consumption, mentioning beta-carotene as a possible factor, but does not directly examine beta-carotene as the exposure of interest.
+  [OpenAI] Extracted article 22/78: McCann SE et al. (2000) [PMID: 11142531] - ES: 0.4 (Cases: 232)
+  [OpenAI] Extracted article 21/78: Wylie-Rosett JA et al. (1984) [PMID: 6545570] - ES: 3.0 (Cases: 87)
+  [Screening] Skipping article 28/78 'Mitchell MF et al. (1995) [PMID: 8747384]': Not directly associated with exposure 'Beta-carotene'. Reason: Although beta-carotene is mentioned as a suitable agent for chemoprevention, the article does not directly examine beta-carotene as an exposure; it discusses general trial design and lists beta-carotene among several agents.
+  [OpenAI] Extracted article 26/78: Negri E et al. (1996) [PMID: 8608484] - ES: 0.5 (Cases: 368)
+  [OpenAI] Extracted article 30/78: Levi F et al. (1993) [PMID: 8490907] - ES: 0.5 (Cases: 274)
+  [Direction] Only OpenAI succeeded. Proceeding with flagged inversion (needs_inversion=True).
+  [Relevance] Skipping 'Batieha AM et al. (1993) [PMID: 8348056]': The study examines the relationship between beta-carotene and cervical cancer, not uterine cancer as requested.
+  [OpenAI] Extracted article 33/78: Jeong NH et al. (2009) [PMID: 19235557] - ES: 0.12 (Cases: 28)
+  [OpenAI] Extracted article 34/78: Yeh M et al. (2009) [PMID: 19074206] - ES: 0.55 (Cases: 541)
+  [OpenAI] Extracted article 35/78: Pelucchi C et al. (2008) [PMID: 18592384] - ES: 0.69 (Cases: 454)
+  [OpenAI] Extracted article 36/78: Terry KL et al. (2008) [PMID: 17981250] - ES: 1.36 (Cases: None)
+  [Screening] Skipping article 40/78 'Wise LA et al. (2011) [PMID: 22071705]': Not directly associated with exposure 'Beta-carotene'. Reason: Although the study examines carotenoids, it specifically states that uterine leiomyomata was not materially associated with any of the carotenoids, including lycopene, and does not mention beta-carotene directly or analyze its association with the outcome.
+  [Relevance] Skipping 'Slattery ML et al. (1990) [PMID: 2081246]': The study examines beta-carotene and cervical cancer, not uterine cancer; thus, it does not match the requested exposure-disease relationship.
+  [Gemini] Extracted article 43/78: Brock KE et al. (1988) [PMID: 3373548] - ES: 0.2 (Cases: 117)
+  [OpenAI] Extracted article 44/78: La Vecchia C et al. (1988) [PMID: 3371743] - ES: 4.7 (Cases: 392)
+  [Screening] Skipping article 49/78 'La Vecchia C (1985) [PMID: 3841750]': Not directly associated with exposure 'Beta-carotene'. Reason: The article does not mention beta-carotene or examine it as an exposure; it focuses on cervical neoplasia epidemiology, sexual habits, screening, and other risk factors.
+  [Direction] Only OpenAI succeeded. Proceeding with flagged inversion (needs_inversion=True).
+  [OpenAI] Extracted article 50/78: La Vecchia C et al. (1984) [PMID: 6548203] - ES: 6.1 (Cases: 191)
+  [Screening] Skipping article 54/78 'Ho GY et al. (1998) [PMID: 9766558]': Not directly associated with exposure 'Beta-carotene'. Reason: Although beta-carotene is mentioned as a measured plasma micronutrient, the study does not examine beta-carotene as the primary exposure of interest but rather focuses on HPV 16 and cigarette smoking as risk factors.
+  [Relevance] Skipping 'Nagata C et al. (1999) [PMID: 10584887]': The study examines beta-carotene and risk of cervical dysplasia, not uterine cancer. Cervical dysplasia is not equivalent to uterine cancer.
+  [Screening] Skipping article 60/78 'Creek KE et al. (1995) [PMID: 7645423]': Not directly associated with exposure 'Beta-carotene'. Reason: The study does not directly examine beta-carotene as an exposure but instead focuses on retinoic acid (a vitamin A metabolite) and TGF-beta in the context of HPV-transformed keratinocytes, only mentioning beta-carotene in background context.
+  [Screening] Skipping article 62/78 'Smith HE et al. (1993) [PMID: 8261349]': Not directly associated with exposure 'Beta-carotene'. Reason: The article only mentions advice to follow a diet high in beta-carotene as a preventive practice, but does not directly examine beta-carotene as an exposure or its effects.
+  [OpenAI] Extracted article 64/78: Potischman N et al. (1991) [PMID: 1755448] - ES: 0.72 (Cases: 387)
+  [Relevance] Skipping 'Herrero R et al. (1991) [PMID: 1755447]': The study examines beta-carotene and risk of invasive cervical cancer, not uterine cancer as requested.
+  [Relevance] Skipping 'Ghosh C et al. (2008) [PMID: 18444167]': The study examines beta-carotene and risk of cervical cancer, not uterine cancer as requested.
+  [Relevance] Skipping 'Atalah E et al. (2001) [PMID: 11510198]': The study examines beta-carotene and cancer incidence, but the outcome is cervical cancer, not uterine cancer as requested.
+  [Relevance] Skipping 'Guo L et al. (2015) [PMID: 26337940]': The study examines the association between serum beta-carotene and the incidence of cervical cancer, not uterine cancer as requested.
+  [Relevance] Skipping 'Zhang YY et al. (2015) [PMID: 25854393]': The study examines the association between beta-carotene and cervical cancer, not uterine cancer as requested.
+Error processing article 77/78: 'charmap' codec can't encode character '\u03b2' in position 168: character maps to <undefined>
+  [OpenAI] Extracted article 76/78: Wierzbowska N et al. (2024) [PMID: 38732639] - ES: 0.88 (Cases: None)
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 78
+  - Articles Remaining After Pre-filter: 78
+  - LLM Screening:
+    * Screened IN / Accepted:   70
+    * Screened OUT / Rejected:  7
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 14
+============================================================
+
+[MetaFemina] Stage 4/4: Running meta-analysis on 6 extracted studies...
+DEBUG: re_row type: <class 'pandas.core.series.Series'>
+DEBUG: log_eff: -0.5074 (type: <class 'float'>)
+DEBUG: i2: 0.8515115649720988 (type: <class 'numpy.float64'>), tau2: 0.25661002018259643 (type: <class 'numpy.float64'>)
+DEBUG: eggers_p: 0.03619990742922851 (type: <class 'numpy.float64'>)
+DEBUG Baujat: Called with 6 studies, columns: ['Effect Size', 'Effect Type', 'comparison_type', 'Sample Size', 'Cases', 'Lower CI', 'Upper CI', 'Population', 'Authors', 'Reference', 'Journal', 'Year', 'Link', 'PMID', 'Design', 'Timing', 'Continent', 'Stage', 'Quality %', 'Quality Score', 'JBI', 'Relevance', 'Relevance Reason', 'exposure_measurement_type', 'exposure_measurement_supporting_text', 'extraction_supporting_text', 'Estimated Cases', 'SE', 'exclusions', 'converted_ES', 'converted_Lower_CI', 'converted_Upper_CI', 'log_ES', 'log_SE', 'var']
+DEBUG Baujat: Generated at static\beta_carotene\baujat_uterine_cancer_incidence_primary.png
+  -> Saved successfully.
+[20/226] RUN: Beta-glucans
+[MetaFemina] Analyzing: Uterine cancer vs Beta-glucans (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "Beta-glucans"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 0 results (0 new)
+  [2001�2010] 0 results (0 new)
+  [2011�2020] 2 results (2 new)
+  [2021�2030] 0 results (0 new)
+Found 2 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 2 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 2 records with LLM assistance...
+Extracting data from 2 articles using LLM...
+  [Pre-filter] 2 relevant articles from 2 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 2 relevant articles.
+[MetaFemina] Falling back to Regex extraction...
+Extracting data from 2 articles using Regex...
+DEBUG: No data found. Showing snippet of last abstract processed to help debug:
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 2
+  - Articles Remaining After Pre-filter: 0
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  0
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[21/226] RUN: Beta-hydroxy-beta-methylbutyrate
+[MetaFemina] Analyzing: Uterine cancer vs Beta-hydroxy-beta-methylbutyrate (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "Beta-hydroxy-beta-methylbutyrate"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 0 results (0 new)
+  [2001�2010] 0 results (0 new)
+  [2011�2020] 0 results (0 new)
+  [2021�2030] 0 results (0 new)
+Found 0 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 0 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 0 records with LLM assistance...
+Extracting data from 0 articles using LLM...
+  [Pre-filter] 0 relevant articles from 0 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 0 relevant articles.
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 0
+  - Articles Remaining After Pre-filter: 0
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  0
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[22/226] RUN: Betaine
+[MetaFemina] Analyzing: Uterine cancer vs Betaine (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "Betaine"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 1 results (1 new)
+  [2001�2010] 0 results (0 new)
+  [2011�2020] 0 results (0 new)
+  [2021�2030] 5 results (5 new)
+Found 6 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 6 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 6 records with LLM assistance...
+Extracting data from 6 articles using LLM...
+  [Pre-filter] 6 relevant articles from 6 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 6 relevant articles.
+  [Screening] Skipping article 1/6 'Jayanthi LD et al. (1995) [PMID: 7756345]': Not directly associated with exposure 'Betaine'. Reason: The study does not examine betaine as an exposure but only mentions it as a compound that does not affect the taurine transporter, so it is not directly associated with betaine exposure.
+  [Screening] Skipping article 5/6 'He Z et al. (2024) [PMID: 39170783]': Not directly associated with exposure 'Betaine'. Reason: The article focuses on stachydrine (proline betaine) and its biological activities, not on betaine itself or its direct nutritional synonyms/biomarkers.
+[MetaFemina] Falling back to Regex extraction...
+Extracting data from 6 articles using Regex...
+DEBUG: No data found. Showing snippet of last abstract processed to help debug:
+The tissue metabolomic characteristics associated with endometrial cancer (EC) at different grades were studied using high resolution (400�MHz) magic angle spinning (HR-MAS) proton spectroscopy. The m
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 6
+  - Articles Remaining After Pre-filter: 0
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  0
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[23/226] RUN: Bilberry
+[MetaFemina] Analyzing: Uterine cancer vs Bilberry (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "Bilberry"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 0 results (0 new)
+  [2001�2010] 0 results (0 new)
+  [2011�2020] 0 results (0 new)
+  [2021�2030] 0 results (0 new)
+Found 0 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 0 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 0 records with LLM assistance...
+Extracting data from 0 articles using LLM...
+  [Pre-filter] 0 relevant articles from 0 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 0 relevant articles.
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 0
+  - Articles Remaining After Pre-filter: 0
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  0
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[24/226] RUN: Bitter melon
+[MetaFemina] Analyzing: Uterine cancer vs Bitter melon (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "Bitter melon"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 0 results (0 new)
+  [2001�2010] 0 results (0 new)
+  [2011�2020] 1 results (1 new)
+  [2021�2030] 0 results (0 new)
+Found 1 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 1 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 1 records with LLM assistance...
+Extracting data from 1 articles using LLM...
+  [Pre-filter] 1 relevant articles from 1 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 1 relevant articles.
+[MetaFemina] Falling back to Regex extraction...
+Extracting data from 1 articles using Regex...
+DEBUG: No data found. Showing snippet of last abstract processed to help debug:
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 1
+  - Articles Remaining After Pre-filter: 0
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  0
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[25/226] RUN: Bitter orange
+[MetaFemina] Analyzing: Uterine cancer vs Bitter orange (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "Bitter orange"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 0 results (0 new)
+  [2001�2010] 0 results (0 new)
+  [2011�2020] 0 results (0 new)
+  [2021�2030] 0 results (0 new)
+Found 0 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 0 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 0 records with LLM assistance...
+Extracting data from 0 articles using LLM...
+  [Pre-filter] 0 relevant articles from 0 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 0 relevant articles.
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 0
+  - Articles Remaining After Pre-filter: 0
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  0
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[26/226] RUN: Black cohosh
+[MetaFemina] Analyzing: Uterine cancer vs Black cohosh (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "Black cohosh"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 0 results (0 new)
+  [2001�2010] 1 results (1 new)
+  [2011�2020] 1 results (1 new)
+  [2021�2030] 1 results (1 new)
+Found 3 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 3 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 3 records with LLM assistance...
+Extracting data from 3 articles using LLM...
+  [Pre-filter] 3 relevant articles from 3 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 3 relevant articles.
+  [Screening] Skipping article 3/3 'Lin F et al. (2025) [PMID: 40624665]': Not directly associated with exposure 'Black cohosh'. Reason: Although black cohosh is mentioned as one of several plant extracts considered for intervention, the article does not specifically examine black cohosh as the primary exposure of interest.
+[MetaFemina] Falling back to Regex extraction...
+Extracting data from 3 articles using Regex...
+DEBUG: No data found. Showing snippet of last abstract processed to help debug:
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 3
+  - Articles Remaining After Pre-filter: 0
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  0
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[27/226] RUN: Blessed thistle
+[MetaFemina] Analyzing: Uterine cancer vs Blessed thistle (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "Blessed thistle"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 0 results (0 new)
+  [2001�2010] 0 results (0 new)
+  [2011�2020] 0 results (0 new)
+  [2021�2030] 0 results (0 new)
+Found 0 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 0 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 0 records with LLM assistance...
+Extracting data from 0 articles using LLM...
+  [Pre-filter] 0 relevant articles from 0 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 0 relevant articles.
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 0
+  - Articles Remaining After Pre-filter: 0
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  0
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[28/226] RUN: Blue-green algae
+[MetaFemina] Analyzing: Uterine cancer vs Blue-green algae (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "Blue-green algae"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 0 results (0 new)
+  [2001�2010] 0 results (0 new)
+  [2011�2020] 0 results (0 new)
+  [2021�2030] 0 results (0 new)
+Found 0 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 0 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 0 records with LLM assistance...
+Extracting data from 0 articles using LLM...
+  [Pre-filter] 0 relevant articles from 0 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 0 relevant articles.
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 0
+  - Articles Remaining After Pre-filter: 0
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  0
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[29/226] RUN: Blueberry
+[MetaFemina] Analyzing: Uterine cancer vs Blueberry (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "Blueberry"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 0 results (0 new)
+  [2001�2010] 0 results (0 new)
+  [2011�2020] 0 results (0 new)
+  [2021�2030] 1 results (1 new)
+Found 1 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 1 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 1 records with LLM assistance...
+Extracting data from 1 articles using LLM...
+  [Pre-filter] 1 relevant articles from 1 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 1 relevant articles.
+  [Screening] Skipping article 1/1 'Sham N et al. (2021) [PMID: 34230130]': Not directly associated with exposure 'Blueberry'. Reason: The study investigates the effects of raspberry extract, not blueberry or its direct nutritional synonyms/biomarkers, on cervical cancer.
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 1
+  - Articles Remaining After Pre-filter: 1
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  1
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[30/226] RUN: Boron
+[MetaFemina] Analyzing: Uterine cancer vs Boron (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "Boron"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 1 results (1 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 0 results (0 new)
+  [2001�2010] 3 results (3 new)
+  [2011�2020] 2 results (2 new)
+  [2021�2030] 2 results (2 new)
+Found 8 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 8 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 8 records with LLM assistance...
+Extracting data from 8 articles using LLM...
+  [Pre-filter] 8 relevant articles from 8 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 8 relevant articles.
+  [Screening] Skipping article 3/8 'Hirata M et al. (2009) [PMID: 19159615]': Not directly associated with exposure 'Boron'. Reason: The study investigates a synthetic carborane compound containing boron as a drug, not boron itself or its nutritional exposure, and is therefore not directly associated with the exposure of interest.
+  [Screening] Skipping article 5/8 'Goncharenko AA et al. (2020) [PMID: 32825590]': Not directly associated with exposure 'Boron'. Reason: The article discusses the use of boron dipyrrins as fluorescent dyes in silica nanoparticles for imaging, not the exposure or nutritional effects of boron.
+  [Screening] Skipping article 6/8 'Teke K et al. (2026) [PMID: 41998205]': Not directly associated with exposure 'Boron'. Reason: The study investigates boron neutron capture therapy (BNCT) as a medical treatment for bladder cancer, not dietary or nutritional exposure to boron.
+  [Screening] Skipping article 7/8 'Unknown (1979) [PMID: 296135]': Not directly associated with exposure 'Boron'. Reason: The article is about 'Lynoestrenol' and does not mention or examine boron or its direct nutritional synonyms or biomarkers.
+  [Screening] Skipping article 8/8 'Wen T et al. (2022) [PMID: 35510624]': Not directly associated with exposure 'Boron'. Reason: The article discusses the use of palladium-boron-phosphorus nanospheres as a material in an electrochemical immunosensor, not the biological or nutritional exposure to boron.
+[MetaFemina] Falling back to Regex extraction...
+Extracting data from 8 articles using Regex...
+DEBUG: No data found. Showing snippet of last abstract processed to help debug:
+Endometrial cancer (EC) is one of the most common types of gynecologic cancer of the female genital tract; it considered being the fourth leading death factor among other types of cancer. Therefore, d
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 8
+  - Articles Remaining After Pre-filter: 0
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  0
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[31/226] RUN: Botanical Dietary Supplements
+[MetaFemina] Analyzing: Uterine cancer vs Botanical Dietary Supplements (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "Botanical Dietary Supplements"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 0 results (0 new)
+  [2001�2010] 1 results (1 new)
+  [2011�2020] 2 results (2 new)
+  [2021�2030] 1 results (1 new)
+Found 4 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 4 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 4 records with LLM assistance...
+Extracting data from 4 articles using LLM...
+  [Pre-filter] 4 relevant articles from 4 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 4 relevant articles.
+[MetaFemina] Falling back to Regex extraction...
+Extracting data from 4 articles using Regex...
+DEBUG: No data found. Showing snippet of last abstract processed to help debug:
+The use of botanical dietary supplements for the alleviation of conditions such as hot flashes, premenstrual syndrome, and fertility is prolific worldwide. Estrogen and progesterone receptors (ER and 
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 4
+  - Articles Remaining After Pre-filter: 0
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  0
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[32/226] RUN: Bromelain
+[MetaFemina] Analyzing: Uterine cancer vs Bromelain (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "Bromelain"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 0 results (0 new)
+  [2001�2010] 0 results (0 new)
+  [2011�2020] 0 results (0 new)
+  [2021�2030] 0 results (0 new)
+Found 0 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 0 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 0 records with LLM assistance...
+Extracting data from 0 articles using LLM...
+  [Pre-filter] 0 relevant articles from 0 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 0 relevant articles.
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 0
+  - Articles Remaining After Pre-filter: 0
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  0
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[33/226] RUN: Butterbur
+[MetaFemina] Analyzing: Uterine cancer vs Butterbur (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND "Butterbur"[Title/Abstract] AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 0 results (0 new)
+  [1981�1990] 0 results (0 new)
+  [1991�2000] 0 results (0 new)
+  [2001�2010] 0 results (0 new)
+  [2011�2020] 0 results (0 new)
+  [2021�2030] 0 results (0 new)
+Found 0 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 0 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 0 records with LLM assistance...
+Extracting data from 0 articles using LLM...
+  [Pre-filter] 0 relevant articles from 0 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 0 relevant articles.
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 0
+  - Articles Remaining After Pre-filter: 0
+  - LLM Screening:
+    * Screened IN / Accepted:   0
+    * Screened OUT / Rejected:  0
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 0
+============================================================
+
+  -> Saved successfully.
+[34/226] RUN: Caffeine
+[MetaFemina] Analyzing: Uterine cancer vs Caffeine (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND ("Caffeine"[Title/Abstract] OR "coffee"[Title/Abstract] OR "tea"[Title/Abstract] OR "energy drinks"[Title/Abstract]) AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 4 results (4 new)
+  [1981�1990] 6 results (6 new)
+  [1991�2000] 15 results (15 new)
+  [2001�2010] 25 results (25 new)
+  [2011�2020] 52 results (52 new)
+  [2021�2030] 42 results (41 new)
+Found 143 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 143 PubMed records...
+[MetaFemina] Stage 3/4: Extracting study data from 143 records with LLM assistance...
+Extracting data from 143 articles using LLM...
+  [Pre-filter] 143 relevant articles from 143 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=0
+  [LLM] Extracting from all 143 relevant articles.
+  [Screening] Skipping article 2/143 'Friberg E et al. (2009) [PMID: 19585497]': Not directly associated with exposure 'Caffeine'. Reason: The study examines coffee consumption rather than caffeine specifically, and does not directly assess caffeine as the exposure of interest.
+  [Screening] Skipping article 1/143 'Gunter MJ (2010) [PMID: 19676049]': Not directly associated with exposure 'Caffeine'. Reason: The article title refers to coffee drinking, not specifically to caffeine or its direct nutritional biomarkers, and the abstract is unavailable to clarify the exposure studied.
+  [Screening] Skipping article 3/143 'Shimazu T et al. (2008) [PMID: 18711700]': Not directly associated with exposure 'Caffeine'. Reason: The study examines coffee consumption as the exposure, not caffeine or its direct biomarkers, and does not specifically assess caffeine intake or status.
+  [Screening] Skipping article 4/143 'Gao J et al. (2005) [PMID: 16053753]': Not directly associated with exposure 'Caffeine'. Reason: The study examines green tea consumption and its association with endometrial cancer risk, but does not directly assess caffeine as the exposure of interest.
+  [Screening] Skipping article 5/143 'Paul P et al. (2019) [PMID: 31154549]': Not directly associated with exposure 'Caffeine'. Reason: The study examines soy and tea intake in relation to cervical cancer risk but does not specifically investigate caffeine as an exposure.
+  [Screening] Skipping article 7/143 'Gavrilyuk O et al. (2014) [PMID: 24666820]': Not directly associated with exposure 'Caffeine'. Reason: The study examines coffee consumption and brewing methods, but does not directly assess caffeine as the exposure of interest.
+  [Screening] Skipping article 9/143 'Giri A et al. (2012) [PMID: 22323060]': Not directly associated with exposure 'Caffeine'. Reason: The article investigates coffee drinking, not caffeine specifically, and there is no information in the title or abstract indicating direct examination of caffeine as the exposure of interest.
+  [OpenAI] Extracted article 6/143: Weiderpass E et al. (2014) [PMID: 25181598] - ES: 1.32 (Cases: 144)
+  [Screening] Skipping article 11/143 'Je Y et al. (2011) [PMID: 22109346]': Not directly associated with exposure 'Caffeine'. Reason: The study examines coffee and caffeinated coffee consumption, but does not directly assess caffeine as the exposure of interest.
+  [Screening] Skipping article 12/143 'Gunter MJ et al. (2012) [PMID: 22021096]': Not directly associated with exposure 'Caffeine'. Reason: The study investigates coffee consumption and its association with endometrial cancer, but does not directly examine caffeine as the exposure of interest, instead considering both caffeinated and decaffeinated coffee.
+  [Screening] Skipping article 13/143 'Zheng W et al. (1996) [PMID: 8678049]': Not directly associated with exposure 'Caffeine'. Reason: The study examines tea consumption but does not specifically assess caffeine exposure or its direct biomarkers.
+  [Screening] Skipping article 14/143 'Bandera EV et al. (2010) [PMID: 20467800]': Not directly associated with exposure 'Caffeine'. Reason: The study examines coffee and tea consumption but does not specifically assess caffeine or its direct biomarkers as the exposure of interest.
+  [Screening] Skipping article 15/143 'McCann SE et al. (2009) [PMID: 19107932]': Not directly associated with exposure 'Caffeine'. Reason: The study examines coffee and tea consumption but does not specifically assess caffeine or its direct biomarkers as the exposure of interest.
+  [OpenAI] Extracted article 8/143: Uccella S et al. (2013) [PMID: 24022184] - ES: 0.65 (Cases: 471)
+  [Screening] Skipping article 16/143 'Kakuta Y et al. (2009) [PMID: 19067194]': Not directly associated with exposure 'Caffeine'. Reason: The study examines green tea consumption and its association with endometrial cancer risk, but does not directly assess caffeine as the exposure of interest.
+  [Screening] Skipping article 18/143 'Hirose K et al. (2007) [PMID: 17270030]': Not directly associated with exposure 'Caffeine'. Reason: The study primarily examines coffee consumption as the exposure and reports no statistically significant association between caffeine intake and endometrial cancer, thus it is not directly associated with caffeine as the exposure of interest.
+  [Screening] Skipping article 17/143 'Koizumi T et al. (2008) [PMID: 18562962]': Not directly associated with exposure 'Caffeine'. Reason: The study examines coffee consumption, not caffeine specifically, and does not mention caffeine or its direct biomarkers as the exposure of interest.
+  [OpenAI] Extracted article 10/143: Giri A et al. (2011) [PMID: 22254087] - ES: 0.89 (Cases: 427)
+  [Screening] Skipping article 20/143 'Li X et al. (2019) [PMID: 31152367]': Not directly associated with exposure 'Caffeine'. Reason: The study examines tea consumption and cancer risk but does not directly assess caffeine as the exposure of interest.
+  [Screening] Skipping article 22/143 'Park SY et al. (2018) [PMID: 29777049]': Not directly associated with exposure 'Caffeine'. Reason: The study examines coffee consumption rather than caffeine specifically, and does not directly assess caffeine intake or its biomarkers as the exposure of interest.
+  [Screening] Skipping article 23/143 'Wang A et al. (2016) [PMID: 27665923]': Not directly associated with exposure 'Caffeine'. Reason: The study examines coffee intake rather than caffeine specifically, and does not directly assess caffeine or its nutritional biomarkers as the exposure of interest.
+  [Screening] Skipping article 24/143 'Zhou Q et al. (2016) [PMID: 26613947]': Not directly associated with exposure 'Caffeine'. Reason: The article discusses green tea consumption and endometrial cancer risk, with no indication that it directly examines caffeine as the exposure of interest.
+  [Screening] Skipping article 25/143 'Lim HS et al. (2016) [PMID: 26603038]': Not directly associated with exposure 'Caffeine'. Reason: The article discusses green tea consumption and endometrial cancer risk, but does not mention caffeine or its direct nutritional synonyms or biomarkers as the exposure of interest.
+  [OpenAI] Extracted article 21/143: Arthur R et al. (2018) [PMID: 30075330] - ES: 0.93 (Cases: 180)
+  [Screening] Skipping article 27/143 'Rochman S (2015) [PMID: 26032610]': Not directly associated with exposure 'Caffeine'. Reason: The article examines coffee as the exposure, not caffeine or its direct nutritional synonyms/biomarkers.
+  [Screening] Skipping article 28/143 'Emadi RC et al. (2025) [PMID: 40806142]': Not directly associated with exposure 'Caffeine'. Reason: The article focuses on coffee consumption and its health effects, not specifically on caffeine as an isolated exposure, and includes both caffeinated and decaffeinated coffee.
+  [Screening] Skipping article 29/143 'Al-Hendy A et al. (2024) [PMID: 38216200]': Not directly associated with exposure 'Caffeine'. Reason: The study investigates the effects of epigallocatechin gallate (EGCG) from green tea extract on fertility in women with uterine fibroids and does not examine caffeine as an exposure.
+  [Screening] Skipping article 31/143 'Olcha P et al. (2022) [PMID: 35743146]': Not directly associated with exposure 'Caffeine'. Reason: The article focuses on tea polyphenols and their health effects, without specifically examining caffeine as the exposure of interest.
+  [Screening] Skipping article 32/143 'Unknown (2022) [PMID: 35110350]': Not directly associated with exposure 'Caffeine'. Reason: The article examines coffee, not caffeine specifically, and coffee contains many compounds besides caffeine, so it is not directly associated with the exposure of interest.
+  [Screening] Skipping article 33/143 'Stocks P (1970) [PMID: 5451565]': Not directly associated with exposure 'Caffeine'. Reason: The study examines national consumption of coffee, which may contain caffeine, but does not directly assess caffeine exposure or its biomarkers.
+  [Screening] Skipping article 34/143 'TAKAHASHI E (1964) [PMID: 14166832]': Not directly associated with exposure 'Caffeine'. Reason: The article examines coffee consumption, which is not a direct synonym or biomarker for caffeine, and does not specify that caffeine itself is the exposure of interest.
+  [Screening] Skipping article 35/143 'Furniss K (2000) [PMID: 11110335]': Not directly associated with exposure 'Caffeine'. Reason: The article does not mention caffeine or examine its effects; it discusses general preventive health behaviors and cancer risk.
+  [Screening] Skipping article 36/143 'Suganuma M et al. (1999) [PMID: 10518005]': Not directly associated with exposure 'Caffeine'. Reason: The article focuses on green tea and its polyphenols in cancer prevention, but does not specifically examine caffeine as the exposure of interest.
+  [Screening] Skipping article 37/143 'McMeekin DS et al. (1995) [PMID: 7557621]': Not directly associated with exposure 'Caffeine'. Reason: The article does not mention caffeine or any direct synonyms or biomarkers of caffeine as an exposure of interest.
+  [Screening] Skipping article 39/143 'Zou C et al. (2010) [PMID: 20686382]': Not directly associated with exposure 'Caffeine'. Reason: The study investigates green tea compounds (epigallocatechin gallate and polyphenols E) and does not examine caffeine as an exposure.
+  [Screening] Skipping article 40/143 'Roomi MW et al. (2010) [PMID: 20664983]': Not directly associated with exposure 'Caffeine'. Reason: The study investigates the effects of EGCG, green tea extract, and a nutrient mixture on MMP expression in cancer cell lines, but does not examine caffeine as an exposure.
+  [Screening] Skipping article 41/143 'Arab L (2010) [PMID: 20358464]': Not directly associated with exposure 'Caffeine'. Reason: The article examines coffee consumption and cancer risk, but does not directly assess caffeine as the exposure of interest.
+  [Screening] Skipping article 42/143 'Singh M et al. (2010) [PMID: 19271153]': Not directly associated with exposure 'Caffeine'. Reason: The study investigates the effects of tea polyphenols on cervical cancer cells but does not specifically examine caffeine as an exposure.
+  [Screening] Skipping article 43/143 'Yokoyama M et al. (2004) [PMID: 14751158]': Not directly associated with exposure 'Caffeine'. Reason: The study investigates the effects of EGCG, a tea polyphenol, and does not examine caffeine or its direct nutritional synonyms or biomarkers.
+  [Screening] Skipping article 44/143 'Abe SK et al. (2021) [PMID: 32820240]': Not directly associated with exposure 'Caffeine'. Reason: The article reviews the health effects of green tea consumption but does not specifically examine caffeine as the exposure of interest.
+  [Screening] Skipping article 45/143 'Nicolopoulos K et al. (2020) [PMID: 32284183]': Not directly associated with exposure 'Caffeine'. Reason: The study examines habitual coffee consumption as the exposure, not caffeine specifically or its direct biomarkers, and coffee contains other compounds besides caffeine.
+  [Screening] Skipping article 46/143 'de Fouw M et al. (2019) [PMID: 31333059]': Not directly associated with exposure 'Caffeine'. Reason: The article discusses the use of coffee ceremonies as a community mobilization tool for cervical cancer screening, not the examination of caffeine as an exposure.
+  [Screening] Skipping article 48/143 'Sharif K et al. (2017) [PMID: 28479483]': Not directly associated with exposure 'Caffeine'. Reason: The article focuses on coffee consumption rather than caffeine specifically, and does not directly examine caffeine as the exposure of interest.
+  [Screening] Skipping article 49/143 'G�ng�rd�k K et al. (2017) [PMID: 27780709]': Not directly associated with exposure 'Caffeine'. Reason: The study examines coffee consumption, but does not specifically investigate caffeine or its direct nutritional synonyms/biomarkers as the exposure of interest.
+  [Screening] Skipping article 51/143 'Gao J et al. (2016) [PMID: 26075656]': Not directly associated with exposure 'Caffeine'. Reason: The study examines risk factors such as overweight, meat intake, tea drinking, and physical inactivity, but does not mention caffeine or its direct nutritional synonyms or biomarkers.
+  [Screening] Skipping article 50/143 'Ahmed RS et al. (2016) [PMID: 26950525]': Not directly associated with exposure 'Caffeine'. Reason: The study focuses on green tea polyphenol EGCG and its analogs, not on caffeine or its direct nutritional biomarkers.
+  [Screening] Skipping article 53/143 'Johnson R et al. (2012) [PMID: 22986087]': Not directly associated with exposure 'Caffeine'. Reason: The article focuses on green tea and its catechins, not specifically on caffeine as the exposure of interest.
+  [Screening] Skipping article 52/143 'Merritt MA et al. (2015) [PMID: 25662427]': Not directly associated with exposure 'Caffeine'. Reason: The study investigates coffee intake but does not specifically examine caffeine or its direct nutritional biomarkers as the exposure of interest.
+  [Screening] Skipping article 55/143 'Gavriluk O et al. (2026) [PMID: 41758733]': Not directly associated with exposure 'Caffeine'. Reason: Although the study mentions coffee consumption as a variable, it does not directly examine caffeine or its effects, and coffee is not a direct synonym or biomarker for caffeine in the context of this review.
+  [Screening] Skipping article 54/143 'Sarshar M et al. (2026) [PMID: 42153014]': Not directly associated with exposure 'Caffeine'. Reason: The article focuses on kombucha tea and its anti-cancer properties without specifically examining caffeine as an exposure.
+  [OpenAI] Extracted article 47/143: Gao M et al. (2018) [PMID: 30313022] - ES: 1.0 (Cases: 213)
+  [Screening] Skipping article 57/143 'He JJ et al. (2025) [PMID: 41059289]': Not directly associated with exposure 'Caffeine'. Reason: The study focuses on green tea extracts and polyphenols, not caffeine, as the exposure of interest.
+  [Screening] Skipping article 59/143 'Miao J et al. (2025) [PMID: 40487677]': Not directly associated with exposure 'Caffeine'. Reason: The study examines coffee and tea intake but does not specifically assess caffeine or its direct nutritional biomarkers as the exposure of interest.
+  [Screening] Skipping article 58/143 'Cao L et al. (2025) [PMID: 41047480]': Not directly associated with exposure 'Caffeine'. Reason: The article does not mention caffeine or its direct nutritional synonyms/biomarkers and instead focuses on TEAD degraders for cancer therapy.
+  [Screening] Skipping article 61/143 'Hazimeh D et al. (2023) [PMID: 36986169]': Not directly associated with exposure 'Caffeine'. Reason: The article focuses on green tea and its catechins, particularly EGCG, and does not examine caffeine as the exposure of interest.
+  [Screening] Skipping article 60/143 'Kunutsor SK et al. (2025) [PMID: 39266809]': Not directly associated with exposure 'Caffeine'. Reason: The article focuses on coffee consumption as the exposure, not directly on caffeine or its specific biomarkers, and discusses multiple bioactive compounds in coffee rather than isolating caffeine as the exposure of interest.
+  [Screening] Skipping article 62/143 'Safe S et al. (2023) [PMID: 36769029]': Not directly associated with exposure 'Caffeine'. Reason: The article discusses coffee consumption and its health effects but does not specifically examine caffeine as the exposure of interest.
+  [Screening] Skipping article 63/143 'Hung SW et al. (2022) [PMID: 35860020]': Not directly associated with exposure 'Caffeine'. Reason: The article focuses on epigallocatechin-3-gallate (EGCG) from green tea and does not mention caffeine or directly examine caffeine as an exposure.
+  [Screening] Skipping article 65/143 'Kim SY et al. (2021) [PMID: 34836181]': Not directly associated with exposure 'Caffeine'. Reason: The study examines coffee consumption, not caffeine specifically or its direct biomarkers, so it is not directly associated with the exposure of interest 'Caffeine'.
+  [Screening] Skipping article 64/143 'Tang Y et al. (2022) [PMID: 35770917]': Not directly associated with exposure 'Caffeine'. Reason: The study investigates the effects of green tea polyphenols and does not examine caffeine as an exposure.
+  [Screening] Skipping article 67/143 'Nordestgaard AT (2022) [PMID: 34319429]': Not directly associated with exposure 'Caffeine'. Reason: The article focuses on coffee consumption as the exposure, not caffeine specifically, and does not directly examine caffeine or its biomarkers.
+  [Screening] Skipping article 66/143 'Nigra AD et al. (2021) [PMID: 34567408]': Not directly associated with exposure 'Caffeine'. Reason: The article focuses on coffee consumption as an exposure, not specifically on caffeine or its direct biomarkers.
+  [Screening] Skipping article 69/143 'Biro R et al. (2021) [PMID: 33386959]': Not directly associated with exposure 'Caffeine'. Reason: The study examines the effects of green tea extract, specifically epigallocatechin gallate, and does not directly investigate caffeine as the exposure of interest.
+  [Screening] Skipping article 68/143 'Watanabe Y et al. (2021) [PMID: 34053169]': Not directly associated with exposure 'Caffeine'. Reason: The study investigates glycemic index and glycemic load in relation to endometrial cancer risk and does not examine caffeine as an exposure.
+  [Screening] Skipping article 70/143 'West DW et al. (1980) [PMID: 6933240]': Not directly associated with exposure 'Caffeine'. Reason: The study compares cancer risk factors between Mormons and non-Mormons, mentioning coffee consumption (a source of caffeine) only as a lifestyle variable, but does not directly examine caffeine exposure or its effects.
+  [Screening] Skipping article 72/143 'Hsu YL et al. (2009) [PMID: 19536869]': Not directly associated with exposure 'Caffeine'. Reason: The study uses caffeine as a specific ATM inhibitor in a mechanistic experiment, but does not examine caffeine as an exposure of interest or its effects on health outcomes.
+  [Screening] Skipping article 73/143 'Wang L et al. (2009) [PMID: 19158208]': Not directly associated with exposure 'Caffeine'. Reason: The study investigates flavonoids and flavonoid-rich foods, not caffeine or its direct nutritional synonyms or biomarkers.
+  [Screening] Skipping article 74/143 'Bravi F et al. (2009) [PMID: 19091304]': Not directly associated with exposure 'Caffeine'. Reason: The study examines the association between various food groups, including coffee, and endometrial cancer risk, but does not directly investigate caffeine as the exposure of interest.
+  [Screening] Skipping article 75/143 'Petridou E et al. (2002) [PMID: 12394239]': Not directly associated with exposure 'Caffeine'. Reason: The study examines coffee drinking, but does not specifically investigate caffeine or its direct nutritional biomarkers as the exposure of interest.
+  [Screening] Skipping article 76/143 'Terry P et al. (2002) [PMID: 12235647]': Not directly associated with exposure 'Caffeine'. Reason: The study examines dietary factors and mentions coffee consumption, but does not directly assess caffeine as an exposure or outcome.
+  [Screening] Skipping article 77/143 'H�yer S et al. (2020) [PMID: 32155263]': Not directly associated with exposure 'Caffeine'. Reason: The study examines male alcohol consumption as the exposure and only adjusts for caffeine as a confounder, without directly studying caffeine as the exposure of interest.
+  [Screening] Skipping article 78/143 'Kotemori A et al. (2018) [PMID: 30063274]': Not directly associated with exposure 'Caffeine'. Reason: The study examines dietary acrylamide intake as the exposure and only adjusts for coffee consumption in the analysis; it does not directly examine caffeine as the exposure of interest.
+  [Screening] Skipping article 80/143 'Rossi M et al. (2016) [PMID: 26830899]': Not directly associated with exposure 'Caffeine'. Reason: The study examines dietary total antioxidant capacity and its relation to endometrial cancer risk, mentioning coffee but not specifically caffeine as the exposure of interest.
+  [Screening] Skipping article 82/143 'Fu M et al. (2025) [PMID: 41457227]': Not directly associated with exposure 'Caffeine'. Reason: The study examines coffee as a dietary factor, but does not directly investigate caffeine or its nutritional biomarkers as the exposure of interest.
+  [Screening] Skipping article 79/143 'Maitre L et al. (2016) [PMID: 27814705]': Not directly associated with exposure 'Caffeine'. Reason: The study does not directly examine caffeine as an exposure but only mentions coffee consumption as one of several lifestyle factors influencing maternal metabolism.
+  [Screening] Skipping article 83/143 'de Mezer M et al. (2025) [PMID: 40645013]': Not directly associated with exposure 'Caffeine'. Reason: The article focuses on epigallocatechin gallate (EGCG) from green tea and does not examine caffeine as an exposure.
+  [Screening] Skipping article 85/143 'Siblini H et al. (2023) [PMID: 36678191]': Not directly associated with exposure 'Caffeine'. Reason: The study examines the safety of epigallocatechin gallate (EGCG), not caffeine or its direct nutritional synonyms or biomarkers.
+  [Screening] Skipping article 86/143 'Esposito G et al. (2021) [PMID: 34444790]': Not directly associated with exposure 'Caffeine'. Reason: The study examines the effect of a diabetes risk reduction diet on endometrial cancer risk and only mentions coffee as a component of the diet, without directly investigating caffeine as the exposure of interest.
+  [Screening] Skipping article 88/143 'BAZIKIAN KL (1964) [PMID: 14165381]': Not directly associated with exposure 'Caffeine'. Reason: The article does not mention caffeine or any direct synonyms/biomarkers of caffeine, and there is no evidence it examines caffeine as an exposure.
+  [Screening] Skipping article 89/143 'Mesko TW et al. (1990) [PMID: 2269013]': Not directly associated with exposure 'Caffeine'. Reason: The article mentions caffeine consumption but does not directly examine caffeine as an exposure; it only notes that caffeine presently has little support for an association with breast cancer risk.
+  [Screening] Skipping article 91/143 'Dorzhgotov B (1989) [PMID: 2799619]': Not directly associated with exposure 'Caffeine'. Reason: The article does not mention caffeine or any direct nutritional synonyms or biomarkers of caffeine as an exposure of interest.
+  [Screening] Skipping article 93/143 'Tzonou A et al. (1984) [PMID: 6540687]': Not directly associated with exposure 'Caffeine'. Reason: The study examines coffee consumption but does not specifically address caffeine or its direct biomarkers as the exposure of interest.
+  [Screening] Skipping article 94/143 'Lin RS et al. (1981) [PMID: 7452829]': Not directly associated with exposure 'Caffeine'. Reason: The study examines decaffeinated coffee consumption but does not directly investigate caffeine or its nutritional biomarkers as the exposure of interest.
+  [Screening] Skipping article 95/143 'Bompas E et al. (2000) [PMID: 11084534]': Not directly associated with exposure 'Caffeine'. Reason: The article does not examine caffeine as an exposure; it is a review of granulosa cell tumors and does not discuss caffeine or its direct nutritional synonyms or biomarkers.
+  [Screening] Skipping article 96/143 'Wesseling C et al. (1999) [PMID: 10405835]': Not directly associated with exposure 'Caffeine'. Reason: The article investigates cancer incidence in relation to pesticide exposure and does not examine caffeine or its direct nutritional synonyms or biomarkers.
+  [Screening] Skipping article 97/143 'Paradinas FJ et al. (1997) [PMID: 9120723]': Not directly associated with exposure 'Caffeine'. Reason: The article does not mention caffeine or examine its effects, focusing instead on the pathology and prognosis of diploid hydatidiform moles.
+  [Screening] Skipping article 98/143 'Yun TK et al. (1995) [PMID: 7655337]': Not directly associated with exposure 'Caffeine'. Reason: The study examines the effects of ginseng intake on cancer risk and does not investigate caffeine or its direct nutritional synonyms or biomarkers.
+  [Screening] Skipping article 100/143 'Broso PR et al. (1993) [PMID: 8278086]': Not directly associated with exposure 'Caffeine'. Reason: The article is a biographical account of George Nicholas Papanicolaou and does not examine caffeine or its direct nutritional synonyms or biomarkers.
+  [Screening] Skipping article 99/143 'Tortolero-Luna G et al. (1995) [PMID: 8747397]': Not directly associated with exposure 'Caffeine'. Reason: The article discusses various risk factors for ovarian cancer, including coffee and alcohol consumption, but does not specifically examine caffeine as an exposure.
+  [Screening] Skipping article 101/143 'Han J (1993) [PMID: 8234211]': Not directly associated with exposure 'Caffeine'. Reason: The article does not mention caffeine or examine its effects; it focuses on other chemopreventive agents such as retinoids, selenium, green tea extract, and garlic.
+  [Screening] Skipping article 102/143 'Dhar GM et al. (1993) [PMID: 8228764]': Not directly associated with exposure 'Caffeine'. Reason: The article does not examine caffeine or its direct nutritional synonyms/biomarkers, but instead focuses on cancer distribution and the local practice of drinking hot salt tea.
+  [Screening] Skipping article 103/143 'Holly EA et al. (1992) [PMID: 1302562]': Not directly associated with exposure 'Caffeine'. Reason: The study focuses on smoking status and associated behaviors, and while it mentions coffee consumption, it does not directly examine caffeine as an exposure of interest.
+  [Screening] Skipping article 104/143 'Khan Y et al. (2010) [PMID: 20226051]': Not directly associated with exposure 'Caffeine'. Reason: The article does not examine caffeine or its direct nutritional synonyms/biomarkers, but rather discusses pica in the context of iron deficiency.
+  [Screening] Skipping article 105/143 'Ozercan IH et al. (2008) [PMID: 19083394]': Not directly associated with exposure 'Caffeine'. Reason: The study investigates the effects of epigallocatechin-3-gallate (EGCG), a catechin found in green tea, and does not examine caffeine as the exposure of interest.
+  [Screening] Skipping article 107/143 'Zou DM et al. (2005) [PMID: 16150152]': Not directly associated with exposure 'Caffeine'. Reason: The article investigates cactus pear extracts for cancer chemoprevention and does not examine caffeine or its direct nutritional synonyms or biomarkers.
+  [Screening] Skipping article 108/143 'Sah JF et al. (2004) [PMID: 14701854]': Not directly associated with exposure 'Caffeine'. Reason: The study investigates the effects of epigallocatechin-3-gallate (EGCG), a green tea polyphenol, and does not examine caffeine as an exposure.
+Error processing article 109/143: 'charmap' codec can't encode character '\u0103' in position 41: character maps to <undefined>
+  [Screening] Skipping article 110/143 'Aarthy M et al. (2020) [PMID: 32457393]': Not directly associated with exposure 'Caffeine'. Reason: The article focuses on EGCG analogues and their inhibition of HPV E7, with no mention or examination of caffeine as an exposure.
+  [Screening] Skipping article 111/143 'Yadav N et al. (2020) [PMID: 32017926]': Not directly associated with exposure 'Caffeine'. Reason: The article does not mention caffeine or its direct nutritional synonyms/biomarkers and instead focuses on nano-phytochemicals in cervical cancer therapy.
+  [Screening] Skipping article 112/143 'Chen X et al. (2020) [PMID: 31916560]': Not directly associated with exposure 'Caffeine'. Reason: The article focuses on (-)-epigallocatechin-3-gallate (EGCG) and doxorubicin, with no mention of caffeine or its direct nutritional synonyms or biomarkers.
+  [Screening] Skipping article 113/143 'Tan HL et al. (2019) [PMID: 31187674]': Not directly associated with exposure 'Caffeine'. Reason: The study investigates the effects of Luo Han Guo and black tea on throat complications after tracheal intubation, without examining caffeine as the exposure of interest.
+  [Screening] Skipping article 114/143 'Jeremic I et al. (2019) [PMID: 30690690]': Not directly associated with exposure 'Caffeine'. Reason: The study investigates the effects of Sideritis scardica extract and does not examine caffeine or its direct nutritional synonyms or biomarkers.
+  [Screening] Skipping article 115/143 'Pal D et al. (2018) [PMID: 30078217]': Not directly associated with exposure 'Caffeine'. Reason: The study investigates the effects of epigallocatechin gallate, eugenol, and amarogentin, but does not mention or examine caffeine as an exposure.
+  [Screening] Skipping article 116/143 'Playdon MC et al. (2018) [PMID: 29235567]': Not directly associated with exposure 'Caffeine'. Reason: The study examines alcohol as the exposure of interest and only adjusts for caffeine intake as a covariate, without directly investigating caffeine exposure or its effects.
+  [Screening] Skipping article 118/143 'Manta L et al. (2016) [PMID: 27974911]': Not directly associated with exposure 'Caffeine'. Reason: The article only mentions caffeine as one of several predisposing factors but does not directly examine caffeine as an exposure of interest.
+  [Screening] Skipping article 119/143 'Promraksa B et al. (2015) [PMID: 26320505]': Not directly associated with exposure 'Caffeine'. Reason: The study mentions caffeine as a compound present in the plant extract but does not directly examine caffeine as the exposure of interest; it focuses on the cytotoxic effects of the whole plant extract.
+  [Screening] Skipping article 120/143 'Alshatwi AA et al. (2015) [PMID: 25764083]': Not directly associated with exposure 'Caffeine'. Reason: The article does not examine caffeine or its direct nutritional synonyms/biomarkers, but instead focuses on bimetallic nanostructures and their effects on cancer cells.
+  [Screening] Skipping article 122/143 'Alshatwi AA et al. (2015) [PMID: 25577212]': Not directly associated with exposure 'Caffeine'. Reason: The article does not examine caffeine or its direct nutritional synonyms/biomarkers, but instead focuses on platinum nanoparticles synthesized using tea polyphenols.
+  [Screening] Skipping article 121/143 'Khan MA et al. (2015) [PMID: 25682960]': Not directly associated with exposure 'Caffeine'. Reason: The study investigates the effects of (-)-epigallocatechin-3-gallate (EGCG) from green tea, not caffeine, and does not mention caffeine or its direct nutritional synonyms or biomarkers.
+  [Screening] Skipping article 124/143 'Roomi MW et al. (2014) [PMID: 24378964]': Not directly associated with exposure 'Caffeine'. Reason: The study examines the effect of a nutrient mixture containing lysine, proline, ascorbic acid, and green tea extract on cancer cell lines, but does not mention caffeine or its direct nutritional synonyms or biomarkers.
+  [Screening] Skipping article 123/143 'Garcia FA et al. (2014) [PMID: 24388920]': Not directly associated with exposure 'Caffeine'. Reason: The study investigates Polyphenon E, a decaffeinated green tea catechin extract, and does not examine caffeine as an exposure.
+  [Screening] Skipping article 125/143 'Muthusami S et al. (2013) [PMID: 24065519]': Not directly associated with exposure 'Caffeine'. Reason: The study investigates the effects of EGCG, a green tea polyphenol, and does not examine caffeine as an exposure.
+  [Screening] Skipping article 126/143 'Jia Y et al. (2012) [PMID: 23244152]': Not directly associated with exposure 'Caffeine'. Reason: The study examines green tea intake and other dietary factors but does not directly assess caffeine or its nutritional synonyms/biomarkers.
+  [Screening] Skipping article 128/143 'Inoue M et al. (2012) [PMID: 22851686]': Not directly associated with exposure 'Caffeine'. Reason: The article discusses coffee consumption in relation to insulin resistance and cancer, but does not specifically examine caffeine as the exposure of interest.
+  [Screening] Skipping article 127/143 'Park SB et al. (2012) [PMID: 22923012]': Not directly associated with exposure 'Caffeine'. Reason: The study investigates the effects of epigallocatechin-3-gallate (EGCG), a component of green tea, and does not examine caffeine as an exposure.
+  [Screening] Skipping article 129/143 'Al-Hazzani AA et al. (2011) [PMID: 21967781]': Not directly associated with exposure 'Caffeine'. Reason: The study investigates catechin hydrate, a compound in green tea, but does not examine caffeine or its direct nutritional synonyms or biomarkers.
+  [Screening] Skipping article 130/143 'Sanlier NT et al. (2025) [PMID: 41608512]': Not directly associated with exposure 'Caffeine'. Reason: The article focuses on epigallocatechin gallate (EGCG) and tea catechins, not caffeine or its direct nutritional biomarkers.
+  [Screening] Skipping article 131/143 'Roy N et al. (2025) [PMID: 40935265]': Not directly associated with exposure 'Caffeine'. Reason: The article focuses on epigallocatechin-3-gallate (EGCG) and does not examine caffeine or its direct nutritional synonyms or biomarkers.
+  [Screening] Skipping article 133/143 'Jayes FL et al. (2025) [PMID: 39694158]': Not directly associated with exposure 'Caffeine'. Reason: The study uses caffeine as a prototype hydrophilic drug for testing drug release but does not examine caffeine as an exposure of interest.
+Error processing article 134/143: 'charmap' codec can't encode character '\u017c' in position 44: character maps to <undefined>
+Error processing article 135/143: 'charmap' codec can't encode character '\u0142' in position 41: character maps to <undefined>
+Error processing article 136/143: 'charmap' codec can't encode character '\u017c' in position 44: character maps to <undefined>
+  [Screening] Skipping article 138/143 'Ali M et al. (2023) [PMID: 37637856]': Not directly associated with exposure 'Caffeine'. Reason: The article does not mention caffeine or its direct nutritional synonyms/biomarkers and instead focuses on uterine fibroids, vitamin D, and green tea.
+  [Screening] Skipping article 139/143 'Elit L et al. (2023) [PMID: 37623000]': Not directly associated with exposure 'Caffeine'. Reason: The article does not mention caffeine or any direct synonyms or biomarkers related to caffeine as an exposure of interest.
+  [Screening] Skipping article 140/143 'Pekmezci H et al. (2023) [PMID: 37372531]': Not directly associated with exposure 'Caffeine'. Reason: The study examines dietary heat-treatment contaminants and cancer risk, including coffee consumption, but does not directly assess caffeine as the exposure of interest.
+  [Screening] Skipping article 141/143 'Shabir I et al. (2022) [PMID: 36532555]': Not directly associated with exposure 'Caffeine'. Reason: The article focuses on quercetin and its health benefits, and does not examine caffeine as an exposure.
+Error processing article 143/143: 'charmap' codec can't encode character '\u0142' in position 44: character maps to <undefined>
+  [Relevance] Skipping 'Zhu G et al. (2022) [PMID: 36501056]': The study reports the association between caffeine intake and cervical cancer, not uterine cancer (endometrial cancer). No effect size is reported for caffeine and uterine cancer.
+
+============================================================
+[MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY:
+  - Total Articles Fetched from PubMed: 143
+  - Articles Remaining After Pre-filter: 143
+  - LLM Screening:
+    * Screened IN / Accepted:   21
+    * Screened OUT / Rejected:  117
+    * Consensus Bypassed:       0
+  - Final Extracted Studies: 5
+============================================================
+
+[MetaFemina] Stage 4/4: Running meta-analysis on 4 extracted studies...
+DEBUG: re_row type: <class 'pandas.core.series.Series'>
+DEBUG: log_eff: -0.0991 (type: <class 'float'>)
+DEBUG: i2: 0.6082188248837358 (type: <class 'numpy.float64'>), tau2: 0.0257893948495483 (type: <class 'numpy.float64'>)
+DEBUG: eggers_p: 0.8631142054417383 (type: <class 'numpy.float64'>)
+DEBUG Baujat: Called with 4 studies, columns: ['Effect Size', 'Effect Type', 'comparison_type', 'Sample Size', 'Cases', 'Lower CI', 'Upper CI', 'Population', 'Authors', 'Reference', 'Journal', 'Year', 'Link', 'PMID', 'Design', 'Timing', 'Continent', 'Stage', 'Quality %', 'Quality Score', 'JBI', 'Relevance', 'Relevance Reason', 'exposure_measurement_type', 'exposure_measurement_supporting_text', 'extraction_supporting_text', 'Estimated Cases', 'SE', 'exclusions', 'converted_ES', 'converted_Lower_CI', 'converted_Upper_CI', 'log_ES', 'log_SE', 'var']
+DEBUG Baujat: Generated at static\caffeine\baujat_uterine_cancer_incidence_primary.png
+  -> Saved successfully.
+[35/226] RUN: Calcium
+[MetaFemina] Analyzing: Uterine cancer vs Calcium (Outcome: Incidence, Exclude Meta/Reviews: True, Use Downstream: True)
+[MetaFemina] Stage 1/4: Searching PubMed...
+Searching PubMed for: ((Uterus AND Cancer) OR (Uterine AND Cancer) OR (Endometrial AND Cancer)[Title/Abstract] AND ("Calcium"[Title/Abstract] OR "dietary calcium"[Title/Abstract] OR "calcium intake"[Title/Abstract] OR "calcium supplementation"[Title/Abstract] OR "serum calcium"[Title/Abstract] OR "plasma calcium"[Title/Abstract] OR "urinary calcium"[Title/Abstract] OR "bone calcium"[Title/Abstract] OR "Ca"[Title/Abstract] OR "calcium levels"[Title/Abstract]) AND (incidence OR risk OR development OR "associated with" OR "odds ratio") NOT ("uterine cancer survivors"[Title] OR "uterine cancer patients"[Title]) NOT (mice[Title] OR mouse[Title] OR rat[Title] OR murine[Title] OR "in vitro"[Title]) NOT "SNP"[Title] NOT (polymorphism[Title] OR polymorphisms[Title] OR variant[Title] OR variants[Title] OR transferase[Title] OR genotype[Title] OR genotypes[Title] OR "telomere length"[Title] OR "family history"[Title] OR "gene-diet"[Title] OR "gene-nutrient"[Title] OR "gene-supplement"[Title] OR "genotype-exposure"[Title] OR "genetic-nutrient"[Title]) NOT ("interaction"[Title] AND (gene[Title] OR genetic[Title] OR polymorphism[Title] OR mutation[Title] OR genotype[Title])) NOT Meta-Analysis[ptyp] NOT "Systematic Review"[ptyp])
+  [1900�1980] 14 results (14 new)
+  [1981�1990] 72 results (72 new)
+  [1991�2000] 162 results (162 new)
+  [2001�2010] 217 results (216 new)
+  [2011�2020] 415 results (406 new)
+  [2021�2030] 287 results (273 new)
+Found 1143 articles total (across all date ranges).
+[MetaFemina] Stage 2/4: Fetching details for 1143 PubMed records...
+  Error fetching chunk 2 (Attempt 1/3): IncompleteRead(1920 bytes read)
+[MetaFemina] Stage 3/4: Extracting study data from 1139 records with LLM assistance...
+Extracting data from 1139 articles using LLM...
+  [Pre-filter] 1135 relevant articles from 1139 total
+  [Pre-filter] Skipped: disease=0, conflict=0, exposure=0, outcome=0, animal=0, meta=0, genetic=4
+  [LLM] Extracting from all 1135 relevant articles.
+  [Screening] Skipping article 3/1135 'Watkins JR et al. (1992) [PMID: 1729766]': Not directly associated with exposure 'Calcium'. Reason: The study investigates calcium valproate, a pharmaceutical compound, rather than dietary or nutritional calcium exposure.
+  [Screening] Skipping article 5/1135 'Takai N et al. (2009) [PMID: 19168280]': Not directly associated with exposure 'Calcium'. Reason: The article focuses on calcium/calmodulin-dependent kinases as therapeutic targets in endometrial cancer, not on calcium as a nutritional exposure or biomarker.
+  [Screening] Skipping article 7/1135 'Zhang D et al. (2020) [PMID: 32883230]': Not directly associated with exposure 'Calcium'. Reason: The study investigates S100 calcium binding protein P in endometrial cancer, not calcium as a nutritional exposure or biomarker.
+  [Screening] Skipping article 12/1135 'Xin X et al. (2018) [PMID: 29348629]': Not directly associated with exposure 'Calcium'. Reason: The study focuses on the calcium sensing receptor (CaSR) and its role in endometrial cancer, not on calcium exposure, intake, or status as a nutritional or dietary factor.
+  [Screening] Skipping article 14/1135 'Tang X et al. (2025) [PMID: 40017628]': Not directly associated with exposure 'Calcium'. Reason: The article investigates the role of a calcium-dependent adhesion protein (CDH18) in cancer prognosis, but does not directly examine calcium exposure, intake, status, or its nutritional biomarkers.
+  [Screening] Skipping article 15/1135 'Jin S et al. (2024) [PMID: 39465821]': Not directly associated with exposure 'Calcium'. Reason: The article focuses on the molecular and prognostic role of CAMKK2, a calcium/calmodulin-dependent protein kinase, in cancer, but does not directly examine calcium as an exposure, biomarker, or nutritional factor.
+  [Screening] Skipping article 16/1135 'Huang T et al. (2022) [PMID: 36231119]': Not directly associated with exposure 'Calcium'. Reason: The study focuses on calcium-related genes and calcium channel blockers in cancer prognosis and treatment, not on calcium as a nutritional exposure or biomarker.
+  [Screening] Skipping article 19/1135 'Brandes LJ et al. (1987) [PMID: 2886214]': Not directly associated with exposure 'Calcium'. Reason: The article discusses histamine, antiestrogen binding sites, and calcium channels but does not directly examine calcium as an exposure or outcome.
+  [Screening] Skipping article 20/1135 'Dotters DJ (2000) [PMID: 10871446]': Not directly associated with exposure 'Calcium'. Reason: The study investigates the clinical utility of preoperative CA 125 measurement in endometrial cancer and does not examine calcium or its nutritional biomarkers.
+  [Screening] Skipping article 21/1135 'Smith HO et al. (1995) [PMID: 9815987]': Not directly associated with exposure 'Calcium'. Reason: The article focuses on colony-stimulating factor 1 (CSF-1) and its receptor in endometrial adenocarcinoma and does not examine calcium or its direct nutritional biomarkers.
+  [Screening] Skipping article 22/1135 'Angel C et al. (1993) [PMID: 8428694]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any of its direct nutritional biomarkers or synonyms as an exposure; it focuses on recurrent endometrial carcinoma and surgical staging.
+  [Screening] Skipping article 25/1135 'Sebastianelli A et al. (2010) [PMID: 21050518]': Not directly associated with exposure 'Calcium'. Reason: The study investigates the tumor marker CA 125 in endometrial cancer and does not examine calcium or any direct nutritional or biomarker synonym of calcium.
+  [Screening] Skipping article 27/1135 'Emoto M et al. (2010) [PMID: 20109162]': Not directly associated with exposure 'Calcium'. Reason: The study uses calcium-phosphate ceramic microspheres as a drug delivery vehicle in cancer treatment, not to examine calcium as a nutritional exposure or biomarker.
+  [OpenAI] Extracted article 26/1135: Hosono S et al. (2010) [PMID: 20197786] - ES: 0.68 (Cases: 333)
+  [Screening] Skipping article 30/1135 'Chaki O (2007) [PMID: 17211091]': Not directly associated with exposure 'Calcium'. Reason: The article focuses on Bazedoxifene, a SERM used for bone and calcium metabolism disorders, but does not directly examine calcium as an exposure or outcome.
+  [Screening] Skipping article 31/1135 'Kauff ND et al. (2005) [PMID: 15948173]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any of its direct nutritional synonyms or biomarkers; it focuses on ovarian carcinoma screening and its impact on quality of life.
+  [Screening] Skipping article 32/1135 'Loncaster JA et al. (2001) [PMID: 11522632]': Not directly associated with exposure 'Calcium'. Reason: The article focuses on carbonic anhydrase IX expression and hypoxia in cervical cancer, without examining calcium or its nutritional biomarkers as the exposure of interest.
+  [Screening] Skipping article 33/1135 'Ling X et al. (2020) [PMID: 33361739]': Not directly associated with exposure 'Calcium'. Reason: The study investigates CA-125, estrogen receptor, and progesterone receptor as prognostic factors in endometrial cancer, but does not examine calcium or any of its direct nutritional synonyms or biomarkers.
+  [Screening] Skipping article 34/1135 'Li Q et al. (2021) [PMID: 33081984]': Not directly associated with exposure 'Calcium'. Reason: The study does not examine calcium or any direct nutritional biomarkers of calcium; it focuses on the Naples prognostic score and related immune and nutritional markers in endometrial cancer.
+  [Screening] Skipping article 28/1135 'Kanat-Pektas M et al. (2010) [PMID: 19777250]': Not directly associated with exposure 'Calcium'. Reason: The study does not examine calcium or any direct nutritional synonyms or biomarkers of calcium; it focuses on sexual hormones and tumor markers in endometrial cancer.
+  [Screening] Skipping article 36/1135 'Pasanen A et al. (2020) [PMID: 31651527]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any direct nutritional or biomarker synonym for calcium as an exposure; it focuses on PD-L1 expression in endometrial carcinoma.
+  [Screening] Skipping article 37/1135 'Reijnen C et al. (2019) [PMID: 31328454]': Not directly associated with exposure 'Calcium'. Reason: The study investigates the prognostic value of CA-125 in endometrial cancer and does not examine calcium or any direct nutritional or biomarker synonym of calcium.
+Error processing article 38/1135: 'charmap' codec can't encode character '\u0131' in position 42: character maps to <undefined>
+  [Screening] Skipping article 39/1135 'Teasley HE et al. (2019) [PMID: 30773264]': Not directly associated with exposure 'Calcium'. Reason: The study investigates a calcium-dependent enzyme but does not examine calcium as a nutritional exposure, biomarker, or dietary factor.
+Error processing article 40/1135: 'charmap' codec can't encode character '\u015f' in position 46: character maps to <undefined>
+  [Screening] Skipping article 41/1135 'Lu H et al. (2019) [PMID: 30594556]': Not directly associated with exposure 'Calcium'. Reason: The study investigates the role of the SMOC-2 gene, which contains 'calcium binding' in its name, but does not examine calcium as a nutritional exposure, biomarker, or dietary factor.
+  [Screening] Skipping article 42/1135 'Schmidt M et al. (2018) [PMID: 29958235]': Not directly associated with exposure 'Calcium'. Reason: The study investigates cancer antigen 125 (CA-125) levels in uterine papillary serous carcinoma and does not examine calcium or its direct nutritional biomarkers.
+  [Screening] Skipping article 43/1135 'Knific T et al. (2017) [PMID: 28735628]': Not directly associated with exposure 'Calcium'. Reason: The article focuses on CA-125, HE4, and body mass index in endometrial cancer diagnosis and does not examine calcium or its direct nutritional biomarkers.
+  [Screening] Skipping article 44/1135 'Yasui T et al. (2017) [PMID: 28439055]': Not directly associated with exposure 'Calcium'. Reason: The article focuses on androgen and estrogen effects on bone metabolism in women and does not examine calcium as an exposure.
+  [Screening] Skipping article 45/1135 'Zakhour M et al. (2017) [PMID: 28128512]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms or biomarkers related to calcium.
+  [Screening] Skipping article 47/1135 'Zhou X et al. (2017) [PMID: 27894164]': Not directly associated with exposure 'Calcium'. Reason: The study focuses on CA125 and fibrinogen as biomarkers for predicting lymphovascular space invasion in endometrial cancer and does not examine calcium or its direct nutritional biomarkers.
+  [Screening] Skipping article 46/1135 'Kang S et al. (2017) [PMID: 28067948]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any of its nutritional biomarkers as an exposure of interest.
+  [Screening] Skipping article 48/1135 'Naz H et al. (2016) [PMID: 26773169]': Not directly associated with exposure 'Calcium'. Reason: The article discusses the role and regulation of calcium/calmodulin-dependent protein kinase IV (CAMKIV), but does not directly examine calcium as a nutritional exposure or biomarker.
+  [Screening] Skipping article 49/1135 'Turan T et al. (2015) [PMID: 26397154]': Not directly associated with exposure 'Calcium'. Reason: The study does not examine calcium or any of its direct nutritional biomarkers or synonyms as an exposure of interest.
+Error processing article 50/1135: 'charmap' codec can't encode character '\u0159' in position 44: character maps to <undefined>
+  [Screening] Skipping article 52/1135 'Xiang L et al. (2015) [PMID: 26153692]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms or biomarkers related to calcium.
+  [Screening] Skipping article 51/1135 'Emoto M et al. (2015) [PMID: 26254366]': Not directly associated with exposure 'Calcium'. Reason: The study uses calcium-phosphate ceramic microspheres as a drug delivery vehicle for chemoembolization, not as a nutritional or dietary exposure to calcium.
+  [Screening] Skipping article 55/1135 'Coronado PJ et al. (2014) [PMID: 24651627]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms/biomarkers related to calcium as an exposure.
+  [Screening] Skipping article 53/1135 'Arikan SK et al. (2014) [PMID: 25124578]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms/biomarkers related to calcium; it focuses on prognostic factors for ovarian carcinoma survival.
+  [Screening] Skipping article 54/1135 'Nikiforaki D et al. (2014) [PMID: 24931205]': Not directly associated with exposure 'Calcium'. Reason: The study investigates calcium oscillations as a cellular signaling mechanism during fertilization, not calcium as a nutritional exposure or biomarker.
+  [Screening] Skipping article 57/1135 'Zakhour M et al. (2013) [PMID: 24051222]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any of its nutritional biomarkers; it focuses on surveillance methods for type II endometrial cancer recurrence.
+  [Screening] Skipping article 56/1135 'Shim SH et al. (2014) [PMID: 24397772]': Not directly associated with exposure 'Calcium'. Reason: The study does not examine calcium or any direct nutritional or biomarker synonym of calcium; it focuses on metabolic tumour volume and total lesion glycolysis in endometrial cancer.
+  [Screening] Skipping article 58/1135 'Vizza E et al. (2013) [PMID: 23468046]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any of its direct nutritional synonyms or biomarkers, but instead focuses on the feasibility and safety of robotic single-site hysterectomy in low risk endometrial cancer.
+  [Screening] Skipping article 59/1135 'Kang S et al. (2012) [PMID: 22412131]': Not directly associated with exposure 'Calcium'. Reason: The study does not examine calcium or any direct nutritional synonyms/biomarkers of calcium; it focuses on risk prediction for lymph node metastasis in endometrial cancer using CA-125 and MRI parameters.
+  [Screening] Skipping article 61/1135 'Nicklin J et al. (2012) [PMID: 21918977]': Not directly associated with exposure 'Calcium'. Reason: The article examines serum CA-125 as a biomarker for endometrial cancer staging and does not study calcium or its nutritional biomarkers.
+  [Screening] Skipping article 63/1135 'Xie X et al. (2026) [PMID: 41969482]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms or biomarkers related to calcium.
+Error processing article 62/1135: 'charmap' codec can't encode character '\u011f' in position 45: character maps to <undefined>
+  [Screening] Skipping article 64/1135 'Cherry DR et al. (2025) [PMID: 40848683]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional or biomarker synonym of calcium; it focuses on chemotherapy and brachytherapy for uterine papillary serous carcinoma.
+  [Screening] Skipping article 65/1135 'Aybal T et al. (2026) [PMID: 40767944]': Not directly associated with exposure 'Calcium'. Reason: The study investigates MRI-derived sarcopenia in endometrial cancer patients and does not examine calcium or any direct nutritional or biomarker synonym of calcium.
+  [Screening] Skipping article 66/1135 'He J et al. (2025) [PMID: 40313251]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms or biomarkers related to calcium.
+  [Screening] Skipping article 67/1135 'Tanaka Y et al. (2025) [PMID: 40161066]': Not directly associated with exposure 'Calcium'. Reason: The study does not examine calcium or any of its direct nutritional biomarkers or synonyms as an exposure; it focuses on tumor volume index and predictors of pelvic lymph node metastasis in endometrial cancer.
+  [Screening] Skipping article 68/1135 'Liu X et al. (2024) [PMID: 39365143]': Not directly associated with exposure 'Calcium'. Reason: The article focuses on the role of calcium channels (CaV1.3) in cancer therapy, not on calcium as a nutritional exposure or biomarker.
+  [Screening] Skipping article 70/1135 'Tokalioglu AA et al. (2024) [PMID: 38304973]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms/biomarkers related to calcium as an exposure.
+  [Screening] Skipping article 69/1135 'Aiob A et al. (2024) [PMID: 39137594]': Not directly associated with exposure 'Calcium'. Reason: The study does not examine calcium or any of its direct nutritional biomarkers or synonyms as an exposure; it focuses on metastasis and recurrence patterns in low-risk grade 3 endometrial cancer.
+  [Screening] Skipping article 72/1135 'Du NH et al. (2023) [PMID: 38086845]': Not directly associated with exposure 'Calcium'. Reason: The article investigates a calcium channel blocker as a cancer treatment, but does not examine calcium as a nutritional exposure or biomarker.
+  [Screening] Skipping article 71/1135 'Lin H et al. (2024) [PMID: 38287783]': Not directly associated with exposure 'Calcium'. Reason: The study focuses on tumor markers CEA and CA-125 in endometrial cancer prognosis and does not examine calcium or its nutritional biomarkers.
+  [Screening] Skipping article 73/1135 'Yoder AK et al. (2024) [PMID: 37914588]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any of its nutritional synonyms or biomarkers as an exposure; it focuses on sexual dysfunction and menopausal symptoms after uterine cancer treatments.
+  [Screening] Skipping article 75/1135 'Chen L et al. (2023) [PMID: 37747524]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any direct nutritional or biomarker synonym for calcium as an exposure; it focuses on prognostic factors for cervical adenocarcinoma.
+  [Screening] Skipping article 76/1135 'AlAshqar A et al. (2023) [PMID: 37636496]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any of its direct nutritional biomarkers or synonyms as an exposure; it focuses on comorbidities and surgical/oncologic outcomes in elderly women with endometrial cancer.
+  [Screening] Skipping article 77/1135 'Xiao ML et al. (2024) [PMID: 37610442]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any of its direct nutritional biomarkers or synonyms as an exposure; it focuses on MRI radiomics and clinical risk factors for predicting parametrial invasion in cervical cancer.
+  [Screening] Skipping article 78/1135 'Huang SY et al. (2023) [PMID: 37405474]': Not directly associated with exposure 'Calcium'. Reason: The study investigates carcinoembryonic antigen (CEA) and cancer antigen-125 (CA-125) as predictors for lymph node metastasis in endometrial carcinoma and does not examine calcium or its direct nutritional biomarkers.
+  [Screening] Skipping article 79/1135 'Bellone S et al. (2023) [PMID: 37240216]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any of its direct nutritional biomarkers, but instead focuses on circulating tumor DNA biomarkers in uterine cancer patients.
+  [Screening] Skipping article 80/1135 'Fan B et al. (2023) [PMID: 37117874]': Not directly associated with exposure 'Calcium'. Reason: The study investigates calcium channel blockers, which are medications, not calcium as a nutrient, biomarker, or dietary exposure.
+  [Screening] Skipping article 81/1135 'Zhou S et al. (2023) [PMID: 36798148]': Not directly associated with exposure 'Calcium'. Reason: The study focuses on the gene SLC24A3, a sodium-calcium regulator, as a prognostic biomarker in cervical cancer, but does not directly examine calcium exposure, intake, status, or supplementation as the exposure of interest.
+  [Screening] Skipping article 82/1135 'Jiang H et al. (2022) [PMID: 36684165]': Not directly associated with exposure 'Calcium'. Reason: The study examines calcium channel blockers, which are medications, not dietary or nutritional calcium exposure.
+  [Screening] Skipping article 83/1135 'Cui CH et al. (2022) [PMID: 36660721]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms or biomarkers of calcium; it focuses on tyrosine threonine kinase expression in endometrial carcinoma.
+  [Screening] Skipping article 85/1135 'Lightfoot MDS et al. (2023) [PMID: 35931127]': Not directly associated with exposure 'Calcium'. Reason: Although calcium was measured as part of routine postoperative laboratory tests, the study does not examine calcium as an exposure or focus on its clinical effects, making it not directly associated with the exposure of interest.
+  [Screening] Skipping article 86/1135 'Jamieson A et al. (2022) [PMID: 35504673]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any of its direct nutritional biomarkers or synonyms; it focuses on molecular subtypes and lymph node metastases in endometrial carcinoma.
+  [Screening] Skipping article 87/1135 'Zhu H et al. (2022) [PMID: 35437114]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional or biomarker synonym related to calcium; it focuses on surgical methods for cervical adenocarcinoma.
+  [Screening] Skipping article 88/1135 'Khatun M et al. (2021) [PMID: 34650342]': Not directly associated with exposure 'Calcium'. Reason: The article focuses on the expression of the STC-1 protein in endometrial cancer and, although it mentions calcium phosphate homeostasis as one of many biological processes involving STC-1, it does not directly examine calcium as an exposure or outcome.
+  [Screening] Skipping article 89/1135 'Vinklerov� P et al. (2021) [PMID: 34356280]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any of its nutritional biomarkers as an exposure; it focuses on tumor characteristics in endometrial cancer patients.
+  [Screening] Skipping article 90/1135 'Dzaye O et al. (2022) [PMID: 34086883]': Not directly associated with exposure 'Calcium'. Reason: The study examines coronary artery calcium (a marker of atherosclerosis), not dietary or nutritional calcium exposure.
+  [Screening] Skipping article 91/1135 'M�ller RP et al. (1980) [PMID: 6776660]': Not directly associated with exposure 'Calcium'. Reason: The article discusses radiation therapy for endometrial cancer and does not examine calcium or any of its direct nutritional biomarkers or exposures.
+  [Screening] Skipping article 92/1135 'McDaniel EB et al. (1979) [PMID: 42591]': Not directly associated with exposure 'Calcium'. Reason: The article discusses depot medroxyprogesterone acetate and endometrial carcinoma, with no mention or examination of calcium or its nutritional biomarkers.
+  [Direction] Only OpenAI succeeded. Proceeding with flagged inversion (needs_inversion=True).
+  [OpenAI] Extracted article 74/1135: Adeboje-Jimoh F et al. (2024) [PMID: 37758981] - ES: 0.06 (Cases: None)
+  [Screening] Skipping article 93/1135 'Kruyver GP (1979) [PMID: 216933]': Not directly associated with exposure 'Calcium'. Reason: The article focuses on estrogen substitution and endometrial carcinoma, with no indication that calcium or its direct nutritional biomarkers are examined.
+  [Screening] Skipping article 94/1135 'Cremer H et al. (1977) [PMID: 870385]': Not directly associated with exposure 'Calcium'. Reason: The article discusses microcalcifications and calcium salt deposits as a pathological finding in cervical cancer, not calcium as a nutritional exposure or biomarker.
+  [Screening] Skipping article 95/1135 'Kauppila A et al. (1976) [PMID: 968925]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium as an exposure; it focuses on complications after radiotherapy for uterine carcinomas.
+  [Screening] Skipping article 96/1135 'Schrage R et al. (1976) [PMID: 1254155]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any of its direct nutritional biomarkers as an exposure; it focuses on clinical and demographic risk factors for corpus carcinoma in post-menopausal women.
+  [Screening] Skipping article 97/1135 'Leminen A (1990) [PMID: 2258083]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms/biomarkers related to calcium; it focuses on tumor markers in cervical adenocarcinoma.
+  [Screening] Skipping article 98/1135 'Gordon AN et al. (1990) [PMID: 2258078]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any of its nutritional biomarkers; it focuses on imaging assessment of myometrial invasion in endometrial cancer.
+  [Screening] Skipping article 100/1135 'Patsner B et al. (1990) [PMID: 2309825]': Not directly associated with exposure 'Calcium'. Reason: The article focuses on serum CA 125 as a biomarker for endometrial carcinoma surveillance and does not examine calcium or its nutritional biomarkers as an exposure.
+  [Screening] Skipping article 101/1135 'Konishi I et al. (1990) [PMID: 2153042]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any of its nutritional biomarkers as an exposure of interest.
+  [Screening] Skipping article 99/1135 'Duk JM et al. (1990) [PMID: 2317761]': Not directly associated with exposure 'Calcium'. Reason: The study investigates serum tumor markers (CA 125, SCC, CEA) in cervical adenocarcinoma and does not examine calcium or its nutritional biomarkers as an exposure.
+  [Screening] Skipping article 102/1135 'Ward R et al. (1989) [PMID: 2599477]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or examine it as an exposure, focusing instead on metastatic adenocarcinoma and related clinical features.
+  [Screening] Skipping article 104/1135 'Tatake RJ et al. (1989) [PMID: 2583866]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms/biomarkers of calcium; it focuses on a monoclonal antibody against squamous-cell-carcinoma-associated antigen.
+  [Screening] Skipping article 105/1135 'Marcello C et al. (1989) [PMID: 2639616]': Not directly associated with exposure 'Calcium'. Reason: The study examines preoperative CA 125 levels in endometrial adenocarcinoma patients and does not investigate calcium or any of its direct nutritional biomarkers.
+  [Screening] Skipping article 106/1135 'Fukuhisa K (1989) [PMID: 2585732]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any of its nutritional biomarkers as an exposure; it focuses on prognostic factors in cervical cancer treated by radiotherapy.
+  [Screening] Skipping article 108/1135 'Duk JM et al. (1989) [PMID: 2648225]': Not directly associated with exposure 'Calcium'. Reason: The study focuses on tumor markers (CA 125, squamous cell carcinoma antigen, and carcinoembryonic antigen) in cervical adenocarcinoma patients and does not examine calcium or its nutritional biomarkers.
+  [Screening] Skipping article 107/1135 'Berchuck A et al. (1989) [PMID: 2702650]': Not directly associated with exposure 'Calcium'. Reason: The article investigates CA 125 expression in endometrial adenocarcinoma and does not examine calcium or its nutritional biomarkers as an exposure.
+  [Screening] Skipping article 109/1135 'Prat M et al. (1989) [PMID: 2466553]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any of its nutritional biomarkers, and instead focuses on the biochemical characterization of a carcinoma-associated epitope.
+  [Screening] Skipping article 110/1135 'Panici PB et al. (1989) [PMID: 2744625]': Not directly associated with exposure 'Calcium'. Reason: The study does not examine calcium or any direct nutritional biomarkers of calcium; it focuses on serum tumor markers in endometrial cancer patients.
+  [Screening] Skipping article 111/1135 'Schlegel R et al. (1988) [PMID: 2460337]': Not directly associated with exposure 'Calcium'. Reason: The study mentions calcium as part of cell culture conditions but does not examine calcium as an exposure or its direct nutritional effects.
+  [Screening] Skipping article 113/1135 'Brewer LM et al. (1987) [PMID: 3684967]': Not directly associated with exposure 'Calcium'. Reason: The study investigates oncomodulin, a calcium-binding protein, but does not examine calcium as an exposure, biomarker, or nutritional factor.
+  [Screening] Skipping article 112/1135 'Monk BJ et al. (1988) [PMID: 3134695]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or its nutritional biomarkers, but instead focuses on mitomycin C treatment for peritoneal carcinomatosis.
+  [Screening] Skipping article 114/1135 'Bahrassa F et al. (1987) [PMID: 3804813]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any of its nutritional synonyms or biomarkers, and is focused on ureteral obstruction in cervical carcinoma patients.
+  [Screening] Skipping article 115/1135 'To AC et al. (1986) [PMID: 2429756]': Not directly associated with exposure 'Calcium'. Reason: The study investigates the Oxford Ca antigen as a tumor marker, which is unrelated to calcium as a nutritional exposure or biomarker.
+  [Screening] Skipping article 116/1135 'Duk JM et al. (1986) [PMID: 3465243]': Not directly associated with exposure 'Calcium'. Reason: The article focuses on CA 125 as a marker in endometrial carcinoma and does not examine calcium or its nutritional biomarkers.
+  [Screening] Skipping article 117/1135 'Hirayama T (1986) [PMID: 3747136]': Not directly associated with exposure 'Calcium'. Reason: The study mentions calcium as one of several nutrients in green-yellow vegetables but does not directly examine calcium as the exposure of interest.
+  [Screening] Skipping article 119/1135 'Tewfik HH et al. (1982) [PMID: 7061247]': Not directly associated with exposure 'Calcium'. Reason: The article focuses on radiation therapy for cervical cancer and does not examine calcium or any of its nutritional biomarkers as an exposure.
+  [Screening] Skipping article 118/1135 'Kay CR (1984) [PMID: 6509858]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms or biomarkers of calcium; it focuses on oral contraceptives and their health effects.
+  [Screening] Skipping article 120/1135 'Tao Z et al. (1999) [PMID: 11715418]': Not directly associated with exposure 'Calcium'. Reason: The study investigates cancer mortality in relation to high background radiation exposure and does not examine calcium or its nutritional biomarkers as an exposure.
+  [Screening] Skipping article 123/1135 'Lehtovirta P et al. (1999) [PMID: 10436417]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any of its direct nutritional biomarkers; it focuses on serum markers related to gynecologic adenocarcinomas and skin metastases.
+  [Screening] Skipping article 122/1135 'Ren J et al. (2000) [PMID: 10640958]': Not directly associated with exposure 'Calcium'. Reason: The study does not examine calcium or any direct nutritional synonyms or biomarkers of calcium; it focuses on the detection of gastric carcinoma-associated antigen MG7-Ag using immuno-PCR.
+  [Screening] Skipping article 121/1135 'Patsner B (2000) [PMID: 10949386]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms or biomarkers related to calcium.
+Error processing article 124/1135: 'charmap' codec can't encode character '\u0144' in position 47: character maps to <undefined>
+  [Screening] Skipping article 125/1135 'Kaku T et al. (1999) [PMID: 9889029]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms or biomarkers related to calcium; it focuses on angiogenesis and p53 expression in endometrial carcinoma.
+  [Screening] Skipping article 126/1135 'Mungan T et al. (1998) [PMID: 9863923]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any of its direct nutritional biomarkers, focusing instead on serum markers such as hCG and CA-125 in persistent trophoblastic disease.
+  [Screening] Skipping article 129/1135 'Li TC et al. (1998) [PMID: 9804252]': Not directly associated with exposure 'Calcium'. Reason: The study focuses on placental protein-14 and CA-125 in relation to peri-menopausal and post-menopausal bleeding, and does not examine calcium or its direct nutritional biomarkers.
+  [Screening] Skipping article 128/1135 'de Bruijn HW et al. (1998) [PMID: 9817980]': Not directly associated with exposure 'Calcium'. Reason: The article discusses squamous cell carcinoma antigen as a tumor marker in cervical cancer and does not examine calcium or any of its nutritional biomarkers.
+  [Screening] Skipping article 127/1135 'Kihana T et al. (1998) [PMID: 9818024]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any direct nutritional synonyms or biomarkers related to calcium as an exposure of interest.
+  [Screening] Skipping article 131/1135 'Lieskovsk� J et al. (1998) [PMID: 9772303]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms or biomarkers related to calcium.
+  [Screening] Skipping article 132/1135 'Waggoner SE et al. (1998) [PMID: 9754764]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms or biomarkers of calcium as an exposure; it focuses on bcl-2 protein expression and apoptosis in clear cell adenocarcinomas.
+  [Screening] Skipping article 133/1135 'Nagamani M et al. (1998) [PMID: 9704758]': Not directly associated with exposure 'Calcium'. Reason: The study investigates the effects of insulin on endometrial cancer cells and does not examine calcium or any direct nutritional synonyms or biomarkers of calcium.
+  [Screening] Skipping article 134/1135 'Mulligan NJ et al. (1998) [PMID: 9684579]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or examine it as an exposure; it focuses on cervical cytologic diagnoses and quality assurance methods.
+  [Screening] Skipping article 135/1135 'Oki A et al. (1998) [PMID: 9590502]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any direct nutritional synonyms or biomarkers of calcium as an exposure of interest.
+  [Screening] Skipping article 136/1135 'Price FV et al. (1998) [PMID: 9576294]': Not directly associated with exposure 'Calcium'. Reason: The article focuses on CA 125 as a disease marker in uterine serous carcinoma and does not examine calcium or any direct nutritional or biomarker synonym of calcium.
+  [Screening] Skipping article 137/1135 'Zhou C et al. (1998) [PMID: 9422324]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional or biomarker synonym of calcium as an exposure.
+  [Screening] Skipping article 138/1135 'Sood AK et al. (1997) [PMID: 9277659]': Not directly associated with exposure 'Calcium'. Reason: The study focuses on CA 125 levels in uterine cancer management and does not examine calcium or its nutritional biomarkers as an exposure.
+  [Screening] Skipping article 139/1135 'Massuger LF et al. (1997) [PMID: 9062153]': Not directly associated with exposure 'Calcium'. Reason: The study focuses on serum squamous cell carcinoma antigen and CA 125 in cervical cancer staging and does not examine calcium or its nutritional biomarkers.
+  [Screening] Skipping article 140/1135 'Fujimoto J et al. (1997) [PMID: 9065821]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any of its direct nutritional synonyms or biomarkers, focusing instead on growth factors, progestin, and TNP-470 in endometrial cancer.
+  [Screening] Skipping article 141/1135 'Lo SS et al. (1997) [PMID: 9218009]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any of its direct nutritional biomarkers; it focuses on tumor markers in endometrial cancer.
+  [Screening] Skipping article 142/1135 'Bui TD et al. (1997) [PMID: 9099960]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms or biomarkers of calcium; it focuses on Wnt gene expression and hormone regulation in endometrial tissues.
+  [Screening] Skipping article 143/1135 'Yoshizawa H et al. (1996) [PMID: 9037947]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms/biomarkers related to calcium; it focuses on serological detection methods for squamous cell carcinoma.
+  [Screening] Skipping article 145/1135 'Garzetti GG et al. (1996) [PMID: 8626132]': Not directly associated with exposure 'Calcium'. Reason: The study investigates 72-kDa metalloproteinase expression in cervical neoplasia and does not examine calcium or its nutritional biomarkers as an exposure.
+  [Screening] Skipping article 146/1135 'Pardo J et al. (1996) [PMID: 8794421]': Not directly associated with exposure 'Calcium'. Reason: The study does not examine calcium as an exposure but instead focuses on the management of pelvic echo-free findings in postmenopausal women.
+  [Screening] Skipping article 147/1135 'Olt G et al. (1996) [PMID: 8623863]': Not directly associated with exposure 'Calcium'. Reason: The study examines macrophage colony-stimulating factor and CA 125 levels in endometrial cancer patients and does not mention or investigate calcium or its direct nutritional biomarkers.
+  [Screening] Skipping article 149/1135 'Garzetti GG et al. (1996) [PMID: 8631550]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms or biomarkers of calcium; it focuses on 72-kDa metalloproteinase expression in cervical carcinoma.
+  [Screening] Skipping article 150/1135 'Shingleton HM et al. (1995) [PMID: 8634986]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional or biomarker synonym of calcium as an exposure of interest.
+  [Screening] Skipping article 151/1135 'Reddoch JM et al. (1995) [PMID: 7590477]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms/biomarkers related to calcium; it focuses on surveillance for recurrent endometrial carcinoma.
+  [Screening] Skipping article 152/1135 'Scambia G et al. (1994) [PMID: 8088605]': Not directly associated with exposure 'Calcium'. Reason: The article focuses on the tumor markers CA 125 and CA 15-3 in endometrial carcinoma and does not examine calcium or its nutritional biomarkers.
+  [Screening] Skipping article 153/1135 'Gocze PM et al. (1994) [PMID: 8052484]': Not directly associated with exposure 'Calcium'. Reason: The article focuses on tumor antigens (SCC and CA 125) in cervical disease and does not examine calcium or its nutritional biomarkers.
+  [Screening] Skipping article 154/1135 'Schutter EM et al. (1994) [PMID: 8055463]': Not directly associated with exposure 'Calcium'. Reason: The study does not examine calcium or any direct nutritional synonyms/biomarkers of calcium; it focuses on diagnostic methods for pelvic masses.
+  [Screening] Skipping article 155/1135 'Rose PG et al. (1994) [PMID: 8008305]': Not directly associated with exposure 'Calcium'. Reason: The study focuses on CA 125 as a biomarker for endometrial carcinoma recurrence and does not examine calcium or its nutritional biomarkers.
+  [Screening] Skipping article 156/1135 'Karlan BY et al. (1993) [PMID: 8372851]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms or biomarkers related to calcium; it focuses on ovarian cancer screening methods.
+  [Screening] Skipping article 157/1135 'Averette HE et al. (1993) [PMID: 8392908]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or examine its role as an exposure; it focuses on screening techniques for gynecologic cancers.
+  [OpenAI] Extracted article 144/1135: Tzonou A et al. (1996) [PMID: 8630294] - ES: 0.74 (Cases: 145)
+  [Screening] Skipping article 159/1135 'Taurelle R (1993) [PMID: 8235258]': Not directly associated with exposure 'Calcium'. Reason: The article focuses on hormone therapy for osteoporosis and only mentions calcium absorption as a mechanism, but does not directly examine calcium as the exposure of interest.
+  [OpenAI] Extracted article 148/1135: Negri E et al. (1996) [PMID: 8608484] - ES: 1.5 (Cases: 368)
+  [Screening] Skipping article 158/1135 'Rose PG et al. (1993) [PMID: 11578355]': Not directly associated with exposure 'Calcium'. Reason: The study investigates CA-125 levels as a prognostic marker in endometrial adenocarcinoma and does not examine calcium or any direct nutritional calcium biomarkers.
+  [Screening] Skipping article 160/1135 'Yeoh E et al. (1993) [PMID: 8491681]': Not directly associated with exposure 'Calcium'. Reason: The study primarily examines gastrointestinal effects of pelvic irradiation and only mentions dietary calcium intake in relation to lactose malabsorption, without directly studying calcium as an exposure.
+  [Screening] Skipping article 161/1135 'Zeimet AG et al. (1993) [PMID: 8486169]': Not directly associated with exposure 'Calcium'. Reason: The article investigates CA-125 levels in reproductive tissues and serum during the menstrual cycle and does not examine calcium or its nutritional biomarkers.
+  [Screening] Skipping article 162/1135 'Stacey SN et al. (1993) [PMID: 7685808]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any of its nutritional synonyms or biomarkers; it focuses on HPV-16 E7 protein expression and antibody detection in cervical carcinoma patients.
+  [Screening] Skipping article 163/1135 'G�cze P et al. (1993) [PMID: 8460017]': Not directly associated with exposure 'Calcium'. Reason: The study investigates CA 125 as a biomarker in endometrial carcinoma and does not examine calcium or its nutritional biomarkers.
+  [Screening] Skipping article 164/1135 'Rose PG et al. (1993) [PMID: 8456907]': Not directly associated with exposure 'Calcium'. Reason: The study investigates serum squamous cell carcinoma antigen levels in cervical cancer and does not examine calcium or any direct nutritional biomarkers or exposures related to calcium.
+  [Screening] Skipping article 165/1135 'Gr�nroos M et al. (1993) [PMID: 8435805]': Not directly associated with exposure 'Calcium'. Reason: The article focuses on endometrial cancer screening in women with diabetes and hypertension and does not mention calcium or any related nutritional biomarkers as an exposure.
+  [Screening] Skipping article 168/1135 'Archer DF (1992) [PMID: 1450355]': Not directly associated with exposure 'Calcium'. Reason: The article discusses contraceptive methods in women over 35 and does not examine calcium or its nutritional biomarkers.
+  [Screening] Skipping article 167/1135 'G�cze P et al. (1992) [PMID: 1461640]': Not directly associated with exposure 'Calcium'. Reason: The study investigates squamous cell carcinoma antigen levels in cervical cancer patients and does not examine calcium or its nutritional biomarkers.
+  [Screening] Skipping article 166/1135 'Wren BG (1993) [PMID: 8435054]': Not directly associated with exposure 'Calcium'. Reason: The article discusses hormone therapy after breast and uterine cancer and only briefly mentions bone calcium content as a possible effect of tamoxifen, but does not directly examine calcium as an exposure or outcome.
+  [Screening] Skipping article 170/1135 'Levenback C et al. (1992) [PMID: 1526508]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any of its nutritional synonyms or biomarkers, but instead focuses on chemotherapy treatment for uterine papillary serous carcinoma.
+  [Screening] Skipping article 169/1135 'Rose PG et al. (1992) [PMID: 1427391]': Not directly associated with exposure 'Calcium'. Reason: The article discusses CA-125 levels in endometrial cancer patients treated with radiation and does not examine calcium or any of its nutritional biomarkers.
+  [Screening] Skipping article 171/1135 'Bonney RC et al. (1992) [PMID: 1637765]': Not directly associated with exposure 'Calcium'. Reason: The study investigates phospholipase A2 activity in relation to polycystic ovaries and pelvic pain, mentioning calcium only in the context of enzyme classification, not as an exposure or nutritional variable.
+  [Screening] Skipping article 172/1135 'Avall-Lundqvist EH et al. (1992) [PMID: 1389488]': Not directly associated with exposure 'Calcium'. Reason: The study investigates serum tumor markers (SCC and CA 125) in cervical carcinoma and does not examine calcium or its direct nutritional biomarkers.
+  [Screening] Skipping article 173/1135 'Stovall DW et al. (1991) [PMID: 1818724]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or its direct nutritional biomarkers; it focuses on endometriosis, growth factors, bone mineral density, and diagnostic markers.
+  [Screening] Skipping article 174/1135 'Ruka W et al. (1991) [PMID: 1660412]': Not directly associated with exposure 'Calcium'. Reason: The article discusses radiation treatment and induced sarcomas, but does not examine calcium or its nutritional biomarkers as an exposure.
+  [Screening] Skipping article 176/1135 'Yedema KA et al. (1991) [PMID: 1988362]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional or biomarker synonym of calcium; it focuses on mucin serum markers in cancer detection.
+  [Screening] Skipping article 175/1135 'Costa MJ et al. (1991) [PMID: 1716415]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional or biomarker synonym of calcium as an exposure; it focuses on histologic and clinical features of adenosquamous carcinoma of the uterine cervix.
+  [Screening] Skipping article 177/1135 'Verlooy H et al. (1991) [PMID: 1765320]': Not directly associated with exposure 'Calcium'. Reason: The article focuses on squamous cell carcinoma antigen, CEA, and CA-125 in cervical cancer and does not examine calcium or its nutritional biomarkers.
+  [Screening] Skipping article 179/1135 'Rettenmaier CR et al. (2010) [PMID: 21372601]': Not directly associated with exposure 'Calcium'. Reason: The study does not examine calcium or any of its direct nutritional biomarkers or synonyms, but instead focuses on surveillance methods for uterine cancer recurrence.
+  [Screening] Skipping article 178/1135 'Si JY et al. (1991) [PMID: 1716258]': Not directly associated with exposure 'Calcium'. Reason: The study does not examine calcium as an exposure but only mentions calcium phosphate as a laboratory reagent for gene transfer, which is not relevant to nutritional or biological calcium exposure.
+  [Screening] Skipping article 180/1135 'Lee JY et al. (2010) [PMID: 21051976]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any of its direct nutritional biomarkers or synonyms as an exposure; it focuses on predictors of lymph node metastasis in endometrial cancer.
+  [Screening] Skipping article 182/1135 'Kotowicz B et al. (2010) [PMID: 20686378]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any of its direct nutritional synonyms or biomarkers; it focuses on tumor markers and cytokines in cervical adenocarcinoma patients.
+  [Screening] Skipping article 181/1135 'Otsuka I et al. (2010) [PMID: 20837356]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any direct nutritional or biomarker synonym related to calcium as an exposure of interest.
+  [Screening] Skipping article 184/1135 'McCullough ML et al. (2010) [PMID: 20562191]': Not directly associated with exposure 'Calcium'. Reason: The study focuses on correlates of circulating vitamin D and only mentions calcium supplement use as a covariate, not as the primary exposure of interest.
+  [Screening] Skipping article 183/1135 'Yoon JH et al. (2010) [PMID: 20585865]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any related nutritional or biomarker exposure; it focuses on surgical management and risk factors for endometrial cancer.
+  [Screening] Skipping article 186/1135 'Rice LW (2010) [PMID: 20471672]': Not directly associated with exposure 'Calcium'. Reason: The article discusses hormone-based prevention strategies for cancer and does not examine calcium or its nutritional biomarkers as an exposure.
+  [Screening] Skipping article 185/1135 'Kim HS et al. (2010) [PMID: 20541245]': Not directly associated with exposure 'Calcium'. Reason: The study evaluates serum CA-125 levels in endometrial cancer and does not examine calcium or any direct nutritional or biomarker synonym of calcium.
+  [Screening] Skipping article 188/1135 'Yoo SC et al. (2009) [PMID: 19809553]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any of its direct nutritional biomarkers; it focuses on CA-125 levels and tumor grade in endometrial carcinoma patients.
+  [Screening] Skipping article 189/1135 'Srivastava S et al. (2009) [PMID: 19749459]': Not directly associated with exposure 'Calcium'. Reason: The study does not examine calcium or its direct nutritional biomarkers, focusing instead on lipid peroxidation, antioxidants, and vitamins A and E in cervical cancer.
+  [Screening] Skipping article 190/1135 'Lim MC et al. (2009) [PMID: 19499405]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional or biomarker synonym of calcium as an exposure.
+  [Screening] Skipping article 191/1135 'Neuhouser ML et al. (2009) [PMID: 19204221]': Not directly associated with exposure 'Calcium'. Reason: The study examines multivitamin use and its association with cancer and cardiovascular disease, but does not directly examine calcium as the exposure of interest.
+  [Screening] Skipping article 193/1135 '  (2009) [PMID: 23074527]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms or biomarkers related to calcium; it focuses on bariatric surgery for diabetes and morbid obesity.
+  [Screening] Skipping article 192/1135 'Singh M et al. (2009) [PMID: 19191010]': Not directly associated with exposure 'Calcium'. Reason: The article focuses on the molecular mechanisms of curcumin-induced cytotoxicity in cervical cancer cells and does not examine calcium or its direct nutritional biomarkers.
+  [Screening] Skipping article 194/1135 'Marini H et al. (2008) [PMID: 18796517]': Not directly associated with exposure 'Calcium'. Reason: The study's primary exposure is genistein aglycone, and while both groups received calcium as background therapy, the study does not directly examine calcium as the exposure of interest.
+  [Screening] Skipping article 195/1135 'Olawaiye AB et al. (2008) [PMID: 18644620]': Not directly associated with exposure 'Calcium'. Reason: The study examines serum CA-125 as a biomarker for uterine papillary serous carcinoma and does not investigate calcium or its nutritional biomarkers as the exposure of interest.
+  [Screening] Skipping article 196/1135 'Kwon JS et al. (2008) [PMID: 18506736]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any of its direct nutritional synonyms or biomarkers as an exposure; it focuses on prevention strategies for gynecologic cancers in Lynch syndrome.
+  [Screening] Skipping article 197/1135 'Han SS et al. (2008) [PMID: 18376345]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any of its direct nutritional biomarkers or synonyms as an exposure; it focuses on lymphadenectomy and predictors of lymph node metastases in endometrial cancer.
+  [Screening] Skipping article 198/1135 'Landrum LM et al. (2008) [PMID: 18361033]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or examine it as an exposure; it focuses on uterine leiomyoma and pseudo-Meigs syndrome.
+  [Screening] Skipping article 199/1135 'Nishio S et al. (2008) [PMID: 18281151]': Not directly associated with exposure 'Calcium'. Reason: The study focuses on Cap43, a gene inducible by calcium, but does not directly examine calcium exposure, intake, status, or its direct nutritional biomarkers.
+  [Screening] Skipping article 200/1135 'Savas B et al. (2008) [PMID: 17986245]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any related nutritional or biomarker exposure; it focuses on cancer case progression and treatment.
+  [Screening] Skipping article 202/1135 'Yurkovetsky Z et al. (2007) [PMID: 17659325]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any of its direct nutritional biomarkers as an exposure; it focuses on serum biomarkers related to endometrial cancer detection.
+  [Screening] Skipping article 201/1135 'Premkumar A et al. (2007) [PMID: 17662283]': Not directly associated with exposure 'Calcium'. Reason: Although calcium supplementation was provided, the study's primary focus is on the effects of raloxifene, not on calcium as the exposure of interest.
+  [Screening] Skipping article 203/1135 'Denschlag D et al. (2007) [PMID: 17547889]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any of its nutritional biomarkers as an exposure of interest, focusing instead on prognostic factors and survival in stage III endometrial cancer.
+  [Screening] Skipping article 204/1135 'Wang ZH et al. (2007) [PMID: 17442186]': Not directly associated with exposure 'Calcium'. Reason: The study investigates the role of intermediate-conductance Ca2+-activated K+ channels in endometrial cancer, but does not examine calcium as an exposure, nutrient, or biomarker.
+  [Screening] Skipping article 205/1135 'Grigsby PW et al. (2007) [PMID: 17431727]': Not directly associated with exposure 'Calcium'. Reason: The study does not examine calcium or any of its nutritional biomarkers, but instead focuses on hypoxia markers and imaging in cervical cancer.
+  [Screening] Skipping article 206/1135 'Pijnenborg JM et al. (2007) [PMID: 17359291]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any of its direct nutritional synonyms or biomarkers as an exposure of interest.
+  [Screening] Skipping article 207/1135 'Wang ZH et al. (2007) [PMID: 17310992]': Not directly associated with exposure 'Calcium'. Reason: The study focuses on Ca(2+)-activated potassium channels in endometrial cancer, not on calcium as a nutritional exposure or biomarker.
+  [Screening] Skipping article 208/1135 'Chung HH et al. (2006) [PMID: 17260229]': Not directly associated with exposure 'Calcium'. Reason: The study examines serum CA-125 levels as a biomarker for endometrial cancer prognosis and does not investigate calcium or its nutritional biomarkers as the exposure of interest.
+  [Screening] Skipping article 209/1135 'Surprasert P et al. (2006) [PMID: 17250443]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any direct nutritional or biomarker synonym for calcium as an exposure of interest.
+  [Screening] Skipping article 210/1135 'Nur S et al. (2006) [PMID: 17009990]': Not directly associated with exposure 'Calcium'. Reason: The article investigates cancer antigen expression in uterine cancers and does not examine calcium or its nutritional biomarkers as an exposure.
+  [Screening] Skipping article 211/1135 'Honkavuori M et al. (2007) [PMID: 16996112]': Not directly associated with exposure 'Calcium'. Reason: The study does not examine calcium or any direct nutritional synonyms or biomarkers of calcium; it focuses on MMP-2, MMP-9, and CA 125 in endometrial carcinoma.
+  [Screening] Skipping article 212/1135 'Gershenson DM et al. (2006) [PMID: 16880307]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any direct nutritional or biomarker synonym related to calcium as an exposure of interest.
+  [Screening] Skipping article 213/1135 'Saegusa M et al. (2006) [PMID: 16858682]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms/biomarkers of calcium as an exposure; it focuses on beta-catenin, p16INK4A, and pRb in endometrial carcinoma cells.
+  [Screening] Skipping article 214/1135 'Takac I et al. (2006) [PMID: 16817047]': Not directly associated with exposure 'Calcium'. Reason: The study investigates serum CA 125 levels in relation to lymph node metastasis in endometrial cancer and does not examine calcium or any direct nutritional biomarkers or exposures related to calcium.
+  [Screening] Skipping article 215/1135 'Singh RK et al. (2006) [PMID: 16803484]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any of its nutritional synonyms or biomarkers; it focuses on HPV prevalence and recurrence in cervical cancer patients.
+  [Screening] Skipping article 216/1135 'Valentin L et al. (2006) [PMID: 16526098]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms/biomarkers related to calcium; it focuses on ultrasound classification of pelvic masses.
+  [Screening] Skipping article 217/1135 'Horan G et al. (2006) [PMID: 16337996]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium as an exposure, biomarker, or nutritional factor; it focuses on renal effects and urinary diversion in pelvic radiotherapy for cervical cancer.
+  [Screening] Skipping article 219/1135 'Kabuubi P et al. (2006) [PMID: 16317434]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any of its nutritional biomarkers, and instead focuses on thymidine phosphorylase expression and hypoxia in cervical carcinoma.
+  [Screening] Skipping article 218/1135 'Kang S et al. (2006) [PMID: 16331610]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional or biomarker synonym of calcium as an exposure; it focuses on DNA hypermethylation patterns in uterine cancers.
+  [Screening] Skipping article 220/1135 'Powell JL et al. (2005) [PMID: 16220763]': Not directly associated with exposure 'Calcium'. Reason: The study focuses on preoperative serum CA-125 levels in endometrial cancer and does not examine calcium or any direct nutritional synonyms or biomarkers of calcium.
+  [OpenAI] Extracted article 187/1135: Hwang JH et al. (2010) [PMID: 20375804] - ES: 0.21 (Cases: 72)
+  [Screening] Skipping article 223/1135 'Syrj�nen K et al. (2005) [PMID: 16101165]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms/biomarkers related to calcium; it focuses on cervical cancer screening methods and risk factors.
+  [Screening] Skipping article 224/1135 'Jakub�ckov� L et al. (2005) [PMID: 16047742]': Not directly associated with exposure 'Calcium'. Reason: The study focuses on the S100P gene, a calcium-binding protein, but does not examine calcium exposure, intake, status, or its direct nutritional biomarkers.
+  [Screening] Skipping article 225/1135 'Gibadulinov� A et al. (2005) [PMID: 16012747]': Not directly associated with exposure 'Calcium'. Reason: The study focuses on the S100P calcium-binding protein and its role in tumorigenicity, but does not examine calcium itself as an exposure or nutritional factor.
+  [Screening] Skipping article 226/1135 'Michener CM et al. (2005) [PMID: 15959825]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any of its nutritional synonyms or biomarkers, and instead focuses on chemotherapy treatment for endometrial carcinoma.
+  [Screening] Skipping article 227/1135 'Singh RK et al. (2005) [PMID: 15856299]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any of its direct nutritional biomarkers or synonyms as an exposure; it focuses on genetic alterations in chromosome 11 and Bcl-1/Cyclin D1 in cervical carcinoma.
+  [Screening] Skipping article 228/1135 'Saegusa M et al. (2005) [PMID: 15806138]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or its nutritional biomarkers; it focuses on beta-catenin, TCF4, and p300 in endometrial carcinoma cells.
+  [Screening] Skipping article 229/1135 'Yaldizl M et al. (2005) [PMID: 15755011]': Not directly associated with exposure 'Calcium'. Reason: The study investigates E-cadherin, a calcium-dependent molecule, but does not examine calcium as an exposure, biomarker, or nutritional factor.
+  [Screening] Skipping article 230/1135 'Warming L et al. (2005) [PMID: 15653003]': Not directly associated with exposure 'Calcium'. Reason: The study investigates hormone replacement therapy for osteoporosis prevention and only provides calcium as a background supplement to all groups, without examining calcium as the exposure of interest.
+  [Screening] Skipping article 231/1135 'Liu FH et al. (2004) [PMID: 15498190]': Not directly associated with exposure 'Calcium'. Reason: The study focuses on cytokeratin and CA125 as biomarkers for lymph node micrometastasis in endometrial cancer and does not examine calcium or its nutritional biomarkers.
+  [Screening] Skipping article 232/1135 'Slomovitz BM et al. (2004) [PMID: 15284264]': Not directly associated with exposure 'Calcium'. Reason: The article focuses on Her-2/neu expression and amplification in uterine papillary serous carcinoma and does not examine calcium or its nutritional biomarkers as an exposure.
+  [Screening] Skipping article 233/1135 'Moller KA et al. (2004) [PMID: 15262137]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms/biomarkers related to calcium; it focuses on surgical and chemotherapy treatments for uterine serous carcinoma.
+  [Screening] Skipping article 234/1135 'Bainbridge KE et al. (2004) [PMID: 15205714]': Not directly associated with exposure 'Calcium'. Reason: Although calcium intake is mentioned, the study found no association between calcium intake and bone mineral density or bone loss, and did not examine calcium as a primary exposure of interest.
+  [OpenAI] Extracted article 221/1135: Salazar-Martinez E et al. (2005) [PMID: 16174249] - ES: 0.39 (Cases: 85)
+  [Screening] Skipping article 235/1135 'Kukura V et al. (2004) [PMID: 15171315]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any of its direct nutritional biomarkers or exposures; it focuses on postoperative radiotherapy in endometrial adenocarcinoma.
+  [Screening] Skipping article 236/1135 'Alokail MS (2004) [PMID: 15138529]': Not directly associated with exposure 'Calcium'. Reason: The study focuses on PTH/PTHrP receptor expression and the effects of various hormones and 1,25 dihydroxycholecalciferol (active vitamin D) in choriocarcinoma cells, but does not directly examine calcium as an exposure or outcome.
+  [Screening] Skipping article 238/1135 'Saegusa M et al. (2004) [PMID: 15111320]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms/biomarkers related to calcium; it focuses on beta-catenin, cyclin D1, and cell differentiation in endometrial carcinoma cells.
+  [Screening] Skipping article 237/1135 'Huang LY et al. (2004) [PMID: 15136105]': Not directly associated with exposure 'Calcium'. Reason: The study does not examine calcium or its nutritional biomarkers, but instead focuses on uterine artery embolization using gelatin sponge particles and lipiodol for myoma treatment.
+  [Screening] Skipping article 239/1135 'Piek JM et al. (2004) [PMID: 14984947]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any direct nutritional synonyms/biomarkers related to calcium as an exposure of interest.
+  [Screening] Skipping article 240/1135 'Santala M et al. (2003) [PMID: 14981988]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any of its direct nutritional synonyms or biomarkers as an exposure; it focuses on DNA ploidy, S-phase fraction, and serum CA 125 in endometrial carcinoma.
+  [Screening] Skipping article 242/1135 'Kazeto H et al. (2003) [PMID: 14654715]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any direct nutritional synonyms or biomarkers related to calcium as an exposure of interest.
+  [Screening] Skipping article 241/1135 'Isaka K et al. (2004) [PMID: 14751132]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms or biomarkers of calcium; it focuses on the establishment and characterization of a cervical carcinoma cell line.
+  [Screening] Skipping article 243/1135 'Hedley D et al. (2003) [PMID: 14654550]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any of its direct nutritional synonyms or biomarkers; it focuses on carbonic anhydrase IX, hypoxia, and cervical carcinoma prognosis.
+  [Screening] Skipping article 246/1135 'Liao CK et al. (2003) [PMID: 12846367]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any direct nutritional synonyms or biomarkers related to calcium as an exposure of interest.
+  [Screening] Skipping article 245/1135 'Bender DP et al. (2003) [PMID: 12861147]': Not directly associated with exposure 'Calcium'. Reason: The study investigates serum CA 125 as a prognostic marker in cervical adenocarcinoma and does not examine calcium or any direct nutritional calcium biomarkers.
+  [Screening] Skipping article 244/1135 'Dasgupta S et al. (2003) [PMID: 14514919]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any of its nutritional biomarkers, and instead focuses on genetic deletions in chromosome 3p related to cervical carcinoma.
+  [Screening] Skipping article 247/1135 'Agrawal M et al. (2003) [PMID: 12821348]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium as an exposure; it focuses on chemotherapy treatment for cervical adenocarcinoma.
+  [Screening] Skipping article 249/1135 'Kukura V et al. (2003) [PMID: 12701966]': Not directly associated with exposure 'Calcium'. Reason: The study examines the CA-125 tumor marker in endometrial adenocarcinoma and does not investigate calcium or its nutritional biomarkers as an exposure.
+  [Screening] Skipping article 250/1135 'Chrastina A et al. (2003) [PMID: 12687273]': Not directly associated with exposure 'Calcium'. Reason: The article focuses on immunotargeting using a radioactive iodine-labeled antibody and does not examine calcium or its nutritional biomarkers as an exposure.
+  [Screening] Skipping article 248/1135 'Todo Y et al. (2003) [PMID: 12748496]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any direct nutritional synonyms or biomarkers related to calcium as an exposure of interest.
+  [Screening] Skipping article 253/1135 'Ebina Y et al. (2002) [PMID: 12027821]': Not directly associated with exposure 'Calcium'. Reason: The study investigates serum CA 125 levels and nuclear grade in relation to para-aortic lymph node metastasis in endometrial carcinoma, without examining calcium or its nutritional biomarkers.
+  [Screening] Skipping article 251/1135 'Hung YC et al. (2002) [PMID: 12451040]': Not directly associated with exposure 'Calcium'. Reason: The study measures serum calcium levels but does not examine calcium as an exposure, intervention, or risk factor; it only compares levels between groups without investigating calcium's direct role.
+  [Screening] Skipping article 254/1135 'Jhala DN et al. (2001) [PMID: 11598854]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms or biomarkers related to calcium.
+  [Screening] Skipping article 255/1135 'Hildesheim A et al. (2001) [PMID: 11336474]': Not directly associated with exposure 'Calcium'. Reason: The article does not examine calcium or any direct nutritional synonyms/biomarkers related to calcium as an exposure.
+  [Screening] Skipping article 256/1135 'Nicholson TA et al. (2001) [PMID: 11287530]': Not directly associated with exposure 'Calcium'. Reason: The study discusses fibroid calcification as a pathological process after uterine artery embolization, not calcium as a nutritional exposure or biomarker.
+  [Screening] Skipping article 257/1135 'Chen L et al. (2020) [PMID: 33277845]': Not directly associated with exposure 'Calcium'. Reason: The study does not examine calcium or any of its direct nutritional synonyms or biomarkers; it focuses on chemoradiotherapy regimens for endometrial cancer.
+  [Screening] Skipping article 258/1135 'Lan T et al. (2020) [PMID: 33014844]': Not directly associated with exposure 'Calcium'. Reason: The study does not examine calcium or any direct nutritional biomarkers or synonyms of calcium; it focuses on serum markers EpCAM, TGM2, HE4, CA-125, and IL-33 in endometrial cancer.
+  [Screening] Skipping article 259/1135 'Chu H et al. (2020) [PMID: 32899024]': Not directly associated with exposure 'Calcium'. Reason: The article does not mention calcium or any of its nutritional biomarkers as an exposure or variable of interest.

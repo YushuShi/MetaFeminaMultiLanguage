@@ -1,6 +1,7 @@
 import os
 import json
 import time
+import sys
 from datetime import datetime
 
 # Import 'app' modules to use its logic
@@ -15,7 +16,7 @@ def main():
     with open(exposures_path, 'r') as f:
         exposures = json.load(f)
     
-    disease = "Breast cancer"
+    disease = sys.argv[1] if len(sys.argv) > 1 else "Breast cancer"
     outcome = "Incidence"
     exclude_meta = True
     use_downstream = True
