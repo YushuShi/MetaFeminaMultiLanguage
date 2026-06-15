@@ -1,0 +1,82 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Chai W et al. (2010) [PMID: 20668119]",
+            "PMID": "20668119",
+            "Effect Size": 2.26,
+            "Lower CI": 1.22,
+            "Upper CI": 4.19,
+            "Population": "General",
+            "Reference": "Plasma coenzyme Q10 levels and postmenopausal breast cancer risk: the multiethnic cohort study.",
+            "Authors": "Chai W, Cooney RV, Franke AA, Shvetsov YB, Caberto CP, Wilkens LR, Le Marchand L, Henderson BE, Kolonel LN, Goodman MT",
+            "Journal": "Cancer epidemiology, biomarkers & prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology",
+            "Year": "2010",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/20668119/",
+            "Effect Type": "OR",
+            "SE": 0.7576530612244899,
+            "Sample Size": 449,
+            "Cases": 160,
+            "Estimated Cases": null,
+            "Design": "Cohort",
+            "Timing": "Prospective",
+            "Continent": "North America",
+            "Stage": "",
+            "Quality %": 72.7,
+            "Quality Score": "Moderate",
+            "comparison_type": "Highest vs Lowest tertile",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Unclear",
+                "q9": "Unclear",
+                "q10": "Unclear",
+                "q11": "Yes"
+            },
+            "exposure_measurement_type": "human_biospecimen",
+            "exposure_measurement_supporting_text": "Prediagnostic plasma levels of total CoQ10 were measured",
+            "extraction_supporting_text": {
+                "sample_size": "160 incident postmenopausal breast cancer cases and 289 controls",
+                "effect_size": "odds ratio for the highest versus the lowest tertile, 2.26",
+                "effect_direction": "Plasma CoQ10 levels were positively associated with breast cancer risk",
+                "p_value": "P for trend = 0.01",
+                "confidence_interval": "95% confidence interval, 1.22-4.19",
+                "outcome_definition": "postmenopausal breast cancer risk using prospectively collected blood samples",
+                "exposure_definition": "Prediagnostic plasma levels of total CoQ10 were measured"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>160</td>\n      <td>449</td>\n      <td>1.941914</td>\n      <td>1.186078</td>\n      <td>2.961759</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 1.94,
+        "ci_low": 1.19,
+        "ci_upp": 2.96,
+        "interpretation": "statistically significant (increased risk/odds)"
+    },
+    "screening_stats": {
+        "llm_screened_out": 24,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 17,
+        "total_fetched": 42,
+        "after_prefilter": 41,
+        "prefilter_skip": {
+            "disease": 0,
+            "conflict": 0,
+            "exposure": 0,
+            "outcome": 0,
+            "animal": 0,
+            "meta": 0,
+            "genetic": 1
+        },
+        "extracted": 1
+    },
+    "plot_url": "static/coenzyme_q10/forest_breast_cancer_incidence_primary.png?t=3464",
+    "funnel_plot_url": "static/coenzyme_q10/funnel_breast_cancer_incidence_primary.png?t=9084",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-14 17:00:37"
+}

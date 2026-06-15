@@ -1,0 +1,81 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Pathak DR et al. (2021) [PMID: 34682540]",
+            "PMID": "34682540",
+            "Effect Size": 0.23,
+            "Lower CI": 0.07,
+            "Upper CI": 0.65,
+            "Population": "General",
+            "Reference": "Cabbage and Sauerkraut Consumption in Adolescence and Adulthood and Breast Cancer Risk among US-Resident Polish Migrant Women.",
+            "Authors": "Pathak DR, Stein AD, He JP, Noel MM, Hembroff L, Nelson DA, Vigneau F, Shen T, Scott LJ, Charzewska J, Wajszczyk B, Clark K, Rybaczyk LA, Pathak BA, B\u0142aszczyk D, Bankowski A, Willett WC",
+            "Journal": "International journal of environmental research and public health",
+            "Year": "2021",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/34682540/",
+            "Effect Type": "OR",
+            "SE": 0.1479591836734694,
+            "Sample Size": 415,
+            "Cases": 131,
+            "Estimated Cases": null,
+            "Design": "Case-Control",
+            "Timing": "Retrospective",
+            "Continent": "North America",
+            "Stage": null,
+            "Quality %": 100.0,
+            "Quality Score": "Good",
+            "comparison_type": "High vs Low joint adolescent/adult consumption of raw/short-cooked sauerkraut (>3 vs \u22641.5 servings/week, both periods)",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes"
+            },
+            "exposure_measurement_type": "dietary_intake",
+            "exposure_measurement_supporting_text": "Food frequency questionnaires assessed diet during adulthood and age 12-13 years.",
+            "extraction_supporting_text": {
+                "sample_size": "Cases (n = 131)...controls (n = 284)",
+                "effect_size": "the OR was 0.23 (95% CI = 0.07-0.65)",
+                "effect_direction": "Greater consumption of total and raw/short-cooked cabbage/sauerkraut foods either during adolescence or adulthood was associated with significantly reduced BC risk",
+                "p_value": null,
+                "confidence_interval": "the OR was 0.23 (95% CI = 0.07-0.65)",
+                "outcome_definition": "Cases (n = 131) were 20-79 years old with histological/cytological confirmation of invasive BC",
+                "exposure_definition": "Consumption of total, raw/short-cooked, and long-cooked cabbage/sauerkraut foods was categorized as low, medium, or high (frequency of servings/week)"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>131</td>\n      <td>415</td>\n      <td>0.255584</td>\n      <td>0.079627</td>\n      <td>0.680985</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.26,
+        "ci_low": 0.08,
+        "ci_upp": 0.68,
+        "interpretation": "statistically significant (decreased risk/odds)"
+    },
+    "screening_stats": {
+        "llm_screened_out": 0,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 2,
+        "total_fetched": 2,
+        "after_prefilter": 2,
+        "prefilter_skip": {
+            "disease": 0,
+            "conflict": 0,
+            "exposure": 0,
+            "outcome": 0,
+            "animal": 0,
+            "meta": 0,
+            "genetic": 0
+        },
+        "extracted": 1
+    },
+    "plot_url": "static/sauerkraut/forest_breast_cancer_incidence_primary.png?t=191",
+    "funnel_plot_url": "static/sauerkraut/funnel_breast_cancer_incidence_primary.png?t=4322",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-14 23:14:20"
+}

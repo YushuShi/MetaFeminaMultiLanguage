@@ -1,0 +1,81 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Qin YC et al. (2014) [PMID: 25520105]",
+            "PMID": "25520105",
+            "Effect Size": 0.5,
+            "Lower CI": 0.3,
+            "Upper CI": 0.82,
+            "Population": "General",
+            "Reference": "Association of urinary cesium with breast cancer risk.",
+            "Authors": "Qin YC, Tang LY, Su Y, Chen LJ, Su FX, Lin Y, Zhang AH, Ren ZF",
+            "Journal": "Asian Pacific journal of cancer prevention : APJCP",
+            "Year": "2014",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/25520105/",
+            "Effect Type": "OR",
+            "SE": 0.1326530612244898,
+            "Sample Size": 486,
+            "Cases": 240,
+            "Estimated Cases": null,
+            "Design": "Case-Control",
+            "Timing": "Retrospective",
+            "Continent": "Asia",
+            "Stage": "",
+            "Quality %": 90.0,
+            "Quality Score": "Good",
+            "comparison_type": "Highest vs Lowest tertile",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Unclear",
+                "q10": "Yes"
+            },
+            "exposure_measurement_type": "human_biospecimen",
+            "exposure_measurement_supporting_text": "Urinary concentrations of cesium were determined by inductively coupled plasma mass spectrometry.",
+            "extraction_supporting_text": {
+                "sample_size": "240 women with incident invasive breast cancer ... and 246 age-matched female controls",
+                "effect_size": "ORs and 95% CIs: 0.75 (0.46- 1.22) and 0.50 (0.30-0.82), respectively",
+                "effect_direction": "women in the second and highest tertile of cesium showed a decreased risk of breast cancer",
+                "p_value": "",
+                "confidence_interval": "ORs and 95% CIs: 0.75 (0.46- 1.22) and 0.50 (0.30-0.82), respectively",
+                "outcome_definition": "incident invasive breast cancer",
+                "exposure_definition": "Urinary concentrations of cesium"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>240</td>\n      <td>486</td>\n      <td>0.534759</td>\n      <td>0.330033</td>\n      <td>0.839648</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.53,
+        "ci_low": 0.33,
+        "ci_upp": 0.84,
+        "interpretation": "statistically significant (decreased risk/odds)"
+    },
+    "screening_stats": {
+        "llm_screened_out": 11,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 10,
+        "total_fetched": 21,
+        "after_prefilter": 21,
+        "prefilter_skip": {
+            "disease": 0,
+            "conflict": 0,
+            "exposure": 0,
+            "outcome": 0,
+            "animal": 0,
+            "meta": 0,
+            "genetic": 0
+        },
+        "extracted": 1
+    },
+    "plot_url": "static/cesium/forest_breast_cancer_incidence_primary.png?t=4339",
+    "funnel_plot_url": "static/cesium/funnel_breast_cancer_incidence_primary.png?t=175",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-14 16:11:26"
+}

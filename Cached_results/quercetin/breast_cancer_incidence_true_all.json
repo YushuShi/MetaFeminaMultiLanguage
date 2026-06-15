@@ -1,0 +1,82 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Adebamowo CA et al. (2005) [PMID: 15609322]",
+            "PMID": "15609322",
+            "Effect Size": 1.05,
+            "Lower CI": 0.83,
+            "Upper CI": 1.34,
+            "Population": "General",
+            "Reference": "Dietary flavonols and flavonol-rich foods intake and the risk of breast cancer.",
+            "Authors": "Adebamowo CA, Cho E, Sampson L, Katan MB, Spiegelman D, Willett WC, Holmes MD",
+            "Journal": "International journal of cancer",
+            "Year": "2005",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/15609322/",
+            "Effect Type": "RR",
+            "SE": 0.13010204081632656,
+            "Sample Size": 90630,
+            "Cases": 710,
+            "Estimated Cases": null,
+            "Design": "Cohort",
+            "Timing": "Prospective",
+            "Continent": "North America",
+            "Stage": "",
+            "Quality %": 81.8,
+            "Quality Score": "Good",
+            "comparison_type": "Highest vs Lowest quintile",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Unclear",
+                "q10": "Unclear",
+                "q11": "Yes"
+            },
+            "exposure_measurement_type": "dietary_intake",
+            "exposure_measurement_supporting_text": "flavonol intakes from dietary data collected by validated food frequency questionnaires in 1991 and 1995",
+            "extraction_supporting_text": {
+                "sample_size": "from 90,630 women in the Nurses Health Study II",
+                "effect_size": "The multivariate RR (95% CI), comparing highest to lowest quintiles of cumulative average intake, was 1.05 (0.83, 1.34; p-value for test of trend=0.96) for the sum of flavonols and there were no associations seen between individual flavonols such as kaempferol, quercetin and myricetin and breast cancer risk.",
+                "effect_direction": "no associations seen between individual flavonols such as kaempferol, quercetin and myricetin and breast cancer risk",
+                "p_value": "p-value for test of trend=0.96",
+                "confidence_interval": "1.05 (0.83, 1.34)",
+                "outcome_definition": "risk of breast cancer in women who were premenopausal and aged between 26 and 46 years at baseline in 1991",
+                "exposure_definition": "individual flavonols such as kaempferol, quercetin and myricetin"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>710</td>\n      <td>90630</td>\n      <td>1.05</td>\n      <td>0.83</td>\n      <td>1.34</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 1.05,
+        "ci_low": 0.83,
+        "ci_upp": 1.34,
+        "interpretation": "not statistically significant"
+    },
+    "screening_stats": {
+        "llm_screened_out": 51,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 283,
+        "total_fetched": 336,
+        "after_prefilter": 335,
+        "prefilter_skip": {
+            "disease": 0,
+            "conflict": 0,
+            "exposure": 0,
+            "outcome": 0,
+            "animal": 0,
+            "meta": 0,
+            "genetic": 1
+        },
+        "extracted": 2
+    },
+    "plot_url": "static/quercetin/forest_breast_cancer_incidence_primary.png?t=7884",
+    "funnel_plot_url": "static/quercetin/funnel_breast_cancer_incidence_primary.png?t=9563",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-15 05:15:23"
+}

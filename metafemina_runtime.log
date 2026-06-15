@@ -2044,3 +2044,68 @@
 2026-06-13 19:20:40 [MetaFemina] Running new analysis for Breast cancer / Alcohol (from 'Alcohol') using model: openai.gpt-4o
 2026-06-13 21:53:58 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alcohol\breast_cancer_incidence_true_core.json
 2026-06-13 21:53:58 [MetaFemina] Analyze complete in 9197.3s: studies=237, error=None
+2026-06-14 17:09:59 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Calcium, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-14 17:09:59 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\breast_cancer_incidence_true_core.json
+2026-06-14 17:09:59 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-14 17:09:59 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-14 17:09:59 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-14 17:09:59 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-14 17:09:59 [MetaFemina] Running new analysis for Breast cancer / Calcium (from 'Calcium') using model: openai.gpt-4o
+2026-06-14 18:09:58 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\breast_cancer_incidence_true_core.json
+2026-06-14 18:09:58 [MetaFemina] Analyze complete in 3598.7s: studies=31, error=None
+2026-06-14 18:18:40 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\breast_cancer_incidence_true_all.json
+2026-06-14 18:18:41 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\breast_cancer_incidence_true_core.json
+2026-06-14 18:18:44 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\breast_cancer_incidence_true_all.json
+2026-06-14 18:18:44 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\breast_cancer_incidence_true_core.json
+2026-06-14 18:22:35 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\breast_cancer_incidence_true_core.json
+2026-06-14 18:22:36 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\breast_cancer_incidence_true_core.json
+2026-06-14 18:27:34 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\breast_cancer_incidence_true_all.json
+2026-06-14 18:27:35 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\breast_cancer_incidence_true_core.json
+2026-06-14 18:27:36 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\breast_cancer_incidence_true_all.json
+2026-06-14 18:27:37 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\breast_cancer_incidence_true_core.json
+2026-06-14 18:29:58 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Calcium, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-14 18:29:58 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\ovarian_cancer_incidence_true_core.json
+2026-06-14 18:29:58 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\ovarian_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-14 18:29:58 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\ovarian_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-14 18:29:58 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\ovarian_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-14 18:29:58 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\ovarian_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-14 18:29:58 [MetaFemina] Running new analysis for Ovarian cancer / Calcium (from 'Calcium') using model: openai.gpt-4o
+2026-06-14 18:53:39 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\ovarian_cancer_incidence_true_core.json
+2026-06-14 18:53:39 [MetaFemina] Analyze complete in 1421.0s: studies=8, error=None
+2026-06-14 19:54:29 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Calcium, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-14 19:54:29 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\uterine_cancer_incidence_true_core.json
+2026-06-14 19:54:29 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\uterine_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-14 19:54:29 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\uterine_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-14 19:54:29 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\uterine_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-14 19:54:29 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\uterine_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-14 19:54:29 [MetaFemina] Running new analysis for Uterine cancer / Calcium (from 'Calcium') using model: openai.gpt-4o
+2026-06-14 20:07:37 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\uterine_cancer_incidence_true_core.json
+2026-06-14 20:07:37 [MetaFemina] Analyze complete in 788.2s: studies=8, error=None
+2026-06-14 21:04:49 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Calendula, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-14 21:04:49 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calendula\uterine_cancer_incidence_true_core.json
+2026-06-14 21:04:49 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calendula\uterine_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-14 21:04:49 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calendula\uterine_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-14 21:04:49 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calendula\uterine_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-14 21:04:49 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calendula\uterine_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-14 21:04:49 [MetaFemina] Running new analysis for Uterine cancer / Calendula (from 'Calendula') using model: openai.gpt-4o
+2026-06-14 21:04:51 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calendula\uterine_cancer_incidence_true_core.json
+2026-06-14 21:04:51 [MetaFemina] Analyze complete in 2.1s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-14 21:05:04 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Calendula, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-14 21:05:04 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calendula\breast_cancer_incidence_true_core.json
+2026-06-14 21:05:04 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calendula\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-14 21:05:04 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calendula\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-14 21:05:04 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calendula\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-14 21:05:04 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calendula\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-14 21:05:04 [MetaFemina] Running new analysis for Breast cancer / Calendula (from 'Calendula') using model: openai.gpt-4o
+2026-06-14 21:05:40 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calendula\breast_cancer_incidence_true_core.json
+2026-06-14 21:05:40 [MetaFemina] Analyze complete in 36.2s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-14 21:06:14 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Zinc, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-14 21:06:14 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\zinc\breast_cancer_incidence_true_core.json
+2026-06-14 21:06:14 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\zinc\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-14 21:06:14 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\zinc\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-14 21:06:14 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\zinc\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-14 21:06:14 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\zinc\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-14 21:06:14 [MetaFemina] Running new analysis for Breast cancer / Zinc (from 'Zinc') using model: openai.gpt-4o
+2026-06-14 21:25:15 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\zinc\breast_cancer_incidence_true_core.json
+2026-06-14 21:25:15 [MetaFemina] Re-analyzing Zinc due to verification filtering/consensus/flags...
+2026-06-14 21:25:15 [MetaFemina] Analyze complete in 1141.2s: studies=10, error=None

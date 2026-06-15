@@ -1,0 +1,81 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Lowcock EC et al. (2013) [PMID: 23354422]",
+            "PMID": "23354422",
+            "Effect Size": 0.82,
+            "Lower CI": 0.69,
+            "Upper CI": 0.97,
+            "Population": "General",
+            "Reference": "Consumption of flaxseed, a rich source of lignans, is associated with reduced breast cancer risk.",
+            "Authors": "Lowcock EC, Cotterchio M, Boucher BA",
+            "Journal": "Cancer causes & control : CCC",
+            "Year": "2013",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/23354422/",
+            "Effect Type": "OR",
+            "SE": 0.07142857142857144,
+            "Sample Size": 6369,
+            "Cases": 2999,
+            "Estimated Cases": null,
+            "Design": "Case-Control",
+            "Timing": "Retrospective",
+            "Continent": "North America",
+            "Stage": "",
+            "Quality %": 100.0,
+            "Quality Score": "Good",
+            "comparison_type": "Yes vs No (weekly consumption of flaxseed vs none)",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes"
+            },
+            "exposure_measurement_type": "dietary_intake",
+            "exposure_measurement_supporting_text": "A food frequency questionnaire was used to measure the consumption of flaxseed and flax bread",
+            "extraction_supporting_text": {
+                "sample_size": "2,999 women with breast cancer and 3,370 healthy control women",
+                "effect_size": "Consumption of flaxseed was associated with a significant reduction in breast cancer risk (odds ratio (OR) = 0.82, 95 % confidence interval (CI) 0.69-0.97)",
+                "effect_direction": "Consumption of flaxseed was associated with a significant reduction in breast cancer risk",
+                "p_value": "",
+                "confidence_interval": "odds ratio (OR) = 0.82, 95 % confidence interval (CI) 0.69-0.97",
+                "outcome_definition": "breast cancer risk",
+                "exposure_definition": "intake of flaxseed-the richest source of dietary lignans (a class of phytoestrogens)"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>2999</td>\n      <td>6369</td>\n      <td>0.839648</td>\n      <td>0.718975</td>\n      <td>0.973798</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.84,
+        "ci_low": 0.72,
+        "ci_upp": 0.97,
+        "interpretation": "statistically significant (decreased risk/odds)"
+    },
+    "screening_stats": {
+        "llm_screened_out": 7,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 57,
+        "total_fetched": 64,
+        "after_prefilter": 64,
+        "prefilter_skip": {
+            "disease": 0,
+            "conflict": 0,
+            "exposure": 0,
+            "outcome": 0,
+            "animal": 0,
+            "meta": 0,
+            "genetic": 0
+        },
+        "extracted": 1
+    },
+    "plot_url": "static/flaxseed/forest_breast_cancer_incidence_primary.png?t=8581",
+    "funnel_plot_url": "static/flaxseed/funnel_breast_cancer_incidence_primary.png?t=2448",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-14 23:31:31"
+}

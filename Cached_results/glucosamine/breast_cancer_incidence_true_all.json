@@ -1,0 +1,82 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Suissa K et al. (2024) [PMID: 38973352]",
+            "PMID": "38973352",
+            "Effect Size": 1.07,
+            "Lower CI": 0.93,
+            "Upper CI": 1.23,
+            "Population": "General",
+            "Reference": "Glucosamine and Cancer Incidence in Osteoarthritis: A Prevalent New-User Cohort Design.",
+            "Authors": "Suissa K, Dell'Aniello S, Comin E, Hudson M, Suissa S",
+            "Journal": "Arthritis care & research",
+            "Year": "2024",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/38973352/",
+            "Effect Type": "HR",
+            "SE": 0.07653061224489795,
+            "Sample Size": 41082,
+            "Cases": null,
+            "Estimated Cases": 5341,
+            "Design": "Cohort",
+            "Timing": "Retrospective",
+            "Continent": "Europe",
+            "Stage": null,
+            "Quality %": 81.8,
+            "Quality Score": "Good",
+            "comparison_type": "Glucosamine initiators vs non-users",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Unclear",
+                "q10": "Unclear",
+                "q11": "Yes"
+            },
+            "exposure_measurement_type": "dietary_intake",
+            "exposure_measurement_supporting_text": "Glucosamine initiators were identified and matched to non-users; exposure was based on prescription/initiation.",
+            "extraction_supporting_text": {
+                "sample_size": "The study cohort of patients with osteoarthritis included 20,541 glucosamine initiators who were matched to 20,541 non-users.",
+                "effect_size": "it was 1.07 (95% CI 0.93-1.23) for breast cancer in women",
+                "effect_direction": "treatment with glucosamine did not reduce the incidence of cancer",
+                "p_value": "",
+                "confidence_interval": "it was 1.07 (95% CI 0.93-1.23) for breast cancer in women",
+                "outcome_definition": "incidence of breast cancer in women",
+                "exposure_definition": "Glucosamine initiators vs non-users"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>None</td>\n      <td>41082</td>\n      <td>1.064922</td>\n      <td>0.934442</td>\n      <td>1.21096</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 1.06,
+        "ci_low": 0.93,
+        "ci_upp": 1.21,
+        "interpretation": "not statistically significant"
+    },
+    "screening_stats": {
+        "llm_screened_out": 34,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 11,
+        "total_fetched": 45,
+        "after_prefilter": 45,
+        "prefilter_skip": {
+            "disease": 0,
+            "conflict": 0,
+            "exposure": 0,
+            "outcome": 0,
+            "animal": 0,
+            "meta": 0,
+            "genetic": 0
+        },
+        "extracted": 1
+    },
+    "plot_url": "static/glucosamine/forest_breast_cancer_incidence_primary.png?t=4904",
+    "funnel_plot_url": "static/glucosamine/funnel_breast_cancer_incidence_primary.png?t=8482",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-14 23:53:52"
+}

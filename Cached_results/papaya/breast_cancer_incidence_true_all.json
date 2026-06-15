@@ -1,0 +1,81 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Zhang CX et al. (2009) [PMID: 19358284]",
+            "PMID": "19358284",
+            "Effect Size": 0.53,
+            "Lower CI": 0.34,
+            "Upper CI": 0.82,
+            "Population": "General",
+            "Reference": "Greater vegetable and fruit intake is associated with a lower risk of breast cancer among Chinese women.",
+            "Authors": "Zhang CX, Ho SC, Chen YM, Fu JH, Cheng SZ, Lin FY",
+            "Journal": "International journal of cancer",
+            "Year": "2009",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/19358284/",
+            "Effect Type": "OR",
+            "SE": 0.12244897959183672,
+            "Sample Size": 876,
+            "Cases": 438,
+            "Estimated Cases": null,
+            "Design": "Case-Control",
+            "Timing": "Retrospective",
+            "Continent": "Asia",
+            "Stage": null,
+            "Quality %": 90.0,
+            "Quality Score": "Good",
+            "comparison_type": "Highest vs Lowest",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Unclear",
+                "q10": "Yes"
+            },
+            "exposure_measurement_type": "dietary_intake",
+            "exposure_measurement_supporting_text": "Dietary intake was assessed by face-to-face interviews using a validated food frequency questionnaire.",
+            "extraction_supporting_text": {
+                "sample_size": "Four hundred and thirty-eight cases were frequency matched to 438 controls",
+                "effect_size": "The ORs of the highest quartile relative to the lowest quartile of ... watermelon/papaya/cantaloupe were all inversely and significantly related with breast cancer risk.",
+                "effect_direction": "Consumption of ... watermelon/papaya/cantaloupe were all inversely and significantly related with breast cancer risk.",
+                "p_value": null,
+                "confidence_interval": "The ORs of the highest quartile relative to the lowest quartile ... 0.53 (95% CI 0.34-0.82)",
+                "outcome_definition": "breast cancer risk",
+                "exposure_definition": "Consumption of individual vegetable and fruit groups such as ... watermelon/papaya/cantaloupe"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>438</td>\n      <td>876</td>\n      <td>0.56449</td>\n      <td>0.37191</td>\n      <td>0.839648</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.56,
+        "ci_low": 0.37,
+        "ci_upp": 0.84,
+        "interpretation": "statistically significant (decreased risk/odds)"
+    },
+    "screening_stats": {
+        "llm_screened_out": 1,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 9,
+        "total_fetched": 10,
+        "after_prefilter": 10,
+        "prefilter_skip": {
+            "disease": 0,
+            "conflict": 0,
+            "exposure": 0,
+            "outcome": 0,
+            "animal": 0,
+            "meta": 0,
+            "genetic": 0
+        },
+        "extracted": 1
+    },
+    "plot_url": "static/papaya/forest_breast_cancer_incidence_primary.png?t=8612",
+    "funnel_plot_url": "static/papaya/funnel_breast_cancer_incidence_primary.png?t=2151",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-15 04:23:02"
+}

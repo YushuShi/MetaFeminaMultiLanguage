@@ -1,0 +1,81 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Do MH et al. (2007) [PMID: 17896586]",
+            "PMID": "17896586",
+            "Effect Size": 0.59,
+            "Lower CI": 0.35,
+            "Upper CI": 0.95,
+            "Population": "General",
+            "Reference": "Fruits, vegetables, soy foods and breast cancer in pre- and postmenopausal Korean women: a case-control study.",
+            "Authors": "Do MH, Lee SS, Kim JY, Jung PJ, Lee MH",
+            "Journal": "International journal for vitamin and nutrition research. Internationale Zeitschrift fur Vitamin- und Ernahrungsforschung. Journal international de vitaminologie et de nutrition",
+            "Year": "2007",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/17896586/",
+            "Effect Type": "OR",
+            "SE": 0.15306122448979592,
+            "Sample Size": 1067,
+            "Cases": 359,
+            "Estimated Cases": null,
+            "Design": "Case-Control",
+            "Timing": "Retrospective",
+            "Continent": "Asia",
+            "Stage": "",
+            "Quality %": 100.0,
+            "Quality Score": "Good",
+            "comparison_type": "Highest vs Lowest",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes"
+            },
+            "exposure_measurement_type": "dietary_intake",
+            "exposure_measurement_supporting_text": "dietary habits, which were assessed using a semi-quantitative food frequency questionnaire (98 items)",
+            "extraction_supporting_text": {
+                "sample_size": "Incident cases (n = 359) were identified ... controls (n = 708)",
+                "effect_size": "High grape intake showed an inverse association of breast cancer in postmenopausal women (OR = 0.59, 95% CI = 0.35-0.95; p for trend = 0.05)",
+                "effect_direction": "High grape intake showed an inverse association of breast cancer in postmenopausal women",
+                "p_value": "p for trend = 0.05",
+                "confidence_interval": "95% CI = 0.35-0.95",
+                "outcome_definition": "breast cancer risk in Korean women",
+                "exposure_definition": "High grape intake"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>359</td>\n      <td>1067</td>\n      <td>0.623217</td>\n      <td>0.382305</td>\n      <td>0.956215</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.62,
+        "ci_low": 0.38,
+        "ci_upp": 0.96,
+        "interpretation": "statistically significant (decreased risk/odds)"
+    },
+    "screening_stats": {
+        "llm_screened_out": 15,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 36,
+        "total_fetched": 51,
+        "after_prefilter": 51,
+        "prefilter_skip": {
+            "disease": 0,
+            "conflict": 0,
+            "exposure": 0,
+            "outcome": 0,
+            "animal": 0,
+            "meta": 0,
+            "genetic": 0
+        },
+        "extracted": 1
+    },
+    "plot_url": "static/grape/forest_breast_cancer_incidence_primary.png?t=1540",
+    "funnel_plot_url": "static/grape/funnel_breast_cancer_incidence_primary.png?t=2441",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-15 00:14:08"
+}

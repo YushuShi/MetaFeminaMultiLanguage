@@ -1,0 +1,79 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Zhang H et al. (2025) [PMID: 41327224]",
+            "PMID": "41327224",
+            "Effect Size": 0.83,
+            "Lower CI": 0.7,
+            "Upper CI": 0.99,
+            "Population": "General",
+            "Reference": "Heavy metal mixtures exposure and breast cancer risk: synergistic effects with SHBG identified by mediation and moderation models.",
+            "Authors": "Zhang H, Zhu X, Xin M, Wang R, Wang T, Nie G, Zhang H, Yan J, Liu C",
+            "Journal": "BMC public health",
+            "Year": "2025",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/41327224/",
+            "Effect Type": "OR",
+            "SE": 0.0739795918367347,
+            "Sample Size": 2939,
+            "Cases": null,
+            "Estimated Cases": 382,
+            "Design": "Cross-Sectional",
+            "Timing": "Retrospective",
+            "Continent": "North America",
+            "Stage": null,
+            "Quality %": 100.0,
+            "Quality Score": "Good",
+            "comparison_type": "Continuous",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes"
+            },
+            "exposure_measurement_type": "human_biospecimen",
+            "exposure_measurement_supporting_text": "We analyzed data from 2,939 female participants in the National Health and Nutrition Examination Survey (NHANES) 2013-2020...associations of 5 blood metals...with BC risk.",
+            "extraction_supporting_text": {
+                "sample_size": "We analyzed data from 2,939 female participants in the National Health and Nutrition Examination Survey (NHANES) 2013-2020.",
+                "effect_size": "a negative association for Mn (OR\u2009=\u20090.83, 95% CI\u2009=\u20090.70-0.99)",
+                "effect_direction": "a negative association for Mn",
+                "p_value": "fully adjusted analysis results revealed significant positive associations...while non-significant associations for Cd...RCS analyses revealed...significant nonlinear relationships for Cd and Mn (P over <\u20090.001, P non-linear\u2009<\u20090.05)",
+                "confidence_interval": "OR\u2009=\u20090.83, 95% CI\u2009=\u20090.70-0.99",
+                "outcome_definition": "breast cancer (BC) risk",
+                "exposure_definition": "blood heavy metals...manganese (Mn)"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>None</td>\n      <td>2939</td>\n      <td>0.848758</td>\n      <td>0.728408</td>\n      <td>0.991289</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.85,
+        "ci_low": 0.73,
+        "ci_upp": 0.99,
+        "interpretation": "statistically significant (decreased risk/odds)"
+    },
+    "screening_stats": {
+        "llm_screened_out": 68,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 79,
+        "total_fetched": 147,
+        "after_prefilter": 147,
+        "prefilter_skip": {
+            "disease": 0,
+            "conflict": 0,
+            "exposure": 0,
+            "outcome": 0,
+            "animal": 0,
+            "meta": 0,
+            "genetic": 0
+        },
+        "extracted": 1
+    },
+    "plot_url": "static/manganese/forest_breast_cancer_incidence_primary.png?t=1418",
+    "funnel_plot_url": "static/manganese/funnel_breast_cancer_incidence_primary.png?t=5280",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-15 02:22:50"
+}

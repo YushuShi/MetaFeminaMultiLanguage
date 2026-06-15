@@ -1,0 +1,82 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Yang CC et al. (2025) [PMID: 40084379]",
+            "PMID": "40084379",
+            "Effect Size": 0.69,
+            "Lower CI": 0.66,
+            "Upper CI": 0.72,
+            "Population": "General",
+            "Reference": "Impact of long-term N-acetylcysteine use on cancer risk.",
+            "Authors": "Yang CC, Chen WM, Shia BC, Wu SY",
+            "Journal": "American journal of cancer research",
+            "Year": "2025",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/40084379/",
+            "Effect Type": "HR",
+            "SE": 0.015306122448979578,
+            "Sample Size": 91546,
+            "Cases": null,
+            "Estimated Cases": 11901,
+            "Design": "Cohort",
+            "Timing": "Retrospective",
+            "Continent": "Asia",
+            "Stage": "",
+            "Quality %": 81.8,
+            "Quality Score": "Good",
+            "comparison_type": "Yes vs No",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Unclear",
+                "q10": "Unclear",
+                "q11": "Yes"
+            },
+            "exposure_measurement_type": "dietary_intake",
+            "exposure_measurement_supporting_text": "NAC use was defined as consistent administration for most days with an average dose exceeding 28 cumulative defined daily doses (cDDDs) annually.",
+            "extraction_supporting_text": {
+                "sample_size": "PSM yielded 91,546 patients, evenly distributed between NAC and non-NAC groups.",
+                "effect_size": "adjusted hazard ratio [aHR] 0.69, 95% confidence interval [CI] 0.66-0.72; P<0.001",
+                "effect_direction": "demonstrated significant reductions in the risk of specific cancers, including ... breast cancer, among NAC users compared to non-users.",
+                "p_value": "P<0.001",
+                "confidence_interval": "95% confidence interval [CI] 0.66-0.72",
+                "outcome_definition": "risk of specific cancers, including ... breast cancer, among NAC users compared to non-users.",
+                "exposure_definition": "NAC use was defined as consistent administration for most days with an average dose exceeding 28 cumulative defined daily doses (cDDDs) annually."
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>None</td>\n      <td>91546</td>\n      <td>0.704758</td>\n      <td>0.675504</td>\n      <td>0.73389</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.7,
+        "ci_low": 0.68,
+        "ci_upp": 0.73,
+        "interpretation": "statistically significant (decreased risk/odds)"
+    },
+    "screening_stats": {
+        "llm_screened_out": 26,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 82,
+        "total_fetched": 109,
+        "after_prefilter": 108,
+        "prefilter_skip": {
+            "disease": 0,
+            "conflict": 0,
+            "exposure": 0,
+            "outcome": 0,
+            "animal": 0,
+            "meta": 0,
+            "genetic": 1
+        },
+        "extracted": 1
+    },
+    "plot_url": "static/n_acetylcysteine/forest_breast_cancer_incidence_primary.png?t=5300",
+    "funnel_plot_url": "static/n_acetylcysteine/funnel_breast_cancer_incidence_primary.png?t=709",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-15 03:30:12"
+}
