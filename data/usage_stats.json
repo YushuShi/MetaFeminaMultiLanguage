@@ -5,8 +5,18 @@
         "calls": 586
     },
     "google.gemini-2.5-flash": {
-        "input_tokens": 840634,
-        "output_tokens": 414489,
-        "calls": 235
+        "input_tokens": 2270358,
+        "output_tokens": 1036866,
+        "calls": 634
+    },
+    "anthropic.claude-4.6-sonnet": {
+        "input_tokens": 2038274,
+        "output_tokens": 251990,
+        "calls": 1021
+    },
+    "gemini-2.5-flash": {
+        "input_tokens": 411784,
+        "output_tokens": 34221,
+        "calls": 619
     }
 }

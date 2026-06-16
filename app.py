@@ -260,12 +260,16 @@ def analyze():
 
     best_cache_path = None
     if not force_refresh:
-        for p_model in model_cache_priority(model):
-            p_path = get_cache_path(disease, exposure, outcome, exclude_meta, use_downstream, p_model)
-            log_event(f"[MetaFemina] Checking cache candidate: {p_path}")
-            if os.path.exists(p_path):
-                best_cache_path = p_path
-                log_event(f"[MetaFemina] Cache hit found: {best_cache_path}")
+        # Try requested downstream setting first, then fallback to opposite
+        for ds_flag in [use_downstream, not use_downstream]:
+            for p_model in model_cache_priority(model):
+                p_path = get_cache_path(disease, exposure, outcome, exclude_meta, ds_flag, p_model)
+                log_event(f"[MetaFemina] Checking cache candidate: {p_path}")
+                if os.path.exists(p_path):
+                    best_cache_path = p_path
+                    log_event(f"[MetaFemina] Cache hit found: {best_cache_path}")
+                    break
+            if best_cache_path:
                 break
     else:
         log_event("[MetaFemina] Force refresh requested; bypassing cached result lookup.")
