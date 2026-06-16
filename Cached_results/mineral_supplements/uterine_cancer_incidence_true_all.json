@@ -1,0 +1,81 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Terry P et al. (2002) [PMID: 12235647]",
+            "PMID": "12235647",
+            "Effect Size": 0.5,
+            "Lower CI": 0.3,
+            "Upper CI": 0.9,
+            "Population": "General",
+            "Reference": "Dietary factors in relation to endometrial cancer: a nationwide case-control study in Sweden.",
+            "Authors": "Terry P, Vainio H, Wolk A, Weiderpass E",
+            "Journal": "Nutrition and cancer",
+            "Year": "2002",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/12235647/",
+            "Effect Type": "OR",
+            "SE": 0.15306122448979595,
+            "Sample Size": 3596,
+            "Cases": 709,
+            "Estimated Cases": null,
+            "Design": "Case-Control",
+            "Timing": "Retrospective",
+            "Continent": "Europe",
+            "Stage": "",
+            "Quality %": 80.0,
+            "Quality Score": "Moderate",
+            "comparison_type": "Daily use vs No use",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Unclear",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Unclear",
+                "q10": "Yes"
+            },
+            "exposure_measurement_type": "dietary_intake",
+            "exposure_measurement_supporting_text": "Daily use of calcium supplements appeared to lower endometrial cancer risk",
+            "extraction_supporting_text": {
+                "sample_size": "709 cases and 2,887 controls",
+                "effect_size": "OR = 0.5",
+                "effect_direction": "Daily use of calcium supplements appeared to lower endometrial cancer risk",
+                "p_value": "P for trend = 0.04",
+                "confidence_interval": "95% CI = 0.3-0.9",
+                "outcome_definition": "endometrial cancer",
+                "exposure_definition": "Daily use of calcium supplements"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>709</td>\n      <td>3596</td>\n      <td>0.534759</td>\n      <td>0.330033</td>\n      <td>0.911854</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.53,
+        "ci_low": 0.33,
+        "ci_upp": 0.91,
+        "interpretation": "statistically significant (decreased risk/odds)"
+    },
+    "screening_stats": {
+        "llm_screened_out": 3,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 5,
+        "total_fetched": 8,
+        "after_prefilter": 8,
+        "prefilter_skip": {
+            "disease": 0,
+            "conflict": 0,
+            "exposure": 0,
+            "outcome": 0,
+            "animal": 0,
+            "meta": 0,
+            "genetic": 0
+        },
+        "extracted": 1
+    },
+    "plot_url": "static/mineral_supplements/forest_uterine_cancer_incidence_primary.png?t=1209",
+    "funnel_plot_url": "static/mineral_supplements/funnel_uterine_cancer_incidence_primary.png?t=7822",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-15 14:46:20"
+}

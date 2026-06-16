@@ -1,0 +1,62 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Israelsson P et al. (2025) [PMID: 40702701]",
+            "PMID": "40702701",
+            "Effect Size": 9.49,
+            "Lower CI": 1.8,
+            "Upper CI": 50.05,
+            "Population": "General",
+            "Reference": "High LRIG1 expression predicts lymph node metastasis in patients with uterine cervical cancer.",
+            "Authors": "Israelsson P, Lif L, Oda H, Lorenzzi de Melo A, Lindquist D, Hedman H",
+            "Journal": "FEBS open bio",
+            "Year": "2025",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/40702701/",
+            "Effect Type": "OR",
+            "SE": 12.308673469387756,
+            "Sample Size": "N/A",
+            "Cases": null,
+            "Estimated Cases": null,
+            "Design": "Unknown",
+            "Timing": "Unknown",
+            "Continent": "Europe",
+            "Stage": "Early",
+            "Quality %": 0,
+            "Quality Score": "Fair",
+            "comparison_type": "-",
+            "JBI": "-",
+            "exposure_measurement_type": "unclear",
+            "exposure_measurement_supporting_text": "Not assessed (Regex extraction fallback)",
+            "extraction_supporting_text": {
+                "sample_size": "",
+                "effect_size": "",
+                "effect_direction": "",
+                "p_value": "",
+                "confidence_interval": "",
+                "outcome_definition": "",
+                "exposure_definition": ""
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>None</td>\n      <td>N/A</td>\n      <td>4.511099</td>\n      <td>1.630435</td>\n      <td>6.785061</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 4.51,
+        "ci_low": 1.63,
+        "ci_upp": 6.79,
+        "interpretation": "statistically significant (increased risk/odds)"
+    },
+    "screening_stats": {
+        "total_fetched": 75,
+        "after_prefilter": 6,
+        "extracted": 6,
+        "prefilter_skip": {},
+        "llm_screened_out": 0,
+        "llm_screened_in": 6,
+        "consensus_bypassed": 0
+    },
+    "plot_url": "static/leucine/forest_uterine_cancer_incidence_primary.png?t=2591",
+    "funnel_plot_url": "static/leucine/funnel_uterine_cancer_incidence_primary.png?t=9747",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-15 14:24:48"
+}

@@ -1,0 +1,62 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Rowlands IJ et al. (2011) [PMID: 21875265]",
+            "PMID": "21875265",
+            "Effect Size": 4.46,
+            "Lower CI": 1.24,
+            "Upper CI": 16.06,
+            "Population": "General",
+            "Reference": "Season of birth and risk of endometrial cancer.",
+            "Authors": "Rowlands IJ, Weinstein P, Nagle CM, Spurdle AB, Webb PM,  ,  ",
+            "Journal": "Asian Pacific journal of cancer prevention : APJCP",
+            "Year": "2011",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/21875265/",
+            "Effect Type": "OR",
+            "SE": 3.780612244897959,
+            "Sample Size": "2938",
+            "Cases": 1399.0,
+            "Estimated Cases": null,
+            "Design": "Case-Control",
+            "Timing": "Unknown",
+            "Continent": "Other",
+            "Stage": "Unspecified",
+            "Quality %": 0,
+            "Quality Score": "Fair",
+            "comparison_type": "-",
+            "JBI": "-",
+            "exposure_measurement_type": "unclear",
+            "exposure_measurement_supporting_text": "Not assessed (Regex extraction fallback)",
+            "extraction_supporting_text": {
+                "sample_size": "",
+                "effect_size": "",
+                "effect_direction": "",
+                "p_value": "",
+                "confidence_interval": "",
+                "outcome_definition": "",
+                "exposure_definition": ""
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>1399.0</td>\n      <td>2938</td>\n      <td>3.076286</td>\n      <td>1.202483</td>\n      <td>5.429711</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 3.08,
+        "ci_low": 1.2,
+        "ci_upp": 5.43,
+        "interpretation": "statistically significant (increased risk/odds)"
+    },
+    "screening_stats": {
+        "total_fetched": 51,
+        "after_prefilter": 3,
+        "extracted": 3,
+        "prefilter_skip": {},
+        "llm_screened_out": 0,
+        "llm_screened_in": 3,
+        "consensus_bypassed": 0
+    },
+    "plot_url": "static/melatonin/forest_uterine_cancer_incidence_primary.png?t=4484",
+    "funnel_plot_url": "static/melatonin/funnel_uterine_cancer_incidence_primary.png?t=5036",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-15 14:45:07"
+}

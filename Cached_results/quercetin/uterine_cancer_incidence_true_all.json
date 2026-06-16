@@ -1,0 +1,81 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Bandera EV et al. (2009) [PMID: 19353280]",
+            "PMID": "19353280",
+            "Effect Size": 0.65,
+            "Lower CI": 0.41,
+            "Upper CI": 1.01,
+            "Population": "General",
+            "Reference": "Phytoestrogen consumption and endometrial cancer risk: a population-based case-control study in New Jersey.",
+            "Authors": "Bandera EV, Williams MG, Sima C, Bayuga S, Pulick K, Wilcox H, Soslow R, Zauber AG, Olson SH",
+            "Journal": "Cancer causes & control : CCC",
+            "Year": "2009",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/19353280/",
+            "Effect Type": "OR",
+            "SE": 0.15306122448979595,
+            "Sample Size": 822,
+            "Cases": 424,
+            "Estimated Cases": null,
+            "Design": "Case-Control",
+            "Timing": "Retrospective",
+            "Continent": "North America",
+            "Stage": "",
+            "Quality %": 90.0,
+            "Quality Score": "Good",
+            "comparison_type": "Highest vs Lowest quartile",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Unclear",
+                "q10": "Yes"
+            },
+            "exposure_measurement_type": "dietary_intake",
+            "exposure_measurement_supporting_text": "a food frequency questionnaire with supplemental questions for phytoestrogen foods",
+            "extraction_supporting_text": {
+                "sample_size": "A total of 424 cases and 398 controls completed an interview",
+                "effect_size": "OR: 0.65; 95% CI: 0.41-1.01 for the highest compared to the lowest quartile",
+                "effect_direction": "There was some suggestion of a decreased risk with quercetin intake",
+                "p_value": "p for trend: 0.02",
+                "confidence_interval": "95% CI: 0.41-1.01",
+                "outcome_definition": "endometrial cancer risk",
+                "exposure_definition": "quercetin intake"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>424</td>\n      <td>822</td>\n      <td>0.680985</td>\n      <td>0.444059</td>\n      <td>1.008689</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.68,
+        "ci_low": 0.44,
+        "ci_upp": 1.01,
+        "interpretation": "not statistically significant"
+    },
+    "screening_stats": {
+        "llm_screened_out": 5,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 33,
+        "total_fetched": 39,
+        "after_prefilter": 39,
+        "prefilter_skip": {
+            "disease": 0,
+            "conflict": 0,
+            "exposure": 0,
+            "outcome": 0,
+            "animal": 0,
+            "meta": 0,
+            "genetic": 0
+        },
+        "extracted": 2
+    },
+    "plot_url": "static/quercetin/forest_uterine_cancer_incidence_primary.png?t=2432",
+    "funnel_plot_url": "static/quercetin/funnel_uterine_cancer_incidence_primary.png?t=8690",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-15 15:06:01"
+}

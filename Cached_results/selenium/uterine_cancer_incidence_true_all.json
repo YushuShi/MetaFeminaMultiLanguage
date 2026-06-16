@@ -1,0 +1,81 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Kho PF et al. (2019) [PMID: 30972295]",
+            "PMID": "30972295",
+            "Effect Size": 0.99,
+            "Lower CI": 0.87,
+            "Upper CI": 1.14,
+            "Population": "General",
+            "Reference": "Assessing the Role of Selenium in Endometrial Cancer Risk: A Mendelian Randomization Study.",
+            "Authors": "Kho PF, Glubb DM, Thompson DJ, Spurdle AB, O'Mara TA",
+            "Journal": "Frontiers in oncology",
+            "Year": "2019",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/30972295/",
+            "Effect Type": "OR",
+            "SE": 0.06887755102040814,
+            "Sample Size": 121885,
+            "Cases": 12906,
+            "Estimated Cases": null,
+            "Design": "Case-Control",
+            "Timing": "Retrospective",
+            "Continent": "Europe",
+            "Stage": null,
+            "Quality %": 90.0,
+            "Quality Score": "Good",
+            "comparison_type": "per unit increase in selenium levels Z-score",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Unclear",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes"
+            },
+            "exposure_measurement_type": "human_biospecimen",
+            "exposure_measurement_supporting_text": "selenium levels (using a composite measure of blood and toenail selenium)",
+            "extraction_supporting_text": {
+                "sample_size": "a study of 12,906 endometrial cancer cases and 108,979 controls",
+                "effect_size": "OR per unit increase in selenium levels Z-score = 0.99",
+                "effect_direction": "no evidence of a causal role for selenium levels in endometrial cancer development",
+                "p_value": null,
+                "confidence_interval": "95% CI = 0.87-1.14",
+                "outcome_definition": "endometrial cancer cases",
+                "exposure_definition": "selenium levels (using a composite measure of blood and toenail selenium)"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>12906</td>\n      <td>121885</td>\n      <td>0.991289</td>\n      <td>0.884956</td>\n      <td>1.119623</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.99,
+        "ci_low": 0.88,
+        "ci_upp": 1.12,
+        "interpretation": "not statistically significant"
+    },
+    "screening_stats": {
+        "llm_screened_out": 9,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 48,
+        "total_fetched": 58,
+        "after_prefilter": 58,
+        "prefilter_skip": {
+            "disease": 0,
+            "conflict": 0,
+            "exposure": 0,
+            "outcome": 0,
+            "animal": 0,
+            "meta": 0,
+            "genetic": 0
+        },
+        "extracted": 3
+    },
+    "plot_url": "static/selenium/forest_uterine_cancer_incidence_primary.png?t=2616",
+    "funnel_plot_url": "static/selenium/funnel_uterine_cancer_incidence_primary.png?t=4672",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-15 15:18:57"
+}
