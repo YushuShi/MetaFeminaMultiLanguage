@@ -1,17 +1,17 @@
 {
     "anthropic.claude-4.6-sonnet": {
-        "input_tokens": 1077357,
-        "output_tokens": 125283,
-        "calls": 535
+        "input_tokens": 1160071,
+        "output_tokens": 135724,
+        "calls": 573
     },
     "gemini-2.5-flash": {
-        "input_tokens": 240452,
-        "output_tokens": 18862,
-        "calls": 338
+        "input_tokens": 253739,
+        "output_tokens": 19972,
+        "calls": 358
     },
     "google.gemini-2.5-flash": {
-        "input_tokens": 728291,
-        "output_tokens": 262283,
-        "calls": 200
+        "input_tokens": 789008,
+        "output_tokens": 289573,
+        "calls": 217
     }
 }
