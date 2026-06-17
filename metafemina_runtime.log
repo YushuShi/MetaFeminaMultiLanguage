@@ -3063,3 +3063,344 @@
 2026-06-16 16:37:54 [MetaFemina] Running new analysis for Ovarian cancer / Clove (from 'Clove') using model: openai.gpt-4o
 2026-06-16 16:37:56 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\clove\ovarian_cancer_incidence_true_core.json
 2026-06-16 16:37:56 [MetaFemina] Analyze complete in 2.1s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-06-17 09:34:00 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Vitamin A, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-17 09:34:00 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core.json
+2026-06-17 09:34:00 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-17 09:34:00 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-17 09:34:00 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-17 09:34:00 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-17 09:34:00 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-17 09:34:00 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-17 09:34:00 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-17 09:34:00 
+============================================================
+2026-06-17 09:34:00 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-17 09:34:00   - Total Articles Fetched from PubMed: 886
+2026-06-17 09:34:00   - Articles Remaining After Pre-filter: 882
+2026-06-17 09:34:00     (Pre-filter skips: genetic=4)
+2026-06-17 09:34:00   - LLM Screening:
+2026-06-17 09:34:00     * Screened IN / Accepted:   232
+2026-06-17 09:34:00     * Screened OUT / Rejected:  630
+2026-06-17 09:34:00     * Consensus Bypassed:       0
+2026-06-17 09:34:00   - Final Extracted Studies: 23
+2026-06-17 09:34:00 ============================================================
+
+2026-06-17 09:34:00 [MetaFemina] Analyze complete in 0.0s: studies=17, error=None
+2026-06-17 09:34:13 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Red meat, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-17 09:34:13 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_core.json
+2026-06-17 09:34:13 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-17 09:34:13 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-17 09:34:13 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-17 09:34:13 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-17 09:34:13 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-17 09:34:13 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-17 09:34:13 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-06-17 09:34:13 
+============================================================
+2026-06-17 09:34:13 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-17 09:34:13   - Total Articles Fetched from PubMed: 344
+2026-06-17 09:34:13   - Articles Remaining After Pre-filter: 344
+2026-06-17 09:34:13   - LLM Screening:
+2026-06-17 09:34:13     * Screened IN / Accepted:   238
+2026-06-17 09:34:13     * Screened OUT / Rejected:  105
+2026-06-17 09:34:13     * Consensus Bypassed:       0
+2026-06-17 09:34:13   - Final Extracted Studies: 43
+2026-06-17 09:34:13 ============================================================
+
+2026-06-17 09:34:13 [MetaFemina] Analyze complete in 0.0s: studies=36, error=None
+2026-06-17 09:45:51 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-17 09:45:51 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core.json
+2026-06-17 09:45:51 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-17 09:45:51 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-17 09:45:51 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-17 09:45:51 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-17 09:45:51 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 09:45:51 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 09:45:51 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 09:45:51 
+============================================================
+2026-06-17 09:45:51 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-17 09:45:51   - Total Articles Fetched from PubMed: 867
+2026-06-17 09:45:51   - Articles Remaining After Pre-filter: 863
+2026-06-17 09:45:51     (Pre-filter skips: genetic=4)
+2026-06-17 09:45:51   - LLM Screening:
+2026-06-17 09:45:51     * Screened IN / Accepted:   229
+2026-06-17 09:45:51     * Screened OUT / Rejected:  634
+2026-06-17 09:45:51     * Consensus Bypassed:       13
+2026-06-17 09:45:51   - Final Extracted Studies: 47
+2026-06-17 09:45:51 ============================================================
+
+2026-06-17 09:45:51 [MetaFemina] Re-analyzing Folic acid due to verification filtering/consensus/flags...
+2026-06-17 09:45:53 [MetaFemina] Analyze complete in 1.3s: studies=44, error=None
+2026-06-17 09:54:59 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-17 09:54:59 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core.json
+2026-06-17 09:54:59 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-17 09:54:59 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-17 09:54:59 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-17 09:54:59 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-17 09:54:59 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 09:54:59 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 09:54:59 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 09:54:59 
+============================================================
+2026-06-17 09:54:59 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-17 09:54:59   - Total Articles Fetched from PubMed: 867
+2026-06-17 09:54:59   - Articles Remaining After Pre-filter: 863
+2026-06-17 09:54:59     (Pre-filter skips: genetic=4)
+2026-06-17 09:54:59   - LLM Screening:
+2026-06-17 09:54:59     * Screened IN / Accepted:   229
+2026-06-17 09:54:59     * Screened OUT / Rejected:  634
+2026-06-17 09:54:59     * Consensus Bypassed:       13
+2026-06-17 09:54:59   - Final Extracted Studies: 47
+2026-06-17 09:54:59 ============================================================
+
+2026-06-17 09:54:59 [MetaFemina] Re-analyzing Folic acid due to verification filtering/consensus/flags...
+2026-06-17 09:54:59 [MetaFemina] Analyze complete in 0.6s: studies=44, error=None
+2026-06-17 09:55:04 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-17 09:55:04 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-17 09:55:04 [MetaFemina] Running new analysis for Breast cancer / Folic acid (from 'Folic acid') using model: openai.gpt-4o
+2026-06-17 10:09:07 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-17 10:09:07 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core.json
+2026-06-17 10:09:07 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-17 10:09:07 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-17 10:09:07 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-17 10:09:07 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-17 10:09:07 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 10:09:07 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 10:09:07 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 10:09:07 
+============================================================
+2026-06-17 10:09:07 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-17 10:09:07   - Total Articles Fetched from PubMed: 867
+2026-06-17 10:09:07   - Articles Remaining After Pre-filter: 863
+2026-06-17 10:09:07     (Pre-filter skips: genetic=4)
+2026-06-17 10:09:07   - LLM Screening:
+2026-06-17 10:09:07     * Screened IN / Accepted:   229
+2026-06-17 10:09:07     * Screened OUT / Rejected:  634
+2026-06-17 10:09:07     * Consensus Bypassed:       13
+2026-06-17 10:09:07   - Final Extracted Studies: 47
+2026-06-17 10:09:07 ============================================================
+
+2026-06-17 10:09:07 [MetaFemina] Re-analyzing Folic acid due to verification filtering/consensus/flags...
+2026-06-17 10:09:08 [MetaFemina] Analyze complete in 1.5s: studies=44, error=None
+2026-06-17 10:23:14 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-17 10:23:14 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core.json
+2026-06-17 10:23:14 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-17 10:23:14 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-17 10:23:14 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-17 10:23:14 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-17 10:23:14 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 10:23:14 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 10:23:14 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 10:23:14 
+============================================================
+2026-06-17 10:23:14 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-17 10:23:14   - Total Articles Fetched from PubMed: 867
+2026-06-17 10:23:14   - Articles Remaining After Pre-filter: 863
+2026-06-17 10:23:14     (Pre-filter skips: genetic=4)
+2026-06-17 10:23:14   - LLM Screening:
+2026-06-17 10:23:14     * Screened IN / Accepted:   229
+2026-06-17 10:23:14     * Screened OUT / Rejected:  634
+2026-06-17 10:23:14     * Consensus Bypassed:       13
+2026-06-17 10:23:14   - Final Extracted Studies: 47
+2026-06-17 10:23:14 ============================================================
+
+2026-06-17 10:23:14 [MetaFemina] Re-analyzing Folic acid due to verification filtering/consensus/flags...
+2026-06-17 10:23:16 [MetaFemina] Analyze complete in 1.5s: studies=44, error=None
+2026-06-17 10:23:28 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all - Copy.json
+2026-06-17 10:23:30 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 10:23:31 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all - Copy.json
+2026-06-17 10:23:32 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 10:23:34 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all - Copy.json
+2026-06-17 10:23:37 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 10:30:05 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-17 10:30:05 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core.json
+2026-06-17 10:30:05 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-17 10:30:05 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-17 10:30:05 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-17 10:30:05 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-17 10:30:05 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 10:30:05 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 10:30:05 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 10:30:05 
+============================================================
+2026-06-17 10:30:05 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-17 10:30:05   - Total Articles Fetched from PubMed: 867
+2026-06-17 10:30:05   - Articles Remaining After Pre-filter: 863
+2026-06-17 10:30:05     (Pre-filter skips: genetic=4)
+2026-06-17 10:30:05   - LLM Screening:
+2026-06-17 10:30:05     * Screened IN / Accepted:   229
+2026-06-17 10:30:05     * Screened OUT / Rejected:  634
+2026-06-17 10:30:05     * Consensus Bypassed:       13
+2026-06-17 10:30:05   - Final Extracted Studies: 47
+2026-06-17 10:30:05 ============================================================
+
+2026-06-17 10:30:05 [MetaFemina] Re-analyzing Folic acid due to verification filtering/consensus/flags...
+2026-06-17 10:30:05 [MetaFemina] Analyze complete in 0.6s: studies=44, error=None
+2026-06-17 10:30:28 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-17 10:30:28 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core.json
+2026-06-17 10:30:28 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-17 10:30:28 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-17 10:30:28 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-17 10:30:28 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-17 10:30:28 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 10:30:28 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 10:30:28 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 10:30:28 
+============================================================
+2026-06-17 10:30:28 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-17 10:30:28   - Total Articles Fetched from PubMed: 867
+2026-06-17 10:30:28   - Articles Remaining After Pre-filter: 863
+2026-06-17 10:30:28     (Pre-filter skips: genetic=4)
+2026-06-17 10:30:28   - LLM Screening:
+2026-06-17 10:30:28     * Screened IN / Accepted:   229
+2026-06-17 10:30:28     * Screened OUT / Rejected:  634
+2026-06-17 10:30:28     * Consensus Bypassed:       13
+2026-06-17 10:30:28   - Final Extracted Studies: 47
+2026-06-17 10:30:28 ============================================================
+
+2026-06-17 10:30:28 [MetaFemina] Re-analyzing Folic acid due to verification filtering/consensus/flags...
+2026-06-17 10:30:29 [MetaFemina] Analyze complete in 0.7s: studies=44, error=None
+2026-06-17 10:31:08 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Vitamin A, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-17 10:31:08 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core.json
+2026-06-17 10:31:08 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-17 10:31:08 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-17 10:31:08 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-17 10:31:08 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-17 10:31:08 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-17 10:31:08 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-17 10:31:08 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-17 10:31:08 
+============================================================
+2026-06-17 10:31:08 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-17 10:31:08   - Total Articles Fetched from PubMed: 886
+2026-06-17 10:31:08   - Articles Remaining After Pre-filter: 882
+2026-06-17 10:31:08     (Pre-filter skips: genetic=4)
+2026-06-17 10:31:08   - LLM Screening:
+2026-06-17 10:31:08     * Screened IN / Accepted:   232
+2026-06-17 10:31:08     * Screened OUT / Rejected:  630
+2026-06-17 10:31:08     * Consensus Bypassed:       0
+2026-06-17 10:31:08   - Final Extracted Studies: 23
+2026-06-17 10:31:08 ============================================================
+
+2026-06-17 10:31:08 [MetaFemina] Analyze complete in 0.0s: studies=17, error=None
+2026-06-17 10:35:27 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-17 10:35:27 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core.json
+2026-06-17 10:35:27 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-17 10:35:27 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-17 10:35:27 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-17 10:35:27 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-17 10:35:27 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 10:35:27 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 10:35:27 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 10:35:27 
+============================================================
+2026-06-17 10:35:27 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-17 10:35:27   - Total Articles Fetched from PubMed: 867
+2026-06-17 10:35:27   - Articles Remaining After Pre-filter: 863
+2026-06-17 10:35:27     (Pre-filter skips: genetic=4)
+2026-06-17 10:35:27   - LLM Screening:
+2026-06-17 10:35:27     * Screened IN / Accepted:   229
+2026-06-17 10:35:27     * Screened OUT / Rejected:  634
+2026-06-17 10:35:27     * Consensus Bypassed:       13
+2026-06-17 10:35:27   - Final Extracted Studies: 47
+2026-06-17 10:35:27 ============================================================
+
+2026-06-17 10:35:27 [MetaFemina] Re-analyzing Folic acid due to verification filtering/consensus/flags...
+2026-06-17 10:35:28 [MetaFemina] Analyze complete in 0.6s: studies=44, error=None
+2026-06-17 10:46:40 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-17 10:46:40 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core.json
+2026-06-17 10:46:40 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-17 10:46:40 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-17 10:46:40 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-17 10:46:40 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-17 10:46:40 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 10:46:40 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 10:46:40 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 10:46:40 
+============================================================
+2026-06-17 10:46:41 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-17 10:46:41   - Total Articles Fetched from PubMed: 867
+2026-06-17 10:46:41   - Articles Remaining After Pre-filter: 863
+2026-06-17 10:46:41     (Pre-filter skips: genetic=4)
+2026-06-17 10:46:41   - LLM Screening:
+2026-06-17 10:46:41     * Screened IN / Accepted:   229
+2026-06-17 10:46:41     * Screened OUT / Rejected:  634
+2026-06-17 10:46:41     * Consensus Bypassed:       13
+2026-06-17 10:46:41   - Final Extracted Studies: 47
+2026-06-17 10:46:41 ============================================================
+
+2026-06-17 10:46:41 [MetaFemina] Re-analyzing Folic acid due to verification filtering/consensus/flags...
+2026-06-17 10:46:42 [MetaFemina] Analyze complete in 1.3s: studies=44, error=None
+2026-06-17 10:48:39 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-17 10:48:39 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core.json
+2026-06-17 10:48:39 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-17 10:48:39 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-17 10:48:39 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-17 10:48:39 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-17 10:48:39 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 10:48:39 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 10:48:39 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 10:48:40 
+============================================================
+2026-06-17 10:48:40 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-17 10:48:40   - Total Articles Fetched from PubMed: 867
+2026-06-17 10:48:40   - Articles Remaining After Pre-filter: 863
+2026-06-17 10:48:40     (Pre-filter skips: genetic=4)
+2026-06-17 10:48:40   - LLM Screening:
+2026-06-17 10:48:40     * Screened IN / Accepted:   229
+2026-06-17 10:48:40     * Screened OUT / Rejected:  634
+2026-06-17 10:48:40     * Consensus Bypassed:       13
+2026-06-17 10:48:40   - Final Extracted Studies: 47
+2026-06-17 10:48:40 ============================================================
+
+2026-06-17 10:48:40 [MetaFemina] Re-analyzing Folic acid due to verification filtering/consensus/flags...
+2026-06-17 10:48:41 [MetaFemina] Analyze complete in 1.3s: studies=44, error=None
+2026-06-17 11:07:37 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-17 11:07:37 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core.json
+2026-06-17 11:07:37 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-17 11:07:37 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-17 11:07:37 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-17 11:07:37 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-17 11:07:37 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 11:07:37 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 11:07:37 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-06-17 11:07:37 
+============================================================
+2026-06-17 11:07:37 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-17 11:07:37   - Total Articles Fetched from PubMed: 867
+2026-06-17 11:07:37   - Articles Remaining After Pre-filter: 863
+2026-06-17 11:07:37     (Pre-filter skips: genetic=4)
+2026-06-17 11:07:37   - LLM Screening:
+2026-06-17 11:07:37     * Screened IN / Accepted:   229
+2026-06-17 11:07:37     * Screened OUT / Rejected:  634
+2026-06-17 11:07:37     * Consensus Bypassed:       13
+2026-06-17 11:07:37   - Final Extracted Studies: 47
+2026-06-17 11:07:37 ============================================================
+
+2026-06-17 11:07:37 [MetaFemina] Re-analyzing Folic acid due to verification filtering/consensus/flags...
+2026-06-17 11:07:38 [MetaFemina] Analyze complete in 1.3s: studies=44, error=None
+2026-06-17 11:24:37 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Vitamin E, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-17 11:24:37 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_core.json
+2026-06-17 11:24:37 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-17 11:24:37 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-17 11:24:37 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-17 11:24:37 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-17 11:24:37 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all.json
+2026-06-17 11:24:37 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all.json
+2026-06-17 11:24:37 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_e\breast_cancer_incidence_true_all.json
+2026-06-17 11:24:37 
+============================================================
+2026-06-17 11:24:37 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-17 11:24:37   - Total Articles Fetched from PubMed: 459
+2026-06-17 11:24:37   - Articles Remaining After Pre-filter: 457
+2026-06-17 11:24:37     (Pre-filter skips: genetic=2)
+2026-06-17 11:24:37   - LLM Screening:
+2026-06-17 11:24:37     * Screened IN / Accepted:   331
+2026-06-17 11:24:37     * Screened OUT / Rejected:  126
+2026-06-17 11:24:37     * Consensus Bypassed:       1
+2026-06-17 11:24:37   - Final Extracted Studies: 32
+2026-06-17 11:24:37 ============================================================
+
+2026-06-17 11:24:37 [MetaFemina] Re-analyzing Vitamin E due to verification filtering/consensus/flags...
+2026-06-17 11:24:38 [MetaFemina] Analyze complete in 1.0s: studies=21, error=None

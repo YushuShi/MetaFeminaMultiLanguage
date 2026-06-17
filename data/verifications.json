@@ -2454,7 +2454,9 @@
         "submissions": [],
         "consensus_data": null,
         "legacy_count": 0,
-        "context_exclusions": {},
+        "context_exclusions": {
+            "breast_cancer_folic_acid_incidence": 3
+        },
         "contexts": {
             "breast_cancer_folic_acid_incidence": {
                 "submissions": [
