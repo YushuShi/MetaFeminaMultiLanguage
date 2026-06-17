@@ -1,0 +1,82 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Xie J et al. (2014) [PMID: 25477244]",
+            "PMID": "25477244",
+            "Effect Size": 0.91,
+            "Lower CI": 0.71,
+            "Upper CI": 1.18,
+            "Population": "General",
+            "Reference": "A prospective cohort study of dietary indices and incidence of epithelial ovarian cancer.",
+            "Authors": "Xie J, Poole EM, Terry KL, Fung TT, Rosner BA, Willett WC, Tworoger SS",
+            "Journal": "Journal of ovarian research",
+            "Year": "2014",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/25477244/",
+            "Effect Type": "HR",
+            "SE": 0.11989795918367346,
+            "Sample Size": 82948,
+            "Cases": 696,
+            "Estimated Cases": null,
+            "Design": "Cohort",
+            "Timing": "Prospective",
+            "Continent": "North America",
+            "Stage": "Epithelial",
+            "Quality %": 63.6,
+            "Quality Score": "Moderate",
+            "comparison_type": "Highest vs Lowest quintile",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Unclear",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Unclear",
+                "q8": "Yes",
+                "q9": "Unclear",
+                "q10": "Unclear",
+                "q11": "Yes"
+            },
+            "exposure_measurement_type": "dietary_intake",
+            "exposure_measurement_supporting_text": "Alternate Mediterranean Diet Score (aMDS), which is an index that characterizes traditional food patterns of Mediterranean countries.",
+            "extraction_supporting_text": {
+                "sample_size": "82,948 women with diet information.",
+                "effect_size": "The multivariate adjusted hazard ratios ... were ... 0.91 ... for the aMDS.",
+                "effect_direction": "We did not observe any clear association of three diet quality scores with ovarian cancer risk.",
+                "p_value": "Ptrend) ... 0.44) for the aMDS.",
+                "confidence_interval": "95% confidence interval ... (0.71-1.18)",
+                "outcome_definition": "696 incident epithelial ovarian cancer cases",
+                "exposure_definition": "Alternate Mediterranean Diet Score (aMDS), which is an index that characterizes traditional food patterns of Mediterranean countries."
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>696</td>\n      <td>82948</td>\n      <td>0.915594</td>\n      <td>0.724193</td>\n      <td>1.165672</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.92,
+        "ci_low": 0.72,
+        "ci_upp": 1.17,
+        "interpretation": "not statistically significant"
+    },
+    "screening_stats": {
+        "llm_screened_out": 3,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 61,
+        "total_fetched": 64,
+        "after_prefilter": 64,
+        "prefilter_skip": {
+            "disease": 0,
+            "conflict": 0,
+            "exposure": 0,
+            "outcome": 0,
+            "animal": 0,
+            "meta": 0,
+            "genetic": 0
+        },
+        "extracted": 1
+    },
+    "plot_url": "static/mediterranean_diet/forest_ovarian_cancer_incidence_primary.png?t=447",
+    "funnel_plot_url": "static/mediterranean_diet/funnel_ovarian_cancer_incidence_primary.png?t=5908",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-16 20:59:42"
+}

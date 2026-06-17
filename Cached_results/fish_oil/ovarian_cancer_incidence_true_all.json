@@ -1,0 +1,82 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Zhang H et al. (2023) [PMID: 37421851]",
+            "PMID": "37421851",
+            "Effect Size": 0.89,
+            "Lower CI": 0.83,
+            "Upper CI": 0.96,
+            "Population": "General",
+            "Reference": "Association between intake of the n-3 polyunsaturated fatty acid docosahexaenoic acid (n-3 PUFA DHA) and reduced risk of ovarian cancer: A systematic Mendelian Randomization study.",
+            "Authors": "Zhang H, Yao Y, Zhong X, Meng F, Hemminki K, Qiu J, Shu X",
+            "Journal": "Clinical nutrition (Edinburgh, Scotland)",
+            "Year": "2023",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/37421851/",
+            "Effect Type": "OR",
+            "SE": 0.03316326530612245,
+            "Sample Size": 66450,
+            "Cases": null,
+            "Estimated Cases": 864,
+            "Design": "Mendelian Randomization",
+            "Timing": "Unclear",
+            "Continent": "Europe",
+            "Stage": "Any",
+            "Quality %": 88.9,
+            "Quality Score": "Good",
+            "comparison_type": "per SD increase",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Unclear",
+                "q9": "NA",
+                "q10": "NA",
+                "q11": "Yes"
+            },
+            "exposure_measurement_type": "human_biospecimen",
+            "exposure_measurement_supporting_text": "plasma DHA levels, an objective biomarker of DHA intake",
+            "extraction_supporting_text": {
+                "sample_size": "Data in the analysis included genetic association data obtained from large-scale genome-wide association studies with 13,499 individuals for plasma DHA measurements and 66,450 individuals for OC in the European population",
+                "effect_size": "OR, 0.89 for OC per one-SD increment in DHA",
+                "effect_direction": "lower OC risk",
+                "p_value": "P = 0.003",
+                "confidence_interval": "95% CI, 0.83 to 0.96",
+                "outcome_definition": "ovarian cancer (OC)",
+                "exposure_definition": "plasma DHA levels, an objective biomarker of DHA intake"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>None</td>\n      <td>66450</td>\n      <td>0.902912</td>\n      <td>0.848758</td>\n      <td>0.965018</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.9,
+        "ci_low": 0.85,
+        "ci_upp": 0.97,
+        "interpretation": "statistically significant (decreased risk/odds)"
+    },
+    "screening_stats": {
+        "llm_screened_out": 24,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 38,
+        "total_fetched": 62,
+        "after_prefilter": 62,
+        "prefilter_skip": {
+            "disease": 0,
+            "conflict": 0,
+            "exposure": 0,
+            "outcome": 0,
+            "animal": 0,
+            "meta": 0,
+            "genetic": 0
+        },
+        "extracted": 1
+    },
+    "plot_url": "static/fish_oil/forest_ovarian_cancer_incidence_primary.png?t=2381",
+    "funnel_plot_url": "static/fish_oil/funnel_ovarian_cancer_incidence_primary.png?t=2998",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-16 19:23:20"
+}

@@ -1,0 +1,62 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Kotsopoulos J et al. (2010) [PMID: 19585555]",
+            "PMID": "19585555",
+            "Effect Size": 0.44,
+            "Lower CI": 0.23,
+            "Upper CI": 0.84,
+            "Population": "General",
+            "Reference": "Relationship between dietary and supplemental intake of folate, methionine, vitamin B6 and folate receptor alpha expression in ovarian tumors.",
+            "Authors": "Kotsopoulos J, Hecht JL, Marotti JD, Kelemen LE, Tworoger SS",
+            "Journal": "International journal of cancer",
+            "Year": "2010",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/19585555/",
+            "Effect Type": "OR",
+            "SE": 0.1556122448979592,
+            "Sample Size": "N/A",
+            "Cases": null,
+            "Estimated Cases": null,
+            "Design": "Unknown",
+            "Timing": "Unknown",
+            "Continent": "North America",
+            "Stage": "Advanced/Metastatic",
+            "Quality %": 0,
+            "Quality Score": "Fair",
+            "comparison_type": "-",
+            "JBI": "-",
+            "exposure_measurement_type": "unclear",
+            "exposure_measurement_supporting_text": "Not assessed (Regex extraction fallback)",
+            "extraction_supporting_text": {
+                "sample_size": "",
+                "effect_size": "",
+                "effect_direction": "",
+                "p_value": "",
+                "confidence_interval": "",
+                "outcome_definition": "",
+                "exposure_definition": ""
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>None</td>\n      <td>N/A</td>\n      <td>0.474547</td>\n      <td>0.255584</td>\n      <td>0.857843</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.47,
+        "ci_low": 0.26,
+        "ci_upp": 0.86,
+        "interpretation": "statistically significant (decreased risk/odds)"
+    },
+    "screening_stats": {
+        "total_fetched": 13,
+        "after_prefilter": 5,
+        "extracted": 5,
+        "prefilter_skip": {},
+        "llm_screened_out": 0,
+        "llm_screened_in": 5,
+        "consensus_bypassed": 0
+    },
+    "plot_url": "static/vitamin_b6/forest_ovarian_cancer_incidence_primary.png?t=650",
+    "funnel_plot_url": "static/vitamin_b6/funnel_ovarian_cancer_incidence_primary.png?t=2068",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-16 21:19:32"
+}

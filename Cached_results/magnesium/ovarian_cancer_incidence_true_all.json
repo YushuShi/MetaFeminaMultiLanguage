@@ -1,0 +1,81 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Guo Y et al. (2020) [PMID: 32355161]",
+            "PMID": "32355161",
+            "Effect Size": 0.14,
+            "Lower CI": 0.03,
+            "Upper CI": 0.7,
+            "Population": "General",
+            "Reference": "Appraising the role of circulating concentrations of micro-nutrients in epithelial ovarian cancer risk: A Mendelian randomization analysis.",
+            "Authors": "Guo Y, Lu Y, Jin H",
+            "Journal": "Scientific reports",
+            "Year": "2020",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/32355161/",
+            "Effect Type": "OR",
+            "SE": 0.17091836734693877,
+            "Sample Size": 66450,
+            "Cases": 25509,
+            "Estimated Cases": null,
+            "Design": "Case-Control",
+            "Timing": "Retrospective",
+            "Continent": null,
+            "Stage": "invasive epithelial ovarian cancer",
+            "Quality %": 70.0,
+            "Quality Score": "Moderate",
+            "comparison_type": "per 0.1 mmol/L (about one standard deviation, SD) increase",
+            "JBI": {
+                "q1": "Unclear",
+                "q2": "Unclear",
+                "q3": "Unclear",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes"
+            },
+            "exposure_measurement_type": "human_biospecimen",
+            "exposure_measurement_supporting_text": "genetically predicted magnesium concentration",
+            "extraction_supporting_text": {
+                "sample_size": "The corresponding data for ovarian cancer were obtained from the Ovarian Cancer Association Consortium (25,509 cases and 40,941 controls).",
+                "effect_size": "odds ratios (OR) of invasive epithelial ovarian cancer were 0.14",
+                "effect_direction": "a decreased risk of invasive epithelial ovarian cancer was found with a higher concentration of magnesium.",
+                "p_value": "P\u2009= 0.02",
+                "confidence_interval": "95% CI, 0.03-0.70",
+                "outcome_definition": "invasive epithelial ovarian cancer",
+                "exposure_definition": "genetically predicted magnesium concentration"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>25509</td>\n      <td>66450</td>\n      <td>0.157622</td>\n      <td>0.034329</td>\n      <td>0.728408</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.16,
+        "ci_low": 0.03,
+        "ci_upp": 0.73,
+        "interpretation": "statistically significant (decreased risk/odds)"
+    },
+    "screening_stats": {
+        "llm_screened_out": 11,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 63,
+        "total_fetched": 75,
+        "after_prefilter": 75,
+        "prefilter_skip": {
+            "disease": 0,
+            "conflict": 0,
+            "exposure": 0,
+            "outcome": 0,
+            "animal": 0,
+            "meta": 0,
+            "genetic": 0
+        },
+        "extracted": 1
+    },
+    "plot_url": "static/magnesium/forest_ovarian_cancer_incidence_primary.png?t=5887",
+    "funnel_plot_url": "static/magnesium/funnel_ovarian_cancer_incidence_primary.png?t=8438",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-16 20:53:11"
+}

@@ -1,0 +1,81 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Risch HA et al. (1994) [PMID: 8072035]",
+            "PMID": "8072035",
+            "Effect Size": 1.42,
+            "Lower CI": 1.18,
+            "Upper CI": 1.72,
+            "Population": "General",
+            "Reference": "Dietary fat intake and risk of epithelial ovarian cancer.",
+            "Authors": "Risch HA, Jain M, Marrett LD, Howe GR",
+            "Journal": "Journal of the National Cancer Institute",
+            "Year": "1994",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/8072035/",
+            "Effect Type": "OR",
+            "SE": 0.13775510204081634,
+            "Sample Size": 1014,
+            "Cases": 450,
+            "Estimated Cases": null,
+            "Design": "Case-Control",
+            "Timing": "Retrospective",
+            "Continent": "North America",
+            "Stage": null,
+            "Quality %": 90.0,
+            "Quality Score": "Good",
+            "comparison_type": "Continuous",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "No",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes"
+            },
+            "exposure_measurement_type": "dietary_intake",
+            "exposure_measurement_supporting_text": "From the quantitative diet-history information, average daily intakes of macronutrients and micronutrients were calculated. Egg consumption ... for each 100 mg of egg cholesterol per day",
+            "extraction_supporting_text": {
+                "sample_size": "In total, 631 eligible case subjects were identified, of whom 450 (71.3%) were interviewed concerning reproduction and diet; 564 randomly selected population control subjects were similarly interviewed.",
+                "effect_size": "OR = 1.42",
+                "effect_direction": "Egg consumption also appeared related to increased risk",
+                "p_value": "two-sided P = .0002",
+                "confidence_interval": "95% CI = 1.18-1.72",
+                "outcome_definition": "histologically confirmed, primary malignant or borderline malignant epithelial ovarian tumors",
+                "exposure_definition": "Egg consumption ... for each 100 mg of egg cholesterol per day"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>450</td>\n      <td>1014</td>\n      <td>1.346482</td>\n      <td>1.153019</td>\n      <td>1.572787</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 1.35,
+        "ci_low": 1.15,
+        "ci_upp": 1.57,
+        "interpretation": "statistically significant (increased risk/odds)"
+    },
+    "screening_stats": {
+        "llm_screened_out": 230,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 30,
+        "total_fetched": 264,
+        "after_prefilter": 263,
+        "prefilter_skip": {
+            "disease": 0,
+            "conflict": 0,
+            "exposure": 0,
+            "outcome": 0,
+            "animal": 0,
+            "meta": 0,
+            "genetic": 1
+        },
+        "extracted": 2
+    },
+    "plot_url": "static/eggs/forest_ovarian_cancer_incidence_primary.png?t=8151",
+    "funnel_plot_url": "static/eggs/funnel_ovarian_cancer_incidence_primary.png?t=3809",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-16 19:17:17"
+}

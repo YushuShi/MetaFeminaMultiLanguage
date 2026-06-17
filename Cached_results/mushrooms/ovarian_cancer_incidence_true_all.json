@@ -1,0 +1,82 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Lee AH et al. (2013) [PMID: 24257554]",
+            "PMID": "24257554",
+            "Effect Size": 0.68,
+            "Lower CI": 0.52,
+            "Upper CI": 0.89,
+            "Population": "General",
+            "Reference": "Mushroom intake and risk of epithelial ovarian cancer in southern Chinese women.",
+            "Authors": "Lee AH, Pasalich M, Su D, Tang L, Tran VD, Binns CW",
+            "Journal": "International journal of gynecological cancer : official journal of the International Gynecological Cancer Society",
+            "Year": "2013",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/24257554/",
+            "Effect Type": "OR",
+            "SE": 0.09438775510204081,
+            "Sample Size": 1000,
+            "Cases": 500,
+            "Estimated Cases": null,
+            "Design": "Case-Control",
+            "Timing": "Retrospective",
+            "Continent": "Asia",
+            "Stage": null,
+            "Quality %": 80.0,
+            "Quality Score": "Moderate",
+            "comparison_type": "High vs Low (>2 g/day vs <2 g/day)",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Unclear",
+                "q3": "Unclear",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes"
+            },
+            "exposure_measurement_type": "dietary_intake",
+            "exposure_measurement_supporting_text": "Information on habitual mushroom consumption was obtained by face-to-face interview using a validated and reliable food frequency questionnaire.",
+            "extraction_supporting_text": {
+                "sample_size": "Participants were 500 incident patients with epithelial ovarian cancer and 500 controls",
+                "effect_size": "adjusted odds ratios 0.68",
+                "effect_direction": "Apparent reductions in cancer risk were found at high levels of intake",
+                "p_value": "P = 0.005",
+                "confidence_interval": "95% confidence interval, 0.52-0.89",
+                "outcome_definition": "risk of epithelial ovarian cancer",
+                "exposure_definition": "mushroom consumption",
+                "outcome_subtype": null
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>500</td>\n      <td>1000</td>\n      <td>0.709516</td>\n      <td>0.554608</td>\n      <td>0.902912</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.71,
+        "ci_low": 0.55,
+        "ci_upp": 0.9,
+        "interpretation": "statistically significant (decreased risk/odds)"
+    },
+    "screening_stats": {
+        "llm_screened_out": 0,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 4,
+        "total_fetched": 4,
+        "after_prefilter": 4,
+        "prefilter_skip": {
+            "disease": 0,
+            "conflict": 0,
+            "exposure": 0,
+            "outcome": 0,
+            "animal": 0,
+            "meta": 0,
+            "genetic": 0
+        },
+        "extracted": 1
+    },
+    "plot_url": "static/mushrooms/forest_ovarian_cancer_incidence_primary.png?t=2096",
+    "funnel_plot_url": "static/mushrooms/funnel_ovarian_cancer_incidence_primary.png?t=447",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-16 21:09:20"
+}

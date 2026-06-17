@@ -1,0 +1,83 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Kotsopoulos J et al. (2010) [PMID: 19707229]",
+            "PMID": "19707229",
+            "Effect Size": 0.98,
+            "Lower CI": 0.73,
+            "Upper CI": 1.31,
+            "Population": "General",
+            "Reference": "Dietary betaine and choline intake are not associated with risk of epithelial ovarian cancer.",
+            "Authors": "Kotsopoulos J, Hankinson SE, Tworoger SS",
+            "Journal": "European journal of clinical nutrition",
+            "Year": "2010",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/19707229/",
+            "Effect Type": "RR",
+            "SE": 0.1479591836734694,
+            "Sample Size": 159957,
+            "Cases": 526,
+            "Estimated Cases": null,
+            "Design": "Cohort",
+            "Timing": "Prospective",
+            "Continent": "North America",
+            "Stage": null,
+            "Quality %": 72.7,
+            "Quality Score": "Moderate",
+            "comparison_type": "Q5 vs Q1",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Unclear",
+                "q8": "Yes",
+                "q9": "Unclear",
+                "q10": "Unclear",
+                "q11": "Yes"
+            },
+            "exposure_measurement_type": "dietary_intake",
+            "exposure_measurement_supporting_text": "The average nutrient intake was assessed every 2-4 years",
+            "extraction_supporting_text": {
+                "sample_size": "159 957 participants",
+                "effect_size": "relative risk, top vs bottom quintile of choline=0.98",
+                "effect_direction": "There were no associations between total choline... and ovarian cancer risk",
+                "p_value": "P(trend)=0.81",
+                "confidence_interval": "95% confidence interval: 0.73-1.31",
+                "outcome_definition": "526 incident cases of ovarian cancer were diagnosed",
+                "exposure_definition": "intake of these nutrients and ovarian cancer risk",
+                "jbi_checklist_type": "cohort"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>526</td>\n      <td>159957</td>\n      <td>0.98</td>\n      <td>0.73</td>\n      <td>1.31</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.98,
+        "ci_low": 0.73,
+        "ci_upp": 1.31,
+        "interpretation": "not statistically significant"
+    },
+    "screening_stats": {
+        "llm_screened_out": 4,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 39,
+        "total_fetched": 43,
+        "after_prefilter": 43,
+        "prefilter_skip": {
+            "disease": 0,
+            "conflict": 0,
+            "exposure": 0,
+            "outcome": 0,
+            "animal": 0,
+            "meta": 0,
+            "genetic": 0
+        },
+        "extracted": 1
+    },
+    "plot_url": "static/choline/forest_ovarian_cancer_incidence_primary.png?t=318",
+    "funnel_plot_url": "static/choline/funnel_ovarian_cancer_incidence_primary.png?t=8092",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-16 16:44:40"
+}

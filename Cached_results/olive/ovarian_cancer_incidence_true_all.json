@@ -1,0 +1,81 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Bosetti C et al. (2002) [PMID: 12146851]",
+            "PMID": "12146851",
+            "Effect Size": 0.68,
+            "Lower CI": 0.5,
+            "Upper CI": 0.93,
+            "Population": "General",
+            "Reference": "Olive oil, seed oils and other added fats in relation to ovarian cancer (Italy).",
+            "Authors": "Bosetti C, Negri E, Franceschi S, Talamini R, Montella M, Conti E, Lagiou P, Parazzini F, La Vecchia C",
+            "Journal": "Cancer causes & control : CCC",
+            "Year": "2002",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/12146851/",
+            "Effect Type": "OR",
+            "SE": 0.10969387755102042,
+            "Sample Size": 3442,
+            "Cases": 1031,
+            "Estimated Cases": null,
+            "Design": "Case-Control",
+            "Timing": "Retrospective",
+            "Continent": "Europe",
+            "Stage": null,
+            "Quality %": 90.0,
+            "Quality Score": "Good",
+            "comparison_type": "Highest vs Lowest",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Unclear",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes"
+            },
+            "exposure_measurement_type": "dietary_intake",
+            "exposure_measurement_supporting_text": "usual diet was investigated through a validated food-frequency questionnaire, including specific questions aimed at assessing added fat intake patterns.",
+            "extraction_supporting_text": {
+                "sample_size": "a total of 1031 incident with a first diagnosis, histologically confirmed epithelial ovarian cancer cases and 2,411 hospital controls",
+                "effect_size": "odds ratio (OR) = 0.68",
+                "effect_direction": "reduced risk of ovarian cancer was observed for high intake of olive oil",
+                "p_value": null,
+                "confidence_interval": "95% confidence interval (CI) 0.50-0.93",
+                "outcome_definition": "incident with a first diagnosis, histologically confirmed epithelial ovarian cancer cases",
+                "exposure_definition": "high intake of olive oil ... usual diet was investigated through a validated food-frequency questionnaire"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>1031</td>\n      <td>3442</td>\n      <td>0.709516</td>\n      <td>0.534759</td>\n      <td>0.938541</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.71,
+        "ci_low": 0.53,
+        "ci_upp": 0.94,
+        "interpretation": "statistically significant (decreased risk/odds)"
+    },
+    "screening_stats": {
+        "llm_screened_out": 6,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 21,
+        "total_fetched": 27,
+        "after_prefilter": 27,
+        "prefilter_skip": {
+            "disease": 0,
+            "conflict": 0,
+            "exposure": 0,
+            "outcome": 0,
+            "animal": 0,
+            "meta": 0,
+            "genetic": 0
+        },
+        "extracted": 1
+    },
+    "plot_url": "static/olive/forest_ovarian_cancer_incidence_primary.png?t=1466",
+    "funnel_plot_url": "static/olive/funnel_ovarian_cancer_incidence_primary.png?t=8451",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-16 21:15:02"
+}

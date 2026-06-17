@@ -1,0 +1,81 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Poole EM et al. (2015) [PMID: 26223889]",
+            "PMID": "26223889",
+            "Effect Size": 0.79,
+            "Lower CI": 0.4,
+            "Upper CI": 1.56,
+            "Population": "General",
+            "Reference": "Urinary melatonin and risk of ovarian cancer.",
+            "Authors": "Poole EM, Schernhammer E, Mills L, Hankinson SE, Tworoger SS",
+            "Journal": "Cancer causes & control : CCC",
+            "Year": "2015",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/26223889/",
+            "Effect Type": "OR",
+            "SE": 0.2959183673469388,
+            "Sample Size": 456,
+            "Cases": 152,
+            "Estimated Cases": null,
+            "Design": "Case-Control",
+            "Timing": "Prospective",
+            "Continent": "North America",
+            "Stage": null,
+            "Quality %": 70.0,
+            "Quality Score": "Moderate",
+            "comparison_type": "Highest vs Lowest",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Unclear",
+                "q4": "Unclear",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Unclear",
+                "q9": "Yes",
+                "q10": "Yes"
+            },
+            "exposure_measurement_type": "human_biospecimen",
+            "exposure_measurement_supporting_text": "We measured urinary 6-sulfatoxymelatonin (aMT6s) in nested ovarian cancer case-control studies.",
+            "extraction_supporting_text": {
+                "sample_size": "n = 100 cases; 199 controls (NHS) and n = 52 cases; 105 controls (NHSII)",
+                "effect_size": "the odds ratio comparing the highest tertile of aMT6s to the lowest was 0.79",
+                "effect_direction": "aMT6s was not significantly associated with risk of ovarian cancer.",
+                "p_value": "aMT6s was not significantly associated with risk of ovarian cancer.",
+                "confidence_interval": "95 % confidence interval (CI) 0.40-1.56",
+                "outcome_definition": "risk of ovarian cancer",
+                "exposure_definition": "urinary 6-sulfatoxymelatonin (aMT6s)"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>152</td>\n      <td>456</td>\n      <td>0.812172</td>\n      <td>0.433839</td>\n      <td>1.454139</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.81,
+        "ci_low": 0.43,
+        "ci_upp": 1.45,
+        "interpretation": "not statistically significant"
+    },
+    "screening_stats": {
+        "llm_screened_out": 5,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 96,
+        "total_fetched": 101,
+        "after_prefilter": 101,
+        "prefilter_skip": {
+            "disease": 0,
+            "conflict": 0,
+            "exposure": 0,
+            "outcome": 0,
+            "animal": 0,
+            "meta": 0,
+            "genetic": 0
+        },
+        "extracted": 1
+    },
+    "plot_url": "static/melatonin/forest_ovarian_cancer_incidence_primary.png?t=8529",
+    "funnel_plot_url": "static/melatonin/funnel_ovarian_cancer_incidence_primary.png?t=9836",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-16 21:06:11"
+}

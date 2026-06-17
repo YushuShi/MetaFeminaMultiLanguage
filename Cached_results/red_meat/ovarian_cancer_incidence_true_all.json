@@ -1,0 +1,62 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Di Maso M et al. (2013) [PMID: 24121119]",
+            "PMID": "24121119",
+            "Effect Size": 1.29,
+            "Lower CI": 1.04,
+            "Upper CI": 1.6,
+            "Population": "General",
+            "Reference": "Red meat and cancer risk in a network of case-control studies focusing on cooking practices.",
+            "Authors": "Di Maso M, Talamini R, Bosetti C, Montella M, Zucchetto A, Libra M, Negri E, Levi F, La Vecchia C, Franceschi S, Serraino D, Polesel J",
+            "Journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+            "Year": "2013",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/24121119/",
+            "Effect Type": "OR",
+            "SE": 0.14285714285714288,
+            "Sample Size": "1294",
+            "Cases": null,
+            "Estimated Cases": 17.0,
+            "Design": "Case-Control",
+            "Timing": "Unknown",
+            "Continent": "Other",
+            "Stage": "Unspecified",
+            "Quality %": 0,
+            "Quality Score": "Fair",
+            "comparison_type": "-",
+            "JBI": "-",
+            "exposure_measurement_type": "unclear",
+            "exposure_measurement_supporting_text": "Not assessed (Regex extraction fallback)",
+            "extraction_supporting_text": {
+                "sample_size": "",
+                "effect_size": "",
+                "effect_direction": "",
+                "p_value": "",
+                "confidence_interval": "",
+                "outcome_definition": "",
+                "exposure_definition": ""
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>NaN</td>\n      <td>1294</td>\n      <td>1.243134</td>\n      <td>1.03462</td>\n      <td>1.48423</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 1.24,
+        "ci_low": 1.03,
+        "ci_upp": 1.48,
+        "interpretation": "statistically significant (increased risk/odds)"
+    },
+    "screening_stats": {
+        "total_fetched": 69,
+        "after_prefilter": 17,
+        "extracted": 17,
+        "prefilter_skip": {},
+        "llm_screened_out": 0,
+        "llm_screened_in": 17,
+        "consensus_bypassed": 0
+    },
+    "plot_url": "static/red_meat/forest_ovarian_cancer_incidence_primary.png?t=1010",
+    "funnel_plot_url": "static/red_meat/funnel_ovarian_cancer_incidence_primary.png?t=9372",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-16 21:16:53"
+}

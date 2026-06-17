@@ -1,0 +1,81 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Nen\u00e9 NR et al. (2019) [PMID: 31300207]",
+            "PMID": "31300207",
+            "Effect Size": 0.3571,
+            "Lower CI": 0.1441,
+            "Upper CI": 0.8547,
+            "Population": "General",
+            "Reference": "Association between the cervicovaginal microbiome, BRCA1 mutation status, and risk of ovarian cancer: a case-control study.",
+            "Authors": "Nen\u00e9 NR, Reisel D, Leimbach A, Franchi D, Jones A, Evans I, Knapp S, Ryan A, Ghazali S, Timms JF, Paprotka T, Bj\u00f8rge L, Zikan M, Cibula D, Colombo N, Widschwendter M",
+            "Journal": "The Lancet. Oncology",
+            "Year": "2019",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/31300207/",
+            "Effect Type": "OR",
+            "SE": 0.18127551020408164,
+            "Sample Size": 360,
+            "Cases": 176,
+            "Estimated Cases": null,
+            "Design": "Case-Control",
+            "Timing": "Retrospective",
+            "Continent": "Europe",
+            "Stage": "epithelial ovarian cancer",
+            "Quality %": 70.0,
+            "Quality Score": "Moderate",
+            "comparison_type": "Community Type O (<50% Lactobacilli) vs Community Type L (>=50% Lactobacilli) [inverted \u21d2 high vs low]",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Unclear",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Unclear",
+                "q9": "Unclear",
+                "q10": "Yes"
+            },
+            "exposure_measurement_type": "human_biospecimen",
+            "exposure_measurement_supporting_text": "Cervicovaginal samples were gathered from all participants with the ThinPrep system and then underwent 16S rRNA gene sequencing. For each sample, we calculated the proportion of lactobacilli species.",
+            "extraction_supporting_text": {
+                "sample_size": "The ovarian cancer set (n=360)",
+                "effect_size": "odds ratio [OR] 2\u00b780",
+                "effect_direction": "women younger than 50 years with ovarian cancer had a significantly higher prevalence of community type O microbiota",
+                "p_value": "p=0\u00b7020",
+                "confidence_interval": "[95% CI 1\u00b717-6\u00b794]",
+                "outcome_definition": "women with epithelial ovarian cancer",
+                "exposure_definition": "community type O microbiota (lactobacilli accounted for less than 50% of the species present)"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>176</td>\n      <td>360</td>\n      <td>0.389667</td>\n      <td>0.162141</td>\n      <td>0.871155</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 0.39,
+        "ci_low": 0.16,
+        "ci_upp": 0.87,
+        "interpretation": "statistically significant (decreased risk/odds)"
+    },
+    "screening_stats": {
+        "llm_screened_out": 2,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 44,
+        "total_fetched": 46,
+        "after_prefilter": 46,
+        "prefilter_skip": {
+            "disease": 0,
+            "conflict": 0,
+            "exposure": 0,
+            "outcome": 0,
+            "animal": 0,
+            "meta": 0,
+            "genetic": 0
+        },
+        "extracted": 1
+    },
+    "plot_url": "static/lactobacillus/forest_ovarian_cancer_incidence_primary.png?t=2356",
+    "funnel_plot_url": "static/lactobacillus/funnel_ovarian_cancer_incidence_primary.png?t=5597",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-16 20:36:28"
+}

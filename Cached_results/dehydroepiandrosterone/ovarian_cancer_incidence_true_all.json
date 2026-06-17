@@ -1,0 +1,81 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Parchwani D et al. (2022) [PMID: 36105913]",
+            "PMID": "36105913",
+            "Effect Size": 3.8,
+            "Lower CI": 1.26,
+            "Upper CI": 11.61,
+            "Population": "General",
+            "Reference": "Analysis of Prediagnostic Circulating Levels of Gonadotropins and Androgens with Risk of Epithelial Ovarian Cancer.",
+            "Authors": "Parchwani D, Dholariya SJ, Takodara S, Singh R, Sharma VK, Saxena A, Patel DD, Radadiya M",
+            "Journal": "Journal of laboratory physicians",
+            "Year": "2022",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/36105913/",
+            "Effect Type": "OR",
+            "SE": 2.6403061224489797,
+            "Sample Size": 200,
+            "Cases": 100,
+            "Estimated Cases": null,
+            "Design": "Case-Control",
+            "Timing": "Retrospective",
+            "Continent": null,
+            "Stage": "Epithelial ovarian cancer (EOC)",
+            "Quality %": 80.0,
+            "Quality Score": "Moderate",
+            "comparison_type": "Highest tertile vs Lowest/Reference",
+            "JBI": {
+                "q1": "Unclear",
+                "q2": "Unclear",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes"
+            },
+            "exposure_measurement_type": "human_biospecimen",
+            "exposure_measurement_supporting_text": "Serum FSH, LH, testosterone, and DHEA-S were measured based on the principle of electrochemiluminescence immunoassay.",
+            "extraction_supporting_text": {
+                "sample_size": "A total of 100 epithelial ovarian cancer (EOC) patients and 100 healthy female controls were consequently enrolled",
+                "effect_size": "OR = 3.8",
+                "effect_direction": "significantly associated with increased risk of ovarian cancer",
+                "p_value": "p trend = 0.03",
+                "confidence_interval": "CI = 1.26-11.61",
+                "outcome_definition": "epithelial ovarian cancer (EOC)",
+                "exposure_definition": "dehydroepiandrosterone-sulfate [DHEA-S]"
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>100</td>\n      <td>200</td>\n      <td>2.785924</td>\n      <td>1.218804</td>\n      <td>4.879586</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 2.79,
+        "ci_low": 1.22,
+        "ci_upp": 4.88,
+        "interpretation": "statistically significant (increased risk/odds)"
+    },
+    "screening_stats": {
+        "llm_screened_out": 8,
+        "consensus_bypassed": 0,
+        "llm_screened_in": 583,
+        "total_fetched": 592,
+        "after_prefilter": 592,
+        "prefilter_skip": {
+            "disease": 0,
+            "conflict": 0,
+            "exposure": 0,
+            "outcome": 0,
+            "animal": 0,
+            "meta": 0,
+            "genetic": 0
+        },
+        "extracted": 2
+    },
+    "plot_url": "static/dehydroepiandrosterone/forest_ovarian_cancer_incidence_primary.png?t=4319",
+    "funnel_plot_url": "static/dehydroepiandrosterone/funnel_ovarian_cancer_incidence_primary.png?t=3645",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-16 19:11:04"
+}

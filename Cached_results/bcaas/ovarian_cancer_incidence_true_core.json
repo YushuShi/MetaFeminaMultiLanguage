@@ -1,0 +1,62 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "Xu H et al. (2023) [PMID: 37922693]",
+            "PMID": "37922693",
+            "Effect Size": 1.923,
+            "Lower CI": 1.279,
+            "Upper CI": 2.89,
+            "Population": "General",
+            "Reference": "Association of plasma branched-chain amino acid with multiple cancers: A mendelian randomization analysis.",
+            "Authors": "Xu H, Wang X, Xu X, Liu L, Zhang Y, Yan X, Zhang Y, Dang K, Li Y",
+            "Journal": "Clinical nutrition (Edinburgh, Scotland)",
+            "Year": "2023",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/37922693/",
+            "Effect Type": "OR",
+            "SE": 0.4109693877551021,
+            "Sample Size": "N/A",
+            "Cases": null,
+            "Estimated Cases": null,
+            "Design": "Cohort",
+            "Timing": "Unknown",
+            "Continent": "Asia",
+            "Stage": "Unspecified",
+            "Quality %": 0,
+            "Quality Score": "Fair",
+            "comparison_type": "-",
+            "JBI": "-",
+            "exposure_measurement_type": "unclear",
+            "exposure_measurement_supporting_text": "Not assessed (Regex extraction fallback)",
+            "extraction_supporting_text": {
+                "sample_size": "",
+                "effect_size": "",
+                "effect_direction": "",
+                "p_value": "",
+                "confidence_interval": "",
+                "outcome_definition": "",
+                "exposure_definition": ""
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>None</td>\n      <td>N/A</td>\n      <td>1.71698</td>\n      <td>1.234234</td>\n      <td>2.319981</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 1.72,
+        "ci_low": 1.23,
+        "ci_upp": 2.32,
+        "interpretation": "statistically significant (increased risk/odds)"
+    },
+    "screening_stats": {
+        "total_fetched": 10,
+        "after_prefilter": 2,
+        "extracted": 2,
+        "prefilter_skip": {},
+        "llm_screened_out": 0,
+        "llm_screened_in": 2,
+        "consensus_bypassed": 0
+    },
+    "plot_url": "static/bcaas/forest_ovarian_cancer_incidence_primary.png?t=710",
+    "funnel_plot_url": "static/bcaas/funnel_ovarian_cancer_incidence_primary.png?t=1192",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-16 16:09:02"
+}

@@ -1,0 +1,62 @@
+{
+    "success": true,
+    "studies": [
+        {
+            "Study": "You D et al. (2021) [PMID: 33569292]",
+            "PMID": "33569292",
+            "Effect Size": 1.19,
+            "Lower CI": 1.05,
+            "Upper CI": 1.35,
+            "Population": "General",
+            "Reference": "Association between dietary sodium, potassium intake and lung cancer risk: evidence from the prostate, lung, colorectal and ovarian cancer screening trial and the Women's Health Initiative.",
+            "Authors": "You D, Zhang M, He W, Wang D, Yu Y, Yu Z, Lange T, Yang S, Wei Y, Ma H, Hu Z, Shen H, Chen F, Zhao Y",
+            "Journal": "Translational lung cancer research",
+            "Year": "2021",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/33569292/",
+            "Effect Type": "HR",
+            "SE": 0.07653061224489797,
+            "Sample Size": "165,409",
+            "Cases": null,
+            "Estimated Cases": 2150.0,
+            "Design": "Cohort",
+            "Timing": "Unknown",
+            "Continent": "Asia",
+            "Stage": "Unspecified",
+            "Quality %": 0,
+            "Quality Score": "Fair",
+            "comparison_type": "highest vs. lowest",
+            "JBI": "-",
+            "exposure_measurement_type": "unclear",
+            "exposure_measurement_supporting_text": "Not assessed (Regex extraction fallback)",
+            "extraction_supporting_text": {
+                "sample_size": "",
+                "effect_size": "",
+                "effect_direction": "",
+                "p_value": "",
+                "confidence_interval": "",
+                "outcome_definition": "",
+                "exposure_definition": ""
+            }
+        }
+    ],
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>None</td>\n      <td>165,409</td>\n      <td>1.174755</td>\n      <td>1.046437</td>\n      <td>1.318373</td>\n    </tr>\n  </tbody>\n</table>",
+    "headline": {
+        "pooled_es": 1.17,
+        "ci_low": 1.05,
+        "ci_upp": 1.32,
+        "interpretation": "statistically significant (increased risk/odds)"
+    },
+    "screening_stats": {
+        "total_fetched": 12,
+        "after_prefilter": 4,
+        "extracted": 4,
+        "prefilter_skip": {},
+        "llm_screened_out": 0,
+        "llm_screened_in": 4,
+        "consensus_bypassed": 0
+    },
+    "plot_url": "static/mineral_supplements/forest_ovarian_cancer_incidence_primary.png?t=9133",
+    "funnel_plot_url": "static/mineral_supplements/funnel_ovarian_cancer_incidence_primary.png?t=6987",
+    "baujat_plot_url": null,
+    "last_run": "2026-06-16 21:07:07"
+}
