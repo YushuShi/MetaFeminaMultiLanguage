@@ -161,49 +161,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const banner = document.getElementById('read-only-banner');
             if (banner) banner.classList.remove('hidden');
 
-            // Show suggestions container
-            const suggContainer = document.getElementById('cached-suggestions-container');
-            if (suggContainer) suggContainer.classList.remove('hidden');
 
-            // Render clickable badges for cached exposures
-            const badgesEl = document.getElementById('cached-badges');
-            if (badgesEl) {
-                badgesEl.innerHTML = '';
-                // Limit to 18 badges for a nice layout
-                const displayExposures = exposures.slice(0, 18);
-                displayExposures.forEach(exp => {
-                    const badge = document.createElement('span');
-                    badge.textContent = exp;
-                    badge.style.cssText = `
-                        background: rgba(233,30,99,0.06);
-                        border: 1px solid rgba(233,30,99,0.18);
-                        color: var(--primary);
-                        padding: 0.35rem 0.75rem;
-                        border-radius: 20px;
-                        font-size: 0.8rem;
-                        font-weight: 600;
-                        cursor: pointer;
-                        transition: all 0.2s ease;
-                        user-select: none;
-                    `;
-                    badge.addEventListener('mouseover', () => {
-                        badge.style.background = 'var(--primary)';
-                        badge.style.color = '#fff';
-                        badge.style.borderColor = 'var(--primary)';
-                    });
-                    badge.addEventListener('mouseout', () => {
-                        badge.style.background = 'rgba(233,30,99,0.06)';
-                        badge.style.color = 'var(--primary)';
-                        badge.style.borderColor = 'rgba(233,30,99,0.18)';
-                    });
-                    badge.addEventListener('click', () => {
-                        elements.exposure.value = exp;
-                        updateSynonymsBox(exp);
-                        if (elements.analyzeBtn) elements.analyzeBtn.click();
-                    });
-                    badgesEl.appendChild(badge);
-                });
-            }
         }
 
         // Show synonyms for current exposure value on load
