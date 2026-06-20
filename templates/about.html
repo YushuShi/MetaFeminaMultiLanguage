@@ -100,14 +100,13 @@
 
         <h2>How It Works</h2>
         <p>
-            MetaFemina pools the MetaMamm, MetaOvary, and MetaUturus evidence caches to facilitate rapid synthesis of evidence regarding nutritional
-            factors and <strong>breast, ovarian, or uterine cancer</strong>. When you enter a nutritional exposure (e.g., "Coffee", "Vitamin
+            MetaFemina uses large language models to facilitate rapid synthesis of evidence regarding food supplements (nutrition) and <strong>breast, ovarian, or uterine cancer</strong>. When you enter a nutritional exposure (e.g., "Coffee", "Vitamin
             D", "Soy"), the tool:
         </p>
         <ol>
             <li><strong>Searches PubMed</strong> for relevant clinical trials and observational studies linking the
                 exposure to the selected cancer outcome.</li>
-            <li><strong>Finds Key Studies</strong> on PubMed using NLP to extract effect sizes (odds ratios, hazard
+            <li><strong>Finds Key Studies</strong> on PubMed using natural language processing to extract effect sizes (odds ratios, hazard
                 ratios) and confidence sizes.</li>
             <li><strong>Synthesizes Evidence</strong> by pooling the results using a Random-Effects Meta-Analysis model.
             </li>
@@ -139,6 +138,22 @@
         <p>
             If a pooled effect is statistically significant but has substantial or very high heterogeneity (I² &ge; 50%), the results are flagged to be interpreted with caution due to the high variability between the included studies.
         </p>
+
+        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; margin-top: 1.5rem; color: var(--text-primary);">Exposure Quantification</h3>
+        <p>
+            To facilitate accurate comparison of findings, MetaFemina categorizes how exposure to food supplements or nutritional factors was measured in each study:
+        </p>
+        <ul style="margin-bottom: 16px; padding-left: 20px;">
+            <li style="margin-bottom: 8px;">
+                <strong>Dietary Intake:</strong> The exposure is measured based on self-reported or observed consumption of foods, beverages, or supplements. Common assessment methods include food frequency questionnaires (FFQs), 24-hour dietary recalls, and diet diaries.
+            </li>
+            <li style="margin-bottom: 8px;">
+                <strong>Human Biospecimen:</strong> The exposure is quantified objectively using biological samples collected from study participants. This involves measuring levels of the nutrient, compound, or its metabolites in biospecimens like blood (serum/plasma), urine, adipose tissue, or other body fluids.
+            </li>
+            <li style="margin-bottom: 8px;">
+                <strong>Unclear:</strong> If the study abstract does not specify how the exposure was measured or if there is insufficient detail to categorize it, the exposure quantification type is marked as unclear.
+            </li>
+        </ul>
 
         <h2>JBI Quality Appraisal</h2>
         <p>
