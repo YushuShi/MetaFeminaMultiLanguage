@@ -770,13 +770,13 @@ document.addEventListener('DOMContentLoaded', async () => {
                     <b>Context:</b> ${study.comparison_type || '-'}<br>
                     <b>Design:</b> ${study.Design || '-'}<br>
                     <b>Location:</b> ${study.Continent || '-'}<br>
-                    <b>Exposure Quant:</b>
+                    <b>Exposure quantification:</b><br>
                     <select onchange="currentStudies[${index}]['exposure_measurement_type'] = this.value; (function(selectEl) {
                         const val = selectEl.value;
                         if (val === 'dietary_intake') selectEl.style.color = '#2e7d32';
                         else if (val === 'human_biospecimen') selectEl.style.color = '#1565c0';
                         else selectEl.style.color = '#e65100';
-                    })(this)" style="font-weight: bold; border: 1px solid #ccc; border-radius: 4px; padding: 2px; font-size: 0.95em; color: ${
+                    })(this)" style="font-weight: bold; border: 1px solid #ccc; border-radius: 4px; padding: 2px; font-size: 0.8em; max-width: 100%; box-sizing: border-box; color: ${
                         (() => {
                             const t = study.exposure_measurement_type || 'unclear';
                             if (t === 'dietary_intake') return '#2e7d32';
@@ -785,11 +785,12 @@ document.addEventListener('DOMContentLoaded', async () => {
                         })()
                     }">
                         <option value="unclear" ${(!study.exposure_measurement_type || study.exposure_measurement_type === 'unclear') ? 'selected' : ''}>Unclear</option>
-                        <option value="dietary_intake" ${study.exposure_measurement_type === 'dietary_intake' ? 'selected' : ''}>Dietary Intake</option>
-                        <option value="human_biospecimen" ${study.exposure_measurement_type === 'human_biospecimen' ? 'selected' : ''}>Human Biospecimen</option>
+                        <option value="dietary_intake" ${study.exposure_measurement_type === 'dietary_intake' ? 'selected' : ''}>Dietary</option>
+                        <option value="human_biospecimen" ${study.exposure_measurement_type === 'human_biospecimen' ? 'selected' : ''}>Biospecimen</option>
                     </select>
                 </td>
-                <td style="font-size: 0.75em;" title="${unselectedReason}">${study.Journal || '-'} (${study.Year || '-'})</td>
+                <td style="font-size: 0.75em;" title="${unselectedReason}">${study.Journal || '-'}</td>
+                <td style="font-size: 0.75em;" title="${unselectedReason}">${study.Year || '-'}</td>
             `;
 
             // Build Details row
@@ -813,7 +814,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             };
 
             detailsTr.innerHTML = `
-                <td colspan="13" style="padding: 1.25rem 2rem; border-bottom: 1px solid var(--border);">
+                <td colspan="14" style="padding: 1.25rem 2rem; border-bottom: 1px solid var(--border);">
                     <div class="snippets-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; border-left: 4px solid var(--primary); padding-left: 1.25rem; margin-left: 0.5rem;">
                         <div class="snippet-item" style="display: flex; flex-direction: column; gap: 0.25rem;">
                             <span style="font-weight: 700; color: #555; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em;">Exposure Measurement Explanation</span>
@@ -954,7 +955,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     function updateSortIcons() {
         document.querySelectorAll('th.sortable').forEach(th => th.classList.remove('sort-asc', 'sort-desc'));
-        const map = { 'Study': 'th-study', 'Effect Size': 'th-es', 'Year': 'th-year' };
+        const map = { 'Study': 'th-study', 'Effect Size': 'th-es', 'Year': 'th-year', 'Journal': 'th-journal' };
         const id = map[currentSort.field];
         if (id) {
             const el = document.getElementById(id);

@@ -3521,3 +3521,186 @@
 2026-06-19 08:53:44 ============================================================
 
 2026-06-19 08:53:44 [MetaFemina] Analyze complete in 0.0s: studies=17, error=None
+2026-06-21 21:30:45 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Vitamin A, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-21 21:30:45 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core.json
+2026-06-21 21:30:45 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-21 21:30:45 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-21 21:30:45 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-21 21:30:45 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-21 21:30:45 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-21 21:30:45 [MetaFemina] Cache hit found: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-21 21:30:45 [MetaFemina] Returning best available cached results from C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-21 21:30:45 
+============================================================
+2026-06-21 21:30:45 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-21 21:30:45   - Total Articles Fetched from PubMed: 886
+2026-06-21 21:30:45   - Articles Remaining After Pre-filter: 882
+2026-06-21 21:30:45     (Pre-filter skips: genetic=4)
+2026-06-21 21:30:45   - LLM Screening:
+2026-06-21 21:30:45     * Screened IN / Accepted:   232
+2026-06-21 21:30:45     * Screened OUT / Rejected:  630
+2026-06-21 21:30:45     * Consensus Bypassed:       0
+2026-06-21 21:30:45   - Final Extracted Studies: 23
+2026-06-21 21:30:45 ============================================================
+
+2026-06-21 21:30:45 [MetaFemina] Analyze complete in 0.0s: studies=17, error=None
+2026-06-21 21:31:44 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Beta-carotene, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-21 21:31:44 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\beta-carotene\breast_cancer_incidence_true_core.json
+2026-06-21 21:31:44 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\beta-carotene\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-21 21:31:44 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\beta-carotene\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-21 21:31:44 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\beta-carotene\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-21 21:31:44 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\beta-carotene\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-21 21:31:44 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\beta-carotene\breast_cancer_incidence_true_all.json
+2026-06-21 21:31:44 [MetaFemina] Cache hit found: C:\Users\mraga\Downloads\MetaFemina\Cached_results\beta-carotene\breast_cancer_incidence_true_all.json
+2026-06-21 21:31:44 [MetaFemina] Returning best available cached results from C:\Users\mraga\Downloads\MetaFemina\Cached_results\beta-carotene\breast_cancer_incidence_true_all.json
+2026-06-21 21:31:44 
+============================================================
+2026-06-21 21:31:44 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-21 21:31:44   - Total Articles Fetched from PubMed: 250
+2026-06-21 21:31:44   - Articles Remaining After Pre-filter: 250
+2026-06-21 21:31:44   - LLM Screening:
+2026-06-21 21:31:44     * Screened IN / Accepted:   202
+2026-06-21 21:31:44     * Screened OUT / Rejected:  45
+2026-06-21 21:31:44     * Consensus Bypassed:       0
+2026-06-21 21:31:44   - Final Extracted Studies: 43
+2026-06-21 21:31:44 ============================================================
+
+2026-06-21 21:31:44 [MetaFemina] Analyze complete in 0.0s: studies=38, error=None
+2026-06-21 21:37:26 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Vitamin A, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-21 21:37:26 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core.json
+2026-06-21 21:37:26 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-21 21:37:26 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-21 21:37:26 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-21 21:37:26 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-21 21:37:26 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-21 21:37:26 [MetaFemina] Cache hit found: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-21 21:37:26 [MetaFemina] Returning best available cached results from C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-21 21:37:26 
+============================================================
+2026-06-21 21:37:26 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-21 21:37:26   - Total Articles Fetched from PubMed: 886
+2026-06-21 21:37:26   - Articles Remaining After Pre-filter: 882
+2026-06-21 21:37:26     (Pre-filter skips: genetic=4)
+2026-06-21 21:37:26   - LLM Screening:
+2026-06-21 21:37:26     * Screened IN / Accepted:   232
+2026-06-21 21:37:26     * Screened OUT / Rejected:  630
+2026-06-21 21:37:26     * Consensus Bypassed:       0
+2026-06-21 21:37:26   - Final Extracted Studies: 23
+2026-06-21 21:37:26 ============================================================
+
+2026-06-21 21:37:26 [MetaFemina] Analyze complete in 0.0s: studies=17, error=None
+2026-06-21 21:37:38 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Soy, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-21 21:37:38 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\soy\breast_cancer_incidence_true_core.json
+2026-06-21 21:37:38 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\soy\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-21 21:37:38 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\soy\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-21 21:37:38 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\soy\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-21 21:37:38 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\soy\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-21 21:37:38 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\soy\breast_cancer_incidence_true_all.json
+2026-06-21 21:37:38 [MetaFemina] Cache hit found: C:\Users\mraga\Downloads\MetaFemina\Cached_results\soy\breast_cancer_incidence_true_all.json
+2026-06-21 21:37:38 [MetaFemina] Returning best available cached results from C:\Users\mraga\Downloads\MetaFemina\Cached_results\soy\breast_cancer_incidence_true_all.json
+2026-06-21 21:37:38 
+============================================================
+2026-06-21 21:37:38 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-21 21:37:38   - Total Articles Fetched from PubMed: 744
+2026-06-21 21:37:38   - Articles Remaining After Pre-filter: 744
+2026-06-21 21:37:38     (Pre-filter skips: genetic=1)
+2026-06-21 21:37:38   - LLM Screening:
+2026-06-21 21:37:38     * Screened IN / Accepted:   607
+2026-06-21 21:37:38     * Screened OUT / Rejected:  133
+2026-06-21 21:37:38     * Consensus Bypassed:       0
+2026-06-21 21:37:38   - Final Extracted Studies: 47
+2026-06-21 21:37:38 ============================================================
+
+2026-06-21 21:37:38 [MetaFemina] Analyze complete in 0.0s: studies=44, error=None
+2026-06-21 22:37:18 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Vitamin A, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-21 22:37:18 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core.json
+2026-06-21 22:37:18 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-21 22:37:18 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-21 22:37:18 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-21 22:37:18 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-21 22:37:18 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-21 22:37:18 [MetaFemina] Cache hit found: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-21 22:37:18 [MetaFemina] Returning best available cached results from C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-21 22:37:18 
+============================================================
+2026-06-21 22:37:18 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-21 22:37:18   - Total Articles Fetched from PubMed: 886
+2026-06-21 22:37:18   - Articles Remaining After Pre-filter: 882
+2026-06-21 22:37:18     (Pre-filter skips: genetic=4)
+2026-06-21 22:37:18   - LLM Screening:
+2026-06-21 22:37:18     * Screened IN / Accepted:   232
+2026-06-21 22:37:18     * Screened OUT / Rejected:  630
+2026-06-21 22:37:18     * Consensus Bypassed:       0
+2026-06-21 22:37:18   - Final Extracted Studies: 23
+2026-06-21 22:37:18 ============================================================
+
+2026-06-21 22:37:18 [MetaFemina] Analyze complete in 0.0s: studies=17, error=None
+2026-06-21 22:39:30 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Vitamin A, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-21 22:39:30 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core.json
+2026-06-21 22:39:30 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-21 22:39:30 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-21 22:39:30 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-21 22:39:30 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-21 22:39:30 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-21 22:39:30 [MetaFemina] Cache hit found: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-21 22:39:30 [MetaFemina] Returning best available cached results from C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-21 22:39:30 
+============================================================
+2026-06-21 22:39:30 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-21 22:39:30   - Total Articles Fetched from PubMed: 886
+2026-06-21 22:39:30   - Articles Remaining After Pre-filter: 882
+2026-06-21 22:39:30     (Pre-filter skips: genetic=4)
+2026-06-21 22:39:30   - LLM Screening:
+2026-06-21 22:39:30     * Screened IN / Accepted:   232
+2026-06-21 22:39:30     * Screened OUT / Rejected:  630
+2026-06-21 22:39:30     * Consensus Bypassed:       0
+2026-06-21 22:39:30   - Final Extracted Studies: 23
+2026-06-21 22:39:30 ============================================================
+
+2026-06-21 22:39:30 [MetaFemina] Analyze complete in 0.0s: studies=17, error=None
+2026-06-21 22:41:28 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Vitamin A, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-21 22:41:28 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core.json
+2026-06-21 22:41:28 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-21 22:41:28 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-21 22:41:28 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-21 22:41:28 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-21 22:41:28 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-21 22:41:28 [MetaFemina] Cache hit found: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-21 22:41:28 [MetaFemina] Returning best available cached results from C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-21 22:41:28 
+============================================================
+2026-06-21 22:41:28 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-21 22:41:28   - Total Articles Fetched from PubMed: 886
+2026-06-21 22:41:28   - Articles Remaining After Pre-filter: 882
+2026-06-21 22:41:28     (Pre-filter skips: genetic=4)
+2026-06-21 22:41:28   - LLM Screening:
+2026-06-21 22:41:28     * Screened IN / Accepted:   232
+2026-06-21 22:41:28     * Screened OUT / Rejected:  630
+2026-06-21 22:41:28     * Consensus Bypassed:       0
+2026-06-21 22:41:28   - Final Extracted Studies: 23
+2026-06-21 22:41:28 ============================================================
+
+2026-06-21 22:41:28 [MetaFemina] Analyze complete in 0.0s: studies=17, error=None
+2026-06-21 22:43:36 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Vitamin A, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-21 22:43:36 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core.json
+2026-06-21 22:43:36 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-21 22:43:36 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-21 22:43:36 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-21 22:43:36 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-21 22:43:36 [MetaFemina] Checking cache candidate: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-21 22:43:36 [MetaFemina] Cache hit found: C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-21 22:43:36 [MetaFemina] Returning best available cached results from C:\Users\mraga\Downloads\MetaFemina\Cached_results\vitamin_a\breast_cancer_incidence_true_all.json
+2026-06-21 22:43:36 
+============================================================
+2026-06-21 22:43:36 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-21 22:43:36   - Total Articles Fetched from PubMed: 886
+2026-06-21 22:43:36   - Articles Remaining After Pre-filter: 882
+2026-06-21 22:43:36     (Pre-filter skips: genetic=4)
+2026-06-21 22:43:36   - LLM Screening:
+2026-06-21 22:43:36     * Screened IN / Accepted:   232
+2026-06-21 22:43:36     * Screened OUT / Rejected:  630
+2026-06-21 22:43:36     * Consensus Bypassed:       0
+2026-06-21 22:43:36   - Final Extracted Studies: 23
+2026-06-21 22:43:36 ============================================================
+
+2026-06-21 22:43:36 [MetaFemina] Analyze complete in 0.0s: studies=17, error=None

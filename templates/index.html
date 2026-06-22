@@ -36,7 +36,13 @@
             <p>Look for evidence of associations between food supplements (nutrition) and breast, uterine, and ovarian cancer</p>
 
             <!-- Read Only Mode Banner -->
-            <div id="read-only-banner" class="hidden">
+            <div id="read-only-banner" class="hidden" style="padding-right: 2.2rem;">
+                <button id="close-read-only-banner" 
+                        onclick="document.getElementById('read-only-banner').classList.add('hidden')" 
+                        style="position: absolute; top: 0.5rem; right: 0.5rem; background: none; border: none; font-size: 1.25rem; font-weight: bold; cursor: pointer; color: #999; line-height: 1; transition: color 0.2s; padding: 2px 6px;"
+                        onmouseover="this.style.color='#e91e63'"
+                        onmouseout="this.style.color='#999'"
+                        title="Dismiss">×</button>
                 <span class="banner-title">🔒 Public Cached Demonstration Mode</span>
                 Live PubMed searches and LLM extraction are locked. Please search for or select one of the pre-analyzed exposures below.
             </div>
@@ -183,7 +189,7 @@
 
                 <div class="table-responsive">
                     <table id="studies-table"
-                        style="table-layout: fixed; width: 100%; border-collapse: collapse; min-width: 1320px;">
+                        style="table-layout: fixed; width: 100%; border-collapse: collapse; min-width: 1415px;">
                         <thead style="background-color: rgba(233, 30, 99, 0.15);">
                             <tr>
                                 <th style="width: 40px; padding: 0.75rem; vertical-align: middle;"></th>
@@ -192,9 +198,9 @@
                                 </th>
                                 <th style="width: 40px; padding: 0.75rem; vertical-align: middle;">#</th>
                                 <th class="sortable" id="th-study" onclick="handleSort('Study')"
-                                    style="width: 140px; padding: 0.75rem; vertical-align: middle;">Study ↕</th>
+                                    style="width: 140px; padding: 0.75rem; vertical-align: middle;">Study<span class="sort-icon"></span></th>
                                 <th class="sortable" id="th-es" onclick="handleSort('Effect Size')"
-                                    style="width: 110px; padding: 0.75rem; vertical-align: middle;">ES (Raw) ↕</th>
+                                    style="width: 110px; padding: 0.75rem; vertical-align: middle;">ES (Raw)<span class="sort-icon"></span></th>
                                 <th style="width: 130px; padding: 0.75rem; vertical-align: middle;">95% CI</th>
                                 <th id="th-n-cases" style="width: 120px; padding: 0.75rem; vertical-align: middle;">N /
                                     Cases</th>
@@ -203,8 +209,10 @@
                                 <th style="width: 80px; padding: 0.75rem; vertical-align: middle;">Exclude</th>
                                 <th style="width: 180px; padding: 0.75rem; vertical-align: middle;">Reference</th>
                                 <th style="width: 150px; padding: 0.75rem; vertical-align: middle;">Details</th>
+                                <th class="sortable" id="th-journal" onclick="handleSort('Journal')"
+                                    style="width: 130px; padding: 0.75rem; vertical-align: middle;">Journal<span class="sort-icon"></span></th>
                                 <th class="sortable" id="th-year" onclick="handleSort('Year')"
-                                    style="width: 150px; padding: 0.75rem; vertical-align: middle;">Year ↕</th>
+                                    style="width: 85px; padding: 0.75rem; vertical-align: middle;">Year<span class="sort-icon"></span></th>
                             </tr>
                         </thead>
                         <tbody>
