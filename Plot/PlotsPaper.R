@@ -16,6 +16,9 @@ for (pkg in c("ggtext", "cowplot", "ggrepel", "patchwork")) {
   if (!requireNamespace(pkg, quietly = TRUE)) install.packages(pkg)
 }
 
+output_dir <- "C:/Users/mde4023/Downloads/MetaFemina/Plot"
+dir.create(output_dir, showWarnings = FALSE, recursive = TRUE)
+
 # =============================================================================
 # 1. Read & clean data
 # =============================================================================
@@ -57,10 +60,10 @@ group_map <- tribble(
   "eggs",                     "Dietary Patterns",
   "dairy",                    "Dietary Patterns",
   "red_meat",             "Dietary Patterns",
-  "fermented_foods",          "Dietary Patterns",
-  "skyr",                     "Dietary Patterns",
+  "fermented_foods",          "Fermented Foods & Probiotics",
+  "skyr",                     "Fermented Foods & Probiotics",
   "hemp_seeds",               "Fatty Acids & Lipids",
-  "kefir",                    "Dietary Patterns",
+  "kefir",                    "Fermented Foods & Probiotics",
   "legumes",                  "Fruits & Vegetables",
   "chia_seeds",               "Fatty Acids & Lipids",
   "oats",                     "Dietary Patterns",
@@ -127,7 +130,19 @@ group_map <- tribble(
   "vitamin_b3",               "B Vitamins",
   "omega-6_fatty_acids",      "Fatty Acids & Lipids",
   "ginkgo",                   "Herbal & Botanical",
-  "coenzyme_q10",             "Antioxidants"
+  "coenzyme_q10",             "Antioxidants",
+  "sauerkraut",               "Fermented Foods & Probiotics",
+  "red_clover",               "Phytoestrogens",
+  "black_cohosh",             "Herbal & Botanical",
+  "n-acetylcysteine",         "Antioxidants",
+  "miso",                     "Fermented Foods & Probiotics",
+  "non-alcoholic_fermented_foods", "Fermented Foods & Probiotics",
+  "manganese",                "Minerals & Trace Elements",
+  "yogurt",                   "Fermented Foods & Probiotics",
+  "glucosamine",              "Metabolites & Amino Acids",
+  "sage",                     "Herbal & Botanical",
+  "pickled_vegetables",       "Fermented Foods & Probiotics",
+  "lactobacillus",            "Fermented Foods & Probiotics"
 )
 
 group_order <- c(
@@ -138,6 +153,7 @@ group_order <- c(
   "Minerals & Trace Elements",
   "Polyphenols & Flavonoids",
   "Fruits & Vegetables",
+  "Fermented Foods & Probiotics",
   "Fatty Acids & Lipids",
   "Phytoestrogens",
   "Herbal & Botanical",
@@ -153,6 +169,7 @@ group_colors <- c(
   "Fruits & Vegetables"      = "#2E7D32",
   "Vitamins A, C, D, E"     = "#C79000",
   "Polyphenols & Flavonoids" = "#6A0DAD",
+  "Fermented Foods & Probiotics" = "#00838F",
   "Fatty Acids & Lipids"     = "#B5001F",
   "Phytoestrogens"           = "#7B4A00",
   "Dietary Patterns"         = "#37474F",
@@ -170,6 +187,7 @@ group_bg <- c(
   "Fruits & Vegetables"      = "#E6F4E6",
   "Vitamins A, C, D, E"     = "#FBF6E0",
   "Polyphenols & Flavonoids" = "#F2E8FB",
+  "Fermented Foods & Probiotics" = "#E0F7FA",
   "Fatty Acids & Lipids"     = "#FBEAED",
   "Phytoestrogens"           = "#F5EDE6",
   "Dietary Patterns"         = "#ECEFF1",
@@ -179,6 +197,14 @@ group_bg <- c(
   "Antioxidants"             = "#E3EEF9",
   "Other"                    = "#F5F5F5"
 )
+
+missing_group_map <- setdiff(unique(dat_clean$Exposure), group_map$Exposure)
+if (length(missing_group_map) > 0) {
+  stop(
+    "Missing exposure group mapping for: ",
+    paste(sort(missing_group_map), collapse = ", ")
+  )
+}
 
 # =============================================================================
 # 3. Helper: pretty exposure labels
@@ -436,6 +462,7 @@ make_caption <- function(direction) {
 
 # ---- Compose & save ----
 save_forest_figure <- function(direction, title_text, xlim_max, filename) {
+  output_path <- file.path(output_dir, filename)
   df_raw     <- prepare_dat(dat_clean, direction)
   built      <- build_plot_rows(df_raw)
   df         <- built$df
@@ -467,10 +494,10 @@ save_forest_figure <- function(direction, title_text, xlim_max, filename) {
               y = c(0, 0, 1, 1, 0),
               color = "#B0BEC5", linewidth = 0.8)
   
-  ggsave(filename,
+  ggsave(output_path,
          plot = final, width = 297, height = 250,
          units = "mm", device = "pdf", dpi = 300)
-  message("Saved: ", filename)
+  message("Saved: ", output_path)
   invisible(final)
 }
 
@@ -495,6 +522,7 @@ build_scatter_df <- function(dat_clean, min_studies = 2) {
 # ---- Plot 1: Effect Size vs I² ----
 make_es_heterogeneity_plot <- function(dat_clean, min_studies = 2,
                                        filename = "plot_es_vs_heterogeneity.pdf") {
+  output_path <- file.path(output_dir, filename)
   
   plot_df <- build_scatter_df(dat_clean, min_studies)
   
@@ -516,16 +544,17 @@ make_es_heterogeneity_plot <- function(dat_clean, min_studies = 2,
       plot.title      = element_text(face = "bold")
     )
   
-  ggsave(filename,
+  ggsave(output_path,
          plot = p, width = 210, height = 210,
          units = "mm", device = "pdf", dpi = 300)
-  message("Saved: ", filename)
+  message("Saved: ", output_path)
   invisible(p)
 }
 
 # ---- Plot 2: log(Egger's p-value) vs I² ----
 make_eggers_heterogeneity_plot <- function(dat_clean, min_studies = 2,
                                            filename = "plot_eggers_vs_heterogeneity.pdf") {
+  output_path <- file.path(output_dir, filename)
   
   plot_df <- build_scatter_df(dat_clean, min_studies) %>%
     filter(!is.na(log_eggers_p))
@@ -548,10 +577,10 @@ make_eggers_heterogeneity_plot <- function(dat_clean, min_studies = 2,
       plot.title      = element_text(face = "bold")
     )
   
-  ggsave(filename,
+  ggsave(output_path,
          plot = p, width = 210, height = 210,
          units = "mm", device = "pdf", dpi = 300)
-  message("Saved: ", filename)
+  message("Saved: ", output_path)
   invisible(p)
 }
 
@@ -585,6 +614,6 @@ make_eggers_heterogeneity_plot(
   filename    = "plot_eggers_vs_heterogeneity.pdf"
 )
 
-message("All figures saved.")
+message("All figures saved to: ", output_dir)
 
 

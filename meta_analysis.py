@@ -15,7 +15,20 @@ import json
 from google import genai
 from functools import partial
 
-print = partial(print, flush=True)
+_original_print = print
+def safe_print(*args, **kwargs):
+    kwargs.setdefault('flush', True)
+    try:
+        _original_print(*args, **kwargs)
+    except UnicodeEncodeError:
+        new_args = []
+        for arg in args:
+            if isinstance(arg, str):
+                new_args.append(arg.encode('ascii', 'backslashreplace').decode('ascii'))
+            else:
+                new_args.append(arg)
+        _original_print(*new_args, **kwargs)
+print = safe_print
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, 'data')
@@ -444,11 +457,15 @@ def get_analysis_data(disease, exposure, outcome="Incidence", exclude_meta=False
     except Exception as e:
         print(f"LLM Extraction failed: {e}")
 
-    # Fallback to Regex only if the LLM screening did not run successfully, or if we screened in
-    # articles but failed to extract any data. Do not fallback if the LLM successfully screened out all articles.
-    llm_ran_successfully = bool(screening_stats and "llm_screened_in" in screening_stats)
-    llm_screened_any_in = bool(screening_stats.get("llm_screened_in", 0) > 0 or screening_stats.get("consensus_bypassed", 0) > 0)
-    should_fallback_to_regex = (not llm_ran_successfully) or (df.empty and llm_screened_any_in)
+    # Fallback to Regex only if the LLM screening/extraction did not run successfully due to API/client failure.
+    # We should NOT fallback to regex if the LLM ran successfully and simply found no relevant studies.
+    llm_ran_successfully = bool(
+        screening_stats and 
+        (len(articles) == 0 or 
+         screening_stats.get("llm_success_count", 0) > 0 or 
+         screening_stats.get("consensus_bypassed", 0) == len(articles))
+    )
+    should_fallback_to_regex = not llm_ran_successfully
 
     if should_fallback_to_regex:
         print("[MetaFemina] Falling back to Regex extraction...")
@@ -2325,7 +2342,7 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
     
     data = []
     data_lock = threading.Lock()
-    screening_stats = {"llm_screened_out": 0, "consensus_bypassed": 0, "llm_screened_in": 0}
+    screening_stats = {"llm_screened_out": 0, "consensus_bypassed": 0, "llm_screened_in": 0, "llm_success_count": 0}
     stats_lock = threading.Lock()
     
     def process_single_article(args):
@@ -2399,6 +2416,9 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
                     if screen_res:
                         is_associated = screen_res.get('is_directly_associated', True)
                         screening_reason = screen_res.get('reason', '')
+                        if "No LLM client succeeded" not in screening_reason:
+                            with stats_lock:
+                                screening_stats["llm_success_count"] += 1
                 except Exception as e:
                     print(f"  [Screening] Error screening article {i+1}/{len(filtered_articles)} {study_label}: {e}")
             else:
@@ -2451,6 +2471,10 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
                 used_llm = "Gemini"
             else:
                 extracted = oai_extracted or gemini_extracted
+
+            if oai_extracted is not None or gemini_extracted is not None:
+                with stats_lock:
+                    screening_stats["llm_success_count"] += 1
 
             if not extracted and not client and not gemini_client:
                  print("Error: No LLM Client initialized.")
@@ -2952,12 +2976,16 @@ def extract_info_llm(client, abstract, title, disease, exposure, outcome, model_
                     {"role": "user", "content": prompt}
                 ],
                 temperature=0,
-                response_format={"type": "json_object"},
                 timeout=30.0
             )
             if hasattr(response, 'usage'):
                 track_usage(model_name, response.usage.prompt_tokens, response.usage.completion_tokens)
             content = response.choices[0].message.content
+            print(f"  [LLM Extraction DEBUG] {repr(content)[:200]}")
+            if content.startswith("```json"):
+                content = content.split("```json")[1].split("```")[0].strip()
+            elif content.startswith("```"):
+                content = content.split("```")[1].split("```")[0].strip()
             return json.loads(content)
         except Exception as e:
             error_msg = str(e).lower()
@@ -3012,12 +3040,16 @@ def screen_article_relevance_llm(client, gemini_client, abstract, title, exposur
                     {"role": "user", "content": prompt}
                 ],
                 temperature=0,
-                response_format={"type": "json_object"},
                 timeout=20.0
             )
             if hasattr(response, 'usage'):
                 track_usage(model_name, response.usage.prompt_tokens, response.usage.completion_tokens)
             content = response.choices[0].message.content
+            print(f"  [LLM Screening DEBUG] {repr(content)[:200]}")
+            if content.startswith("```json"):
+                content = content.split("```json")[1].split("```")[0].strip()
+            elif content.startswith("```"):
+                content = content.split("```")[1].split("```")[0].strip()
             return json.loads(content)
         except Exception as e:
             print(f"  [Screening LLM] OpenAI screening error: {e}")

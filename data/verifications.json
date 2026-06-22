@@ -3136,5 +3136,58 @@
         "context_exclusions": {
             "breast_cancer_calcium_incidence": 2
         }
+    },
+    "35294969": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_chocolate_incidence": 2
+        },
+        "contexts": {
+            "breast_cancer_chocolate_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.97,
+                            "Lower CI": 0.86,
+                            "Upper CI": 1.09,
+                            "Cases": null,
+                            "Sample Size": "12,666",
+                            "Design": "Clinical Trial",
+                            "Timing": "Unknown",
+                            "Comparison Type": "-",
+                            "exposure_measurement_type": "unclear"
+                        },
+                        "timestamp": "2026-06-22 10:46:46"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.97,
+                            "Lower CI": 0.86,
+                            "Upper CI": 1.09,
+                            "Cases": null,
+                            "Sample Size": "12,666",
+                            "Design": "Clinical Trial",
+                            "Timing": "Unknown",
+                            "Comparison Type": "-",
+                            "exposure_measurement_type": "unclear"
+                        },
+                        "timestamp": "2026-06-22 10:46:47"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.97,
+                    "Lower CI": 0.86,
+                    "Upper CI": 1.09,
+                    "Cases": null,
+                    "Sample Size": "12,666",
+                    "Design": "Clinical Trial",
+                    "Timing": "Unknown",
+                    "Comparison Type": "-",
+                    "exposure_measurement_type": "unclear"
+                }
+            }
+        }
     }
 }

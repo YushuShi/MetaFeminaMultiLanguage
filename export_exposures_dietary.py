@@ -104,12 +104,8 @@ def run_export(disease_key, disease_config):
 
             df = pd.DataFrame(cleaned_studies)
 
-            # ── Filter: dietary intake only ──
-            if 'exposure_measurement_type' in df.columns:
-                df = df[df['exposure_measurement_type'] == 'dietary_intake'].copy()
-            else:
-                # If the column doesn't exist at all, skip this exposure
-                continue
+            # ── Use all available exposure quantifications ──
+            # (No filtering by exposure_measurement_type)
 
             if len(df) == 0:
                 continue

@@ -31,6 +31,7 @@ EXPOSURES = [
     "turmeric",
     "tea",
     "coffee",
+    "chocolate",
     "alcohol",
     "red meat",
     "processed meat",
