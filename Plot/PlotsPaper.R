@@ -420,8 +420,8 @@ make_forest_panel <- function(df, label_df, total_rows, xlim_max = 2.5, fs = 3.8
       values = group_colors,
       name   = "Exposure group",
       guide  = guide_legend(
-        ncol           = 4,
-        override.aes   = list(shape = 15, size = 5.5, alpha = 1),
+        ncol           = 5,
+        override.aes   = list(shape = 15, size = 4.8, alpha = 1),
         title.position = "top",
         title.hjust    = 0,
         byrow          = TRUE
@@ -437,10 +437,11 @@ make_forest_panel <- function(df, label_df, total_rows, xlim_max = 2.5, fs = 3.8
       axis.title.x     = element_text(size = 11, color = "#37474F", margin = margin(t = 6)),
       panel.grid       = element_blank(),
       legend.position  = "bottom",
-      legend.text      = element_text(size = 9,  color = "#1A1A2E"),
-      legend.title     = element_text(size = 10, color = "#1A1A2E", face = "bold"),
-      legend.key.size  = unit(0.55, "cm"),
-      legend.spacing.x = unit(0.4, "cm"),
+      legend.text      = element_text(size = 8.2,  color = "#1A1A2E"),
+      legend.title     = element_text(size = 9.2, color = "#1A1A2E", face = "bold"),
+      legend.key.size  = unit(0.48, "cm"),
+      legend.spacing.x = unit(0.28, "cm"),
+      legend.margin    = margin(t = 2, r = 0, b = 2, l = 0),
       plot.background  = element_rect(fill = "white", color = NA),
       plot.margin      = margin(8, 16, 8, 2)
     )
@@ -476,7 +477,7 @@ save_forest_figure <- function(direction, title_text, xlim_max, filename) {
   
   caption_grob <- ggdraw() +
     draw_label(make_caption(direction),
-               x = 0.01, hjust = 0, size = 7.5,
+               x = 0.01, hjust = 0, size = 7.2,
                color = "#607D8B", fontface = "italic")
   
   combined <- plot_grid(
@@ -486,7 +487,7 @@ save_forest_figure <- function(direction, title_text, xlim_max, filename) {
     legend_grob,
     caption_grob,
     ncol        = 1,
-    rel_heights = c(1, 0.09, 0.06)
+    rel_heights = c(1, 0.14, 0.07)
   )
   
   final <- ggdraw(combined) +
