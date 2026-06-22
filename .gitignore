@@ -1,2 +1,5 @@
 mykeys.env
 mykey.env
+venv/
+__pycache__/
+*.pyc
