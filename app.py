@@ -16,7 +16,13 @@ LOG_FILE = os.path.join(BASE_DIR, 'metafemina_runtime.log')
 def log_event(message):
     """Write progress to stdout and the project refresh log."""
     line = f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} {message}"
-    print(line)
+    
+    # Hide verbose cache lookup prints from console unless DEBUG=true
+    debug_enabled = os.environ.get('DEBUG', 'false').lower() == 'true'
+    is_verbose = "Checking cache candidate:" in message or "Cache hit found:" in message
+    if not is_verbose or debug_enabled:
+        print(line)
+        
     try:
         with open(LOG_FILE, 'a', encoding='utf-8') as f:
             f.write(line + "\n")

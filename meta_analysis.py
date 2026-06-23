@@ -18,6 +18,17 @@ from functools import partial
 _original_print = print
 def safe_print(*args, **kwargs):
     kwargs.setdefault('flush', True)
+    
+    # Hide verbose progress and debug prints from console unless DEBUG=true
+    if args and os.environ.get('DEBUG', 'false').lower() != 'true':
+        first_arg = str(args[0])
+        if (
+            first_arg.startswith('  [') or 
+            first_arg.startswith('Searching PubMed for:') or 
+            'DEBUG' in first_arg
+        ):
+            return
+            
     try:
         _original_print(*args, **kwargs)
     except UnicodeEncodeError:

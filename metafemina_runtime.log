@@ -4194,3 +4194,113 @@
 
 2026-06-22 23:09:34 [MetaFemina] Re-analyzing Folic acid due to verification filtering/consensus/flags...
 2026-06-22 23:09:36 [MetaFemina] Analyze complete in 1.8s: studies=44, error=None
+2026-06-23 10:23:02 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Vitamin K, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-23 10:23:02 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_k\breast_cancer_incidence_true_core.json
+2026-06-23 10:23:02 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_k\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-23 10:23:02 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_k\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-23 10:23:02 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_k\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-23 10:23:02 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_k\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-23 10:23:02 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_k\breast_cancer_incidence_true_all.json
+2026-06-23 10:23:02 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_k\breast_cancer_incidence_true_all.json
+2026-06-23 10:23:02 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\vitamin_k\breast_cancer_incidence_true_all.json
+2026-06-23 10:23:02 
+============================================================
+2026-06-23 10:23:02 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-23 10:23:02   - Total Articles Fetched from PubMed: 49
+2026-06-23 10:23:02   - Articles Remaining After Pre-filter: 48
+2026-06-23 10:23:02     (Pre-filter skips: genetic=1)
+2026-06-23 10:23:02   - LLM Screening:
+2026-06-23 10:23:02     * Screened IN / Accepted:   23
+2026-06-23 10:23:02     * Screened OUT / Rejected:  24
+2026-06-23 10:23:02     * Consensus Bypassed:       0
+2026-06-23 10:23:02   - Final Extracted Studies: 2
+2026-06-23 10:23:02 ============================================================
+
+2026-06-23 10:23:02 [MetaFemina] Analyze complete in 0.0s: studies=2, error=None
+2026-06-23 10:24:25 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Magnesium, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-23 10:24:25 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\magnesium\breast_cancer_incidence_true_core.json
+2026-06-23 10:24:25 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\magnesium\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-23 10:24:25 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\magnesium\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-23 10:24:25 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\magnesium\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-23 10:24:25 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\magnesium\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-23 10:24:25 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\magnesium\breast_cancer_incidence_true_all.json
+2026-06-23 10:24:25 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\magnesium\breast_cancer_incidence_true_all.json
+2026-06-23 10:24:25 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\magnesium\breast_cancer_incidence_true_all.json
+2026-06-23 10:24:25 
+============================================================
+2026-06-23 10:24:25 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-23 10:24:25   - Total Articles Fetched from PubMed: 132
+2026-06-23 10:24:25   - Articles Remaining After Pre-filter: 132
+2026-06-23 10:24:25   - LLM Screening:
+2026-06-23 10:24:25     * Screened IN / Accepted:   81
+2026-06-23 10:24:25     * Screened OUT / Rejected:  51
+2026-06-23 10:24:25     * Consensus Bypassed:       0
+2026-06-23 10:24:25   - Final Extracted Studies: 5
+2026-06-23 10:24:25 ============================================================
+
+2026-06-23 10:24:25 [MetaFemina] Analyze complete in 0.0s: studies=5, error=None
+2026-06-23 10:26:14 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\magnesium\breast_cancer_incidence_true_all.json
+2026-06-23 10:26:16 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\magnesium\breast_cancer_incidence_true_all.json
+2026-06-23 10:26:50 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Chromium, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-23 10:26:50 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\chromium\breast_cancer_incidence_true_core.json
+2026-06-23 10:26:50 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\chromium\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-23 10:26:50 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\chromium\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-23 10:26:50 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\chromium\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-23 10:26:50 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\chromium\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-23 10:26:50 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\chromium\breast_cancer_incidence_true_all.json
+2026-06-23 10:26:50 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\chromium\breast_cancer_incidence_true_all.json
+2026-06-23 10:26:50 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\chromium\breast_cancer_incidence_true_all.json
+2026-06-23 10:26:50 
+============================================================
+2026-06-23 10:26:50 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-23 10:26:50   - Total Articles Fetched from PubMed: 68
+2026-06-23 10:26:50   - Articles Remaining After Pre-filter: 68
+2026-06-23 10:26:50   - LLM Screening:
+2026-06-23 10:26:50     * Screened IN / Accepted:   49
+2026-06-23 10:26:50     * Screened OUT / Rejected:  19
+2026-06-23 10:26:50     * Consensus Bypassed:       0
+2026-06-23 10:26:50   - Final Extracted Studies: 4
+2026-06-23 10:26:50 ============================================================
+
+2026-06-23 10:26:50 [MetaFemina] Analyze complete in 0.0s: studies=3, error=None
+2026-06-23 10:31:16 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Zinc, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-23 10:31:16 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\zinc\breast_cancer_incidence_true_core.json
+2026-06-23 10:31:16 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\zinc\breast_cancer_incidence_true_core.json
+2026-06-23 10:31:16 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\zinc\breast_cancer_incidence_true_core.json
+2026-06-23 10:31:17 
+============================================================
+2026-06-23 10:31:17 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-23 10:31:17   - Total Articles Fetched from PubMed: 552
+2026-06-23 10:31:17   - Articles Remaining After Pre-filter: 551
+2026-06-23 10:31:17     (Pre-filter skips: genetic=1)
+2026-06-23 10:31:17   - LLM Screening:
+2026-06-23 10:31:17     * Screened IN / Accepted:   248
+2026-06-23 10:31:17     * Screened OUT / Rejected:  303
+2026-06-23 10:31:17     * Consensus Bypassed:       1
+2026-06-23 10:31:17   - Final Extracted Studies: 10
+2026-06-23 10:31:17 ============================================================
+
+2026-06-23 10:31:17 [MetaFemina] Re-analyzing Zinc due to verification filtering/consensus/flags...
+2026-06-23 10:31:17 [MetaFemina] Analyze complete in 0.7s: studies=10, error=None
+2026-06-23 10:31:57 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Zinc, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-23 10:31:57 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\zinc\breast_cancer_incidence_true_core.json
+2026-06-23 10:31:57 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\zinc\breast_cancer_incidence_true_core.json
+2026-06-23 10:31:57 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\zinc\breast_cancer_incidence_true_core.json
+2026-06-23 10:31:57 
+============================================================
+2026-06-23 10:31:57 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-23 10:31:57   - Total Articles Fetched from PubMed: 552
+2026-06-23 10:31:57   - Articles Remaining After Pre-filter: 551
+2026-06-23 10:31:57     (Pre-filter skips: genetic=1)
+2026-06-23 10:31:57   - LLM Screening:
+2026-06-23 10:31:57     * Screened IN / Accepted:   248
+2026-06-23 10:31:57     * Screened OUT / Rejected:  303
+2026-06-23 10:31:57     * Consensus Bypassed:       1
+2026-06-23 10:31:57   - Final Extracted Studies: 10
+2026-06-23 10:31:57 ============================================================
+
+2026-06-23 10:31:57 [MetaFemina] Re-analyzing Zinc due to verification filtering/consensus/flags...
+2026-06-23 10:31:58 [MetaFemina] Analyze complete in 0.6s: studies=10, error=None
+2026-06-23 10:32:14 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Zinc, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-23 10:32:14 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-23 10:32:14 [MetaFemina] Running new analysis for Breast cancer / Zinc (from 'Zinc') using model: openai.gpt-4o

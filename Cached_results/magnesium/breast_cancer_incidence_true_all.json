@@ -192,7 +192,8 @@
                 "confidence_interval": "HR = 0.96, 95%CI: 0.93-1.00",
                 "outcome_definition": "breast cancer incidence",
                 "exposure_definition": "Higher intakes of vitamins B2 and C, calcium, and magnesium"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Kim JY et al. (2023) [PMID: 37605270]",
@@ -244,56 +245,49 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Huang WQ et al. (2019) [PMID: 30962499]</th>\n      <td>-0.1968</td>\n      <td>0.0958</td>\n      <td>-0.3845</td>\n      <td>-0.0091</td>\n      <td>1050.0</td>\n      <td>2279.0</td>\n    </tr>\n    <tr>\n      <th>Xu W et al. (2025) [PMID: 41668722]</th>\n      <td>-0.0381</td>\n      <td>0.0173</td>\n      <td>-0.0720</td>\n      <td>-0.0042</td>\n      <td>-</td>\n      <td>67045.0</td>\n    </tr>\n    <tr>\n      <th>Papadimitriou N et al. (2021) [PMID: 32761610]</th>\n      <td>0.1351</td>\n      <td>0.0277</td>\n      <td>0.0808</td>\n      <td>0.1895</td>\n      <td>122977.0</td>\n      <td>228951.0</td>\n    </tr>\n    <tr>\n      <th>Kim JY et al. (2023) [PMID: 37605270]</th>\n      <td>0.2118</td>\n      <td>0.0459</td>\n      <td>0.1219</td>\n      <td>0.3017</td>\n      <td>133384.0</td>\n      <td>940633.0</td>\n    </tr>\n    <tr>\n      <th>Lin T et al. (2020) [PMID: 33271534]</th>\n      <td>0.5899</td>\n      <td>0.2347</td>\n      <td>0.1299</td>\n      <td>1.0499</td>\n      <td>228.0</td>\n      <td>456.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Huang WQ et al. (2019) [PMID: 30962499]</th>\n      <td>-0.1968</td>\n      <td>0.0958</td>\n      <td>-0.3845</td>\n      <td>-0.0091</td>\n      <td>1050.0</td>\n      <td>2279.0</td>\n    </tr>\n    <tr>\n      <th>Papadimitriou N et al. (2021) [PMID: 32761610]</th>\n      <td>0.1351</td>\n      <td>0.0277</td>\n      <td>0.0808</td>\n      <td>0.1895</td>\n      <td>122977.0</td>\n      <td>228951.0</td>\n    </tr>\n    <tr>\n      <th>Kim JY et al. (2023) [PMID: 37605270]</th>\n      <td>0.2118</td>\n      <td>0.0459</td>\n      <td>0.1219</td>\n      <td>0.3017</td>\n      <td>133384.0</td>\n      <td>940633.0</td>\n    </tr>\n    <tr>\n      <th>Lin T et al. (2020) [PMID: 33271534]</th>\n      <td>0.5899</td>\n      <td>0.2347</td>\n      <td>0.1299</td>\n      <td>1.0499</td>\n      <td>228.0</td>\n      <td>456.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 1.08,
-        "ci_low": 0.94,
-        "ci_upp": 1.25,
-        "pi_low": 0.66,
-        "pi_upp": 1.78,
+        "pooled_es": 1.13,
+        "ci_low": 0.97,
+        "ci_upp": 1.32,
+        "pi_low": 0.58,
+        "pi_upp": 2.19,
         "interpretation": "Not statistically significant",
-        "i2": 92.96,
+        "i2": 83.8,
         "tau2": 0.02,
-        "eggers_p": 0.46851961458882085,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.4685). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "eggers_p": 0.9619708795552824,
+        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.9620). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
         "loo_results": [
             {
                 "omitted": "Huang WQ et al. (2019) [PMID: 30962499]",
-                "pooled_es": 1.1496662927263572,
-                "ci_low": 0.9509486090335609,
-                "ci_upp": 1.3899095829946362,
-                "is_significant": false
-            },
-            {
-                "omitted": "Xu W et al. (2025) [PMID: 41668722]",
-                "pooled_es": 1.128245678206104,
-                "ci_low": 0.8848414936680735,
-                "ci_upp": 1.4386060322666818,
-                "is_significant": false
+                "pooled_es": 1.208903241214453,
+                "ci_low": 1.0558255912754972,
+                "ci_upp": 1.384174676854819,
+                "is_significant": true
             },
             {
                 "omitted": "Papadimitriou N et al. (2021) [PMID: 32761610]",
-                "pooled_es": 1.0755927351494896,
-                "ci_low": 0.8151134792898457,
-                "ci_upp": 1.4193112508877785,
+                "pooled_es": 1.1660604251390594,
+                "ci_low": 0.766372521022256,
+                "ci_upp": 1.7741984188861561,
                 "is_significant": false
             },
             {
                 "omitted": "Kim JY et al. (2023) [PMID: 37605270]",
-                "pooled_es": 1.0375260932338841,
-                "ci_low": 0.8191338897812928,
-                "ci_upp": 1.3141446197868571,
+                "pooled_es": 1.1180359835368097,
+                "ci_low": 0.7478365575111929,
+                "ci_upp": 1.6714941893762827,
                 "is_significant": false
             },
             {
                 "omitted": "Lin T et al. (2020) [PMID: 33271534]",
-                "pooled_es": 1.0443997344759672,
-                "ci_low": 0.8820264492621523,
-                "ci_upp": 1.2366645085143888,
+                "pooled_es": 1.0818239943757095,
+                "ci_low": 0.862314084060356,
+                "ci_upp": 1.3572121532519223,
                 "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled analysis of 5 studies yielded an effect size of 1.08 (95% CI: 0.94\u20131.25), indicating no statistically significant association between magnesium and breast cancer. Although the point estimate suggests a potential positive relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 92.96%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 4 studies yielded an effect size of 1.13 (95% CI: 0.97\u20131.32), indicating no statistically significant association between magnesium and breast cancer. Although the point estimate suggests a potential positive relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 83.80%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 51,
@@ -312,8 +306,8 @@
         },
         "extracted": 5
     },
-    "plot_url": "static/magnesium/forest_breast_cancer_incidence_primary.png?t=4080",
-    "funnel_plot_url": "static/magnesium/funnel_breast_cancer_incidence_primary.png?t=4520",
-    "baujat_plot_url": "static\\magnesium\\baujat_breast_cancer_incidence_primary.png?t=3411",
+    "plot_url": "static/magnesium/forest_breast_cancer_incidence_primary.png?t=877",
+    "funnel_plot_url": "static/magnesium/funnel_breast_cancer_incidence_primary.png?t=4068",
+    "baujat_plot_url": "static\\magnesium\\baujat_breast_cancer_incidence_primary.png?t=5677",
     "last_run": "2026-06-15 02:16:29"
 }

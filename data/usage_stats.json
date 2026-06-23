@@ -5,8 +5,13 @@
         "calls": 1787
     },
     "google.gemini-2.5-flash": {
-        "input_tokens": 2196602,
-        "output_tokens": 983636,
-        "calls": 607
+        "input_tokens": 2203808,
+        "output_tokens": 987089,
+        "calls": 609
+    },
+    "openai.gpt-4o": {
+        "input_tokens": 20853,
+        "output_tokens": 2259,
+        "calls": 10
     }
 }
