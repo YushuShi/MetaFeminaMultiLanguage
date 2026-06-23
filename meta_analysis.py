@@ -23,8 +23,7 @@ def safe_print(*args, **kwargs):
     if args and os.environ.get('DEBUG', 'false').lower() != 'true':
         first_arg = str(args[0])
         if (
-            first_arg.startswith('  [') or 
-            first_arg.startswith('Searching PubMed for:') or 
+            first_arg.startswith('  [LLM Screening DEBUG]') or
             'DEBUG' in first_arg
         ):
             return
@@ -76,6 +75,88 @@ OTHER_DISEASE_TERMS = [
     "neonate", "infant", "child", "non-alcoholic", "fatty liver", "bladder",
     "alzheimer", "dementia", "parkinson", "neurological",
 ]
+
+def print_extracted_articles_by_interval(data):
+    """
+    Helper function to print the count of unique extracted articles
+    grouped by different time intervals.
+    """
+    date_windows = [
+        (1900, 1980, "1900-1980"),
+        (1981, 1990, "1981-1990"),
+        (1991, 2000, "1991-2000"),
+        (2001, 2010, "2001-2010"),
+        (2011, 2020, "2011-2020"),
+        (2021, 2030, "2021-2030"),
+    ]
+    
+    counts = {label: 0 for _, _, label in date_windows}
+    unknown_count = 0
+    seen_pmids = set()
+    
+    rows = []
+    if isinstance(data, pd.DataFrame):
+        rows = data.to_dict('records')
+    elif isinstance(data, list):
+        rows = data
+        
+    for row in rows:
+        # Check if this is a raw article dictionary from fetch_details
+        if isinstance(row, dict) and 'MedlineCitation' in row:
+            try:
+                medline = row['MedlineCitation']
+                pmid = str(medline.get('PMID', ''))
+                article_data = medline.get('Article', {})
+                pub_date = article_data.get('Journal', {}).get('JournalIssue', {}).get('PubDate', {})
+                year_val = pub_date.get('Year', '')
+                if not year_val:
+                    medline_date = pub_date.get('MedlineDate', '')
+                    ym = re.search(r'\d{4}', medline_date)
+                    year_val = ym.group(0) if ym else "Unknown"
+            except Exception:
+                pmid = ""
+                year_val = ""
+        else:
+            pmid = str(row.get("PMID", ""))
+            year_val = row.get("Year", "")
+            
+        if not pmid or pmid in seen_pmids:
+            continue
+            
+        year = None
+        if year_val:
+            try:
+                if isinstance(year_val, str):
+                    ym = re.search(r'\d{4}', year_val)
+                    year = int(ym.group(0)) if ym else None
+                elif isinstance(year_val, (int, float)) and not pd.isna(year_val):
+                    year = int(year_val)
+            except Exception:
+                pass
+                
+        if year is None:
+            unknown_count += 1
+            seen_pmids.add(pmid)
+            continue
+            
+        placed = False
+        for start, end, label in date_windows:
+            if start <= year <= end:
+                counts[label] += 1
+                placed = True
+                break
+        if not placed:
+            unknown_count += 1
+            
+        seen_pmids.add(pmid)
+        
+    for _, _, label in date_windows:
+        cnt = counts[label]
+        word = "article" if cnt == 1 else "articles"
+        print(f"{label}: {cnt} {word}")
+    if unknown_count > 0:
+        word = "article" if unknown_count == 1 else "articles"
+        print(f"Other/Unknown: {unknown_count} {word}")
 
 def get_disease_alias(disease):
     """Return disease-specific query and filtering aliases for supported scopes."""
@@ -435,6 +516,7 @@ def get_analysis_data(disease, exposure, outcome="Incidence", exclude_meta=False
 
     print(f"[MetaFemina] Stage 2/4: Fetching details for {len(ids)} PubMed records...")
     articles = fetch_details(ids)
+    print_extracted_articles_by_interval(articles)
 
     # Get full synonym list for better relevance matching across both extraction engines
     syn_dict = get_equivalent_terms(exposure)
@@ -2027,6 +2109,7 @@ def main():
     print(f"\nFetching data for {disease} and {exposure}...")
     ids = search_pubmed(disease, exposure)
     articles = fetch_details(ids)
+    print_extracted_articles_by_interval(articles)
     
     df = extract_data(articles, disease_keyword=disease)
     

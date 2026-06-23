@@ -1114,7 +1114,9 @@
     "37299574": {
         "legacy_count": 0,
         "submissions": [],
-        "context_exclusions": {},
+        "context_exclusions": {
+            "breast_cancer_zinc_incidence": 2
+        },
         "contexts": {
             "breast_cancer_zinc_incidence": {
                 "submissions": [

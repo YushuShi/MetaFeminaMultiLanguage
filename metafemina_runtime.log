@@ -4304,3 +4304,82 @@
 2026-06-23 10:32:14 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Zinc, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
 2026-06-23 10:32:14 [MetaFemina] Force refresh requested; bypassing cached result lookup.
 2026-06-23 10:32:14 [MetaFemina] Running new analysis for Breast cancer / Zinc (from 'Zinc') using model: openai.gpt-4o
+2026-06-23 10:48:33 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Zinc, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-23 10:48:33 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-23 10:48:33 [MetaFemina] Running new analysis for Breast cancer / Zinc (from 'Zinc') using model: openai.gpt-4o
+2026-06-23 10:52:57 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Zinc, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-23 10:52:57 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-23 10:52:57 [MetaFemina] Running new analysis for Breast cancer / Zinc (from 'Zinc') using model: openai.gpt-4o
+2026-06-23 10:58:32 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Zinc, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-23 10:58:32 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-23 10:58:32 [MetaFemina] Running new analysis for Breast cancer / Zinc (from 'Zinc') using model: openai.gpt-4o
+2026-06-23 11:26:23 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\zinc\breast_cancer_incidence_true_core.json
+2026-06-23 11:26:23 [MetaFemina] Re-analyzing Zinc due to verification filtering/consensus/flags...
+2026-06-23 11:26:24 [MetaFemina] Analyze complete in 1672.1s: studies=10, error=None
+2026-06-23 11:33:39 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\zinc\breast_cancer_incidence_true_core.json
+2026-06-23 11:33:40 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\zinc\breast_cancer_incidence_true_core.json
+2026-06-23 11:40:10 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Beta-carotene, outcome=Incidence, exclude_meta=True, force_refresh=True, model=anthropic.claude-4.5-sonnet
+2026-06-23 11:40:10 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-23 11:40:10 [MetaFemina] Running new analysis for Breast cancer / Beta-carotene (from 'Beta-carotene') using model: anthropic.claude-4.5-sonnet
+2026-06-23 11:45:04 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Beta-carotene, outcome=Incidence, exclude_meta=True, force_refresh=True, model=anthropic.claude-4.5-sonnet
+2026-06-23 11:45:04 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-23 11:45:04 [MetaFemina] Running new analysis for Breast cancer / Beta-carotene (from 'Beta-carotene') using model: anthropic.claude-4.5-sonnet
+2026-06-23 11:49:03 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Beta-carotene, outcome=Incidence, exclude_meta=True, force_refresh=True, model=anthropic.claude-4.5-sonnet
+2026-06-23 11:49:03 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-23 11:49:03 [MetaFemina] Running new analysis for Breast cancer / Beta-carotene (from 'Beta-carotene') using model: anthropic.claude-4.5-sonnet
+2026-06-23 13:07:10 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Beta-carotene, outcome=Incidence, exclude_meta=True, force_refresh=False, model=anthropic.claude-4.5-sonnet
+2026-06-23 13:07:10 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\beta-carotene\breast_cancer_incidence_true_core.json
+2026-06-23 13:07:10 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\beta-carotene\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-23 13:07:10 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\beta-carotene\breast_cancer_incidence_true_core.json
+2026-06-23 13:07:10 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\beta-carotene\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-23 13:07:10 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\beta-carotene\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-23 13:07:10 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\beta-carotene\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-23 13:07:10 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\beta-carotene\breast_cancer_incidence_true_all.json
+2026-06-23 13:07:10 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\beta-carotene\breast_cancer_incidence_true_all.json
+2026-06-23 13:07:10 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\beta-carotene\breast_cancer_incidence_true_all.json
+2026-06-23 13:07:10 
+============================================================
+2026-06-23 13:07:10 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-23 13:07:10   - Total Articles Fetched from PubMed: 250
+2026-06-23 13:07:10   - Articles Remaining After Pre-filter: 250
+2026-06-23 13:07:10   - LLM Screening:
+2026-06-23 13:07:10     * Screened IN / Accepted:   202
+2026-06-23 13:07:10     * Screened OUT / Rejected:  45
+2026-06-23 13:07:10     * Consensus Bypassed:       0
+2026-06-23 13:07:10   - Final Extracted Studies: 43
+2026-06-23 13:07:10 ============================================================
+
+2026-06-23 13:07:10 [MetaFemina] Analyze complete in 0.0s: studies=38, error=None
+2026-06-23 13:07:30 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Beta-carotene, outcome=Incidence, exclude_meta=True, force_refresh=True, model=anthropic.claude-4.5-sonnet
+2026-06-23 13:07:30 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-23 13:07:30 [MetaFemina] Running new analysis for Breast cancer / Beta-carotene (from 'Beta-carotene') using model: anthropic.claude-4.5-sonnet
+2026-06-23 13:11:52 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Beta-carotene, outcome=Incidence, exclude_meta=True, force_refresh=True, model=anthropic.claude-4.5-sonnet
+2026-06-23 13:11:52 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-23 13:11:52 [MetaFemina] Running new analysis for Breast cancer / Beta-carotene (from 'Beta-carotene') using model: anthropic.claude-4.5-sonnet
+2026-06-23 13:13:02 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Beta-carotene, outcome=Incidence, exclude_meta=True, force_refresh=True, model=anthropic.claude-4.5-sonnet
+2026-06-23 13:13:02 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-23 13:13:02 [MetaFemina] Running new analysis for Breast cancer / Beta-carotene (from 'Beta-carotene') using model: anthropic.claude-4.5-sonnet
+2026-06-23 13:37:27 [MetaFemina] Saved refreshed result cache to C:\Users\mde4023\Downloads\MetaFemina\Cached_results\beta-carotene\breast_cancer_incidence_true_core.json
+2026-06-23 13:37:27 [MetaFemina] Analyze complete in 1464.7s: studies=40, error=None
+2026-06-23 13:40:58 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Zinc, outcome=Incidence, exclude_meta=True, force_refresh=False, model=anthropic.claude-4.5-sonnet
+2026-06-23 13:40:58 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\zinc\breast_cancer_incidence_true_core.json
+2026-06-23 13:40:58 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\zinc\breast_cancer_incidence_true_core.json
+2026-06-23 13:40:58 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\zinc\breast_cancer_incidence_true_core.json
+2026-06-23 13:40:58 
+============================================================
+2026-06-23 13:40:58 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-23 13:40:58   - Total Articles Fetched from PubMed: 553
+2026-06-23 13:40:58   - Articles Remaining After Pre-filter: 552
+2026-06-23 13:40:58     (Pre-filter skips: genetic=1)
+2026-06-23 13:40:58   - LLM Screening:
+2026-06-23 13:40:58     * Screened IN / Accepted:   253
+2026-06-23 13:40:58     * Screened OUT / Rejected:  299
+2026-06-23 13:40:58     * Consensus Bypassed:       1
+2026-06-23 13:40:58   - Final Extracted Studies: 10
+2026-06-23 13:40:58 ============================================================
+
+2026-06-23 13:40:58 [MetaFemina] Re-analyzing Zinc due to verification filtering/consensus/flags...
+2026-06-23 13:40:58 [MetaFemina] Analyze complete in 0.3s: studies=10, error=None
+2026-06-23 13:43:31 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Beta-carotene, outcome=Incidence, exclude_meta=True, force_refresh=True, model=openai.gpt-4o
+2026-06-23 13:43:31 [MetaFemina] Force refresh requested; bypassing cached result lookup.
+2026-06-23 13:43:31 [MetaFemina] Running new analysis for Breast cancer / Beta-carotene (from 'Beta-carotene') using model: openai.gpt-4o

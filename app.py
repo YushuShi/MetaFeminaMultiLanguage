@@ -71,6 +71,7 @@ def model_cache_priority(requested_model):
     """Prefer the requested model, then fall back to known higher-quality caches."""
     priority = [
         requested_model or DEFAULT_MODEL,
+        'anthropic.claude-4.5-sonnet',
         'openai.gpt-5.4-pro',
         'openai.gpt-4o',
         DEFAULT_MODEL,
@@ -87,8 +88,9 @@ def get_cache_path(disease, exposure, outcome, exclude_meta, use_downstream=Fals
     safe_exposure = safe_path_component(canonical_exposure)
     
     downstream_tag = "all" if use_downstream else "core"
-    # Maintain backward compatibility: don't add suffix for the default model
-    model_tag = f"_{safe_path_component(model)}" if model and model != DEFAULT_MODEL else ""
+    # Maintain backward compatibility: don't add suffix for the default model or legacy gpt-4o default
+    is_default_or_legacy = (model == DEFAULT_MODEL) or (model == 'openai.gpt-4o') or (model == 'anthropic.claude-4.5-sonnet')
+    model_tag = "" if not model or is_default_or_legacy else f"_{safe_path_component(model)}"
     safe_analysis = safe_path_component(f"{disease}_{outcome}_{exclude_meta}_{downstream_tag}{model_tag}")
     
     exposure_dir = os.path.join(CACHE_DIR, safe_exposure)
