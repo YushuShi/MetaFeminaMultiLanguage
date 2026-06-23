@@ -23,7 +23,7 @@ dir.create(output_dir, showWarnings = FALSE, recursive = TRUE)
 # 1. Read & clean data
 # =============================================================================
 
-raw <- read_excel("C:/Users/mde4023/Downloads/MetaFemina/exposures_meta_analysis_final_combined.xlsx")
+raw <- read_excel("C:/Users/mde4023/Downloads/MetaFemina/Plot/exposures_meta_analysis_final_combined.xlsx")
 
 # Standardise column names
 names(raw) <- c(
@@ -81,7 +81,7 @@ group_map <- tribble(
   "soy",                      "Phytoestrogens",
   "pantothenic_acid",         "B Vitamins",
   "resveratrol",              "Polyphenols & Flavonoids",
-  "vitamin_a",                "Vitamins A, C, D, E",
+  "vitamin_a",                "Vitamins A, C, D, E, K",
   "vitamin_b1",               "B Vitamins",
   "mediterranean_diet",       "Dietary Patterns",
   "cod_liver_oil",            "Fatty Acids & Lipids",
@@ -91,7 +91,7 @@ group_map <- tribble(
   "choline",                  "Metabolites & Amino Acids",
   "magnesium",                "Minerals & Trace Elements",
   "olive",                    "Fruits & Vegetables",
-  "vitamin_c",                "Vitamins A, C, D, E",
+  "vitamin_c",                "Vitamins A, C, D, E, K",
   "flaxseed",                 "Phytoestrogens",
   "iodine",                   "Minerals & Trace Elements",
   "green_tea",                "Polyphenols & Flavonoids",
@@ -106,8 +106,8 @@ group_map <- tribble(
   "mineral_supplements",      "Minerals & Trace Elements",
   "papaya",                   "Fruits & Vegetables",
   "bcaas",                    "Metabolites & Amino Acids",
-  "vitamin_e",                "Vitamins A, C, D, E",
-  "vitamin_d",                "Vitamins A, C, D, E",
+  "vitamin_e",                "Vitamins A, C, D, E, K",
+  "vitamin_d",                "Vitamins A, C, D, E, K",
   "omega-3_fatty_acids",      "Fatty Acids & Lipids",
   "caffeine",                 "Dietary Patterns",
   "leucine",                  "Metabolites & Amino Acids",
@@ -120,7 +120,7 @@ group_map <- tribble(
   "chromium",                 "Minerals & Trace Elements",
   "glutamine",                "Metabolites & Amino Acids",
   "melatonin",                "Hormones & Endogenous",
-  "vitamin_k",                "Vitamins A, C, D, E",
+  "vitamin_k",                "Vitamins A, C, D, E, K",
   "zinc",                     "Minerals & Trace Elements",
   "carnitine",                "Metabolites & Amino Acids",
   "dehydroepiandrosterone",   "Hormones & Endogenous",
@@ -147,7 +147,7 @@ group_map <- tribble(
 
 group_order <- c(
   "Carotenoids",
-  "Vitamins A, C, D, E",
+  "Vitamins A, C, D, E, K",
   "B Vitamins",
   "Antioxidants",
   "Minerals & Trace Elements",
@@ -167,7 +167,7 @@ group_colors <- c(
   "Carotenoids"              = "#E55300",
   "Minerals & Trace Elements"= "#007C7C",
   "Fruits & Vegetables"      = "#2E7D32",
-  "Vitamins A, C, D, E"     = "#C79000",
+  "Vitamins A, C, D, E, K"     = "#C79000",
   "Polyphenols & Flavonoids" = "#6A0DAD",
   "Fermented Foods & Probiotics" = "#00838F",
   "Fatty Acids & Lipids"     = "#B5001F",
@@ -185,7 +185,7 @@ group_bg <- c(
   "Carotenoids"              = "#FDEEE6",
   "Minerals & Trace Elements"= "#DFF2F2",
   "Fruits & Vegetables"      = "#E6F4E6",
-  "Vitamins A, C, D, E"     = "#FBF6E0",
+  "Vitamins A, C, D, E, K"     = "#FBF6E0",
   "Polyphenols & Flavonoids" = "#F2E8FB",
   "Fermented Foods & Probiotics" = "#E0F7FA",
   "Fatty Acids & Lipids"     = "#FBEAED",
