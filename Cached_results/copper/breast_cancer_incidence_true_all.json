@@ -191,7 +191,8 @@
                 "confidence_interval": "OR = 4.51 (95%CI = 2.32-8.79)",
                 "outcome_definition": "risk of developing female breast cancer",
                 "exposure_definition": "Plasma concentrations of 16 MMs were quantified at recruitment."
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Adzersen KH et al. (2003) [PMID: 14690788]",
@@ -338,70 +339,63 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Adzersen KH et al. (2003) [PMID: 14690788]</th>\n      <td>-0.6075</td>\n      <td>0.2813</td>\n      <td>-1.1589</td>\n      <td>-0.0561</td>\n      <td>310.0</td>\n      <td>663.0</td>\n    </tr>\n    <tr>\n      <th>Garland M et al. (1996) [PMID: 8823061]</th>\n      <td>-0.0825</td>\n      <td>0.1965</td>\n      <td>-0.4677</td>\n      <td>0.3026</td>\n      <td>433.0</td>\n      <td>62641.0</td>\n    </tr>\n    <tr>\n      <th>Wang N et al. (2026) [PMID: 42213466]</th>\n      <td>0.2176</td>\n      <td>0.0933</td>\n      <td>0.0347</td>\n      <td>0.4006</td>\n      <td>226.0</td>\n      <td>452.0</td>\n    </tr>\n    <tr>\n      <th>Cao B et al. (2022) [PMID: 34671925]</th>\n      <td>0.6683</td>\n      <td>0.2167</td>\n      <td>0.2436</td>\n      <td>1.0930</td>\n      <td>73.0</td>\n      <td>241.0</td>\n    </tr>\n    <tr>\n      <th>Pala V et al. (2022) [PMID: 35255128]</th>\n      <td>0.6990</td>\n      <td>0.2188</td>\n      <td>0.2702</td>\n      <td>1.1278</td>\n      <td>496.0</td>\n      <td>992.0</td>\n    </tr>\n    <tr>\n      <th>Fern\u00e1ndez-Mart\u00ednez NF et al. (2024) [PMID: 38036124]</th>\n      <td>1.1304</td>\n      <td>0.2018</td>\n      <td>0.7349</td>\n      <td>1.5259</td>\n      <td>292.0</td>\n      <td>578.0</td>\n    </tr>\n    <tr>\n      <th>Njale E et al. (2026) [PMID: 41604780]</th>\n      <td>1.5591</td>\n      <td>0.2947</td>\n      <td>0.9814</td>\n      <td>2.1367</td>\n      <td>100.0</td>\n      <td>180.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Adzersen KH et al. (2003) [PMID: 14690788]</th>\n      <td>-0.6075</td>\n      <td>0.2813</td>\n      <td>-1.1589</td>\n      <td>-0.0561</td>\n      <td>310.0</td>\n      <td>663.0</td>\n    </tr>\n    <tr>\n      <th>Garland M et al. (1996) [PMID: 8823061]</th>\n      <td>-0.0825</td>\n      <td>0.1965</td>\n      <td>-0.4677</td>\n      <td>0.3026</td>\n      <td>433.0</td>\n      <td>62641.0</td>\n    </tr>\n    <tr>\n      <th>Wang N et al. (2026) [PMID: 42213466]</th>\n      <td>0.2176</td>\n      <td>0.0933</td>\n      <td>0.0347</td>\n      <td>0.4006</td>\n      <td>226.0</td>\n      <td>452.0</td>\n    </tr>\n    <tr>\n      <th>Cao B et al. (2022) [PMID: 34671925]</th>\n      <td>0.6683</td>\n      <td>0.2167</td>\n      <td>0.2436</td>\n      <td>1.0930</td>\n      <td>73.0</td>\n      <td>241.0</td>\n    </tr>\n    <tr>\n      <th>Pala V et al. (2022) [PMID: 35255128]</th>\n      <td>0.6990</td>\n      <td>0.2188</td>\n      <td>0.2702</td>\n      <td>1.1278</td>\n      <td>496.0</td>\n      <td>992.0</td>\n    </tr>\n    <tr>\n      <th>Njale E et al. (2026) [PMID: 41604780]</th>\n      <td>1.5591</td>\n      <td>0.2947</td>\n      <td>0.9814</td>\n      <td>2.1367</td>\n      <td>100.0</td>\n      <td>180.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 1.66,
-        "ci_low": 1.07,
-        "ci_upp": 2.56,
-        "pi_low": 0.37,
-        "pi_upp": 7.5,
-        "interpretation": "Statistically significant (increased risk/odds)",
-        "i2": 89.01,
-        "tau2": 0.3,
-        "eggers_p": 0.46129846757493576,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.4613). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "pooled_es": 1.49,
+        "ci_low": 0.95,
+        "ci_upp": 2.31,
+        "pi_low": 0.32,
+        "pi_upp": 6.92,
+        "interpretation": "Not statistically significant",
+        "i2": 87.32,
+        "tau2": 0.26,
+        "eggers_p": 0.6033187907654798,
+        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.6033). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
         "loo_results": [
             {
                 "omitted": "Adzersen KH et al. (2003) [PMID: 14690788]",
-                "pooled_es": 1.949351737309019,
-                "ci_low": 1.2210522159389747,
-                "ci_upp": 3.1120472541197244,
+                "pooled_es": 1.76541688100015,
+                "ci_low": 1.0439053982458892,
+                "ci_upp": 2.9856122680823307,
                 "is_significant": true
             },
             {
                 "omitted": "Garland M et al. (1996) [PMID: 8823061]",
-                "pooled_es": 1.8328889839668188,
-                "ci_low": 1.022889033664186,
-                "ci_upp": 3.2843074047950283,
-                "is_significant": true
+                "pooled_es": 1.6442377508592152,
+                "ci_low": 0.8435087764023051,
+                "ci_upp": 3.2050855390995348,
+                "is_significant": false
             },
             {
                 "omitted": "Wang N et al. (2026) [PMID: 42213466]",
-                "pooled_es": 1.7505180515469547,
-                "ci_low": 0.9381267166459575,
-                "ci_upp": 3.2664174193305673,
+                "pooled_es": 1.5553614689524977,
+                "ci_low": 0.7617460504929396,
+                "ci_upp": 3.1757950008885456,
                 "is_significant": false
             },
             {
                 "omitted": "Cao B et al. (2022) [PMID: 34671925]",
-                "pooled_es": 1.6129356092350953,
-                "ci_low": 0.864299480549355,
-                "ci_upp": 3.0100229585756746,
+                "pooled_es": 1.4088870318825963,
+                "ci_low": 0.7041970853908955,
+                "ci_upp": 2.8187601309157806,
                 "is_significant": false
             },
             {
                 "omitted": "Pala V et al. (2022) [PMID: 35255128]",
-                "pooled_es": 1.6046837898237354,
-                "ci_low": 0.8612489758140962,
-                "ci_upp": 2.9898555907007447,
-                "is_significant": false
-            },
-            {
-                "omitted": "Fern\u00e1ndez-Mart\u00ednez NF et al. (2024) [PMID: 38036124]",
-                "pooled_es": 1.4855621916949986,
-                "ci_low": 0.8378503953293004,
-                "ci_upp": 2.633996519779968,
+                "pooled_es": 1.40013783565765,
+                "ci_low": 0.7023216333744102,
+                "ci_upp": 2.7912937117159817,
                 "is_significant": false
             },
             {
                 "omitted": "Njale E et al. (2026) [PMID: 41604780]",
-                "pooled_es": 1.4213076698722276,
-                "ci_low": 0.8743282843260405,
-                "ci_upp": 2.310477115577691,
+                "pooled_es": 1.2225824331359483,
+                "ci_low": 0.7767835488186157,
+                "ci_upp": 1.9242269073358556,
                 "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled analysis of 7 studies yielded an overall effect size of 1.66 (95% CI: 1.07\u20132.56), suggesting that copper is associated with a higher risk of breast cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 89.01%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 6 studies yielded an effect size of 1.49 (95% CI: 0.95\u20132.31), indicating no statistically significant association between copper and breast cancer. Although the point estimate suggests a potential positive relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 87.32%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 371,
@@ -420,8 +414,8 @@
         },
         "extracted": 9
     },
-    "plot_url": "static/copper/forest_breast_cancer_incidence_primary.png?t=9826",
-    "funnel_plot_url": "static/copper/funnel_breast_cancer_incidence_primary.png?t=4914",
-    "baujat_plot_url": "static\\copper\\baujat_breast_cancer_incidence_primary.png?t=8602",
+    "plot_url": "static/copper/forest_breast_cancer_incidence_primary.png?t=2290",
+    "funnel_plot_url": "static/copper/funnel_breast_cancer_incidence_primary.png?t=9233",
+    "baujat_plot_url": "static\\copper\\baujat_breast_cancer_incidence_primary.png?t=5220",
     "last_run": "2026-06-14 21:57:56"
 }

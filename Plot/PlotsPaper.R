@@ -428,7 +428,7 @@ make_forest_panel <- function(df, label_df, total_rows, xlim_max = 2.5, fs = 3.8
       )
     ) +
     scale_size_continuous(range = c(2.0, 6.5), guide = "none") +
-    labs(x = "Pooled RR (log scale)", y = NULL) +
+    labs(x = "Pooled RR", y = NULL) +
     theme_minimal(base_size = 11) +
     theme(
       axis.text.y      = element_blank(),
