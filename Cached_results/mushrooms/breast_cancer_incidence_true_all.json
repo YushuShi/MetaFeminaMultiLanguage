@@ -143,7 +143,8 @@
                 "confidence_interval": "adjusted odds ratio (OR) was 6.00 (95% CI 2.01-18.0)",
                 "outcome_definition": "breast cancer (BC) cases newly diagnosed in 1988--2001",
                 "exposure_definition": "work with any specific crops or commodities except mushrooms"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Shin A et al. (2010) [PMID: 20432168]",
@@ -196,9 +197,9 @@
         {
             "Study": "Sofi NY et al. (2018) [PMID: 27687737]",
             "PMID": "27687737",
-            "Effect Size": 5.5556,
-            "Lower CI": 1.8868,
-            "Upper CI": 16.6667,
+            "Effect Size": 0.18,
+            "Lower CI": 0.06,
+            "Upper CI": 0.53,
             "Population": "General",
             "Reference": "Nutritional risk factors and status of serum 25(OH)D levels in patients with breast cancer: A case control study in India.",
             "Authors": "Sofi NY, Jain M, Kapil U, Seenu V, Kamal VK, Pandey RM",
@@ -242,56 +243,49 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Shin A et al. (2010) [PMID: 20432168]</th>\n      <td>-0.9615</td>\n      <td>0.4688</td>\n      <td>-1.8803</td>\n      <td>-0.0427</td>\n      <td>358.0</td>\n      <td>718.0</td>\n    </tr>\n    <tr>\n      <th>Zhang M et al. (2009) [PMID: 19048616]</th>\n      <td>-0.9348</td>\n      <td>0.1725</td>\n      <td>-1.2729</td>\n      <td>-0.5967</td>\n      <td>1009.0</td>\n      <td>2018.0</td>\n    </tr>\n    <tr>\n      <th>Hong SA et al. (2008) [PMID: 17943725]</th>\n      <td>-0.6640</td>\n      <td>0.2268</td>\n      <td>-1.1085</td>\n      <td>-0.2194</td>\n      <td>362.0</td>\n      <td>724.0</td>\n    </tr>\n    <tr>\n      <th>Sofi NY et al. (2018) [PMID: 27687737]</th>\n      <td>1.2497</td>\n      <td>0.3002</td>\n      <td>0.6612</td>\n      <td>1.8381</td>\n      <td>100.0</td>\n      <td>200.0</td>\n    </tr>\n    <tr>\n      <th>Mills PK et al. (2005) [PMID: 15875887]</th>\n      <td>1.2910</td>\n      <td>0.2932</td>\n      <td>0.7163</td>\n      <td>1.8656</td>\n      <td>128.0</td>\n      <td>768.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Sofi NY et al. (2018) [PMID: 27687737]</th>\n      <td>-1.6021</td>\n      <td>0.5386</td>\n      <td>-2.6577</td>\n      <td>-0.5465</td>\n      <td>100.0</td>\n      <td>200.0</td>\n    </tr>\n    <tr>\n      <th>Shin A et al. (2010) [PMID: 20432168]</th>\n      <td>-0.9615</td>\n      <td>0.4688</td>\n      <td>-1.8803</td>\n      <td>-0.0427</td>\n      <td>358.0</td>\n      <td>718.0</td>\n    </tr>\n    <tr>\n      <th>Zhang M et al. (2009) [PMID: 19048616]</th>\n      <td>-0.9348</td>\n      <td>0.1725</td>\n      <td>-1.2729</td>\n      <td>-0.5967</td>\n      <td>1009.0</td>\n      <td>2018.0</td>\n    </tr>\n    <tr>\n      <th>Hong SA et al. (2008) [PMID: 17943725]</th>\n      <td>-0.6640</td>\n      <td>0.2268</td>\n      <td>-1.1085</td>\n      <td>-0.2194</td>\n      <td>362.0</td>\n      <td>724.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 1.0,
-        "ci_low": 0.37,
-        "ci_upp": 2.72,
-        "pi_low": 0.02,
-        "pi_upp": 47.08,
-        "interpretation": "Not statistically significant",
-        "i2": 94.59,
-        "tau2": 1.2,
-        "eggers_p": 0.40318755724975863,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.4032). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "pooled_es": 0.41,
+        "ci_low": 0.32,
+        "ci_upp": 0.53,
+        "pi_low": 0.24,
+        "pi_upp": 0.71,
+        "interpretation": "Statistically significant (decreased risk/odds)",
+        "i2": 0.0,
+        "tau2": 0.0,
+        "eggers_p": 0.4575581064437778,
+        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.4576). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
         "loo_results": [
             {
-                "omitted": "Shin A et al. (2010) [PMID: 20432168]",
-                "pooled_es": 1.2423186867424862,
-                "ci_low": 0.3830058785991543,
-                "ci_upp": 4.029587548562977,
+                "omitted": "Sofi NY et al. (2018) [PMID: 27687737]",
+                "pooled_es": 0.3687267300240461,
+                "ci_low": null,
+                "ci_upp": null,
                 "is_significant": false
+            },
+            {
+                "omitted": "Shin A et al. (2010) [PMID: 20432168]",
+                "pooled_es": 0.40873451647769005,
+                "ci_low": 0.2845545330583663,
+                "ci_upp": 0.5871068127598017,
+                "is_significant": true
             },
             {
                 "omitted": "Zhang M et al. (2009) [PMID: 19048616]",
-                "pooled_es": 1.281971051790966,
-                "ci_low": 0.3940410280436557,
-                "ci_upp": 4.1707580192587415,
-                "is_significant": false
+                "pooled_es": 0.406013065940284,
+                "ci_low": 0.2497201252750121,
+                "ci_upp": 0.6601254485704223,
+                "is_significant": true
             },
             {
                 "omitted": "Hong SA et al. (2008) [PMID: 17943725]",
-                "pooled_es": 1.1863962169621498,
-                "ci_low": 0.33823100212214313,
-                "ci_upp": 4.161463540571028,
-                "is_significant": false
-            },
-            {
-                "omitted": "Sofi NY et al. (2018) [PMID: 27687737]",
-                "pooled_es": 0.732972836301402,
-                "ci_low": 0.2542847092839189,
-                "ci_upp": 2.112786019531603,
-                "is_significant": false
-            },
-            {
-                "omitted": "Mills PK et al. (2005) [PMID: 15875887]",
-                "pooled_es": 0.7243305859995297,
-                "ci_low": 0.25670472503283165,
-                "ci_upp": 2.04380654757064,
+                "pooled_es": 0.41184591673935217,
+                "ci_low": null,
+                "ci_upp": null,
                 "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled analysis of 5 studies yielded an effect size of 1.0 (95% CI: 0.37\u20132.72), indicating no statistically significant association between mushrooms and breast cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 94.59%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 4 studies yielded an overall effect size of 0.41 (95% CI: 0.32\u20130.53), suggesting that mushrooms is associated with a lower risk of breast cancer. These findings were supported by low between-study heterogeneity (I\u00b2 = 0.00%), indicating consistent findings across the included studies."
     },
     "screening_stats": {
         "llm_screened_out": 5,
@@ -310,8 +304,8 @@
         },
         "extracted": 5
     },
-    "plot_url": "static/mushrooms/forest_breast_cancer_incidence_primary.png?t=2265",
-    "funnel_plot_url": "static/mushrooms/funnel_breast_cancer_incidence_primary.png?t=2029",
-    "baujat_plot_url": "static\\mushrooms\\baujat_breast_cancer_incidence_primary.png?t=1134",
+    "plot_url": "static/mushrooms/forest_breast_cancer_incidence_primary.png?t=4006",
+    "funnel_plot_url": "static/mushrooms/funnel_breast_cancer_incidence_primary.png?t=4074",
+    "baujat_plot_url": "static\\mushrooms\\baujat_breast_cancer_incidence_primary.png?t=5763",
     "last_run": "2026-06-15 03:23:59"
 }

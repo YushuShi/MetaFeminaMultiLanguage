@@ -482,7 +482,8 @@
                 "confidence_interval": "0.40 (95% CI: 0.28, 0.58)",
                 "outcome_definition": "291 postmenopausal incident breast cancer patients",
                 "exposure_definition": "intake of oleic acid sources, particularly olive oil, appears protective"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Toledo E et al. (2015) [PMID: 26365989]",
@@ -632,112 +633,105 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Garc\u00eda-Segovia P et al. (2006) [PMID: 16512965]</th>\n      <td>-1.2096</td>\n      <td>0.2216</td>\n      <td>-1.6440</td>\n      <td>-0.7753</td>\n      <td>291.0</td>\n      <td>755.0</td>\n    </tr>\n    <tr>\n      <th>Toledo E et al. (2015) [PMID: 26365989]</th>\n      <td>-1.0928</td>\n      <td>0.4487</td>\n      <td>-1.9723</td>\n      <td>-0.2133</td>\n      <td>35.0</td>\n      <td>4152.0</td>\n    </tr>\n    <tr>\n      <th>Simonsen NR et al. (1998) [PMID: 9665107]</th>\n      <td>-0.8351</td>\n      <td>0.1750</td>\n      <td>-1.1781</td>\n      <td>-0.4920</td>\n      <td>291.0</td>\n      <td>642.0</td>\n    </tr>\n    <tr>\n      <th>Morales Su\u00e1rez-Varela M et al. (1998) [PMID: 9889560]</th>\n      <td>-0.6259</td>\n      <td>0.7013</td>\n      <td>-2.0005</td>\n      <td>0.7486</td>\n      <td>65.0</td>\n      <td>143.0</td>\n    </tr>\n    <tr>\n      <th>Sieri S et al. (2004) [PMID: 15066921]</th>\n      <td>-0.4155</td>\n      <td>0.1795</td>\n      <td>-0.7674</td>\n      <td>-0.0637</td>\n      <td>207.0</td>\n      <td>8984.0</td>\n    </tr>\n    <tr>\n      <th>Martin-Moreno JM et al. (1994) [PMID: 7927867]</th>\n      <td>-0.3703</td>\n      <td>0.1728</td>\n      <td>-0.7089</td>\n      <td>-0.0317</td>\n      <td>762.0</td>\n      <td>1750.0</td>\n    </tr>\n    <tr>\n      <th>Donat-Vargas C et al. (2022) [PMID: 35194197]</th>\n      <td>-0.2914</td>\n      <td>0.1615</td>\n      <td>-0.6080</td>\n      <td>0.0252</td>\n      <td>1017.0</td>\n      <td>2034.0</td>\n    </tr>\n    <tr>\n      <th>Trichopoulou A et al. (1995) [PMID: 7503842]</th>\n      <td>-0.2546</td>\n      <td>0.1242</td>\n      <td>-0.4981</td>\n      <td>-0.0111</td>\n      <td>820.0</td>\n      <td>2368.0</td>\n    </tr>\n    <tr>\n      <th>Mourouti N et al. (2015) [PMID: 25049109]</th>\n      <td>-0.1857</td>\n      <td>0.0922</td>\n      <td>-0.3665</td>\n      <td>-0.0049</td>\n      <td>250.0</td>\n      <td>500.0</td>\n    </tr>\n    <tr>\n      <th>la Vecchia C et al. (1995) [PMID: 8580304]</th>\n      <td>-0.1021</td>\n      <td>0.0451</td>\n      <td>-0.1906</td>\n      <td>-0.0137</td>\n      <td>2564.0</td>\n      <td>5152.0</td>\n    </tr>\n    <tr>\n      <th>Romanos-Nanclares A et al. (2023) [PMID: 37311975]</th>\n      <td>0.0093</td>\n      <td>0.0377</td>\n      <td>-0.0647</td>\n      <td>0.0832</td>\n      <td>9638.0</td>\n      <td>164625.0</td>\n    </tr>\n    <tr>\n      <th>Buckland G et al. (2012) [PMID: 22392404]</th>\n      <td>0.0629</td>\n      <td>0.0751</td>\n      <td>-0.0843</td>\n      <td>0.2101</td>\n      <td>1256.0</td>\n      <td>62284.0</td>\n    </tr>\n    <tr>\n      <th>Bessaoud F et al. (2012) [PMID: 22571994]</th>\n      <td>0.1707</td>\n      <td>0.0475</td>\n      <td>0.0775</td>\n      <td>0.2638</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Garc\u00eda-Segovia P et al. (2006) [PMID: 16512965]</th>\n      <td>-1.2096</td>\n      <td>0.2216</td>\n      <td>-1.6440</td>\n      <td>-0.7753</td>\n      <td>291.0</td>\n      <td>755.0</td>\n    </tr>\n    <tr>\n      <th>Toledo E et al. (2015) [PMID: 26365989]</th>\n      <td>-1.0928</td>\n      <td>0.4487</td>\n      <td>-1.9723</td>\n      <td>-0.2133</td>\n      <td>35.0</td>\n      <td>4152.0</td>\n    </tr>\n    <tr>\n      <th>Morales Su\u00e1rez-Varela M et al. (1998) [PMID: 9889560]</th>\n      <td>-0.6259</td>\n      <td>0.7013</td>\n      <td>-2.0005</td>\n      <td>0.7486</td>\n      <td>65.0</td>\n      <td>143.0</td>\n    </tr>\n    <tr>\n      <th>Martin-Moreno JM et al. (1994) [PMID: 7927867]</th>\n      <td>-0.3703</td>\n      <td>0.1728</td>\n      <td>-0.7089</td>\n      <td>-0.0317</td>\n      <td>762.0</td>\n      <td>1750.0</td>\n    </tr>\n    <tr>\n      <th>Sieri S et al. (2004) [PMID: 15066921]</th>\n      <td>-0.4155</td>\n      <td>0.1795</td>\n      <td>-0.7674</td>\n      <td>-0.0637</td>\n      <td>207.0</td>\n      <td>8984.0</td>\n    </tr>\n    <tr>\n      <th>Donat-Vargas C et al. (2022) [PMID: 35194197]</th>\n      <td>-0.2914</td>\n      <td>0.1615</td>\n      <td>-0.6080</td>\n      <td>0.0252</td>\n      <td>1017.0</td>\n      <td>2034.0</td>\n    </tr>\n    <tr>\n      <th>Trichopoulou A et al. (1995) [PMID: 7503842]</th>\n      <td>-0.2546</td>\n      <td>0.1242</td>\n      <td>-0.4981</td>\n      <td>-0.0111</td>\n      <td>820.0</td>\n      <td>2368.0</td>\n    </tr>\n    <tr>\n      <th>Mourouti N et al. (2015) [PMID: 25049109]</th>\n      <td>-0.1857</td>\n      <td>0.0922</td>\n      <td>-0.3665</td>\n      <td>-0.0049</td>\n      <td>250.0</td>\n      <td>500.0</td>\n    </tr>\n    <tr>\n      <th>la Vecchia C et al. (1995) [PMID: 8580304]</th>\n      <td>-0.1021</td>\n      <td>0.0451</td>\n      <td>-0.1906</td>\n      <td>-0.0137</td>\n      <td>2564.0</td>\n      <td>5152.0</td>\n    </tr>\n    <tr>\n      <th>Romanos-Nanclares A et al. (2023) [PMID: 37311975]</th>\n      <td>0.0093</td>\n      <td>0.0377</td>\n      <td>-0.0647</td>\n      <td>0.0832</td>\n      <td>9638.0</td>\n      <td>164625.0</td>\n    </tr>\n    <tr>\n      <th>Buckland G et al. (2012) [PMID: 22392404]</th>\n      <td>0.0629</td>\n      <td>0.0751</td>\n      <td>-0.0843</td>\n      <td>0.2101</td>\n      <td>1256.0</td>\n      <td>62284.0</td>\n    </tr>\n    <tr>\n      <th>Bessaoud F et al. (2012) [PMID: 22571994]</th>\n      <td>0.1707</td>\n      <td>0.0475</td>\n      <td>0.0775</td>\n      <td>0.2638</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.77,
-        "ci_low": 0.66,
-        "ci_upp": 0.89,
-        "pi_low": 0.46,
-        "pi_upp": 1.29,
+        "pooled_es": 0.81,
+        "ci_low": 0.71,
+        "ci_upp": 0.94,
+        "pi_low": 0.51,
+        "pi_upp": 1.3,
         "interpretation": "Statistically significant (decreased risk/odds)",
-        "i2": 87.46,
-        "tau2": 0.05,
-        "eggers_p": 0.003531851815173176,
-        "funnel_interpretation": "The significant funnel plot asymmetry (egger's p=0.0035) indicates substantial publication bias in this meta-analysis on olive and breast cancer. This specific pattern suggests that smaller studies with smaller or null effects may be underrepresented, compromising the reliability of the pooled estimate and potentially leading to an overestimation of the true association.",
+        "i2": 85.31,
+        "tau2": 0.04,
+        "eggers_p": 0.008746264127855818,
+        "funnel_interpretation": "The significant funnel plot asymmetry (egger's p=0.0087) indicates substantial publication bias in this meta-analysis on olive and breast cancer. This specific pattern suggests that smaller studies with smaller or null effects may be underrepresented, compromising the reliability of the pooled estimate and potentially leading to an overestimation of the true association.",
         "loo_results": [
             {
                 "omitted": "Garc\u00eda-Segovia P et al. (2006) [PMID: 16512965]",
-                "pooled_es": 0.8295285600481275,
-                "ci_low": 0.699924180570484,
-                "ci_upp": 0.9831316748832122,
-                "is_significant": true
+                "pooled_es": 0.8864803123929471,
+                "ci_low": 0.772045802497883,
+                "ci_upp": 1.017876584158298,
+                "is_significant": false
             },
             {
                 "omitted": "Toledo E et al. (2015) [PMID: 26365989]",
-                "pooled_es": 0.785591916625207,
-                "ci_low": 0.6381027835849709,
-                "ci_upp": 0.9671712384634736,
-                "is_significant": true
-            },
-            {
-                "omitted": "Simonsen NR et al. (1998) [PMID: 9665107]",
-                "pooled_es": 0.814693789922248,
-                "ci_low": 0.6667389131847757,
-                "ci_upp": 0.9954810769443349,
-                "is_significant": true
+                "pooled_es": 0.8332804709992927,
+                "ci_low": 0.6857689246786597,
+                "ci_upp": 1.0125223210925858,
+                "is_significant": false
             },
             {
                 "omitted": "Morales Su\u00e1rez-Varela M et al. (1998) [PMID: 9889560]",
-                "pooled_es": 0.7713458629990221,
-                "ci_low": 0.6193501957192169,
-                "ci_upp": 0.960643016629381,
-                "is_significant": true
-            },
-            {
-                "omitted": "Sieri S et al. (2004) [PMID: 15066921]",
-                "pooled_es": 0.7783769560641555,
-                "ci_low": 0.6211940542699046,
-                "ci_upp": 0.9753323966434063,
-                "is_significant": true
+                "pooled_es": 0.8177138107391427,
+                "ci_low": 0.6629745530074771,
+                "ci_upp": 1.0085694439406172,
+                "is_significant": false
             },
             {
                 "omitted": "Martin-Moreno JM et al. (1994) [PMID: 7927867]",
-                "pooled_es": 0.7754303002166987,
-                "ci_low": 0.6181134919102724,
-                "ci_upp": 0.9727859986292698,
-                "is_significant": true
+                "pooled_es": 0.8266343913632277,
+                "ci_low": 0.6662551773809897,
+                "ci_upp": 1.0256196727364468,
+                "is_significant": false
+            },
+            {
+                "omitted": "Sieri S et al. (2004) [PMID: 15066921]",
+                "pooled_es": 0.8297857242051812,
+                "ci_low": 0.6700425228716872,
+                "ci_upp": 1.0276129120040534,
+                "is_significant": false
             },
             {
                 "omitted": "Donat-Vargas C et al. (2022) [PMID: 35194197]",
-                "pooled_es": 0.769881862538522,
-                "ci_low": 0.612784266240379,
-                "ci_upp": 0.9672540809546114,
-                "is_significant": true
+                "pooled_es": 0.820593737218633,
+                "ci_low": 0.6596329044422637,
+                "ci_upp": 1.020831551955095,
+                "is_significant": false
             },
             {
                 "omitted": "Trichopoulou A et al. (1995) [PMID: 7503842]",
-                "pooled_es": 0.7668812398820171,
-                "ci_low": 0.6093054248168193,
-                "ci_upp": 0.9652086000379654,
-                "is_significant": true
+                "pooled_es": 0.8183639329889045,
+                "ci_low": 0.6562485504165146,
+                "ci_upp": 1.0205272474765907,
+                "is_significant": false
             },
             {
                 "omitted": "Mourouti N et al. (2015) [PMID: 25049109]",
-                "pooled_es": 0.758896813569043,
-                "ci_low": 0.6020951293816922,
-                "ci_upp": 0.9565338524440136,
-                "is_significant": true
+                "pooled_es": 0.8098990589646319,
+                "ci_low": 0.6475447703227531,
+                "ci_upp": 1.0129592821587616,
+                "is_significant": false
             },
             {
                 "omitted": "la Vecchia C et al. (1995) [PMID: 8580304]",
-                "pooled_es": 0.7388623181291799,
-                "ci_low": 0.5847023046689781,
-                "ci_upp": 0.9336674762386816,
+                "pooled_es": 0.7874805757311769,
+                "ci_low": 0.6260213381377,
+                "ci_upp": 0.9905823002753665,
                 "is_significant": true
             },
             {
                 "omitted": "Romanos-Nanclares A et al. (2023) [PMID: 37311975]",
-                "pooled_es": 0.7256902854186331,
-                "ci_low": 0.5766441820918001,
-                "ci_upp": 0.9132605629360875,
+                "pooled_es": 0.7702023503496722,
+                "ci_low": 0.6139174944141084,
+                "ci_upp": 0.9662726113551957,
                 "is_significant": true
             },
             {
                 "omitted": "Buckland G et al. (2012) [PMID: 22392404]",
-                "pooled_es": 0.7351210793193411,
-                "ci_low": 0.5883550789949892,
-                "ci_upp": 0.9184980644387971,
+                "pooled_es": 0.7811550870435774,
+                "ci_low": 0.6289247243761212,
+                "ci_upp": 0.9702325991705392,
                 "is_significant": true
             },
             {
                 "omitted": "Bessaoud F et al. (2012) [PMID: 22571994]",
-                "pooled_es": 0.7299692063868495,
-                "ci_low": 0.5908821796166421,
-                "ci_upp": 0.9017957566748034,
+                "pooled_es": 0.7768404246588613,
+                "ci_low": 0.634763898935963,
+                "ci_upp": 0.9507173397790241,
                 "is_significant": true
             }
         ],
-        "results_interpretation": "The pooled analysis of 13 studies yielded an overall effect size of 0.77 (95% CI: 0.66\u20130.89), suggesting that olive is associated with a lower risk of breast cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 87.46%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 12 studies yielded an overall effect size of 0.81 (95% CI: 0.71\u20130.94), suggesting that olive is associated with a lower risk of breast cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 85.31%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 50,
@@ -756,8 +750,8 @@
         },
         "extracted": 15
     },
-    "plot_url": "static/olive/forest_breast_cancer_incidence_primary.png?t=4139",
-    "funnel_plot_url": "static/olive/funnel_breast_cancer_incidence_primary.png?t=6029",
-    "baujat_plot_url": "static\\olive\\baujat_breast_cancer_incidence_primary.png?t=6188",
+    "plot_url": "static/olive/forest_breast_cancer_incidence_primary.png?t=9073",
+    "funnel_plot_url": "static/olive/funnel_breast_cancer_incidence_primary.png?t=8847",
+    "baujat_plot_url": "static\\olive\\baujat_breast_cancer_incidence_primary.png?t=5729",
     "last_run": "2026-06-15 03:50:13"
 }

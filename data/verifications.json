@@ -294,7 +294,7 @@
         "legacy_count": 0,
         "submissions": [],
         "context_exclusions": {
-            "breast_cancer_mushrooms_incidence": 1
+            "breast_cancer_mushrooms_incidence": 2
         },
         "contexts": {}
     },
@@ -3331,6 +3331,119 @@
         "legacy_count": 0,
         "context_exclusions": {
             "breast_cancer_vitamin_d_incidence": 2
+        }
+    },
+    "32991322": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_vitamin_c_incidence": 2
+        }
+    },
+    "24817834": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_mineral_supplements_incidence": 2
+        }
+    },
+    "20392891": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_mineral_supplements_incidence": 2
+        }
+    },
+    "32457181": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_selenium_incidence": 2
+        }
+    },
+    "19048616": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_green_tea_incidence": 2
+        }
+    },
+    "11519758": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_green_tea_incidence": 2
+        }
+    },
+    "17619154": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {}
+    },
+    "9665107": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_olive_incidence": 2
+        }
+    },
+    "27687737": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_mushrooms_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.18,
+                            "Lower CI": 0.06,
+                            "Upper CI": 0.53,
+                            "Cases": 100,
+                            "Sample Size": 200,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "Yes vs No [inverted \u21d2 high vs low]",
+                            "exposure_measurement_type": "dietary_intake"
+                        },
+                        "timestamp": "2026-06-24 12:34:16"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.18,
+                            "Lower CI": 0.06,
+                            "Upper CI": 0.53,
+                            "Cases": 100,
+                            "Sample Size": 200,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "Yes vs No [inverted \u21d2 high vs low]",
+                            "exposure_measurement_type": "dietary_intake"
+                        },
+                        "timestamp": "2026-06-24 12:34:17"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.18,
+                    "Lower CI": 0.06,
+                    "Upper CI": 0.53,
+                    "Cases": 100,
+                    "Sample Size": 200,
+                    "Design": "Case-Control",
+                    "Timing": "Retrospective",
+                    "Comparison Type": "Yes vs No [inverted \u21d2 high vs low]",
+                    "exposure_measurement_type": "dietary_intake"
+                }
+            }
         }
     }
 }

@@ -48,7 +48,8 @@
                 "confidence_interval": "0.77 (0.47-1.27)",
                 "outcome_definition": "risk of breast cancer",
                 "exposure_definition": "consumption of tofu, boiled beans, and miso soup"
-            }
+            },
+            "exclusions": 0
         },
         {
             "Study": "Do MH et al. (2007) [PMID: 17896586]",
@@ -736,7 +737,7 @@
         "interpretation": "Statistically significant (decreased risk/odds)",
         "i2": 94.13,
         "tau2": 0.13,
-        "eggers_p": 0.0017585180034601427,
+        "eggers_p": 0.0017585180034601418,
         "funnel_interpretation": "The significant funnel plot asymmetry (egger's p=0.0018) indicates substantial publication bias in this meta-analysis on legumes and breast cancer. This specific pattern suggests that smaller studies with smaller or null effects may be underrepresented, compromising the reliability of the pooled estimate and potentially leading to an overestimation of the true association.",
         "loo_results": [
             {
@@ -864,8 +865,8 @@
         },
         "extracted": 18
     },
-    "plot_url": "static/legumes/forest_breast_cancer_incidence_primary.png?t=7441",
-    "funnel_plot_url": "static/legumes/funnel_breast_cancer_incidence_primary.png?t=8959",
-    "baujat_plot_url": "static\\legumes\\baujat_breast_cancer_incidence_primary.png?t=6134",
+    "plot_url": "static/legumes/forest_breast_cancer_incidence_primary.png?t=9111",
+    "funnel_plot_url": "static/legumes/funnel_breast_cancer_incidence_primary.png?t=2523",
+    "baujat_plot_url": "static\\legumes\\baujat_breast_cancer_incidence_primary.png?t=6718",
     "last_run": "2026-06-15 01:51:58"
 }

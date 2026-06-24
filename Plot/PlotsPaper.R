@@ -16,14 +16,14 @@ for (pkg in c("ggtext", "cowplot", "ggrepel", "patchwork")) {
   if (!requireNamespace(pkg, quietly = TRUE)) install.packages(pkg)
 }
 
-output_dir <- "C:/Users/mde4023/Downloads/MetaFemina/Plot"
+output_dir <- "."
 dir.create(output_dir, showWarnings = FALSE, recursive = TRUE)
 
 # =============================================================================
 # 1. Read & clean data
 # =============================================================================
 
-raw <- read_excel("C:/Users/mde4023/Downloads/MetaFemina/Plot/exposures_meta_analysis_final_combined.xlsx")
+raw <- read_excel("exposures_meta_analysis_final_combined.xlsx")
 
 # Standardise column names
 names(raw) <- c(
