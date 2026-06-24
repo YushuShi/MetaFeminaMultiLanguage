@@ -2954,7 +2954,9 @@
         "submissions": [],
         "consensus_data": null,
         "legacy_count": 0,
-        "context_exclusions": {},
+        "context_exclusions": {
+            "breast_cancer_lycopene_incidence": 2
+        },
         "contexts": {
             "breast_cancer_vitamin_a_incidence": {
                 "submissions": [
@@ -3222,6 +3224,113 @@
         "legacy_count": 0,
         "context_exclusions": {
             "breast_cancer_red_meat_incidence": 2
+        }
+    },
+    "34632269": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_leucine_incidence": 2
+        }
+    },
+    "35794412": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_leucine_incidence": 2
+        }
+    },
+    "36650550": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_glutamine_incidence": 2
+        }
+    },
+    "37886482": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_dehydroepiandrosterone_incidence": 2
+        }
+    },
+    "19934322": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_lutein_incidence": 2,
+            "breast_cancer_lycopene_incidence": 2,
+            "breast_cancer_beta-carotene_incidence": 2
+        }
+    },
+    "15342450": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_lutein_incidence": 2,
+            "breast_cancer_beta-carotene_incidence": 2
+        }
+    },
+    "41029403": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_lutein_incidence": 2
+        }
+    },
+    "15632265": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_lycopene_incidence": 2
+        }
+    },
+    "9367061": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_beta-carotene_incidence": 2
+        }
+    },
+    "25702596": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_beta-carotene_incidence": 2
+        }
+    },
+    "19474140": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_beta-carotene_incidence": 2
+        }
+    },
+    "10088626": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_beta-carotene_incidence": 2
+        }
+    },
+    "26817718": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_vitamin_d_incidence": 2
         }
     }
 }

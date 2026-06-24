@@ -97,7 +97,8 @@
                 "confidence_interval": "relative risk [RR] = 0.77; 95% confidence interval [CI] = 0.58-1.02",
                 "outcome_definition": "we identified 2697 incident cases of invasive breast cancer (784 premenopausal and 1913 postmenopausal)",
                 "exposure_definition": "Intakes of beta-carotene from food and supplements"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Roswall N et al. (2010) [PMID: 20698054]",
@@ -244,7 +245,8 @@
                 "confidence_interval": null,
                 "outcome_definition": "190 incident cases of breast cancer were ascertained over a median of 8.0 y of follow-up",
                 "exposure_definition": "Serum concentrations of alpha-carotene, beta-carotene, beta-cryptoxanthin, lycopene, lutein + zeaxanthin, retinol, alpha-tocopherol, and gamma-tocopherol were measured"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Tamimi RM et al. (2009) [PMID: 19934322]",
@@ -292,7 +294,8 @@
                 "confidence_interval": "95% confidence interval, 0.3-0.8",
                 "outcome_definition": "breast cancer cases",
                 "exposure_definition": "Circulating levels of alpha-carotene, beta-carotene, beta-cryptoxanthin, lycopene, and lutein/zeaxanthin were measured"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Mignone LI et al. (2009) [PMID: 19330841]",
@@ -629,7 +632,8 @@
                 "confidence_interval": "95 % CI 0\u00b783, 0\u00b795",
                 "outcome_definition": "risk of overall BC, and by hormonal receptor and menopausal status",
                 "exposure_definition": "the second TT component (TC2) reflected a diet rich in \u03b2-carotene, riboflavin, thiamin, vitamins C and B6, fibre, Fe, Ca, K, Mg, P and folate"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Pantavos A et al. (2015) [PMID: 25284450]",
@@ -968,7 +972,8 @@
                 "confidence_interval": "95% confidence interval 0.34-0.91",
                 "outcome_definition": "population-based case-control study of breast cancer risk",
                 "exposure_definition": "To estimate intake of beta-carotene and vitamin A, the authors included nine questions on food and supplement use. Eating carrots or spinach more than twice weekly"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Zhang S et al. (1997) [PMID: 9280184]",
@@ -1401,7 +1406,8 @@
                 "confidence_interval": "0.66 (0.48-0.90)",
                 "outcome_definition": "postmenopausal breast cancer",
                 "exposure_definition": "high intake of carotenoids, alpha-carotene, beta-carotene, lutein, and particularly lycopene"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Nkondjock A et al. (2004) [PMID: 15113726]",
@@ -1933,301 +1939,259 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Kim MK et al. (2002) [PMID: 12588696]</th>\n      <td>-2.8639</td>\n      <td>0.1454</td>\n      <td>-3.1489</td>\n      <td>-2.5789</td>\n      <td>92.0</td>\n      <td>214</td>\n    </tr>\n    <tr>\n      <th>Zaridze D et al. (1991) [PMID: 2045197]</th>\n      <td>-2.2820</td>\n      <td>0.7987</td>\n      <td>-3.8475</td>\n      <td>-0.7166</td>\n      <td>139.0</td>\n      <td>278</td>\n    </tr>\n    <tr>\n      <th>Yan B et al. (2016) [PMID: 26482064]</th>\n      <td>-1.2096</td>\n      <td>0.1957</td>\n      <td>-1.5931</td>\n      <td>-0.8261</td>\n      <td>521.0</td>\n      <td>1042</td>\n    </tr>\n    <tr>\n      <th>Zhang S et al. (1997) [PMID: 9280184]</th>\n      <td>-1.1086</td>\n      <td>0.4953</td>\n      <td>-2.0793</td>\n      <td>-0.1378</td>\n      <td>46.0</td>\n      <td>109</td>\n    </tr>\n    <tr>\n      <th>Larsson SC et al. (2010) [PMID: 20116235]</th>\n      <td>-1.0498</td>\n      <td>0.5383</td>\n      <td>-2.1049</td>\n      <td>0.0053</td>\n      <td>1008.0</td>\n      <td>36664</td>\n    </tr>\n    <tr>\n      <th>Huang JP et al. (2007) [PMID: 17392146]</th>\n      <td>-0.8836</td>\n      <td>0.2929</td>\n      <td>-1.4577</td>\n      <td>-0.3094</td>\n      <td>122.0</td>\n      <td>754</td>\n    </tr>\n    <tr>\n      <th>Bakker MF et al. (2016) [PMID: 26791185]</th>\n      <td>-0.8118</td>\n      <td>0.2198</td>\n      <td>-1.2426</td>\n      <td>-0.3809</td>\n      <td>1502.0</td>\n      <td>3004</td>\n    </tr>\n    <tr>\n      <th>Sato R et al. (2002) [PMID: 12010859]</th>\n      <td>-0.8118</td>\n      <td>0.3059</td>\n      <td>-1.4114</td>\n      <td>-0.2122</td>\n      <td>295.0</td>\n      <td>590</td>\n    </tr>\n    <tr>\n      <th>Pantavos A et al. (2015) [PMID: 25284450]</th>\n      <td>-0.7984</td>\n      <td>0.3571</td>\n      <td>-1.4984</td>\n      <td>-0.0985</td>\n      <td>199.0</td>\n      <td>3209</td>\n    </tr>\n    <tr>\n      <th>Toniolo P et al. (2001) [PMID: 11415946]</th>\n      <td>-0.7191</td>\n      <td>0.2568</td>\n      <td>-1.2224</td>\n      <td>-0.2158</td>\n      <td>270.0</td>\n      <td>540</td>\n    </tr>\n    <tr>\n      <th>Freudenheim JL et al. (1996) [PMID: 8609642]</th>\n      <td>-0.7037</td>\n      <td>0.2316</td>\n      <td>-1.1577</td>\n      <td>-0.2498</td>\n      <td>297.0</td>\n      <td>608</td>\n    </tr>\n    <tr>\n      <th>Adzersen KH et al. (2003) [PMID: 14690788]</th>\n      <td>-0.7037</td>\n      <td>0.2584</td>\n      <td>-1.2101</td>\n      <td>-0.1973</td>\n      <td>310.0</td>\n      <td>663</td>\n    </tr>\n    <tr>\n      <th>Darouei B et al. (2025) [PMID: 41029403]</th>\n      <td>-0.7037</td>\n      <td>0.2261</td>\n      <td>-1.1469</td>\n      <td>-0.2606</td>\n      <td>600.0</td>\n      <td>1200</td>\n    </tr>\n    <tr>\n      <th>Ching S et al. (2002) [PMID: 11823595]</th>\n      <td>-0.6836</td>\n      <td>0.3165</td>\n      <td>-1.3039</td>\n      <td>-0.0634</td>\n      <td>153.0</td>\n      <td>304</td>\n    </tr>\n    <tr>\n      <th>Tamimi RM et al. (2009) [PMID: 19934322]</th>\n      <td>-0.6259</td>\n      <td>0.2326</td>\n      <td>-1.0818</td>\n      <td>-0.1701</td>\n      <td>604.0</td>\n      <td>1230</td>\n    </tr>\n    <tr>\n      <th>Wang L et al. (2014) [PMID: 24502868]</th>\n      <td>-0.5545</td>\n      <td>0.1694</td>\n      <td>-0.8866</td>\n      <td>-0.2225</td>\n      <td>561.0</td>\n      <td>1122</td>\n    </tr>\n    <tr>\n      <th>Kabat GC et al. (2009) [PMID: 19474140]</th>\n      <td>-0.5671</td>\n      <td>0.2385</td>\n      <td>-1.0346</td>\n      <td>-0.0996</td>\n      <td>190.0</td>\n      <td>5450</td>\n    </tr>\n    <tr>\n      <th>Longnecker MP et al. (1997) [PMID: 9367061]</th>\n      <td>-0.5209</td>\n      <td>0.2313</td>\n      <td>-0.9742</td>\n      <td>-0.0676</td>\n      <td>3543.0</td>\n      <td>12949</td>\n    </tr>\n    <tr>\n      <th>Nkondjock A et al. (2004) [PMID: 15113726]</th>\n      <td>-0.5046</td>\n      <td>0.3649</td>\n      <td>-1.2197</td>\n      <td>0.2105</td>\n      <td>414.0</td>\n      <td>843</td>\n    </tr>\n    <tr>\n      <th>Pan SY et al. (2011) [PMID: 21864361]</th>\n      <td>-0.4886</td>\n      <td>0.2270</td>\n      <td>-0.9336</td>\n      <td>-0.0436</td>\n      <td>2362.0</td>\n      <td>4824</td>\n    </tr>\n    <tr>\n      <th>Holmberg L et al. (1994) [PMID: 8053747]</th>\n      <td>-0.4574</td>\n      <td>0.2130</td>\n      <td>-0.8750</td>\n      <td>-0.0399</td>\n      <td>265.0</td>\n      <td>697</td>\n    </tr>\n    <tr>\n      <th>Fioretti F et al. (1999) [PMID: 10206315]</th>\n      <td>-0.4574</td>\n      <td>0.2140</td>\n      <td>-0.8768</td>\n      <td>-0.0380</td>\n      <td>1041.0</td>\n      <td>2043</td>\n    </tr>\n    <tr>\n      <th>Gaudet MM et al. (2004) [PMID: 15342450]</th>\n      <td>-0.3703</td>\n      <td>0.1458</td>\n      <td>-0.6562</td>\n      <td>-0.0845</td>\n      <td>1463.0</td>\n      <td>2963</td>\n    </tr>\n    <tr>\n      <th>Bitsie KR et al. (2021) [PMID: 34494098]</th>\n      <td>-0.3169</td>\n      <td>0.1436</td>\n      <td>-0.5983</td>\n      <td>-0.0355</td>\n      <td>3564.0</td>\n      <td>15407</td>\n    </tr>\n    <tr>\n      <th>Roswall N et al. (2010) [PMID: 20698054]</th>\n      <td>0.7200</td>\n      <td>0.0867</td>\n      <td>0.5500</td>\n      <td>0.8900</td>\n      <td>1072.0</td>\n      <td>26224</td>\n    </tr>\n    <tr>\n      <th>Eliassen AH et al. (2015) [PMID: 25877493]</th>\n      <td>-0.3285</td>\n      <td>0.1020</td>\n      <td>-0.5284</td>\n      <td>-0.1286</td>\n      <td>2188.0</td>\n      <td>32826</td>\n    </tr>\n    <tr>\n      <th>Tamimi RM et al. (2005) [PMID: 15632265]</th>\n      <td>-0.2790</td>\n      <td>0.1503</td>\n      <td>-0.5735</td>\n      <td>0.0155</td>\n      <td>969.0</td>\n      <td>1938</td>\n    </tr>\n    <tr>\n      <th>van 't Veer P et al. (1996) [PMID: 8781740]</th>\n      <td>-0.2667</td>\n      <td>0.2301</td>\n      <td>-0.7177</td>\n      <td>0.1842</td>\n      <td>347.0</td>\n      <td>721</td>\n    </tr>\n    <tr>\n      <th>Rohan TE et al. (1988) [PMID: 3414656]</th>\n      <td>-0.2744</td>\n      <td>0.2190</td>\n      <td>-0.7038</td>\n      <td>0.1549</td>\n      <td>451.0</td>\n      <td>902</td>\n    </tr>\n    <tr>\n      <th>Zhang S et al. (1999) [PMID: 10088626]</th>\n      <td>-0.2614</td>\n      <td>0.1440</td>\n      <td>-0.5436</td>\n      <td>0.0209</td>\n      <td>2697.0</td>\n      <td>83234</td>\n    </tr>\n    <tr>\n      <th>Cui Y et al. (2008) [PMID: 18400726]</th>\n      <td>-0.2485</td>\n      <td>0.0902</td>\n      <td>-0.4253</td>\n      <td>-0.0716</td>\n      <td>2879.0</td>\n      <td>84805</td>\n    </tr>\n    <tr>\n      <th>Mignone LI et al. (2009) [PMID: 19330841]</th>\n      <td>-0.1857</td>\n      <td>0.0831</td>\n      <td>-0.3485</td>\n      <td>-0.0229</td>\n      <td>5707.0</td>\n      <td>12096</td>\n    </tr>\n    <tr>\n      <th>Eliassen AH et al. (2012) [PMID: 23221879]</th>\n      <td>-0.1863</td>\n      <td>0.0858</td>\n      <td>-0.3546</td>\n      <td>-0.0181</td>\n      <td>3055.0</td>\n      <td>7011</td>\n    </tr>\n    <tr>\n      <th>Zhang X et al. (2012) [PMID: 22277553]</th>\n      <td>-0.1744</td>\n      <td>0.0482</td>\n      <td>-0.2687</td>\n      <td>-0.0800</td>\n      <td>33380.0</td>\n      <td>1028438</td>\n    </tr>\n    <tr>\n      <th>Bohlke K et al. (1999) [PMID: 10408688]</th>\n      <td>-0.1533</td>\n      <td>0.0644</td>\n      <td>-0.2795</td>\n      <td>-0.0271</td>\n      <td>820.0</td>\n      <td>2368</td>\n    </tr>\n    <tr>\n      <th>Assi N et al. (2016) [PMID: 25702596]</th>\n      <td>-0.1090</td>\n      <td>0.0324</td>\n      <td>-0.1725</td>\n      <td>-0.0456</td>\n      <td>-</td>\n      <td>334850</td>\n    </tr>\n    <tr>\n      <th>Nagel G et al. (2010) [PMID: 19565333]</th>\n      <td>-0.0678</td>\n      <td>0.0568</td>\n      <td>-0.1791</td>\n      <td>0.0435</td>\n      <td>7502.0</td>\n      <td>unclear</td>\n    </tr>\n    <tr>\n      <th>Shah S et al. (2026) [PMID: 41954817]</th>\n      <td>0.3158</td>\n      <td>0.0636</td>\n      <td>0.1913</td>\n      <td>0.4404</td>\n      <td>1208.0</td>\n      <td>105260</td>\n    </tr>\n    <tr>\n      <th>Zaroukian S et al. (2005) [PMID: 15927830]</th>\n      <td>0.9074</td>\n      <td>0.2146</td>\n      <td>0.4868</td>\n      <td>1.3280</td>\n      <td>414.0</td>\n      <td>843</td>\n    </tr>\n    <tr>\n      <th>Tayyem RF et al. (2019) [PMID: 30999736]</th>\n      <td>1.2361</td>\n      <td>0.2642</td>\n      <td>0.7183</td>\n      <td>1.7539</td>\n      <td>200.0</td>\n      <td>400</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Kim MK et al. (2002) [PMID: 12588696]</th>\n      <td>-2.8639</td>\n      <td>0.1454</td>\n      <td>-3.1489</td>\n      <td>-2.5789</td>\n      <td>92.0</td>\n      <td>214</td>\n    </tr>\n    <tr>\n      <th>Zaridze D et al. (1991) [PMID: 2045197]</th>\n      <td>-2.2820</td>\n      <td>0.7987</td>\n      <td>-3.8475</td>\n      <td>-0.7166</td>\n      <td>139.0</td>\n      <td>278</td>\n    </tr>\n    <tr>\n      <th>Yan B et al. (2016) [PMID: 26482064]</th>\n      <td>-1.2096</td>\n      <td>0.1957</td>\n      <td>-1.5931</td>\n      <td>-0.8261</td>\n      <td>521.0</td>\n      <td>1042</td>\n    </tr>\n    <tr>\n      <th>Zhang S et al. (1997) [PMID: 9280184]</th>\n      <td>-1.1086</td>\n      <td>0.4953</td>\n      <td>-2.0793</td>\n      <td>-0.1378</td>\n      <td>46.0</td>\n      <td>109</td>\n    </tr>\n    <tr>\n      <th>Larsson SC et al. (2010) [PMID: 20116235]</th>\n      <td>-1.0498</td>\n      <td>0.5383</td>\n      <td>-2.1049</td>\n      <td>0.0053</td>\n      <td>1008.0</td>\n      <td>36664</td>\n    </tr>\n    <tr>\n      <th>Huang JP et al. (2007) [PMID: 17392146]</th>\n      <td>-0.8836</td>\n      <td>0.2929</td>\n      <td>-1.4577</td>\n      <td>-0.3094</td>\n      <td>122.0</td>\n      <td>754</td>\n    </tr>\n    <tr>\n      <th>Bakker MF et al. (2016) [PMID: 26791185]</th>\n      <td>-0.8118</td>\n      <td>0.2198</td>\n      <td>-1.2426</td>\n      <td>-0.3809</td>\n      <td>1502.0</td>\n      <td>3004</td>\n    </tr>\n    <tr>\n      <th>Sato R et al. (2002) [PMID: 12010859]</th>\n      <td>-0.8118</td>\n      <td>0.3059</td>\n      <td>-1.4114</td>\n      <td>-0.2122</td>\n      <td>295.0</td>\n      <td>590</td>\n    </tr>\n    <tr>\n      <th>Pantavos A et al. (2015) [PMID: 25284450]</th>\n      <td>-0.7984</td>\n      <td>0.3571</td>\n      <td>-1.4984</td>\n      <td>-0.0985</td>\n      <td>199.0</td>\n      <td>3209</td>\n    </tr>\n    <tr>\n      <th>Toniolo P et al. (2001) [PMID: 11415946]</th>\n      <td>-0.7191</td>\n      <td>0.2568</td>\n      <td>-1.2224</td>\n      <td>-0.2158</td>\n      <td>270.0</td>\n      <td>540</td>\n    </tr>\n    <tr>\n      <th>Darouei B et al. (2025) [PMID: 41029403]</th>\n      <td>-0.7037</td>\n      <td>0.2261</td>\n      <td>-1.1469</td>\n      <td>-0.2606</td>\n      <td>600.0</td>\n      <td>1200</td>\n    </tr>\n    <tr>\n      <th>Adzersen KH et al. (2003) [PMID: 14690788]</th>\n      <td>-0.7037</td>\n      <td>0.2584</td>\n      <td>-1.2101</td>\n      <td>-0.1973</td>\n      <td>310.0</td>\n      <td>663</td>\n    </tr>\n    <tr>\n      <th>Freudenheim JL et al. (1996) [PMID: 8609642]</th>\n      <td>-0.7037</td>\n      <td>0.2316</td>\n      <td>-1.1577</td>\n      <td>-0.2498</td>\n      <td>297.0</td>\n      <td>608</td>\n    </tr>\n    <tr>\n      <th>Ching S et al. (2002) [PMID: 11823595]</th>\n      <td>-0.6836</td>\n      <td>0.3165</td>\n      <td>-1.3039</td>\n      <td>-0.0634</td>\n      <td>153.0</td>\n      <td>304</td>\n    </tr>\n    <tr>\n      <th>Wang L et al. (2014) [PMID: 24502868]</th>\n      <td>-0.5545</td>\n      <td>0.1694</td>\n      <td>-0.8866</td>\n      <td>-0.2225</td>\n      <td>561.0</td>\n      <td>1122</td>\n    </tr>\n    <tr>\n      <th>Nkondjock A et al. (2004) [PMID: 15113726]</th>\n      <td>-0.5046</td>\n      <td>0.3649</td>\n      <td>-1.2197</td>\n      <td>0.2105</td>\n      <td>414.0</td>\n      <td>843</td>\n    </tr>\n    <tr>\n      <th>Pan SY et al. (2011) [PMID: 21864361]</th>\n      <td>-0.4886</td>\n      <td>0.2270</td>\n      <td>-0.9336</td>\n      <td>-0.0436</td>\n      <td>2362.0</td>\n      <td>4824</td>\n    </tr>\n    <tr>\n      <th>Fioretti F et al. (1999) [PMID: 10206315]</th>\n      <td>-0.4574</td>\n      <td>0.2140</td>\n      <td>-0.8768</td>\n      <td>-0.0380</td>\n      <td>1041.0</td>\n      <td>2043</td>\n    </tr>\n    <tr>\n      <th>Holmberg L et al. (1994) [PMID: 8053747]</th>\n      <td>-0.4574</td>\n      <td>0.2130</td>\n      <td>-0.8750</td>\n      <td>-0.0399</td>\n      <td>265.0</td>\n      <td>697</td>\n    </tr>\n    <tr>\n      <th>Bitsie KR et al. (2021) [PMID: 34494098]</th>\n      <td>-0.3169</td>\n      <td>0.1436</td>\n      <td>-0.5983</td>\n      <td>-0.0355</td>\n      <td>3564.0</td>\n      <td>15407</td>\n    </tr>\n    <tr>\n      <th>Eliassen AH et al. (2015) [PMID: 25877493]</th>\n      <td>-0.3285</td>\n      <td>0.1020</td>\n      <td>-0.5284</td>\n      <td>-0.1286</td>\n      <td>2188.0</td>\n      <td>32826</td>\n    </tr>\n    <tr>\n      <th>Roswall N et al. (2010) [PMID: 20698054]</th>\n      <td>0.7200</td>\n      <td>0.0867</td>\n      <td>0.5500</td>\n      <td>0.8900</td>\n      <td>1072.0</td>\n      <td>26224</td>\n    </tr>\n    <tr>\n      <th>Tamimi RM et al. (2005) [PMID: 15632265]</th>\n      <td>-0.2790</td>\n      <td>0.1503</td>\n      <td>-0.5735</td>\n      <td>0.0155</td>\n      <td>969.0</td>\n      <td>1938</td>\n    </tr>\n    <tr>\n      <th>van 't Veer P et al. (1996) [PMID: 8781740]</th>\n      <td>-0.2667</td>\n      <td>0.2301</td>\n      <td>-0.7177</td>\n      <td>0.1842</td>\n      <td>347.0</td>\n      <td>721</td>\n    </tr>\n    <tr>\n      <th>Rohan TE et al. (1988) [PMID: 3414656]</th>\n      <td>-0.2744</td>\n      <td>0.2190</td>\n      <td>-0.7038</td>\n      <td>0.1549</td>\n      <td>451.0</td>\n      <td>902</td>\n    </tr>\n    <tr>\n      <th>Cui Y et al. (2008) [PMID: 18400726]</th>\n      <td>-0.2485</td>\n      <td>0.0902</td>\n      <td>-0.4253</td>\n      <td>-0.0716</td>\n      <td>2879.0</td>\n      <td>84805</td>\n    </tr>\n    <tr>\n      <th>Mignone LI et al. (2009) [PMID: 19330841]</th>\n      <td>-0.1857</td>\n      <td>0.0831</td>\n      <td>-0.3485</td>\n      <td>-0.0229</td>\n      <td>5707.0</td>\n      <td>12096</td>\n    </tr>\n    <tr>\n      <th>Eliassen AH et al. (2012) [PMID: 23221879]</th>\n      <td>-0.1863</td>\n      <td>0.0858</td>\n      <td>-0.3546</td>\n      <td>-0.0181</td>\n      <td>3055.0</td>\n      <td>7011</td>\n    </tr>\n    <tr>\n      <th>Bohlke K et al. (1999) [PMID: 10408688]</th>\n      <td>-0.1533</td>\n      <td>0.0644</td>\n      <td>-0.2795</td>\n      <td>-0.0271</td>\n      <td>820.0</td>\n      <td>2368</td>\n    </tr>\n    <tr>\n      <th>Zhang X et al. (2012) [PMID: 22277553]</th>\n      <td>-0.1744</td>\n      <td>0.0482</td>\n      <td>-0.2687</td>\n      <td>-0.0800</td>\n      <td>33380.0</td>\n      <td>1028438</td>\n    </tr>\n    <tr>\n      <th>Nagel G et al. (2010) [PMID: 19565333]</th>\n      <td>-0.0678</td>\n      <td>0.0568</td>\n      <td>-0.1791</td>\n      <td>0.0435</td>\n      <td>7502.0</td>\n      <td>unclear</td>\n    </tr>\n    <tr>\n      <th>Shah S et al. (2026) [PMID: 41954817]</th>\n      <td>0.3158</td>\n      <td>0.0636</td>\n      <td>0.1913</td>\n      <td>0.4404</td>\n      <td>1208.0</td>\n      <td>105260</td>\n    </tr>\n    <tr>\n      <th>Zaroukian S et al. (2005) [PMID: 15927830]</th>\n      <td>0.9074</td>\n      <td>0.2146</td>\n      <td>0.4868</td>\n      <td>1.3280</td>\n      <td>414.0</td>\n      <td>843</td>\n    </tr>\n    <tr>\n      <th>Tayyem RF et al. (2019) [PMID: 30999736]</th>\n      <td>1.2361</td>\n      <td>0.2642</td>\n      <td>0.7183</td>\n      <td>1.7539</td>\n      <td>200.0</td>\n      <td>400</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.65,
-        "ci_low": 0.56,
-        "ci_upp": 0.77,
-        "pi_low": 0.25,
-        "pi_upp": 1.68,
+        "pooled_es": 0.64,
+        "ci_low": 0.53,
+        "ci_upp": 0.79,
+        "pi_low": 0.21,
+        "pi_upp": 1.99,
         "interpretation": "Statistically significant (decreased risk/odds)",
-        "i2": 94.27,
-        "tau2": 0.21,
-        "eggers_p": 0.017742360230940182,
-        "funnel_interpretation": "The significant funnel plot asymmetry (egger's p=0.0177) indicates substantial publication bias in this meta-analysis on beta-carotene and breast cancer. This specific pattern suggests that smaller studies with smaller or null effects may be underrepresented, compromising the reliability of the pooled estimate and potentially leading to an overestimation of the true association.",
+        "i2": 95.05,
+        "tau2": 0.3,
+        "eggers_p": 0.034359091790519394,
+        "funnel_interpretation": "The significant funnel plot asymmetry (egger's p=0.0344) indicates substantial publication bias in this meta-analysis on beta-carotene and breast cancer. This specific pattern suggests that smaller studies with smaller or null effects may be underrepresented, compromising the reliability of the pooled estimate and potentially leading to an overestimation of the true association.",
         "loo_results": [
             {
                 "omitted": "Kim MK et al. (2002) [PMID: 12588696]",
-                "pooled_es": 0.7235152382257051,
-                "ci_low": 0.6179438874594989,
-                "ci_upp": 0.8471227089840064,
+                "pooled_es": 0.7206494621907085,
+                "ci_low": 0.59641525001919,
+                "ci_upp": 0.8707618514768819,
                 "is_significant": true
             },
             {
                 "omitted": "Zaridze D et al. (1991) [PMID: 2045197]",
-                "pooled_es": 0.6637818190337244,
-                "ci_low": 0.5419875357877135,
-                "ci_upp": 0.8129454538827204,
+                "pooled_es": 0.6567658680337883,
+                "ci_low": 0.517142132818403,
+                "ci_upp": 0.8340867588246635,
                 "is_significant": true
             },
             {
                 "omitted": "Yan B et al. (2016) [PMID: 26482064]",
-                "pooled_es": 0.668841818332481,
-                "ci_low": 0.5437417900406124,
-                "ci_upp": 0.8227239218028226,
+                "pooled_es": 0.6598879572706208,
+                "ci_low": 0.5158797090501671,
+                "ci_upp": 0.8440962273017927,
                 "is_significant": true
             },
             {
                 "omitted": "Zhang S et al. (1997) [PMID: 9280184]",
-                "pooled_es": 0.660751868767385,
-                "ci_low": 0.5364927125322076,
-                "ci_upp": 0.8137911697232632,
+                "pooled_es": 0.6516998789176318,
+                "ci_low": 0.5089041304576518,
+                "ci_upp": 0.8345633426070181,
                 "is_significant": true
             },
             {
                 "omitted": "Larsson SC et al. (2010) [PMID: 20116235]",
-                "pooled_es": 0.6596313912478181,
-                "ci_low": 0.5354395693089552,
-                "ci_upp": 0.8126287208864577,
+                "pooled_es": 0.6503377629990398,
+                "ci_low": 0.5076785214009095,
+                "ci_upp": 0.8330846946518813,
                 "is_significant": true
             },
             {
                 "omitted": "Huang JP et al. (2007) [PMID: 17392146]",
-                "pooled_es": 0.6610374610484521,
-                "ci_low": 0.5360184462838951,
-                "ci_upp": 0.8152154612193104,
+                "pooled_es": 0.6512537832609281,
+                "ci_low": 0.5076343831852479,
+                "ci_upp": 0.8355058369970503,
                 "is_significant": true
             },
             {
                 "omitted": "Bakker MF et al. (2016) [PMID: 26791185]",
-                "pooled_es": 0.6608465401424558,
-                "ci_low": 0.5355681078467984,
-                "ci_upp": 0.815429715137518,
+                "pooled_es": 0.6506986165380979,
+                "ci_low": 0.5068589477146321,
+                "ci_upp": 0.8353580250949401,
                 "is_significant": true
             },
             {
                 "omitted": "Sato R et al. (2002) [PMID: 12010859]",
-                "pooled_es": 0.6597844552416191,
-                "ci_low": 0.5348407063385499,
-                "ci_upp": 0.8139162225676386,
+                "pooled_es": 0.6497771736865845,
+                "ci_low": 0.5063022463454544,
+                "ci_upp": 0.833909741644812,
                 "is_significant": true
             },
             {
                 "omitted": "Pantavos A et al. (2015) [PMID: 25284450]",
-                "pooled_es": 0.6590202919542295,
-                "ci_low": 0.5342722431249072,
-                "ci_upp": 0.812895954817367,
+                "pooled_es": 0.6490082746398526,
+                "ci_low": 0.5057709600040363,
+                "ci_upp": 0.8328112403836646,
                 "is_significant": true
             },
             {
                 "omitted": "Toniolo P et al. (2001) [PMID: 11415946]",
-                "pooled_es": 0.6588580521233997,
-                "ci_low": 0.5338095821226726,
-                "ci_upp": 0.8131999637804984,
-                "is_significant": true
-            },
-            {
-                "omitted": "Freudenheim JL et al. (1996) [PMID: 8609642]",
-                "pooled_es": 0.6588234705343394,
-                "ci_low": 0.5337024273447302,
-                "ci_upp": 0.8132778550144202,
-                "is_significant": true
-            },
-            {
-                "omitted": "Adzersen KH et al. (2003) [PMID: 14690788]",
-                "pooled_es": 0.6585923459049983,
-                "ci_low": 0.5335690569323441,
-                "ci_upp": 0.8129104798137629,
+                "pooled_es": 0.6484817088635747,
+                "ci_low": 0.5049745887836712,
+                "ci_upp": 0.832771660339476,
                 "is_significant": true
             },
             {
                 "omitted": "Darouei B et al. (2025) [PMID: 41029403]",
-                "pooled_es": 0.6588709975407863,
-                "ci_low": 0.5337299623496792,
-                "ci_upp": 0.8133532348254755,
+                "pooled_es": 0.6483946291530213,
+                "ci_low": 0.5048073521132049,
+                "ci_upp": 0.8328238353790938,
+                "is_significant": true
+            },
+            {
+                "omitted": "Adzersen KH et al. (2003) [PMID: 14690788]",
+                "pooled_es": 0.6481685523054543,
+                "ci_low": 0.5047032455304459,
+                "ci_upp": 0.8324148416287624,
+                "is_significant": true
+            },
+            {
+                "omitted": "Freudenheim JL et al. (1996) [PMID: 8609642]",
+                "pooled_es": 0.6483569084501583,
+                "ci_low": 0.5047900317206419,
+                "ci_upp": 0.832755510845119,
                 "is_significant": true
             },
             {
                 "omitted": "Ching S et al. (2002) [PMID: 11823595]",
-                "pooled_es": 0.6578103059994874,
-                "ci_low": 0.5330214032530846,
-                "ci_upp": 0.81181430246185,
-                "is_significant": true
-            },
-            {
-                "omitted": "Tamimi RM et al. (2009) [PMID: 19934322]",
-                "pooled_es": 0.6574801831162231,
-                "ci_low": 0.5324898494955352,
-                "ci_upp": 0.8118092609653903,
+                "pooled_es": 0.647387257004914,
+                "ci_low": 0.5041945793835291,
+                "ci_upp": 0.8312470575244703,
                 "is_significant": true
             },
             {
                 "omitted": "Wang L et al. (2014) [PMID: 24502868]",
-                "pooled_es": 0.6564545961882211,
-                "ci_low": 0.5314332893475142,
-                "ci_upp": 0.8108875478721573,
-                "is_significant": true
-            },
-            {
-                "omitted": "Kabat GC et al. (2009) [PMID: 19474140]",
-                "pooled_es": 0.6564534687054908,
-                "ci_low": 0.5316038754746889,
-                "ci_upp": 0.810624557976889,
-                "is_significant": true
-            },
-            {
-                "omitted": "Longnecker MP et al. (1997) [PMID: 9367061]",
-                "pooled_es": 0.6556967389289766,
-                "ci_low": 0.5309362017609093,
-                "ci_upp": 0.8097737769927089,
+                "pooled_es": 0.6454147833543805,
+                "ci_low": 0.5021336089050974,
+                "ci_upp": 0.8295804845262036,
                 "is_significant": true
             },
             {
                 "omitted": "Nkondjock A et al. (2004) [PMID: 15113726]",
-                "pooled_es": 0.6551500815487327,
-                "ci_low": 0.5308064694650483,
-                "ci_upp": 0.8086216993283536,
+                "pooled_es": 0.6441678332395289,
+                "ci_low": 0.5016312529532688,
+                "ci_upp": 0.8272056315023213,
                 "is_significant": true
             },
             {
                 "omitted": "Pan SY et al. (2011) [PMID: 21864361]",
-                "pooled_es": 0.6551538668986259,
-                "ci_low": 0.5304682798972994,
-                "ci_upp": 0.8091465702630181,
-                "is_significant": true
-            },
-            {
-                "omitted": "Holmberg L et al. (1994) [PMID: 8053747]",
-                "pooled_es": 0.6546242075965668,
-                "ci_low": 0.5299939343178564,
-                "ci_upp": 0.8085618068874473,
+                "pooled_es": 0.64400606974505,
+                "ci_low": 0.5011321143706046,
+                "ci_upp": 0.8276137289452354,
                 "is_significant": true
             },
             {
                 "omitted": "Fioretti F et al. (1999) [PMID: 10206315]",
-                "pooled_es": 0.6546242249807915,
-                "ci_low": 0.5299962732610255,
-                "ci_upp": 0.8085582815421943,
+                "pooled_es": 0.6433653522028833,
+                "ci_low": 0.5005919423633323,
+                "ci_upp": 0.8268590470333927,
                 "is_significant": true
             },
             {
-                "omitted": "Gaudet MM et al. (2004) [PMID: 15342450]",
-                "pooled_es": 0.6528600499404849,
-                "ci_low": 0.5284127868309061,
-                "ci_upp": 0.8066160687831467,
+                "omitted": "Holmberg L et al. (1994) [PMID: 8053747]",
+                "pooled_es": 0.6433642354517991,
+                "ci_low": 0.5005886899021481,
+                "ci_upp": 0.8268615488284162,
                 "is_significant": true
             },
             {
                 "omitted": "Bitsie KR et al. (2021) [PMID: 34494098]",
-                "pooled_es": 0.6518120231473291,
-                "ci_low": 0.5275904770295237,
-                "ci_upp": 0.8052816190153474,
-                "is_significant": true
-            },
-            {
-                "omitted": "Roswall N et al. (2010) [PMID: 20698054]",
-                "pooled_es": 0.63392770025628,
-                "ci_low": 0.5184141297341169,
-                "ci_upp": 0.7751801235786596,
+                "pooled_es": 0.6400487343067447,
+                "ci_low": 0.4979046067956545,
+                "ci_upp": 0.8227728297677628,
                 "is_significant": true
             },
             {
                 "omitted": "Eliassen AH et al. (2015) [PMID: 25877493]",
-                "pooled_es": 0.6516443891701277,
-                "ci_low": 0.527359095769764,
-                "ci_upp": 0.8052206045997536,
+                "pooled_es": 0.6397812392614738,
+                "ci_low": 0.49759512862186317,
+                "ci_upp": 0.8225965460003555,
+                "is_significant": true
+            },
+            {
+                "omitted": "Roswall N et al. (2010) [PMID: 20698054]",
+                "pooled_es": 0.6196035142179767,
+                "ci_low": 0.48789383596753727,
+                "ci_upp": 0.7868689590429879,
                 "is_significant": true
             },
             {
                 "omitted": "Tamimi RM et al. (2005) [PMID: 15632265]",
-                "pooled_es": 0.6511359971296834,
-                "ci_low": 0.5270927541008509,
-                "ci_upp": 0.8043709261025918,
+                "pooled_es": 0.6392795083178547,
+                "ci_low": 0.4973649744046684,
+                "ci_upp": 0.8216869115970504,
                 "is_significant": true
             },
             {
                 "omitted": "van 't Veer P et al. (1996) [PMID: 8781740]",
-                "pooled_es": 0.6514277893215104,
-                "ci_low": 0.5275234309368152,
-                "ci_upp": 0.8044347223529074,
+                "pooled_es": 0.6395986638525142,
+                "ci_low": 0.49781299711544486,
+                "ci_upp": 0.8217673165874628,
                 "is_significant": true
             },
             {
                 "omitted": "Rohan TE et al. (1988) [PMID: 3414656]",
-                "pooled_es": 0.6514938884188107,
-                "ci_low": 0.5275430940078695,
-                "ci_upp": 0.8045679897398683,
-                "is_significant": true
-            },
-            {
-                "omitted": "Zhang S et al. (1999) [PMID: 10088626]",
-                "pooled_es": 0.6507502733442726,
-                "ci_low": 0.5267873002535697,
-                "ci_upp": 0.8038840686816195,
+                "pooled_es": 0.6396828480768135,
+                "ci_low": 0.49784184152103483,
+                "ci_upp": 0.821936028666193,
                 "is_significant": true
             },
             {
                 "omitted": "Cui Y et al. (2008) [PMID: 18400726]",
-                "pooled_es": 0.6497906922996985,
-                "ci_low": 0.5259164862218115,
-                "ci_upp": 0.8028421904637572,
+                "pooled_es": 0.6376563234726098,
+                "ci_low": 0.4960165913586519,
+                "ci_upp": 0.8197419077270414,
                 "is_significant": true
             },
             {
                 "omitted": "Mignone LI et al. (2009) [PMID: 19330841]",
-                "pooled_es": 0.6483433982093614,
-                "ci_low": 0.5248309408931123,
-                "ci_upp": 0.8009229815725961,
+                "pooled_es": 0.6360021294390589,
+                "ci_low": 0.4948313574763295,
+                "ci_upp": 0.8174476062187849,
                 "is_significant": true
             },
             {
                 "omitted": "Eliassen AH et al. (2012) [PMID: 23221879]",
-                "pooled_es": 0.648430568473604,
-                "ci_low": 0.5249066683232237,
-                "ci_upp": 0.8010227865348659,
-                "is_significant": true
-            },
-            {
-                "omitted": "Zhang X et al. (2012) [PMID: 22277553]",
-                "pooled_es": 0.6461276352294907,
-                "ci_low": 0.5229303624992626,
-                "ci_upp": 0.7983489790341681,
+                "pooled_es": 0.6361124513106481,
+                "ci_low": 0.4949233477498927,
+                "ci_upp": 0.8175792323237177,
                 "is_significant": true
             },
             {
                 "omitted": "Bohlke K et al. (1999) [PMID: 10408688]",
-                "pooled_es": 0.646974779431447,
-                "ci_low": 0.5237374757627918,
-                "ci_upp": 0.7992102619938326,
+                "pooled_es": 0.6343493720685323,
+                "ci_low": 0.49355760724191305,
+                "ci_upp": 0.8153032593143856,
                 "is_significant": true
             },
             {
-                "omitted": "Assi N et al. (2016) [PMID: 25702596]",
-                "pooled_es": 0.6425341490705889,
-                "ci_low": 0.5200280055265138,
-                "ci_upp": 0.7938998060380739,
+                "omitted": "Zhang X et al. (2012) [PMID: 22277553]",
+                "pooled_es": 0.6332849502360699,
+                "ci_low": 0.49258087786438126,
+                "ci_upp": 0.8141806680240633,
                 "is_significant": true
             },
             {
                 "omitted": "Nagel G et al. (2010) [PMID: 19565333]",
-                "pooled_es": 0.6448864780766911,
-                "ci_low": 0.5222378628873919,
-                "ci_upp": 0.7963393678635532,
+                "pooled_es": 0.6319570955996997,
+                "ci_low": 0.491910260254569,
+                "ci_upp": 0.811875260483751,
                 "is_significant": true
             },
             {
                 "omitted": "Shah S et al. (2026) [PMID: 41954817]",
-                "pooled_es": 0.6394325907923288,
-                "ci_low": 0.5196403215470586,
-                "ci_upp": 0.7868404764089545,
+                "pooled_es": 0.6258572894724387,
+                "ci_low": 0.4891939761262119,
+                "ci_upp": 0.8006994482792447,
                 "is_significant": true
             },
             {
                 "omitted": "Zaroukian S et al. (2005) [PMID: 15927830]",
-                "pooled_es": 0.6325690411529475,
-                "ci_low": 0.5181642440451997,
-                "ci_upp": 0.7722331218791211,
+                "pooled_es": 0.6173205038739994,
+                "ci_low": 0.4873360565351393,
+                "ci_upp": 0.7819749829566951,
                 "is_significant": true
             },
             {
                 "omitted": "Tayyem RF et al. (2019) [PMID: 30999736]",
-                "pooled_es": 0.6297625602292427,
-                "ci_low": 0.5185923930299932,
-                "ci_upp": 0.7647641723960902,
+                "pooled_es": 0.6133986506949631,
+                "ci_low": 0.4875860742089598,
+                "ci_upp": 0.7716748376885605,
                 "is_significant": true
             }
         ],
-        "results_interpretation": "The pooled analysis of 40 studies yielded an overall effect size of 0.65 (95% CI: 0.56\u20130.77), suggesting that beta-carotene is associated with a lower risk of breast cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 94.27%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 34 studies yielded an overall effect size of 0.64 (95% CI: 0.53\u20130.79), suggesting that beta-carotene is associated with a lower risk of breast cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 95.05%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 38,
@@ -2247,8 +2211,8 @@
         },
         "extracted": 48
     },
-    "plot_url": "static/beta_carotene/forest_breast_cancer_incidence_primary.png?t=4028",
-    "funnel_plot_url": "static/beta_carotene/funnel_breast_cancer_incidence_primary.png?t=1741",
-    "baujat_plot_url": "static\\beta_carotene\\baujat_breast_cancer_incidence_primary.png?t=8407",
+    "plot_url": "static/beta_carotene/forest_breast_cancer_incidence_primary.png?t=1915",
+    "funnel_plot_url": "static/beta_carotene/funnel_breast_cancer_incidence_primary.png?t=5017",
+    "baujat_plot_url": "static\\beta_carotene\\baujat_breast_cancer_incidence_primary.png?t=2789",
     "last_run": "2026-06-23 13:37:27"
 }

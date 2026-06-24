@@ -144,45 +144,24 @@
                 "confidence_interval": "RR\u2009=\u20090.85 (95% CI 0.80-0.92)",
                 "outcome_definition": "Breast cancer incidence rates",
                 "exposure_definition": "the amino acids glutamine and asparagine"
-            }
+            },
+            "exclusions": 2
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Stevens VL et al. (2023) [PMID: 36650550]</th>\n      <td>-0.1625</td>\n      <td>0.0357</td>\n      <td>-0.2324</td>\n      <td>-0.0926</td>\n      <td>1695.0</td>\n      <td>3678.0</td>\n    </tr>\n    <tr>\n      <th>L\u00e9cuyer L et al. (2019) [PMID: 31164347]</th>\n      <td>0.2432</td>\n      <td>0.0933</td>\n      <td>0.0602</td>\n      <td>0.4261</td>\n      <td>211.0</td>\n      <td>422.0</td>\n    </tr>\n    <tr>\n      <th>L\u00e9cuyer L et al. (2018) [PMID: 29365091]</th>\n      <td>0.3999</td>\n      <td>0.1876</td>\n      <td>0.0323</td>\n      <td>0.7676</td>\n      <td>206.0</td>\n      <td>602.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>L\u00e9cuyer L et al. (2019) [PMID: 31164347]</th>\n      <td>0.2432</td>\n      <td>0.0933</td>\n      <td>0.0602</td>\n      <td>0.4261</td>\n      <td>211.0</td>\n      <td>422.0</td>\n    </tr>\n    <tr>\n      <th>L\u00e9cuyer L et al. (2018) [PMID: 29365091]</th>\n      <td>0.3999</td>\n      <td>0.1876</td>\n      <td>0.0323</td>\n      <td>0.7676</td>\n      <td>206.0</td>\n      <td>602.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 1.14,
-        "ci_low": 0.8,
-        "ci_upp": 1.63,
-        "pi_low": 0.01,
-        "pi_upp": 93.62,
-        "interpretation": "Not statistically significant",
-        "i2": 91.55,
-        "tau2": 0.09,
-        "eggers_p": 0.21443432566766202,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.2144). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
-        "loo_results": [
-            {
-                "omitted": "Stevens VL et al. (2023) [PMID: 36650550]",
-                "pooled_es": 1.2675684470072388,
-                "ci_low": null,
-                "ci_upp": null,
-                "is_significant": false
-            },
-            {
-                "omitted": "L\u00e9cuyer L et al. (2019) [PMID: 31164347]",
-                "pooled_es": 1.0925900808348943,
-                "ci_low": 0.6316287487445422,
-                "ci_upp": 1.8899600233706368,
-                "is_significant": false
-            },
-            {
-                "omitted": "L\u00e9cuyer L et al. (2018) [PMID: 29365091]",
-                "pooled_es": 1.0316463600381462,
-                "ci_low": 0.6934966250954637,
-                "ci_upp": 1.5346782863340545,
-                "is_significant": false
-            }
-        ],
-        "results_interpretation": "The pooled analysis of 3 studies yielded an effect size of 1.14 (95% CI: 0.8\u20131.63), indicating no statistically significant association between glutamine and breast cancer. Although the point estimate suggests a potential positive relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 91.55%), reflecting highly inconsistent results across studies."
+        "pooled_es": 1.32,
+        "ci_low": 1.12,
+        "ci_upp": 1.55,
+        "pi_low": null,
+        "pi_upp": null,
+        "interpretation": "Statistically significant (increased risk/odds)",
+        "i2": 0.0,
+        "tau2": 0.0,
+        "eggers_p": null,
+        "funnel_interpretation": "Insufficient studies to perform formal publication bias testing.",
+        "loo_results": [],
+        "results_interpretation": "The pooled analysis of 2 studies yielded an overall effect size of 1.32 (95% CI: 1.12\u20131.55), suggesting that glutamine is associated with a higher risk of breast cancer. These findings were supported by low between-study heterogeneity (I\u00b2 = 0.00%), indicating consistent findings across the included studies."
     },
     "screening_stats": {
         "llm_screened_out": 99,
@@ -201,8 +180,8 @@
         },
         "extracted": 3
     },
-    "plot_url": "static/glutamine/forest_breast_cancer_incidence_primary.png?t=3786",
-    "funnel_plot_url": "static/glutamine/funnel_breast_cancer_incidence_primary.png?t=613",
-    "baujat_plot_url": "static\\glutamine\\baujat_breast_cancer_incidence_primary.png?t=4091",
+    "plot_url": "static/glutamine/forest_breast_cancer_incidence_primary.png?t=1148",
+    "funnel_plot_url": "static/glutamine/funnel_breast_cancer_incidence_primary.png?t=6793",
+    "baujat_plot_url": null,
     "last_run": "2026-06-15 00:10:53"
 }
