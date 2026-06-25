@@ -1,1142 +1,906 @@
 {
     "5-HTP": {
-        "core": "5-HTP, 5-hydroxytryptophan, 5-hydroxytryptophan intake, 5-hydroxytryptophan supplementation, 5-hydroxytryptophan level, serum 5-HTP, plasma 5-HTP, dietary 5-HTP",
-        "downstream": "",
-        "anchored": ""
+        "core": "5-HTP, 5-htp, 5-hydroxytryptophan, 5-hydroxytryptophan intake, 5-hydroxytryptophan level, 5-hydroxytryptophan supplementation, dietary 5-htp, plasma 5-htp, serum 5-htp",
+        "downstream": ""
     },
     "Acai": {
-        "core": "acai, acai berry, acai fruit, Euterpe oleracea, acai pulp, acai juice, acai powder, acai bowl",
-        "downstream": "",
-        "anchored": ""
+        "core": "Acai, acai, acai berry, acai bowl, acai fruit, acai juice, acai powder, acai pulp, euterpe oleracea",
+        "downstream": ""
     },
     "Activated charcoal": {
-        "core": "activated charcoal, medicinal charcoal, activated carbon, charcoal intake, charcoal consumption, charcoal supplementation, charcoal dose, carbon active",
-        "downstream": "",
-        "anchored": ""
+        "core": "Activated charcoal, activated carbon, activated charcoal, carbon active, charcoal consumption, charcoal dose, charcoal intake, charcoal supplementation, medicinal charcoal",
+        "downstream": ""
     },
     "African mango": {
-        "core": "Irvingia gabonensis, African mango, wild mango, bush mango, dika nut, Irvingia gabonensis extract, African mango extract",
-        "downstream": "",
-        "anchored": ""
+        "core": "African mango, african mango, african mango extract, bush mango, dika nut, irvingia gabonensis, irvingia gabonensis extract, wild mango",
+        "downstream": ""
     },
     "Alcohol": {
-        "core": "alcohol, ethanol, ethyl alcohol, alcohol intake, alcohol consumption, alcoholic beverages, beer, ale, lager, stout, porter, pilsner, draft beer, wine, red wine, white wine, rose wine, sparkling wine, champagne, sake, spirits, whiskey, whisky, vodka, rum, gin, brandy, baijiu, Chinese liquor, Chinese spirits, Chinese white spirits, shaochiu, liquor, distilled spirits",
-        "downstream": "",
-        "anchored": ""
+        "core": "Alcohol, alcohol, alcohol consumption, alcohol intake, alcoholic beverages, ale, baijiu, beer, brandy, champagne, chinese liquor, chinese spirits, chinese white spirits, distilled spirits, draft beer, ethanol, ethyl alcohol, gin, lager, liquor, pilsner, porter, red wine, rose wine, rum, sake, shaochiu, sparkling wine, spirits, stout, vodka, whiskey, whisky, white wine, wine",
+        "downstream": ""
     },
     "Alfalfa": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Alfalfa, alfalfa",
+        "downstream": ""
     },
     "Aloe vera": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Aloe vera, aloe vera",
+        "downstream": ""
     },
     "Andrographis": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Andrographis, andrographis",
+        "downstream": ""
     },
     "Antioxidants": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Antioxidants, antioxidants",
+        "downstream": ""
     },
     "Apple cider vinegar": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Apple cider vinegar, apple cider vinegar",
+        "downstream": ""
     },
     "Ashwagandha": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Ashwagandha, ashwagandha",
+        "downstream": ""
     },
     "Astragalus": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Astragalus, astragalus",
+        "downstream": ""
     },
     "Bacopa monnieri": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Bacopa monnieri, bacopa monnieri",
+        "downstream": ""
     },
     "BCAAs": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "BCAAs, bcaas",
+        "downstream": ""
     },
     "Bee pollen": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Bee pollen, bee pollen",
+        "downstream": ""
     },
     "Beetroot": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Beetroot, beetroot",
+        "downstream": ""
     },
     "Berberine": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Berberine, berberine",
+        "downstream": ""
     },
     "Beta-alanine": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Beta-alanine, beta-alanine",
+        "downstream": ""
     },
     "Beta-carotene": {
-        "core": "beta-carotene, b-carotene, all-trans-beta-carotene, cis-beta-carotene, provitamin A, serum beta-carotene, plasma beta-carotene, dietary beta-carotene, beta-carotene intake, beta-carotene supplementation",
-        "downstream": "",
-        "anchored": ""
+        "core": "Beta-carotene, all-trans-beta-carotene, b-carotene, beta-carotene, beta-carotene intake, beta-carotene supplementation, cis-beta-carotene, dietary beta-carotene, plasma beta-carotene, provitamin a, serum beta-carotene",
+        "downstream": ""
     },
     "Beta-glucans": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Beta-glucans, beta-glucans",
+        "downstream": ""
     },
     "Beta-hydroxy-beta-methylbutyrate": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Beta-hydroxy-beta-methylbutyrate, beta-hydroxy-beta-methylbutyrate",
+        "downstream": ""
     },
     "Betaine": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Betaine, betaine",
+        "downstream": ""
     },
     "Bilberry": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Bilberry, bilberry",
+        "downstream": ""
     },
     "Bitter melon": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Bitter melon, bitter melon",
+        "downstream": ""
     },
     "Bitter orange": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Bitter orange, bitter orange",
+        "downstream": ""
     },
     "Black cohosh": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Black cohosh, black cohosh",
+        "downstream": ""
     },
     "Blessed thistle": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Blessed thistle, blessed thistle",
+        "downstream": ""
     },
     "Blue-green algae": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Blue-green algae, blue-green algae",
+        "downstream": ""
     },
     "Blueberry": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Blueberry, blueberry",
+        "downstream": ""
     },
     "Boron": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Boron, boron",
+        "downstream": ""
     },
     "Botanical Dietary Supplements": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Botanical Dietary Supplements, botanical dietary supplements",
+        "downstream": ""
     },
     "Bromelain": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Bromelain, bromelain",
+        "downstream": ""
     },
     "Butterbur": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Butterbur, butterbur",
+        "downstream": ""
     },
     "Caffeine": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Caffeine, caffeine",
+        "downstream": ""
     },
     "Calcium": {
-        "core": "calcium, dietary calcium, calcium intake, calcium supplementation, serum calcium, plasma calcium, urinary calcium, bone calcium, Ca, calcium levels",
-        "downstream": "",
-        "anchored": ""
+        "core": "Calcium, bone calcium, ca, calcium, calcium intake, calcium levels, calcium supplementation, dietary calcium, plasma calcium, serum calcium, urinary calcium",
+        "downstream": ""
     },
     "Calendula": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Calendula, calendula",
+        "downstream": ""
     },
     "Cannabidiol": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Cannabidiol, cannabidiol",
+        "downstream": ""
     },
     "Capsaicin": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Capsaicin, capsaicin",
+        "downstream": ""
     },
     "Capsaicinoids": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Capsaicinoids, capsaicinoids",
+        "downstream": ""
     },
     "Capsicum": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Capsicum, capsicum",
+        "downstream": ""
     },
     "Carnitine": {
-        "core": "carnitine, L-carnitine, acetyl-L-carnitine, propionyl-L-carnitine, D-carnitine, serum carnitine, plasma carnitine, dietary carnitine, carnitine intake, carnitine supplementation",
-        "downstream": "",
-        "anchored": ""
+        "core": "Carnitine, acetyl-l-carnitine, carnitine, carnitine intake, carnitine supplementation, d-carnitine, dietary carnitine, l-carnitine, plasma carnitine, propionyl-l-carnitine, serum carnitine",
+        "downstream": ""
     },
     "Cartilage": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Cartilage, cartilage",
+        "downstream": ""
     },
     "Cascara sagrada": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Cascara sagrada, cascara sagrada",
+        "downstream": ""
     },
     "Cat's Claw": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Cat's Claw, cat's claw",
+        "downstream": ""
     },
     "Cesium": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Cesium, cesium",
+        "downstream": ""
     },
     "Chamomile": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Chamomile, chamomile",
+        "downstream": ""
     },
     "Chasteberry": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Chasteberry, chasteberry",
+        "downstream": ""
     },
     "Chia seeds": {
-        "core": "chia seeds, Salvia hispanica, chia seed, chia, ground chia seeds, chia meal, whole chia seeds",
-        "downstream": "",
-        "anchored": ""
+        "core": "Chia seeds, chia, chia meal, chia seed, chia seeds, ground chia seeds, salvia hispanica, whole chia seeds",
+        "downstream": ""
     },
     "Chitosan": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Chitosan, chitosan",
+        "downstream": ""
     },
     "Choline": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Choline, choline",
+        "downstream": ""
     },
     "Chondroitin": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Chondroitin, chondroitin",
+        "downstream": ""
     },
     "Chromium": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Chromium, chromium",
+        "downstream": ""
     },
     "Cinnamon": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Cinnamon, cinnamon",
+        "downstream": ""
     },
     "Citrulline": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Citrulline, citrulline",
+        "downstream": ""
     },
     "Clove": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Clove, clove",
+        "downstream": ""
     },
     "Cod liver oil": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Cod liver oil, cod liver oil",
+        "downstream": ""
     },
     "Coenzyme Q10": {
-        "core": "Coenzyme Q10, Ubiquinone, Ubiquinol, Ubidecarenone, CoQ10 intake, CoQ10 supplementation, serum CoQ10, plasma CoQ10",
-        "downstream": "",
-        "anchored": ""
+        "core": "Coenzyme Q10, coenzyme q10, coq10 intake, coq10 supplementation, plasma coq10, serum coq10, ubidecarenone, ubiquinol, ubiquinone",
+        "downstream": ""
     },
     "Cola nut": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Cola nut, cola nut",
+        "downstream": ""
     },
     "Coleus forskohlii": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Coleus forskohlii, coleus forskohlii",
+        "downstream": ""
     },
     "Colloidal silver": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Colloidal silver, colloidal silver",
+        "downstream": ""
     },
     "Conjugated linoleic acid": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Conjugated linoleic acid, conjugated linoleic acid",
+        "downstream": ""
     },
     "Copper": {
-        "core": "copper, Cu, serum copper, plasma copper, dietary copper, copper intake, copper supplementation, copper levels, copper status",
-        "downstream": "",
-        "anchored": ""
+        "core": "Copper, copper, copper intake, copper levels, copper status, copper supplementation, cu, dietary copper, plasma copper, serum copper",
+        "downstream": ""
     },
     "Cranberry": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Cranberry, cranberry",
+        "downstream": ""
     },
     "Creatine": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Creatine, creatine",
+        "downstream": ""
     },
     "Dairy": {
-        "core": "dairy, milk, yogurt, cheese, butter, cream, kefir, dairy products, fermented milk products, cultured dairy",
-        "downstream": "",
-        "anchored": ""
+        "core": "Dairy, butter, cheese, cream, cultured dairy, dairy, dairy products, fermented milk products, kefir, milk, yogurt",
+        "downstream": ""
     },
     "Dandelion": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Dandelion, dandelion",
+        "downstream": ""
     },
     "Deer velvet": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Deer velvet, deer velvet",
+        "downstream": ""
     },
     "Dehydroepiandrosterone": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Dehydroepiandrosterone, dehydroepiandrosterone, dehydroepiandrosterone sulfate, dhea, dhea level, dhea sulfate, dhea supplementation, dhea-s, plasma dhea, prasterone, serum dhea",
+        "downstream": ""
     },
     "Devil's claw": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Devil's claw, devil's claw",
+        "downstream": ""
     },
     "Diatomaceous earth": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Diatomaceous earth, diatomaceous earth",
+        "downstream": ""
     },
     "Diet pills": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Diet pills, diet pills",
+        "downstream": ""
     },
     "Dong quai": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Dong quai, dong quai",
+        "downstream": ""
     },
     "Echinacea": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Echinacea, echinacea",
+        "downstream": ""
     },
     "Eggs": {
-        "core": "egg, eggs, chicken egg, hen's egg, whole egg, egg intake, egg consumption, dietary egg",
-        "downstream": "",
-        "anchored": ""
+        "core": "Eggs, chicken egg, dietary egg, egg, egg consumption, egg intake, eggs, hen's egg, whole egg",
+        "downstream": ""
     },
     "Elderberry": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Elderberry, elderberry",
+        "downstream": ""
     },
     "Eleuthero": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Eleuthero, eleuthero",
+        "downstream": ""
     },
     "Energy drinks": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Energy drinks, energy drinks",
+        "downstream": ""
     },
     "Ephedra": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Ephedra, ephedra",
+        "downstream": ""
     },
     "Essiac-Essence": {
-        "core": "Flor-Essence",
-        "downstream": "",
-        "anchored": ""
+        "core": "Essiac-Essence, essiac-essence, flor-essence",
+        "downstream": ""
     },
     "Eucalyptus": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Eucalyptus, eucalyptus",
+        "downstream": ""
     },
     "Evening primrose oil": {
-        "core": "evening primrose oil, EPO, evening primrose seed oil, Oenothera biennis oil, evening primrose oil supplementation, evening primrose oil intake, evening primrose oil consumption",
-        "downstream": "",
-        "anchored": ""
+        "core": "Evening primrose oil, epo, evening primrose oil, evening primrose oil consumption, evening primrose oil intake, evening primrose oil supplementation, evening primrose seed oil, oenothera biennis oil",
+        "downstream": ""
     },
     "Fenugreek": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Fenugreek, fenugreek",
+        "downstream": ""
     },
     "Fermented foods": {
-        "core": "fermented foods, fermentation, yogurt, kefir, sauerkraut, kimchi, kombucha, tempeh, miso, sourdough",
-        "downstream": "",
-        "anchored": ""
+        "core": "Fermented foods, fermentation, fermented bean, fermented foods, fermented milk, fermented tea, fermented vegetables, kefir, kimchi, kombucha, miso, natto, non-alcoholic fermented foods, pickled vegetables, pu-erh tea, sauerkraut, sourdough, tempeh, yoghurt, yogurt",
+        "downstream": ""
     },
     "Feverfew": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Feverfew, feverfew",
+        "downstream": ""
     },
     "Fish oil": {
-        "core": "fish oil, fish oil intake, fish oil supplementation, eicosapentaenoic acid, docosahexaenoic acid, EPA, DHA, omega-3 index, plasma EPA, plasma DHA",
-        "downstream": "",
-        "anchored": ""
+        "core": "Fish oil, dha, docosahexaenoic acid, eicosapentaenoic acid, epa, fish oil, fish oil intake, fish oil supplementation, omega-3 index, plasma dha, plasma epa",
+        "downstream": ""
     },
     "Flax": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Flax, flax",
+        "downstream": ""
     },
     "Flaxseed": {
-        "core": "flaxseed, flax seeds, Linum usitatissimum, linseed, linseeds, ground flaxseed, milled flaxseed, flax meal, whole flaxseed",
-        "downstream": "",
-        "anchored": ""
+        "core": "Flaxseed, flax meal, flax seeds, flaxseed, ground flaxseed, linseed, linseeds, linum usitatissimum, milled flaxseed, whole flaxseed",
+        "downstream": ""
     },
     "Fluoride": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Fluoride, fluoride",
+        "downstream": ""
     },
     "Folic acid": {
-        "core": "folate, tetrahydrofolate, 5-methyltetrahydrofolate, serum folate, plasma folate, RBC folate, dietary folate, folate intake, folate supplementation",
-        "downstream": "",
-        "anchored": ""
+        "core": "5-methyltetrahydrofolate, Folic acid, dietary folate, folate, folate intake, folate supplementation, folic acid, plasma folate, rbc folate, serum folate, tetrahydrofolate",
+        "downstream": ""
     },
     "Fucoxanthin": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Fucoxanthin, fucoxanthin",
+        "downstream": ""
     },
     "Garcinia cambogia": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Garcinia cambogia, garcinia cambogia",
+        "downstream": ""
     },
     "Garlic": {
-        "core": "Garlic, Allium sativum, Fresh garlic, Garlic powder, Garlic extract, Aged garlic extract, Raw garlic, Cooked garlic, Dried garlic",
-        "downstream": "",
-        "anchored": ""
+        "core": "Garlic, aged garlic extract, allium sativum, cooked garlic, dried garlic, fresh garlic, garlic, garlic extract, garlic powder, raw garlic",
+        "downstream": ""
     },
     "Gelatin": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Gelatin, gelatin",
+        "downstream": ""
     },
     "Ginger": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Ginger, ginger",
+        "downstream": ""
     },
     "Ginseng": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Ginseng, ginseng",
+        "downstream": ""
     },
     "Glucomannan": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Glucomannan, glucomannan",
+        "downstream": ""
     },
     "Glucosamine": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Glucosamine, glucosamine",
+        "downstream": ""
     },
     "Glutamine": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Glutamine, glutamine",
+        "downstream": ""
     },
     "Goji": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Goji, goji",
+        "downstream": ""
     },
     "Goldenseal": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Goldenseal, goldenseal",
+        "downstream": ""
     },
     "Grape": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Grape, grape",
+        "downstream": ""
     },
     "Grape seed extract": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Grape seed extract, grape seed extract",
+        "downstream": ""
     },
     "Grapefruit": {
-        "core": "grapefruit, Citrus paradisi, grapefruit juice, fresh grapefruit, red grapefruit, pink grapefruit, white grapefruit, ruby red grapefruit, grapefruit consumption",
-        "downstream": "",
-        "anchored": ""
+        "core": "Grapefruit, citrus paradisi, fresh grapefruit, grapefruit, grapefruit consumption, grapefruit juice, pink grapefruit, red grapefruit, ruby red grapefruit, white grapefruit",
+        "downstream": ""
     },
     "Green coffee beans": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Green coffee beans, green coffee beans",
+        "downstream": ""
     },
     "Green tea": {
-        "core": "Green tea, Camellia sinensis, Matcha, Sencha, Gyokuro, Hojicha, Genmaicha, Bancha, Green tea extract, Green tea intake",
-        "downstream": "",
-        "anchored": ""
+        "core": "Green tea, bancha, camellia sinensis, genmaicha, green tea, green tea extract, green tea intake, gyokuro, hojicha, matcha, sencha",
+        "downstream": ""
     },
     "Guar gum": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Guar gum, guar gum",
+        "downstream": ""
     },
     "Guarana": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Guarana, guarana",
+        "downstream": ""
     },
     "Gymnema": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Gymnema, gymnema",
+        "downstream": ""
     },
     "Hawthorn": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Hawthorn, hawthorn",
+        "downstream": ""
     },
     "Hemp": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Hemp, hemp",
+        "downstream": ""
     },
     "Hemp seeds": {
-        "core": "hemp seeds, hempseed, hemp hearts, hulled hemp seeds, shelled hemp seeds, Cannabis sativa seed, hemp seed oil, hemp milk, hemp protein powder, hemp flour",
-        "downstream": "",
-        "anchored": ""
+        "core": "Hemp seeds, cannabis sativa seed, hemp flour, hemp hearts, hemp milk, hemp protein powder, hemp seed oil, hemp seeds, hempseed, hulled hemp seeds, shelled hemp seeds",
+        "downstream": ""
     },
     "Herbal Dietary Supplements": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Herbal Dietary Supplements, herbal dietary supplements",
+        "downstream": ""
     },
     "Hibiscus": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Hibiscus, hibiscus",
+        "downstream": ""
     },
     "Hoodia": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Hoodia, hoodia",
+        "downstream": ""
     },
     "Hops": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Hops, hops",
+        "downstream": ""
     },
     "Horny goat weed": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Horny goat weed, horny goat weed",
+        "downstream": ""
     },
     "Horse chestnut": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Horse chestnut, horse chestnut",
+        "downstream": ""
     },
     "Horsetail": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Horsetail, horsetail",
+        "downstream": ""
     },
     "Huperzine A": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Huperzine A, huperzine a",
+        "downstream": ""
     },
     "Iodine": {
-        "core": "iodine, iodide, dietary iodine, iodine intake, iodine supplementation, urinary iodine, serum iodine, plasma iodine, iodine status, iodine levels",
-        "downstream": "",
-        "anchored": ""
+        "core": "Iodine, dietary iodine, iodide, iodine, iodine intake, iodine levels, iodine status, iodine supplementation, plasma iodine, serum iodine, urinary iodine",
+        "downstream": ""
     },
     "Iron": {
-        "core": "iron, dietary iron, iron intake, iron supplementation, serum iron, plasma iron, heme iron, non-heme iron, ferrous iron, ferric iron",
-        "downstream": "",
-        "anchored": ""
+        "core": "Iron, dietary iron, ferric iron, ferrous iron, heme iron, iron, iron intake, iron supplementation, non-heme iron, plasma iron, serum iron",
+        "downstream": ""
     },
     "Isoleucine": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Isoleucine, isoleucine",
+        "downstream": ""
     },
     "Kava": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Kava, kava",
+        "downstream": ""
     },
     "Kefir": {
-        "core": "kefir, milk kefir, fermented milk beverage",
-        "downstream": "",
-        "anchored": ""
+        "core": "Kefir, fermented milk beverage, kefir, milk kefir",
+        "downstream": ""
     },
     "Ketones": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Ketones, ketones",
+        "downstream": ""
     },
     "Kimchi": {
-        "core": "kimchi, gimchi, kimchee, fermented cabbage, Korean pickled cabbage",
-        "downstream": "",
-        "anchored": ""
+        "core": "Kimchi, fermented cabbage, gimchi, kimchee, kimchi, korean pickled cabbage",
+        "downstream": ""
     },
     "Kombucha": {
-        "core": "kombucha, kombucha tea, fermented tea, kombucha beverage",
-        "downstream": "",
-        "anchored": ""
+        "core": "Kombucha, fermented tea, kombucha, kombucha beverage, kombucha tea",
+        "downstream": ""
     },
     "L-tryptophan": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "L-tryptophan, l-tryptophan",
+        "downstream": ""
     },
     "Lactobacillus": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Lactobacillus, lactobacillus",
+        "downstream": ""
     },
     "Lavender": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Lavender, lavender",
+        "downstream": ""
     },
     "Legumes": {
-        "core": "Legumes, Pulses, Beans, Lentils, Chickpeas, Soybeans, Peas, Garbanzo beans, Fabaceae, Leguminosae",
-        "downstream": "",
-        "anchored": ""
+        "core": "Legumes, beans, chickpeas, fabaceae, garbanzo beans, legumes, leguminosae, lentils, peas, pulses, soybeans",
+        "downstream": ""
     },
     "Leucine": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Leucine, leucine",
+        "downstream": ""
     },
     "Licorice root": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Licorice root, licorice root",
+        "downstream": ""
     },
     "Lutein": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Lutein, lutein",
+        "downstream": ""
     },
     "Lycopene": {
-        "core": "Lycopene, Dietary lycopene, Lycopene intake, Lycopene supplementation, Serum lycopene, Plasma lycopene, (all-E)-lycopene, (Z)-lycopene, cis-lycopene, all-trans lycopene",
-        "downstream": "",
-        "anchored": ""
+        "core": "(all-e)-lycopene, (z)-lycopene, Lycopene, all-trans lycopene, cis-lycopene, dietary lycopene, lycopene, lycopene intake, lycopene supplementation, plasma lycopene, serum lycopene",
+        "downstream": ""
     },
     "Maca": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Maca, maca",
+        "downstream": ""
     },
     "Magnesium": {
-        "core": "magnesium, serum magnesium, plasma magnesium, dietary magnesium, magnesium intake, magnesium supplementation, magnesium level, magnesium status, erythrocyte magnesium, Mg",
-        "downstream": "",
-        "anchored": ""
+        "core": "Magnesium, dietary magnesium, erythrocyte magnesium, magnesium, magnesium intake, magnesium level, magnesium status, magnesium supplementation, mg, plasma magnesium, serum magnesium",
+        "downstream": ""
     },
     "Manganese": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Manganese, manganese",
+        "downstream": ""
     },
     "Mangosteen": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Mangosteen, mangosteen",
+        "downstream": ""
     },
     "Maritime pine": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Maritime pine, maritime pine",
+        "downstream": ""
     },
     "Mediterranean diet": {
-        "core": "Mediterranean diet, MedDiet, Mediterranean-style diet, Traditional Mediterranean diet, Mediterranean dietary pattern, MDS score, P-MDS, Alternate Mediterranean diet",
-        "downstream": "",
-        "anchored": ""
+        "core": "Mediterranean diet, alternate mediterranean diet, mds score, meddiet, mediterranean diet, mediterranean dietary pattern, mediterranean-style diet, p-mds, traditional mediterranean diet",
+        "downstream": ""
     },
     "Melatonin": {
-        "core": "melatonin, N-acetyl-5-methoxytryptamine, melatonin intake, melatonin supplementation, serum melatonin, plasma melatonin, urinary melatonin, melatonin levels, dietary melatonin",
-        "downstream": "",
-        "anchored": ""
+        "core": "Melatonin, dietary melatonin, melatonin, melatonin intake, melatonin levels, melatonin supplementation, n-acetyl-5-methoxytryptamine, plasma melatonin, serum melatonin, urinary melatonin",
+        "downstream": ""
     },
     "Milk thistle": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Milk thistle, milk thistle",
+        "downstream": ""
     },
     "Mineral supplements": {
-        "core": "mineral supplements, multimineral supplements, mineral supplementation, dietary mineral intake, calcium supplements, iron supplements, zinc supplements, magnesium supplements, selenium supplements, trace mineral supplements",
-        "downstream": "",
-        "anchored": ""
+        "core": "Mineral supplements, calcium supplements, dietary mineral intake, iron supplements, magnesium supplements, mineral supplementation, mineral supplements, multimineral supplements, selenium supplements, trace mineral supplements, zinc supplements",
+        "downstream": ""
     },
     "Miso": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Miso, miso",
+        "downstream": ""
     },
     "Mistletoe": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Mistletoe, mistletoe",
+        "downstream": ""
     },
     "Molybdenum": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Molybdenum, molybdenum",
+        "downstream": ""
     },
     "Multivitamin": {
-        "core": "multivitamin, multivitamin supplement, MVM supplement, multivitamin use, multivitamin intake, multivitamin consumption, multiple vitamin mineral supplement, multivitamin supplementation, multi-vitamin, MVI",
-        "downstream": "",
-        "anchored": ""
+        "core": "Multivitamin, multi-vitamin, multiple vitamin mineral supplement, multivitamin, multivitamin consumption, multivitamin intake, multivitamin supplement, multivitamin supplementation, multivitamin use, mvi, mvm supplement",
+        "downstream": ""
     },
     "Mushrooms": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Mushrooms, mushrooms",
+        "downstream": ""
     },
     "N-acetylcysteine": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "N-acetylcysteine, n-acetylcysteine",
+        "downstream": ""
     },
     "Natto": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Natto, natto",
+        "downstream": ""
     },
     "Nitric oxide": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
-    },
-    "Non-alcoholic fermented foods": {
-        "core": "non-alcoholic fermented foods, fermented foods, yogurt, yoghurt, kefir, kimchi, sauerkraut, pickled vegetables, miso, tempeh, natto, kombucha, pu-erh tea, fermented milk, fermented vegetables, fermented bean, fermented tea",
-        "downstream": "",
-        "anchored": ""
+        "core": "Nitric oxide, nitric oxide",
+        "downstream": ""
     },
     "Noni": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Noni, noni",
+        "downstream": ""
     },
     "Nootropics": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Nootropics, nootropics",
+        "downstream": ""
     },
     "Oats": {
-        "core": "oats, oat, Avena sativa, oatmeal, oat bran, rolled oats, steel-cut oats, instant oats, oat milk",
-        "downstream": "",
-        "anchored": ""
+        "core": "Oats, avena sativa, instant oats, oat, oat bran, oat milk, oatmeal, oats, rolled oats, steel-cut oats",
+        "downstream": ""
     },
     "Olive": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Olive, olive",
+        "downstream": ""
     },
     "Omega-3 fatty acids": {
-        "core": "Omega-3 fatty acids, n-3 fatty acids, Alpha-linolenic acid, ALA, Eicosapentaenoic acid, EPA, Docosahexaenoic acid, DHA, Omega-3 intake, Omega-3 supplementation",
-        "downstream": "",
-        "anchored": ""
+        "core": "Omega-3 fatty acids, ala, alpha-linolenic acid, dha, docosahexaenoic acid, eicosapentaenoic acid, epa, n-3 fatty acids, omega-3 fatty acids, omega-3 intake, omega-3 supplementation",
+        "downstream": ""
     },
     "Omega-6 fatty acids": {
-        "core": "Omega-6s, Omega-6",
-        "downstream": "",
-        "anchored": ""
+        "core": "Omega-6 fatty acids, omega-6, omega-6 fatty acids, omega-6s",
+        "downstream": ""
     },
     "Omega-7 fatty acids": {
-        "core": "Omega-7s, Omega-7",
-        "downstream": "",
-        "anchored": ""
+        "core": "Omega-7 fatty acids, omega-7, omega-7 fatty acids, omega-7s",
+        "downstream": ""
     },
     "Oregano": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Oregano, oregano",
+        "downstream": ""
     },
     "Papaya": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Papaya, papaya",
+        "downstream": ""
     },
     "Passionflower": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Passionflower, passionflower",
+        "downstream": ""
     },
     "Pau d'arco": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Pau d'arco, pau d'arco",
+        "downstream": ""
     },
     "PC-SPES": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "PC-SPES, pc-spes",
+        "downstream": ""
     },
     "Peppermint oil": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Peppermint oil, peppermint oil",
+        "downstream": ""
     },
     "Phosphorus": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Phosphorus, phosphorus",
+        "downstream": ""
     },
     "Pickled vegetables": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Pickled vegetables, pickled vegetables",
+        "downstream": ""
     },
     "Pomegranate": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Pomegranate, pomegranate",
+        "downstream": ""
     },
     "Potassium": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Potassium, potassium",
+        "downstream": ""
     },
     "Probiotics": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Probiotics, probiotics",
+        "downstream": ""
     },
     "Propolis": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Propolis, propolis",
+        "downstream": ""
     },
     "Psyllium": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Psyllium, psyllium",
+        "downstream": ""
     },
     "Pu-erh tea": {
-        "core": "pu-erh tea, pu-erh, puerh, puer tea",
-        "downstream": "",
-        "anchored": ""
+        "core": "Pu-erh tea, pu-erh, pu-erh tea, puer tea, puerh",
+        "downstream": ""
     },
     "Pyruvate": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Pyruvate, pyruvate",
+        "downstream": ""
     },
     "Quercetin": {
-        "core": "quercetin, quercetin intake, dietary quercetin, quercetin supplementation, plasma quercetin, serum quercetin, quercetin levels, quercetin concentration, quercetin exposure, quercetin aglycone",
-        "downstream": "",
-        "anchored": ""
+        "core": "Quercetin, dietary quercetin, plasma quercetin, quercetin, quercetin aglycone, quercetin concentration, quercetin exposure, quercetin intake, quercetin levels, quercetin supplementation, serum quercetin",
+        "downstream": ""
     },
     "Raspberry ketones": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Raspberry ketones, raspberry ketones",
+        "downstream": ""
     },
     "Red clover": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Red clover, red clover",
+        "downstream": ""
     },
     "Red meat": {
-        "core": "red meat, beef, pork, lamb, mutton, goat, veal, venison, unprocessed red meat, processed red meat",
-        "downstream": "",
-        "anchored": ""
+        "core": "Red meat, beef, goat, lamb, mutton, pork, processed red meat, red meat, unprocessed red meat, veal, venison",
+        "downstream": ""
     },
     "Resveratrol": {
-        "core": "resveratrol, trans-resveratrol, cis-resveratrol, resveratrol intake, resveratrol supplementation, resveratrol level, serum resveratrol, plasma resveratrol",
-        "downstream": "",
-        "anchored": ""
+        "core": "Resveratrol, cis-resveratrol, plasma resveratrol, resveratrol, resveratrol intake, resveratrol level, resveratrol supplementation, serum resveratrol, trans-resveratrol",
+        "downstream": ""
     },
     "Rhodiola": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Rhodiola, rhodiola",
+        "downstream": ""
     },
     "Ribose": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Ribose, ribose",
+        "downstream": ""
     },
     "Rose hip": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Rose hip, rose hip",
+        "downstream": ""
     },
     "S-adenosyl-L-methionine": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "S-adenosyl-L-methionine, s-adenosyl-l-methionine",
+        "downstream": ""
     },
     "Saccharomyces boulardii": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Saccharomyces boulardii, saccharomyces boulardii",
+        "downstream": ""
     },
     "Sage": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Sage, sage",
+        "downstream": ""
     },
     "Sauerkraut": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Sauerkraut, sauerkraut",
+        "downstream": ""
     },
     "Saw palmetto": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Saw palmetto, saw palmetto",
+        "downstream": ""
     },
     "Sea moss": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Sea moss, sea moss",
+        "downstream": ""
     },
     "Selenium": {
-        "core": "selenium, selenate, selenite, selenomethionine, selenocysteine, serum selenium, plasma selenium, dietary selenium, selenium intake, selenium supplementation",
-        "downstream": "",
-        "anchored": ""
+        "core": "Selenium, dietary selenium, plasma selenium, selenate, selenite, selenium, selenium intake, selenium supplementation, selenocysteine, selenomethionine, serum selenium",
+        "downstream": ""
     },
     "Senna": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Senna, senna",
+        "downstream": ""
     },
     "Shark cartilage": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Shark cartilage, shark cartilage",
+        "downstream": ""
     },
     "Skyr": {
-        "core": "skyr, Icelandic skyr, skyr consumption, skyr intake, Icelandic style skyr, Icelandic yogurt",
-        "downstream": "",
-        "anchored": ""
+        "core": "Skyr, icelandic skyr, icelandic style skyr, icelandic yogurt, skyr, skyr consumption, skyr intake",
+        "downstream": ""
     },
     "Slippery elm": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Slippery elm, slippery elm",
+        "downstream": ""
     },
     "Sodium bicarbonate": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Sodium bicarbonate, sodium bicarbonate",
+        "downstream": ""
     },
     "Soy": {
-        "core": "soy, soybean, soya, Glycine max, tofu, tempeh, edamame, miso, soy milk, soy protein",
-        "downstream": "",
-        "anchored": ""
+        "core": "Soy, edamame, glycine max, miso, soy, soy milk, soy protein, soya, soybean, tempeh, tofu",
+        "downstream": ""
     },
     "Spearmint": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Spearmint, spearmint",
+        "downstream": ""
     },
     "St. John wort": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "St. John wort, st. john wort",
+        "downstream": ""
     },
     "Tart cherry": {
-        "core": "sour cherry,Prunus cerasus",
-        "downstream": "",
-        "anchored": ""
+        "core": "Tart cherry, prunus cerasus, sour cherry, tart cherry",
+        "downstream": ""
     },
     "Tea": {
-        "core": "tea, green tea, black tea, oolong tea, white tea, pu-erh tea, Camellia sinensis, brewed tea, tea consumption",
-        "downstream": "",
-        "anchored": ""
+        "core": "Tea, black tea, brewed tea, camellia sinensis, green tea, oolong tea, pu-erh tea, tea, tea consumption, white tea",
+        "downstream": ""
     },
     "Tempeh": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Tempeh, tempeh",
+        "downstream": ""
     },
     "Thunder god vine": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Thunder god vine, thunder god vine",
+        "downstream": ""
     },
     "Tribulus": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Tribulus, tribulus",
+        "downstream": ""
     },
     "Turmeric": {
-        "core": "turmeric, Curcuma longa, turmeric powder, turmeric root, turmeric spice, turmeric extract, turmeric supplementation, turmeric intake",
-        "downstream": "",
-        "anchored": ""
+        "core": "Turmeric, curcuma longa, turmeric, turmeric extract, turmeric intake, turmeric powder, turmeric root, turmeric spice, turmeric supplementation",
+        "downstream": ""
     },
     "Valerian": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Valerian, valerian",
+        "downstream": ""
     },
     "Vinpocetine": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Vinpocetine, vinpocetine",
+        "downstream": ""
     },
     "Vitamin A": {
-        "core": "vitamin A, retinol, retinal, retinoic acid, retinyl esters, serum vitamin A, plasma vitamin A, dietary vitamin A, vitamin A intake, vitamin A supplementation",
-        "downstream": "",
-        "anchored": ""
+        "core": "Vitamin A, dietary vitamin a, plasma vitamin a, retinal, retinoic acid, retinol, retinyl esters, serum vitamin a, vitamin a, vitamin a intake, vitamin a supplementation",
+        "downstream": ""
     },
     "Vitamin B1": {
-        "core": "vitamin b1, thiamine, thiamin, thiamine intake, thiamin intake, thiamine supplementation, plasma thiamine, serum thiamine, blood thiamine, urinary thiamine",
-        "downstream": "",
-        "anchored": ""
+        "core": "Vitamin B1, blood thiamine, plasma thiamine, serum thiamine, thiamin, thiamin intake, thiamine, thiamine intake, thiamine supplementation, urinary thiamine, vitamin b1",
+        "downstream": ""
     },
     "Vitamin B12": {
-        "core": "Vitamin B12, Cobalamin, Cyanocobalamin, Methylcobalamin, Adenosylcobalamin, Hydroxocobalamin, Serum B12, Plasma B12, Dietary B12, B12 intake",
-        "downstream": "",
-        "anchored": ""
+        "core": "Vitamin B12, adenosylcobalamin, b12 intake, cobalamin, cyanocobalamin, dietary b12, hydroxocobalamin, methylcobalamin, plasma b12, serum b12, vitamin b12",
+        "downstream": ""
     },
     "Vitamin B2": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Vitamin B2, vitamin b2",
+        "downstream": ""
     },
     "Vitamin B3": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Vitamin B3, vitamin b3",
+        "downstream": ""
     },
     "Vitamin B5": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Vitamin B5, vitamin b5",
+        "downstream": ""
     },
     "Vitamin B6": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Vitamin B6, vitamin b6",
+        "downstream": ""
     },
     "Vitamin B7": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Vitamin B7, vitamin b7",
+        "downstream": ""
     },
     "Vitamin C": {
-        "core": "vitamin c, ascorbic acid, L-ascorbic acid, dehydroascorbic acid, serum vitamin c, plasma vitamin c, dietary vitamin c, vitamin c intake, vitamin c supplementation, ascorbate",
-        "downstream": "",
-        "anchored": ""
+        "core": "Vitamin C, ascorbate, ascorbic acid, dehydroascorbic acid, dietary vitamin c, l-ascorbic acid, plasma vitamin c, serum vitamin c, vitamin c, vitamin c intake, vitamin c supplementation",
+        "downstream": ""
     },
     "Vitamin D": {
-        "core": "Vitamin D, Cholecalciferol, Ergocalciferol, 25-hydroxyvitamin D, Calcifediol, Serum 25(OH)D, Plasma vitamin D, Vitamin D intake, Vitamin D supplementation, Vitamin D levels",
-        "downstream": "",
-        "anchored": ""
+        "core": "25-hydroxyvitamin d, Vitamin D, calcifediol, cholecalciferol, ergocalciferol, plasma vitamin d, serum 25(oh)d, vitamin d, vitamin d intake, vitamin d levels, vitamin d supplementation",
+        "downstream": ""
     },
     "Vitamin E": {
-        "core": "vitamin E, alpha-tocopherol, tocopherols, tocotrienols, dietary vitamin E, vitamin E intake, vitamin E supplementation, serum vitamin E, plasma vitamin E, vitamin E levels",
-        "downstream": "",
-        "anchored": ""
+        "core": "Vitamin E, alpha-tocopherol, dietary vitamin e, plasma vitamin e, serum vitamin e, tocopherols, tocotrienols, vitamin e, vitamin e intake, vitamin e levels, vitamin e supplementation",
+        "downstream": ""
     },
     "Vitamin K": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Vitamin K, vitamin k",
+        "downstream": ""
     },
     "White kidney bean": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "White kidney bean, white kidney bean",
+        "downstream": ""
     },
     "White mulberry leaf": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "White mulberry leaf, white mulberry leaf",
+        "downstream": ""
     },
     "Wild yam": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Wild yam, wild yam",
+        "downstream": ""
     },
     "Willow bark": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Willow bark, willow bark",
+        "downstream": ""
     },
     "Yerba mate": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Yerba mate, yerba mate",
+        "downstream": ""
     },
     "Yogurt": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Yogurt, yogurt",
+        "downstream": ""
     },
     "Yohimbe": {
-        "core": "",
-        "downstream": "",
-        "anchored": ""
+        "core": "Yohimbe, yohimbe",
+        "downstream": ""
     },
     "Zinc": {
-        "core": "zinc, dietary zinc, zinc intake, zinc supplementation, serum zinc, plasma zinc, zinc levels, zinc status, red blood cell zinc",
-        "downstream": "",
-        "anchored": ""
+        "core": "Zinc, dietary zinc, plasma zinc, red blood cell zinc, serum zinc, zinc, zinc intake, zinc levels, zinc status, zinc supplementation",
+        "downstream": ""
     },
-    "chocolate": {
-        "core": "chocolate, dark chocolate, milk chocolate, white chocolate, cocoa, cacao, cocoa powder, chocolate consumption, chocolate intake, chocolate confectionery",
-        "downstream": "",
-        "anchored": ""
-    },
-    "dhea": {
-        "core": "DHEA, dehydroepiandrosterone, prasterone, DHEA-S, DHEA sulfate, dehydroepiandrosterone sulfate, serum DHEA, plasma DHEA, DHEA supplementation, DHEA level",
-        "downstream": "",
-        "anchored": ""
+    "Chocolate": {
+        "core": "Chocolate, cacao, chocolate, chocolate confectionery, chocolate consumption, chocolate intake, cocoa, cocoa powder, dark chocolate, milk chocolate, white chocolate",
+        "downstream": ""
     }
 }

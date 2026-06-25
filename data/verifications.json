@@ -3445,5 +3445,64 @@
                 }
             }
         }
+    },
+    "1848533": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_fermented_foods_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.33,
+                            "Lower CI": 0.15,
+                            "Upper CI": 0.73,
+                            "Cases": 133,
+                            "Sample Size": 422,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "High fiber and high fermented milk products vs others (interaction effect)",
+                            "exposure_measurement_type": "dietary_intake"
+                        },
+                        "timestamp": "2026-06-24 15:50:41"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.33,
+                            "Lower CI": 0.15,
+                            "Upper CI": 0.73,
+                            "Cases": 133,
+                            "Sample Size": 422,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "High fiber and high fermented milk products vs others (interaction effect)",
+                            "exposure_measurement_type": "dietary_intake"
+                        },
+                        "timestamp": "2026-06-24 15:50:43"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.33,
+                    "Lower CI": 0.15,
+                    "Upper CI": 0.73,
+                    "Cases": 133,
+                    "Sample Size": 422,
+                    "Design": "Case-Control",
+                    "Timing": "Retrospective",
+                    "Comparison Type": "High fiber and high fermented milk products vs others (interaction effect)",
+                    "exposure_measurement_type": "dietary_intake"
+                }
+            }
+        }
+    },
+    "19711189": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_fish_oil_incidence": 0
+        }
     }
 }

@@ -136,7 +136,6 @@ group_map <- tribble(
   "black_cohosh",             "Herbal & Botanical",
   "n-acetylcysteine",         "Antioxidants",
   "miso",                     "Fermented Foods & Probiotics",
-  "non-alcoholic_fermented_foods", "Fermented Foods & Probiotics",
   "manganese",                "Minerals & Trace Elements",
   "yogurt",                   "Fermented Foods & Probiotics",
   "glucosamine",              "Metabolites & Amino Acids",

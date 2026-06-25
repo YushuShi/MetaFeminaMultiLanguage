@@ -1,4 +1,8 @@
 @echo off
 echo Starting MetaFemina Server...
 start "" http://localhost:5000
-venv\Scripts\python.exe app.py
+if exist venv\Scripts\python.exe (
+    venv\Scripts\python.exe app.py
+) else (
+    python app.py
+)

@@ -48,7 +48,8 @@
                 "confidence_interval": "HR\u00a0=\u00a01.16, 95%\u00a0CI\u00a0=\u00a01.01-1.32",
                 "outcome_definition": "a higher risk of breast cancer was observed",
                 "exposure_definition": "self-report regular fish oil supplementation"
-            }
+            },
+            "exclusions": 1
         },
         {
             "Study": "Brasky TM et al. (2010) [PMID: 20615886]",
@@ -146,7 +147,8 @@
                 "confidence_interval": "0.96 (95% CI 0.64-1.43)",
                 "outcome_definition": "subsequent development of breast cancer (BC)",
                 "exposure_definition": "content of marine n-3 polyunsaturated fatty acids (PUFA) in adipose tissue"
-            }
+            },
+            "exclusions": 0
         },
         {
             "Study": "Bassett JK et al. (2016) [PMID: 27146840]",
@@ -369,8 +371,8 @@
         },
         "extracted": 6
     },
-    "plot_url": "static/fish_oil/forest_breast_cancer_incidence_primary.png?t=3098",
-    "funnel_plot_url": "static/fish_oil/funnel_breast_cancer_incidence_primary.png?t=4418",
-    "baujat_plot_url": "static\\fish_oil\\baujat_breast_cancer_incidence_primary.png?t=4956",
+    "plot_url": "static/fish_oil/forest_breast_cancer_incidence_primary.png?t=1435",
+    "funnel_plot_url": "static/fish_oil/funnel_breast_cancer_incidence_primary.png?t=4451",
+    "baujat_plot_url": "static\\fish_oil\\baujat_breast_cancer_incidence_primary.png?t=3336",
     "last_run": "2026-06-14 23:26:02"
 }
