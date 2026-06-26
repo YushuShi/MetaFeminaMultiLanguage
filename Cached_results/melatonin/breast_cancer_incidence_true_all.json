@@ -192,7 +192,8 @@
                 "confidence_interval": "0.67 (95% confidence interval = 0.4-1.1)",
                 "outcome_definition": "subsequent risk of breast cancer in the prospective, population-based cohort",
                 "exposure_definition": "urinary 6-sulfatoxymelatonin levels increased with increasing self-reported hours of sleep"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Schernhammer ES et al. (2005) [PMID: 16030307]",
@@ -483,91 +484,84 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Schernhammer ES et al. (2008) [PMID: 18544743]</th>\n      <td>-0.5209</td>\n      <td>0.2528</td>\n      <td>-1.0164</td>\n      <td>-0.0254</td>\n      <td>178.0</td>\n      <td>3966.0</td>\n    </tr>\n    <tr>\n      <th>Schernhammer ES et al. (2005) [PMID: 16030307]</th>\n      <td>-0.4729</td>\n      <td>0.2317</td>\n      <td>-0.9270</td>\n      <td>-0.0188</td>\n      <td>147.0</td>\n      <td>438.0</td>\n    </tr>\n    <tr>\n      <th>Schernhammer ES et al. (2009) [PMID: 19124483]</th>\n      <td>-0.4274</td>\n      <td>0.1957</td>\n      <td>-0.8109</td>\n      <td>-0.0439</td>\n      <td>357.0</td>\n      <td>18643.0</td>\n    </tr>\n    <tr>\n      <th>Wu AH et al. (2008) [PMID: 18448486]</th>\n      <td>-0.4005</td>\n      <td>0.2581</td>\n      <td>-0.9063</td>\n      <td>0.1053</td>\n      <td>525.0</td>\n      <td>33528.0</td>\n    </tr>\n    <tr>\n      <th>Devore EE et al. (2017) [PMID: 28151704]</th>\n      <td>-0.2485</td>\n      <td>0.1235</td>\n      <td>-0.4906</td>\n      <td>-0.0063</td>\n      <td>555.0</td>\n      <td>1354.0</td>\n    </tr>\n    <tr>\n      <th>Brown SB et al. (2015) [PMID: 25587174]</th>\n      <td>-0.0825</td>\n      <td>0.1555</td>\n      <td>-0.3873</td>\n      <td>0.2222</td>\n      <td>600.0</td>\n      <td>1386.0</td>\n    </tr>\n    <tr>\n      <th>Travis RC et al. (2004) [PMID: 15026473]</th>\n      <td>-0.0087</td>\n      <td>0.2378</td>\n      <td>-0.4748</td>\n      <td>0.4573</td>\n      <td>127.0</td>\n      <td>480.0</td>\n    </tr>\n    <tr>\n      <th>Wu AH et al. (2013) [PMID: 22644618]</th>\n      <td>0.0000</td>\n      <td>0.1945</td>\n      <td>-0.3811</td>\n      <td>0.3811</td>\n      <td>248.0</td>\n      <td>991.0</td>\n    </tr>\n    <tr>\n      <th>Sturgeon SR et al. (2014) [PMID: 24510738]</th>\n      <td>0.1912</td>\n      <td>0.2036</td>\n      <td>-0.2078</td>\n      <td>0.5902</td>\n      <td>258.0</td>\n      <td>773.0</td>\n    </tr>\n    <tr>\n      <th>Schernhammer ES et al. (2010) [PMID: 20200429]</th>\n      <td>0.3033</td>\n      <td>0.2264</td>\n      <td>-0.1404</td>\n      <td>0.7470</td>\n      <td>180.0</td>\n      <td>863.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Schernhammer ES et al. (2008) [PMID: 18544743]</th>\n      <td>-0.5209</td>\n      <td>0.2528</td>\n      <td>-1.0164</td>\n      <td>-0.0254</td>\n      <td>178.0</td>\n      <td>3966.0</td>\n    </tr>\n    <tr>\n      <th>Schernhammer ES et al. (2005) [PMID: 16030307]</th>\n      <td>-0.4729</td>\n      <td>0.2317</td>\n      <td>-0.9270</td>\n      <td>-0.0188</td>\n      <td>147.0</td>\n      <td>438.0</td>\n    </tr>\n    <tr>\n      <th>Schernhammer ES et al. (2009) [PMID: 19124483]</th>\n      <td>-0.4274</td>\n      <td>0.1957</td>\n      <td>-0.8109</td>\n      <td>-0.0439</td>\n      <td>357.0</td>\n      <td>18643.0</td>\n    </tr>\n    <tr>\n      <th>Devore EE et al. (2017) [PMID: 28151704]</th>\n      <td>-0.2485</td>\n      <td>0.1235</td>\n      <td>-0.4906</td>\n      <td>-0.0063</td>\n      <td>555.0</td>\n      <td>1354.0</td>\n    </tr>\n    <tr>\n      <th>Brown SB et al. (2015) [PMID: 25587174]</th>\n      <td>-0.0825</td>\n      <td>0.1555</td>\n      <td>-0.3873</td>\n      <td>0.2222</td>\n      <td>600.0</td>\n      <td>1386.0</td>\n    </tr>\n    <tr>\n      <th>Travis RC et al. (2004) [PMID: 15026473]</th>\n      <td>-0.0087</td>\n      <td>0.2378</td>\n      <td>-0.4748</td>\n      <td>0.4573</td>\n      <td>127.0</td>\n      <td>480.0</td>\n    </tr>\n    <tr>\n      <th>Wu AH et al. (2013) [PMID: 22644618]</th>\n      <td>0.0000</td>\n      <td>0.1945</td>\n      <td>-0.3811</td>\n      <td>0.3811</td>\n      <td>248.0</td>\n      <td>991.0</td>\n    </tr>\n    <tr>\n      <th>Sturgeon SR et al. (2014) [PMID: 24510738]</th>\n      <td>0.1912</td>\n      <td>0.2036</td>\n      <td>-0.2078</td>\n      <td>0.5902</td>\n      <td>258.0</td>\n      <td>773.0</td>\n    </tr>\n    <tr>\n      <th>Schernhammer ES et al. (2010) [PMID: 20200429]</th>\n      <td>0.3033</td>\n      <td>0.2264</td>\n      <td>-0.1404</td>\n      <td>0.7470</td>\n      <td>180.0</td>\n      <td>863.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.85,
+        "pooled_es": 0.87,
         "ci_low": 0.73,
-        "ci_upp": 1.0,
+        "ci_upp": 1.03,
         "pi_low": 0.55,
-        "pi_upp": 1.31,
+        "pi_upp": 1.38,
         "interpretation": "Not statistically significant",
-        "i2": 42.32,
+        "i2": 45.54,
         "tau2": 0.03,
-        "eggers_p": 0.9864318175325137,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.9864). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "eggers_p": 0.8096930861186756,
+        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.8097). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
         "loo_results": [
             {
                 "omitted": "Schernhammer ES et al. (2008) [PMID: 18544743]",
-                "pooled_es": 0.8786313971665066,
-                "ci_low": 0.7407907961947521,
-                "ci_upp": 1.0421203071802372,
+                "pooled_es": 0.8992446433934503,
+                "ci_low": 0.7508464641859532,
+                "ci_upp": 1.0769724134594139,
                 "is_significant": false
             },
             {
                 "omitted": "Schernhammer ES et al. (2005) [PMID: 16030307]",
-                "pooled_es": 0.8784815234870612,
-                "ci_low": 0.7381193396506773,
-                "ci_upp": 1.0455352483696976,
+                "pooled_es": 0.8994041511022497,
+                "ci_low": 0.7479428982672698,
+                "ci_upp": 1.0815368778739258,
                 "is_significant": false
             },
             {
                 "omitted": "Schernhammer ES et al. (2009) [PMID: 19124483]",
-                "pooled_es": 0.8805753878437134,
-                "ci_low": 0.7376273994013399,
-                "ci_upp": 1.0512258822075118,
-                "is_significant": false
-            },
-            {
-                "omitted": "Wu AH et al. (2008) [PMID: 18448486]",
-                "pooled_es": 0.8700148927199889,
-                "ci_low": 0.7262965687181583,
-                "ci_upp": 1.0421719531051528,
+                "pooled_es": 0.902124021810806,
+                "ci_low": 0.7477071812811458,
+                "ci_upp": 1.088431101241618,
                 "is_significant": false
             },
             {
                 "omitted": "Devore EE et al. (2017) [PMID: 28151704]",
-                "pooled_es": 0.8665750016778089,
-                "ci_low": 0.7133116052902247,
-                "ci_upp": 1.0527688431864988,
+                "pooled_es": 0.8885394755673927,
+                "ci_low": 0.7208472729569907,
+                "ci_upp": 1.0952422645686872,
                 "is_significant": false
             },
             {
                 "omitted": "Brown SB et al. (2015) [PMID: 25587174]",
-                "pooled_es": 0.8436695947188719,
-                "ci_low": 0.6956568794347021,
-                "ci_upp": 1.0231745075697434,
+                "pooled_es": 0.8626214131285916,
+                "ci_low": 0.6997292004828538,
+                "ci_upp": 1.0634338282216684,
                 "is_significant": false
             },
             {
                 "omitted": "Travis RC et al. (2004) [PMID: 15026473]",
-                "pooled_es": 0.8418405410997454,
-                "ci_low": 0.6991610088120719,
-                "ci_upp": 1.0136370416926426,
+                "pooled_es": 0.8590163834799733,
+                "ci_low": 0.7024771752249828,
+                "ci_upp": 1.050438609412017,
                 "is_significant": false
             },
             {
                 "omitted": "Wu AH et al. (2013) [PMID: 22644618]",
-                "pooled_es": 0.837633930081475,
-                "ci_low": 0.6950342709863904,
-                "ci_upp": 1.0094906540766477,
+                "pooled_es": 0.8549092791420096,
+                "ci_low": 0.6981269714396281,
+                "ci_upp": 1.0469010731041697,
                 "is_significant": false
             },
             {
                 "omitted": "Sturgeon SR et al. (2014) [PMID: 24510738]",
-                "pooled_es": 0.8217749011241221,
-                "ci_low": 0.6952396810154569,
-                "ci_upp": 0.9713398221620594,
-                "is_significant": true
+                "pooled_es": 0.836055623830382,
+                "ci_low": 0.6972070177154144,
+                "ci_upp": 1.0025558957063199,
+                "is_significant": false
             },
             {
                 "omitted": "Schernhammer ES et al. (2010) [PMID: 20200429]",
-                "pooled_es": 0.8189603981783589,
-                "ci_low": 0.7022866149883906,
-                "ci_upp": 0.9550176800614993,
+                "pooled_es": 0.8317617113660043,
+                "ci_low": 0.7044545070313561,
+                "ci_upp": 0.9820755458147846,
                 "is_significant": true
             }
         ],
-        "results_interpretation": "The pooled analysis of 10 studies yielded an effect size of 0.85 (95% CI: 0.73\u20131.0), indicating no statistically significant association between melatonin and breast cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by moderate heterogeneity (I\u00b2 = 42.32%), suggesting some variability in the results across studies."
+        "results_interpretation": "The pooled analysis of 9 studies yielded an effect size of 0.87 (95% CI: 0.73\u20131.03), indicating no statistically significant association between melatonin and breast cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by moderate heterogeneity (I\u00b2 = 45.54%), suggesting some variability in the results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 98,
@@ -586,8 +580,8 @@
         },
         "extracted": 10
     },
-    "plot_url": "static/melatonin/forest_breast_cancer_incidence_primary.png?t=1137",
-    "funnel_plot_url": "static/melatonin/funnel_breast_cancer_incidence_primary.png?t=7551",
-    "baujat_plot_url": "static\\melatonin\\baujat_breast_cancer_incidence_primary.png?t=9978",
+    "plot_url": "static/melatonin/forest_breast_cancer_incidence_primary.png?t=138",
+    "funnel_plot_url": "static/melatonin/funnel_breast_cancer_incidence_primary.png?t=8296",
+    "baujat_plot_url": "static\\melatonin\\baujat_breast_cancer_incidence_primary.png?t=4463",
     "last_run": "2026-06-15 03:08:40"
 }

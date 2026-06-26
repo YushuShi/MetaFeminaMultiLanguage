@@ -51,7 +51,7 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>None</td>\n      <td>161808</td>\n      <td>1.046437</td>\n      <td>0.90615</td>\n      <td>1.192883</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>NaN</td>\n      <td>161808</td>\n      <td>1.046437</td>\n      <td>0.90615</td>\n      <td>1.192883</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 1.05,
         "ci_low": 0.91,
@@ -75,8 +75,8 @@
         },
         "extracted": 1
     },
-    "plot_url": "static/multivitamin/forest_uterine_cancer_incidence_primary.png?t=1225",
-    "funnel_plot_url": "static/multivitamin/funnel_uterine_cancer_incidence_primary.png?t=8979",
+    "plot_url": "static/multivitamin/forest_uterine_cancer_incidence_primary.png?t=849",
+    "funnel_plot_url": "static/multivitamin/funnel_uterine_cancer_incidence_primary.png?t=9250",
     "baujat_plot_url": null,
     "last_run": "2026-06-15 14:47:47"
 }

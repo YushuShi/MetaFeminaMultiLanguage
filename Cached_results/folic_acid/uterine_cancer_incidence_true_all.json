@@ -290,7 +290,7 @@
                 "is_significant": true
             }
         ],
-        "results_interpretation": "The pooled analysis of 5 studies yielded an effect size of 0.49 (95% CI: 0.13\u20131.87), indicating no statistically significant association between folic acid and uterine cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 95.30%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 5 studies yielded an effect size of 0.49 (95% CI: 0.13\u20131.87), indicating no statistically significant association between folic_acid and uterine cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 95.30%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 120,
@@ -309,8 +309,8 @@
         },
         "extracted": 11
     },
-    "plot_url": "static/folic_acid/forest_uterine_cancer_incidence_primary.png?t=5326",
-    "funnel_plot_url": "static/folic_acid/funnel_uterine_cancer_incidence_primary.png?t=8273",
-    "baujat_plot_url": "static\\folic_acid\\baujat_uterine_cancer_incidence_primary.png?t=9812",
+    "plot_url": "static/folic_acid/forest_uterine_cancer_incidence_primary.png?t=9707",
+    "funnel_plot_url": "static/folic_acid/funnel_uterine_cancer_incidence_primary.png?t=3431",
+    "baujat_plot_url": "static\\folic_acid\\baujat_uterine_cancer_incidence_primary.png?t=5062",
     "last_run": "2026-06-15 13:35:38"
 }

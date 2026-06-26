@@ -50,7 +50,7 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>1031</td>\n      <td>11656 controls + 1031 ovarian cancer cases</td>\n      <td>1.243134</td>\n      <td>1.136364</td>\n      <td>1.354295</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>1031</td>\n      <td>NaN</td>\n      <td>1.243134</td>\n      <td>1.136364</td>\n      <td>1.354295</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 1.24,
         "ci_low": 1.14,
@@ -75,8 +75,8 @@
         },
         "extracted": 3
     },
-    "plot_url": "static/red_meat/forest_ovarian_cancer_incidence_primary.png?t=5080",
-    "funnel_plot_url": "static/red_meat/funnel_ovarian_cancer_incidence_primary.png?t=2749",
+    "plot_url": "static/red_meat/forest_ovarian_cancer_incidence_primary.png?t=544",
+    "funnel_plot_url": "static/red_meat/funnel_ovarian_cancer_incidence_primary.png?t=7948",
     "baujat_plot_url": null,
     "last_run": "2026-06-22 12:27:55"
 }

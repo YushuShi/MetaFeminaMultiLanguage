@@ -97,7 +97,8 @@
                 "confidence_interval": "1.04 [1.00-1.08]",
                 "outcome_definition": "positive associations between leucine and postmenopausal breast cancer",
                 "exposure_definition": "BCAAs were quantified via NMR spectroscopy, log-transformed, and standardized."
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Nouri-Majd S et al. (2022) [PMID: 35794412]",
@@ -148,42 +149,20 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Nouri-Majd S et al. (2022) [PMID: 35794412]</th>\n      <td>-0.6259</td>\n      <td>0.1780</td>\n      <td>-0.9748</td>\n      <td>-0.2771</td>\n      <td>350.0</td>\n      <td>1050.0</td>\n    </tr>\n    <tr>\n      <th>Tobias DK et al. (2020) [PMID: 33024201]</th>\n      <td>0.0365</td>\n      <td>0.0182</td>\n      <td>0.0007</td>\n      <td>0.0723</td>\n      <td>-</td>\n      <td>26711.0</td>\n    </tr>\n    <tr>\n      <th>Tobias DK et al. (2021) [PMID: 34632269]</th>\n      <td>0.0454</td>\n      <td>0.0316</td>\n      <td>-0.0166</td>\n      <td>0.1074</td>\n      <td>10046.0</td>\n      <td>196161.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Nouri-Majd S et al. (2022) [PMID: 35794412]</th>\n      <td>-0.6259</td>\n      <td>0.1780</td>\n      <td>-0.9748</td>\n      <td>-0.2771</td>\n      <td>350.0</td>\n      <td>1050.0</td>\n    </tr>\n    <tr>\n      <th>Tobias DK et al. (2021) [PMID: 34632269]</th>\n      <td>0.0454</td>\n      <td>0.0316</td>\n      <td>-0.0166</td>\n      <td>0.1074</td>\n      <td>10046.0</td>\n      <td>196161.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.98,
-        "ci_low": 0.87,
-        "ci_upp": 1.1,
-        "pi_low": 0.25,
-        "pi_upp": 3.8,
+        "pooled_es": 0.77,
+        "ci_low": 0.4,
+        "ci_upp": 1.48,
+        "pi_low": null,
+        "pi_upp": null,
         "interpretation": "Not statistically significant",
-        "i2": 85.61,
-        "tau2": 0.01,
-        "eggers_p": 0.2941582730123408,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.2942). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
-        "loo_results": [
-            {
-                "omitted": "Nouri-Majd S et al. (2022) [PMID: 35794412]",
-                "pooled_es": 1.0033800054021942,
-                "ci_low": null,
-                "ci_upp": null,
-                "is_significant": false
-            },
-            {
-                "omitted": "Tobias DK et al. (2020) [PMID: 33024201]",
-                "pooled_es": 0.765346525510515,
-                "ci_low": 0.39701071020512985,
-                "ci_upp": 1.4754143630240248,
-                "is_significant": false
-            },
-            {
-                "omitted": "Tobias DK et al. (2021) [PMID: 34632269]",
-                "pooled_es": 0.762570165662875,
-                "ci_low": 0.39908463221217066,
-                "ci_upp": 1.4571176402752266,
-                "is_significant": false
-            }
-        ],
-        "results_interpretation": "The pooled analysis of 3 studies yielded an effect size of 0.98 (95% CI: 0.87\u20131.1), indicating no statistically significant association between BCAAs and breast cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 85.61%), reflecting highly inconsistent results across studies."
+        "i2": 92.75,
+        "tau2": 0.21,
+        "eggers_p": null,
+        "funnel_interpretation": "Insufficient studies to perform formal publication bias testing.",
+        "loo_results": [],
+        "results_interpretation": "The pooled analysis of 2 studies yielded an effect size of 0.77 (95% CI: 0.4\u20131.48), indicating no statistically significant association between BCAAs and breast cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 92.75%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 0,
@@ -202,8 +181,8 @@
         },
         "extracted": 3
     },
-    "plot_url": "static/bcaas/forest_breast_cancer_incidence_primary.png?t=7607",
-    "funnel_plot_url": "static/bcaas/funnel_breast_cancer_incidence_primary.png?t=3123",
-    "baujat_plot_url": "static\\bcaas\\baujat_breast_cancer_incidence_primary.png?t=9410",
+    "plot_url": "static/bcaas/forest_breast_cancer_incidence_primary.png?t=4527",
+    "funnel_plot_url": "static/bcaas/funnel_breast_cancer_incidence_primary.png?t=6856",
+    "baujat_plot_url": null,
     "last_run": "2026-06-14 13:54:24"
 }

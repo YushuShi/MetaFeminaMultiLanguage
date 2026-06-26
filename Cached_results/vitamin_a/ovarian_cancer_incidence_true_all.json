@@ -341,7 +341,7 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Jeong NH et al. (2009) [PMID: 19266359]</th>\n      <td>-0.7243</td>\n      <td>0.3660</td>\n      <td>-1.4417</td>\n      <td>-0.0070</td>\n      <td>45.0</td>\n      <td>180</td>\n    </tr>\n    <tr>\n      <th>Bertone ER et al. (2001) [PMID: 11227928]</th>\n      <td>-0.4574</td>\n      <td>0.2362</td>\n      <td>-0.9204</td>\n      <td>0.0056</td>\n      <td>327.0</td>\n      <td>3456</td>\n    </tr>\n    <tr>\n      <th>McCann SE et al. (2001) [PMID: 11588898]</th>\n      <td>-0.3703</td>\n      <td>0.1803</td>\n      <td>-0.7237</td>\n      <td>-0.0170</td>\n      <td>496.0</td>\n      <td>1921</td>\n    </tr>\n    <tr>\n      <th>Silvera SA et al. (2006) [PMID: 16492935]</th>\n      <td>-0.0202</td>\n      <td>0.0494</td>\n      <td>-0.1169</td>\n      <td>0.0765</td>\n      <td>6000.0</td>\n      <td>1,000,000</td>\n    </tr>\n    <tr>\n      <th>Koushik A et al. (2015) [PMID: 26169298]</th>\n      <td>0.0198</td>\n      <td>0.0250</td>\n      <td>-0.0293</td>\n      <td>0.0689</td>\n      <td>1973.0</td>\n      <td>501857</td>\n    </tr>\n    <tr>\n      <th>Fairfield KM et al. (2001) [PMID: 11745286]</th>\n      <td>0.0392</td>\n      <td>0.1889</td>\n      <td>-0.3311</td>\n      <td>0.4095</td>\n      <td>301.0</td>\n      <td>80326</td>\n    </tr>\n    <tr>\n      <th>Zhang M et al. (2004) [PMID: 14751177]</th>\n      <td>0.3898</td>\n      <td>0.2260</td>\n      <td>-0.0531</td>\n      <td>0.8328</td>\n      <td>254.0</td>\n      <td>906</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Jeong NH et al. (2009) [PMID: 19266359]</th>\n      <td>-0.7243</td>\n      <td>0.3660</td>\n      <td>-1.4417</td>\n      <td>-0.0070</td>\n      <td>45.0</td>\n      <td>180.0</td>\n    </tr>\n    <tr>\n      <th>Bertone ER et al. (2001) [PMID: 11227928]</th>\n      <td>-0.4574</td>\n      <td>0.2362</td>\n      <td>-0.9204</td>\n      <td>0.0056</td>\n      <td>327.0</td>\n      <td>3456.0</td>\n    </tr>\n    <tr>\n      <th>McCann SE et al. (2001) [PMID: 11588898]</th>\n      <td>-0.3703</td>\n      <td>0.1803</td>\n      <td>-0.7237</td>\n      <td>-0.0170</td>\n      <td>496.0</td>\n      <td>1921.0</td>\n    </tr>\n    <tr>\n      <th>Silvera SA et al. (2006) [PMID: 16492935]</th>\n      <td>-0.0202</td>\n      <td>0.0494</td>\n      <td>-0.1169</td>\n      <td>0.0765</td>\n      <td>6000.0</td>\n      <td>1000000.0</td>\n    </tr>\n    <tr>\n      <th>Koushik A et al. (2015) [PMID: 26169298]</th>\n      <td>0.0198</td>\n      <td>0.0250</td>\n      <td>-0.0293</td>\n      <td>0.0689</td>\n      <td>1973.0</td>\n      <td>501857.0</td>\n    </tr>\n    <tr>\n      <th>Fairfield KM et al. (2001) [PMID: 11745286]</th>\n      <td>0.0392</td>\n      <td>0.1889</td>\n      <td>-0.3311</td>\n      <td>0.4095</td>\n      <td>301.0</td>\n      <td>80326.0</td>\n    </tr>\n    <tr>\n      <th>Zhang M et al. (2004) [PMID: 14751177]</th>\n      <td>0.3898</td>\n      <td>0.2260</td>\n      <td>-0.0531</td>\n      <td>0.8328</td>\n      <td>254.0</td>\n      <td>906.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 0.95,
         "ci_low": 0.83,
@@ -404,7 +404,7 @@
                 "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled analysis of 7 studies yielded an effect size of 0.95 (95% CI: 0.83\u20131.08), indicating no statistically significant association between Vitamin A and ovarian cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by substantial heterogeneity (I\u00b2 = 61.72%), reflecting considerable variability across studies."
+        "results_interpretation": "The pooled analysis of 7 studies yielded an effect size of 0.95 (95% CI: 0.83\u20131.08), indicating no statistically significant association between vitamin_a and ovarian cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by substantial heterogeneity (I\u00b2 = 61.72%), reflecting considerable variability across studies."
     },
     "screening_stats": {
         "llm_screened_out": 177,
@@ -424,8 +424,8 @@
         },
         "extracted": 9
     },
-    "plot_url": "static/vitamin_a/forest_ovarian_cancer_incidence_primary.png?t=2597",
-    "funnel_plot_url": "static/vitamin_a/funnel_ovarian_cancer_incidence_primary.png?t=2549",
-    "baujat_plot_url": "static\\vitamin_a\\baujat_ovarian_cancer_incidence_primary.png?t=2239",
+    "plot_url": "static/vitamin_a/forest_ovarian_cancer_incidence_primary.png?t=3527",
+    "funnel_plot_url": "static/vitamin_a/funnel_ovarian_cancer_incidence_primary.png?t=6054",
+    "baujat_plot_url": "static\\vitamin_a\\baujat_ovarian_cancer_incidence_primary.png?t=12",
     "last_run": "2026-06-22 13:01:07"
 }

@@ -99,7 +99,7 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Jeong NH et al. (2009) [PMID: 19266359]</th>\n      <td>-2.282</td>\n      <td>0.5931</td>\n      <td>-3.4445</td>\n      <td>-1.1196</td>\n      <td>45.0</td>\n      <td>180</td>\n    </tr>\n    <tr>\n      <th>Koushik A et al. (2006) [PMID: 16823847]</th>\n      <td>0.010</td>\n      <td>0.0202</td>\n      <td>-0.0297</td>\n      <td>0.0496</td>\n      <td>2012.0</td>\n      <td>521911</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Jeong NH et al. (2009) [PMID: 19266359]</th>\n      <td>-2.282</td>\n      <td>0.5931</td>\n      <td>-3.4445</td>\n      <td>-1.1196</td>\n      <td>45.0</td>\n      <td>180.0</td>\n    </tr>\n    <tr>\n      <th>Koushik A et al. (2006) [PMID: 16823847]</th>\n      <td>0.010</td>\n      <td>0.0202</td>\n      <td>-0.0297</td>\n      <td>0.0496</td>\n      <td>2012.0</td>\n      <td>521911.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 0.35,
         "ci_low": 0.04,
@@ -131,8 +131,8 @@
         },
         "extracted": 3
     },
-    "plot_url": "static/lycopene/forest_ovarian_cancer_incidence_primary.png?t=5302",
-    "funnel_plot_url": "static/lycopene/funnel_ovarian_cancer_incidence_primary.png?t=7899",
+    "plot_url": "static/lycopene/forest_ovarian_cancer_incidence_primary.png?t=5528",
+    "funnel_plot_url": "static/lycopene/funnel_ovarian_cancer_incidence_primary.png?t=9707",
     "baujat_plot_url": null,
     "last_run": "2026-06-16 20:48:19"
 }

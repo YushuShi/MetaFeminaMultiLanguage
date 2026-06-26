@@ -51,7 +51,7 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>None</td>\n      <td>989</td>\n      <td>1.796566</td>\n      <td>0.655933</td>\n      <td>4.199853</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>NaN</td>\n      <td>989</td>\n      <td>1.796566</td>\n      <td>0.655933</td>\n      <td>4.199853</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 1.8,
         "ci_low": 0.66,
@@ -75,8 +75,8 @@
         },
         "extracted": 1
     },
-    "plot_url": "static/iodine/forest_ovarian_cancer_incidence_primary.png?t=4109",
-    "funnel_plot_url": "static/iodine/funnel_ovarian_cancer_incidence_primary.png?t=8100",
+    "plot_url": "static/iodine/forest_ovarian_cancer_incidence_primary.png?t=2942",
+    "funnel_plot_url": "static/iodine/funnel_ovarian_cancer_incidence_primary.png?t=6198",
     "baujat_plot_url": null,
     "last_run": "2026-06-16 20:08:50"
 }

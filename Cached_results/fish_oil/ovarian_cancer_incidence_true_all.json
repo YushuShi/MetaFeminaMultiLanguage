@@ -51,7 +51,7 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>None</td>\n      <td>66450</td>\n      <td>0.902912</td>\n      <td>0.848758</td>\n      <td>0.965018</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>NaN</td>\n      <td>66450</td>\n      <td>0.902912</td>\n      <td>0.848758</td>\n      <td>0.965018</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 0.9,
         "ci_low": 0.85,
@@ -75,8 +75,8 @@
         },
         "extracted": 1
     },
-    "plot_url": "static/fish_oil/forest_ovarian_cancer_incidence_primary.png?t=2381",
-    "funnel_plot_url": "static/fish_oil/funnel_ovarian_cancer_incidence_primary.png?t=2998",
+    "plot_url": "static/fish_oil/forest_ovarian_cancer_incidence_primary.png?t=7785",
+    "funnel_plot_url": "static/fish_oil/funnel_ovarian_cancer_incidence_primary.png?t=8646",
     "baujat_plot_url": null,
     "last_run": "2026-06-16 19:23:20"
 }

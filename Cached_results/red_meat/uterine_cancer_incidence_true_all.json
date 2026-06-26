@@ -237,7 +237,7 @@
                 "is_significant": true
             }
         ],
-        "results_interpretation": "The pooled analysis of 4 studies yielded an overall effect size of 1.44 (95% CI: 1.21\u20131.7), suggesting that red meat is associated with a higher risk of uterine cancer. These findings were supported by moderate between-study heterogeneity (I\u00b2 = 41.23%), suggesting some variability in the results across studies."
+        "results_interpretation": "The pooled analysis of 4 studies yielded an overall effect size of 1.44 (95% CI: 1.21\u20131.7), suggesting that red_meat is associated with a higher risk of uterine cancer. These findings were supported by moderate between-study heterogeneity (I\u00b2 = 41.23%), suggesting some variability in the results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 28,
@@ -256,8 +256,8 @@
         },
         "extracted": 6
     },
-    "plot_url": "static/red_meat/forest_uterine_cancer_incidence_primary.png?t=4600",
-    "funnel_plot_url": "static/red_meat/funnel_uterine_cancer_incidence_primary.png?t=3083",
-    "baujat_plot_url": "static\\red_meat\\baujat_uterine_cancer_incidence_primary.png?t=3387",
+    "plot_url": "static/red_meat/forest_uterine_cancer_incidence_primary.png?t=551",
+    "funnel_plot_url": "static/red_meat/funnel_uterine_cancer_incidence_primary.png?t=1122",
+    "baujat_plot_url": "static\\red_meat\\baujat_uterine_cancer_incidence_primary.png?t=1265",
     "last_run": "2026-06-15 15:09:46"
 }

@@ -111,7 +111,7 @@
         "eggers_p": null,
         "funnel_interpretation": "Insufficient studies to perform formal publication bias testing.",
         "loo_results": [],
-        "results_interpretation": "The pooled analysis of 2 studies yielded an overall effect size of 0.59 (95% CI: 0.46\u20130.75), suggesting that Vitamin E is associated with a lower risk of uterine cancer. These findings were supported by low between-study heterogeneity (I\u00b2 = 23.01%), indicating consistent findings across the included studies."
+        "results_interpretation": "The pooled analysis of 2 studies yielded an overall effect size of 0.59 (95% CI: 0.46\u20130.75), suggesting that vitamin_e is associated with a lower risk of uterine cancer. These findings were supported by low between-study heterogeneity (I\u00b2 = 23.01%), indicating consistent findings across the included studies."
     },
     "screening_stats": {
         "llm_screened_out": 14,
@@ -130,8 +130,8 @@
         },
         "extracted": 6
     },
-    "plot_url": "static/vitamin_e/forest_uterine_cancer_incidence_primary.png?t=5926",
-    "funnel_plot_url": "static/vitamin_e/funnel_uterine_cancer_incidence_primary.png?t=1474",
+    "plot_url": "static/vitamin_e/forest_uterine_cancer_incidence_primary.png?t=5624",
+    "funnel_plot_url": "static/vitamin_e/funnel_uterine_cancer_incidence_primary.png?t=5521",
     "baujat_plot_url": null,
     "last_run": "2026-06-15 16:19:04"
 }

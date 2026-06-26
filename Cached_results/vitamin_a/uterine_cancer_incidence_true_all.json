@@ -564,7 +564,7 @@
                 "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled analysis of 10 studies yielded an effect size of 0.76 (95% CI: 0.54\u20131.07), indicating no statistically significant association between Vitamin A and uterine cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 84.08%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 10 studies yielded an effect size of 0.76 (95% CI: 0.54\u20131.07), indicating no statistically significant association between vitamin_a and uterine cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 84.08%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 158,
@@ -583,8 +583,8 @@
         },
         "extracted": 18
     },
-    "plot_url": "static/vitamin_a/forest_uterine_cancer_incidence_primary.png?t=8269",
-    "funnel_plot_url": "static/vitamin_a/funnel_uterine_cancer_incidence_primary.png?t=9905",
-    "baujat_plot_url": "static\\vitamin_a\\baujat_uterine_cancer_incidence_primary.png?t=6803",
+    "plot_url": "static/vitamin_a/forest_uterine_cancer_incidence_primary.png?t=4513",
+    "funnel_plot_url": "static/vitamin_a/funnel_uterine_cancer_incidence_primary.png?t=8494",
+    "baujat_plot_url": "static\\vitamin_a\\baujat_uterine_cancer_incidence_primary.png?t=5423",
     "last_run": "2026-06-15 15:46:47"
 }

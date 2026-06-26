@@ -572,7 +572,7 @@
                 "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled analysis of 10 studies yielded an effect size of 0.91 (95% CI: 0.72\u20131.14), indicating no statistically significant association between folic acid and ovarian cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 77.65%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 10 studies yielded an effect size of 0.91 (95% CI: 0.72\u20131.14), indicating no statistically significant association between folic_acid and ovarian cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 77.65%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 190,
@@ -591,8 +591,8 @@
         },
         "extracted": 11
     },
-    "plot_url": "static/folic_acid/forest_ovarian_cancer_incidence_primary.png?t=4102",
-    "funnel_plot_url": "static/folic_acid/funnel_ovarian_cancer_incidence_primary.png?t=595",
-    "baujat_plot_url": "static\\folic_acid\\baujat_ovarian_cancer_incidence_primary.png?t=9897",
+    "plot_url": "static/folic_acid/forest_ovarian_cancer_incidence_primary.png?t=3251",
+    "funnel_plot_url": "static/folic_acid/funnel_ovarian_cancer_incidence_primary.png?t=9573",
+    "baujat_plot_url": "static\\folic_acid\\baujat_ovarian_cancer_incidence_primary.png?t=6723",
     "last_run": "2026-06-16 19:45:03"
 }

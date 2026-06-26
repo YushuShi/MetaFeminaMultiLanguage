@@ -539,7 +539,7 @@
         "i2": 60.06,
         "tau2": 0.02,
         "eggers_p": 0.03724718685758603,
-        "funnel_interpretation": "The significant funnel plot asymmetry (egger's p=0.0372) indicates substantial publication bias in this meta-analysis on Vitamin D and uterine cancer. This specific pattern suggests that smaller studies with smaller or null effects may be underrepresented, compromising the reliability of the pooled estimate and potentially leading to an overestimation of the true association.",
+        "funnel_interpretation": "The significant funnel plot asymmetry (egger's p=0.0372) indicates substantial publication bias in this meta-analysis on vitamin_d and uterine cancer. This specific pattern suggests that smaller studies with smaller or null effects may be underrepresented, compromising the reliability of the pooled estimate and potentially leading to an overestimation of the true association.",
         "loo_results": [
             {
                 "omitted": "Salazar-Martinez E et al. (2005) [PMID: 16174249]",
@@ -619,7 +619,7 @@
                 "is_significant": true
             }
         ],
-        "results_interpretation": "The pooled analysis of 11 studies yielded an overall effect size of 0.83 (95% CI: 0.73\u20130.95), suggesting that Vitamin D is associated with a lower risk of uterine cancer. However, this association should be interpreted with caution, as there was substantial between-study heterogeneity (I\u00b2 = 60.06%), reflecting considerable variability across studies."
+        "results_interpretation": "The pooled analysis of 11 studies yielded an overall effect size of 0.83 (95% CI: 0.73\u20130.95), suggesting that vitamin_d is associated with a lower risk of uterine cancer. However, this association should be interpreted with caution, as there was substantial between-study heterogeneity (I\u00b2 = 60.06%), reflecting considerable variability across studies."
     },
     "screening_stats": {
         "llm_screened_out": 61,
@@ -638,8 +638,8 @@
         },
         "extracted": 12
     },
-    "plot_url": "static/vitamin_d/forest_uterine_cancer_incidence_primary.png?t=3833",
-    "funnel_plot_url": "static/vitamin_d/funnel_uterine_cancer_incidence_primary.png?t=2629",
-    "baujat_plot_url": "static\\vitamin_d\\baujat_uterine_cancer_incidence_primary.png?t=3925",
+    "plot_url": "static/vitamin_d/forest_uterine_cancer_incidence_primary.png?t=8538",
+    "funnel_plot_url": "static/vitamin_d/funnel_uterine_cancer_incidence_primary.png?t=668",
+    "baujat_plot_url": "static\\vitamin_d\\baujat_uterine_cancer_incidence_primary.png?t=5363",
     "last_run": "2026-06-15 16:12:32"
 }
