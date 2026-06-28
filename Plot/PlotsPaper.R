@@ -2,7 +2,7 @@
 # Combined analysis plots — Forest plots + Scatter diagnostic plots
 # Data: exposures_meta_analysis_final_combined.xlsx
 # =============================================================================
-setwd('C:/Users/mde4023/Downloads/MetaFemina/Plot')
+setwd('C:/Users/mraga/Downloads/MetaFemina/Plot')
 library(tidyverse)
 library(scales)
 library(readxl)
