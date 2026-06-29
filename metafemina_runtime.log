@@ -6623,3 +6623,125 @@
 2026-06-29 15:24:35 ============================================================
 
 2026-06-29 15:24:35 [MetaFemina] Analyze complete in 0.0s: studies=12, error=None
+2026-06-29 15:44:16 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Mediterranean diet, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-29 15:44:16 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\ovarian_cancer_incidence_true_core.json
+2026-06-29 15:44:16 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\ovarian_cancer_incidence_true_core.json
+2026-06-29 15:44:16 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\ovarian_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-29 15:44:16 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\ovarian_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-29 15:44:16 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\ovarian_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-29 15:44:16 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\ovarian_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-29 15:44:16 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\ovarian_cancer_incidence_true_all.json
+2026-06-29 15:44:16 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\ovarian_cancer_incidence_true_all.json
+2026-06-29 15:44:16 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\ovarian_cancer_incidence_true_all.json
+2026-06-29 15:44:16 
+============================================================
+2026-06-29 15:44:16 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-29 15:44:16   - Total Articles Fetched from PubMed: 64
+2026-06-29 15:44:16   - Articles Remaining After Pre-filter: 64
+2026-06-29 15:44:16   - LLM Screening:
+2026-06-29 15:44:16     * Screened IN / Accepted:   61
+2026-06-29 15:44:16     * Screened OUT / Rejected:  3
+2026-06-29 15:44:16     * Consensus Bypassed:       0
+2026-06-29 15:44:16   - Final Extracted Studies: 1
+2026-06-29 15:44:16 ============================================================
+
+2026-06-29 15:44:16 [MetaFemina] Analyze complete in 0.0s: studies=1, error=None
+2026-06-29 15:44:20 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Mediterranean diet, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-29 15:44:20 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\uterine_cancer_incidence_true_core.json
+2026-06-29 15:44:20 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\uterine_cancer_incidence_true_core.json
+2026-06-29 15:44:20 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\uterine_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-29 15:44:20 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\uterine_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-29 15:44:20 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\uterine_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-29 15:44:20 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\uterine_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-29 15:44:20 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\uterine_cancer_incidence_true_all.json
+2026-06-29 15:44:20 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\uterine_cancer_incidence_true_all.json
+2026-06-29 15:44:20 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\mediterranean_diet\uterine_cancer_incidence_true_all.json
+2026-06-29 15:44:20 
+============================================================
+2026-06-29 15:44:20 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-29 15:44:20   - Total Articles Fetched from PubMed: 22
+2026-06-29 15:44:20   - Articles Remaining After Pre-filter: 22
+2026-06-29 15:44:20   - LLM Screening:
+2026-06-29 15:44:20     * Screened IN / Accepted:   17
+2026-06-29 15:44:20     * Screened OUT / Rejected:  5
+2026-06-29 15:44:20     * Consensus Bypassed:       0
+2026-06-29 15:44:20   - Final Extracted Studies: 4
+2026-06-29 15:44:20 ============================================================
+
+2026-06-29 15:44:20 [MetaFemina] Analyze complete in 0.0s: studies=3, error=None
+2026-06-29 15:53:26 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Soy, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-29 15:53:26 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\uterine_cancer_incidence_true_core.json
+2026-06-29 15:53:26 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\uterine_cancer_incidence_true_core.json
+2026-06-29 15:53:26 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\uterine_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-29 15:53:26 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\uterine_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-29 15:53:26 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\uterine_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-29 15:53:26 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\uterine_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-29 15:53:26 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\uterine_cancer_incidence_true_all.json
+2026-06-29 15:53:26 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\uterine_cancer_incidence_true_all.json
+2026-06-29 15:53:26 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\uterine_cancer_incidence_true_all.json
+2026-06-29 15:53:26 
+============================================================
+2026-06-29 15:53:26 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-29 15:53:26   - Total Articles Fetched from PubMed: 118
+2026-06-29 15:53:26   - Articles Remaining After Pre-filter: 125
+2026-06-29 15:53:26   - LLM Screening:
+2026-06-29 15:53:26     * Screened IN / Accepted:   94
+2026-06-29 15:53:26     * Screened OUT / Rejected:  29
+2026-06-29 15:53:26     * Consensus Bypassed:       0
+2026-06-29 15:53:26   - Final Extracted Studies: 10
+2026-06-29 15:53:26 ============================================================
+
+2026-06-29 15:53:26 [MetaFemina] Analyze complete in 0.0s: studies=9, error=None
+2026-06-29 15:53:49 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\breast_cancer_incidence_true_all.json
+2026-06-29 15:53:49 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\uterine_cancer_incidence_true_all.json
+2026-06-29 15:53:50 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\uterine_cancer_incidence_true_all.json
+2026-06-29 15:54:01 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\uterine_cancer_incidence_true_all.json
+2026-06-29 15:54:03 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\uterine_cancer_incidence_true_all.json
+2026-06-29 15:54:34 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\uterine_cancer_incidence_true_all.json
+2026-06-29 15:54:37 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\uterine_cancer_incidence_true_all.json
+2026-06-29 15:54:49 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\uterine_cancer_incidence_true_all.json
+2026-06-29 15:54:51 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\uterine_cancer_incidence_true_all.json
+2026-06-29 15:55:02 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\uterine_cancer_incidence_true_all.json
+2026-06-29 15:55:03 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\uterine_cancer_incidence_true_all.json
+2026-06-29 15:55:23 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\uterine_cancer_incidence_true_all.json
+2026-06-29 15:55:26 [MetaFemina] Updated cache file and regenerated plots for C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\uterine_cancer_incidence_true_all.json
+2026-06-29 15:55:34 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Soy, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-29 15:55:34 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\ovarian_cancer_incidence_true_core.json
+2026-06-29 15:55:34 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\ovarian_cancer_incidence_true_core.json
+2026-06-29 15:55:34 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\ovarian_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-06-29 15:55:34 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\ovarian_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-06-29 15:55:34 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\ovarian_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-06-29 15:55:34 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\ovarian_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-06-29 15:55:34 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\ovarian_cancer_incidence_true_all.json
+2026-06-29 15:55:34 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\ovarian_cancer_incidence_true_all.json
+2026-06-29 15:55:34 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\soy\ovarian_cancer_incidence_true_all.json
+2026-06-29 15:55:34 
+============================================================
+2026-06-29 15:55:34 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-29 15:55:34   - Total Articles Fetched from PubMed: 80
+2026-06-29 15:55:34   - Articles Remaining After Pre-filter: 87
+2026-06-29 15:55:34   - LLM Screening:
+2026-06-29 15:55:34     * Screened IN / Accepted:   67
+2026-06-29 15:55:34     * Screened OUT / Rejected:  20
+2026-06-29 15:55:34     * Consensus Bypassed:       0
+2026-06-29 15:55:34   - Final Extracted Studies: 4
+2026-06-29 15:55:34 ============================================================
+
+2026-06-29 15:55:34 [MetaFemina] Analyze complete in 0.0s: studies=3, error=None
+2026-06-29 15:56:00 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Omega-6 fatty acids, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-06-29 15:56:00 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-6_fatty_acids\ovarian_cancer_incidence_true_core.json
+2026-06-29 15:56:00 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-6_fatty_acids\ovarian_cancer_incidence_true_core.json
+2026-06-29 15:56:00 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-6_fatty_acids\ovarian_cancer_incidence_true_core.json
+2026-06-29 15:56:00 
+============================================================
+2026-06-29 15:56:00 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-06-29 15:56:00   - Total Articles Fetched from PubMed: 12
+2026-06-29 15:56:00   - Articles Remaining After Pre-filter: 12
+2026-06-29 15:56:00   - LLM Screening:
+2026-06-29 15:56:00     * Screened IN / Accepted:   11
+2026-06-29 15:56:00     * Screened OUT / Rejected:  1
+2026-06-29 15:56:00     * Consensus Bypassed:       0
+2026-06-29 15:56:00   - Final Extracted Studies: 2
+2026-06-29 15:56:00 ============================================================
+
+2026-06-29 15:56:00 [MetaFemina] Analyze complete in 0.0s: studies=2, error=None

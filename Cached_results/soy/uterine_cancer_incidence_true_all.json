@@ -145,7 +145,8 @@
                 "confidence_interval": "95% CI = 0.47 to 0.91",
                 "outcome_definition": "489 women diagnosed with incident endometrial cancer were identified through the Surveillance, Epidemiology, and End Results tumor registry linkages",
                 "exposure_definition": "total isoflavone intake (highest vs lowest quintile, \u22657.82 vs <1.59 mg per 1000 kcal/d)"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Paul P et al. (2019) [PMID: 31154549]",
@@ -243,7 +244,8 @@
                 "confidence_interval": "7.349 [5.081-9.454]",
                 "outcome_definition": "incidence of uterine leiomyoma",
                 "exposure_definition": "frequent milk or soybean consumption"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Upson K et al. (2016) [PMID: 26565393]",
@@ -292,7 +294,8 @@
                 "confidence_interval": "adjusted prevalence ratio (aPR) 0.9, 95% CI: 0.7, 1.3",
                 "outcome_definition": "ultrasound-detected fibroids",
                 "exposure_definition": "soy formula feeding during infancy"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Langton CR et al. (2023) [PMID: 36696103]",
@@ -341,7 +344,8 @@
                 "confidence_interval": "95% CI: 0.92, 2.65",
                 "outcome_definition": "to detect fibroids \u22650.5 cm in diameter",
                 "exposure_definition": "Soy formula feeding data was gathered directly from the participants' mothers (89%)."
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "D'Aloisio AA et al. (2010) [PMID: 20194067]",
@@ -390,7 +394,8 @@
                 "confidence_interval": "RR = 1.25; 95% CI, 0.97\u20131.61",
                 "outcome_definition": "self-report of physician-diagnosed fibroids by 35 years of age",
                 "exposure_definition": "soy formula during infancy"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Shen Y et al. (2013) [PMID: 24338469]",
@@ -438,87 +443,46 @@
                 "confidence_interval": "95% confidence interval [CI]: 1.894-3.347",
                 "outcome_definition": "risk of uterine leiomyoma in women",
                 "exposure_definition": "consumption of soybean milk"
-            }
+            },
+            "exclusions": 2
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Goodman MT et al. (1997) [PMID: 9270408]</th>\n      <td>-0.7037</td>\n      <td>0.2760</td>\n      <td>-1.2447</td>\n      <td>-0.1628</td>\n      <td>332.0</td>\n      <td>843.0</td>\n    </tr>\n    <tr>\n      <th>Ollberding NJ et al. (2012) [PMID: 22158125]</th>\n      <td>-0.4155</td>\n      <td>0.1685</td>\n      <td>-0.7459</td>\n      <td>-0.0852</td>\n      <td>489.0</td>\n      <td>46027.0</td>\n    </tr>\n    <tr>\n      <th>Paul P et al. (2019) [PMID: 31154549]</th>\n      <td>-0.2095</td>\n      <td>0.1309</td>\n      <td>-0.4660</td>\n      <td>0.0470</td>\n      <td>312.0</td>\n      <td>30744.0</td>\n    </tr>\n    <tr>\n      <th>Upson K et al. (2016) [PMID: 26565393]</th>\n      <td>-0.1054</td>\n      <td>0.1579</td>\n      <td>-0.4149</td>\n      <td>0.2042</td>\n      <td>345.0</td>\n      <td>1553.0</td>\n    </tr>\n    <tr>\n      <th>Budhathoki S et al. (2015) [PMID: 24941880]</th>\n      <td>0.0184</td>\n      <td>0.0373</td>\n      <td>-0.0547</td>\n      <td>0.0916</td>\n      <td>112.0</td>\n      <td>49121.0</td>\n    </tr>\n    <tr>\n      <th>D'Aloisio AA et al. (2010) [PMID: 20194067]</th>\n      <td>0.2231</td>\n      <td>0.1293</td>\n      <td>-0.0302</td>\n      <td>0.4765</td>\n      <td>-</td>\n      <td>19972.0</td>\n    </tr>\n    <tr>\n      <th>Langton CR et al. (2023) [PMID: 36696103]</th>\n      <td>0.4069</td>\n      <td>0.2404</td>\n      <td>-0.0644</td>\n      <td>0.8781</td>\n      <td>269.0</td>\n      <td>1121.0</td>\n    </tr>\n    <tr>\n      <th>Shen Y et al. (2013) [PMID: 24338469]</th>\n      <td>0.7434</td>\n      <td>0.1054</td>\n      <td>0.5368</td>\n      <td>0.9499</td>\n      <td>600.0</td>\n      <td>1200.0</td>\n    </tr>\n    <tr>\n      <th>Gao M et al. (2018) [PMID: 30313022]</th>\n      <td>1.3928</td>\n      <td>0.0778</td>\n      <td>1.2402</td>\n      <td>1.5453</td>\n      <td>213.0</td>\n      <td>1273.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Goodman MT et al. (1997) [PMID: 9270408]</th>\n      <td>-0.7037</td>\n      <td>0.2760</td>\n      <td>-1.2447</td>\n      <td>-0.1628</td>\n      <td>332.0</td>\n      <td>843.0</td>\n    </tr>\n    <tr>\n      <th>Paul P et al. (2019) [PMID: 31154549]</th>\n      <td>-0.2095</td>\n      <td>0.1309</td>\n      <td>-0.4660</td>\n      <td>0.0470</td>\n      <td>312.0</td>\n      <td>30744.0</td>\n    </tr>\n    <tr>\n      <th>Budhathoki S et al. (2015) [PMID: 24941880]</th>\n      <td>0.0184</td>\n      <td>0.0373</td>\n      <td>-0.0547</td>\n      <td>0.0916</td>\n      <td>112.0</td>\n      <td>49121.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 1.18,
-        "ci_low": 0.76,
-        "ci_upp": 1.83,
-        "pi_low": 0.23,
-        "pi_upp": 6.08,
+        "pooled_es": 0.82,
+        "ci_low": 0.6,
+        "ci_upp": 1.12,
+        "pi_low": 0.02,
+        "pi_upp": 29.77,
         "interpretation": "Not statistically significant",
-        "i2": 97.51,
-        "tau2": 0.43,
-        "eggers_p": 0.9295959990787233,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.9296). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "i2": 78.31,
+        "tau2": 0.05,
+        "eggers_p": 0.06757314799103471,
+        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.0676). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
         "loo_results": [
             {
                 "omitted": "Goodman MT et al. (1997) [PMID: 9270408]",
-                "pooled_es": 1.2988427132529738,
-                "ci_low": 0.8622940895235632,
-                "ci_upp": 1.9564002748788965,
-                "is_significant": false
-            },
-            {
-                "omitted": "Ollberding NJ et al. (2012) [PMID: 22158125]",
-                "pooled_es": 1.267008006579594,
-                "ci_low": 0.8140785166863332,
-                "ci_upp": 1.9719342248105618,
+                "pooled_es": 0.9408072855602082,
+                "ci_low": 0.7603967074891623,
+                "ci_upp": 1.1640218057832432,
                 "is_significant": false
             },
             {
                 "omitted": "Paul P et al. (2019) [PMID: 31154549]",
-                "pooled_es": 1.2355265058757796,
-                "ci_low": 0.7803919940918174,
-                "ci_upp": 1.9561012392215915,
-                "is_significant": false
-            },
-            {
-                "omitted": "Upson K et al. (2016) [PMID: 26565393]",
-                "pooled_es": 1.2186984094724167,
-                "ci_low": 0.7656606338832216,
-                "ci_upp": 1.9397964940654435,
+                "pooled_es": 0.7476111112807328,
+                "ci_low": 0.3710985617860026,
+                "ci_upp": 1.5061291830948136,
                 "is_significant": false
             },
             {
                 "omitted": "Budhathoki S et al. (2015) [PMID: 24941880]",
-                "pooled_es": 1.1971723960431164,
-                "ci_low": 0.7481031337909829,
-                "ci_upp": 1.9158077023214999,
-                "is_significant": false
-            },
-            {
-                "omitted": "D'Aloisio AA et al. (2010) [PMID: 20194067]",
-                "pooled_es": 1.1685163068507682,
-                "ci_low": 0.7296188854175621,
-                "ci_upp": 1.8714295732555228,
-                "is_significant": false
-            },
-            {
-                "omitted": "Langton CR et al. (2023) [PMID: 36696103]",
-                "pooled_es": 1.1460483352470152,
-                "ci_low": 0.7202931553261082,
-                "ci_upp": 1.8234614295728098,
-                "is_significant": false
-            },
-            {
-                "omitted": "Shen Y et al. (2013) [PMID: 24338469]",
-                "pooled_es": 1.0927245916008015,
-                "ci_low": 0.7022252168481812,
-                "ci_upp": 1.7003761819440437,
-                "is_significant": false
-            },
-            {
-                "omitted": "Gao M et al. (2018) [PMID: 30313022]",
-                "pooled_es": 1.0205285574091814,
-                "ci_low": 0.7488992358767408,
-                "ci_upp": 1.3906791282386608,
+                "pooled_es": 0.6724105692294169,
+                "ci_low": 0.42026839526436244,
+                "ci_upp": 1.075826730504016,
                 "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled analysis of 9 studies yielded an effect size of 1.18 (95% CI: 0.76\u20131.83), indicating no statistically significant association between soy and uterine cancer. Although the point estimate suggests a potential positive relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 97.51%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 3 studies yielded an effect size of 0.82 (95% CI: 0.6\u20131.12), indicating no statistically significant association between soy and uterine cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 78.31%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 29,
@@ -537,8 +501,8 @@
         },
         "extracted": 10
     },
-    "plot_url": "static/soy/forest_uterine_cancer_incidence_primary.png?t=364",
-    "funnel_plot_url": "static/soy/funnel_uterine_cancer_incidence_primary.png?t=2018",
-    "baujat_plot_url": "static\\soy\\baujat_uterine_cancer_incidence_primary.png?t=1588",
+    "plot_url": "static/soy/forest_uterine_cancer_incidence_primary.png?t=5332",
+    "funnel_plot_url": "static/soy/funnel_uterine_cancer_incidence_primary.png?t=1146",
+    "baujat_plot_url": "static\\soy\\baujat_uterine_cancer_incidence_primary.png?t=4265",
     "last_run": "2026-06-15 15:28:11"
 }

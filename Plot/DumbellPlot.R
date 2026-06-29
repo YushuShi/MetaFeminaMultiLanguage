@@ -31,7 +31,7 @@ dat_uterine   <- read_cancer("exposures_meta_analysis_uterine_combined.xlsx",   
 dat_ovarian   <- read_cancer("exposures_meta_analysis_ovarian_combined.xlsx",     "Ovarian")
 
 dat_all <- bind_rows(dat_breast, dat_uterine, dat_ovarian)
-
+View(dat_all)
 # =============================================================================
 # 2. Drop single-study exposures, then keep only those in 2+ cancer datasets
 # =============================================================================
@@ -319,16 +319,18 @@ p <- ggplot() +
     data = dat_plot,
     aes(x = ci_low, xend = ci_high,
         y = Exposure_label, yend = Exposure_label,
-        color = cancer),
-    linewidth = 0.45, alpha = 0.5, lineend = "round"
+        color = cancer, group = cancer),
+    linewidth = 0.45, alpha = 0.5, lineend = "round",
+    position = position_dodge(width = 0.4)
   ) +
   # Main dots
   geom_point(
     data = dat_plot,
     aes(x = pooled_es_num, y = Exposure_label,
         color = cancer, size = n_studies,         # <-- now driven by n_studies
-        shape = sig),
-    alpha = 0.92
+        shape = sig, group = cancer),
+    alpha = 0.92,
+    position = position_dodge(width = 0.4)
   ) +
   # Per-exposure group label on right margin (one label per exposure, deduplicated to match factor levels)
   geom_text(
