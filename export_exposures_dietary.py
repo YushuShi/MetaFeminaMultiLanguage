@@ -174,7 +174,8 @@ def run_export(disease_key, disease_config):
     ]
     export_df = results_df[columns_to_export]
 
-    output_file = disease_config['output_file']
+    os.makedirs('Plot', exist_ok=True)
+    output_file = os.path.join('Plot', disease_config['output_file'])
     export_df.to_excel(output_file, index=False)
     print(f"  OK Exported {len(export_df)} exposures -> {output_file}")
 

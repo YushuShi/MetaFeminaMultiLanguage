@@ -3450,7 +3450,9 @@
         "submissions": [],
         "consensus_data": null,
         "legacy_count": 0,
-        "context_exclusions": {},
+        "context_exclusions": {
+            "breast_cancer_dairy_incidence": 2
+        },
         "contexts": {
             "breast_cancer_fermented_foods_incidence": {
                 "submissions": [
@@ -3559,6 +3561,208 @@
         "legacy_count": 0,
         "context_exclusions": {
             "breast_cancer_melatonin_incidence": 2
+        }
+    },
+    "11525591": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_dairy_incidence": 2
+        }
+    },
+    "15342449": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_dairy_incidence": 2
+        }
+    },
+    "32885537": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_dairy_incidence": 2
+        }
+    },
+    "33964859": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_dairy_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 0.9,
+                            "Lower CI": 0.83,
+                            "Upper CI": 0.98,
+                            "Cases": 37861,
+                            "Sample Size": "over 1 million",
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "per 350 mg/d increase",
+                            "exposure_measurement_type": "dietary_intake"
+                        },
+                        "timestamp": "2026-06-29 10:48:19"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.9,
+                            "Lower CI": 0.83,
+                            "Upper CI": 0.98,
+                            "Cases": 37861,
+                            "Sample Size": "over 1 million",
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "per 350 mg/d increase",
+                            "exposure_measurement_type": "dietary_intake"
+                        },
+                        "timestamp": "2026-06-29 10:48:20"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 0.9,
+                            "Lower CI": 0.83,
+                            "Upper CI": 0.98,
+                            "Cases": 37861,
+                            "Sample Size": "over 1 million",
+                            "Design": "Cohort",
+                            "Timing": "Prospective",
+                            "Comparison Type": "per 350 mg/d increase",
+                            "exposure_measurement_type": "dietary_intake"
+                        },
+                        "timestamp": "2026-06-29 10:48:21"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 0.9,
+                    "Lower CI": 0.83,
+                    "Upper CI": 0.98,
+                    "Cases": 37861,
+                    "Sample Size": "over 1 million",
+                    "Design": "Cohort",
+                    "Timing": "Prospective",
+                    "Comparison Type": "per 350 mg/d increase",
+                    "exposure_measurement_type": "dietary_intake"
+                }
+            }
+        }
+    },
+    "19491389": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_dairy_incidence": 2
+        }
+    },
+    "12324303": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_dairy_incidence": 2
+        }
+    },
+    "12865454": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_dairy_incidence": 2
+        }
+    },
+    "22729968": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_dairy_incidence": 2
+        }
+    },
+    "29071721": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_dairy_incidence": 2
+        }
+    },
+    "35083630": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {},
+        "contexts": {
+            "breast_cancer_dairy_incidence": {
+                "submissions": [
+                    {
+                        "data": {
+                            "Effect Size": 1.76,
+                            "Lower CI": 1.16,
+                            "Upper CI": 2.65,
+                            "Cases": 350,
+                            "Sample Size": 1050,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "Highest vs Lowest (high-fat dairy intake)",
+                            "exposure_measurement_type": "dietary_intake"
+                        },
+                        "timestamp": "2026-06-29 11:11:14"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 1.76,
+                            "Lower CI": 1.16,
+                            "Upper CI": 2.65,
+                            "Cases": 350,
+                            "Sample Size": 1050,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "Highest vs Lowest (high-fat dairy intake)",
+                            "exposure_measurement_type": "dietary_intake"
+                        },
+                        "timestamp": "2026-06-29 11:11:15"
+                    },
+                    {
+                        "data": {
+                            "Effect Size": 1.76,
+                            "Lower CI": 1.16,
+                            "Upper CI": 2.65,
+                            "Cases": 350,
+                            "Sample Size": 1050,
+                            "Design": "Case-Control",
+                            "Timing": "Retrospective",
+                            "Comparison Type": "Highest vs Lowest (high-fat dairy intake)",
+                            "exposure_measurement_type": "dietary_intake"
+                        },
+                        "timestamp": "2026-06-29 11:11:17"
+                    }
+                ],
+                "consensus_data": {
+                    "Effect Size": 1.76,
+                    "Lower CI": 1.16,
+                    "Upper CI": 2.65,
+                    "Cases": 350,
+                    "Sample Size": 1050,
+                    "Design": "Case-Control",
+                    "Timing": "Retrospective",
+                    "Comparison Type": "Highest vs Lowest (high-fat dairy intake)",
+                    "exposure_measurement_type": "dietary_intake"
+                }
+            }
+        }
+    },
+    "30313022": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "uterine_cancer_dairy_incidence": 2
         }
     }
 }

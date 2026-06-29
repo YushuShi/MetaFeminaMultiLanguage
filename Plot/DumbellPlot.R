@@ -2,7 +2,7 @@
 # Multi-outcome comparison: Breast / Uterine / Ovarian cancer
 # Dumbbell plot — colour = cancer type, size = effect size
 # =============================================================================
-
+setwd('C:/Users/mde4023/Downloads/MetaFemina/Plot')
 library(tidyverse)
 library(readxl)
 library(ggrepel)
@@ -43,8 +43,24 @@ shared_exposures <- dat_all %>%
   filter(n >= 2) %>%
   pull(Exposure)
 
-dat_plot <- dat_all %>%
-  filter(Exposure %in% shared_exposures, n_studies > 1)   # apply both filters
+dat_pre_filter <- dat_all %>%
+  filter(Exposure %in% shared_exposures, n_studies > 1)
+
+# ── Diagnostic: non-positive values that will cause NaN on log scale ──────────
+bad_values <- dat_pre_filter %>%
+  filter(pooled_es_num <= 0 | ci_low <= 0 | ci_high <= 0 |
+           is.na(pooled_es_num) | is.na(ci_low) | is.na(ci_high)) %>%
+  select(Exposure, cancer, pooled_es_num, ci_low, ci_high)
+
+if (nrow(bad_values) > 0) {
+  message("\n⚠️  WARNING 1 — Rows dropped (non-positive / NA values on log scale):")
+  print(bad_values, n = Inf)
+} else {
+  message("✅  No non-positive / NA values found — Warning 1 will not occur.")
+}
+
+dat_plot <- dat_pre_filter %>%
+  filter(pooled_es_num > 0, ci_low > 0, ci_high > 0)          # drop non-positive values (log scale requires > 0)
 
 # =============================================================================
 # 3. Group map & prettify (reuse from forest script)
@@ -55,10 +71,10 @@ group_map <- tribble(
   "eggs",                     "Dietary Patterns",
   "dairy",                    "Dietary Patterns",
   "red_meat",             "Dietary Patterns",
-  "fermented_foods",          "Dietary Patterns",
-  "skyr",                     "Dietary Patterns",
+  "fermented_foods",          "Fermented Foods & Probiotics",
+  "skyr",                     "Fermented Foods & Probiotics",
   "hemp_seeds",               "Fatty Acids & Lipids",
-  "kefir",                    "Dietary Patterns",
+  "kefir",                    "Fermented Foods & Probiotics",
   "legumes",                  "Fruits & Vegetables",
   "chia_seeds",               "Fatty Acids & Lipids",
   "oats",                     "Dietary Patterns",
@@ -125,7 +141,71 @@ group_map <- tribble(
   "vitamin_b3",               "B Vitamins",
   "omega-6_fatty_acids",      "Fatty Acids & Lipids",
   "ginkgo",                   "Herbal & Botanical",
-  "coenzyme_q10",             "Antioxidants"
+  "coenzyme_q10",             "Antioxidants",
+  "sauerkraut",               "Fermented Foods & Probiotics",
+  "red_clover",               "Phytoestrogens",
+  "black_cohosh",             "Herbal & Botanical",
+  "n-acetylcysteine",         "Antioxidants",
+  "miso",                     "Fermented Foods & Probiotics",
+  "manganese",                "Minerals & Trace Elements",
+  "yogurt",                   "Fermented Foods & Probiotics",
+  "glucosamine",              "Metabolites & Amino Acids",
+  "sage",                     "Herbal & Botanical",
+  "pickled_vegetables",       "Fermented Foods & Probiotics",
+  "lactobacillus",            "Fermented Foods & Probiotics"
+)
+
+group_order <- c(
+  "Carotenoids",
+  "Vitamins A, C, D, E",
+  "B Vitamins",
+  "Antioxidants",
+  "Minerals & Trace Elements",
+  "Polyphenols & Flavonoids",
+  "Fruits & Vegetables",
+  "Fermented Foods & Probiotics",
+  "Fatty Acids & Lipids",
+  "Phytoestrogens",
+  "Herbal & Botanical",
+  "Dietary Patterns",
+  "Metabolites & Amino Acids",
+  "Hormones & Endogenous"
+)
+
+group_colors <- c(
+  "B Vitamins"               = "#0057B8",
+  "Carotenoids"              = "#E55300",
+  "Minerals & Trace Elements"= "#007C7C",
+  "Fruits & Vegetables"      = "#2E7D32",
+  "Vitamins A, C, D, E"     = "#C79000",
+  "Polyphenols & Flavonoids" = "#6A0DAD",
+  "Fermented Foods & Probiotics" = "#00838F",
+  "Fatty Acids & Lipids"     = "#B5001F",
+  "Phytoestrogens"           = "#7B4A00",
+  "Dietary Patterns"         = "#37474F",
+  "Herbal & Botanical"       = "#00695C",
+  "Metabolites & Amino Acids"= "#880E4F",
+  "Hormones & Endogenous"    = "#4527A0",
+  "Antioxidants"             = "#1565C0",
+  "Other"                    = "#424242"
+)
+
+group_bg <- c(
+  "B Vitamins"               = "#E3EEFA",
+  "Carotenoids"              = "#FDEEE6",
+  "Minerals & Trace Elements"= "#DFF2F2",
+  "Fruits & Vegetables"      = "#E6F4E6",
+  "Vitamins A, C, D, E"     = "#FBF6E0",
+  "Polyphenols & Flavonoids" = "#F2E8FB",
+  "Fermented Foods & Probiotics" = "#E0F7FA",
+  "Fatty Acids & Lipids"     = "#FBEAED",
+  "Phytoestrogens"           = "#F5EDE6",
+  "Dietary Patterns"         = "#ECEFF1",
+  "Herbal & Botanical"       = "#E0F2EF",
+  "Metabolites & Amino Acids"= "#FCE4EF",
+  "Hormones & Endogenous"    = "#EDE7F6",
+  "Antioxidants"             = "#E3EEF9",
+  "Other"                    = "#F5F5F5"
 )
 
 group_order <- c(
@@ -136,22 +216,6 @@ group_order <- c(
   "Hormones & Endogenous"
 )
 
-group_colors <- c(
-  "B Vitamins"                = "#0057B8",
-  "Carotenoids"               = "#E55300",
-  "Minerals & Trace Elements" = "#007C7C",
-  "Fruits & Vegetables"       = "#2E7D32",
-  "Vitamins A, C, D, E"      = "#C79000",
-  "Polyphenols & Flavonoids"  = "#6A0DAD",
-  "Fatty Acids & Lipids"      = "#B5001F",
-  "Phytoestrogens"            = "#7B4A00",
-  "Dietary Patterns"          = "#37474F",
-  "Herbal & Botanical"        = "#00695C",
-  "Metabolites & Amino Acids" = "#880E4F",
-  "Hormones & Endogenous"     = "#4527A0",
-  "Antioxidants"              = "#1565C0",
-  "Other"                     = "#424242"
-)
 
 prettify_exposure <- function(x) {
   x %>%
@@ -195,6 +259,18 @@ exposure_order <- dat_plot %>%
 dat_plot <- dat_plot %>%
   mutate(Exposure_label = factor(Exposure_label, levels = exposure_order))
 
+# ── Diagnostic: NA Exposure_label → dropped by geom_text ─────────────────────
+bad_labels <- dat_plot %>%
+  filter(is.na(Exposure_label)) %>%
+  select(Exposure, cancer, pooled_es_num)
+
+if (nrow(bad_labels) > 0) {
+  message("\n⚠️  WARNING 2 — Rows with NA Exposure_label (will be dropped by geom_text):")
+  print(bad_labels, n = Inf)
+} else {
+  message("✅  All Exposure_labels resolved — Warning 2 will not occur.")
+}
+
 # Dumbbell connectors: min–max range per exposure across cancers
 dumbbell_range <- dat_plot %>%
   group_by(Exposure_label, Group) %>%
@@ -216,22 +292,6 @@ group_stripes <- dat_plot %>%
   ) %>%
   mutate(fill_col = group_colors[as.character(Group)])
 
-group_bg <- c(
-  "B Vitamins"                = "#E3EEFA",
-  "Carotenoids"               = "#FDEEE6",
-  "Minerals & Trace Elements" = "#DFF2F2",
-  "Fruits & Vegetables"       = "#E6F4E6",
-  "Vitamins A, C, D, E"      = "#FBF6E0",
-  "Polyphenols & Flavonoids"  = "#F2E8FB",
-  "Fatty Acids & Lipids"      = "#FBEAED",
-  "Phytoestrogens"            = "#F5EDE6",
-  "Dietary Patterns"          = "#ECEFF1",
-  "Herbal & Botanical"        = "#E0F2EF",
-  "Metabolites & Amino Acids" = "#FCE4EF",
-  "Hormones & Endogenous"     = "#EDE7F6",
-  "Antioxidants"              = "#E3EEF9",
-  "Other"                     = "#F5F5F5"
-)
 
 # =============================================================================
 # 5. Build plot
@@ -270,14 +330,15 @@ p <- ggplot() +
         shape = sig),
     alpha = 0.92
   ) +
-  # Per-exposure group label on right margin
+  # Per-exposure group label on right margin (one label per exposure, deduplicated to match factor levels)
   geom_text(
     data = dat_plot %>%
-      distinct(Exposure_label, Group),
+      distinct(Exposure_label, Group) %>%
+      filter(!is.na(Exposure_label)),
     aes(x = Inf, y = Exposure_label,
         label = as.character(Group),
         color = Group),
-    hjust = -0.05, size = 4.1, fontface = "italic",    # was 2.8
+    hjust = -0.05, size = 4.1, fontface = "italic",
     inherit.aes = FALSE
   ) +
   scale_color_manual(
@@ -301,7 +362,7 @@ p <- ggplot() +
   coord_cartesian(clip = "off") +
   labs(
     title    = "Comparison of exposure effects across gynaecological cancers",
-    subtitle = "Exposures present in ≥2 cancer datasets  |  filled circle = significant (95% CI excludes 1.0)",
+    subtitle = "Exposures present in >=2 cancer datasets  |  filled circle = significant (95% CI excludes 1.0)",
     x        = "Pooled RR (log scale)",
     y        = NULL
   ) +
