@@ -95,7 +95,8 @@
                 "confidence_interval": "95% confidence interval, 0.1-0.7",
                 "outcome_definition": "risk of cervical dysplasia",
                 "exposure_definition": "plasma micronutrient concentrations"
-            }
+            },
+            "exclusions": 0
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Goodman MT et al. (1998) [PMID: 9641499]</th>\n      <td>-1.1086</td>\n      <td>0.4748</td>\n      <td>-2.0392</td>\n      <td>-0.1779</td>\n      <td>147.0</td>\n      <td>338.0</td>\n    </tr>\n    <tr>\n      <th>Gifkins D et al. (2012) [PMID: 22527166]</th>\n      <td>-0.4274</td>\n      <td>0.2146</td>\n      <td>-0.8481</td>\n      <td>-0.0067</td>\n      <td>417.0</td>\n      <td>812.0</td>\n    </tr>\n  </tbody>\n</table>",
@@ -111,7 +112,7 @@
         "eggers_p": null,
         "funnel_interpretation": "Insufficient studies to perform formal publication bias testing.",
         "loo_results": [],
-        "results_interpretation": "The pooled analysis of 2 studies yielded an overall effect size of 0.53 (95% CI: 0.29\u20130.98), suggesting that antioxidants is associated with a lower risk of uterine cancer. These findings were supported by moderate between-study heterogeneity (I\u00b2 = 41.49%), suggesting some variability in the results across studies."
+        "results_interpretation": "The pooled analysis of 2 studies yielded an overall effect size of 0.53 (95% CI: 0.29\u20130.98), suggesting that antioxidants is associated with a lower risk of ovarian cancer. These findings were supported by moderate between-study heterogeneity (I\u00b2 = 41.49%), suggesting some variability in the results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 7,
@@ -130,8 +131,8 @@
         },
         "extracted": 3
     },
-    "plot_url": "static/antioxidants/forest_uterine_cancer_incidence_primary.png?t=7512",
-    "funnel_plot_url": "static/antioxidants/funnel_uterine_cancer_incidence_primary.png?t=7852",
+    "plot_url": "static/antioxidants/forest_ovarian_cancer_incidence_primary.png?t=1593",
+    "funnel_plot_url": "static/antioxidants/funnel_ovarian_cancer_incidence_primary.png?t=2103",
     "baujat_plot_url": null,
     "last_run": "2026-06-15 12:09:54"
 }

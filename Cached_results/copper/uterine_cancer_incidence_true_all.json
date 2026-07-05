@@ -48,7 +48,8 @@
                 "confidence_interval": "95% CI 0.16-0.78",
                 "outcome_definition": "diagnosis of high-grade cervical neoplasia",
                 "exposure_definition": "copper intrauterine device (Cu IUD)"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Cunzhi H et al. (2003) [PMID: 12958402]",
@@ -144,7 +145,8 @@
                 "confidence_interval": "RR = 1.08; 95% CI: 0.1-3.6",
                 "outcome_definition": "endometrial cancer cases",
                 "exposure_definition": "devices containing copper"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Lassise DL et al. (1991) [PMID: 1800424]",
@@ -192,7 +194,8 @@
                 "confidence_interval": "95% Cl: 0.3-1.2",
                 "outcome_definition": "invasive cervical cancer cases",
                 "exposure_definition": "copper IUD use"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Zhu G et al. (2022) [PMID: 36501056]",
@@ -241,56 +244,20 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Spotnitz ME et al. (2020) [PMID: 31923062]</th>\n      <td>-0.9676</td>\n      <td>0.4041</td>\n      <td>-1.7596</td>\n      <td>-0.1755</td>\n      <td>89.0</td>\n      <td>9288.0</td>\n    </tr>\n    <tr>\n      <th>Lassise DL et al. (1991) [PMID: 1800424]</th>\n      <td>-0.4574</td>\n      <td>0.3228</td>\n      <td>-1.0900</td>\n      <td>0.1752</td>\n      <td>481.0</td>\n      <td>1282.0</td>\n    </tr>\n    <tr>\n      <th>Sturgeon SR et al. (1997) [PMID: 9222773]</th>\n      <td>0.0770</td>\n      <td>0.9142</td>\n      <td>-1.7148</td>\n      <td>1.8687</td>\n      <td>405.0</td>\n      <td>702.0</td>\n    </tr>\n    <tr>\n      <th>Zhu G et al. (2022) [PMID: 36501056]</th>\n      <td>0.8077</td>\n      <td>0.2649</td>\n      <td>0.2884</td>\n      <td>1.3269</td>\n      <td>-</td>\n      <td>12437.0</td>\n    </tr>\n    <tr>\n      <th>Cunzhi H et al. (2003) [PMID: 12958402]</th>\n      <td>1.7812</td>\n      <td>0.1815</td>\n      <td>1.4256</td>\n      <td>2.1369</td>\n      <td>40.0</td>\n      <td>120.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Zhu G et al. (2022) [PMID: 36501056]</th>\n      <td>0.8077</td>\n      <td>0.2649</td>\n      <td>0.2884</td>\n      <td>1.3269</td>\n      <td>-</td>\n      <td>12437.0</td>\n    </tr>\n    <tr>\n      <th>Cunzhi H et al. (2003) [PMID: 12958402]</th>\n      <td>1.7812</td>\n      <td>0.1815</td>\n      <td>1.4256</td>\n      <td>2.1369</td>\n      <td>40.0</td>\n      <td>120.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 1.33,
-        "ci_low": 0.43,
-        "ci_upp": 4.11,
-        "pi_low": 0.02,
-        "pi_upp": 92.85,
-        "interpretation": "Not statistically significant",
-        "i2": 93.71,
-        "tau2": 1.45,
-        "eggers_p": 0.18454863334674906,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.1845). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
-        "loo_results": [
-            {
-                "omitted": "Spotnitz ME et al. (2020) [PMID: 31923062]",
-                "pooled_es": 1.8647827967563748,
-                "ci_low": 0.6964555145192803,
-                "ci_upp": 4.993017940964641,
-                "is_significant": false
-            },
-            {
-                "omitted": "Lassise DL et al. (1991) [PMID: 1800424]",
-                "pooled_es": 1.6362442354763684,
-                "ci_low": 0.5037183468363512,
-                "ci_upp": 5.315063894227083,
-                "is_significant": false
-            },
-            {
-                "omitted": "Sturgeon SR et al. (1997) [PMID: 9222773]",
-                "pooled_es": 1.379625462624637,
-                "ci_low": 0.4076602301178693,
-                "ci_upp": 4.669001969046407,
-                "is_significant": false
-            },
-            {
-                "omitted": "Zhu G et al. (2022) [PMID: 36501056]",
-                "pooled_es": 1.1383387649493746,
-                "ci_low": 0.33911850957706163,
-                "ci_upp": 3.8211277390979608,
-                "is_significant": false
-            },
-            {
-                "omitted": "Cunzhi H et al. (2003) [PMID: 12958402]",
-                "pooled_es": 0.8732545269611802,
-                "ci_low": 0.39652600051242687,
-                "ci_upp": 1.92313610676911,
-                "is_significant": false
-            }
-        ],
-        "results_interpretation": "The pooled analysis of 5 studies yielded an effect size of 1.33 (95% CI: 0.43\u20134.11), indicating no statistically significant association between copper and uterine cancer. Although the point estimate suggests a potential positive relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 93.71%), reflecting highly inconsistent results across studies."
+        "pooled_es": 3.72,
+        "ci_low": 1.43,
+        "ci_upp": 9.65,
+        "pi_low": null,
+        "pi_upp": null,
+        "interpretation": "Statistically significant (increased risk/odds)",
+        "i2": 89.12,
+        "tau2": 0.42,
+        "eggers_p": null,
+        "funnel_interpretation": "Insufficient studies to perform formal publication bias testing.",
+        "loo_results": [],
+        "results_interpretation": "The pooled analysis of 2 studies yielded an overall effect size of 3.72 (95% CI: 1.43\u20139.65), suggesting that copper is associated with a higher risk of uterine cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 89.12%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 91,
@@ -309,8 +276,8 @@
         },
         "extracted": 6
     },
-    "plot_url": "static/copper/forest_uterine_cancer_incidence_primary.png?t=9697",
-    "funnel_plot_url": "static/copper/funnel_uterine_cancer_incidence_primary.png?t=5032",
-    "baujat_plot_url": "static\\copper\\baujat_uterine_cancer_incidence_primary.png?t=1774",
+    "plot_url": "static/copper/forest_uterine_cancer_incidence_primary.png?t=1685",
+    "funnel_plot_url": "static/copper/funnel_uterine_cancer_incidence_primary.png?t=6637",
+    "baujat_plot_url": null,
     "last_run": "2026-06-15 13:02:08"
 }

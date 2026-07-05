@@ -47,7 +47,8 @@
                 "confidence_interval": "95% confidence interval (CI) = 0.18-0.60",
                 "outcome_definition": "histologically confirmed epithelial ovarian cancer cases",
                 "exposure_definition": "highest levels of intake of vitamins E from supplements"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Koushik A et al. (2006) [PMID: 16823847]",
@@ -96,7 +97,8 @@
                 "confidence_interval": "(0.95-1.05)",
                 "outcome_definition": "risk of invasive epithelial ovarian cancer",
                 "exposure_definition": "intakes of alpha-carotene, beta-carotene, beta-cryptoxanthin, lutein/zeaxanthin and lycopene and the risk of invasive epithelial ovarian cancer. ... functions as ... antioxidants."
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Plagens-Rotman K et al. (2018) [PMID: 29575880]",
@@ -192,7 +194,8 @@
                 "confidence_interval": "95% CI: 0.46, 0.97",
                 "outcome_definition": "risk of ovarian cancer",
                 "exposure_definition": "highest intakes of supplemental selenium (>20 \u03bcg/d)"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Gifkins D et al. (2012) [PMID: 22656322]",
@@ -240,59 +243,16 @@
                 "confidence_interval": "95 % CI: 0.20-0.85",
                 "outcome_definition": "newly diagnosed epithelial ovarian cancer",
                 "exposure_definition": "selenium from food sources (OR: 0.41; 95 % CI: 0.20-0.85, for the highest vs. lowest tertile of dietary selenium intake)"
-            }
+            },
+            "exclusions": 2
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Plagens-Rotman K et al. (2018) [PMID: 29575880]</th>\n      <td>-1.1410</td>\n      <td>0.9338</td>\n      <td>-2.9712</td>\n      <td>0.6891</td>\n      <td>-</td>\n      <td>850.0</td>\n    </tr>\n    <tr>\n      <th>Fleischauer AT et al. (2001) [PMID: 11962261]</th>\n      <td>-1.0175</td>\n      <td>0.2920</td>\n      <td>-1.5898</td>\n      <td>-0.4452</td>\n      <td>168.0</td>\n      <td>327.0</td>\n    </tr>\n    <tr>\n      <th>Gifkins D et al. (2012) [PMID: 22656322]</th>\n      <td>-0.8118</td>\n      <td>0.3461</td>\n      <td>-1.4902</td>\n      <td>-0.1334</td>\n      <td>205.0</td>\n      <td>595.0</td>\n    </tr>\n    <tr>\n      <th>Terry PD et al. (2017) [PMID: 28202637]</th>\n      <td>-0.3566</td>\n      <td>0.1728</td>\n      <td>-0.6952</td>\n      <td>-0.0180</td>\n      <td>406.0</td>\n      <td>1038.0</td>\n    </tr>\n    <tr>\n      <th>Koushik A et al. (2006) [PMID: 16823847]</th>\n      <td>0.0000</td>\n      <td>0.0255</td>\n      <td>-0.0500</td>\n      <td>0.0500</td>\n      <td>2012.0</td>\n      <td>521911.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>None</td>\n      <td>850</td>\n      <td>0.319489</td>\n      <td>0.045704</td>\n      <td>1.776717</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.6,
-        "ci_low": 0.38,
-        "ci_upp": 0.95,
-        "pi_low": 0.13,
-        "pi_upp": 2.77,
-        "interpretation": "Statistically significant (decreased risk/odds)",
-        "i2": 82.42,
-        "tau2": 0.18,
-        "eggers_p": 0.020182299179635498,
-        "funnel_interpretation": "The significant funnel plot asymmetry (egger's p=0.0202) indicates substantial publication bias in this meta-analysis on antioxidants and ovarian cancer. This specific pattern suggests that smaller studies with smaller or null effects may be underrepresented, compromising the reliability of the pooled estimate and potentially leading to an overestimation of the true association.",
-        "loo_results": [
-            {
-                "omitted": "Plagens-Rotman K et al. (2018) [PMID: 29575880]",
-                "pooled_es": 0.6237655573608378,
-                "ci_low": 0.3960877965331555,
-                "ci_upp": 0.9823162287634567,
-                "is_significant": true
-            },
-            {
-                "omitted": "Fleischauer AT et al. (2001) [PMID: 11962261]",
-                "pooled_es": 0.7234386875070418,
-                "ci_low": 0.4886133831469695,
-                "ci_upp": 1.0711199337421529,
-                "is_significant": false
-            },
-            {
-                "omitted": "Gifkins D et al. (2012) [PMID: 22656322]",
-                "pooled_es": 0.6496677460249399,
-                "ci_low": 0.3987747303974783,
-                "ci_upp": 1.0584125523812151,
-                "is_significant": false
-            },
-            {
-                "omitted": "Terry PD et al. (2017) [PMID: 28202637]",
-                "pooled_es": 0.5363403512188067,
-                "ci_low": 0.31678591822377494,
-                "ci_upp": 0.9080611094029492,
-                "is_significant": true
-            },
-            {
-                "omitted": "Koushik A et al. (2006) [PMID: 16823847]",
-                "pooled_es": 0.5089136651334619,
-                "ci_low": 0.3608996998991986,
-                "ci_upp": 0.7176318479397784,
-                "is_significant": true
-            }
-        ],
-        "results_interpretation": "The pooled analysis of 5 studies yielded an overall effect size of 0.6 (95% CI: 0.38\u20130.95), suggesting that antioxidants is associated with a lower risk of ovarian cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 82.42%), reflecting highly inconsistent results across studies."
+        "pooled_es": 0.32,
+        "ci_low": 0.05,
+        "ci_upp": 1.78,
+        "interpretation": "not statistically significant"
     },
     "screening_stats": {
         "llm_screened_out": 2,
@@ -311,8 +271,8 @@
         },
         "extracted": 5
     },
-    "plot_url": "static/antioxidants/forest_ovarian_cancer_incidence_primary.png?t=4771",
-    "funnel_plot_url": "static/antioxidants/funnel_ovarian_cancer_incidence_primary.png?t=1172",
-    "baujat_plot_url": "static\\antioxidants\\baujat_ovarian_cancer_incidence_primary.png?t=4090",
+    "plot_url": "static/antioxidants/forest_ovarian_cancer_incidence_primary.png?t=6688",
+    "funnel_plot_url": "static/antioxidants/funnel_ovarian_cancer_incidence_primary.png?t=1077",
+    "baujat_plot_url": null,
     "last_run": "2026-06-16 11:06:54"
 }

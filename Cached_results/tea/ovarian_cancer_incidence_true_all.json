@@ -289,7 +289,8 @@
                 "confidence_interval": "95% CI = 0.42-0.87",
                 "outcome_definition": "incidence of epithelial ovarian cancer. Our analysis included 347 cases diagnosed between 1984 and 2002",
                 "exposure_definition": "consumption of tea (nonherbal) and broccoli, the primary contributors to kaempferol intake in our population"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Cassidy A et al. (2014) [PMID: 25332332]",
@@ -386,80 +387,67 @@
                 "confidence_interval": "The OR (95% CI) of ovarian cancer for the highest versus lowest quartile of lifetime caffeine intake was 1.17 (0.83-1.64)",
                 "outcome_definition": "ovarian cancer risk overall, as well as by menopausal status. Multivariable polytomous logistic regression was used to estimate the associations for invasive and borderline ovarian cancers separately",
                 "exposure_definition": "lifetime intake of caffeinated coffee, black tea, green tea and cola sodas was assessed and used to calculate lifetime total intake of caffeine"
-            }
+            },
+            "exclusions": 2
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Lee AH et al. (2013) [PMID: 23107758]</th>\n      <td>-1.1410</td>\n      <td>0.1399</td>\n      <td>-1.4151</td>\n      <td>-0.8669</td>\n      <td>500.0</td>\n      <td>1000.0</td>\n    </tr>\n    <tr>\n      <th>Gates MA et al. (2007) [PMID: 17471564]</th>\n      <td>-0.5108</td>\n      <td>0.1858</td>\n      <td>-0.8749</td>\n      <td>-0.1467</td>\n      <td>347.0</td>\n      <td>66940.0</td>\n    </tr>\n    <tr>\n      <th>Cassidy A et al. (2014) [PMID: 25332332]</th>\n      <td>-0.3638</td>\n      <td>0.1381</td>\n      <td>-0.6344</td>\n      <td>-0.0932</td>\n      <td>723.0</td>\n      <td>171940.0</td>\n    </tr>\n    <tr>\n      <th>Baker JA et al. (2007) [PMID: 17291231]</th>\n      <td>-0.3169</td>\n      <td>0.1482</td>\n      <td>-0.6074</td>\n      <td>-0.0264</td>\n      <td>414.0</td>\n      <td>1282.0</td>\n    </tr>\n    <tr>\n      <th>Larsson SC et al. (2005) [PMID: 16344429]</th>\n      <td>-0.1862</td>\n      <td>0.0904</td>\n      <td>-0.3634</td>\n      <td>-0.0090</td>\n      <td>301.0</td>\n      <td>61057.0</td>\n    </tr>\n    <tr>\n      <th>Jordan SJ et al. (2004) [PMID: 15141137]</th>\n      <td>0.0824</td>\n      <td>0.1639</td>\n      <td>-0.2389</td>\n      <td>0.4037</td>\n      <td>696.0</td>\n      <td>1482.0</td>\n    </tr>\n    <tr>\n      <th>Grundy A et al. (2022) [PMID: 34800867]</th>\n      <td>0.1351</td>\n      <td>0.1476</td>\n      <td>-0.1542</td>\n      <td>0.4245</td>\n      <td>497.0</td>\n      <td>1401.0</td>\n    </tr>\n    <tr>\n      <th>Leung AC et al. (2016) [PMID: 27810483]</th>\n      <td>0.3744</td>\n      <td>0.1560</td>\n      <td>0.0686</td>\n      <td>0.6802</td>\n      <td>524.0</td>\n      <td>2111.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Lee AH et al. (2013) [PMID: 23107758]</th>\n      <td>-1.1410</td>\n      <td>0.1399</td>\n      <td>-1.4151</td>\n      <td>-0.8669</td>\n      <td>500.0</td>\n      <td>1000.0</td>\n    </tr>\n    <tr>\n      <th>Cassidy A et al. (2014) [PMID: 25332332]</th>\n      <td>-0.3638</td>\n      <td>0.1381</td>\n      <td>-0.6344</td>\n      <td>-0.0932</td>\n      <td>723.0</td>\n      <td>171940.0</td>\n    </tr>\n    <tr>\n      <th>Baker JA et al. (2007) [PMID: 17291231]</th>\n      <td>-0.3169</td>\n      <td>0.1482</td>\n      <td>-0.6074</td>\n      <td>-0.0264</td>\n      <td>414.0</td>\n      <td>1282.0</td>\n    </tr>\n    <tr>\n      <th>Larsson SC et al. (2005) [PMID: 16344429]</th>\n      <td>-0.1862</td>\n      <td>0.0904</td>\n      <td>-0.3634</td>\n      <td>-0.0090</td>\n      <td>301.0</td>\n      <td>61057.0</td>\n    </tr>\n    <tr>\n      <th>Jordan SJ et al. (2004) [PMID: 15141137]</th>\n      <td>0.0824</td>\n      <td>0.1639</td>\n      <td>-0.2389</td>\n      <td>0.4037</td>\n      <td>696.0</td>\n      <td>1482.0</td>\n    </tr>\n    <tr>\n      <th>Leung AC et al. (2016) [PMID: 27810483]</th>\n      <td>0.3744</td>\n      <td>0.1560</td>\n      <td>0.0686</td>\n      <td>0.6802</td>\n      <td>524.0</td>\n      <td>2111.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.79,
-        "ci_low": 0.58,
-        "ci_upp": 1.07,
-        "pi_low": 0.26,
-        "pi_upp": 2.37,
+        "pooled_es": 0.77,
+        "ci_low": 0.53,
+        "ci_upp": 1.13,
+        "pi_low": 0.2,
+        "pi_upp": 3.02,
         "interpretation": "Not statistically significant",
-        "i2": 90.12,
-        "tau2": 0.18,
-        "eggers_p": 0.9601614254203764,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.9602). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "i2": 91.92,
+        "tau2": 0.21,
+        "eggers_p": 0.9259656898024055,
+        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.9260). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
         "loo_results": [
             {
                 "omitted": "Lee AH et al. (2013) [PMID: 23107758]",
-                "pooled_es": 0.8943942872537981,
-                "ci_low": 0.7107817432280031,
-                "ci_upp": 1.1254385030196616,
-                "is_significant": false
-            },
-            {
-                "omitted": "Gates MA et al. (2007) [PMID: 17471564]",
-                "pooled_es": 0.8140684111407084,
-                "ci_low": 0.5662647046404529,
-                "ci_upp": 1.1703137641925614,
+                "pooled_es": 0.9115357246407643,
+                "ci_low": 0.6991649375759369,
+                "ci_upp": 1.1884139673496124,
                 "is_significant": false
             },
             {
                 "omitted": "Cassidy A et al. (2014) [PMID: 25332332]",
-                "pooled_es": 0.7993569257331996,
-                "ci_low": 0.550896401793542,
-                "ci_upp": 1.1598759633160531,
+                "pooled_es": 0.7861653331163089,
+                "ci_low": 0.4774050299133556,
+                "ci_upp": 1.2946154570387498,
                 "is_significant": false
             },
             {
                 "omitted": "Baker JA et al. (2007) [PMID: 17291231]",
-                "pooled_es": 0.7938123729938467,
-                "ci_low": 0.5465338664868898,
-                "ci_upp": 1.1529717043312222,
+                "pooled_es": 0.7786387046435908,
+                "ci_low": 0.47228002401083086,
+                "ci_upp": 1.2837261826579924,
                 "is_significant": false
             },
             {
                 "omitted": "Larsson SC et al. (2005) [PMID: 16344429]",
-                "pooled_es": 0.7788680459847178,
-                "ci_low": 0.5352656513487591,
-                "ci_upp": 1.133335254237697,
+                "pooled_es": 0.7585367946038085,
+                "ci_low": 0.4592241079185702,
+                "ci_upp": 1.2529352419578255,
                 "is_significant": false
             },
             {
                 "omitted": "Jordan SJ et al. (2004) [PMID: 15141137]",
-                "pooled_es": 0.7506657479488466,
-                "ci_low": 0.5243206028214321,
-                "ci_upp": 1.074722339941145,
-                "is_significant": false
-            },
-            {
-                "omitted": "Grundy A et al. (2022) [PMID: 34800867]",
-                "pooled_es": 0.7440944685579046,
-                "ci_low": 0.5224634691265594,
-                "ci_upp": 1.0597421845858284,
+                "pooled_es": 0.7203201744591998,
+                "ci_low": 0.44908714822757273,
+                "ci_upp": 1.1553685198535268,
                 "is_significant": false
             },
             {
                 "omitted": "Leung AC et al. (2016) [PMID: 27810483]",
-                "pooled_es": 0.7200014769537909,
-                "ci_low": 0.5243309379688573,
-                "ci_upp": 0.988692616201165,
-                "is_significant": true
+                "pooled_es": 0.6796231303743195,
+                "ci_low": 0.456335398513654,
+                "ci_upp": 1.0121669299471827,
+                "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled analysis of 8 studies yielded an effect size of 0.79 (95% CI: 0.58\u20131.07), indicating no statistically significant association between tea and ovarian cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 90.12%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 6 studies yielded an effect size of 0.77 (95% CI: 0.53\u20131.13), indicating no statistically significant association between tea and ovarian cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 91.92%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 27,
@@ -479,8 +467,8 @@
         },
         "extracted": 13
     },
-    "plot_url": "static/tea/forest_ovarian_cancer_incidence_primary.png?t=7078",
-    "funnel_plot_url": "static/tea/funnel_ovarian_cancer_incidence_primary.png?t=9951",
-    "baujat_plot_url": "static\\tea\\baujat_ovarian_cancer_incidence_primary.png?t=466",
+    "plot_url": "static/tea/forest_ovarian_cancer_incidence_primary.png?t=6272",
+    "funnel_plot_url": "static/tea/funnel_ovarian_cancer_incidence_primary.png?t=4179",
+    "baujat_plot_url": "static\\tea\\baujat_ovarian_cancer_incidence_primary.png?t=9157",
     "last_run": "2026-06-22 12:51:10"
 }

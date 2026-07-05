@@ -190,52 +190,46 @@
                 "confidence_interval": "uterus (1.66: 1.02-2.69; respectively)",
                 "outcome_definition": "female-specific cancers of ... uterus",
                 "exposure_definition": "serum soluble transferrin receptor (sTfR), a promising marker representing unmet cellular iron demands"
-            }
+            },
+            "exclusions": 2
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Genkinger JM et al. (2012) [PMID: 22952183]</th>\n      <td>0.2700</td>\n      <td>0.1042</td>\n      <td>0.0657</td>\n      <td>0.4743</td>\n      <td>720.0</td>\n      <td>60895.0</td>\n    </tr>\n    <tr>\n      <th>Zhang Y et al. (2022) [PMID: 36568176]</th>\n      <td>0.4245</td>\n      <td>0.1974</td>\n      <td>0.0376</td>\n      <td>0.8114</td>\n      <td>-</td>\n      <td>5480.0</td>\n    </tr>\n    <tr>\n      <th>Terry P et al. (2002) [PMID: 12235647]</th>\n      <td>0.4435</td>\n      <td>0.2614</td>\n      <td>-0.0688</td>\n      <td>0.9558</td>\n      <td>709.0</td>\n      <td>3596.0</td>\n    </tr>\n    <tr>\n      <th>Kallianpur AR et al. (2010) [PMID: 20043258]</th>\n      <td>0.5312</td>\n      <td>0.1295</td>\n      <td>0.2773</td>\n      <td>0.7851</td>\n      <td>1204.0</td>\n      <td>2416.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Genkinger JM et al. (2012) [PMID: 22952183]</th>\n      <td>0.2700</td>\n      <td>0.1042</td>\n      <td>0.0657</td>\n      <td>0.4743</td>\n      <td>720.0</td>\n      <td>60895.0</td>\n    </tr>\n    <tr>\n      <th>Terry P et al. (2002) [PMID: 12235647]</th>\n      <td>0.4435</td>\n      <td>0.2614</td>\n      <td>-0.0688</td>\n      <td>0.9558</td>\n      <td>709.0</td>\n      <td>3596.0</td>\n    </tr>\n    <tr>\n      <th>Kallianpur AR et al. (2010) [PMID: 20043258]</th>\n      <td>0.5312</td>\n      <td>0.1295</td>\n      <td>0.2773</td>\n      <td>0.7851</td>\n      <td>1204.0</td>\n      <td>2416.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 1.47,
-        "ci_low": 1.28,
-        "ci_upp": 1.69,
-        "pi_low": 1.08,
-        "pi_upp": 2.01,
+        "ci_low": 1.23,
+        "ci_upp": 1.77,
+        "pi_low": 0.32,
+        "pi_upp": 6.72,
         "interpretation": "Statistically significant (increased risk/odds)",
-        "i2": 0.0,
-        "tau2": 0.0,
-        "eggers_p": 0.5692336538290566,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.5692). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "i2": 21.09,
+        "tau2": 0.01,
+        "eggers_p": 0.7203820715741027,
+        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.7204). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
         "loo_results": [
             {
                 "omitted": "Genkinger JM et al. (2012) [PMID: 22952183]",
-                "pooled_es": 1.4256239530731778,
+                "pooled_es": 2.184282452099849,
                 "ci_low": null,
                 "ci_upp": null,
                 "is_significant": false
             },
             {
-                "omitted": "Zhang Y et al. (2022) [PMID: 36568176]",
-                "pooled_es": 1.4741211329260797,
-                "ci_low": 1.2428981070835312,
-                "ci_upp": 1.7483598230254815,
-                "is_significant": true
-            },
-            {
                 "omitted": "Terry P et al. (2002) [PMID: 12235647]",
-                "pooled_es": 1.4736411464225658,
-                "ci_low": 1.2504532572162894,
-                "ci_upp": 1.7366648580403448,
+                "pooled_es": 1.4759310774648322,
+                "ci_low": 1.143738105720339,
+                "ci_upp": 1.9046078245810802,
                 "is_significant": true
             },
             {
                 "omitted": "Kallianpur AR et al. (2010) [PMID: 20043258]",
-                "pooled_es": 0.8595589365095121,
+                "pooled_es": 1.2107135873934063,
                 "ci_low": null,
                 "ci_upp": null,
                 "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled analysis of 4 studies yielded an overall effect size of 1.47 (95% CI: 1.28\u20131.69), suggesting that iron is associated with a higher risk of uterine cancer. These findings were supported by low between-study heterogeneity (I\u00b2 = 0.00%), indicating consistent findings across the included studies."
+        "results_interpretation": "The pooled analysis of 3 studies yielded an overall effect size of 1.47 (95% CI: 1.23\u20131.77), suggesting that iron is associated with a higher risk of uterine cancer. These findings were supported by low between-study heterogeneity (I\u00b2 = 21.09%), indicating consistent findings across the included studies."
     },
     "screening_stats": {
         "llm_screened_out": 118,
@@ -254,8 +248,8 @@
         },
         "extracted": 4
     },
-    "plot_url": "static/iron/forest_uterine_cancer_incidence_primary.png?t=8275",
-    "funnel_plot_url": "static/iron/funnel_uterine_cancer_incidence_primary.png?t=7495",
-    "baujat_plot_url": "static\\iron\\baujat_uterine_cancer_incidence_primary.png?t=5616",
+    "plot_url": "static/iron/forest_uterine_cancer_incidence_primary.png?t=5376",
+    "funnel_plot_url": "static/iron/funnel_uterine_cancer_incidence_primary.png?t=2699",
+    "baujat_plot_url": "static\\iron\\baujat_uterine_cancer_incidence_primary.png?t=9021",
     "last_run": "2026-06-15 14:02:20"
 }

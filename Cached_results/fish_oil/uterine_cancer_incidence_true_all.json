@@ -48,7 +48,8 @@
                 "confidence_interval": "95% CI: 16%, 175%",
                 "outcome_definition": "Incident endometrial cancers (n = 263) were identified through the Surveillance, Epidemiology, and End Results cancer registry after 9 y of follow-up.",
                 "exposure_definition": "intakes of long-chain \u03c9-3 PUFAs, including eicosapentaenoic acid (EPA; 20:5\u03c9-3) and docosahexaenoic acid (DHA; 22:6\u03c9-3), from diet and supplements"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Arem H et al. (2013) [PMID: 22915050]",
@@ -145,45 +146,16 @@
                 "confidence_interval": "95% CI: 0.40, 0.82",
                 "outcome_definition": "n = 1253 incident invasive endometrial cancers were identified",
                 "exposure_definition": "intakes of LC\u03c9-3PUFAs ... sum of eicosapentaenoic, docosapentaenoic, and docosahexaenoic acids"
-            }
+            },
+            "exclusions": 2
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Brasky TM et al. (2015) [PMID: 25739930]</th>\n      <td>-0.4996</td>\n      <td>0.1758</td>\n      <td>-0.8441</td>\n      <td>-0.1551</td>\n      <td>1253.0</td>\n      <td>87360.0</td>\n    </tr>\n    <tr>\n      <th>Arem H et al. (2013) [PMID: 22915050]</th>\n      <td>-0.4127</td>\n      <td>0.1562</td>\n      <td>-0.7188</td>\n      <td>-0.1066</td>\n      <td>556.0</td>\n      <td>1089.0</td>\n    </tr>\n    <tr>\n      <th>Brasky TM et al. (2014) [PMID: 24500149]</th>\n      <td>0.5290</td>\n      <td>0.1932</td>\n      <td>0.1503</td>\n      <td>0.9077</td>\n      <td>263.0</td>\n      <td>22494.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>556</td>\n      <td>1089</td>\n      <td>0.661834</td>\n      <td>0.484653</td>\n      <td>0.893946</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.87,
+        "pooled_es": 0.66,
         "ci_low": 0.48,
-        "ci_upp": 1.61,
-        "pi_low": 0.0,
-        "pi_upp": 1689.46,
-        "interpretation": "Not statistically significant",
-        "i2": 89.46,
-        "tau2": 0.26,
-        "eggers_p": 0.42631701108162695,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.4263). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
-        "loo_results": [
-            {
-                "omitted": "Brasky TM et al. (2015) [PMID: 25739930]",
-                "pooled_es": 1.0525842398583407,
-                "ci_low": 0.41831148270780627,
-                "ci_upp": 2.648585151969306,
-                "is_significant": false
-            },
-            {
-                "omitted": "Arem H et al. (2013) [PMID: 22915050]",
-                "pooled_es": 1.011621855459414,
-                "ci_low": 0.3691937699965251,
-                "ci_upp": 2.771928622882179,
-                "is_significant": false
-            },
-            {
-                "omitted": "Brasky TM et al. (2014) [PMID: 24500149]",
-                "pooled_es": 0.6578715041284848,
-                "ci_low": 0.6300616802714194,
-                "ci_upp": 0.6869088051154527,
-                "is_significant": true
-            }
-        ],
-        "results_interpretation": "The pooled analysis of 3 studies yielded an effect size of 0.87 (95% CI: 0.48\u20131.61), indicating no statistically significant association between fish_oil and uterine cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 89.46%), reflecting highly inconsistent results across studies."
+        "ci_upp": 0.89,
+        "interpretation": "statistically significant (decreased risk/odds)"
     },
     "screening_stats": {
         "llm_screened_out": 34,
@@ -202,8 +174,8 @@
         },
         "extracted": 3
     },
-    "plot_url": "static/fish_oil/forest_uterine_cancer_incidence_primary.png?t=6559",
-    "funnel_plot_url": "static/fish_oil/funnel_uterine_cancer_incidence_primary.png?t=5035",
-    "baujat_plot_url": "static\\fish_oil\\baujat_uterine_cancer_incidence_primary.png?t=3869",
+    "plot_url": "static/fish_oil/forest_uterine_cancer_incidence_primary.png?t=654",
+    "funnel_plot_url": "static/fish_oil/funnel_uterine_cancer_incidence_primary.png?t=9590",
+    "baujat_plot_url": null,
     "last_run": "2026-06-15 13:22:23"
 }

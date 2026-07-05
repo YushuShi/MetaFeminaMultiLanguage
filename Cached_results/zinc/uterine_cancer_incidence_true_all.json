@@ -84,7 +84,8 @@
                 "confidence_interval": "",
                 "outcome_definition": "",
                 "exposure_definition": ""
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Wideroff L et al. (1998) [PMID: 9589431]",
@@ -132,45 +133,16 @@
                 "confidence_interval": "0.8 (CI = 0.3-2.2) for zinc",
                 "outcome_definition": "incident cases with high-grade lesions, 121 with low-grade lesions, 97 with equivocal SIL",
                 "exposure_definition": "nutrient estimates were obtained ... plus zinc ... Using a 60-item food-frequency questionnaire"
-            }
+            },
+            "exclusions": 2
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Cunzhi H et al. (2003) [PMID: 12958402]</th>\n      <td>-2.0843</td>\n      <td>0.5985</td>\n      <td>-3.2573</td>\n      <td>-0.9113</td>\n      <td>40.0</td>\n      <td>120.0</td>\n    </tr>\n    <tr>\n      <th>Wideroff L et al. (1998) [PMID: 9589431]</th>\n      <td>-0.1968</td>\n      <td>0.4470</td>\n      <td>-1.0728</td>\n      <td>0.6792</td>\n      <td>68.0</td>\n      <td>137.0</td>\n    </tr>\n    <tr>\n      <th>Genkinger JM et al. (2012) [PMID: 22952183]</th>\n      <td>0.2151</td>\n      <td>0.1059</td>\n      <td>0.0075</td>\n      <td>0.4228</td>\n      <td>720.0</td>\n      <td>60895.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>40</td>\n      <td>120</td>\n      <td>0.124392</td>\n      <td>0.038883</td>\n      <td>0.406101</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.57,
-        "ci_low": 0.18,
-        "ci_upp": 1.81,
-        "pi_low": 0.0,
-        "pi_upp": 745586.54,
-        "interpretation": "Not statistically significant",
-        "i2": 86.55,
-        "tau2": 0.88,
-        "eggers_p": 0.3343814284922757,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.3344). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
-        "loo_results": [
-            {
-                "omitted": "Cunzhi H et al. (2003) [PMID: 12958402]",
-                "pooled_es": 1.2687319890934212,
-                "ci_low": null,
-                "ci_upp": null,
-                "is_significant": false
-            },
-            {
-                "omitted": "Wideroff L et al. (1998) [PMID: 9589431]",
-                "pooled_es": 0.4235183215471765,
-                "ci_low": 0.04470369114796644,
-                "ci_upp": 4.012370434746461,
-                "is_significant": false
-            },
-            {
-                "omitted": "Genkinger JM et al. (2012) [PMID: 22952183]",
-                "pooled_es": 0.33333932797203447,
-                "ci_low": 0.05252337405320635,
-                "ci_upp": 2.115536360255294,
-                "is_significant": false
-            }
-        ],
-        "results_interpretation": "The pooled analysis of 3 studies yielded an effect size of 0.57 (95% CI: 0.18\u20131.81), indicating no statistically significant association between zinc and uterine cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 86.55%), reflecting highly inconsistent results across studies."
+        "pooled_es": 0.12,
+        "ci_low": 0.04,
+        "ci_upp": 0.41,
+        "interpretation": "statistically significant (decreased risk/odds)"
     },
     "screening_stats": {
         "llm_screened_out": 36,
@@ -189,8 +161,8 @@
         },
         "extracted": 4
     },
-    "plot_url": "static/zinc/forest_uterine_cancer_incidence_primary.png?t=1384",
-    "funnel_plot_url": "static/zinc/funnel_uterine_cancer_incidence_primary.png?t=4445",
-    "baujat_plot_url": "static\\zinc\\baujat_uterine_cancer_incidence_primary.png?t=5730",
+    "plot_url": "static/zinc/forest_uterine_cancer_incidence_primary.png?t=7234",
+    "funnel_plot_url": "static/zinc/funnel_uterine_cancer_incidence_primary.png?t=2468",
+    "baujat_plot_url": null,
     "last_run": "2026-06-15 16:24:26"
 }

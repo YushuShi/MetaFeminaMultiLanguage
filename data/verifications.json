@@ -2382,7 +2382,9 @@
         "submissions": [],
         "consensus_data": null,
         "legacy_count": 0,
-        "context_exclusions": {},
+        "context_exclusions": {
+            "uterine_cancer_zinc_incidence": 2
+        },
         "contexts": {
             "uterine_cancer_zinc_incidence": {
                 "submissions": [
@@ -3804,6 +3806,134 @@
         "legacy_count": 0,
         "context_exclusions": {
             "uterine_cancer_soy_incidence": 2
+        }
+    },
+    "37421851": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "ovarian_cancer_fish_oil_incidence": 2
+        }
+    },
+    "24500149": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "uterine_cancer_fish_oil_incidence": 2
+        }
+    },
+    "25739930": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "uterine_cancer_fish_oil_incidence": 2
+        }
+    },
+    "17471564": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "ovarian_cancer_tea_incidence": 2
+        }
+    },
+    "34800867": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "ovarian_cancer_tea_incidence": 2
+        }
+    },
+    "36568176": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "uterine_cancer_iron_incidence": 2
+        }
+    },
+    "31923062": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "uterine_cancer_copper_incidence": 2
+        }
+    },
+    "9222773": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "uterine_cancer_copper_incidence": 2
+        }
+    },
+    "1800424": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "uterine_cancer_copper_incidence": 2
+        }
+    },
+    "9589431": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "uterine_cancer_zinc_incidence": 2
+        }
+    },
+    "9641499": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "uterine_cancer_antioxidants_incidence": 2
+        }
+    },
+    "11962261": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "ovarian_cancer_antioxidants_incidence": 2
+        }
+    },
+    "16823847": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "ovarian_cancer_antioxidants_incidence": 2
+        }
+    },
+    "28202637": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "ovarian_cancer_antioxidants_incidence": 2
+        }
+    },
+    "22656322": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "ovarian_cancer_antioxidants_incidence": 2
+        }
+    },
+    "15801492": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "ovarian_cancer_folic_acid_incidence": 3
         }
     }
 }
