@@ -141,7 +141,8 @@
                 "confidence_interval": "[95% confidence interval (CI) = 0.5-4.2]",
                 "outcome_definition": "cervical squamous intraepithelial lesions (SIL), cytological abnormalities of the cervix",
                 "exposure_definition": "high dietary intakes of these nutrients, plus zinc and vitamin A"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Lehtinen M et al. (1999) [PMID: 10578492]",
@@ -238,7 +239,8 @@
                 "confidence_interval": "0.95 (95% CI 0.67 to 1.36)",
                 "outcome_definition": "Transvaginal ultrasound was used to assess UL at baseline and 20, 40, and 60 months of follow-up.",
                 "exposure_definition": "dietary intakes of carotenoids-including ... vitamin A were estimated ... using a 110-item validated food frequency questionnaire"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Wise LA et al. (2011) [PMID: 22071705]",
@@ -287,7 +289,8 @@
                 "confidence_interval": "95% CI: 0.83, 0.97",
                 "outcome_definition": "incident UL (1997-2009). ... There were 6627 incident cases of UL diagnosed by ultrasonography (n = 4346) or surgery (n = 2281).",
                 "exposure_definition": "dietary intake of ... vitamins A, C, and E ... Diet was estimated by using food-frequency questionnaires"
-            }
+            },
+            "exclusions": 2
         },
         {
             "Study": "Martin CL et al. (2011) [PMID: 21671776]",
@@ -480,91 +483,70 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Berlin Grace VM et al. (2006) [PMID: 16554086]</th>\n      <td>-1.6074</td>\n      <td>0.2778</td>\n      <td>-2.1520</td>\n      <td>-1.0629</td>\n      <td>-</td>\n      <td>130.0</td>\n    </tr>\n    <tr>\n      <th>Kanetsky PA et al. (1998) [PMID: 9682246]</th>\n      <td>-1.3231</td>\n      <td>0.7706</td>\n      <td>-2.8333</td>\n      <td>0.1872</td>\n      <td>32.0</td>\n      <td>145.0</td>\n    </tr>\n    <tr>\n      <th>Lehtinen M et al. (1999) [PMID: 10578492]</th>\n      <td>-0.9556</td>\n      <td>0.6459</td>\n      <td>-2.2214</td>\n      <td>0.3103</td>\n      <td>38.0</td>\n      <td>405000.0</td>\n    </tr>\n    <tr>\n      <th>Eleut\u00e9rio J et al. (2014) [PMID: 25171088]</th>\n      <td>-0.7401</td>\n      <td>0.8908</td>\n      <td>-2.4861</td>\n      <td>1.0059</td>\n      <td>16.0</td>\n      <td>62.0</td>\n    </tr>\n    <tr>\n      <th>Ghosh C et al. (2008) [PMID: 18444167]</th>\n      <td>-0.6836</td>\n      <td>0.2116</td>\n      <td>-1.0984</td>\n      <td>-0.2689</td>\n      <td>239.0</td>\n      <td>1218.0</td>\n    </tr>\n    <tr>\n      <th>Wise LA et al. (2011) [PMID: 22071705]</th>\n      <td>-0.1165</td>\n      <td>0.0398</td>\n      <td>-0.1945</td>\n      <td>-0.0386</td>\n      <td>6627.0</td>\n      <td>22583.0</td>\n    </tr>\n    <tr>\n      <th>Wise LA et al. (2021) [PMID: 33350944]</th>\n      <td>-0.0479</td>\n      <td>0.1686</td>\n      <td>-0.3784</td>\n      <td>0.2826</td>\n      <td>301.0</td>\n      <td>1230.0</td>\n    </tr>\n    <tr>\n      <th>Pelucchi C et al. (2008) [PMID: 18592384]</th>\n      <td>0.2305</td>\n      <td>0.1429</td>\n      <td>-0.0496</td>\n      <td>0.5106</td>\n      <td>454.0</td>\n      <td>1362.0</td>\n    </tr>\n    <tr>\n      <th>Wideroff L et al. (1998) [PMID: 9589431]</th>\n      <td>0.2858</td>\n      <td>0.4370</td>\n      <td>-0.5708</td>\n      <td>1.1424</td>\n      <td>68.0</td>\n      <td>137.0</td>\n    </tr>\n    <tr>\n      <th>Martin CL et al. (2011) [PMID: 21671776]</th>\n      <td>0.7829</td>\n      <td>0.2989</td>\n      <td>0.1970</td>\n      <td>1.3688</td>\n      <td>-</td>\n      <td>887.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Berlin Grace VM et al. (2006) [PMID: 16554086]</th>\n      <td>-1.6074</td>\n      <td>0.2778</td>\n      <td>-2.1520</td>\n      <td>-1.0629</td>\n      <td>-</td>\n      <td>130.0</td>\n    </tr>\n    <tr>\n      <th>Kanetsky PA et al. (1998) [PMID: 9682246]</th>\n      <td>-1.3231</td>\n      <td>0.7706</td>\n      <td>-2.8333</td>\n      <td>0.1872</td>\n      <td>32.0</td>\n      <td>145.0</td>\n    </tr>\n    <tr>\n      <th>Lehtinen M et al. (1999) [PMID: 10578492]</th>\n      <td>-0.9556</td>\n      <td>0.6459</td>\n      <td>-2.2214</td>\n      <td>0.3103</td>\n      <td>38.0</td>\n      <td>405000.0</td>\n    </tr>\n    <tr>\n      <th>Eleut\u00e9rio J et al. (2014) [PMID: 25171088]</th>\n      <td>-0.7401</td>\n      <td>0.8908</td>\n      <td>-2.4861</td>\n      <td>1.0059</td>\n      <td>16.0</td>\n      <td>62.0</td>\n    </tr>\n    <tr>\n      <th>Ghosh C et al. (2008) [PMID: 18444167]</th>\n      <td>-0.6836</td>\n      <td>0.2116</td>\n      <td>-1.0984</td>\n      <td>-0.2689</td>\n      <td>239.0</td>\n      <td>1218.0</td>\n    </tr>\n    <tr>\n      <th>Pelucchi C et al. (2008) [PMID: 18592384]</th>\n      <td>0.2305</td>\n      <td>0.1429</td>\n      <td>-0.0496</td>\n      <td>0.5106</td>\n      <td>454.0</td>\n      <td>1362.0</td>\n    </tr>\n    <tr>\n      <th>Martin CL et al. (2011) [PMID: 21671776]</th>\n      <td>0.7829</td>\n      <td>0.2989</td>\n      <td>0.1970</td>\n      <td>1.3688</td>\n      <td>-</td>\n      <td>887.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.76,
-        "ci_low": 0.54,
-        "ci_upp": 1.07,
-        "pi_low": 0.26,
-        "pi_upp": 2.23,
+        "pooled_es": 0.59,
+        "ci_low": 0.29,
+        "ci_upp": 1.2,
+        "pi_low": 0.06,
+        "pi_upp": 6.17,
         "interpretation": "Not statistically significant",
-        "i2": 84.08,
-        "tau2": 0.19,
-        "eggers_p": 0.4975280605833382,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.4975). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "i2": 89.01,
+        "tau2": 0.7,
+        "eggers_p": 0.38774602918640033,
+        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.3877). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
         "loo_results": [
             {
                 "omitted": "Berlin Grace VM et al. (2006) [PMID: 16554086]",
-                "pooled_es": 0.924935144145695,
-                "ci_low": 0.6547342342424448,
-                "ci_upp": 1.3066447057952806,
+                "pooled_es": 0.7750972087082085,
+                "ci_low": 0.4107052452938418,
+                "ci_upp": 1.462790382716995,
                 "is_significant": false
             },
             {
                 "omitted": "Kanetsky PA et al. (1998) [PMID: 9682246]",
-                "pooled_es": 0.7898025693215491,
-                "ci_low": 0.4918321520703804,
-                "ci_upp": 1.2682946730527231,
+                "pooled_es": 0.6425919333924004,
+                "ci_low": 0.31215493092614677,
+                "ci_upp": 1.3228187414366925,
                 "is_significant": false
             },
             {
                 "omitted": "Lehtinen M et al. (1999) [PMID: 10578492]",
-                "pooled_es": 0.7842119014636306,
-                "ci_low": 0.48169833208195056,
-                "ci_upp": 1.2767083990911061,
+                "pooled_es": 0.620696810418583,
+                "ci_low": 0.29150321028081205,
+                "ci_upp": 1.3216476418653085,
                 "is_significant": false
             },
             {
                 "omitted": "Eleut\u00e9rio J et al. (2014) [PMID: 25171088]",
-                "pooled_es": 0.7672967734380091,
-                "ci_low": 0.4692081237572708,
-                "ci_upp": 1.2547616051783168,
+                "pooled_es": 0.5985264973636115,
+                "ci_low": 0.2813997686281466,
+                "ci_upp": 1.2730428663562212,
                 "is_significant": false
             },
             {
                 "omitted": "Ghosh C et al. (2008) [PMID: 18444167]",
-                "pooled_es": 0.8029640891012588,
-                "ci_low": 0.4823653375979012,
-                "ci_upp": 1.336645231593481,
-                "is_significant": false
-            },
-            {
-                "omitted": "Wise LA et al. (2011) [PMID: 22071705]",
-                "pooled_es": 0.7031292722402445,
-                "ci_low": 0.41216563928372585,
-                "ci_upp": 1.1994953639033648,
-                "is_significant": false
-            },
-            {
-                "omitted": "Wise LA et al. (2021) [PMID: 33350944]",
-                "pooled_es": 0.7183066422875244,
-                "ci_low": 0.424966932662484,
-                "ci_upp": 1.2141284243500547,
+                "pooled_es": 0.5936557601691137,
+                "ci_low": 0.270921998103476,
+                "ci_upp": 1.3008436525976088,
                 "is_significant": false
             },
             {
                 "omitted": "Pelucchi C et al. (2008) [PMID: 18592384]",
-                "pooled_es": 0.6862643225255955,
-                "ci_low": 0.41330716845051446,
-                "ci_upp": 1.1394883910122717,
-                "is_significant": false
-            },
-            {
-                "omitted": "Wideroff L et al. (1998) [PMID: 9589431]",
-                "pooled_es": 0.7184863208375448,
-                "ci_low": 0.4383323069194161,
-                "ci_upp": 1.1776968867721966,
+                "pooled_es": 0.4929589461468278,
+                "ci_low": 0.2413860037352564,
+                "ci_upp": 1.0067216774205108,
                 "is_significant": false
             },
             {
                 "omitted": "Martin CL et al. (2011) [PMID: 21671776]",
-                "pooled_es": 0.6689981339159803,
-                "ci_low": 0.4327025284392115,
-                "ci_upp": 1.034332997307501,
-                "is_significant": false
+                "pooled_es": 0.45330679056049483,
+                "ci_low": 0.25937272820931756,
+                "ci_upp": 0.7922461539689142,
+                "is_significant": true
             }
         ],
-        "results_interpretation": "The pooled analysis of 10 studies yielded an effect size of 0.76 (95% CI: 0.54\u20131.07), indicating no statistically significant association between vitamin_a and uterine cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 84.08%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 7 studies yielded an effect size of 0.59 (95% CI: 0.29\u20131.2), indicating no statistically significant association between Vitamin A and uterine cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 89.01%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 158,
@@ -583,8 +565,8 @@
         },
         "extracted": 18
     },
-    "plot_url": "static/vitamin_a/forest_uterine_cancer_incidence_primary.png?t=4513",
-    "funnel_plot_url": "static/vitamin_a/funnel_uterine_cancer_incidence_primary.png?t=8494",
-    "baujat_plot_url": "static\\vitamin_a\\baujat_uterine_cancer_incidence_primary.png?t=5423",
+    "plot_url": "static/vitamin_a/forest_uterine_cancer_incidence_primary.png?t=8897",
+    "funnel_plot_url": "static/vitamin_a/funnel_uterine_cancer_incidence_primary.png?t=510",
+    "baujat_plot_url": "static\\vitamin_a\\baujat_uterine_cancer_incidence_primary.png?t=5680",
     "last_run": "2026-06-15 15:46:47"
 }

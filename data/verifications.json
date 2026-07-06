@@ -3885,7 +3885,8 @@
         "consensus_data": null,
         "legacy_count": 0,
         "context_exclusions": {
-            "uterine_cancer_zinc_incidence": 2
+            "uterine_cancer_zinc_incidence": 2,
+            "uterine_cancer_vitamin_a_incidence": 2
         }
     },
     "9641499": {
@@ -3934,6 +3935,31 @@
         "legacy_count": 0,
         "context_exclusions": {
             "ovarian_cancer_folic_acid_incidence": 3
+        }
+    },
+    "33350944": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "uterine_cancer_vitamin_a_incidence": 2,
+            "uterine_cancer_lycopene_incidence": 2
+        }
+    },
+    "22071705": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "uterine_cancer_vitamin_a_incidence": 2
+        }
+    },
+    "23824422": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "uterine_cancer_vitamin_d_incidence": 2
         }
     }
 }
