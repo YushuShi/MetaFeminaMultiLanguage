@@ -88,8 +88,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 
-    // Initialize Last Updated
-    updateLastUpdated();
+    // Initialize Last Updated - removed default call to avoid showing current time on load
 
     // Toggle Stage Filter
     function toggleStageFilter() {
@@ -137,6 +136,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 const configData = await configRes.json();
                 isReadOnly = configData.read_only;
                 cachedExposures = configData.cached_exposures;
+                if (configData.last_updated) {
+                    updateLastUpdated(configData.last_updated);
+                }
             }
         } catch (e) {
             console.error("Error fetching exposures/synonyms/config:", e);
@@ -965,8 +967,18 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     function updateLastUpdated(ts = null) {
         if (!elements.lastUpdated) return;
-        const date = ts ? new Date(ts) : new Date();
-        elements.lastUpdated.textContent = date.toLocaleString();
+        let date;
+        if (ts) {
+            // Replace space with T to make it ISO-compliant for better cross-browser support
+            const isoStr = ts.replace(' ', 'T');
+            date = new Date(isoStr);
+            if (isNaN(date.getTime())) {
+                date = new Date(ts);
+            }
+        } else {
+            return;
+        }
+        elements.lastUpdated.textContent = isNaN(date.getTime()) ? ts : date.toLocaleString();
     }
     function updateResultsUI(data) {
         if (elements.forestPlot) elements.forestPlot.src = `/${data.plot_url}?t=${Date.now()}`;

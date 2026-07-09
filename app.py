@@ -668,9 +668,34 @@ def usage():
         "last_analysis_models": last_detailed,
     })
 
+def get_last_updated_time():
+    """Find the latest modification time of any file in CACHE_DIR or verifications file."""
+    latest_time = 0.0
+    if os.path.exists(CACHE_DIR):
+        for root, dirs, files in os.walk(CACHE_DIR):
+            for file in files:
+                if file.endswith('.json'):
+                    fp = os.path.join(root, file)
+                    try:
+                        mtime = os.path.getmtime(fp)
+                        if mtime > latest_time:
+                            latest_time = mtime
+                    except Exception:
+                        pass
+    if os.path.exists(VERIFICATIONS_FILE):
+        try:
+            mtime = os.path.getmtime(VERIFICATIONS_FILE)
+            if mtime > latest_time:
+                latest_time = mtime
+        except Exception:
+            pass
+    if latest_time > 0:
+        return datetime.fromtimestamp(latest_time).strftime("%Y-%m-%d %H:%M:%S")
+    return None
+
 @app.route('/api/config')
 def get_config():
-    """Return read-only status and the list of pre‑cached exposures."""
+    """Return read-only status, last updated time, and the list of pre‑cached exposures."""
     exposures = []
     if os.path.exists(CACHE_DIR):
         for d in os.listdir(CACHE_DIR):
@@ -683,7 +708,8 @@ def get_config():
                     pass
     return jsonify({
         "read_only": READ_ONLY_MODE,
-        "cached_exposures": sorted(exposures)
+        "cached_exposures": sorted(exposures),
+        "last_updated": get_last_updated_time()
     })
 
 # Diagnostic endpoint for cache status
