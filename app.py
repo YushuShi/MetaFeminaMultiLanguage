@@ -669,7 +669,7 @@ def usage():
     })
 
 def get_last_updated_time():
-    """Find the latest modification time of any file in CACHE_DIR or verifications file."""
+    """Find the latest modification time of any file in CACHE_DIR."""
     latest_time = 0.0
     if os.path.exists(CACHE_DIR):
         for root, dirs, files in os.walk(CACHE_DIR):
@@ -682,13 +682,6 @@ def get_last_updated_time():
                             latest_time = mtime
                     except Exception:
                         pass
-    if os.path.exists(VERIFICATIONS_FILE):
-        try:
-            mtime = os.path.getmtime(VERIFICATIONS_FILE)
-            if mtime > latest_time:
-                latest_time = mtime
-        except Exception:
-            pass
     if latest_time > 0:
         return datetime.fromtimestamp(latest_time).strftime("%Y-%m-%d %H:%M:%S")
     return None
