@@ -7774,3 +7774,557 @@
 2026-07-05 16:40:52 ============================================================
 
 2026-07-05 16:40:52 [MetaFemina] Analyze complete in 0.0s: studies=5, error=None
+2026-07-06 09:53:04 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Lutein, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-07-06 09:53:04 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\breast_cancer_incidence_true_core.json
+2026-07-06 09:53:04 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\breast_cancer_incidence_true_core.json
+2026-07-06 09:53:04 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-07-06 09:53:04 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-07-06 09:53:04 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-07-06 09:53:04 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-07-06 09:53:04 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\breast_cancer_incidence_true_all.json
+2026-07-06 09:53:04 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\breast_cancer_incidence_true_all.json
+2026-07-06 09:53:04 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\breast_cancer_incidence_true_all.json
+2026-07-06 09:53:04 
+============================================================
+2026-07-06 09:53:04 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-07-06 09:53:04   - Total Articles Fetched from PubMed: 67
+2026-07-06 09:53:04   - Articles Remaining After Pre-filter: 67
+2026-07-06 09:53:04   - LLM Screening:
+2026-07-06 09:53:04     * Screened IN / Accepted:   63
+2026-07-06 09:53:04     * Screened OUT / Rejected:  4
+2026-07-06 09:53:04     * Consensus Bypassed:       0
+2026-07-06 09:53:04   - Final Extracted Studies: 15
+2026-07-06 09:53:04 ============================================================
+
+2026-07-06 09:53:04 [MetaFemina] Re-analyzing Lutein due to verification filtering/consensus/flags...
+2026-07-06 09:53:05 [MetaFemina] Analyze complete in 0.8s: studies=15, error=None
+2026-07-06 09:53:22 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Lutein, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-07-06 09:53:22 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\ovarian_cancer_incidence_true_core.json
+2026-07-06 09:53:22 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\ovarian_cancer_incidence_true_core.json
+2026-07-06 09:53:22 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\ovarian_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-07-06 09:53:22 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\ovarian_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-07-06 09:53:22 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\ovarian_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-07-06 09:53:22 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\ovarian_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-07-06 09:53:22 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\ovarian_cancer_incidence_true_all.json
+2026-07-06 09:53:22 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\ovarian_cancer_incidence_true_all.json
+2026-07-06 09:53:22 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\ovarian_cancer_incidence_true_all.json
+2026-07-06 09:53:22 
+============================================================
+2026-07-06 09:53:22 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-07-06 09:53:22   - Total Articles Fetched from PubMed: 129
+2026-07-06 09:53:22   - Articles Remaining After Pre-filter: 129
+2026-07-06 09:53:22   - LLM Screening:
+2026-07-06 09:53:22     * Screened IN / Accepted:   13
+2026-07-06 09:53:22     * Screened OUT / Rejected:  114
+2026-07-06 09:53:22     * Consensus Bypassed:       0
+2026-07-06 09:53:22   - Final Extracted Studies: 5
+2026-07-06 09:53:22 ============================================================
+
+2026-07-06 09:53:22 [MetaFemina] Analyze complete in 0.0s: studies=5, error=None
+2026-07-06 09:53:33 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Lutein, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-07-06 09:53:33 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\uterine_cancer_incidence_true_core.json
+2026-07-06 09:53:33 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\uterine_cancer_incidence_true_core.json
+2026-07-06 09:53:33 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\uterine_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-07-06 09:53:33 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\uterine_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-07-06 09:53:33 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\uterine_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-07-06 09:53:33 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\uterine_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-07-06 09:53:33 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\uterine_cancer_incidence_true_all.json
+2026-07-06 09:53:33 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\uterine_cancer_incidence_true_all.json
+2026-07-06 09:53:33 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\lutein\uterine_cancer_incidence_true_all.json
+2026-07-06 09:53:33 
+============================================================
+2026-07-06 09:53:33 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-07-06 09:53:33   - Total Articles Fetched from PubMed: 80
+2026-07-06 09:53:33   - Articles Remaining After Pre-filter: 80
+2026-07-06 09:53:33   - LLM Screening:
+2026-07-06 09:53:33     * Screened IN / Accepted:   24
+2026-07-06 09:53:33     * Screened OUT / Rejected:  55
+2026-07-06 09:53:33     * Consensus Bypassed:       0
+2026-07-06 09:53:33   - Final Extracted Studies: 5
+2026-07-06 09:53:33 ============================================================
+
+2026-07-06 09:53:33 [MetaFemina] Analyze complete in 0.0s: studies=5, error=None
+2026-07-06 09:53:50 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Legumes, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-07-06 09:53:50 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\uterine_cancer_incidence_true_core.json
+2026-07-06 09:53:50 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\uterine_cancer_incidence_true_core.json
+2026-07-06 09:53:50 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\uterine_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-07-06 09:53:50 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\uterine_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-07-06 09:53:50 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\uterine_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-07-06 09:53:50 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\uterine_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-07-06 09:53:50 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\uterine_cancer_incidence_true_all.json
+2026-07-06 09:53:50 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\uterine_cancer_incidence_true_all.json
+2026-07-06 09:53:50 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\uterine_cancer_incidence_true_all.json
+2026-07-06 09:53:50 
+============================================================
+2026-07-06 09:53:50 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-07-06 09:53:50   - Total Articles Fetched from PubMed: 57
+2026-07-06 09:53:50   - Articles Remaining After Pre-filter: 57
+2026-07-06 09:53:50   - LLM Screening:
+2026-07-06 09:53:50     * Screened IN / Accepted:   27
+2026-07-06 09:53:50     * Screened OUT / Rejected:  30
+2026-07-06 09:53:50     * Consensus Bypassed:       0
+2026-07-06 09:53:50   - Final Extracted Studies: 3
+2026-07-06 09:53:50 ============================================================
+
+2026-07-06 09:53:50 [MetaFemina] Analyze complete in 0.0s: studies=2, error=None
+2026-07-06 09:54:08 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Legumes, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-07-06 09:54:08 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\ovarian_cancer_incidence_true_core.json
+2026-07-06 09:54:08 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\ovarian_cancer_incidence_true_core.json
+2026-07-06 09:54:08 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\ovarian_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-07-06 09:54:08 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\ovarian_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-07-06 09:54:08 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\ovarian_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-07-06 09:54:08 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\ovarian_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-07-06 09:54:08 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\ovarian_cancer_incidence_true_all.json
+2026-07-06 09:54:08 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\ovarian_cancer_incidence_true_all.json
+2026-07-06 09:54:08 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\ovarian_cancer_incidence_true_all.json
+2026-07-06 09:54:08 
+============================================================
+2026-07-06 09:54:08 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-07-06 09:54:08   - Total Articles Fetched from PubMed: 75
+2026-07-06 09:54:08   - Articles Remaining After Pre-filter: 75
+2026-07-06 09:54:08   - LLM Screening:
+2026-07-06 09:54:08     * Screened IN / Accepted:   35
+2026-07-06 09:54:08     * Screened OUT / Rejected:  40
+2026-07-06 09:54:08     * Consensus Bypassed:       0
+2026-07-06 09:54:08   - Final Extracted Studies: 3
+2026-07-06 09:54:08 ============================================================
+
+2026-07-06 09:54:08 [MetaFemina] Analyze complete in 0.0s: studies=2, error=None
+2026-07-06 09:54:48 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Legumes, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-07-06 09:54:48 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\breast_cancer_incidence_true_core.json
+2026-07-06 09:54:48 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\breast_cancer_incidence_true_core.json
+2026-07-06 09:54:48 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-07-06 09:54:48 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-07-06 09:54:48 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-07-06 09:54:48 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-07-06 09:54:48 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\breast_cancer_incidence_true_all.json
+2026-07-06 09:54:48 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\breast_cancer_incidence_true_all.json
+2026-07-06 09:54:48 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\legumes\breast_cancer_incidence_true_all.json
+2026-07-06 09:54:48 
+============================================================
+2026-07-06 09:54:48 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-07-06 09:54:48   - Total Articles Fetched from PubMed: 332
+2026-07-06 09:54:48   - Articles Remaining After Pre-filter: 331
+2026-07-06 09:54:48     (Pre-filter skips: genetic=1)
+2026-07-06 09:54:48   - LLM Screening:
+2026-07-06 09:54:48     * Screened IN / Accepted:   151
+2026-07-06 09:54:48     * Screened OUT / Rejected:  174
+2026-07-06 09:54:48     * Consensus Bypassed:       0
+2026-07-06 09:54:48   - Final Extracted Studies: 18
+2026-07-06 09:54:48 ============================================================
+
+2026-07-06 09:54:48 [MetaFemina] Analyze complete in 0.0s: studies=15, error=None
+2026-07-06 09:56:59 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Calcium, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-07-06 09:56:59 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\breast_cancer_incidence_true_core.json
+2026-07-06 09:56:59 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\breast_cancer_incidence_true_core.json
+2026-07-06 09:56:59 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\breast_cancer_incidence_true_core.json
+2026-07-06 09:56:59 
+============================================================
+2026-07-06 09:56:59 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-07-06 09:56:59   - Total Articles Fetched from PubMed: 3673
+2026-07-06 09:56:59   - Articles Remaining After Pre-filter: 3667
+2026-07-06 09:56:59     (Pre-filter skips: genetic=6)
+2026-07-06 09:56:59   - LLM Screening:
+2026-07-06 09:56:59     * Screened IN / Accepted:   683
+2026-07-06 09:56:59     * Screened OUT / Rejected:  2984
+2026-07-06 09:56:59     * Consensus Bypassed:       0
+2026-07-06 09:56:59   - Final Extracted Studies: 33
+2026-07-06 09:56:59 ============================================================
+
+2026-07-06 09:56:59 [MetaFemina] Re-analyzing Calcium due to verification filtering/consensus/flags...
+2026-07-06 09:57:00 [MetaFemina] Analyze complete in 1.0s: studies=31, error=None
+2026-07-06 09:58:06 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Calcium, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-07-06 09:58:06 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\ovarian_cancer_incidence_true_core.json
+2026-07-06 09:58:06 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\ovarian_cancer_incidence_true_core.json
+2026-07-06 09:58:06 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\ovarian_cancer_incidence_true_core.json
+2026-07-06 09:58:06 
+============================================================
+2026-07-06 09:58:06 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-07-06 09:58:06   - Total Articles Fetched from PubMed: 2804
+2026-07-06 09:58:06   - Articles Remaining After Pre-filter: 2802
+2026-07-06 09:58:06     (Pre-filter skips: genetic=2)
+2026-07-06 09:58:06   - LLM Screening:
+2026-07-06 09:58:06     * Screened IN / Accepted:   152
+2026-07-06 09:58:06     * Screened OUT / Rejected:  2650
+2026-07-06 09:58:06     * Consensus Bypassed:       0
+2026-07-06 09:58:06   - Final Extracted Studies: 8
+2026-07-06 09:58:06 ============================================================
+
+2026-07-06 09:58:06 [MetaFemina] Analyze complete in 0.0s: studies=8, error=None
+2026-07-06 09:58:21 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Calcium, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-07-06 09:58:21 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\uterine_cancer_incidence_true_core.json
+2026-07-06 09:58:21 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\uterine_cancer_incidence_true_core.json
+2026-07-06 09:58:21 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\calcium\uterine_cancer_incidence_true_core.json
+2026-07-06 09:58:21 
+============================================================
+2026-07-06 09:58:21 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-07-06 09:58:21   - Total Articles Fetched from PubMed: 1138
+2026-07-06 09:58:21   - Articles Remaining After Pre-filter: 1134
+2026-07-06 09:58:21     (Pre-filter skips: genetic=4)
+2026-07-06 09:58:21   - LLM Screening:
+2026-07-06 09:58:21     * Screened IN / Accepted:   96
+2026-07-06 09:58:21     * Screened OUT / Rejected:  1038
+2026-07-06 09:58:21     * Consensus Bypassed:       0
+2026-07-06 09:58:21   - Final Extracted Studies: 9
+2026-07-06 09:58:21 ============================================================
+
+2026-07-06 09:58:21 [MetaFemina] Analyze complete in 0.0s: studies=8, error=None
+2026-07-06 10:03:57 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Red meat, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-07-06 10:03:57 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\uterine_cancer_incidence_true_core.json
+2026-07-06 10:03:57 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\uterine_cancer_incidence_true_core.json
+2026-07-06 10:03:57 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\uterine_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-07-06 10:03:57 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\uterine_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-07-06 10:03:57 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\uterine_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-07-06 10:03:57 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\uterine_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-07-06 10:03:57 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\uterine_cancer_incidence_true_all.json
+2026-07-06 10:03:57 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\uterine_cancer_incidence_true_all.json
+2026-07-06 10:03:57 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\uterine_cancer_incidence_true_all.json
+2026-07-06 10:03:57 
+============================================================
+2026-07-06 10:03:57 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-07-06 10:03:57   - Total Articles Fetched from PubMed: 55
+2026-07-06 10:03:57   - Articles Remaining After Pre-filter: 55
+2026-07-06 10:03:57   - LLM Screening:
+2026-07-06 10:03:57     * Screened IN / Accepted:   27
+2026-07-06 10:03:57     * Screened OUT / Rejected:  28
+2026-07-06 10:03:57     * Consensus Bypassed:       0
+2026-07-06 10:03:57   - Final Extracted Studies: 6
+2026-07-06 10:03:57 ============================================================
+
+2026-07-06 10:03:57 [MetaFemina] Analyze complete in 0.0s: studies=4, error=None
+2026-07-06 10:04:38 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Red meat, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-07-06 10:04:38 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_core.json
+2026-07-06 10:04:38 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_core.json
+2026-07-06 10:04:38 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-07-06 10:04:38 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-07-06 10:04:38 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-07-06 10:04:38 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-07-06 10:04:38 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-07-06 10:04:38 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-07-06 10:04:38 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\breast_cancer_incidence_true_all.json
+2026-07-06 10:04:38 
+============================================================
+2026-07-06 10:04:38 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-07-06 10:04:38   - Total Articles Fetched from PubMed: 344
+2026-07-06 10:04:38   - Articles Remaining After Pre-filter: 344
+2026-07-06 10:04:38   - LLM Screening:
+2026-07-06 10:04:38     * Screened IN / Accepted:   238
+2026-07-06 10:04:38     * Screened OUT / Rejected:  105
+2026-07-06 10:04:38     * Consensus Bypassed:       0
+2026-07-06 10:04:38   - Final Extracted Studies: 43
+2026-07-06 10:04:38 ============================================================
+
+2026-07-06 10:04:38 [MetaFemina] Re-analyzing Red meat due to verification filtering/consensus/flags...
+2026-07-06 10:04:39 [MetaFemina] Analyze complete in 1.1s: studies=36, error=None
+2026-07-06 10:05:59 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Iron, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-07-06 10:05:59 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\breast_cancer_incidence_true_core.json
+2026-07-06 10:05:59 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\breast_cancer_incidence_true_core.json
+2026-07-06 10:05:59 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-07-06 10:05:59 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-07-06 10:05:59 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-07-06 10:05:59 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-07-06 10:05:59 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\breast_cancer_incidence_true_all.json
+2026-07-06 10:05:59 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\breast_cancer_incidence_true_all.json
+2026-07-06 10:05:59 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\breast_cancer_incidence_true_all.json
+2026-07-06 10:05:59 
+============================================================
+2026-07-06 10:05:59 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-07-06 10:05:59   - Total Articles Fetched from PubMed: 1157
+2026-07-06 10:05:59   - Articles Remaining After Pre-filter: 1154
+2026-07-06 10:05:59     (Pre-filter skips: genetic=3)
+2026-07-06 10:05:59   - LLM Screening:
+2026-07-06 10:05:59     * Screened IN / Accepted:   524
+2026-07-06 10:05:59     * Screened OUT / Rejected:  626
+2026-07-06 10:05:59     * Consensus Bypassed:       0
+2026-07-06 10:05:59   - Final Extracted Studies: 26
+2026-07-06 10:05:59 ============================================================
+
+2026-07-06 10:05:59 [MetaFemina] Re-analyzing Iron due to verification filtering/consensus/flags...
+2026-07-06 10:06:00 [MetaFemina] Analyze complete in 0.9s: studies=26, error=None
+2026-07-06 10:06:20 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Iron, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-07-06 10:06:20 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\uterine_cancer_incidence_true_core.json
+2026-07-06 10:06:20 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\uterine_cancer_incidence_true_core.json
+2026-07-06 10:06:20 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\uterine_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-07-06 10:06:20 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\uterine_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-07-06 10:06:20 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\uterine_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-07-06 10:06:20 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\uterine_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-07-06 10:06:20 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\uterine_cancer_incidence_true_all.json
+2026-07-06 10:06:20 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\uterine_cancer_incidence_true_all.json
+2026-07-06 10:06:20 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\uterine_cancer_incidence_true_all.json
+2026-07-06 10:06:20 
+============================================================
+2026-07-06 10:06:20 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-07-06 10:06:20   - Total Articles Fetched from PubMed: 218
+2026-07-06 10:06:20   - Articles Remaining After Pre-filter: 217
+2026-07-06 10:06:20     (Pre-filter skips: genetic=1)
+2026-07-06 10:06:20   - LLM Screening:
+2026-07-06 10:06:20     * Screened IN / Accepted:   98
+2026-07-06 10:06:20     * Screened OUT / Rejected:  118
+2026-07-06 10:06:20     * Consensus Bypassed:       0
+2026-07-06 10:06:20   - Final Extracted Studies: 4
+2026-07-06 10:06:20 ============================================================
+
+2026-07-06 10:06:20 [MetaFemina] Re-analyzing Iron due to verification filtering/consensus/flags...
+2026-07-06 10:06:21 [MetaFemina] Analyze complete in 0.5s: studies=4, error=None
+2026-07-06 10:08:28 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Iron, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-07-06 10:08:28 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\uterine_cancer_incidence_true_core.json
+2026-07-06 10:08:28 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\uterine_cancer_incidence_true_core.json
+2026-07-06 10:08:28 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\uterine_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-07-06 10:08:28 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\uterine_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-07-06 10:08:28 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\uterine_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-07-06 10:08:28 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\uterine_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-07-06 10:08:28 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\uterine_cancer_incidence_true_all.json
+2026-07-06 10:08:28 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\uterine_cancer_incidence_true_all.json
+2026-07-06 10:08:28 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\iron\uterine_cancer_incidence_true_all.json
+2026-07-06 10:08:28 
+============================================================
+2026-07-06 10:08:28 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-07-06 10:08:28   - Total Articles Fetched from PubMed: 218
+2026-07-06 10:08:28   - Articles Remaining After Pre-filter: 217
+2026-07-06 10:08:28     (Pre-filter skips: genetic=1)
+2026-07-06 10:08:28   - LLM Screening:
+2026-07-06 10:08:28     * Screened IN / Accepted:   98
+2026-07-06 10:08:28     * Screened OUT / Rejected:  118
+2026-07-06 10:08:28     * Consensus Bypassed:       0
+2026-07-06 10:08:28   - Final Extracted Studies: 4
+2026-07-06 10:08:28 ============================================================
+
+2026-07-06 10:08:28 [MetaFemina] Re-analyzing Iron due to verification filtering/consensus/flags...
+2026-07-06 10:08:29 [MetaFemina] Analyze complete in 0.5s: studies=4, error=None
+2026-07-06 10:12:52 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Omega-6 fatty acids, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-07-06 10:12:52 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-6_fatty_acids\breast_cancer_incidence_true_core.json
+2026-07-06 10:12:52 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-6_fatty_acids\breast_cancer_incidence_true_core.json
+2026-07-06 10:12:52 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-6_fatty_acids\breast_cancer_incidence_true_core.json
+2026-07-06 10:12:52 
+============================================================
+2026-07-06 10:12:53 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-07-06 10:12:53   - Total Articles Fetched from PubMed: 109
+2026-07-06 10:12:53   - Articles Remaining After Pre-filter: 109
+2026-07-06 10:12:53   - LLM Screening:
+2026-07-06 10:12:53     * Screened IN / Accepted:   87
+2026-07-06 10:12:53     * Screened OUT / Rejected:  22
+2026-07-06 10:12:53     * Consensus Bypassed:       1
+2026-07-06 10:12:53   - Final Extracted Studies: 6
+2026-07-06 10:12:53 ============================================================
+
+2026-07-06 10:12:53 [MetaFemina] Re-analyzing Omega-6 fatty acids due to verification filtering/consensus/flags...
+2026-07-06 10:12:53 [MetaFemina] Analyze complete in 0.5s: studies=4, error=None
+2026-07-06 10:13:05 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Omega-6 fatty acids, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-07-06 10:13:05 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-6_fatty_acids\uterine_cancer_incidence_true_core.json
+2026-07-06 10:13:05 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-6_fatty_acids\uterine_cancer_incidence_true_core.json
+2026-07-06 10:13:05 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-6_fatty_acids\uterine_cancer_incidence_true_core.json
+2026-07-06 10:13:05 [MetaFemina] Analyze complete in 0.0s: studies=0, error=No relevant evidence was identified in the reviewed sources.
+2026-07-06 10:13:16 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Omega-6 fatty acids, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-07-06 10:13:16 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-6_fatty_acids\ovarian_cancer_incidence_true_core.json
+2026-07-06 10:13:16 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-6_fatty_acids\ovarian_cancer_incidence_true_core.json
+2026-07-06 10:13:16 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-6_fatty_acids\ovarian_cancer_incidence_true_core.json
+2026-07-06 10:13:16 
+============================================================
+2026-07-06 10:13:16 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-07-06 10:13:16   - Total Articles Fetched from PubMed: 12
+2026-07-06 10:13:16   - Articles Remaining After Pre-filter: 12
+2026-07-06 10:13:16   - LLM Screening:
+2026-07-06 10:13:16     * Screened IN / Accepted:   11
+2026-07-06 10:13:16     * Screened OUT / Rejected:  1
+2026-07-06 10:13:16     * Consensus Bypassed:       0
+2026-07-06 10:13:16   - Final Extracted Studies: 2
+2026-07-06 10:13:16 ============================================================
+
+2026-07-06 10:13:16 [MetaFemina] Analyze complete in 0.0s: studies=2, error=None
+2026-07-06 10:14:57 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Omega-3 fatty acids, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-07-06 10:14:57 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-3_fatty_acids\uterine_cancer_incidence_true_core.json
+2026-07-06 10:14:57 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-3_fatty_acids\uterine_cancer_incidence_true_core.json
+2026-07-06 10:14:57 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-3_fatty_acids\uterine_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-07-06 10:14:57 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-3_fatty_acids\uterine_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-07-06 10:14:57 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-3_fatty_acids\uterine_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-07-06 10:14:57 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-3_fatty_acids\uterine_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-07-06 10:14:57 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-3_fatty_acids\uterine_cancer_incidence_true_all.json
+2026-07-06 10:14:57 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-3_fatty_acids\uterine_cancer_incidence_true_all.json
+2026-07-06 10:14:57 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-3_fatty_acids\uterine_cancer_incidence_true_all.json
+2026-07-06 10:14:57 
+============================================================
+2026-07-06 10:14:57 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-07-06 10:14:57   - Total Articles Fetched from PubMed: 125
+2026-07-06 10:14:57   - Articles Remaining After Pre-filter: 125
+2026-07-06 10:14:57   - LLM Screening:
+2026-07-06 10:14:57     * Screened IN / Accepted:   21
+2026-07-06 10:14:57     * Screened OUT / Rejected:  103
+2026-07-06 10:14:57     * Consensus Bypassed:       0
+2026-07-06 10:14:57   - Final Extracted Studies: 8
+2026-07-06 10:14:57 ============================================================
+
+2026-07-06 10:14:57 [MetaFemina] Analyze complete in 0.1s: studies=8, error=None
+2026-07-06 10:16:23 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Omega-3 fatty acids, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-07-06 10:16:23 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-3_fatty_acids\breast_cancer_incidence_true_core.json
+2026-07-06 10:16:23 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-3_fatty_acids\breast_cancer_incidence_true_core.json
+2026-07-06 10:16:23 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-3_fatty_acids\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-07-06 10:16:23 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-3_fatty_acids\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-07-06 10:16:23 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-3_fatty_acids\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-07-06 10:16:23 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-3_fatty_acids\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-07-06 10:16:23 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-3_fatty_acids\breast_cancer_incidence_true_all.json
+2026-07-06 10:16:23 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-3_fatty_acids\breast_cancer_incidence_true_all.json
+2026-07-06 10:16:23 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\omega-3_fatty_acids\breast_cancer_incidence_true_all.json
+2026-07-06 10:16:23 
+============================================================
+2026-07-06 10:16:23 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-07-06 10:16:23   - Total Articles Fetched from PubMed: 589
+2026-07-06 10:16:23   - Articles Remaining After Pre-filter: 586
+2026-07-06 10:16:23     (Pre-filter skips: genetic=3)
+2026-07-06 10:16:23   - LLM Screening:
+2026-07-06 10:16:23     * Screened IN / Accepted:   304
+2026-07-06 10:16:23     * Screened OUT / Rejected:  276
+2026-07-06 10:16:23     * Consensus Bypassed:       0
+2026-07-06 10:16:23   - Final Extracted Studies: 22
+2026-07-06 10:16:23 ============================================================
+
+2026-07-06 10:16:23 [MetaFemina] Analyze complete in 0.0s: studies=21, error=None
+2026-07-06 10:41:13 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Selenium, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-07-06 10:41:13 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\selenium\ovarian_cancer_incidence_true_core.json
+2026-07-06 10:41:13 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\selenium\ovarian_cancer_incidence_true_core.json
+2026-07-06 10:41:13 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\selenium\ovarian_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-07-06 10:41:13 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\selenium\ovarian_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-07-06 10:41:13 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\selenium\ovarian_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-07-06 10:41:13 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\selenium\ovarian_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-07-06 10:41:13 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\selenium\ovarian_cancer_incidence_true_all.json
+2026-07-06 10:41:13 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\selenium\ovarian_cancer_incidence_true_all.json
+2026-07-06 10:41:13 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\selenium\ovarian_cancer_incidence_true_all.json
+2026-07-06 10:41:13 
+============================================================
+2026-07-06 10:41:13 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-07-06 10:41:13   - Total Articles Fetched from PubMed: 89
+2026-07-06 10:41:13   - Articles Remaining After Pre-filter: 89
+2026-07-06 10:41:13   - LLM Screening:
+2026-07-06 10:41:13     * Screened IN / Accepted:   67
+2026-07-06 10:41:13     * Screened OUT / Rejected:  22
+2026-07-06 10:41:13     * Consensus Bypassed:       0
+2026-07-06 10:41:13   - Final Extracted Studies: 3
+2026-07-06 10:41:13 ============================================================
+
+2026-07-06 10:41:13 [MetaFemina] Analyze complete in 0.0s: studies=3, error=None
+2026-07-06 11:01:42 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Alcohol, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-07-06 11:01:42 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alcohol\ovarian_cancer_incidence_true_core.json
+2026-07-06 11:01:42 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alcohol\ovarian_cancer_incidence_true_core.json
+2026-07-06 11:01:42 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alcohol\ovarian_cancer_incidence_true_core.json
+2026-07-06 11:01:42 
+============================================================
+2026-07-06 11:01:42 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-07-06 11:01:42   - Total Articles Fetched from PubMed: 578
+2026-07-06 11:01:42   - Articles Remaining After Pre-filter: 575
+2026-07-06 11:01:42     (Pre-filter skips: genetic=3)
+2026-07-06 11:01:42   - LLM Screening:
+2026-07-06 11:01:42     * Screened IN / Accepted:   221
+2026-07-06 11:01:42     * Screened OUT / Rejected:  354
+2026-07-06 11:01:42     * Consensus Bypassed:       0
+2026-07-06 11:01:42   - Final Extracted Studies: 24
+2026-07-06 11:01:42 ============================================================
+
+2026-07-06 11:01:42 [MetaFemina] Analyze complete in 0.0s: studies=24, error=None
+2026-07-06 11:01:50 [MetaFemina] Analyze request: disease=Uterine cancer, exposure=Alcohol, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-07-06 11:01:50 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alcohol\uterine_cancer_incidence_true_core.json
+2026-07-06 11:01:50 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alcohol\uterine_cancer_incidence_true_core.json
+2026-07-06 11:01:50 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alcohol\uterine_cancer_incidence_true_core.json
+2026-07-06 11:01:50 
+============================================================
+2026-07-06 11:01:50 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-07-06 11:01:50   - Total Articles Fetched from PubMed: 666
+2026-07-06 11:01:50   - Articles Remaining After Pre-filter: 664
+2026-07-06 11:01:50     (Pre-filter skips: genetic=2)
+2026-07-06 11:01:50   - LLM Screening:
+2026-07-06 11:01:50     * Screened IN / Accepted:   299
+2026-07-06 11:01:50     * Screened OUT / Rejected:  365
+2026-07-06 11:01:50     * Consensus Bypassed:       0
+2026-07-06 11:01:50   - Final Extracted Studies: 28
+2026-07-06 11:01:50 ============================================================
+
+2026-07-06 11:01:50 [MetaFemina] Analyze complete in 0.0s: studies=24, error=None
+2026-07-06 11:01:56 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Alcohol, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-07-06 11:01:56 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alcohol\breast_cancer_incidence_true_core.json
+2026-07-06 11:01:56 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alcohol\breast_cancer_incidence_true_core.json
+2026-07-06 11:01:56 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\alcohol\breast_cancer_incidence_true_core.json
+2026-07-06 11:01:56 
+============================================================
+2026-07-06 11:01:56 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-07-06 11:01:56   - Total Articles Fetched from PubMed: 3295
+2026-07-06 11:01:56   - Articles Remaining After Pre-filter: 3285
+2026-07-06 11:01:56     (Pre-filter skips: genetic=10)
+2026-07-06 11:01:56   - LLM Screening:
+2026-07-06 11:01:56     * Screened IN / Accepted:   1906
+2026-07-06 11:01:56     * Screened OUT / Rejected:  1379
+2026-07-06 11:01:56     * Consensus Bypassed:       0
+2026-07-06 11:01:56   - Final Extracted Studies: 267
+2026-07-06 11:01:56 ============================================================
+
+2026-07-06 11:01:56 [MetaFemina] Analyze complete in 0.0s: studies=237, error=None
+2026-07-06 14:15:50 [MetaFemina] Analyze request: disease=Ovarian cancer, exposure=Red meat, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-07-06 14:15:50 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\ovarian_cancer_incidence_true_core.json
+2026-07-06 14:15:50 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\ovarian_cancer_incidence_true_core.json
+2026-07-06 14:15:50 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\ovarian_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-07-06 14:15:50 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\ovarian_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-07-06 14:15:50 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\ovarian_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-07-06 14:15:50 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\ovarian_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-07-06 14:15:50 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\ovarian_cancer_incidence_true_all.json
+2026-07-06 14:15:50 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\ovarian_cancer_incidence_true_all.json
+2026-07-06 14:15:50 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\red_meat\ovarian_cancer_incidence_true_all.json
+2026-07-06 14:15:50 
+============================================================
+2026-07-06 14:15:50 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-07-06 14:15:50   - Total Articles Fetched from PubMed: 69
+2026-07-06 14:15:50   - Articles Remaining After Pre-filter: 69
+2026-07-06 14:15:50   - LLM Screening:
+2026-07-06 14:15:50     * Screened IN / Accepted:   32
+2026-07-06 14:15:50     * Screened OUT / Rejected:  37
+2026-07-06 14:15:50     * Consensus Bypassed:       0
+2026-07-06 14:15:50   - Final Extracted Studies: 3
+2026-07-06 14:15:50 ============================================================
+
+2026-07-06 14:15:50 [MetaFemina] Analyze complete in 0.1s: studies=1, error=None
+2026-07-06 16:17:05 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-07-06 16:17:05 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core.json
+2026-07-06 16:17:05 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core.json
+2026-07-06 16:17:05 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-07-06 16:17:05 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-07-06 16:17:05 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-07-06 16:17:05 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-07-06 16:17:05 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-07-06 16:17:05 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-07-06 16:17:05 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-07-06 16:17:05 
+============================================================
+2026-07-06 16:17:05 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-07-06 16:17:05   - Total Articles Fetched from PubMed: 867
+2026-07-06 16:17:05   - Articles Remaining After Pre-filter: 863
+2026-07-06 16:17:05     (Pre-filter skips: genetic=4)
+2026-07-06 16:17:05   - LLM Screening:
+2026-07-06 16:17:05     * Screened IN / Accepted:   229
+2026-07-06 16:17:05     * Screened OUT / Rejected:  634
+2026-07-06 16:17:05     * Consensus Bypassed:       13
+2026-07-06 16:17:05   - Final Extracted Studies: 47
+2026-07-06 16:17:05 ============================================================
+
+2026-07-06 16:17:05 [MetaFemina] Re-analyzing Folic acid due to verification filtering/consensus/flags...
+2026-07-06 16:17:07 [MetaFemina] Analyze complete in 1.6s: studies=44, error=None
+2026-07-06 16:25:25 [MetaFemina] Analyze request: disease=Breast cancer, exposure=Folic acid, outcome=Incidence, exclude_meta=True, force_refresh=False, model=openai.gpt-4o
+2026-07-06 16:25:25 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core.json
+2026-07-06 16:25:25 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core.json
+2026-07-06 16:25:25 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_openai.gpt-5.4-pro.json
+2026-07-06 16:25:25 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.5-pro.json
+2026-07-06 16:25:25 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.5-flash.json
+2026-07-06 16:25:25 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_core_google.gemini-2.0-flash.json
+2026-07-06 16:25:25 [MetaFemina] Checking cache candidate: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-07-06 16:25:25 [MetaFemina] Cache hit found: C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-07-06 16:25:25 [MetaFemina] Returning best available cached results from C:\Users\mde4023\Downloads\MetaFemina\Cached_results\folic_acid\breast_cancer_incidence_true_all.json
+2026-07-06 16:25:25 
+============================================================
+2026-07-06 16:25:25 [MetaFemina] SCREENING & PIPELINE STATISTICS SUMMARY (LOADED FROM CACHE):
+2026-07-06 16:25:25   - Total Articles Fetched from PubMed: 867
+2026-07-06 16:25:25   - Articles Remaining After Pre-filter: 863
+2026-07-06 16:25:25     (Pre-filter skips: genetic=4)
+2026-07-06 16:25:25   - LLM Screening:
+2026-07-06 16:25:25     * Screened IN / Accepted:   229
+2026-07-06 16:25:25     * Screened OUT / Rejected:  634
+2026-07-06 16:25:25     * Consensus Bypassed:       13
+2026-07-06 16:25:25   - Final Extracted Studies: 47
+2026-07-06 16:25:25 ============================================================
+
+2026-07-06 16:25:25 [MetaFemina] Re-analyzing Folic acid due to verification filtering/consensus/flags...
+2026-07-06 16:25:26 [MetaFemina] Analyze complete in 1.3s: studies=44, error=None
