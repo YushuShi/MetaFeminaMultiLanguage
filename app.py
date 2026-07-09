@@ -669,7 +669,7 @@ def usage():
     })
 
 def get_last_updated_time():
-    """Find the latest modification time of any file in CACHE_DIR."""
+    """Find the latest modification time of any file in CACHE_DIR as a Unix timestamp."""
     latest_time = 0.0
     if os.path.exists(CACHE_DIR):
         for root, dirs, files in os.walk(CACHE_DIR):
@@ -682,9 +682,7 @@ def get_last_updated_time():
                             latest_time = mtime
                     except Exception:
                         pass
-    if latest_time > 0:
-        return datetime.fromtimestamp(latest_time).strftime("%Y-%m-%d %H:%M:%S")
-    return None
+    return latest_time if latest_time > 0 else None
 
 @app.route('/api/config')
 def get_config():

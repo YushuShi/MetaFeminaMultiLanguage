@@ -969,11 +969,22 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (!elements.lastUpdated) return;
         let date;
         if (ts) {
-            // Replace space with T to make it ISO-compliant for better cross-browser support
-            const isoStr = ts.replace(' ', 'T');
-            date = new Date(isoStr);
-            if (isNaN(date.getTime())) {
-                date = new Date(ts);
+            if (typeof ts === 'number' || !isNaN(Number(ts))) {
+                // It's a Unix timestamp (seconds since epoch)
+                date = new Date(Number(ts) * 1000);
+            } else if (typeof ts === 'string') {
+                // It's a string timestamp (e.g. YYYY-MM-DD HH:MM:SS)
+                // Split on non-digit characters to construct a local Date object
+                const parts = ts.split(/[- :T]/);
+                if (parts.length >= 6) {
+                    date = new Date(parts[0], parts[1] - 1, parts[2], parts[3], parts[4], parts[5]);
+                } else {
+                    const isoStr = ts.replace(' ', 'T');
+                    date = new Date(isoStr);
+                    if (isNaN(date.getTime())) {
+                        date = new Date(ts);
+                    }
+                }
             }
         } else {
             return;
