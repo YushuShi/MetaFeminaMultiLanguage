@@ -436,7 +436,8 @@
                 "confidence_interval": "(95% CI, 0.69-3.93)",
                 "outcome_definition": "epithelial ovarian cancer",
                 "exposure_definition": "weekly alcohol (> or = 5 drinks) intakes"
-            }
+            },
+            "exclusions": 0
         },
         {
             "Study": "Webb PM et al. (2004) [PMID: 15066924]",
@@ -915,7 +916,8 @@
                 "confidence_interval": "95% CI = 0.11 to 0.60",
                 "outcome_definition": "266 incident cases of invasive epithelial ovarian cancer were diagnosed",
                 "exposure_definition": "Among women who consumed more than 20 g of alcohol (approximately two drinks) per week"
-            }
+            },
+            "exclusions": 0
         },
         {
             "Study": "Miao J et al. (2025) [PMID: 40487677]",
@@ -1057,7 +1059,8 @@
                 "confidence_interval": "95% confidence interval (CI) 1.05-2.54",
                 "outcome_definition": "Our aim was to evaluate the role of folate and related micronutrients, polymorphisms in key folate-metabolising genes and environmental factors in ovarian carcinogenesis.",
                 "exposure_definition": "folic acid intake was associated with borderline significant increased risks among women who consumed \u22651 standard alcoholic drinks/day."
-            }
+            },
+            "exclusions": 0
         },
         {
             "Study": "Sung S et al. (2023) [PMID: 36789760]",
@@ -1340,7 +1343,7 @@
                 "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled analysis of 24 studies yielded an effect size of 0.98 (95% CI: 0.88\u20131.08), indicating no statistically significant association between alcohol and ovarian cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 78.71%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 24 studies yielded an effect size of 0.98 (95% CI: 0.88\u20131.08), indicating no statistically significant association between alcohol and uterine cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 78.71%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 354,
@@ -1359,8 +1362,8 @@
         },
         "extracted": 24
     },
-    "plot_url": "static/alcohol/forest_ovarian_cancer_incidence_primary.png?t=1784",
-    "funnel_plot_url": "static/alcohol/funnel_ovarian_cancer_incidence_primary.png?t=5584",
-    "baujat_plot_url": "static\\alcohol\\baujat_ovarian_cancer_incidence_primary.png?t=5421",
+    "plot_url": "static/alcohol/forest_uterine_cancer_incidence_primary.png?t=8263",
+    "funnel_plot_url": "static/alcohol/funnel_uterine_cancer_incidence_primary.png?t=7261",
+    "baujat_plot_url": "static\\alcohol\\baujat_uterine_cancer_incidence_primary.png?t=583",
     "last_run": "2026-06-16 14:46:42"
 }

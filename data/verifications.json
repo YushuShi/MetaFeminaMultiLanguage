@@ -588,7 +588,9 @@
     "27905104": {
         "legacy_count": 0,
         "submissions": [],
-        "context_exclusions": {},
+        "context_exclusions": {
+            "breast_cancer_alcohol_incidence": 2
+        },
         "contexts": {
             "breast_cancer_vitamin_b12_incidence": {
                 "submissions": [
@@ -2228,7 +2230,9 @@
         "submissions": [],
         "consensus_data": null,
         "legacy_count": 0,
-        "context_exclusions": {},
+        "context_exclusions": {
+            "breast_cancer_alcohol_incidence": 2
+        },
         "contexts": {
             "breast_cancer_folic_acid_incidence": {
                 "submissions": [
@@ -3324,7 +3328,8 @@
         "consensus_data": null,
         "legacy_count": 0,
         "context_exclusions": {
-            "breast_cancer_beta-carotene_incidence": 2
+            "breast_cancer_beta-carotene_incidence": 2,
+            "breast_cancer_alcohol_incidence": 2
         }
     },
     "26817718": {
@@ -3960,6 +3965,150 @@
         "legacy_count": 0,
         "context_exclusions": {
             "uterine_cancer_vitamin_d_incidence": 2
+        }
+    },
+    "12618502": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_alcohol_incidence": 2
+        }
+    },
+    "42263734": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_alcohol_incidence": 4
+        }
+    },
+    "23780838": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_alcohol_incidence": 2
+        }
+    },
+    "16103452": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_alcohol_incidence": 2
+        }
+    },
+    "27121532": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_alcohol_incidence": 2
+        }
+    },
+    "25505228": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_alcohol_incidence": 2
+        }
+    },
+    "42001954": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_alcohol_incidence": 2
+        }
+    },
+    "27599758": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_alcohol_incidence": 2
+        }
+    },
+    "10235158": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_alcohol_incidence": 2
+        }
+    },
+    "16185815": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_alcohol_incidence": 2
+        }
+    },
+    "26856173": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_alcohol_incidence": 2
+        }
+    },
+    "22564867": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "breast_cancer_alcohol_incidence": 2
+        }
+    },
+    "14996861": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "ovarian_cancer_alcohol_incidence": 2
+        }
+    },
+    "21629268": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "ovarian_cancer_alcohol_incidence": 2
+        }
+    },
+    "16172227": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "ovarian_cancer_alcohol_incidence": 2
+        }
+    },
+    "35178146": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "uterine_cancer_alcohol_incidence": 2
+        }
+    },
+    "37023913": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "uterine_cancer_alcohol_incidence": 2
+        }
+    },
+    "15218005": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "context_exclusions": {
+            "uterine_cancer_alcohol_incidence": 2
         }
     }
 }
