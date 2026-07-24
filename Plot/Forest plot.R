@@ -35,8 +35,8 @@ dat_clean <- dat %>%
 
 group_map <- tribble(
   ~Exposure,                  ~Group,
-  "eggs",                     "Dietary Patterns",
-  "dairy",                    "Dietary Patterns",
+  "eggs",                     "Other",
+  "dairy",                    "Other",
   "black_cohosh",             "Herbal & Botanical",
   "vitamin_b2",               "B Vitamins",
   "cesium",                   "Minerals & Trace Elements",
@@ -53,7 +53,7 @@ group_map <- tribble(
   "resveratrol",              "Polyphenols & Flavonoids",
   "vitamin_a",                "Vitamins A, C, D, E",
   "vitamin_b1",               "B Vitamins",
-  "mediterranean_diet",       "Dietary Patterns",
+  "mediterranean_diet",       "Other",
   "cod_liver_oil",            "Fatty Acids & Lipids",
   "antioxidants",             "Antioxidants",
   "betaine",                  "Metabolites & Amino Acids",
@@ -79,7 +79,8 @@ group_map <- tribble(
   "vitamin_e",                "Vitamins A, C, D, E",
   "vitamin_d",                "Vitamins A, C, D, E",
   "omega-3_fatty_acids",      "Fatty Acids & Lipids",
-  "caffeine",                 "Dietary Patterns",
+  "caffeine",                 "Other",
+  "alcohol",                  "Other",
   "leucine",                  "Metabolites & Amino Acids",
   "iron",                     "Minerals & Trace Elements",
   "isoleucine",               "Metabolites & Amino Acids",
@@ -115,7 +116,7 @@ group_order <- c(
   "Fatty Acids & Lipids",
   "Phytoestrogens",
   "Herbal & Botanical",
-  "Dietary Patterns",
+  "Other",
   "Metabolites & Amino Acids",
   "Hormones & Endogenous"
 )
@@ -129,12 +130,11 @@ group_colors <- c(
   "Polyphenols & Flavonoids" = "#6A0DAD",
   "Fatty Acids & Lipids"     = "#B5001F",
   "Phytoestrogens"           = "#7B4A00",
-  "Dietary Patterns"         = "#37474F",
+  "Other"                    = "#37474F",
   "Herbal & Botanical"       = "#00695C",
   "Metabolites & Amino Acids"= "#880E4F",
   "Hormones & Endogenous"    = "#4527A0",
-  "Antioxidants"             = "#1565C0",
-  "Other"                    = "#424242"
+  "Antioxidants"             = "#1565C0"
 )
 
 group_bg <- c(
@@ -146,12 +146,11 @@ group_bg <- c(
   "Polyphenols & Flavonoids" = "#F2E8FB",
   "Fatty Acids & Lipids"     = "#FBEAED",
   "Phytoestrogens"           = "#F5EDE6",
-  "Dietary Patterns"         = "#ECEFF1",
+  "Other"                    = "#ECEFF1",
   "Herbal & Botanical"       = "#E0F2EF",
   "Metabolites & Amino Acids"= "#FCE4EF",
   "Hormones & Endogenous"    = "#EDE7F6",
-  "Antioxidants"             = "#E3EEF9",
-  "Other"                    = "#F5F5F5"
+  "Antioxidants"             = "#E3EEF9"
 )
 
 # =====================================================
@@ -183,7 +182,7 @@ prepare_dat <- function(dat_clean, dir) {
       N_lab         = comma(Total_N),
       Cases_lab     = comma(N_cases),
       pooled_ci_lab = pooled_ci,
-      Group = factor(Group, levels = c(group_order, "Other"))
+      Group = factor(Group, levels = group_order)
     ) %>%
     filter(direction == dir) %>%
     # Sort: by group order, then by OR within group
