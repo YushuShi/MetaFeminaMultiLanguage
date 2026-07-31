@@ -96,90 +96,22 @@
                 "outcome_definition": "Five hundred incident patients with histologically confirmed cancer of the ovary",
                 "exposure_definition": "habitual consumption of soy foods, including soybean, soy milk, fresh tofu, dried tofu, and soybean sprout; total soy foods (75.3 \u00b1 53.6 g/day) compared to the controls (110.7 \u00b1 88.8 g/day)"
             }
-        },
-        {
-            "Study": "Yip CSC et al. (2023) [PMID: 35249559]",
-            "PMID": "35249559",
-            "Effect Size": 0.52,
-            "Lower CI": 0.42,
-            "Upper CI": 0.66,
-            "Population": "General",
-            "Reference": "The associations of soya intakes with non-communicable diseases: a scoping review of meta-analyses.",
-            "Authors": "Yip CSC, Yip YC, Chan W",
-            "Journal": "The British journal of nutrition",
-            "Year": "2023",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/35249559/",
-            "Effect Type": "RR",
-            "SE": 0.06122448979591838,
-            "Sample Size": null,
-            "Cases": null,
-            "Estimated Cases": null,
-            "Design": "Meta-analysis",
-            "Timing": null,
-            "Continent": null,
-            "Stage": null,
-            "Quality %": 0.0,
-            "Quality Score": "Fair",
-            "comparison_type": "Highest vs Lowest",
-            "JBI": {
-                "q1": "NA",
-                "q2": "NA",
-                "q3": "NA",
-                "q4": "NA",
-                "q5": "NA",
-                "q6": "NA",
-                "q7": "NA",
-                "q8": "NA"
-            },
-            "exposure_measurement_type": "unclear",
-            "exposure_measurement_supporting_text": "The abstract describes a scoping review of meta-analyses examining dietary soya intakes, but does not specify the measurement methods used in the underlying primary studies.",
-            "extraction_supporting_text": {
-                "sample_size": null,
-                "effect_size": "ovarian cancer RR 0\u00b752 (95 % CI: 0\u00b742, 0\u00b766)",
-                "effect_direction": "eighteen significantly negatively associated risk\u2013disease pairs for total soya intakes",
-                "p_value": null,
-                "confidence_interval": "ovarian cancer RR 0\u00b752 (95 % CI: 0\u00b742, 0\u00b766)",
-                "outcome_definition": "ovarian cancer",
-                "exposure_definition": "dietary soya intakes"
-            }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Lee AH et al. (2014) [PMID: 24774066]</th>\n      <td>-1.1410</td>\n      <td>0.1813</td>\n      <td>-1.4963</td>\n      <td>-0.7858</td>\n      <td>500.0</td>\n      <td>1000.0</td>\n    </tr>\n    <tr>\n      <th>Zhang M et al. (2004) [PMID: 15489204]</th>\n      <td>-0.6259</td>\n      <td>0.2302</td>\n      <td>-1.0771</td>\n      <td>-0.1747</td>\n      <td>254.0</td>\n      <td>906.0</td>\n    </tr>\n    <tr>\n      <th>Yip CSC et al. (2023) [PMID: 35249559]</th>\n      <td>-0.6539</td>\n      <td>0.1153</td>\n      <td>-0.8799</td>\n      <td>-0.4279</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Lee AH et al. (2014) [PMID: 24774066]</th>\n      <td>-1.1410</td>\n      <td>0.1813</td>\n      <td>-1.4963</td>\n      <td>-0.7858</td>\n      <td>500.0</td>\n      <td>1000</td>\n    </tr>\n    <tr>\n      <th>Zhang M et al. (2004) [PMID: 15489204]</th>\n      <td>-0.6259</td>\n      <td>0.2302</td>\n      <td>-1.0771</td>\n      <td>-0.1747</td>\n      <td>254.0</td>\n      <td>906</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.45,
-        "ci_low": 0.32,
-        "ci_upp": 0.62,
-        "pi_low": 0.01,
-        "pi_upp": 16.16,
+        "pooled_es": 0.41,
+        "ci_low": 0.25,
+        "ci_upp": 0.67,
+        "pi_low": null,
+        "pi_upp": null,
         "interpretation": "Statistically significant (decreased risk/odds)",
-        "i2": 64.25,
-        "tau2": 0.05,
-        "eggers_p": 0.7542400871231821,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.7542). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
-        "loo_results": [
-            {
-                "omitted": "Lee AH et al. (2014) [PMID: 24774066]",
-                "pooled_es": 0.25944449656323315,
-                "ci_low": null,
-                "ci_upp": null,
-                "is_significant": false
-            },
-            {
-                "omitted": "Zhang M et al. (2004) [PMID: 15489204]",
-                "pooled_es": 0.4158612668790839,
-                "ci_low": 0.25842889752170645,
-                "ci_upp": 0.6691999035276257,
-                "is_significant": true
-            },
-            {
-                "omitted": "Yip CSC et al. (2023) [PMID: 35249559]",
-                "pooled_es": 0.4053357080278169,
-                "ci_low": 0.24503209827798442,
-                "ci_upp": 0.6705123016822867,
-                "is_significant": true
-            }
-        ],
-        "results_interpretation": "The pooled analysis of 3 studies yielded an overall effect size of 0.45 (95% CI: 0.32\u20130.62), suggesting that soy is associated with a lower risk of ovarian cancer. However, this association should be interpreted with caution, as there was substantial between-study heterogeneity (I\u00b2 = 64.25%), reflecting considerable variability across studies."
+        "i2": 67.64,
+        "tau2": 0.09,
+        "eggers_p": null,
+        "funnel_interpretation": "Insufficient studies to perform formal publication bias testing.",
+        "loo_results": [],
+        "results_interpretation": "The pooled analysis of 2 studies yielded an overall effect size of 0.41 (95% CI: 0.25\u20130.67), suggesting that soy is associated with a lower risk of ovarian cancer. However, this association should be interpreted with caution, as there was substantial between-study heterogeneity (I\u00b2 = 67.64%), reflecting considerable variability across studies."
     },
     "screening_stats": {
         "llm_screened_out": 20,
@@ -199,8 +131,8 @@
         },
         "extracted": 4
     },
-    "plot_url": "static/soy/forest_ovarian_cancer_incidence_primary.png?t=7035",
-    "funnel_plot_url": "static/soy/funnel_ovarian_cancer_incidence_primary.png?t=9098",
-    "baujat_plot_url": "static\\soy\\baujat_ovarian_cancer_incidence_primary.png?t=5001",
+    "plot_url": "static/soy/forest_ovarian_cancer_incidence_primary.png?t=5792",
+    "funnel_plot_url": "static/soy/funnel_ovarian_cancer_incidence_primary.png?t=6200",
+    "baujat_plot_url": null,
     "last_run": "2026-06-22 12:41:17"
 }

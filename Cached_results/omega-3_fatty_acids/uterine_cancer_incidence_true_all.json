@@ -2,54 +2,6 @@
     "success": true,
     "studies": [
         {
-            "Study": "Hou R et al. (2017) [PMID: 29207677]",
-            "PMID": "29207677",
-            "Effect Size": 0.79,
-            "Lower CI": 0.61,
-            "Upper CI": 1.04,
-            "Population": "General",
-            "Reference": "Dietary n-3 polyunsaturated fatty acids, fish consumption, and endometrial cancer risk: a meta-analysis of epidemiological studies.",
-            "Authors": "Hou R, Yao SS, Liu J, Wang LL, Wu L, Jiang L",
-            "Journal": "Oncotarget",
-            "Year": "2017",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/29207677/",
-            "Effect Type": "RR",
-            "SE": 0.10969387755102042,
-            "Sample Size": null,
-            "Cases": null,
-            "Estimated Cases": null,
-            "Design": "Meta-analysis of prospective and case-control studies",
-            "Timing": "Prospective and Retrospective",
-            "Continent": "Multiple (Europe, Asia, unspecified)",
-            "Stage": null,
-            "Quality %": 90.0,
-            "Quality Score": "Good",
-            "comparison_type": "Highest vs Lowest (EPA intake)",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Unclear",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Yes",
-                "q10": "Yes"
-            },
-            "exposure_measurement_type": "dietary_intake",
-            "exposure_measurement_supporting_text": "intake of fish and n-3 fatty acids",
-            "extraction_supporting_text": {
-                "sample_size": "five prospective studies and 11 case-control studies were identified",
-                "effect_size": "EPA: RR (95% CI) = 0.79 (0.61-1.04)",
-                "effect_direction": "marginally inverse associations of high EPA or DHA intake were detected",
-                "p_value": "",
-                "confidence_interval": "EPA: RR (95% CI) = 0.79 (0.61-1.04)",
-                "outcome_definition": "endometrial cancer risk",
-                "exposure_definition": "n-3 PUFA intake"
-            }
-        },
-        {
             "Study": "Brasky TM et al. (2016) [PMID: 26755676]",
             "PMID": "26755676",
             "Effect Size": 0.79,
@@ -294,63 +246,56 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Arem H et al. (2013) [PMID: 22915050]</th>\n      <td>-0.5046</td>\n      <td>0.1800</td>\n      <td>-0.8574</td>\n      <td>-0.1518</td>\n      <td>556.0</td>\n      <td>1089.0</td>\n    </tr>\n    <tr>\n      <th>Brasky TM et al. (2015) [PMID: 25739930]</th>\n      <td>-0.4996</td>\n      <td>0.1758</td>\n      <td>-0.8441</td>\n      <td>-0.1551</td>\n      <td>1253.0</td>\n      <td>87360.0</td>\n    </tr>\n    <tr>\n      <th>Hou R et al. (2017) [PMID: 29207677]</th>\n      <td>-0.2357</td>\n      <td>0.1361</td>\n      <td>-0.5025</td>\n      <td>0.0310</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Brasky TM et al. (2016) [PMID: 26755676]</th>\n      <td>-0.2214</td>\n      <td>0.2139</td>\n      <td>-0.6407</td>\n      <td>0.1979</td>\n      <td>282.0</td>\n      <td>47602.0</td>\n    </tr>\n    <tr>\n      <th>Yammine SG et al. (2023) [PMID: 36797668]</th>\n      <td>-0.0678</td>\n      <td>0.0309</td>\n      <td>-0.1283</td>\n      <td>-0.0073</td>\n      <td>1886.0</td>\n      <td>299318.0</td>\n    </tr>\n    <tr>\n      <th>Brasky TM et al. (2014) [PMID: 24500149]</th>\n      <td>0.5290</td>\n      <td>0.1932</td>\n      <td>0.1503</td>\n      <td>0.9077</td>\n      <td>263.0</td>\n      <td>22494.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Arem H et al. (2013) [PMID: 22915050]</th>\n      <td>-0.5046</td>\n      <td>0.1800</td>\n      <td>-0.8574</td>\n      <td>-0.1518</td>\n      <td>556.0</td>\n      <td>1089.0</td>\n    </tr>\n    <tr>\n      <th>Brasky TM et al. (2015) [PMID: 25739930]</th>\n      <td>-0.4996</td>\n      <td>0.1758</td>\n      <td>-0.8441</td>\n      <td>-0.1551</td>\n      <td>1253.0</td>\n      <td>87360.0</td>\n    </tr>\n    <tr>\n      <th>Brasky TM et al. (2016) [PMID: 26755676]</th>\n      <td>-0.2214</td>\n      <td>0.2139</td>\n      <td>-0.6407</td>\n      <td>0.1979</td>\n      <td>282.0</td>\n      <td>47602.0</td>\n    </tr>\n    <tr>\n      <th>Yammine SG et al. (2023) [PMID: 36797668]</th>\n      <td>-0.0678</td>\n      <td>0.0309</td>\n      <td>-0.1283</td>\n      <td>-0.0073</td>\n      <td>1886.0</td>\n      <td>299318.0</td>\n    </tr>\n    <tr>\n      <th>Brasky TM et al. (2014) [PMID: 24500149]</th>\n      <td>0.5290</td>\n      <td>0.1932</td>\n      <td>0.1503</td>\n      <td>0.9077</td>\n      <td>263.0</td>\n      <td>22494.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.85,
-        "ci_low": 0.67,
-        "ci_upp": 1.07,
-        "pi_low": 0.4,
-        "pi_upp": 1.8,
+        "pooled_es": 0.86,
+        "ci_low": 0.64,
+        "ci_upp": 1.15,
+        "pi_low": 0.3,
+        "pi_upp": 2.43,
         "interpretation": "Not statistically significant",
-        "i2": 78.29,
-        "tau2": 0.06,
-        "eggers_p": 0.5510393286381283,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.5510). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "i2": 81.64,
+        "tau2": 0.08,
+        "eggers_p": 0.6898302519232826,
+        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.6898). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
         "loo_results": [
             {
                 "omitted": "Arem H et al. (2013) [PMID: 22915050]",
-                "pooled_es": 0.900330616066453,
-                "ci_low": 0.6579316611374808,
-                "ci_upp": 1.2320355837948003,
+                "pooled_es": 0.9338623269223362,
+                "ci_low": 0.6207560141861495,
+                "ci_upp": 1.4048979401160973,
                 "is_significant": false
             },
             {
                 "omitted": "Brasky TM et al. (2015) [PMID: 25739930]",
-                "pooled_es": 0.9006594900406322,
-                "ci_low": 0.657626626381432,
-                "ci_upp": 1.2335077146492428,
-                "is_significant": false
-            },
-            {
-                "omitted": "Hou R et al. (2017) [PMID: 29207677]",
-                "pooled_es": 0.8592388199580812,
-                "ci_low": 0.5996350861834505,
-                "ci_upp": 1.2312344069491046,
+                "pooled_es": 0.9340135189322122,
+                "ci_low": 0.6199592279701153,
+                "ci_upp": 1.4071590746451257,
                 "is_significant": false
             },
             {
                 "omitted": "Brasky TM et al. (2016) [PMID: 26755676]",
-                "pooled_es": 0.8542086282396432,
-                "ci_low": 0.6023574581432467,
-                "ci_upp": 1.2113610791974778,
+                "pooled_es": 0.8716414473310032,
+                "ci_low": 0.550684577245488,
+                "ci_upp": 1.3796624131105735,
                 "is_significant": false
             },
             {
                 "omitted": "Yammine SG et al. (2023) [PMID: 36797668]",
-                "pooled_es": 0.8254285065652245,
-                "ci_low": 0.5719856702991246,
-                "ci_upp": 1.1911700848977365,
+                "pooled_es": 0.8371951349857637,
+                "ci_low": 0.5189977483313777,
+                "ci_upp": 1.3504792579491356,
                 "is_significant": false
             },
             {
                 "omitted": "Brasky TM et al. (2014) [PMID: 24500149]",
-                "pooled_es": 0.7635009334386927,
-                "ci_low": 0.641448866118869,
-                "ci_upp": 0.9087765309943345,
+                "pooled_es": 0.7453414012559134,
+                "ci_low": 0.5965637989402637,
+                "ci_upp": 0.9312227885986027,
                 "is_significant": true
             }
         ],
-        "results_interpretation": "The pooled analysis of 6 studies yielded an effect size of 0.85 (95% CI: 0.67\u20131.07), indicating no statistically significant association between omega-3 fatty acids and uterine cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 78.29%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 5 studies yielded an effect size of 0.86 (95% CI: 0.64\u20131.15), indicating no statistically significant association between omega-3 fatty acids and uterine cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 81.64%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 103,
@@ -369,8 +314,8 @@
         },
         "extracted": 8
     },
-    "plot_url": "static/omega_3_fatty_acids/forest_uterine_cancer_incidence_primary.png?t=818",
-    "funnel_plot_url": "static/omega_3_fatty_acids/funnel_uterine_cancer_incidence_primary.png?t=9467",
-    "baujat_plot_url": "static/omega_3_fatty_acids/baujat_uterine_cancer_incidence_primary.png?t=3015",
+    "plot_url": "static/omega_3_fatty_acids/forest_uterine_cancer_incidence_primary.png?t=5151",
+    "funnel_plot_url": "static/omega_3_fatty_acids/funnel_uterine_cancer_incidence_primary.png?t=3070",
+    "baujat_plot_url": "static/omega_3_fatty_acids/baujat_uterine_cancer_incidence_primary.png?t=7634",
     "last_run": "2026-06-15 14:54:16"
 }
