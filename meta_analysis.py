@@ -43,6 +43,11 @@ print = safe_print
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, 'data')
 
+EGGERS_MIN_STUDIES = 10
+EGGERS_FEWER_THAN_TEN_MESSAGE = (
+    "Egger’s test is generally not recommended when fewer than 10 studies are available."
+)
+
 # ... (rest of imports)
 
 DISEASE_ALIASES = {
@@ -363,6 +368,8 @@ def get_funnel_interpretation(disease, exposure, n_studies, eggers_p, intercept)
     """
     Provides a brief rule-based interpretation of the funnel plot and Egger's test.
     """
+    if n_studies < EGGERS_MIN_STUDIES:
+        return EGGERS_FEWER_THAN_TEN_MESSAGE
     if eggers_p is None:
         interpretation = "Insufficient studies to perform formal publication bias testing."
     elif eggers_p < 0.05:

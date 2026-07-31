@@ -509,9 +509,9 @@ save_forest_figure <- function(direction, title_text, xlim_max, filename) {
 # =============================================================================
 
 # Shared helper: build the filtered + labelled data frame
-build_scatter_df <- function(dat_clean, min_studies = 2) {
+build_scatter_df <- function(dat_clean, min_studies = 3) {
   dat_clean %>%
-    filter(n_studies > min_studies) %>%
+    filter(n_studies >= min_studies) %>%
     left_join(group_map, by = "Exposure") %>%
     mutate(
       Group          = replace_na(Group, "Other"),
@@ -522,7 +522,7 @@ build_scatter_df <- function(dat_clean, min_studies = 2) {
 }
 
 # ---- Plot 1: Effect Size vs I² ----
-make_es_heterogeneity_plot <- function(dat_clean, min_studies = 2,
+make_es_heterogeneity_plot <- function(dat_clean, min_studies = 3,
                                        filename = "plot_es_vs_heterogeneity.pdf") {
   output_path <- file.path(output_dir, filename)
   
@@ -554,19 +554,29 @@ make_es_heterogeneity_plot <- function(dat_clean, min_studies = 2,
 }
 
 # ---- Plot 2: log(Egger's p-value) vs I² ----
-make_eggers_heterogeneity_plot <- function(dat_clean, min_studies = 2,
+make_eggers_heterogeneity_plot <- function(dat_clean, min_studies = 10,
                                            filename = "plot_eggers_vs_heterogeneity.pdf") {
   output_path <- file.path(output_dir, filename)
   
   plot_df <- build_scatter_df(dat_clean, min_studies) %>%
-    filter(!is.na(log_eggers_p))
+    filter(!is.na(log_eggers_p), is.finite(log_eggers_p)) %>%
+    droplevels()
+
+  groups_present <- group_order[group_order %in% as.character(unique(plot_df$Group))]
+  egger_group_colors <- group_colors[names(group_colors) %in% groups_present]
+
+  # No exposure in these categories has at least 10 studies in the current data,
+  # so their Egger-plot legend entries are intentionally omitted:
+  # "Herbal & Botanical"        = "#00695C"
+  # "Metabolites & Amino Acids" = "#880E4F"
   
   p <- ggplot(plot_df,
               aes(x = log_eggers_p, y = I2, color = as.character(Group))) +
     geom_point(aes(size = n_studies), alpha = 0.85) +
     geom_text_repel(aes(label = exposure_label), size = 3, max.overlaps = 20) +
     geom_vline(xintercept = log(0.05), linetype = "dashed") +   # log(0.05) ≈ -2.996
-    scale_color_manual(values = group_colors, guide = "none") +
+    scale_color_manual(values = egger_group_colors, breaks = groups_present,
+                       drop = TRUE, guide = "none") +
     scale_size_continuous(range = c(1, 4), name = "Number of studies") +
     labs(
       title = "Egger's Test log(p-value) vs Heterogeneity",
@@ -590,31 +600,35 @@ make_eggers_heterogeneity_plot <- function(dat_clean, min_studies = 2,
 # 6. Render all figures
 # =============================================================================
 
-save_forest_figure(
-  direction  = "Protective",
-  title_text = "Exposures inversely associated with breast cancer risk\n(meta-analysis of observational studies)",
-  xlim_max   = 2.2,
-  filename   = "forest_protective.pdf"
-)
+render_args <- commandArgs(trailingOnly = TRUE)
+eggers_only <- "--eggers-only" %in% render_args
 
-save_forest_figure(
-  direction  = "Harmful",
-  title_text = "Exposures positively associated with breast cancer risk\n(meta-analysis of observational studies)",
-  xlim_max   = 4.5,
-  filename   = "forest_harmful.pdf"
-)
+if (!eggers_only) {
+  save_forest_figure(
+    direction  = "Protective",
+    title_text = "Exposures inversely associated with breast cancer risk\n(meta-analysis of observational studies)",
+    xlim_max   = 2.2,
+    filename   = "forest_protective.pdf"
+  )
 
-make_es_heterogeneity_plot(
-  dat_clean   = dat_clean,
-  min_studies = 2,
-  filename    = "plot_es_vs_heterogeneity.pdf"
-)
+  save_forest_figure(
+    direction  = "Harmful",
+    title_text = "Exposures positively associated with breast cancer risk\n(meta-analysis of observational studies)",
+    xlim_max   = 4.5,
+    filename   = "forest_harmful.pdf"
+  )
+
+  make_es_heterogeneity_plot(
+    dat_clean   = dat_clean,
+    min_studies = 3,
+    filename    = "plot_es_vs_heterogeneity.pdf"
+  )
+}
 
 make_eggers_heterogeneity_plot(
   dat_clean   = dat_clean,
-  min_studies = 2,
+  min_studies = 10,
   filename    = "plot_eggers_vs_heterogeneity.pdf"
 )
 
-message("All figures saved to: ", getwd())
-
+message(if (eggers_only) "Egger figure saved to: " else "All figures saved to: ", getwd())

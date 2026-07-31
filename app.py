@@ -440,6 +440,11 @@ def analyze():
                     study['verification_status'] = 'partial'
                 else:
                     study['verification_status'] = 'unverified'
+
+        # Apply the current Egger guidance to legacy caches as well as newly
+        # generated analyses, without requiring an API-backed refresh.
+        if result.get("headline") and len(result["studies"]) < meta_analysis.EGGERS_MIN_STUDIES:
+            result["headline"]["funnel_interpretation"] = meta_analysis.EGGERS_FEWER_THAN_TEN_MESSAGE
             
     log_event(
         f"[MetaFemina] Analyze complete in {time.time() - started_at:.1f}s: "
