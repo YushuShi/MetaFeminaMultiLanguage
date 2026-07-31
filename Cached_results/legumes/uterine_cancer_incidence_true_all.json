@@ -48,68 +48,14 @@
                 "outcome_definition": "to examine the role of dietary soy, fiber, and related foods and nutrients on the risk of endometrial cancer",
                 "exposure_definition": "High consumption of soy products and other legumes"
             }
-        },
-        {
-            "Study": "Feng CY et al. (2011) [PMID: 21061128]",
-            "PMID": "21061128",
-            "Effect Size": 0.591,
-            "Lower CI": 0.392,
-            "Upper CI": 0.892,
-            "Population": "General",
-            "Reference": "The association between dietary intake and cervical intraepithelial neoplasia grade 2 or higher among women in a high-risk rural area of China.",
-            "Authors": "Feng CY, Lin M, Lakhaney D, Sun HK, Dai XB, Zhao FH, Qiao YL",
-            "Journal": "Archives of gynecology and obstetrics",
-            "Year": "2011",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/21061128/",
-            "Effect Type": "OR",
-            "SE": 0.12755102040816327,
-            "Sample Size": 748,
-            "Cases": 191,
-            "Estimated Cases": null,
-            "Design": "Cross-Sectional (with case-control analysis among HPV-positive women)",
-            "Timing": "Cross-sectional",
-            "Continent": "Asia",
-            "Stage": "CIN2+ (cervical intraepithelial neoplasia grade 2 or higher, including CIN2, CIN3, and cancer)",
-            "Quality %": 100.0,
-            "Quality Score": "Good",
-            "comparison_type": "Highest vs Lowest tertile",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes"
-            },
-            "exposure_measurement_type": "dietary_intake",
-            "exposure_measurement_supporting_text": "Dietary food intake information was collected by a 79-item Food Frequency Questionnaire (FFQ).",
-            "extraction_supporting_text": {
-                "sample_size": "748 HPV-positive women ... were included in our data analysis.",
-                "effect_size": "legumes ... yielded adjusted odds ratios (ORs) of ... 0.591 (95% CI, 0.392\u20130.892; P for trend = 0.012)",
-                "effect_direction": "Inverse associations between CIN2+ risk and ... legumes ... were observed.",
-                "p_value": "P for trend = 0.012",
-                "confidence_interval": "0.591 (95% CI, 0.392\u20130.892)",
-                "outcome_definition": "risk of developing CIN2+",
-                "exposure_definition": "Specific dietary food groups were classified into ... legumes ..."
-            }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Goodman MT et al. (1997) [PMID: 9270408]</th>\n      <td>-0.7037</td>\n      <td>0.2760</td>\n      <td>-1.2447</td>\n      <td>-0.1628</td>\n      <td>332.0</td>\n      <td>843.0</td>\n    </tr>\n    <tr>\n      <th>Feng CY et al. (2011) [PMID: 21061128]</th>\n      <td>-0.4713</td>\n      <td>0.1923</td>\n      <td>-0.8483</td>\n      <td>-0.0943</td>\n      <td>191.0</td>\n      <td>748.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>332</td>\n      <td>843</td>\n      <td>0.49473</td>\n      <td>0.287674</td>\n      <td>0.848758</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.58,
-        "ci_low": 0.42,
-        "ci_upp": 0.79,
-        "pi_low": null,
-        "pi_upp": null,
-        "interpretation": "Statistically significant (decreased risk/odds)",
-        "i2": 0.0,
-        "tau2": 0.0,
-        "eggers_p": null,
-        "funnel_interpretation": "Insufficient studies to perform formal publication bias testing.",
-        "loo_results": [],
-        "results_interpretation": "The pooled analysis of 2 studies yielded an overall effect size of 0.58 (95% CI: 0.42\u20130.79), suggesting that legumes is associated with a lower risk of uterine cancer. These findings were supported by low between-study heterogeneity (I\u00b2 = 0.00%), indicating consistent findings across the included studies."
+        "pooled_es": 0.49,
+        "ci_low": 0.29,
+        "ci_upp": 0.85,
+        "interpretation": "statistically significant (decreased risk/odds)"
     },
     "screening_stats": {
         "llm_screened_out": 30,
@@ -128,8 +74,8 @@
         },
         "extracted": 3
     },
-    "plot_url": "static/legumes/forest_uterine_cancer_incidence_primary.png?t=6256",
-    "funnel_plot_url": "static/legumes/funnel_uterine_cancer_incidence_primary.png?t=4147",
+    "plot_url": "static/legumes/forest_uterine_cancer_incidence_primary.png?t=2938",
+    "funnel_plot_url": "static/legumes/funnel_uterine_cancer_incidence_primary.png?t=3048",
     "baujat_plot_url": null,
     "last_run": "2026-06-15 14:27:41"
 }

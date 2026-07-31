@@ -48,70 +48,14 @@
                 "outcome_definition": "541 women with histologically confirmed EC",
                 "exposure_definition": "intakes of selected food groups and nutrients ... vitamin E"
             }
-        },
-        {
-            "Study": "Atalah E et al. (2001) [PMID: 11510198]",
-            "PMID": "11510198",
-            "Effect Size": 0.6,
-            "Lower CI": 0.5,
-            "Upper CI": 0.8,
-            "Population": "General",
-            "Reference": "[Diet, smoking and reproductive history as risk factor for cervical cancer].",
-            "Authors": "Atalah E, Urteaga C, Rebolledo A, Villegas RA, Medina E, Csendes A",
-            "Journal": "Revista medica de Chile",
-            "Year": "2001",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/11510198/",
-            "Effect Type": "OR",
-            "SE": 0.07653061224489797,
-            "Sample Size": 510.0,
-            "Cases": 170.0,
-            "Estimated Cases": null,
-            "Design": "Case-Control",
-            "Timing": "Retrospective",
-            "Continent": "Unclear",
-            "Stage": "",
-            "Quality %": 90.0,
-            "Quality Score": "Good",
-            "comparison_type": "Highest vs Lowest",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Unclear",
-                "q10": "Yes"
-            },
-            "exposure_measurement_type": "dietary_intake",
-            "exposure_measurement_supporting_text": "Food and nutrient intakes were assessed by a food frequency questionnaire considering 58 antioxidant rich food items.",
-            "extraction_supporting_text": {
-                "sample_size": "A matched case control study of 170 cases and 340 controls.",
-                "effect_size": "Multivariate analysis model showed a protective effect for vegetable and vitamin E consumption (odds ratio of 0.6 with confidence intervals of 0.5 to 0.8 p < 0.001)",
-                "effect_direction": "High intakes of vegetables, fruits, beta carotene, vitamin C, E and fiber were associated with a lower risk of cervical cancer",
-                "p_value": "p < 0.001",
-                "confidence_interval": "confidence intervals of 0.5 to 0.8",
-                "outcome_definition": "risk of cervical cancer",
-                "exposure_definition": "vitamin E consumption"
-            }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Yeh M et al. (2009) [PMID: 19074206]</th>\n      <td>-0.7454</td>\n      <td>0.2277</td>\n      <td>-1.1918</td>\n      <td>-0.2990</td>\n      <td>541.0</td>\n      <td>1082.0</td>\n    </tr>\n    <tr>\n      <th>Atalah E et al. (2001) [PMID: 11510198]</th>\n      <td>-0.4574</td>\n      <td>0.1095</td>\n      <td>-0.6720</td>\n      <td>-0.2429</td>\n      <td>170.0</td>\n      <td>510.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>541.0</td>\n      <td>1082.0</td>\n      <td>0.474547</td>\n      <td>0.29831</td>\n      <td>0.728408</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.59,
-        "ci_low": 0.46,
-        "ci_upp": 0.75,
-        "pi_low": null,
-        "pi_upp": null,
-        "interpretation": "Statistically significant (decreased risk/odds)",
-        "i2": 23.01,
-        "tau2": 0.01,
-        "eggers_p": null,
-        "funnel_interpretation": "Insufficient studies to perform formal publication bias testing.",
-        "loo_results": [],
-        "results_interpretation": "The pooled analysis of 2 studies yielded an overall effect size of 0.59 (95% CI: 0.46\u20130.75), suggesting that vitamin_e is associated with a lower risk of uterine cancer. These findings were supported by low between-study heterogeneity (I\u00b2 = 23.01%), indicating consistent findings across the included studies."
+        "pooled_es": 0.47,
+        "ci_low": 0.3,
+        "ci_upp": 0.73,
+        "interpretation": "statistically significant (decreased risk/odds)"
     },
     "screening_stats": {
         "llm_screened_out": 14,
@@ -130,8 +74,8 @@
         },
         "extracted": 6
     },
-    "plot_url": "static/vitamin_e/forest_uterine_cancer_incidence_primary.png?t=5624",
-    "funnel_plot_url": "static/vitamin_e/funnel_uterine_cancer_incidence_primary.png?t=5521",
+    "plot_url": "static/vitamin_e/forest_uterine_cancer_incidence_primary.png?t=444",
+    "funnel_plot_url": "static/vitamin_e/funnel_uterine_cancer_incidence_primary.png?t=4488",
     "baujat_plot_url": null,
     "last_run": "2026-06-15 16:19:04"
 }

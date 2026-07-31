@@ -50,55 +50,6 @@
             }
         },
         {
-            "Study": "Paul P et al. (2019) [PMID: 31154549]",
-            "PMID": "31154549",
-            "Effect Size": 0.97,
-            "Lower CI": 0.76,
-            "Upper CI": 1.22,
-            "Population": "General",
-            "Reference": "Soy and tea intake on cervical cancer risk: the Singapore Chinese Health Study.",
-            "Authors": "Paul P, Koh WP, Jin A, Michel A, Waterboer T, Pawlita M, Wang R, Yuan JM, Butler LM",
-            "Journal": "Cancer causes & control : CCC",
-            "Year": "2019",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/31154549/",
-            "Effect Type": "HR",
-            "SE": 0.1173469387755102,
-            "Sample Size": 30744,
-            "Cases": 312,
-            "Estimated Cases": null,
-            "Design": "Cohort",
-            "Timing": "Prospective",
-            "Continent": "Asia",
-            "Stage": "",
-            "Quality %": 81.8,
-            "Quality Score": "Good",
-            "comparison_type": "High vs Low green tea intake",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Unclear",
-                "q10": "Unclear",
-                "q11": "Yes"
-            },
-            "exposure_measurement_type": "dietary_intake",
-            "exposure_measurement_supporting_text": "The association between intake of soy and tea drinking and cervical cancer risk was investigated in a prospective, population-based cohort...",
-            "extraction_supporting_text": {
-                "sample_size": "a prospective, population-based cohort of 30,744 Chinese women in Singapore",
-                "effect_size": "green tea alone was not (HR 0.97, 95% CI: 0.76, 1.22)",
-                "effect_direction": "green tea alone was not (HR 0.97, 95% CI: 0.76, 1.22)",
-                "p_value": "",
-                "confidence_interval": "HR 0.97, 95% CI: 0.76, 1.22",
-                "outcome_definition": "312 incident cervical cancer cases",
-                "exposure_definition": "tea drinking"
-            }
-        },
-        {
             "Study": "Bandera EV et al. (2010) [PMID: 20467800]",
             "PMID": "20467800",
             "Effect Size": 1.77,
@@ -241,113 +192,51 @@
                 "outcome_definition": "endometrial cancer risk",
                 "exposure_definition": "usual consumption of ... black tea"
             }
-        },
-        {
-            "Study": "Jia Y et al. (2012) [PMID: 23244152]",
-            "PMID": "23244152",
-            "Effect Size": 0.551,
-            "Lower CI": 0.33,
-            "Upper CI": 0.919,
-            "Population": "General",
-            "Reference": "Case-control study of diet in patients with cervical cancer or precancerosis in Wufeng, a high incidence region in China.",
-            "Authors": "Jia Y, Hu T, Hang CY, Yang R, Li X, Chen ZL, Mei YD, Zhang QH, Huang KC, Xiang QY, Pan XY, Yan YT, Wang XL, Wang SS, Hang Z, Tang FX, Liu D, Zhou J, Xi L, Wang H, Lu YP, Ma D, Wang SX, Li S",
-            "Journal": "Asian Pacific journal of cancer prevention : APJCP",
-            "Year": "2012",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/23244152/",
-            "Effect Type": "OR",
-            "SE": 0.15025510204081632,
-            "Sample Size": 1040,
-            "Cases": 104,
-            "Estimated Cases": null,
-            "Design": "Case-Control",
-            "Timing": "Retrospective",
-            "Continent": "Asia",
-            "Stage": "",
-            "Quality %": 90.0,
-            "Quality Score": "Good",
-            "comparison_type": "Yes vs No",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Unclear",
-                "q10": "Yes"
-            },
-            "exposure_measurement_type": "dietary_intake",
-            "exposure_measurement_supporting_text": "A questionnaire, which included questions about ... green tea intake, and diet in the past year, was presented to all participants.",
-            "extraction_supporting_text": {
-                "sample_size": "104 patients diagnosed with cervical cancer or cervical intraepithelial neoplasias (CINII/III) ... Nine hundred thirty-six healthy women were selected from the same area as the matched controls.",
-                "effect_size": "Green tea intake (P=0.022, OR=0.551, 95% CI=0.330-0.919)",
-                "effect_direction": "Green tea intake ... were identified as protective factors against cervical cancer or CINII/III.",
-                "p_value": "P=0.022",
-                "confidence_interval": "95% CI=0.330-0.919",
-                "outcome_definition": "104 patients diagnosed with cervical cancer or cervical intraepithelial neoplasias (CINII/III)",
-                "exposure_definition": "green tea intake"
-            }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Kakuta Y et al. (2009) [PMID: 19067194]</th>\n      <td>-1.0175</td>\n      <td>0.3891</td>\n      <td>-1.7802</td>\n      <td>-0.2549</td>\n      <td>152.0</td>\n      <td>437.0</td>\n    </tr>\n    <tr>\n      <th>Jia Y et al. (2012) [PMID: 23244152]</th>\n      <td>-0.5359</td>\n      <td>0.2407</td>\n      <td>-1.0077</td>\n      <td>-0.0641</td>\n      <td>104.0</td>\n      <td>1040.0</td>\n    </tr>\n    <tr>\n      <th>McCann SE et al. (2009) [PMID: 19107932]</th>\n      <td>-0.5209</td>\n      <td>0.2218</td>\n      <td>-0.9555</td>\n      <td>-0.0863</td>\n      <td>541.0</td>\n      <td>1082.0</td>\n    </tr>\n    <tr>\n      <th>Gao J et al. (2005) [PMID: 16053753]</th>\n      <td>-0.2427</td>\n      <td>0.1053</td>\n      <td>-0.4491</td>\n      <td>-0.0364</td>\n      <td>995.0</td>\n      <td>2082.0</td>\n    </tr>\n    <tr>\n      <th>Paul P et al. (2019) [PMID: 31154549]</th>\n      <td>-0.0284</td>\n      <td>0.1128</td>\n      <td>-0.2494</td>\n      <td>0.1926</td>\n      <td>312.0</td>\n      <td>30744.0</td>\n    </tr>\n    <tr>\n      <th>Bandera EV et al. (2010) [PMID: 20467800]</th>\n      <td>0.4756</td>\n      <td>0.2459</td>\n      <td>-0.0063</td>\n      <td>0.9575</td>\n      <td>417.0</td>\n      <td>812.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Kakuta Y et al. (2009) [PMID: 19067194]</th>\n      <td>-1.0175</td>\n      <td>0.3891</td>\n      <td>-1.7802</td>\n      <td>-0.2549</td>\n      <td>152.0</td>\n      <td>437.0</td>\n    </tr>\n    <tr>\n      <th>McCann SE et al. (2009) [PMID: 19107932]</th>\n      <td>-0.5209</td>\n      <td>0.2218</td>\n      <td>-0.9555</td>\n      <td>-0.0863</td>\n      <td>541.0</td>\n      <td>1082.0</td>\n    </tr>\n    <tr>\n      <th>Gao J et al. (2005) [PMID: 16053753]</th>\n      <td>-0.2427</td>\n      <td>0.1053</td>\n      <td>-0.4491</td>\n      <td>-0.0364</td>\n      <td>995.0</td>\n      <td>2082.0</td>\n    </tr>\n    <tr>\n      <th>Bandera EV et al. (2010) [PMID: 20467800]</th>\n      <td>0.4756</td>\n      <td>0.2459</td>\n      <td>-0.0063</td>\n      <td>0.9575</td>\n      <td>417.0</td>\n      <td>812.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.78,
-        "ci_low": 0.59,
-        "ci_upp": 1.04,
-        "pi_low": 0.32,
-        "pi_upp": 1.91,
+        "pooled_es": 0.76,
+        "ci_low": 0.48,
+        "ci_upp": 1.21,
+        "pi_low": 0.1,
+        "pi_upp": 5.72,
         "interpretation": "Not statistically significant",
-        "i2": 72.89,
-        "tau2": 0.08,
-        "eggers_p": 0.5013770685040403,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.5014). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "i2": 78.67,
+        "tau2": 0.16,
+        "eggers_p": 0.8535116576994072,
+        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.8535). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
         "loo_results": [
             {
                 "omitted": "Kakuta Y et al. (2009) [PMID: 19067194]",
-                "pooled_es": 0.8430746693523635,
-                "ci_low": 0.6057105640743127,
-                "ci_upp": 1.1734563341979196,
-                "is_significant": false
-            },
-            {
-                "omitted": "Jia Y et al. (2012) [PMID: 23244152]",
-                "pooled_es": 0.8206956995535731,
-                "ci_low": 0.5412992563618831,
-                "ci_upp": 1.2443051109891712,
+                "pooled_es": 0.8884923826442895,
+                "ci_low": 0.5099483902990485,
+                "ci_upp": 1.5480364857196405,
                 "is_significant": false
             },
             {
                 "omitted": "McCann SE et al. (2009) [PMID: 19107932]",
-                "pooled_es": 0.8214152213752159,
-                "ci_low": 0.5399304292262784,
-                "ci_upp": 1.249647972005902,
+                "pooled_es": 0.8154474843212288,
+                "ci_low": 0.36750242883033657,
+                "ci_upp": 1.809388312894138,
                 "is_significant": false
             },
             {
                 "omitted": "Gao J et al. (2005) [PMID: 16053753]",
-                "pooled_es": 0.7621578326194863,
-                "ci_low": 0.4761645652988656,
-                "ci_upp": 1.2199239593955076,
-                "is_significant": false
-            },
-            {
-                "omitted": "Paul P et al. (2019) [PMID: 31154549]",
-                "pooled_es": 0.7259073621699479,
-                "ci_low": 0.4646496773741036,
-                "ci_upp": 1.1340619053702157,
+                "pooled_es": 0.7256001642487445,
+                "ci_low": 0.30926075897867483,
+                "ci_upp": 1.7024326012021127,
                 "is_significant": false
             },
             {
                 "omitted": "Bandera EV et al. (2010) [PMID: 20467800]",
-                "pooled_es": 0.7088484519938756,
-                "ci_low": 0.5359012917994157,
-                "ci_upp": 0.9376094732053445,
+                "pooled_es": 0.6292793553325633,
+                "ci_low": 0.4282834500166104,
+                "ci_upp": 0.9246038039350071,
                 "is_significant": true
             }
         ],
-        "results_interpretation": "The pooled analysis of 6 studies yielded an effect size of 0.78 (95% CI: 0.59\u20131.04), indicating no statistically significant association between tea and uterine cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by substantial heterogeneity (I\u00b2 = 72.89%), reflecting considerable variability across studies."
+        "results_interpretation": "The pooled analysis of 4 studies yielded an effect size of 0.76 (95% CI: 0.48\u20131.21), indicating no statistically significant association between tea and uterine cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 78.67%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 21,
@@ -366,8 +255,8 @@
         },
         "extracted": 6
     },
-    "plot_url": "static/tea/forest_uterine_cancer_incidence_primary.png?t=7783",
-    "funnel_plot_url": "static/tea/funnel_uterine_cancer_incidence_primary.png?t=7163",
-    "baujat_plot_url": "static\\tea\\baujat_uterine_cancer_incidence_primary.png?t=6901",
+    "plot_url": "static/tea/forest_uterine_cancer_incidence_primary.png?t=325",
+    "funnel_plot_url": "static/tea/funnel_uterine_cancer_incidence_primary.png?t=5201",
+    "baujat_plot_url": "static/tea/baujat_uterine_cancer_incidence_primary.png?t=5712",
     "last_run": "2026-06-15 15:33:33"
 }
