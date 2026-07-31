@@ -4,7 +4,11 @@ import os
 import pandas as pd
 import numpy as np
 import json
+import hashlib
+import re
+import smtplib
 import time
+from email.message import EmailMessage
 from functools import partial
 from datetime import datetime
 
@@ -51,9 +55,139 @@ os.makedirs(CACHE_DIR, exist_ok=True)
 DEFAULT_MODEL = 'openai.gpt-4o'
 DEFAULT_DISEASE = 'Breast cancer'
 
+DEVELOPER_NOTIFICATION_EMAILS = (
+    "yus4011@med.cornell.edu",
+    "shiyushu2006@gmail.com",
+    "margauxdelporte@gmail.com",
+)
+
+CONSENSUS_FIELDS = (
+    "Effect Size",
+    "Lower CI",
+    "Upper CI",
+    "Cases",
+    "Sample Size",
+    "exposure_measurement_type",
+)
+
 has_openai = bool(os.environ.get("OPENAI_API_KEY"))
 has_gemini = bool(os.environ.get("GOOGLE_API_KEY"))
 READ_ONLY_MODE = os.environ.get('READ_ONLY_MODE', 'false').lower() == 'true' or not (has_openai or has_gemini)
+
+def _safe_email_value(value, fallback="Not available"):
+    """Return a one-line value that is safe to place in an email body."""
+    text = re.sub(r"[\r\n]+", " ", str(value or "")).strip()
+    return text or fallback
+
+def first_author_last_name(study_data):
+    """Extract the first author's last name from a saved study record."""
+    study_data = study_data or {}
+    authors = _safe_email_value(study_data.get("Authors"), fallback="")
+    if authors:
+        first_author = authors.split(",", 1)[0].strip()
+        last_name = re.sub(r"(?:\s+[A-Z][A-Z.'-]*)+$", "", first_author).strip()
+        if last_name:
+            return last_name
+
+    study_label = _safe_email_value(study_data.get("Study"), fallback="")
+    if study_label:
+        author_part = re.split(r"\s+et\s+al\.?|\s+\(\d{4}\)", study_label, maxsplit=1, flags=re.IGNORECASE)[0]
+        last_name = re.sub(r"(?:\s+[A-Z][A-Z.'-]*)+$", "", author_part).strip()
+        if last_name:
+            return last_name
+    return "Not available"
+
+def _normalise_consensus_value(value):
+    if value is None:
+        return "none"
+    text = str(value).strip().lower()
+    return "none" if text in {"", "null", "none", "nan"} else text
+
+def matching_submission_signature(submissions):
+    """Return a stable signature when any two crowdsourced submissions match."""
+    seen = set()
+    for submission in reversed(submissions or []):
+        values = tuple(
+            _normalise_consensus_value((submission.get("data") or {}).get(field))
+            for field in CONSENSUS_FIELDS
+        )
+        if values in seen:
+            payload = json.dumps(dict(zip(CONSENSUS_FIELDS, values)), sort_keys=True)
+            return hashlib.sha256(payload.encode("utf-8")).hexdigest()
+        seen.add(values)
+    return None
+
+def find_saved_study(pmid, exposure=None):
+    """Find local author metadata when the browser did not send a study record."""
+    safe_exposure = safe_path_component(meta_analysis.get_canonical_name(exposure)) if exposure else None
+    search_root = os.path.join(CACHE_DIR, safe_exposure) if safe_exposure else CACHE_DIR
+    if not os.path.isdir(search_root):
+        return {}
+    for root, _, files in os.walk(search_root):
+        for filename in files:
+            if not filename.endswith(".json"):
+                continue
+            cached = load_json(os.path.join(root, filename), {})
+            for study in cached.get("studies", []) if isinstance(cached, dict) else []:
+                if str(study.get("PMID")) == str(pmid):
+                    return study
+    return {}
+
+def send_developer_notification(event_type, exposure, disease, outcome, pmid, study_data=None):
+    """Email developers about a crowdsourced review trigger without changing results."""
+    smtp_host = os.environ.get("SMTP_HOST")
+    smtp_username = os.environ.get("SMTP_USERNAME")
+    smtp_password = os.environ.get("SMTP_PASSWORD")
+    smtp_from = os.environ.get("SMTP_FROM") or smtp_username
+    use_ssl = os.environ.get("SMTP_USE_SSL", "false").lower() == "true"
+    use_tls = os.environ.get("SMTP_USE_TLS", "true").lower() == "true"
+    safe_pmid = _safe_email_value(pmid)
+
+    if not smtp_host or not smtp_from:
+        message = "SMTP_HOST and SMTP_FROM (or SMTP_USERNAME) must be configured"
+        log_event(f"[MetaFemina] Developer notification not sent for PMID {safe_pmid}: {message}")
+        return False, message
+    try:
+        smtp_port = int(os.environ.get("SMTP_PORT", "587"))
+    except ValueError:
+        message = "SMTP_PORT must be an integer"
+        log_event(f"[MetaFemina] Developer notification not sent for PMID {safe_pmid}: {message}")
+        return False, message
+
+    event_label = {
+        "matching_submissions": "Two matching crowdsourced submissions",
+        "exclusion_flags": "Two or more crowdsourced exclusion flags",
+    }.get(event_type, "Crowdsourced review trigger")
+    author_last_name = first_author_last_name(study_data)
+
+    email = EmailMessage()
+    email["Subject"] = f"MetaFemina review requested: PMID {safe_pmid}"
+    email["From"] = smtp_from
+    email["To"] = ", ".join(DEVELOPER_NOTIFICATION_EMAILS)
+    email.set_content(
+        "A crowdsourced report requires developer review. Results were not changed.\n\n"
+        f"Trigger: {event_label}\n"
+        f"Exposure: {_safe_email_value(exposure)}\n"
+        f"Disease: {_safe_email_value(disease)}\n"
+        f"Outcome: {_safe_email_value(outcome)}\n"
+        f"PMID: {safe_pmid}\n"
+        f"First author last name: {_safe_email_value(author_last_name)}\n"
+        f"PubMed: https://pubmed.ncbi.nlm.nih.gov/{safe_pmid}/\n"
+    )
+
+    try:
+        smtp_class = smtplib.SMTP_SSL if use_ssl else smtplib.SMTP
+        with smtp_class(smtp_host, smtp_port, timeout=15) as server:
+            if use_tls and not use_ssl:
+                server.starttls()
+            if smtp_username and smtp_password:
+                server.login(smtp_username, smtp_password)
+            server.send_message(email)
+        log_event(f"[MetaFemina] Developer notification sent for PMID {safe_pmid}: {event_type}")
+        return True, None
+    except Exception as exc:
+        log_event(f"[MetaFemina] Developer notification failed for PMID {safe_pmid}: {exc}")
+        return False, str(exc)
 
 def safe_path_component(value):
     """Return a stable filesystem-safe path component for cache names."""
@@ -137,99 +271,15 @@ def sanitize_data(data):
 
 def update_cache_from_verifications(disease, exposure, outcome):
     """
-    Finds all cache files under Cached_results/<exposure> and updates their studies'
-    Effect Size, CIs, and comparison_types according to verifications.json, then
-    re-runs perform_meta_analysis on each cache file and saves it back to disk.
+    Retained for compatibility with older callers.
+
+    Crowdsourced submissions are advisory only and must never mutate cached
+    studies, exclusions, pooled results, or plots.
     """
-    canonical_exp = meta_analysis.get_canonical_name(exposure)
-    safe_exposure = safe_path_component(canonical_exp)
-    exposure_dir = os.path.join(CACHE_DIR, safe_exposure)
-    
-    if not os.path.exists(exposure_dir):
-        return
-        
-    verifications = load_json(VERIFICATIONS_FILE, {})
-    context_key = f"{disease}_{canonical_exp}_{outcome}".lower().replace(" ", "_")
-    
-    # Loop over all json files in exposure_dir
-    for filename in os.listdir(exposure_dir):
-        if filename.endswith(".json"):
-            filepath = os.path.join(exposure_dir, filename)
-            try:
-                with open(filepath, 'r', encoding='utf-8') as f:
-                    cache = json.load(f)
-                
-                if "studies" not in cache:
-                    continue
-                    
-                # Apply consensus and exclusion overlay to studies list
-                cache_updated = False
-                for study in cache["studies"]:
-                    pmid = str(study.get("PMID"))
-                    v_info = verifications.get(pmid, {})
-                    contexts = v_info.get("contexts", {})
-                    current_context_data = contexts.get(context_key, {})
-                    
-                    # Handle exclusion
-                    context_excl = v_info.get("context_exclusions", {})
-                    exclusion_val = context_excl.get(context_key, 0)
-                    if study.get("exclusions", 0) != exclusion_val:
-                        study["exclusions"] = exclusion_val
-                        cache_updated = True
-                        
-                    # Handle consensus overlay
-                    consensus = current_context_data.get("consensus_data")
-                    if consensus:
-                        for key, val in consensus.items():
-                            if val is not None and val != "":
-                                cache_key = key
-                                if key == "Comparison Type":
-                                    cache_key = "comparison_type"
-                                if str(study.get(cache_key)) != str(val):
-                                    study[cache_key] = val
-                                    # N/Cases/Participants sync
-                                    if cache_key == 'Sample Size':
-                                        study['Participants'] = val
-                                    if cache_key == 'Participants':
-                                        study['Sample Size'] = val
-                                    cache_updated = True
-                
-                if cache_updated:
-                    # Convert to df and re-run meta-analysis
-                    valid_studies = [s for s in cache["studies"] if s.get("exclusions", 0) < 2]
-                    df_new = pd.DataFrame(valid_studies)
-                    
-                    # Ensure numeric precision
-                    if len(df_new) > 0:
-                        for col in ['Effect Size', 'Lower CI', 'Upper CI', 'SE']:
-                            if col in df_new.columns:
-                                df_new[col] = pd.to_numeric(df_new[col], errors='coerce')
-                                
-                        exclude_meta = "true" in filename.lower()
-                        new_meta = meta_analysis.perform_meta_analysis(
-                            df_new, 
-                            disease, 
-                            exposure, 
-                            outcome=outcome, 
-                            exclude_meta=exclude_meta
-                        )
-                        # Update key result fields
-                        for key in ['headline', 'summary_html', 'plot_url', 'funnel_plot_url', 'baujat_plot_url']:
-                            cache[key] = new_meta.get(key)
-                    else:
-                        cache['headline'] = None
-                        cache['summary_html'] = None
-                        cache['plot_url'] = None
-                        cache['funnel_plot_url'] = None
-                        cache['baujat_plot_url'] = None
-                        
-                    # Save updated cache safely
-                    cache_str = json.dumps(sanitize_data(cache), indent=4)
-                    with open(filepath, 'w', encoding='utf-8') as f:
-                        f.write(cache_str)
-                    log_event(f"[MetaFemina] Updated cache file and regenerated plots for {filepath}")
-            except Exception as e:
-                log_event(f"Error updating cache file {filepath}: {e}")
+    log_event(
+        f"[MetaFemina] Skipped cache update for {disease}/{exposure}/{outcome}; "
+        "crowdsourced reports are advisory only."
+    )
 
 @app.route('/')
 def index():
@@ -335,19 +385,12 @@ def analyze():
         else:
             log_event(f"[MetaFemina] Analysis returned an error; not caching: {result.get('error')}")
     
-    # Inject verification counts and consensus data
+    # Inject advisory crowdsourcing counts. Reports never alter study data or results.
     verifications = load_json(VERIFICATIONS_FILE, {})
     canonical_exp = meta_analysis.get_canonical_name(exposure)
     context_key = f"{disease}_{canonical_exp}_{outcome}".lower().replace(" ", "_")
     
     if "studies" in result:
-        # Track if any studies were removed or consensus was applied
-        num_before = len(result.get("studies", []))
-        consensus_applied = False
-        
-        # The frontend now handles deselection and watermarking of flagged studies, 
-        # so we no longer drop them from the result array here.
-
         for study in result['studies']:
             if 'exposure_measurement_type' not in study or study['exposure_measurement_type'] in [None, '', '-']:
                 study['exposure_measurement_type'] = 'unclear'
@@ -371,74 +414,32 @@ def analyze():
             pmid = str(study.get('PMID'))
             v_info = verifications.get(pmid, {})
             
-            # Legacy handling and structured data overlay
+            study['exclusions'] = 0
+            study['exclusion_flags'] = 0
+
+            # Legacy handling and structured advisory status
             if isinstance(v_info, int):
                 study['verifications'] = v_info
                 study['verification_status'] = 'partial' if v_info > 0 else 'unverified'
-                study['exclusions'] = 0
             else:
                 context_excl = v_info.get('context_exclusions', {})
-                study['exclusions'] = context_excl.get(context_key, 0)
+                study['exclusion_flags'] = context_excl.get(context_key, 0)
                 
                 contexts = v_info.get('contexts', {})
                 current_context_data = contexts.get(context_key, {})
                 
                 if current_context_data:
                     submissions = current_context_data.get('submissions', [])
-                    consensus = current_context_data.get('consensus_data')
                 else:
                     submissions = []
-                    consensus = None
                 
                 study['verifications'] = len(submissions)
-                
-                if consensus:
-                    # Overlay consensus data
-                    for key, val in consensus.items():
-                        if val is not None and val != "":
-                            if str(study.get(key)) != str(val):
-                                study[key] = val
-                                # Consistency Fix: N/Cases/Participants sync
-                                if key == 'Sample Size':
-                                    study['Participants'] = val
-                                if key == 'Participants':
-                                    study['Sample Size'] = val
-                                consensus_applied = True
-                    study['verification_status'] = 'consensus'
+                if matching_submission_signature(submissions) or study['exclusion_flags'] >= 2:
+                    study['verification_status'] = 'review_requested'
                 elif study['verifications'] > 0:
                     study['verification_status'] = 'partial'
                 else:
                     study['verification_status'] = 'unverified'
-        
-        num_after = len(result['studies'])
-        has_flagged = any(s.get('exclusions', 0) >= 2 for s in result['studies'])
-        
-        # If studies were removed or modified by consensus, re-run meta-analysis
-        if num_after == 0:
-            result['headline'] = None
-            result['summary_html'] = None
-            result['error'] = "No relevant evidence was identified in the reviewed sources after verification filtering."
-        elif num_after < num_before or consensus_applied or has_flagged:
-            log_event(f"[MetaFemina] Re-analyzing {exposure} due to verification filtering/consensus/flags...")
-            # Only include valid studies in the recalculated meta-analysis
-            valid_studies = [s for s in result['studies'] if s.get('exclusions', 0) < 2]
-            df_new = pd.DataFrame(valid_studies)
-            
-            if len(df_new) > 0:
-                # Ensure numeric precision
-                for col in ['Effect Size', 'Lower CI', 'Upper CI', 'SE']:
-                    if col in df_new.columns:
-                        df_new[col] = pd.to_numeric(df_new[col], errors='coerce')
-                
-                new_meta = meta_analysis.perform_meta_analysis(df_new, disease, exposure, outcome=outcome, exclude_meta=exclude_meta)
-                
-                # Update key result fields
-                for key in ['headline', 'summary_html', 'plot_url', 'funnel_plot_url', 'baujat_plot_url']:
-                    result[key] = new_meta.get(key)
-            else:
-                result['headline'] = None
-                result['summary_html'] = None
-                result['error'] = "No relevant evidence was identified in the reviewed sources after verification filtering."
             
     log_event(
         f"[MetaFemina] Analyze complete in {time.time() - started_at:.1f}s: "
@@ -448,13 +449,10 @@ def analyze():
 
 @app.route('/verify', methods=['POST'])
 def verify():
-    data = request.json
-    pmid = str(data.get('pmid'))
-    study_data = data.get('study_data')
+    data = request.json or {}
+    pmid = str(data.get('pmid') or '').strip()
+    study_data = data.get('study_data') or {}
     exposure = data.get('exposure')
-    if not exposure and study_data:
-        # Fallback to current browser exposure value if not provided
-        exposure = request.json.get('exposure')
     
     # Resolve canonical name for context key consistency
     canonical_exp = meta_analysis.get_canonical_name(exposure) if exposure else "unknown_exposure"
@@ -464,6 +462,9 @@ def verify():
     
     if not pmid:
         return jsonify({"error": "No PMID provided"}), 400
+
+    if not study_data:
+        study_data = find_saved_study(pmid, exposure)
     
     # Load verifications
     verifications = load_json(VERIFICATIONS_FILE, {})
@@ -485,8 +486,16 @@ def verify():
     if context_key not in verifications[pmid]["contexts"]:
         verifications[pmid]["contexts"][context_key] = {
             "submissions": [],
-            "consensus_data": None
+            "consensus_data": None,
+            "notifications": {}
         }
+
+    context = verifications[pmid]["contexts"][context_key]
+    context.setdefault("submissions", [])
+    context.setdefault("notifications", {})
+    # Clear legacy automatic overlays for this context. Runtime analysis also
+    # ignores all historical consensus_data values.
+    context["consensus_data"] = None
     
     # Extract only the fields we want to track/compare for consensus
     if study_data:
@@ -503,62 +512,47 @@ def verify():
         }
         
         # Add new submission
-        verifications[pmid]["contexts"][context_key]["submissions"].append({
+        context["submissions"].append({
             "data": metrics,
             "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         })
 
-        # Check for consensus: at least two MATCHING submissions
-        subs = verifications[pmid]["contexts"][context_key]["submissions"]
-        if len(subs) >= 2:
-            # Look for matches starting from the LATEST submission (backward iteration)
-            # This allows a user to "overwrite" an old consensus by providing two new matching entries.
-            found_match = False
-            for i in range(len(subs) - 1, -1, -1):
-                for j in range(i - 1, -1, -1):
-                    d1 = subs[i]["data"]
-                    d2 = subs[j]["data"]
-                    
-                    # Compare key metric fields
-                    is_match = True
-                    for field in ["Effect Size", "Lower CI", "Upper CI", "Cases", "Sample Size", "exposure_measurement_type"]:
-                        v1 = str(d1.get(field)).strip().lower()
-                        v2 = str(d2.get(field)).strip().lower()
-                        
-                        # Handle potential None/empty values
-                        v1 = "none" if v1 in ["None", "null", "", "nan"] else v1
-                        v2 = "none" if v2 in ["None", "null", "", "nan"] else v2
-                        
-                        if v1 != v2:
-                            is_match = False
-                            break
-                    
-                    if is_match:
-                        verifications[pmid]["contexts"][context_key]["consensus_data"] = d1
-                        found_match = True
-                        break
-                if found_match:
-                    break
- 
+    matching_signature = matching_submission_signature(context["submissions"])
+    notified_signatures = context["notifications"].setdefault("matching_submission_signatures", [])
+    notification_sent = False
+    notification_already_sent = bool(matching_signature and matching_signature in notified_signatures)
+    if matching_signature and not notification_already_sent:
+        notification_sent, _ = send_developer_notification(
+            "matching_submissions", exposure, disease, outcome, pmid, study_data
+        )
+        if notification_sent:
+            notified_signatures.append(matching_signature)
+            context["notifications"]["matching_submission_last_sent_at"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
     save_json(VERIFICATIONS_FILE, verifications)
-    update_cache_from_verifications(disease, exposure, outcome)
     
     # Count includes legacy count + new structured submissions
-    total_count = len(verifications[pmid]["contexts"][context_key]["submissions"]) + verifications[pmid].get("legacy_count", 0)
-    status = "consensus" if verifications[pmid]["contexts"][context_key]["consensus_data"] else "partial"
+    total_count = len(context["submissions"]) + verifications[pmid].get("legacy_count", 0)
+    review_requested = matching_signature is not None
+    status = "review_requested" if review_requested else "partial"
     
     return jsonify({
         "success": True, 
         "count": total_count, 
         "status": status,
-        "consensus_reached": verifications[pmid]["contexts"][context_key]["consensus_data"] is not None
+        "consensus_reached": False,
+        "review_requested": review_requested,
+        "notification_sent": notification_sent,
+        "notification_already_sent": notification_already_sent,
+        "results_changed": False
     })
 
 @app.route('/exclude', methods=['POST'])
 def exclude():
-    data = request.json
-    pmid = str(data.get('pmid'))
+    data = request.json or {}
+    pmid = str(data.get('pmid') or '').strip()
     exposure = data.get('exposure')
+    study_data = data.get('study_data') or {}
     canonical_exp = meta_analysis.get_canonical_name(exposure) if exposure else "unknown_exposure"
     disease = data.get('disease', DEFAULT_DISEASE)
     outcome = data.get('outcome', 'incidence')
@@ -566,6 +560,9 @@ def exclude():
     
     if not pmid:
         return jsonify({"error": "No PMID provided"}), 400
+
+    if not study_data:
+        study_data = find_saved_study(pmid, exposure)
     
     verifications = load_json(VERIFICATIONS_FILE, {})
     
@@ -576,24 +573,51 @@ def exclude():
             "submissions": [],
             "consensus_data": None,
             "legacy_count": legacy_count,
-            "context_exclusions": {}
+            "context_exclusions": {},
+            "contexts": {}
         }
     
     if "context_exclusions" not in verifications[pmid]:
         verifications[pmid]["context_exclusions"] = {}
+    if "contexts" not in verifications[pmid]:
+        verifications[pmid]["contexts"] = {}
+    if context_key not in verifications[pmid]["contexts"]:
+        verifications[pmid]["contexts"][context_key] = {
+            "submissions": [],
+            "consensus_data": None,
+            "notifications": {}
+        }
+
+    context = verifications[pmid]["contexts"][context_key]
+    context.setdefault("notifications", {})
+    context["consensus_data"] = None
         
     if context_key not in verifications[pmid]["context_exclusions"]:
         verifications[pmid]["context_exclusions"][context_key] = 0
             
     verifications[pmid]["context_exclusions"][context_key] += 1
+    exclusion_count = verifications[pmid]["context_exclusions"][context_key]
+
+    notification_sent = False
+    notification_already_sent = bool(context["notifications"].get("exclusion_flags_sent_at"))
+    if exclusion_count >= 2 and not notification_already_sent:
+        notification_sent, _ = send_developer_notification(
+            "exclusion_flags", exposure, disease, outcome, pmid, study_data
+        )
+        if notification_sent:
+            context["notifications"]["exclusion_flags_sent_at"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
     save_json(VERIFICATIONS_FILE, verifications)
-    update_cache_from_verifications(disease, exposure, outcome)
     
     return jsonify({
         "success": True,
         "pmid": pmid,
         "context_key": context_key,
-        "exclusions": verifications[pmid]["context_exclusions"][context_key]
+        "exclusions": exclusion_count,
+        "review_requested": exclusion_count >= 2,
+        "notification_sent": notification_sent,
+        "notification_already_sent": notification_already_sent,
+        "results_changed": False
     })
 
 @app.route('/reanalyze', methods=['POST'])

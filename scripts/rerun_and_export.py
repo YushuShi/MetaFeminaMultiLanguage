@@ -28,15 +28,6 @@ def update_cache_files(disease, outcome="Incidence", exclude_meta=True):
     folders = os.listdir(results_dir)
     print(f"Found {len(folders)} folders in Cached_results.")
     
-    # Load verifications once
-    verifications = {}
-    if os.path.exists('data/verifications.json'):
-        try:
-            with open('data/verifications.json', 'r', encoding='utf-8') as vf:
-                verifications = json.load(vf)
-        except Exception as e:
-            print(f"Error loading verifications.json: {e}")
-            
     updated_count = 0
     total_processed = 0
     
@@ -65,51 +56,9 @@ def update_cache_files(disease, outcome="Incidence", exclude_meta=True):
                 continue
                 
             studies = cache.get("studies", [])
-            context_key = f"{disease}_{canonical_exp}_{outcome}".lower().replace(" ", "_")
-            
-            # Apply verifications
-            cache_updated = False
-            for study in studies:
-                pmid = str(study.get("PMID"))
-                v_info = verifications.get(pmid, {})
-                
-                # Check for context exclusions
-                context_excl = v_info.get('context_exclusions', {})
-                exclusion_val = context_excl.get(context_key, 0)
-                if study.get("exclusions", 0) != exclusion_val:
-                    study["exclusions"] = exclusion_val
-                    cache_updated = True
-                    
-                # Apply consensus or latest submission
-                contexts = v_info.get('contexts', {})
-                current_context_data = contexts.get(context_key, {})
-                consensus = current_context_data.get('consensus_data')
-                submissions = current_context_data.get('submissions', [])
-                
-                overlay_data = None
-                if consensus:
-                    overlay_data = consensus
-                elif submissions:
-                    overlay_data = submissions[-1]['data']
-                    
-                if overlay_data:
-                    for key, val in overlay_data.items():
-                        if val is not None and val != "" and val != "Not specified":
-                            cache_key = key
-                            if key == "Comparison Type":
-                                cache_key = "comparison_type"
-                            if str(study.get(cache_key)) != str(val):
-                                study[cache_key] = val
-                                # N/Cases/Participants sync
-                                if cache_key == 'Sample Size':
-                                    study['Participants'] = val
-                                if cache_key == 'Participants':
-                                    study['Sample Size'] = val
-                                cache_updated = True
-                                
-            # Re-run meta analysis on updated/existing studies
-            # Only include valid studies (exclusions < 2)
-            valid_studies = [s for s in studies if s.get('exclusions', 0) < 2]
+            # Crowdsourced submissions and flags are advisory-only. Rebuild from
+            # the saved extraction data without applying or filtering reports.
+            valid_studies = [dict(study, exclusions=0) for study in studies]
             df_new = pd.DataFrame(valid_studies)
             
             if len(df_new) > 0:
@@ -138,8 +87,7 @@ def update_cache_files(disease, outcome="Incidence", exclude_meta=True):
                 f.write(cache_str)
                 
             updated_count += 1
-            if cache_updated:
-                print(f"  Updated cache and plots for: {folder}")
+            print(f"  Updated cache and plots for: {folder}")
                 
         except Exception as e:
             print(f"  Error updating {folder}: {e}")
@@ -157,14 +105,6 @@ def export_disease_results(disease, disease_label, outcome="Incidence", exclude_
     
     blacklist = ['multivitamin']
     
-    # Load verifications once
-    verifications = {}
-    if os.path.exists('data/verifications.json'):
-        try:
-            with open('data/verifications.json', 'r', encoding='utf-8') as vf:
-                verifications = json.load(vf)
-        except: pass
-        
     all_combined_results = []
     all_fixed_results = []
     
@@ -188,35 +128,8 @@ def export_disease_results(disease, disease_label, outcome="Incidence", exclude_
             if not studies:
                 continue
                 
-            # Filter verifications and exclusions
-            canonical_exp = meta_analysis.get_canonical_name(folder)
-            context_key = f"{disease}_{canonical_exp}_{outcome}".lower().replace(" ", "_")
-            
-            cleaned_studies = []
-            for s in studies:
-                pmid = str(s.get('PMID'))
-                v_info = verifications.get(pmid, {})
-                
-                # Check for context exclusions (>= 2 flags)
-                if v_info.get('context_exclusions', {}).get(context_key, 0) >= 2:
-                    continue
-                    
-                # Apply consensus or latest submission
-                ctx_info = v_info.get('contexts', {}).get(context_key, {})
-                consensus = ctx_info.get('consensus_data')
-                submissions = ctx_info.get('submissions', [])
-                
-                if consensus:
-                    for k, v in consensus.items():
-                        if v is not None and v != "" and v != "Not specified":
-                            s[k] = v
-                elif submissions:
-                    latest = submissions[-1]['data']
-                    for k, v in latest.items():
-                        if v is not None and v != "" and v != "Not specified":
-                            s[k] = v
-                            
-                cleaned_studies.append(s)
+            # Crowdsourced reports do not alter exported study data or eligibility.
+            cleaned_studies = [dict(study, exclusions=0) for study in studies]
                 
             if not cleaned_studies:
                 continue

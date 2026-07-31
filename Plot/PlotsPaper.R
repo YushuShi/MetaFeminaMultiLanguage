@@ -2,7 +2,10 @@
 # Combined analysis plots — Forest plots + Scatter diagnostic plots
 # Data: exposures_meta_analysis_final_combined.xlsx
 # =============================================================================
-setwd('C:/Users/mde4023/Downloads/MetaFemina/Plot')
+script_arg <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
+if (length(script_arg) == 1) {
+  setwd(dirname(normalizePath(sub("^--file=", "", script_arg))))
+}
 library(tidyverse)
 library(scales)
 library(readxl)
@@ -614,5 +617,4 @@ make_eggers_heterogeneity_plot(
 )
 
 message("All figures saved to: ", getwd())
-
 

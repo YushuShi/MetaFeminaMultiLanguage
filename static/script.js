@@ -593,7 +593,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const tr = document.createElement('tr');
             const outcomeTerm = elements.outcome ? (elements.outcome.value === 'Survival' ? 'Events' : 'Cases') : 'Cases';
 
-            if (study.verification_status === 'consensus') tr.style.backgroundColor = '#f0fff4';
+            if (study.verification_status === 'review_requested') tr.style.backgroundColor = '#fff8e1';
 
 
             // Checkbox logic
@@ -619,14 +619,12 @@ document.addEventListener('DOMContentLoaded', async () => {
             const finalCasesVal = !isNaN(casesVal) ? casesVal : (!isNaN(estCasesVal) ? estCasesVal : NaN);
             const isARR = (study['Effect Type'] || '').toUpperCase() === 'ARR';
             const minCases = elements.filterMinCases ? (parseInt(elements.filterMinCases.value) || 0) : 50;
-            const isExcludedByFlag = (study.exclusions || 0) >= 2;
-            const isChecked = (!isARR && !isNaN(finalCasesVal) && finalCasesVal > minCases && !isExcludedByFlag) ? 'checked' : '';
+            const isChecked = (!isARR && !isNaN(finalCasesVal) && finalCasesVal > minCases) ? 'checked' : '';
 
             // Build Exclusion Reason Title
             let unselectedReason = "";
             if (!isChecked) {
-                if (isExcludedByFlag) unselectedReason = "Excluded: Flagged for removal by users";
-                else if (isARR) unselectedReason = "Excluded: Effect type is ARR";
+                if (isARR) unselectedReason = "Excluded: Effect type is ARR";
                 else if (isNaN(finalCasesVal)) unselectedReason = "Excluded: Cases not specified or invalid";
                 else if (finalCasesVal <= minCases) {
                     const isEst = isNaN(casesVal);
@@ -649,9 +647,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
 
             tr.title = ""; // Removed whole-row tooltip
-            if (isExcludedByFlag) {
-                tr.style.opacity = '0.7';
-                tr.style.backgroundColor = 'rgba(255, 0, 0, 0.08)'; // Red watermark
+            if (study.verification_status === 'review_requested') {
+                tr.style.backgroundColor = '#fff8e1';
             } else if (!isChecked) {
                 tr.style.opacity = '0.6'; // Make initially excluded rows look slightly faded
                 tr.style.backgroundColor = 'rgba(200, 200, 200, 0.15)';
@@ -762,9 +759,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </td>
                 <td>
                     <button onclick="window.excludeStudy('${study.PMID}', this)" 
-                            style="cursor: pointer; background: ${study.exclusions > 0 ? '#ff4d4d' : '#6c757d'}; color: white; border: none; padding: 2px 8px; border-radius: 4px;"
-                            title="Exclude this study (2 flags hides it)">
-                        ✖ ${study.exclusions || 0}
+                            style="cursor: pointer; background: ${(study.exclusion_flags || 0) > 0 ? '#f57c00' : '#6c757d'}; color: white; border: none; padding: 2px 8px; border-radius: 4px;"
+                            title="Flag for developer review (2 flags email developers; results do not change)">
+                        ⚑ ${study.exclusion_flags || 0}
                     </button>
                 </td>
                 <td style="font-size: 0.75em;" title="${unselectedReason}">${study.Reference || '-'}</td>
@@ -799,8 +796,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const detailsTr = document.createElement('tr');
             detailsTr.className = 'details-row hidden';
             detailsTr.id = `details-row-${index}`;
-            if (study.verification_status === 'consensus') detailsTr.style.backgroundColor = '#f0fff4';
-            else if (isExcludedByFlag) detailsTr.style.backgroundColor = 'rgba(255, 0, 0, 0.08)';
+            if (study.verification_status === 'review_requested') detailsTr.style.backgroundColor = '#fff8e1';
             else if (!isChecked) detailsTr.style.backgroundColor = 'rgba(200, 200, 200, 0.15)';
             else detailsTr.style.backgroundColor = '#fafafa';
 
@@ -879,7 +875,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Verify Study (attached to window for inline onclick)
     window.verifyStudy = async (pmid, btn) => {
         if (!pmid) return;
-        const study = currentStudies.find(s => s.PMID === pmid);
+        const study = currentStudies.find(s => String(s.PMID) === String(pmid));
         const disease = elements.disease.value;
         const exposure = elements.exposure.value;
         const outcome = elements.outcome.value;
@@ -894,7 +890,16 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (res.ok) {
                 const data = await res.json();
                 btn.textContent = `✓ ${data.count}`;
-                if (data.status === 'consensus') btn.style.background = '#2ea44f';
+                if (study) study.verifications = data.count;
+                if (data.review_requested) {
+                    if (study) study.verification_status = 'review_requested';
+                    btn.style.background = '#f57c00';
+                    if (data.notification_sent) {
+                        alert("Two matching submissions were received. Developers have been emailed for review; results remain unchanged.");
+                    } else if (!data.notification_already_sent) {
+                        alert("Developer review was requested, but the notification email could not be sent. Results remain unchanged.");
+                    }
+                }
             }
         } catch (e) {
             console.error("Verify error:", e);
@@ -903,7 +908,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     window.excludeStudy = async (pmid, btn) => {
         if (!pmid) return;
-        if (!confirm("Flag this study for exclusion? (2 flags will hide it permanently)")) return;
+        if (!confirm("Flag this study for developer review? Two flags will email developers but will not change the results.")) return;
 
         try {
             const disease = elements.disease.value;
@@ -914,25 +919,23 @@ document.addEventListener('DOMContentLoaded', async () => {
             const res = await fetch('/exclude', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ pmid, disease, exposure, outcome })
+                body: JSON.stringify({ pmid, study_data: currentStudies.find(s => String(s.PMID) === String(pmid)), disease, exposure, outcome })
             });
             if (res.ok) {
                 const data = await res.json();
-                btn.textContent = `✖ ${data.exclusions}`;
-                btn.style.background = '#ff4d4d';
-                if (data.exclusions >= 2) {
-                    alert("Study flagged for removal. It has been automatically deselected and marked.");
-                    const row = btn.closest('tr');
-                    row.style.opacity = '0.7';
-                    row.style.backgroundColor = 'rgba(255, 0, 0, 0.08)';
-                    const cb = row.querySelector('.study-checkbox');
-                    if (cb && cb.checked) {
-                        cb.checked = false;
-                        if (elements.updateBtn) {
-                            setTimeout(() => elements.updateBtn.click(), 500);
-                        }
+                const study = currentStudies.find(s => String(s.PMID) === String(pmid));
+                if (study) study.exclusion_flags = data.exclusions;
+                btn.textContent = `⚑ ${data.exclusions}`;
+                btn.style.background = '#f57c00';
+                if (data.review_requested) {
+                    if (study) study.verification_status = 'review_requested';
+                    if (data.notification_sent) {
+                        alert("The review threshold was reached. Developers have been emailed; results remain unchanged.");
+                    } else if (data.notification_already_sent) {
+                        alert("Developers were already notified about these flags. Results remain unchanged.");
+                    } else {
+                        alert("Developer review was requested, but the notification email could not be sent. Results remain unchanged.");
                     }
-                    row.querySelectorAll('input, button:not([onclick^="window.excludeStudy"])').forEach(el => el.disabled = true);
                 }
             }
         } catch (e) {

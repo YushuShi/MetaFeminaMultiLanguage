@@ -44,15 +44,6 @@ def run_export(disease_key, disease_config):
 
     blacklist = ['multivitamin']
 
-    # Load verifications once
-    verifications = {}
-    if os.path.exists('data/verifications.json'):
-        try:
-            with open('data/verifications.json', 'r') as vf:
-                verifications = json.load(vf)
-        except:
-            pass
-
     for folder in folders:
         if folder in blacklist:
             continue
@@ -69,35 +60,8 @@ def run_export(disease_key, disease_config):
             if not studies:
                 continue
 
-            # Application of verifications (matches logic in app.py)
-            canonical_exp = meta_analysis.get_canonical_name(folder)
-            context_key = disease_config['context_template'].format(canonical_exp).lower().replace(" ", "_")
-
-            cleaned_studies = []
-            for s in studies:
-                pmid = str(s.get('PMID'))
-                v_info = verifications.get(pmid, {})
-
-                # Check for context exclusions (>= 2 flags)
-                if v_info.get('context_exclusions', {}).get(context_key, 0) >= 2:
-                    continue
-
-                # Apply consensus or latest submission
-                ctx_info = v_info.get('contexts', {}).get(context_key, {})
-                consensus = ctx_info.get('consensus_data')
-                submissions = ctx_info.get('submissions', [])
-
-                if consensus:
-                    for k, v in consensus.items():
-                        if v is not None and v != "" and v != "Not specified":
-                            s[k] = v
-                elif submissions:
-                    latest = submissions[-1]['data']
-                    for k, v in latest.items():
-                        if v is not None and v != "" and v != "Not specified":
-                            s[k] = v
-
-                cleaned_studies.append(s)
+            # Crowdsourced reports are advisory only and do not alter exports.
+            cleaned_studies = [dict(s, exclusions=0) for s in studies]
 
             if not cleaned_studies:
                 continue
