@@ -1,0 +1,255 @@
+Comparative analysis of breast cancer burden in China, India, and the United States
+These authors contributed equally
+Lead contact
+Summary
+Breast cancer burden varies dramatically across countries at different stages of economic and epidemiological transition. This study assessed the burden, trends, and risk factors of female breast cancer in China, India, and the United States (1990–2023) using GBD 2023 data. Significant epidemiological heterogeneity was observed. India experienced the fastest rising burden, with its age-standardized incidence rate more than doubling. China showed a distinct pattern of rising incidence but declining mortality, while the United States demonstrated consistent declines across all burden indicators. Decomposition analysis revealed the increase in China was primarily driven by demographic factors, whereas India faced both demographic and adverse epidemiological changes. The United States achieved reductions through epidemiological improvements offsetting demographic pressures. Leading risk factors were high red meat intake (China), high fasting plasma glucose (India), and high body-mass index (the United States) Projections to 2050 indicate diverging trajectories, underscoring the need for tailored, country-specific prevention strategies.
+Graphical abstract
+Highlights
+• Epidemiological heterogeneity in breast cancer burden: China, India, the United States, 1990–2023 • China showed a distinct pattern of rising incidence but declining mortality • India had the fastest rising burden: age-standardized incidence rate more than doubled • The United States demonstrated consistent declines across all burden indicators
+Epidemiological heterogeneity in breast cancer burden: China, India, the United States, 1990–2023
+China showed a distinct pattern of rising incidence but declining mortality
+India had the fastest rising burden: age-standardized incidence rate more than doubled
+The United States demonstrated consistent declines across all burden indicators
+Health sciences; Medicine; Oncology; Public health
+Subject areas
+Published: April 12, 2026
+Introduction
+Breast cancer is a major public health challenge to women’s health worldwide. According to the 2022 Global Cancer Statistics, 1 breast cancer is the most common malignant tumor in women, second only to lung cancer, accounting for 11.6% of new cancer cases in women worldwide. However, the burden of disease is unevenly distributed globally, showing significant epidemiological heterogeneity, which is closely related to factors such as the level of socio-economic development, access to medical resources, and risk exposure patterns of countries. 2
+Accurate, comparable burden of disease data is the cornerstone of developing effective cancer prevention and control strategies. The Global Burden of Disease Study provides authoritative global evidence for this through standardized methodologies. The newly released Global Burden of Disease (GBD) 2023 framework systematically assesses 375 diseases and injuries in 204 countries and regions around the world from 1990 to 2023, covering detailed data on 55 cancer types and quantifying the attributable burden of 44 risk factors to 35 cancers. 3 It is worth noting that GBD 2023 data show 4 that breast cancer has become the cancer with the largest burden of case numbers in the world; it ranks fourth among the causes of cancer death for both men and women combined, causing about 778,000 deaths. Among women, breast cancer is the most common cancer in 164 countries and regions and the leading cause of cancer death in 134 countries and regions, 4 highlighting the severity of its global impact.
+Selecting representative countries for in-depth comparisons helps uncover the driving mechanisms behind the epidemiological shift in breast cancer. China, India, and the United States, as typical representatives of developing countries, emerging economies, and developed countries, have significant differences in economic development stages, healthcare system architecture, screening policy implementation, and population risk exposure patterns, providing a unique “natural experiment” scenario for exploring how health systems, public policies, and sociocultural factors jointly shape the burden of disease. However, there is still a lack of research based on the latest authoritative data of GBD 2023 to make long-term, systematic, and multi-dimensional comparisons of the three countries, and simultaneously quantify their demographic factors and the contribution of specific risk attribution.
+Therefore, based on GBD 2023 data, this study systematically analyzes the gender and age differences in core indicators such as incidence, prevalence, mortality, and disability-adjusted life years (DALYs) of breast cancer in China, India, and the United States from 1990 to 2023. Identify the main drivers of burden changes in countries through decomposition analysis and attribution risk assessment. The Bayesian Age-Period-Cohort (BAPC) model is further used to predict the trend of disease burden until 2050. This study aims to provide a key scientific basis for the three countries to formulate precise and targeted breast cancer prevention and control strategies.
+Results
+Change in disease burden
+Table 1 shows significant differences in the burden of breast cancer disease in China, India, and the United States between 1990 and 2023. India has seen the fastest increase in the burden, with the age-standardized incidence rate for women surging from 12.96/100,000 to 29.41/100,000 and the mortality rate rising from 8.91/100,000 to 15.51/100,000. China shows a unique trend, with the incidence rate of women rising from 24.54/100,000 to 31.62/100,000, but the mortality rate dropping from 10.65/100,000 to 6.76/100,000, and the prevalence rate increasing significantly to 316.89/100,000. At the same time, the incidence rate in men was low but increased significantly (EAPC = 3.08%). On the contrary, all indicators in the United States have decreased significantly, with the female incidence rate dropping from 128.64/100,000 to 92.47/100,000, the prevalence rate from 1,297.50/100,000 to 1,012.91/100,000, and the mortality rate to 16.77/100,000. Table 1 Changes in the burden of breast cancer disease in China, India, and the United States, 1990–2023 Location 1990 Incidence rate 2023 Incidence rate 1990 Prevalence rate 2023 Prevalence rate 1990 DALYs rate 2023 DALYs rate 1990 Deaths rate 2023 Deaths rate 1990–2023 EAPCs China Male 0.67(0.34,1.14) 1.48(0.68,2.60) 6.07(3.68,10.30) 13.89(7.41,22.49) 9.14(5.01,15.38) 9.68(5.16,14.93) 0.30(0.17,0.50) 0.30(0.16,0.48) 3.08(2.70,3.46) Female 24.54(19.70,30.79) 31.62(25.40,38.22) 239.17(200.44,283.91) 316.89(269.13,366.06) 372.92(301.56,465.93) 228.95(195.62,269.55) 10.65(8.76,13.51) 6.76(5.73,8.03) 0.40(0.28,0.52) Both 12.44(10.09,15.88) 16.59(13.34,19.99) 122.40(103.02,144.56) 166.30(140.02,191.48) 187.16(152.47,233.13) 119.40(103.06,139.46) 5.52(4.54,7.00) 3.61(3.06,4.26) 0.55(0.44,0.67) India Male 0.22(0.12,0.37) 0.67(0.27,1.21) 1.59(1.03,2.58) 4.62(2.13,8.51) 4.60(2.57,7.50) 10.53(4.59,19.63) 0.18(0.10,0.29) 0.41(0.18,0.77) 3.41(3.15,3.68) Female 12.96(9.38,16.34) 29.41(22.84,37.13) 105.01(83.95,124.68) 215.08(176.71,266.40) 292.26(208.33,368.96) 474.10(370.64,586.93) 8.91(6.38,11.31) 15.51(11.76,19.50) 2.46(2.19,2.72) Both 6.37(4.65,8.00) 15.29(11.97,19.36) 51.54(41.17,60.87) 111.04(91.89,136.79) 142.49(102.15,179.10) 244.66(192.11,301.72) 4.43(3.20,5.62) 8.26(6.27,10.30) 2.66(2.41,2.90) United States of America Male 1.54(0.98,2.07) 1.17(0.73,1.55) 14.54(9.82,18.74) 12.09(8.41,14.94) 8.34(6.68,10.04) 5.85(4.82,7.14) 0.29(0.23,0.34) 0.21(0.17,0.26) −1.26(−1.57,−0.95) Female 128.64(113.02,144.34) 92.47(79.59,107.36) 1297.50(1127.37,1441.99) 1012.91(902.87,1134.29) 898.56(843.68,966.69) 505.17(457.83,565.33) 28.30(26.12,30.21) 16.77(14.84,18.66) −1.16(−1.25,−1.06) Both 70.78(62.09,79.33) 48.86(41.97,56.78) 721.57(625.48,803.99) 537.54(479.58,600.28) 487.61(455.85,526.01) 265.27(239.31,296.49) 16.01(14.67,17.12) 9.12(8.04,10.16) −1.29(−1.39,−1.19)
+Changes in the burden of breast cancer disease in China, India, and the United States, 1990–2023
+Location
+1990 Incidence rate
+2023 Incidence rate
+1990 Prevalence rate
+2023 Prevalence rate
+1990 DALYs rate
+2023 DALYs rate
+1990 Deaths rate
+2023 Deaths rate
+1990–2023 EAPCs
+China
+Male
+0.67(0.34,1.14)
+1.48(0.68,2.60)
+6.07(3.68,10.30)
+13.89(7.41,22.49)
+9.14(5.01,15.38)
+9.68(5.16,14.93)
+0.30(0.17,0.50)
+0.30(0.16,0.48)
+3.08(2.70,3.46)
+Female
+24.54(19.70,30.79)
+31.62(25.40,38.22)
+239.17(200.44,283.91)
+316.89(269.13,366.06)
+372.92(301.56,465.93)
+228.95(195.62,269.55)
+10.65(8.76,13.51)
+6.76(5.73,8.03)
+0.40(0.28,0.52)
+Both
+12.44(10.09,15.88)
+16.59(13.34,19.99)
+122.40(103.02,144.56)
+166.30(140.02,191.48)
+187.16(152.47,233.13)
+119.40(103.06,139.46)
+5.52(4.54,7.00)
+3.61(3.06,4.26)
+0.55(0.44,0.67)
+India
+Male
+0.22(0.12,0.37)
+0.67(0.27,1.21)
+1.59(1.03,2.58)
+4.62(2.13,8.51)
+4.60(2.57,7.50)
+10.53(4.59,19.63)
+0.18(0.10,0.29)
+0.41(0.18,0.77)
+3.41(3.15,3.68)
+Female
+12.96(9.38,16.34)
+29.41(22.84,37.13)
+105.01(83.95,124.68)
+215.08(176.71,266.40)
+292.26(208.33,368.96)
+474.10(370.64,586.93)
+8.91(6.38,11.31)
+15.51(11.76,19.50)
+2.46(2.19,2.72)
+Both
+6.37(4.65,8.00)
+15.29(11.97,19.36)
+51.54(41.17,60.87)
+111.04(91.89,136.79)
+142.49(102.15,179.10)
+244.66(192.11,301.72)
+4.43(3.20,5.62)
+8.26(6.27,10.30)
+2.66(2.41,2.90)
+United States of America
+Male
+1.54(0.98,2.07)
+1.17(0.73,1.55)
+14.54(9.82,18.74)
+12.09(8.41,14.94)
+8.34(6.68,10.04)
+5.85(4.82,7.14)
+0.29(0.23,0.34)
+0.21(0.17,0.26)
+−1.26(−1.57,−0.95)
+Female
+128.64(113.02,144.34)
+92.47(79.59,107.36)
+1297.50(1127.37,1441.99)
+1012.91(902.87,1134.29)
+898.56(843.68,966.69)
+505.17(457.83,565.33)
+28.30(26.12,30.21)
+16.77(14.84,18.66)
+−1.16(−1.25,−1.06)
+Both
+70.78(62.09,79.33)
+48.86(41.97,56.78)
+721.57(625.48,803.99)
+537.54(479.58,600.28)
+487.61(455.85,526.01)
+265.27(239.31,296.49)
+16.01(14.67,17.12)
+9.12(8.04,10.16)
+−1.29(−1.39,−1.19)
+Time trend changes
+Between 1990 and 2023, the standardized index of breast cancer age showed significantly different temporal trends in China, India, and the United States ( Figure 1 ). In terms of incidence, the three countries have very different paths: the incidence rate in the United States continues to decline; the incidence in India has steadily increased, more than doubling; China’s incidence rate is characterized by a two-stage characteristic, that is, after experiencing slow growth and plateau before 2016, it has rebounded significantly. Correspondingly, the trend of DALYs is also very different. The DALY rate is highest among women in the United States, but it continues to decline. The DALY rate among Chinese women peaked around 2000 and then gradually declined and leveled off. In contrast, the DALY rate among Indian women has been rising since 1990, indicating an increasing burden of disease. Mortality trends are similar to morbidity but vary in magnitude. The age-standardized mortality rate for women in the United States has declined most significantly, from 28.3 per 100,000 in 1990 to 16.8 per 100,000 in 2023. China’s female mortality rate has also gradually dropped from 10.6 per 100,000 in 1990 to 6.1 per 100,000 in 2020. However, the female mortality rate in India has continued to rise, from 8.9/100,000 in 1990 to 15.5/100,000 in 2023, gradually approaching the level of China’s same period. In addition, the prevalence data suggest that the United States has the highest starting point but slowly declined, China has a steady and sustained upward trend, and India has shown the most significant upward trend from the lowest starting point. A consistent finding is that indicators in all countries show that the burden of disease is much higher in women than in men. Figure 1 Time trend changes of breast cancer disease in China, India, and the United States, 1990–2023
+Time trend changes of breast cancer disease in China, India, and the United States, 1990–2023
+National disease changes
+There are significant differences in the age distribution and temporal trends of breast cancer in the three countries ( Figure 2 ; Table S1 ). Incidence in the United States has generally declined by age group since 1990, especially in the 35–69 age group, but the absolute incidence rate is still the highest. The burden of disease in China and India has increased significantly: China’s growth is concentrated in people over 35 years old, especially in those aged 45–69; India has shown a general increase in all age groups and a trend of younger people, with a significant increase in the 20–24 age group. In terms of disease burden indicators, the DALY rate and mortality rate in China and the United States showed a downward trend in most age groups, while India increased across the board. The United States also shows a shift in the burden of disease to older people over 70 years of age. These differences suggest that the burden pattern of breast cancer disease is closely related to the stage of economic development of each country. Figure 2 National disease changes of breast cancer disease in China, India, and the United States, 1990–2023 (A) Disease changes in breast cancer incidence in China, India, and the United States from 1990 to 2023. (B) Disease changes in breast cancer prevalence in China, India, and the United States from 1990 to 2023. (C) Disease changes in breast cancer DALYs in China, India, and the United States from 1990 to 2023. (D) Disease changes in breast cancer deaths in China, India, and the United States from 1990 to 2023.
+National disease changes of breast cancer disease in China, India, and the United States, 1990–2023 (A) Disease changes in breast cancer incidence in China, India, and the United States from 1990 to 2023. (B) Disease changes in breast cancer prevalence in China, India, and the United States from 1990 to 2023. (C) Disease changes in breast cancer DALYs in China, India, and the United States from 1990 to 2023. (D) Disease changes in breast cancer deaths in China, India, and the United States from 1990 to 2023.
+National disease changes of breast cancer disease in China, India, and the United States, 1990–2023
+(A) Disease changes in breast cancer incidence in China, India, and the United States from 1990 to 2023.
+(B) Disease changes in breast cancer prevalence in China, India, and the United States from 1990 to 2023.
+(C) Disease changes in breast cancer DALYs in China, India, and the United States from 1990 to 2023.
+(D) Disease changes in breast cancer deaths in China, India, and the United States from 1990 to 2023.
+Crowd changes
+The burden of breast cancer disease showed significant gender and age differences in all three countries (China, India, and the United States) ( Figures 3 , 4 , 5 ). The burden on all indicators is much higher for women than for men. In terms of age distribution, the disease burden of women in all three countries increased significantly from the age of 30–34 and peaked in the age group of 50–54 years old. However, there are differences between the peak pattern and the later trend across countries: the burden of Chinese and Indian women gradually decreases after the peak, while the second peak of disease burden in the 75–79 age group in the United States and remains very high in the older age group (over 80 years old), showing a unique bimodal age distribution pattern. In contrast, the burden of disease in men is extremely low across all age groups. These results suggest that breast cancer primarily affects women, but the age distribution of its disease burden varies significantly across national contexts. Figure 3 Crowd changes of breast cancer disease in China, 1990–2023 Figure 4 Crowd changes of breast cancer disease in India, 1990–2023 Figure 5 Crowd changes of breast cancer disease in the United States, 1990–2023
+Crowd changes of breast cancer disease in China, 1990–2023
+Crowd changes of breast cancer disease in India, 1990–2023
+Crowd changes of breast cancer disease in the United States, 1990–2023
+Decomposition analysis
+A decomposition analysis of changes in breast cancer disease burden in the three countries based on GBD 2023 data shows significant differences between countries in the drivers ( Figure 6 ). In China, the increase in DALYs and deaths is mainly attributed to population aging and population growth, while epidemiological changes show a significant burden-reducing effect. India’s growth across all indicators (DALYs, deaths, onset, and illnesses) is driven by three factors, with epidemiological changes being the primary contributor. Unlike the pattern of declining or modest increases in burden on other indicators due to epidemiological improvements, the increase in incidence and prevalence is mainly driven by demographic changes (aging and population growth), which are also significantly offset by epidemiological changes. Figure 6 Decomposition analysis of breast cancer disease in China, India, and the United States, 1990–2023
+Decomposition analysis of breast cancer disease in China, India, and the United States, 1990–2023
+Attribution analytics
+An analysis of breast cancer attribution risks based on GBD 2023 data shows significant differences between countries in the degree of contribution of different risk factors ( Figure 7 ). Among all risk factors, behavioral risk, metabolic risk, and dietary risk are the main contributors common to the three countries, but their specific composition varies. The United States has the heaviest attribution burden, and the number one driver of DALYs and deaths is behavioral risk; China’s burden is mainly due to dietary risks; India, on the other hand, exhibits a pattern driven by both behavioral and metabolic risks. In terms of specific risk factors, a diet high in red meat in China, high fasting blood glucose in India, and high body mass index in the United States are the most representative significant risk factors in various countries. Figure 7 Attribution analytics of breast cancer disease in China, India, and the United States, 1990–2023
+Attribution analytics of breast cancer disease in China, India, and the United States, 1990–2023
+BAPC forecast
+Bayesian age cycle cohort model predictions based on GBD 2023 data reveal the very different evolution trajectories of age-standardized incidence of breast cancer in China, India, and the United States from 1990 to 2050 ( Figure 8 ): China’s incidence rate is expected to slowly decline to 15.35/100,000 in 2050 after fluctuating from 12.60/100,000 in 1990 to a peak of 16.39/100,000 in 2023; in stark contrast, India’s incidence rate has continued to grow rapidly, rising sharply from 6.32/100,000 in 1990 to 34.00/100,000 in 2050, an increase of more than 5 times; The United States, on the other hand, has shown a clear and continuous downward trend, steadily declining from 70.96/100,000 in 1990 to 37.26/100,000 in 2050, a decline of nearly 50%. Figure 8 BAPC forecast of breast cancer disease in China, India, and the United States, 2050 (A) BAPC forecast of breast cancer disease in China, 2050. (B) BAPC forecast of breast cancer disease in India, 2050. (C) BAPC forecast of breast cancer disease in the United States, 2050.
+BAPC forecast of breast cancer disease in China, India, and the United States, 2050 (A) BAPC forecast of breast cancer disease in China, 2050. (B) BAPC forecast of breast cancer disease in India, 2050. (C) BAPC forecast of breast cancer disease in the United States, 2050.
+BAPC forecast of breast cancer disease in China, India, and the United States, 2050
+(A) BAPC forecast of breast cancer disease in China, 2050.
+(B) BAPC forecast of breast cancer disease in India, 2050.
+(C) BAPC forecast of breast cancer disease in the United States, 2050.
+Discussion
+Based on GBD 2023 data, this study systematically compares the temporal trends, risk attribution, and future trends of breast cancer disease burden in China, India, and the United States from 1990 to 2023. Our results are generally consistent with previous GBD 2021-based findings 5 but provide key refinement additions. First, the heterogeneous pattern of disease burden in the three countries (overall decline in the United States, overall increase in India, and “increase in incidence and mortality decrease” in China) confirms the law revealed by GBD 2021 study that improvement in disease burden is closely related to high socio-demographic index (SDI) levels. 6 However, our country-by-country comparisons further reveal that even at adjacent SDI levels (e.g., China in the middle SDI and India in the low-middle SDI), the disease burden trajectories and dominant risk factors may differ due to differences in development stage, access to care, and risk exposure patterns. For example, although the GBD 2021 literature points to high red meat intake as an important dietary risk for cancer globally, 7 our attribution analysis shows that it is only the primary dietary risk for Chinese women, dominated by high fasting blood glucose in India and high body mass index in the United States. This finding critically points out that risk factors at the global or regional level must be prioritized in context of country-specific contexts to translate into priorities for precise public health interventions. Therefore, our study not only validates the macro picture painted by GBD 2021 but also reveals the internal micro mechanisms and specific action priorities driving these macro trends through in-depth country comparisons, which are discussed below as the causes, risk factors, and future trends behind these heterogeneous patterns.
+First, the evolution trajectory of the burden of breast cancer disease in the three countries shows significant heterogeneity. As a high-income country, the United States continues to decline in age-standardized morbidity, mortality, and DALY rates, confirming the significant results of comprehensive screening, advances in early diagnosis techniques, and optimization of systemic treatment regimens. 8 , 9 However, the absolute burden of breast cancer in the United States remains high, and its unique “bimodal” age distribution—particularly in women over 75 years of age—suggests that there are still challenges in screening strategies, comorbidity management, and treatment tolerability in older populations. In stark contrast, India’s breast cancer burden is growing rapidly across all age groups, especially younger age groups, indicating that it is facing a severe “breast cancer epidemic.” This trend is closely related to India’s rapid socio-economic transformation, changes in fertility patterns, and the westernization of lifestyles in the process of urbanization, 10 and also exposes systemic problems in the accessibility of secondary prevention (screening and early diagnosis) and the standardization of treatment. 11 , 12
+China’s model presents a unique “hybrid” characteristic. The recovery in incidence and the continuous decline in mortality constitute a seemingly contradictory but enlightening dual trend. The former may be related to the prevalence of risk factors such as dietary changes, reduced physical activity, and increased obesity rates. 13 , 14 The latter is a strong testament to China’s significant public health achievements in improving the diagnosis and treatment of breast cancer, especially in improving the early diagnosis rate and standardization of treatment techniques through the “two cancers screening” program. 15 , 16 This phenomenon (the trend of separation of morbidity and mortality) highlights that breast cancer prevention and control in China is in a critical transition period: while continuing to consolidate clinical treatment efficacy, the importance of primary prevention (controlling risk factors) is becoming more prominent than ever. 17
+Second, the decomposition and attribution analysis of this study provides a key explanation for the above macro trends. Decomposition analysis shows that population aging and scale growth are the main drivers of the increase in absolute case numbers in China, 18 while the decline in age-specific mortality (favorable epidemiological changes) effectively mitigates the growth rate of the overall burden. 19 India is the most dire situation, with burden growth driven by a combination of demographic factors and adverse epidemiological changes, indicating that the negative impact of risk exposure has exceeded the ability of current prevention and control systems to cope. 20 The United States has demonstrated a model of successful public health intervention, with favorable epidemiological changes (declining age-specific rates) that almost completely offset the pressure on the growth of the number of cases due to an aging population. 21 Further attribution analysis revealed the priority targets for intervention in the three countries: a high-red meat diet is an important risk in China, which is consistent with the trend of dietary westernization 19 ; High body mass index is a core risk in the United States, confirming the central position of obesity in the etiology of breast cancer. 22 The high risk of fasting blood glucose in India corresponds to its rapidly growing diabetes burden. 23 These findings highlight the need for countries to develop targeted primary prevention strategies based on their own risk spectrums.
+Finally, the prediction based on the BAPC model provides a forward-looking perspective for future prevention and control strategies. By 2050, the incidence rate in the United States is expected to continue to decline, suggesting the effectiveness of its current prevention and control system; India’s rapid rise in incidence warns that it may become one of the countries with the highest burden of breast cancer in the world, 24 and there is an urgent need for large-scale universal screening and public health education. 25 China may experience a slow decline after a plateau, but the current upward trend in incidence is a clear warning of the need to strengthen health interventions for middle-aged and elderly people and high-risk populations, with a focus on the control of modifiable risk factors such as diet. 26
+Limitations of the study
+First, it relies on estimates from the GBD model, and although GBD adopts a uniform methodology to ensure international comparability, differences in the quality and completeness of raw data from country to country can still affect the uncertainty of estimates. Second, risk attribution analysis is based on estimates of the strength of risk factors-disease associations in the available epidemiological evidence, and there may be underrecognized residual confounding. Finally, the prediction model is based on historical trend extrapolation, and major changes in public health policies or public health emergencies in the future may affect the accuracy of predictions.
+Resource availability
+Lead contact
+Further information and requests for resources should be directed to and will be fulfilled by the lead contact, Xiaoming Yu ( 19280751138@163.com ).
+Materials availability
+This study did not generate new unique reagents.
+Data and code availability
+• All raw data reported in this article are publicly available via the Global Health Data Exchange (GHDx) platform ( https://vizhub.healthdata.org/gbd-results/ ). • This article does not report the original code. • Any additional information required to reanalyze the data reported in this article is available from the lead contact upon request.
+All raw data reported in this article are publicly available via the Global Health Data Exchange (GHDx) platform ( https://vizhub.healthdata.org/gbd-results/ ).
+This article does not report the original code.
+Any additional information required to reanalyze the data reported in this article is available from the lead contact upon request.
+Acknowledgments
+We would also like to thank the countless individuals who have contributed to the Global Burden of Disease Study 2023 in various capacities. This research received grants from the study on the mechanism of regulating the Hippo/YAP/TAZ signaling pathway to promote ferroptosis in colorectal cancer( 202403021221332 ), the Subject leader of Shanghai Pudong New Area Health Commission (no. PWRd2023-08 ), the Health Care Project of Shanghai Municipal Health Commission ( 202340155 ), Important Weak Disciplines of Science and Education Medical Cultivation Project in Pudong New Area, Shanghai ( PWZbr2025-14 ), the Key Disciplines in Pudong New Area ( PWZxk2025-11 ), and the Shanghai Pudong New Area Health System Leading Talent Training Program ( PWRl2023-10 ).
+Author contributions
+L.C., concept, design, data acquisition, and manuscript preparation; J.H., design, data acquisition, data analysis, and manuscript editing; X.Z., data acquisition and manuscript review; C.L., data analysis and statistical analysis; Y.Y., data analysis, statistical analysis, and manuscript review; X.Y., concept, design, manuscript preparation, manuscript editing, manuscript review, and is responsible for the integrity of the entire work.
+Declaration of interests
+The authors declare no competing interests.
+STAR★Methods
+Key resources table
+REAGENT or RESOURCE SOURCE IDENTIFIER Deposited data Global Burden of Disease Study 2023 database Institute for Health Metrics and Evaluation (IHME) https://vizhub.healthdata.org/gbd-results/
+REAGENT or RESOURCE
+SOURCE
+IDENTIFIER
+Deposited data
+Global Burden of Disease Study 2023 database
+Institute for Health Metrics and Evaluation (IHME)
+https://vizhub.healthdata.org/gbd-results/
+Experimental model and study participant details
+Study population
+The analyzed population included all residents (male, female, all age groups) of China, India, and the United States during the study period (1990–2023).
+Experimental models
+No laboratory-based experimental models were utilized in this study.
+Institutional permission and ethical oversight
+The Ethics Committee of the Seventh People’s Hospital Affiliated to Shanghai University of Traditional Chinese Medicine is exempt from ethical approval because the GBD 2023 study is an open database and all data is anonymous.
+Data maintenance
+The GBD 2023 dataset is maintained and curated by the Institute for Health Metrics and Evaluation (IHME) at the University of Washington. All data used in this study is publicly accessible to researchers via the GHDx platform with no restricted access criteria.
+Method details
+The data for this study are derived from publicly available epidemiological data from the newly released Global Burden of Disease Database 2023. GBD 2023 systematically assessed the burden of disease and harm for 375 countries and regions in 204 countries and regions around the world between 1990 and 2023, with detailed data on 55 cancer types, and quantified the attributable burden of 35 cancers for 44 risk factors (divided into three categories: behavioral, metabolic, and environmental/occupational). 3 Data were obtained through the Global Health Data Exchange Platform and focused on extracting the incidence, prevalence, mortality and disability-adjusted life years associated with breast cancer for analysis.
+In order to ensure the comparability of results on a global scale, this study strictly follows the GBD standardized analysis framework. The framework adopts unified data cleaning, comprehensive spatio-temporal modeling, and uncertainty quantification methods. The specific methodologies involved in the analysis, such as Bayesian statistical models and DALYs calculations, are detailed in the ref. 27 , 28
+Quantification and statistical analysis
+Disease definition, coding, and statistical analysis
+In this study, breast cancer was defined according to the GBD 2023 framework as malignant neoplasms of the breast (ICD-10 code C50, including subcategories C50.0–C50.9 and C50.A), 6 excluding skin malignancies (C44.5) and carcinoma in situ (D05). 4 Cases were identified through histopathologically confirmed diagnoses from vital registration systems, cancer registries, and verbal autopsy data, with estimates generated using the Cause of Death Ensemble model and spatiotemporal Gaussian process regression.
+This study used GBD 2023 standard population data as the standard population to calculate age-standardized incidence (ASIR), age-standardized mortality rate (ASMR), etc. The agenormalized rate is derived based on the follow ing formula 29 : ASR = (Σ(ai × wi)/Σwi) × 100,000, where ai represents the age-specific rate and wi denotes the standard population weight for the ith age group. Temporal trends were assessed using the estimated annual percentage change (EAPC), 29 calculated as EAPC = 100 × (exp(β) − 1), where β is the regression coefficient of the natural logarithm of ASR against calendar year. Positive EAPC values indicate increasing trends, whereas negative values signify decreasing trends.
+Important definitions
+Disease burden refers to the loss of group health and socioeconomic impacts caused by disease, disability, or premature death, which is usually divided into epidemiological burden and economic burden. 30 This study focused on epidemiological burden and assessed the disease burden of breast cancer using the following four core indicators: (a) morbidity, i.e., the number of new cases per 100,000 population per year; (b) Prevalence, which indicates the proportion of active cases in the population at a given point in time; (c) mortality, which is the proportion of deaths from breast cancer in the total population during a given period; (d) Disability-adjusted life years, which combines life years lost due to premature death (YLLs) and healthy life years lost due to disability (YLDs), calculated based on standard disability weights developed by the GBD study. All indicators reported their estimates and 95% uncertainty intervals, which were calculated using probabilistic sampling and reflected uncertainty due to model assumptions, missing data, and heterogeneity. 31 , 32
+The observed variation in mortality rates across age groups is a core epidemiological feature of breast cancer and directly influences DALY estimates. The YLL component is highly sensitive to age-specific mortality, as it quantifies life years lost relative to a standard life expectancy at each age of death. Consequently, even a low number of deaths in younger age groups (where remaining life expectancy is high) can contribute substantially to YLL. The YLD component is primarily driven by age-specific incidence, prevalence, and assigned disability weights. The differences in mortality across ages arise from a combination of: (1) Biological risk (incidence increases with age); (2) Screening effects (organized screening in target age groups may lead to earlier detection and lower mortality within that range); and (3) Variations in treatment access and comorbidities. Thus, the age pattern of mortality shapes the distribution of YLL across the lifespan, which, combined with YLD, determines the total DALY burden for each age group.
+Decomposition analysis
+Decomposition analysis was used to quantify the independent contribution of different factors to changes in disease burden. This study applied this method to attribute changes in incidence, mortality, and disability-adjusted life years of breast cancer between 1990 and 2023 to three factors: (a) population ageing, i.e., the effect of the change in population age structure to older groups; (b) Changes in population size; (c) Age-specific rate changes, i.e., effects driven purely by changes in epidemiological risk factors, excluding the influence of population age structure and size. 5 The results of the analysis include the absolute and relative contributions of each factor to the change in burden (attribution ratio). 33
+Attribution analytics
+Based on the comparative risk assessment framework of GBD 2023, this study aims to quantify the contribution of major risk factors such as behavior, metabolism, and diet to the burden of breast cancer disease in China, India, and the United States. The core analysis measure is the population attribution score, which is the proportion of disease burden that can be avoided at the theoretical minimum exposure level. 34 All estimates report 95% uncertainty intervals to assess the robustness of the results.
+Bayesian Age-Period-Cohort forecast
+In order to predict the incidence trend of breast cancer in China, India and the United States by 2050, a Bayesian age-period-cohort model was established. The model is based on a hierarchical Poisson regression framework, which can simultaneously deconstruct the independent effects of age, period, and birth cohort on disease risk. In the model setting, second-order random walk priors are applied to the age and cohort effects to ensure smoothness, and first-order autoregressive priors are used for the period effect to capture time dependence. The model parameters were estimated by the Markov chain Monte Carlo method and extrapolated based on historical data from 1990 to 2023, and finally the predicted value of the incidence in 2050 and its 95% confidence interval were obtained.
+Influence of sex and gender on study results
+Sex was a core determinant of the breast cancer burden in China, India, and the United States from 1990 to 2023: females bore the vast majority of the burden, with country-specific temporal trends observed; the absolute burden of breast cancer in males was low, yet the incidence rate rose significantly in males from China and India (with an estimated annual percentage change of 3.08 and 3.41, respectively). The breast cancer burden in females peaked in the 50–54 age group, with a secondary peak in the 75–79 age group among females in the United States, while no obvious peak in disease burden was seen across all age groups in males.
+References
+Global cancer statistics 2022: GLOBOCAN estimates of incidence and mortality worldwide for 36 cancers in 185 countries
+Global Stage Distribution of Breast Cancer at Diagnosis: A Systematic Review and Meta-Analysis
+Burden of 375 diseases and injuries, risk-attributable burden of 88 risk factors, and healthy life expectancy in 204 countries and territories, including 660 subnational locations, 1990-2023: a systematic analysis for the Global Burden of Disease Study 2023
+The global, regional, and national burden of cancer, 1990-2023, with forecasts to 2050: a systematic analysis for the Global Burden of Disease Study 2023
+Global burden of cancer and associated risk factors in 204 countries and territories, 1980-2021: a systematic analysis for the GBD 2021
+Global burden of breast cancer and attributable risk factors in 204 countries and territories, from 1990 to 2021: results from the Global Burden of Disease Study 2021
+Global burden of disease changes related to high red meat diets and breast cancer from 1990 to 2021 and its prediction up to 2030
+Effect of screening and adjuvant therapy on mortality from breast cancer
+Breast cancer statistics, 2019
+Breast cancer in India: Present scenario and the challenges ahead
+Recognising socio-cultural barriers while seeking early detection services for breast cancer: a study from a Universal Health Coverage setting in India
+Rural-urban disparity in cancer burden and care: findings from an Indian cancer registry
+Current cancer situation in China: good or bad news from the 2018 Global Cancer Statistics?
+Historical trends of breast cancer burden attributable to metabolic factors among Chinese women, 1990-2019: A population-based epidemiological study
+Breast Cancer Expert Committee of China Anti-Cancer Association; Cancer Drug Clinical Research Committee of China Anti-Cancer Association. Guidelines for diagnosis and treatment of advanced breast cancer in China (2022 edition)
+Systematic training and technological empowerment: enhancing the quality of cervical and breast cancer screening in low-resource areas of China
+Cancer Burden and Attributable Risk Factors of Cancers in China: Epidemiological Insights and Comparisons With India
+Cancer statistics in China and United States, 2022: profiles, trends, and determinants
+Cancer Burden in China during 1990-2019: Analysis of the Global Burden of Disease
+Gestational diabetes mellitus - A metabolic and reproductive disorder
+Annual report to the nation on the status of cancer, part 1: National cancer statistics
+A nation-wide multicenter 10-year (1999-2008) retrospective clinical epidemiological study of female breast cancer in China
+Aspirin vs Placebo as Adjuvant Therapy for Breast Cancer: The Alliance A011502 Randomized Trial
+Prevalence of diabetes and prediabetes in 15 states of India: results from the ICMR-INDIAB population-based cross-sectional study
+Cancer Incidence and Mortality Across 43 Cancer Registries in India
+Challenges and Innovations in Breast Cancer Screening in India: A Review of Epidemiological Trends and Diagnostic Strategies
+Breast cancer in China
+Global burden of 288 causes of death and life expectancy decomposition in 204 countries and territories and 811 subnational locations, 1990-2021: a systematic analysis for the Global Burden of Disease Study 2021
+The trends in incidence of primary liver cancer caused by specific etiologies: Results from the Global Burden of Disease Study 2016 and implications for liver cancer prevention
+Global, regional, and national incidence, prevalence, and years lived with disability for 354 diseases and injuries for 195 countries and territories, 1990-2017: a systematic analysis for the Global Burden of Disease Study 2017
+Global incidence, prevalence, years lived with disability (YLDs), disability-adjusted life-years (DALYs), and healthy life expectancy (HALE) for 371 diseases and injuries in 204 countries and territories and 811 subnational locations, 1990-2021: a systematic analysis for the Global Burden of Disease Study 2021
+Cancer Incidence, Mortality, Years of Life Lost, Years Lived With Disability, and Disability-Adjusted Life Years for 29 Cancer Groups From 2010 to 2019: A Systematic Analysis for the Global Burden of Disease Study 2019
+The growing rural-urban divide in US life expectancy: contribution of cardiovascular disease and other major causes of death
+Modifiable risk-attributable and age-related burden of lung cancer in China, 1990-2019
+Supplemental information
+Table S1. National disease changes of breast cancer disease in China, India, and the United States, 1990–2023
+Supplemental information can be found online at https://doi.org/10.1016/j.isci.2026.115718 .

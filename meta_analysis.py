@@ -921,13 +921,13 @@ def perform_meta_analysis(df_clean, disease, exposure, outcome="Incidence", excl
             fp_df = df_clean.copy()
             num_studies = len(fp_df)
             
-            # More aggressive dynamic height scaling
-            # Default: 0.4 inch per study. 
-            # If studies > 70, increase to 0.6 inch per study for a "longer" plot.
+            # Keep every study label legible without producing an unnecessarily
+            # enormous web asset. The forestplot package must receive figsize
+            # directly; setting only pyplot's current figure is ignored.
             if num_studies > 70:
-                dynamic_height = max(7, 0.6 * num_studies + 5)
+                dynamic_height = max(7, 0.25 * num_studies + 4)
             else:
-                dynamic_height = max(7, 0.4 * num_studies + 3.5) 
+                dynamic_height = max(7, 0.35 * num_studies + 3.5)
             
             # Dynamic font scaling
             if num_studies < 15: font_size = 10
@@ -937,7 +937,6 @@ def perform_meta_analysis(df_clean, disease, exposure, outcome="Incidence", excl
             
             plt.rcParams.update({'font.size': font_size})
             
-            plt.figure(figsize=(12, dynamic_height)) # Increased width for annotations
             if not fp_df.empty:
                 fp_df = fp_df.rename(columns={'Study': 'group', 'log_ES': 'est'})
                 fp_df['lb'] = fp_df['est'] - 1.96 * fp_df['log_SE']
@@ -957,18 +956,19 @@ def perform_meta_analysis(df_clean, disease, exposure, outcome="Incidence", excl
                 is_log = any(str(row['Effect Type']).upper() in ['OR', 'RR', 'HR', 'ODDS RATIO', 'RISK RATIO'] for _, row in fp_df.iterrows())
                 xlbl = "Log Relative Risk (95% CI)" if is_log else "Effect Size (95% CI)"
                 
-                forestplot.forestplot(
+                forest_ax = forestplot.forestplot(
                     fp_df,
                     estimate="est",
                     ll="lb",
                     hl="ub",
                     varlabel="label",
-                    right_ann_col=['Est. RR (95% CI)'],
-                    right_ann_kwargs={'header': 'Est. RR (95% CI)', 'fontsize': font_size},
+                    rightannote=['Est. RR (95% CI)'],
+                    right_annoteheaders=['Est. RR (95% CI)'],
                     xlabel=xlbl,
                     title=f"Forest Plot: {disease} vs {exposure}",
-                    flush=True, # Left flush labels for cleaner look
-                    shade_alt_rows=True # Alternate shading for readability
+                    flush=True,
+                    color_alt_rows=True,
+                    figsize=(12, dynamic_height),
                 )
                 
                 # Create exposure subfolder
@@ -979,7 +979,8 @@ def perform_meta_analysis(df_clean, disease, exposure, outcome="Incidence", excl
                 filename_base = f"forest_{safe_disease}_{safe_outcome}_{safe_meta}.png"
                 
                 plot_path = os.path.join(exposure_dir, filename_base)
-                plt.savefig(plot_path, bbox_inches='tight')
+                forest_ax.figure.savefig(plot_path, bbox_inches='tight')
+                plt.close(forest_ax.figure)
             plt.close() 
         except Exception as e:
             print(f"Forest plot failed: {e}")

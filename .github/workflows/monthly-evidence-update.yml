@@ -1,0 +1,118 @@
+name: Monthly evidence update
+
+on:
+  schedule:
+    # On the 28th, screen records published during the previous calendar month.
+    - cron: "23 06 28 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: monthly-evidence-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      MONTHLY_SCREEN_MODEL: gpt-5.6-sol
+      MONTHLY_REQUIRE_VALID_NCBI_KEY: "true"
+      NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
+      NCBI_EMAIL: ${{ secrets.NCBI_EMAIL }}
+      CORNELL_API_KEY: ${{ secrets.CORNELL_API_KEY }}
+      CORNELL_API_BASE_URL: ${{ secrets.CORNELL_API_BASE_URL }}
+
+    steps:
+      - name: Check out update branch
+        uses: actions/checkout@v4
+        with:
+          ref: YSClose2Submission
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Screen the previous publication month
+        run: |
+          set -o pipefail
+          python scripts/monthly_evidence_update.py \
+            --previous-month \
+            --stage all \
+            --report-dir data/monthly_reports \
+            --monthly-report-subdir \
+            2>&1 | tee monthly_update.log
+
+      - name: Detect changed meta-analyses
+        id: changed
+        run: |
+          value=$(python -c 'import glob,json; p=sorted(glob.glob("data/monthly_updates/*/applied_changes.json"))[-1]; d=json.load(open(p)); print(str(any(x.get("status")=="updated" for x in d.get("changes",[]))).lower())')
+          echo "value=$value" >> "$GITHUB_OUTPUT"
+
+      - name: Update affected Plot workbooks
+        if: steps.changed.outputs.value == 'true'
+        run: |
+          set -o pipefail
+          applied=$(find data/monthly_updates -name applied_changes.json -type f | sort | tail -1)
+          python scripts/update_plot_workbooks.py --applied-changes "$applied" 2>&1 | tee -a monthly_update.log
+
+      - name: Set up R
+        if: steps.changed.outputs.value == 'true'
+        uses: r-lib/actions/setup-r@v2
+
+      - name: Install R plotting dependencies
+        if: steps.changed.outputs.value == 'true'
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            any::tidyverse
+            any::scales
+            any::readxl
+            any::stringr
+            any::cowplot
+            any::ggtext
+            any::ggrepel
+            any::patchwork
+
+      - name: Regenerate paper PDFs
+        if: steps.changed.outputs.value == 'true'
+        run: |
+          set -o pipefail
+          Rscript Plot/PlotsPaper.R 2>&1 | tee -a monthly_update.log
+          Rscript Plot/DumbellPlot.R 2>&1 | tee -a monthly_update.log
+
+      - name: Commit monthly results
+        run: |
+          set -o pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Cached_results static Plot data/monthly_updates data/monthly_reports
+          if git diff --cached --quiet; then
+            echo "No repository changes for this month." | tee -a monthly_update.log
+          else
+            git commit -m "Monthly evidence update $(date -u +%Y-%m)" 2>&1 | tee -a monthly_update.log
+            git push origin HEAD:YSClose2Submission 2>&1 | tee -a monthly_update.log
+          fi
+
+      - name: Email developers when the update fails
+        if: failure()
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SMTP_FROM: ${{ secrets.SMTP_FROM }}
+          SMTP_USE_SSL: ${{ secrets.SMTP_USE_SSL }}
+          SMTP_USE_TLS: ${{ secrets.SMTP_USE_TLS }}
+        run: |
+          python scripts/send_monthly_failure_email.py \
+            --log monthly_update.log \
+            --workflow-url "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

@@ -1,0 +1,501 @@
+MetaFemina new-study report
+===========================
+Publication-date search window: 2026-02-01 through 2026-07-31
+Cancer types: Breast cancer; Ovarian cancer; Uterine cancer
+Outcome: Incidence
+Listed exposures searched: 226
+Previously saved unique PMIDs omitted globally: 949
+Unsaved candidate PMIDs indexed: 1642
+First-screen passing contexts: 138
+Second-screen eligible contexts: 20
+Second-screen eligible unique PMIDs: 16
+Eligible contexts needing full text: 20
+Eligible contexts with PMCID: 9
+
+IMPORTANT STATUS
+----------------
+This file was written after both relevance screens and before any PMC full-text retrieval, saved-result mutation, or plot/workbook regeneration.
+Missing effect sizes or p-values were not used as exclusion reasons.
+
+PRELIMINARILY ELIGIBLE NEW STUDIES
+-----------------------------------
+
+PMID: 41103105
+Published date: 2026-06-01
+PMCID: None found
+Title: Applying machine learning to explore association models between environmental hormones, breast cancer, and a dietary and health education improvement program: an investigative study.
+Authors: Chang CY, Su CH, Chang CH, Ho CS, Liao PH
+Journal: International journal of environmental health research
+PubMed: https://pubmed.ncbi.nlm.nih.gov/41103105/
+  Context: Chromium | Breast cancer | Incidence
+  Second-screen reason: This original human observational study reports chromium among biospecimen-assessed heavy-metal factors associated with breast cancer, but no chromium-specific estimate is provided in the abstract.
+  Abstract sufficient for meta-analysis: No
+  Preliminary JBI: Fair (10.0%)
+  Mendelian randomization: No
+  Full text required: Yes
+  Missing quantitative fields: effect_size, effect_type, ci_lower, ci_upper, p_value, total_n, cases
+  Context: Copper | Breast cancer | Incidence
+  Second-screen reason: This original human observational study reports copper among biospecimen-assessed heavy-metal factors associated with breast cancer, but no copper-specific estimate is provided in the abstract.
+  Abstract sufficient for meta-analysis: No
+  Preliminary JBI: Fair (10.0%)
+  Mendelian randomization: No
+  Full text required: Yes
+  Missing quantitative fields: effect_size, effect_type, ci_lower, ci_upper, p_value, total_n, cases
+  Context: Zinc | Breast cancer | Incidence
+  Second-screen reason: This original human observational study reports zinc among biospecimen-assessed heavy-metal factors associated with breast cancer, but no zinc-specific estimate is provided in the abstract.
+  Abstract sufficient for meta-analysis: No
+  Preliminary JBI: Fair (10.0%)
+  Mendelian randomization: No
+  Full text required: Yes
+  Missing quantitative fields: effect_size, effect_type, ci_lower, ci_upper, p_value, total_n, cases
+
+PMID: 41221982
+Published date: 2026-06-01
+PMCID: None found
+Title: Global Assessment of the Relationship Between Breast Cancer Risk and Dietary Intake: An Ecological Study.
+Authors: Lamchabbek N, Huybrechts I, El Badisy I, El Kouzzib S, Benajiba N, Faure E, Khalis M
+Journal: American journal of health promotion : AJHP
+PubMed: https://pubmed.ncbi.nlm.nih.gov/41221982/
+  Context: Alcohol | Breast cancer | Incidence
+  Second-screen reason: This original ecological study evaluates country-level alcohol intake in relation to breast cancer incidence.
+  Abstract sufficient for meta-analysis: No
+  Preliminary JBI: Moderate (62.5%)
+  Mendelian randomization: No
+  Full text required: Yes
+  Missing quantitative fields: ci_lower, ci_upper, cases
+
+PMID: 41686184
+Published date: 2026-02-13
+PMCID: None found
+Title: Global Burden, Quality of Care, and Attributable Risk Factors of Young-Onset Breast Cancer (YOBC) by WHO Regions: A Systematic Analysis for the Global Burden of Disease Study 2019.
+Authors: Wong ZY, Ou KQ, Wong ZN, Faderani R, Kanapathy M, Mosahebi A
+Journal: Asia-Pacific journal of clinical oncology
+PubMed: https://pubmed.ncbi.nlm.nih.gov/41686184/
+  Context: Alcohol | Breast cancer | Incidence
+  Second-screen reason: This original GBD database analysis evaluates incident young-onset breast cancer burden and explicitly examines burden attributable to alcohol consumption, although the abstract provides no alcohol-specific quantitative estimate.
+  Abstract sufficient for meta-analysis: No
+  Preliminary JBI: Fair (12.5%)
+  Mendelian randomization: No
+  Full text required: Yes
+  Missing quantitative fields: effect_size, effect_type, ci_lower, ci_upper, p_value, total_n, comparison_type
+
+PMID: 41847477
+Published date: 2026
+PMCID: PMC12989687
+Title: Association of Smoking and Alcohol Consumption with Female Reproductive Diseases: A Mendelian Randomization Study on the Mediating Role of Circulating Metabolites.
+Authors: Li C, Jiang Z, Bai J, Li M, Li M, Wu X, Zhang Y, Li B, Xie Q, Li F, Ran M, Dang H
+Journal: International journal of women's health
+PubMed: https://pubmed.ncbi.nlm.nih.gov/41847477/
+  Context: Alcohol | Ovarian cancer | Incidence
+  Second-screen reason: This original two-sample Mendelian randomization study evaluated genetically predicted alcohol consumption in relation to endometrioid ovarian cancer, although the abstract does not report the target-specific result.
+  Abstract sufficient for meta-analysis: No
+  Preliminary JBI: Fair (28.6%)
+  Mendelian randomization: Yes
+  Full text required: Yes
+  Missing quantitative fields: effect_size, effect_type, ci_lower, ci_upper, p_value, total_n, cases, comparison_type
+
+PMID: 42088366
+Published date: 2026-05-15
+PMCID: PMC13138242
+Title: Comparative analysis of breast cancer burden in China, India, and the United States.
+Authors: Cai L, He J, Zhang X, Lu C, Yao Y, Yu X
+Journal: iScience
+PubMed: https://pubmed.ncbi.nlm.nih.gov/42088366/
+  Context: Red meat | Breast cancer | Incidence
+  Second-screen reason: This original population-based GBD analysis evaluated high red-meat intake as a risk factor for female breast cancer incidence, although the abstract provides no poolable exposure-specific estimate.
+  Abstract sufficient for meta-analysis: No
+  Preliminary JBI: Fair (37.5%)
+  Mendelian randomization: No
+  Full text required: Yes
+  Missing quantitative fields: effect_size, effect_type, ci_lower, ci_upper, p_value, total_n, cases, comparison_type
+
+PMID: 42094023
+Published date: 2026
+PMCID: PMC13141096
+Title: Temporal trends in behavioural risk factors for cancers with rising incidence in younger adults: an analysis of population-based data in England.
+Authors: Garcia-Closas M, Richards Z, Frost R, Gunter MJ, Berrington de Gonzalez A
+Journal: BMJ oncology
+PubMed: https://pubmed.ncbi.nlm.nih.gov/42094023/
+  Context: Alcohol | Ovarian cancer | Incidence
+  Second-screen reason: This original population-based analysis examined alcohol trends and attributable fractions for cancers with rising incidence, including ovarian cancer, but the abstract lacks a separable alcohol–ovarian cancer estimate.
+  Abstract sufficient for meta-analysis: No
+  Preliminary JBI: Moderate (62.5%)
+  Mendelian randomization: No
+  Full text required: Yes
+  Missing quantitative fields: effect_size, effect_type, ci_lower, ci_upper, p_value, total_n, cases, comparison_type
+
+PMID: 42134088
+Published date: 2026-06-01
+PMCID: None found
+Title: The Mediating Role of Serum Phosphate in the BMI-Breast Cancer Association: A Prospective Study from the UK Biobank.
+Authors: Yang W, Zhang Y, Chen M, Yang Y
+Journal: Clinical breast cancer
+PubMed: https://pubmed.ncbi.nlm.nih.gov/42134088/
+  Context: Phosphorus | Breast cancer | Incidence
+  Second-screen reason: This prospective human cohort measured baseline serum phosphate and evaluated its association with subsequent breast cancer risk.
+  Abstract sufficient for meta-analysis: No
+  Preliminary JBI: Moderate (54.5%)
+  Mendelian randomization: No
+  Full text required: Yes
+  Missing quantitative fields: effect_size, effect_type, ci_lower, ci_upper, p_value, cases, comparison_type
+
+PMID: 42183404
+Published date: 2026
+PMCID: PMC13197606
+Title: Breast Cancer Burden in BRICS Countries Attributable to Smoking, High Alcohol Use, High Body Mass Index, and Low Physical Activity, 1990-2021: Findings from the Global Burden of Disease 2021 and Mendelian Randomization.
+Authors: Yan X, Liao C, Qian S, Zhang C, Wu J, Fang J, Zhao X, Peng L
+Journal: International journal of women's health
+PubMed: https://pubmed.ncbi.nlm.nih.gov/42183404/
+  Context: Alcohol | Breast cancer | Incidence
+  Second-screen reason: This original human study includes a two-sample Mendelian randomization analysis of alcohol use and breast cancer risk, although no quantitative target estimate is reported in the abstract.
+  Abstract sufficient for meta-analysis: No
+  Preliminary JBI: Fair (0.0%)
+  Mendelian randomization: Yes
+  Full text required: Yes
+  Missing quantitative fields: effect_size, effect_type, ci_lower, ci_upper, p_value, total_n, cases, comparison_type
+
+PMID: 42192421
+Published date: 2026-05-26
+PMCID: PMC13386921
+Title: Global burden of breast cancer and its association with red meat consumption: spatiotemporal trends, projections, and triangulation of evidence.
+Authors: Wang Z, Gao J, Liu Z, Gong Y, Xu X, Zhao H, Zhang Y, Zhang L
+Journal: World journal of surgical oncology
+PubMed: https://pubmed.ncbi.nlm.nih.gov/42192421/
+  Context: Red meat | Breast cancer | Incidence
+  Second-screen reason: This original human study includes an exploratory Mendelian randomization analysis of genetically predicted beef consumption and breast cancer risk, but the abstract lacks a quantitative estimate.
+  Abstract sufficient for meta-analysis: No
+  Preliminary JBI: Fair (0.0%)
+  Mendelian randomization: Yes
+  Full text required: Yes
+  Missing quantitative fields: effect_size, effect_type, ci_lower, ci_upper, p_value, total_n, cases, comparison_type
+
+PMID: 42269246
+Published date: 2026-07-26
+PMCID: None found
+Title: Association between lifestyle and risk of early-onset cancer: Evidence from the European Prospective Investigation into Cancer and Nutrition and the UK Biobank.
+Authors: Sala I, Botteri E, Berstad P, Fontvieille E, Zouiouich S, Sánchez MJ, Guevara M, Dorronsoro A, Olsen A, Kyrø C, Zamora-Ros R, Fortner RT, Kaaks R, Schulze MB, Tin ST, Agnoli C, Masala G, Panico S, Ricceri F, Severi G, Marques C, Bouteille L, Aune D, Weiderpass E, Jenab M, Cross AJ, Tsilidis K, Vineis P, Gunter MJ, Ferrari P, Bagnardi V
+Journal: European journal of cancer (Oxford, England : 1990)
+PubMed: https://pubmed.ncbi.nlm.nih.gov/42269246/
+  Context: Alcohol | Breast cancer | Incidence
+  Second-screen reason: This prospective human cohort analysis evaluated prediagnostic alcohol score in relation to incident early-onset breast cancer and reported a target-specific null association.
+  Abstract sufficient for meta-analysis: No
+  Preliminary JBI: Fair (27.3%)
+  Mendelian randomization: No
+  Full text required: Yes
+  Missing quantitative fields: effect_size, effect_type, ci_lower, ci_upper, p_value
+
+PMID: 42319457
+Published date: 2026-06-19
+PMCID: PMC13282222
+Title: Changes in alcohol consumption and the risk of postmenopausal breast cancer in the European Prospective Investigation into Cancer and Nutrition cohort.
+Authors: Antoniussen CS, Ibsen DB, Olsen A, Overvad K, Vasson F, Severi G, Dragic D, Truong T, Fortner RT, Le Cornet C, Schulze MB, Di Girolamo C, Pala V, Doccioli C, Agudo A, Guevara M, Tin Tin S, Jackson IG, Gunter MJ, Dossus L, Ferrari P, Dahm CC
+Journal: European journal of nutrition
+PubMed: https://pubmed.ncbi.nlm.nih.gov/42319457/
+  Context: Alcohol | Breast cancer | Incidence
+  Second-screen reason: This prospective cohort study evaluated prediagnostic changes in alcohol intake in relation to subsequent incident postmenopausal breast cancer.
+  Abstract sufficient for meta-analysis: Yes
+  Preliminary JBI: Fair (45.5%)
+  Mendelian randomization: No
+  Full text required: Yes
+  Missing quantitative fields: p_value
+
+PMID: 42332007
+Published date: 2026-06-22
+PMCID: None found
+Title: Association between risk-related lifestyle factors, screening adherence and breast cancer incidence: a decomposition analysis.
+Authors: Rana MS, Marinovich ML, Houssami N, Cavenagh D, Byles JE, Yu XQ, Rahman MM
+Journal: Scientific reports
+PubMed: https://pubmed.ncbi.nlm.nih.gov/42332007/
+  Context: Alcohol | Breast cancer | Incidence
+  Second-screen reason: This longitudinal cohort study evaluated alcohol consumption in relation to breast cancer diagnosed during follow-up.
+  Abstract sufficient for meta-analysis: No
+  Preliminary JBI: Fair (36.4%)
+  Mendelian randomization: No
+  Full text required: Yes
+  Missing quantitative fields: effect_type, ci_lower, ci_upper, comparison_definition
+
+PMID: 42369821
+Published date: 2026
+PMCID: PMC13308732
+Title: Global Burden of Ovarian Cancer and Causal Risk Factors from 1990 to 2021: An Integrated GBD and Mendelian Randomization Analysis.
+Authors: Zhang N, Zhang H, Lin H, Wang L
+Journal: International journal of women's health
+PubMed: https://pubmed.ncbi.nlm.nih.gov/42369821/
+  Context: Alcohol | Ovarian cancer | Incidence
+  Second-screen reason: This Mendelian randomization analysis reports a population-wide association between genetically proxied alcohol intake frequency and ovarian cancer, although the target-specific effect estimate is absent from the abstract.
+  Abstract sufficient for meta-analysis: No
+  Preliminary JBI: Fair (0.0%)
+  Mendelian randomization: Yes
+  Full text required: Yes
+  Missing quantitative fields: effect_size, effect_type, ci_lower, ci_upper, p_value, total_n, cases
+  Context: Magnesium | Ovarian cancer | Incidence
+  Second-screen reason: This Mendelian randomization analysis reports a population-wide inverse association between genetically proxied magnesium and ovarian cancer, although the target-specific effect estimate is absent from the abstract.
+  Abstract sufficient for meta-analysis: No
+  Preliminary JBI: Fair (0.0%)
+  Mendelian randomization: Yes
+  Full text required: Yes
+  Missing quantitative fields: effect_size, effect_type, ci_lower, ci_upper, p_value, total_n, cases
+
+PMID: 42453565
+Published date: 2026-07-01
+PMCID: PMC13366221
+Title: Using case description information to reduce sensitivity to bias for the attributable fraction among the exposed.
+Authors: Chen K, Cheng J, Halloran ME, Small DS
+Journal: Journal of the Royal Statistical Society. Series A, (Statistics in Society)
+PubMed: https://pubmed.ncbi.nlm.nih.gov/42453565/
+  Context: Alcohol | Breast cancer | Incidence
+  Second-screen reason: The article reports an original methodological analysis with a human case study of alcohol consumption and postmenopausal invasive breast cancer risk in the Women's Health Initiative Observational Study.
+  Abstract sufficient for meta-analysis: No
+  Preliminary JBI: Fair (9.1%)
+  Mendelian randomization: No
+  Full text required: Yes
+  Missing quantitative fields: effect_size, effect_type, ci_lower, ci_upper, p_value, total_n, cases
+
+PMID: 42498670
+Published date: 2026-07-24
+PMCID: None found
+Title: Clarifying risk-factor associations with quantitative breast tumor features: a pooled analysis of 24 studies.
+Authors: Adams D, Hurson AN, Ahearn TU, Andrulis IL, Antoniou AC, Auvinen P, Bane A, Behrens S, Berrington de Gonzalez A, Białkowska K, Bodelon C, Bolla MK, Borrero M, Brenner H, Brock IW, Broeks A, Camp NJ, Cessna MH, Chanock SJ, Chenevix-Trench G, Copson E, Couch FJ, Cox A, Cross SS, Devilee P, Dunning AM, Easton DF, Eccles DM, Figueroa JD, Glendon G, González-Neira A, Hamann U, Hartikainen JM, Hartman M, Heemskerk-Gerritsen BAM, Ho PJ, Hodge JM, Holleczek B, Hollestelle A, Hooning MJ, kConFab Investigators, SGBCC Investigators, Jakubowska A, Jones ME, Jones L, Jones B, Jung A, Kaaks R, Keeman R, Lawrence S, Li J, Lissowska J, Lubiński J, Mannermaa A, Manoochehri M, Martens JWM, Mesker WE, Muhammad N, Mulligan AM, Obi N, Olson JE, Osorio A, Ottewell PD, Patel AV, Pita G, Prajzendanc K, Rashid MU, Ruddy KJ, Safizadeh F, Schöttker B, Seibold P, Tapper WJ, Tengström M, Teras LR, Thorne H, Timmermans MAM, Tollenaar RAEM, Vachon CM, Wang Q, Wesseling J, Yadav S, Yang XR, Zamora MP, Chang-Claude J, Schmidt MK, Pharoah PDP, Abubakar M, García-Closas M
+Journal: Journal of the National Cancer Institute
+PubMed: https://pubmed.ncbi.nlm.nih.gov/42498670/
+  Context: Alcohol | Breast cancer | Incidence
+  Second-screen reason: This original pooled human analysis included alcohol as a breast cancer risk factor and estimated subtype-specific case-control associations, although the alcohol-specific estimate is not reported in the abstract.
+  Abstract sufficient for meta-analysis: No
+  Preliminary JBI: Fair (10.0%)
+  Mendelian randomization: No
+  Full text required: Yes
+  Missing quantitative fields: effect_size, effect_type, ci_lower, ci_upper, p_value, total_n, cases
+
+PMID: 42520943
+Published date: 2026-07-28
+PMCID: None found
+Title: One-carbon metabolism nutrients and polygenic risk scores in relation to breast cancer risk: A nested case-control study within the EPIC cohort.
+Authors: Gálvez-Navas JM, Peruchet-Noray L, Molina-Montes E, Rodríguez-Barranco M, Biessy C, Antoniussen CS, Dahm CC, Kyrø C, Dahl C, Sugier PE, Asgari Y, Truong T, Nicolas G, Turzanski-Fortner R, le Cornet C, Schulze MB, Milani L, Masala G, Quartiroli M, Signoriello S, Tumino R, Crous-Bou M, Mokoroa O, Rodríguez-Palacios D, Trobajo-Sanmartín C, Heath AK, Dossus L, Huybrechts I, Sánchez MJ
+Journal: The American journal of clinical nutrition
+PubMed: https://pubmed.ncbi.nlm.nih.gov/42520943/
+  Context: Vitamin B12 | Breast cancer | Incidence
+  Second-screen reason: This nested case-control study reports a target-specific association between higher dietary vitamin B12 intake and incident breast cancer risk.
+  Abstract sufficient for meta-analysis: Yes
+  Preliminary JBI: Moderate (60.0%)
+  Mendelian randomization: No
+  Full text required: Yes
+  Missing quantitative fields: p_value
+  Context: Vitamin B2 | Breast cancer | Incidence
+  Second-screen reason: This nested case-control study reports a target-specific association between higher dietary vitamin B2 intake and incident breast cancer risk.
+  Abstract sufficient for meta-analysis: Yes
+  Preliminary JBI: Moderate (60.0%)
+  Mendelian randomization: No
+  Full text required: Yes
+  Missing quantitative fields: p_value
+
+AUDIT FILES
+-----------
+All unsaved candidate PMIDs: newCandidatePMIDs.txt
+All first- and second-screen exclusions: newStudyExclusions.txt
+Machine-readable audit packet: /Users/yushushi/Library/CloudStorage/OneDrive-WeillCornellMedicine/MetaFeminaYSClose2Submission/MetaFemina/data/monthly_updates/2026-02-01_2026-07-31
+
+FINAL DISPOSITION AFTER FULL-TEXT REVIEW
+----------------------------------------
+Only INCLUDE_META records were added to the conventional saved meta-analysis.
+MR_SEPARATE records were retained in MR.txt and were not pooled with conventional studies.
+Missing effect sizes or p-values were not used as exclusion reasons.
+
+PMID: 41103105
+Context: Chromium | Breast cancer | Incidence
+Published date: 2026-06-01
+PMCID: None found
+Title: Applying machine learning to explore association models between environmental hormones, breast cancer, and a dietary and health education improvement program: an investigative study.
+Final status: ELIGIBLE_NOT_POOLABLE
+Reason: The study remains relevant, but no complete Good-quality quantitative extraction could be verified from the available abstract and accessible full text.
+JBI: Fair (10.0%)
+Extracted estimate: No usable estimate verified
+
+PMID: 41103105
+Context: Copper | Breast cancer | Incidence
+Published date: 2026-06-01
+PMCID: None found
+Title: Applying machine learning to explore association models between environmental hormones, breast cancer, and a dietary and health education improvement program: an investigative study.
+Final status: ELIGIBLE_NOT_POOLABLE
+Reason: The study remains relevant, but no complete Good-quality quantitative extraction could be verified from the available abstract and accessible full text.
+JBI: Fair (10.0%)
+Extracted estimate: No usable estimate verified
+
+PMID: 41103105
+Context: Zinc | Breast cancer | Incidence
+Published date: 2026-06-01
+PMCID: None found
+Title: Applying machine learning to explore association models between environmental hormones, breast cancer, and a dietary and health education improvement program: an investigative study.
+Final status: ELIGIBLE_NOT_POOLABLE
+Reason: The study remains relevant, but no complete Good-quality quantitative extraction could be verified from the available abstract and accessible full text.
+JBI: Fair (10.0%)
+Extracted estimate: No usable estimate verified
+
+PMID: 41221982
+Context: Alcohol | Breast cancer | Incidence
+Published date: 2026-06-01
+PMCID: None found
+Title: Global Assessment of the Relationship Between Breast Cancer Risk and Dietary Intake: An Ecological Study.
+Final status: ELIGIBLE_NOT_POOLABLE
+Reason: The study remains relevant, but no complete Good-quality quantitative extraction could be verified from the available abstract and accessible full text.
+JBI: Moderate (62.5%)
+Extracted estimate: Incomplete estimate 0.209; no usable confidence interval verified
+
+PMID: 41686184
+Context: Alcohol | Breast cancer | Incidence
+Published date: 2026-02-13
+PMCID: None found
+Title: Global Burden, Quality of Care, and Attributable Risk Factors of Young-Onset Breast Cancer (YOBC) by WHO Regions: A Systematic Analysis for the Global Burden of Disease Study 2019.
+Final status: ELIGIBLE_NOT_POOLABLE
+Reason: The study remains relevant, but no complete Good-quality quantitative extraction could be verified from the available abstract and accessible full text.
+JBI: Fair (12.5%)
+Extracted estimate: No usable estimate verified
+
+PMID: 41847477
+Context: Alcohol | Ovarian cancer | Incidence
+Published date: 2026
+PMCID: PMC12989687
+Title: Association of Smoking and Alcohol Consumption with Female Reproductive Diseases: A Mendelian Randomization Study on the Mediating Role of Circulating Metabolites.
+Final status: MR_SEPARATE
+Reason: This two-sample Mendelian-randomization study reported a quantitative association between genetically predicted weekly alcohol consumption and endometrioid ovarian cancer risk and should be recorded separately from conventional studies.
+JBI: Fair (44.4%)
+Extracted estimate: OR 0.48 (95% CI 0.31–0.74)
+
+PMID: 42088366
+Context: Red meat | Breast cancer | Incidence
+Published date: 2026-05-15
+PMCID: PMC13138242
+Title: Comparative analysis of breast cancer burden in China, India, and the United States.
+Final status: ELIGIBLE_NOT_POOLABLE
+Reason: The GBD ecological risk-attribution analysis identifies high red-meat intake as a breast-cancer risk in China but reports no context-specific RR, OR, or HR with uncertainty and does not achieve a Good JBI grade.
+JBI: Fair (50.0%)
+Extracted estimate: No usable estimate verified
+
+PMID: 42094023
+Context: Alcohol | Ovarian cancer | Incidence
+Published date: 2026
+PMCID: PMC13141096
+Title: Temporal trends in behavioural risk factors for cancers with rising incidence in younger adults: an analysis of population-based data in England.
+Final status: EXCLUDE
+Reason: Full text states that the alcohol-linked cancers were liver, colorectal, oral, and breast cancer, so it provides no alcohol–ovarian cancer incidence analysis.
+JBI: Moderate (75.0%)
+Extracted estimate: No usable estimate verified
+
+PMID: 42134088
+Context: Phosphorus | Breast cancer | Incidence
+Published date: 2026-06-01
+PMCID: None found
+Title: The Mediating Role of Serum Phosphate in the BMI-Breast Cancer Association: A Prospective Study from the UK Biobank.
+Final status: ELIGIBLE_NOT_POOLABLE
+Reason: The study remains relevant, but no complete Good-quality quantitative extraction could be verified from the available abstract and accessible full text.
+JBI: Moderate (54.5%)
+Extracted estimate: No usable estimate verified
+
+PMID: 42183404
+Context: Alcohol | Breast cancer | Incidence
+Published date: 2026
+PMCID: PMC13197606
+Title: Breast Cancer Burden in BRICS Countries Attributable to Smoking, High Alcohol Use, High Body Mass Index, and Low Physical Activity, 1990-2021: Findings from the Global Burden of Disease 2021 and Mendelian Randomization.
+Final status: MR_SEPARATE
+Reason: This two-sample Mendelian-randomization analysis reports a quantitative association between genetically proxied high alcohol use and breast cancer incidence and must be recorded separately from conventional studies.
+JBI: Moderate (60.0%)
+Extracted estimate: OR 1.03 (95% CI 1.03–1.03)
+
+PMID: 42192421
+Context: Red meat | Breast cancer | Incidence
+Published date: 2026-05-26
+PMCID: PMC13386921
+Title: Global burden of breast cancer and its association with red meat consumption: spatiotemporal trends, projections, and triangulation of evidence.
+Final status: MR_SEPARATE
+Reason: This two-sample Mendelian-randomization analysis reported a quantitative association between genetically predicted higher beef intake and breast cancer incidence and must be recorded separately from conventional studies.
+JBI: Fair (0.0%)
+Extracted estimate: OR 3.39 (95% CI 1.47–7.86)
+
+PMID: 42269246
+Context: Alcohol | Breast cancer | Incidence
+Published date: 2026-07-26
+PMCID: None found
+Title: Association between lifestyle and risk of early-onset cancer: Evidence from the European Prospective Investigation into Cancer and Nutrition and the UK Biobank.
+Final status: ELIGIBLE_NOT_POOLABLE
+Reason: The study remains relevant, but no complete Good-quality quantitative extraction could be verified from the available abstract and accessible full text.
+JBI: Fair (27.3%)
+Extracted estimate: No usable estimate verified
+
+PMID: 42319457
+Context: Alcohol | Breast cancer | Incidence
+Published date: 2026-06-19
+PMCID: PMC13282222
+Title: Changes in alcohol consumption and the risk of postmenopausal breast cancer in the European Prospective Investigation into Cancer and Nutrition cohort.
+Final status: INCLUDE_META
+Reason: This Good-quality prospective cohort study reported a fully adjusted HR with 95% CI for incident postmenopausal breast cancer per 10 g/day increase in alcohol-consumption change.
+JBI: Good (90.0%)
+Extracted estimate: HR 0.97 (95% CI 0.93–1.01)
+
+PMID: 42332007
+Context: Alcohol | Breast cancer | Incidence
+Published date: 2026-06-22
+PMCID: None found
+Title: Association between risk-related lifestyle factors, screening adherence and breast cancer incidence: a decomposition analysis.
+Final status: ELIGIBLE_NOT_POOLABLE
+Reason: The study remains relevant, but no complete Good-quality quantitative extraction could be verified from the available abstract and accessible full text.
+JBI: Fair (36.4%)
+Extracted estimate: Incomplete estimate 1.55; no usable confidence interval verified
+
+PMID: 42369821
+Context: Alcohol | Ovarian cancer | Incidence
+Published date: 2026
+PMCID: PMC13308732
+Title: Global Burden of Ovarian Cancer and Causal Risk Factors from 1990 to 2021: An Integrated GBD and Mendelian Randomization Analysis.
+Final status: MR_SEPARATE
+Reason: This two-sample Mendelian-randomization analysis provides a quantitative IVW estimate for genetically proxied alcohol intake frequency and ovarian cancer and must be recorded separately from conventional studies.
+JBI: Fair (0.0%)
+Extracted estimate: OR 1.2 (95% CI 1.03–1.4)
+
+PMID: 42369821
+Context: Magnesium | Ovarian cancer | Incidence
+Published date: 2026
+PMCID: PMC13308732
+Title: Global Burden of Ovarian Cancer and Causal Risk Factors from 1990 to 2021: An Integrated GBD and Mendelian Randomization Analysis.
+Final status: MR_SEPARATE
+Reason: This two-sample Mendelian-randomization analysis provides a quantitative IVW estimate for genetically proxied magnesium and ovarian cancer and must be recorded separately from conventional studies.
+JBI: Fair (0.0%)
+Extracted estimate: OR 0.04 (95% CI 0.0–0.69)
+
+PMID: 42453565
+Context: Alcohol | Breast cancer | Incidence
+Published date: 2026-07-01
+PMCID: PMC13366221
+Title: Using case description information to reduce sensitivity to bias for the attributable fraction among the exposed.
+Final status: ELIGIBLE_NOT_POOLABLE
+Reason: The PMC record currently contains only abstract/front matter, so no complete full-text extraction or JBI upgrade was possible.
+JBI: Fair (9.1%)
+Extracted estimate: No usable estimate verified
+
+PMID: 42498670
+Context: Alcohol | Breast cancer | Incidence
+Published date: 2026-07-24
+PMCID: None found
+Title: Clarifying risk-factor associations with quantitative breast tumor features: a pooled analysis of 24 studies.
+Final status: ELIGIBLE_NOT_POOLABLE
+Reason: The study remains relevant, but no complete Good-quality quantitative extraction could be verified from the available abstract and accessible full text.
+JBI: Fair (10.0%)
+Extracted estimate: No usable estimate verified
+
+PMID: 42520943
+Context: Vitamin B12 | Breast cancer | Incidence
+Published date: 2026-07-28
+PMCID: None found
+Title: One-carbon metabolism nutrients and polygenic risk scores in relation to breast cancer risk: A nested case-control study within the EPIC cohort.
+Final status: ELIGIBLE_NOT_POOLABLE
+Reason: The study remains relevant, but no complete Good-quality quantitative extraction could be verified from the available abstract and accessible full text.
+JBI: Moderate (60.0%)
+Extracted estimate: OR 0.94 (95% CI 0.89–0.99)
+
+PMID: 42520943
+Context: Vitamin B2 | Breast cancer | Incidence
+Published date: 2026-07-28
+PMCID: None found
+Title: One-carbon metabolism nutrients and polygenic risk scores in relation to breast cancer risk: A nested case-control study within the EPIC cohort.
+Final status: ELIGIBLE_NOT_POOLABLE
+Reason: The study remains relevant, but no complete Good-quality quantitative extraction could be verified from the available abstract and accessible full text.
+JBI: Moderate (60.0%)
+Extracted estimate: OR 0.93 (95% CI 0.87–0.99)

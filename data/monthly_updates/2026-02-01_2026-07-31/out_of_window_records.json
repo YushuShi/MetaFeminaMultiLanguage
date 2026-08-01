@@ -1,0 +1,29 @@
+{
+  "count": 1,
+  "records": [
+    {
+      "pmid": "31643209",
+      "pmcid": "",
+      "doi": "",
+      "published_date": "2012",
+      "title": "Olaparib",
+      "abstract": "Olaparib is a small molecule inhibitor of poly ADP-ribose polymerase and is used as an antineoplastic agent in the therapy of refractory and advanced ovarian carcinoma. Olaparib therapy is associated with a low rate of transient elevations in serum aminotransferase during therapy and has been linked to several instances of clinically apparent liver injury which can be severe and even fatal.",
+      "mesh": [],
+      "publication_types": [
+        "Review"
+      ],
+      "authors": [
+        "Hoofnagle JH"
+      ],
+      "journal": "LiverTox: Clinical and Research Information on Drug-Induced Liver Injury",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31643209/",
+      "candidate_contexts": [
+        {
+          "exposure": "Ribose",
+          "cancer": "Ovarian cancer",
+          "outcome": "Incidence"
+        }
+      ]
+    }
+  ]
+}

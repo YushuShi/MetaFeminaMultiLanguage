@@ -1,0 +1,20 @@
+MetaFemina monthly update API use and cost
+===========================================
+Window: 2026-02-01 through 2026-07-31
+Model: gpt-5.6-sol
+
+Cornell AI Gateway
+------------------
+First relevance screen: 88 calls; 922394 input tokens; 132342 output tokens; $8.582230
+Second relevance screen: 13 calls; 65085 input tokens; 59360 output tokens; $2.106225
+PMC full-text extraction/JBI: 8 calls; 132713 input tokens; 8449 output tokens; $0.917035
+Total: 109 calls; 1120192 input tokens; 200151 output tokens; 63547 reasoning tokens; $11.605490
+
+NCBI E-utilities
+----------------
+Discovery/metadata requests recorded: 696
+PMC full-text requests recorded: 0
+Total recorded NCBI requests: 696
+Cost: $0.00 (NCBI does not charge a per-request fee)
+
+No API keys or secret values are written to this file.

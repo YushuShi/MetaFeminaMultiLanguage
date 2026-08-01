@@ -1,0 +1,53 @@
+Mendelian-randomization studies identified by MetaFemina
+========================================================
+
+Monthly evidence update: 2026-02-01 through 2026-07-31
+------------------------------------------------------
+New MR records: 4 unique articles; 5 exposure-cancer contexts.
+These studies are retained as original human evidence but are not pooled with conventional observational studies.
+The displayed JBI score is not treated as a valid MR appraisal because MetaFemina does not yet implement an MR-specific checklist.
+
+PMID: 41847477; PMCID: PMC12989687
+Title: Association of Smoking and Alcohol Consumption with Female Reproductive Diseases: A Mendelian Randomization Study on the Mediating Role of Circulating Metabolites.
+Context: Alcohol | Ovarian cancer | Incidence
+Published date: 2026
+Estimate: OR 0.48 (95% CI 0.31–0.74); p=0.001
+Comparison: Higher genetically predicted drinks per week versus lower genetically predicted drinks per week
+Reason kept separate: This two-sample Mendelian-randomization study reported a quantitative association between genetically predicted weekly alcohol consumption and endometrioid ovarian cancer risk and should be recorded separately from conventional studies.
+PubMed: https://pubmed.ncbi.nlm.nih.gov/41847477/
+
+PMID: 42183404; PMCID: PMC13197606
+Title: Breast Cancer Burden in BRICS Countries Attributable to Smoking, High Alcohol Use, High Body Mass Index, and Low Physical Activity, 1990-2021: Findings from the Global Burden of Disease 2021 and Mendelian Randomization.
+Context: Alcohol | Breast cancer | Incidence
+Published date: 2026
+Estimate: OR 1.03 (95% CI 1.03–1.03); p=<0.001
+Comparison: higher versus lower genetic liability to alcohol use disorder/high alcohol use
+Reason kept separate: This two-sample Mendelian-randomization analysis reports a quantitative association between genetically proxied high alcohol use and breast cancer incidence and must be recorded separately from conventional studies.
+PubMed: https://pubmed.ncbi.nlm.nih.gov/42183404/
+
+PMID: 42192421; PMCID: PMC13386921
+Title: Global burden of breast cancer and its association with red meat consumption: spatiotemporal trends, projections, and triangulation of evidence.
+Context: Red meat | Breast cancer | Incidence
+Published date: 2026-05-26
+Estimate: OR 3.39 (95% CI 1.47–7.86); p=0.004
+Comparison: Genetically predicted higher versus lower beef intake, mutually adjusted for beef, pork, and lamb consumption
+Reason kept separate: This two-sample Mendelian-randomization analysis reported a quantitative association between genetically predicted higher beef intake and breast cancer incidence and must be recorded separately from conventional studies.
+PubMed: https://pubmed.ncbi.nlm.nih.gov/42192421/
+
+PMID: 42369821; PMCID: PMC13308732
+Title: Global Burden of Ovarian Cancer and Causal Risk Factors from 1990 to 2021: An Integrated GBD and Mendelian Randomization Analysis.
+Context: Alcohol | Ovarian cancer | Incidence
+Published date: 2026
+Estimate: OR 1.2 (95% CI 1.03–1.4); p=0.022
+Comparison: Per genetically predicted increase in alcohol intake frequency
+Reason kept separate: This two-sample Mendelian-randomization analysis provides a quantitative IVW estimate for genetically proxied alcohol intake frequency and ovarian cancer and must be recorded separately from conventional studies.
+PubMed: https://pubmed.ncbi.nlm.nih.gov/42369821/
+
+PMID: 42369821; PMCID: PMC13308732
+Title: Global Burden of Ovarian Cancer and Causal Risk Factors from 1990 to 2021: An Integrated GBD and Mendelian Randomization Analysis.
+Context: Magnesium | Ovarian cancer | Incidence
+Published date: 2026
+Estimate: OR 0.04 (95% CI 0.0–0.69); p=0.026
+Comparison: Per genetically predicted increase in magnesium
+Reason kept separate: This two-sample Mendelian-randomization analysis provides a quantitative IVW estimate for genetically proxied magnesium and ovarian cancer and must be recorded separately from conventional studies.
+PubMed: https://pubmed.ncbi.nlm.nih.gov/42369821/
