@@ -331,6 +331,10 @@ th.sortable:hover {
     vertical-align: middle;
 }
 
+#th-n-cases .sort-icon::after {
+    margin-left: 0.15rem;
+}
+
 th.sort-asc .sort-icon::after {
     content: '▲';
     opacity: 1;
@@ -458,5 +462,4 @@ button.tab-btn.active {
         border-color: rgba(233, 30, 99, 0.15);
     }
 }
-
 

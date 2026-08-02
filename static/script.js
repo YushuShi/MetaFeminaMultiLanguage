@@ -1,7 +1,7 @@
 
 let currentStudies = [];
 let allStudies = []; // Store full dataset
-let currentSort = { field: null, direction: 'asc' };
+let currentSort = { field: 'Quality Score', direction: 'asc' };
 let useDownstream = false;
 let lastHeadlineData = null; // Store original RR results for transformation
 
@@ -435,6 +435,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             return true;
         });
 
+        sortCurrentStudies();
         renderStudiesTable();
     }
 
@@ -518,7 +519,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             } else {
                 allStudies = data.studies;
 
-                currentStudies = data.studies;
+                currentStudies = [...data.studies];
+                sortCurrentStudies();
                 updateResultsUI(data);
                 renderStudiesTable();
                 elements.results.classList.remove('hidden');
@@ -944,23 +946,40 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
 
     // Sorting
-    window.handleSort = (field) => {
-        if (currentSort.field === field) currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
-        else { currentSort.field = field; currentSort.direction = 'asc'; }
+    function sortCurrentStudies() {
+        const field = currentSort.field;
+        const qualityOrder = { Good: 0, Moderate: 1, Fair: 2, Poor: 3 };
 
         currentStudies.sort((a, b) => {
             let valA = a[field], valB = b[field];
             if (field === 'Effect Size') { valA = parseFloat(a[field]); valB = parseFloat(b[field]); }
+            if (field === 'Sample Size') {
+                valA = parseInt(String(a.Participants || a['Sample Size'] || '').replace(/,/g, ''), 10);
+                valB = parseInt(String(b.Participants || b['Sample Size'] || '').replace(/,/g, ''), 10);
+                if (Number.isNaN(valA)) valA = currentSort.direction === 'asc' ? Infinity : -Infinity;
+                if (Number.isNaN(valB)) valB = currentSort.direction === 'asc' ? Infinity : -Infinity;
+            }
+            if (field === 'Quality Score') {
+                valA = qualityOrder[a[field]] ?? qualityOrder.Fair;
+                valB = qualityOrder[b[field]] ?? qualityOrder.Fair;
+            }
             if (valA < valB) return currentSort.direction === 'asc' ? -1 : 1;
             if (valA > valB) return currentSort.direction === 'asc' ? 1 : -1;
             return 0;
         });
+    }
+
+    window.handleSort = (field) => {
+        if (currentSort.field === field) currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+        else { currentSort.field = field; currentSort.direction = 'asc'; }
+
+        sortCurrentStudies();
         renderStudiesTable();
     };
 
     function updateSortIcons() {
         document.querySelectorAll('th.sortable').forEach(th => th.classList.remove('sort-asc', 'sort-desc'));
-        const map = { 'Study': 'th-study', 'Effect Size': 'th-es', 'Year': 'th-year', 'Journal': 'th-journal' };
+        const map = { 'Study': 'th-study', 'Effect Size': 'th-es', 'Sample Size': 'th-n-cases', 'Quality Score': 'th-quality', 'Year': 'th-year', 'Journal': 'th-journal' };
         const id = map[currentSort.field];
         if (id) {
             const el = document.getElementById(id);
@@ -1108,7 +1127,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const thCases = document.getElementById('th-n-cases');
         if (thCases && elements.outcome) {
             const term = elements.outcome.value === 'Survival' ? 'Events' : 'Cases';
-            thCases.textContent = `N / ${term}`;
+            thCases.innerHTML = `N<span class="sort-icon"></span> / ${term}`;
         }
     }
 

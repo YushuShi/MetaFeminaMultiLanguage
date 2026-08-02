@@ -198,16 +198,17 @@
                                 </th>
                                 <th style="width: 40px; padding: 0.75rem; vertical-align: middle;">#</th>
                                 <th class="sortable" id="th-study" onclick="handleSort('Study')"
-                                    style="width: 140px; padding: 0.75rem; vertical-align: middle;">Study<span class="sort-icon"></span></th>
+                                    style="width: 140px; padding: 0.75rem; vertical-align: middle;">Authors<span class="sort-icon"></span></th>
                                 <th class="sortable" id="th-es" onclick="handleSort('Effect Size')"
                                     style="width: 110px; padding: 0.75rem; vertical-align: middle;">ES (Raw)<span class="sort-icon"></span></th>
                                 <th style="width: 130px; padding: 0.75rem; vertical-align: middle;">95% CI</th>
-                                <th id="th-n-cases" style="width: 120px; padding: 0.75rem; vertical-align: middle;">N /
-                                    Cases</th>
-                                <th style="width: 100px; padding: 0.75rem; vertical-align: middle;">Quality</th>
+                                <th class="sortable" id="th-n-cases" onclick="handleSort('Sample Size')"
+                                    style="width: 120px; padding: 0.75rem; vertical-align: middle;">N<span class="sort-icon"></span> / Cases</th>
+                                <th class="sortable" id="th-quality" onclick="handleSort('Quality Score')"
+                                    style="width: 100px; padding: 0.75rem; vertical-align: middle;">Quality<span class="sort-icon"></span></th>
                                 <th style="width: 110px; padding: 0.75rem; vertical-align: middle;">Verified</th>
                                 <th style="width: 80px; padding: 0.75rem; vertical-align: middle;">Exclude</th>
-                                <th style="width: 180px; padding: 0.75rem; vertical-align: middle;">Reference</th>
+                                <th style="width: 180px; padding: 0.75rem; vertical-align: middle;">Article</th>
                                 <th style="width: 150px; padding: 0.75rem; vertical-align: middle;">Details</th>
                                 <th class="sortable" id="th-journal" onclick="handleSort('Journal')"
                                     style="width: 130px; padding: 0.75rem; vertical-align: middle;">Journal<span class="sort-icon"></span></th>
@@ -369,7 +370,7 @@
         </div> <!-- End of tab-meta -->
     </main>
 
-    <script src="/static/script.js?v=1.9"></script>
+    <script src="/static/script.js?v=1.11"></script>
 </body>
 
 </html>
