@@ -4,30 +4,88 @@ import pandas as pd
 import numpy as np
 import warnings
 import meta_analysis
+from openpyxl import load_workbook
+from openpyxl.styles import Alignment, Font, PatternFill
 
 # Suppress runtime warnings from meta-analysis
 warnings.filterwarnings('ignore')
+
+DIETARY_MEASUREMENT_TYPE = "dietary_intake"
+
+WORKBOOK_COLUMN_WIDTHS = {
+    "Exposure": 28,
+    "number studies": 15,
+    "Pooled RR": 13,
+    "lower CI RR": 14,
+    "upper CI RR": 14,
+    "lower PI RR": 14,
+    "upper PI RR": 14,
+    "I^2 (%)": 12,
+    "eggers p-value": 16,
+    "total N": 15,
+    "total Cases": 15,
+}
 
 DISEASES = {
     "breast": {
         "file_pattern": "breast_cancer_incidence_true_all.json",
         "disease_label": "Breast Cancer",
         "context_template": "breast_cancer_{}_incidence",
-        "output_file": "exposures_meta_analysis_final_combined.xlsx",
+        "output_file": "exposures_meta_analysis_breast_dietary.xlsx",
     },
     "ovarian": {
         "file_pattern": "ovarian_cancer_incidence_true_all.json",
         "disease_label": "Ovarian Cancer",
         "context_template": "ovarian_cancer_{}_incidence",
-        "output_file": "exposures_meta_analysis_ovarian_combined.xlsx",
+        "output_file": "exposures_meta_analysis_ovarian_dietary.xlsx",
     },
     "uterine": {
         "file_pattern": "uterine_cancer_incidence_true_all.json",
         "disease_label": "Uterine Cancer",
         "context_template": "uterine_cancer_{}_incidence",
-        "output_file": "exposures_meta_analysis_uterine_combined.xlsx",
+        "output_file": "exposures_meta_analysis_uterine_dietary.xlsx",
     },
 }
+
+
+def format_workbook(path):
+    workbook = load_workbook(path)
+    worksheet = workbook.active
+    worksheet.freeze_panes = "A2"
+    worksheet.auto_filter.ref = worksheet.dimensions
+    worksheet.sheet_view.showGridLines = False
+    worksheet.row_dimensions[1].height = 30
+
+    header_fill = PatternFill("solid", fgColor="1A1A2E")
+    header_font = Font(color="FFFFFF", bold=True)
+    headers = {cell.value: cell.column for cell in worksheet[1]}
+
+    for cell in worksheet[1]:
+        cell.fill = header_fill
+        cell.font = header_font
+        cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
+
+    for header, column_index in headers.items():
+        worksheet.column_dimensions[worksheet.cell(1, column_index).column_letter].width = (
+            WORKBOOK_COLUMN_WIDTHS.get(header, 14)
+        )
+
+    count_headers = {"number studies", "total N", "total Cases"}
+    one_decimal_headers = {"I^2 (%)"}
+    four_decimal_headers = {"eggers p-value"}
+    for header, column_index in headers.items():
+        for row_index in range(2, worksheet.max_row + 1):
+            cell = worksheet.cell(row_index, column_index)
+            if header in count_headers:
+                cell.number_format = "#,##0"
+            elif header in one_decimal_headers:
+                cell.number_format = "0.0"
+            elif header in four_decimal_headers:
+                cell.number_format = "0.0000"
+            elif header != "Exposure":
+                cell.number_format = "0.00"
+
+    workbook.save(path)
 
 def run_export(disease_key, disease_config):
     results_dir = 'Cached_results'
@@ -68,8 +126,18 @@ def run_export(disease_key, disease_config):
 
             df = pd.DataFrame(cleaned_studies)
 
-            # ── Use all available exposure quantifications ──
-            # (No filtering by exposure_measurement_type)
+            # Dietary-only analysis: exclude human biospecimens, unclear
+            # measurement types, and any future non-dietary classifications.
+            if 'exposure_measurement_type' not in df.columns:
+                continue
+            measurement_type = (
+                df['exposure_measurement_type']
+                .fillna('')
+                .astype(str)
+                .str.strip()
+                .str.lower()
+            )
+            df = df[measurement_type.eq(DIETARY_MEASUREMENT_TYPE)].copy()
 
             if len(df) == 0:
                 continue
@@ -92,7 +160,12 @@ def run_export(disease_key, disease_config):
                 continue
 
             # Perform meta-analysis via shared library
-            res_dict = meta_analysis.perform_meta_analysis(df_valid, disease_config['disease_label'], folder)
+            res_dict = meta_analysis.perform_meta_analysis(
+                df_valid,
+                disease_config['disease_label'],
+                folder,
+                generate_plots=False,
+            )
             headline = res_dict.get('headline')
 
             if not headline:
@@ -141,6 +214,7 @@ def run_export(disease_key, disease_config):
     os.makedirs('Plot', exist_ok=True)
     output_file = os.path.join('Plot', disease_config['output_file'])
     export_df.to_excel(output_file, index=False)
+    format_workbook(output_file)
     print(f"  OK Exported {len(export_df)} exposures -> {output_file}")
 
 

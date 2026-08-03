@@ -29,7 +29,7 @@ read_cancer <- function(path, cancer) {
            sig = ifelse(ci_low > 1 | ci_high < 1, "Significant", "Not significant"))
 }
 
-dat_breast    <- read_cancer("exposures_meta_analysis_final_combined.xlsx",       "Breast")
+dat_breast    <- read_cancer("exposures_meta_analysis_breast_combined.xlsx",      "Breast")
 dat_uterine   <- read_cancer("exposures_meta_analysis_uterine_combined.xlsx",     "Uterine")
 dat_ovarian   <- read_cancer("exposures_meta_analysis_ovarian_combined.xlsx",     "Ovarian")
 

@@ -3,7 +3,7 @@ import time
 import pandas as pd
 
 excel_files = [
-    "Plot/exposures_meta_analysis_final_combined.xlsx",
+    "Plot/exposures_meta_analysis_breast_combined.xlsx",
     "Plot/exposures_meta_analysis_ovarian_combined.xlsx",
     "Plot/exposures_meta_analysis_uterine_combined.xlsx"
 ]
@@ -23,8 +23,18 @@ for f in excel_files:
 
 print("\n=== Checking Generated PDF Files ===")
 pdf_files = [
-    "Plot/forest_protective.pdf",
-    "Plot/forest_harmful.pdf",
+    "Plot/forest_protective_breast.pdf",
+    "Plot/forest_harmful_breast.pdf",
+    "Plot/forest_protective_ovarian.pdf",
+    "Plot/forest_harmful_ovarian.pdf",
+    "Plot/forest_protective_uterine.pdf",
+    "Plot/forest_harmful_uterine.pdf",
+    "Plot/forest_protective_breast_dietary.pdf",
+    "Plot/forest_harmful_breast_dietary.pdf",
+    "Plot/forest_protective_ovarian_dietary.pdf",
+    "Plot/forest_harmful_ovarian_dietary.pdf",
+    "Plot/forest_protective_uterine_dietary.pdf",
+    "Plot/forest_harmful_uterine_dietary.pdf",
     "Plot/comparison_dumbbell.pdf",
     "Plot/plot_es_vs_heterogeneity.pdf",
     "Plot/plot_eggers_vs_heterogeneity.pdf"

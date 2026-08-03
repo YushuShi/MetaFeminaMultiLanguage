@@ -608,7 +608,16 @@ def get_analysis_data(disease, exposure, outcome="Incidence", exclude_meta=False
     print(f"[MetaFemina] Stage 4/4: Running meta-analysis on {len(df_clean)} extracted studies...")
     return perform_meta_analysis(df_clean, disease, exposure=exposure, outcome=outcome, exclude_meta=exclude_meta, df_all=df_clean, screening_stats=screening_stats)
 
-def perform_meta_analysis(df_clean, disease, exposure, outcome="Incidence", exclude_meta=False, df_all=None, screening_stats=None):
+def perform_meta_analysis(
+    df_clean,
+    disease,
+    exposure,
+    outcome="Incidence",
+    exclude_meta=False,
+    df_all=None,
+    screening_stats=None,
+    generate_plots=True,
+):
     """
     Performs random-effects meta-analysis on the provided DataFrame.
     """
@@ -861,15 +870,16 @@ def perform_meta_analysis(df_clean, disease, exposure, outcome="Incidence", excl
 
                 # Baujat Plot (non-fatal)
                 baujat_url = None
-                try:
-                    baujat_path = generate_baujat_plot(analysis_df, disease, exposure, outcome=outcome, exclude_meta=exclude_meta)
-                    if baujat_path:
-                        baujat_url = f"{baujat_path}?t=" + str(np.random.randint(0,10000))
-                        print(f"DEBUG Baujat: Generated at {baujat_path}")
-                except Exception as e:
-                    print(f"Baujat plot generation failed (non-fatal): {e}")
-                    import traceback
-                    traceback.print_exc()
+                if generate_plots:
+                    try:
+                        baujat_path = generate_baujat_plot(analysis_df, disease, exposure, outcome=outcome, exclude_meta=exclude_meta)
+                        if baujat_path:
+                            baujat_url = f"{baujat_path}?t=" + str(np.random.randint(0,10000))
+                            print(f"DEBUG Baujat: Generated at {baujat_path}")
+                    except Exception as e:
+                        print(f"Baujat plot generation failed (non-fatal): {e}")
+                        import traceback
+                        traceback.print_exc()
 
                 # Leave-one-out analysis (non-fatal)
                 loo_results = []
@@ -971,15 +981,16 @@ def perform_meta_analysis(df_clean, disease, exposure, outcome="Incidence", excl
                     figsize=(12, dynamic_height),
                 )
                 
-                # Create exposure subfolder
-                exposure_dir = os.path.join("static", safe_exposure)
-                os.makedirs(exposure_dir, exist_ok=True)
-                
-                # Generate unique filename using pre-defined safe strings
-                filename_base = f"forest_{safe_disease}_{safe_outcome}_{safe_meta}.png"
-                
-                plot_path = os.path.join(exposure_dir, filename_base)
-                forest_ax.figure.savefig(plot_path, bbox_inches='tight')
+                if generate_plots:
+                    # Create exposure subfolder
+                    exposure_dir = os.path.join("static", safe_exposure)
+                    os.makedirs(exposure_dir, exist_ok=True)
+
+                    # Generate unique filename using pre-defined safe strings
+                    filename_base = f"forest_{safe_disease}_{safe_outcome}_{safe_meta}.png"
+
+                    plot_path = os.path.join(exposure_dir, filename_base)
+                    forest_ax.figure.savefig(plot_path, bbox_inches='tight')
                 plt.close(forest_ax.figure)
             plt.close() 
         except Exception as e:
@@ -1018,13 +1029,14 @@ def perform_meta_analysis(df_clean, disease, exposure, outcome="Incidence", excl
                 plt.title(f'Funnel Plot: {disease} vs {exposure}')
                 plt.grid(True, alpha=0.2)
                 
-                # Generate unique filename for funnel plot using pre-defined safe strings
-                funnel_filename = f"funnel_{safe_disease}_{safe_outcome}_{safe_meta}.png"
-                exposure_dir = os.path.join("static", safe_exposure)
-                os.makedirs(exposure_dir, exist_ok=True)
-                
-                funnel_path = os.path.join(exposure_dir, funnel_filename)
-                plt.savefig(funnel_path, bbox_inches='tight')
+                if generate_plots:
+                    # Generate unique filename for funnel plot using pre-defined safe strings
+                    funnel_filename = f"funnel_{safe_disease}_{safe_outcome}_{safe_meta}.png"
+                    exposure_dir = os.path.join("static", safe_exposure)
+                    os.makedirs(exposure_dir, exist_ok=True)
+
+                    funnel_path = os.path.join(exposure_dir, funnel_filename)
+                    plt.savefig(funnel_path, bbox_inches='tight')
                 plt.close() 
         except Exception as e:
             print(f"Funnel plot failed: {e}")
@@ -1055,8 +1067,16 @@ def perform_meta_analysis(df_clean, disease, exposure, outcome="Incidence", excl
             "summary_html": summary,
             "headline": headline,
             "screening_stats": screening_stats,
-            "plot_url": f"static/{safe_exposure}/forest_{safe_disease}_{safe_outcome}_{safe_meta}.png?t=" + str(np.random.randint(0,10000)),
-            "funnel_plot_url": f"static/{safe_exposure}/funnel_{safe_disease}_{safe_outcome}_{safe_meta}.png?t=" + str(np.random.randint(0,10000)),
+            "plot_url": (
+                f"static/{safe_exposure}/forest_{safe_disease}_{safe_outcome}_{safe_meta}.png?t="
+                + str(np.random.randint(0,10000))
+                if generate_plots else None
+            ),
+            "funnel_plot_url": (
+                f"static/{safe_exposure}/funnel_{safe_disease}_{safe_outcome}_{safe_meta}.png?t="
+                + str(np.random.randint(0,10000))
+                if generate_plots else None
+            ),
             "baujat_plot_url": baujat_url
         }
         

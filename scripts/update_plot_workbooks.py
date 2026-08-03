@@ -22,7 +22,7 @@ import meta_analysis  # noqa: E402
 
 
 WORKBOOKS = {
-    "Breast cancer": REPO_ROOT / "Plot" / "exposures_meta_analysis_final_combined.xlsx",
+    "Breast cancer": REPO_ROOT / "Plot" / "exposures_meta_analysis_breast_combined.xlsx",
     "Ovarian cancer": REPO_ROOT / "Plot" / "exposures_meta_analysis_ovarian_combined.xlsx",
     "Uterine cancer": REPO_ROOT / "Plot" / "exposures_meta_analysis_uterine_combined.xlsx",
 }

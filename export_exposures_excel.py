@@ -111,7 +111,7 @@ def main():
     export_df = results_df[columns_to_export]
     
     os.makedirs('Plot', exist_ok=True)
-    output_file = os.path.join('Plot', 'exposures_meta_analysis_final_combined.xlsx')
+    output_file = os.path.join('Plot', 'exposures_meta_analysis_breast_combined.xlsx')
     export_df.to_excel(output_file, index=False)
     print(f"Exported {len(export_df)} exposures to {output_file}")
 

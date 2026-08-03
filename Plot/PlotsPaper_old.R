@@ -1,6 +1,6 @@
 # =============================================================================
 # Combined analysis plots — Forest plots + Scatter diagnostic plots
-# Data: exposures_meta_analysis_final_combined.xlsx
+# Data: exposures_meta_analysis_breast_combined.xlsx
 # =============================================================================
 
 setwd('C:/Users/mde4023/Downloads/MetaFemina/Plot')
@@ -21,7 +21,7 @@ for (pkg in c("ggtext", "cowplot", "ggrepel", "patchwork")) {
 # 1. Read & clean data
 # =============================================================================
 
-raw <- read_excel("exposures_meta_analysis_final_combined.xlsx")
+raw <- read_excel("exposures_meta_analysis_breast_combined.xlsx")
 
 # Standardise column names
 names(raw) <- c(
@@ -561,16 +561,16 @@ make_eggers_heterogeneity_plot <- function(dat_clean, min_studies = 2,
 
 save_forest_figure(
   direction  = "Protective",
-  title_text = "Exposures inversely associated with breast cancer risk\n(meta-analysis of observational studies)",
+  title_text = "Exposures inversely associated with breast cancer risk",
   xlim_max   = 2.2,
-  filename   = "forest_protective.pdf"
+  filename   = "forest_protective_breast.pdf"
 )
 
 save_forest_figure(
   direction  = "Harmful",
-  title_text = "Exposures positively associated with breast cancer risk\n(meta-analysis of observational studies)",
+  title_text = "Exposures positively associated with breast cancer risk",
   xlim_max   = 4.5,
-  filename   = "forest_harmful.pdf"
+  filename   = "forest_harmful_breast.pdf"
 )
 
 make_es_heterogeneity_plot(
@@ -586,5 +586,3 @@ make_eggers_heterogeneity_plot(
 )
 
 message("All figures saved.")
-
-

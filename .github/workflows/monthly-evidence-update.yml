@@ -63,6 +63,7 @@ jobs:
           set -o pipefail
           applied=$(find data/monthly_updates -name applied_changes.json -type f | sort | tail -1)
           python scripts/update_plot_workbooks.py --applied-changes "$applied" 2>&1 | tee -a monthly_update.log
+          python export_exposures_dietary.py 2>&1 | tee -a monthly_update.log
 
       - name: Set up R
         if: steps.changed.outputs.value == 'true'
