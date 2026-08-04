@@ -7,6 +7,7 @@
     <title>MetaFemina: Women's Cancer & Nutrition</title>
     <link rel="stylesheet" href="/static/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="/static/i18n.js?v=1.0" defer></script>
 </head>
 
 <body>
@@ -16,6 +17,7 @@
         <p>Advanced Meta-Analysis & Evidence Synthesis</p>
         <div class="last-updated">Last updated: <span id="last-updated">—</span></div>
         <nav class="header-actions" aria-label="Site navigation">
+            {% include '_language_picker.html' %}
             <a href="/summary" class="header-action">Summary</a>
             <a href="/about" class="header-action header-action--primary">
                 <svg class="header-action-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -373,7 +375,7 @@
         </div> <!-- End of tab-meta -->
     </main>
 
-    <script src="/static/script.js?v=1.15"></script>
+    <script src="/static/script.js?v=1.16"></script>
 </body>
 
 </html>

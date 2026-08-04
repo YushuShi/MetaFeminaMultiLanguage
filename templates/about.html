@@ -9,6 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&family=Inter:wght@400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='i18n.js') }}?v=1.0" defer></script>
     <style>
         .about-container {
             max-width: 800px;
@@ -78,7 +79,10 @@
     </div>
 
     <div class="about-container">
-        <a href="/" class="back-link">← Back to Tool</a>
+        <div class="about-toolbar">
+            <a href="/" class="back-link">← Back to Tool</a>
+            {% include '_language_picker.html' %}
+        </div>
 
         <h1>About MetaFemina: Women's Cancer & Nutrition</h1>
 
@@ -263,8 +267,10 @@
         </p>
         <p style="font-size: 0.85rem; color: #666; font-style: italic; margin-top: 10px; line-height: 1.5;">
             References:<br>
-            • Barker, T. H., Stone, J. C., Sears, K., et al. (2023). The revised JBI critical appraisal tool for the assessment of risk of bias for randomized controlled trials. <i>JBI Evidence Synthesis</i>, 21(3), 494–506. <a href="https://journals.lww.com/jbisrir/Fulltext/2023/03000/The_revised_JBI_critical_appraisal_tool_for_the.5.aspx?context=FeaturedArticles&collectionId=2" target="_blank" style="color: var(--primary);">Journal Article Link</a>.<br>
-            • Joanna Briggs Institute. Critical appraisal tools. <a href="https://jbi.global/critical-appraisal-tools" target="_blank" style="color: var(--primary);">https://jbi.global/critical-appraisal-tools</a>. Accessed 11 Feb 2026.
+            <span class="notranslate" translate="no">• Barker, T. H., Stone, J. C., Sears, K., et al. (2023). The revised JBI critical appraisal tool for the assessment of risk of bias for randomized controlled trials. <i>JBI Evidence Synthesis</i>, 21(3), 494–506.</span>
+            <a href="https://journals.lww.com/jbisrir/Fulltext/2023/03000/The_revised_JBI_critical_appraisal_tool_for_the.5.aspx?context=FeaturedArticles&collectionId=2" target="_blank" style="color: var(--primary);">Journal Article Link</a>.<br>
+            <span class="notranslate" translate="no">• Joanna Briggs Institute. Critical appraisal tools.</span>
+            <a class="notranslate" translate="no" href="https://jbi.global/critical-appraisal-tools" target="_blank" style="color: var(--primary);">https://jbi.global/critical-appraisal-tools</a>. <span>Accessed 11 Feb 2026.</span>
         </p>
 
         <hr style="border: 0; border-top: 1px solid var(--border); margin: 30px 0;">

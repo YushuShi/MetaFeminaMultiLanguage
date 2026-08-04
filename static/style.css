@@ -80,6 +80,77 @@ header {
     margin-right: 6px;
 }
 
+.language-picker {
+    position: relative;
+    display: inline-flex;
+}
+
+.header-action--icon {
+    width: 40px;
+    min-width: 40px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.language-picker-menu {
+    position: absolute;
+    z-index: 1000;
+    top: calc(100% + 0.45rem);
+    left: 0;
+    min-width: 158px;
+    padding: 0.35rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
+}
+
+.language-picker-menu[hidden] {
+    display: none;
+}
+
+.language-picker-menu button {
+    display: block;
+    width: 100%;
+    padding: 0.55rem 0.7rem;
+    border: 0;
+    border-radius: 5px;
+    color: var(--text-main);
+    background: transparent;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.language-picker-menu button:hover,
+.language-picker-menu button:focus-visible,
+.language-picker-menu button.is-selected {
+    color: var(--primary);
+    background: rgba(233, 30, 99, 0.09);
+}
+
+.language-picker-menu button.is-selected::after {
+    content: "✓";
+    float: right;
+    font-weight: 800;
+}
+
+.about-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.about-toolbar .back-link {
+    margin-top: 0;
+}
+
+.about-toolbar .language-picker-menu {
+    right: 0;
+    left: auto;
+}
+
 .logo {
     font-size: 2rem;
     font-weight: 800;
@@ -510,6 +581,11 @@ button.tab-btn.active {
         top: 1.25rem;
         right: 50%;
         transform: translateX(50%);
+    }
+
+    .language-picker-menu {
+        right: auto;
+        left: 0;
     }
 
     #read-only-banner {

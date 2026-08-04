@@ -5,12 +5,19 @@ let currentSort = { field: 'Quality Score', direction: 'asc' };
 let useDownstream = false;
 let lastHeadlineData = null; // Store original RR results for transformation
 
+function uiText(source, variables = {}) {
+    if (window.MetaFeminaI18n) return window.MetaFeminaI18n.t(source, variables);
+    return String(source).replace(/\{([a-zA-Z0-9_]+)\}/g, (match, key) => (
+        Object.prototype.hasOwnProperty.call(variables, key) ? String(variables[key]) : match
+    ));
+}
+
 // Global Error Handler for Debugging
 window.onerror = function (msg, url, line, col, error) {
     console.error("Global Error:", msg, "at", url, ":", line);
     const errorMsg = document.getElementById('error-message');
     if (errorMsg) {
-        errorMsg.textContent = `JavaScript Error: ${msg} (at line ${line})`;
+        errorMsg.textContent = uiText('JavaScript Error: {message} (at line {line})', { message: msg, line });
         errorMsg.classList.remove('hidden');
     }
 };
@@ -491,7 +498,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const model = elements.model ? elements.model.value : "openai.gpt-4o";
 
         if (!disease || !exposure) {
-            alert("Please enter both disease and exposure.");
+            alert(uiText('Please enter both disease and exposure.'));
             return;
         }
 
@@ -546,7 +553,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                 }
             }
         } catch (e) {
-            elements.errorMsg.textContent = `Error: ${e.message}. Please check your connection and server status.`;
+            elements.errorMsg.textContent = uiText(
+                'Error: {message}. Please check your connection and server status.',
+                { message: e.message }
+            );
             elements.errorMsg.classList.remove('hidden');
             console.error("Analyze error:", e);
         } finally {
@@ -568,11 +578,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             });
 
             if (selectedStudies.length === 0) {
-                alert("Please select at least one study.");
+                alert(uiText('Please select at least one study.'));
                 return;
             }
 
-            elements.updateBtn.textContent = "Updating...";
+            elements.updateBtn.textContent = uiText('Updating...');
             elements.updateBtn.disabled = true;
 
             try {
@@ -593,9 +603,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 else updateResultsUI(data);
             } catch (e) {
                 console.error("Update error:", e);
-                alert("Failed to update analysis.");
+                alert(uiText('Failed to update analysis.'));
             } finally {
-                elements.updateBtn.textContent = "Update Analysis";
+                elements.updateBtn.textContent = uiText('Update Analysis');
                 elements.updateBtn.disabled = false;
             }
         });
@@ -641,11 +651,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             // Build Exclusion Reason Title
             let unselectedReason = "";
             if (!isChecked) {
-                if (isARR) unselectedReason = "Excluded: Effect type is ARR";
-                else if (isNaN(finalCasesVal)) unselectedReason = "Excluded: Cases not specified or invalid";
+                if (isARR) unselectedReason = uiText('Excluded: Effect type is ARR');
+                else if (isNaN(finalCasesVal)) unselectedReason = uiText('Excluded: Cases not specified or invalid');
                 else if (finalCasesVal <= minCases) {
                     const isEst = isNaN(casesVal);
-                    unselectedReason = `Excluded: Cases ≤ ${minCases}${isEst ? ' (estimated)' : ''}`;
+                    unselectedReason = uiText('Excluded: Cases ≤ {minimum}{estimated}', {
+                        minimum: minCases,
+                        estimated: isEst ? uiText(' (estimated)') : ''
+                    });
                 }
             }
 
@@ -678,7 +691,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <td><input type="checkbox" class="study-checkbox" data-index="${index}" ${isChecked}></td>
                 <td>${index + 1}</td>
                 <td title="${unselectedReason}">
-                    <a href="${study.Link}" target="_blank" style="color: var(--primary); text-decoration: none; font-weight: 800;">
+                    <a href="${study.Link}" target="_blank" class="notranslate" translate="no" style="color: var(--primary); text-decoration: none; font-weight: 800;">
                         ${(() => {
                             let parts = study.Study.split(' ');
                             let first = parts[0].toLowerCase();
@@ -698,7 +711,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <td>
                     <div style="display: flex; flex-direction: column; gap: 2px;">
                         <div style="display: flex; align-items: center; gap: 2px;">
-                            <span style="font-size: 0.7em; min-width: 20px;">${study['Effect Type'] || 'OR'}</span>
+                            <span class="notranslate" translate="no" style="font-size: 0.7em; min-width: 20px;">${study['Effect Type'] || 'OR'}</span>
                             <input type="number" step="0.001" value="${parseFloat(study['Effect Size'] || 1).toFixed(3)}" 
                                    style="width: 60px; font-size: 0.8em;"
                                    onchange="currentStudies[${index}]['Effect Size'] = parseFloat(this.value)">
@@ -717,10 +730,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                                 const pctText = (p0 * 100).toFixed(1).replace('.0', '') + '%';
                                 if (type === 'OR' || type === 'ODDS RATIO') {
                                     const rr = es / (1 - p0 + (p0 * es));
-                                    return `<div style="font-size: 0.65em; color: #777; padding-left: 2px;" title="Estimated Relative Risk (assuming ${pctText} baseline risk)">Est. RR: ${rr.toFixed(3)}</div>`;
+                                    return `<div style="font-size: 0.65em; color: #777; padding-left: 2px;" title="${uiText('Estimated Relative Risk (assuming {risk} baseline risk)', { risk: pctText })}">${uiText('Est. RR:')} <span class="notranslate" translate="no">${rr.toFixed(3)}</span></div>`;
                                 } else if (type === 'HR' || type === 'HAZARD RATIO') {
                                     const rr = (1 / p0) * (1 - Math.exp(es * Math.log(1 - p0)));
-                                    return `<div style="font-size: 0.65em; color: #777; padding-left: 2px;" title="Estimated Relative Risk (assuming ${pctText} baseline risk)">Est. RR: ${rr.toFixed(3)}</div>`;
+                                    return `<div style="font-size: 0.65em; color: #777; padding-left: 2px;" title="${uiText('Estimated Relative Risk (assuming {risk} baseline risk)', { risk: pctText })}">${uiText('Est. RR:')} <span class="notranslate" translate="no">${rr.toFixed(3)}</span></div>`;
                                 }
                             }
                             return '';
@@ -781,7 +794,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         ⚑ ${study.exclusion_flags || 0}
                     </button>
                 </td>
-                <td style="font-size: 0.75em;" title="${unselectedReason}">${study.Reference || '-'}</td>
+                <td class="notranslate" translate="no" style="font-size: 0.75em;" title="${unselectedReason}">${study.Reference || '-'}</td>
                 <td style="font-size: 0.75em;" title="${unselectedReason}">
                     <b>Context:</b> ${study.comparison_type || '-'}<br>
                     <b>Design:</b> ${study.Design || '-'}<br>
@@ -805,8 +818,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                         <option value="human_biospecimen" ${study.exposure_measurement_type === 'human_biospecimen' ? 'selected' : ''}>Biospecimen</option>
                     </select>
                 </td>
-                <td style="font-size: 0.75em;" title="${unselectedReason}">${study.Journal || '-'}</td>
-                <td style="font-size: 0.75em;" title="${unselectedReason}">${study.Year || '-'}</td>
+                <td class="notranslate" translate="no" style="font-size: 0.75em;" title="${unselectedReason}">${study.Journal || '-'}</td>
+                <td class="notranslate" translate="no" style="font-size: 0.75em;" title="${unselectedReason}">${study.Year || '-'}</td>
             `;
 
             // Build Details row
@@ -833,35 +846,35 @@ document.addEventListener('DOMContentLoaded', async () => {
                     <div class="snippets-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; border-left: 4px solid var(--primary); padding-left: 1.25rem; margin-left: 0.5rem;">
                         <div class="snippet-item" style="display: flex; flex-direction: column; gap: 0.25rem;">
                             <span style="font-weight: 700; color: #555; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em;">Exposure Measurement Explanation</span>
-                            <span style="font-size: 0.88rem; font-style: italic; color: #111; line-height: 1.45;">${study.exposure_measurement_supporting_text ? `"${study.exposure_measurement_supporting_text}"` : '<i>Not available</i>'}</span>
+                            <span style="font-size: 0.88rem; font-style: italic; color: #111; line-height: 1.45;">${study.exposure_measurement_supporting_text ? `<span class="notranslate" translate="no">"${study.exposure_measurement_supporting_text}"</span>` : '<i>Not available</i>'}</span>
                         </div>
                         <div class="snippet-item" style="display: flex; flex-direction: column; gap: 0.25rem;">
                             <span style="font-weight: 700; color: #555; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em;">Sample Size Quote</span>
-                            <span style="font-size: 0.88rem; font-style: italic; color: #111; line-height: 1.45;">${est.sample_size ? `"${est.sample_size}"` : '<i>Not available</i>'}</span>
+                            <span style="font-size: 0.88rem; font-style: italic; color: #111; line-height: 1.45;">${est.sample_size ? `<span class="notranslate" translate="no">"${est.sample_size}"</span>` : '<i>Not available</i>'}</span>
                         </div>
                         <div class="snippet-item" style="display: flex; flex-direction: column; gap: 0.25rem;">
                             <span style="font-weight: 700; color: #555; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em;">Effect Size Quote</span>
-                            <span style="font-size: 0.88rem; font-style: italic; color: #111; line-height: 1.45;">${est.effect_size ? `"${est.effect_size}"` : '<i>Not available</i>'}</span>
+                            <span style="font-size: 0.88rem; font-style: italic; color: #111; line-height: 1.45;">${est.effect_size ? `<span class="notranslate" translate="no">"${est.effect_size}"</span>` : '<i>Not available</i>'}</span>
                         </div>
                         <div class="snippet-item" style="display: flex; flex-direction: column; gap: 0.25rem;">
                             <span style="font-weight: 700; color: #555; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em;">Effect Direction Quote</span>
-                            <span style="font-size: 0.88rem; font-style: italic; color: #111; line-height: 1.45;">${est.effect_direction ? `"${est.effect_direction}"` : '<i>Not available</i>'}</span>
+                            <span style="font-size: 0.88rem; font-style: italic; color: #111; line-height: 1.45;">${est.effect_direction ? `<span class="notranslate" translate="no">"${est.effect_direction}"</span>` : '<i>Not available</i>'}</span>
                         </div>
                         <div class="snippet-item" style="display: flex; flex-direction: column; gap: 0.25rem;">
                             <span style="font-weight: 700; color: #555; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em;">P-Value Quote</span>
-                            <span style="font-size: 0.88rem; font-style: italic; color: #111; line-height: 1.45;">${est.p_value ? `"${est.p_value}"` : '<i>Not available</i>'}</span>
+                            <span style="font-size: 0.88rem; font-style: italic; color: #111; line-height: 1.45;">${est.p_value ? `<span class="notranslate" translate="no">"${est.p_value}"</span>` : '<i>Not available</i>'}</span>
                         </div>
                         <div class="snippet-item" style="display: flex; flex-direction: column; gap: 0.25rem;">
                             <span style="font-weight: 700; color: #555; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em;">Confidence Interval Quote</span>
-                            <span style="font-size: 0.88rem; font-style: italic; color: #111; line-height: 1.45;">${est.confidence_interval ? `"${est.confidence_interval}"` : '<i>Not available</i>'}</span>
+                            <span style="font-size: 0.88rem; font-style: italic; color: #111; line-height: 1.45;">${est.confidence_interval ? `<span class="notranslate" translate="no">"${est.confidence_interval}"</span>` : '<i>Not available</i>'}</span>
                         </div>
                         <div class="snippet-item" style="display: flex; flex-direction: column; gap: 0.25rem;">
                             <span style="font-weight: 700; color: #555; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em;">Outcome Definition Quote</span>
-                            <span style="font-size: 0.88rem; font-style: italic; color: #111; line-height: 1.45;">${est.outcome_definition ? `"${est.outcome_definition}"` : '<i>Not available</i>'}</span>
+                            <span style="font-size: 0.88rem; font-style: italic; color: #111; line-height: 1.45;">${est.outcome_definition ? `<span class="notranslate" translate="no">"${est.outcome_definition}"</span>` : '<i>Not available</i>'}</span>
                         </div>
                         <div class="snippet-item" style="display: flex; flex-direction: column; gap: 0.25rem;">
                             <span style="font-weight: 700; color: #555; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em;">Exposure Definition Quote</span>
-                            <span style="font-size: 0.88rem; font-style: italic; color: #111; line-height: 1.45;">${est.exposure_definition ? `"${est.exposure_definition}"` : '<i>Not available</i>'}</span>
+                            <span style="font-size: 0.88rem; font-style: italic; color: #111; line-height: 1.45;">${est.exposure_definition ? `<span class="notranslate" translate="no">"${est.exposure_definition}"</span>` : '<i>Not available</i>'}</span>
                         </div>
                     </div>
                 </td>
@@ -912,9 +925,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                     if (study) study.verification_status = 'review_requested';
                     btn.style.background = '#f57c00';
                     if (data.notification_sent) {
-                        alert("Two matching submissions were received. Developers have been emailed for review; results remain unchanged.");
+                        alert(uiText('Two matching submissions were received. Developers have been emailed for review; results remain unchanged.'));
                     } else if (!data.notification_already_sent) {
-                        alert("Developer review was requested, but the notification email could not be sent. Results remain unchanged.");
+                        alert(uiText('Developer review was requested, but the notification email could not be sent. Results remain unchanged.'));
                     }
                 }
             }
@@ -925,7 +938,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     window.excludeStudy = async (pmid, btn) => {
         if (!pmid) return;
-        if (!confirm("Flag this study for developer review? Two flags will email developers but will not change the results.")) return;
+        if (!confirm(uiText('Flag this study for developer review? Two flags will email developers but will not change the results.'))) return;
 
         try {
             const disease = selectedDiseaseValue();
@@ -947,11 +960,11 @@ document.addEventListener('DOMContentLoaded', async () => {
                 if (data.review_requested) {
                     if (study) study.verification_status = 'review_requested';
                     if (data.notification_sent) {
-                        alert("The review threshold was reached. Developers have been emailed; results remain unchanged.");
+                        alert(uiText('The review threshold was reached. Developers have been emailed; results remain unchanged.'));
                     } else if (data.notification_already_sent) {
-                        alert("Developers were already notified about these flags. Results remain unchanged.");
+                        alert(uiText('Developers were already notified about these flags. Results remain unchanged.'));
                     } else {
-                        alert("Developer review was requested, but the notification email could not be sent. Results remain unchanged.");
+                        alert(uiText('Developer review was requested, but the notification email could not be sent. Results remain unchanged.'));
                     }
                 }
             }
@@ -1036,6 +1049,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             elements.headlineResult.classList.remove('hidden');
             elements.pooledEs.textContent = data.headline.pooled_es;
             elements.pooledCi.textContent = `${data.headline.ci_low}, ${data.headline.ci_upp}`;
+            elements.interpretation.classList.add('notranslate');
+            elements.interpretation.setAttribute('translate', 'no');
             elements.interpretation.textContent = data.headline.interpretation;
 
             // Estimated RR
@@ -1074,11 +1089,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             // Funnel Interpretation
             if (elements.funnelInterpretation) {
-                elements.funnelInterpretation.textContent = data.headline.funnel_interpretation || 'No interpretation available.';
+                elements.funnelInterpretation.classList.add('notranslate');
+                elements.funnelInterpretation.setAttribute('translate', 'no');
+                elements.funnelInterpretation.textContent = data.headline.funnel_interpretation || uiText('No interpretation available.');
             }
 
             // Results Interpretation (LLM-generated)
             if (elements.resultsInterpretation) {
+                elements.resultsInterpretation.classList.add('notranslate');
+                elements.resultsInterpretation.setAttribute('translate', 'no');
                 elements.resultsInterpretation.textContent = data.headline.results_interpretation || '';
                 elements.resultsInterpretation.style.display = data.headline.results_interpretation ? 'block' : 'none';
             }
@@ -1122,7 +1141,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         (data.headline.loo_results || []).forEach(res => {
                             const tr = document.createElement('tr');
                             tr.innerHTML = `
-                                <td>${res.omitted}</td>
+                                <td class="notranslate" translate="no">${res.omitted}</td>
                                 <td style="color: ${res.is_significant ? '#A0522D' : '#666'}">
                                     ${(res.pooled_es !== undefined && res.pooled_es !== null) ? res.pooled_es.toFixed(2) : '-'} (${(res.ci_low !== undefined && res.ci_low !== null) ? res.ci_low.toFixed(2) : '-'}, ${(res.ci_upp !== undefined && res.ci_upp !== null) ? res.ci_upp.toFixed(2) : '-'})
                                 </td>
@@ -1168,17 +1187,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         let pi_low = lastHeadlineData.pi_low !== undefined && lastHeadlineData.pi_low !== null ? parseFloat(lastHeadlineData.pi_low) : null;
         let pi_upp = lastHeadlineData.pi_upp !== undefined && lastHeadlineData.pi_upp !== null ? parseFloat(lastHeadlineData.pi_upp) : null;
 
-        let label = "Pooled Relative Risk (RR)";
+        let label = uiText('Pooled Relative Risk (RR)');
 
         if (measure === 'OR') {
-            label = "Pooled Odds Ratio (OR)";
+            label = uiText('Pooled Odds Ratio (OR)');
             es = (es * (1 - p0)) / (1 - es * p0);
             low = (low * (1 - p0)) / (1 - low * p0);
             upp = (upp * (1 - p0)) / (1 - upp * p0);
             if (pi_low !== null) pi_low = (pi_low * (1 - p0)) / (1 - pi_low * p0);
             if (pi_upp !== null) pi_upp = (pi_upp * (1 - p0)) / (1 - pi_upp * p0);
         } else if (measure === 'HR') {
-            label = "Pooled Hazard Ratio (HR)";
+            label = uiText('Pooled Hazard Ratio (HR)');
             es = Math.log(1 - p0 * es) / Math.log(1 - p0);
             low = Math.log(1 - p0 * low) / Math.log(1 - p0);
             upp = Math.log(1 - p0 * upp) / Math.log(1 - p0);
@@ -1258,16 +1277,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         let effectSelectionText = "";
         if (effectSelection === 'lower') {
             primaryRR = parseFloat(lastHeadlineData.ci_low);
-            effectSelectionText = " (Lower 95% CI)";
+            effectSelectionText = uiText(' (Lower 95% CI)');
         } else if (effectSelection === 'upper') {
             primaryRR = parseFloat(lastHeadlineData.ci_upp);
-            effectSelectionText = " (Upper 95% CI)";
+            effectSelectionText = uiText(' (Upper 95% CI)');
         } else if (effectSelection === 'pi_lower') {
             primaryRR = parseFloat(lastHeadlineData.pi_low);
-            effectSelectionText = " (Lower 95% PI)";
+            effectSelectionText = uiText(' (Lower 95% PI)');
         } else if (effectSelection === 'pi_upper') {
             primaryRR = parseFloat(lastHeadlineData.pi_upp);
-            effectSelectionText = " (Upper 95% PI)";
+            effectSelectionText = uiText(' (Upper 95% PI)');
         } else {
             primaryRR = parseFloat(lastHeadlineData.pooled_es);
         }
@@ -1276,7 +1295,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             (effectSelection === 'pi_upper' && lastHeadlineData.pi_upp == null)) {
             elements.pooledPowerAnalysis.classList.remove('hidden');
             if (elements.pooledPowerEsText) elements.pooledPowerEsText.textContent = "N/A" + effectSelectionText;
-            if (elements.pooledPowerNTotal) elements.pooledPowerNTotal.textContent = "N/A (≥3 studies required)";
+            if (elements.pooledPowerNTotal) elements.pooledPowerNTotal.textContent = uiText('N/A (≥3 studies required)');
             if (elements.pooledPowerPerGroup) elements.pooledPowerPerGroup.textContent = "";
             if (elements.pooledPowerCases) elements.pooledPowerCases.textContent = "-";
             return;
@@ -1296,8 +1315,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         const sides = elements.powerSides ? parseInt(elements.powerSides.value) : 2;
         
         if (elements.alphaTextDisplay) elements.alphaTextDisplay.textContent = alpha;
-        if (elements.powerTextDisplay) elements.powerTextDisplay.textContent = `${(power * 100).toFixed(0)}% power`;
-        if (elements.sidesTextDisplay) elements.sidesTextDisplay.textContent = sides === 1 ? 'one-sided' : 'two-sided';
+        if (elements.powerTextDisplay) elements.powerTextDisplay.textContent = uiText('{power}% power', { power: (power * 100).toFixed(0) });
+        if (elements.sidesTextDisplay) elements.sidesTextDisplay.textContent = uiText(sides === 1 ? 'one-sided' : 'two-sided');
         
         const p2 = p1 * primaryRR;
         const zAlpha = getZ(1 - alpha / sides);
@@ -1320,13 +1339,13 @@ document.addEventListener('DOMContentLoaded', async () => {
             const n_per_group = Math.pow(zAlpha * Math.sqrt(2 * pBar * qBar) + zBeta * Math.sqrt(p1 * (1 - p1) + p2 * (1 - p2)), 2) / Math.pow(diff, 2);
             total_n = Math.ceil(n_per_group) * 2;
             expected_cases = Math.ceil(total_n * pBar);
-            per_group_text = `(${Math.ceil(n_per_group).toLocaleString()} per group)`;
+            per_group_text = uiText('({count} per group)', { count: Math.ceil(n_per_group).toLocaleString() });
         } else {
             // Single arm formula
             const n_single = Math.pow(zAlpha * Math.sqrt(p1 * (1 - p1)) + zBeta * Math.sqrt(p2 * (1 - p2)), 2) / Math.pow(diff, 2);
             total_n = Math.ceil(n_single);
             expected_cases = Math.ceil(total_n * p2);
-            per_group_text = `(single arm)`;
+            per_group_text = uiText('(single arm)');
         }
 
         if (elements.pooledPowerNTotal) elements.pooledPowerNTotal.textContent = total_n.toLocaleString();
@@ -1344,4 +1363,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         const d1 = 1.432788, d2 = 0.189269, d3 = 0.001308;
         return t - (c0 + c1 * t + c2 * t * t) / (1.0 + d1 * t + d2 * t * t + d3 * t * t * t);
     }
+
+    window.addEventListener('metafemina:languagechange', () => {
+        if (elements.updateBtn) {
+            elements.updateBtn.textContent = uiText(elements.updateBtn.disabled ? 'Updating...' : 'Update Analysis');
+        }
+        if (currentStudies.length) renderStudiesTable();
+        if (lastHeadlineData) applyResultMeasureTransformation();
+    });
 });
