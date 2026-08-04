@@ -1,0 +1,47 @@
+{
+  "eligible_exposure_count": 0,
+  "exposure_count": 0,
+  "exposures": [],
+  "formal_egger_exposure_count": 0,
+  "notes": [
+    "Lifetime-risk percent is taxonomy metadata only and is not pooled or aggregated.",
+    "Protective/harmful grouping is by the pooled point estimate relative to 1.0.",
+    "Summary forest plots follow the broad-cancer format and require at least 2 studies per exposure.",
+    "Cross-exposure heterogeneity plots require at least 3 studies and I² greater than 0% per exposure.",
+    "Formal per-exposure Egger interpretation requires at least 10 studies."
+  ],
+  "plots": {
+    "effect-heterogeneity": {
+      "available": false,
+      "filename": "effect_size_vs_i2.pdf",
+      "path": "Plot/subcategories/ovary/low_grade_serous_carcinoma/effect_size_vs_i2.pdf",
+      "reason": "requires_2_eligible_exposures"
+    },
+    "egger-heterogeneity": {
+      "available": false,
+      "filename": "egger_vs_i2.pdf",
+      "path": "Plot/subcategories/ovary/low_grade_serous_carcinoma/egger_vs_i2.pdf",
+      "reason": "requires_2_eligible_exposures"
+    },
+    "forest-harmful": {
+      "available": false,
+      "filename": "forest_harmful.pdf",
+      "path": "Plot/subcategories/ovary/low_grade_serous_carcinoma/forest_harmful.pdf",
+      "reason": "no_harmful_eligible_exposures"
+    },
+    "forest-protective": {
+      "available": false,
+      "filename": "forest_protective.pdf",
+      "path": "Plot/subcategories/ovary/low_grade_serous_carcinoma/forest_protective.pdf",
+      "reason": "no_protective_eligible_exposures"
+    }
+  },
+  "schema_version": "1.0",
+  "scope": {
+    "estimated_lifetime_probability_us_women_percent": 0.06,
+    "label": "Low-grade serous carcinoma",
+    "major_site_id": "ovary",
+    "subcategory_id": "ovary_low_grade_serous_carcinoma",
+    "subcategory_slug": "low_grade_serous_carcinoma"
+  }
+}

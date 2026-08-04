@@ -34,15 +34,19 @@
         <section class="summary-intro" aria-labelledby="summary-title">
             <p class="summary-eyebrow">Cross-exposure overview</p>
             <h1 id="summary-title">Choose a disease scope</h1>
-            <p>Select one cancer type to view its pooled forest plots and heterogeneity diagnostics. These figures are regenerated when the monthly evidence update changes an analysis.</p>
 
             <form class="disease-picker" action="/summary" method="get">
                 <label for="summary-disease">Disease Scope</label>
                 <div class="disease-picker-controls">
                     <select id="summary-disease" name="disease" required>
                         <option value="" disabled {% if not selected_disease %}selected{% endif %}>Select a disease</option>
-                        {% for disease_key, disease_label in diseases.items() %}
-                        <option value="{{ disease_key }}" {% if selected_disease == disease_key %}selected{% endif %}>{{ disease_label }}</option>
+                        {% for disease_key in ['breast', 'ovarian', 'uterine'] %}
+                        {% set scope = scope_config[disease_key] %}
+                        <option value="{{ disease_key }}" {% if selected_disease == disease_key and not selected_subcategory %}selected{% endif %}>{{ scope.label }}</option>
+                        {% for subcategory in scope.subcategories %}
+                        <option value="{{ disease_key }}::{{ subcategory.slug }}"
+                            {% if selected_disease == disease_key and selected_subcategory and selected_subcategory.slug == subcategory.slug %}selected{% endif %}>&#160;&#160;&#160;{{ subcategory.label }}</option>
+                        {% endfor %}
                         {% endfor %}
                     </select>
                     <button type="submit">View summary</button>
@@ -55,11 +59,65 @@
             <div class="summary-results-heading">
                 <div>
                     <p class="summary-eyebrow">Selected scope</p>
-                    <h2>{{ selected_disease_label }}</h2>
+                    <h2>{{ selected_scope_label }}</h2>
                 </div>
-                <p>Plots reflect the latest completed evidence update.</p>
+                <div>
+                    <p>Plots reflect the latest completed evidence update.</p>
+                    {% if selected_lifetime_risk is not none %}
+                    <p class="summary-scope-risk">Estimated lifetime risk: {{ selected_lifetime_risk }}%</p>
+                    {% endif %}
+                </div>
             </div>
 
+            {% if selected_subcategory %}
+            <section class="summary-section" aria-labelledby="subcategory-forest-heading">
+                <div class="summary-section-heading">
+                    <h2 id="subcategory-forest-heading">All nutritional exposure evidence</h2>
+                    <p>Random-effects estimates for {{ selected_subcategory.label }}.</p>
+                </div>
+                <div class="summary-plot-grid summary-plot-grid--forest">
+                    {% for plot in subcategory_summary_cards if plot.kind == 'forest' %}
+                    <article class="summary-plot-card">
+                        <h3>{{ plot.title }}</h3>
+                        {% if plot.available %}
+                        <object class="summary-pdf summary-pdf--forest"
+                            data="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot.name, subcategory=selected_subcategory.slug, v=plot_version) }}#view=FitH"
+                            type="application/pdf" aria-label="{{ plot.title }} for {{ selected_scope_label }}">
+                            <p>PDF preview is unavailable. <a href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot.name, subcategory=selected_subcategory.slug, v=plot_version) }}">Open the plot</a>.</p>
+                        </object>
+                        <a class="plot-open-link" href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot.name, subcategory=selected_subcategory.slug, v=plot_version) }}" target="_blank" rel="noopener">Open full-size plot ↗</a>
+                        {% else %}
+                        <p class="summary-plot-unavailable">Insufficient eligible saved evidence is currently available to generate this forest plot.</p>
+                        {% endif %}
+                    </article>
+                    {% endfor %}
+                </div>
+            </section>
+
+            <section class="summary-section" aria-labelledby="subcategory-diagnostic-heading">
+                <div class="summary-section-heading">
+                    <h2 id="subcategory-diagnostic-heading">Heterogeneity diagnostics</h2>
+                    <p>Cross-exposure diagnostics for the selected subcategory.</p>
+                </div>
+                <div class="summary-plot-grid">
+                    {% for plot in subcategory_summary_cards if plot.kind == 'diagnostic' %}
+                    <article class="summary-plot-card">
+                        <h3>{{ plot.title }}</h3>
+                        {% if plot.available %}
+                        <object class="summary-pdf"
+                            data="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot.name, subcategory=selected_subcategory.slug, v=plot_version) }}#view=FitH"
+                            type="application/pdf" aria-label="{{ plot.title }} for {{ selected_scope_label }}">
+                            <p>PDF preview is unavailable. <a href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot.name, subcategory=selected_subcategory.slug, v=plot_version) }}">Open the plot</a>.</p>
+                        </object>
+                        <a class="plot-open-link" href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot.name, subcategory=selected_subcategory.slug, v=plot_version) }}" target="_blank" rel="noopener">Open full-size plot ↗</a>
+                        {% else %}
+                        <p class="summary-plot-unavailable">Insufficient eligible saved evidence is currently available to generate this heterogeneity diagnostic.</p>
+                        {% endif %}
+                    </article>
+                    {% endfor %}
+                </div>
+            </section>
+            {% else %}
             <section class="summary-section" aria-labelledby="combined-heading">
                 <div class="summary-section-heading">
                     <h2 id="combined-heading">All nutritional exposure evidence</h2>
@@ -73,11 +131,9 @@
                     {% for plot_name, plot_title in combined_plots %}
                     <article class="summary-plot-card">
                         <h3>{{ plot_title }}</h3>
-                        <object
-                            class="summary-pdf summary-pdf--forest"
+                        <object class="summary-pdf summary-pdf--forest"
                             data="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot_name, v=plot_version) }}#view=FitH"
-                            type="application/pdf"
-                            aria-label="{{ plot_title }} for {{ selected_disease_label }}">
+                            type="application/pdf" aria-label="{{ plot_title }} for {{ selected_disease_label }}">
                             <p>PDF preview is unavailable. <a href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot_name, v=plot_version) }}">Open the plot</a>.</p>
                         </object>
                         <a class="plot-open-link" href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot_name, v=plot_version) }}" target="_blank" rel="noopener">Open full-size plot ↗</a>
@@ -99,11 +155,9 @@
                     {% for plot_name, plot_title in dietary_plots %}
                     <article class="summary-plot-card">
                         <h3>{{ plot_title }}</h3>
-                        <object
-                            class="summary-pdf summary-pdf--forest"
+                        <object class="summary-pdf summary-pdf--forest"
                             data="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot_name, v=plot_version) }}#view=FitH"
-                            type="application/pdf"
-                            aria-label="Dietary {{ plot_title|lower }} for {{ selected_disease_label }}">
+                            type="application/pdf" aria-label="Dietary {{ plot_title|lower }} for {{ selected_disease_label }}">
                             <p>PDF preview is unavailable. <a href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot_name, v=plot_version) }}">Open the plot</a>.</p>
                         </object>
                         <a class="plot-open-link" href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot_name, v=plot_version) }}" target="_blank" rel="noopener">Open full-size plot ↗</a>
@@ -125,11 +179,9 @@
                     {% for plot_name, plot_title in diagnostic_plots %}
                     <article class="summary-plot-card">
                         <h3>{{ plot_title }}</h3>
-                        <object
-                            class="summary-pdf"
+                        <object class="summary-pdf"
                             data="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot_name, v=plot_version) }}#view=FitH"
-                            type="application/pdf"
-                            aria-label="{{ plot_title }} for {{ selected_disease_label }}">
+                            type="application/pdf" aria-label="{{ plot_title }} for {{ selected_disease_label }}">
                             <p>PDF preview is unavailable. <a href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot_name, v=plot_version) }}">Open the plot</a>.</p>
                         </object>
                         <a class="plot-open-link" href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot_name, v=plot_version) }}" target="_blank" rel="noopener">Open full-size plot ↗</a>
@@ -137,9 +189,11 @@
                     {% endfor %}
                 </div>
             </section>
+            {% endif %}
         </div>
         {% endif %}
     </main>
+
 </body>
 
 </html>

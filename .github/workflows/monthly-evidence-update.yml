@@ -90,12 +90,35 @@ jobs:
           Rscript Plot/PlotsPaper.R 2>&1 | tee -a monthly_update.log
           Rscript Plot/DumbellPlot.R 2>&1 | tee -a monthly_update.log
 
+      - name: Refresh saved-study cancer subcategories and plots
+        if: steps.changed.outputs.value == 'true'
+        run: |
+          set -o pipefail
+          python scripts/enrich_subcategories.py --stage sources 2>&1 | tee -a monthly_update.log
+          python scripts/enrich_subcategories.py --stage terra --workers 4 2>&1 | tee -a monthly_update.log
+          python scripts/enrich_subcategories.py --stage luna --workers 2 2>&1 | tee -a monthly_update.log
+          python scripts/build_subcategory_outputs.py 2>&1 | tee -a monthly_update.log
+
+      - name: Validate refreshed Summary and subcategory outputs
+        if: steps.changed.outputs.value == 'true'
+        run: |
+          set -o pipefail
+          test -s Plot/plot_es_vs_heterogeneity_breast.pdf
+          test -s Plot/plot_es_vs_heterogeneity_ovarian.pdf
+          test -s Plot/plot_es_vs_heterogeneity_uterine.pdf
+          test -s Plot/subcategories/summary_manifest.json
+          test -s data/subcategory_sources.json
+          test -s data/subcategory_annotations.json
+          python -m unittest discover -s tests -p 'test_*.py' 2>&1 | tee -a monthly_update.log
+
       - name: Commit monthly results
         run: |
           set -o pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add Cached_results static Plot data/monthly_updates data/monthly_reports
+          git add Cached_results static Plot data/monthly_updates data/monthly_reports \
+            data/subcategory_sources.json data/subcategory_annotations.json \
+            data/subcategory_results
           if git diff --cached --quiet; then
             echo "No repository changes for this month." | tee -a monthly_update.log
           else

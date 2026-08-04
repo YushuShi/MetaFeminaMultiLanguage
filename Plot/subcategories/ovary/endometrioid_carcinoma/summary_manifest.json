@@ -1,0 +1,344 @@
+{
+  "eligible_exposure_count": 8,
+  "exposure_count": 8,
+  "exposures": [
+    {
+      "availability": {
+        "baujat": {
+          "available": false,
+          "reason": "baujat_requires_3_studies"
+        },
+        "eligible_study_count": 1,
+        "forest": {
+          "available": true,
+          "reason": null
+        },
+        "formal_egger": {
+          "available": false,
+          "reason": "egger_requires_10_studies"
+        },
+        "funnel": {
+          "available": true,
+          "reason": "egger_requires_10_studies"
+        }
+      },
+      "exposure": "Alcohol",
+      "headline": {
+        "ci_low": 0.8724964183307574,
+        "ci_upp": 1.2636155024100624,
+        "eggers_intercept": null,
+        "eggers_p": null,
+        "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+        "i2": 0.0,
+        "interpretation": "The pooled subtype-specific estimate is 1.05, indicating a higher relative association for this exposure.",
+        "loo_results": [],
+        "n_studies": 1,
+        "pooled_es": 1.05,
+        "q": 0.0,
+        "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
+        "tau2": 0.0
+      }
+    },
+    {
+      "availability": {
+        "baujat": {
+          "available": false,
+          "reason": "baujat_requires_3_studies"
+        },
+        "eligible_study_count": 1,
+        "forest": {
+          "available": true,
+          "reason": null
+        },
+        "formal_egger": {
+          "available": false,
+          "reason": "egger_requires_10_studies"
+        },
+        "funnel": {
+          "available": true,
+          "reason": "egger_requires_10_studies"
+        }
+      },
+      "exposure": "Caffeine",
+      "headline": {
+        "ci_low": 1.5000082781228528,
+        "ci_upp": 6.040033333241354,
+        "eggers_intercept": null,
+        "eggers_p": null,
+        "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+        "i2": 0.0,
+        "interpretation": "The pooled subtype-specific estimate is 3.01, indicating a higher relative association for this exposure.",
+        "loo_results": [],
+        "n_studies": 1,
+        "pooled_es": 3.01,
+        "q": 0.0,
+        "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
+        "tau2": 0.0
+      }
+    },
+    {
+      "availability": {
+        "baujat": {
+          "available": false,
+          "reason": "baujat_requires_3_studies"
+        },
+        "eligible_study_count": 1,
+        "forest": {
+          "available": true,
+          "reason": null
+        },
+        "formal_egger": {
+          "available": false,
+          "reason": "egger_requires_10_studies"
+        },
+        "funnel": {
+          "available": true,
+          "reason": "egger_requires_10_studies"
+        }
+      },
+      "exposure": "Calcium",
+      "headline": {
+        "ci_low": 0.45005494170095556,
+        "ci_upp": 0.9101111043285992,
+        "eggers_intercept": null,
+        "eggers_p": null,
+        "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+        "i2": 0.0,
+        "interpretation": "The pooled subtype-specific estimate is 0.64, indicating a lower relative association for this exposure.",
+        "loo_results": [],
+        "n_studies": 1,
+        "pooled_es": 0.64,
+        "q": 0.0,
+        "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
+        "tau2": 0.0
+      }
+    },
+    {
+      "availability": {
+        "baujat": {
+          "available": false,
+          "reason": "baujat_requires_3_studies"
+        },
+        "eligible_study_count": 1,
+        "forest": {
+          "available": true,
+          "reason": null
+        },
+        "formal_egger": {
+          "available": false,
+          "reason": "egger_requires_10_studies"
+        },
+        "funnel": {
+          "available": true,
+          "reason": "egger_requires_10_studies"
+        }
+      },
+      "exposure": "Dairy",
+      "headline": {
+        "ci_low": 0.1587644602741868,
+        "ci_upp": 0.644980619863884,
+        "eggers_intercept": null,
+        "eggers_p": null,
+        "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+        "i2": 0.0,
+        "interpretation": "The pooled subtype-specific estimate is 0.32, indicating a lower relative association for this exposure.",
+        "loo_results": [],
+        "n_studies": 1,
+        "pooled_es": 0.32,
+        "q": 0.0,
+        "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
+        "tau2": 0.0
+      }
+    },
+    {
+      "availability": {
+        "baujat": {
+          "available": false,
+          "reason": "baujat_requires_3_studies"
+        },
+        "eligible_study_count": 1,
+        "forest": {
+          "available": true,
+          "reason": null
+        },
+        "formal_egger": {
+          "available": false,
+          "reason": "egger_requires_10_studies"
+        },
+        "funnel": {
+          "available": true,
+          "reason": "egger_requires_10_studies"
+        }
+      },
+      "exposure": "Fish oil",
+      "headline": {
+        "ci_low": 0.6951888232703399,
+        "ci_upp": 0.9672192323761252,
+        "eggers_intercept": null,
+        "eggers_p": null,
+        "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+        "i2": 0.0,
+        "interpretation": "The pooled subtype-specific estimate is 0.82, indicating a lower relative association for this exposure.",
+        "loo_results": [],
+        "n_studies": 1,
+        "pooled_es": 0.82,
+        "q": 0.0,
+        "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
+        "tau2": 0.0
+      }
+    },
+    {
+      "availability": {
+        "baujat": {
+          "available": false,
+          "reason": "baujat_requires_3_studies"
+        },
+        "eligible_study_count": 1,
+        "forest": {
+          "available": true,
+          "reason": null
+        },
+        "formal_egger": {
+          "available": false,
+          "reason": "egger_requires_10_studies"
+        },
+        "funnel": {
+          "available": true,
+          "reason": "egger_requires_10_studies"
+        }
+      },
+      "exposure": "Potassium",
+      "headline": {
+        "ci_low": 0.11055980005298083,
+        "ci_upp": 0.9849873095629201,
+        "eggers_intercept": null,
+        "eggers_p": null,
+        "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+        "i2": 0.0,
+        "interpretation": "The pooled subtype-specific estimate is 0.33, indicating a lower relative association for this exposure.",
+        "loo_results": [],
+        "n_studies": 1,
+        "pooled_es": 0.33,
+        "q": 0.0,
+        "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
+        "tau2": 0.0
+      }
+    },
+    {
+      "availability": {
+        "baujat": {
+          "available": false,
+          "reason": "baujat_requires_3_studies"
+        },
+        "eligible_study_count": 1,
+        "forest": {
+          "available": true,
+          "reason": null
+        },
+        "formal_egger": {
+          "available": false,
+          "reason": "egger_requires_10_studies"
+        },
+        "funnel": {
+          "available": true,
+          "reason": "egger_requires_10_studies"
+        }
+      },
+      "exposure": "Tea",
+      "headline": {
+        "ci_low": 1.3216439697720603,
+        "ci_upp": 7.699577369353897,
+        "eggers_intercept": null,
+        "eggers_p": null,
+        "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+        "i2": 0.0,
+        "interpretation": "The pooled subtype-specific estimate is 3.19, indicating a higher relative association for this exposure.",
+        "loo_results": [],
+        "n_studies": 1,
+        "pooled_es": 3.19,
+        "q": 0.0,
+        "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
+        "tau2": 0.0
+      }
+    },
+    {
+      "availability": {
+        "baujat": {
+          "available": false,
+          "reason": "baujat_requires_3_studies"
+        },
+        "eligible_study_count": 1,
+        "forest": {
+          "available": true,
+          "reason": null
+        },
+        "formal_egger": {
+          "available": false,
+          "reason": "egger_requires_10_studies"
+        },
+        "funnel": {
+          "available": true,
+          "reason": "egger_requires_10_studies"
+        }
+      },
+      "exposure": "Vitamin D",
+      "headline": {
+        "ci_low": 0.3840166012036459,
+        "ci_upp": 0.7877263614433763,
+        "eggers_intercept": null,
+        "eggers_p": null,
+        "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+        "i2": 0.0,
+        "interpretation": "The pooled subtype-specific estimate is 0.55, indicating a lower relative association for this exposure.",
+        "loo_results": [],
+        "n_studies": 1,
+        "pooled_es": 0.55,
+        "q": 0.0,
+        "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
+        "tau2": 0.0
+      }
+    }
+  ],
+  "formal_egger_exposure_count": 0,
+  "notes": [
+    "Lifetime-risk percent is taxonomy metadata only and is not pooled or aggregated.",
+    "Protective/harmful grouping is by the pooled point estimate relative to 1.0.",
+    "Summary forest plots follow the broad-cancer format and require at least 2 studies per exposure.",
+    "Cross-exposure heterogeneity plots require at least 3 studies and I² greater than 0% per exposure.",
+    "Formal per-exposure Egger interpretation requires at least 10 studies."
+  ],
+  "plots": {
+    "effect-heterogeneity": {
+      "available": false,
+      "filename": "effect_size_vs_i2.pdf",
+      "path": "Plot/subcategories/ovary/endometrioid_carcinoma/effect_size_vs_i2.pdf",
+      "reason": "requires_2_eligible_exposures"
+    },
+    "egger-heterogeneity": {
+      "available": false,
+      "filename": "egger_vs_i2.pdf",
+      "path": "Plot/subcategories/ovary/endometrioid_carcinoma/egger_vs_i2.pdf",
+      "reason": "requires_2_eligible_exposures"
+    },
+    "forest-harmful": {
+      "available": false,
+      "filename": "forest_harmful.pdf",
+      "path": "Plot/subcategories/ovary/endometrioid_carcinoma/forest_harmful.pdf",
+      "reason": "no_harmful_eligible_exposures"
+    },
+    "forest-protective": {
+      "available": false,
+      "filename": "forest_protective.pdf",
+      "path": "Plot/subcategories/ovary/endometrioid_carcinoma/forest_protective.pdf",
+      "reason": "no_protective_eligible_exposures"
+    }
+  },
+  "schema_version": "1.0",
+  "scope": {
+    "estimated_lifetime_probability_us_women_percent": 0.11,
+    "label": "Endometrioid carcinoma",
+    "major_site_id": "ovary",
+    "subcategory_id": "ovary_endometrioid_carcinoma",
+    "subcategory_slug": "endometrioid_carcinoma"
+  }
+}

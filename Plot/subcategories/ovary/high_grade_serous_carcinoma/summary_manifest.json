@@ -1,0 +1,122 @@
+{
+  "eligible_exposure_count": 2,
+  "exposure_count": 2,
+  "exposures": [
+    {
+      "availability": {
+        "baujat": {
+          "available": false,
+          "reason": "baujat_requires_3_studies"
+        },
+        "eligible_study_count": 1,
+        "forest": {
+          "available": true,
+          "reason": null
+        },
+        "formal_egger": {
+          "available": false,
+          "reason": "egger_requires_10_studies"
+        },
+        "funnel": {
+          "available": true,
+          "reason": "egger_requires_10_studies"
+        }
+      },
+      "exposure": "Caffeine",
+      "headline": {
+        "ci_low": 0.7331749140181042,
+        "ci_upp": 1.1047841170135817,
+        "eggers_intercept": null,
+        "eggers_p": null,
+        "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+        "i2": 0.0,
+        "interpretation": "The pooled subtype-specific estimate is 0.90, indicating a lower relative association for this exposure.",
+        "loo_results": [],
+        "n_studies": 1,
+        "pooled_es": 0.9,
+        "q": 0.0,
+        "results_interpretation": "This saved analysis contains 1 separately reported High-grade serous carcinoma estimate.",
+        "tau2": 0.0
+      }
+    },
+    {
+      "availability": {
+        "baujat": {
+          "available": false,
+          "reason": "baujat_requires_3_studies"
+        },
+        "eligible_study_count": 1,
+        "forest": {
+          "available": true,
+          "reason": null
+        },
+        "formal_egger": {
+          "available": false,
+          "reason": "egger_requires_10_studies"
+        },
+        "funnel": {
+          "available": true,
+          "reason": "egger_requires_10_studies"
+        }
+      },
+      "exposure": "Vitamin D",
+      "headline": {
+        "ci_low": 0.4996796297203753,
+        "ci_upp": 0.8439814931739325,
+        "eggers_intercept": null,
+        "eggers_p": null,
+        "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+        "i2": 0.0,
+        "interpretation": "The pooled subtype-specific estimate is 0.65, indicating a lower relative association for this exposure.",
+        "loo_results": [],
+        "n_studies": 1,
+        "pooled_es": 0.6494,
+        "q": 0.0,
+        "results_interpretation": "This saved analysis contains 1 separately reported High-grade serous carcinoma estimate.",
+        "tau2": 0.0
+      }
+    }
+  ],
+  "formal_egger_exposure_count": 0,
+  "notes": [
+    "Lifetime-risk percent is taxonomy metadata only and is not pooled or aggregated.",
+    "Protective/harmful grouping is by the pooled point estimate relative to 1.0.",
+    "Summary forest plots follow the broad-cancer format and require at least 2 studies per exposure.",
+    "Cross-exposure heterogeneity plots require at least 3 studies and I² greater than 0% per exposure.",
+    "Formal per-exposure Egger interpretation requires at least 10 studies."
+  ],
+  "plots": {
+    "effect-heterogeneity": {
+      "available": false,
+      "filename": "effect_size_vs_i2.pdf",
+      "path": "Plot/subcategories/ovary/high_grade_serous_carcinoma/effect_size_vs_i2.pdf",
+      "reason": "requires_2_eligible_exposures"
+    },
+    "egger-heterogeneity": {
+      "available": false,
+      "filename": "egger_vs_i2.pdf",
+      "path": "Plot/subcategories/ovary/high_grade_serous_carcinoma/egger_vs_i2.pdf",
+      "reason": "requires_2_eligible_exposures"
+    },
+    "forest-harmful": {
+      "available": false,
+      "filename": "forest_harmful.pdf",
+      "path": "Plot/subcategories/ovary/high_grade_serous_carcinoma/forest_harmful.pdf",
+      "reason": "no_harmful_eligible_exposures"
+    },
+    "forest-protective": {
+      "available": false,
+      "filename": "forest_protective.pdf",
+      "path": "Plot/subcategories/ovary/high_grade_serous_carcinoma/forest_protective.pdf",
+      "reason": "no_protective_eligible_exposures"
+    }
+  },
+  "schema_version": "1.0",
+  "scope": {
+    "estimated_lifetime_probability_us_women_percent": 0.66,
+    "label": "High-grade serous carcinoma",
+    "major_site_id": "ovary",
+    "subcategory_id": "ovary_high_grade_serous_carcinoma",
+    "subcategory_slug": "high_grade_serous_carcinoma"
+  }
+}

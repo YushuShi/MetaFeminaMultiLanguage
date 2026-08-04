@@ -1,0 +1,98 @@
+{
+  "availability": {
+    "baujat": {
+      "available": false,
+      "reason": "baujat_requires_3_studies"
+    },
+    "eligible_study_count": 1,
+    "forest": {
+      "available": true,
+      "reason": null
+    },
+    "formal_egger": {
+      "available": false,
+      "reason": "egger_requires_10_studies"
+    },
+    "funnel": {
+      "available": true,
+      "reason": "egger_requires_10_studies"
+    }
+  },
+  "baujat_plot_url": "Plot/subcategories/ovary/endometrioid_carcinoma/tea_baujat.png",
+  "exposure": "Tea",
+  "funnel_plot_url": "Plot/subcategories/ovary/endometrioid_carcinoma/tea_funnel.png",
+  "headline": {
+    "ci_low": 1.3216439697720603,
+    "ci_upp": 7.699577369353897,
+    "eggers_intercept": null,
+    "eggers_p": null,
+    "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+    "i2": 0.0,
+    "interpretation": "The pooled subtype-specific estimate is 3.19, indicating a higher relative association for this exposure.",
+    "loo_results": [],
+    "n_studies": 1,
+    "pooled_es": 3.19,
+    "q": 0.0,
+    "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
+    "tau2": 0.0
+  },
+  "input_fingerprint": "3c14b00289e9afb2cc5184d25b50e90e029606f824b1ee16363e8334d4d33301",
+  "plot_url": "Plot/subcategories/ovary/endometrioid_carcinoma/tea_forest.png",
+  "plot_urls": {
+    "baujat": "Plot/subcategories/ovary/endometrioid_carcinoma/tea_baujat.png",
+    "forest": "Plot/subcategories/ovary/endometrioid_carcinoma/tea_forest.png",
+    "funnel": "Plot/subcategories/ovary/endometrioid_carcinoma/tea_funnel.png"
+  },
+  "schema_version": "1.0",
+  "scope": {
+    "estimated_lifetime_probability_us_women_percent": 0.11,
+    "major_site_id": "ovary",
+    "subcategory_id": "ovary_endometrioid_carcinoma",
+    "subcategory_label": "Endometrioid carcinoma",
+    "subcategory_slug": "endometrioid_carcinoma"
+  },
+  "skipped_annotation_count_for_build": 0,
+  "studies": [
+    {
+      "Authors": "Leung AC, Cook LS, Swenerton K, Gilks B, Gallagher RP, Magliocco A, Steed H, Köbel M, Nation J, Brooks-Wilson A, Le ND",
+      "Cases": null,
+      "Effect Size": 3.19,
+      "Effect Type": "OR",
+      "Journal": "Cancer epidemiology",
+      "Link": "https://pubmed.ncbi.nlm.nih.gov/27810483/",
+      "Lower CI": 1.32,
+      "PMID": "27810483",
+      "Participants": null,
+      "Reference": "Tea, coffee, and caffeinated beverage consumption and risk of epithelial ovarian cancers.",
+      "Sample Size": null,
+      "Study": "Leung AC et al. (2016) [PMID: 27810483]",
+      "Upper CI": 7.69,
+      "Year": "2016",
+      "authors": "Leung AC, Cook LS, Swenerton K, Gilks B, Gallagher RP, Magliocco A, Steed H, Köbel M, Nation J, Brooks-Wilson A, Le ND",
+      "cases": null,
+      "comparison_type": "Black tea only consumption versus non-drinkers/lower consumption",
+      "context_id": "27810483|ovary|tea|0",
+      "effect_size": 3.19,
+      "effect_type": "OR",
+      "evidence_locator": "\"The association for black tea only consumption was mainly seen in the endometrioid histotype (aOR=3.19; 95% CI: 1.32-7.69).\"",
+      "evidence_source": "terra",
+      "exposure_measurement_supporting_text": "Adult lifetime cumulative consumption (cup-years=cups/day*years) was calculated. Those that did not meet the threshold for beverage consumption (at least once per month for 6 months or more) were classified as non-drinkers.",
+      "exposure_measurement_type": "dietary_intake",
+      "extraction_supporting_text": {
+        "confidence_interval": "\"The association for black tea only consumption was mainly seen in the endometrioid histotype (aOR=3.19; 95% CI: 1.32-7.69).\"",
+        "effect_size": "\"The association for black tea only consumption was mainly seen in the endometrioid histotype (aOR=3.19; 95% CI: 1.32-7.69).\"",
+        "outcome_definition": ""
+      },
+      "journal": "Cancer epidemiology",
+      "lower_ci": 1.32,
+      "outcome_definition": null,
+      "pmid": "27810483",
+      "reference": "Tea, coffee, and caffeinated beverage consumption and risk of epithelial ovarian cancers.",
+      "sample_size": null,
+      "se": null,
+      "study": "Leung AC et al. (2016) [PMID: 27810483]",
+      "upper_ci": 7.69,
+      "year": "2016"
+    }
+  ]
+}

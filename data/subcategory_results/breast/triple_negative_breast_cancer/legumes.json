@@ -1,0 +1,98 @@
+{
+  "availability": {
+    "baujat": {
+      "available": false,
+      "reason": "baujat_requires_3_studies"
+    },
+    "eligible_study_count": 1,
+    "forest": {
+      "available": true,
+      "reason": null
+    },
+    "formal_egger": {
+      "available": false,
+      "reason": "egger_requires_10_studies"
+    },
+    "funnel": {
+      "available": true,
+      "reason": "egger_requires_10_studies"
+    }
+  },
+  "baujat_plot_url": "Plot/subcategories/breast/triple_negative_breast_cancer/legumes_baujat.png",
+  "exposure": "Legumes",
+  "funnel_plot_url": "Plot/subcategories/breast/triple_negative_breast_cancer/legumes_funnel.png",
+  "headline": {
+    "ci_low": 0.2768773241556249,
+    "ci_upp": 0.9394052069565841,
+    "eggers_intercept": null,
+    "eggers_p": null,
+    "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+    "i2": 0.0,
+    "interpretation": "The pooled subtype-specific estimate is 0.51, indicating a lower relative association for this exposure.",
+    "loo_results": [],
+    "n_studies": 1,
+    "pooled_es": 0.51,
+    "q": 0.0,
+    "results_interpretation": "This saved analysis contains 1 separately reported Triple-negative breast cancer estimate.",
+    "tau2": 0.0
+  },
+  "input_fingerprint": "23137503586791f4e764ab4fe28dd8d415b71c882b6870b04a881b73551f3294",
+  "plot_url": "Plot/subcategories/breast/triple_negative_breast_cancer/legumes_forest.png",
+  "plot_urls": {
+    "baujat": "Plot/subcategories/breast/triple_negative_breast_cancer/legumes_baujat.png",
+    "forest": "Plot/subcategories/breast/triple_negative_breast_cancer/legumes_forest.png",
+    "funnel": "Plot/subcategories/breast/triple_negative_breast_cancer/legumes_funnel.png"
+  },
+  "schema_version": "1.0",
+  "scope": {
+    "estimated_lifetime_probability_us_women_percent": 1.3,
+    "major_site_id": "breast",
+    "subcategory_id": "breast_triple_negative_breast_cancer",
+    "subcategory_label": "Triple-negative breast cancer",
+    "subcategory_slug": "triple_negative_breast_cancer"
+  },
+  "skipped_annotation_count_for_build": 0,
+  "studies": [
+    {
+      "Authors": "Bigman G, Adebamowo SN, Yawe KT, Yilkudi M, Olaomi O, Badejo O, Famooto A, Ezeome E, Salu IK, Miner E, Anosike I, Achusi B, Adebamowo C",
+      "Cases": null,
+      "Effect Size": 0.51,
+      "Effect Type": "OR",
+      "Journal": "Cancer causes & control : CCC",
+      "Link": "https://pubmed.ncbi.nlm.nih.gov/35511324/",
+      "Lower CI": 0.28,
+      "PMID": "35511324",
+      "Participants": null,
+      "Reference": "A matched case-control study of bean intake and breast cancer risk in urbanized Nigerian women.",
+      "Sample Size": null,
+      "Study": "Bigman G et al. (2022) [PMID: 35511324]",
+      "Upper CI": 0.95,
+      "Year": "2022",
+      "authors": "Bigman G, Adebamowo SN, Yawe KT, Yilkudi M, Olaomi O, Badejo O, Famooto A, Ezeome E, Salu IK, Miner E, Anosike I, Achusi B, Adebamowo C",
+      "cases": null,
+      "comparison_type": "High vs Never",
+      "context_id": "35511324|breast|legumes|0",
+      "effect_size": 0.51,
+      "effect_type": "OR",
+      "evidence_locator": "\"triple-negative (OR = 0.51 95%CI: 0.28-0.95, p-trend = 0.02)\" for beans_alone high vs none",
+      "evidence_source": "terra",
+      "exposure_measurement_supporting_text": "We collected the dietary intake of beans using a food frequency questionnaire (FFQ).",
+      "exposure_measurement_type": "dietary_intake",
+      "extraction_supporting_text": {
+        "confidence_interval": "\"triple-negative (OR = 0.51 95%CI: 0.28-0.95, p-trend = 0.02)\" for beans_alone high vs none",
+        "effect_size": "\"triple-negative (OR = 0.51 95%CI: 0.28-0.95, p-trend = 0.02)\" for beans_alone high vs none",
+        "outcome_definition": ""
+      },
+      "journal": "Cancer causes & control : CCC",
+      "lower_ci": 0.28,
+      "outcome_definition": null,
+      "pmid": "35511324",
+      "reference": "A matched case-control study of bean intake and breast cancer risk in urbanized Nigerian women.",
+      "sample_size": null,
+      "se": null,
+      "study": "Bigman G et al. (2022) [PMID: 35511324]",
+      "upper_ci": 0.95,
+      "year": "2022"
+    }
+  ]
+}

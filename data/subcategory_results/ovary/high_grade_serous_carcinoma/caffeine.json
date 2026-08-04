@@ -1,0 +1,98 @@
+{
+  "availability": {
+    "baujat": {
+      "available": false,
+      "reason": "baujat_requires_3_studies"
+    },
+    "eligible_study_count": 1,
+    "forest": {
+      "available": true,
+      "reason": null
+    },
+    "formal_egger": {
+      "available": false,
+      "reason": "egger_requires_10_studies"
+    },
+    "funnel": {
+      "available": true,
+      "reason": "egger_requires_10_studies"
+    }
+  },
+  "baujat_plot_url": "Plot/subcategories/ovary/high_grade_serous_carcinoma/caffeine_baujat.png",
+  "exposure": "Caffeine",
+  "funnel_plot_url": "Plot/subcategories/ovary/high_grade_serous_carcinoma/caffeine_funnel.png",
+  "headline": {
+    "ci_low": 0.7331749140181042,
+    "ci_upp": 1.1047841170135817,
+    "eggers_intercept": null,
+    "eggers_p": null,
+    "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+    "i2": 0.0,
+    "interpretation": "The pooled subtype-specific estimate is 0.90, indicating a lower relative association for this exposure.",
+    "loo_results": [],
+    "n_studies": 1,
+    "pooled_es": 0.9,
+    "q": 0.0,
+    "results_interpretation": "This saved analysis contains 1 separately reported High-grade serous carcinoma estimate.",
+    "tau2": 0.0
+  },
+  "input_fingerprint": "52f589559645ed5dc5ef322393a0e549dc4e131e7d9aba6c69f22fa1756e5d1f",
+  "plot_url": "Plot/subcategories/ovary/high_grade_serous_carcinoma/caffeine_forest.png",
+  "plot_urls": {
+    "baujat": "Plot/subcategories/ovary/high_grade_serous_carcinoma/caffeine_baujat.png",
+    "forest": "Plot/subcategories/ovary/high_grade_serous_carcinoma/caffeine_forest.png",
+    "funnel": "Plot/subcategories/ovary/high_grade_serous_carcinoma/caffeine_funnel.png"
+  },
+  "schema_version": "1.0",
+  "scope": {
+    "estimated_lifetime_probability_us_women_percent": 0.66,
+    "major_site_id": "ovary",
+    "subcategory_id": "ovary_high_grade_serous_carcinoma",
+    "subcategory_label": "High-grade serous carcinoma",
+    "subcategory_slug": "high_grade_serous_carcinoma"
+  },
+  "skipped_annotation_count_for_build": 0,
+  "studies": [
+    {
+      "Authors": "Ong JS, Hwang LD, Cuellar-Partida G, Martin NG, Chenevix-Trench G, Quinn MCJ, Cornelis MC, Gharahkhani P, Webb PM, MacGregor S,  ",
+      "Cases": null,
+      "Effect Size": 0.9,
+      "Effect Type": "OR",
+      "Journal": "International journal of epidemiology",
+      "Link": "https://pubmed.ncbi.nlm.nih.gov/29186515/",
+      "Lower CI": 0.73,
+      "PMID": "29186515",
+      "Participants": 44062.0,
+      "Reference": "Assessment of moderate coffee consumption and risk of epithelial ovarian cancer: a Mendelian randomization study.",
+      "Sample Size": 44062.0,
+      "Study": "Ong JS et al. (2018) [PMID: 29186515]",
+      "Upper CI": 1.1,
+      "Year": "2018",
+      "authors": "Ong JS, Hwang LD, Cuellar-Partida G, Martin NG, Chenevix-Trench G, Quinn MCJ, Cornelis MC, Gharahkhani P, Webb PM, MacGregor S,  ",
+      "cases": null,
+      "comparison_type": "per 80 mg increase",
+      "context_id": "29186515|ovary|caffeine|0",
+      "effect_size": 0.9,
+      "effect_type": "OR",
+      "evidence_locator": "\"The COR for genetically predicted consumption of an additional 80 mg caffeine was ... 0.90 (95% CI: 0.73, 1.10) for high-grade serous cases.\"",
+      "evidence_source": "terra",
+      "exposure_measurement_supporting_text": "genetically predicted consumption of an additional 80 mg caffeine",
+      "exposure_measurement_type": "unclear",
+      "extraction_supporting_text": {
+        "confidence_interval": "\"The COR for genetically predicted consumption of an additional 80 mg caffeine was ... 0.90 (95% CI: 0.73, 1.10) for high-grade serous cases.\"",
+        "effect_size": "\"The COR for genetically predicted consumption of an additional 80 mg caffeine was ... 0.90 (95% CI: 0.73, 1.10) for high-grade serous cases.\"",
+        "outcome_definition": ""
+      },
+      "journal": "International journal of epidemiology",
+      "lower_ci": 0.73,
+      "outcome_definition": null,
+      "pmid": "29186515",
+      "reference": "Assessment of moderate coffee consumption and risk of epithelial ovarian cancer: a Mendelian randomization study.",
+      "sample_size": 44062.0,
+      "se": null,
+      "study": "Ong JS et al. (2018) [PMID: 29186515]",
+      "upper_ci": 1.1,
+      "year": "2018"
+    }
+  ]
+}

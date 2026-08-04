@@ -1,0 +1,98 @@
+{
+  "availability": {
+    "baujat": {
+      "available": false,
+      "reason": "baujat_requires_3_studies"
+    },
+    "eligible_study_count": 1,
+    "forest": {
+      "available": true,
+      "reason": null
+    },
+    "formal_egger": {
+      "available": false,
+      "reason": "egger_requires_10_studies"
+    },
+    "funnel": {
+      "available": true,
+      "reason": "egger_requires_10_studies"
+    }
+  },
+  "baujat_plot_url": "Plot/subcategories/breast/ductal_carcinoma_in_situ/calcium_baujat.png",
+  "exposure": "Calcium",
+  "funnel_plot_url": "Plot/subcategories/breast/ductal_carcinoma_in_situ/calcium_funnel.png",
+  "headline": {
+    "ci_low": 0.7002083023405725,
+    "ci_upp": 0.9602856717813566,
+    "eggers_intercept": null,
+    "eggers_p": null,
+    "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+    "i2": 0.0,
+    "interpretation": "The pooled subtype-specific estimate is 0.82, indicating a lower relative association for this exposure.",
+    "loo_results": [],
+    "n_studies": 1,
+    "pooled_es": 0.82,
+    "q": 0.0,
+    "results_interpretation": "This saved analysis contains 1 separately reported Ductal carcinoma in situ estimate.",
+    "tau2": 0.0
+  },
+  "input_fingerprint": "ef11ed04b88ee5a5649cf86d697abf5d97df3973795a6c6a7f08654331316b3a",
+  "plot_url": "Plot/subcategories/breast/ductal_carcinoma_in_situ/calcium_forest.png",
+  "plot_urls": {
+    "baujat": "Plot/subcategories/breast/ductal_carcinoma_in_situ/calcium_baujat.png",
+    "forest": "Plot/subcategories/breast/ductal_carcinoma_in_situ/calcium_forest.png",
+    "funnel": "Plot/subcategories/breast/ductal_carcinoma_in_situ/calcium_funnel.png"
+  },
+  "schema_version": "1.0",
+  "scope": {
+    "estimated_lifetime_probability_us_women_percent": 2.4,
+    "major_site_id": "breast",
+    "subcategory_id": "breast_ductal_carcinoma_in_situ",
+    "subcategory_label": "Ductal carcinoma in situ",
+    "subcategory_slug": "ductal_carcinoma_in_situ"
+  },
+  "skipped_annotation_count_for_build": 0,
+  "studies": [
+    {
+      "Authors": "Peila R, Xue X, Cauley JA, Chlebowski R, Manson JE, Nassir R, Saquib N, Shadyab AH, Zhang Z, Wassertheil-Smoller S, Rohan TE",
+      "Cases": 595.0,
+      "Effect Size": 0.82,
+      "Effect Type": "HR",
+      "Journal": "JNCI cancer spectrum",
+      "Link": "https://pubmed.ncbi.nlm.nih.gov/34476342/",
+      "Lower CI": 0.7,
+      "PMID": "34476342",
+      "Participants": 36282.0,
+      "Reference": "A Randomized Trial of Calcium Plus Vitamin D Supplementation and Risk of Ductal Carcinoma In Situ of the Breast.",
+      "Sample Size": 36282.0,
+      "Study": "Peila R et al. (2021) [PMID: 34476342]",
+      "Upper CI": 0.96,
+      "Year": "2021",
+      "authors": "Peila R, Xue X, Cauley JA, Chlebowski R, Manson JE, Nassir R, Saquib N, Shadyab AH, Zhang Z, Wassertheil-Smoller S, Rohan TE",
+      "cases": 595.0,
+      "comparison_type": "Calcium plus Vitamin D supplementation vs Placebo",
+      "context_id": "34476342|breast|calcium|0",
+      "effect_size": 0.82,
+      "effect_type": "HR",
+      "evidence_locator": "The intervention group had a lower risk of DCIS throughout follow-up (HR = 0.82, 95% CI = 0.70 to 0.96).",
+      "evidence_source": "terra",
+      "exposure_measurement_supporting_text": "Daily calcium (1000 mg) plus vitamin D (400 IU) supplementation or placebo.",
+      "exposure_measurement_type": "dietary_intake",
+      "extraction_supporting_text": {
+        "confidence_interval": "The intervention group had a lower risk of DCIS throughout follow-up (HR = 0.82, 95% CI = 0.70 to 0.96).",
+        "effect_size": "The intervention group had a lower risk of DCIS throughout follow-up (HR = 0.82, 95% CI = 0.70 to 0.96).",
+        "outcome_definition": ""
+      },
+      "journal": "JNCI cancer spectrum",
+      "lower_ci": 0.7,
+      "outcome_definition": null,
+      "pmid": "34476342",
+      "reference": "A Randomized Trial of Calcium Plus Vitamin D Supplementation and Risk of Ductal Carcinoma In Situ of the Breast.",
+      "sample_size": 36282.0,
+      "se": null,
+      "study": "Peila R et al. (2021) [PMID: 34476342]",
+      "upper_ci": 0.96,
+      "year": "2021"
+    }
+  ]
+}

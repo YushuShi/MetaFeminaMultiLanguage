@@ -5,10 +5,8 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 import re
 import sys
-import tempfile
 from pathlib import Path
 
 import numpy as np
@@ -72,16 +70,14 @@ def filtered_result(exposure: str, cancer: str) -> dict:
     if valid.empty:
         raise RuntimeError(f"No studies pass the paper filter for {exposure}/{cancer}")
 
-    # The shared analysis function also writes diagnostic PNGs. Run this
-    # paper-only calculation in a temporary directory so the platform's plots,
-    # which use the full saved analysis, remain unchanged.
-    previous = Path.cwd()
-    with tempfile.TemporaryDirectory(prefix="metafemina-paper-meta-") as temporary:
-        os.chdir(temporary)
-        try:
-            result = meta_analysis.perform_meta_analysis(valid, cancer, exposure)
-        finally:
-            os.chdir(previous)
+    # This calculation only supplies the paper/Summary workbook row. Avoid
+    # generating the per-exposure web plots as a side effect.
+    result = meta_analysis.perform_meta_analysis(
+        valid,
+        cancer,
+        exposure,
+        generate_plots=False,
+    )
     headline = result.get("headline")
     if not headline:
         raise RuntimeError(f"Paper meta-analysis failed for {exposure}/{cancer}")

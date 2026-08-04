@@ -583,6 +583,25 @@ button.tab-btn.active {
     gap: 0.75rem;
 }
 
+.summary-scope-risk {
+    margin: 0.75rem 0 0;
+    color: #7a244f;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.summary-plot-unavailable {
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    color: #5f6368;
+    line-height: 1.55;
+    background: #fff;
+    border: 1px dashed #d5b3c3;
+    border-radius: 5px;
+}
+
 .disease-picker-controls select {
     flex: 1;
     width: auto;

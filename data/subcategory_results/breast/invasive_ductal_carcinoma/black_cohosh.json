@@ -1,0 +1,98 @@
+{
+  "availability": {
+    "baujat": {
+      "available": false,
+      "reason": "baujat_requires_3_studies"
+    },
+    "eligible_study_count": 1,
+    "forest": {
+      "available": true,
+      "reason": null
+    },
+    "formal_egger": {
+      "available": false,
+      "reason": "egger_requires_10_studies"
+    },
+    "funnel": {
+      "available": true,
+      "reason": "egger_requires_10_studies"
+    }
+  },
+  "baujat_plot_url": "Plot/subcategories/breast/invasive_ductal_carcinoma/black_cohosh_baujat.png",
+  "exposure": "Black cohosh",
+  "funnel_plot_url": "Plot/subcategories/breast/invasive_ductal_carcinoma/black_cohosh_funnel.png",
+  "headline": {
+    "ci_low": 0.5979274549469277,
+    "ci_upp": 0.8669948096730452,
+    "eggers_intercept": null,
+    "eggers_p": null,
+    "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+    "i2": 0.0,
+    "interpretation": "The pooled subtype-specific estimate is 0.72, indicating a lower relative association for this exposure.",
+    "loo_results": [],
+    "n_studies": 1,
+    "pooled_es": 0.72,
+    "q": 0.0,
+    "results_interpretation": "This saved analysis contains 1 separately reported Invasive ductal carcinoma estimate.",
+    "tau2": 0.0
+  },
+  "input_fingerprint": "1d7de5be97beff4b9f23bc9edb70d7406d1a0999d1134a24b5e0ff9e22f9f7b1",
+  "plot_url": "Plot/subcategories/breast/invasive_ductal_carcinoma/black_cohosh_forest.png",
+  "plot_urls": {
+    "baujat": "Plot/subcategories/breast/invasive_ductal_carcinoma/black_cohosh_baujat.png",
+    "forest": "Plot/subcategories/breast/invasive_ductal_carcinoma/black_cohosh_forest.png",
+    "funnel": "Plot/subcategories/breast/invasive_ductal_carcinoma/black_cohosh_funnel.png"
+  },
+  "schema_version": "1.0",
+  "scope": {
+    "estimated_lifetime_probability_us_women_percent": 9.1,
+    "major_site_id": "breast",
+    "subcategory_id": "breast_invasive_ductal_carcinoma",
+    "subcategory_label": "Invasive ductal carcinoma",
+    "subcategory_slug": "invasive_ductal_carcinoma"
+  },
+  "skipped_annotation_count_for_build": 0,
+  "studies": [
+    {
+      "Authors": "Obi N, Chang-Claude J, Berger J, Braendle W, Slanger T, Schmidt M, Steindorf K, Ahrens W, Flesch-Janys D",
+      "Cases": null,
+      "Effect Size": 0.72,
+      "Effect Type": "OR",
+      "Journal": "Cancer epidemiology, biomarkers & prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology",
+      "Link": "https://pubmed.ncbi.nlm.nih.gov/19661079/",
+      "Lower CI": 0.6,
+      "PMID": "19661079",
+      "Participants": null,
+      "Reference": "The use of herbal preparations to alleviate climacteric disorders and risk of postmenopausal breast cancer in a German case-control study.",
+      "Sample Size": null,
+      "Study": "Obi N et al. (2009) [PMID: 19661079]",
+      "Upper CI": 0.87,
+      "Year": "2009",
+      "authors": "Obi N, Chang-Claude J, Berger J, Braendle W, Slanger T, Schmidt M, Steindorf K, Ahrens W, Flesch-Janys D",
+      "cases": null,
+      "comparison_type": "Any herbal preparation use vs no use",
+      "context_id": "19661079|breast|black_cohosh|0",
+      "effect_size": 0.72,
+      "effect_type": "OR",
+      "evidence_locator": "\"Risks for invasive ductal (OR, 0.72; 95% CI, 0.60-0.87)\"",
+      "evidence_source": "terra",
+      "exposure_measurement_supporting_text": "Information on HEP use was collected in face-to-face interviews supported by a list of brand names.",
+      "exposure_measurement_type": "dietary_intake",
+      "extraction_supporting_text": {
+        "confidence_interval": "\"Risks for invasive ductal (OR, 0.72; 95% CI, 0.60-0.87)\"",
+        "effect_size": "\"Risks for invasive ductal (OR, 0.72; 95% CI, 0.60-0.87)\"",
+        "outcome_definition": ""
+      },
+      "journal": "Cancer epidemiology, biomarkers & prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology",
+      "lower_ci": 0.6,
+      "outcome_definition": null,
+      "pmid": "19661079",
+      "reference": "The use of herbal preparations to alleviate climacteric disorders and risk of postmenopausal breast cancer in a German case-control study.",
+      "sample_size": null,
+      "se": null,
+      "study": "Obi N et al. (2009) [PMID: 19661079]",
+      "upper_ci": 0.87,
+      "year": "2009"
+    }
+  ]
+}

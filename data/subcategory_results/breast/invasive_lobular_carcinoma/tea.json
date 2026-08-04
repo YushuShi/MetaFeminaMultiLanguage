@@ -1,0 +1,98 @@
+{
+  "availability": {
+    "baujat": {
+      "available": false,
+      "reason": "baujat_requires_3_studies"
+    },
+    "eligible_study_count": 1,
+    "forest": {
+      "available": true,
+      "reason": null
+    },
+    "formal_egger": {
+      "available": false,
+      "reason": "egger_requires_10_studies"
+    },
+    "funnel": {
+      "available": true,
+      "reason": "egger_requires_10_studies"
+    }
+  },
+  "baujat_plot_url": "Plot/subcategories/breast/invasive_lobular_carcinoma/tea_baujat.png",
+  "exposure": "Tea",
+  "funnel_plot_url": "Plot/subcategories/breast/invasive_lobular_carcinoma/tea_funnel.png",
+  "headline": {
+    "ci_low": 0.10088394368509764,
+    "ci_upp": 1.0794581974305442,
+    "eggers_intercept": null,
+    "eggers_p": null,
+    "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+    "i2": 0.0,
+    "interpretation": "The pooled subtype-specific estimate is 0.33, indicating a lower relative association for this exposure.",
+    "loo_results": [],
+    "n_studies": 1,
+    "pooled_es": 0.33,
+    "q": 0.0,
+    "results_interpretation": "This saved analysis contains 1 separately reported Invasive lobular carcinoma estimate.",
+    "tau2": 0.0
+  },
+  "input_fingerprint": "eae345e0a503eba6f77f55ae992ae2a656fd53df7f2d8441ac6db876bbd9dcda",
+  "plot_url": "Plot/subcategories/breast/invasive_lobular_carcinoma/tea_forest.png",
+  "plot_urls": {
+    "baujat": "Plot/subcategories/breast/invasive_lobular_carcinoma/tea_baujat.png",
+    "forest": "Plot/subcategories/breast/invasive_lobular_carcinoma/tea_forest.png",
+    "funnel": "Plot/subcategories/breast/invasive_lobular_carcinoma/tea_funnel.png"
+  },
+  "schema_version": "1.0",
+  "scope": {
+    "estimated_lifetime_probability_us_women_percent": 1.3,
+    "major_site_id": "breast",
+    "subcategory_id": "breast_invasive_lobular_carcinoma",
+    "subcategory_label": "Invasive lobular carcinoma",
+    "subcategory_slug": "invasive_lobular_carcinoma"
+  },
+  "skipped_annotation_count_for_build": 0,
+  "studies": [
+    {
+      "Authors": "Kumar N, Titus-Ernstoff L, Newcomb PA, Trentham-Dietz A, Anic G, Egan KM",
+      "Cases": null,
+      "Effect Size": 0.33,
+      "Effect Type": "OR",
+      "Journal": "Cancer epidemiology, biomarkers & prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology",
+      "Link": "https://pubmed.ncbi.nlm.nih.gov/19124518/",
+      "Lower CI": 0.1,
+      "PMID": "19124518",
+      "Participants": null,
+      "Reference": "Tea consumption and risk of breast cancer.",
+      "Sample Size": null,
+      "Study": "Kumar N et al. (2009) [PMID: 19124518]",
+      "Upper CI": 1.07,
+      "Year": "2009",
+      "authors": "Kumar N, Titus-Ernstoff L, Newcomb PA, Trentham-Dietz A, Anic G, Egan KM",
+      "cases": null,
+      "comparison_type": "3 or more cups/day vs none (women up to 50 years)",
+      "context_id": "19124518|breast|tea|0",
+      "effect_size": 0.33,
+      "effect_type": "OR",
+      "evidence_locator": "Age- and study site-adjusted OR 0.33 (95% CI 0.10–1.07) for invasive lobular breast cancer.",
+      "evidence_source": "luna",
+      "exposure_measurement_supporting_text": "usual tea consumption 5 years prior to the interview",
+      "exposure_measurement_type": "dietary_intake",
+      "extraction_supporting_text": {
+        "confidence_interval": "Age- and study site-adjusted OR 0.33 (95% CI 0.10–1.07) for invasive lobular breast cancer.",
+        "effect_size": "Age- and study site-adjusted OR 0.33 (95% CI 0.10–1.07) for invasive lobular breast cancer.",
+        "outcome_definition": ""
+      },
+      "journal": "Cancer epidemiology, biomarkers & prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology",
+      "lower_ci": 0.1,
+      "outcome_definition": null,
+      "pmid": "19124518",
+      "reference": "Tea consumption and risk of breast cancer.",
+      "sample_size": null,
+      "se": null,
+      "study": "Kumar N et al. (2009) [PMID: 19124518]",
+      "upper_ci": 1.07,
+      "year": "2009"
+    }
+  ]
+}

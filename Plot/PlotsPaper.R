@@ -518,7 +518,11 @@ save_forest_figure <- function(dat_clean, direction, cancer_label,
 # Shared helper: build the filtered + labelled data frame
 build_scatter_df <- function(dat_clean, min_studies = 3) {
   dat_clean %>%
-    filter(n_studies >= min_studies) %>%
+    filter(
+      n_studies >= min_studies,
+      is.finite(I2),
+      I2 > 0
+    ) %>%
     left_join(group_map, by = "Exposure") %>%
     mutate(
       Group          = replace_na(Group, "Other"),
@@ -565,7 +569,7 @@ make_es_heterogeneity_plot <- function(dat_clean, min_studies = 3,
 }
 
 # ---- Plot 2: log(Egger's p-value) vs I² ----
-make_eggers_heterogeneity_plot <- function(dat_clean, min_studies = 10,
+make_eggers_heterogeneity_plot <- function(dat_clean, min_studies = 3,
                                            filename = "plot_eggers_vs_heterogeneity.pdf",
                                            cancer_label = NULL) {
   output_path <- file.path(output_dir, filename)
@@ -577,11 +581,6 @@ make_eggers_heterogeneity_plot <- function(dat_clean, min_studies = 10,
   groups_present <- group_order[group_order %in% as.character(unique(plot_df$Group))]
   egger_group_colors <- group_colors[names(group_colors) %in% groups_present]
 
-  # No exposure in these categories has at least 10 studies in the current data,
-  # so their Egger-plot legend entries are intentionally omitted:
-  # "Herbal & Botanical"        = "#00695C"
-  # "Metabolites & Amino Acids" = "#880E4F"
-  
   p <- ggplot(plot_df,
               aes(x = log_eggers_p, y = I2, color = as.character(Group))) +
     geom_point(aes(size = n_studies), alpha = 0.85) +
@@ -707,7 +706,7 @@ if (!forests_only) {
     eggers_filename <- paste0("plot_eggers_vs_heterogeneity_", output_suffix, ".pdf")
     make_eggers_heterogeneity_plot(
       dat_clean   = plot_data,
-      min_studies = 10,
+      min_studies = 3,
       filename    = eggers_filename,
       cancer_label = cancer_label
     )

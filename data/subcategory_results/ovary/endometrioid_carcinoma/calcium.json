@@ -1,0 +1,98 @@
+{
+  "availability": {
+    "baujat": {
+      "available": false,
+      "reason": "baujat_requires_3_studies"
+    },
+    "eligible_study_count": 1,
+    "forest": {
+      "available": true,
+      "reason": null
+    },
+    "formal_egger": {
+      "available": false,
+      "reason": "egger_requires_10_studies"
+    },
+    "funnel": {
+      "available": true,
+      "reason": "egger_requires_10_studies"
+    }
+  },
+  "baujat_plot_url": "Plot/subcategories/ovary/endometrioid_carcinoma/calcium_baujat.png",
+  "exposure": "Calcium",
+  "funnel_plot_url": "Plot/subcategories/ovary/endometrioid_carcinoma/calcium_funnel.png",
+  "headline": {
+    "ci_low": 0.45005494170095556,
+    "ci_upp": 0.9101111043285992,
+    "eggers_intercept": null,
+    "eggers_p": null,
+    "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+    "i2": 0.0,
+    "interpretation": "The pooled subtype-specific estimate is 0.64, indicating a lower relative association for this exposure.",
+    "loo_results": [],
+    "n_studies": 1,
+    "pooled_es": 0.64,
+    "q": 0.0,
+    "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
+    "tau2": 0.0
+  },
+  "input_fingerprint": "0f8d52e2b90422cdc0b9b6bb08f3ca3df10969163a1d1566281d9341786b91b7",
+  "plot_url": "Plot/subcategories/ovary/endometrioid_carcinoma/calcium_forest.png",
+  "plot_urls": {
+    "baujat": "Plot/subcategories/ovary/endometrioid_carcinoma/calcium_baujat.png",
+    "forest": "Plot/subcategories/ovary/endometrioid_carcinoma/calcium_forest.png",
+    "funnel": "Plot/subcategories/ovary/endometrioid_carcinoma/calcium_funnel.png"
+  },
+  "schema_version": "1.0",
+  "scope": {
+    "estimated_lifetime_probability_us_women_percent": 0.11,
+    "major_site_id": "ovary",
+    "subcategory_id": "ovary_endometrioid_carcinoma",
+    "subcategory_label": "Endometrioid carcinoma",
+    "subcategory_slug": "endometrioid_carcinoma"
+  },
+  "skipped_annotation_count_for_build": 0,
+  "studies": [
+    {
+      "Authors": "Merritt MA, Cramer DW, Vitonis AF, Titus LJ, Terry KL",
+      "Cases": 305.0,
+      "Effect Size": 0.64,
+      "Effect Type": "OR",
+      "Journal": "International journal of cancer",
+      "Link": "https://pubmed.ncbi.nlm.nih.gov/22740148/",
+      "Lower CI": 0.45,
+      "PMID": "22740148",
+      "Participants": 2294.0,
+      "Reference": "Dairy foods and nutrients in relation to risk of ovarian cancer and major histological subtypes.",
+      "Sample Size": 2294.0,
+      "Study": "Merritt MA et al. (2013) [PMID: 22740148]",
+      "Upper CI": 0.91,
+      "Year": "2013",
+      "authors": "Merritt MA, Cramer DW, Vitonis AF, Titus LJ, Terry KL",
+      "cases": 305.0,
+      "comparison_type": "Q4 vs Q1",
+      "context_id": "22740148|ovary|calcium|0",
+      "effect_size": 0.64,
+      "effect_type": "OR",
+      "evidence_locator": "For endometrioid tumors, total calcium Q4 vs Q1 OR=0.64, 95% CI 0.45–0.91.",
+      "evidence_source": "luna",
+      "exposure_measurement_supporting_text": "In models that were simultaneously adjusted for total (dietary plus supplements) calcium, total vitamin D and lactose, we observed a decreased overall risk of ovarian cancer with high intake of total calcium.",
+      "exposure_measurement_type": "dietary_intake",
+      "extraction_supporting_text": {
+        "confidence_interval": "For endometrioid tumors, total calcium Q4 vs Q1 OR=0.64, 95% CI 0.45–0.91.",
+        "effect_size": "For endometrioid tumors, total calcium Q4 vs Q1 OR=0.64, 95% CI 0.45–0.91.",
+        "outcome_definition": ""
+      },
+      "journal": "International journal of cancer",
+      "lower_ci": 0.45,
+      "outcome_definition": null,
+      "pmid": "22740148",
+      "reference": "Dairy foods and nutrients in relation to risk of ovarian cancer and major histological subtypes.",
+      "sample_size": 2294.0,
+      "se": null,
+      "study": "Merritt MA et al. (2013) [PMID: 22740148]",
+      "upper_ci": 0.91,
+      "year": "2013"
+    }
+  ]
+}

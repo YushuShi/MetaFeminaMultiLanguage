@@ -1,0 +1,98 @@
+{
+  "availability": {
+    "baujat": {
+      "available": false,
+      "reason": "baujat_requires_3_studies"
+    },
+    "eligible_study_count": 1,
+    "forest": {
+      "available": true,
+      "reason": null
+    },
+    "formal_egger": {
+      "available": false,
+      "reason": "egger_requires_10_studies"
+    },
+    "funnel": {
+      "available": true,
+      "reason": "egger_requires_10_studies"
+    }
+  },
+  "baujat_plot_url": "Plot/subcategories/uterus/endometrioid_carcinoma/green_tea_baujat.png",
+  "exposure": "Green tea",
+  "funnel_plot_url": "Plot/subcategories/uterus/endometrioid_carcinoma/green_tea_funnel.png",
+  "headline": {
+    "ci_low": 0.14758048651498612,
+    "ci_upp": 0.7379024325749306,
+    "eggers_intercept": null,
+    "eggers_p": null,
+    "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+    "i2": 0.0,
+    "interpretation": "The pooled subtype-specific estimate is 0.33, indicating a lower relative association for this exposure.",
+    "loo_results": [],
+    "n_studies": 1,
+    "pooled_es": 0.33,
+    "q": 0.0,
+    "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
+    "tau2": 0.0
+  },
+  "input_fingerprint": "28a21babb76d0c75477a13d2aed8e6641feddff1fa68f4093f480b23d036aa0a",
+  "plot_url": "Plot/subcategories/uterus/endometrioid_carcinoma/green_tea_forest.png",
+  "plot_urls": {
+    "baujat": "Plot/subcategories/uterus/endometrioid_carcinoma/green_tea_baujat.png",
+    "forest": "Plot/subcategories/uterus/endometrioid_carcinoma/green_tea_forest.png",
+    "funnel": "Plot/subcategories/uterus/endometrioid_carcinoma/green_tea_funnel.png"
+  },
+  "schema_version": "1.0",
+  "scope": {
+    "estimated_lifetime_probability_us_women_percent": 2.3,
+    "major_site_id": "uterus",
+    "subcategory_id": "uterus_endometrioid_carcinoma",
+    "subcategory_label": "Endometrioid carcinoma",
+    "subcategory_slug": "endometrioid_carcinoma"
+  },
+  "skipped_annotation_count_for_build": 0,
+  "studies": [
+    {
+      "Authors": "Kakuta Y, Nakaya N, Nagase S, Fujita M, Koizumi T, Okamura C, Niikura H, Ohmori K, Kuriyama S, Tase T, Ito K, Minami Y, Yaegashi N, Tsuji I",
+      "Cases": 152.0,
+      "Effect Size": 0.33,
+      "Effect Type": "OR",
+      "Journal": "Cancer causes & control : CCC",
+      "Link": "https://pubmed.ncbi.nlm.nih.gov/19067194/",
+      "Lower CI": 0.15,
+      "PMID": "19067194",
+      "Participants": 437.0,
+      "Reference": "Case-control study of green tea consumption and the risk of endometrial endometrioid adenocarcinoma.",
+      "Sample Size": 437.0,
+      "Study": "Kakuta Y et al. (2009) [PMID: 19067194]",
+      "Upper CI": 0.75,
+      "Year": "2009",
+      "authors": "Kakuta Y, Nakaya N, Nagase S, Fujita M, Koizumi T, Okamura C, Niikura H, Ohmori K, Kuriyama S, Tase T, Ito K, Minami Y, Yaegashi N, Tsuji I",
+      "cases": 152.0,
+      "comparison_type": "Highest vs Lowest",
+      "context_id": "19067194|uterus|green_tea|0",
+      "effect_size": 0.33,
+      "effect_type": "OR",
+      "evidence_locator": "The multivariate-adjusted OR of EEA was 0.33 (0.15-0.75) in the highest quartile (>=4 cups/day), referenced with the lowest quartile (<=4 cups/week).",
+      "evidence_source": "terra",
+      "exposure_measurement_supporting_text": "The subjects completed a questionnaire regarding health-related lifestyle and reproductive history, and a food frequency questionnaire.",
+      "exposure_measurement_type": "dietary_intake",
+      "extraction_supporting_text": {
+        "confidence_interval": "The multivariate-adjusted OR of EEA was 0.33 (0.15-0.75) in the highest quartile (>=4 cups/day), referenced with the lowest quartile (<=4 cups/week).",
+        "effect_size": "The multivariate-adjusted OR of EEA was 0.33 (0.15-0.75) in the highest quartile (>=4 cups/day), referenced with the lowest quartile (<=4 cups/week).",
+        "outcome_definition": ""
+      },
+      "journal": "Cancer causes & control : CCC",
+      "lower_ci": 0.15,
+      "outcome_definition": null,
+      "pmid": "19067194",
+      "reference": "Case-control study of green tea consumption and the risk of endometrial endometrioid adenocarcinoma.",
+      "sample_size": 437.0,
+      "se": null,
+      "study": "Kakuta Y et al. (2009) [PMID: 19067194]",
+      "upper_ci": 0.75,
+      "year": "2009"
+    }
+  ]
+}

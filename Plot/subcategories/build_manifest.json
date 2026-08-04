@@ -1,0 +1,2150 @@
+{
+  "annotations_path": "/Users/yushushi/Library/CloudStorage/OneDrive-WeillCornellMedicine/MetaFeminaYSClose2Submission/MetaFemina/data/subcategory_annotations.json",
+  "classification_audit": {
+    "active_saved_article_count": 948,
+    "by_stage": {
+      "luna": {
+        "complete_article_count": 17,
+        "gateway_reported_cost_usd": 0.31152599999999997,
+        "input_tokens": 250116,
+        "output_tokens": 10235,
+        "reasoning_tokens": 5975
+      },
+      "terra": {
+        "complete_article_count": 947,
+        "gateway_reported_cost_usd": 3.9648250000000016,
+        "input_cost_usd": 2.192936,
+        "input_price_usd_per_million_tokens": 2.0,
+        "input_tokens": 1096468,
+        "output_tokens": 81577,
+        "reasoning_tokens": 28928
+      }
+    },
+    "classified_article_count": 948
+  },
+  "eligible_estimate_count": 58,
+  "notes": [
+    "No major-cancer cache was read or modified.",
+    "No network or LLM operation was performed."
+  ],
+  "result_count": 38,
+  "schema_version": "1.0",
+  "skipped_annotations": [],
+  "summaries": {
+    "breast/ductal_carcinoma_in_situ": {
+      "eligible_exposure_count": 3,
+      "exposure_count": 3,
+      "exposures": [
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Alcohol",
+          "headline": {
+            "ci_low": 0.5006287437541393,
+            "ci_upp": 1.5118988061375007,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 0.87, indicating a lower relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 0.87,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Ductal carcinoma in situ estimate.",
+            "tau2": 0.0
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Calcium",
+          "headline": {
+            "ci_low": 0.7002083023405725,
+            "ci_upp": 0.9602856717813566,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 0.82, indicating a lower relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 0.82,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Ductal carcinoma in situ estimate.",
+            "tau2": 0.0
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": true,
+              "reason": null
+            },
+            "eligible_study_count": 3,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Vitamin D",
+          "headline": {
+            "ci_low": 0.6877471677611354,
+            "ci_upp": 0.891367408974545,
+            "eggers_intercept": -0.3020866569514974,
+            "eggers_p": 0.9063591543931842,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 0.78, indicating a lower relative association for this exposure.",
+            "loo_results": [
+              {
+                "ci_low": 0.5669789612216276,
+                "ci_upp": 0.8930387065553684,
+                "is_significant": true,
+                "omitted": "Peila R et al. (2021) [PMID: 34476342]",
+                "pooled_es": 0.7115716114162148
+              },
+              {
+                "ci_low": 0.7105186270287335,
+                "ci_upp": 0.9593279962932533,
+                "is_significant": true,
+                "omitted": "O'Brien KM et al. (2022) [PMID: 34847083]",
+                "pooled_es": 0.8256030588584978
+              },
+              {
+                "ci_low": 0.6288439678688963,
+                "ci_upp": 0.9213927308494286,
+                "is_significant": true,
+                "omitted": "O'Brien KM et al. (2022) [PMID: 35466399]",
+                "pooled_es": 0.7611913431147996
+              }
+            ],
+            "n_studies": 3,
+            "pooled_es": 0.7829657789180988,
+            "q": 1.9617532026716953,
+            "results_interpretation": "This saved analysis contains 3 separately reported Ductal carcinoma in situ estimates.",
+            "tau2": 0.0
+          }
+        }
+      ],
+      "formal_egger_exposure_count": 0,
+      "notes": [
+        "Lifetime-risk percent is taxonomy metadata only and is not pooled or aggregated.",
+        "Protective/harmful grouping is by the pooled point estimate relative to 1.0.",
+        "Summary forest plots follow the broad-cancer format and require at least 2 studies per exposure.",
+        "Cross-exposure heterogeneity plots require at least 3 studies and I² greater than 0% per exposure.",
+        "Formal per-exposure Egger interpretation requires at least 10 studies."
+      ],
+      "plots": {
+        "effect-heterogeneity": {
+          "available": false,
+          "filename": "effect_size_vs_i2.pdf",
+          "path": "Plot/subcategories/breast/ductal_carcinoma_in_situ/effect_size_vs_i2.pdf",
+          "reason": "requires_2_eligible_exposures"
+        },
+        "egger-heterogeneity": {
+          "available": false,
+          "filename": "egger_vs_i2.pdf",
+          "path": "Plot/subcategories/breast/ductal_carcinoma_in_situ/egger_vs_i2.pdf",
+          "reason": "requires_2_eligible_exposures"
+        },
+        "forest-harmful": {
+          "available": false,
+          "filename": "forest_harmful.pdf",
+          "path": "Plot/subcategories/breast/ductal_carcinoma_in_situ/forest_harmful.pdf",
+          "reason": "no_harmful_eligible_exposures"
+        },
+        "forest-protective": {
+          "available": true,
+          "filename": "forest_protective.pdf",
+          "path": "Plot/subcategories/breast/ductal_carcinoma_in_situ/forest_protective.pdf",
+          "reason": null
+        }
+      },
+      "schema_version": "1.0",
+      "scope": {
+        "estimated_lifetime_probability_us_women_percent": 2.4,
+        "label": "Ductal carcinoma in situ",
+        "major_site_id": "breast",
+        "subcategory_id": "breast_ductal_carcinoma_in_situ",
+        "subcategory_slug": "ductal_carcinoma_in_situ"
+      }
+    },
+    "breast/inflammatory_breast_cancer": {
+      "eligible_exposure_count": 1,
+      "exposure_count": 1,
+      "exposures": [
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Alcohol",
+          "headline": {
+            "ci_low": 1.2002836544183337,
+            "ci_upp": 2.820666587883084,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 1.84, indicating a higher relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 1.84,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Inflammatory breast cancer estimate.",
+            "tau2": 0.0
+          }
+        }
+      ],
+      "formal_egger_exposure_count": 0,
+      "notes": [
+        "Lifetime-risk percent is taxonomy metadata only and is not pooled or aggregated.",
+        "Protective/harmful grouping is by the pooled point estimate relative to 1.0.",
+        "Summary forest plots follow the broad-cancer format and require at least 2 studies per exposure.",
+        "Cross-exposure heterogeneity plots require at least 3 studies and I² greater than 0% per exposure.",
+        "Formal per-exposure Egger interpretation requires at least 10 studies."
+      ],
+      "plots": {
+        "effect-heterogeneity": {
+          "available": false,
+          "filename": "effect_size_vs_i2.pdf",
+          "path": "Plot/subcategories/breast/inflammatory_breast_cancer/effect_size_vs_i2.pdf",
+          "reason": "requires_2_eligible_exposures"
+        },
+        "egger-heterogeneity": {
+          "available": false,
+          "filename": "egger_vs_i2.pdf",
+          "path": "Plot/subcategories/breast/inflammatory_breast_cancer/egger_vs_i2.pdf",
+          "reason": "requires_2_eligible_exposures"
+        },
+        "forest-harmful": {
+          "available": false,
+          "filename": "forest_harmful.pdf",
+          "path": "Plot/subcategories/breast/inflammatory_breast_cancer/forest_harmful.pdf",
+          "reason": "no_harmful_eligible_exposures"
+        },
+        "forest-protective": {
+          "available": false,
+          "filename": "forest_protective.pdf",
+          "path": "Plot/subcategories/breast/inflammatory_breast_cancer/forest_protective.pdf",
+          "reason": "no_protective_eligible_exposures"
+        }
+      },
+      "schema_version": "1.0",
+      "scope": {
+        "estimated_lifetime_probability_us_women_percent": 0.13,
+        "label": "Inflammatory breast cancer",
+        "major_site_id": "breast",
+        "subcategory_id": "breast_inflammatory_breast_cancer",
+        "subcategory_slug": "inflammatory_breast_cancer"
+      }
+    },
+    "breast/invasive_ductal_carcinoma": {
+      "eligible_exposure_count": 4,
+      "exposure_count": 4,
+      "exposures": [
+        {
+          "availability": {
+            "baujat": {
+              "available": true,
+              "reason": null
+            },
+            "eligible_study_count": 4,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Alcohol",
+          "headline": {
+            "ci_low": 0.9633974824946023,
+            "ci_upp": 1.7957866859460045,
+            "eggers_intercept": 2.543796138567023,
+            "eggers_p": 0.76859963290777,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 79.1870680590318,
+            "interpretation": "The pooled subtype-specific estimate is 1.32, indicating a higher relative association for this exposure.",
+            "loo_results": [
+              {
+                "ci_low": 0.8516428599409217,
+                "ci_upp": 2.176856597207699,
+                "is_significant": false,
+                "omitted": "Li CI et al. (2003) [PMID: 14578143]",
+                "pooled_es": 1.3615815723368276
+              },
+              {
+                "ci_low": 0.97988188220311,
+                "ci_upp": 2.0834283729192573,
+                "is_significant": false,
+                "omitted": "Rosenberg LU et al. (2006) [PMID: 16507159]",
+                "pooled_es": 1.4288154938589812
+              },
+              {
+                "ci_low": 0.8955278211700549,
+                "ci_upp": 2.13539784970251,
+                "is_significant": false,
+                "omitted": "Li CI et al. (2010) [PMID: 20733117]",
+                "pooled_es": 1.3828623155163746
+              },
+              {
+                "ci_low": 0.9766012164883852,
+                "ci_upp": 1.328231329863584,
+                "is_significant": false,
+                "omitted": "Gago-Dominguez M et al. (2016) [PMID: 26835221]",
+                "pooled_es": 1.1389259556805094
+              }
+            ],
+            "n_studies": 4,
+            "pooled_es": 1.3153160731693756,
+            "q": 14.414115265013653,
+            "results_interpretation": "This saved analysis contains 4 separately reported Invasive ductal carcinoma estimates.",
+            "tau2": 0.0791074667080679
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Black cohosh",
+          "headline": {
+            "ci_low": 0.5979274549469277,
+            "ci_upp": 0.8669948096730452,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 0.72, indicating a lower relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 0.72,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Invasive ductal carcinoma estimate.",
+            "tau2": 0.0
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Fish oil",
+          "headline": {
+            "ci_low": 0.37891411113134577,
+            "ci_upp": 0.8276281901026763,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 0.56, indicating a lower relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 0.56,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Invasive ductal carcinoma estimate.",
+            "tau2": 0.0
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Tea",
+          "headline": {
+            "ci_low": 0.480454330437726,
+            "ci_upp": 0.9909370565278098,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 0.69, indicating a lower relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 0.69,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Invasive ductal carcinoma estimate.",
+            "tau2": 0.0
+          }
+        }
+      ],
+      "formal_egger_exposure_count": 0,
+      "notes": [
+        "Lifetime-risk percent is taxonomy metadata only and is not pooled or aggregated.",
+        "Protective/harmful grouping is by the pooled point estimate relative to 1.0.",
+        "Summary forest plots follow the broad-cancer format and require at least 2 studies per exposure.",
+        "Cross-exposure heterogeneity plots require at least 3 studies and I² greater than 0% per exposure.",
+        "Formal per-exposure Egger interpretation requires at least 10 studies."
+      ],
+      "plots": {
+        "effect-heterogeneity": {
+          "available": false,
+          "filename": "effect_size_vs_i2.pdf",
+          "path": "Plot/subcategories/breast/invasive_ductal_carcinoma/effect_size_vs_i2.pdf",
+          "reason": "requires_2_eligible_exposures"
+        },
+        "egger-heterogeneity": {
+          "available": false,
+          "filename": "egger_vs_i2.pdf",
+          "path": "Plot/subcategories/breast/invasive_ductal_carcinoma/egger_vs_i2.pdf",
+          "reason": "requires_2_eligible_exposures"
+        },
+        "forest-harmful": {
+          "available": true,
+          "filename": "forest_harmful.pdf",
+          "path": "Plot/subcategories/breast/invasive_ductal_carcinoma/forest_harmful.pdf",
+          "reason": null
+        },
+        "forest-protective": {
+          "available": false,
+          "filename": "forest_protective.pdf",
+          "path": "Plot/subcategories/breast/invasive_ductal_carcinoma/forest_protective.pdf",
+          "reason": "no_protective_eligible_exposures"
+        }
+      },
+      "schema_version": "1.0",
+      "scope": {
+        "estimated_lifetime_probability_us_women_percent": 9.1,
+        "label": "Invasive ductal carcinoma",
+        "major_site_id": "breast",
+        "subcategory_id": "breast_invasive_ductal_carcinoma",
+        "subcategory_slug": "invasive_ductal_carcinoma"
+      }
+    },
+    "breast/invasive_lobular_carcinoma": {
+      "eligible_exposure_count": 4,
+      "exposure_count": 4,
+      "exposures": [
+        {
+          "availability": {
+            "baujat": {
+              "available": true,
+              "reason": null
+            },
+            "eligible_study_count": 5,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Alcohol",
+          "headline": {
+            "ci_low": 1.3073986347571511,
+            "ci_upp": 2.2138744806249617,
+            "eggers_intercept": 3.223615535151568,
+            "eggers_p": 0.11291900617806704,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 56.05602426705886,
+            "interpretation": "The pooled subtype-specific estimate is 1.70, indicating a higher relative association for this exposure.",
+            "loo_results": [
+              {
+                "ci_low": 1.2007026598796495,
+                "ci_upp": 2.4095539126089283,
+                "is_significant": true,
+                "omitted": "Li CI et al. (2003) [PMID: 14578143]",
+                "pooled_es": 1.7009285087836459
+              },
+              {
+                "ci_low": 1.268261823635351,
+                "ci_upp": 2.3808395072922517,
+                "is_significant": true,
+                "omitted": "Rosenberg LU et al. (2006) [PMID: 16507159]",
+                "pooled_es": 1.7376788700164256
+              },
+              {
+                "ci_low": 1.2235491206184954,
+                "ci_upp": 2.346679368565324,
+                "is_significant": true,
+                "omitted": "Li CI et al. (2010) [PMID: 20733117]",
+                "pooled_es": 1.6944844283089968
+              },
+              {
+                "ci_low": 1.235289357767004,
+                "ci_upp": 1.8961251046184362,
+                "is_significant": true,
+                "omitted": "Gago-Dominguez M et al. (2016) [PMID: 26835221]",
+                "pooled_es": 1.5304454131820584
+              },
+              {
+                "ci_low": 1.533823960848084,
+                "ci_upp": 2.3655026651421354,
+                "is_significant": true,
+                "omitted": "Baglia ML et al. (2017) [PMID: 28567703]",
+                "pooled_es": 1.9048004271432242
+              }
+            ],
+            "n_studies": 5,
+            "pooled_es": 1.7012984669048439,
+            "q": 9.102499110023704,
+            "results_interpretation": "This saved analysis contains 5 separately reported Invasive lobular carcinoma estimates.",
+            "tau2": 0.04798793934946252
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Beta-carotene",
+          "headline": {
+            "ci_low": 0.5698351409943826,
+            "ci_upp": 0.9097368040436635,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 0.72, indicating a lower relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 0.72,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Invasive lobular carcinoma estimate.",
+            "tau2": 0.0
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Fish oil",
+          "headline": {
+            "ci_low": 0.5925455291212927,
+            "ci_upp": 1.9684563340300572,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 1.08, indicating a higher relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 1.08,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Invasive lobular carcinoma estimate.",
+            "tau2": 0.0
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Tea",
+          "headline": {
+            "ci_low": 0.10088394368509764,
+            "ci_upp": 1.0794581974305442,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 0.33, indicating a lower relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 0.33,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Invasive lobular carcinoma estimate.",
+            "tau2": 0.0
+          }
+        }
+      ],
+      "formal_egger_exposure_count": 0,
+      "notes": [
+        "Lifetime-risk percent is taxonomy metadata only and is not pooled or aggregated.",
+        "Protective/harmful grouping is by the pooled point estimate relative to 1.0.",
+        "Summary forest plots follow the broad-cancer format and require at least 2 studies per exposure.",
+        "Cross-exposure heterogeneity plots require at least 3 studies and I² greater than 0% per exposure.",
+        "Formal per-exposure Egger interpretation requires at least 10 studies."
+      ],
+      "plots": {
+        "effect-heterogeneity": {
+          "available": false,
+          "filename": "effect_size_vs_i2.pdf",
+          "path": "Plot/subcategories/breast/invasive_lobular_carcinoma/effect_size_vs_i2.pdf",
+          "reason": "requires_2_eligible_exposures"
+        },
+        "egger-heterogeneity": {
+          "available": false,
+          "filename": "egger_vs_i2.pdf",
+          "path": "Plot/subcategories/breast/invasive_lobular_carcinoma/egger_vs_i2.pdf",
+          "reason": "requires_2_eligible_exposures"
+        },
+        "forest-harmful": {
+          "available": true,
+          "filename": "forest_harmful.pdf",
+          "path": "Plot/subcategories/breast/invasive_lobular_carcinoma/forest_harmful.pdf",
+          "reason": null
+        },
+        "forest-protective": {
+          "available": false,
+          "filename": "forest_protective.pdf",
+          "path": "Plot/subcategories/breast/invasive_lobular_carcinoma/forest_protective.pdf",
+          "reason": "no_protective_eligible_exposures"
+        }
+      },
+      "schema_version": "1.0",
+      "scope": {
+        "estimated_lifetime_probability_us_women_percent": 1.3,
+        "label": "Invasive lobular carcinoma",
+        "major_site_id": "breast",
+        "subcategory_id": "breast_invasive_lobular_carcinoma",
+        "subcategory_slug": "invasive_lobular_carcinoma"
+      }
+    },
+    "breast/triple_negative_breast_cancer": {
+      "eligible_exposure_count": 5,
+      "exposure_count": 5,
+      "exposures": [
+        {
+          "availability": {
+            "baujat": {
+              "available": true,
+              "reason": null
+            },
+            "eligible_study_count": 6,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Alcohol",
+          "headline": {
+            "ci_low": 0.7993028662776337,
+            "ci_upp": 1.5285959868192904,
+            "eggers_intercept": -0.043078079619474186,
+            "eggers_p": 0.9775798369059038,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 78.80073199671503,
+            "interpretation": "The pooled subtype-specific estimate is 1.11, indicating a higher relative association for this exposure.",
+            "loo_results": [
+              {
+                "ci_low": 0.8887247059025511,
+                "ci_upp": 1.7100598452635514,
+                "is_significant": false,
+                "omitted": "Kabat GC et al. (2011) [PMID: 21360045]",
+                "pooled_es": 1.232790506557222
+              },
+              {
+                "ci_low": 0.6686882072800457,
+                "ci_upp": 1.8845841125462408,
+                "is_significant": false,
+                "omitted": "Romieu I et al. (2015) [PMID: 25677034]",
+                "pooled_es": 1.1225859306471828
+              },
+              {
+                "ci_low": 0.7202363411643543,
+                "ci_upp": 1.4132302924934512,
+                "is_significant": false,
+                "omitted": "Williams LA et al. (2016) [PMID: 26705260]",
+                "pooled_es": 1.008890388044268
+              },
+              {
+                "ci_low": 0.7177328335826437,
+                "ci_upp": 1.433582720395338,
+                "is_significant": false,
+                "omitted": "Gago-Dominguez M et al. (2016) [PMID: 26835221]",
+                "pooled_es": 1.0143615667425796
+              },
+              {
+                "ci_low": 0.7029250221307904,
+                "ci_upp": 1.5931837563301017,
+                "is_significant": false,
+                "omitted": "Williams LA et al. (2017) [PMID: 28420652]",
+                "pooled_es": 1.0582479516525192
+              },
+              {
+                "ci_low": 0.8952889441838572,
+                "ci_upp": 1.7284439892556358,
+                "is_significant": false,
+                "omitted": "Hirko KA et al. (2024) [PMID: 37787924]",
+                "pooled_es": 1.2439681644727136
+              }
+            ],
+            "n_studies": 6,
+            "pooled_es": 1.1053556683914671,
+            "q": 23.585720031584188,
+            "results_interpretation": "This saved analysis contains 6 separately reported Triple-negative breast cancer estimates.",
+            "tau2": 0.11486393204315415
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Legumes",
+          "headline": {
+            "ci_low": 0.2768773241556249,
+            "ci_upp": 0.9394052069565841,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 0.51, indicating a lower relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 0.51,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Triple-negative breast cancer estimate.",
+            "tau2": 0.0
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Mediterranean diet",
+          "headline": {
+            "ci_low": 0.15255401427929477,
+            "ci_upp": 0.6712376628288971,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 0.32, indicating a lower relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 0.32,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Triple-negative breast cancer estimate.",
+            "tau2": 0.0
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Molybdenum",
+          "headline": {
+            "ci_low": 0.05077963596336064,
+            "ci_upp": 0.7109149034870488,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 0.19, indicating a lower relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 0.19,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Triple-negative breast cancer estimate.",
+            "tau2": 0.0
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": true,
+              "reason": null
+            },
+            "eligible_study_count": 4,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Vitamin D",
+          "headline": {
+            "ci_low": 0.40224255609350307,
+            "ci_upp": 2.4395906133154215,
+            "eggers_intercept": -1.6183845519918212,
+            "eggers_p": 0.7547171336579688,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 92.73379258069934,
+            "interpretation": "The pooled subtype-specific estimate is 0.99, indicating a lower relative association for this exposure.",
+            "loo_results": [
+              {
+                "ci_low": 0.5492338576668793,
+                "ci_upp": 3.5504177300697206,
+                "is_significant": false,
+                "omitted": "Yao S et al. (2011) [PMID: 21386992]",
+                "pooled_es": 1.3964274511105392
+              },
+              {
+                "ci_low": 0.28498061328921936,
+                "ci_upp": 2.614711405277407,
+                "is_significant": false,
+                "omitted": "Park S et al. (2015) [PMID: 26037255]",
+                "pooled_es": 0.8632161142206927
+              },
+              {
+                "ci_low": 0.25550161617146916,
+                "ci_upp": 1.724250741289681,
+                "is_significant": false,
+                "omitted": "Wu Y et al. (2017) [PMID: 29064397]",
+                "pooled_es": 0.6637385412075807
+              },
+              {
+                "ci_low": 0.38532465172602437,
+                "ci_upp": 4.1639652433214085,
+                "is_significant": false,
+                "omitted": "Qin B et al. (2020) [PMID: 31826233]",
+                "pooled_es": 1.2666800926761628
+              }
+            ],
+            "n_studies": 4,
+            "pooled_es": 0.9906094912334082,
+            "q": 41.2870129750402,
+            "results_interpretation": "This saved analysis contains 4 separately reported Triple-negative breast cancer estimates.",
+            "tau2": 0.7369695207883898
+          }
+        }
+      ],
+      "formal_egger_exposure_count": 0,
+      "notes": [
+        "Lifetime-risk percent is taxonomy metadata only and is not pooled or aggregated.",
+        "Protective/harmful grouping is by the pooled point estimate relative to 1.0.",
+        "Summary forest plots follow the broad-cancer format and require at least 2 studies per exposure.",
+        "Cross-exposure heterogeneity plots require at least 3 studies and I² greater than 0% per exposure.",
+        "Formal per-exposure Egger interpretation requires at least 10 studies."
+      ],
+      "plots": {
+        "effect-heterogeneity": {
+          "available": true,
+          "filename": "effect_size_vs_i2.pdf",
+          "path": "Plot/subcategories/breast/triple_negative_breast_cancer/effect_size_vs_i2.pdf",
+          "reason": null
+        },
+        "egger-heterogeneity": {
+          "available": true,
+          "filename": "egger_vs_i2.pdf",
+          "path": "Plot/subcategories/breast/triple_negative_breast_cancer/egger_vs_i2.pdf",
+          "reason": null
+        },
+        "forest-harmful": {
+          "available": true,
+          "filename": "forest_harmful.pdf",
+          "path": "Plot/subcategories/breast/triple_negative_breast_cancer/forest_harmful.pdf",
+          "reason": null
+        },
+        "forest-protective": {
+          "available": true,
+          "filename": "forest_protective.pdf",
+          "path": "Plot/subcategories/breast/triple_negative_breast_cancer/forest_protective.pdf",
+          "reason": null
+        }
+      },
+      "schema_version": "1.0",
+      "scope": {
+        "estimated_lifetime_probability_us_women_percent": 1.3,
+        "label": "Triple-negative breast cancer",
+        "major_site_id": "breast",
+        "subcategory_id": "breast_triple_negative_breast_cancer",
+        "subcategory_slug": "triple_negative_breast_cancer"
+      }
+    },
+    "ovary/clear_cell_carcinoma": {
+      "eligible_exposure_count": 4,
+      "exposure_count": 4,
+      "exposures": [
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Alcohol",
+          "headline": {
+            "ci_low": 0.22138120641602996,
+            "ci_upp": 0.8352109151150221,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 0.43, indicating a lower relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 0.43,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Clear cell carcinoma estimate.",
+            "tau2": 0.0
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Calcium",
+          "headline": {
+            "ci_low": 0.46337000842294734,
+            "ci_upp": 1.0274726273726225,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 0.69, indicating a lower relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 0.69,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Clear cell carcinoma estimate.",
+            "tau2": 0.0
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Potassium",
+          "headline": {
+            "ci_low": 1.3901608817786961,
+            "ci_upp": 16.161870395355205,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 4.74, indicating a higher relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 4.74,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Clear cell carcinoma estimate.",
+            "tau2": 0.0
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Vitamin D",
+          "headline": {
+            "ci_low": 0.6379747367301329,
+            "ci_upp": 1.3556963155515325,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 0.93, indicating a lower relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 0.93,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Clear cell carcinoma estimate.",
+            "tau2": 0.0
+          }
+        }
+      ],
+      "formal_egger_exposure_count": 0,
+      "notes": [
+        "Lifetime-risk percent is taxonomy metadata only and is not pooled or aggregated.",
+        "Protective/harmful grouping is by the pooled point estimate relative to 1.0.",
+        "Summary forest plots follow the broad-cancer format and require at least 2 studies per exposure.",
+        "Cross-exposure heterogeneity plots require at least 3 studies and I² greater than 0% per exposure.",
+        "Formal per-exposure Egger interpretation requires at least 10 studies."
+      ],
+      "plots": {
+        "effect-heterogeneity": {
+          "available": false,
+          "filename": "effect_size_vs_i2.pdf",
+          "path": "Plot/subcategories/ovary/clear_cell_carcinoma/effect_size_vs_i2.pdf",
+          "reason": "requires_2_eligible_exposures"
+        },
+        "egger-heterogeneity": {
+          "available": false,
+          "filename": "egger_vs_i2.pdf",
+          "path": "Plot/subcategories/ovary/clear_cell_carcinoma/egger_vs_i2.pdf",
+          "reason": "requires_2_eligible_exposures"
+        },
+        "forest-harmful": {
+          "available": false,
+          "filename": "forest_harmful.pdf",
+          "path": "Plot/subcategories/ovary/clear_cell_carcinoma/forest_harmful.pdf",
+          "reason": "no_harmful_eligible_exposures"
+        },
+        "forest-protective": {
+          "available": false,
+          "filename": "forest_protective.pdf",
+          "path": "Plot/subcategories/ovary/clear_cell_carcinoma/forest_protective.pdf",
+          "reason": "no_protective_eligible_exposures"
+        }
+      },
+      "schema_version": "1.0",
+      "scope": {
+        "estimated_lifetime_probability_us_women_percent": 0.11,
+        "label": "Clear cell carcinoma",
+        "major_site_id": "ovary",
+        "subcategory_id": "ovary_clear_cell_carcinoma",
+        "subcategory_slug": "clear_cell_carcinoma"
+      }
+    },
+    "ovary/endometrioid_carcinoma": {
+      "eligible_exposure_count": 8,
+      "exposure_count": 8,
+      "exposures": [
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Alcohol",
+          "headline": {
+            "ci_low": 0.8724964183307574,
+            "ci_upp": 1.2636155024100624,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 1.05, indicating a higher relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 1.05,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
+            "tau2": 0.0
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Caffeine",
+          "headline": {
+            "ci_low": 1.5000082781228528,
+            "ci_upp": 6.040033333241354,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 3.01, indicating a higher relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 3.01,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
+            "tau2": 0.0
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Calcium",
+          "headline": {
+            "ci_low": 0.45005494170095556,
+            "ci_upp": 0.9101111043285992,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 0.64, indicating a lower relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 0.64,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
+            "tau2": 0.0
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Dairy",
+          "headline": {
+            "ci_low": 0.1587644602741868,
+            "ci_upp": 0.644980619863884,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 0.32, indicating a lower relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 0.32,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
+            "tau2": 0.0
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Fish oil",
+          "headline": {
+            "ci_low": 0.6951888232703399,
+            "ci_upp": 0.9672192323761252,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 0.82, indicating a lower relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 0.82,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
+            "tau2": 0.0
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Potassium",
+          "headline": {
+            "ci_low": 0.11055980005298083,
+            "ci_upp": 0.9849873095629201,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 0.33, indicating a lower relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 0.33,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
+            "tau2": 0.0
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Tea",
+          "headline": {
+            "ci_low": 1.3216439697720603,
+            "ci_upp": 7.699577369353897,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 3.19, indicating a higher relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 3.19,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
+            "tau2": 0.0
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Vitamin D",
+          "headline": {
+            "ci_low": 0.3840166012036459,
+            "ci_upp": 0.7877263614433763,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 0.55, indicating a lower relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 0.55,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
+            "tau2": 0.0
+          }
+        }
+      ],
+      "formal_egger_exposure_count": 0,
+      "notes": [
+        "Lifetime-risk percent is taxonomy metadata only and is not pooled or aggregated.",
+        "Protective/harmful grouping is by the pooled point estimate relative to 1.0.",
+        "Summary forest plots follow the broad-cancer format and require at least 2 studies per exposure.",
+        "Cross-exposure heterogeneity plots require at least 3 studies and I² greater than 0% per exposure.",
+        "Formal per-exposure Egger interpretation requires at least 10 studies."
+      ],
+      "plots": {
+        "effect-heterogeneity": {
+          "available": false,
+          "filename": "effect_size_vs_i2.pdf",
+          "path": "Plot/subcategories/ovary/endometrioid_carcinoma/effect_size_vs_i2.pdf",
+          "reason": "requires_2_eligible_exposures"
+        },
+        "egger-heterogeneity": {
+          "available": false,
+          "filename": "egger_vs_i2.pdf",
+          "path": "Plot/subcategories/ovary/endometrioid_carcinoma/egger_vs_i2.pdf",
+          "reason": "requires_2_eligible_exposures"
+        },
+        "forest-harmful": {
+          "available": false,
+          "filename": "forest_harmful.pdf",
+          "path": "Plot/subcategories/ovary/endometrioid_carcinoma/forest_harmful.pdf",
+          "reason": "no_harmful_eligible_exposures"
+        },
+        "forest-protective": {
+          "available": false,
+          "filename": "forest_protective.pdf",
+          "path": "Plot/subcategories/ovary/endometrioid_carcinoma/forest_protective.pdf",
+          "reason": "no_protective_eligible_exposures"
+        }
+      },
+      "schema_version": "1.0",
+      "scope": {
+        "estimated_lifetime_probability_us_women_percent": 0.11,
+        "label": "Endometrioid carcinoma",
+        "major_site_id": "ovary",
+        "subcategory_id": "ovary_endometrioid_carcinoma",
+        "subcategory_slug": "endometrioid_carcinoma"
+      }
+    },
+    "ovary/high_grade_serous_carcinoma": {
+      "eligible_exposure_count": 2,
+      "exposure_count": 2,
+      "exposures": [
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Caffeine",
+          "headline": {
+            "ci_low": 0.7331749140181042,
+            "ci_upp": 1.1047841170135817,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 0.90, indicating a lower relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 0.9,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported High-grade serous carcinoma estimate.",
+            "tau2": 0.0
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Vitamin D",
+          "headline": {
+            "ci_low": 0.4996796297203753,
+            "ci_upp": 0.8439814931739325,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 0.65, indicating a lower relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 0.6494,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported High-grade serous carcinoma estimate.",
+            "tau2": 0.0
+          }
+        }
+      ],
+      "formal_egger_exposure_count": 0,
+      "notes": [
+        "Lifetime-risk percent is taxonomy metadata only and is not pooled or aggregated.",
+        "Protective/harmful grouping is by the pooled point estimate relative to 1.0.",
+        "Summary forest plots follow the broad-cancer format and require at least 2 studies per exposure.",
+        "Cross-exposure heterogeneity plots require at least 3 studies and I² greater than 0% per exposure.",
+        "Formal per-exposure Egger interpretation requires at least 10 studies."
+      ],
+      "plots": {
+        "effect-heterogeneity": {
+          "available": false,
+          "filename": "effect_size_vs_i2.pdf",
+          "path": "Plot/subcategories/ovary/high_grade_serous_carcinoma/effect_size_vs_i2.pdf",
+          "reason": "requires_2_eligible_exposures"
+        },
+        "egger-heterogeneity": {
+          "available": false,
+          "filename": "egger_vs_i2.pdf",
+          "path": "Plot/subcategories/ovary/high_grade_serous_carcinoma/egger_vs_i2.pdf",
+          "reason": "requires_2_eligible_exposures"
+        },
+        "forest-harmful": {
+          "available": false,
+          "filename": "forest_harmful.pdf",
+          "path": "Plot/subcategories/ovary/high_grade_serous_carcinoma/forest_harmful.pdf",
+          "reason": "no_harmful_eligible_exposures"
+        },
+        "forest-protective": {
+          "available": false,
+          "filename": "forest_protective.pdf",
+          "path": "Plot/subcategories/ovary/high_grade_serous_carcinoma/forest_protective.pdf",
+          "reason": "no_protective_eligible_exposures"
+        }
+      },
+      "schema_version": "1.0",
+      "scope": {
+        "estimated_lifetime_probability_us_women_percent": 0.66,
+        "label": "High-grade serous carcinoma",
+        "major_site_id": "ovary",
+        "subcategory_id": "ovary_high_grade_serous_carcinoma",
+        "subcategory_slug": "high_grade_serous_carcinoma"
+      }
+    },
+    "ovary/low_grade_serous_carcinoma": {
+      "eligible_exposure_count": 0,
+      "exposure_count": 0,
+      "exposures": [],
+      "formal_egger_exposure_count": 0,
+      "notes": [
+        "Lifetime-risk percent is taxonomy metadata only and is not pooled or aggregated.",
+        "Protective/harmful grouping is by the pooled point estimate relative to 1.0.",
+        "Summary forest plots follow the broad-cancer format and require at least 2 studies per exposure.",
+        "Cross-exposure heterogeneity plots require at least 3 studies and I² greater than 0% per exposure.",
+        "Formal per-exposure Egger interpretation requires at least 10 studies."
+      ],
+      "plots": {
+        "effect-heterogeneity": {
+          "available": false,
+          "filename": "effect_size_vs_i2.pdf",
+          "path": "Plot/subcategories/ovary/low_grade_serous_carcinoma/effect_size_vs_i2.pdf",
+          "reason": "requires_2_eligible_exposures"
+        },
+        "egger-heterogeneity": {
+          "available": false,
+          "filename": "egger_vs_i2.pdf",
+          "path": "Plot/subcategories/ovary/low_grade_serous_carcinoma/egger_vs_i2.pdf",
+          "reason": "requires_2_eligible_exposures"
+        },
+        "forest-harmful": {
+          "available": false,
+          "filename": "forest_harmful.pdf",
+          "path": "Plot/subcategories/ovary/low_grade_serous_carcinoma/forest_harmful.pdf",
+          "reason": "no_harmful_eligible_exposures"
+        },
+        "forest-protective": {
+          "available": false,
+          "filename": "forest_protective.pdf",
+          "path": "Plot/subcategories/ovary/low_grade_serous_carcinoma/forest_protective.pdf",
+          "reason": "no_protective_eligible_exposures"
+        }
+      },
+      "schema_version": "1.0",
+      "scope": {
+        "estimated_lifetime_probability_us_women_percent": 0.06,
+        "label": "Low-grade serous carcinoma",
+        "major_site_id": "ovary",
+        "subcategory_id": "ovary_low_grade_serous_carcinoma",
+        "subcategory_slug": "low_grade_serous_carcinoma"
+      }
+    },
+    "ovary/mucinous_carcinoma": {
+      "eligible_exposure_count": 3,
+      "exposure_count": 3,
+      "exposures": [
+        {
+          "availability": {
+            "baujat": {
+              "available": true,
+              "reason": null
+            },
+            "eligible_study_count": 3,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Alcohol",
+          "headline": {
+            "ci_low": 0.874902741140634,
+            "ci_upp": 3.429313754575854,
+            "eggers_intercept": 3.1598917095779697,
+            "eggers_p": 0.043800124149738336,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 75.96093310590761,
+            "interpretation": "The pooled subtype-specific estimate is 1.73, indicating a higher relative association for this exposure.",
+            "loo_results": [
+              {
+                "ci_low": 0.5428722239408661,
+                "ci_upp": 5.89931259467863,
+                "is_significant": false,
+                "omitted": "Modugno F et al. (2003) [PMID: 14662224]",
+                "pooled_es": 1.789573398325855
+              },
+              {
+                "ci_low": 1.3285629534245866,
+                "ci_upp": 4.262988691859873,
+                "is_significant": true,
+                "omitted": "Genkinger JM et al. (2006) [PMID: 16495916]",
+                "pooled_es": 2.379842189489246
+              },
+              {
+                "ci_low": 0.7509868534510991,
+                "ci_upp": 2.3380673347663548,
+                "is_significant": false,
+                "omitted": "Sung S et al. (2023) [PMID: 36789760]",
+                "pooled_es": 1.3250878578015053
+              }
+            ],
+            "n_studies": 3,
+            "pooled_es": 1.7321420276956778,
+            "q": 8.319790484428085,
+            "results_interpretation": "This saved analysis contains 3 separately reported Mucinous carcinoma estimates.",
+            "tau2": 0.2659744797484085
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Calcium",
+          "headline": {
+            "ci_low": 0.2919379690581165,
+            "ci_upp": 0.7248115093856686,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 0.46, indicating a lower relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 0.46,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Mucinous carcinoma estimate.",
+            "tau2": 0.0
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Vitamin D",
+          "headline": {
+            "ci_low": 0.4755400275024273,
+            "ci_upp": 1.060057977974161,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 0.71, indicating a lower relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 0.71,
+            "q": 7.368634872282193e-32,
+            "results_interpretation": "This saved analysis contains 1 separately reported Mucinous carcinoma estimate.",
+            "tau2": 0.0
+          }
+        }
+      ],
+      "formal_egger_exposure_count": 0,
+      "notes": [
+        "Lifetime-risk percent is taxonomy metadata only and is not pooled or aggregated.",
+        "Protective/harmful grouping is by the pooled point estimate relative to 1.0.",
+        "Summary forest plots follow the broad-cancer format and require at least 2 studies per exposure.",
+        "Cross-exposure heterogeneity plots require at least 3 studies and I² greater than 0% per exposure.",
+        "Formal per-exposure Egger interpretation requires at least 10 studies."
+      ],
+      "plots": {
+        "effect-heterogeneity": {
+          "available": false,
+          "filename": "effect_size_vs_i2.pdf",
+          "path": "Plot/subcategories/ovary/mucinous_carcinoma/effect_size_vs_i2.pdf",
+          "reason": "requires_2_eligible_exposures"
+        },
+        "egger-heterogeneity": {
+          "available": false,
+          "filename": "egger_vs_i2.pdf",
+          "path": "Plot/subcategories/ovary/mucinous_carcinoma/egger_vs_i2.pdf",
+          "reason": "requires_2_eligible_exposures"
+        },
+        "forest-harmful": {
+          "available": true,
+          "filename": "forest_harmful.pdf",
+          "path": "Plot/subcategories/ovary/mucinous_carcinoma/forest_harmful.pdf",
+          "reason": null
+        },
+        "forest-protective": {
+          "available": false,
+          "filename": "forest_protective.pdf",
+          "path": "Plot/subcategories/ovary/mucinous_carcinoma/forest_protective.pdf",
+          "reason": "no_protective_eligible_exposures"
+        }
+      },
+      "schema_version": "1.0",
+      "scope": {
+        "estimated_lifetime_probability_us_women_percent": 0.03,
+        "label": "Mucinous carcinoma",
+        "major_site_id": "ovary",
+        "subcategory_id": "ovary_mucinous_carcinoma",
+        "subcategory_slug": "mucinous_carcinoma"
+      }
+    },
+    "uterus/endometrioid_carcinoma": {
+      "eligible_exposure_count": 4,
+      "exposure_count": 4,
+      "exposures": [
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 2,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Alcohol",
+          "headline": {
+            "ci_low": 0.3899999757158204,
+            "ci_upp": 1.849087581714656,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 92.18253721799586,
+            "interpretation": "The pooled subtype-specific estimate is 0.85, indicating a lower relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 2,
+            "pooled_es": 0.8492020442539814,
+            "q": 12.791874139804124,
+            "results_interpretation": "This saved analysis contains 2 separately reported Endometrioid carcinoma estimates.",
+            "tau2": 0.2912569514088616
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Green tea",
+          "headline": {
+            "ci_low": 0.14758048651498612,
+            "ci_upp": 0.7379024325749306,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 0.33, indicating a lower relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 0.33,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
+            "tau2": 0.0
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Lactobacillus",
+          "headline": {
+            "ci_low": 0.7672678802087313,
+            "ci_upp": 0.986487274554083,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 0.87, indicating a lower relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 0.87,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
+            "tau2": 0.0
+          }
+        },
+        {
+          "availability": {
+            "baujat": {
+              "available": false,
+              "reason": "baujat_requires_3_studies"
+            },
+            "eligible_study_count": 1,
+            "forest": {
+              "available": true,
+              "reason": null
+            },
+            "formal_egger": {
+              "available": false,
+              "reason": "egger_requires_10_studies"
+            },
+            "funnel": {
+              "available": true,
+              "reason": "egger_requires_10_studies"
+            }
+          },
+          "exposure": "Vitamin C",
+          "headline": {
+            "ci_low": 0.9587170167503394,
+            "ci_upp": 1.8284602957626388,
+            "eggers_intercept": null,
+            "eggers_p": null,
+            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+            "i2": 0.0,
+            "interpretation": "The pooled subtype-specific estimate is 1.32, indicating a higher relative association for this exposure.",
+            "loo_results": [],
+            "n_studies": 1,
+            "pooled_es": 1.324,
+            "q": 0.0,
+            "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
+            "tau2": 0.0
+          }
+        }
+      ],
+      "formal_egger_exposure_count": 0,
+      "notes": [
+        "Lifetime-risk percent is taxonomy metadata only and is not pooled or aggregated.",
+        "Protective/harmful grouping is by the pooled point estimate relative to 1.0.",
+        "Summary forest plots follow the broad-cancer format and require at least 2 studies per exposure.",
+        "Cross-exposure heterogeneity plots require at least 3 studies and I² greater than 0% per exposure.",
+        "Formal per-exposure Egger interpretation requires at least 10 studies."
+      ],
+      "plots": {
+        "effect-heterogeneity": {
+          "available": false,
+          "filename": "effect_size_vs_i2.pdf",
+          "path": "Plot/subcategories/uterus/endometrioid_carcinoma/effect_size_vs_i2.pdf",
+          "reason": "requires_2_eligible_exposures"
+        },
+        "egger-heterogeneity": {
+          "available": false,
+          "filename": "egger_vs_i2.pdf",
+          "path": "Plot/subcategories/uterus/endometrioid_carcinoma/egger_vs_i2.pdf",
+          "reason": "requires_2_eligible_exposures"
+        },
+        "forest-harmful": {
+          "available": false,
+          "filename": "forest_harmful.pdf",
+          "path": "Plot/subcategories/uterus/endometrioid_carcinoma/forest_harmful.pdf",
+          "reason": "no_harmful_eligible_exposures"
+        },
+        "forest-protective": {
+          "available": true,
+          "filename": "forest_protective.pdf",
+          "path": "Plot/subcategories/uterus/endometrioid_carcinoma/forest_protective.pdf",
+          "reason": null
+        }
+      },
+      "schema_version": "1.0",
+      "scope": {
+        "estimated_lifetime_probability_us_women_percent": 2.3,
+        "label": "Endometrioid carcinoma",
+        "major_site_id": "uterus",
+        "subcategory_id": "uterus_endometrioid_carcinoma",
+        "subcategory_slug": "endometrioid_carcinoma"
+      }
+    }
+  },
+  "summary_manifest": "Plot/subcategories/summary_manifest.json"
+}

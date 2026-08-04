@@ -1,0 +1,98 @@
+{
+  "availability": {
+    "baujat": {
+      "available": false,
+      "reason": "baujat_requires_3_studies"
+    },
+    "eligible_study_count": 1,
+    "forest": {
+      "available": true,
+      "reason": null
+    },
+    "formal_egger": {
+      "available": false,
+      "reason": "egger_requires_10_studies"
+    },
+    "funnel": {
+      "available": true,
+      "reason": "egger_requires_10_studies"
+    }
+  },
+  "baujat_plot_url": "Plot/subcategories/ovary/clear_cell_carcinoma/potassium_baujat.png",
+  "exposure": "Potassium",
+  "funnel_plot_url": "Plot/subcategories/ovary/clear_cell_carcinoma/potassium_funnel.png",
+  "headline": {
+    "ci_low": 1.3901608817786961,
+    "ci_upp": 16.161870395355205,
+    "eggers_intercept": null,
+    "eggers_p": null,
+    "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+    "i2": 0.0,
+    "interpretation": "The pooled subtype-specific estimate is 4.74, indicating a higher relative association for this exposure.",
+    "loo_results": [],
+    "n_studies": 1,
+    "pooled_es": 4.74,
+    "q": 0.0,
+    "results_interpretation": "This saved analysis contains 1 separately reported Clear cell carcinoma estimate.",
+    "tau2": 0.0
+  },
+  "input_fingerprint": "6f35d94fbaa272f7bebe6d2f9ea1a3cad59cd0fe1c4f1f2aeb7ed89af349a2fe",
+  "plot_url": "Plot/subcategories/ovary/clear_cell_carcinoma/potassium_forest.png",
+  "plot_urls": {
+    "baujat": "Plot/subcategories/ovary/clear_cell_carcinoma/potassium_baujat.png",
+    "forest": "Plot/subcategories/ovary/clear_cell_carcinoma/potassium_forest.png",
+    "funnel": "Plot/subcategories/ovary/clear_cell_carcinoma/potassium_funnel.png"
+  },
+  "schema_version": "1.0",
+  "scope": {
+    "estimated_lifetime_probability_us_women_percent": 0.11,
+    "major_site_id": "ovary",
+    "subcategory_id": "ovary_clear_cell_carcinoma",
+    "subcategory_label": "Clear cell carcinoma",
+    "subcategory_slug": "clear_cell_carcinoma"
+  },
+  "skipped_annotation_count_for_build": 0,
+  "studies": [
+    {
+      "Authors": "Hathaway CA, Townsend MK, Sklar EM, Thomas-Purcell KB, Terry KL, Trabert B, Tworoger SS",
+      "Cases": null,
+      "Effect Size": 4.74,
+      "Effect Type": "HR",
+      "Journal": "Cancer epidemiology, biomarkers & prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology",
+      "Link": "https://pubmed.ncbi.nlm.nih.gov/37540498/",
+      "Lower CI": 1.39,
+      "PMID": "37540498",
+      "Participants": 232908.0,
+      "Reference": "The Association of Kidney Function and Inflammatory Biomarkers with Epithelial Ovarian Cancer Risk.",
+      "Sample Size": 232908.0,
+      "Study": "Hathaway CA et al. (2023) [PMID: 37540498]",
+      "Upper CI": 16.16,
+      "Year": "2023",
+      "authors": "Hathaway CA, Townsend MK, Sklar EM, Thomas-Purcell KB, Terry KL, Trabert B, Tworoger SS",
+      "cases": null,
+      "comparison_type": "Potassium Q4 vs Q1 (clear cell histology)",
+      "context_id": "37540498|ovary|potassium|0",
+      "effect_size": 4.74,
+      "effect_type": "HR",
+      "evidence_locator": "“Potassium was associated with ... clear cell (4.74, 1.39-16.16) tumors.”",
+      "evidence_source": "terra",
+      "exposure_measurement_supporting_text": "In prospectively collected samples, we evaluated the association of kidney function markers and C-reactive protein (CRP) with ovarian cancer risk in the UK Biobank. We used multivariable-adjusted Cox proportional hazards models to evaluate quartiles of serum and urine markers with ovarian cancer risk overall and by histology.",
+      "exposure_measurement_type": "human_biospecimen",
+      "extraction_supporting_text": {
+        "confidence_interval": "“Potassium was associated with ... clear cell (4.74, 1.39-16.16) tumors.”",
+        "effect_size": "“Potassium was associated with ... clear cell (4.74, 1.39-16.16) tumors.”",
+        "outcome_definition": ""
+      },
+      "journal": "Cancer epidemiology, biomarkers & prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology",
+      "lower_ci": 1.39,
+      "outcome_definition": null,
+      "pmid": "37540498",
+      "reference": "The Association of Kidney Function and Inflammatory Biomarkers with Epithelial Ovarian Cancer Risk.",
+      "sample_size": 232908.0,
+      "se": null,
+      "study": "Hathaway CA et al. (2023) [PMID: 37540498]",
+      "upper_ci": 16.16,
+      "year": "2023"
+    }
+  ]
+}

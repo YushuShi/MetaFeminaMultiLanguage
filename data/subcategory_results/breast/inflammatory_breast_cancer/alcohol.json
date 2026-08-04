@@ -1,0 +1,98 @@
+{
+  "availability": {
+    "baujat": {
+      "available": false,
+      "reason": "baujat_requires_3_studies"
+    },
+    "eligible_study_count": 1,
+    "forest": {
+      "available": true,
+      "reason": null
+    },
+    "formal_egger": {
+      "available": false,
+      "reason": "egger_requires_10_studies"
+    },
+    "funnel": {
+      "available": true,
+      "reason": "egger_requires_10_studies"
+    }
+  },
+  "baujat_plot_url": "Plot/subcategories/breast/inflammatory_breast_cancer/alcohol_baujat.png",
+  "exposure": "Alcohol",
+  "funnel_plot_url": "Plot/subcategories/breast/inflammatory_breast_cancer/alcohol_funnel.png",
+  "headline": {
+    "ci_low": 1.2002836544183337,
+    "ci_upp": 2.820666587883084,
+    "eggers_intercept": null,
+    "eggers_p": null,
+    "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+    "i2": 0.0,
+    "interpretation": "The pooled subtype-specific estimate is 1.84, indicating a higher relative association for this exposure.",
+    "loo_results": [],
+    "n_studies": 1,
+    "pooled_es": 1.84,
+    "q": 0.0,
+    "results_interpretation": "This saved analysis contains 1 separately reported Inflammatory breast cancer estimate.",
+    "tau2": 0.0
+  },
+  "input_fingerprint": "337a6856b904d11218b4fcce0dca533d9f16b426fa2154f8304da82576b1fcde",
+  "plot_url": "Plot/subcategories/breast/inflammatory_breast_cancer/alcohol_forest.png",
+  "plot_urls": {
+    "baujat": "Plot/subcategories/breast/inflammatory_breast_cancer/alcohol_baujat.png",
+    "forest": "Plot/subcategories/breast/inflammatory_breast_cancer/alcohol_forest.png",
+    "funnel": "Plot/subcategories/breast/inflammatory_breast_cancer/alcohol_funnel.png"
+  },
+  "schema_version": "1.0",
+  "scope": {
+    "estimated_lifetime_probability_us_women_percent": 0.13,
+    "major_site_id": "breast",
+    "subcategory_id": "breast_inflammatory_breast_cancer",
+    "subcategory_label": "Inflammatory breast cancer",
+    "subcategory_slug": "inflammatory_breast_cancer"
+  },
+  "skipped_annotation_count_for_build": 0,
+  "studies": [
+    {
+      "Authors": "Moslehi R, Freedman E, Zeinomar N, Veneroso C, Levine PH",
+      "Cases": 141.0,
+      "Effect Size": 1.84,
+      "Effect Type": "OR",
+      "Journal": "BMC cancer",
+      "Link": "https://pubmed.ncbi.nlm.nih.gov/27229687/",
+      "Lower CI": 1.2,
+      "PMID": "27229687",
+      "Participants": 9458.0,
+      "Reference": "Importance of hereditary and selected environmental risk factors in the etiology of inflammatory breast cancer: a case-comparison study.",
+      "Sample Size": 9458.0,
+      "Study": "Moslehi R et al. (2016) [PMID: 27229687]",
+      "Upper CI": 2.82,
+      "Year": "2016",
+      "authors": "Moslehi R, Freedman E, Zeinomar N, Veneroso C, Levine PH",
+      "cases": 141.0,
+      "comparison_type": "≥1 drink per day vs None",
+      "context_id": "27229687|breast|alcohol|0",
+      "effect_size": 1.84,
+      "effect_type": "OR",
+      "evidence_locator": "IBC cases had a significantly higher frequency of regular alcohol consumption (≥1 drink per day) compared to WHI controls (OR=1.84, 95% CI:1.20-2.82).",
+      "evidence_source": "terra",
+      "exposure_measurement_supporting_text": "IBC cases had a significantly higher frequency of regular alcohol consumption (≥1 drink per day) compared to WHI controls.",
+      "exposure_measurement_type": "dietary_intake",
+      "extraction_supporting_text": {
+        "confidence_interval": "IBC cases had a significantly higher frequency of regular alcohol consumption (≥1 drink per day) compared to WHI controls (OR=1.84, 95% CI:1.20-2.82).",
+        "effect_size": "IBC cases had a significantly higher frequency of regular alcohol consumption (≥1 drink per day) compared to WHI controls (OR=1.84, 95% CI:1.20-2.82).",
+        "outcome_definition": ""
+      },
+      "journal": "BMC cancer",
+      "lower_ci": 1.2,
+      "outcome_definition": null,
+      "pmid": "27229687",
+      "reference": "Importance of hereditary and selected environmental risk factors in the etiology of inflammatory breast cancer: a case-comparison study.",
+      "sample_size": 9458.0,
+      "se": null,
+      "study": "Moslehi R et al. (2016) [PMID: 27229687]",
+      "upper_ci": 2.82,
+      "year": "2016"
+    }
+  ]
+}

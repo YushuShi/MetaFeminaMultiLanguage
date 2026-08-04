@@ -1,0 +1,98 @@
+{
+  "availability": {
+    "baujat": {
+      "available": false,
+      "reason": "baujat_requires_3_studies"
+    },
+    "eligible_study_count": 1,
+    "forest": {
+      "available": true,
+      "reason": null
+    },
+    "formal_egger": {
+      "available": false,
+      "reason": "egger_requires_10_studies"
+    },
+    "funnel": {
+      "available": true,
+      "reason": "egger_requires_10_studies"
+    }
+  },
+  "baujat_plot_url": "Plot/subcategories/ovary/endometrioid_carcinoma/dairy_baujat.png",
+  "exposure": "Dairy",
+  "funnel_plot_url": "Plot/subcategories/ovary/endometrioid_carcinoma/dairy_funnel.png",
+  "headline": {
+    "ci_low": 0.1587644602741868,
+    "ci_upp": 0.644980619863884,
+    "eggers_intercept": null,
+    "eggers_p": null,
+    "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+    "i2": 0.0,
+    "interpretation": "The pooled subtype-specific estimate is 0.32, indicating a lower relative association for this exposure.",
+    "loo_results": [],
+    "n_studies": 1,
+    "pooled_es": 0.32,
+    "q": 0.0,
+    "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
+    "tau2": 0.0
+  },
+  "input_fingerprint": "14fb4cabd4d8ccd56d1a889c21b55b845da190b53cfc226920ace90c9a326d33",
+  "plot_url": "Plot/subcategories/ovary/endometrioid_carcinoma/dairy_forest.png",
+  "plot_urls": {
+    "baujat": "Plot/subcategories/ovary/endometrioid_carcinoma/dairy_baujat.png",
+    "forest": "Plot/subcategories/ovary/endometrioid_carcinoma/dairy_forest.png",
+    "funnel": "Plot/subcategories/ovary/endometrioid_carcinoma/dairy_funnel.png"
+  },
+  "schema_version": "1.0",
+  "scope": {
+    "estimated_lifetime_probability_us_women_percent": 0.11,
+    "major_site_id": "ovary",
+    "subcategory_id": "ovary_endometrioid_carcinoma",
+    "subcategory_label": "Endometrioid carcinoma",
+    "subcategory_slug": "endometrioid_carcinoma"
+  },
+  "skipped_annotation_count_for_build": 0,
+  "studies": [
+    {
+      "Authors": "Merritt MA, Poole EM, Hankinson SE, Willett WC, Tworoger SS",
+      "Cases": null,
+      "Effect Size": 0.32,
+      "Effect Type": "HR",
+      "Journal": "Cancer causes & control : CCC",
+      "Link": "https://pubmed.ncbi.nlm.nih.gov/24722953/",
+      "Lower CI": 0.16,
+      "PMID": "24722953",
+      "Participants": null,
+      "Reference": "Dairy food and nutrient intake in different life periods in relation to risk of ovarian cancer.",
+      "Sample Size": null,
+      "Study": "Merritt MA et al. (2014) [PMID: 24722953]",
+      "Upper CI": 0.65,
+      "Year": "2014",
+      "authors": "Merritt MA, Poole EM, Hankinson SE, Willett WC, Tworoger SS",
+      "cases": null,
+      "comparison_type": "Lactose intake in adulthood, highest versus lowest category",
+      "context_id": "24722953|ovary|dairy|0",
+      "effect_size": 0.32,
+      "effect_type": "HR",
+      "evidence_locator": "Lactose intake in adulthood was inversely associated with risk of endometrioid EOC (HR 0.32, 95% CI 0.16-0.65, p(trend) < 0.001).",
+      "evidence_source": "terra",
+      "exposure_measurement_supporting_text": "We assessed the association of dairy food and nutrient intake with risk of EOC. We examined dietary intake in adulthood overall.",
+      "exposure_measurement_type": "dietary_intake",
+      "extraction_supporting_text": {
+        "confidence_interval": "Lactose intake in adulthood was inversely associated with risk of endometrioid EOC (HR 0.32, 95% CI 0.16-0.65, p(trend) < 0.001).",
+        "effect_size": "Lactose intake in adulthood was inversely associated with risk of endometrioid EOC (HR 0.32, 95% CI 0.16-0.65, p(trend) < 0.001).",
+        "outcome_definition": ""
+      },
+      "journal": "Cancer causes & control : CCC",
+      "lower_ci": 0.16,
+      "outcome_definition": null,
+      "pmid": "24722953",
+      "reference": "Dairy food and nutrient intake in different life periods in relation to risk of ovarian cancer.",
+      "sample_size": null,
+      "se": null,
+      "study": "Merritt MA et al. (2014) [PMID: 24722953]",
+      "upper_ci": 0.65,
+      "year": "2014"
+    }
+  ]
+}

@@ -10,6 +10,22 @@ power the Summary page, including the combined and dietary forest plots,
 Egger's-test-versus-heterogeneity plot, and effect-size-versus-heterogeneity
 plot, so the public summary stays synchronized with changed analyses.
 
+When an included analysis changes, the workflow also refreshes the saved-study
+cancer-subcategory layer. It EFetches PubMed metadata only for newly included
+PMIDs, uses `gpt-5.6-terra` for newly added or context-changed abstracts, uses
+`gpt-5.6-luna` only for eligible PMCID full-text fallbacks, and rebuilds the
+subcategory forest, funnel, Baujat, and Summary plots. Current source hashes are
+checkpointed, so unchanged articles are not sent to either model again unless
+an operator deliberately invokes the enrichment script with `--force`.
+The action validates and commits the refreshed subtype source ledger,
+annotations, result JSON, and generated plots together, so a newly classified
+subcategory cannot be published without its corresponding analysis artifacts.
+
+Terra input is costed at **$2 per million input tokens**. The append-only
+annotation ledger stores the exact input token count and calculated Terra input
+cost for each completed call; `Plot/subcategories/build_manifest.json` reports
+the current-source totals used by the generated outputs.
+
 Each run writes a permanent dated directory under `data/monthly_reports/`.
 That directory contains `summary.txt`, every unsaved candidate PMID in
 `newCandidatePMIDs.txt`, every first-/second-/full-text exclusion with its
