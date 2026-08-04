@@ -5,7 +5,10 @@ each month and screens PubMed records published during the previous calendar
 month. It uses `gpt-5.6-sol`, preserves candidate and exclusion audit records,
 retrieves PMC full text when required, updates only Good/poolable conventional
 studies, keeps Mendelian-randomization evidence separate, and regenerates the
-affected workbook and paper plots.
+affected workbook and paper plots. The same regenerated, disease-specific PDFs
+power the Summary page, including the combined and dietary forest plots,
+Egger's-test-versus-heterogeneity plot, and effect-size-versus-heterogeneity
+plot, so the public summary stays synchronized with changed analyses.
 
 Each run writes a permanent dated directory under `data/monthly_reports/`.
 That directory contains `summary.txt`, every unsaved candidate PMID in

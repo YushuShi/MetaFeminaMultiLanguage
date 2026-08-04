@@ -47,6 +47,7 @@ except Exception as e:
 
 CACHE_DIR = os.path.join(BASE_DIR, 'Cached_results')
 DATA_DIR = os.path.join(BASE_DIR, 'data')
+PLOT_DIR = os.path.join(BASE_DIR, 'Plot')
 VERIFICATIONS_FILE = os.path.join(DATA_DIR, 'verifications.json')
 USAGE_FILE = os.path.join(DATA_DIR, 'usage_stats.json')
 
@@ -54,6 +55,21 @@ os.makedirs(CACHE_DIR, exist_ok=True)
 
 DEFAULT_MODEL = 'openai.gpt-4o'
 DEFAULT_DISEASE = 'Breast cancer'
+
+SUMMARY_DISEASES = {
+    "breast": "Breast cancer",
+    "ovarian": "Ovarian cancer",
+    "uterine": "Uterine cancer",
+}
+
+SUMMARY_PLOTS = {
+    "forest-protective": "forest_protective_{disease}.pdf",
+    "forest-harmful": "forest_harmful_{disease}.pdf",
+    "forest-protective-dietary": "forest_protective_{disease}_dietary.pdf",
+    "forest-harmful-dietary": "forest_harmful_{disease}_dietary.pdf",
+    "effect-heterogeneity": "plot_es_vs_heterogeneity_{disease}.pdf",
+    "egger-heterogeneity": "plot_eggers_vs_heterogeneity_{disease}.pdf",
+}
 
 DEVELOPER_NOTIFICATION_EMAILS = (
     "yus4011@med.cornell.edu",
@@ -295,6 +311,47 @@ def add_cors_headers(response):
 @app.route('/about')
 def about():
     return render_template('about.html')
+
+@app.route('/summary')
+def summary():
+    """Show cancer-specific paper figures after a disease is selected."""
+    selected_disease = request.args.get('disease', '').strip().lower()
+    if selected_disease not in SUMMARY_DISEASES:
+        selected_disease = None
+
+    plot_version = None
+    if selected_disease:
+        plot_paths = [
+            os.path.join(PLOT_DIR, pattern.format(disease=selected_disease))
+            for pattern in SUMMARY_PLOTS.values()
+        ]
+        modification_times = [
+            os.path.getmtime(path) for path in plot_paths if os.path.exists(path)
+        ]
+        if modification_times:
+            plot_version = int(max(modification_times))
+
+    return render_template(
+        'summary.html',
+        diseases=SUMMARY_DISEASES,
+        selected_disease=selected_disease,
+        selected_disease_label=SUMMARY_DISEASES.get(selected_disease),
+        plot_version=plot_version,
+    )
+
+@app.route('/summary/plots/<disease>/<plot_name>')
+def summary_plot(disease, plot_name):
+    """Serve only the known summary PDFs; never accept a filesystem path."""
+    if disease not in SUMMARY_DISEASES or plot_name not in SUMMARY_PLOTS:
+        return jsonify({"error": "Summary plot not found."}), 404
+
+    filename = SUMMARY_PLOTS[plot_name].format(disease=disease)
+    if not os.path.isfile(os.path.join(PLOT_DIR, filename)):
+        return jsonify({"error": "Summary plot is not available yet."}), 404
+
+    response = send_from_directory(PLOT_DIR, filename, mimetype='application/pdf')
+    response.headers['Cache-Control'] = 'no-cache, max-age=0, must-revalidate'
+    return response
 
 @app.route('/analyze', methods=['POST'])
 def analyze():

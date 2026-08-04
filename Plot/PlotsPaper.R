@@ -1,5 +1,5 @@
 # =============================================================================
-# Cancer-specific forest plots and breast-cancer diagnostic plots
+# Cancer-specific forest plots and diagnostic plots
 # Data: combined and dietary-only meta-analysis workbooks
 # =============================================================================
 script_arg <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
@@ -530,7 +530,8 @@ build_scatter_df <- function(dat_clean, min_studies = 3) {
 
 # ---- Plot 1: Effect Size vs I² ----
 make_es_heterogeneity_plot <- function(dat_clean, min_studies = 3,
-                                       filename = "plot_es_vs_heterogeneity.pdf") {
+                                       filename = "plot_es_vs_heterogeneity.pdf",
+                                       cancer_label = NULL) {
   output_path <- file.path(output_dir, filename)
   
   plot_df <- build_scatter_df(dat_clean, min_studies)
@@ -543,7 +544,10 @@ make_es_heterogeneity_plot <- function(dat_clean, min_studies = 3,
     scale_color_manual(values = group_colors, guide = "none") +
     scale_size_continuous(range = c(1, 4), name = "Number of studies") +
     labs(
-      title = "Effect Size vs Heterogeneity",
+      title = paste0(
+        "Effect Size vs Heterogeneity",
+        ifelse(is.null(cancer_label), "", paste0(" - ", str_to_sentence(cancer_label)))
+      ),
       x     = "Effect Size (Pooled RR)",
       y     = expression(I^2)
     ) +
@@ -562,7 +566,8 @@ make_es_heterogeneity_plot <- function(dat_clean, min_studies = 3,
 
 # ---- Plot 2: log(Egger's p-value) vs I² ----
 make_eggers_heterogeneity_plot <- function(dat_clean, min_studies = 10,
-                                           filename = "plot_eggers_vs_heterogeneity.pdf") {
+                                           filename = "plot_eggers_vs_heterogeneity.pdf",
+                                           cancer_label = NULL) {
   output_path <- file.path(output_dir, filename)
   
   plot_df <- build_scatter_df(dat_clean, min_studies) %>%
@@ -586,7 +591,10 @@ make_eggers_heterogeneity_plot <- function(dat_clean, min_studies = 10,
                        drop = TRUE, guide = "none") +
     scale_size_continuous(range = c(1, 4), name = "Number of studies") +
     labs(
-      title = "Egger's Test log(p-value) vs Heterogeneity",
+      title = paste0(
+        "Egger's Test log(p-value) vs Heterogeneity",
+        ifelse(is.null(cancer_label), "", paste0(" - ", str_to_sentence(cancer_label)))
+      ),
       x     = "log(Egger's p-value)",
       y     = expression(I^2)
     ) +
@@ -610,6 +618,7 @@ make_eggers_heterogeneity_plot <- function(dat_clean, min_studies = 10,
 render_args <- commandArgs(trailingOnly = TRUE)
 eggers_only <- "--eggers-only" %in% render_args
 forests_only <- "--forests-only" %in% render_args
+diagnostics_only <- "--diagnostics-only" %in% render_args
 
 forest_configs <- tribble(
   ~cancer_label,    ~dataset_label, ~input_file,                                      ~output_suffix,
@@ -621,10 +630,7 @@ forest_configs <- tribble(
   "uterine cancer", "dietary",     "exposures_meta_analysis_uterine_dietary.xlsx",   "uterine_dietary"
 )
 
-breast_combined <- read_analysis_data("exposures_meta_analysis_breast_combined.xlsx")
-validate_group_map(breast_combined, "exposures_meta_analysis_breast_combined.xlsx")
-
-if (!eggers_only) {
+if (!eggers_only && !diagnostics_only) {
   for (i in seq_len(nrow(forest_configs))) {
     config <- forest_configs[i, ]
     input_file <- config$input_file[[1]]
@@ -669,24 +675,53 @@ if (!eggers_only) {
     )
   }
 
-  if (!forests_only) {
-    make_es_heterogeneity_plot(
-      dat_clean   = breast_combined,
-      min_studies = 3,
-      filename    = "plot_es_vs_heterogeneity.pdf"
-    )
-  }
 }
 
 if (!forests_only) {
-  make_eggers_heterogeneity_plot(
-    dat_clean   = breast_combined,
-    min_studies = 10,
-    filename    = "plot_eggers_vs_heterogeneity.pdf"
-  )
+  combined_configs <- forest_configs %>% filter(dataset_label == "combined")
+  for (i in seq_len(nrow(combined_configs))) {
+    config <- combined_configs[i, ]
+    input_file <- config$input_file[[1]]
+    cancer_label <- config$cancer_label[[1]]
+    output_suffix <- config$output_suffix[[1]]
+    plot_data <- read_analysis_data(input_file)
+    validate_group_map(plot_data, input_file)
+
+    if (!eggers_only) {
+      es_filename <- paste0("plot_es_vs_heterogeneity_", output_suffix, ".pdf")
+      make_es_heterogeneity_plot(
+        dat_clean   = plot_data,
+        min_studies = 3,
+        filename    = es_filename,
+        cancer_label = cancer_label
+      )
+      if (output_suffix == "breast") {
+        file.copy(
+          file.path(output_dir, es_filename),
+          file.path(output_dir, "plot_es_vs_heterogeneity.pdf"),
+          overwrite = TRUE
+        )
+      }
+    }
+
+    eggers_filename <- paste0("plot_eggers_vs_heterogeneity_", output_suffix, ".pdf")
+    make_eggers_heterogeneity_plot(
+      dat_clean   = plot_data,
+      min_studies = 10,
+      filename    = eggers_filename,
+      cancer_label = cancer_label
+    )
+    if (output_suffix == "breast") {
+      file.copy(
+        file.path(output_dir, eggers_filename),
+        file.path(output_dir, "plot_eggers_vs_heterogeneity.pdf"),
+        overwrite = TRUE
+      )
+    }
+  }
 }
 
 message(
-  if (eggers_only) "Egger figure saved to: " else if (forests_only) "Forest figures saved to: " else "All figures saved to: ",
+  if (eggers_only) "Egger figures saved to: " else if (forests_only) "Forest figures saved to: " else if (diagnostics_only) "Diagnostic figures saved to: " else "All figures saved to: ",
   getwd()
 )

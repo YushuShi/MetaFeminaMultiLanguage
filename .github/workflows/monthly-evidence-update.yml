@@ -83,7 +83,7 @@ jobs:
             any::ggrepel
             any::patchwork
 
-      - name: Regenerate paper PDFs
+      - name: Regenerate paper and Summary PDFs
         if: steps.changed.outputs.value == 'true'
         run: |
           set -o pipefail

@@ -25,10 +25,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         exposure: document.getElementById('exposure'),
         exposureOptions: document.getElementById('exposure-options'),
         disease: document.getElementById('disease'),
-        excludeMeta: document.getElementById('exclude-meta'),
         model: document.getElementById('model'),
         analyzeBtn: document.getElementById('analyze-btn'),
-        refreshBtn: document.getElementById('refresh-btn'),
         updateBtn: document.getElementById('update-btn'),
         loading: document.getElementById('loading'),
         results: document.getElementById('results'),
@@ -153,11 +151,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                     return safeE === safeCached || safeCached.includes(safeE) || safeE.includes(safeCached);
                 });
             });
-
-            // Hide refresh button
-            if (elements.refreshBtn) {
-                elements.refreshBtn.style.display = 'none';
-            }
 
             // Show Read-Only banner
             const banner = document.getElementById('read-only-banner');
@@ -461,20 +454,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         elements.analyzeBtn.addEventListener('click', () => runAnalysis(false));
     }
 
-    if (elements.refreshBtn) {
-        elements.refreshBtn.addEventListener('click', () => {
-            if (confirm("Are you sure you want to force a new LLM extraction? This may take a few minutes.")) {
-                runAnalysis(true);
-            }
-        });
-    }
-
     // Run Analysis Function
     async function runAnalysis(forceRefresh = false) {
         const disease = elements.disease.value;
         const exposure = elements.exposure.value;
         const outcome = elements.outcome.value;
-        const excludeMeta = elements.excludeMeta.checked;
+        const excludeMeta = true;
         const model = elements.model ? elements.model.value : "openai.gpt-4o";
 
         if (!disease || !exposure) {
@@ -569,7 +554,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         disease: elements.disease.value,
                         exposure: elements.exposure.value,
                         outcome: elements.outcome ? elements.outcome.value : 'Incidence',
-                        exclude_meta: elements.excludeMeta ? elements.excludeMeta.checked : false
+                        exclude_meta: true
                     })
                 });
 
