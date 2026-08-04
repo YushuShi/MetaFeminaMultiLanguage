@@ -1105,7 +1105,12 @@ def _cross_exposure_forest(
 
 
 def _diagnostic_plot(path: Path, title: str, entries: list[dict[str, Any]], x_key: str, x_label: str) -> None:
-    usable = [entry for entry in entries if entry["headline"].get(x_key) is not None and entry["headline"].get("i2") is not None]
+    usable = [
+        entry for entry in entries
+        if entry["headline"].get(x_key) is not None
+        and entry["headline"].get("i2") is not None
+        and entry["headline"]["i2"] > 0
+    ]
     if not usable:
         _save_placeholder(path, title, "No exposure had sufficient eligible studies for this diagnostic.")
         return
@@ -1148,12 +1153,19 @@ def _summary_outputs(category: dict[str, Any], entries: list[dict[str, Any]], pl
         "egger_heterogeneity": folder / "egger_vs_i2.pdf",
     }
     eligible = [entry for entry in entries if entry["headline"].get("pooled_es") is not None]
-    effect_heterogeneity_eligible = [
-        entry for entry in eligible if entry["headline"].get("n_studies", 0) > 1
+    diagnostic_eligible = [
+        entry for entry in eligible
+        if entry["headline"].get("n_studies", 0) >= 3
+        and entry["headline"].get("i2") is not None
+        and entry["headline"]["i2"] > 0
     ]
     forest_eligible = [entry for entry in eligible if entry["headline"].get("n_studies", 0) > 1]
     protective = [entry for entry in forest_eligible if entry["headline"]["pooled_es"] < 1]
     harmful = [entry for entry in forest_eligible if entry["headline"]["pooled_es"] >= 1]
+    egger_heterogeneity_eligible = [
+        entry for entry in diagnostic_eligible
+        if entry["headline"].get("eggers_p") is not None
+    ]
     formal_egger = [entry for entry in eligible if entry["availability"]["formal_egger"]["available"]]
     # Direction uses the pooled point estimate. This mirrors the summary's
     # visual grouping and does not assert statistical significance.
@@ -1174,16 +1186,22 @@ def _summary_outputs(category: dict[str, Any], entries: list[dict[str, Any]], pl
     _diagnostic_plot(
         plot_paths["effect_heterogeneity"],
         "Effect estimate vs heterogeneity",
-        effect_heterogeneity_eligible,
+        diagnostic_eligible,
         "pooled_es",
         "Pooled effect estimate",
     )
-    _diagnostic_plot(plot_paths["egger_heterogeneity"], "Egger's p-value vs heterogeneity", formal_egger, "eggers_p", "Egger's p-value")
+    _diagnostic_plot(
+        plot_paths["egger_heterogeneity"],
+        "Egger's p-value vs heterogeneity",
+        egger_heterogeneity_eligible,
+        "eggers_p",
+        "Egger's p-value",
+    )
     plot_metadata = {
         "forest-protective": {"path": _plot_path_url(plot_paths["forest_protective"]), "filename": plot_paths["forest_protective"].name, "available": bool(protective), "reason": None if protective else "no_protective_eligible_exposures"},
         "forest-harmful": {"path": _plot_path_url(plot_paths["forest_harmful"]), "filename": plot_paths["forest_harmful"].name, "available": bool(harmful), "reason": None if harmful else "no_harmful_eligible_exposures"},
-        "effect-heterogeneity": {"path": _plot_path_url(plot_paths["effect_heterogeneity"]), "filename": plot_paths["effect_heterogeneity"].name, "available": len(effect_heterogeneity_eligible) >= 2, "reason": None if len(effect_heterogeneity_eligible) >= 2 else "requires_2_eligible_exposures"},
-        "egger-heterogeneity": {"path": _plot_path_url(plot_paths["egger_heterogeneity"]), "filename": plot_paths["egger_heterogeneity"].name, "available": len(formal_egger) >= 2, "reason": None if len(formal_egger) >= 2 else "requires_2_formal_egger_exposures"},
+        "effect-heterogeneity": {"path": _plot_path_url(plot_paths["effect_heterogeneity"]), "filename": plot_paths["effect_heterogeneity"].name, "available": len(diagnostic_eligible) >= 2, "reason": None if len(diagnostic_eligible) >= 2 else "requires_2_eligible_exposures"},
+        "egger-heterogeneity": {"path": _plot_path_url(plot_paths["egger_heterogeneity"]), "filename": plot_paths["egger_heterogeneity"].name, "available": len(egger_heterogeneity_eligible) >= 2, "reason": None if len(egger_heterogeneity_eligible) >= 2 else "requires_2_eligible_exposures"},
     }
     manifest = {
         "schema_version": SCHEMA_VERSION,
@@ -1197,8 +1215,8 @@ def _summary_outputs(category: dict[str, Any], entries: list[dict[str, Any]], pl
             "Lifetime-risk percent is taxonomy metadata only and is not pooled or aggregated.",
             "Protective/harmful grouping is by the pooled point estimate relative to 1.0.",
             "Summary forest plots follow the broad-cancer format and require at least 2 studies per exposure.",
-            "Effect-size versus heterogeneity plots exclude exposures represented by only one study.",
-            f"Formal Egger diagnostics require at least {FORMAL_EGGER_MIN_STUDIES} studies per exposure.",
+            "Cross-exposure heterogeneity plots require at least 3 studies and I² greater than 0% per exposure.",
+            f"Formal per-exposure Egger interpretation requires at least {FORMAL_EGGER_MIN_STUDIES} studies.",
         ],
     }
     _write_json(folder / "summary_manifest.json", manifest)

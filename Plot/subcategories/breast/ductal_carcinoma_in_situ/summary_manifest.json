@@ -141,8 +141,8 @@
     "Lifetime-risk percent is taxonomy metadata only and is not pooled or aggregated.",
     "Protective/harmful grouping is by the pooled point estimate relative to 1.0.",
     "Summary forest plots follow the broad-cancer format and require at least 2 studies per exposure.",
-    "Effect-size versus heterogeneity plots exclude exposures represented by only one study.",
-    "Formal Egger diagnostics require at least 10 studies per exposure."
+    "Cross-exposure heterogeneity plots require at least 3 studies and I² greater than 0% per exposure.",
+    "Formal per-exposure Egger interpretation requires at least 10 studies."
   ],
   "plots": {
     "effect-heterogeneity": {
@@ -155,7 +155,7 @@
       "available": false,
       "filename": "egger_vs_i2.pdf",
       "path": "Plot/subcategories/breast/ductal_carcinoma_in_situ/egger_vs_i2.pdf",
-      "reason": "requires_2_formal_egger_exposures"
+      "reason": "requires_2_eligible_exposures"
     },
     "forest-harmful": {
       "available": false,

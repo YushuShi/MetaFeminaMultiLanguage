@@ -4,7 +4,10 @@ import unittest
 from unittest.mock import patch
 from pathlib import Path
 
+import pandas as pd
+
 from app import app
+from scripts.update_plot_workbooks import filtered_result
 
 
 class SummaryPageTests(unittest.TestCase):
@@ -187,8 +190,29 @@ class SummaryPageTests(unittest.TestCase):
 
         self.assertNotIn("Egger's test unavailable (<10 studies)", analysis_source)
         self.assertNotIn('str(row["study"])[:28]', analysis_source)
-        self.assertIn('entry["headline"].get("n_studies", 0) > 1', analysis_source)
-        self.assertIn('min_studies = 2', paper_plot_source)
+        self.assertIn('entry["headline"].get("n_studies", 0) >= 3', analysis_source)
+        self.assertIn('entry["headline"]["i2"] > 0', analysis_source)
+        self.assertIn('min_studies = 3', paper_plot_source)
+        self.assertIn('n_studies >= min_studies', paper_plot_source)
+        self.assertIn('I2 > 0', paper_plot_source)
+
+    def test_named_summary_rows_match_saved_study_recalculation(self):
+        root = Path(__file__).resolve().parents[1]
+        checks = (
+            ('mushrooms', 'Breast cancer', 'breast'),
+            ('glutamine', 'Breast cancer', 'breast'),
+            ('calcium', 'Uterine cancer', 'uterine'),
+        )
+
+        for exposure, cancer, workbook_label in checks:
+            expected = filtered_result(exposure, cancer)
+            workbook = pd.read_excel(
+                root / 'Plot' / f'exposures_meta_analysis_{workbook_label}_combined.xlsx'
+            )
+            actual = workbook.loc[workbook['Exposure'].eq(exposure)].iloc[0]
+            self.assertEqual(actual['number studies'], expected['number studies'])
+            self.assertAlmostEqual(actual['I^2 (%)'], expected['I^2 (%)'], places=1)
+            self.assertGreater(actual['I^2 (%)'], 0)
 
 
 if __name__ == '__main__':

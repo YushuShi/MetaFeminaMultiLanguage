@@ -21,7 +21,7 @@
               "available": false,
               "filename": "egger_vs_i2.pdf",
               "path": "Plot/subcategories/breast/ductal_carcinoma_in_situ/egger_vs_i2.pdf",
-              "reason": "requires_2_formal_egger_exposures"
+              "reason": "requires_2_eligible_exposures"
             },
             "forest-harmful": {
               "available": false,
@@ -56,7 +56,7 @@
               "available": false,
               "filename": "egger_vs_i2.pdf",
               "path": "Plot/subcategories/breast/inflammatory_breast_cancer/egger_vs_i2.pdf",
-              "reason": "requires_2_formal_egger_exposures"
+              "reason": "requires_2_eligible_exposures"
             },
             "forest-harmful": {
               "available": false,
@@ -91,7 +91,7 @@
               "available": false,
               "filename": "egger_vs_i2.pdf",
               "path": "Plot/subcategories/breast/invasive_ductal_carcinoma/egger_vs_i2.pdf",
-              "reason": "requires_2_formal_egger_exposures"
+              "reason": "requires_2_eligible_exposures"
             },
             "forest-harmful": {
               "available": true,
@@ -126,7 +126,7 @@
               "available": false,
               "filename": "egger_vs_i2.pdf",
               "path": "Plot/subcategories/breast/invasive_lobular_carcinoma/egger_vs_i2.pdf",
-              "reason": "requires_2_formal_egger_exposures"
+              "reason": "requires_2_eligible_exposures"
             },
             "forest-harmful": {
               "available": true,
@@ -158,10 +158,10 @@
               "reason": null
             },
             "egger-heterogeneity": {
-              "available": false,
+              "available": true,
               "filename": "egger_vs_i2.pdf",
               "path": "Plot/subcategories/breast/triple_negative_breast_cancer/egger_vs_i2.pdf",
-              "reason": "requires_2_formal_egger_exposures"
+              "reason": null
             },
             "forest-harmful": {
               "available": true,
@@ -200,7 +200,7 @@
               "available": false,
               "filename": "egger_vs_i2.pdf",
               "path": "Plot/subcategories/ovary/clear_cell_carcinoma/egger_vs_i2.pdf",
-              "reason": "requires_2_formal_egger_exposures"
+              "reason": "requires_2_eligible_exposures"
             },
             "forest-harmful": {
               "available": false,
@@ -235,7 +235,7 @@
               "available": false,
               "filename": "egger_vs_i2.pdf",
               "path": "Plot/subcategories/ovary/endometrioid_carcinoma/egger_vs_i2.pdf",
-              "reason": "requires_2_formal_egger_exposures"
+              "reason": "requires_2_eligible_exposures"
             },
             "forest-harmful": {
               "available": false,
@@ -270,7 +270,7 @@
               "available": false,
               "filename": "egger_vs_i2.pdf",
               "path": "Plot/subcategories/ovary/high_grade_serous_carcinoma/egger_vs_i2.pdf",
-              "reason": "requires_2_formal_egger_exposures"
+              "reason": "requires_2_eligible_exposures"
             },
             "forest-harmful": {
               "available": false,
@@ -305,7 +305,7 @@
               "available": false,
               "filename": "egger_vs_i2.pdf",
               "path": "Plot/subcategories/ovary/low_grade_serous_carcinoma/egger_vs_i2.pdf",
-              "reason": "requires_2_formal_egger_exposures"
+              "reason": "requires_2_eligible_exposures"
             },
             "forest-harmful": {
               "available": false,
@@ -340,7 +340,7 @@
               "available": false,
               "filename": "egger_vs_i2.pdf",
               "path": "Plot/subcategories/ovary/mucinous_carcinoma/egger_vs_i2.pdf",
-              "reason": "requires_2_formal_egger_exposures"
+              "reason": "requires_2_eligible_exposures"
             },
             "forest-harmful": {
               "available": true,
@@ -379,7 +379,7 @@
               "available": false,
               "filename": "egger_vs_i2.pdf",
               "path": "Plot/subcategories/uterus/endometrioid_carcinoma/egger_vs_i2.pdf",
-              "reason": "requires_2_formal_egger_exposures"
+              "reason": "requires_2_eligible_exposures"
             },
             "forest-harmful": {
               "available": false,
