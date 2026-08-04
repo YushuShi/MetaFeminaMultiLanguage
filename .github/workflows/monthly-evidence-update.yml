@@ -90,6 +90,7 @@ jobs:
             any::ggrepel
             any::patchwork
             any::jsonlite
+            any::systemfonts
 
       - name: Regenerate paper and Summary PDFs
         if: steps.changed.outputs.value == 'true'
@@ -117,10 +118,12 @@ jobs:
           test -s Plot/locales/zh-CN/plot_es_vs_heterogeneity_breast.pdf
           test -s Plot/locales/zh-TW/plot_es_vs_heterogeneity_breast.pdf
           test -s Plot/locales/nl/plot_es_vs_heterogeneity_breast.pdf
+          test -s Plot/locales/ko/plot_es_vs_heterogeneity_breast.pdf
           test -s Plot/subcategories/summary_manifest.json
           test -n "$(find Plot/subcategories -path '*/locales/zh-CN/*.pdf' -print -quit)"
           test -n "$(find Plot/subcategories -path '*/locales/zh-TW/*.pdf' -print -quit)"
           test -n "$(find Plot/subcategories -path '*/locales/nl/*.pdf' -print -quit)"
+          test -n "$(find Plot/subcategories -path '*/locales/ko/*.pdf' -print -quit)"
           test -s data/subcategory_sources.json
           test -s data/subcategory_annotations.json
           python -m unittest discover -s tests -p 'test_*.py' 2>&1 | tee -a monthly_update.log

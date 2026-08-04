@@ -82,7 +82,7 @@ SUMMARY_PLOTS = {
     "egger-heterogeneity": "plot_eggers_vs_heterogeneity_{disease}.pdf",
 }
 
-SUMMARY_PLOT_LANGUAGES = frozenset({"zh-CN", "zh-TW", "nl"})
+SUMMARY_PLOT_LANGUAGES = frozenset({"zh-CN", "zh-TW", "nl", "ko"})
 
 
 def _localized_summary_plot_path(filename, language, *, subcategory=False):
@@ -708,7 +708,11 @@ def summary_plot(disease, plot_name):
         return jsonify({"error": "Summary plot is not available yet."}), 404
 
     response = send_from_directory(PLOT_DIR, filename, mimetype='application/pdf')
-    response.headers['Cache-Control'] = 'no-cache, max-age=0, must-revalidate'
+    # Embedded browser PDF viewers can otherwise retain a previously selected
+    # language even after the <object> URL changes.  Each language has its own
+    # generated file, so make the viewer fetch the requested variant afresh.
+    response.headers['Cache-Control'] = 'no-store, no-cache, max-age=0, must-revalidate'
+    response.headers['Pragma'] = 'no-cache'
     return response
 
 

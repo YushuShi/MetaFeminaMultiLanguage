@@ -4,6 +4,8 @@ let allStudies = []; // Store full dataset
 let currentSort = { field: 'Quality Score', direction: 'asc' };
 let useDownstream = false;
 let lastHeadlineData = null; // Store original RR results for transformation
+let lastHeadlineStudyCount = null;
+let lastAnalysisContext = null;
 
 function uiText(source, variables = {}) {
     if (window.MetaFeminaI18n) return window.MetaFeminaI18n.t(source, variables);
@@ -109,6 +111,262 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
         elements.exposure.dataset.canonicalExposure = canonical;
         elements.exposure.value = uiText(canonical);
+    }
+
+    function localizedAnalysisLabel(value) {
+        const raw = String(value || '').trim();
+        if (!raw) return raw;
+        const normalized = raw.replace(/_/g, ' ').replace(/\s+/g, ' ').trim();
+        const exposureMatch = exposures.find((exposure) => (
+            exposure.toLowerCase() === normalized.toLowerCase()
+        ));
+        if (exposureMatch) return uiText(exposureMatch);
+
+        const candidates = [raw, normalized];
+        if (normalized) {
+            candidates.push(normalized.charAt(0).toUpperCase() + normalized.slice(1).toLowerCase());
+        }
+        for (const candidate of candidates) {
+            const translated = uiText(candidate);
+            if (translated !== candidate) return translated;
+        }
+        return normalized;
+    }
+
+    function headlineDirection(measure, increased) {
+        if (measure === 'OR') return uiText(increased ? 'increased odds' : 'decreased odds');
+        if (measure === 'HR') return uiText(increased ? 'increased hazard' : 'decreased hazard');
+        return uiText(increased ? 'increased risk' : 'decreased risk');
+    }
+
+    function resultsDirection(measure, increased) {
+        if (measure === 'OR') return uiText(increased ? 'higher odds' : 'lower odds');
+        if (measure === 'HR') return uiText(increased ? 'higher hazard' : 'lower hazard');
+        return uiText(increased ? 'higher risk' : 'lower risk');
+    }
+
+    function heterogeneityInterpretation(i2, includeBetweenStudy) {
+        let level;
+        let implication;
+        if (i2 < 25) {
+            level = includeBetweenStudy ? 'low between-study heterogeneity' : 'low heterogeneity';
+            implication = 'indicating consistent findings across the included studies';
+        } else if (i2 < 50) {
+            level = includeBetweenStudy ? 'moderate between-study heterogeneity' : 'moderate heterogeneity';
+            implication = 'suggesting some variability in the results across studies';
+        } else if (i2 < 75) {
+            level = includeBetweenStudy ? 'substantial between-study heterogeneity' : 'substantial heterogeneity';
+            implication = 'reflecting considerable variability across studies';
+        } else {
+            level = includeBetweenStudy ? 'very high between-study heterogeneity' : 'very high heterogeneity';
+            implication = 'reflecting highly inconsistent results across studies';
+        }
+        return { level: uiText(level), implication: uiText(implication) };
+    }
+
+    function renderHeadlineInterpretation(measure, es, low, upp) {
+        if (!elements.interpretation || !lastHeadlineData || !lastHeadlineData.interpretation) return;
+        elements.interpretation.classList.remove('notranslate');
+        elements.interpretation.removeAttribute('translate');
+
+        const original = String(lastHeadlineData.interpretation);
+        const subtypeMatch = original.match(
+            /^The pooled subtype-specific estimate is ([^,]+), indicating a (lower|higher) relative association for this exposure\.$/i
+        );
+        if (subtypeMatch) {
+            elements.interpretation.textContent = uiText(
+                'The pooled subtype-specific estimate is {estimate}, indicating a {direction} relative association for this exposure.',
+                {
+                    estimate: Number.isFinite(es) ? es.toFixed(2) : subtypeMatch[1],
+                    direction: uiText(es < 1 ? 'lower' : 'higher')
+                }
+            );
+            return;
+        }
+
+        if (/statistically significant/i.test(original)) {
+            // The server determines significance from the unrounded estimate.
+            // Preserve that decision instead of recalculating it from the
+            // two-decimal CI displayed in the browser.
+            const isSignificant = !/not statistically significant/i.test(original);
+            if (!isSignificant) {
+                elements.interpretation.textContent = uiText('Not statistically significant');
+                return;
+            }
+            const increased = /increased/i.test(original) || (!/decreased/i.test(original) && es > 1);
+            elements.interpretation.textContent = uiText('Statistically significant ({direction})', {
+                direction: headlineDirection(measure, increased)
+            });
+            return;
+        }
+
+        elements.interpretation.textContent = uiText(original);
+    }
+
+    function renderResultsInterpretation(measure, es, low, upp) {
+        if (!elements.resultsInterpretation || !lastHeadlineData) return;
+        elements.resultsInterpretation.classList.remove('notranslate');
+        elements.resultsInterpretation.removeAttribute('translate');
+
+        const original = String(lastHeadlineData.results_interpretation || '');
+        elements.resultsInterpretation.style.display = original ? 'block' : 'none';
+        if (!original) {
+            elements.resultsInterpretation.textContent = '';
+            return;
+        }
+
+        const subtypeMatch = original.match(
+            /^This saved analysis contains (\d+) separately reported (.+) (estimate|estimates)\.$/i
+        );
+        if (subtypeMatch) {
+            const count = subtypeMatch[1];
+            const template = subtypeMatch[3].toLowerCase() === 'estimate'
+                ? 'This saved analysis contains {count} separately reported {category} estimate.'
+                : 'This saved analysis contains {count} separately reported {category} estimates.';
+            elements.resultsInterpretation.textContent = uiText(template, {
+                count,
+                category: localizedAnalysisLabel(subtypeMatch[2])
+            });
+            return;
+        }
+
+        if (!/^The pooled analysis of \d+ studies yielded/i.test(original)) {
+            elements.resultsInterpretation.textContent = uiText(original);
+            return;
+        }
+
+        const i2 = Number(lastHeadlineData.i2);
+        if (![es, low, upp, i2].every(Number.isFinite)) {
+            elements.resultsInterpretation.textContent = uiText(original);
+            return;
+        }
+
+        const countMatch = original.match(/^The pooled analysis of (\d+) studies/i);
+        const count = countMatch ? countMatch[1] : String(lastHeadlineStudyCount || '');
+        // The saved interpretation reflects the server's unrounded test;
+        // displayed CI limits may round to exactly 1.00.
+        const isSignificant = !/indicating no statistically significant association/i.test(original);
+        const increased = es > 1;
+        // Keep the labels tied to the analysis response. A user may edit the
+        // controls before changing language or effect measure.
+        const exposure = localizedAnalysisLabel(
+            lastAnalysisContext ? lastAnalysisContext.exposure : selectedExposureValue()
+        );
+        const disease = localizedAnalysisLabel(
+            lastAnalysisContext ? lastAnalysisContext.disease : selectedDiseaseValue()
+        );
+        const common = {
+            count,
+            estimate: es.toFixed(2),
+            low: low.toFixed(2),
+            high: upp.toFixed(2),
+            exposure,
+            disease,
+            i2: i2.toFixed(2)
+        };
+
+        if (isSignificant) {
+            const heterogeneity = heterogeneityInterpretation(i2, true);
+            common.direction = resultsDirection(measure, increased);
+            common.heterogeneity = heterogeneity.level;
+            common.implication = heterogeneity.implication;
+            const template = i2 >= 50
+                ? 'The pooled analysis of {count} studies yielded an overall effect size of {estimate} (95% CI: {low}–{high}), suggesting that {exposure} is associated with a {direction} of {disease}. However, this association should be interpreted with caution, as there was {heterogeneity} (I² = {i2}%), {implication}.'
+                : 'The pooled analysis of {count} studies yielded an overall effect size of {estimate} (95% CI: {low}–{high}), suggesting that {exposure} is associated with a {direction} of {disease}. These findings were supported by {heterogeneity} (I² = {i2}%), {implication}.';
+            elements.resultsInterpretation.textContent = uiText(template, common);
+            return;
+        }
+
+        const heterogeneity = heterogeneityInterpretation(i2, false);
+        common.relationship = uiText(increased ? 'positive' : 'inverse');
+        common.heterogeneity = heterogeneity.level;
+        common.implication = heterogeneity.implication;
+        elements.resultsInterpretation.textContent = uiText(
+            'The pooled analysis of {count} studies yielded an effect size of {estimate} (95% CI: {low}–{high}), indicating no statistically significant association between {exposure} and {disease}. Although the point estimate suggests a potential {relationship} relationship, the confidence interval includes the null. These findings were accompanied by {heterogeneity} (I² = {i2}%), {implication}.',
+            common
+        );
+    }
+
+    function renderFunnelInterpretation() {
+        if (!elements.funnelInterpretation || !lastHeadlineData) return;
+        elements.funnelInterpretation.classList.remove('notranslate');
+        elements.funnelInterpretation.removeAttribute('translate');
+        const original = String(lastHeadlineData.funnel_interpretation || '');
+        if (!original) {
+            elements.funnelInterpretation.textContent = uiText('No interpretation available.');
+            return;
+        }
+
+        let match = original.match(
+            /^Egger's test indicates no significant funnel plot asymmetry \(p=([^)]*)\)\. The distribution of studies appears symmetric, suggesting a lower risk of publication bias\.$/i
+        );
+        if (match) {
+            elements.funnelInterpretation.textContent = uiText(
+                "Egger's test indicates no significant funnel plot asymmetry (p={p}). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+                { p: match[1] }
+            );
+            return;
+        }
+
+        match = original.match(
+            /^The significant funnel plot asymmetry \(Egger's p=([^)]*)\) indicates substantial publication bias in this meta-analysis on (.+) and (.+)\. This specific pattern suggests that smaller studies with smaller or null effects may be underrepresented, compromising the reliability of the pooled estimate and potentially leading to an overestimation of the true association\.$/i
+        );
+        if (match) {
+            elements.funnelInterpretation.textContent = uiText(
+                "The significant funnel plot asymmetry (Egger's p={p}) indicates substantial publication bias in this meta-analysis on {exposure} and {disease}. This specific pattern suggests that smaller studies with smaller or null effects may be underrepresented, compromising the reliability of the pooled estimate and potentially leading to an overestimation of the true association.",
+                {
+                    p: match[1],
+                    exposure: localizedAnalysisLabel(match[2]),
+                    disease: localizedAnalysisLabel(match[3])
+                }
+            );
+            return;
+        }
+
+        match = original.match(/^Egger's test p-value: (.+)\.$/i);
+        if (match) {
+            elements.funnelInterpretation.textContent = uiText("Egger's test p-value: {p}.", { p: match[1] });
+            return;
+        }
+
+        match = original.match(/^Formal Egger's testing requires at least (\d+) eligible studies\.$/i);
+        if (match) {
+            elements.funnelInterpretation.textContent = uiText(
+                "Formal Egger's testing requires at least {count} eligible studies.",
+                { count: match[1] }
+            );
+            return;
+        }
+
+        match = original.match(/^Egger’s test is generally not recommended when fewer than (\d+) studies are available\.$/i);
+        if (match) {
+            elements.funnelInterpretation.textContent = uiText(
+                'Egger’s test is generally not recommended when fewer than {count} studies are available.',
+                { count: match[1] }
+            );
+            return;
+        }
+
+        if (/^Insufficient studies to perform formal publication bias testing\.$/i.test(original)) {
+            elements.funnelInterpretation.textContent = uiText(
+                'Insufficient studies to perform formal publication bias testing.'
+            );
+            return;
+        }
+
+        if (/^Egger's test could not be estimated from the available studies\.$/i.test(original)) {
+            elements.funnelInterpretation.textContent = uiText(
+                "Egger's test could not be estimated from the available studies."
+            );
+            return;
+        }
+
+        if (/^No interpretation available\.$/i.test(original)) {
+            elements.funnelInterpretation.textContent = uiText('No interpretation available.');
+            return;
+        }
+
+        elements.funnelInterpretation.textContent = uiText(original);
     }
 
     window.addEventListener('metafemina:languagechange', () => {
@@ -580,7 +838,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                 currentStudies = [...data.studies];
                 sortCurrentStudies();
-                updateResultsUI(data);
+                updateResultsUI(data, { disease, exposure });
                 renderStudiesTable();
                 elements.results.classList.remove('hidden');
 
@@ -622,6 +880,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             elements.updateBtn.textContent = uiText('Updating...');
             elements.updateBtn.disabled = true;
+            const analysisContext = lastAnalysisContext || {
+                disease: selectedDiseaseValue(),
+                exposure: selectedExposureValue()
+            };
 
             try {
                 const res = await fetch('/reanalyze', {
@@ -629,8 +891,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
                         studies: selectedStudies,
-                        disease: selectedDiseaseValue(),
-                        exposure: selectedExposureValue(),
+                        disease: analysisContext.disease,
+                        exposure: analysisContext.exposure,
                         outcome: elements.outcome ? elements.outcome.value : 'Incidence',
                         exclude_meta: true
                     })
@@ -638,7 +900,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                 const data = await res.json();
                 if (data.error) alert(data.error);
-                else updateResultsUI(data);
+                else updateResultsUI(data, analysisContext);
             } catch (e) {
                 console.error("Update error:", e);
                 alert(uiText('Failed to update analysis.'));
@@ -1079,7 +1341,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
         elements.lastUpdated.textContent = isNaN(date.getTime()) ? ts : date.toLocaleString();
     }
-    function updateResultsUI(data) {
+    function updateResultsUI(data, analysisContext = null) {
+        if (analysisContext) {
+            lastAnalysisContext = {
+                disease: analysisContext.disease,
+                exposure: analysisContext.exposure
+            };
+        }
         if (elements.forestPlot && data.plot_url) elements.forestPlot.src = `/${data.plot_url}?t=${Date.now()}`;
         if (elements.funnelPlot && data.funnel_plot_url) elements.funnelPlot.src = `/${data.funnel_plot_url}?t=${Date.now()}`;
 
@@ -1087,9 +1355,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             elements.headlineResult.classList.remove('hidden');
             elements.pooledEs.textContent = data.headline.pooled_es;
             elements.pooledCi.textContent = `${data.headline.ci_low}, ${data.headline.ci_upp}`;
-            elements.interpretation.classList.add('notranslate');
-            elements.interpretation.setAttribute('translate', 'no');
-            elements.interpretation.textContent = data.headline.interpretation;
 
             // Estimated RR
             const dScope = selectedDiseaseValue().toLowerCase() || 'breast cancer';
@@ -1111,6 +1376,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             // Save original data for measure transformation toggle
             lastHeadlineData = JSON.parse(JSON.stringify(data.headline));
+            const interpretationCount = String(data.headline.results_interpretation || '').match(
+                /^The pooled analysis of (\d+) studies/i
+            );
+            lastHeadlineStudyCount = Number(data.headline.n_studies)
+                || (interpretationCount ? Number(interpretationCount[1]) : null)
+                || (Array.isArray(data.studies) ? data.studies.length : null);
             if (elements.displayMeasure) {
                 // Reset to RR whenever new data is loaded
                 elements.displayMeasure.value = 'RR';
@@ -1123,21 +1394,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 elements.valI2.textContent = data.headline.i2 !== null ? data.headline.i2 : '-';
                 elements.valTau2.textContent = data.headline.tau2 !== null ? data.headline.tau2 : '-';
                 elements.valEggers.textContent = (data.headline.eggers_p !== null && data.headline.eggers_p !== undefined) ? data.headline.eggers_p.toFixed(4) : '-';
-            }
-
-            // Funnel Interpretation
-            if (elements.funnelInterpretation) {
-                elements.funnelInterpretation.classList.add('notranslate');
-                elements.funnelInterpretation.setAttribute('translate', 'no');
-                elements.funnelInterpretation.textContent = data.headline.funnel_interpretation || uiText('No interpretation available.');
-            }
-
-            // Results Interpretation (LLM-generated)
-            if (elements.resultsInterpretation) {
-                elements.resultsInterpretation.classList.add('notranslate');
-                elements.resultsInterpretation.setAttribute('translate', 'no');
-                elements.resultsInterpretation.textContent = data.headline.results_interpretation || '';
-                elements.resultsInterpretation.style.display = data.headline.results_interpretation ? 'block' : 'none';
             }
 
             // Pooled Power Analysis Update
@@ -1256,49 +1512,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         }
 
-        // Update Headline Interpretation text (e.g. increased risk/odds)
-        if (elements.interpretation && lastHeadlineData.interpretation) {
-            let interp = lastHeadlineData.interpretation;
-            if (measure === 'OR') {
-                interp = interp.replace(/risk\/odds/g, 'odds').replace(/\brisk\b/g, 'odds');
-            } else if (measure === 'HR') {
-                interp = interp.replace(/risk\/odds/g, 'hazard').replace(/\brisk\b/g, 'hazard');
-            } else {
-                interp = interp.replace(/risk\/odds/g, 'risk').replace(/\bodds\b/g, 'risk').replace(/\bhazard\b/g, 'risk');
-            }
-            // Ensure CI is capitalized
-            interp = interp.replace(/\bci\b/gi, 'CI');
-            elements.interpretation.textContent = interp;
-        }
-
-        // Also update interpretation text if it contains the old numbers
-        if (elements.resultsInterpretation && lastHeadlineData.results_interpretation) {
-            let text = lastHeadlineData.results_interpretation;
-            const oldES = lastHeadlineData.pooled_es.toFixed(2);
-            const oldLow = lastHeadlineData.ci_low.toFixed(2);
-            const oldUpp = lastHeadlineData.ci_upp.toFixed(2);
-
-            const newES = isNaN(es) ? 'N/A' : es.toFixed(2);
-            const newLow = isNaN(low) ? 'N/A' : low.toFixed(2);
-            const newUpp = isNaN(upp) ? 'N/A' : upp.toFixed(2);
-
-            // Replace values in the interpretation text
-            text = text.replace(new RegExp(oldES, 'g'), newES);
-            text = text.replace(new RegExp(oldLow, 'g'), newLow);
-            text = text.replace(new RegExp(oldUpp, 'g'), newUpp);
-            
-            // Replace word "risk" with "odds"/"hazard"
-            if (measure === 'OR') {
-                text = text.replace(/\brisk\b/gi, 'odds');
-            } else if (measure === 'HR') {
-                text = text.replace(/\brisk\b/gi, 'hazard');
-            }
-
-            // Ensure CI is capitalized
-            text = text.replace(/\bci\b/gi, 'CI');
-            
-            elements.resultsInterpretation.textContent = text;
-        }
+        renderHeadlineInterpretation(measure, es, low, upp);
+        renderResultsInterpretation(measure, es, low, upp);
+        renderFunnelInterpretation();
 
         // Keep pooled power analysis in sync
         updatePooledPowerAnalysis();

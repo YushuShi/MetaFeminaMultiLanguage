@@ -3,7 +3,7 @@
 
     const STORAGE_KEY = 'metafemina.language';
     const DEFAULT_LANGUAGE = 'en';
-    const SUPPORTED_LANGUAGES = new Set(['en', 'zh-CN', 'zh-TW', 'nl']);
+    const SUPPORTED_LANGUAGES = new Set(['en', 'zh-CN', 'zh-TW', 'nl', 'ko']);
     const SKIP_SELECTOR = '[translate="no"], .notranslate, script, style, code, pre, object';
     const TRANSLATABLE_ATTRIBUTES = ['aria-label', 'alt', 'placeholder', 'title'];
     const textSources = new WeakMap();
@@ -13,6 +13,7 @@
     let translationTemplates = [];
     let currentLanguage = DEFAULT_LANGUAGE;
     let observer = null;
+    let localizedPlotReloadSequence = 0;
 
     function normalize(value) {
         return String(value || '').trim().replace(/\s+/g, ' ');
@@ -166,23 +167,58 @@
         });
     }
 
+    function localizedPlotUrl(source, locale, reloadSequence) {
+        const url = new URL(source, window.location.href);
+        // Always derive from a stable route URL rather than carrying state
+        // forward from the previously displayed language.
+        url.searchParams.delete('lang');
+        url.searchParams.delete('plot_reload');
+        if (locale !== DEFAULT_LANGUAGE) url.searchParams.set('lang', locale);
+        // Browser PDF viewers may cache an <object> independently of normal
+        // page resources. A per-switch token guarantees a fresh document.
+        url.searchParams.set('plot_reload', locale + '-' + reloadSequence);
+        return url.pathname + url.search + url.hash;
+    }
+
+    function updateLocalizedPlotElement(element, locale, reloadSequence) {
+        const attribute = element.localName === 'object' ? 'data' : 'href';
+        let source = localizedPlotSources.get(element);
+        if (!source) {
+            source = element.getAttribute(attribute);
+            if (!source) return;
+            localizedPlotSources.set(element, source);
+        }
+        element.setAttribute(attribute, localizedPlotUrl(source, locale, reloadSequence));
+    }
+
     function updateLocalizedPlotUrls(language) {
         const locale = SUPPORTED_LANGUAGES.has(language) ? language : DEFAULT_LANGUAGE;
-        document.querySelectorAll('[data-localized-plot]').forEach(function (element) {
-            const attribute = element.localName === 'object' ? 'data' : 'href';
+        localizedPlotReloadSequence += 1;
+        const elements = Array.from(document.querySelectorAll('[data-localized-plot]'));
+
+        // Update links first so fallback links copied with an <object> point to
+        // the same localized PDF as the embedded preview.
+        elements.filter(function (element) {
+            return element.localName !== 'object';
+        }).forEach(function (element) {
+            updateLocalizedPlotElement(element, locale, localizedPlotReloadSequence);
+        });
+
+        elements.filter(function (element) {
+            return element.localName === 'object';
+        }).forEach(function (element) {
             let source = localizedPlotSources.get(element);
             if (!source) {
-                source = element.getAttribute(attribute);
+                source = element.getAttribute('data');
                 if (!source) return;
-                localizedPlotSources.set(element, source);
             }
-            const url = new URL(source, window.location.href);
-            if (locale === DEFAULT_LANGUAGE) url.searchParams.delete('lang');
-            else url.searchParams.set('lang', locale);
-            const nextValue = url.pathname + url.search + url.hash;
-            if (element.getAttribute(attribute) !== nextValue) {
-                element.setAttribute(attribute, nextValue);
-            }
+            const replacement = element.cloneNode(true);
+            replacement.setAttribute(
+                'data',
+                localizedPlotUrl(source, locale, localizedPlotReloadSequence)
+            );
+            localizedPlotSources.set(replacement, source);
+            element.replaceWith(replacement);
         });
     }
 

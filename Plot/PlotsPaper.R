@@ -22,7 +22,7 @@ for (pkg in c("ggtext", "cowplot", "ggrepel", "patchwork", "jsonlite")) {
 output_dir <- "."
 dir.create(output_dir, showWarnings = FALSE, recursive = TRUE)
 
-summary_plot_locales <- c("zh-CN", "zh-TW", "nl")
+summary_plot_locales <- c("zh-CN", "zh-TW", "nl", "ko")
 translation_catalog_path <- file.path("..", "static", "i18n-translations.json")
 if (!file.exists(translation_catalog_path)) {
   stop("Required translation catalog is missing: ", translation_catalog_path)
@@ -93,6 +93,22 @@ localized_group_labels <- list(
     "Other" = "Overig",
     "Metabolites & Amino Acids" = "Metabolieten en aminozuren",
     "Hormones & Endogenous" = "Hormonen en endogene stoffen"
+  ),
+  "ko" = c(
+    "Carotenoids" = "카로티노이드",
+    "Vitamins A, C, D, E, K" = "비타민 A, C, D, E, K",
+    "B Vitamins" = "비타민 B군",
+    "Antioxidants" = "항산화제",
+    "Minerals & Trace Elements" = "무기질 및 미량 원소",
+    "Polyphenols & Flavonoids" = "폴리페놀 및 플라보노이드",
+    "Fruits & Vegetables" = "과일 및 채소",
+    "Fermented Foods & Probiotics" = "발효 식품 및 프로바이오틱스",
+    "Fatty Acids & Lipids" = "지방산 및 지질",
+    "Phytoestrogens" = "식물성 에스트로겐",
+    "Herbal & Botanical" = "허브 및 식물성 제품",
+    "Other" = "기타",
+    "Metabolites & Amino Acids" = "대사산물 및 아미노산",
+    "Hormones & Endogenous" = "호르몬 및 내인성 물질"
   )
 )
 
@@ -106,7 +122,7 @@ translate_group_label <- function(x, locale = NULL) {
 }
 
 plot_font_family <- function(locale = NULL) {
-  if (is.null(locale) || !locale %in% c("zh-CN", "zh-TW")) {
+  if (is.null(locale) || !locale %in% c("zh-CN", "zh-TW", "ko")) {
     return("sans")
   }
 
@@ -115,10 +131,15 @@ plot_font_family <- function(locale = NULL) {
       "Noto Sans CJK SC", "Source Han Sans SC", "PingFang SC",
       "Microsoft YaHei", "Arial Unicode MS"
     )
-  } else {
+  } else if (locale == "zh-TW") {
     c(
       "Noto Sans CJK TC", "Source Han Sans TC", "PingFang TC",
       "Microsoft JhengHei", "Arial Unicode MS"
+    )
+  } else {
+    c(
+      "Noto Sans CJK KR", "Noto Sans KR", "Source Han Sans K",
+      "Apple SD Gothic Neo", "Malgun Gothic", "Arial Unicode MS"
     )
   }
 
@@ -374,11 +395,17 @@ translate_exposure_label <- function(x, locale = NULL) {
     normalized_key <- normalize_translation_key(x[[i]])
     source_label <- unname(translation_source_by_key[normalized_key])
     if (is.null(source_label) || length(source_label) == 0 || is.na(source_label)) {
-      return(english_labels[[i]])
+      stop(
+        "Missing Summary exposure translation source for '", x[[i]],
+        "' (locale ", locale, ")."
+      )
     }
     localized <- translation_catalog[[source_label]][[locale]]
     if (is.null(localized) || length(localized) == 0 || !nzchar(localized[[1]])) {
-      return(english_labels[[i]])
+      stop(
+        "Missing Summary exposure translation for '", source_label,
+        "' (locale ", locale, ")."
+      )
     }
     as.character(localized[[1]])
   }, character(1))

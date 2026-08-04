@@ -37,7 +37,7 @@ DEFAULT_CACHE_ROOT = MODULE_DIR / "Cached_results"
 SCHEMA_VERSION = "1.0"
 FORMAL_EGGER_MIN_STUDIES = 10
 TERRA_INPUT_USD_PER_MILLION = 2.0
-SUMMARY_PLOT_LOCALES = ("zh-CN", "zh-TW", "nl")
+SUMMARY_PLOT_LOCALES = ("zh-CN", "zh-TW", "nl", "ko")
 SUMMARY_TRANSLATIONS = MODULE_DIR / "static" / "i18n-translations.json"
 
 _SUMMARY_TRANSLATION_LOOKUP: dict[str, dict[str, str]] | None = None
@@ -976,12 +976,16 @@ def _localized_exposure(value: str, locale: str | None = None) -> str:
     if locale not in SUMMARY_PLOT_LOCALES:
         return _pretty_exposure(value)
     translation = _summary_translation_lookup().get(slugify(value), {}).get(locale)
-    return translation or _pretty_exposure(value)
+    if not translation:
+        raise ValueError(
+            f"Missing Summary exposure translation for {value!r} (locale {locale})."
+        )
+    return translation
 
 
 def _summary_font_family(locale: str | None) -> str | None:
     """Choose an installed CJK font for localized exposure labels when possible."""
-    if locale not in ("zh-CN", "zh-TW"):
+    if locale not in ("zh-CN", "zh-TW", "ko"):
         return None
     if locale in _SUMMARY_FONT_FAMILIES:
         return _SUMMARY_FONT_FAMILIES[locale]
@@ -996,6 +1000,10 @@ def _summary_font_family(locale: str | None) -> str | None:
             "Microsoft JhengHei", "Heiti TC", "Arial Unicode MS", "Noto Sans CJK SC",
             "Noto Sans CJK JP",
         ),
+        "ko": (
+            "Noto Sans CJK KR", "Noto Sans KR", "Source Han Sans K", "Apple SD Gothic Neo",
+            "Malgun Gothic", "Arial Unicode MS", "Noto Sans CJK JP",
+        ),
     }
     installed = {
         font.name.casefold(): font.name
@@ -1007,7 +1015,10 @@ def _summary_font_family(locale: str | None) -> str | None:
     )
     if family is None:
         # Distribution-specific family names sometimes add a style suffix.
-        markers = ("noto sans cjk", "noto sans sc", "noto sans tc", "source han sans", "pingfang")
+        markers = (
+            "noto sans cjk", "noto sans sc", "noto sans tc", "noto sans kr",
+            "source han sans", "pingfang", "apple sd gothic", "malgun gothic",
+        )
         family = next(
             (name for key, name in installed.items() if any(marker in key for marker in markers)),
             None,
@@ -1062,7 +1073,12 @@ def _cross_exposure_forest(
         if not group_items:
             continue
         groups_present.append(group)
-        plot_rows.append({"kind": "group", "group": group, "y": row_number})
+        plot_rows.append({
+            "kind": "group",
+            "group": group,
+            "group_label": _localized_exposure(group, locale),
+            "y": row_number,
+        })
         row_number += 1
         for item in group_items:
             plot_rows.append({**item, "kind": "exposure", "y": row_number})
@@ -1091,9 +1107,9 @@ def _cross_exposure_forest(
             facecolor=EXPOSURE_GROUP_BACKGROUNDS[group], alpha=alpha, linewidth=0,
         ))
         if row["kind"] == "group":
-            table_ax.text(0.0, row["y"], group.upper(), ha="left", va="center",
+            table_ax.text(0.0, row["y"], row["group_label"].upper(), ha="left", va="center",
                           fontsize=8.5, fontweight="bold", fontstyle="italic",
-                          color=EXPOSURE_GROUP_COLORS[group])
+                          color=EXPOSURE_GROUP_COLORS[group], **exposure_font_args)
             continue
         color = EXPOSURE_GROUP_COLORS[group]
         table_ax.text(0.15, row["y"], row["exposure"], ha="left", va="center",
@@ -1164,10 +1180,18 @@ def _cross_exposure_forest(
     forest_ax.spines["bottom"].set_color("#B0BEC5")
 
     handles = [Line2D([0], [0], marker="s", linestyle="", markersize=7,
-                      markerfacecolor=EXPOSURE_GROUP_COLORS[group], markeredgecolor="none", label=group)
+                      markerfacecolor=EXPOSURE_GROUP_COLORS[group], markeredgecolor="none",
+                      label=_localized_exposure(group, locale))
                for group in groups_present]
-    fig.legend(handles=handles, loc="lower left", bbox_to_anchor=(0.035, 0.085), ncol=min(4, len(handles)),
-               frameon=False, title="Exposure group", fontsize=8, title_fontsize=9)
+    legend = fig.legend(
+        handles=handles, loc="lower left", bbox_to_anchor=(0.035, 0.085),
+        ncol=min(4, len(handles)), frameon=False, title="Exposure group",
+        fontsize=8, title_fontsize=9,
+    )
+    if exposure_font:
+        for label in legend.get_texts():
+            label.set_fontfamily(exposure_font)
+        legend.get_title().set_fontfamily(exposure_font)
     side = (
         f"RR < 1 = inversely associated with {cancer_label} risk."
         if direction == "Protective"

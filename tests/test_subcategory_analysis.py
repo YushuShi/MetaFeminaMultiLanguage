@@ -68,6 +68,11 @@ class SubcategoryAnalysisTests(unittest.TestCase):
         self.assertEqual(_localized_exposure("Vitamin A", "zh-CN"), "维生素 A")
         self.assertEqual(_localized_exposure("vitamin_a", "zh-TW"), "維生素 A")
         self.assertEqual(_localized_exposure("mushrooms", "nl"), "Paddenstoelen")
+        self.assertEqual(_localized_exposure("Vitamin A", "ko"), "비타민 A")
+        self.assertEqual(
+            _localized_exposure("Vitamins A, C, D, E, K", "ko"),
+            "비타민 A, C, D, E, K",
+        )
         self.assertEqual(_localized_exposure("Vitamin A"), "Vitamin A")
 
     def test_builds_isolated_result_and_placeholder_diagnostics(self):
@@ -93,7 +98,7 @@ class SubcategoryAnalysisTests(unittest.TestCase):
         self.assertFalse(summary_plot["available"])
         self.assertEqual(summary_plot["reason"], "no_protective_eligible_exposures")
         summary_folder = self.plots / "breast" / "triple_negative_breast_cancer"
-        for locale in ("zh-CN", "zh-TW", "nl"):
+        for locale in ("zh-CN", "zh-TW", "nl", "ko"):
             locale_folder = summary_folder / "locales" / locale
             for filename in (
                 "forest_protective.pdf", "forest_harmful.pdf",

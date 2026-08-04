@@ -106,10 +106,16 @@ class SummaryPageTests(unittest.TestCase):
             localized = plot_root / 'locales' / 'zh-CN' / filename
             localized.parent.mkdir(parents=True)
             localized.write_bytes(b'localized plot')
+            korean = plot_root / 'locales' / 'ko' / filename
+            korean.parent.mkdir(parents=True)
+            korean.write_bytes(b'korean plot')
 
             with patch('app.PLOT_DIR', tempdir):
                 translated_response = self.client.get(
                     '/summary/plots/breast/forest-protective?lang=zh-CN'
+                )
+                korean_response = self.client.get(
+                    '/summary/plots/breast/forest-protective?lang=ko'
                 )
                 missing_variant_response = self.client.get(
                     '/summary/plots/breast/forest-protective?lang=nl'
@@ -120,11 +126,15 @@ class SummaryPageTests(unittest.TestCase):
 
                 self.assertEqual(translated_response.status_code, 200)
                 self.assertEqual(translated_response.data, b'localized plot')
+                self.assertEqual(korean_response.status_code, 200)
+                self.assertEqual(korean_response.data, b'korean plot')
+                self.assertIn('no-store', korean_response.headers['Cache-Control'])
                 self.assertEqual(missing_variant_response.status_code, 200)
                 self.assertEqual(missing_variant_response.data, b'english plot')
                 self.assertEqual(unsupported_response.status_code, 200)
                 self.assertEqual(unsupported_response.data, b'english plot')
                 translated_response.close()
+                korean_response.close()
                 missing_variant_response.close()
                 unsupported_response.close()
 
