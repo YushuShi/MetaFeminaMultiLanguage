@@ -1,0 +1,196 @@
+{
+  "eligible_exposure_count": 4,
+  "exposure_count": 4,
+  "exposures": [
+    {
+      "availability": {
+        "baujat": {
+          "available": false,
+          "reason": "baujat_requires_3_studies"
+        },
+        "eligible_study_count": 1,
+        "forest": {
+          "available": true,
+          "reason": null
+        },
+        "formal_egger": {
+          "available": false,
+          "reason": "egger_requires_10_studies"
+        },
+        "funnel": {
+          "available": true,
+          "reason": "egger_requires_10_studies"
+        }
+      },
+      "exposure": "Alcohol",
+      "headline": {
+        "ci_low": 0.22138120641602996,
+        "ci_upp": 0.8352109151150221,
+        "eggers_intercept": null,
+        "eggers_p": null,
+        "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+        "i2": 0.0,
+        "interpretation": "The pooled subtype-specific estimate is 0.43, indicating a lower relative association for this exposure.",
+        "loo_results": [],
+        "n_studies": 1,
+        "pooled_es": 0.43,
+        "q": 0.0,
+        "results_interpretation": "This saved analysis contains 1 separately reported Clear cell carcinoma estimate.",
+        "tau2": 0.0
+      }
+    },
+    {
+      "availability": {
+        "baujat": {
+          "available": false,
+          "reason": "baujat_requires_3_studies"
+        },
+        "eligible_study_count": 1,
+        "forest": {
+          "available": true,
+          "reason": null
+        },
+        "formal_egger": {
+          "available": false,
+          "reason": "egger_requires_10_studies"
+        },
+        "funnel": {
+          "available": true,
+          "reason": "egger_requires_10_studies"
+        }
+      },
+      "exposure": "Calcium",
+      "headline": {
+        "ci_low": 0.46337000842294734,
+        "ci_upp": 1.0274726273726225,
+        "eggers_intercept": null,
+        "eggers_p": null,
+        "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+        "i2": 0.0,
+        "interpretation": "The pooled subtype-specific estimate is 0.69, indicating a lower relative association for this exposure.",
+        "loo_results": [],
+        "n_studies": 1,
+        "pooled_es": 0.69,
+        "q": 0.0,
+        "results_interpretation": "This saved analysis contains 1 separately reported Clear cell carcinoma estimate.",
+        "tau2": 0.0
+      }
+    },
+    {
+      "availability": {
+        "baujat": {
+          "available": false,
+          "reason": "baujat_requires_3_studies"
+        },
+        "eligible_study_count": 1,
+        "forest": {
+          "available": true,
+          "reason": null
+        },
+        "formal_egger": {
+          "available": false,
+          "reason": "egger_requires_10_studies"
+        },
+        "funnel": {
+          "available": true,
+          "reason": "egger_requires_10_studies"
+        }
+      },
+      "exposure": "Potassium",
+      "headline": {
+        "ci_low": 1.3901608817786961,
+        "ci_upp": 16.161870395355205,
+        "eggers_intercept": null,
+        "eggers_p": null,
+        "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+        "i2": 0.0,
+        "interpretation": "The pooled subtype-specific estimate is 4.74, indicating a higher relative association for this exposure.",
+        "loo_results": [],
+        "n_studies": 1,
+        "pooled_es": 4.74,
+        "q": 0.0,
+        "results_interpretation": "This saved analysis contains 1 separately reported Clear cell carcinoma estimate.",
+        "tau2": 0.0
+      }
+    },
+    {
+      "availability": {
+        "baujat": {
+          "available": false,
+          "reason": "baujat_requires_3_studies"
+        },
+        "eligible_study_count": 1,
+        "forest": {
+          "available": true,
+          "reason": null
+        },
+        "formal_egger": {
+          "available": false,
+          "reason": "egger_requires_10_studies"
+        },
+        "funnel": {
+          "available": true,
+          "reason": "egger_requires_10_studies"
+        }
+      },
+      "exposure": "Vitamin D",
+      "headline": {
+        "ci_low": 0.6379747367301329,
+        "ci_upp": 1.3556963155515325,
+        "eggers_intercept": null,
+        "eggers_p": null,
+        "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+        "i2": 0.0,
+        "interpretation": "The pooled subtype-specific estimate is 0.93, indicating a lower relative association for this exposure.",
+        "loo_results": [],
+        "n_studies": 1,
+        "pooled_es": 0.93,
+        "q": 0.0,
+        "results_interpretation": "This saved analysis contains 1 separately reported Clear cell carcinoma estimate.",
+        "tau2": 0.0
+      }
+    }
+  ],
+  "formal_egger_exposure_count": 0,
+  "notes": [
+    "Lifetime-risk percent is taxonomy metadata only and is not pooled or aggregated.",
+    "Protective/harmful grouping is by the pooled point estimate relative to 1.0.",
+    "Summary forest plots follow the broad-cancer format and require at least 2 studies per exposure.",
+    "Effect-size versus heterogeneity plots exclude exposures represented by only one study.",
+    "Formal Egger diagnostics require at least 10 studies per exposure."
+  ],
+  "plots": {
+    "effect-heterogeneity": {
+      "available": false,
+      "filename": "effect_size_vs_i2.pdf",
+      "path": "Plot/subcategories/ovary/clear_cell_carcinoma/effect_size_vs_i2.pdf",
+      "reason": "requires_2_eligible_exposures"
+    },
+    "egger-heterogeneity": {
+      "available": false,
+      "filename": "egger_vs_i2.pdf",
+      "path": "Plot/subcategories/ovary/clear_cell_carcinoma/egger_vs_i2.pdf",
+      "reason": "requires_2_formal_egger_exposures"
+    },
+    "forest-harmful": {
+      "available": false,
+      "filename": "forest_harmful.pdf",
+      "path": "Plot/subcategories/ovary/clear_cell_carcinoma/forest_harmful.pdf",
+      "reason": "no_harmful_eligible_exposures"
+    },
+    "forest-protective": {
+      "available": false,
+      "filename": "forest_protective.pdf",
+      "path": "Plot/subcategories/ovary/clear_cell_carcinoma/forest_protective.pdf",
+      "reason": "no_protective_eligible_exposures"
+    }
+  },
+  "schema_version": "1.0",
+  "scope": {
+    "estimated_lifetime_probability_us_women_percent": 0.11,
+    "label": "Clear cell carcinoma",
+    "major_site_id": "ovary",
+    "subcategory_id": "ovary_clear_cell_carcinoma",
+    "subcategory_slug": "clear_cell_carcinoma"
+  }
+}

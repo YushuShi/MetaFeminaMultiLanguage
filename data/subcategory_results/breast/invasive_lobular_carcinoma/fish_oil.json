@@ -1,0 +1,98 @@
+{
+  "availability": {
+    "baujat": {
+      "available": false,
+      "reason": "baujat_requires_3_studies"
+    },
+    "eligible_study_count": 1,
+    "forest": {
+      "available": true,
+      "reason": null
+    },
+    "formal_egger": {
+      "available": false,
+      "reason": "egger_requires_10_studies"
+    },
+    "funnel": {
+      "available": true,
+      "reason": "egger_requires_10_studies"
+    }
+  },
+  "baujat_plot_url": "Plot/subcategories/breast/invasive_lobular_carcinoma/fish_oil_baujat.png",
+  "exposure": "Fish oil",
+  "funnel_plot_url": "Plot/subcategories/breast/invasive_lobular_carcinoma/fish_oil_funnel.png",
+  "headline": {
+    "ci_low": 0.5925455291212927,
+    "ci_upp": 1.9684563340300572,
+    "eggers_intercept": null,
+    "eggers_p": null,
+    "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+    "i2": 0.0,
+    "interpretation": "The pooled subtype-specific estimate is 1.08, indicating a higher relative association for this exposure.",
+    "loo_results": [],
+    "n_studies": 1,
+    "pooled_es": 1.08,
+    "q": 0.0,
+    "results_interpretation": "This saved analysis contains 1 separately reported Invasive lobular carcinoma estimate.",
+    "tau2": 0.0
+  },
+  "input_fingerprint": "de72bf53724e5503838ea535b150310a739db2f42d16b3045e294bfabdde9d57",
+  "plot_url": "Plot/subcategories/breast/invasive_lobular_carcinoma/fish_oil_forest.png",
+  "plot_urls": {
+    "baujat": "Plot/subcategories/breast/invasive_lobular_carcinoma/fish_oil_baujat.png",
+    "forest": "Plot/subcategories/breast/invasive_lobular_carcinoma/fish_oil_forest.png",
+    "funnel": "Plot/subcategories/breast/invasive_lobular_carcinoma/fish_oil_funnel.png"
+  },
+  "schema_version": "1.0",
+  "scope": {
+    "estimated_lifetime_probability_us_women_percent": 1.3,
+    "major_site_id": "breast",
+    "subcategory_id": "breast_invasive_lobular_carcinoma",
+    "subcategory_label": "Invasive lobular carcinoma",
+    "subcategory_slug": "invasive_lobular_carcinoma"
+  },
+  "skipped_annotation_count_for_build": 0,
+  "studies": [
+    {
+      "Authors": "Brasky TM, Lampe JW, Potter JD, Patterson RE, White E",
+      "Cases": 172.0,
+      "Effect Size": 1.08,
+      "Effect Type": "HR",
+      "Journal": "Cancer epidemiology, biomarkers & prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology",
+      "Link": "https://pubmed.ncbi.nlm.nih.gov/20615886/",
+      "Lower CI": 0.59,
+      "PMID": "20615886",
+      "Participants": 35016.0,
+      "Reference": "Specialty supplements and breast cancer risk in the VITamins And Lifestyle (VITAL) Cohort.",
+      "Sample Size": 35016.0,
+      "Study": "Brasky TM et al. (2010) [PMID: 20615886]",
+      "Upper CI": 1.96,
+      "Year": "2010",
+      "authors": "Brasky TM, Lampe JW, Potter JD, Patterson RE, White E",
+      "cases": 172.0,
+      "comparison_type": "Current use vs No use",
+      "context_id": "20615886|breast|fish_oil|0",
+      "effect_size": 1.08,
+      "effect_type": "HR",
+      "evidence_locator": "For lobular carcinoma, current fish oil users had HR 1.08 (95% CI 0.59-1.96) versus non-users; Table 4 reports 13 cases among current users and 153 among non-users.",
+      "evidence_source": "luna",
+      "exposure_measurement_supporting_text": "Participants were queried on their recency (current versus past), frequency (days/week), and duration (years) of specialty supplement use.",
+      "exposure_measurement_type": "dietary_intake",
+      "extraction_supporting_text": {
+        "confidence_interval": "For lobular carcinoma, current fish oil users had HR 1.08 (95% CI 0.59-1.96) versus non-users; Table 4 reports 13 cases among current users and 153 among non-users.",
+        "effect_size": "For lobular carcinoma, current fish oil users had HR 1.08 (95% CI 0.59-1.96) versus non-users; Table 4 reports 13 cases among current users and 153 among non-users.",
+        "outcome_definition": ""
+      },
+      "journal": "Cancer epidemiology, biomarkers & prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology",
+      "lower_ci": 0.59,
+      "outcome_definition": null,
+      "pmid": "20615886",
+      "reference": "Specialty supplements and breast cancer risk in the VITamins And Lifestyle (VITAL) Cohort.",
+      "sample_size": 35016.0,
+      "se": null,
+      "study": "Brasky TM et al. (2010) [PMID: 20615886]",
+      "upper_ci": 1.96,
+      "year": "2010"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "availability": {
+    "baujat": {
+      "available": true,
+      "reason": null
+    },
+    "eligible_study_count": 3,
+    "forest": {
+      "available": true,
+      "reason": null
+    },
+    "formal_egger": {
+      "available": false,
+      "reason": "egger_requires_10_studies"
+    },
+    "funnel": {
+      "available": true,
+      "reason": "egger_requires_10_studies"
+    }
+  },
+  "baujat_plot_url": "Plot/subcategories/ovary/mucinous_carcinoma/alcohol_baujat.png",
+  "exposure": "Alcohol",
+  "funnel_plot_url": "Plot/subcategories/ovary/mucinous_carcinoma/alcohol_funnel.png",
+  "headline": {
+    "ci_low": 0.874902741140634,
+    "ci_upp": 3.429313754575854,
+    "eggers_intercept": 3.1598917095779697,
+    "eggers_p": 0.043800124149738336,
+    "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+    "i2": 75.96093310590761,
+    "interpretation": "The pooled subtype-specific estimate is 1.73, indicating a higher relative association for this exposure.",
+    "loo_results": [
+      {
+        "ci_low": 0.5428722239408661,
+        "ci_upp": 5.89931259467863,
+        "is_significant": false,
+        "omitted": "Modugno F et al. (2003) [PMID: 14662224]",
+        "pooled_es": 1.789573398325855
+      },
+      {
+        "ci_low": 1.3285629534245866,
+        "ci_upp": 4.262988691859873,
+        "is_significant": true,
+        "omitted": "Genkinger JM et al. (2006) [PMID: 16495916]",
+        "pooled_es": 2.379842189489246
+      },
+      {
+        "ci_low": 0.7509868534510991,
+        "ci_upp": 2.3380673347663548,
+        "is_significant": false,
+        "omitted": "Sung S et al. (2023) [PMID: 36789760]",
+        "pooled_es": 1.3250878578015053
+      }
+    ],
+    "n_studies": 3,
+    "pooled_es": 1.7321420276956778,
+    "q": 8.319790484428085,
+    "results_interpretation": "This saved analysis contains 3 separately reported Mucinous carcinoma estimates.",
+    "tau2": 0.2659744797484085
+  },
+  "input_fingerprint": "c74c6bd97b6c6022850c66ce4827f6a714f9a6787e9c973a0059899680678fbe",
+  "plot_url": "Plot/subcategories/ovary/mucinous_carcinoma/alcohol_forest.png",
+  "plot_urls": {
+    "baujat": "Plot/subcategories/ovary/mucinous_carcinoma/alcohol_baujat.png",
+    "forest": "Plot/subcategories/ovary/mucinous_carcinoma/alcohol_forest.png",
+    "funnel": "Plot/subcategories/ovary/mucinous_carcinoma/alcohol_funnel.png"
+  },
+  "schema_version": "1.0",
+  "scope": {
+    "estimated_lifetime_probability_us_women_percent": 0.03,
+    "major_site_id": "ovary",
+    "subcategory_id": "ovary_mucinous_carcinoma",
+    "subcategory_label": "Mucinous carcinoma",
+    "subcategory_slug": "mucinous_carcinoma"
+  },
+  "skipped_annotation_count_for_build": 0,
+  "studies": [
+    {
+      "Authors": "Modugno F, Ness RB, Allen GO",
+      "Cases": null,
+      "Effect Size": 1.93,
+      "Effect Type": "OR",
+      "Journal": "Obstetrics and gynecology",
+      "Link": "https://pubmed.ncbi.nlm.nih.gov/14662224/",
+      "Lower CI": 1.02,
+      "PMID": "14662224",
+      "Participants": null,
+      "Reference": "Alcohol consumption and the risk of mucinous and nonmucinous epithelial ovarian cancer.",
+      "Sample Size": null,
+      "Study": "Modugno F et al. (2003) [PMID: 14662224]",
+      "Upper CI": 3.65,
+      "Year": "2003",
+      "authors": "Modugno F, Ness RB, Allen GO",
+      "cases": null,
+      "comparison_type": "Current heavy alcohol consumption (≥24 g/day) vs non-heavy consumption",
+      "context_id": "14662224|ovary|alcohol|0",
+      "effect_size": 1.93,
+      "effect_type": "OR",
+      "evidence_locator": "\"current heavy alcohol consumption (24 g or more per day) was associated with mucinous (OR 1.93; 95% CI 1.02, 3.65)\"",
+      "evidence_source": "terra",
+      "exposure_measurement_supporting_text": "We examined total alcohol consumption and consumption of beer, wine, and spirits as risk factors.",
+      "exposure_measurement_type": "dietary_intake",
+      "extraction_supporting_text": {
+        "confidence_interval": "\"current heavy alcohol consumption (24 g or more per day) was associated with mucinous (OR 1.93; 95% CI 1.02, 3.65)\"",
+        "effect_size": "\"current heavy alcohol consumption (24 g or more per day) was associated with mucinous (OR 1.93; 95% CI 1.02, 3.65)\"",
+        "outcome_definition": ""
+      },
+      "journal": "Obstetrics and gynecology",
+      "lower_ci": 1.02,
+      "outcome_definition": null,
+      "pmid": "14662224",
+      "reference": "Alcohol consumption and the risk of mucinous and nonmucinous epithelial ovarian cancer.",
+      "sample_size": null,
+      "se": null,
+      "study": "Modugno F et al. (2003) [PMID: 14662224]",
+      "upper_ci": 3.65,
+      "year": "2003"
+    },
+    {
+      "Authors": "Genkinger JM, Hunter DJ, Spiegelman D, Anderson KE, Buring JE, Freudenheim JL, Goldbohm RA, Harnack L, Hankinson SE, Larsson SC, Leitzmann M, McCullough ML, Marshall J, Miller AB, Rodriguez C, Rohan TE, Schatzkin A, Schouten LJ, Wolk A, Zhang SM, Smith-Warner SA",
+      "Cases": 121.0,
+      "Effect Size": 1.06,
+      "Effect Type": "RR",
+      "Journal": "British journal of cancer",
+      "Link": "https://pubmed.ncbi.nlm.nih.gov/16495916/",
+      "Lower CI": 0.84,
+      "PMID": "16495916",
+      "Participants": null,
+      "Reference": "Alcohol intake and ovarian cancer risk: a pooled analysis of 10 cohort studies.",
+      "Sample Size": null,
+      "Study": "Genkinger JM et al. (2006) [PMID: 16495916]",
+      "Upper CI": 1.34,
+      "Year": "2006",
+      "authors": "Genkinger JM, Hunter DJ, Spiegelman D, Anderson KE, Buring JE, Freudenheim JL, Goldbohm RA, Harnack L, Hankinson SE, Larsson SC, Leitzmann M, McCullough ML, Marshall J, Miller AB, Rodriguez C, Rohan TE, Schatzkin A, Schouten LJ, Wolk A, Zhang SM, Smith-Warner SA",
+      "cases": 121.0,
+      "comparison_type": "Highest vs Lowest",
+      "context_id": "16495916|ovary|alcohol|0",
+      "effect_size": 1.06,
+      "effect_type": "RR",
+      "evidence_locator": "Mucinous ovarian cancers: pooled multivariate RR=1.06, 95% CI 0.84–1.34.",
+      "evidence_source": "luna",
+      "exposure_measurement_supporting_text": "Alcohol intake was measured as grams per day.",
+      "exposure_measurement_type": "dietary_intake",
+      "extraction_supporting_text": {
+        "confidence_interval": "Mucinous ovarian cancers: pooled multivariate RR=1.06, 95% CI 0.84–1.34.",
+        "effect_size": "Mucinous ovarian cancers: pooled multivariate RR=1.06, 95% CI 0.84–1.34.",
+        "outcome_definition": ""
+      },
+      "journal": "British journal of cancer",
+      "lower_ci": 0.84,
+      "outcome_definition": null,
+      "pmid": "16495916",
+      "reference": "Alcohol intake and ovarian cancer risk: a pooled analysis of 10 cohort studies.",
+      "sample_size": null,
+      "se": null,
+      "study": "Genkinger JM et al. (2006) [PMID: 16495916]",
+      "upper_ci": 1.34,
+      "year": "2006"
+    },
+    {
+      "Authors": "Sung S, Hong Y, Kim BG, Choi JY, Kim JW, Park SY, Kim JH, Kim YM, Lee JM, Kim TJ, Park SK",
+      "Cases": 531.0,
+      "Effect Size": 3.63,
+      "Effect Type": "OR",
+      "Journal": "Cancer medicine",
+      "Link": "https://pubmed.ncbi.nlm.nih.gov/36789760/",
+      "Lower CI": 1.39,
+      "PMID": "36789760",
+      "Participants": 2655.0,
+      "Reference": "Stratifying the risk of ovarian cancer incidence by histologic subtypes in the Korean Epithelial Ovarian Cancer Study (Ko-EVE).",
+      "Sample Size": 2655.0,
+      "Study": "Sung S et al. (2023) [PMID: 36789760]",
+      "Upper CI": 9.49,
+      "Year": "2023",
+      "authors": "Sung S, Hong Y, Kim BG, Choi JY, Kim JW, Park SY, Kim JH, Kim YM, Lee JM, Kim TJ, Park SK",
+      "cases": 531.0,
+      "comparison_type": "Yes vs No",
+      "context_id": "36789760|ovary|alcohol|0",
+      "effect_size": 3.63,
+      "effect_type": "OR",
+      "evidence_locator": "Alcohol consumption had positive association with mucinous type (MUC) (OR = 3.63, 95% CI = 1.39-9.49).",
+      "evidence_source": "terra",
+      "exposure_measurement_supporting_text": "The abstract does not provide details on how alcohol consumption was measured.",
+      "exposure_measurement_type": "unclear",
+      "extraction_supporting_text": {
+        "confidence_interval": "Alcohol consumption had positive association with mucinous type (MUC) (OR = 3.63, 95% CI = 1.39-9.49).",
+        "effect_size": "Alcohol consumption had positive association with mucinous type (MUC) (OR = 3.63, 95% CI = 1.39-9.49).",
+        "outcome_definition": ""
+      },
+      "journal": "Cancer medicine",
+      "lower_ci": 1.39,
+      "outcome_definition": null,
+      "pmid": "36789760",
+      "reference": "Stratifying the risk of ovarian cancer incidence by histologic subtypes in the Korean Epithelial Ovarian Cancer Study (Ko-EVE).",
+      "sample_size": 2655.0,
+      "se": null,
+      "study": "Sung S et al. (2023) [PMID: 36789760]",
+      "upper_ci": 9.49,
+      "year": "2023"
+    }
+  ]
+}

@@ -1,0 +1,402 @@
+{
+  "schema_version": "1.0",
+  "scopes": {
+    "breast": {
+      "subcategories": {
+        "ductal_carcinoma_in_situ": {
+          "availability": {
+            "eligible_exposure_count": 3,
+            "formal_egger_exposure_count": 0
+          },
+          "estimated_lifetime_probability_us_women_percent": 2.4,
+          "label": "Ductal carcinoma in situ",
+          "plots": {
+            "effect-heterogeneity": {
+              "available": false,
+              "filename": "effect_size_vs_i2.pdf",
+              "path": "Plot/subcategories/breast/ductal_carcinoma_in_situ/effect_size_vs_i2.pdf",
+              "reason": "requires_2_eligible_exposures"
+            },
+            "egger-heterogeneity": {
+              "available": false,
+              "filename": "egger_vs_i2.pdf",
+              "path": "Plot/subcategories/breast/ductal_carcinoma_in_situ/egger_vs_i2.pdf",
+              "reason": "requires_2_formal_egger_exposures"
+            },
+            "forest-harmful": {
+              "available": false,
+              "filename": "forest_harmful.pdf",
+              "path": "Plot/subcategories/breast/ductal_carcinoma_in_situ/forest_harmful.pdf",
+              "reason": "no_harmful_eligible_exposures"
+            },
+            "forest-protective": {
+              "available": true,
+              "filename": "forest_protective.pdf",
+              "path": "Plot/subcategories/breast/ductal_carcinoma_in_situ/forest_protective.pdf",
+              "reason": null
+            }
+          },
+          "subcategory_id": "breast_ductal_carcinoma_in_situ"
+        },
+        "inflammatory_breast_cancer": {
+          "availability": {
+            "eligible_exposure_count": 1,
+            "formal_egger_exposure_count": 0
+          },
+          "estimated_lifetime_probability_us_women_percent": 0.13,
+          "label": "Inflammatory breast cancer",
+          "plots": {
+            "effect-heterogeneity": {
+              "available": false,
+              "filename": "effect_size_vs_i2.pdf",
+              "path": "Plot/subcategories/breast/inflammatory_breast_cancer/effect_size_vs_i2.pdf",
+              "reason": "requires_2_eligible_exposures"
+            },
+            "egger-heterogeneity": {
+              "available": false,
+              "filename": "egger_vs_i2.pdf",
+              "path": "Plot/subcategories/breast/inflammatory_breast_cancer/egger_vs_i2.pdf",
+              "reason": "requires_2_formal_egger_exposures"
+            },
+            "forest-harmful": {
+              "available": false,
+              "filename": "forest_harmful.pdf",
+              "path": "Plot/subcategories/breast/inflammatory_breast_cancer/forest_harmful.pdf",
+              "reason": "no_harmful_eligible_exposures"
+            },
+            "forest-protective": {
+              "available": false,
+              "filename": "forest_protective.pdf",
+              "path": "Plot/subcategories/breast/inflammatory_breast_cancer/forest_protective.pdf",
+              "reason": "no_protective_eligible_exposures"
+            }
+          },
+          "subcategory_id": "breast_inflammatory_breast_cancer"
+        },
+        "invasive_ductal_carcinoma": {
+          "availability": {
+            "eligible_exposure_count": 4,
+            "formal_egger_exposure_count": 0
+          },
+          "estimated_lifetime_probability_us_women_percent": 9.1,
+          "label": "Invasive ductal carcinoma",
+          "plots": {
+            "effect-heterogeneity": {
+              "available": false,
+              "filename": "effect_size_vs_i2.pdf",
+              "path": "Plot/subcategories/breast/invasive_ductal_carcinoma/effect_size_vs_i2.pdf",
+              "reason": "requires_2_eligible_exposures"
+            },
+            "egger-heterogeneity": {
+              "available": false,
+              "filename": "egger_vs_i2.pdf",
+              "path": "Plot/subcategories/breast/invasive_ductal_carcinoma/egger_vs_i2.pdf",
+              "reason": "requires_2_formal_egger_exposures"
+            },
+            "forest-harmful": {
+              "available": true,
+              "filename": "forest_harmful.pdf",
+              "path": "Plot/subcategories/breast/invasive_ductal_carcinoma/forest_harmful.pdf",
+              "reason": null
+            },
+            "forest-protective": {
+              "available": false,
+              "filename": "forest_protective.pdf",
+              "path": "Plot/subcategories/breast/invasive_ductal_carcinoma/forest_protective.pdf",
+              "reason": "no_protective_eligible_exposures"
+            }
+          },
+          "subcategory_id": "breast_invasive_ductal_carcinoma"
+        },
+        "invasive_lobular_carcinoma": {
+          "availability": {
+            "eligible_exposure_count": 4,
+            "formal_egger_exposure_count": 0
+          },
+          "estimated_lifetime_probability_us_women_percent": 1.3,
+          "label": "Invasive lobular carcinoma",
+          "plots": {
+            "effect-heterogeneity": {
+              "available": false,
+              "filename": "effect_size_vs_i2.pdf",
+              "path": "Plot/subcategories/breast/invasive_lobular_carcinoma/effect_size_vs_i2.pdf",
+              "reason": "requires_2_eligible_exposures"
+            },
+            "egger-heterogeneity": {
+              "available": false,
+              "filename": "egger_vs_i2.pdf",
+              "path": "Plot/subcategories/breast/invasive_lobular_carcinoma/egger_vs_i2.pdf",
+              "reason": "requires_2_formal_egger_exposures"
+            },
+            "forest-harmful": {
+              "available": true,
+              "filename": "forest_harmful.pdf",
+              "path": "Plot/subcategories/breast/invasive_lobular_carcinoma/forest_harmful.pdf",
+              "reason": null
+            },
+            "forest-protective": {
+              "available": false,
+              "filename": "forest_protective.pdf",
+              "path": "Plot/subcategories/breast/invasive_lobular_carcinoma/forest_protective.pdf",
+              "reason": "no_protective_eligible_exposures"
+            }
+          },
+          "subcategory_id": "breast_invasive_lobular_carcinoma"
+        },
+        "triple_negative_breast_cancer": {
+          "availability": {
+            "eligible_exposure_count": 5,
+            "formal_egger_exposure_count": 0
+          },
+          "estimated_lifetime_probability_us_women_percent": 1.3,
+          "label": "Triple-negative breast cancer",
+          "plots": {
+            "effect-heterogeneity": {
+              "available": true,
+              "filename": "effect_size_vs_i2.pdf",
+              "path": "Plot/subcategories/breast/triple_negative_breast_cancer/effect_size_vs_i2.pdf",
+              "reason": null
+            },
+            "egger-heterogeneity": {
+              "available": false,
+              "filename": "egger_vs_i2.pdf",
+              "path": "Plot/subcategories/breast/triple_negative_breast_cancer/egger_vs_i2.pdf",
+              "reason": "requires_2_formal_egger_exposures"
+            },
+            "forest-harmful": {
+              "available": true,
+              "filename": "forest_harmful.pdf",
+              "path": "Plot/subcategories/breast/triple_negative_breast_cancer/forest_harmful.pdf",
+              "reason": null
+            },
+            "forest-protective": {
+              "available": true,
+              "filename": "forest_protective.pdf",
+              "path": "Plot/subcategories/breast/triple_negative_breast_cancer/forest_protective.pdf",
+              "reason": null
+            }
+          },
+          "subcategory_id": "breast_triple_negative_breast_cancer"
+        }
+      }
+    },
+    "ovary": {
+      "subcategories": {
+        "clear_cell_carcinoma": {
+          "availability": {
+            "eligible_exposure_count": 4,
+            "formal_egger_exposure_count": 0
+          },
+          "estimated_lifetime_probability_us_women_percent": 0.11,
+          "label": "Clear cell carcinoma",
+          "plots": {
+            "effect-heterogeneity": {
+              "available": false,
+              "filename": "effect_size_vs_i2.pdf",
+              "path": "Plot/subcategories/ovary/clear_cell_carcinoma/effect_size_vs_i2.pdf",
+              "reason": "requires_2_eligible_exposures"
+            },
+            "egger-heterogeneity": {
+              "available": false,
+              "filename": "egger_vs_i2.pdf",
+              "path": "Plot/subcategories/ovary/clear_cell_carcinoma/egger_vs_i2.pdf",
+              "reason": "requires_2_formal_egger_exposures"
+            },
+            "forest-harmful": {
+              "available": false,
+              "filename": "forest_harmful.pdf",
+              "path": "Plot/subcategories/ovary/clear_cell_carcinoma/forest_harmful.pdf",
+              "reason": "no_harmful_eligible_exposures"
+            },
+            "forest-protective": {
+              "available": false,
+              "filename": "forest_protective.pdf",
+              "path": "Plot/subcategories/ovary/clear_cell_carcinoma/forest_protective.pdf",
+              "reason": "no_protective_eligible_exposures"
+            }
+          },
+          "subcategory_id": "ovary_clear_cell_carcinoma"
+        },
+        "endometrioid_carcinoma": {
+          "availability": {
+            "eligible_exposure_count": 8,
+            "formal_egger_exposure_count": 0
+          },
+          "estimated_lifetime_probability_us_women_percent": 0.11,
+          "label": "Endometrioid carcinoma",
+          "plots": {
+            "effect-heterogeneity": {
+              "available": false,
+              "filename": "effect_size_vs_i2.pdf",
+              "path": "Plot/subcategories/ovary/endometrioid_carcinoma/effect_size_vs_i2.pdf",
+              "reason": "requires_2_eligible_exposures"
+            },
+            "egger-heterogeneity": {
+              "available": false,
+              "filename": "egger_vs_i2.pdf",
+              "path": "Plot/subcategories/ovary/endometrioid_carcinoma/egger_vs_i2.pdf",
+              "reason": "requires_2_formal_egger_exposures"
+            },
+            "forest-harmful": {
+              "available": false,
+              "filename": "forest_harmful.pdf",
+              "path": "Plot/subcategories/ovary/endometrioid_carcinoma/forest_harmful.pdf",
+              "reason": "no_harmful_eligible_exposures"
+            },
+            "forest-protective": {
+              "available": false,
+              "filename": "forest_protective.pdf",
+              "path": "Plot/subcategories/ovary/endometrioid_carcinoma/forest_protective.pdf",
+              "reason": "no_protective_eligible_exposures"
+            }
+          },
+          "subcategory_id": "ovary_endometrioid_carcinoma"
+        },
+        "high_grade_serous_carcinoma": {
+          "availability": {
+            "eligible_exposure_count": 2,
+            "formal_egger_exposure_count": 0
+          },
+          "estimated_lifetime_probability_us_women_percent": 0.66,
+          "label": "High-grade serous carcinoma",
+          "plots": {
+            "effect-heterogeneity": {
+              "available": false,
+              "filename": "effect_size_vs_i2.pdf",
+              "path": "Plot/subcategories/ovary/high_grade_serous_carcinoma/effect_size_vs_i2.pdf",
+              "reason": "requires_2_eligible_exposures"
+            },
+            "egger-heterogeneity": {
+              "available": false,
+              "filename": "egger_vs_i2.pdf",
+              "path": "Plot/subcategories/ovary/high_grade_serous_carcinoma/egger_vs_i2.pdf",
+              "reason": "requires_2_formal_egger_exposures"
+            },
+            "forest-harmful": {
+              "available": false,
+              "filename": "forest_harmful.pdf",
+              "path": "Plot/subcategories/ovary/high_grade_serous_carcinoma/forest_harmful.pdf",
+              "reason": "no_harmful_eligible_exposures"
+            },
+            "forest-protective": {
+              "available": false,
+              "filename": "forest_protective.pdf",
+              "path": "Plot/subcategories/ovary/high_grade_serous_carcinoma/forest_protective.pdf",
+              "reason": "no_protective_eligible_exposures"
+            }
+          },
+          "subcategory_id": "ovary_high_grade_serous_carcinoma"
+        },
+        "low_grade_serous_carcinoma": {
+          "availability": {
+            "eligible_exposure_count": 0,
+            "formal_egger_exposure_count": 0
+          },
+          "estimated_lifetime_probability_us_women_percent": 0.06,
+          "label": "Low-grade serous carcinoma",
+          "plots": {
+            "effect-heterogeneity": {
+              "available": false,
+              "filename": "effect_size_vs_i2.pdf",
+              "path": "Plot/subcategories/ovary/low_grade_serous_carcinoma/effect_size_vs_i2.pdf",
+              "reason": "requires_2_eligible_exposures"
+            },
+            "egger-heterogeneity": {
+              "available": false,
+              "filename": "egger_vs_i2.pdf",
+              "path": "Plot/subcategories/ovary/low_grade_serous_carcinoma/egger_vs_i2.pdf",
+              "reason": "requires_2_formal_egger_exposures"
+            },
+            "forest-harmful": {
+              "available": false,
+              "filename": "forest_harmful.pdf",
+              "path": "Plot/subcategories/ovary/low_grade_serous_carcinoma/forest_harmful.pdf",
+              "reason": "no_harmful_eligible_exposures"
+            },
+            "forest-protective": {
+              "available": false,
+              "filename": "forest_protective.pdf",
+              "path": "Plot/subcategories/ovary/low_grade_serous_carcinoma/forest_protective.pdf",
+              "reason": "no_protective_eligible_exposures"
+            }
+          },
+          "subcategory_id": "ovary_low_grade_serous_carcinoma"
+        },
+        "mucinous_carcinoma": {
+          "availability": {
+            "eligible_exposure_count": 3,
+            "formal_egger_exposure_count": 0
+          },
+          "estimated_lifetime_probability_us_women_percent": 0.03,
+          "label": "Mucinous carcinoma",
+          "plots": {
+            "effect-heterogeneity": {
+              "available": false,
+              "filename": "effect_size_vs_i2.pdf",
+              "path": "Plot/subcategories/ovary/mucinous_carcinoma/effect_size_vs_i2.pdf",
+              "reason": "requires_2_eligible_exposures"
+            },
+            "egger-heterogeneity": {
+              "available": false,
+              "filename": "egger_vs_i2.pdf",
+              "path": "Plot/subcategories/ovary/mucinous_carcinoma/egger_vs_i2.pdf",
+              "reason": "requires_2_formal_egger_exposures"
+            },
+            "forest-harmful": {
+              "available": true,
+              "filename": "forest_harmful.pdf",
+              "path": "Plot/subcategories/ovary/mucinous_carcinoma/forest_harmful.pdf",
+              "reason": null
+            },
+            "forest-protective": {
+              "available": false,
+              "filename": "forest_protective.pdf",
+              "path": "Plot/subcategories/ovary/mucinous_carcinoma/forest_protective.pdf",
+              "reason": "no_protective_eligible_exposures"
+            }
+          },
+          "subcategory_id": "ovary_mucinous_carcinoma"
+        }
+      }
+    },
+    "uterus": {
+      "subcategories": {
+        "endometrioid_carcinoma": {
+          "availability": {
+            "eligible_exposure_count": 4,
+            "formal_egger_exposure_count": 0
+          },
+          "estimated_lifetime_probability_us_women_percent": 2.3,
+          "label": "Endometrioid carcinoma",
+          "plots": {
+            "effect-heterogeneity": {
+              "available": false,
+              "filename": "effect_size_vs_i2.pdf",
+              "path": "Plot/subcategories/uterus/endometrioid_carcinoma/effect_size_vs_i2.pdf",
+              "reason": "requires_2_eligible_exposures"
+            },
+            "egger-heterogeneity": {
+              "available": false,
+              "filename": "egger_vs_i2.pdf",
+              "path": "Plot/subcategories/uterus/endometrioid_carcinoma/egger_vs_i2.pdf",
+              "reason": "requires_2_formal_egger_exposures"
+            },
+            "forest-harmful": {
+              "available": false,
+              "filename": "forest_harmful.pdf",
+              "path": "Plot/subcategories/uterus/endometrioid_carcinoma/forest_harmful.pdf",
+              "reason": "no_harmful_eligible_exposures"
+            },
+            "forest-protective": {
+              "available": true,
+              "filename": "forest_protective.pdf",
+              "path": "Plot/subcategories/uterus/endometrioid_carcinoma/forest_protective.pdf",
+              "reason": null
+            }
+          },
+          "subcategory_id": "uterus_endometrioid_carcinoma"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "availability": {
+    "baujat": {
+      "available": false,
+      "reason": "baujat_requires_3_studies"
+    },
+    "eligible_study_count": 1,
+    "forest": {
+      "available": true,
+      "reason": null
+    },
+    "formal_egger": {
+      "available": false,
+      "reason": "egger_requires_10_studies"
+    },
+    "funnel": {
+      "available": true,
+      "reason": "egger_requires_10_studies"
+    }
+  },
+  "baujat_plot_url": "Plot/subcategories/breast/triple_negative_breast_cancer/mediterranean_diet_baujat.png",
+  "exposure": "Mediterranean diet",
+  "funnel_plot_url": "Plot/subcategories/breast/triple_negative_breast_cancer/mediterranean_diet_funnel.png",
+  "headline": {
+    "ci_low": 0.15255401427929477,
+    "ci_upp": 0.6712376628288971,
+    "eggers_intercept": null,
+    "eggers_p": null,
+    "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+    "i2": 0.0,
+    "interpretation": "The pooled subtype-specific estimate is 0.32, indicating a lower relative association for this exposure.",
+    "loo_results": [],
+    "n_studies": 1,
+    "pooled_es": 0.32,
+    "q": 0.0,
+    "results_interpretation": "This saved analysis contains 1 separately reported Triple-negative breast cancer estimate.",
+    "tau2": 0.0
+  },
+  "input_fingerprint": "f5152933e754440eaed297a32afde6b93f6ba1867cc6a849356d1f36fc5d4a5c",
+  "plot_url": "Plot/subcategories/breast/triple_negative_breast_cancer/mediterranean_diet_forest.png",
+  "plot_urls": {
+    "baujat": "Plot/subcategories/breast/triple_negative_breast_cancer/mediterranean_diet_baujat.png",
+    "forest": "Plot/subcategories/breast/triple_negative_breast_cancer/mediterranean_diet_forest.png",
+    "funnel": "Plot/subcategories/breast/triple_negative_breast_cancer/mediterranean_diet_funnel.png"
+  },
+  "schema_version": "1.0",
+  "scope": {
+    "estimated_lifetime_probability_us_women_percent": 1.3,
+    "major_site_id": "breast",
+    "subcategory_id": "breast_triple_negative_breast_cancer",
+    "subcategory_label": "Triple-negative breast cancer",
+    "subcategory_slug": "triple_negative_breast_cancer"
+  },
+  "skipped_annotation_count_for_build": 0,
+  "studies": [
+    {
+      "Authors": "Castelló A, Pollán M, Buijsse B, Ruiz A, Casas AM, Baena-Cañada JM, Lope V, Antolín S, Ramos M, Muñoz M, Lluch A, de Juan-Ferré A, Jara C, Jimeno MA, Rosado P, Díaz E, Guillem V, Carrasco E, Pérez-Gómez B, Vioque J, Boeing H, Martín M,  ",
+      "Cases": null,
+      "Effect Size": 0.32,
+      "Effect Type": "OR",
+      "Journal": "British journal of cancer",
+      "Link": "https://pubmed.ncbi.nlm.nih.gov/25101568/",
+      "Lower CI": 0.15,
+      "PMID": "25101568",
+      "Participants": null,
+      "Reference": "Spanish Mediterranean diet and other dietary patterns and breast cancer risk: case-control EpiGEICAM study.",
+      "Sample Size": null,
+      "Study": "Castelló A et al. (2014) [PMID: 25101568]",
+      "Upper CI": 0.66,
+      "Year": "2014",
+      "authors": "Castelló A, Pollán M, Buijsse B, Ruiz A, Casas AM, Baena-Cañada JM, Lope V, Antolín S, Ramos M, Muñoz M, Lluch A, de Juan-Ferré A, Jara C, Jimeno MA, Rosado P, Díaz E, Guillem V, Carrasco E, Pérez-Gómez B, Vioque J, Boeing H, Martín M,  ",
+      "cases": null,
+      "comparison_type": "Top quartile vs bottom quartile",
+      "context_id": "25101568|breast|mediterranean_diet|0",
+      "effect_size": 0.32,
+      "effect_type": "OR",
+      "evidence_locator": "The Mediterranean pattern was related to lower breast cancer risk for top versus bottom quartile, and its protective effect was stronger for triple-negative tumours (OR=0.32; 95% CI 0.15-0.66).",
+      "evidence_source": "terra",
+      "exposure_measurement_supporting_text": "The association between 'a priori' and 'a posteriori' developed dietary patterns and BC ... was evaluated using logistic and multinomial regression models.",
+      "exposure_measurement_type": "dietary_intake",
+      "extraction_supporting_text": {
+        "confidence_interval": "The Mediterranean pattern was related to lower breast cancer risk for top versus bottom quartile, and its protective effect was stronger for triple-negative tumours (OR=0.32; 95% CI 0.15-0.66).",
+        "effect_size": "The Mediterranean pattern was related to lower breast cancer risk for top versus bottom quartile, and its protective effect was stronger for triple-negative tumours (OR=0.32; 95% CI 0.15-0.66).",
+        "outcome_definition": ""
+      },
+      "journal": "British journal of cancer",
+      "lower_ci": 0.15,
+      "outcome_definition": null,
+      "pmid": "25101568",
+      "reference": "Spanish Mediterranean diet and other dietary patterns and breast cancer risk: case-control EpiGEICAM study.",
+      "sample_size": null,
+      "se": null,
+      "study": "Castelló A et al. (2014) [PMID: 25101568]",
+      "upper_ci": 0.66,
+      "year": "2014"
+    }
+  ]
+}

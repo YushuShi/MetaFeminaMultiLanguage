@@ -516,7 +516,7 @@ save_forest_figure <- function(dat_clean, direction, cancer_label,
 # =============================================================================
 
 # Shared helper: build the filtered + labelled data frame
-build_scatter_df <- function(dat_clean, min_studies = 3) {
+build_scatter_df <- function(dat_clean, min_studies = 2) {
   dat_clean %>%
     filter(n_studies >= min_studies) %>%
     left_join(group_map, by = "Exposure") %>%
@@ -529,7 +529,7 @@ build_scatter_df <- function(dat_clean, min_studies = 3) {
 }
 
 # ---- Plot 1: Effect Size vs I² ----
-make_es_heterogeneity_plot <- function(dat_clean, min_studies = 3,
+make_es_heterogeneity_plot <- function(dat_clean, min_studies = 2,
                                        filename = "plot_es_vs_heterogeneity.pdf",
                                        cancer_label = NULL) {
   output_path <- file.path(output_dir, filename)
@@ -691,7 +691,7 @@ if (!forests_only) {
       es_filename <- paste0("plot_es_vs_heterogeneity_", output_suffix, ".pdf")
       make_es_heterogeneity_plot(
         dat_clean   = plot_data,
-        min_studies = 3,
+        min_studies = 2,
         filename    = es_filename,
         cancer_label = cancer_label
       )

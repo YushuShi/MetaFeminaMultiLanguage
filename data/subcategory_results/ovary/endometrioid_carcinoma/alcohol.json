@@ -1,0 +1,98 @@
+{
+  "availability": {
+    "baujat": {
+      "available": false,
+      "reason": "baujat_requires_3_studies"
+    },
+    "eligible_study_count": 1,
+    "forest": {
+      "available": true,
+      "reason": null
+    },
+    "formal_egger": {
+      "available": false,
+      "reason": "egger_requires_10_studies"
+    },
+    "funnel": {
+      "available": true,
+      "reason": "egger_requires_10_studies"
+    }
+  },
+  "baujat_plot_url": "Plot/subcategories/ovary/endometrioid_carcinoma/alcohol_baujat.png",
+  "exposure": "Alcohol",
+  "funnel_plot_url": "Plot/subcategories/ovary/endometrioid_carcinoma/alcohol_funnel.png",
+  "headline": {
+    "ci_low": 0.8724964183307574,
+    "ci_upp": 1.2636155024100624,
+    "eggers_intercept": null,
+    "eggers_p": null,
+    "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+    "i2": 0.0,
+    "interpretation": "The pooled subtype-specific estimate is 1.05, indicating a higher relative association for this exposure.",
+    "loo_results": [],
+    "n_studies": 1,
+    "pooled_es": 1.05,
+    "q": 0.0,
+    "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
+    "tau2": 0.0
+  },
+  "input_fingerprint": "0f19f3b2fb74e7254846eea2112f20d60ab8a76be74ee4b875202ea0ceb3595a",
+  "plot_url": "Plot/subcategories/ovary/endometrioid_carcinoma/alcohol_forest.png",
+  "plot_urls": {
+    "baujat": "Plot/subcategories/ovary/endometrioid_carcinoma/alcohol_baujat.png",
+    "forest": "Plot/subcategories/ovary/endometrioid_carcinoma/alcohol_forest.png",
+    "funnel": "Plot/subcategories/ovary/endometrioid_carcinoma/alcohol_funnel.png"
+  },
+  "schema_version": "1.0",
+  "scope": {
+    "estimated_lifetime_probability_us_women_percent": 0.11,
+    "major_site_id": "ovary",
+    "subcategory_id": "ovary_endometrioid_carcinoma",
+    "subcategory_label": "Endometrioid carcinoma",
+    "subcategory_slug": "endometrioid_carcinoma"
+  },
+  "skipped_annotation_count_for_build": 0,
+  "studies": [
+    {
+      "Authors": "Genkinger JM, Hunter DJ, Spiegelman D, Anderson KE, Buring JE, Freudenheim JL, Goldbohm RA, Harnack L, Hankinson SE, Larsson SC, Leitzmann M, McCullough ML, Marshall J, Miller AB, Rodriguez C, Rohan TE, Schatzkin A, Schouten LJ, Wolk A, Zhang SM, Smith-Warner SA",
+      "Cases": 260.0,
+      "Effect Size": 1.05,
+      "Effect Type": "RR",
+      "Journal": "British journal of cancer",
+      "Link": "https://pubmed.ncbi.nlm.nih.gov/16495916/",
+      "Lower CI": 0.87,
+      "PMID": "16495916",
+      "Participants": null,
+      "Reference": "Alcohol intake and ovarian cancer risk: a pooled analysis of 10 cohort studies.",
+      "Sample Size": null,
+      "Study": "Genkinger JM et al. (2006) [PMID: 16495916]",
+      "Upper CI": 1.26,
+      "Year": "2006",
+      "authors": "Genkinger JM, Hunter DJ, Spiegelman D, Anderson KE, Buring JE, Freudenheim JL, Goldbohm RA, Harnack L, Hankinson SE, Larsson SC, Leitzmann M, McCullough ML, Marshall J, Miller AB, Rodriguez C, Rohan TE, Schatzkin A, Schouten LJ, Wolk A, Zhang SM, Smith-Warner SA",
+      "cases": 260.0,
+      "comparison_type": "Highest vs Lowest",
+      "context_id": "16495916|ovary|alcohol|0",
+      "effect_size": 1.05,
+      "effect_type": "RR",
+      "evidence_locator": "Endometrioid ovarian cancers: pooled multivariate RR=1.05, 95% CI 0.87–1.26.",
+      "evidence_source": "luna",
+      "exposure_measurement_supporting_text": "Alcohol intake was measured as grams per day.",
+      "exposure_measurement_type": "dietary_intake",
+      "extraction_supporting_text": {
+        "confidence_interval": "Endometrioid ovarian cancers: pooled multivariate RR=1.05, 95% CI 0.87–1.26.",
+        "effect_size": "Endometrioid ovarian cancers: pooled multivariate RR=1.05, 95% CI 0.87–1.26.",
+        "outcome_definition": ""
+      },
+      "journal": "British journal of cancer",
+      "lower_ci": 0.87,
+      "outcome_definition": null,
+      "pmid": "16495916",
+      "reference": "Alcohol intake and ovarian cancer risk: a pooled analysis of 10 cohort studies.",
+      "sample_size": null,
+      "se": null,
+      "study": "Genkinger JM et al. (2006) [PMID: 16495916]",
+      "upper_ci": 1.26,
+      "year": "2006"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "availability": {
+    "baujat": {
+      "available": false,
+      "reason": "baujat_requires_3_studies"
+    },
+    "eligible_study_count": 1,
+    "forest": {
+      "available": true,
+      "reason": null
+    },
+    "formal_egger": {
+      "available": false,
+      "reason": "egger_requires_10_studies"
+    },
+    "funnel": {
+      "available": true,
+      "reason": "egger_requires_10_studies"
+    }
+  },
+  "baujat_plot_url": "Plot/subcategories/ovary/clear_cell_carcinoma/alcohol_baujat.png",
+  "exposure": "Alcohol",
+  "funnel_plot_url": "Plot/subcategories/ovary/clear_cell_carcinoma/alcohol_funnel.png",
+  "headline": {
+    "ci_low": 0.22138120641602996,
+    "ci_upp": 0.8352109151150221,
+    "eggers_intercept": null,
+    "eggers_p": null,
+    "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+    "i2": 0.0,
+    "interpretation": "The pooled subtype-specific estimate is 0.43, indicating a lower relative association for this exposure.",
+    "loo_results": [],
+    "n_studies": 1,
+    "pooled_es": 0.43,
+    "q": 0.0,
+    "results_interpretation": "This saved analysis contains 1 separately reported Clear cell carcinoma estimate.",
+    "tau2": 0.0
+  },
+  "input_fingerprint": "b65f375cd7d90dfcda035c4303397630c10f2976f74a12fea525150324fb0117",
+  "plot_url": "Plot/subcategories/ovary/clear_cell_carcinoma/alcohol_forest.png",
+  "plot_urls": {
+    "baujat": "Plot/subcategories/ovary/clear_cell_carcinoma/alcohol_baujat.png",
+    "forest": "Plot/subcategories/ovary/clear_cell_carcinoma/alcohol_forest.png",
+    "funnel": "Plot/subcategories/ovary/clear_cell_carcinoma/alcohol_funnel.png"
+  },
+  "schema_version": "1.0",
+  "scope": {
+    "estimated_lifetime_probability_us_women_percent": 0.11,
+    "major_site_id": "ovary",
+    "subcategory_id": "ovary_clear_cell_carcinoma",
+    "subcategory_label": "Clear cell carcinoma",
+    "subcategory_slug": "clear_cell_carcinoma"
+  },
+  "skipped_annotation_count_for_build": 0,
+  "studies": [
+    {
+      "Authors": "Kelemen LE, Bandera EV, Terry KL, Rossing MA, Brinton LA, Doherty JA, Ness RB, Kjaer SK, Chang-Claude J, Köbel M, Lurie G, Thompson PJ, Carney ME, Moysich K, Edwards R, Bunker C, Jensen A, Høgdall E, Cramer DW, Vitonis AF, Olson SH, King M, Chandran U, Lissowska J, Garcia-Closas M, Yang H, Webb PM, Schildkraut JM, Goodman MT, Risch HA,  ,  ",
+      "Cases": 10.0,
+      "Effect Size": 0.43,
+      "Effect Type": "OR",
+      "Journal": "BMC cancer",
+      "Link": "https://pubmed.ncbi.nlm.nih.gov/23339562/",
+      "Lower CI": 0.22,
+      "PMID": "23339562",
+      "Participants": null,
+      "Reference": "Recent alcohol consumption and risk of incident ovarian carcinoma: a pooled analysis of 5,342 cases and 10,358 controls from the Ovarian Cancer Association Consortium.",
+      "Sample Size": null,
+      "Study": "Kelemen LE et al. (2013) [PMID: 23339562]",
+      "Upper CI": 0.83,
+      "Year": "2013",
+      "authors": "Kelemen LE, Bandera EV, Terry KL, Rossing MA, Brinton LA, Doherty JA, Ness RB, Kjaer SK, Chang-Claude J, Köbel M, Lurie G, Thompson PJ, Carney ME, Moysich K, Edwards R, Bunker C, Jensen A, Høgdall E, Cramer DW, Vitonis AF, Olson SH, King M, Chandran U, Lissowska J, Garcia-Closas M, Yang H, Webb PM, Schildkraut JM, Goodman MT, Risch HA,  ,  ",
+      "cases": 10.0,
+      "comparison_type": "Wine consumption >8 oz/d vs none",
+      "context_id": "23339562|ovary|alcohol|0",
+      "effect_size": 0.43,
+      "effect_type": "OR",
+      "evidence_locator": "\"more apparent among women with clear cell OC (OR, 0.43; 95% CI, 0.22-0.83; P trend=0.02), although based on only 10 cases\"",
+      "evidence_source": "terra",
+      "exposure_measurement_supporting_text": "Quantitative information on recent alcohol intake was used to estimate odds ratios.",
+      "exposure_measurement_type": "dietary_intake",
+      "extraction_supporting_text": {
+        "confidence_interval": "\"more apparent among women with clear cell OC (OR, 0.43; 95% CI, 0.22-0.83; P trend=0.02), although based on only 10 cases\"",
+        "effect_size": "\"more apparent among women with clear cell OC (OR, 0.43; 95% CI, 0.22-0.83; P trend=0.02), although based on only 10 cases\"",
+        "outcome_definition": ""
+      },
+      "journal": "BMC cancer",
+      "lower_ci": 0.22,
+      "outcome_definition": null,
+      "pmid": "23339562",
+      "reference": "Recent alcohol consumption and risk of incident ovarian carcinoma: a pooled analysis of 5,342 cases and 10,358 controls from the Ovarian Cancer Association Consortium.",
+      "sample_size": null,
+      "se": null,
+      "study": "Kelemen LE et al. (2013) [PMID: 23339562]",
+      "upper_ci": 0.83,
+      "year": "2013"
+    }
+  ]
+}

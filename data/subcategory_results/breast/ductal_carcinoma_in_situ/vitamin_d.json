@@ -1,0 +1,202 @@
+{
+  "availability": {
+    "baujat": {
+      "available": true,
+      "reason": null
+    },
+    "eligible_study_count": 3,
+    "forest": {
+      "available": true,
+      "reason": null
+    },
+    "formal_egger": {
+      "available": false,
+      "reason": "egger_requires_10_studies"
+    },
+    "funnel": {
+      "available": true,
+      "reason": "egger_requires_10_studies"
+    }
+  },
+  "baujat_plot_url": "Plot/subcategories/breast/ductal_carcinoma_in_situ/vitamin_d_baujat.png",
+  "exposure": "Vitamin D",
+  "funnel_plot_url": "Plot/subcategories/breast/ductal_carcinoma_in_situ/vitamin_d_funnel.png",
+  "headline": {
+    "ci_low": 0.6877471677611354,
+    "ci_upp": 0.891367408974545,
+    "eggers_intercept": -0.3020866569514974,
+    "eggers_p": 0.9063591543931842,
+    "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+    "i2": 0.0,
+    "interpretation": "The pooled subtype-specific estimate is 0.78, indicating a lower relative association for this exposure.",
+    "loo_results": [
+      {
+        "ci_low": 0.5669789612216276,
+        "ci_upp": 0.8930387065553684,
+        "is_significant": true,
+        "omitted": "Peila R et al. (2021) [PMID: 34476342]",
+        "pooled_es": 0.7115716114162148
+      },
+      {
+        "ci_low": 0.7105186270287335,
+        "ci_upp": 0.9593279962932533,
+        "is_significant": true,
+        "omitted": "O'Brien KM et al. (2022) [PMID: 34847083]",
+        "pooled_es": 0.8256030588584978
+      },
+      {
+        "ci_low": 0.6288439678688963,
+        "ci_upp": 0.9213927308494286,
+        "is_significant": true,
+        "omitted": "O'Brien KM et al. (2022) [PMID: 35466399]",
+        "pooled_es": 0.7611913431147996
+      }
+    ],
+    "n_studies": 3,
+    "pooled_es": 0.7829657789180988,
+    "q": 1.9617532026716953,
+    "results_interpretation": "This saved analysis contains 3 separately reported Ductal carcinoma in situ estimates.",
+    "tau2": 0.0
+  },
+  "input_fingerprint": "fd7cf3f3270dd48ea2f315054dddbf56d7443cee4b62718f71419138ed7f7c3d",
+  "plot_url": "Plot/subcategories/breast/ductal_carcinoma_in_situ/vitamin_d_forest.png",
+  "plot_urls": {
+    "baujat": "Plot/subcategories/breast/ductal_carcinoma_in_situ/vitamin_d_baujat.png",
+    "forest": "Plot/subcategories/breast/ductal_carcinoma_in_situ/vitamin_d_forest.png",
+    "funnel": "Plot/subcategories/breast/ductal_carcinoma_in_situ/vitamin_d_funnel.png"
+  },
+  "schema_version": "1.0",
+  "scope": {
+    "estimated_lifetime_probability_us_women_percent": 2.4,
+    "major_site_id": "breast",
+    "subcategory_id": "breast_ductal_carcinoma_in_situ",
+    "subcategory_label": "Ductal carcinoma in situ",
+    "subcategory_slug": "ductal_carcinoma_in_situ"
+  },
+  "skipped_annotation_count_for_build": 0,
+  "studies": [
+    {
+      "Authors": "Peila R, Xue X, Cauley JA, Chlebowski R, Manson JE, Nassir R, Saquib N, Shadyab AH, Zhang Z, Wassertheil-Smoller S, Rohan TE",
+      "Cases": 595.0,
+      "Effect Size": 0.82,
+      "Effect Type": "HR",
+      "Journal": "JNCI cancer spectrum",
+      "Link": "https://pubmed.ncbi.nlm.nih.gov/34476342/",
+      "Lower CI": 0.7,
+      "PMID": "34476342",
+      "Participants": 36282.0,
+      "Reference": "A Randomized Trial of Calcium Plus Vitamin D Supplementation and Risk of Ductal Carcinoma In Situ of the Breast.",
+      "Sample Size": 36282.0,
+      "Study": "Peila R et al. (2021) [PMID: 34476342]",
+      "Upper CI": 0.96,
+      "Year": "2021",
+      "authors": "Peila R, Xue X, Cauley JA, Chlebowski R, Manson JE, Nassir R, Saquib N, Shadyab AH, Zhang Z, Wassertheil-Smoller S, Rohan TE",
+      "cases": 595.0,
+      "comparison_type": "Intervention group (calcium plus vitamin D supplementation) vs placebo group",
+      "context_id": "34476342|breast|vitamin_d|0",
+      "effect_size": 0.82,
+      "effect_type": "HR",
+      "evidence_locator": "The intervention group had a lower risk of DCIS throughout follow-up (HR = 0.82, 95% CI = 0.70 to 0.96).",
+      "evidence_source": "terra",
+      "exposure_measurement_supporting_text": "Participants were randomly assigned to daily calcium (1000 mg) plus vitamin D (400 IU) supplementation or to a placebo.",
+      "exposure_measurement_type": "dietary_intake",
+      "extraction_supporting_text": {
+        "confidence_interval": "The intervention group had a lower risk of DCIS throughout follow-up (HR = 0.82, 95% CI = 0.70 to 0.96).",
+        "effect_size": "The intervention group had a lower risk of DCIS throughout follow-up (HR = 0.82, 95% CI = 0.70 to 0.96).",
+        "outcome_definition": ""
+      },
+      "journal": "JNCI cancer spectrum",
+      "lower_ci": 0.7,
+      "outcome_definition": null,
+      "pmid": "34476342",
+      "reference": "A Randomized Trial of Calcium Plus Vitamin D Supplementation and Risk of Ductal Carcinoma In Situ of the Breast.",
+      "sample_size": 36282.0,
+      "se": null,
+      "study": "Peila R et al. (2021) [PMID: 34476342]",
+      "upper_ci": 0.96,
+      "year": "2021"
+    },
+    {
+      "Authors": "O'Brien KM, Keil AP, Harmon QE, Jackson CL, White AJ, Díaz-Santana MV, Taylor JA, Sandler DP",
+      "Cases": null,
+      "Effect Size": 0.67,
+      "Effect Type": "HR",
+      "Journal": "Epidemiology (Cambridge, Mass.)",
+      "Link": "https://pubmed.ncbi.nlm.nih.gov/34847083/",
+      "Lower CI": 0.52,
+      "PMID": "34847083",
+      "Participants": null,
+      "Reference": "Vitamin D Supplement Use and Risk of Breast Cancer by Race-Ethnicity.",
+      "Sample Size": null,
+      "Study": "O'Brien KM et al. (2022) [PMID: 34847083]",
+      "Upper CI": 0.87,
+      "Year": "2022",
+      "authors": "O'Brien KM, Keil AP, Harmon QE, Jackson CL, White AJ, Díaz-Santana MV, Taylor JA, Sandler DP",
+      "cases": null,
+      "comparison_type": "Recent vitamin D supplement use (≥1/month) vs nonrecent use",
+      "context_id": "34847083|breast|vitamin_d|0",
+      "effect_size": 0.67,
+      "effect_type": "HR",
+      "evidence_locator": "Recent use of vitamin D supplements ≥1/month was inversely associated with breast cancer; the association was stronger for ductal carcinoma in situ (HR = 0.67, 95% CI = 0.52, 0.87).",
+      "evidence_source": "terra",
+      "exposure_measurement_supporting_text": "Vitamin D supplement use was common, with 64% reporting ever use (at least once per month) in the year before enrollment.",
+      "exposure_measurement_type": "dietary_intake",
+      "extraction_supporting_text": {
+        "confidence_interval": "Recent use of vitamin D supplements ≥1/month was inversely associated with breast cancer; the association was stronger for ductal carcinoma in situ (HR = 0.67, 95% CI = 0.52, 0.87).",
+        "effect_size": "Recent use of vitamin D supplements ≥1/month was inversely associated with breast cancer; the association was stronger for ductal carcinoma in situ (HR = 0.67, 95% CI = 0.52, 0.87).",
+        "outcome_definition": ""
+      },
+      "journal": "Epidemiology (Cambridge, Mass.)",
+      "lower_ci": 0.52,
+      "outcome_definition": null,
+      "pmid": "34847083",
+      "reference": "Vitamin D Supplement Use and Risk of Breast Cancer by Race-Ethnicity.",
+      "sample_size": null,
+      "se": null,
+      "study": "O'Brien KM et al. (2022) [PMID: 34847083]",
+      "upper_ci": 0.87,
+      "year": "2022"
+    },
+    {
+      "Authors": "O'Brien KM, Harmon QE, Jackson CL, Diaz-Santana MV, Taylor JA, Weinberg CR, Sandler DP",
+      "Cases": 96.0,
+      "Effect Size": 0.88,
+      "Effect Type": "HR",
+      "Journal": "Cancer",
+      "Link": "https://pubmed.ncbi.nlm.nih.gov/35466399/",
+      "Lower CI": 0.54,
+      "PMID": "35466399",
+      "Participants": null,
+      "Reference": "Vitamin D concentrations and breast cancer incidence among Black/African American and non-Black Hispanic/Latina women.",
+      "Sample Size": null,
+      "Study": "O'Brien KM et al. (2022) [PMID: 35466399]",
+      "Upper CI": 1.42,
+      "Year": "2022",
+      "authors": "O'Brien KM, Harmon QE, Jackson CL, Diaz-Santana MV, Taylor JA, Weinberg CR, Sandler DP",
+      "cases": 96.0,
+      "comparison_type": "Above vs ≤20 ng/mL (clinical cut point for deficiency)",
+      "context_id": "35466399|breast|vitamin_d|0",
+      "effect_size": 0.88,
+      "effect_type": "HR",
+      "evidence_locator": "Table 4: Ductal carcinoma in situ; deficient (≤20 ng/mL) 42 cases, non-deficient (>20 ng/mL) 54 cases, HR 0.88 (95% CI 0.54–1.42).",
+      "evidence_source": "luna",
+      "exposure_measurement_supporting_text": "Circulating 25-hydroxyvitamin D (25(OH)D) and 24,25-dihydroxyvitamin D (24,25(OH)2D) were measured using liquid chromatography-tandem mass spectrometry in blood samples collected at the baseline.",
+      "exposure_measurement_type": "human_biospecimen",
+      "extraction_supporting_text": {
+        "confidence_interval": "Table 4: Ductal carcinoma in situ; deficient (≤20 ng/mL) 42 cases, non-deficient (>20 ng/mL) 54 cases, HR 0.88 (95% CI 0.54–1.42).",
+        "effect_size": "Table 4: Ductal carcinoma in situ; deficient (≤20 ng/mL) 42 cases, non-deficient (>20 ng/mL) 54 cases, HR 0.88 (95% CI 0.54–1.42).",
+        "outcome_definition": ""
+      },
+      "journal": "Cancer",
+      "lower_ci": 0.54,
+      "outcome_definition": null,
+      "pmid": "35466399",
+      "reference": "Vitamin D concentrations and breast cancer incidence among Black/African American and non-Black Hispanic/Latina women.",
+      "sample_size": null,
+      "se": null,
+      "study": "O'Brien KM et al. (2022) [PMID: 35466399]",
+      "upper_ci": 1.42,
+      "year": "2022"
+    }
+  ]
+}

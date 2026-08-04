@@ -63,9 +63,17 @@
                 <div class="input-group">
                     <label for="disease">Disease Scope</label>
                     <select id="disease">
-                        <option value="Breast cancer" selected>Breast cancer</option>
-                        <option value="Ovarian cancer">Ovarian cancer</option>
-                        <option value="Uterine cancer">Uterine cancer</option>
+                        {% for disease_key in ['breast', 'ovarian', 'uterine'] %}
+                        {% set scope = scope_config[disease_key] %}
+                        <option value="{{ scope.disease }}" data-disease="{{ scope.disease }}"
+                            data-scope-key="{{ disease_key }}" {% if disease_key == 'breast' %}selected{% endif %}>{{ scope.label }}</option>
+                        {% for subcategory in scope.subcategories %}
+                        <option value="{{ scope.disease }}::{{ subcategory.slug }}"
+                            data-disease="{{ scope.disease }}" data-scope-key="{{ disease_key }}"
+                            data-subcategory="{{ subcategory.slug }}" data-subcategory-label="{{ subcategory.label }}"
+                            data-risk="{{ subcategory.lifetime_risk_percent if subcategory.lifetime_risk_percent is not none else '' }}">&#160;&#160;&#160;{{ subcategory.label }}</option>
+                        {% endfor %}
+                        {% endfor %}
                     </select>
                 </div>
                 <button id="analyze-btn">Analyze Evidence</button>
@@ -365,7 +373,7 @@
         </div> <!-- End of tab-meta -->
     </main>
 
-    <script src="/static/script.js?v=1.12"></script>
+    <script src="/static/script.js?v=1.15"></script>
 </body>
 
 </html>

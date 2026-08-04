@@ -432,21 +432,48 @@ document.addEventListener('DOMContentLoaded', async () => {
         renderStudiesTable();
     }
 
+    function selectedDiseaseOption() {
+        return elements.disease && elements.disease.selectedOptions
+            ? elements.disease.selectedOptions[0]
+            : null;
+    }
+
+    function selectedDiseaseValue() {
+        const option = selectedDiseaseOption();
+        return option && option.dataset.disease
+            ? option.dataset.disease
+            : (elements.disease ? elements.disease.value : '');
+    }
+
+    function selectedSubcategoryValue() {
+        const option = selectedDiseaseOption();
+        return option && option.dataset.subcategory ? option.dataset.subcategory : null;
+    }
+
     function updateBaselineIncidence() {
         if (!elements.disease || !elements.pooledIncidence) return;
-        const disease = elements.disease.value.toLowerCase();
+        const option = selectedDiseaseOption();
+        const disease = selectedDiseaseValue().toLowerCase();
         let val = 13.0; // default/breast cancer
         if (disease.includes('uterine') || disease.includes('uterus') || disease.includes('endometrial')) {
             val = 3.1;
         } else if (disease.includes('ovarian') || disease.includes('ovary')) {
             val = 1.3;
         }
+        if (option && option.dataset.subcategory) {
+            const subtypeLifetimeRisk = Number(option.dataset.risk);
+            if (Number.isFinite(subtypeLifetimeRisk) && subtypeLifetimeRisk > 0) {
+                val = subtypeLifetimeRisk;
+            }
+        }
         elements.pooledIncidence.value = val;
         updatePooledPowerAnalysis();
     }
 
     if (elements.disease) {
-        elements.disease.addEventListener('change', updateBaselineIncidence);
+        elements.disease.addEventListener('change', () => {
+            updateBaselineIncidence();
+        });
         updateBaselineIncidence();
     }
 
@@ -456,7 +483,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Run Analysis Function
     async function runAnalysis(forceRefresh = false) {
-        const disease = elements.disease.value;
+        const disease = selectedDiseaseValue();
+        const subcategory = selectedSubcategoryValue();
         const exposure = elements.exposure.value;
         const outcome = elements.outcome.value;
         const excludeMeta = true;
@@ -477,6 +505,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     disease,
+                    subcategory,
                     exposure,
                     outcome,
                     exclude_meta: excludeMeta,
@@ -510,8 +539,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 renderStudiesTable();
                 elements.results.classList.remove('hidden');
 
-                // Auto-trigger Update Analysis so only selected studies are included
-                if (elements.updateBtn) {
+                // A saved subtype result already is its own derived analysis;
+                // do not immediately replace it with an ad-hoc reanalysis.
+                if (elements.updateBtn && !subcategory) {
                     setTimeout(() => elements.updateBtn.click(), 500);
                 }
             }
@@ -551,7 +581,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
                         studies: selectedStudies,
-                        disease: elements.disease.value,
+                        disease: selectedDiseaseValue(),
                         exposure: elements.exposure.value,
                         outcome: elements.outcome ? elements.outcome.value : 'Incidence',
                         exclude_meta: true
@@ -591,7 +621,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (isNaN(estCasesVal)) {
                 const totalN = parseInt(String(study.Participants || study['Sample Size'] || '').replace(/,/g, ''));
                 if (!isNaN(totalN)) {
-                    const dScope = document.getElementById('disease') ? document.getElementById('disease').value.toLowerCase() : 'breast cancer';
+                    const dScope = selectedDiseaseValue().toLowerCase() || 'breast cancer';
                     let prev = 0.0;
                     if (dScope.includes('breast')) prev = 0.13;
                     else if (dScope.includes('ovarian') || dScope.includes('ovary')) prev = 0.013;
@@ -677,7 +707,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                             const es = parseFloat(study['Effect Size']);
                             const type = (study['Effect Type'] || 'OR').toUpperCase();
                             if (!isNaN(es)) {
-                                const dScope = document.getElementById('disease') ? document.getElementById('disease').value.toLowerCase() : 'breast cancer';
+                                const dScope = selectedDiseaseValue().toLowerCase() || 'breast cancer';
                                 let p0 = 0.13;
                                 if (dScope.includes('uterine') || dScope.includes('uterus') || dScope.includes('endometrial')) {
                                     p0 = 0.031;
@@ -863,7 +893,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     window.verifyStudy = async (pmid, btn) => {
         if (!pmid) return;
         const study = currentStudies.find(s => String(s.PMID) === String(pmid));
-        const disease = elements.disease.value;
+        const disease = selectedDiseaseValue();
         const exposure = elements.exposure.value;
         const outcome = elements.outcome.value;
         const context_key = `${disease}_${exposure}_${outcome}`.toLowerCase().replace(/ /g, "_");
@@ -898,7 +928,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (!confirm("Flag this study for developer review? Two flags will email developers but will not change the results.")) return;
 
         try {
-            const disease = elements.disease.value;
+            const disease = selectedDiseaseValue();
             const exposure = elements.exposure.value;
             const outcome = elements.outcome.value;
             const context_key = `${disease}_${exposure}_${outcome}`.toLowerCase().replace(/ /g, "_");
@@ -999,7 +1029,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         elements.lastUpdated.textContent = isNaN(date.getTime()) ? ts : date.toLocaleString();
     }
     function updateResultsUI(data) {
-        if (elements.forestPlot) elements.forestPlot.src = `/${data.plot_url}?t=${Date.now()}`;
+        if (elements.forestPlot && data.plot_url) elements.forestPlot.src = `/${data.plot_url}?t=${Date.now()}`;
         if (elements.funnelPlot && data.funnel_plot_url) elements.funnelPlot.src = `/${data.funnel_plot_url}?t=${Date.now()}`;
 
         if (data.headline && elements.headlineResult) {
@@ -1009,7 +1039,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             elements.interpretation.textContent = data.headline.interpretation;
 
             // Estimated RR
-            const dScope = document.getElementById('disease') ? document.getElementById('disease').value.toLowerCase() : 'breast cancer';
+            const dScope = selectedDiseaseValue().toLowerCase() || 'breast cancer';
             let p0 = 0.13;
             if (dScope.includes('uterine') || dScope.includes('uterus') || dScope.includes('endometrial')) {
                 p0 = 0.031;
@@ -1087,9 +1117,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                     if (elements.baujatPlot && data.baujat_plot_url) {
                         elements.baujatPlot.src = `/${data.baujat_plot_url}?t=${Date.now()}`;
                     }
-                    if (elements.looTbody && data.headline.loo_results) {
+                    if (elements.looTbody) {
                         elements.looTbody.innerHTML = '';
-                        data.headline.loo_results.forEach(res => {
+                        (data.headline.loo_results || []).forEach(res => {
                             const tr = document.createElement('tr');
                             tr.innerHTML = `
                                 <td>${res.omitted}</td>
@@ -1125,7 +1155,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (!lastHeadlineData || !elements.pooledEs || !elements.pooledCi) return;
 
         const measure = elements.displayMeasure ? elements.displayMeasure.value : 'RR';
-        const dScope = document.getElementById('disease') ? document.getElementById('disease').value.toLowerCase() : 'breast cancer';
+        const dScope = selectedDiseaseValue().toLowerCase() || 'breast cancer';
         let p0 = 0.13;
         if (dScope.includes('uterine') || dScope.includes('uterus') || dScope.includes('endometrial')) {
             p0 = 0.031;

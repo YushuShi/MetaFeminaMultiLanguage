@@ -12,6 +12,13 @@ from email.message import EmailMessage
 from functools import partial
 from datetime import datetime
 
+try:
+    import subcategory_registry
+except ImportError:
+    # The broad-scope application remains usable while the registry module is
+    # deployed.  Subcategory requests are rejected until it is available.
+    subcategory_registry = None
+
 print = partial(print, flush=True)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -48,6 +55,10 @@ except Exception as e:
 CACHE_DIR = os.path.join(BASE_DIR, 'Cached_results')
 DATA_DIR = os.path.join(BASE_DIR, 'data')
 PLOT_DIR = os.path.join(BASE_DIR, 'Plot')
+SUBCATEGORY_RESULTS_DIR = os.path.join(DATA_DIR, 'subcategory_results')
+SUBCATEGORY_PLOT_ROOT = os.path.join(PLOT_DIR, 'subcategories')
+SUBCATEGORY_SUMMARY_MANIFEST = os.path.join(DATA_DIR, 'subcategory_summary_manifest.json')
+SUBCATEGORY_PLOT_MANIFEST = os.path.join(PLOT_DIR, 'subcategories', 'summary_manifest.json')
 VERIFICATIONS_FILE = os.path.join(DATA_DIR, 'verifications.json')
 USAGE_FILE = os.path.join(DATA_DIR, 'usage_stats.json')
 
@@ -70,6 +81,269 @@ SUMMARY_PLOTS = {
     "effect-heterogeneity": "plot_es_vs_heterogeneity_{disease}.pdf",
     "egger-heterogeneity": "plot_eggers_vs_heterogeneity_{disease}.pdf",
 }
+
+
+def _value_from(entry, *names, default=None):
+    """Read a registry value from either a mapping or a small config object."""
+    for name in names:
+        if isinstance(entry, dict) and name in entry:
+            return entry[name]
+        if hasattr(entry, name):
+            return getattr(entry, name)
+    return default
+
+
+def _normalise_subcategory(entry, slug_hint=None, major_site_id=None):
+    subcategory_id = _value_from(entry, 'subcategory_id', 'id', default=slug_hint)
+    slug = _value_from(entry, 'subcategory_slug', 'slug', 'key', default=slug_hint)
+    if not slug:
+        slug = subcategory_id
+        prefix = f'{major_site_id}_' if major_site_id else ''
+        if prefix and str(slug).startswith(prefix):
+            slug = str(slug)[len(prefix):]
+    label = _value_from(entry, 'label', 'name', 'cancer_type', default=slug)
+    risk = _value_from(
+        entry,
+        'lifetime_risk_percent',
+        'estimated_lifetime_probability_us_women_percent',
+        'risk_percent',
+    )
+    if not slug or not label:
+        return None
+    try:
+        risk = float(risk) if risk is not None else None
+    except (TypeError, ValueError):
+        risk = None
+    return {
+        'id': str(subcategory_id or slug),
+        'slug': str(slug),
+        'label': str(label),
+        'lifetime_risk_percent': risk,
+    }
+
+
+def get_scope_config():
+    """Return serialisable scope data from the CSV-backed registry.
+
+    The normalisation deliberately accepts both mapping and dataclass-style
+    registry exports, keeping UI/API code independent of registry internals.
+    No subtype taxonomy is duplicated here.
+    """
+    raw_registry = None
+    if subcategory_registry:
+        for method_name in ('get_scope_config', 'get_registry', 'get_major_scopes'):
+            method = getattr(subcategory_registry, method_name, None)
+            if callable(method):
+                raw_registry = method()
+                break
+        if raw_registry is None:
+            for attr_name in ('SCOPE_CONFIG', 'SCOPE_REGISTRY', 'SUBCATEGORY_REGISTRY', 'REGISTRY', 'MAJOR_SCOPES'):
+                raw_registry = getattr(subcategory_registry, attr_name, None)
+                if raw_registry is not None:
+                    break
+
+    if raw_registry is not None and not isinstance(raw_registry, dict):
+        to_dict = getattr(raw_registry, 'to_dict', None)
+        if callable(to_dict):
+            raw_registry = to_dict()
+
+    config = {}
+    if isinstance(raw_registry, dict) and isinstance(raw_registry.get('major_sites'), list):
+        # Registry site IDs are intentionally CSV-facing (ovary/uterus), while
+        # the existing public summary URLs use ovarian/uterine.  Match through
+        # the backend disease label so old URLs stay valid without duplicating
+        # cancer taxonomy in Flask.
+        for raw_scope in raw_registry['major_sites']:
+            disease = _value_from(raw_scope, 'major_disease', 'disease', 'disease_label')
+            major_key = next(
+                (key for key, label in SUMMARY_DISEASES.items() if label == disease),
+                None,
+            )
+            if not major_key:
+                continue
+            raw_subcategories = _value_from(raw_scope, 'subcategories', 'categories', default=[])
+            site_id = _value_from(raw_scope, 'major_site_id', 'site_id')
+            subcategories = [
+                _normalise_subcategory(item, major_site_id=site_id)
+                for item in (raw_subcategories or [])
+            ]
+            config[major_key] = {
+                'key': major_key,
+                'site_id': site_id,
+                'label': str(disease),
+                'disease': str(disease),
+                'lifetime_risk_percent': None,
+                'subcategories': [item for item in subcategories if item],
+            }
+    elif isinstance(raw_registry, dict):
+        for major_key, raw_scope in raw_registry.items():
+            if major_key not in SUMMARY_DISEASES:
+                continue
+            raw_subcategories = _value_from(raw_scope, 'subcategories', 'categories', default=[])
+            if isinstance(raw_subcategories, dict):
+                subcategories = [
+                    _normalise_subcategory(
+                        item,
+                        slug_hint,
+                        _value_from(raw_scope, 'major_site_id', 'site_id'),
+                    )
+                    for slug_hint, item in raw_subcategories.items()
+                ]
+            else:
+                subcategories = [
+                    _normalise_subcategory(
+                        item,
+                        major_site_id=_value_from(raw_scope, 'major_site_id', 'site_id'),
+                    )
+                    for item in (raw_subcategories or [])
+                ]
+            subcategories = [item for item in subcategories if item]
+            label = _value_from(raw_scope, 'label', 'name', 'disease_label', default=SUMMARY_DISEASES[major_key])
+            disease = _value_from(raw_scope, 'disease', 'disease_label', 'analysis_disease', default=SUMMARY_DISEASES[major_key])
+            risk = _value_from(raw_scope, 'lifetime_risk_percent', 'risk_percent')
+            try:
+                risk = float(risk) if risk is not None else None
+            except (TypeError, ValueError):
+                risk = None
+            config[major_key] = {
+                'key': major_key,
+                'site_id': _value_from(raw_scope, 'major_site_id', 'site_id'),
+                'label': str(label),
+                'disease': str(disease),
+                'lifetime_risk_percent': risk,
+                'subcategories': subcategories,
+            }
+
+    # Preserve broad scopes during a partial deployment, but do not invent
+    # subtype data outside the registry.
+    for major_key, label in SUMMARY_DISEASES.items():
+        config.setdefault(major_key, {
+            'key': major_key,
+            'site_id': None,
+            'label': label,
+            'disease': label,
+            'lifetime_risk_percent': None,
+            'subcategories': [],
+        })
+    return config
+
+
+def get_major_scope_key(disease, scopes=None):
+    scopes = scopes or get_scope_config()
+    requested = str(disease or '').strip().lower()
+    for key, scope in scopes.items():
+        if requested in {key.lower(), scope['label'].lower(), scope['disease'].lower()}:
+            return key
+    return None
+
+
+def get_subcategory_scope(major_key, subcategory_slug, scopes=None):
+    if not subcategory_slug:
+        return None
+    scope = (scopes or get_scope_config()).get(major_key)
+    if not scope:
+        return None
+    requested = str(subcategory_slug).strip().lower()
+    return next(
+        (
+            item for item in scope['subcategories']
+            if requested in {item['slug'].lower(), item.get('id', '').lower()}
+        ),
+        None,
+    )
+
+
+def get_subcategory_result_path(major_key, subcategory_slug, exposure):
+    """Build only a validated derived-result path; never modify major caches."""
+    canonical_exposure = meta_analysis.get_canonical_name(exposure)
+    safe_exposure = re.sub(r'[^a-z0-9]+', '_', str(canonical_exposure).lower()).strip('_')
+    scope = get_scope_config().get(major_key, {})
+    site_id = scope.get('site_id') or major_key
+    return os.path.join(
+        SUBCATEGORY_RESULTS_DIR,
+        safe_path_component(site_id),
+        safe_path_component(subcategory_slug),
+        f'{safe_exposure}.json',
+    )
+
+
+def _manifest_entry(major_key, subcategory_slug):
+    for manifest_path in (SUBCATEGORY_SUMMARY_MANIFEST, SUBCATEGORY_PLOT_MANIFEST):
+        manifest = load_json(manifest_path, {})
+        if not isinstance(manifest, dict):
+            continue
+        scope = get_scope_config().get(major_key, {})
+        keys = (major_key, scope.get('site_id'))
+        subcategory = get_subcategory_scope(major_key, subcategory_slug)
+        subtype_keys = tuple(dict.fromkeys(
+            value for value in (
+                subcategory_slug,
+                subcategory.get('slug') if subcategory else None,
+                subcategory.get('id') if subcategory else None,
+            ) if value
+        ))
+        candidates = tuple(
+            candidate
+            for key in keys if key
+            for subtype_key in subtype_keys
+            for candidate in (
+                manifest.get('scopes', {}).get(key, {}).get('subcategories', {}).get(subtype_key),
+                manifest.get('scopes', {}).get(key, {}).get(subtype_key),
+                manifest.get('subcategories', {}).get(key, {}).get(subtype_key),
+                manifest.get(key, {}).get('subcategories', {}).get(subtype_key),
+                manifest.get(key, {}).get(subtype_key),
+            )
+        )
+        entry = next((item for item in candidates if isinstance(item, dict)), None)
+        if entry:
+            return entry
+    return {}
+
+
+def _manifest_plot_path(major_key, subcategory_slug, plot_name):
+    """Resolve a subtype plot through the manifest, not user-supplied paths."""
+    entry = _manifest_entry(major_key, subcategory_slug)
+    plots = entry.get('plots', entry)
+    if not isinstance(plots, dict):
+        return None
+    plot = plots.get(plot_name) or plots.get(plot_name.replace('-', '_'))
+    if isinstance(plot, dict):
+        if plot.get('available') is False:
+            return None
+        filename = plot.get('filename') or plot.get('file')
+        plot = plot.get('path') or filename
+    if not isinstance(plot, str):
+        return None
+    candidate = plot.replace('\\', os.sep)
+    if os.path.isabs(candidate):
+        try:
+            candidate = os.path.relpath(candidate, PLOT_DIR)
+        except ValueError:
+            return None
+    elif candidate.startswith(f'{os.path.basename(PLOT_DIR)}{os.sep}'):
+        candidate = candidate[len(os.path.basename(PLOT_DIR)) + 1:]
+    candidate = os.path.normpath(candidate)
+    if candidate.startswith(f'..{os.sep}') or candidate == '..' or not candidate.lower().endswith('.pdf'):
+        return None
+    return candidate
+
+
+def get_subcategory_summary_cards(major_key, subcategory_slug):
+    cards = [
+        ('forest-protective', 'Protective associations', 'forest'),
+        ('forest-harmful', 'Harmful associations', 'forest'),
+        ('effect-heterogeneity', 'Effect size vs heterogeneity', 'diagnostic'),
+        ('egger-heterogeneity', "Egger's test vs heterogeneity", 'diagnostic'),
+    ]
+    return [
+        {
+            'name': name,
+            'title': title,
+            'kind': kind,
+            'available': bool(_manifest_plot_path(major_key, subcategory_slug, name)),
+        }
+        for name, title, kind in cards
+    ]
 
 DEVELOPER_NOTIFICATION_EMAILS = (
     "yus4011@med.cornell.edu",
@@ -299,7 +573,7 @@ def update_cache_from_verifications(disease, exposure, outcome):
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.html', scope_config=get_scope_config())
 
 @app.after_request
 def add_cors_headers(response):
@@ -315,12 +589,33 @@ def about():
 @app.route('/summary')
 def summary():
     """Show cancer-specific paper figures after a disease is selected."""
-    selected_disease = request.args.get('disease', '').strip().lower()
-    if selected_disease not in SUMMARY_DISEASES:
-        selected_disease = None
+    scopes = get_scope_config()
+    requested_scope = request.args.get('disease', '').strip()
+    requested_subcategory = request.args.get('subcategory', '').strip()
+    if '::' in requested_scope:
+        requested_scope, requested_subcategory = requested_scope.split('::', 1)
+    selected_disease = get_major_scope_key(requested_scope, scopes)
+
+    selected_subcategory = None
+    if selected_disease:
+        selected_subcategory = get_subcategory_scope(
+            selected_disease,
+            requested_subcategory,
+            scopes,
+        )
 
     plot_version = None
-    if selected_disease:
+    if selected_disease and selected_subcategory:
+        plot_paths = [
+            os.path.join(PLOT_DIR, filename)
+            for card in get_subcategory_summary_cards(selected_disease, selected_subcategory['slug'])
+            for filename in [_manifest_plot_path(selected_disease, selected_subcategory['slug'], card['name'])]
+            if filename
+        ]
+        modification_times = [os.path.getmtime(path) for path in plot_paths if os.path.exists(path)]
+        if modification_times:
+            plot_version = int(max(modification_times))
+    elif selected_disease:
         plot_paths = [
             os.path.join(PLOT_DIR, pattern.format(disease=selected_disease))
             for pattern in SUMMARY_PLOTS.values()
@@ -333,19 +628,44 @@ def summary():
 
     return render_template(
         'summary.html',
-        diseases=SUMMARY_DISEASES,
+        diseases={key: scope['label'] for key, scope in scopes.items()},
+        scope_config=scopes,
         selected_disease=selected_disease,
-        selected_disease_label=SUMMARY_DISEASES.get(selected_disease),
+        selected_disease_label=scopes.get(selected_disease, {}).get('label'),
+        selected_subcategory=selected_subcategory,
+        selected_scope_label=(selected_subcategory or scopes.get(selected_disease, {})).get('label'),
+        selected_lifetime_risk=(selected_subcategory or scopes.get(selected_disease, {})).get('lifetime_risk_percent'),
+        subcategory_summary_cards=(
+            get_subcategory_summary_cards(selected_disease, selected_subcategory['slug'])
+            if selected_disease and selected_subcategory else []
+        ),
         plot_version=plot_version,
     )
 
 @app.route('/summary/plots/<disease>/<plot_name>')
 def summary_plot(disease, plot_name):
     """Serve only the known summary PDFs; never accept a filesystem path."""
-    if disease not in SUMMARY_DISEASES or plot_name not in SUMMARY_PLOTS:
+    scopes = get_scope_config()
+    if disease not in scopes:
+        disease = next(
+            (key for key, scope in scopes.items() if scope.get('site_id') == disease),
+            None,
+        )
+    if not disease:
         return jsonify({"error": "Summary plot not found."}), 404
 
-    filename = SUMMARY_PLOTS[plot_name].format(disease=disease)
+    subcategory = get_subcategory_scope(disease, request.args.get('subcategory', '').strip(), scopes)
+    if subcategory:
+        filename = _manifest_plot_path(disease, subcategory['slug'], plot_name)
+    elif request.args.get('subcategory'):
+        return jsonify({"error": "Summary plot not found."}), 404
+    elif plot_name in SUMMARY_PLOTS:
+        filename = SUMMARY_PLOTS[plot_name].format(disease=disease)
+    else:
+        filename = None
+
+    if not filename:
+        return jsonify({"error": "Summary plot not found."}), 404
     if not os.path.isfile(os.path.join(PLOT_DIR, filename)):
         return jsonify({"error": "Summary plot is not available yet."}), 404
 
@@ -353,9 +673,17 @@ def summary_plot(disease, plot_name):
     response.headers['Cache-Control'] = 'no-cache, max-age=0, must-revalidate'
     return response
 
+
+@app.route('/Plot/subcategories/<path:filename>')
+def subcategory_plot(filename):
+    """Serve only generated subtype PNGs used by the main evidence page."""
+    if not str(filename).lower().endswith('.png'):
+        return jsonify({"error": "Subcategory plot not found."}), 404
+    return send_from_directory(SUBCATEGORY_PLOT_ROOT, filename, mimetype='image/png')
+
 @app.route('/analyze', methods=['POST'])
 def analyze():
-    data = request.json
+    data = request.json or {}
     disease = data.get('disease', DEFAULT_DISEASE)
     exposure = data.get('exposure', 'Coffee')
     outcome = data.get('outcome', 'Incidence')
@@ -366,15 +694,41 @@ def analyze():
     # The UI toggle is removed, so we default to False for downstream terms
     use_downstream = data.get('use_downstream', False)
     force_refresh = data.get('force_refresh', False)
+    scopes = get_scope_config()
+    major_key = get_major_scope_key(disease, scopes)
+    subcategory_slug = str(data.get('subcategory') or '').strip()
+    subcategory = get_subcategory_scope(major_key, subcategory_slug, scopes) if major_key else None
+
+    if subcategory_slug and not subcategory:
+        return jsonify({"error": "The requested cancer subcategory is not valid for this disease scope."}), 400
 
     started_at = time.time()
     log_event(
         f"[MetaFemina] Analyze request: disease={disease}, exposure={exposure}, "
-        f"outcome={outcome}, exclude_meta={exclude_meta}, force_refresh={force_refresh}, model={model}"
+        f"outcome={outcome}, subcategory={subcategory_slug or 'all'}, exclude_meta={exclude_meta}, "
+        f"force_refresh={force_refresh}, model={model}"
     )
 
-    best_cache_path = None
-    if not force_refresh:
+    # A subtype is a derived, saved-only analysis.  It is intentionally loaded
+    # before cache resolution so it can never issue a PubMed or LLM request.
+    if subcategory:
+        if force_refresh:
+            return jsonify({"error": "Subcategory evidence is derived from saved studies and cannot be refreshed here."}), 400
+        subtype_path = get_subcategory_result_path(major_key, subcategory['slug'], exposure)
+        if not os.path.isfile(subtype_path):
+            return jsonify({"error": "No saved analysis is available for this cancer subcategory and exposure."}), 404
+        result = load_json(subtype_path, {})
+        if not isinstance(result, dict) or not result:
+            return jsonify({"error": "The saved subcategory analysis could not be read."}), 500
+        result['subcategory'] = subcategory['slug']
+        result['subcategory_label'] = subcategory['label']
+        result['lifetime_risk_percent'] = subcategory['lifetime_risk_percent']
+        result['scope_label'] = f"{scopes[major_key]['label']}: {subcategory['label']}"
+        result['derived_from_saved_studies'] = True
+        best_cache_path = subtype_path
+    else:
+        best_cache_path = None
+    if not subcategory and not force_refresh:
         # Try requested downstream setting first, then fallback to opposite
         for ds_flag in [use_downstream, not use_downstream]:
             for p_model in model_cache_priority(model):
@@ -386,16 +740,16 @@ def analyze():
                     break
             if best_cache_path:
                 break
-    else:
+    elif not subcategory:
         log_event("[MetaFemina] Force refresh requested; bypassing cached result lookup.")
         if READ_ONLY_MODE:
             return jsonify({"error": "Refreshing evidence is disabled in the public demonstration version."}), 400
 
-    if READ_ONLY_MODE and not best_cache_path:
+    if not subcategory and READ_ONLY_MODE and not best_cache_path:
         log_event("[MetaFemina] No cached result found for request in read-only mode.")
         return jsonify({"error": "This exposure has not been pre-analyzed yet. In the public demonstration version, only pre-analyzed exposures are available to search."}), 400
 
-    if best_cache_path:
+    if best_cache_path and not subcategory:
         log_event(f"[MetaFemina] Returning best available cached results from {best_cache_path}")
         result = load_json(best_cache_path, {})
         screening_stats = result.get("screening_stats")
@@ -425,7 +779,7 @@ def analyze():
             log_event(f"    * Consensus Bypassed:       {screening_stats.get('consensus_bypassed', 0)}")
             log_event(f"  - Final Extracted Studies: {screening_stats.get('extracted', 0)}")
             log_event("="*60 + "\n")
-    else:
+    elif not subcategory:
         # Resolve canonical name for analysis engine consumption
         canonical_exposure = meta_analysis.get_canonical_name(exposure)
         log_event(f"[MetaFemina] Running new analysis for {disease} / {canonical_exposure} (from '{exposure}') using model: {model}")
@@ -445,7 +799,7 @@ def analyze():
     # Inject advisory crowdsourcing counts. Reports never alter study data or results.
     verifications = load_json(VERIFICATIONS_FILE, {})
     canonical_exp = meta_analysis.get_canonical_name(exposure)
-    context_key = f"{disease}_{canonical_exp}_{outcome}".lower().replace(" ", "_")
+    context_key = f"{disease}_{canonical_exp}_{outcome}_{subcategory_slug or 'all'}".lower().replace(" ", "_")
     
     if "studies" in result:
         for study in result['studies']:

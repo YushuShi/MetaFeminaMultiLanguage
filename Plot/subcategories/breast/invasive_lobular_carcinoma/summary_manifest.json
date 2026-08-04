@@ -1,0 +1,232 @@
+{
+  "eligible_exposure_count": 4,
+  "exposure_count": 4,
+  "exposures": [
+    {
+      "availability": {
+        "baujat": {
+          "available": true,
+          "reason": null
+        },
+        "eligible_study_count": 5,
+        "forest": {
+          "available": true,
+          "reason": null
+        },
+        "formal_egger": {
+          "available": false,
+          "reason": "egger_requires_10_studies"
+        },
+        "funnel": {
+          "available": true,
+          "reason": "egger_requires_10_studies"
+        }
+      },
+      "exposure": "Alcohol",
+      "headline": {
+        "ci_low": 1.3073986347571511,
+        "ci_upp": 2.2138744806249617,
+        "eggers_intercept": 3.223615535151568,
+        "eggers_p": 0.11291900617806704,
+        "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+        "i2": 56.05602426705886,
+        "interpretation": "The pooled subtype-specific estimate is 1.70, indicating a higher relative association for this exposure.",
+        "loo_results": [
+          {
+            "ci_low": 1.2007026598796495,
+            "ci_upp": 2.4095539126089283,
+            "is_significant": true,
+            "omitted": "Li CI et al. (2003) [PMID: 14578143]",
+            "pooled_es": 1.7009285087836459
+          },
+          {
+            "ci_low": 1.268261823635351,
+            "ci_upp": 2.3808395072922517,
+            "is_significant": true,
+            "omitted": "Rosenberg LU et al. (2006) [PMID: 16507159]",
+            "pooled_es": 1.7376788700164256
+          },
+          {
+            "ci_low": 1.2235491206184954,
+            "ci_upp": 2.346679368565324,
+            "is_significant": true,
+            "omitted": "Li CI et al. (2010) [PMID: 20733117]",
+            "pooled_es": 1.6944844283089968
+          },
+          {
+            "ci_low": 1.235289357767004,
+            "ci_upp": 1.8961251046184362,
+            "is_significant": true,
+            "omitted": "Gago-Dominguez M et al. (2016) [PMID: 26835221]",
+            "pooled_es": 1.5304454131820584
+          },
+          {
+            "ci_low": 1.533823960848084,
+            "ci_upp": 2.3655026651421354,
+            "is_significant": true,
+            "omitted": "Baglia ML et al. (2017) [PMID: 28567703]",
+            "pooled_es": 1.9048004271432242
+          }
+        ],
+        "n_studies": 5,
+        "pooled_es": 1.7012984669048439,
+        "q": 9.102499110023704,
+        "results_interpretation": "This saved analysis contains 5 separately reported Invasive lobular carcinoma estimates.",
+        "tau2": 0.04798793934946252
+      }
+    },
+    {
+      "availability": {
+        "baujat": {
+          "available": false,
+          "reason": "baujat_requires_3_studies"
+        },
+        "eligible_study_count": 1,
+        "forest": {
+          "available": true,
+          "reason": null
+        },
+        "formal_egger": {
+          "available": false,
+          "reason": "egger_requires_10_studies"
+        },
+        "funnel": {
+          "available": true,
+          "reason": "egger_requires_10_studies"
+        }
+      },
+      "exposure": "Beta-carotene",
+      "headline": {
+        "ci_low": 0.5698351409943826,
+        "ci_upp": 0.9097368040436635,
+        "eggers_intercept": null,
+        "eggers_p": null,
+        "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+        "i2": 0.0,
+        "interpretation": "The pooled subtype-specific estimate is 0.72, indicating a lower relative association for this exposure.",
+        "loo_results": [],
+        "n_studies": 1,
+        "pooled_es": 0.72,
+        "q": 0.0,
+        "results_interpretation": "This saved analysis contains 1 separately reported Invasive lobular carcinoma estimate.",
+        "tau2": 0.0
+      }
+    },
+    {
+      "availability": {
+        "baujat": {
+          "available": false,
+          "reason": "baujat_requires_3_studies"
+        },
+        "eligible_study_count": 1,
+        "forest": {
+          "available": true,
+          "reason": null
+        },
+        "formal_egger": {
+          "available": false,
+          "reason": "egger_requires_10_studies"
+        },
+        "funnel": {
+          "available": true,
+          "reason": "egger_requires_10_studies"
+        }
+      },
+      "exposure": "Fish oil",
+      "headline": {
+        "ci_low": 0.5925455291212927,
+        "ci_upp": 1.9684563340300572,
+        "eggers_intercept": null,
+        "eggers_p": null,
+        "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+        "i2": 0.0,
+        "interpretation": "The pooled subtype-specific estimate is 1.08, indicating a higher relative association for this exposure.",
+        "loo_results": [],
+        "n_studies": 1,
+        "pooled_es": 1.08,
+        "q": 0.0,
+        "results_interpretation": "This saved analysis contains 1 separately reported Invasive lobular carcinoma estimate.",
+        "tau2": 0.0
+      }
+    },
+    {
+      "availability": {
+        "baujat": {
+          "available": false,
+          "reason": "baujat_requires_3_studies"
+        },
+        "eligible_study_count": 1,
+        "forest": {
+          "available": true,
+          "reason": null
+        },
+        "formal_egger": {
+          "available": false,
+          "reason": "egger_requires_10_studies"
+        },
+        "funnel": {
+          "available": true,
+          "reason": "egger_requires_10_studies"
+        }
+      },
+      "exposure": "Tea",
+      "headline": {
+        "ci_low": 0.10088394368509764,
+        "ci_upp": 1.0794581974305442,
+        "eggers_intercept": null,
+        "eggers_p": null,
+        "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+        "i2": 0.0,
+        "interpretation": "The pooled subtype-specific estimate is 0.33, indicating a lower relative association for this exposure.",
+        "loo_results": [],
+        "n_studies": 1,
+        "pooled_es": 0.33,
+        "q": 0.0,
+        "results_interpretation": "This saved analysis contains 1 separately reported Invasive lobular carcinoma estimate.",
+        "tau2": 0.0
+      }
+    }
+  ],
+  "formal_egger_exposure_count": 0,
+  "notes": [
+    "Lifetime-risk percent is taxonomy metadata only and is not pooled or aggregated.",
+    "Protective/harmful grouping is by the pooled point estimate relative to 1.0.",
+    "Summary forest plots follow the broad-cancer format and require at least 2 studies per exposure.",
+    "Effect-size versus heterogeneity plots exclude exposures represented by only one study.",
+    "Formal Egger diagnostics require at least 10 studies per exposure."
+  ],
+  "plots": {
+    "effect-heterogeneity": {
+      "available": false,
+      "filename": "effect_size_vs_i2.pdf",
+      "path": "Plot/subcategories/breast/invasive_lobular_carcinoma/effect_size_vs_i2.pdf",
+      "reason": "requires_2_eligible_exposures"
+    },
+    "egger-heterogeneity": {
+      "available": false,
+      "filename": "egger_vs_i2.pdf",
+      "path": "Plot/subcategories/breast/invasive_lobular_carcinoma/egger_vs_i2.pdf",
+      "reason": "requires_2_formal_egger_exposures"
+    },
+    "forest-harmful": {
+      "available": true,
+      "filename": "forest_harmful.pdf",
+      "path": "Plot/subcategories/breast/invasive_lobular_carcinoma/forest_harmful.pdf",
+      "reason": null
+    },
+    "forest-protective": {
+      "available": false,
+      "filename": "forest_protective.pdf",
+      "path": "Plot/subcategories/breast/invasive_lobular_carcinoma/forest_protective.pdf",
+      "reason": "no_protective_eligible_exposures"
+    }
+  },
+  "schema_version": "1.0",
+  "scope": {
+    "estimated_lifetime_probability_us_women_percent": 1.3,
+    "label": "Invasive lobular carcinoma",
+    "major_site_id": "breast",
+    "subcategory_id": "breast_invasive_lobular_carcinoma",
+    "subcategory_slug": "invasive_lobular_carcinoma"
+  }
+}
