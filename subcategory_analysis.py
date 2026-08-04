@@ -23,6 +23,7 @@ import numpy as np
 import pandas as pd
 import statsmodels.api as sm
 import forestplot
+from matplotlib import font_manager
 from matplotlib.lines import Line2D
 from matplotlib.patches import Rectangle
 
@@ -36,6 +37,11 @@ DEFAULT_CACHE_ROOT = MODULE_DIR / "Cached_results"
 SCHEMA_VERSION = "1.0"
 FORMAL_EGGER_MIN_STUDIES = 10
 TERRA_INPUT_USD_PER_MILLION = 2.0
+SUMMARY_PLOT_LOCALES = ("zh-CN", "zh-TW", "nl")
+SUMMARY_TRANSLATIONS = MODULE_DIR / "static" / "i18n-translations.json"
+
+_SUMMARY_TRANSLATION_LOOKUP: dict[str, dict[str, str]] | None = None
+_SUMMARY_FONT_FAMILIES: dict[str, str | None] = {}
 
 EXPOSURE_GROUP_ORDER = (
     "Carotenoids",
@@ -943,12 +949,87 @@ def _pretty_exposure(value: str) -> str:
     return label.replace("Bcaas", "BCAAs").replace("Beta Carotene", "beta-Carotene")
 
 
+def _summary_translation_lookup() -> dict[str, dict[str, str]]:
+    """Index display translations without changing canonical exposure values."""
+    global _SUMMARY_TRANSLATION_LOOKUP
+    if _SUMMARY_TRANSLATION_LOOKUP is not None:
+        return _SUMMARY_TRANSLATION_LOOKUP
+    lookup: dict[str, dict[str, str]] = {}
+    try:
+        catalog = _read_json(SUMMARY_TRANSLATIONS)
+    except (OSError, json.JSONDecodeError):
+        catalog = {}
+    if isinstance(catalog, dict):
+        for source, translations in catalog.items():
+            if not isinstance(translations, dict):
+                continue
+            localized = {
+                locale: str(translations.get(locale) or "").strip()
+                for locale in SUMMARY_PLOT_LOCALES
+            }
+            lookup[slugify(source)] = localized
+    _SUMMARY_TRANSLATION_LOOKUP = lookup
+    return lookup
+
+
+def _localized_exposure(value: str, locale: str | None = None) -> str:
+    if locale not in SUMMARY_PLOT_LOCALES:
+        return _pretty_exposure(value)
+    translation = _summary_translation_lookup().get(slugify(value), {}).get(locale)
+    return translation or _pretty_exposure(value)
+
+
+def _summary_font_family(locale: str | None) -> str | None:
+    """Choose an installed CJK font for localized exposure labels when possible."""
+    if locale not in ("zh-CN", "zh-TW"):
+        return None
+    if locale in _SUMMARY_FONT_FAMILIES:
+        return _SUMMARY_FONT_FAMILIES[locale]
+    candidates = {
+        "zh-CN": (
+            "Noto Sans CJK SC", "Noto Sans SC", "Source Han Sans SC", "PingFang SC",
+            "Microsoft YaHei", "SimHei", "Arial Unicode MS", "Noto Sans CJK TC",
+            "Noto Sans CJK JP",
+        ),
+        "zh-TW": (
+            "Noto Sans CJK TC", "Noto Sans TC", "Source Han Sans TC", "PingFang TC",
+            "Microsoft JhengHei", "Heiti TC", "Arial Unicode MS", "Noto Sans CJK SC",
+            "Noto Sans CJK JP",
+        ),
+    }
+    installed = {
+        font.name.casefold(): font.name
+        for font in sorted(font_manager.fontManager.ttflist, key=lambda item: (item.name, item.fname))
+    }
+    family = next(
+        (installed[name.casefold()] for name in candidates[locale] if name.casefold() in installed),
+        None,
+    )
+    if family is None:
+        # Distribution-specific family names sometimes add a style suffix.
+        markers = ("noto sans cjk", "noto sans sc", "noto sans tc", "source han sans", "pingfang")
+        family = next(
+            (name for key, name in installed.items() if any(marker in key for marker in markers)),
+            None,
+        )
+    _SUMMARY_FONT_FAMILIES[locale] = family
+    return family
+
+
+def _localized_summary_plot_paths(plot_paths: dict[str, Path], locale: str) -> dict[str, Path]:
+    return {
+        name: path.parent / "locales" / locale / path.name
+        for name, path in plot_paths.items()
+    }
+
+
 def _cross_exposure_forest(
     path: Path,
     title: str,
     entries: list[dict[str, Any]],
     direction: str,
     cancer_label: str,
+    locale: str | None = None,
 ) -> None:
     if not entries:
         _save_placeholder(path, title, "No exposure met the eligibility rule for this summary panel.")
@@ -961,7 +1042,7 @@ def _cross_exposure_forest(
         headline = entry["headline"]
         prepared.append({
             "entry": entry,
-            "exposure": _pretty_exposure(entry["exposure"]),
+            "exposure": _localized_exposure(entry["exposure"], locale),
             "group": group,
             "n_studies": int(headline["n_studies"]),
             "total_n": _summary_total(studies, "sample_size"),
@@ -987,6 +1068,8 @@ def _cross_exposure_forest(
             plot_rows.append({**item, "kind": "exposure", "y": row_number})
             row_number += 1
     total_rows = row_number - 1
+    exposure_font = _summary_font_family(locale)
+    exposure_font_args = {"fontfamily": exposure_font} if exposure_font else {}
 
     fig, (table_ax, forest_ax) = plt.subplots(
         1,
@@ -1014,7 +1097,7 @@ def _cross_exposure_forest(
             continue
         color = EXPOSURE_GROUP_COLORS[group]
         table_ax.text(0.15, row["y"], row["exposure"], ha="left", va="center",
-                      fontsize=9, fontweight="bold", color=color)
+                      fontsize=9, fontweight="bold", color=color, **exposure_font_args)
         table_ax.text(1.2, row["y"], str(row["n_studies"]), ha="center", va="center", fontsize=8.5, color=color)
         table_ax.text(2.4, row["y"], f"{row['total_n']:,}" if row["total_n"] is not None else "-",
                       ha="right", va="center", fontsize=8.5, color=color)
@@ -1104,7 +1187,14 @@ def _cross_exposure_forest(
     plt.close(fig)
 
 
-def _diagnostic_plot(path: Path, title: str, entries: list[dict[str, Any]], x_key: str, x_label: str) -> None:
+def _diagnostic_plot(
+    path: Path,
+    title: str,
+    entries: list[dict[str, Any]],
+    x_key: str,
+    x_label: str,
+    locale: str | None = None,
+) -> None:
     usable = [
         entry for entry in entries
         if entry["headline"].get(x_key) is not None
@@ -1120,6 +1210,8 @@ def _diagnostic_plot(path: Path, title: str, entries: list[dict[str, Any]], x_ke
     ax.scatter(x, y, color="#215a8e", edgecolor="black", alpha=0.75)
     x_mid = (min(x) + max(x)) / 2 if len(x) > 1 else x[0]
     label_offsets = (5, 15, 25, -10)
+    exposure_font = _summary_font_family(locale)
+    exposure_font_args = {"fontfamily": exposure_font} if exposure_font else {}
     for index, entry in enumerate(sorted(
         usable, key=lambda item: (item["headline"]["i2"], item["headline"][x_key], item["exposure"])
     )):
@@ -1127,13 +1219,14 @@ def _diagnostic_plot(path: Path, title: str, entries: list[dict[str, Any]], x_ke
         y_value = entry["headline"]["i2"]
         right_side = x_value > x_mid
         ax.annotate(
-            str(entry["exposure"])[:28],
+            _localized_exposure(entry["exposure"], locale)[:28],
             (x_value, y_value),
             xytext=(-4 if right_side else 4, label_offsets[index % len(label_offsets)]),
             textcoords="offset points",
             ha="right" if right_side else "left",
             va="bottom",
             fontsize=8,
+            **exposure_font_args,
         )
     ax.set_xlabel(x_label)
     ax.set_ylabel("I² (%)")
@@ -1142,6 +1235,49 @@ def _diagnostic_plot(path: Path, title: str, entries: list[dict[str, Any]], x_ke
     path.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(path, bbox_inches="tight", metadata={"Date": None})
     plt.close(fig)
+
+
+def _render_summary_plot_set(
+    plot_paths: dict[str, Path],
+    category: dict[str, Any],
+    protective: list[dict[str, Any]],
+    harmful: list[dict[str, Any]],
+    diagnostic_eligible: list[dict[str, Any]],
+    egger_heterogeneity_eligible: list[dict[str, Any]],
+    locale: str | None = None,
+) -> None:
+    _cross_exposure_forest(
+        plot_paths["forest_protective"],
+        f"Exposures inversely associated with {category['label']} risk",
+        protective,
+        "Protective",
+        category["label"],
+        locale=locale,
+    )
+    _cross_exposure_forest(
+        plot_paths["forest_harmful"],
+        f"Exposures positively associated with {category['label']} risk",
+        harmful,
+        "Harmful",
+        category["label"],
+        locale=locale,
+    )
+    _diagnostic_plot(
+        plot_paths["effect_heterogeneity"],
+        "Effect estimate vs heterogeneity",
+        diagnostic_eligible,
+        "pooled_es",
+        "Pooled effect estimate",
+        locale=locale,
+    )
+    _diagnostic_plot(
+        plot_paths["egger_heterogeneity"],
+        "Egger's p-value vs heterogeneity",
+        egger_heterogeneity_eligible,
+        "eggers_p",
+        "Egger's p-value",
+        locale=locale,
+    )
 
 
 def _summary_outputs(category: dict[str, Any], entries: list[dict[str, Any]], plot_root: Path) -> dict[str, Any]:
@@ -1169,34 +1305,24 @@ def _summary_outputs(category: dict[str, Any], entries: list[dict[str, Any]], pl
     formal_egger = [entry for entry in eligible if entry["availability"]["formal_egger"]["available"]]
     # Direction uses the pooled point estimate. This mirrors the summary's
     # visual grouping and does not assert statistical significance.
-    _cross_exposure_forest(
-        plot_paths["forest_protective"],
-        f"Exposures inversely associated with {category['label']} risk",
+    _render_summary_plot_set(
+        plot_paths,
+        category,
         protective,
-        "Protective",
-        category["label"],
-    )
-    _cross_exposure_forest(
-        plot_paths["forest_harmful"],
-        f"Exposures positively associated with {category['label']} risk",
         harmful,
-        "Harmful",
-        category["label"],
-    )
-    _diagnostic_plot(
-        plot_paths["effect_heterogeneity"],
-        "Effect estimate vs heterogeneity",
         diagnostic_eligible,
-        "pooled_es",
-        "Pooled effect estimate",
-    )
-    _diagnostic_plot(
-        plot_paths["egger_heterogeneity"],
-        "Egger's p-value vs heterogeneity",
         egger_heterogeneity_eligible,
-        "eggers_p",
-        "Egger's p-value",
     )
+    for locale in SUMMARY_PLOT_LOCALES:
+        _render_summary_plot_set(
+            _localized_summary_plot_paths(plot_paths, locale),
+            category,
+            protective,
+            harmful,
+            diagnostic_eligible,
+            egger_heterogeneity_eligible,
+            locale=locale,
+        )
     plot_metadata = {
         "forest-protective": {"path": _plot_path_url(plot_paths["forest_protective"]), "filename": plot_paths["forest_protective"].name, "available": bool(protective), "reason": None if protective else "no_protective_eligible_exposures"},
         "forest-harmful": {"path": _plot_path_url(plot_paths["forest_harmful"]), "filename": plot_paths["forest_harmful"].name, "available": bool(harmful), "reason": None if harmful else "no_harmful_eligible_exposures"},
@@ -1304,6 +1430,14 @@ def build_subcategory_outputs(
             summary_folder / "egger_vs_i2.pdf",
             summary_folder / "summary_manifest.json",
         })
+        for locale in SUMMARY_PLOT_LOCALES:
+            locale_folder = summary_folder / "locales" / locale
+            expected_plot_files.update({
+                locale_folder / "forest_protective.pdf",
+                locale_folder / "forest_harmful.pdf",
+                locale_folder / "effect_size_vs_i2.pdf",
+                locale_folder / "egger_vs_i2.pdf",
+            })
     ui_summary_manifest: dict[str, Any] = {"schema_version": SCHEMA_VERSION, "scopes": {}}
     for summary in summaries.values():
         scope = summary["scope"]

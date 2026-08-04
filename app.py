@@ -82,6 +82,30 @@ SUMMARY_PLOTS = {
     "egger-heterogeneity": "plot_eggers_vs_heterogeneity_{disease}.pdf",
 }
 
+SUMMARY_PLOT_LANGUAGES = frozenset({"zh-CN", "zh-TW", "nl"})
+
+
+def _localized_summary_plot_path(filename, language, *, subcategory=False):
+    """Return a generated locale variant without accepting path data from users."""
+    if language not in SUMMARY_PLOT_LANGUAGES:
+        return filename
+    if subcategory:
+        return os.path.join(
+            os.path.dirname(filename),
+            'locales',
+            language,
+            os.path.basename(filename),
+        )
+    return os.path.join('locales', language, filename)
+
+
+def _summary_plot_variants(filename, *, subcategory=False):
+    """List the English plot and every supported generated locale variant."""
+    return [filename] + [
+        _localized_summary_plot_path(filename, language, subcategory=subcategory)
+        for language in sorted(SUMMARY_PLOT_LANGUAGES)
+    ]
+
 
 def _value_from(entry, *names, default=None):
     """Read a registry value from either a mapping or a small config object."""
@@ -607,18 +631,20 @@ def summary():
     plot_version = None
     if selected_disease and selected_subcategory:
         plot_paths = [
-            os.path.join(PLOT_DIR, filename)
+            os.path.join(PLOT_DIR, variant)
             for card in get_subcategory_summary_cards(selected_disease, selected_subcategory['slug'])
             for filename in [_manifest_plot_path(selected_disease, selected_subcategory['slug'], card['name'])]
             if filename
+            for variant in _summary_plot_variants(filename, subcategory=True)
         ]
         modification_times = [os.path.getmtime(path) for path in plot_paths if os.path.exists(path)]
         if modification_times:
             plot_version = int(max(modification_times))
     elif selected_disease:
         plot_paths = [
-            os.path.join(PLOT_DIR, pattern.format(disease=selected_disease))
+            os.path.join(PLOT_DIR, variant)
             for pattern in SUMMARY_PLOTS.values()
+            for variant in _summary_plot_variants(pattern.format(disease=selected_disease))
         ]
         modification_times = [
             os.path.getmtime(path) for path in plot_paths if os.path.exists(path)
@@ -655,6 +681,7 @@ def summary_plot(disease, plot_name):
         return jsonify({"error": "Summary plot not found."}), 404
 
     subcategory = get_subcategory_scope(disease, request.args.get('subcategory', '').strip(), scopes)
+    is_subcategory_plot = bool(subcategory)
     if subcategory:
         filename = _manifest_plot_path(disease, subcategory['slug'], plot_name)
     elif request.args.get('subcategory'):
@@ -666,6 +693,17 @@ def summary_plot(disease, plot_name):
 
     if not filename:
         return jsonify({"error": "Summary plot not found."}), 404
+    english_filename = filename
+    language = request.args.get('lang', '').strip()
+    localized_filename = _localized_summary_plot_path(
+        english_filename,
+        language,
+        subcategory=is_subcategory_plot,
+    )
+    if os.path.isfile(os.path.join(PLOT_DIR, localized_filename)):
+        filename = localized_filename
+    else:
+        filename = english_filename
     if not os.path.isfile(os.path.join(PLOT_DIR, filename)):
         return jsonify({"error": "Summary plot is not available yet."}), 404
 

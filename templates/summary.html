@@ -7,7 +7,7 @@
     <title>Evidence Summary | MetaFemina</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <script src="{{ url_for('static', filename='i18n.js') }}?v=1.0" defer></script>
+    <script src="{{ url_for('static', filename='i18n.js') }}?v=1.1" defer></script>
 </head>
 
 <body>
@@ -83,11 +83,12 @@
                         <h3>{{ plot.title }}</h3>
                         {% if plot.available %}
                         <object class="summary-pdf summary-pdf--forest"
+                            data-localized-plot
                             data="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot.name, subcategory=selected_subcategory.slug, v=plot_version) }}#view=FitH"
                             type="application/pdf" aria-label="{{ plot.title }} for {{ selected_scope_label }}">
-                            <p>PDF preview is unavailable. <a href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot.name, subcategory=selected_subcategory.slug, v=plot_version) }}">Open the plot</a>.</p>
+                            <p>PDF preview is unavailable. <a data-localized-plot href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot.name, subcategory=selected_subcategory.slug, v=plot_version) }}">Open the plot</a>.</p>
                         </object>
-                        <a class="plot-open-link" href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot.name, subcategory=selected_subcategory.slug, v=plot_version) }}" target="_blank" rel="noopener">Open full-size plot ↗</a>
+                        <a class="plot-open-link" data-localized-plot href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot.name, subcategory=selected_subcategory.slug, v=plot_version) }}" target="_blank" rel="noopener">Open full-size plot ↗</a>
                         {% else %}
                         <p class="summary-plot-unavailable">Insufficient eligible saved evidence is currently available to generate this forest plot.</p>
                         {% endif %}
@@ -107,11 +108,12 @@
                         <h3>{{ plot.title }}</h3>
                         {% if plot.available %}
                         <object class="summary-pdf"
+                            data-localized-plot
                             data="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot.name, subcategory=selected_subcategory.slug, v=plot_version) }}#view=FitH"
                             type="application/pdf" aria-label="{{ plot.title }} for {{ selected_scope_label }}">
-                            <p>PDF preview is unavailable. <a href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot.name, subcategory=selected_subcategory.slug, v=plot_version) }}">Open the plot</a>.</p>
+                            <p>PDF preview is unavailable. <a data-localized-plot href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot.name, subcategory=selected_subcategory.slug, v=plot_version) }}">Open the plot</a>.</p>
                         </object>
-                        <a class="plot-open-link" href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot.name, subcategory=selected_subcategory.slug, v=plot_version) }}" target="_blank" rel="noopener">Open full-size plot ↗</a>
+                        <a class="plot-open-link" data-localized-plot href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot.name, subcategory=selected_subcategory.slug, v=plot_version) }}" target="_blank" rel="noopener">Open full-size plot ↗</a>
                         {% else %}
                         <p class="summary-plot-unavailable">Insufficient eligible saved evidence is currently available to generate this heterogeneity diagnostic.</p>
                         {% endif %}
@@ -134,11 +136,12 @@
                     <article class="summary-plot-card">
                         <h3>{{ plot_title }}</h3>
                         <object class="summary-pdf summary-pdf--forest"
+                            data-localized-plot
                             data="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot_name, v=plot_version) }}#view=FitH"
                             type="application/pdf" aria-label="{{ plot_title }} for {{ selected_disease_label }}">
-                            <p>PDF preview is unavailable. <a href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot_name, v=plot_version) }}">Open the plot</a>.</p>
+                            <p>PDF preview is unavailable. <a data-localized-plot href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot_name, v=plot_version) }}">Open the plot</a>.</p>
                         </object>
-                        <a class="plot-open-link" href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot_name, v=plot_version) }}" target="_blank" rel="noopener">Open full-size plot ↗</a>
+                        <a class="plot-open-link" data-localized-plot href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot_name, v=plot_version) }}" target="_blank" rel="noopener">Open full-size plot ↗</a>
                     </article>
                     {% endfor %}
                 </div>
@@ -158,11 +161,12 @@
                     <article class="summary-plot-card">
                         <h3>{{ plot_title }}</h3>
                         <object class="summary-pdf summary-pdf--forest"
+                            data-localized-plot
                             data="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot_name, v=plot_version) }}#view=FitH"
                             type="application/pdf" aria-label="Dietary {{ plot_title|lower }} for {{ selected_disease_label }}">
-                            <p>PDF preview is unavailable. <a href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot_name, v=plot_version) }}">Open the plot</a>.</p>
+                            <p>PDF preview is unavailable. <a data-localized-plot href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot_name, v=plot_version) }}">Open the plot</a>.</p>
                         </object>
-                        <a class="plot-open-link" href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot_name, v=plot_version) }}" target="_blank" rel="noopener">Open full-size plot ↗</a>
+                        <a class="plot-open-link" data-localized-plot href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot_name, v=plot_version) }}" target="_blank" rel="noopener">Open full-size plot ↗</a>
                     </article>
                     {% endfor %}
                 </div>
@@ -182,11 +186,12 @@
                     <article class="summary-plot-card">
                         <h3>{{ plot_title }}</h3>
                         <object class="summary-pdf"
+                            data-localized-plot
                             data="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot_name, v=plot_version) }}#view=FitH"
                             type="application/pdf" aria-label="{{ plot_title }} for {{ selected_disease_label }}">
-                            <p>PDF preview is unavailable. <a href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot_name, v=plot_version) }}">Open the plot</a>.</p>
+                            <p>PDF preview is unavailable. <a data-localized-plot href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot_name, v=plot_version) }}">Open the plot</a>.</p>
                         </object>
-                        <a class="plot-open-link" href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot_name, v=plot_version) }}" target="_blank" rel="noopener">Open full-size plot ↗</a>
+                        <a class="plot-open-link" data-localized-plot href="{{ url_for('summary_plot', disease=selected_disease, plot_name=plot_name, v=plot_version) }}" target="_blank" rel="noopener">Open full-size plot ↗</a>
                     </article>
                     {% endfor %}
                 </div>

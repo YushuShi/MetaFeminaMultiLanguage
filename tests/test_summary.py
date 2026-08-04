@@ -1,5 +1,6 @@
 import json
 import re
+import tempfile
 import unittest
 from unittest.mock import patch
 from pathlib import Path
@@ -97,6 +98,36 @@ class SummaryPageTests(unittest.TestCase):
 
         self.assertEqual(response.status_code, 404)
 
+    def test_summary_plot_route_serves_localized_variant_with_english_fallback(self):
+        with tempfile.TemporaryDirectory() as tempdir:
+            plot_root = Path(tempdir)
+            filename = 'forest_protective_breast.pdf'
+            (plot_root / filename).write_bytes(b'english plot')
+            localized = plot_root / 'locales' / 'zh-CN' / filename
+            localized.parent.mkdir(parents=True)
+            localized.write_bytes(b'localized plot')
+
+            with patch('app.PLOT_DIR', tempdir):
+                translated_response = self.client.get(
+                    '/summary/plots/breast/forest-protective?lang=zh-CN'
+                )
+                missing_variant_response = self.client.get(
+                    '/summary/plots/breast/forest-protective?lang=nl'
+                )
+                unsupported_response = self.client.get(
+                    '/summary/plots/breast/forest-protective?lang=../../zh-CN'
+                )
+
+                self.assertEqual(translated_response.status_code, 200)
+                self.assertEqual(translated_response.data, b'localized plot')
+                self.assertEqual(missing_variant_response.status_code, 200)
+                self.assertEqual(missing_variant_response.data, b'english plot')
+                self.assertEqual(unsupported_response.status_code, 200)
+                self.assertEqual(unsupported_response.data, b'english plot')
+                translated_response.close()
+                missing_variant_response.close()
+                unsupported_response.close()
+
     def test_subcategory_summary_plot_route_uses_only_manifest_entries(self):
         manifest = {
             'scopes': {
@@ -127,6 +158,45 @@ class SummaryPageTests(unittest.TestCase):
         self.assertEqual(rejected.status_code, 404)
         allowed.close()
         rejected.close()
+
+    def test_subcategory_summary_plot_route_uses_sibling_locale_variant(self):
+        with tempfile.TemporaryDirectory() as tempdir:
+            plot_root = Path(tempdir)
+            base = (
+                plot_root / 'subcategories' / 'breast'
+                / 'invasive_ductal_carcinoma' / 'forest_harmful.pdf'
+            )
+            base.parent.mkdir(parents=True)
+            base.write_bytes(b'english subtype plot')
+            localized = base.parent / 'locales' / 'nl' / base.name
+            localized.parent.mkdir(parents=True)
+            localized.write_bytes(b'nederlandse subtype plot')
+            manifest = {
+                'scopes': {
+                    'breast': {
+                        'subcategories': {
+                            'breast_invasive_ductal_carcinoma': {
+                                'plots': {
+                                    'forest-harmful': {
+                                        'path': str(base),
+                                        'filename': base.name,
+                                        'available': True,
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            with patch('app.PLOT_DIR', tempdir), patch('app.load_json', return_value=manifest):
+                response = self.client.get(
+                    '/summary/plots/breast/forest-harmful'
+                    '?subcategory=breast_invasive_ductal_carcinoma&lang=nl'
+                )
+                self.assertEqual(response.status_code, 200)
+                self.assertEqual(response.data, b'nederlandse subtype plot')
+                response.close()
 
     def test_subcategory_analyze_never_falls_back_to_live_analysis(self):
         with patch('app.meta_analysis.get_analysis_data') as live_analysis:

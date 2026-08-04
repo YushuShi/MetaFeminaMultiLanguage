@@ -57,6 +57,59 @@ class MultiLanguagePageTests(unittest.TestCase):
                         f'{source}: {token}',
                     )
 
+    def test_selector_options_and_requested_chinese_terms_are_translated(self):
+        catalog = json.loads((ROOT / 'static' / 'i18n-translations.json').read_text())
+        exposures = json.loads((ROOT / 'static' / 'exposures.json').read_text())
+
+        self.assertEqual(len(exposures), 226)
+        self.assertFalse([exposure for exposure in exposures if exposure not in catalog])
+        self.assertEqual(catalog['Nutritional Exposure']['zh-CN'], '营养因子')
+        self.assertEqual(catalog['Nutritional Exposure']['zh-TW'], '營養因子')
+        self.assertEqual(catalog['Meta-Analysis']['zh-CN'], '荟萃分析')
+        self.assertEqual(catalog['Meta-Analysis']['zh-TW'], '薈萃分析')
+        self.assertEqual(catalog['Quality']['zh-CN'], '文章质量')
+        self.assertEqual(catalog['Quality']['zh-TW'], '文章品質')
+
+        translated_text = ' '.join(
+            translation
+            for translations in catalog.values()
+            for locale, translation in translations.items()
+            if locale in {'zh-CN', 'zh-TW'}
+        )
+        self.assertNotIn('营养暴露因素', translated_text)
+        self.assertNotIn('營養暴露因素', translated_text)
+        self.assertNotIn('營養暴露因子', translated_text)
+
+        expected_disease_options = {
+            'Breast cancer', 'Ovarian cancer', 'Uterine cancer',
+            'Invasive ductal carcinoma', 'Invasive lobular carcinoma',
+            'Ductal carcinoma in situ', 'Triple-negative breast cancer',
+            'Inflammatory breast cancer', 'Endometrioid carcinoma',
+            'Uterine serous carcinoma', 'Clear cell carcinoma',
+            'Uterine carcinosarcoma', 'Uterine leiomyosarcoma',
+            'High-grade serous carcinoma', 'Low-grade serous carcinoma',
+            'Mucinous carcinoma', 'Ovarian germ cell tumor',
+            'Sex cord-stromal tumor',
+        }
+        self.assertFalse(expected_disease_options - catalog.keys())
+
+    def test_localized_exposure_display_keeps_canonical_analysis_value(self):
+        script = (ROOT / 'static' / 'script.js').read_text()
+
+        self.assertIn('function selectedExposureValue()', script)
+        self.assertIn('elements.exposure.dataset.canonicalExposure = canonical;', script)
+        self.assertIn('elements.exposure.value = uiText(canonical);', script)
+        self.assertIn('const exposure = selectedExposureValue();', script)
+        self.assertNotIn('const exposure = elements.exposure.value;', script)
+
+    def test_summary_plot_urls_follow_the_selected_language(self):
+        engine = (ROOT / 'static' / 'i18n.js').read_text()
+        summary_template = (ROOT / 'templates' / 'summary.html').read_text()
+
+        self.assertIn("url.searchParams.set('lang', locale)", engine)
+        self.assertIn("url.searchParams.delete('lang')", engine)
+        self.assertGreaterEqual(summary_template.count('data-localized-plot'), 15)
+
     def test_dynamic_metadata_is_explicitly_excluded_from_translation(self):
         script = (ROOT / 'static' / 'script.js').read_text()
 

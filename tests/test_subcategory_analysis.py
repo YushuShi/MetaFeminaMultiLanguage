@@ -7,7 +7,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from subcategory_analysis import build_subcategory_outputs
+from subcategory_analysis import _localized_exposure, build_subcategory_outputs
 
 
 class SubcategoryAnalysisTests(unittest.TestCase):
@@ -64,6 +64,12 @@ class SubcategoryAnalysisTests(unittest.TestCase):
             self.annotations, self.results, self.plots, self.registry_csv, self.cache
         )
 
+    def test_summary_exposure_labels_translate_from_canonical_names_or_slugs(self):
+        self.assertEqual(_localized_exposure("Vitamin A", "zh-CN"), "维生素 A")
+        self.assertEqual(_localized_exposure("vitamin_a", "zh-TW"), "維生素 A")
+        self.assertEqual(_localized_exposure("mushrooms", "nl"), "Paddenstoelen")
+        self.assertEqual(_localized_exposure("Vitamin A"), "Vitamin A")
+
     def test_builds_isolated_result_and_placeholder_diagnostics(self):
         stale_result = self.results / "breast" / "triple_negative_breast_cancer" / "stale.json"
         stale_plot = self.plots / "breast" / "triple_negative_breast_cancer" / "stale.png"
@@ -86,6 +92,14 @@ class SubcategoryAnalysisTests(unittest.TestCase):
         self.assertIn("filename", summary_plot)
         self.assertFalse(summary_plot["available"])
         self.assertEqual(summary_plot["reason"], "no_protective_eligible_exposures")
+        summary_folder = self.plots / "breast" / "triple_negative_breast_cancer"
+        for locale in ("zh-CN", "zh-TW", "nl"):
+            locale_folder = summary_folder / "locales" / locale
+            for filename in (
+                "forest_protective.pdf", "forest_harmful.pdf",
+                "effect_size_vs_i2.pdf", "egger_vs_i2.pdf",
+            ):
+                self.assertTrue((locale_folder / filename).is_file())
         self.assertFalse(stale_result.exists())
         self.assertFalse(stale_plot.exists())
 

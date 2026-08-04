@@ -85,6 +85,40 @@ document.addEventListener('DOMContentLoaded', async () => {
         pooledPi: document.getElementById('pooled-pi'),
         pooledPowerPerGroup: document.getElementById('pooled-power-per-group')
     };
+    let exposures = [];
+
+    function selectedExposureValue() {
+        if (!elements.exposure) return '';
+        const stored = elements.exposure.dataset.canonicalExposure;
+        if (stored) return stored;
+        const visibleValue = elements.exposure.value.trim();
+        const resolved = exposures.find((exposure) => (
+            exposure.toLowerCase() === visibleValue.toLowerCase()
+            || uiText(exposure).toLowerCase() === visibleValue.toLowerCase()
+        ));
+        return resolved || visibleValue;
+    }
+
+    function setSelectedExposure(canonicalExposure) {
+        if (!elements.exposure) return;
+        const canonical = String(canonicalExposure || '').trim();
+        if (!canonical) {
+            delete elements.exposure.dataset.canonicalExposure;
+            elements.exposure.value = '';
+            return;
+        }
+        elements.exposure.dataset.canonicalExposure = canonical;
+        elements.exposure.value = uiText(canonical);
+    }
+
+    window.addEventListener('metafemina:languagechange', () => {
+        if (!elements.exposure) return;
+        const canonical = elements.exposure.dataset.canonicalExposure;
+        if (canonical) setSelectedExposure(canonical);
+        if (elements.exposureOptions && elements.exposureOptions.style.display === 'block') {
+            elements.exposure.dispatchEvent(new Event('input'));
+        }
+    });
 
     // Verify critical elements
     for (const [name, el] of Object.entries(elements)) {
@@ -115,9 +149,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Exposure Input Handling
     if (elements.exposure) {
-        elements.exposure.value = "Vitamin A"; // Default as requested
+        setSelectedExposure('Vitamin A'); // Default as requested
 
-        let exposures = [];
         let synonymsMap = {}; // { "soy": {core: "...", downstream: "..."}, ... }
         let isReadOnly = false;
         let cachedExposures = [];
@@ -167,14 +200,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         // Show synonyms for current exposure value on load
-        updateSynonymsBox(elements.exposure.value);
+        updateSynonymsBox(selectedExposureValue());
 
         // Toggle listener
         const downstreamToggle = document.getElementById('use-downstream-toggle');
         if (downstreamToggle) {
             downstreamToggle.addEventListener('change', () => {
                 useDownstream = downstreamToggle.checked;
-                updateSynonymsBox(elements.exposure.value);
+                updateSynonymsBox(selectedExposureValue());
             });
         }
 
@@ -282,7 +315,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const seen = new Set();
 
             exposures.forEach(exp => {
-                if (exp.toLowerCase().includes(lc)) {
+                if (exp.toLowerCase().includes(lc) || uiText(exp).toLowerCase().includes(lc)) {
                     results.push({ label: exp, value: exp, hint: null });
                     seen.add(exp.toLowerCase());
                 }
@@ -309,7 +342,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         elements.exposure.addEventListener('input', () => {
             const val = elements.exposure.value;
-            updateSynonymsBox(val);
+            const stored = elements.exposure.dataset.canonicalExposure;
+            if (stored && val.trim().toLowerCase() !== stored.toLowerCase()
+                && val.trim().toLowerCase() !== uiText(stored).toLowerCase()) {
+                delete elements.exposure.dataset.canonicalExposure;
+            }
+            updateSynonymsBox(selectedExposureValue());
             const matches = getDropdownMatches(val.toLowerCase ? val : val);
 
             if (elements.exposureOptions) {
@@ -318,12 +356,12 @@ document.addEventListener('DOMContentLoaded', async () => {
                     matches.forEach(match => {
                         const div = document.createElement('div');
                         if (match.hint) {
-                            div.innerHTML = `${match.label} <span style="font-size:0.8em; opacity:0.65; font-style:italic;">— ${match.hint}</span>`;
+                            div.innerHTML = `${uiText(match.label)} <span style="font-size:0.8em; opacity:0.65; font-style:italic;">— ${match.hint}</span>`;
                         } else {
-                            div.textContent = match.label;
+                            div.textContent = uiText(match.label);
                         }
                         div.addEventListener('click', () => {
-                            elements.exposure.value = match.value;
+                            setSelectedExposure(match.value);
                             elements.exposureOptions.style.display = 'none';
                             updateSynonymsBox(match.value);
                         });
@@ -492,7 +530,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     async function runAnalysis(forceRefresh = false) {
         const disease = selectedDiseaseValue();
         const subcategory = selectedSubcategoryValue();
-        const exposure = elements.exposure.value;
+        const exposure = selectedExposureValue();
         const outcome = elements.outcome.value;
         const excludeMeta = true;
         const model = elements.model ? elements.model.value : "openai.gpt-4o";
@@ -592,7 +630,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     body: JSON.stringify({
                         studies: selectedStudies,
                         disease: selectedDiseaseValue(),
-                        exposure: elements.exposure.value,
+                        exposure: selectedExposureValue(),
                         outcome: elements.outcome ? elements.outcome.value : 'Incidence',
                         exclude_meta: true
                     })
@@ -907,7 +945,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (!pmid) return;
         const study = currentStudies.find(s => String(s.PMID) === String(pmid));
         const disease = selectedDiseaseValue();
-        const exposure = elements.exposure.value;
+        const exposure = selectedExposureValue();
         const outcome = elements.outcome.value;
         const context_key = `${disease}_${exposure}_${outcome}`.toLowerCase().replace(/ /g, "_");
         
@@ -942,7 +980,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         try {
             const disease = selectedDiseaseValue();
-            const exposure = elements.exposure.value;
+            const exposure = selectedExposureValue();
             const outcome = elements.outcome.value;
             const context_key = `${disease}_${exposure}_${outcome}`.toLowerCase().replace(/ /g, "_");
 

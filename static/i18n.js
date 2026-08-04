@@ -8,6 +8,7 @@
     const TRANSLATABLE_ATTRIBUTES = ['aria-label', 'alt', 'placeholder', 'title'];
     const textSources = new WeakMap();
     const attributeSources = new WeakMap();
+    const localizedPlotSources = new WeakMap();
     let translations = {};
     let translationTemplates = [];
     let currentLanguage = DEFAULT_LANGUAGE;
@@ -165,6 +166,26 @@
         });
     }
 
+    function updateLocalizedPlotUrls(language) {
+        const locale = SUPPORTED_LANGUAGES.has(language) ? language : DEFAULT_LANGUAGE;
+        document.querySelectorAll('[data-localized-plot]').forEach(function (element) {
+            const attribute = element.localName === 'object' ? 'data' : 'href';
+            let source = localizedPlotSources.get(element);
+            if (!source) {
+                source = element.getAttribute(attribute);
+                if (!source) return;
+                localizedPlotSources.set(element, source);
+            }
+            const url = new URL(source, window.location.href);
+            if (locale === DEFAULT_LANGUAGE) url.searchParams.delete('lang');
+            else url.searchParams.set('lang', locale);
+            const nextValue = url.pathname + url.search + url.hash;
+            if (element.getAttribute(attribute) !== nextValue) {
+                element.setAttribute(attribute, nextValue);
+            }
+        });
+    }
+
     function setLanguage(language, options) {
         const locale = SUPPORTED_LANGUAGES.has(language) ? language : DEFAULT_LANGUAGE;
         currentLanguage = locale;
@@ -263,6 +284,10 @@
         getLanguage: function () { return currentLanguage; },
         supportedLanguages: Array.from(SUPPORTED_LANGUAGES)
     };
+
+    window.addEventListener('metafemina:languagechange', function (event) {
+        updateLocalizedPlotUrls(event.detail && event.detail.language);
+    });
 
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initialize);
     else initialize();

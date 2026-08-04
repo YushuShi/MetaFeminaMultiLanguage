@@ -15,12 +15,147 @@ library(ggtext)
 library(ggrepel)
 library(patchwork)
 
-for (pkg in c("ggtext", "cowplot", "ggrepel", "patchwork")) {
+for (pkg in c("ggtext", "cowplot", "ggrepel", "patchwork", "jsonlite")) {
   if (!requireNamespace(pkg, quietly = TRUE)) install.packages(pkg)
 }
 
 output_dir <- "."
 dir.create(output_dir, showWarnings = FALSE, recursive = TRUE)
+
+summary_plot_locales <- c("zh-CN", "zh-TW", "nl")
+translation_catalog_path <- file.path("..", "static", "i18n-translations.json")
+if (!file.exists(translation_catalog_path)) {
+  stop("Required translation catalog is missing: ", translation_catalog_path)
+}
+translation_catalog <- jsonlite::fromJSON(
+  translation_catalog_path,
+  simplifyVector = FALSE
+)
+
+normalize_translation_key <- function(x) {
+  x %>%
+    as.character() %>%
+    str_to_lower() %>%
+    str_replace_all("[^a-z0-9]+", "_") %>%
+    str_replace_all("^_+|_+$", "")
+}
+
+translation_source_by_key <- setNames(
+  names(translation_catalog),
+  normalize_translation_key(names(translation_catalog))
+)
+
+localized_group_labels <- list(
+  "zh-CN" = c(
+    "Carotenoids" = "类胡萝卜素",
+    "Vitamins A, C, D, E, K" = "维生素 A、C、D、E、K",
+    "B Vitamins" = "B族维生素",
+    "Antioxidants" = "抗氧化剂",
+    "Minerals & Trace Elements" = "矿物质与微量元素",
+    "Polyphenols & Flavonoids" = "多酚与黄酮类",
+    "Fruits & Vegetables" = "水果与蔬菜",
+    "Fermented Foods & Probiotics" = "发酵食品与益生菌",
+    "Fatty Acids & Lipids" = "脂肪酸与脂质",
+    "Phytoestrogens" = "植物雌激素",
+    "Herbal & Botanical" = "草本与植物制品",
+    "Other" = "其他",
+    "Metabolites & Amino Acids" = "代谢物与氨基酸",
+    "Hormones & Endogenous" = "激素与内源性物质"
+  ),
+  "zh-TW" = c(
+    "Carotenoids" = "類胡蘿蔔素",
+    "Vitamins A, C, D, E, K" = "維生素 A、C、D、E、K",
+    "B Vitamins" = "B群維生素",
+    "Antioxidants" = "抗氧化劑",
+    "Minerals & Trace Elements" = "礦物質與微量元素",
+    "Polyphenols & Flavonoids" = "多酚與類黃酮",
+    "Fruits & Vegetables" = "水果與蔬菜",
+    "Fermented Foods & Probiotics" = "發酵食品與益生菌",
+    "Fatty Acids & Lipids" = "脂肪酸與脂質",
+    "Phytoestrogens" = "植物雌激素",
+    "Herbal & Botanical" = "草本與植物製品",
+    "Other" = "其他",
+    "Metabolites & Amino Acids" = "代謝物與胺基酸",
+    "Hormones & Endogenous" = "荷爾蒙與內源性物質"
+  ),
+  "nl" = c(
+    "Carotenoids" = "Carotenoïden",
+    "Vitamins A, C, D, E, K" = "Vitaminen A, C, D, E en K",
+    "B Vitamins" = "B-vitaminen",
+    "Antioxidants" = "Antioxidanten",
+    "Minerals & Trace Elements" = "Mineralen en sporenelementen",
+    "Polyphenols & Flavonoids" = "Polyfenolen en flavonoïden",
+    "Fruits & Vegetables" = "Fruit en groenten",
+    "Fermented Foods & Probiotics" = "Gefermenteerde voeding en probiotica",
+    "Fatty Acids & Lipids" = "Vetzuren en lipiden",
+    "Phytoestrogens" = "Fyto-oestrogenen",
+    "Herbal & Botanical" = "Kruiden en botanische producten",
+    "Other" = "Overig",
+    "Metabolites & Amino Acids" = "Metabolieten en aminozuren",
+    "Hormones & Endogenous" = "Hormonen en endogene stoffen"
+  )
+)
+
+translate_group_label <- function(x, locale = NULL) {
+  if (is.null(locale) || !locale %in% names(localized_group_labels)) {
+    return(as.character(x))
+  }
+  labels <- localized_group_labels[[locale]][as.character(x)]
+  labels[is.na(labels)] <- as.character(x)[is.na(labels)]
+  unname(labels)
+}
+
+plot_font_family <- function(locale = NULL) {
+  if (is.null(locale) || !locale %in% c("zh-CN", "zh-TW")) {
+    return("sans")
+  }
+
+  candidates <- if (locale == "zh-CN") {
+    c(
+      "Noto Sans CJK SC", "Source Han Sans SC", "PingFang SC",
+      "Microsoft YaHei", "Arial Unicode MS"
+    )
+  } else {
+    c(
+      "Noto Sans CJK TC", "Source Han Sans TC", "PingFang TC",
+      "Microsoft JhengHei", "Arial Unicode MS"
+    )
+  }
+
+  if (requireNamespace("systemfonts", quietly = TRUE)) {
+    available <- unique(systemfonts::system_fonts()$family)
+    match <- candidates[candidates %in% available]
+    if (length(match) > 0) return(match[[1]])
+  }
+  "sans"
+}
+
+save_plot_pdf <- function(output_path, plot, width, height,
+                          locale = NULL, font_family = "") {
+  dir.create(dirname(output_path), showWarnings = FALSE, recursive = TRUE)
+  if (is.null(locale)) {
+    ggsave(
+      output_path, plot = plot, width = width, height = height,
+      units = "mm", device = "pdf", dpi = 300
+    )
+  } else {
+    localized_device <- if (identical(Sys.info()[["sysname"]], "Darwin")) {
+      function(filename, width, height, family = "sans", ...) {
+        grDevices::quartz(
+          file = filename, type = "pdf", width = width, height = height,
+          family = family, ...
+        )
+      }
+    } else {
+      grDevices::cairo_pdf
+    }
+    ggsave(
+      output_path, plot = plot, width = width, height = height,
+      units = "mm", device = localized_device,
+      family = font_family, dpi = 300
+    )
+  }
+}
 
 # =============================================================================
 # 1. Read & clean data
@@ -229,17 +364,38 @@ prettify_exposure <- function(x) {
     str_replace("Dehydroepiandrosterone",   "DHEA")
 }
 
+translate_exposure_label <- function(x, locale = NULL) {
+  english_labels <- prettify_exposure(x)
+  if (is.null(locale) || !locale %in% summary_plot_locales) {
+    return(english_labels)
+  }
+
+  vapply(seq_along(x), function(i) {
+    normalized_key <- normalize_translation_key(x[[i]])
+    source_label <- unname(translation_source_by_key[normalized_key])
+    if (is.null(source_label) || length(source_label) == 0 || is.na(source_label)) {
+      return(english_labels[[i]])
+    }
+    localized <- translation_catalog[[source_label]][[locale]]
+    if (is.null(localized) || length(localized) == 0 || !nzchar(localized[[1]])) {
+      return(english_labels[[i]])
+    }
+    as.character(localized[[1]])
+  }, character(1))
+}
+
 # =============================================================================
 # 4. Forest plot helpers  (identical logic to original)
 # =============================================================================
 
-prepare_dat <- function(dat_clean, dir) {
+prepare_dat <- function(dat_clean, dir, locale = NULL) {
   dat_clean %>%
     filter(n_studies > 1) %>%
     left_join(group_map, by = "Exposure") %>%
     mutate(
       Group          = replace_na(Group, "Other"),
-      Exposure_label = prettify_exposure(Exposure),
+      Exposure_label = translate_exposure_label(Exposure, locale),
+      Group_label    = translate_group_label(Group, locale),
       Group          = factor(Group, levels = group_order)
     ) %>%
     filter(direction == dir) %>%
@@ -249,7 +405,7 @@ prepare_dat <- function(dat_clean, dir) {
 
 build_plot_rows <- function(df) {
   groups_present <- df %>%
-    group_by(Group) %>%
+    group_by(Group, Group_label) %>%
     summarise(n = n(), .groups = "drop") %>%
     arrange(match(Group, c(group_order, "Other")))
   
@@ -261,7 +417,12 @@ build_plot_rows <- function(df) {
     grp   <- as.character(groups_present$Group[i])
     n_grp <- groups_present$n[i]
     
-    label_rows[[i]] <- tibble(plot_row = current_row, Group = grp, is_label = TRUE)
+    label_rows[[i]] <- tibble(
+      plot_row = current_row,
+      Group = grp,
+      Group_label = groups_present$Group_label[i],
+      is_label = TRUE
+    )
     current_row <- current_row + 1
     
     idx <- which(as.character(df$Group) == grp)
@@ -274,7 +435,8 @@ build_plot_rows <- function(df) {
 }
 
 # ---- Table panel ----
-make_table_panel <- function(df, label_df, total_rows, title_text, fs = 3.8) {
+make_table_panel <- function(df, label_df, total_rows, title_text, fs = 3.8,
+                             font_family = "") {
   header_y <- 0
   y_lim    <- c(total_rows + 0.6, -0.65)
   
@@ -291,46 +453,57 @@ make_table_panel <- function(df, label_df, total_rows, title_text, fs = 3.8) {
                   xmin = -0.05, xmax = 4.75, fill = Group),
               alpha = 0.70, inherit.aes = FALSE) +
     geom_text(data = label_df,
-              aes(x = 0.0, y = plot_row, label = toupper(Group), color = Group),
-              hjust = 0, size = fs - 0.3, fontface = "bold.italic", inherit.aes = FALSE) +
+              aes(x = 0.0, y = plot_row, label = str_to_upper(Group_label), color = Group),
+              hjust = 0, size = fs - 0.3, fontface = "bold.italic",
+              family = font_family, inherit.aes = FALSE) +
     scale_color_manual(values = group_colors, guide = "none") +
     geom_text(data = df,
               aes(x = 0.15, y = plot_row, label = Exposure_label,
                   color = as.character(Group)),
-              hjust = 0, size = fs, fontface = "bold", inherit.aes = FALSE) +
+              hjust = 0, size = fs, fontface = "bold", family = font_family,
+              inherit.aes = FALSE) +
     geom_text(data = df,
               aes(x = 1.2, y = plot_row, label = as.character(n_studies),
                   color = as.character(Group)),
-              hjust = 0.5, size = fs - 0.2, inherit.aes = FALSE) +
+              hjust = 0.5, size = fs - 0.2, family = font_family,
+              inherit.aes = FALSE) +
     geom_text(data = df,
               aes(x = 2.4, y = plot_row, label = N_lab,
                   color = as.character(Group)),
-              hjust = 1, size = fs - 0.2, inherit.aes = FALSE) +
+              hjust = 1, size = fs - 0.2, family = font_family,
+              inherit.aes = FALSE) +
     geom_text(data = df,
               aes(x = 3.5, y = plot_row, label = Cases_lab,
                   color = as.character(Group)),
-              hjust = 1, size = fs - 0.2, inherit.aes = FALSE) +
+              hjust = 1, size = fs - 0.2, family = font_family,
+              inherit.aes = FALSE) +
     geom_text(data = df,
               aes(x = 4.7, y = plot_row, label = pooled_ci_lab,
                   color = as.character(Group)),
-              hjust = 1, size = fs - 0.2, fontface = "italic", inherit.aes = FALSE) +
+              hjust = 1, size = fs - 0.2, fontface = "italic", family = font_family,
+              inherit.aes = FALSE) +
     annotate("rect",
              xmin = -0.05, xmax = 4.75, ymin = -0.60, ymax = 0.50,
              fill = "#1A1A2E", alpha = 0.93) +
     annotate("text", x = 0.0, y = header_y, label = "Exposure",
-             hjust = 0, fontface = "bold", size = fs + 0.5, color = "white") +
+             hjust = 0, fontface = "bold", size = fs + 0.5, color = "white",
+             family = font_family) +
     annotate("text", x = 1.2, y = header_y, label = "N studies",
-             hjust = 0.5, fontface = "bold", size = fs + 0.5, color = "white") +
+             hjust = 0.5, fontface = "bold", size = fs + 0.5, color = "white",
+             family = font_family) +
     annotate("text", x = 2.4, y = header_y, label = "N",
-             hjust = 1, fontface = "bold", size = fs + 0.5, color = "white") +
+             hjust = 1, fontface = "bold", size = fs + 0.5, color = "white",
+             family = font_family) +
     annotate("text", x = 3.5, y = header_y, label = "Cases",
-             hjust = 1, fontface = "bold", size = fs + 0.5, color = "white") +
+             hjust = 1, fontface = "bold", size = fs + 0.5, color = "white",
+             family = font_family) +
     annotate("text", x = 4.7, y = header_y, label = "Pooled RR (95% CI)",
-             hjust = 1, fontface = "bold", size = fs + 0.5, color = "white") +
+             hjust = 1, fontface = "bold", size = fs + 0.5, color = "white",
+             family = font_family) +
     scale_x_continuous(limits = c(-0.05, 4.8), expand = c(0, 0)) +
     scale_y_continuous(limits = y_lim, trans = "reverse", expand = c(0, 0)) +
     labs(title = title_text) +
-    theme_void() +
+    theme_void(base_family = font_family) +
     theme(
       plot.title      = element_text(face = "bold", hjust = 0.5, size = 13,
                                      color = "#1A1A2E", margin = margin(b = 8, t = 4)),
@@ -340,7 +513,8 @@ make_table_panel <- function(df, label_df, total_rows, title_text, fs = 3.8) {
 }
 
 # ---- Forest panel ----
-make_forest_panel <- function(df, label_df, total_rows, xlim_max = 2.5, fs = 3.8) {
+make_forest_panel <- function(df, label_df, total_rows, xlim_max = 2.5, fs = 3.8,
+                              locale = NULL, font_family = "") {
   header_y <- 0
   y_lim    <- c(total_rows + 0.6, -0.65)
   # Forest panel x-axis settings
@@ -414,7 +588,8 @@ make_forest_panel <- function(df, label_df, total_rows, xlim_max = 2.5, fs = 3.8
              xmin = xlim_min, xmax = xlim_max, ymin = -0.60, ymax = 0.50,
              fill = "#1A1A2E", alpha = 0.93) +
     annotate("text", x = 1, y = header_y, label = "Effect size", hjust = 0.5,
-             fontface = "bold", size = fs + 0.5, color = "white") +
+             fontface = "bold", size = fs + 0.5, color = "white",
+             family = font_family) +
     scale_x_log10(
       limits = c(xlim_min, xlim_max),
       breaks = x_breaks,
@@ -425,6 +600,7 @@ make_forest_panel <- function(df, label_df, total_rows, xlim_max = 2.5, fs = 3.8
     scale_color_manual(
       values = group_colors,
       name   = "Exposure group",
+      labels = function(x) translate_group_label(x, locale),
       guide  = guide_legend(
         ncol           = 5,
         override.aes   = list(shape = 15, size = 4.8, alpha = 1),
@@ -435,7 +611,7 @@ make_forest_panel <- function(df, label_df, total_rows, xlim_max = 2.5, fs = 3.8
     ) +
     scale_size_continuous(range = c(2.0, 6.5), guide = "none") +
     labs(x = "Pooled RR", y = NULL) +
-    theme_minimal(base_size = 11) +
+    theme_minimal(base_size = 11, base_family = font_family) +
     theme(
       axis.text.y      = element_blank(),
       axis.ticks.y     = element_blank(),
@@ -470,23 +646,32 @@ make_caption <- function(direction, cancer_label) {
 
 # ---- Compose & save ----
 save_forest_figure <- function(dat_clean, direction, cancer_label,
-                               title_text, xlim_max, filename) {
+                               title_text, xlim_max, filename,
+                               locale = NULL) {
   output_path <- file.path(output_dir, filename)
-  df_raw     <- prepare_dat(dat_clean, direction)
+  font_family <- if (is.null(locale)) "" else plot_font_family(locale)
+  df_raw     <- prepare_dat(dat_clean, direction, locale)
   built      <- build_plot_rows(df_raw)
   df         <- built$df
   label_df   <- built$labels
   total_rows <- built$total_rows
   
-  tbl        <- make_table_panel(df, label_df, total_rows, title_text)
-  fst        <- make_forest_panel(df, label_df, total_rows, xlim_max)
+  tbl        <- make_table_panel(
+    df, label_df, total_rows, title_text,
+    font_family = font_family
+  )
+  fst        <- make_forest_panel(
+    df, label_df, total_rows, xlim_max,
+    locale = locale, font_family = font_family
+  )
   legend_grob <- get_legend(fst)
   fst_no_leg  <- fst + theme(legend.position = "none")
   
   caption_grob <- ggdraw() +
     draw_label(make_caption(direction, cancer_label),
                x = 0.01, hjust = 0, size = 7.2,
-               color = "#607D8B", fontface = "italic")
+               color = "#607D8B", fontface = "italic",
+               fontfamily = font_family)
   
   combined <- plot_grid(
     plot_grid(tbl, fst_no_leg,
@@ -503,9 +688,10 @@ save_forest_figure <- function(dat_clean, direction, cancer_label,
               y = c(0, 0, 1, 1, 0),
               color = "#B0BEC5", linewidth = 0.8)
   
-  ggsave(output_path,
-         plot = final, width = 297, height = 250,
-         units = "mm", device = "pdf", dpi = 300)
+  save_plot_pdf(
+    output_path, plot = final, width = 297, height = 250,
+    locale = locale, font_family = font_family
+  )
   message("Saved: ", output_path)
   invisible(final)
 }
@@ -516,7 +702,7 @@ save_forest_figure <- function(dat_clean, direction, cancer_label,
 # =============================================================================
 
 # Shared helper: build the filtered + labelled data frame
-build_scatter_df <- function(dat_clean, min_studies = 3) {
+build_scatter_df <- function(dat_clean, min_studies = 3, locale = NULL) {
   dat_clean %>%
     filter(
       n_studies >= min_studies,
@@ -527,7 +713,7 @@ build_scatter_df <- function(dat_clean, min_studies = 3) {
     mutate(
       Group          = replace_na(Group, "Other"),
       Group          = factor(Group, levels = group_order),
-      exposure_label = prettify_exposure(Exposure),
+      exposure_label = translate_exposure_label(Exposure, locale),
       log_eggers_p   = log(eggers_p)   # natural log, same as original
     )
 }
@@ -535,15 +721,19 @@ build_scatter_df <- function(dat_clean, min_studies = 3) {
 # ---- Plot 1: Effect Size vs I² ----
 make_es_heterogeneity_plot <- function(dat_clean, min_studies = 3,
                                        filename = "plot_es_vs_heterogeneity.pdf",
-                                       cancer_label = NULL) {
+                                       cancer_label = NULL,
+                                       locale = NULL) {
   output_path <- file.path(output_dir, filename)
-  
-  plot_df <- build_scatter_df(dat_clean, min_studies)
+  font_family <- if (is.null(locale)) "" else plot_font_family(locale)
+  plot_df <- build_scatter_df(dat_clean, min_studies, locale)
   
   p <- ggplot(plot_df,
               aes(x = pooled_es_num, y = I2, color = as.character(Group))) +
     geom_point(aes(size = n_studies), alpha = 0.85) +
-    geom_text_repel(aes(label = exposure_label), size = 3, max.overlaps = 20) +
+    geom_text_repel(
+      aes(label = exposure_label), size = 3, max.overlaps = 20,
+      family = font_family
+    ) +
     geom_vline(xintercept = 1, linetype = "dashed") +
     scale_color_manual(values = group_colors, guide = "none") +
     scale_size_continuous(range = c(1, 4), name = "Number of studies") +
@@ -555,15 +745,16 @@ make_es_heterogeneity_plot <- function(dat_clean, min_studies = 3,
       x     = "Effect Size (Pooled RR)",
       y     = expression(I^2)
     ) +
-    theme_minimal(base_size = 15) +
+    theme_minimal(base_size = 15, base_family = font_family) +
     theme(
       legend.position = "none",
       plot.title      = element_text(face = "bold")
     )
   
-  ggsave(output_path,
-         plot = p, width = 210, height = 210,
-         units = "mm", device = "pdf", dpi = 300)
+  save_plot_pdf(
+    output_path, plot = p, width = 210, height = 210,
+    locale = locale, font_family = font_family
+  )
   message("Saved: ", output_path)
   invisible(p)
 }
@@ -571,10 +762,11 @@ make_es_heterogeneity_plot <- function(dat_clean, min_studies = 3,
 # ---- Plot 2: log(Egger's p-value) vs I² ----
 make_eggers_heterogeneity_plot <- function(dat_clean, min_studies = 3,
                                            filename = "plot_eggers_vs_heterogeneity.pdf",
-                                           cancer_label = NULL) {
+                                           cancer_label = NULL,
+                                           locale = NULL) {
   output_path <- file.path(output_dir, filename)
-  
-  plot_df <- build_scatter_df(dat_clean, min_studies) %>%
+  font_family <- if (is.null(locale)) "" else plot_font_family(locale)
+  plot_df <- build_scatter_df(dat_clean, min_studies, locale) %>%
     filter(!is.na(log_eggers_p), is.finite(log_eggers_p)) %>%
     droplevels()
 
@@ -584,7 +776,10 @@ make_eggers_heterogeneity_plot <- function(dat_clean, min_studies = 3,
   p <- ggplot(plot_df,
               aes(x = log_eggers_p, y = I2, color = as.character(Group))) +
     geom_point(aes(size = n_studies), alpha = 0.85) +
-    geom_text_repel(aes(label = exposure_label), size = 3, max.overlaps = 20) +
+    geom_text_repel(
+      aes(label = exposure_label), size = 3, max.overlaps = 20,
+      family = font_family
+    ) +
     geom_vline(xintercept = log(0.05), linetype = "dashed") +   # log(0.05) ≈ -2.996
     scale_color_manual(values = egger_group_colors, breaks = groups_present,
                        drop = TRUE, guide = "none") +
@@ -597,15 +792,16 @@ make_eggers_heterogeneity_plot <- function(dat_clean, min_studies = 3,
       x     = "log(Egger's p-value)",
       y     = expression(I^2)
     ) +
-    theme_minimal(base_size = 15) +
+    theme_minimal(base_size = 15, base_family = font_family) +
     theme(
       legend.position = "none",
       plot.title      = element_text(face = "bold")
     )
   
-  ggsave(output_path,
-         plot = p, width = 210, height = 210,
-         units = "mm", device = "pdf", dpi = 300)
+  save_plot_pdf(
+    output_path, plot = p, width = 210, height = 210,
+    locale = locale, font_family = font_family
+  )
   message("Saved: ", output_path)
   invisible(p)
 }
@@ -618,6 +814,7 @@ render_args <- commandArgs(trailingOnly = TRUE)
 eggers_only <- "--eggers-only" %in% render_args
 forests_only <- "--forests-only" %in% render_args
 diagnostics_only <- "--diagnostics-only" %in% render_args
+locales_only <- "--locales-only" %in% render_args
 
 forest_configs <- tribble(
   ~cancer_label,    ~dataset_label, ~input_file,                                      ~output_suffix,
@@ -649,29 +846,65 @@ if (!eggers_only && !diagnostics_only) {
       ""
     }
 
-    save_forest_figure(
-      dat_clean    = plot_data,
-      direction    = "Protective",
-      cancer_label = cancer_label,
-      title_text   = paste0(
-        "Exposures inversely associated with ", cancer_label, " risk",
-        analysis_subtitle
-      ),
-      xlim_max     = 2.2,
-      filename     = paste0("forest_protective_", output_suffix, ".pdf")
-    )
+    if (!locales_only) {
+      save_forest_figure(
+        dat_clean    = plot_data,
+        direction    = "Protective",
+        cancer_label = cancer_label,
+        title_text   = paste0(
+          "Exposures inversely associated with ", cancer_label, " risk",
+          analysis_subtitle
+        ),
+        xlim_max     = 2.2,
+        filename     = paste0("forest_protective_", output_suffix, ".pdf")
+      )
 
-    save_forest_figure(
-      dat_clean    = plot_data,
-      direction    = "Harmful",
-      cancer_label = cancer_label,
-      title_text   = paste0(
-        "Exposures positively associated with ", cancer_label, " risk",
-        analysis_subtitle
-      ),
-      xlim_max     = 4.5,
-      filename     = paste0("forest_harmful_", output_suffix, ".pdf")
-    )
+      save_forest_figure(
+        dat_clean    = plot_data,
+        direction    = "Harmful",
+        cancer_label = cancer_label,
+        title_text   = paste0(
+          "Exposures positively associated with ", cancer_label, " risk",
+          analysis_subtitle
+        ),
+        xlim_max     = 4.5,
+        filename     = paste0("forest_harmful_", output_suffix, ".pdf")
+      )
+    }
+
+    for (locale in summary_plot_locales) {
+      save_forest_figure(
+        dat_clean    = plot_data,
+        direction    = "Protective",
+        cancer_label = cancer_label,
+        title_text   = paste0(
+          "Exposures inversely associated with ", cancer_label, " risk",
+          analysis_subtitle
+        ),
+        xlim_max     = 2.2,
+        filename     = file.path(
+          "locales", locale,
+          paste0("forest_protective_", output_suffix, ".pdf")
+        ),
+        locale       = locale
+      )
+
+      save_forest_figure(
+        dat_clean    = plot_data,
+        direction    = "Harmful",
+        cancer_label = cancer_label,
+        title_text   = paste0(
+          "Exposures positively associated with ", cancer_label, " risk",
+          analysis_subtitle
+        ),
+        xlim_max     = 4.5,
+        filename     = file.path(
+          "locales", locale,
+          paste0("forest_harmful_", output_suffix, ".pdf")
+        ),
+        locale       = locale
+      )
+    }
   }
 
 }
@@ -688,13 +921,24 @@ if (!forests_only) {
 
     if (!eggers_only) {
       es_filename <- paste0("plot_es_vs_heterogeneity_", output_suffix, ".pdf")
-      make_es_heterogeneity_plot(
-        dat_clean   = plot_data,
-        min_studies = 3,
-        filename    = es_filename,
-        cancer_label = cancer_label
-      )
-      if (output_suffix == "breast") {
+      if (!locales_only) {
+        make_es_heterogeneity_plot(
+          dat_clean    = plot_data,
+          min_studies  = 3,
+          filename     = es_filename,
+          cancer_label = cancer_label
+        )
+      }
+      for (locale in summary_plot_locales) {
+        make_es_heterogeneity_plot(
+          dat_clean    = plot_data,
+          min_studies  = 3,
+          filename     = file.path("locales", locale, es_filename),
+          cancer_label = cancer_label,
+          locale       = locale
+        )
+      }
+      if (!locales_only && output_suffix == "breast") {
         file.copy(
           file.path(output_dir, es_filename),
           file.path(output_dir, "plot_es_vs_heterogeneity.pdf"),
@@ -704,13 +948,24 @@ if (!forests_only) {
     }
 
     eggers_filename <- paste0("plot_eggers_vs_heterogeneity_", output_suffix, ".pdf")
-    make_eggers_heterogeneity_plot(
-      dat_clean   = plot_data,
-      min_studies = 3,
-      filename    = eggers_filename,
-      cancer_label = cancer_label
-    )
-    if (output_suffix == "breast") {
+    if (!locales_only) {
+      make_eggers_heterogeneity_plot(
+        dat_clean    = plot_data,
+        min_studies  = 3,
+        filename     = eggers_filename,
+        cancer_label = cancer_label
+      )
+    }
+    for (locale in summary_plot_locales) {
+      make_eggers_heterogeneity_plot(
+        dat_clean    = plot_data,
+        min_studies  = 3,
+        filename     = file.path("locales", locale, eggers_filename),
+        cancer_label = cancer_label,
+        locale       = locale
+      )
+    }
+    if (!locales_only && output_suffix == "breast") {
       file.copy(
         file.path(output_dir, eggers_filename),
         file.path(output_dir, "plot_eggers_vs_heterogeneity.pdf"),
