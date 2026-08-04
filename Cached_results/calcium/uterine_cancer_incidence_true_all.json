@@ -2,54 +2,6 @@
     "success": true,
     "studies": [
         {
-            "Study": "Hosono S et al. (2010) [PMID: 20197786]",
-            "PMID": "20197786",
-            "Effect Size": 0.68,
-            "Lower CI": 0.48,
-            "Upper CI": 0.97,
-            "Population": "General",
-            "Reference": "Association between dietary calcium and vitamin D intake and cervical carcinogenesis among Japanese women.",
-            "Authors": "Hosono S, Matsuo K, Kajiyama H, Hirose K, Suzuki T, Kawase T, Kidokoro K, Nakanishi T, Hamajima N, Kikkawa F, Tajima K, Tanaka H",
-            "Journal": "European journal of clinical nutrition",
-            "Year": "2010",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/20197786/",
-            "Effect Type": "OR",
-            "SE": 0.125,
-            "Sample Size": 2430,
-            "Cases": 333.0,
-            "Estimated Cases": null,
-            "Design": "Case-Control",
-            "Timing": "Retrospective",
-            "Continent": "Asia",
-            "Stage": "Invasive carcinoma",
-            "Quality %": 90.0,
-            "Quality Score": "Good",
-            "comparison_type": "Q4 vs Q1",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Unclear",
-                "q10": "Yes"
-            },
-            "exposure_measurement_type": "dietary_intake",
-            "exposure_measurement_supporting_text": "Dietary information was collected using a semiquantitative food-frequency questionnaire (FFQ).",
-            "extraction_supporting_text": {
-                "sample_size": "405 incident cervical neoplasias ... and 2025 age-matched non-cancer controls",
-                "effect_size": "Q4: OR 0.68 (95% CI 0.48-0.97)",
-                "effect_direction": "inverse association between invasive carcinoma and milk, yogurt and fish was observed",
-                "p_value": "P for trend=0.004",
-                "confidence_interval": "Q4: OR 0.68 (95% CI 0.48-0.97)",
-                "outcome_definition": "405 incident cervical neoplasias (333 invasive carcinomas and 72 cervical intraepithelial neoplasias grade III (CIN3))",
-                "exposure_definition": "dietary calcium ... collected using a semiquantitative food-frequency questionnaire (FFQ)"
-            }
-        },
-        {
             "Study": "Tzonou A et al. (1996) [PMID: 8630294]",
             "PMID": "8630294",
             "Effect Size": 0.74,
@@ -95,52 +47,6 @@
                 "confidence_interval": "odds ratio = 0.74; 95% confidence interval 0.54-1.3",
                 "outcome_definition": "confirmed cancer of the endometrium",
                 "exposure_definition": "calcium intake"
-            }
-        },
-        {
-            "Study": "Hwang JH et al. (2010) [PMID: 20375804]",
-            "PMID": "20375804",
-            "Effect Size": 0.21,
-            "Lower CI": 0.08,
-            "Upper CI": 0.5,
-            "Population": "General",
-            "Reference": "Dietary supplements reduce the risk of cervical intraepithelial neoplasia.",
-            "Authors": "Hwang JH, Kim MK, Lee JK",
-            "Journal": "International journal of gynecological cancer : official journal of the International Gynecological Cancer Society",
-            "Year": "2010",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/20375804/",
-            "Effect Type": "OR",
-            "SE": 0.10714285714285714,
-            "Sample Size": 328,
-            "Cases": 72.0,
-            "Estimated Cases": null,
-            "Design": "Cross-Sectional",
-            "Timing": "Unclear",
-            "Continent": "Asia",
-            "Stage": "CIN II/III",
-            "Quality %": 100.0,
-            "Quality Score": "Good",
-            "comparison_type": "Yes vs No",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes"
-            },
-            "exposure_measurement_type": "dietary_intake",
-            "exposure_measurement_supporting_text": "The details of each participant's routine dietary intake during the prior year were collected.",
-            "extraction_supporting_text": {
-                "sample_size": "we included 328 HPV-positive women (166 controls; 90 CIN I and 72 CIN II/III)",
-                "effect_size": "calcium (OR, 0.21; 95% CI, 0.08-0.50)",
-                "effect_direction": "Dietary supplement use including ... calcium ... was significantly associated with a lower risk of CIN II/III.",
-                "p_value": "significantly associated",
-                "confidence_interval": "95% CI, 0.08-0.50",
-                "outcome_definition": "risk of cervical intraepithelial neoplasia (CIN)",
-                "exposure_definition": "dietary supplements ... calcium"
             }
         },
         {
@@ -240,55 +146,6 @@
             }
         },
         {
-            "Study": "Orta OR et al. (2020) [PMID: 32086510]",
-            "PMID": "32086510",
-            "Effect Size": 0.92,
-            "Lower CI": 0.86,
-            "Upper CI": 0.99,
-            "Population": "General",
-            "Reference": "Dairy and related nutrient intake and risk of uterine leiomyoma: a prospective cohort study.",
-            "Authors": "Orta OR, Terry KL, Missmer SA, Harris HR",
-            "Journal": "Human reproduction (Oxford, England)",
-            "Year": "2020",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/32086510/",
-            "Effect Type": "HR",
-            "SE": 0.03316326530612245,
-            "Sample Size": 81590,
-            "Cases": 8142.0,
-            "Estimated Cases": null,
-            "Design": "Cohort",
-            "Timing": "Prospective",
-            "Continent": "North America",
-            "Stage": "",
-            "Quality %": 81.8,
-            "Quality Score": "Good",
-            "comparison_type": "Highest (fifth quintile) vs Lowest",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Unclear",
-                "q10": "Unclear",
-                "q11": "Yes"
-            },
-            "exposure_measurement_type": "dietary_intake",
-            "exposure_measurement_supporting_text": "Diet was assessed with a validated food frequency questionnaire every 4 years.",
-            "extraction_supporting_text": {
-                "sample_size": "A prospective cohort study was carried out using data collected from 81\u2009590 premenopausal women",
-                "effect_size": "association was strongest for calcium from foods (HR fifth quintile\u2009=\u20090.92, 95% CI\u2009=\u20090.86, 0.99; ptrend\u2009=\u20090.04)",
-                "effect_direction": "intake of yogurt and calcium from foods may reduce risk of uterine leiomyoma",
-                "p_value": "ptrend\u2009=\u20090.04",
-                "confidence_interval": "HR fifth quintile\u2009=\u20090.92, 95% CI\u2009=\u20090.86, 0.99",
-                "outcome_definition": "Cases were restricted to self-reported ultrasound or hysterectomy-confirmation uterine leiomyoma.",
-                "exposure_definition": "association was strongest for calcium from foods"
-            }
-        },
-        {
             "Study": "Biel RK et al. (2011) [PMID: 21752313]",
             "PMID": "21752313",
             "Effect Size": 0.72,
@@ -337,70 +194,49 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Hwang JH et al. (2010) [PMID: 20375804]</th>\n      <td>-1.4523</td>\n      <td>0.4521</td>\n      <td>-2.3385</td>\n      <td>-0.5661</td>\n      <td>72.0</td>\n      <td>328.0</td>\n    </tr>\n    <tr>\n      <th>Salazar-Martinez E et al. (2005) [PMID: 16174249]</th>\n      <td>-0.8590</td>\n      <td>0.3968</td>\n      <td>-1.6368</td>\n      <td>-0.0812</td>\n      <td>85.0</td>\n      <td>714.0</td>\n    </tr>\n    <tr>\n      <th>Terry P et al. (2002) [PMID: 12235647]</th>\n      <td>-0.6259</td>\n      <td>0.2593</td>\n      <td>-1.1341</td>\n      <td>-0.1178</td>\n      <td>709.0</td>\n      <td>3596.0</td>\n    </tr>\n    <tr>\n      <th>Hosono S et al. (2010) [PMID: 20197786]</th>\n      <td>-0.3432</td>\n      <td>0.1626</td>\n      <td>-0.6619</td>\n      <td>-0.0245</td>\n      <td>333.0</td>\n      <td>2430.0</td>\n    </tr>\n    <tr>\n      <th>Biel RK et al. (2011) [PMID: 21752313]</th>\n      <td>-0.2914</td>\n      <td>0.1527</td>\n      <td>-0.5908</td>\n      <td>0.0080</td>\n      <td>506.0</td>\n      <td>1487.0</td>\n    </tr>\n    <tr>\n      <th>Tzonou A et al. (1996) [PMID: 8630294]</th>\n      <td>-0.2667</td>\n      <td>0.1986</td>\n      <td>-0.6560</td>\n      <td>0.1226</td>\n      <td>145.0</td>\n      <td>443.0</td>\n    </tr>\n    <tr>\n      <th>Orta OR et al. (2020) [PMID: 32086510]</th>\n      <td>-0.0779</td>\n      <td>0.0337</td>\n      <td>-0.1439</td>\n      <td>-0.0120</td>\n      <td>8142.0</td>\n      <td>81590.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Salazar-Martinez E et al. (2005) [PMID: 16174249]</th>\n      <td>-0.8590</td>\n      <td>0.3968</td>\n      <td>-1.6368</td>\n      <td>-0.0812</td>\n      <td>85.0</td>\n      <td>714.0</td>\n    </tr>\n    <tr>\n      <th>Terry P et al. (2002) [PMID: 12235647]</th>\n      <td>-0.6259</td>\n      <td>0.2593</td>\n      <td>-1.1341</td>\n      <td>-0.1178</td>\n      <td>709.0</td>\n      <td>3596.0</td>\n    </tr>\n    <tr>\n      <th>Biel RK et al. (2011) [PMID: 21752313]</th>\n      <td>-0.2914</td>\n      <td>0.1527</td>\n      <td>-0.5908</td>\n      <td>0.0080</td>\n      <td>506.0</td>\n      <td>1487.0</td>\n    </tr>\n    <tr>\n      <th>Tzonou A et al. (1996) [PMID: 8630294]</th>\n      <td>-0.2667</td>\n      <td>0.1986</td>\n      <td>-0.6560</td>\n      <td>0.1226</td>\n      <td>145.0</td>\n      <td>443.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 0.68,
-        "ci_low": 0.53,
-        "ci_upp": 0.86,
-        "pi_low": 0.33,
-        "pi_upp": 1.39,
+        "ci_low": 0.55,
+        "ci_upp": 0.84,
+        "pi_low": 0.43,
+        "pi_upp": 1.09,
         "interpretation": "Statistically significant (decreased risk/odds)",
-        "i2": 71.71,
-        "tau2": 0.06,
-        "eggers_p": 0.0008554030642235527,
-        "funnel_interpretation": "The significant funnel plot asymmetry (egger's p=0.0009) indicates substantial publication bias in this meta-analysis on calcium and uterine cancer. This specific pattern suggests that smaller studies with smaller or null effects may be underrepresented, compromising the reliability of the pooled estimate and potentially leading to an overestimation of the true association.",
+        "i2": 0.6,
+        "tau2": 0.0,
+        "eggers_p": 0.084037740305833,
+        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.0840). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
         "loo_results": [
             {
-                "omitted": "Hwang JH et al. (2010) [PMID: 20375804]",
-                "pooled_es": 0.7435592585557661,
-                "ci_low": 0.6174873356202747,
-                "ci_upp": 0.8953711907769325,
-                "is_significant": true
-            },
-            {
                 "omitted": "Salazar-Martinez E et al. (2005) [PMID: 16174249]",
-                "pooled_es": 0.7053271500795808,
-                "ci_low": 0.532434972850932,
-                "ci_upp": 0.9343608403024022,
+                "pooled_es": 0.7191763429950464,
+                "ci_low": 0.6116206935962981,
+                "ci_upp": 0.8456460315012125,
                 "is_significant": true
             },
             {
                 "omitted": "Terry P et al. (2002) [PMID: 12235647]",
-                "pooled_es": 0.7019519332539312,
-                "ci_low": 0.5183002720438715,
-                "ci_upp": 0.9506777116976388,
-                "is_significant": true
-            },
-            {
-                "omitted": "Hosono S et al. (2010) [PMID: 20197786]",
-                "pooled_es": 0.6546009724547325,
-                "ci_low": 0.4670663018754134,
-                "ci_upp": 0.9174338448698046,
+                "pooled_es": 0.7192470638954102,
+                "ci_low": 0.5774695556119702,
+                "ci_upp": 0.8958330943939461,
                 "is_significant": true
             },
             {
                 "omitted": "Biel RK et al. (2011) [PMID: 21752313]",
-                "pooled_es": 0.6420665818434126,
-                "ci_low": 0.4574907940893553,
-                "ci_upp": 0.9011099258088342,
+                "pooled_es": 0.6188249926958567,
+                "ci_low": 0.44994708382181064,
+                "ci_upp": 0.8510875730815533,
                 "is_significant": true
             },
             {
                 "omitted": "Tzonou A et al. (1996) [PMID: 8630294]",
-                "pooled_es": 0.6479307317086214,
-                "ci_low": 0.46623814001369124,
-                "ci_upp": 0.9004287660381912,
-                "is_significant": true
-            },
-            {
-                "omitted": "Orta OR et al. (2020) [PMID: 32086510]",
-                "pooled_es": 0.6264865087522579,
-                "ci_low": 0.47640054103351925,
-                "ci_upp": 0.8238557932724467,
+                "pooled_es": 0.6292171706758013,
+                "ci_low": 0.46736235048001407,
+                "ci_upp": 0.8471248218146554,
                 "is_significant": true
             }
         ],
-        "results_interpretation": "The pooled analysis of 7 studies yielded an overall effect size of 0.68 (95% CI: 0.53\u20130.86), suggesting that calcium is associated with a lower risk of uterine cancer. However, this association should be interpreted with caution, as there was substantial between-study heterogeneity (I\u00b2 = 71.71%), reflecting considerable variability across studies."
+        "results_interpretation": "The pooled analysis of 4 studies yielded an overall effect size of 0.68 (95% CI: 0.55\u20130.84), suggesting that calcium is associated with a lower risk of uterine cancer. These findings were supported by low between-study heterogeneity (I\u00b2 = 0.60%), indicating consistent findings across the included studies."
     },
     "screening_stats": {
         "llm_screened_out": 997,
@@ -419,8 +255,8 @@
         },
         "extracted": 9
     },
-    "plot_url": "static/calcium/forest_uterine_cancer_incidence_primary.png?t=3119",
-    "funnel_plot_url": "static/calcium/funnel_uterine_cancer_incidence_primary.png?t=5066",
-    "baujat_plot_url": "static\\calcium\\baujat_uterine_cancer_incidence_primary.png?t=4876",
+    "plot_url": "static/calcium/forest_uterine_cancer_incidence_primary.png?t=8841",
+    "funnel_plot_url": "static/calcium/funnel_uterine_cancer_incidence_primary.png?t=4342",
+    "baujat_plot_url": "static/calcium/baujat_uterine_cancer_incidence_primary.png?t=8819",
     "last_run": "2026-06-15 12:43:19"
 }

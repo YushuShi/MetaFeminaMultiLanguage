@@ -99,52 +99,6 @@
             }
         },
         {
-            "Study": "Zhang J et al. (2022) [PMID: 35936519]",
-            "PMID": "35936519",
-            "Effect Size": 0.77,
-            "Lower CI": 0.61,
-            "Upper CI": 0.93,
-            "Population": "General",
-            "Reference": "Allium Vegetables Intake and Risk of Breast Cancer: A Meta-Analysis.",
-            "Authors": "Zhang J, Yang J",
-            "Journal": "Iranian journal of public health",
-            "Year": "2022",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/35936519/",
-            "Effect Type": "OR",
-            "SE": 0.08163265306122451,
-            "Sample Size": null,
-            "Cases": null,
-            "Estimated Cases": null,
-            "Design": "Meta-analysis (case-control and cohort studies)",
-            "Timing": "Unclear",
-            "Continent": "Multiple",
-            "Stage": null,
-            "Quality %": 75.0,
-            "Quality Score": "Moderate",
-            "comparison_type": "Highest vs Lowest",
-            "JBI": {
-                "q1": "Unclear",
-                "q2": "Unclear",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes"
-            },
-            "exposure_measurement_type": "dietary_intake",
-            "exposure_measurement_supporting_text": "Intake of allium vegetables may modify the risk of breast cancer.",
-            "extraction_supporting_text": {
-                "sample_size": "A total of 17 studies were included in this meta-analysis",
-                "effect_size": "The combined risk estimate of breast cancer for the highest vs lowest category of ... garlic ... intake was 0.77",
-                "effect_direction": "High intake of allium vegetables may be protective against the development of breast cancer.",
-                "p_value": "P = 0.016",
-                "confidence_interval": "0.77 (95% CI: 0.61-0.93)",
-                "outcome_definition": "risk of breast cancer",
-                "exposure_definition": "garlic intake"
-            }
-        },
-        {
             "Study": "Pourzand A et al. (2016) [PMID: 27721879]",
             "PMID": "27721879",
             "Effect Size": 0.41,
@@ -239,56 +193,49 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pourzand A et al. (2016) [PMID: 27721879]</th>\n      <td>-0.8118</td>\n      <td>0.3407</td>\n      <td>-1.4796</td>\n      <td>-0.1440</td>\n      <td>285.0</td>\n      <td>285.0</td>\n    </tr>\n    <tr>\n      <th>Desai G et al. (2020) [PMID: 31402709]</th>\n      <td>-0.6075</td>\n      <td>0.2516</td>\n      <td>-1.1007</td>\n      <td>-0.1144</td>\n      <td>314.0</td>\n      <td>660.0</td>\n    </tr>\n    <tr>\n      <th>Zhang J et al. (2022) [PMID: 35936519]</th>\n      <td>-0.2310</td>\n      <td>0.0966</td>\n      <td>-0.4204</td>\n      <td>-0.0416</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Yu ZG et al. (2012) [PMID: 22723840]</th>\n      <td>-0.1832</td>\n      <td>0.1074</td>\n      <td>-0.3937</td>\n      <td>0.0273</td>\n      <td>320.0</td>\n      <td>122058.0</td>\n    </tr>\n    <tr>\n      <th>Dorant E et al. (1995) [PMID: 7749142]</th>\n      <td>-0.1393</td>\n      <td>0.2078</td>\n      <td>-0.5466</td>\n      <td>0.2681</td>\n      <td>469.0</td>\n      <td>120852.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pourzand A et al. (2016) [PMID: 27721879]</th>\n      <td>-0.8118</td>\n      <td>0.3407</td>\n      <td>-1.4796</td>\n      <td>-0.1440</td>\n      <td>285.0</td>\n      <td>285.0</td>\n    </tr>\n    <tr>\n      <th>Desai G et al. (2020) [PMID: 31402709]</th>\n      <td>-0.6075</td>\n      <td>0.2516</td>\n      <td>-1.1007</td>\n      <td>-0.1144</td>\n      <td>314.0</td>\n      <td>660.0</td>\n    </tr>\n    <tr>\n      <th>Yu ZG et al. (2012) [PMID: 22723840]</th>\n      <td>-0.1832</td>\n      <td>0.1074</td>\n      <td>-0.3937</td>\n      <td>0.0273</td>\n      <td>320.0</td>\n      <td>122058.0</td>\n    </tr>\n    <tr>\n      <th>Dorant E et al. (1995) [PMID: 7749142]</th>\n      <td>-0.1393</td>\n      <td>0.2078</td>\n      <td>-0.5466</td>\n      <td>0.2681</td>\n      <td>469.0</td>\n      <td>120852.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.76,
-        "ci_low": 0.65,
-        "ci_upp": 0.9,
-        "pi_low": 0.51,
-        "pi_upp": 1.14,
+        "pooled_es": 0.71,
+        "ci_low": 0.55,
+        "ci_upp": 0.94,
+        "pi_low": 0.27,
+        "pi_upp": 1.91,
         "interpretation": "Statistically significant (decreased risk/odds)",
-        "i2": 26.57,
-        "tau2": 0.01,
-        "eggers_p": 0.13426817964552334,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.1343). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "i2": 44.18,
+        "tau2": 0.03,
+        "eggers_p": 0.1879066502188127,
+        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.1879). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
         "loo_results": [
             {
                 "omitted": "Pourzand A et al. (2016) [PMID: 27721879]",
-                "pooled_es": 0.7973451846345357,
-                "ci_low": 0.7146779608906065,
-                "ci_upp": 0.889574575194149,
+                "pooled_es": 0.7812190279319919,
+                "ci_low": 0.6197178002870095,
+                "ci_upp": 0.9848081970864109,
                 "is_significant": true
             },
             {
                 "omitted": "Desai G et al. (2020) [PMID: 31402709]",
-                "pooled_es": 0.7963027117796555,
-                "ci_low": 0.6877901344676406,
-                "ci_upp": 0.9219353070227361,
-                "is_significant": true
-            },
-            {
-                "omitted": "Zhang J et al. (2022) [PMID: 35936519]",
-                "pooled_es": 0.7146245224894403,
-                "ci_low": 0.5379581502102535,
-                "ci_upp": 0.9493084321590168,
-                "is_significant": true
+                "pooled_es": 0.7697734443971589,
+                "ci_low": 0.5611390637442344,
+                "ci_upp": 1.0559791573682866,
+                "is_significant": false
             },
             {
                 "omitted": "Yu ZG et al. (2012) [PMID: 22723840]",
-                "pooled_es": 0.7093226976242164,
-                "ci_low": 0.5463425863886923,
-                "ci_upp": 0.9209216010244173,
+                "pooled_es": 0.6295799201870446,
+                "ci_low": 0.4255403901172745,
+                "ci_upp": 0.9314530068308903,
                 "is_significant": true
             },
             {
                 "omitted": "Dorant E et al. (1995) [PMID: 7749142]",
-                "pooled_es": 0.7340870818676916,
-                "ci_low": 0.5846889642939109,
-                "ci_upp": 0.9216589959343533,
+                "pooled_es": 0.6402967951658847,
+                "ci_low": 0.44357022107881666,
+                "ci_upp": 0.9242730156740049,
                 "is_significant": true
             }
         ],
-        "results_interpretation": "The pooled analysis of 5 studies yielded an overall effect size of 0.76 (95% CI: 0.65\u20130.9), suggesting that garlic is associated with a lower risk of breast cancer. These findings were supported by moderate between-study heterogeneity (I\u00b2 = 26.57%), suggesting some variability in the results across studies."
+        "results_interpretation": "The pooled analysis of 4 studies yielded an overall effect size of 0.71 (95% CI: 0.55\u20130.94), suggesting that garlic is associated with a lower risk of breast cancer. These findings were supported by moderate between-study heterogeneity (I\u00b2 = 44.18%), suggesting some variability in the results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 7,
@@ -307,8 +254,8 @@
         },
         "extracted": 6
     },
-    "plot_url": "static/garlic/forest_breast_cancer_incidence_primary.png?t=1052",
-    "funnel_plot_url": "static/garlic/funnel_breast_cancer_incidence_primary.png?t=9139",
-    "baujat_plot_url": "static\\garlic\\baujat_breast_cancer_incidence_primary.png?t=4532",
+    "plot_url": "static/garlic/forest_breast_cancer_incidence_primary.png?t=6821",
+    "funnel_plot_url": "static/garlic/funnel_breast_cancer_incidence_primary.png?t=4275",
+    "baujat_plot_url": "static/garlic/baujat_breast_cancer_incidence_primary.png?t=9667",
     "last_run": "2026-06-14 23:39:04"
 }

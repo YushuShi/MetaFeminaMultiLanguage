@@ -345,55 +345,6 @@
             }
         },
         {
-            "Study": "Webb PM et al. (2004) [PMID: 15247120]",
-            "PMID": "15247120",
-            "Effect Size": 0.57,
-            "Lower CI": 0.33,
-            "Upper CI": 0.98,
-            "Population": "General",
-            "Reference": "A prospective study of diet and benign breast disease.",
-            "Authors": "Webb PM, Byrne C, Schnitt SJ, Connolly JL, Jacobs TW, Baer HJ, Willett WC, Colditz GA",
-            "Journal": "Cancer epidemiology, biomarkers & prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology",
-            "Year": "2004",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/15247120/",
-            "Effect Type": "RR",
-            "SE": 0.16581632653061223,
-            "Sample Size": null,
-            "Cases": null,
-            "Estimated Cases": null,
-            "Design": "Cohort",
-            "Timing": "Prospective",
-            "Continent": "North America",
-            "Stage": null,
-            "Quality %": 54.5,
-            "Quality Score": "Moderate",
-            "comparison_type": "Yes vs No",
-            "JBI": {
-                "q1": "Unclear",
-                "q2": "Yes",
-                "q3": "Unclear",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Unclear",
-                "q8": "Yes",
-                "q9": "Unclear",
-                "q10": "Unclear",
-                "q11": "Yes"
-            },
-            "exposure_measurement_type": "dietary_intake",
-            "exposure_measurement_supporting_text": "use of multivitamin supplements",
-            "extraction_supporting_text": {
-                "sample_size": "these analyses were based on small numbers.",
-                "effect_size": "RR = 0.57",
-                "effect_direction": "inversely associated",
-                "p_value": null,
-                "confidence_interval": "95% CI 0.33-0.98",
-                "outcome_definition": "risk of AH",
-                "exposure_definition": "use of multivitamin supplements"
-            }
-        },
-        {
             "Study": "Vishwakarma G et al. (2022) [PMID: 35901355]",
             "PMID": "35901355",
             "Effect Size": 3.38,
@@ -442,84 +393,77 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Webb PM et al. (2004) [PMID: 15247120]</th>\n      <td>-0.5621</td>\n      <td>0.2777</td>\n      <td>-1.1063</td>\n      <td>-0.0179</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Vergne Y et al. (2013) [PMID: 24817834]</th>\n      <td>-0.3169</td>\n      <td>0.2130</td>\n      <td>-0.7344</td>\n      <td>0.1006</td>\n      <td>312.0</td>\n      <td>836.0</td>\n    </tr>\n    <tr>\n      <th>Zhang S et al. (1999) [PMID: 10235158]</th>\n      <td>-0.3011</td>\n      <td>0.1161</td>\n      <td>-0.5286</td>\n      <td>-0.0736</td>\n      <td>3483.0</td>\n      <td>88818.0</td>\n    </tr>\n    <tr>\n      <th>Neuhouser ML et al. (2009) [PMID: 19204221]</th>\n      <td>-0.0188</td>\n      <td>0.0341</td>\n      <td>-0.0856</td>\n      <td>0.0479</td>\n      <td>9619.0</td>\n      <td>161808.0</td>\n    </tr>\n    <tr>\n      <th>Ishitani K et al. (2008) [PMID: 18344515]</th>\n      <td>-0.0101</td>\n      <td>0.0950</td>\n      <td>-0.1962</td>\n      <td>0.1761</td>\n      <td>1171.0</td>\n      <td>37920.0</td>\n    </tr>\n    <tr>\n      <th>Meulepas JM et al. (2010) [PMID: 19954572]</th>\n      <td>0.0172</td>\n      <td>0.0693</td>\n      <td>-0.1187</td>\n      <td>0.1531</td>\n      <td>2968.0</td>\n      <td>5950.0</td>\n    </tr>\n    <tr>\n      <th>Sesso HD et al. (2022) [PMID: 35294969]</th>\n      <td>0.0542</td>\n      <td>0.1387</td>\n      <td>-0.2176</td>\n      <td>0.3260</td>\n      <td>-</td>\n      <td>21442.0</td>\n    </tr>\n    <tr>\n      <th>Larsson SC et al. (2010) [PMID: 20335555]</th>\n      <td>0.1740</td>\n      <td>0.0703</td>\n      <td>0.0362</td>\n      <td>0.3117</td>\n      <td>974.0</td>\n      <td>35329.0</td>\n    </tr>\n    <tr>\n      <th>Vishwakarma G et al. (2022) [PMID: 35901355]</th>\n      <td>0.9483</td>\n      <td>0.2332</td>\n      <td>0.4913</td>\n      <td>1.4053</td>\n      <td>187.0</td>\n      <td>374.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Vergne Y et al. (2013) [PMID: 24817834]</th>\n      <td>-0.3169</td>\n      <td>0.2130</td>\n      <td>-0.7344</td>\n      <td>0.1006</td>\n      <td>312.0</td>\n      <td>836.0</td>\n    </tr>\n    <tr>\n      <th>Zhang S et al. (1999) [PMID: 10235158]</th>\n      <td>-0.3011</td>\n      <td>0.1161</td>\n      <td>-0.5286</td>\n      <td>-0.0736</td>\n      <td>3483.0</td>\n      <td>88818.0</td>\n    </tr>\n    <tr>\n      <th>Neuhouser ML et al. (2009) [PMID: 19204221]</th>\n      <td>-0.0188</td>\n      <td>0.0341</td>\n      <td>-0.0856</td>\n      <td>0.0479</td>\n      <td>9619.0</td>\n      <td>161808.0</td>\n    </tr>\n    <tr>\n      <th>Ishitani K et al. (2008) [PMID: 18344515]</th>\n      <td>-0.0101</td>\n      <td>0.0950</td>\n      <td>-0.1962</td>\n      <td>0.1761</td>\n      <td>1171.0</td>\n      <td>37920.0</td>\n    </tr>\n    <tr>\n      <th>Meulepas JM et al. (2010) [PMID: 19954572]</th>\n      <td>0.0172</td>\n      <td>0.0693</td>\n      <td>-0.1187</td>\n      <td>0.1531</td>\n      <td>2968.0</td>\n      <td>5950.0</td>\n    </tr>\n    <tr>\n      <th>Sesso HD et al. (2022) [PMID: 35294969]</th>\n      <td>0.0542</td>\n      <td>0.1387</td>\n      <td>-0.2176</td>\n      <td>0.3260</td>\n      <td>-</td>\n      <td>21442.0</td>\n    </tr>\n    <tr>\n      <th>Larsson SC et al. (2010) [PMID: 20335555]</th>\n      <td>0.1740</td>\n      <td>0.0703</td>\n      <td>0.0362</td>\n      <td>0.3117</td>\n      <td>974.0</td>\n      <td>35329.0</td>\n    </tr>\n    <tr>\n      <th>Vishwakarma G et al. (2022) [PMID: 35901355]</th>\n      <td>0.9483</td>\n      <td>0.2332</td>\n      <td>0.4913</td>\n      <td>1.4053</td>\n      <td>187.0</td>\n      <td>374.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 1.0,
-        "ci_low": 0.87,
-        "ci_upp": 1.15,
-        "pi_low": 0.65,
-        "pi_upp": 1.54,
+        "pooled_es": 1.03,
+        "ci_low": 0.9,
+        "ci_upp": 1.18,
+        "pi_low": 0.68,
+        "pi_upp": 1.57,
         "interpretation": "Not statistically significant",
-        "i2": 77.91,
-        "tau2": 0.03,
-        "eggers_p": 0.9802493557139864,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.9802). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "i2": 78.15,
+        "tau2": 0.02,
+        "eggers_p": 0.6448348137809843,
+        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.6448). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
         "loo_results": [
             {
-                "omitted": "Webb PM et al. (2004) [PMID: 15247120]",
-                "pooled_es": 1.030043829595366,
-                "ci_low": 0.8393832029187622,
-                "ci_upp": 1.2640118210587694,
-                "is_significant": false
-            },
-            {
                 "omitted": "Vergne Y et al. (2013) [PMID: 24817834]",
-                "pooled_es": 1.0262677069535662,
-                "ci_low": 0.8228332446318191,
-                "ci_upp": 1.2799986062874766,
+                "pooled_es": 1.055675475904767,
+                "ci_low": 0.8517935605239495,
+                "ci_upp": 1.3083577548311622,
                 "is_significant": false
             },
             {
                 "omitted": "Zhang S et al. (1999) [PMID: 10235158]",
-                "pooled_es": 1.0449989235005608,
-                "ci_low": 0.8430363856862788,
-                "ci_upp": 1.2953447427163696,
+                "pooled_es": 1.0758379905572424,
+                "ci_low": 0.8779754569958568,
+                "ci_upp": 1.318291271929834,
                 "is_significant": false
             },
             {
                 "omitted": "Neuhouser ML et al. (2009) [PMID: 19204221]",
-                "pooled_es": 1.0061570292164939,
-                "ci_low": 0.7719154013596696,
-                "ci_upp": 1.3114804623130725,
+                "pooled_es": 1.0493387067151183,
+                "ci_low": 0.8063235853932506,
+                "ci_upp": 1.3655953284233104,
                 "is_significant": false
             },
             {
                 "omitted": "Ishitani K et al. (2008) [PMID: 18344515]",
-                "pooled_es": 1.0048230026320428,
-                "ci_low": 0.7850702216296629,
-                "ci_upp": 1.2860878413176655,
+                "pooled_es": 1.0394112532644983,
+                "ci_low": 0.8133237401716327,
+                "ci_upp": 1.32834651203577,
                 "is_significant": false
             },
             {
                 "omitted": "Meulepas JM et al. (2010) [PMID: 19954572]",
-                "pooled_es": 1.0002526938321672,
-                "ci_low": 0.7760295054279246,
-                "ci_upp": 1.2892621279480865,
+                "pooled_es": 1.0373789559995048,
+                "ci_low": 0.8053184398394452,
+                "ci_upp": 1.3363100173953222,
                 "is_significant": false
             },
             {
                 "omitted": "Sesso HD et al. (2022) [PMID: 35294969]",
-                "pooled_es": 0.9969055520784545,
-                "ci_low": 0.7846017287973989,
-                "ci_upp": 1.2666562451858607,
+                "pooled_es": 1.0283328091372184,
+                "ci_low": 0.810393852851795,
+                "ci_upp": 1.3048820183257643,
                 "is_significant": false
             },
             {
                 "omitted": "Larsson SC et al. (2010) [PMID: 20335555]",
-                "pooled_es": 0.9734607614931191,
-                "ci_low": 0.7677740687340633,
-                "ci_upp": 1.2342509245320654,
+                "pooled_es": 1.003123624751974,
+                "ci_low": 0.7916886631577553,
+                "ci_upp": 1.2710261664250049,
                 "is_significant": false
             },
             {
                 "omitted": "Vishwakarma G et al. (2022) [PMID: 35901355]",
-                "pooled_es": 0.9628801763246299,
-                "ci_low": 0.8459006801239433,
-                "ci_upp": 1.0960367520015517,
+                "pooled_es": 0.9839475481893257,
+                "ci_low": 0.8766835155003108,
+                "ci_upp": 1.104335556070396,
                 "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled analysis of 9 studies yielded an effect size of 1.0 (95% CI: 0.87\u20131.15), indicating no statistically significant association between multivitamin and breast cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 77.91%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 8 studies yielded an effect size of 1.03 (95% CI: 0.9\u20131.18), indicating no statistically significant association between multivitamin and breast cancer. Although the point estimate suggests a potential positive relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 78.15%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 25,
@@ -538,8 +482,8 @@
         },
         "extracted": 9
     },
-    "plot_url": "static/multivitamin/forest_breast_cancer_incidence_primary.png?t=2336",
-    "funnel_plot_url": "static/multivitamin/funnel_breast_cancer_incidence_primary.png?t=6592",
-    "baujat_plot_url": "static\\multivitamin\\baujat_breast_cancer_incidence_primary.png?t=5992",
+    "plot_url": "static/multivitamin/forest_breast_cancer_incidence_primary.png?t=2215",
+    "funnel_plot_url": "static/multivitamin/funnel_breast_cancer_incidence_primary.png?t=8082",
+    "baujat_plot_url": "static/multivitamin/baujat_breast_cancer_incidence_primary.png?t=848",
     "last_run": "2026-06-15 03:20:23"
 }

@@ -2,7 +2,10 @@
 # Multi-outcome comparison: Breast / Uterine / Ovarian cancer
 # Dumbbell plot — colour = cancer type, size = effect size
 # =============================================================================
-setwd('C:/Users/mde4023/Downloads/MetaFemina/Plot')
+script_arg <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
+if (length(script_arg) == 1) {
+  setwd(dirname(normalizePath(sub("^--file=", "", script_arg))))
+}
 library(tidyverse)
 library(readxl)
 library(ggrepel)
@@ -26,12 +29,11 @@ read_cancer <- function(path, cancer) {
            sig = ifelse(ci_low > 1 | ci_high < 1, "Significant", "Not significant"))
 }
 
-dat_breast    <- read_cancer("exposures_meta_analysis_final_combined.xlsx",       "Breast")
+dat_breast    <- read_cancer("exposures_meta_analysis_breast_combined.xlsx",      "Breast")
 dat_uterine   <- read_cancer("exposures_meta_analysis_uterine_combined.xlsx",     "Uterine")
 dat_ovarian   <- read_cancer("exposures_meta_analysis_ovarian_combined.xlsx",     "Ovarian")
 
 dat_all <- bind_rows(dat_breast, dat_uterine, dat_ovarian)
-View(dat_all)
 # =============================================================================
 # 2. Drop single-study exposures, then keep only those in 2+ cancer datasets
 # =============================================================================

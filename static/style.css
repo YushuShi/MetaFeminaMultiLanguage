@@ -25,10 +25,59 @@ body {
 }
 
 header {
+    position: relative;
     text-align: center;
     padding: 3rem 1rem;
     background: #fff;
     border-bottom: 1px solid var(--border);
+}
+
+.header-actions {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+    gap: 0.65rem;
+    align-items: center;
+}
+
+.header-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 0.55rem 1.1rem;
+    border: 1px solid var(--primary);
+    border-radius: 6px;
+    color: var(--primary);
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.header-action:hover,
+.header-action:focus-visible,
+.header-action[aria-current="page"] {
+    color: #fff;
+    background: var(--primary);
+}
+
+.header-action--primary {
+    color: #fff;
+    background: var(--primary);
+}
+
+.header-action--primary:hover,
+.header-action--primary:focus-visible {
+    border-color: var(--primary-hover);
+    background: var(--primary-hover);
+}
+
+.header-action-icon {
+    margin-right: 6px;
 }
 
 .logo {
@@ -331,6 +380,10 @@ th.sortable:hover {
     vertical-align: middle;
 }
 
+#th-n-cases .sort-icon::after {
+    margin-left: 0.15rem;
+}
+
 th.sort-asc .sort-icon::after {
     content: '▲';
     opacity: 1;
@@ -449,6 +502,16 @@ button.tab-btn.active {
 }
 
 @media (max-width: 768px) {
+    header {
+        padding-top: 6rem;
+    }
+
+    .header-actions {
+        top: 1.25rem;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
     #read-only-banner {
         position: static;
         max-width: 100%;
@@ -459,4 +522,186 @@ button.tab-btn.active {
     }
 }
 
+/* Disease summary */
+.summary-main {
+    max-width: 1500px;
+    padding-top: 2rem;
+}
 
+.summary-back-link,
+.plot-open-link {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.summary-back-link:hover,
+.plot-open-link:hover {
+    text-decoration: underline;
+}
+
+.summary-intro {
+    max-width: 760px;
+    margin: 2.5rem auto 3rem;
+    text-align: center;
+}
+
+.summary-intro > p:not(.summary-eyebrow) {
+    color: #5f6368;
+    font-size: 1.05rem;
+}
+
+.summary-eyebrow {
+    margin-bottom: 0.45rem;
+    color: var(--primary);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.disease-picker {
+    max-width: 560px;
+    margin: 2rem auto 0;
+    padding: 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 5px 18px rgba(75, 22, 47, 0.07);
+    text-align: left;
+}
+
+.disease-picker > label {
+    display: block;
+    margin-bottom: 0.55rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.disease-picker-controls {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.disease-picker-controls select {
+    flex: 1;
+    width: auto;
+}
+
+.summary-results {
+    display: grid;
+    gap: 2rem;
+}
+
+.summary-results-heading,
+.summary-section-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.summary-results-heading {
+    padding: 1.25rem 1.5rem;
+    border-left: 5px solid var(--primary);
+    border-radius: 8px;
+    background: rgba(233, 30, 99, 0.06);
+}
+
+.summary-results-heading h2,
+.summary-section-heading h2 {
+    margin: 0;
+    color: var(--text-bright);
+}
+
+.summary-results-heading > p,
+.summary-section-heading > p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.summary-section {
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.summary-section-heading {
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.85rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.summary-plot-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+
+.summary-plot-card {
+    min-width: 0;
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background: #fffafa;
+}
+
+.summary-plot-card h3 {
+    margin-bottom: 0.75rem;
+    color: #333;
+    font-size: 1rem;
+}
+
+.summary-pdf {
+    display: block;
+    width: 100%;
+    height: 620px;
+    margin-bottom: 0.65rem;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.summary-pdf--forest {
+    height: 760px;
+}
+
+.plot-open-link {
+    display: inline-block;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 900px) {
+    .summary-plot-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-pdf,
+    .summary-pdf--forest {
+        height: 680px;
+    }
+}
+
+@media (max-width: 560px) {
+    .disease-picker-controls,
+    .summary-results-heading,
+    .summary-section-heading {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .disease-picker-controls button {
+        width: 100%;
+    }
+
+    .summary-section {
+        padding: 1rem;
+    }
+
+    .summary-pdf,
+    .summary-pdf--forest {
+        height: 520px;
+    }
+}

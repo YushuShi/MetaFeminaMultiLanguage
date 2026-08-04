@@ -148,55 +148,6 @@
             }
         },
         {
-            "Study": "Zang J et al. (2015) [PMID: 26770237]",
-            "PMID": "26770237",
-            "Effect Size": 0.91,
-            "Lower CI": 0.83,
-            "Upper CI": 0.99,
-            "Population": "General",
-            "Reference": "The Association between Dairy Intake and Breast Cancer in Western and Asian Populations: A Systematic Review and Meta-Analysis.",
-            "Authors": "Zang J, Shen M, Du S, Chen T, Zou S",
-            "Journal": "Journal of breast cancer",
-            "Year": "2015",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/26770237/",
-            "Effect Type": "RR",
-            "SE": 0.040816326530612256,
-            "Sample Size": 1596940,
-            "Cases": null,
-            "Estimated Cases": 207602.0,
-            "Design": "Cohort",
-            "Timing": "Prospective",
-            "Continent": "Mixed",
-            "Stage": null,
-            "Quality %": 81.8,
-            "Quality Score": "Good",
-            "comparison_type": "Highest vs Lowest",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Unclear",
-                "q10": "Unclear",
-                "q11": "Yes"
-            },
-            "exposure_measurement_type": "dietary_intake",
-            "exposure_measurement_supporting_text": "High and modest dairy consumption (>600 and 400-600 g/day, respectively) significantly reduced the risk of breast cancer compared with low dairy consumption (<400 g/day)",
-            "extraction_supporting_text": {
-                "sample_size": "22 prospective cohort studies (1,566,940 participants)",
-                "effect_size": "yogurt (RR, 0.91; 95% CI, 0.83-0.99)",
-                "effect_direction": "yogurt ... reduced the risk of breast cancer",
-                "p_value": null,
-                "confidence_interval": "RR, 0.91; 95% CI, 0.83-0.99",
-                "outcome_definition": "breast cancer risk",
-                "exposure_definition": "yogurt"
-            }
-        },
-        {
             "Study": "Wu Y et al. (2021) [PMID: 33964859]",
             "PMID": "33964859",
             "Effect Size": 0.9,
@@ -634,112 +585,105 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pathak DR et al. (2021) [PMID: 34682540]</th>\n      <td>-1.3642</td>\n      <td>0.5475</td>\n      <td>-2.4373</td>\n      <td>-0.2911</td>\n      <td>131.0</td>\n      <td>415</td>\n    </tr>\n    <tr>\n      <th>Kaluza J et al. (2021) [PMID: 33004231]</th>\n      <td>-1.2236</td>\n      <td>0.5121</td>\n      <td>-2.2272</td>\n      <td>-0.2200</td>\n      <td>195.0</td>\n      <td>33780</td>\n    </tr>\n    <tr>\n      <th>Van 't Veer P et al. (1991) [PMID: 1848533]</th>\n      <td>-1.0175</td>\n      <td>0.3829</td>\n      <td>-1.7680</td>\n      <td>-0.2670</td>\n      <td>133.0</td>\n      <td>422</td>\n    </tr>\n    <tr>\n      <th>Yamamoto S et al. (2003) [PMID: 12813174]</th>\n      <td>-0.7765</td>\n      <td>0.3092</td>\n      <td>-1.3825</td>\n      <td>-0.1706</td>\n      <td>179.0</td>\n      <td>21852</td>\n    </tr>\n    <tr>\n      <th>McCann SE et al. (2017) [PMID: 29955696]</th>\n      <td>-0.4423</td>\n      <td>0.1349</td>\n      <td>-0.7067</td>\n      <td>-0.1778</td>\n      <td>1941.0</td>\n      <td>3178</td>\n    </tr>\n    <tr>\n      <th>van't Veer P et al. (1989) [PMID: 2736542]</th>\n      <td>-0.4127</td>\n      <td>0.1980</td>\n      <td>-0.8008</td>\n      <td>-0.0247</td>\n      <td>133.0</td>\n      <td>422</td>\n    </tr>\n    <tr>\n      <th>Key TJ et al. (1999) [PMID: 10584890]</th>\n      <td>-0.1393</td>\n      <td>0.1273</td>\n      <td>-0.3888</td>\n      <td>0.1102</td>\n      <td>427.0</td>\n      <td>34759</td>\n    </tr>\n    <tr>\n      <th>Wirf\u00e4lt E et al. (2011) [PMID: 21767080]</th>\n      <td>-0.1090</td>\n      <td>0.0511</td>\n      <td>-0.2091</td>\n      <td>-0.0090</td>\n      <td>270.0</td>\n      <td>17000</td>\n    </tr>\n    <tr>\n      <th>Wu Y et al. (2021) [PMID: 33964859]</th>\n      <td>-0.0986</td>\n      <td>0.0398</td>\n      <td>-0.1765</td>\n      <td>-0.0206</td>\n      <td>37861.0</td>\n      <td>over 1 million</td>\n    </tr>\n    <tr>\n      <th>Zang J et al. (2015) [PMID: 26770237]</th>\n      <td>-0.0943</td>\n      <td>0.0450</td>\n      <td>-0.1824</td>\n      <td>-0.0062</td>\n      <td>-</td>\n      <td>1596940</td>\n    </tr>\n    <tr>\n      <th>Shirabe R et al. (2021) [PMID: 33340281]</th>\n      <td>-0.0578</td>\n      <td>0.1617</td>\n      <td>-0.3747</td>\n      <td>0.2591</td>\n      <td>825.0</td>\n      <td>47614</td>\n    </tr>\n    <tr>\n      <th>Nishio K et al. (2007) [PMID: 17619154]</th>\n      <td>0.0093</td>\n      <td>0.2076</td>\n      <td>-0.3976</td>\n      <td>0.4161</td>\n      <td>145.0</td>\n      <td>30454</td>\n    </tr>\n    <tr>\n      <th>Yu H et al. (2010) [PMID: 20432165]</th>\n      <td>1.3115</td>\n      <td>0.1488</td>\n      <td>1.0198</td>\n      <td>1.6031</td>\n      <td>358.0</td>\n      <td>718</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pathak DR et al. (2021) [PMID: 34682540]</th>\n      <td>-1.3642</td>\n      <td>0.5475</td>\n      <td>-2.4373</td>\n      <td>-0.2911</td>\n      <td>131.0</td>\n      <td>415</td>\n    </tr>\n    <tr>\n      <th>Kaluza J et al. (2021) [PMID: 33004231]</th>\n      <td>-1.2236</td>\n      <td>0.5121</td>\n      <td>-2.2272</td>\n      <td>-0.2200</td>\n      <td>195.0</td>\n      <td>33780</td>\n    </tr>\n    <tr>\n      <th>Van 't Veer P et al. (1991) [PMID: 1848533]</th>\n      <td>-1.0175</td>\n      <td>0.3829</td>\n      <td>-1.7680</td>\n      <td>-0.2670</td>\n      <td>133.0</td>\n      <td>422</td>\n    </tr>\n    <tr>\n      <th>Yamamoto S et al. (2003) [PMID: 12813174]</th>\n      <td>-0.7765</td>\n      <td>0.3092</td>\n      <td>-1.3825</td>\n      <td>-0.1706</td>\n      <td>179.0</td>\n      <td>21852</td>\n    </tr>\n    <tr>\n      <th>McCann SE et al. (2017) [PMID: 29955696]</th>\n      <td>-0.4423</td>\n      <td>0.1349</td>\n      <td>-0.7067</td>\n      <td>-0.1778</td>\n      <td>1941.0</td>\n      <td>3178</td>\n    </tr>\n    <tr>\n      <th>van't Veer P et al. (1989) [PMID: 2736542]</th>\n      <td>-0.4127</td>\n      <td>0.1980</td>\n      <td>-0.8008</td>\n      <td>-0.0247</td>\n      <td>133.0</td>\n      <td>422</td>\n    </tr>\n    <tr>\n      <th>Key TJ et al. (1999) [PMID: 10584890]</th>\n      <td>-0.1393</td>\n      <td>0.1273</td>\n      <td>-0.3888</td>\n      <td>0.1102</td>\n      <td>427.0</td>\n      <td>34759</td>\n    </tr>\n    <tr>\n      <th>Wirf\u00e4lt E et al. (2011) [PMID: 21767080]</th>\n      <td>-0.1090</td>\n      <td>0.0511</td>\n      <td>-0.2091</td>\n      <td>-0.0090</td>\n      <td>270.0</td>\n      <td>17000</td>\n    </tr>\n    <tr>\n      <th>Wu Y et al. (2021) [PMID: 33964859]</th>\n      <td>-0.0986</td>\n      <td>0.0398</td>\n      <td>-0.1765</td>\n      <td>-0.0206</td>\n      <td>37861.0</td>\n      <td>over 1 million</td>\n    </tr>\n    <tr>\n      <th>Shirabe R et al. (2021) [PMID: 33340281]</th>\n      <td>-0.0578</td>\n      <td>0.1617</td>\n      <td>-0.3747</td>\n      <td>0.2591</td>\n      <td>825.0</td>\n      <td>47614</td>\n    </tr>\n    <tr>\n      <th>Nishio K et al. (2007) [PMID: 17619154]</th>\n      <td>0.0093</td>\n      <td>0.2076</td>\n      <td>-0.3976</td>\n      <td>0.4161</td>\n      <td>145.0</td>\n      <td>30454</td>\n    </tr>\n    <tr>\n      <th>Yu H et al. (2010) [PMID: 20432165]</th>\n      <td>1.3115</td>\n      <td>0.1488</td>\n      <td>1.0198</td>\n      <td>1.6031</td>\n      <td>358.0</td>\n      <td>718</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.86,
-        "ci_low": 0.71,
-        "ci_upp": 1.03,
-        "pi_low": 0.44,
-        "pi_upp": 1.66,
+        "pooled_es": 0.82,
+        "ci_low": 0.65,
+        "ci_upp": 1.04,
+        "pi_low": 0.36,
+        "pi_upp": 1.91,
         "interpretation": "Not statistically significant",
-        "i2": 89.99,
-        "tau2": 0.08,
-        "eggers_p": 0.5843314822907089,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.5843). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "i2": 90.83,
+        "tau2": 0.13,
+        "eggers_p": 0.5897124894853762,
+        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.5897). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
         "loo_results": [
             {
                 "omitted": "Pathak DR et al. (2021) [PMID: 34682540]",
-                "pooled_es": 0.8838145472793023,
-                "ci_low": 0.6403710135699066,
-                "ci_upp": 1.219805608670396,
+                "pooled_es": 0.8595625658527809,
+                "ci_low": 0.595028843339538,
+                "ci_upp": 1.241700823221794,
                 "is_significant": false
             },
             {
                 "omitted": "Kaluza J et al. (2021) [PMID: 33004231]",
-                "pooled_es": 0.8831766743311408,
-                "ci_low": 0.63789261088398,
-                "ci_upp": 1.2227779798259504,
+                "pooled_es": 0.8581929782755243,
+                "ci_low": 0.5913606283683973,
+                "ci_upp": 1.2454247926404114,
                 "is_significant": false
             },
             {
                 "omitted": "Van 't Veer P et al. (1991) [PMID: 1848533]",
-                "pooled_es": 0.8896754678436741,
-                "ci_low": 0.6412320004789425,
-                "ci_upp": 1.2343776316398192,
+                "pooled_es": 0.86404134396653,
+                "ci_low": 0.5926542885838963,
+                "ci_upp": 1.2597014118759777,
                 "is_significant": false
             },
             {
                 "omitted": "Yamamoto S et al. (2003) [PMID: 12813174]",
-                "pooled_es": 0.8873299625539501,
-                "ci_low": 0.6344847791416782,
-                "ci_upp": 1.2409351466415257,
+                "pooled_es": 0.8585622874339759,
+                "ci_low": 0.5826776825605982,
+                "ci_upp": 1.26507196597014,
                 "is_significant": false
             },
             {
                 "omitted": "McCann SE et al. (2017) [PMID: 29955696]",
-                "pooled_es": 0.8820696757462956,
-                "ci_low": 0.6210906710983978,
-                "ci_upp": 1.2527106734596423,
+                "pooled_es": 0.8438410070152904,
+                "ci_low": 0.5624729321745041,
+                "ci_upp": 1.2659589544473657,
                 "is_significant": false
             },
             {
                 "omitted": "van't Veer P et al. (1989) [PMID: 2736542]",
-                "pooled_es": 0.8741584037321215,
-                "ci_low": 0.6161978723477016,
-                "ci_upp": 1.2401096289152758,
+                "pooled_es": 0.8385974526324316,
+                "ci_low": 0.5599591990848936,
+                "ci_upp": 1.2558873730637408,
                 "is_significant": false
             },
             {
                 "omitted": "Key TJ et al. (1999) [PMID: 10584890]",
-                "pooled_es": 0.8506034019142005,
-                "ci_low": 0.5947712862914932,
-                "ci_upp": 1.2164779370223595,
+                "pooled_es": 0.810248219839145,
+                "ci_low": 0.5372816323768972,
+                "ci_upp": 1.2218958143947387,
                 "is_significant": false
             },
             {
                 "omitted": "Wirf\u00e4lt E et al. (2011) [PMID: 21767080]",
-                "pooled_es": 0.8291837042566566,
-                "ci_low": 0.5742525318327122,
-                "ci_upp": 1.1972879130554397,
+                "pooled_es": 0.7730641122040399,
+                "ci_low": 0.5074812010688877,
+                "ci_upp": 1.177635980050216,
                 "is_significant": false
             },
             {
                 "omitted": "Wu Y et al. (2021) [PMID: 33964859]",
-                "pooled_es": 0.8189671317195398,
-                "ci_low": 0.5653311324973982,
-                "ci_upp": 1.1863970057230429,
-                "is_significant": false
-            },
-            {
-                "omitted": "Zang J et al. (2015) [PMID: 26770237]",
-                "pooled_es": 0.8225461534368963,
-                "ci_low": 0.5686367366331332,
-                "ci_upp": 1.1898319805010136,
+                "pooled_es": 0.7672766454120267,
+                "ci_low": 0.5031729818303048,
+                "ci_upp": 1.1700021103145732,
                 "is_significant": false
             },
             {
                 "omitted": "Shirabe R et al. (2021) [PMID: 33340281]",
-                "pooled_es": 0.8454459258784651,
-                "ci_low": 0.5927940046890168,
-                "ci_upp": 1.2057794241010795,
+                "pooled_es": 0.8060231801579899,
+                "ci_low": 0.536118125296299,
+                "ci_upp": 1.211810114781964,
                 "is_significant": false
             },
             {
                 "omitted": "Nishio K et al. (2007) [PMID: 17619154]",
-                "pooled_es": 0.8429237353075195,
-                "ci_low": 0.5930337975769114,
-                "ci_upp": 1.1981111809274796,
+                "pooled_es": 0.8038094504648765,
+                "ci_low": 0.5366030203386649,
+                "ci_upp": 1.204073790432393,
                 "is_significant": false
             },
             {
                 "omitted": "Yu H et al. (2010) [PMID: 20432165]",
-                "pooled_es": 0.8151887357358895,
-                "ci_low": 0.702475512862061,
-                "ci_upp": 0.9459869599770181,
+                "pooled_es": 0.7762213566495327,
+                "ci_low": 0.6450521382737127,
+                "ci_upp": 0.9340634016520012,
                 "is_significant": true
             }
         ],
-        "results_interpretation": "The pooled analysis of 13 studies yielded an effect size of 0.86 (95% CI: 0.71\u20131.03), indicating no statistically significant association between fermented foods and breast cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 89.99%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 12 studies yielded an effect size of 0.82 (95% CI: 0.65\u20131.04), indicating no statistically significant association between fermented foods and breast cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 90.83%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "total_fetched": 191,
@@ -758,8 +702,8 @@
             "outcome": 0
         }
     },
-    "plot_url": "static/fermented_foods/forest_breast_cancer_incidence_primary.png?t=9696",
-    "funnel_plot_url": "static/fermented_foods/funnel_breast_cancer_incidence_primary.png?t=9610",
-    "baujat_plot_url": "static\\fermented_foods\\baujat_breast_cancer_incidence_primary.png?t=6735",
+    "plot_url": "static/fermented_foods/forest_breast_cancer_incidence_primary.png?t=546",
+    "funnel_plot_url": "static/fermented_foods/funnel_breast_cancer_incidence_primary.png?t=9913",
+    "baujat_plot_url": "static/fermented_foods/baujat_breast_cancer_incidence_primary.png?t=4814",
     "last_run": "2026-06-24 15:19:35"
 }

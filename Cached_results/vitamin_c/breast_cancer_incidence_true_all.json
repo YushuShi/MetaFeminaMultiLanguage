@@ -197,56 +197,6 @@
             }
         },
         {
-            "Study": "Zhang D et al. (2020) [PMID: 32991322]",
-            "PMID": "32991322",
-            "Effect Size": 0.86,
-            "Lower CI": 0.81,
-            "Upper CI": 0.92,
-            "Population": "General",
-            "Reference": "Association of vitamin C intake with breast cancer risk and mortality: a meta-analysis of observational studies.",
-            "Authors": "Zhang D, Xu P, Li Y, Wei B, Yang S, Zheng Y, Lyu L, Deng Y, Zhai Z, Li N, Wang N, Lyu J, Dai Z",
-            "Journal": "Aging",
-            "Year": "2020",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/32991322/",
-            "Effect Type": "RR",
-            "SE": 0.028061224489795915,
-            "Sample Size": null,
-            "Cases": null,
-            "Estimated Cases": null,
-            "Design": "Meta-analysis of observational studies",
-            "Timing": "Unclear",
-            "Continent": "Unclear",
-            "Stage": null,
-            "Quality %": 9.1,
-            "Quality Score": "Fair",
-            "comparison_type": "Highest vs Lowest",
-            "JBI": {
-                "q1": "Unclear",
-                "q2": "Unclear",
-                "q3": "Unclear",
-                "q4": "Unclear",
-                "q5": "Unclear",
-                "q6": "Unclear",
-                "q7": "Unclear",
-                "q8": "Unclear",
-                "q9": "Unclear",
-                "q10": "Unclear",
-                "q11": "Yes"
-            },
-            "exposure_measurement_type": "dietary_intake",
-            "exposure_measurement_supporting_text": "Pooled results suggested that the highest versus lowest vitamin C intake was significantly associated with a lower risk of breast cancer incidence.",
-            "extraction_supporting_text": {
-                "sample_size": "We searched ... and found 69 studies relevant to breast cancer risk (54 studies) and survival (15 studies).",
-                "effect_size": "Relative Risk = 0.86",
-                "effect_direction": "significantly associated with a lower risk of breast cancer incidence",
-                "p_value": "",
-                "confidence_interval": "95% confidence interval, 0.81-0.92",
-                "outcome_definition": "breast cancer incidence",
-                "exposure_definition": "vitamin C intake"
-            },
-            "exclusions": 2
-        },
-        {
             "Study": "Verhoeven DT et al. (1997) [PMID: 9000614]",
             "PMID": "9000614",
             "Effect Size": 0.77,
@@ -838,20 +788,20 @@
         "interpretation": "Not statistically significant",
         "i2": 82.99,
         "tau2": 0.04,
-        "eggers_p": 0.5612991451474088,
+        "eggers_p": 0.5612991451474079,
         "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.5613). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
         "loo_results": [
             {
                 "omitted": "Zaridze D et al. (1991) [PMID: 2045197]",
                 "pooled_es": 0.9502586099696632,
-                "ci_low": 0.770271522989165,
-                "ci_upp": 1.1723027515249038,
+                "ci_low": 0.7702715229891649,
+                "ci_upp": 1.172302751524904,
                 "is_significant": false
             },
             {
                 "omitted": "Adzersen KH et al. (2003) [PMID: 14690788]",
-                "pooled_es": 0.9502000627479074,
-                "ci_low": 0.7617997321470366,
+                "pooled_es": 0.9502000627479075,
+                "ci_low": 0.7617997321470364,
                 "ci_upp": 1.1851935897922585,
                 "is_significant": false
             },
@@ -859,33 +809,33 @@
                 "omitted": "Song H et al. (2022) [PMID: 35807825]",
                 "pooled_es": 0.9549386113636026,
                 "ci_low": 0.7657119308956792,
-                "ci_upp": 1.1909279647848194,
+                "ci_upp": 1.1909279647848197,
                 "is_significant": false
             },
             {
                 "omitted": "Moorman PG et al. (2001) [PMID: 11415490]",
                 "pooled_es": 0.9662784810346767,
-                "ci_low": 0.7768971371944113,
+                "ci_low": 0.7768971371944112,
                 "ci_upp": 1.2018246151382508,
                 "is_significant": false
             },
             {
                 "omitted": "Michels KB et al. (2001) [PMID: 11251982]",
-                "pooled_es": 0.9641880658631218,
-                "ci_low": 0.7722810656956578,
+                "pooled_es": 0.9641880658631217,
+                "ci_low": 0.7722810656956577,
                 "ci_upp": 1.203782751705102,
                 "is_significant": false
             },
             {
                 "omitted": "Dehghani F et al. (2024) [PMID: 39334412]",
                 "pooled_es": 0.9525132949837565,
-                "ci_low": 0.7575594116475168,
+                "ci_low": 0.7575594116475167,
                 "ci_upp": 1.1976375227755203,
                 "is_significant": false
             },
             {
                 "omitted": "Verhoeven DT et al. (1997) [PMID: 9000614]",
-                "pooled_es": 0.9474453429721199,
+                "pooled_es": 0.94744534297212,
                 "ci_low": 0.7526705137390054,
                 "ci_upp": 1.1926236799955556,
                 "is_significant": false
@@ -894,7 +844,7 @@
                 "omitted": "Pan SY et al. (2011) [PMID: 21864361]",
                 "pooled_es": 0.9472686760577569,
                 "ci_low": 0.7495542778634099,
-                "ci_upp": 1.197135379172277,
+                "ci_upp": 1.1971353791722772,
                 "is_significant": false
             },
             {
@@ -907,49 +857,49 @@
             {
                 "omitted": "Nagel G et al. (2010) [PMID: 19565333]",
                 "pooled_es": 0.9288411407911443,
-                "ci_low": 0.7289239426949033,
+                "ci_low": 0.7289239426949031,
                 "ci_upp": 1.1835883201154547,
                 "is_significant": false
             },
             {
                 "omitted": "Hutchinson J et al. (2012) [PMID: 22127331]",
-                "pooled_es": 0.9274340717795122,
-                "ci_low": 0.725469006135919,
+                "pooled_es": 0.9274340717795121,
+                "ci_low": 0.7254690061359189,
                 "ci_upp": 1.1856246789630271,
                 "is_significant": false
             },
             {
                 "omitted": "Fernandez-Lazaro CI et al. (2021) [PMID: 33668391]",
-                "pooled_es": 0.9331156579872713,
-                "ci_low": 0.7417745824864412,
+                "pooled_es": 0.9331156579872711,
+                "ci_low": 0.741774582486441,
                 "ci_upp": 1.1738132469602833,
                 "is_significant": false
             },
             {
                 "omitted": "Hunter DJ et al. (1993) [PMID: 8292129]",
-                "pooled_es": 0.9263078615126074,
-                "ci_low": 0.730489184559001,
-                "ci_upp": 1.17461869722009,
+                "pooled_es": 0.9263078615126072,
+                "ci_low": 0.7304891845590008,
+                "ci_upp": 1.1746186972200903,
                 "is_significant": false
             },
             {
                 "omitted": "Cadeau C et al. (2016) [PMID: 27194303]",
                 "pooled_es": 0.9106454299034521,
-                "ci_low": 0.7257040872676285,
+                "ci_low": 0.7257040872676283,
                 "ci_upp": 1.1427179666665146,
                 "is_significant": false
             },
             {
                 "omitted": "Nissen SB et al. (2003) [PMID: 14674733]",
-                "pooled_es": 0.8959547336573407,
-                "ci_low": 0.7353079297052908,
+                "pooled_es": 0.8959547336573406,
+                "ci_low": 0.7353079297052906,
                 "ci_upp": 1.091698936369053,
                 "is_significant": false
             },
             {
                 "omitted": "Tayyem RF et al. (2019) [PMID: 30999736]",
-                "pooled_es": 0.8981592787826581,
-                "ci_low": 0.7543361914017671,
+                "pooled_es": 0.898159278782658,
+                "ci_low": 0.754336191401767,
                 "ci_upp": 1.069403933230791,
                 "is_significant": false
             }
@@ -973,8 +923,8 @@
         },
         "extracted": 24
     },
-    "plot_url": "static/vitamin_c/forest_breast_cancer_incidence_primary.png?t=6283",
-    "funnel_plot_url": "static/vitamin_c/funnel_breast_cancer_incidence_primary.png?t=8910",
-    "baujat_plot_url": "static\\vitamin_c\\baujat_breast_cancer_incidence_primary.png?t=3633",
+    "plot_url": "static/vitamin_c/forest_breast_cancer_incidence_primary.png?t=5089",
+    "funnel_plot_url": "static/vitamin_c/funnel_breast_cancer_incidence_primary.png?t=3629",
+    "baujat_plot_url": "static/vitamin_c/baujat_breast_cancer_incidence_primary.png?t=4659",
     "last_run": "2026-06-15 09:03:42"
 }

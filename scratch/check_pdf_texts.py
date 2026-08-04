@@ -29,8 +29,8 @@ def get_pdf_text(filepath):
                     pass
     return text_segments
 
-protective_texts = get_pdf_text('Plot/forest_protective.pdf')
-harmful_texts = get_pdf_text('Plot/forest_harmful.pdf')
+protective_texts = get_pdf_text('Plot/forest_protective_breast.pdf')
+harmful_texts = get_pdf_text('Plot/forest_harmful_breast.pdf')
 
 print("Protective texts containing BCAA/bcaa/Choline/choline/Betaine/betaine:")
 for text in protective_texts:

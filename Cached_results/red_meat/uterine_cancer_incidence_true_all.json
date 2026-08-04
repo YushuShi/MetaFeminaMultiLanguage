@@ -145,99 +145,44 @@
                 "outcome_definition": "risk of developing endometrial cancer",
                 "exposure_definition": "Respondents who consumed red meat, such as veal, pork, and lamb in the amount of 101-200 g per day"
             }
-        },
-        {
-            "Study": "Chiaffarino F et al. (1999) [PMID: 10472866]",
-            "PMID": "10472866",
-            "Effect Size": 1.7,
-            "Lower CI": 1.4,
-            "Upper CI": 2.2,
-            "Population": "General",
-            "Reference": "Diet and uterine myomas.",
-            "Authors": "Chiaffarino F, Parazzini F, La Vecchia C, Chatenoud L, Di Cintio E, Marsico S",
-            "Journal": "Obstetrics and gynecology",
-            "Year": "1999",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/10472866/",
-            "Effect Type": "OR",
-            "SE": 0.20408163265306128,
-            "Sample Size": 2400,
-            "Cases": 843.0,
-            "Estimated Cases": null,
-            "Design": "Case-Control",
-            "Timing": "Retrospective",
-            "Continent": "Europe",
-            "Stage": "",
-            "Quality %": 80.0,
-            "Quality Score": "Moderate",
-            "comparison_type": "Upper tertile vs Lower tertile",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Unclear",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Unclear",
-                "q10": "Yes"
-            },
-            "exposure_measurement_type": "dietary_intake",
-            "exposure_measurement_supporting_text": "Women with uterine myomas reported more frequent consumption of beef, other red meat, and ham...",
-            "extraction_supporting_text": {
-                "sample_size": "Cases included 843 women... Controls were 1557 women...",
-                "effect_size": "The multivariate odds ratios in the upper tertile were 1.7 for beef and other red meat (95% confidence interval [CI] 1.4, 2.2)",
-                "effect_direction": "Myoma is associated with beef and ham consumption",
-                "p_value": "",
-                "confidence_interval": "95% confidence interval [CI] 1.4, 2.2",
-                "outcome_definition": "843 women with uterine myomas whose clinical diagnoses dated back no more than 2 years",
-                "exposure_definition": "beef, other red meat"
-            }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Di Maso M et al. (2013) [PMID: 24121119]</th>\n      <td>0.2241</td>\n      <td>0.0732</td>\n      <td>0.0807</td>\n      <td>0.3675</td>\n      <td>454.0</td>\n      <td>13145.0</td>\n    </tr>\n    <tr>\n      <th>van Lonkhuijzen L et al. (2011) [PMID: 21422932]</th>\n      <td>0.4406</td>\n      <td>0.2878</td>\n      <td>-0.1235</td>\n      <td>1.0047</td>\n      <td>107.0</td>\n      <td>26024.0</td>\n    </tr>\n    <tr>\n      <th>Chiaffarino F et al. (1999) [PMID: 10472866]</th>\n      <td>0.4435</td>\n      <td>0.0913</td>\n      <td>0.2647</td>\n      <td>0.6224</td>\n      <td>843.0</td>\n      <td>2400.0</td>\n    </tr>\n    <tr>\n      <th>Plagens-Rotman K et al. (2016) [PMID: 27095953]</th>\n      <td>0.6297</td>\n      <td>0.2613</td>\n      <td>0.1175</td>\n      <td>1.1418</td>\n      <td>-</td>\n      <td>548.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Di Maso M et al. (2013) [PMID: 24121119]</th>\n      <td>0.2241</td>\n      <td>0.0732</td>\n      <td>0.0807</td>\n      <td>0.3675</td>\n      <td>454.0</td>\n      <td>13145.0</td>\n    </tr>\n    <tr>\n      <th>van Lonkhuijzen L et al. (2011) [PMID: 21422932]</th>\n      <td>0.4406</td>\n      <td>0.2878</td>\n      <td>-0.1235</td>\n      <td>1.0047</td>\n      <td>107.0</td>\n      <td>26024.0</td>\n    </tr>\n    <tr>\n      <th>Plagens-Rotman K et al. (2016) [PMID: 27095953]</th>\n      <td>0.6297</td>\n      <td>0.2613</td>\n      <td>0.1175</td>\n      <td>1.1418</td>\n      <td>-</td>\n      <td>548.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 1.44,
-        "ci_low": 1.21,
-        "ci_upp": 1.7,
-        "pi_low": 0.8,
-        "pi_upp": 2.6,
+        "pooled_es": 1.37,
+        "ci_low": 1.1,
+        "ci_upp": 1.72,
+        "pi_low": 0.18,
+        "pi_upp": 10.68,
         "interpretation": "Statistically significant (increased risk/odds)",
-        "i2": 41.23,
+        "i2": 24.01,
         "tau2": 0.01,
-        "eggers_p": 0.37679336565508526,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.3768). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "eggers_p": 0.2386790228111979,
+        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.2387). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
         "loo_results": [
             {
                 "omitted": "Di Maso M et al. (2013) [PMID: 24121119]",
-                "pooled_es": 2.783490458241463,
-                "ci_low": null,
-                "ci_upp": null,
-                "is_significant": false
+                "pooled_es": 1.77468327945409,
+                "ci_low": 1.498395437437428,
+                "ci_upp": 2.101915598301763,
+                "is_significant": true
             },
             {
                 "omitted": "van Lonkhuijzen L et al. (2011) [PMID: 21422932]",
-                "pooled_es": 1.4400959518069678,
-                "ci_low": 1.1811537527359415,
-                "ci_upp": 1.7558055804394939,
-                "is_significant": true
-            },
-            {
-                "omitted": "Chiaffarino F et al. (1999) [PMID: 10472866]",
-                "pooled_es": 1.3745502793283895,
-                "ci_low": 1.110205283664569,
-                "ci_upp": 1.7018370369894606,
-                "is_significant": true
+                "pooled_es": 1.418081259710527,
+                "ci_low": 0.9822693428369256,
+                "ci_upp": 2.0472536110455093,
+                "is_significant": false
             },
             {
                 "omitted": "Plagens-Rotman K et al. (2016) [PMID: 27095953]",
-                "pooled_es": 1.3968204930025427,
-                "ci_low": 1.2002008980459267,
-                "ci_upp": 1.6256507496774144,
-                "is_significant": true
+                "pooled_es": 1.1657425172307043,
+                "ci_low": null,
+                "ci_upp": null,
+                "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled analysis of 4 studies yielded an overall effect size of 1.44 (95% CI: 1.21\u20131.7), suggesting that red_meat is associated with a higher risk of uterine cancer. These findings were supported by moderate between-study heterogeneity (I\u00b2 = 41.23%), suggesting some variability in the results across studies."
+        "results_interpretation": "The pooled analysis of 3 studies yielded an overall effect size of 1.37 (95% CI: 1.1\u20131.72), suggesting that red meat is associated with a higher risk of uterine cancer. These findings were supported by low between-study heterogeneity (I\u00b2 = 24.01%), indicating consistent findings across the included studies."
     },
     "screening_stats": {
         "llm_screened_out": 28,
@@ -256,8 +201,8 @@
         },
         "extracted": 6
     },
-    "plot_url": "static/red_meat/forest_uterine_cancer_incidence_primary.png?t=551",
-    "funnel_plot_url": "static/red_meat/funnel_uterine_cancer_incidence_primary.png?t=1122",
-    "baujat_plot_url": "static\\red_meat\\baujat_uterine_cancer_incidence_primary.png?t=1265",
+    "plot_url": "static/red_meat/forest_uterine_cancer_incidence_primary.png?t=8285",
+    "funnel_plot_url": "static/red_meat/funnel_uterine_cancer_incidence_primary.png?t=823",
+    "baujat_plot_url": "static/red_meat/baujat_uterine_cancer_incidence_primary.png?t=3337",
     "last_run": "2026-06-15 15:09:46"
 }

@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 # Replicate the cleaning logic of PlotsPaper.R
-raw = pd.read_excel('Plot/exposures_meta_analysis_final_combined.xlsx')
+raw = pd.read_excel('Plot/exposures_meta_analysis_breast_combined.xlsx')
 raw.columns = [
   "Exposure", "n_studies", "pooled_es_num",
   "ci_low", "ci_high",

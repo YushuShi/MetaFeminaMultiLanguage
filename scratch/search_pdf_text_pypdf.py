@@ -2,8 +2,8 @@ import pypdf
 import os
 
 pdf_files = [
-    'Plot/forest_protective.pdf',
-    'Plot/forest_harmful.pdf',
+    'Plot/forest_protective_breast.pdf',
+    'Plot/forest_harmful_breast.pdf',
     'Plot/plot_es_vs_heterogeneity.pdf',
     'Plot/plot_eggers_vs_heterogeneity.pdf',
     'Plot/comparison_dumbbell.pdf'

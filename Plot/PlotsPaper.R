@@ -1,8 +1,11 @@
 # =============================================================================
-# Combined analysis plots — Forest plots + Scatter diagnostic plots
-# Data: exposures_meta_analysis_final_combined.xlsx
+# Cancer-specific forest plots and diagnostic plots
+# Data: combined and dietary-only meta-analysis workbooks
 # =============================================================================
-setwd('C:/Users/mde4023/Downloads/MetaFemina/Plot')
+script_arg <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
+if (length(script_arg) == 1) {
+  setwd(dirname(normalizePath(sub("^--file=", "", script_arg))))
+}
 library(tidyverse)
 library(scales)
 library(readxl)
@@ -21,35 +24,38 @@ dir.create(output_dir, showWarnings = FALSE, recursive = TRUE)
 
 # =============================================================================
 # 1. Read & clean data
-# ============================================================================= View(dat_clean)
+# =============================================================================
 
-raw <- read_excel("exposures_meta_analysis_final_combined.xlsx")
+read_analysis_data <- function(path) {
+  raw <- read_excel(path)
+  if (ncol(raw) != 11) {
+    stop("Expected 11 columns in ", path, "; found ", ncol(raw), ".")
+  }
 
-# Standardise column names
-names(raw) <- c(
-  "Exposure", "n_studies", "pooled_es_num",
-  "ci_low", "ci_high",
-  "pi_low", "pi_high",
-  "I2", "eggers_p",
-  "Total_N", "N_cases"
-)
-
-dat_clean <- raw %>%
-  mutate(
-    # Reconstruct a display string  "OR (low–high)" for the table column
-    pooled_ci_lab = paste0(
-      pooled_es_num,
-      " (", ci_low, "-", ci_high, ")"
-    ),
-    N_lab     = comma(Total_N),
-    Cases_lab = comma(N_cases),
-    sig = ifelse((ci_high < 1 | ci_low > 1), "Significant", "Not significant"),
-    direction = case_when(
-      pooled_es_num < 1 ~ "Protective",
-      pooled_es_num > 1 ~ "Harmful",
-      TRUE              ~ "Neutral"
-    )
+  names(raw) <- c(
+    "Exposure", "n_studies", "pooled_es_num",
+    "ci_low", "ci_high",
+    "pi_low", "pi_high",
+    "I2", "eggers_p",
+    "Total_N", "N_cases"
   )
+
+  raw %>%
+    mutate(
+      pooled_ci_lab = paste0(
+        pooled_es_num,
+        " (", ci_low, "-", ci_high, ")"
+      ),
+      N_lab     = comma(Total_N),
+      Cases_lab = comma(N_cases),
+      sig = ifelse((ci_high < 1 | ci_low > 1), "Significant", "Not significant"),
+      direction = case_when(
+        pooled_es_num < 1 ~ "Protective",
+        pooled_es_num > 1 ~ "Harmful",
+        TRUE              ~ "Neutral"
+      )
+    )
+}
 
 # =============================================================================
 # 2. Group mapping, order & colour palettes  (unchanged from original)
@@ -196,12 +202,14 @@ group_bg <- c(
   "Antioxidants"             = "#E3EEF9"
 )
 
-missing_group_map <- setdiff(unique(dat_clean$Exposure), group_map$Exposure)
-if (length(missing_group_map) > 0) {
-  stop(
-    "Missing exposure group mapping for: ",
-    paste(sort(missing_group_map), collapse = ", ")
-  )
+validate_group_map <- function(dat_clean, source_file) {
+  missing_group_map <- setdiff(unique(dat_clean$Exposure), group_map$Exposure)
+  if (length(missing_group_map) > 0) {
+    stop(
+      "Missing exposure group mapping for ", source_file, ": ",
+      paste(sort(missing_group_map), collapse = ", ")
+    )
+  }
 }
 
 # =============================================================================
@@ -446,21 +454,23 @@ make_forest_panel <- function(df, label_df, total_rows, xlim_max = 2.5, fs = 3.8
 }
 
 # ---- Caption ----
-make_caption <- function(direction) {
+make_caption <- function(direction, cancer_label) {
   side <- if (direction == "Protective") {
-    "RR < 1 = inversely associated with breast cancer risk."
+    paste0("RR < 1 = inversely associated with ", cancer_label, " risk.")
   } else {
-    "RR > 1 = positively associated with breast cancer risk."
+    paste0("RR > 1 = positively associated with ", cancer_label, " risk.")
   }
   paste0(
+    side, "  |  ",
     "[*] pooled RR (size proportional to k studies)  |  ",
     "[ ] red outline = statistically significant (95% CI excludes 1.0)  |  ",
-    "[*] faded = non-significant  |  dashed line = 95% prediction interval  |  "
+    "[*] faded = non-significant  |  dashed line = 95% prediction interval"
   )
 }
 
 # ---- Compose & save ----
-save_forest_figure <- function(direction, title_text, xlim_max, filename) {
+save_forest_figure <- function(dat_clean, direction, cancer_label,
+                               title_text, xlim_max, filename) {
   output_path <- file.path(output_dir, filename)
   df_raw     <- prepare_dat(dat_clean, direction)
   built      <- build_plot_rows(df_raw)
@@ -474,7 +484,7 @@ save_forest_figure <- function(direction, title_text, xlim_max, filename) {
   fst_no_leg  <- fst + theme(legend.position = "none")
   
   caption_grob <- ggdraw() +
-    draw_label(make_caption(direction),
+    draw_label(make_caption(direction, cancer_label),
                x = 0.01, hjust = 0, size = 7.2,
                color = "#607D8B", fontface = "italic")
   
@@ -506,9 +516,9 @@ save_forest_figure <- function(direction, title_text, xlim_max, filename) {
 # =============================================================================
 
 # Shared helper: build the filtered + labelled data frame
-build_scatter_df <- function(dat_clean, min_studies = 2) {
+build_scatter_df <- function(dat_clean, min_studies = 3) {
   dat_clean %>%
-    filter(n_studies > min_studies) %>%
+    filter(n_studies >= min_studies) %>%
     left_join(group_map, by = "Exposure") %>%
     mutate(
       Group          = replace_na(Group, "Other"),
@@ -519,8 +529,9 @@ build_scatter_df <- function(dat_clean, min_studies = 2) {
 }
 
 # ---- Plot 1: Effect Size vs I² ----
-make_es_heterogeneity_plot <- function(dat_clean, min_studies = 2,
-                                       filename = "plot_es_vs_heterogeneity.pdf") {
+make_es_heterogeneity_plot <- function(dat_clean, min_studies = 3,
+                                       filename = "plot_es_vs_heterogeneity.pdf",
+                                       cancer_label = NULL) {
   output_path <- file.path(output_dir, filename)
   
   plot_df <- build_scatter_df(dat_clean, min_studies)
@@ -533,7 +544,10 @@ make_es_heterogeneity_plot <- function(dat_clean, min_studies = 2,
     scale_color_manual(values = group_colors, guide = "none") +
     scale_size_continuous(range = c(1, 4), name = "Number of studies") +
     labs(
-      title = "Effect Size vs Heterogeneity",
+      title = paste0(
+        "Effect Size vs Heterogeneity",
+        ifelse(is.null(cancer_label), "", paste0(" - ", str_to_sentence(cancer_label)))
+      ),
       x     = "Effect Size (Pooled RR)",
       y     = expression(I^2)
     ) +
@@ -551,22 +565,36 @@ make_es_heterogeneity_plot <- function(dat_clean, min_studies = 2,
 }
 
 # ---- Plot 2: log(Egger's p-value) vs I² ----
-make_eggers_heterogeneity_plot <- function(dat_clean, min_studies = 2,
-                                           filename = "plot_eggers_vs_heterogeneity.pdf") {
+make_eggers_heterogeneity_plot <- function(dat_clean, min_studies = 10,
+                                           filename = "plot_eggers_vs_heterogeneity.pdf",
+                                           cancer_label = NULL) {
   output_path <- file.path(output_dir, filename)
   
   plot_df <- build_scatter_df(dat_clean, min_studies) %>%
-    filter(!is.na(log_eggers_p))
+    filter(!is.na(log_eggers_p), is.finite(log_eggers_p)) %>%
+    droplevels()
+
+  groups_present <- group_order[group_order %in% as.character(unique(plot_df$Group))]
+  egger_group_colors <- group_colors[names(group_colors) %in% groups_present]
+
+  # No exposure in these categories has at least 10 studies in the current data,
+  # so their Egger-plot legend entries are intentionally omitted:
+  # "Herbal & Botanical"        = "#00695C"
+  # "Metabolites & Amino Acids" = "#880E4F"
   
   p <- ggplot(plot_df,
               aes(x = log_eggers_p, y = I2, color = as.character(Group))) +
     geom_point(aes(size = n_studies), alpha = 0.85) +
     geom_text_repel(aes(label = exposure_label), size = 3, max.overlaps = 20) +
     geom_vline(xintercept = log(0.05), linetype = "dashed") +   # log(0.05) ≈ -2.996
-    scale_color_manual(values = group_colors, guide = "none") +
+    scale_color_manual(values = egger_group_colors, breaks = groups_present,
+                       drop = TRUE, guide = "none") +
     scale_size_continuous(range = c(1, 4), name = "Number of studies") +
     labs(
-      title = "Egger's Test log(p-value) vs Heterogeneity",
+      title = paste0(
+        "Egger's Test log(p-value) vs Heterogeneity",
+        ifelse(is.null(cancer_label), "", paste0(" - ", str_to_sentence(cancer_label)))
+      ),
       x     = "log(Egger's p-value)",
       y     = expression(I^2)
     ) +
@@ -587,32 +615,113 @@ make_eggers_heterogeneity_plot <- function(dat_clean, min_studies = 2,
 # 6. Render all figures
 # =============================================================================
 
-save_forest_figure(
-  direction  = "Protective",
-  title_text = "Exposures inversely associated with breast cancer risk\n(meta-analysis of observational studies)",
-  xlim_max   = 2.2,
-  filename   = "forest_protective.pdf"
+render_args <- commandArgs(trailingOnly = TRUE)
+eggers_only <- "--eggers-only" %in% render_args
+forests_only <- "--forests-only" %in% render_args
+diagnostics_only <- "--diagnostics-only" %in% render_args
+
+forest_configs <- tribble(
+  ~cancer_label,    ~dataset_label, ~input_file,                                      ~output_suffix,
+  "breast cancer",  "combined",    "exposures_meta_analysis_breast_combined.xlsx",   "breast",
+  "ovarian cancer", "combined",    "exposures_meta_analysis_ovarian_combined.xlsx",  "ovarian",
+  "uterine cancer", "combined",    "exposures_meta_analysis_uterine_combined.xlsx",  "uterine",
+  "breast cancer",  "dietary",     "exposures_meta_analysis_breast_dietary.xlsx",    "breast_dietary",
+  "ovarian cancer", "dietary",     "exposures_meta_analysis_ovarian_dietary.xlsx",   "ovarian_dietary",
+  "uterine cancer", "dietary",     "exposures_meta_analysis_uterine_dietary.xlsx",   "uterine_dietary"
 )
 
-save_forest_figure(
-  direction  = "Harmful",
-  title_text = "Exposures positively associated with breast cancer risk\n(meta-analysis of observational studies)",
-  xlim_max   = 4.5,
-  filename   = "forest_harmful.pdf"
+if (!eggers_only && !diagnostics_only) {
+  for (i in seq_len(nrow(forest_configs))) {
+    config <- forest_configs[i, ]
+    input_file <- config$input_file[[1]]
+    cancer_label <- config$cancer_label[[1]]
+    dataset_label <- config$dataset_label[[1]]
+    output_suffix <- config$output_suffix[[1]]
+
+    if (!file.exists(input_file)) {
+      stop("Required forest-plot input is missing: ", input_file)
+    }
+
+    plot_data <- read_analysis_data(input_file)
+    validate_group_map(plot_data, input_file)
+    analysis_subtitle <- if (dataset_label == "dietary") {
+      "\nmeta-analysis of dietary-intake studies"
+    } else {
+      ""
+    }
+
+    save_forest_figure(
+      dat_clean    = plot_data,
+      direction    = "Protective",
+      cancer_label = cancer_label,
+      title_text   = paste0(
+        "Exposures inversely associated with ", cancer_label, " risk",
+        analysis_subtitle
+      ),
+      xlim_max     = 2.2,
+      filename     = paste0("forest_protective_", output_suffix, ".pdf")
+    )
+
+    save_forest_figure(
+      dat_clean    = plot_data,
+      direction    = "Harmful",
+      cancer_label = cancer_label,
+      title_text   = paste0(
+        "Exposures positively associated with ", cancer_label, " risk",
+        analysis_subtitle
+      ),
+      xlim_max     = 4.5,
+      filename     = paste0("forest_harmful_", output_suffix, ".pdf")
+    )
+  }
+
+}
+
+if (!forests_only) {
+  combined_configs <- forest_configs %>% filter(dataset_label == "combined")
+  for (i in seq_len(nrow(combined_configs))) {
+    config <- combined_configs[i, ]
+    input_file <- config$input_file[[1]]
+    cancer_label <- config$cancer_label[[1]]
+    output_suffix <- config$output_suffix[[1]]
+    plot_data <- read_analysis_data(input_file)
+    validate_group_map(plot_data, input_file)
+
+    if (!eggers_only) {
+      es_filename <- paste0("plot_es_vs_heterogeneity_", output_suffix, ".pdf")
+      make_es_heterogeneity_plot(
+        dat_clean   = plot_data,
+        min_studies = 3,
+        filename    = es_filename,
+        cancer_label = cancer_label
+      )
+      if (output_suffix == "breast") {
+        file.copy(
+          file.path(output_dir, es_filename),
+          file.path(output_dir, "plot_es_vs_heterogeneity.pdf"),
+          overwrite = TRUE
+        )
+      }
+    }
+
+    eggers_filename <- paste0("plot_eggers_vs_heterogeneity_", output_suffix, ".pdf")
+    make_eggers_heterogeneity_plot(
+      dat_clean   = plot_data,
+      min_studies = 10,
+      filename    = eggers_filename,
+      cancer_label = cancer_label
+    )
+    if (output_suffix == "breast") {
+      file.copy(
+        file.path(output_dir, eggers_filename),
+        file.path(output_dir, "plot_eggers_vs_heterogeneity.pdf"),
+        overwrite = TRUE
+      )
+    }
+  }
+}
+
+message(
+  if (eggers_only) "Egger figures saved to: " else if (forests_only) "Forest figures saved to: " else if (diagnostics_only) "Diagnostic figures saved to: " else "All figures saved to: ",
+  getwd()
 )
-
-make_es_heterogeneity_plot(
-  dat_clean   = dat_clean,
-  min_studies = 2,
-  filename    = "plot_es_vs_heterogeneity.pdf"
-)
-
-make_eggers_heterogeneity_plot(
-  dat_clean   = dat_clean,
-  min_studies = 2,
-  filename    = "plot_eggers_vs_heterogeneity.pdf"
-)
-
-message("All figures saved to: ", getwd())
-
-

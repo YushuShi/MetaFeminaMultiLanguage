@@ -569,16 +569,16 @@ save_forest_figure <- function(direction, title_text, xlim_max, filename) {
 
 fig_protective <- save_forest_figure(
   direction  = "Protective",
-  title_text = "Exposures inversely associated with breast cancer risk\n(meta-analysis of observational studies)",
+  title_text = "Exposures inversely associated with breast cancer risk",
   xlim_max   = 2.2,
-  filename   = "forest_protective.pdf"
+  filename   = "forest_protective_breast.pdf"
 )
 
 fig_harmful <- save_forest_figure(
   direction  = "Harmful",
-  title_text = "Exposures positively associated with breast cancer risk\n(meta-analysis of observational studies)",
+  title_text = "Exposures positively associated with breast cancer risk",
   xlim_max   = 4.5,
-  filename   = "forest_harmful.pdf"
+  filename   = "forest_harmful_breast.pdf"
 )
 
 fig_protective

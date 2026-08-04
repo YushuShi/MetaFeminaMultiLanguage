@@ -43,6 +43,11 @@ print = safe_print
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, 'data')
 
+EGGERS_MIN_STUDIES = 10
+EGGERS_FEWER_THAN_TEN_MESSAGE = (
+    "Egger’s test is generally not recommended when fewer than 10 studies are available."
+)
+
 # ... (rest of imports)
 
 DISEASE_ALIASES = {
@@ -363,6 +368,8 @@ def get_funnel_interpretation(disease, exposure, n_studies, eggers_p, intercept)
     """
     Provides a brief rule-based interpretation of the funnel plot and Egger's test.
     """
+    if n_studies < EGGERS_MIN_STUDIES:
+        return EGGERS_FEWER_THAN_TEN_MESSAGE
     if eggers_p is None:
         interpretation = "Insufficient studies to perform formal publication bias testing."
     elif eggers_p < 0.05:
@@ -588,60 +595,9 @@ def get_analysis_data(disease, exposure, outcome="Incidence", exclude_meta=False
 
     # Initialize exclusions column to 0
     df['exclusions'] = 0
-    
-    # Apply verification consensus and exclusions overlay if available
-    verifications_file = os.path.join(DATA_DIR, "verifications.json")
-    if os.path.exists(verifications_file):
-        try:
-            with open(verifications_file, 'r', encoding='utf-8') as f:
-                verifications = json.load(f)
-            
-            canonical_exp = get_canonical_name(exposure)
-            context_key = f"{disease}_{canonical_exp}_{outcome}".lower().replace(" ", "_")
-            
-            overlay_count = 0
-            for idx, row in df.iterrows():
-                pmid = str(row.get("PMID", ""))
-                if pmid in verifications:
-                    v_info = verifications[pmid]
-                    
-                    # Set exclusions
-                    context_excl = v_info.get("context_exclusions", {})
-                    exclusion_val = context_excl.get(context_key, 0)
-                    df.at[idx, 'exclusions'] = exclusion_val
-                    
-                    # Apply consensus data
-                    contexts = v_info.get("contexts", {})
-                    if context_key in contexts:
-                        consensus = contexts[context_key].get("consensus_data")
-                        if consensus:
-                            for key, val in consensus.items():
-                                if val is not None and val != "":
-                                    df_col = key
-                                    if key == "Comparison Type":
-                                        df_col = "comparison_type"
-                                    
-                                    if df_col in df.columns:
-                                        # Cast appropriately
-                                        if df_col in ["Effect Size", "Lower CI", "Upper CI", "Cases", "Sample Size"]:
-                                            try:
-                                                df.at[idx, df_col] = float(val) if df_col not in ["Cases", "Sample Size"] else int(val)
-                                            except (ValueError, TypeError):
-                                                df.at[idx, df_col] = val
-                                        else:
-                                            df.at[idx, df_col] = val
-                            overlay_count += 1
-            if overlay_count > 0:
-                print(f"  [Overlay] Applied verification consensus to {overlay_count} studies in get_analysis_data")
-        except Exception as e:
-            print(f"Error applying verification overlay to dataframe: {e}")
-            
-    # Filter out studies that have been excluded (exclusions >= 2)
-    df_len_before = len(df)
-    df = df[df['exclusions'] < 2].copy()
-    df_len_after = len(df)
-    if df_len_after < df_len_before:
-        print(f"  [Overlay] Filtered out {df_len_before - df_len_after} excluded studies (exclusions >= 2) from analysis.")
+
+    # Crowdsourced reports are advisory only. They are intentionally not read
+    # here and cannot alter or exclude studies from the analysis dataframe.
 
     df['SE'] = df.apply(calculate_se, axis=1)
     df_clean = df.dropna(subset=['Effect Size', 'SE'])
@@ -652,7 +608,16 @@ def get_analysis_data(disease, exposure, outcome="Incidence", exclude_meta=False
     print(f"[MetaFemina] Stage 4/4: Running meta-analysis on {len(df_clean)} extracted studies...")
     return perform_meta_analysis(df_clean, disease, exposure=exposure, outcome=outcome, exclude_meta=exclude_meta, df_all=df_clean, screening_stats=screening_stats)
 
-def perform_meta_analysis(df_clean, disease, exposure, outcome="Incidence", exclude_meta=False, df_all=None, screening_stats=None):
+def perform_meta_analysis(
+    df_clean,
+    disease,
+    exposure,
+    outcome="Incidence",
+    exclude_meta=False,
+    df_all=None,
+    screening_stats=None,
+    generate_plots=True,
+):
     """
     Performs random-effects meta-analysis on the provided DataFrame.
     """
@@ -905,15 +870,16 @@ def perform_meta_analysis(df_clean, disease, exposure, outcome="Incidence", excl
 
                 # Baujat Plot (non-fatal)
                 baujat_url = None
-                try:
-                    baujat_path = generate_baujat_plot(analysis_df, disease, exposure, outcome=outcome, exclude_meta=exclude_meta)
-                    if baujat_path:
-                        baujat_url = f"{baujat_path}?t=" + str(np.random.randint(0,10000))
-                        print(f"DEBUG Baujat: Generated at {baujat_path}")
-                except Exception as e:
-                    print(f"Baujat plot generation failed (non-fatal): {e}")
-                    import traceback
-                    traceback.print_exc()
+                if generate_plots:
+                    try:
+                        baujat_path = generate_baujat_plot(analysis_df, disease, exposure, outcome=outcome, exclude_meta=exclude_meta)
+                        if baujat_path:
+                            baujat_url = f"{baujat_path}?t=" + str(np.random.randint(0,10000))
+                            print(f"DEBUG Baujat: Generated at {baujat_path}")
+                    except Exception as e:
+                        print(f"Baujat plot generation failed (non-fatal): {e}")
+                        import traceback
+                        traceback.print_exc()
 
                 # Leave-one-out analysis (non-fatal)
                 loo_results = []
@@ -965,13 +931,13 @@ def perform_meta_analysis(df_clean, disease, exposure, outcome="Incidence", excl
             fp_df = df_clean.copy()
             num_studies = len(fp_df)
             
-            # More aggressive dynamic height scaling
-            # Default: 0.4 inch per study. 
-            # If studies > 70, increase to 0.6 inch per study for a "longer" plot.
+            # Keep every study label legible without producing an unnecessarily
+            # enormous web asset. The forestplot package must receive figsize
+            # directly; setting only pyplot's current figure is ignored.
             if num_studies > 70:
-                dynamic_height = max(7, 0.6 * num_studies + 5)
+                dynamic_height = max(7, 0.25 * num_studies + 4)
             else:
-                dynamic_height = max(7, 0.4 * num_studies + 3.5) 
+                dynamic_height = max(7, 0.35 * num_studies + 3.5)
             
             # Dynamic font scaling
             if num_studies < 15: font_size = 10
@@ -981,7 +947,6 @@ def perform_meta_analysis(df_clean, disease, exposure, outcome="Incidence", excl
             
             plt.rcParams.update({'font.size': font_size})
             
-            plt.figure(figsize=(12, dynamic_height)) # Increased width for annotations
             if not fp_df.empty:
                 fp_df = fp_df.rename(columns={'Study': 'group', 'log_ES': 'est'})
                 fp_df['lb'] = fp_df['est'] - 1.96 * fp_df['log_SE']
@@ -1001,29 +966,32 @@ def perform_meta_analysis(df_clean, disease, exposure, outcome="Incidence", excl
                 is_log = any(str(row['Effect Type']).upper() in ['OR', 'RR', 'HR', 'ODDS RATIO', 'RISK RATIO'] for _, row in fp_df.iterrows())
                 xlbl = "Log Relative Risk (95% CI)" if is_log else "Effect Size (95% CI)"
                 
-                forestplot.forestplot(
+                forest_ax = forestplot.forestplot(
                     fp_df,
                     estimate="est",
                     ll="lb",
                     hl="ub",
                     varlabel="label",
-                    right_ann_col=['Est. RR (95% CI)'],
-                    right_ann_kwargs={'header': 'Est. RR (95% CI)', 'fontsize': font_size},
+                    rightannote=['Est. RR (95% CI)'],
+                    right_annoteheaders=['Est. RR (95% CI)'],
                     xlabel=xlbl,
                     title=f"Forest Plot: {disease} vs {exposure}",
-                    flush=True, # Left flush labels for cleaner look
-                    shade_alt_rows=True # Alternate shading for readability
+                    flush=True,
+                    color_alt_rows=True,
+                    figsize=(12, dynamic_height),
                 )
                 
-                # Create exposure subfolder
-                exposure_dir = os.path.join("static", safe_exposure)
-                os.makedirs(exposure_dir, exist_ok=True)
-                
-                # Generate unique filename using pre-defined safe strings
-                filename_base = f"forest_{safe_disease}_{safe_outcome}_{safe_meta}.png"
-                
-                plot_path = os.path.join(exposure_dir, filename_base)
-                plt.savefig(plot_path, bbox_inches='tight')
+                if generate_plots:
+                    # Create exposure subfolder
+                    exposure_dir = os.path.join("static", safe_exposure)
+                    os.makedirs(exposure_dir, exist_ok=True)
+
+                    # Generate unique filename using pre-defined safe strings
+                    filename_base = f"forest_{safe_disease}_{safe_outcome}_{safe_meta}.png"
+
+                    plot_path = os.path.join(exposure_dir, filename_base)
+                    forest_ax.figure.savefig(plot_path, bbox_inches='tight')
+                plt.close(forest_ax.figure)
             plt.close() 
         except Exception as e:
             print(f"Forest plot failed: {e}")
@@ -1061,13 +1029,14 @@ def perform_meta_analysis(df_clean, disease, exposure, outcome="Incidence", excl
                 plt.title(f'Funnel Plot: {disease} vs {exposure}')
                 plt.grid(True, alpha=0.2)
                 
-                # Generate unique filename for funnel plot using pre-defined safe strings
-                funnel_filename = f"funnel_{safe_disease}_{safe_outcome}_{safe_meta}.png"
-                exposure_dir = os.path.join("static", safe_exposure)
-                os.makedirs(exposure_dir, exist_ok=True)
-                
-                funnel_path = os.path.join(exposure_dir, funnel_filename)
-                plt.savefig(funnel_path, bbox_inches='tight')
+                if generate_plots:
+                    # Generate unique filename for funnel plot using pre-defined safe strings
+                    funnel_filename = f"funnel_{safe_disease}_{safe_outcome}_{safe_meta}.png"
+                    exposure_dir = os.path.join("static", safe_exposure)
+                    os.makedirs(exposure_dir, exist_ok=True)
+
+                    funnel_path = os.path.join(exposure_dir, funnel_filename)
+                    plt.savefig(funnel_path, bbox_inches='tight')
                 plt.close() 
         except Exception as e:
             print(f"Funnel plot failed: {e}")
@@ -1098,8 +1067,16 @@ def perform_meta_analysis(df_clean, disease, exposure, outcome="Incidence", excl
             "summary_html": summary,
             "headline": headline,
             "screening_stats": screening_stats,
-            "plot_url": f"static/{safe_exposure}/forest_{safe_disease}_{safe_outcome}_{safe_meta}.png?t=" + str(np.random.randint(0,10000)),
-            "funnel_plot_url": f"static/{safe_exposure}/funnel_{safe_disease}_{safe_outcome}_{safe_meta}.png?t=" + str(np.random.randint(0,10000)),
+            "plot_url": (
+                f"static/{safe_exposure}/forest_{safe_disease}_{safe_outcome}_{safe_meta}.png?t="
+                + str(np.random.randint(0,10000))
+                if generate_plots else None
+            ),
+            "funnel_plot_url": (
+                f"static/{safe_exposure}/funnel_{safe_disease}_{safe_outcome}_{safe_meta}.png?t="
+                + str(np.random.randint(0,10000))
+                if generate_plots else None
+            ),
             "baujat_plot_url": baujat_url
         }
         
@@ -2476,49 +2453,25 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
             short_author = f"{authors.split(',')[0]} et al." if ',' in authors else authors
             study_label = f"{short_author} ({year}) [PMID: {pmid}]"
 
-            # Check for existing consensus in verifications.json to bypass screening
-            has_consensus = False
-            consensus = None
-            verifications_file = os.path.join(DATA_DIR, "verifications.json")
-            if os.path.exists(verifications_file):
-                try:
-                    with open(verifications_file, 'r', encoding='utf-8') as f:
-                        verifications = json.load(f)
-                    canonical_exp = get_canonical_name(exposure_keyword)
-                    context_key = f"{disease_keyword}_{canonical_exp}_{outcome_keyword}".lower().replace(" ", "_")
-                    if str(pmid) in verifications:
-                        v_info = verifications[str(pmid)]
-                        if context_key in v_info.get("contexts", {}):
-                            consensus = v_info["contexts"][context_key].get("consensus_data")
-                            if consensus:
-                                has_consensus = True
-                except Exception:
-                    pass
-
             is_associated = True
             screening_reason = ""
-            if not has_consensus:
-                try:
-                    screen_res = screen_article_relevance_llm(
-                        client=client,
-                        gemini_client=gemini_client,
-                        abstract=abstract,
-                        title=title,
-                        exposure=exposure_keyword,
-                        model_override=model
-                    )
-                    if screen_res:
-                        is_associated = screen_res.get('is_directly_associated', True)
-                        screening_reason = screen_res.get('reason', '')
-                        if "No LLM client succeeded" not in screening_reason:
-                            with stats_lock:
-                                screening_stats["llm_success_count"] += 1
-                except Exception as e:
-                    print(f"  [Screening] Error screening article {i+1}/{len(filtered_articles)} {study_label}: {e}")
-            else:
-                print(f"  [Screening] Bypassing screening for article {i+1}/{len(filtered_articles)} '{study_label}' due to existing consensus in verifications.json")
-                with stats_lock:
-                    screening_stats["consensus_bypassed"] += 1
+            try:
+                screen_res = screen_article_relevance_llm(
+                    client=client,
+                    gemini_client=gemini_client,
+                    abstract=abstract,
+                    title=title,
+                    exposure=exposure_keyword,
+                    model_override=model
+                )
+                if screen_res:
+                    is_associated = screen_res.get('is_directly_associated', True)
+                    screening_reason = screen_res.get('reason', '')
+                    if "No LLM client succeeded" not in screening_reason:
+                        with stats_lock:
+                            screening_stats["llm_success_count"] += 1
+            except Exception as e:
+                print(f"  [Screening] Error screening article {i+1}/{len(filtered_articles)} {study_label}: {e}")
 
             if not is_associated:
                 print(f"  [Screening] Skipping article {i+1}/{len(filtered_articles)} '{study_label}': Not directly associated with exposure '{exposure_keyword}'. Reason: {screening_reason}")
@@ -2574,28 +2527,6 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
                  print("Error: No LLM Client initialized.")
                  return
 
-            # If extraction failed or has no effect size, but we have consensus, construct a fallback extraction result
-            if (not extracted or not extracted.get('effect_size')) and has_consensus and consensus:
-                print(f"  [Extraction] Extraction yielded no effect size for '{study_label}', but using consensus data as fallback.")
-                extracted = {
-                    "effect_size": consensus.get("Effect Size"),
-                    "effect_type": consensus.get("Effect Type") or ("OR" if consensus.get("Design") == "Case-Control" else "RR"),
-                    "comparison_type": consensus.get("Comparison Type"),
-                    "ci_lower": consensus.get("Lower CI"),
-                    "ci_upper": consensus.get("Upper CI"),
-                    "total_n": consensus.get("Sample Size"),
-                    "cases": consensus.get("Cases"),
-                    "design": consensus.get("Design"),
-                    "timing": consensus.get("Timing"),
-                    "continent": consensus.get("Continent") or "Other",
-                    "stage": consensus.get("Stage") or "NA",
-                    "exposure_measurement_type": consensus.get("exposure_measurement_type") or "unclear",
-                    "exposure_measurement_supporting_text": consensus.get("exposure_measurement_supporting_text") or "",
-                    "relevance_check": {"verdict": "Relevant", "reason": "Bypassed via verification consensus"},
-                    "needs_inversion": False
-                }
-                used_llm = "Consensus"
-                 
             # Consensus check for inversion
             if extracted and extracted.get('effect_size'):
                 if oai_extracted and oai_extracted.get('effect_size') and gemini_extracted and gemini_extracted.get('effect_size'):
@@ -2653,30 +2584,10 @@ def extract_data_llm(articles, exclude_meta=False, exposure_keyword=None, diseas
                  relevance_verdict = relevance_info.get('verdict', 'Relevant') if isinstance(relevance_info, dict) else 'Relevant'
                  relevance_reason = relevance_info.get('reason', '') if isinstance(relevance_info, dict) else ''
 
-                 # Skip studies the LLM deems not relevant, unless we have a verification consensus on disk
-                 has_consensus = False
-                 verifications_file = os.path.join(DATA_DIR, "verifications.json")
-                 if os.path.exists(verifications_file):
-                     try:
-                         with open(verifications_file, 'r', encoding='utf-8') as f:
-                             verifications = json.load(f)
-                         canonical_exp = get_canonical_name(exposure_keyword)
-                         context_key = f"{disease_keyword}_{canonical_exp}_{outcome_keyword}".lower().replace(" ", "_")
-                         if str(pmid) in verifications:
-                             v_info = verifications[str(pmid)]
-                             if context_key in v_info.get("contexts", {}):
-                                 consensus = v_info["contexts"][context_key].get("consensus_data")
-                                 if consensus:
-                                     has_consensus = True
-                     except Exception:
-                         pass
-
-                 if relevance_verdict == 'Not Relevant' and not has_consensus:
+                 # Crowdsourced reports cannot override the relevance screen.
+                 if relevance_verdict == 'Not Relevant':
                      print(f"  [Relevance] Skipping '{study_label}': {relevance_reason}")
                      return
-                 elif relevance_verdict == 'Not Relevant' and has_consensus:
-                     print(f"  [Relevance] Bypassing skip for '{study_label}' due to existing consensus in verifications.json")
-                     relevance_verdict = 'Relevant'
 
                  # --- Direction standardisation: always HIGH vs LOW ---
                  raw_es     = extracted.get('effect_size')

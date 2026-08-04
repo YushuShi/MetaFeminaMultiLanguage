@@ -1,0 +1,535 @@
+Global burden of breast cancer and its association with red meat consumption: spatiotemporal trends, projections, and triangulation of evidence
+Background
+Despite being the leading cause of cancer–related deaths among women globally, a comprehensive understanding of breast cancer (BC) remains limited due to gaps in data quality, geographic coverage, burden metrics, and risk factor attribution. This study utilized a multi–model approach to assess the global burden of BC and its projected trends, complemented by Mendelian randomization (MR) analysis to explore the potential causal relationship between red meat consumption and BC risk.
+Methods
+This study utilized GBD data from 1990 to 2021 to assess the epidemiology of BC. Temporal trends and risk factor dynamics were examined using joinpoint regression and age–period–cohort (APC) analyses. Bayesian APC modeling was employed to project the disease burden through 2030. The analysis was stratified by socio–demographic index (SDI) and conducted by continent. Disease attribution factors were validated through MR.
+Results
+The study identified significant geographical and gender disparities in global BC epidemiological patterns in 2021. Analysis of data from 1990 to 2021 revealed age–dependent variations in disease burden, particularly affecting populations aged 50 years and older. Although global disability–adjusted life years (DALYs) and mortality rates exhibited an overall decline, incidence rates continued to rise. Female DALYs consistently exceeded those of males, with male metrics showing post–peak declines and projected further reductions by 2030. Both genders demonstrated increasing trends in incidence and prevalence, with females exhibiting notably higher rates in high–income regions, including North America, Western Europe, Australia, and New Zealand. In contrast, males showed a relative predominance in certain African countries, parts of Western Europe, and China. The disease burden was inversely associated with the socio–demographic index (SDI), indicating limited improvements in regions with low SDI. By 2021, high red meat intake and elevated BMI were identified as the leading contributors to BC mortality in the GBD comparative risk assessment framework. Exploratory Mendelian randomization analysis provided suggestive evidence that genetically predicted beef consumption may be associated with increased BC risk, though these findings should be interpreted cautiously due to methodological limitations.
+Conclusion
+The global burden of BC is increasing, particularly in low– and middle–SDI regions, highlighting the urgent need for coordinated international efforts to strengthen prevention and control strategies. Priority interventions should combine evidence–based screening practices from high–SDI settings with affordable, targeted therapies, while simultaneously expanding access to treatment, increasing healthcare capacity, and enhancing health education in resource–limited areas. Furthermore, addressing modifiable risk factors requires comprehensive dietary interventions, including promoting plant-based nutrition, launching community-based obesity prevention programs, and implementing public health strategies to reduce red meat consumption at the population level.
+Supplementary Information
+The online version contains supplementary material available at 10.1186/s12957-026-04426-z.
+Keywords
+Introduction
+Breast cancer (BC) is among the most prevalent malignancies impacting women globally [ 1 ], ranking as the leading cause of cancer incidence worldwide [ 2 ]. This disease is marked by its high prevalence [ 3 ] and substantial disease burden [ 4 ]. According to the latest data from the International Agency for Research on Cancer, an estimated 2.3 million new cases of BC were diagnosed in 2020, leading to 685,000 deaths—constituting 11.7% of all cancer cases [ 5 ]. The disease’s burden is characterized by pronounced geographical [ 6 ] and socioeconomic disparities [ 7 ], predominantly due to variations in access to diagnostic [ 8 ] and therapeutic resources [ 9 ]. Recent epidemiological data underscore the urgent necessity for comprehensive investigations to inform equitable and effective prevention and control strategies.
+Numerous prior studies have elucidated key aspects of BC epidemiology, including associations with reproductive factors [ 10 ], genetic susceptibility [ 11 ], and lifestyle–related risk factors [ 12 ]. Global Burden of Disease (GBD) studies have systematically quantified temporal trends in incidence, mortality, and disability–adjusted life years (DALYs) [ 13 ]. However, current research faces several limitations, such as incomplete data quality and coverage, limited assessment of disease burden indicators, and insufficient clarity in risk factor attribution.
+To conduct a more in–depth and comprehensive investigation of the disease burden of BC, this study employed a multi–model approach stratified by continent, sex, and Socio–demographic Index (SDI) to thoroughly analyze the spatiotemporal trends in BC burden. The research comprehensively assessed the complex interactions among multiple variables, including age, disease stage, and birth cohort effects, thereby enhancing the overall evaluation of BC burden. To further explore potential drivers of BC burden identified in the GBD analysis, this study incorporated an exploratory Mendelian randomization (MR) component to assess whether genetically predicted red meat intake shows patterns consistent with the observed epidemiological associations.
+Materials and methods
+Data source
+The disease burden data utilized in this study were sourced from the 2021 GBD database ( https://vizhub.healthdata.org/gbd–results/ ). The GBD 2021 project synthesized 100,983 global disease–related data sources, providing comprehensive evaluations and estimates of disease burden for 371 diseases and injuries across 204 countries and regions [ 14 ]. Demographic parameters for predictive analyses were also derived from this authoritative database. Data on red meat consumption, including pork, lamb, and beef, were obtained from the UK Biobank cohort, comprising 460,162, 460,006, and 461,053 individuals of European ancestry for each respective meat type ( http://www.nealelab.is/uk–biobank ; Table 1 ). BC data were sourced from the BC Association Consortium, consisting of 122,977 cases and 105,974 controls [ 15 ]. Fig. 1 shows the research design roadmap.
+Table 1 Mendelian randomization Data source indication GWAS ID Trait Year Consortium N . cases N . controls Samplesize Number of SNPs ukb–b–5640 Pork intake 2018 MRC–IEU 460,162 / 460,162 9,851,867 ukb–b–14,179 Mutton intake 2018 MRC–IEU 460,006 / 460,006 9,851,867 ukb–b–2862 Beef intake 2018 MRC–IEU 461,053 / 461,053 9,851,867
+Mendelian randomization Data source indication
+GWAS ID
+Trait
+Year
+Consortium
+N . cases
+N . controls
+Samplesize
+Number of SNPs
+ukb–b–5640
+Pork intake
+2018
+MRC–IEU
+460,162
+/
+460,162
+9,851,867
+ukb–b–14,179
+Mutton intake
+2018
+MRC–IEU
+460,006
+/
+460,006
+9,851,867
+ukb–b–2862
+Beef intake
+2018
+MRC–IEU
+461,053
+/
+461,053
+9,851,867
+Fig. 1 Study workflow for spatiotemporal trend analysis of global breast cancer burden and causal inference of red meat consumption. This figure illustrates the multistage analytical framework of this study, designed to decipher the spatiotemporal distribution patterns of global breast cancer (BC) and its causal association with red meat consumption. A Data Acquisition and Integration: Integrated epidemiological indicators from 204 countries and regions in the 2021 Global Burden of Disease (GBD) database, along with genetic data on red meat (pork, lamb, beef) intake from the UK Biobank. B Epidemiological Trend Projection: Joinpoint regression models analyzed annual percentage changes (APCs), while age-period-cohort (APC) models and Bayesian APC (BAPC) models assessed cohort effects and projected future disease burden. C Mendelian Randomization (MR) Analysis: Employed univariate and multivariate MR methods using strong instrumental variables (single-nucleotide polymorphisms, SNPs) to infer causal relationships between red meat intake and breast cancer incidence. D Multidimensional Stratified Visualization: Presented findings stratified by sex, 16 age groups, and Socio-Demographic Index (SDI)
+Study workflow for spatiotemporal trend analysis of global breast cancer burden and causal inference of red meat consumption. This figure illustrates the multistage analytical framework of this study, designed to decipher the spatiotemporal distribution patterns of global breast cancer (BC) and its causal association with red meat consumption. A Data Acquisition and Integration: Integrated epidemiological indicators from 204 countries and regions in the 2021 Global Burden of Disease (GBD) database, along with genetic data on red meat (pork, lamb, beef) intake from the UK Biobank. B Epidemiological Trend Projection: Joinpoint regression models analyzed annual percentage changes (APCs), while age-period-cohort (APC) models and Bayesian APC (BAPC) models assessed cohort effects and projected future disease burden. C Mendelian Randomization (MR) Analysis: Employed univariate and multivariate MR methods using strong instrumental variables (single-nucleotide polymorphisms, SNPs) to infer causal relationships between red meat intake and breast cancer incidence. D Multidimensional Stratified Visualization: Presented findings stratified by sex, 16 age groups, and Socio-Demographic Index (SDI)
+Analysis index
+This study utilized data from the GBD 2021, covering multidimensional BC burden metrics across 204 countries and regions from 1990 to 2021. The analysis included global and continental estimates of incidence, prevalence, mortality, DALYs, age–standardized incidence rate (ASIR), age–standardized prevalence rate (ASPR), age–standardized mortality rate (ASMR), age–standardized DALY rate (ASDR), and associated risk factors, stratified by the SDI. A sex– and age–stratified framework was employed, with age categories spanning 16 groups: 15–19, 20–24, 25–29, 30–34, 35–39, 40–44, 45–49, 50–54, 55–59, 60–64, 65–69, 70–74, 75–79, 80–84, 85–89, 90–94, and ≥ 95 years. The study systematically evaluated the distribution patterns and spatiotemporal trends in BC burden.
+In the MR analysis, instrumental variables were selected based on specific criteria. First, single nucleotide polymorphisms (SNPs) significantly associated with pork, lamb, or beef intake ( P < \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\:5\times\:{10}^{-8}$$\end{document} ) were identified as potential instruments. To ensure independence among the selected SNPs, linkage disequilibrium (LD) clumping was performed using stringent parameters ( LDR 2 <0.001, kb =10000). Ambiguous palindromic SNPs were excluded using the harmonise_data function. The F–statistic ( F = \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\:{\beta\:}^{2}/{\mathrm{s}\mathrm{e}}^{2}$$\end{document} ) was calculated for each remaining SNP, and variants with F <10 were excluded to minimize weak instrument bias [ 16 ]. All genome–wide association study data used in this analysis were publicly available, with each contributing study having obtained appropriate ethical approvals.
+Statistical analysis
+In this study, Trend analysis was conducted using the Joinpoint Regression Model (Version 5.3.0.0), where the annual percentage change (APC) and average annual percentage change (AAPC) were calculated for each temporal segment. Age–period–cohort analysis was employed to evaluate the distribution of BC incidence, mortality, and prevalence across different age groups, time periods, and birth cohorts. The age–period–cohort model is primarily used to analyze temporal trends in the incidence and mortality of chronic diseases and to predict future disease burden. Within the age–period–cohort framework, the period effect reflects temporal variations in disease rates due to environmental or societal factors affecting the entire population simultaneously. The age effect, one of the most significant determinants of disease occurrence, captures the biological changes in disease risk associated with aging. The cohort effect results from differential exposure to risk factors across generations, leading to variations in disease rates among different birth cohorts.
+This study concurrently employs the Bayesian Age–Period–Cohort (BAPC) modeling approach, a statistical framework designed to analyze and predict the influence of age, time period, and birth cohort on demographic or epidemiological outcomes, such as mortality rates and disease incidence. By incorporating Bayesian statistical methods, the BAPC model enhances the capability to handle complex data structures and quantify uncertainty in parameter estimation.
+MR is a method that utilizes genetic variants, specifically SNPs, as instrumental variables (IVs) to infer causal relationships between exposures and outcomes. MR is a method that utilizes genetic variants, specifically SNPs, as instrumental variables (IVs) to infer causal relationships between exposures and outcomes. It is important to note that the genetic instruments used in this study were derived from GWAS conducted in populations of predominantly European ancestry (UK Biobank and BCAC); therefore, the MR findings are most directly applicable to European-ancestry populations and may not be generalizable to other ancestral groups without further validation. These IVs are associated with the exposure and are unaffected by confounding factors [ 17 ]. As part of a triangulation approach, univariable and multivariable MR analyses were conducted to examine the association between genetically predicted red meat consumption (pork, lamb, and beef) and breast cancer risk. Details of the genetic instrument selection, data sources, and MR sensitivity analyses are provided above.
+The multi–platform data analysis workflow utilized Joinpoint regression software, alongside Python 3.12 and R 4.4.3 environments, to facilitate statistical modeling and visualization. All hypothesis tests were two–sided, with statistical significance defined as P < 0.05.
+Results
+Analysis of the spatiotemporal trends of the global burden of breast cancer
+Although male BC remains a rare disease, accounting for less than 1% of all BC cases globally, distinct epidemiological patterns were observed. In 2021, elevated age-standardized prevalence rates among males were noted in specific sub-Saharan African countries (21.000 per 100,000; 95% UI: 9.000–54.000), Western Europe (11.000 per 100,000; 95% UI: 8.700–15.000), and China (12.000 per 100,000; 95% UI: 4.600–17.000). These rates were substantially lower than those observed in females (approximately 70-fold difference), and the geographical distribution differed markedly from that of female BC. These observations underscore the need for further research into male BC pathogenesis, while recognizing that the primary global burden of BC remains overwhelmingly concentrated in women (Fig. 2 ab, all rates expressed per 100,000 population) (Appendix 1).
+Fig. 2 Spatial distribution analysis of the global breast cancer disease burden (1990–2021). a Global distribution of female breast cancer prevalence in 2021; ( b ) Global distribution map of male breast cancer prevalence in 2021
+Spatial distribution analysis of the global breast cancer disease burden (1990–2021). a Global distribution of female breast cancer prevalence in 2021; ( b ) Global distribution map of male breast cancer prevalence in 2021
+Joinpoint regression analysis of global and continental BC disease burden
+Joinpoint regression analysis was utilized to evaluate the temporal trend of the BC burden (Fig. 3 ; Table 2 ). The study revealed that from 1990 to 2021, the global disease burden of BC exhibited a consistent upward trajectory, although notable temporal heterogeneity was observed in the growth rates of each indicator. Specifically, the prevalence rate increase accelerated significantly between 2003 and 2008 (Annual Percentage Change (APC) = 2.020, P < 0.001), followed by a deceleration, although it continued to rise (APC = 1.570, P < 0.001). The mortality rate peaked from 2014 to 2018 (APC = 1.710, P < 0.001). The incidence rate showed the most substantial increase from 1992 to 1995 (APC = 2.570, P < 0.001), after which the rate of increase slowed, yet maintained positive growth. DALYs experienced near stagnation from 1995 to 1998 (APC = 0.090, P < 0.001), whereas DALYs increased most rapidly from 2013 to 2018 (APC = 1.380, P < 0.001). Each index fluctuated at distinct stages, yet overall, an upward trend was maintained. These findings underscore the necessity for heightened attention to the dynamic changes in the determinants of disease burden across different time periods.
+Fig. 3 Global mortality, prevalence, incidence, and APC of DALYs for all age groups of breast cancer from 1990 to 2021. a Prevalence rate; ( b ) Mortality rate; ( C ) Incidence rate; ( d ) DALYs. * means P < 0.05 with significant results
+Global mortality, prevalence, incidence, and APC of DALYs for all age groups of breast cancer from 1990 to 2021. a Prevalence rate; ( b ) Mortality rate; ( C ) Incidence rate; ( d ) DALYs. * means P < 0.05 with significant results
+Table 2 AAPC results of the joint point regression analysis of the global burden of breast cancer disease Cohort Range Lower Endpoint Upper Endpoint AAPC Lower CI Upper CI P –Value Prevalence Rate Full Range 1990 2021 1.537 1.517 1.557 < 0.001 Death Rate Full Range 1990 2021 0.809 0.795 0.826 < 0.001 Incidence Rate Full Range 1990 2021 1.599 1.581 1.624 < 0.001 Disability–adjusted Life Years (DALYs) Full Range 1990 2021 0.717 0.701 0.733 < 0.001
+AAPC results of the joint point regression analysis of the global burden of breast cancer disease
+Cohort
+Range
+Lower Endpoint
+Upper Endpoint
+AAPC
+Lower CI
+Upper CI
+P –Value
+Prevalence Rate
+Full Range
+1990
+2021
+1.537
+1.517
+1.557
+< 0.001
+Death Rate
+Full Range
+1990
+2021
+0.809
+0.795
+0.826
+< 0.001
+Incidence Rate
+Full Range
+1990
+2021
+1.599
+1.581
+1.624
+< 0.001
+Disability–adjusted Life Years (DALYs)
+Full Range
+1990
+2021
+0.717
+0.701
+0.733
+< 0.001
+The Joinpoint regression analysis, stratified by continent, revealed substantial intercontinental heterogeneity in the global disease burden of BC (Fig. 4 ; Table 3 ). In Asia, the Americas, Europe, and Oceania, consistent trends were observed, characterized by increasing prevalence and incidence rates, alongside a decline in mortality rates. Conversely, Africa exhibited distinct epidemiological features, with rising mortality rates and concurrent increases in both prevalence and incidence rates. These findings underscore the severity of the disease burden in Africa and highlight the urgent need for enhanced region–specific prevention and control measures.
+Fig. 4 Distribution trend of mortality, prevalence and incidence of breast cancer at all ages in Asia, America, Europe, Africa and Oceania from 1990 to 2021. * means P < 0.05 with significant results
+Distribution trend of mortality, prevalence and incidence of breast cancer at all ages in Asia, America, Europe, Africa and Oceania from 1990 to 2021. * means P < 0.05 with significant results
+Table 3 Results of the annual percentage change rate (AAPC) of the junction point regression analysis of the burden of breast cancer disease in each continent Continent Cohort Range Lower Endpoint Upper Endpoint AAPC Lower CI Upper CI P –Value Asia Prevalence Rate Full Range 1990 2021 –3.316* –3.336 –3.297 < 0.001 Death Rate Full Range 1990 2021 2.149* 2.131 2.168 < 0.001 Incidence Rate Full Range 1990 2021 –3.419* –3.441 –3.399 < 0.001 America Prevalence Rate Full Range 1990 2021 –0.710* –0.753 –0.664 < 0.001 Death Rate Full Range 1990 2021 –0.237* –0.279 –0.236 < 0.001 Incidence Rate Full Range 1990 2021 –0.689* –0.756 –0.619 < 0.001 Africa Prevalence Rate Full Range 1990 2021 2.215* 2.201 2.231 < 0.001 Death Rate Full Range 1990 2021 1.358* 1.341 1.378 < 0.001 Incidence Rate Full Range 1990 2021 2.249* 2.230 2.274 < 0.001 Oceania Prevalence Rate Full Range 1990 2021 0.983* 0.938 1.041 < 0.001 Death Rate Full Range 1990 2021 1.049* 1.004 1.097 < 0.001 Incidence Rate Full Range 1990 2021 0.951* 0.897 1.015 < 0.001 Europe Prevalence Rate Full Range 1990 2021 1.262* 1.230 1.286 < 0.001 Death Rate Full Range 1990 2021 0.256* 0.205 0.332 0.004 Incidence Rate Full Range 1990 2021 1.227* 1.185 1.266 < 0.001 * Indicates that the AAPC is significantly different from zero at the \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\alpha=0.05$$\end{document} level
+Results of the annual percentage change rate (AAPC) of the junction point regression analysis of the burden of breast cancer disease in each continent
+Continent
+Cohort
+Range
+Lower Endpoint
+Upper Endpoint
+AAPC
+Lower CI
+Upper CI
+P –Value
+Asia
+Prevalence Rate
+Full Range
+1990
+2021
+–3.316*
+–3.336
+–3.297
+< 0.001
+Death Rate
+Full Range
+1990
+2021
+2.149*
+2.131
+2.168
+< 0.001
+Incidence Rate
+Full Range
+1990
+2021
+–3.419*
+–3.441
+–3.399
+< 0.001
+America
+Prevalence Rate
+Full Range
+1990
+2021
+–0.710*
+–0.753
+–0.664
+< 0.001
+Death Rate
+Full Range
+1990
+2021
+–0.237*
+–0.279
+–0.236
+< 0.001
+Incidence Rate
+Full Range
+1990
+2021
+–0.689*
+–0.756
+–0.619
+< 0.001
+Africa
+Prevalence Rate
+Full Range
+1990
+2021
+2.215*
+2.201
+2.231
+< 0.001
+Death Rate
+Full Range
+1990
+2021
+1.358*
+1.341
+1.378
+< 0.001
+Incidence Rate
+Full Range
+1990
+2021
+2.249*
+2.230
+2.274
+< 0.001
+Oceania
+Prevalence Rate
+Full Range
+1990
+2021
+0.983*
+0.938
+1.041
+< 0.001
+Death Rate
+Full Range
+1990
+2021
+1.049*
+1.004
+1.097
+< 0.001
+Incidence Rate
+Full Range
+1990
+2021
+0.951*
+0.897
+1.015
+< 0.001
+Europe
+Prevalence Rate
+Full Range
+1990
+2021
+1.262*
+1.230
+1.286
+< 0.001
+Death Rate
+Full Range
+1990
+2021
+0.256*
+0.205
+0.332
+0.004
+Incidence Rate
+Full Range
+1990
+2021
+1.227*
+1.185
+1.266
+< 0.001
+* Indicates that the AAPC is significantly different from zero at the \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\alpha=0.05$$\end{document} level
+An age–period–group model analysis of the global burden of BC (1992–2021)
+The study employed an age–period–cohort model analysis to examine the global burden of BC from 1992 to 2021 (Tables 4 , 5 and 6 ). Net drift analysis indicated significantly positive temporal trends in both BC incidence and prevalence (Net Drift > 0), with narrow confidence intervals reflecting high precision. Although mortality exhibited an upward trend, the wider confidence intervals suggested greater uncertainty. Wald test results demonstrated highly significant age effects on incidence ( \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\:{\chi\:}^{2}$$\end{document} =48183.891) and prevalence ( \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\:{\chi\:}^{2}$$\end{document} =49541.343) (both P < 0.001). The analysis revealed a net migration rate of zero, with statistically significant period and cohort effects (both P < 0.001). Mortality analysis further confirmed age as the predominant determinant ( P < 0.001), showing a constant standard deviation (142.213) and minimal model error (Deviation = 0). The combined model statistics demonstrated excellent fit (R² ≈ 1), underscoring the robustness and explanatory power of these findings.
+Table 4 Age–period–group results of the disease burden of breast cancer (Net Drift) Net Drift(%/year) CI Lo CI Hi Incidence Rate 0.469 0.429 0.508 Prevalence Rate 0.518 0.480 0.555 Death Rate 0.299 –0.306 0.907
+Age–period–group results of the disease burden of breast cancer (Net Drift)
+Net Drift(%/year)
+CI Lo
+CI Hi
+Incidence Rate
+0.469
+0.429
+0.508
+Prevalence Rate
+0.518
+0.480
+0.555
+Death Rate
+0.299
+–0.306
+0.907
+Table 5 Age–period–group results of the disease burden of breast cancer (Wald Tests) \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\:{\boldsymbol{\chi\:}}^{2}$$\end{document} df P –Value Incidence Rate Net Drift = 0 534.447 1 < 0.001 All Age Deviation = 0 48183.891 15 < 0.001 All Period Deviation = 0 57.228 4 < 0.001 All Cohort Deviation = 0 988.031 20 < 0.001 All Period RR = 1 554.432 5 < 0.001 All Cohort RR = 1 1560.755 21 < 0.001 All Local Drifts = Net Drift 985.592 17 < 0.001 Prevalence Rate Net Drift = 0 745.064 1 < 0.001 All Age Deviation = 0 49541.343 15 < 0.001 All Period Deviation = 0 64.225 4 < 0.001 All Cohort Deviation = 0 1216.002 20 < 0.001 All Period RR = 1 763.005 5 < 0.001 All Cohort RR = 1 1999.138 21 < 0.001 All Local Drifts = Net Drift 1214.011 17 < 0.001 Death Rate Net Drift = 0 0.935 1 0.334 All Age Deviation = 0 142.213 15 < 0.001 All Period Deviation = 0 20.742 4 < 0.001 All Cohort Deviation = 0 29.476 20 0.079 All Period RR = 1 21.418 5 < 0.001 All Cohort RR = 1 29.494 21 0.103 All Local Drifts = Net Drift 29.226 17 0.033
+Age–period–group results of the disease burden of breast cancer (Wald Tests)
+\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\:{\boldsymbol{\chi\:}}^{2}$$\end{document}
+df
+P –Value
+Incidence Rate
+Net Drift = 0
+534.447
+1
+< 0.001
+All Age Deviation = 0
+48183.891
+15
+< 0.001
+All Period Deviation = 0
+57.228
+4
+< 0.001
+All Cohort Deviation = 0
+988.031
+20
+< 0.001
+All Period RR = 1
+554.432
+5
+< 0.001
+All Cohort RR = 1
+1560.755
+21
+< 0.001
+All Local Drifts = Net Drift
+985.592
+17
+< 0.001
+Prevalence Rate
+Net Drift = 0
+745.064
+1
+< 0.001
+All Age Deviation = 0
+49541.343
+15
+< 0.001
+All Period Deviation = 0
+64.225
+4
+< 0.001
+All Cohort Deviation = 0
+1216.002
+20
+< 0.001
+All Period RR = 1
+763.005
+5
+< 0.001
+All Cohort RR = 1
+1999.138
+21
+< 0.001
+All Local Drifts = Net Drift
+1214.011
+17
+< 0.001
+Death Rate
+Net Drift = 0
+0.935
+1
+0.334
+All Age Deviation = 0
+142.213
+15
+< 0.001
+All Period Deviation = 0
+20.742
+4
+< 0.001
+All Cohort Deviation = 0
+29.476
+20
+0.079
+All Period RR = 1
+21.418
+5
+< 0.001
+All Cohort RR = 1
+29.494
+21
+0.103
+All Local Drifts = Net Drift
+29.226
+17
+0.033
+Table 6 Age–period–group results of the disease burden of breast cancer (Coefficients) Parameter SD CI Lo CI Hi Incidence Rate Intercept –8.15 0.003 –8.157 –8.144 LAT 0.073 < 0.001 0.073 0.074 NetDrift 0.005 < 0.001 0.004 0.005 CAT 0.068 < 0.001 0.068 0.069 Prevalence Rate Intercept –5.906 0.003 –5.913 –5.900 LAT 0.078 < 0.001 0.077 0.079 Net Drift 0.005 < 0.001 0.005 0.006 CAT 0.073 < 0.001 0.072 0.073 Death Rate Intercept –9.131 0.05 –9.228 –9.034 LAT 0.084 0.004 0.075 0.092 Net Drift 0.003 0.003 –0.003 0.009 CAT 0.081 0.003 0.075 0.086
+Age–period–group results of the disease burden of breast cancer (Coefficients)
+Parameter
+SD
+CI Lo
+CI Hi
+Incidence Rate
+Intercept
+–8.15
+0.003
+–8.157
+–8.144
+LAT
+0.073
+< 0.001
+0.073
+0.074
+NetDrift
+0.005
+< 0.001
+0.004
+0.005
+CAT
+0.068
+< 0.001
+0.068
+0.069
+Prevalence Rate
+Intercept
+–5.906
+0.003
+–5.913
+–5.900
+LAT
+0.078
+< 0.001
+0.077
+0.079
+Net Drift
+0.005
+< 0.001
+0.005
+0.006
+CAT
+0.073
+< 0.001
+0.072
+0.073
+Death Rate
+Intercept
+–9.131
+0.05
+–9.228
+–9.034
+LAT
+0.084
+0.004
+0.075
+0.092
+Net Drift
+0.003
+–0.003
+0.009
+CAT
+0.081
+0.003
+0.075
+0.086
+The age–period–group model was systematically employed to analyze BC epidemiology, integrating temporal dimensions to elucidate disease burden dynamics (Figs. 5 , 6 and 7 ). Age–dependent increases in prevalence, incidence, and mortality rates were observed, peaking in middle–aged populations before a potential decline, while period–related fluctuations were superimposed. Distinct temporal patterns were identified, with peak incidence occurring around 2010 and elevated mortality recorded circa 2015, suggesting the combined effects of environmental, lifestyle, and developmental factors on cumulative risk. Middle–aged groups exhibited particularly elevated risks, further modified by period–specific determinants. Drift analyses revealed short–term oscillations superimposed on long–term trends, elucidating the complex temporal progression of the disease.
+Fig. 5 Breast cancer prevalence age–period–group model results
+Breast cancer prevalence age–period–group model results
+Fig. 6 Results of an age–period–group model of breast cancer incidence
+Results of an age–period–group model of breast cancer incidence
+Fig. 7 Breast cancer mortality age–Period–group model results
+Breast cancer mortality age–Period–group model results
+Gender differences in the global burden of BC in 2022–2030
+Projections from the BAPC model reveal significant sex–specific differences in BC epidemiology through 2030 (Figs. 8 and 9 ). Among males, DALYs increased from 10.5 per 100,000 in 1990 to 13.5 per 100,000 in 2010, stabilizing at 12–13 per 100,000 by 2030. Incidence rates have risen steadily since 1990, with projections indicating a peak of 1.4–1.6 per 100,000 in 2030. Mortality rates increased until 2010 before declining, while prevalence is expected to continue rising, reaching 10–12 per 100,000 by 2030.
+Fig. 8 Global BAPC model predictions for male breast cancer (1990–2030). a DALYs; ( b ) Incidence rate; ( c ) Mortality rate; ( d ) Prevalence rate
+Global BAPC model predictions for male breast cancer (1990–2030). a DALYs; ( b ) Incidence rate; ( c ) Mortality rate; ( d ) Prevalence rate
+Fig. 9 Global BAPC model projections for female breast cancer (1990–2030). a DALYs; ( b ) Incidence rate; ( c ) Mortality rate; ( d ) Prevalence rate
+Global BAPC model projections for female breast cancer (1990–2030). a DALYs; ( b ) Incidence rate; ( c ) Mortality rate; ( d ) Prevalence rate
+Conversely, females exhibited consistent reductions in DALYs, decreasing from 700 to 600 per 100,000 between 1990 and 2030. Incidence rates are projected to continue climbing, reaching a peak of 70–75 per 100,000 by 2030, while mortality rates are steadily declining to 10–12 per 100,000. Prevalence continues its upward trend, anticipated to peak at 10–14 per 100,000.
+These differential trends suggest more effective implementation of early detection and treatment strategies in females, underscoring distinct sex–specific challenges in BC management. The persistent increases in incidence, coupled with divergent mortality patterns, imply varying underlying biological mechanisms and differences in the efficacy of healthcare interventions between sexes.
+Association analysis of BC disease burden by SDI and gender–specific global burden projections: 2022–2030
+The global epidemiological profile of BC reveals significant socioeconomic disparities, as illustrated in Fig. 10 . Both incidence and prevalence rates exhibit consistent upward trends, with substantially higher rates in regions with a high SDI compared to those with a low SDI. The disease burden displays distinct stratification patterns: while high–SDI areas have achieved significant reductions in both mortality and DALYs, low– and very–low–SDI regions show either stagnant trends or marginal increases in these key health metrics.
+Fig. 10 Trends of breast cancer disease burden in different Social Development Index (SDI) levels (high, medium–high, low, medium–low, medium) from 1990 to 2021. a Mortality rate; ( b )Incidence rate; ( C ) Prevalence rate; ( d ) DALYs. * means P < 0.05 with significant results
+Trends of breast cancer disease burden in different Social Development Index (SDI) levels (high, medium–high, low, medium–low, medium) from 1990 to 2021. a Mortality rate; ( b )Incidence rate; ( C ) Prevalence rate; ( d ) DALYs. * means P < 0.05 with significant results
+Utilizing GBD data from 1990 to 2021, this stratified analysis identified significant associations and regional heterogeneity between BC epidemiological patterns and the SDI (Figs. 11 and 12 ). Among female populations, a 33% reduction in incidence (from 4.5 to 3.0 per 100,000), a 300% increase in prevalence (from 20 to 80 per 100,000), and a 33% decline in mortality (from 1.5 to 1.0 per 100,000) were observed, reflecting advancements in targeted therapies and demographic aging effects. In male populations, incidence rates remained stable at 5.0 per 100,000, while mortality decreased to 1.3 per 100,000 and prevalence rose to 35 per 100,000, indicative of improved survival due to standardized diagnostic and therapeutic protocols.
+Fig. 11 Trends in breast cancer disease burden among women in different Social Development Index (SDI) levels (1990–2030)
+Trends in breast cancer disease burden among women in different Social Development Index (SDI) levels (1990–2030)
+Fig. 12 Trends in male breast cancer disease burden by Social Development Index (SDI) level (1990–2030)
+Trends in male breast cancer disease burden by Social Development Index (SDI) level (1990–2030)
+In high–middle SDI regions, female populations exhibited a 67% increase in incidence (from 3.0 to 5.0 per 100,000), a 1300% surge in prevalence (from 10 to 140 per 100,000), and a 150% rise in mortality (from 1.0 to 2.5 per 100,000). Male populations showed gradual incidence increases to 4.8 per 100,000, with mortality oscillating between 1.0 and 1.8 per 100,000, underscoring diagnostic delays and systemic resource limitations.
+Middle SDI regions experienced particularly pronounced disease burden escalation, with female incidence climbing to 7.5 per 100,000 (a 150% increase), prevalence reaching 140 per 100,000 (a 1300% increase), and mortality rising to 5.0 per 100,000 (a 150% increase). Male populations demonstrated a 3.1% annual incidence increase to 0.40 per 100,000 (a 233% increase), with prevalence and mortality reaching 0.60 (a 500% increase) and 0.40 per 100,000 (a 233% increase), respectively.
+Low–middle SDI regions displayed an 80% increase in female incidence to 4.5 per 100,000 and a 300% growth in prevalence to 80 per 100,000. Male populations exhibited slower incidence progression (from 0.08 to 0.24 per 100,000; a 4.8% annual increase), while mortality increased to 0.25 per 100,000 (a 12.0% annual increase), reflecting shortages in treatment facilities and over 70% advanced–stage presentation.
+Low SDI regions manifested a “high–growth, low–capacity” epidemiological pattern, with female incidence doubling (from 2.0 to 4.0 per 100,000), mortality rising by 150% (from 0.8 to 2.0 per 100,000), and prevalence escalating by 1100% (from 5 to 60 per 100,000) due to extended advanced–stage survival. Male populations faced concurrent deterioration across all metrics, with incidence reaching 3.8 per 100,000 (a 6.0% annual increase) and mortality persistently climbing, highlighting systemic deficiencies in BC control infrastructure within these regions.
+Decomposition of BC burden: a risk factor–based analysis of mortality and DALYs
+To complement the GBD risk attribution findings presented above, we conducted exploratory univariable and multivariable Mendelian randomization (MR) analyses to assess whether genetic predisposition to higher red meat intake is associated with breast cancer risk. The results of these analyses are summarized below and detailed in Supplementary Tables S1–S2. The 2021 GBD analysis quantified the impact of modifiable risk factors on BC burden, revealing substantial variations in attributable mortality and disability (Fig. 13 ). Excessive red meat consumption emerged as the leading behavioral risk factor, accounting for 81,506 deaths (12.072% of total BC mortality) and 2,451,719 DALYs (11.864% of total BC disability burden), with corresponding rates of 1.033 and 31.068 per 100,000 population, respectively. High BMI represented the second most significant contributor, responsible for 44,707 deaths (6.625%) and 1,041,309 DALYs (5.043%), demonstrating rates of 0.567 and 13.196 per 100,000.
+Fig. 13 Ratio of breast cancer mortality to DALYs risk factors
+Ratio of breast cancer mortality to DALYs risk factors
+Metabolic dysfunction, particularly hyperglycemia, contributed to 30,568 deaths (4.531%) and 819,555 DALYs (3.969%). Lifestyle factors, including alcohol consumption (18,761 deaths, 2.783%) and physical inactivity (15,964 deaths, 2.367%), showed comparatively lower but still substantial impacts. Notably, tobacco–related exposures (active and passive smoking combined) accounted for 17,434 deaths (2.585%) and 566,111 DALYs (2.743%).
+These findings underscore the critical need for targeted public health interventions addressing dietary patterns, metabolic health, and lifestyle behaviors to mitigate the global BC burden. All values represent statistically significant estimates unless otherwise indicated by negative uncertainty bounds.
+In the univariable MR analysis (Supplementary Table S1), after excluding outliers (rs1421085, rs62396185, rs12247907, and rs7791463 for beef; rs11211124 for pork; rs9379832 and rs35797675 for lamb) using the MR-PRESSO method, the inverse-variance weighted (IVW) approach revealed a nominally significant association between genetically predicted beef intake and breast cancer risk (OR = 1.511, 95% CI: 1.010–2.260, P = 0.044), with no evidence of heterogeneity or horizontal pleiotropy. In the multivariable MR analysis simultaneously adjusting for beef, pork, and lamb consumption (Supplementary Table S2), beef intake remained significantly associated with breast cancer risk in both the IVW method (OR = 3.39, 95% CI: 1.47–7.86, P = 0.004) and the MR-Egger method (OR = 3.12, 95% CI: 1.07–9.08, P = 0.036). These findings provide suggestive evidence that high beef consumption may be associated with increased breast cancer risk, consistent with the GBD attribution analysis identifying red meat as a leading contributor to BC mortality. However, given the exploratory nature of this analysis and the methodological limitations discussed in the Limitations section, these results should be interpreted cautiously.
+For pork and lamb consumption, after excluding outliers (rs11211124, rs9379832, and rs35797675, respectively) using MRPRESSO, the IVW method showed no causal association. Notably, lamb consumption still exhibited horizontal pleiotropy even after outlier removal.
+In the multivariable MR analysis, which simultaneously adjusted for beef, pork, and lamb consumption (Table S2), beef consumption remained significantly associated with BC risk. This was evident in both the IVW method (OR = 3.39, 95% CI: 1.47–7.86, P = 0.004) and the MR–Egger method (OR = 3.12, 95% CI: 1.07–9.08, P = 0.036). These findings are consistent with the univariable MR results, supporting the robustness of this causal relationship. However, no evidence was found for causal associations between pork or lamb consumption and BC risk.
+Discussion
+BC represents one of the most significant malignant neoplasms worldwide, exhibiting notably high incidence and mortality rates among female populations [ 18 ]. Concurrently, the prevalence of male BC has been progressively increasing [ 19 ]. Despite substantial advancements in diagnostic and therapeutic modalities, the global disease burden of BC continues to rise [ 20 ], particularly in low– and middle–SDI regions [ 21 ]. The pathogenesis of BC is multifactorial, involving genetic predisposition [ 22 ], lifestyle factors [ 23 ], and environmental exposures [ 24 ]. Female BC demonstrates strong associations with hormonal fluctuations [ 25 ], reproductive history [ 26 ], and lactation patterns, while male BC shows greater correlation with hereditary factors [ 27 ], endocrine abnormalities, and obesity–related metabolic disturbances [ 28 ]. The prognosis for male BC remains unfavorable due to its relative rarity, societal awareness gaps [ 29 ], and frequent delayed diagnosis resulting from subtle clinical manifestations during early disease stages [ 30 ]. Consequently, conducting comprehensive gender–stratified analyses of BC epidemiology carries significant implications for both clinical practice and public health policy formulation. Such investigations facilitate the identification of sex–specific risk factor profiles while enabling optimization of gender–tailered screening protocols. Furthermore, they support the development of targeted prevention strategies that incorporate both biological differences and sociocultural determinants of health. This approach is particularly crucial given the growing recognition of male BC as a distinct clinical entity with unique molecular characteristics and epidemiological patterns.
+This This study analyzed global BC data from 1990 to 2021 and revealed significant regional disparities in disease distribution. The highest incidence of female BC was observed in high–income regions, including North America and Western Europe, whereas male BC incidence peaked in certain African nations, Western Europe, and China. This epidemiological pattern is likely influenced by regional socioeconomic status, healthcare resource allocation, environmental exposures, public health policy implementation, and population–specific lifestyle factors [ 31 ]. The elevated incidence of female BC in high–SDI regions may be associated with increased exposure to multiple risk factors (e.g., elevated BMI, alcohol consumption) and the presence of more comprehensive BC screening programs [ 32 ]. Conversely, the higher incidence of male BC in low–SDI areas may reflect insufficient early detection methods and limited diagnostic capacity in these regions [ 33 ].
+This study conducted a systematic analysis of the global BC disease burden from 1990 to 2021. The data demonstrate that BC prevalence, incidence, and mortality all exhibit significant age–dependent associations, with risk escalating progressively with advancing age, particularly among postmenopausal women [ 34 ]. Although overall mortality rates have declined, individuals aged 75 years and older remain at substantially elevated risk of BC–related death. This epidemiological pattern suggests that implementing targeted early screening programs and therapeutic interventions for elderly populations could potentially yield significant mortality reduction benefits [ 35 ].
+In Furthermore, global DALYs attributable to BC demonstrated a substantial increase from 1990 to 2021, with significantly higher DALYs levels and growth rates observed in women compared to men. This disparity underscores the escalating health burden imposed by BC and highlights the greater challenges women face in preserving and enhancing their quality of life [ 36 ]. In light of these findings, heightened attention should be directed toward addressing women’s specific healthcare needs, with the development and implementation of precisely targeted interventions to effectively mitigate the BC disease burden. Joinpoint regression analysis was employed to evaluate temporal trends in BC burden. The analysis revealed consistent global increases in BC prevalence, mortality, incidence, and DALYs between 1990 and 2021. Notably, prevalence rates exhibited marked acceleration from 2003 to 2008, followed by a moderated yet persistent upward trajectory. Mortality rates peaked during 2014–2018 while demonstrating an overall declining trend. The most rapid increase occurred between 1992 and 1995, succeeded by fluctuating but sustained positive growth. These findings indicate that despite mortality reductions, the persistently rising incidence and prevalence of BC underscore the ongoing severity of this public health challenge [ 37 ].
+Concurrently, this study employed an APC modeling approach. The APC analysis revealed that BC prevalence, incidence, and mortality exhibited distinct temporal and age–dependent trends, demonstrating significant influences from multiple determinants including societal development, environmental exposures, and healthcare system characteristics. The analysis identified elevated incidence rates among middle–aged populations, with temporal variations in individual risk profiles reflecting period–specific effects. These findings suggest that optimized public health strategies should incorporate precision interventions tailored to specific age groups and birth cohort characteristics to effectively address BC prevention and control challenges [ 38 ].
+The BAPC model was utilized to project gender–specific trends in the global BC burden from 2022 to 2030. The projections revealed that while male BC DALYs and mortality rates exhibited an increasing trend from 1990 to 2010, they are predicted to demonstrate a sustained decline through 2030. In contrast, female BC burden has shown a consistent downward trajectory since 1990. These findings suggest persistent challenges in the diagnosis and management of male BC, whereas existing prevention and control measures for female BC have proven effective. Future public health initiatives should prioritize the optimization of screening protocols and therapeutic strategies for male BC [ 39 ] to effectively mitigate its disease burden.
+This study conducted an in–depth analysis of the association between SDI factors and the disease burden of BC, revealing significant socioeconomic disparities in BC incidence, mortality, prevalence, and DALYs [ 40 ]. Regions with high SDI exhibited significantly higher BC incidence and prevalence rates compared to low–SDI regions. However, these high–SDI areas demonstrated declining trends in both mortality rates and DALYs, indicating substantial progress in BC prevention, early detection, and treatment. In contrast, low–SDI regions showed minimal improvement in mortality rates and DALYs, with some areas even experiencing slight increases, highlighting the persistent challenges in BC management and therapeutic interventions within these populations.The observed disparities in BC burden fundamentally reflect variations in health system performance. Future interventions should adopt SDI–stratified strategies: high–SDI regions should prioritize risk factor mitigation, while low–SDI regions require strengthened capacity for basic diagnosis/treatment and expanded screening implementation. Within global health cooperation, targeted resource allocation and technology transfer are critical for reducing outcome disparities in BC management.
+The study revealed that SDI disparities directly influence the effectiveness of BC prevention and control. High–SDI countries, through technological advancements and optimized healthcare systems, have successfully mitigated the BC burden. In contrast, low– and middle–SDI regions, constrained by economic and infrastructural limitations, remain trapped in a ‘high burden–low response’ vicious cycle [ 40 ]. Over the next decade, low–SDI regions should prioritize overcoming diagnostic delays and improving treatment accessibility, while middle–SDI regions must enhance their tiered healthcare delivery systems. Both low– and middle–SDI regions should accelerate the deployment of mobile screening units and adopt simplified radiotherapy protocols to address global BC control challenges [ 41 ]. Based on the analysis of global cancer incidence and mortality data in 2022, the IARC research team projected the future global cancer burden in the Global Cancer Statistics 2022 report, which provided an in–depth assessment of epidemiological trends worldwide and in China. The study revealed that low–SDI regions are anticipated to experience a more pronounced increase in new cancer cases (142%) compared to medium–SDI countries (100%). This epidemiological shift suggests that population aging and lifestyle transitions in low–SDI settings will substantially elevate the cancer burden over the coming decades, potentially exacerbating health disparities in resource–limited regions. Of particular concern is the rising incidence of non–communicable, lifestyle–associated cancers in low–SDI countries, which may impose additional strain on already fragile healthcare systems [ 42 ]. These findings underscore the urgent need for prioritized cancer prevention strategies and optimized allocation of medical resources in low–SDI regions to address this growing public health challenge.
+According to 2021 global data, excessive red meat consumption and elevated BMI emerged as leading risk factors for BC mortality. Additionally, hyperglycemia, alcohol use, physical inactivity, and smoking (including secondhand exposure) demonstrated significant contributions to BC–related deaths [ 33 ]. These modifiable risk factors not only directly increase mortality but also substantially impact DALYs. Targeted interventions addressing these factors could therefore effectively reduce both BC mortality and overall disease burden. At the public health policy level, enhanced health education campaigns and evidence–based interventions should be implemented to promote healthier lifestyles, with the dual objective of reducing both incidence and mortality rates of BC.
+This study employed both univariable and multivariable MR analyses to investigate the association between excessive red meat consumption and BC risk. The univariable MR analysis identified excessive beef intake as a potential risk factor for BC. After adjusting for beef, lamb, and pork consumption in the multivariable MR analysis, excessive beef intake demonstrated statistically significant associations with increased BC risk, further validating findings from the GBD database.
+It is important to note that while our MR analysis focused on unprocessed red meat categories (beef, pork, and lamb), the GBD comparative risk assessment defines red meat consumption more broadly, encompassing both processed and unprocessed varieties. Processed meats—such as bacon, sausages, and deli meats—may contain additional carcinogenic compounds (e.g., N-nitroso compounds, heterocyclic amines) introduced during curing, smoking, or high-temperature cooking, which could plausibly confer different risk profiles. However, due to the lack of large-scale GWAS data specifically on processed meat intake, we were unable to disaggregate these categories in the MR framework. Future studies should prioritize the collection of genetic and dietary data that distinguish between processed and unprocessed red meat to enable more nuanced causal inference and inform more targeted dietary guidelines.
+As the most common cause of cancer–related mortality among women worldwide, BC development is closely linked to lifestyle factors [ 43 ]. Previous studies have established that preserved foods contribute to gastric carcinogenesis, likely mediated by nitrites forming N–nitroso compounds – known carcinogens – in the gastrointestinal tract [ 43 ]. Similarly, red meat processing generates heterocyclic amines (HCAs) and polycyclic aromatic hydrocarbons (PAHs), two well–characterized carcinogenic byproducts, which may mechanistically explain the observed association between excessive red meat consumption and elevated BC risk [ 44 ].
+The decade spanning 2021–2030 represents a critical window for BC prevention and control [ 45 ]. International collaboration should facilitate the transfer of early screening modalities from high–SDI to low– and middle–SDI regions, while accelerating the development of cost–effective targeted therapies to bridge existing treatment disparities [ 46 ]. Furthermore, public health policies must prioritize low– and middle–SDI regions by addressing key barriers in screening accessibility, basic treatment infrastructure, and health literacy initiatives to effectively combat global BC challenges. To mitigate the BC risk associated with excessive red meat consumption, promoting plant–based protein alternatives and enhancing public dietary guidance are recommended. For individuals with high BMI, regular physical activity and balanced nutrition should be encouraged, supported by community–based obesity prevention programs. Additionally, population-level interventions—such as promoting healthier dietary patterns and implementing weight management initiatives—are essential to reducing the related disease burden. These may include public health campaigns to raise awareness of the potential risks associated with high red meat intake, alongside efforts to improve access to plant-based protein alternatives.
+While the GBD comparative risk assessment framework provides valuable estimates of the population-level burden attributable to various exposures, several important caveats warrant discussion. First, the attribution of BC mortality and DALYs to factors such as red meat intake and high BMI relies on observational studies, which are susceptible to residual confounding. For example, red meat consumption is often correlated with socioeconomic status, educational attainment, and other lifestyle factors (e.g., smoking, physical inactivity) that independently influence BC risk. Although GBD models adjust for available confounders, unmeasured or imperfectly measured confounding cannot be entirely ruled out. Second, the term ‘risk factor’ in this context refers to statistical associations at the population level, not deterministic causal relationships at the individual level. Third, red meat is a heterogeneous exposure: its composition, processing methods (e.g., curing, grilling), cooking temperatures, and dietary context (e.g., accompanying vegetables, overall dietary pattern) vary substantially across cultures and regions. These variations may modify the association with BC risk, yet they are not captured in current GBD estimates. Future research should aim to disentangle these complexities by incorporating more granular dietary data and exploring gene-environment interactions across diverse populations. Readers should therefore interpret the attributable burden estimates as indicative of population-level patterns rather than precise causal effects.
+Although the present MR analysis leveraged large-scale GWAS data to establish a causal link between beef intake and BC risk at the global level, we acknowledge the critical need for region-specific causal inferences, as suggested by the reviewers. Such analyses would greatly enhance the formulation of tailored public health policies across different continents. However, this endeavor is currently constrained by the limited availability of large-scale, ancestry-diverse GWAS data for both dietary exposures and BC outcomes, particularly in low- and middle-income regions. Furthermore, substantial heterogeneity in environmental factors, dietary patterns, and gene-environment interactions across continents could confound the interpretation of genetic instruments. Future research should prioritize the inclusion of non-European populations in large-scale genomic consortia. Once such data become available, conducting continent-stratified MR analyses will be a high priority to elucidate region-specific causal pathways and inform targeted, culturally appropriate prevention strategies for breast cancer worldwide.
+Conclusion
+The key findings indicate a persistent increase in the global BC burden, with a particularly pronounced impact in regions with low and middle SDI. The incidence and prevalence of female BC are most significant in high–income areas, including North America, Western Europe, Australia, and New Zealand. In contrast, male BC exhibits relatively higher rates in specific African nations, Western Europe, and China. These observations underscore the need for targeted interventions and further research to address the disparities in BC incidence across different regions and demographics.
+The disease burden demonstrated a strong age dependency, with significantly elevated risks observed in populations aged 50 years and older. Although global DALYs and mortality rates exhibited overall declining trends, incidence rates continued to rise steadily. An inverse correlation was noted between BC burden and SDI levels, with minimal improvement seen in low–SDI regions. Excessive red meat consumption and elevated body mass index (BMI) were identified as predominant risk factors for BC mortality. These findings highlight the importance of addressing lifestyle factors and socio–economic disparities in future interventions.
+The next decade represents a critical period for global BC control, necessitating coordinated international efforts across four key domains: (1) Adapting evidence–based screening modalities from high– to low– and middle–SDI regions; (2) Accelerating the development and equitable distribution of cost–effective targeted therapies to address treatment inequities; (3) Implementing targeted public health interventions to address critical gaps in screening availability, treatment capacity, and health literacy in resource–limited settings; (4) Promoting population–level risk reduction through dietary modifications, such as plant–protein substitution, weight management programs, and nutrition labeling policies. These initiatives should be integrated within a unified global framework that employs standardized protocols, resource pooling, and transnational knowledge exchange to optimize implementation across diverse health systems. Furthermore, addressing modifiable risk factors requires comprehensive dietary interventions, including promoting plant-based nutrition, launching community-based obesity prevention programs, and implementing evidence-based strategies to reduce red meat consumption at the population level.
+Limitations
+This study has several limitations pertaining to data sources, risk factor analysis, predictive modeling, gender and regional disparities, and intervention recommendations. First, our reliance on the GBD database may introduce data accuracy limitations due to variability in national healthcare systems, particularly in low SDI regions where reporting bias may exist.Second, the study’s temporal scope constrains the reliability of future trend projections, and we did not fully account for potential risk factors (e.g., genetic and environmental factors) or variations across different regions and populations.The BAPC model predictions carry inherent uncertainties and did not incorporate potential impacts of emerging technologies, novel therapies, or public health policy changes. Regarding gender disparities, research on male BC remains insufficient, and we did not investigate the underlying mechanisms of gender differences. Our regional disparity analysis also did not adequately consider variations in national screening and treatment protocols. Although we proposed BC prevention and control recommendations, specific intervention strategies and implementation pathways were not developed. Further research is urgently needed to facilitate the adaptation of high–SDI screening models to middle– and low–SDI regions and to accelerate the development of affordable targeted therapies.
+This study conducted MR analyses to investigate the causal relationship between red meat consumption and BC, utilizing both univariable and multivariable approaches. However, several limitations should be noted. The MR analysis may be constrained by the selection of genetic instruments, which might not fully capture the complexity of dietary patterns or the potential confounding factors. Additionally, pleiotropy could affect the validity of the causal inference, as genetic variants used as instruments may influence BC through pathways unrelated to red meat consumption. Furthermore, the study did not explore interactions between red meat consumption and other dietary or lifestyle factors that could modulate BC risk. These limitations highlight the need for comprehensive approaches in future research to better understand the nuanced relationships between diet and BC.
+A further important limitation concerns the ancestral composition of the genetic instruments used in our Mendelian randomization analysis. The genome-wide association study (GWAS) data for red meat consumption were derived exclusively from the UK Biobank, which comprises individuals of predominantly European ancestry. Similarly, the breast cancer GWAS data from the Breast Cancer Association Consortium (BCAC) are disproportionately representative of European populations. While these datasets provide well-powered instruments for causal inference in European-ancestry populations, their applicability to non-European populations—particularly in Africa, Asia, and Latin America—is uncertain. Genetic architecture, including allele frequencies, linkage disequilibrium patterns, and effect sizes, can vary substantially across ancestries. Moreover, gene-environment interactions may differ across geographic and cultural settings; for example, the relationship between red meat intake and breast cancer risk could be modified by dietary patterns, cooking methods, or other lifestyle factors that vary systematically across regions. Consequently, our MR findings should be interpreted as providing evidence primarily applicable to populations of European descent, and caution is warranted when extrapolating these results to global populations. This limitation underscores the urgent need for large-scale, ancestry-diverse GWAS consortia that include underrepresented populations from Africa, Asia, and Latin America. Until such data become available, triangulation of evidence from multiple study designs—including well-conducted observational studies in diverse settings—remains essential for informing global public health recommendations.
+Supplementary Information
+Supplementary Material 1.
+Supplementary Material 2.
+Publisher’s note
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+Engage and make statements
+All the authors contributed to the manuscript and approved the manuscript for publication.
+Authors’ contributions
+Conceptualization: Ziyu Wang, Liping Zhang. Data curation: Ziyu Wang, Jiahe Gao, Zhaocheng Liu, Huiyu Zhao, Xiaoru Xu. Data analysis: Ziyu Wang, Jiahe Gao, Yangxuan Gong, Zhaocheng Liu.Visualization: Ziyu Wang. Data mining: Jiahe Gao, Ziyu Wang, Yangxuan Gong, Zhaocheng Liu. Writing–original draft: Ziyu Wang, Xiaoru Xu. Writing–review & editing: Huiyu Zhao, Xiaoru Xu, Ziyu Wang.
+Funding
+This work was supported by the Xinjiang Medical University 19th Undergraduate Innovation Training Program [Grant No. S202410760122] and the Health Science and Technology Program Project of Xinjiang Uygur Autonomous Region (2025) [Grant No. 2025001FYJKSCZLKJZX650124499].
+Data availability
+Specific data are available upon request from the corresponding author. This study was supported by the 19th Undergraduate Innovation Training Program of Xinjiang Medical University and the 2025 Autonomous Region Health Science and Technology Program. The data utilized in this study were sourced from a public database containing no personally identifiable information, thus individual consent was not required.
+Declarations
+Ethics approval and consent to participate
+The data used in this study were fully deidentified and publicly available summary data, and no personal privacy information was involved. According to the World Medical Association Declaration of Helsinki on retrospective database studies, such studies are exempt from ethical review.
+Competing interests
+The authors declare no competing interests.
+References
+Global cancer statistics 2020: GLOBOCAN estimates of incidence and mortality worldwide for 36 cancers in 185 countries
+Cost–Utility Analysis of Cancer Prevention, Treatment, and Control: A Systematic Review
+Cervical cancer incidence, mortality, and burden in China: A time–trend analysis and comparison with England and India based on the global burden of disease study 2019
+Global, Regional, and National Cancer Incidence, Mortality, Years of Life Lost, Years Lived With Disability, and Disability–Adjusted Life–Years for 29 Cancer Groups, 1990 to 2017: A Systematic Analysis for the Global Burden of Disease Study
+Global challenges and policy solutions in breast cancer control
+Breast cancer screening in developing countries
+Breast Cancer and Lifestyle Factors: Umbrella Review
+Estrogens and breast cancer
+Breast cancer incidence and mortality before and after implementation of the German mammography screening program
+Male Breast Cancer: Current Scenario and Future Perspectives
+Male Breast Cancer: Three Case Reports and a Literature Review
+Risk Factors and Preventions of Breast Cancer
+Global Stage Distribution of Breast Cancer at Diagnosis: A Systematic Review and Meta–Analysis
+Epidemiology and Risk Factors for Breast Cancer: 21st Century Advances, Gaps to Address through Interdisciplinary Science
+Menopausal hormone therapy and breast cancer risk
+Breast cancer management in middle–resource countries (MRCs): Consensus statement from the Breast Health Global Initiative
+The burden and trends of breast cancer from 1990 to 2017 at the global, regional, and national levels: Results from the Global Burden of Disease Study 2017
+Global burden of cancer attributable to high body–mass index in 2012: A population–based study
+Cancer and Mediterranean Diet: A Review
+Diet and carcinogenesis of gastric cancer
+Tumor microenvironment: Challenges and opportunities in targeting metastasis of triple negative breast cancer
+Informing etiologic research priorities for squamous cell esophageal cancer in Africa: A review of setting–specific exposures to known and putative risk factors

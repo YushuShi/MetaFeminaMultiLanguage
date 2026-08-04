@@ -1,0 +1,1094 @@
+Global Burden of Ovarian Cancer and Causal Risk Factors from 1990 to 2021: An Integrated GBD and Mendelian Randomization Analysis
+Background
+Ovarian cancer seriously threatens women’s health due to its poor prognosis. This study integrates Global Burden of Disease (GBD) and Mendelian randomization analyses, to evaluate the global burden of ovarian cancer and identify causal risk factors using large-scale GWAS summary statistics for 12 exposures.
+Methods
+We utilized statistics from the GBD 2021 study to analyze global trends in ovarian cancer across 204 countries and territories from 1990 to 2021, along with all risk factors, high BMI and occupational exposure to asbestos, and generated forecasts for the subsequent decade. Furthermore, we employed a range of statistical genetics methods to analyze data from the genome-wide association studies, to comprehensively assess the causal relationships between variable risk factors and ovarian cancer at the individual level.
+Results
+For all risk factors, the mortality and disability-adjusted life years (DALYs) numbers rose from 1990 to 2021 globally, while the age-standardized DALY rate (ASDR) and age-standardized mortality rate (ASMR) showed a decreasing inclination. Attributable to occupational exposure to asbestos, the mortality and DALYs numbers showed an increasing trend, while the ASMR and ASDR showed a decreasing trend. For high BMI, mortality, DALYs number, the ASMR and ASDR all demonstrated an uptrend. The projection to next decade shows a similar trend. Based on MR analyses, we forecasted that the HIP, visceral adiposity, waist circumference, alcohol intake frequency, childhood BMI, HIPadjBMI, and lifetime smoking were positively associated with ovarian cancer (HIP: OR=1.29, 95% CI: 1.13–1.48; visceral adiposity: OR=1.22, 95% CI: 1.07, 1.38, waist circumference: OR=1.28, 95% CI: 1.10–1.48). Alcohol use disorder, dried fruit intake, education, fresh fruit intake and magnesium were negatively associated with ovarian cancer (alcohol use disorder: OR=0.91, 95% CI: 0.83–0.99).
+Conclusion
+Our research presents a detailed analysis of the overall health burden imposed by ovarian cancer. Furthermore, the findings suggest that adiposity, alcohol intake frequency and smoking may serve as significant indicators of an elevated risk of ovarian cancer. These insights are expected to assist policymakers in enhancing the implementation of prevention strategies.
+Keywords
+Introduction
+Ovarian cancer is the leading contributor to the burden of gynecologic diseases, due to its poor prognosis, drug resistance and high recurrence rate. It ranked eighth in incidence and fifth in mortality among women worldwide, based on age-standardized statistics in 2022. 1 Notably, among women in transitioning countries, ovarian cancer is responsible for the third-greatest number of deaths among all fatal malignancies. 2 Considerable disparities exist globally in ovarian cancer mortality rates, the level of population access to treatment, and the nature of health policy implementation. There are regional differences in the disease burden of ovarian cancer. Therefore, understanding the global burden of ovarian cancer is imperative for developing targeted risk-reduction strategies and lessening the disease load.
+Drawing on data from 1990 to 2021, the Global Burden of Disease (GBD) 2021 study encompasses 369 diseases across 204 countries and regions. According to the GBD database, high body mass index (BMI) and occupational asbestos exposure have been identified in prior studies as two key risk factors for ovarian cancer, 3 but previous GBD-based studies have mostly lacked a comprehensive analysis integrating causal inference for multiple modifiable factors to establish definitive links. Our analysis concentrates on all risk factors, explicitly considering high BMI and occupational asbestos exposure, in evaluating disease burden of ovarian cancer.
+Given that there is currently a lack of effective screening methods for ovarian cancer, most cases are already at an advanced stage at the time of initial diagnosis. Therefore, primary prevention of ovarian cancer is particularly significant. This study aims to identify high-risk factors for ovarian cancer, thereby providing new insights for its prevention. In addition to the two aforementioned risk factors, previous studies have identified a range of variables potentially associated with ovarian cancer, including tobacco and alcohol use, as well as diet. Biologically, these exposures may influence carcinogenesis through mechanisms such as dysregulated sex hormone metabolism and chronic inflammation, while their observational conclusions are not consistent. 4 Therefore, the potential causal association between these variables and ovarian cancer merits further investigation to reach definitive conclusions. Mendelian randomization (MR) serves as an analytical method in epidemiology that infers causality by employing genetic variants—randomly allocated at conception—as instrumental variables to assess the impact of exposures on outcomes. Capitalizing on this naturally occurring randomization, MR is thus able to circumvent the confounding and reverse causality biases that typically limit the validity of conventional observational research. 5 In this study, we utilized a two-sample MR to assess the potential connections between multiple risk factors and ovarian cancer. To our knowledge, our study took a novel approach by combining GBD and MR analyses to investigate ovarian cancer risk factors.
+Materials and Methods
+Global Burden of Disease Study
+Overview of the Global Burden of Disease Study
+This study leveraged data from the Global Burden of Disease (GBD) 2021 study. The GBD 2021 represents a comprehensive, international collaborative research initiative led by the Institute for Health Metrics and Evaluation (IHME) at the University of Washington. Spanning 204 countries and territories, the GBD study delivers systematic scientific estimates of health loss caused by diseases, injuries, and risk factors throughout the 1990–2021 period. The estimates were downloaded from the Global Health Data Exchange (GHDx), a publicly accessible online repository. ( http://ghdx.healthdata.org/gbd-results-tool ).
+Case Definition and Data Extraction
+The ovarian cancer diagnosis was identified using the ICD-10 code C56 from the International Classification of Diseases, 10th Revision. The following metrics covering the period 1990–2021 were obtained from the GBD 2021 database for the purpose of this study:
+Mortality: Number of death caused by ovarian cancer.
+Disability-Adjusted Life Years (DALYs): calculated as the sum of Years of Life Lost due to premature mortality (YLLs) and Years Lived with Disability (YLDs).
+To eliminate the confounding effects of population size and age structure differences across regions and time periods, age-standardized rates (ASRs) were employed, specifically the age-standardized DALY rate (ASDR) and age-standardized mortality rate (ASMR).
+Data were extracted by year (1990–2021), age group (5-year intervals from birth to ≥95 years), sex (female), geographic region (global, 21 GBD regions, and 204 countries/territories), and Socio-demographic Index (SDI) quintiles (low, low-middle, middle, high-middle, and high). The SDI integrates three metrics—lag-distributed income per capita, average educational attainment in populations aged 15 and above, and total fertility rates in individuals under 25—into a composite indicator of developmental status.
+This study analyzed ovarian cancer data from three perspectives, namely all risk factors combined, high body-mass index, and occupational exposure to asbestos.
+High body-mass index (BMI) was defined as any value exceeding the theoretical minimum risk exposure level (TMREL) of 20–25 kg/m 2 , with the TMREL serving as the optimal range for the lowest health risk established by cohort study evidence.
+Occupational exposure to asbestos was defined as a history of employment in occupations with established asbestos exposure (eg, construction, shipbuilding, and asbestos mining).
+MR Study
+A two-sample Mendelian randomization approach was employed to assess the causal effects of multiple risk factors on the susceptibility to ovarian cancer. These 12 specific exposures were selected because they represent key modifiable lifestyle, anthropometric, dietary, and metabolic factors previously hypothesized or reported in epidemiological studies to be associated with gynecologic oncogenesis, ensuring a comprehensive assessment and avoiding selective reporting. The Mendelian randomization should satisfy the following conditions: (i) Genetic variants selected for analysis demonstrated robust associations with the exposure under investigation; (ii) these variants were independent of potential confounders, implying that they influence the exposure through pathways unconfounded by measured or unmeasured factors; and (iii) the variants were assumed to operate exclusively through the exposure, without influencing the outcome via any independent or direct pathways.
+Data Source for the GWAS
+Publicly available genome-wide association studies (GWASs) restricted to individuals of European ancestry served as the basis for constructing genetic instruments for the risk factors under investigation. The detailed information of these GWAS sources, including specific sample sizes and data citations for each exposure, is fully documented in Supplementary Table 1 .
+Selection of Genetic Tools
+In this study, single nucleotide polymorphisms were utilized as instrumental variables. To obtain reliable IVs, a series of rigorous quality control procedures for SNP screening were implemented. The screening criteria were set as follows: 1) To obtain highly reliable instrumental variables and strictly mitigate weak instrument bias, a more stringent genome-wide statistical significance threshold was defined as P < 1.0×10 − 8 ; 2) To exclude linkage disequilibrium, parameters were set with r 2 = 0.001 and kb = 10,000 as the standards; 3) To mitigate weak instrument bias, an F-statistic > 10 was selected as the threshold for strong IVs. 6
+Statistical Analysis
+In order to evaluate temporal trends in the age-standardized rates (ASRs), the Estimated Annual Percentage Change (EAPC) was computed. To obtain this estimate, we first performed a regression analysis with ln(ASR) as the outcome and calendar year (X) as the predictor: ln(ASR) = α + βX + ε (ε represents the error term). The coefficient β from this model directly informs the trend. The final EAPC value, representing the yearly percentage change, was computed from this regression slope as EAPC = 100% × [exp(β) − 1].
+The future trends of ovarian cancer burden, specifically in terms of ASMR and DALYs, were projected using a Bayesian age-period-cohort (BAPC) model. This modeling approach is widely employed in studies utilizing data from the GBD database. Grounded in a Bayesian extension of generalized linear models, this method is capable of simultaneously accounting for age, period, and cohort effects. Its modeling framework is robust to the challenges posed by complex, high-dimensional, or sparse data, making it a highly adaptable instrument for generating stable and reliable long-term projections. 7
+To measure health disparities across different socioeconomic groups from 1990 to 2021, the Slope Index of Inequality (SII) and the Concentration Index (CI) were calculated. The SII was employed to assess the absolute gap in health status between the most affluent and the most deprived populations, while the CI quantified the relative inequality across the entire socioeconomic spectrum. For both indicators, higher values signified greater inequality. 8
+Employing the genetic instruments detailed earlier, our study applied a two-sample Mendelian randomization framework to assess the causal effects of multiple factors on ovarian cancer risk. Inverse-variance weighted (IVW), weighted median, and maximum likelihood methods served to quantify causal effects in a complementary manner. Post-estimation, we conducted rigorous sensitivity analyses to examine pleiotropy and heterogeneity, thereby ensuring MR assumptions 2 and 3 are satisfied.
+Horizontal pleiotropy was assessed by testing the P-value of the intercept test of MR-Egger regression analysis. Horizontal pleiotropy was not considered if P>0.05. Cochran’s Q statistic, in combination with the MR-PRESSO method, served as the tool for evaluating heterogeneity. To confirm the robustness of the MR results, a leave-one-out sensitivity analysis was conducted, in which each SNP was iteratively removed to assess whether any single instrument disproportionately influenced the causal estimates.
+Statistical analyses were conducted using R software (version 4.2.3).
+Results
+Global Burden ( Tables 1 and 2 )
+For all risk factors, the mortality numbers had risen up, from 100584, to 185608, and the DALYs numbers increased from 2909235 to 5163256. However, a decreasing trend was observed in both ASMR and ASDR. For ASMR, the EAPC was −0.62 (95% CI, −0.68 - −0.57) and the EAPC of ASDR was −0.59 (95% CI, −0.64 - −0.54). Likewise, as a result of occupational exposure to asbestos, the number of mortality and DALYs followed an increasing trajectory, while the ASMR and ASDR presented a decreasing tendency. For high BMI, there was a concurrent increase in mortality number, DALYs number, ASMR, and ASDR. Table 1 Mortality and ASMR of Ovarian Cancer in 1990 and 2021, with EAPC 1990 2021 EAPC Death Death All Risk Factors High BMI Occupational Exposure to Asbestos All Risk Factors High BMI Occupational Exposure to Asbestos All risk factors High BMI Occupational Exposure to Asbestos NO ASR NO ASR NO ASR NO ASR NO ASR NO ASR ASMR Global 100584.11 (92970.81–109,087.03) 4.73 (4.38–5.12) 6850.05 (1422.80–12,864.70) 0.32 (0.07–0.61) 3693.5162 (1777.67–5799.28) 0.18 (0.09–0.29) 185,608.68 (167,961.98–201,012.67) 4.06 (3.67–4.4) 17,344.47 (4141.33114605735–30,810.137095524) 0.38 (0.09–0.67) 5587.17 (2714.36–9035.54) 0.12 (0.06–0.19) −0.62 (−0.68 - −0.57) 0.4 (0.32–0.47) −1.22 (−1.36 - −1.09) Region Central Asia 798.4 (722.19–878.87) 2.86 (2.58–3.15) 81.68 (17.92–150.9) 0.29 (0.06–0.54) 16.67 (7.68–27.52) 0.06 (0.03–0.1) 1949.03 (1705.34–2219.78) 4.08 (3.57–4.63) 254.8 (62.21–458.9) 0.53 (0.13–0.95) 35.69 (16.12–60.2) 0.08 (0.04–0.14) 1.25 (1.1–1.41) 1.95 (1.79–2.11) 0.34 (0.04–0.64) Central Europe 5976.81 (5755.75–6198.58) 7.22 (6.96–7.48) 594.79 (137.6–1094.62) 0.7 (0.16–1.3) 98 (47.27–161.01) 0.11 (0.05–0.18) 8859.82 (8105.86–9520.21) 7.4 (6.79–7.96) 1137.68 (294.75–2060.05) 0.94 (0.24–1.71) 251.56 (114.26–411.55) 0.18 (0.08–0.3) 0.11 (−0.05–0.27) 0.95 (0.76–1.14) 2.15 (1.93–2.37) Eastern Europe 10677.91 (10,189.48–11,130.51) 6.25 (5.96–6.52) 1181.87 (280.29–2096.22) 0.68 (0.16–1.21) 260.84 (125.02–419.48) 0.14 (0.07–0.23) 12,184.22 (10,926.45–13,636.73) 6 (5.37–6.73) 1832.12 (491.01–3169.15) 0.89 (0.24–1.54) 361.56 (173.61–598.39) 0.16 (0.08–0.26) −0.21 (−0.39 - −0.02) 0.81 (0.61–1.01) 0.11 (−0.22–0.45) Australasia 1226.49 (1128.47–1309.93) 9.64 (8.89–10.26) 106.75 (22.28–197.62) 0.85 (0.18–1.58) 103.78 (51.86–167.43) 0.74 (0.37–1.19) 1336.81 (1147.13–1464.84) 4.68 (4.12–5.08) 172.94 (44.53–314.78) 0.62 (0.16–1.1) 151.08 (72.06–240.73) 0.46 (0.22–0.73) −2.23 (−2.57 - −1.88) −0.96 (−1.36 - −0.57) −0.9 (−1.53 - −0.28) High-income Asia Pacific 4169.1 (3944.31–4339.45) 3.75 (3.55–3.9) 84.58 (−8.64–188.99) 0.07 (−0.01–0.17) 82.61 (39.32–135.92) 0.07 (0.03–0.12) 7200.86 (6064.3–7968.63) 3.26 (2.87–3.5) 252.87 (21.85–508.19) 0.12 (0.01–0.24) 228.89 (92.09–399.06) 0.06 (0.03–0.11) −0.53 (−0.61 - −0.45) 1.27 (1.14–1.4) −0.42 (−0.61 - −0.23) High-income North America 15627.11 (14,550.66–16,222.8) 7.95 (7.5–8.21) 1604.42 (382.12–2944.24) 0.83 (0.2–1.52) 690.33 (326.32–1115.45) 0.3 (0.14–0.49) 19,233.43 (17,244.73–20,306.07) 5.44 (4.96–5.71) 2701.48 (726.13–4684.52) 0.78 (0.21–1.34) 930.7 (435.1–1509.89) 0.23 (0.11–0.37) −1.28 (−1.47 - −1.1) −0.35 (−0.6 - −0.1) −0.95 (−1.23 - −0.68) Southern Latin America 1527.13 (1393.44–1669.42) 5.98 (5.46–6.54) 151.62 (35.38–285.87) 0.59 (0.14–1.12) 33.67 (15.96–55.35) 0.13 (0.06–0.21) 2284.02 (2093.7–2454.77) 4.82 (4.44–5.17) 319.58 (83.97–567) 0.68 (0.18–1.2) 90.06 (44.1–146.22) 0.17 (0.09–0.28) −0.51 (−0.68 - −0.35) 0.65 (0.47–0.84) 2.12 (1.63–2.62) Western Europe 26960.76 (25,347.8–28,151.68) 8.31 (7.85–8.65) 2051.28 (420.81–3876.48) 0.63 (0.13–1.2) 2084.11 (1022.7–3227.75) 0.55 (0.27–0.85) 28,235.78 (24,788.44–30,470.63) 5.55 (5.03–5.9) 2895.31 (670.73–5328.72) 0.58 (0.14–1.06) 2461.77 (1151.42–3922.23) 0.39 (0.19–0.63) −1.35 (−1.42 - −1.28) −0.39 (−0.49 - −0.3) −0.83 (−0.95 - −0.7) Andean Latin America 274.71 (221.64–358.29) 2.48 (1.99–3.22) 18.3 (3.04–37.75) 0.16 (0.03–0.33) 6.2 (2.36–12.58) 0.06 (0.02–0.13) 1327.23 (1025.2–1651.42) 4.22 (3.27–5.26) 158.26 (39.3–305.29) 0.5 (0.12–0.97) 25.12 (10.21–48.26) 0.08 (0.03–0.16) 1.77 (1.41–2.13) 3.76 (3.33–4.2) 0.42 (0.13–0.72) Caribbean 432.41 (395.38–528.28) 3.17 (2.91–3.85) 29.96 (6.29–56.78) 0.22 (0.05–0.42) 4.14 (1.89–6.96) 0.03 (0.01–0.05) 1182.62 (1018.56–1400.18) 4.17 (3.59–4.95) 130.41 (31.24–238.34) 0.46 (0.11–0.84) 10.17 (4.36–17.86) 0.03 (0.01–0.06) 0.79 (0.63–0.94) 2.32 (2.1–2.54) 0 (−0.21–0.2) Central Latin America 1624.18 (1575.4–1667.26) 3.54 (3.42–3.64) 144.51 (31.4–271.17) 0.32 (0.07–0.59) 24.81 (12.05–40.15) 0.06 (0.03–0.1) 6732.08 (5926.98–7564.8) 4.9 (4.32–5.5) 923.57 (262.13–1669.17) 0.67 (0.19–1.21) 108.46 (51.33–183.91) 0.08 (0.04–0.14) 1.05 (0.96–1.13) 2.4 (2.3–2.5) 1.02 (0.82–1.21) Tropical Latin America 1878.88 (1797.69–1945.05) 3.7 (3.5–3.84) 145.13 (29.92–282.05) 0.28 (0.06–0.55) 65.32 (31.42–102.47) 0.16 (0.08–0.25) 5608.42 (5170.52–5934.15) 3.97 (3.67–4.2) 645.69 (150.26–1192.46) 0.46 (0.11–0.84) 228.79 (109.21–366.37) 0.16 (0.08–0.26) 0 (−0.12–0.12) 1.24 (1.1–1.37) −0.04 (−0.14–0.06) North Africa and Middle East 2032.91 (1636.08–2849.23) 2.34 (1.88–3.26) 215.03 (43.99–427.39) 0.24 (0.05–0.49) 57.04 (20.8–111.1) 0.08 (0.03–0.15) 7245.72 (5922.15–8441.18) 3.14 (2.54–3.65) 1200.46 (345.2–2095.69) 0.51 (0.15–0.89) 128.11 (42.79–255.41) 0.07 (0.02–0.13) 1.1 (1.03–1.18) 2.53 (2.46–2.6) −0.54 (−0.94 - −0.14) South Asia 7791.8 (5830.64–10,079.53) 2.63 (1.95–3.41) 92.75 (−16.74–213.54) 0.03 (−0.01–0.07) 15.01 (4.44–37.4) 0.01 (0–0.02) 30,585.13 (26,424.78–36,402.65) 3.92 (3.39–4.67) 1302.78 (208.22–2414.01) 0.16 (0.03–0.3) 102.57 (36.34–200) 0.01 (0.01–0.03) 1.16 (1.07–1.26) 5.86 (5.7–6.02) 2.4 (2.19–2.6) East Asia 12257.91 (9320.5–15,675.65) 2.61 (2.02–3.31) 144.64 (−70.01–391.94) 0.03 (−0.02–0.08) 127.81 (48.63–249.44) 0.03 (0.01–0.06) 26,337.19 (19,516.44–34,082.62) 2.33 (1.72–3.01) 1814.16 (355.59–3762.83) 0.16 (0.03–0.33) 370.72 (130.8–700.59) 0.03 (0.01–0.06) −0.9 (−1.09 - −0.72) 5.04 (4.87–5.21) −0.05 (−0.24–0.14) Oceania 22.33 (15.11–30.99) 1.49 (1.03–2) 1.73 (0.33–3.53) 0.11 (0.02–0.22) 0.02 (0–0.03) 0 (0–0) 78.06 (46.55–106.68) 1.97 (1.23–2.64) 7.85 (2.05–14.59) 0.19 (0.05–0.34) 0.04 (0.01–0.09) 0 (0–0) 0.99 (0.89–1.08) 1.91 (1.76–2.06) 0.03 (−0.54–0.59) Southeast Asia 4221.89 (3427.64–5817.51) 2.84 (2.32–3.85) 72.77 (−4.69–160.49) 0.05 (0–0.1) 9.81 (3.23–18.62) 0.01 (0–0.01) 14,523.22 (11,286.29–18,865.47) 3.96 (3.07–5.12) 762.87 (142.29–1448.82) 0.2 (0.04–0.38) 47.1 (17.47–91.34) 0.01 (0.01–0.03) 1.01 (0.93–1.09) 4.96 (4.68–5.25) 1.82 (1.65–1.98) Central Sub-Saharan Africa 265.69 (175.53–412.64) 2.09 (1.38–3.15) 6.08 (0.11–13.85) 0.05 (0–0.1) 0 (0–0) 0 (0–0) 998.05 (560.9–1433.24) 3.1 (1.69–4.42) 61.32 (10.11–125.02) 0.18 (0.03–0.37) 0 (0–0) 0 (0–0) 1.36 (1.17–1.56) 4.7 (4.52–4.87) 3.02 (1.53–4.54) Eastern Sub-Saharan Africa 1537.96 (920.65–2203.8) 3.84 (2.33–5.36) 33.02 (−0.1–70.34) 0.08 (0–0.17) 0 (0–0) 0 (0–0) 5019.73 (3547.73–6178.83) 5.21 (3.74–6.35) 252.78 (41.93–497.61) 0.25 (0.04–0.49) 0 (0–0.04) 0 (0–0) 0.95 (0.87–1.03) 3.84 (3.8–3.89) 8.16 (7.81–8.5) Southern Sub-Saharan Africa 541.08 (424.66–684.66) 3.45 (2.64–4.39) 56.2 (14.07–106.79) 0.36 (0.09–0.68) 13.34 (5.72–26.15) 0.1 (0.04–0.19) 1819.39 (1377.45–2091.06) 5.38 (4.05–6.16) 278.23 (76.36–493.63) 0.81 (0.22–1.43) 54.77 (23.34–98.34) 0.18 (0.08–0.33) 1.63 (1.5–1.77) 2.89 (2.77–3.01) 1.87 (1.2–2.54) Western Sub-Saharan Africa 738.63 (507.56–936.54) 1.66 (1.14–2.1) 32.93 (5–61.48) 0.07 (0.01–0.14) 1 (0–0) 1 (0–0) 2867.87 (1906.15–3686.2) 2.58 (1.69–3.28) 239.31 (50.93–462.37) 0.21 (0.05–0.41) 1 (0–0) 1 (0–0) 1.48 (1.4–1.56) 3.44 (3.37–3.5) 0 (0–0) SDI High SDI 46767.87 (44,013.76–48,556.06) 7.54 (7.15–7.82) 3801.7 (811.75–7120.06) 0.61 (0.13–1.15) 2592.11 (1239.75–4085.09) 0.37 (0.18–0.58) 56,426.76 (50,328.49–60,245.8) 5.08 (4.62–5.37) 6186.8 (1531.13–10,979.34) 0.57 (0.14–1.01) 3396.86 (1600.86–5447.51) 0.25 (0.12–0.4) −1.34 (−1.44 - −1.25) −0.36 (−0.5 - −0.22) −1.05 (−1.18 - −0.92) High-middle SDI 27649.1 (25,350.68–29,468.61) 4.95 (4.54–5.29) 2243.75 (483.65–4206.94) 0.4 (0.09–0.75) 896.32 (441.89–1390.7) 0.16 (0.08–0.25) 44,090.83 (38,883.74–48,926.94) 4.16 (3.68–4.63) 5094.95 (1240.98–9059.8) 0.48 (0.12–0.85) 1428.6 (679.91–2297.45) 0.12 (0.06–0.2) −0.7 (−0.8 - −0.6) 0.47 (0.37–0.58) −0.76 (−0.97 - −0.56) Middle SDI 15049.05 (13,128.93–17,716.58) 2.67 (2.35–3.12) 542.54 (65.34–1064.41) 0.1 (0.01–0.19) 165.39 (75.2–293.18) 0.04 (0.02–0.06) 45,543.21 (39,960.19–51,216.78) 3.18 (2.78–3.57) 3832.58 (903.66–6971.62) 0.26 (0.06–0.48) 575.42 (265.08–971.59) 0.04 (0.02–0.07) 0.32 (0.23–0.41) 3.16 (3.08–3.24) 0.36 (0.19–0.53) Low-middle SDI 7828.94 (6204.9–10,594.05) 2.43 (1.93–3.25) 187.03 (13.39–391.74) 0.06 (0–0.12) 33.63 (14.85–64.74) 0.01 (0.01–0.03) 28,936.78 (25,193.38–34,128.96) 3.72 (3.24–4.4) 1771.25 (357.16–3219.98) 0.22 (0.04–0.41) 165.3 (71.87–285.67) 0.03 (0.01–0.04) 1.34 (1.27–1.4) 4.69 (4.48–4.9) 1.92 (1.83–2.01) Low SDI 3146.55 (2113.07–4510.54) 2.65 (1.78–3.76) 62.43 (0–138.85) 0.05 (0–0.11) 2.59 (0.64–6.55) 0 (0–0.01) 10,381.91 (7906.56–12,360.53) 3.74 (2.87–4.43) 432.55 (67.53–839.64) 0.15 (0.02–0.29) 14.6 (5.66–30.09) 0.01 (0–0.01) 1.06 (0.97–1.15) 3.61 (3.51–3.7) 3.08 (2.93–3.23) Table 2 DALYs and ASDR of Ovarian Cancer in 1990 and 2021, with EAPC 1990 2021 EAPC DALY DALY All Risk Factors High BMI Occupational Exposure to Asbestos All Risk Factors High BMI Occupational Exposure to Asbestos All risk factors High BMI Occupational exposure to asbestos NO ASR NO ASR NO ASR NO ASR NO ASR NO ASR ASDR Global 2909235.57 (2,662,221.04–3,199,426.37) 132.48 (121.34–145.63) 188,874.09 (38,400.57–355,691.42) 8.72 (1.78–16.41) 71,725.80 (34,301.71–112,278.91) 3.41 (1.63–5.36) 5,163,256.30 (4,692,422.55–5,608,304.11) 115.15 (104.58–125.21) 477,248.38 (113,449.26–840,002.14) 10.56 (2.5–18.57) 98,122.28 (47,184.40–156,828.36) 2.1 (1.01–3.36) −0.59 (−0.64 - −0.54) 0.51 (0.45–0.57) −1.49 (−1.62 - −1.37) Region Central Asia 25758.05 (23,408.19–28,171.07) 90.99 (82.6–99.6) 2522.32 (553.92–4677.23) 9.08 (2–16.79) 407.59 (187.65–683.75) 1.44 (0.67–2.43) 61,881.11 (53,807.39–70,556.41) 124.11 (108.08–141.31) 7936.34 (1896.1–14,299.95) 15.77 (3.76–28.49) 839.76 (369.49–1431.95) 1.82 (0.81–3.1) 1.05 (0.9–1.21) 1.81 (1.64–1.98) −0.02 (−0.35–0.31) Central Europe 175946.53 (169,922.58–182,179.8) 221.23 (213.4–228.69) 16,872.6 (3840.92–31,014.49) 20.59 (4.65–38.13) 2206.4 (1064.57–3638.32) 2.52 (1.21–4.18) 215,729.52 (198,220.72–232,085.81) 205.22 (189.37–221.33) 27,712.57 (7172.31–50,229.68) 25.65 (6.53–46.23) 5020.28 (2244.66–8257.83) 3.92 (1.74–6.49) −0.2 (−0.36 - −0.04) 0.72 (0.52–0.92) 2 (1.76–2.23) Eastern Europe 321434.83 (306,640.94–335,970.68) 200.42 (191.08–209.58) 35,232.83 (8317.94–62,486.22) 21.36 (4.99–37.8) 6486.83 (3083.06–10,494.1) 3.55 (1.67–5.77) 332,151.87 (296,367.31–371,968.36) 180.89 (160.79–203.55) 50,055.73 (13,203.03–86,237.98) 26.48 (6.87–45.59) 7971.67 (3797.01–13,155.94) 3.65 (1.72–6.05) −0.44 (−0.62 - −0.25) 0.59 (0.39–0.78) −0.29 (−0.64–0.05) Australasia 31387.98 (29,123.62–33,209.48) 261.75 (242.26–276.49) 2815.67 (599.25–5213.53) 23.68 (5–43.97) 1985.51 (978.43–3230.07) 14.65 (7.16–23.99) 29,401.76 (26,399.3–31,858.63) 116.72 (106.15–125.99) 3935.33 (1040.69–7040.62) 15.67 (4.12–27.86) 2415.46 (1176.64–3849.54) 7.85 (3.85–12.52) −2.5 (−2.83 - −2.16) −1.25 (−1.64 - −0.87) −1.43 (−2.05 - −0.81) High-income Asia Pacific 128562.4 (123,646.42–132,898.81) 118.37 (114.08–122.28) 2550.45 (−282.64–5764.78) 2.29 (−0.28–5.19) 1628.95 (776.37–2668.5) 1.42 (0.67–2.32) 168,116.95 (148,704.1–180,427.51) 98.97 (89.26–104.57) 6116.91 (662.27–12,206.52) 3.5 (0.38–6.99) 3266.01 (1413.31–5540.81) 1.13 (0.51–1.9) −0.63 (−0.7 - −0.55) 1.21 (1.08–1.34) −0.74 (−0.92 - −0.57) High-income North America 388427.43 (371,825.4–399,711.55) 216.72 (208.63–222.32) 41,346.22 (10,085.33–74,963.22) 23.36 (5.74–42.27) 12,621.04 (6006.57–20,284.25) 5.89 (2.8–9.45) 439,443.86 (409,029.05–459,505.05) 139.13 (131.42–145.12) 64,190.4 (17,683.61–111,223.47) 20.45 (5.66–35.38) 15,427.83 (7441.05–24,805.46) 4.01 (1.94–6.44) −1.49 (−1.65 - −1.33) −0.54 (−0.76 - −0.32) −1.39 (−1.64 - −1.13) Southern Latin America 42610.06 (39,167.03–46,563.31) 169.1 (155.56–184.7) 4240.53 (978.24–7969.77) 16.81 (3.87–31.61) 702.52 (332.17–1158.73) 2.68 (1.26–4.42) 60,642.08 (56,166.79–64,794) 137.3 (127.41–146.65) 8626.68 (2304.97–15,146.62) 19.48 (5.21–34.22) 1785.5 (872.4–2884.51) 3.63 (1.77–5.86) −0.51 (−0.67 - −0.36) 0.67 (0.49–0.84) 2.08 (1.6–2.57) Western Europe 658051.38 (626,532.62–683,832.96) 227.51 (217.9–236.02) 50,346.11 (10,327.68–95,161.15) 17.18 (3.53–32.53) 38,271.96 (18,704.01–59,260.84) 10.73 (5.21–16.61) 594,073.8 (542,482.42–629,975.05) 140.16 (131.08–146.93) 62,381.03 (14,564.22–114,043.85) 14.7 (3.42–26.9) 38,751.42 (18,730.7–61,687.73) 6.93 (3.37–10.98) −1.61 (−1.68 - −1.54) −0.62 (−0.73 - −0.52) −1.25 (−1.36 - −1.14) Andean Latin America 9008.36 (7224.92–11,924.08) 73.36 (58.97–96.23) 620.15 (111.23–1285.19) 5.2 (0.93–10.8) 130.99 (47.14–260.43) 1.3 (0.47–2.59) 40,484.05 (30,833.26–50,874.95) 125.6 (95.71–158.01) 5018.35 (1244.55–9643.33) 15.55 (3.86–29.85) 502.99 (196.33–1008.66) 1.64 (0.64–3.29) 1.8 (1.43–2.17) 3.68 (3.24–4.12) 0.31 (0.01–0.61) Caribbean 13265.09 (12,020.12–16,784.88) 93.47 (84.91–116.94) 951.47 (199.37–1788.06) 6.81 (1.44–12.82) 100.42 (45.57–171.61) 0.75 (0.34–1.29) 34,326.12 (29,349.77–41,699.87) 124.35 (106–151.66) 3937.04 (949.55–7222.06) 14.23 (3.43–26.1) 244.28 (101.48–444.29) 0.85 (0.35–1.55) 0.8 (0.65–0.96) 2.28 (2.06–2.51) 0.15 (−0.05–0.36) Central Latin America 54235.28 (52,811.24–55,615.69) 104.05 (101.06–106.84) 4750.06 (1032.77–8901.1) 9.51 (2.09–17.81) 543.92 (263.59–880.66) 1.32 (0.64–2.13) 210,430.41 (183,006.47–237,783.39) 150.76 (131.25–170.19) 29,277.4 (8417.92–52,488.18) 20.87 (5.99–37.44) 2469.57 (1136.07–4258.68) 1.81 (0.84–3.12) 1.19 (1.11–1.26) 2.52 (2.43–2.61) 1.24 (1.06–1.41) Tropical Latin America 61104.72 (58,937.19–63,136.55) 109.27 (105–113) 4626.21 (971.66–9022.5) 8.52 (1.78–16.56) 1352.34 (654.84–2123.56) 2.97 (1.43–4.66) 163,847.06 (153,851.82–172,299.29) 117.39 (110.28–123.42) 19,031.6 (4476.31–34,718.97) 13.52 (3.18–24.66) 4256.61 (2051.34–6749.19) 3 (1.45–4.75) −0.02 (−0.13–0.08) 1.18 (1.06–1.29) −0.08 (−0.17–0.01) North Africa and Middle East 66810.56 (53,277.23–94,960.78) 68.09 (54.2–96.89) 6993.91 (1427.74–13,918.82) 7.27 (1.49–14.33) 1414.06 (509.58–2765.79) 1.71 (0.62–3.4) 225,627.85 (183,817.83–261,748.07) 88.12 (71.92–102.25) 37,560.42 (10,820.44–65,762.34) 14.62 (4.22–25.6) 2785.85 (927.9–5636.84) 1.31 (0.44–2.63) 0.95 (0.88–1.01) 2.37 (2.31–2.42) −1.09 (−1.45 - −0.73) South Asia 264386.13 (200,200.75–344,157.49) 79.51 (59.99–102.65) 3319.66 (−476.81–7496.99) 0.98 (−0.16–2.23) 334.1 (90.38–900.17) 0.13 (0.04–0.34) 960,207.82 (822,850.63–1,142,385.68) 116 (99.82–138.16) 42,615.1 (6815.35–78,757.43) 5.11 (0.82–9.43) 2148.39 (725.31–4254.41) 0.29 (0.1–0.58) 1.09 (1–1.18) 5.61 (5.48–5.75) 2.36 (2.16–2.56) East Asia 416565.35 (301,040.22–542,960.91) 82.65 (61.08–107.1) 4730.85 (−2392.11–12,911.04) 0.97 (−0.47–2.63) 3007.41 (1084.38–6038.8) 0.68 (0.25–1.34) 787,095.89 (580,908.59–1,024,657.54) 72.07 (53.13–94.15) 54,989.1 (10,888.91–112,924.07) 4.86 (0.96–9.99) 7917.31 (2751.95–15,080.89) 0.67 (0.23–1.28) −0.92 (−1.09 - −0.74) 4.99 (4.84–5.14) −0.1 (−0.28–0.08) Oceania 784.5 (516.54–1089.61) 43.87 (29.72–60.65) 62.43 (12.36–126.02) 3.41 (0.66–6.95) 0.43 (0.08–0.93) 0.03 (0.01–0.06) 2755.14 (1580.22–3789.35) 59.04 (35.09–80.86) 282.52 (73.05–533.89) 5.93 (1.54–11.06) 1.01 (0.16–2.33) 0.03 (0.01–0.07) 1 (0.9–1.09) 1.84 (1.68–2) −0.18 (−0.8–0.45) Southeast Asia 150719 (119,298.73–213,939.65) 91.18 (73.07–126.59) 2758.92 (−82.96–6007.07) 1.67 (−0.06–3.64) 262.53 (79.79–510.96) 0.19 (0.06–0.36) 484,774.21 (368,984.4–633,791.17) 126.63 (96.38–165.18) 26,640.24 (5006.87–50,775.37) 6.82 (1.27–12.97) 1190.26 (401.95–2359.35) 0.33 (0.12–0.65) 0.99 (0.91–1.07) 4.74 (4.44–5.04) 1.74 (1.56–1.91) Central Sub-Saharan Africa 8894.43 (5885.42–13,784.3) 60.64 (40.14–93.43) 194.89 (0.91–451.03) 1.35 (0.01–3.08) 0 (0–0) 0 (0–0) 33,664.58 (19,263.61–49,080.06) 90.01 (50.59–129.58) 2048.37 (345.33–4184.32) 5.55 (0.92–11.34) 0 (0–0) 0 (0–0) 1.37 (1.17–1.57) 4.73 (4.56–4.91) 2.76 (1.17–4.36) Eastern Sub-Saharan Africa 51354.72 (30,348.65–74,635.22) 111.66 (66.58–160.61) 1133.35 (11.78–2412.22) 2.48 (0.02–5.26) 0 (0–0.01) 0 (0–0) 170,255.6 (117,552.17–211,891.34) 150.96 (106.18–185.66) 8753.46 (1482.77–17,322.79) 7.84 (1.32–15.4) 0.05 (0–0.45) 0 (0–0) 0.91 (0.83–0.99) 3.74 (3.69–3.79) 7.64 (7.22–8.06) Southern Sub-Saharan Africa 16945.51 (14,149.79–21,269.43) 98.6 (79.59–124.62) 1774.4 (442.33–3342.51) 10.58 (2.68–19.98) 268.8 (113.3–550.66) 1.85 (0.79–3.72) 54,378.62 (41,720.33–63,224.31) 150.23 (114.98–174.11) 8403.83 (2318.31–14,968.63) 23.2 (6.41–41.25) 1128.02 (465.11–2048.84) 3.51 (1.46–6.36) 1.59 (1.45–1.73) 2.79 (2.67–2.9) 1.93 (1.21–2.65) Western Sub-Saharan Africa 22983.27 (15,954.31–29,314.44) 47.14 (32.69–59.94) 1031.05 (162.33–1904.76) 2.18 (0.34–4.04) 1 (0–0) 1 (0–0) 93,968.02 (63,290.63–121,185.07) 72.64 (48.64–93.39) 7735.96 (1632.74–14,871.56) 6.12 (1.3–11.8) 1 (0–0) 1 (0–0) 1.46 (1.37–1.55) 3.34 (3.28–3.41) 0 (0–0) SDI High SDI 1191417.73 (1,141,759.77–1,230,211.16) 208.23 (200.58–214.57) 96,741.78 (20,587.01–180,827.63) 16.78 (3.57–31.36) 47,575.69 (22,826.21–74,729.91) 7.08 (3.39–11.13) 1,275,650.43 (1,173,209.42–1,343,084.89) 133.8 (125.32–140.06) 144,449.46 (36,080.39–255,582.85) 15.13 (3.79–26.82) 54,599.59 (26,156.77–86,834.21) 4.39 (2.12–6.99) −1.48 (−1.57 - −1.39) −0.43 (−0.56 - −0.3) −1.4 (−1.52 - −1.27) High-middle SDI 830373.35 (750,604.24–895,931.53) 149.55 (135.03–161.63) 65,388.64 (13,955.94–121,986.45) 11.71 (2.49–21.84) 19,583.07 (9563.97–30,615.4) 3.41 (1.66–5.33) 1,194,242.16 (1,054,540–1,335,946.43) 119.79 (105.13–134.14) 138,126.25 (33,461.41–244,870.67) 13.54 (3.26–24.13) 27,537.5 (13,178.22–44,881.14) 2.46 (1.18–4.01) −0.87 (−0.96 - −0.79) 0.33 (0.25–0.42) −1.14 (−1.33 - −0.94) Middle SDI 513117.25 (436,885.64–612,210.28) 82.58 (71.58–97.89) 17,976.12 (2083.04–35,888.37) 2.99 (0.36–5.9) 3699.69 (1659.87–6706.45) 0.73 (0.33–1.31) 1,416,148.86 (1,244,404.1–1,587,044.09) 97.76 (85.77–109.48) 121,138.56 (28,726.8–221,614.16) 8.25 (1.95–15.09) 12,075.73 (5469.55–21,055.84) 0.85 (0.39–1.49) 0.31 (0.22–0.4) 3.2 (3.13–3.26) 0.36 (0.22–0.51) Low-middle SDI 265368.44 (208,670.41–360,506.65) 73.74 (58.18–99.58) 6283.22 (459.39–13,116.94) 1.78 (0.13–3.74) 732.43 (308.55–1449.23) 0.27 (0.12–0.53) 925,850.81 (802,377.33–1,091,390.66) 111.4 (96.54–131.2) 57,905.91 (11,972.87–104,670.77) 6.96 (1.43–12.58) 3459.69 (1490.6–5974.76) 0.49 (0.21–0.84) 1.29 (1.23–1.34) 4.69 (4.48–4.9) 1.93 (1.83–2.04) Low SDI 104802.06 (70,719.16–151,776.23) 78.39 (52.96–112.38) 2127.12 (24.1–4780.7) 1.6 (0.01–3.56) 63.28 (14.98–166.66) 0.06 (0.01–0.15) 345,369.48 (259,740.87–413,461.42) 108.72 (82.67–129.4) 14,942.61 (2348.9–28,748.14) 4.68 (0.74–9.04) 329.68 (121.19–693.36) 0.14 (0.05–0.28) 0.99 (0.89–1.08) 3.55 (3.45–3.65) 2.9 (2.77–3.04)
+Mortality and ASMR of Ovarian Cancer in 1990 and 2021, with EAPC
+1990
+2021
+EAPC
+Death
+All Risk Factors
+High BMI
+Occupational Exposure to Asbestos
+All Risk Factors
+High BMI
+Occupational Exposure to Asbestos
+All risk factors
+High BMI
+Occupational Exposure to Asbestos
+NO
+ASR
+NO
+ASR
+NO
+ASR
+NO
+ASR
+NO
+ASR
+NO
+ASR
+ASMR
+Global
+100584.11 (92970.81–109,087.03)
+4.73 (4.38–5.12)
+6850.05 (1422.80–12,864.70)
+0.32 (0.07–0.61)
+3693.5162 (1777.67–5799.28)
+0.18 (0.09–0.29)
+185,608.68 (167,961.98–201,012.67)
+4.06 (3.67–4.4)
+17,344.47 (4141.33114605735–30,810.137095524)
+0.38 (0.09–0.67)
+5587.17 (2714.36–9035.54)
+0.12 (0.06–0.19)
+−0.62 (−0.68 - −0.57)
+0.4 (0.32–0.47)
+−1.22 (−1.36 - −1.09)
+Region
+Central Asia
+798.4 (722.19–878.87)
+2.86 (2.58–3.15)
+81.68 (17.92–150.9)
+0.29 (0.06–0.54)
+16.67 (7.68–27.52)
+0.06 (0.03–0.1)
+1949.03 (1705.34–2219.78)
+4.08 (3.57–4.63)
+254.8 (62.21–458.9)
+0.53 (0.13–0.95)
+35.69 (16.12–60.2)
+0.08 (0.04–0.14)
+1.25 (1.1–1.41)
+1.95 (1.79–2.11)
+0.34 (0.04–0.64)
+Central Europe
+5976.81 (5755.75–6198.58)
+7.22 (6.96–7.48)
+594.79 (137.6–1094.62)
+0.7 (0.16–1.3)
+98 (47.27–161.01)
+0.11 (0.05–0.18)
+8859.82 (8105.86–9520.21)
+7.4 (6.79–7.96)
+1137.68 (294.75–2060.05)
+0.94 (0.24–1.71)
+251.56 (114.26–411.55)
+0.18 (0.08–0.3)
+0.11 (−0.05–0.27)
+0.95 (0.76–1.14)
+2.15 (1.93–2.37)
+Eastern Europe
+10677.91 (10,189.48–11,130.51)
+6.25 (5.96–6.52)
+1181.87 (280.29–2096.22)
+0.68 (0.16–1.21)
+260.84 (125.02–419.48)
+0.14 (0.07–0.23)
+12,184.22 (10,926.45–13,636.73)
+6 (5.37–6.73)
+1832.12 (491.01–3169.15)
+0.89 (0.24–1.54)
+361.56 (173.61–598.39)
+0.16 (0.08–0.26)
+−0.21 (−0.39 - −0.02)
+0.81 (0.61–1.01)
+0.11 (−0.22–0.45)
+Australasia
+1226.49 (1128.47–1309.93)
+9.64 (8.89–10.26)
+106.75 (22.28–197.62)
+0.85 (0.18–1.58)
+103.78 (51.86–167.43)
+0.74 (0.37–1.19)
+1336.81 (1147.13–1464.84)
+4.68 (4.12–5.08)
+172.94 (44.53–314.78)
+0.62 (0.16–1.1)
+151.08 (72.06–240.73)
+0.46 (0.22–0.73)
+−2.23 (−2.57 - −1.88)
+−0.96 (−1.36 - −0.57)
+−0.9 (−1.53 - −0.28)
+High-income Asia Pacific
+4169.1 (3944.31–4339.45)
+3.75 (3.55–3.9)
+84.58 (−8.64–188.99)
+0.07 (−0.01–0.17)
+82.61 (39.32–135.92)
+0.07 (0.03–0.12)
+7200.86 (6064.3–7968.63)
+3.26 (2.87–3.5)
+252.87 (21.85–508.19)
+0.12 (0.01–0.24)
+228.89 (92.09–399.06)
+0.06 (0.03–0.11)
+−0.53 (−0.61 - −0.45)
+1.27 (1.14–1.4)
+−0.42 (−0.61 - −0.23)
+High-income North America
+15627.11 (14,550.66–16,222.8)
+7.95 (7.5–8.21)
+1604.42 (382.12–2944.24)
+0.83 (0.2–1.52)
+690.33 (326.32–1115.45)
+0.3 (0.14–0.49)
+19,233.43 (17,244.73–20,306.07)
+5.44 (4.96–5.71)
+2701.48 (726.13–4684.52)
+0.78 (0.21–1.34)
+930.7 (435.1–1509.89)
+0.23 (0.11–0.37)
+−1.28 (−1.47 - −1.1)
+−0.35 (−0.6 - −0.1)
+−0.95 (−1.23 - −0.68)
+Southern Latin America
+1527.13 (1393.44–1669.42)
+5.98 (5.46–6.54)
+151.62 (35.38–285.87)
+0.59 (0.14–1.12)
+33.67 (15.96–55.35)
+0.13 (0.06–0.21)
+2284.02 (2093.7–2454.77)
+4.82 (4.44–5.17)
+319.58 (83.97–567)
+0.68 (0.18–1.2)
+90.06 (44.1–146.22)
+0.17 (0.09–0.28)
+−0.51 (−0.68 - −0.35)
+0.65 (0.47–0.84)
+2.12 (1.63–2.62)
+Western Europe
+26960.76 (25,347.8–28,151.68)
+8.31 (7.85–8.65)
+2051.28 (420.81–3876.48)
+0.63 (0.13–1.2)
+2084.11 (1022.7–3227.75)
+0.55 (0.27–0.85)
+28,235.78 (24,788.44–30,470.63)
+5.55 (5.03–5.9)
+2895.31 (670.73–5328.72)
+0.58 (0.14–1.06)
+2461.77 (1151.42–3922.23)
+0.39 (0.19–0.63)
+−1.35 (−1.42 - −1.28)
+−0.39 (−0.49 - −0.3)
+−0.83 (−0.95 - −0.7)
+Andean Latin America
+274.71 (221.64–358.29)
+2.48 (1.99–3.22)
+18.3 (3.04–37.75)
+0.16 (0.03–0.33)
+6.2 (2.36–12.58)
+0.06 (0.02–0.13)
+1327.23 (1025.2–1651.42)
+4.22 (3.27–5.26)
+158.26 (39.3–305.29)
+0.5 (0.12–0.97)
+25.12 (10.21–48.26)
+0.08 (0.03–0.16)
+1.77 (1.41–2.13)
+3.76 (3.33–4.2)
+0.42 (0.13–0.72)
+Caribbean
+432.41 (395.38–528.28)
+3.17 (2.91–3.85)
+29.96 (6.29–56.78)
+0.22 (0.05–0.42)
+4.14 (1.89–6.96)
+0.03 (0.01–0.05)
+1182.62 (1018.56–1400.18)
+4.17 (3.59–4.95)
+130.41 (31.24–238.34)
+0.46 (0.11–0.84)
+10.17 (4.36–17.86)
+0.03 (0.01–0.06)
+0.79 (0.63–0.94)
+2.32 (2.1–2.54)
+0 (−0.21–0.2)
+Central Latin America
+1624.18 (1575.4–1667.26)
+3.54 (3.42–3.64)
+144.51 (31.4–271.17)
+0.32 (0.07–0.59)
+24.81 (12.05–40.15)
+0.06 (0.03–0.1)
+6732.08 (5926.98–7564.8)
+4.9 (4.32–5.5)
+923.57 (262.13–1669.17)
+0.67 (0.19–1.21)
+108.46 (51.33–183.91)
+0.08 (0.04–0.14)
+1.05 (0.96–1.13)
+2.4 (2.3–2.5)
+1.02 (0.82–1.21)
+Tropical Latin America
+1878.88 (1797.69–1945.05)
+3.7 (3.5–3.84)
+145.13 (29.92–282.05)
+0.28 (0.06–0.55)
+65.32 (31.42–102.47)
+0.16 (0.08–0.25)
+5608.42 (5170.52–5934.15)
+3.97 (3.67–4.2)
+645.69 (150.26–1192.46)
+0.46 (0.11–0.84)
+228.79 (109.21–366.37)
+0.16 (0.08–0.26)
+0 (−0.12–0.12)
+1.24 (1.1–1.37)
+−0.04 (−0.14–0.06)
+North Africa and Middle East
+2032.91 (1636.08–2849.23)
+2.34 (1.88–3.26)
+215.03 (43.99–427.39)
+0.24 (0.05–0.49)
+57.04 (20.8–111.1)
+0.08 (0.03–0.15)
+7245.72 (5922.15–8441.18)
+3.14 (2.54–3.65)
+1200.46 (345.2–2095.69)
+0.51 (0.15–0.89)
+128.11 (42.79–255.41)
+0.07 (0.02–0.13)
+1.1 (1.03–1.18)
+2.53 (2.46–2.6)
+−0.54 (−0.94 - −0.14)
+South Asia
+7791.8 (5830.64–10,079.53)
+2.63 (1.95–3.41)
+92.75 (−16.74–213.54)
+0.03 (−0.01–0.07)
+15.01 (4.44–37.4)
+0.01 (0–0.02)
+30,585.13 (26,424.78–36,402.65)
+3.92 (3.39–4.67)
+1302.78 (208.22–2414.01)
+0.16 (0.03–0.3)
+102.57 (36.34–200)
+0.01 (0.01–0.03)
+1.16 (1.07–1.26)
+5.86 (5.7–6.02)
+2.4 (2.19–2.6)
+East Asia
+12257.91 (9320.5–15,675.65)
+2.61 (2.02–3.31)
+144.64 (−70.01–391.94)
+0.03 (−0.02–0.08)
+127.81 (48.63–249.44)
+0.03 (0.01–0.06)
+26,337.19 (19,516.44–34,082.62)
+2.33 (1.72–3.01)
+1814.16 (355.59–3762.83)
+0.16 (0.03–0.33)
+370.72 (130.8–700.59)
+0.03 (0.01–0.06)
+−0.9 (−1.09 - −0.72)
+5.04 (4.87–5.21)
+−0.05 (−0.24–0.14)
+Oceania
+22.33 (15.11–30.99)
+1.49 (1.03–2)
+1.73 (0.33–3.53)
+0.11 (0.02–0.22)
+0.02 (0–0.03)
+0 (0–0)
+78.06 (46.55–106.68)
+1.97 (1.23–2.64)
+7.85 (2.05–14.59)
+0.19 (0.05–0.34)
+0.04 (0.01–0.09)
+0 (0–0)
+0.99 (0.89–1.08)
+1.91 (1.76–2.06)
+0.03 (−0.54–0.59)
+Southeast Asia
+4221.89 (3427.64–5817.51)
+2.84 (2.32–3.85)
+72.77 (−4.69–160.49)
+0.05 (0–0.1)
+9.81 (3.23–18.62)
+0.01 (0–0.01)
+14,523.22 (11,286.29–18,865.47)
+3.96 (3.07–5.12)
+762.87 (142.29–1448.82)
+0.2 (0.04–0.38)
+47.1 (17.47–91.34)
+0.01 (0.01–0.03)
+1.01 (0.93–1.09)
+4.96 (4.68–5.25)
+1.82 (1.65–1.98)
+Central Sub-Saharan Africa
+265.69 (175.53–412.64)
+2.09 (1.38–3.15)
+6.08 (0.11–13.85)
+0.05 (0–0.1)
+0 (0–0)
+998.05 (560.9–1433.24)
+3.1 (1.69–4.42)
+61.32 (10.11–125.02)
+0.18 (0.03–0.37)
+0 (0–0)
+1.36 (1.17–1.56)
+4.7 (4.52–4.87)
+3.02 (1.53–4.54)
+Eastern Sub-Saharan Africa
+1537.96 (920.65–2203.8)
+3.84 (2.33–5.36)
+33.02 (−0.1–70.34)
+0.08 (0–0.17)
+0 (0–0)
+5019.73 (3547.73–6178.83)
+5.21 (3.74–6.35)
+252.78 (41.93–497.61)
+0.25 (0.04–0.49)
+0 (0–0.04)
+0 (0–0)
+0.95 (0.87–1.03)
+3.84 (3.8–3.89)
+8.16 (7.81–8.5)
+Southern Sub-Saharan Africa
+541.08 (424.66–684.66)
+3.45 (2.64–4.39)
+56.2 (14.07–106.79)
+0.36 (0.09–0.68)
+13.34 (5.72–26.15)
+0.1 (0.04–0.19)
+1819.39 (1377.45–2091.06)
+5.38 (4.05–6.16)
+278.23 (76.36–493.63)
+0.81 (0.22–1.43)
+54.77 (23.34–98.34)
+0.18 (0.08–0.33)
+1.63 (1.5–1.77)
+2.89 (2.77–3.01)
+1.87 (1.2–2.54)
+Western Sub-Saharan Africa
+738.63 (507.56–936.54)
+1.66 (1.14–2.1)
+32.93 (5–61.48)
+0.07 (0.01–0.14)
+1 (0–0)
+2867.87 (1906.15–3686.2)
+2.58 (1.69–3.28)
+239.31 (50.93–462.37)
+0.21 (0.05–0.41)
+1 (0–0)
+1.48 (1.4–1.56)
+3.44 (3.37–3.5)
+0 (0–0)
+SDI
+High SDI
+46767.87 (44,013.76–48,556.06)
+7.54 (7.15–7.82)
+3801.7 (811.75–7120.06)
+0.61 (0.13–1.15)
+2592.11 (1239.75–4085.09)
+0.37 (0.18–0.58)
+56,426.76 (50,328.49–60,245.8)
+5.08 (4.62–5.37)
+6186.8 (1531.13–10,979.34)
+0.57 (0.14–1.01)
+3396.86 (1600.86–5447.51)
+0.25 (0.12–0.4)
+−1.34 (−1.44 - −1.25)
+−0.36 (−0.5 - −0.22)
+−1.05 (−1.18 - −0.92)
+High-middle SDI
+27649.1 (25,350.68–29,468.61)
+4.95 (4.54–5.29)
+2243.75 (483.65–4206.94)
+0.4 (0.09–0.75)
+896.32 (441.89–1390.7)
+0.16 (0.08–0.25)
+44,090.83 (38,883.74–48,926.94)
+4.16 (3.68–4.63)
+5094.95 (1240.98–9059.8)
+0.48 (0.12–0.85)
+1428.6 (679.91–2297.45)
+0.12 (0.06–0.2)
+−0.7 (−0.8 - −0.6)
+0.47 (0.37–0.58)
+−0.76 (−0.97 - −0.56)
+Middle SDI
+15049.05 (13,128.93–17,716.58)
+2.67 (2.35–3.12)
+542.54 (65.34–1064.41)
+0.1 (0.01–0.19)
+165.39 (75.2–293.18)
+0.04 (0.02–0.06)
+45,543.21 (39,960.19–51,216.78)
+3.18 (2.78–3.57)
+3832.58 (903.66–6971.62)
+0.26 (0.06–0.48)
+575.42 (265.08–971.59)
+0.04 (0.02–0.07)
+0.32 (0.23–0.41)
+3.16 (3.08–3.24)
+0.36 (0.19–0.53)
+Low-middle SDI
+7828.94 (6204.9–10,594.05)
+2.43 (1.93–3.25)
+187.03 (13.39–391.74)
+0.06 (0–0.12)
+33.63 (14.85–64.74)
+0.01 (0.01–0.03)
+28,936.78 (25,193.38–34,128.96)
+3.72 (3.24–4.4)
+1771.25 (357.16–3219.98)
+0.22 (0.04–0.41)
+165.3 (71.87–285.67)
+0.03 (0.01–0.04)
+1.34 (1.27–1.4)
+4.69 (4.48–4.9)
+1.92 (1.83–2.01)
+Low SDI
+3146.55 (2113.07–4510.54)
+2.65 (1.78–3.76)
+62.43 (0–138.85)
+0.05 (0–0.11)
+2.59 (0.64–6.55)
+0 (0–0.01)
+10,381.91 (7906.56–12,360.53)
+3.74 (2.87–4.43)
+432.55 (67.53–839.64)
+0.15 (0.02–0.29)
+14.6 (5.66–30.09)
+0.01 (0–0.01)
+1.06 (0.97–1.15)
+3.61 (3.51–3.7)
+3.08 (2.93–3.23)
+DALYs and ASDR of Ovarian Cancer in 1990 and 2021, with EAPC
+1990
+2021
+EAPC
+DALY
+All Risk Factors
+High BMI
+Occupational Exposure to Asbestos
+All Risk Factors
+High BMI
+Occupational Exposure to Asbestos
+All risk factors
+High BMI
+Occupational exposure to asbestos
+NO
+ASR
+NO
+ASR
+NO
+ASR
+NO
+ASR
+NO
+ASR
+NO
+ASR
+ASDR
+Global
+2909235.57 (2,662,221.04–3,199,426.37)
+132.48 (121.34–145.63)
+188,874.09 (38,400.57–355,691.42)
+8.72 (1.78–16.41)
+71,725.80 (34,301.71–112,278.91)
+3.41 (1.63–5.36)
+5,163,256.30 (4,692,422.55–5,608,304.11)
+115.15 (104.58–125.21)
+477,248.38 (113,449.26–840,002.14)
+10.56 (2.5–18.57)
+98,122.28 (47,184.40–156,828.36)
+2.1 (1.01–3.36)
+−0.59 (−0.64 - −0.54)
+0.51 (0.45–0.57)
+−1.49 (−1.62 - −1.37)
+Region
+Central Asia
+25758.05 (23,408.19–28,171.07)
+90.99 (82.6–99.6)
+2522.32 (553.92–4677.23)
+9.08 (2–16.79)
+407.59 (187.65–683.75)
+1.44 (0.67–2.43)
+61,881.11 (53,807.39–70,556.41)
+124.11 (108.08–141.31)
+7936.34 (1896.1–14,299.95)
+15.77 (3.76–28.49)
+839.76 (369.49–1431.95)
+1.82 (0.81–3.1)
+1.05 (0.9–1.21)
+1.81 (1.64–1.98)
+−0.02 (−0.35–0.31)
+Central Europe
+175946.53 (169,922.58–182,179.8)
+221.23 (213.4–228.69)
+16,872.6 (3840.92–31,014.49)
+20.59 (4.65–38.13)
+2206.4 (1064.57–3638.32)
+2.52 (1.21–4.18)
+215,729.52 (198,220.72–232,085.81)
+205.22 (189.37–221.33)
+27,712.57 (7172.31–50,229.68)
+25.65 (6.53–46.23)
+5020.28 (2244.66–8257.83)
+3.92 (1.74–6.49)
+−0.2 (−0.36 - −0.04)
+0.72 (0.52–0.92)
+2 (1.76–2.23)
+Eastern Europe
+321434.83 (306,640.94–335,970.68)
+200.42 (191.08–209.58)
+35,232.83 (8317.94–62,486.22)
+21.36 (4.99–37.8)
+6486.83 (3083.06–10,494.1)
+3.55 (1.67–5.77)
+332,151.87 (296,367.31–371,968.36)
+180.89 (160.79–203.55)
+50,055.73 (13,203.03–86,237.98)
+26.48 (6.87–45.59)
+7971.67 (3797.01–13,155.94)
+3.65 (1.72–6.05)
+−0.44 (−0.62 - −0.25)
+0.59 (0.39–0.78)
+−0.29 (−0.64–0.05)
+Australasia
+31387.98 (29,123.62–33,209.48)
+261.75 (242.26–276.49)
+2815.67 (599.25–5213.53)
+23.68 (5–43.97)
+1985.51 (978.43–3230.07)
+14.65 (7.16–23.99)
+29,401.76 (26,399.3–31,858.63)
+116.72 (106.15–125.99)
+3935.33 (1040.69–7040.62)
+15.67 (4.12–27.86)
+2415.46 (1176.64–3849.54)
+7.85 (3.85–12.52)
+−2.5 (−2.83 - −2.16)
+−1.25 (−1.64 - −0.87)
+−1.43 (−2.05 - −0.81)
+High-income Asia Pacific
+128562.4 (123,646.42–132,898.81)
+118.37 (114.08–122.28)
+2550.45 (−282.64–5764.78)
+2.29 (−0.28–5.19)
+1628.95 (776.37–2668.5)
+1.42 (0.67–2.32)
+168,116.95 (148,704.1–180,427.51)
+98.97 (89.26–104.57)
+6116.91 (662.27–12,206.52)
+3.5 (0.38–6.99)
+3266.01 (1413.31–5540.81)
+1.13 (0.51–1.9)
+−0.63 (−0.7 - −0.55)
+1.21 (1.08–1.34)
+−0.74 (−0.92 - −0.57)
+High-income North America
+388427.43 (371,825.4–399,711.55)
+216.72 (208.63–222.32)
+41,346.22 (10,085.33–74,963.22)
+23.36 (5.74–42.27)
+12,621.04 (6006.57–20,284.25)
+5.89 (2.8–9.45)
+439,443.86 (409,029.05–459,505.05)
+139.13 (131.42–145.12)
+64,190.4 (17,683.61–111,223.47)
+20.45 (5.66–35.38)
+15,427.83 (7441.05–24,805.46)
+4.01 (1.94–6.44)
+−1.49 (−1.65 - −1.33)
+−0.54 (−0.76 - −0.32)
+−1.39 (−1.64 - −1.13)
+Southern Latin America
+42610.06 (39,167.03–46,563.31)
+169.1 (155.56–184.7)
+4240.53 (978.24–7969.77)
+16.81 (3.87–31.61)
+702.52 (332.17–1158.73)
+2.68 (1.26–4.42)
+60,642.08 (56,166.79–64,794)
+137.3 (127.41–146.65)
+8626.68 (2304.97–15,146.62)
+19.48 (5.21–34.22)
+1785.5 (872.4–2884.51)
+3.63 (1.77–5.86)
+−0.51 (−0.67 - −0.36)
+0.67 (0.49–0.84)
+2.08 (1.6–2.57)
+Western Europe
+658051.38 (626,532.62–683,832.96)
+227.51 (217.9–236.02)
+50,346.11 (10,327.68–95,161.15)
+17.18 (3.53–32.53)
+38,271.96 (18,704.01–59,260.84)
+10.73 (5.21–16.61)
+594,073.8 (542,482.42–629,975.05)
+140.16 (131.08–146.93)
+62,381.03 (14,564.22–114,043.85)
+14.7 (3.42–26.9)
+38,751.42 (18,730.7–61,687.73)
+6.93 (3.37–10.98)
+−1.61 (−1.68 - −1.54)
+−0.62 (−0.73 - −0.52)
+−1.25 (−1.36 - −1.14)
+Andean Latin America
+9008.36 (7224.92–11,924.08)
+73.36 (58.97–96.23)
+620.15 (111.23–1285.19)
+5.2 (0.93–10.8)
+130.99 (47.14–260.43)
+1.3 (0.47–2.59)
+40,484.05 (30,833.26–50,874.95)
+125.6 (95.71–158.01)
+5018.35 (1244.55–9643.33)
+15.55 (3.86–29.85)
+502.99 (196.33–1008.66)
+1.64 (0.64–3.29)
+1.8 (1.43–2.17)
+3.68 (3.24–4.12)
+0.31 (0.01–0.61)
+Caribbean
+13265.09 (12,020.12–16,784.88)
+93.47 (84.91–116.94)
+951.47 (199.37–1788.06)
+6.81 (1.44–12.82)
+100.42 (45.57–171.61)
+0.75 (0.34–1.29)
+34,326.12 (29,349.77–41,699.87)
+124.35 (106–151.66)
+3937.04 (949.55–7222.06)
+14.23 (3.43–26.1)
+244.28 (101.48–444.29)
+0.85 (0.35–1.55)
+0.8 (0.65–0.96)
+2.28 (2.06–2.51)
+0.15 (−0.05–0.36)
+Central Latin America
+54235.28 (52,811.24–55,615.69)
+104.05 (101.06–106.84)
+4750.06 (1032.77–8901.1)
+9.51 (2.09–17.81)
+543.92 (263.59–880.66)
+1.32 (0.64–2.13)
+210,430.41 (183,006.47–237,783.39)
+150.76 (131.25–170.19)
+29,277.4 (8417.92–52,488.18)
+20.87 (5.99–37.44)
+2469.57 (1136.07–4258.68)
+1.81 (0.84–3.12)
+1.19 (1.11–1.26)
+2.52 (2.43–2.61)
+1.24 (1.06–1.41)
+Tropical Latin America
+61104.72 (58,937.19–63,136.55)
+109.27 (105–113)
+4626.21 (971.66–9022.5)
+8.52 (1.78–16.56)
+1352.34 (654.84–2123.56)
+2.97 (1.43–4.66)
+163,847.06 (153,851.82–172,299.29)
+117.39 (110.28–123.42)
+19,031.6 (4476.31–34,718.97)
+13.52 (3.18–24.66)
+4256.61 (2051.34–6749.19)
+3 (1.45–4.75)
+−0.02 (−0.13–0.08)
+1.18 (1.06–1.29)
+−0.08 (−0.17–0.01)
+North Africa and Middle East
+66810.56 (53,277.23–94,960.78)
+68.09 (54.2–96.89)
+6993.91 (1427.74–13,918.82)
+7.27 (1.49–14.33)
+1414.06 (509.58–2765.79)
+1.71 (0.62–3.4)
+225,627.85 (183,817.83–261,748.07)
+88.12 (71.92–102.25)
+37,560.42 (10,820.44–65,762.34)
+14.62 (4.22–25.6)
+2785.85 (927.9–5636.84)
+1.31 (0.44–2.63)
+0.95 (0.88–1.01)
+2.37 (2.31–2.42)
+−1.09 (−1.45 - −0.73)
+South Asia
+264386.13 (200,200.75–344,157.49)
+79.51 (59.99–102.65)
+3319.66 (−476.81–7496.99)
+0.98 (−0.16–2.23)
+334.1 (90.38–900.17)
+0.13 (0.04–0.34)
+960,207.82 (822,850.63–1,142,385.68)
+116 (99.82–138.16)
+42,615.1 (6815.35–78,757.43)
+5.11 (0.82–9.43)
+2148.39 (725.31–4254.41)
+0.29 (0.1–0.58)
+1.09 (1–1.18)
+5.61 (5.48–5.75)
+2.36 (2.16–2.56)
+East Asia
+416565.35 (301,040.22–542,960.91)
+82.65 (61.08–107.1)
+4730.85 (−2392.11–12,911.04)
+0.97 (−0.47–2.63)
+3007.41 (1084.38–6038.8)
+0.68 (0.25–1.34)
+787,095.89 (580,908.59–1,024,657.54)
+72.07 (53.13–94.15)
+54,989.1 (10,888.91–112,924.07)
+4.86 (0.96–9.99)
+7917.31 (2751.95–15,080.89)
+0.67 (0.23–1.28)
+−0.92 (−1.09 - −0.74)
+4.99 (4.84–5.14)
+−0.1 (−0.28–0.08)
+Oceania
+784.5 (516.54–1089.61)
+43.87 (29.72–60.65)
+62.43 (12.36–126.02)
+3.41 (0.66–6.95)
+0.43 (0.08–0.93)
+0.03 (0.01–0.06)
+2755.14 (1580.22–3789.35)
+59.04 (35.09–80.86)
+282.52 (73.05–533.89)
+5.93 (1.54–11.06)
+1.01 (0.16–2.33)
+0.03 (0.01–0.07)
+1 (0.9–1.09)
+1.84 (1.68–2)
+−0.18 (−0.8–0.45)
+Southeast Asia
+150719 (119,298.73–213,939.65)
+91.18 (73.07–126.59)
+2758.92 (−82.96–6007.07)
+1.67 (−0.06–3.64)
+262.53 (79.79–510.96)
+0.19 (0.06–0.36)
+484,774.21 (368,984.4–633,791.17)
+126.63 (96.38–165.18)
+26,640.24 (5006.87–50,775.37)
+6.82 (1.27–12.97)
+1190.26 (401.95–2359.35)
+0.33 (0.12–0.65)
+0.99 (0.91–1.07)
+4.74 (4.44–5.04)
+1.74 (1.56–1.91)
+Central Sub-Saharan Africa
+8894.43 (5885.42–13,784.3)
+60.64 (40.14–93.43)
+194.89 (0.91–451.03)
+1.35 (0.01–3.08)
+0 (0–0)
+33,664.58 (19,263.61–49,080.06)
+90.01 (50.59–129.58)
+2048.37 (345.33–4184.32)
+5.55 (0.92–11.34)
+0 (0–0)
+1.37 (1.17–1.57)
+4.73 (4.56–4.91)
+2.76 (1.17–4.36)
+Eastern Sub-Saharan Africa
+51354.72 (30,348.65–74,635.22)
+111.66 (66.58–160.61)
+1133.35 (11.78–2412.22)
+2.48 (0.02–5.26)
+0 (0–0.01)
+0 (0–0)
+170,255.6 (117,552.17–211,891.34)
+150.96 (106.18–185.66)
+8753.46 (1482.77–17,322.79)
+7.84 (1.32–15.4)
+0.05 (0–0.45)
+0 (0–0)
+0.91 (0.83–0.99)
+3.74 (3.69–3.79)
+7.64 (7.22–8.06)
+Southern Sub-Saharan Africa
+16945.51 (14,149.79–21,269.43)
+98.6 (79.59–124.62)
+1774.4 (442.33–3342.51)
+10.58 (2.68–19.98)
+268.8 (113.3–550.66)
+1.85 (0.79–3.72)
+54,378.62 (41,720.33–63,224.31)
+150.23 (114.98–174.11)
+8403.83 (2318.31–14,968.63)
+23.2 (6.41–41.25)
+1128.02 (465.11–2048.84)
+3.51 (1.46–6.36)
+1.59 (1.45–1.73)
+2.79 (2.67–2.9)
+1.93 (1.21–2.65)
+Western Sub-Saharan Africa
+22983.27 (15,954.31–29,314.44)
+47.14 (32.69–59.94)
+1031.05 (162.33–1904.76)
+2.18 (0.34–4.04)
+1 (0–0)
+93,968.02 (63,290.63–121,185.07)
+72.64 (48.64–93.39)
+7735.96 (1632.74–14,871.56)
+6.12 (1.3–11.8)
+1 (0–0)
+1.46 (1.37–1.55)
+3.34 (3.28–3.41)
+0 (0–0)
+SDI
+High SDI
+1191417.73 (1,141,759.77–1,230,211.16)
+208.23 (200.58–214.57)
+96,741.78 (20,587.01–180,827.63)
+16.78 (3.57–31.36)
+47,575.69 (22,826.21–74,729.91)
+7.08 (3.39–11.13)
+1,275,650.43 (1,173,209.42–1,343,084.89)
+133.8 (125.32–140.06)
+144,449.46 (36,080.39–255,582.85)
+15.13 (3.79–26.82)
+54,599.59 (26,156.77–86,834.21)
+4.39 (2.12–6.99)
+−1.48 (−1.57 - −1.39)
+−0.43 (−0.56 - −0.3)
+−1.4 (−1.52 - −1.27)
+High-middle SDI
+830373.35 (750,604.24–895,931.53)
+149.55 (135.03–161.63)
+65,388.64 (13,955.94–121,986.45)
+11.71 (2.49–21.84)
+19,583.07 (9563.97–30,615.4)
+3.41 (1.66–5.33)
+1,194,242.16 (1,054,540–1,335,946.43)
+119.79 (105.13–134.14)
+138,126.25 (33,461.41–244,870.67)
+13.54 (3.26–24.13)
+27,537.5 (13,178.22–44,881.14)
+2.46 (1.18–4.01)
+−0.87 (−0.96 - −0.79)
+0.33 (0.25–0.42)
+−1.14 (−1.33 - −0.94)
+Middle SDI
+513117.25 (436,885.64–612,210.28)
+82.58 (71.58–97.89)
+17,976.12 (2083.04–35,888.37)
+2.99 (0.36–5.9)
+3699.69 (1659.87–6706.45)
+0.73 (0.33–1.31)
+1,416,148.86 (1,244,404.1–1,587,044.09)
+97.76 (85.77–109.48)
+121,138.56 (28,726.8–221,614.16)
+8.25 (1.95–15.09)
+12,075.73 (5469.55–21,055.84)
+0.85 (0.39–1.49)
+0.31 (0.22–0.4)
+3.2 (3.13–3.26)
+0.36 (0.22–0.51)
+Low-middle SDI
+265368.44 (208,670.41–360,506.65)
+73.74 (58.18–99.58)
+6283.22 (459.39–13,116.94)
+1.78 (0.13–3.74)
+732.43 (308.55–1449.23)
+0.27 (0.12–0.53)
+925,850.81 (802,377.33–1,091,390.66)
+111.4 (96.54–131.2)
+57,905.91 (11,972.87–104,670.77)
+6.96 (1.43–12.58)
+3459.69 (1490.6–5974.76)
+0.49 (0.21–0.84)
+1.29 (1.23–1.34)
+4.69 (4.48–4.9)
+1.93 (1.83–2.04)
+Low SDI
+104802.06 (70,719.16–151,776.23)
+78.39 (52.96–112.38)
+2127.12 (24.1–4780.7)
+1.6 (0.01–3.56)
+63.28 (14.98–166.66)
+0.06 (0.01–0.15)
+345,369.48 (259,740.87–413,461.42)
+108.72 (82.67–129.4)
+14,942.61 (2348.9–28,748.14)
+4.68 (0.74–9.04)
+329.68 (121.19–693.36)
+0.14 (0.05–0.28)
+0.99 (0.89–1.08)
+3.55 (3.45–3.65)
+2.9 (2.77–3.04)
+Burden Trend by Age ( Figures 1 and 2 )
+By 2021, the mortality rates of ovarian cancer of women attributable to all risk factors, high BMI and occupational exposure to asbestos have increased with age. The mortality peak for all risk factors and high BMI was concentrated in the 65–69 age demographic. In comparison, the highest death toll from occupational asbestos exposure was found in the 75–79 age group. Regarding DALYs for ovarian cancer, the peak linked to all risk factors and high BMI was concentrated in the 50–54 age group, while the highest burden from occupational asbestos exposure occurred among those aged 65–69. Figure 1 Death rate and number of ovarian cancer for all risk factors, high BMI and occupational exposure to asbestos, divided by age groups. ( A ) Death rate for all risk factors, high BMI and occupational exposure to asbestos; ( B ) death number for all risk factors, high BMI and occupational exposure to asbestos. A grouped bar chart showing ovarian cancer death rate and death number by age group and risk factor. Image A features three bar charts on death rates by age. The left chart, ′All risk factors of Deaths,′ shows rates per 100,000 people, starting near 0 at ages 15-19 and rising to about 42 at 95+. The top-right chart, ′High body-mass index of Deaths,′ ranges from 0 to 6, increasing from near 0 at younger ages to about 3.5 at 95+. The bottom-right chart, ′Occupational exposure to asbestos of Deaths,′ also ranges from 0 to 6, with bars rising from near 0 to about 4 at 95+. Image B also has three bar charts. The left chart, ′All risk factors of Deaths,′ shows cases rising from under 1000 at ages 15-19 to a peak of about 26000 at 70-74, then dropping to about 4000 at 95+. The top-right chart, ′High body-mass index of Deaths,′ ranges from 0 to 4000, peaking at about 3500 at 70-74, then declining to about 200 at 95+. The bottom-right chart, ′Occupational exposure to asbestos of Deaths,′ ranges from 0 to 1500, peaking at about 1200 at 80-84, then declining to about 150 at 95+. Figure 2 DALYs rate and number of ovarian cancer for all risk factors, high BMI and occupational exposure to asbestos, divided by age groups. ( A ) DALYs rate for all risk factors, high BMI and occupational exposure to asbestos; ( B ) DALYs number for all risk factors, high BMI and occupational exposure to asbestos. Three bar charts show ovarian cancer DALYs by age for all risks, high body-mass index and asbestos. Image A contains three bar charts. The left chart, ′All risk factors of DALYs,′ displays age groups from 5-9 to 95+ on the X-axis and crude rates per 100,000 on the Y-axis, peaking at 450 for ages 70-74, then declining to 350 at 95+. The top-right chart, ′High body-mass index of DALYs,′ ranges from 0 to 80, peaking at 45 for ages 65-74, then dropping to 30 at 95+. The bottom-right chart, ′Occupational exposure to asbestos of DALYs,′ ranges from 0 to 50, peaking at 30 for ages 80-95+. Image B also features three bar charts. The left chart, ′All risk factors of DALYs,′ shows cases from 0 to 800,000, peaking at 720,000 for ages 55-59, then decreasing to 10,000 at 95+. The top-right chart, ′High body-mass index of DALYs,′ ranges from 0 to 100,000, peaking at 75,000 for ages 55-59, then decreasing to 1,000 at 95+. The bottom-right chart, ′Occupational exposure to asbestos of DALYs,′ ranges from 0 to 30,000, peaking at 20,000 for ages 70-74, then decreasing to 1,000 at 95+.
+Death rate and number of ovarian cancer for all risk factors, high BMI and occupational exposure to asbestos, divided by age groups. ( A ) Death rate for all risk factors, high BMI and occupational exposure to asbestos; ( B ) death number for all risk factors, high BMI and occupational exposure to asbestos.
+DALYs rate and number of ovarian cancer for all risk factors, high BMI and occupational exposure to asbestos, divided by age groups. ( A ) DALYs rate for all risk factors, high BMI and occupational exposure to asbestos; ( B ) DALYs number for all risk factors, high BMI and occupational exposure to asbestos.
+The Burden at Regional Levels ( Tables 1 and 2 )
+The highest death toll from ovarian cancer linked to all risk factors in 2021 was observed in South Asia, with 30,585 cases, whereas Central Europe led in ASMR. In 2021, attributable to either high BMI or occupational asbestos exposure, the region with the highest number of deaths from ovarian cancer is Western Europe. However, the ASMR for high BMI was highest in Central Europe, while Australasia led in ASMR for occupational asbestos exposure. For all risk factors, Australasia achieved the greatest reduction in ASMR between 1990 and 2021, reflected in an EAPC of −2.23 (95% CI, −2.57–-1.88). Conversely, Latin America experienced the most rapid increase in ASMR, with an EAPC of 1.77 (95% CI, 1.41–2.13). South Asia saw the highest increases in ASMR related to high BMI (EAPC: 5.86; 95% CI, 5.70–6.02) and occupational asbestos exposure (EAPC: 2.40; 95% CI, 2.19–2.60). By contrast, High-income North America posted the largest decline for occupational asbestos exposure, with an EAPC of −0.95 (95% CI, −1.23 to −0.68) ( Table 1 ).
+Further analysis was conducted to examine DALY trends at the regional level. In 2021, South Asia recorded the highest number of DALYs attributable to all risk factors, reaching nearly 960,000, while Central Europe had the highest ASDR at 205.22 per 100,000 population. For high BMI-related ovarian cancer in 2021, the greatest DALY burden was observed in High-income North America (64,190 cases), while the highest ASDR was found in Eastern Europe, with 26.48 per 100,000 people. Due to occupational exposure to asbestos, western Europe showed the highest number of DALYs with 38751, and the highest ASDR region was Australasia with 7.85 per 100000 people. Andean Latin America suffered the largest increase in the number of ovarian cancer DALYs attributable to all risk factors, with a rise of 1.8%, during the twenty years before 2021. Regarding ASDR trends, South Asia recorded the most notable increase related to high BMI, with an EAPC of 5.61 (95% CI, 5.48–5.75), while Eastern Sub-Saharan Africa exhibited the steepest rise for occupational asbestos exposure, with an EAPC of 7.64 (95% CI, 7.22–8.06) ( Table 2 ).
+Different Burden Across SDI Levels ( Tables 1 and 2 )
+In 2021, for ovarian cancer, high SDI regions bore the greatest number of death (46767.87), ASMR (7.54 per 100,000 people), DALYs cases (1191417.73) and ASDR (208.23 per 100,000 people), attributable to all risk factors. The high SDI region also has the heaviest burden due to high BMI and occupational exposure to asbestos. However, a decreasing trend was observed from 1990 to 2021 in high SDI regions across all key metrics of ovarian cancer—mortality, ASMR, DALY count, and ASDR—attributable to the three aspects mentioned above. For all risk factors and occupational asbestos exposure, high-middle SDI regions recorded decreases in mortality, ASMR, DALYs count, and ASDR between 1990 and 2021. Inversely, the burden attributable to high BMI exhibited a rising trend. In middle, low-middle, and low SDI regions, increasing trends were detected from 1990 to 2021 in ovarian cancer mortality, ASMR, DALYs count, and ASDR attributable to all of the three aspects.
+Different Burden Across Country Levels ( Figures 3 and 4 )
+At the country level, China recorded the highest number of ovarian cancer deaths (25143.85) and DALYs cases (750548.80) attributable to all risk factors in 2021. For high BMI and occupational asbestos exposure, the United States topped in both death and DALY numbers. Regarding ASMR and ASDR, the United Arab Emirates ranked first for all risk factors and high BMI, while the United Kingdom led in ASMR and ASDR attributable to occupational asbestos exposure. Figure 3 ASMR and mortality of ovarian cancer in 204 countries and territories in 2021. ( A ) ASMR for all risk factors; ( B ) Death numbers for all risk factors; ( C ) ASMR for high BMI; ( D ) Death numbers for high BMI; ( E ) ASMR for occupational exposure to asbestos; ( F ) Death numbers for occupational exposure to asbestos. Six thematic world choropleth maps of ovarian cancer ASMR and death counts by risk factor, 2021. The image A showing a thematic world choropleth map titled “All risk factors of Deaths Age-standardized Rate.” North is at the top. Countries are shaded by binned legend ranges (lower values to higher values), plus an “NA” category. Legend bins: 0.0 to 3.0; 3.1 to 4.1; 4.2 to 5.4; 5.5 to 6.2; 6.3 to 8.1; 8.2 to 12.2; NA. The image B showing a thematic world choropleth map titled “All risk factors of Deaths Number of cases.” North is at the top. Countries are shaded by binned legend ranges (lower values to higher values), plus “NA.” Legend bins: 0.0 to 1264.4; 1264.5 to 5006.6; 5006.7 to 10194.4; 10194.5 to 25143.85; 25143.86 to 28769.4; 28769.5 to 8706.9; 8706.9 to 25143.9; NA. The image C showing a thematic world choropleth map titled “High body-mass index of Deaths Age-standardized Rate.” North is at the top. Countries are shaded by binned legend ranges (lower values to higher values), plus “NA.” Legend bins: 0.0 to 0.2; 0.2 to 0.4; 0.4 to 0.6; 0.6 to 0.8; 0.8 to 3.8; NA. The image D showing a thematic world choropleth map titled “High body-mass index of Deaths Number of cases.” North is at the top. Countries are shaded by binned legend ranges (lower values to higher values), plus “NA.” Legend bins: 0.0 to 11.7; 11.7 to 46.3; 46.3 to 150.5; 150.5 to 523.9; 523.9 to 1239.9; 1239.9 to 2648.5; NA. The image E showing a thematic world choropleth map titled “Occupational exposure to asbestos of Deaths Age-standardized Rate.” North is at the top. Countries are shaded by binned legend ranges (lower values to higher values), plus “NA.” Legend bins: 0.0 to 0.1; 0.1 to 0.2; 0.2 to 0.3; 0.3 to 0.9; NA. The image F showing a thematic world choropleth map titled “Occupational exposure to asbestos of Deaths Number of cases.” North is at the top. Countries are shaded by binned legend ranges (lower values to higher values), plus “NA.” Legend bins: 0.0 to 0.1; 0.1 to 0.5; 0.5 to 16.3; 16.3 to 172.5; 172.5 to 281.7; 281.7 to 812.7; NA. Across all six maps, small inset maps appear below each main map, labeled: “Caribbean and Central America,” “Persian Gulf,” “Balkan Peninsula,” “Southeast Asia,” “Northern Europe,” “West Africa,” and “Eastern Mediterranean.” Insets provide zoomed regional views using the same legend categories as their corresponding main map. Figure 4 ASDR and DALYs number of ovarian cancer in 204 countries and territories in 2021. ( A ) ASDR for all risk factors; ( B ) DALYs numbers for all risk factors; ( C ) ASDR for high BMI; ( D ) DALYs numbers for high BMI; ( E ) ASDR for occupational exposure to asbestos; ( F ) DALYs numbers for occupational exposure to asbestos. Six thematic world choropleth maps of ovarian cancer DALYs by risk factor in 2021. The image A showing a thematic world choropleth map titled “All risk factors of DALYs Age-standardized Rate.” North is at the top. Countries are shaded by increasing DALYs age-standardized rate from low to high across 7 legend classes: 19.7 to 67.8; 67.8 to 100.8; 100.8 to 115.8; 115.8 to 124.5; 124.5 to 174.2; 174.2 to 438.2; NA. Higher classes appear across much of North America, northern Europe and northern Asia; lower classes appear across much of Africa and parts of South and Southeast Asia. Insets show: Caribbean and Central America; Persian Gulf; Balkan Peninsula; Southeast Asia; Northern Europe; West Africa; Eastern Mediterranean. The image B showing a thematic world choropleth map titled “All risk factors of DALYs Number of cases.” North is at the top. Countries are shaded by increasing DALYs number of cases from low to high across 7 legend classes: 0.94 to 4043.4; 4043.4 to 14371.7; 14371.7 to 31707.2; 31707.2 to 63481.1; 63481.1 to 127362.7; 127362.7 to 750548.8; NA. Higher classes concentrate in large-population areas of eastern and southern Asia and in North America; lower classes dominate much of Africa and many smaller countries. The same seven inset regions appear. The image C showing a thematic world choropleth map titled “High body-mass index of DALYs Age-standardized Rate.” North is at the top. Legend classes (low to high) are: 0.7 to 5.9; 5.9 to 12.2; 12.2 to 17.7; 17.7 to 23.5; 23.5 to 30.2; NA. Higher classes appear in North America, northern Europe and parts of western Asia; lower classes appear across much of Africa and parts of South and Southeast Asia. The same seven inset regions appear. The image D showing a thematic world choropleth map titled “High body-mass index of DALYs Number of cases.” North is at the top. Legend classes (low to high) are: 0.1 to 306.0; 306.0 to 1232.0; 1232.0 to 5750.7; 5750.7 to 15073.8; 15073.8 to 50769.8; 50769.8 to 58748.9; NA. Higher classes cluster in eastern and southern Asia and North America; lower classes dominate much of Africa and many smaller countries. The same seven inset regions appear. The image E showing a thematic world choropleth map titled “Occupational exposure to asbestos of DALYs Age-standardized Rate.” North is at the top. Legend classes (low to high) are: 0.0 to 0.1; 0.1 to 0.7; 0.7 to 2.9; 2.9 to 4.8; 4.8 to 8.8; 8.8 to 14.2; NA. Higher classes appear across parts of North America, northern Europe and northern Asia; lower classes appear across much of Africa and parts of South and Southeast Asia. The same seven inset regions appear. The image F showing a thematic world choropleth map titled “Occupational exposure to asbestos of DALYs Number of cases.” North is at the top. Legend classes (low to high) are: 0.0 to 3.1; 3.1 to 18.8; 18.8 to 76.2; 76.2 to 192.2; 192.2 to 551.8; 551.8 to 13541.4; NA. Higher classes concentrate in North America and parts of eastern Asia; lower classes dominate much of Africa and many smaller countries. The same seven inset regions appear.
+ASMR and mortality of ovarian cancer in 204 countries and territories in 2021. ( A ) ASMR for all risk factors; ( B ) Death numbers for all risk factors; ( C ) ASMR for high BMI; ( D ) Death numbers for high BMI; ( E ) ASMR for occupational exposure to asbestos; ( F ) Death numbers for occupational exposure to asbestos.
+ASDR and DALYs number of ovarian cancer in 204 countries and territories in 2021. ( A ) ASDR for all risk factors; ( B ) DALYs numbers for all risk factors; ( C ) ASDR for high BMI; ( D ) DALYs numbers for high BMI; ( E ) ASDR for occupational exposure to asbestos; ( F ) DALYs numbers for occupational exposure to asbestos.
+Predictions of the Global Trend to 2036 ( Figures 5 and 6 )
+As shown in Figures 5 and 6 , the ASMR and ASDR for ovarian cancer attributable to all risk factors and occupational exposure to asbestos are projected to show a gradually declining trend in the coming years. For all risk factors combined, a modest decline is anticipated, with the ASMR decreasing from 5.69 per 100,000 people in 2021 to 5.455 per 100,000 people in 2036, alongside a corresponding drop in ASDR from 115.149 to 111.429 per 100,000 people. A more substantial reduction is predicted for occupational exposure to asbestos, where the ASMR is expected to fall to 0.123 per 100,000 people (down from 0.188 in 2021), and the ASDR to 2.312 per 100,000 people (down from 3.334). Conversely, a slight upward trend is foreseen for ovarian cancer burden linked to high BMI. Over the same period, the ASMR attributable to high BMI is projected to increase to 0.731 per 100,000 people, while the corresponding ASDR is estimated to reach 20.929 per 100,000 people. Figure 5 Trend in ASMR from 2022 to 2036. ( A ) all risk factors; ( B ) high BMI; ( C ) occupational exposure to asbestos. The projected trend is shown by the blue line, with the grey area representing the 95% confidence interval. A vertical grey dashed line marks the divide between the historical data (1990–2021) on the left and the forecast (2021–2036) on the right. A set of three line graphs showing female age-standardized mortality rate trends by risk factor over time. Image A: Line graph titled ′All risk factors of Deaths of Female′ shows mortality rates from 1990 to 2036. Rates decline from 6.3 in 1990 to 5.0 in 2021, with a forecast to 5.45 by 2036. Image B: ′High body-mass index of Deaths of Female′ graph shows rates rising from 0.52 in 1990 to 0.60 in 2021, projected to reach 0.73 by 2036. Image C: ′Occupational exposure to asbestos of Deaths of Female′ graph shows rates decreasing from 0.29 in 1990 to 0.19 in 2021, with a forecast to 0.12 by 2036. Figure 6 Trend in ASDR from 2022 to 2036. ( A ) all risk factors; ( B ) high BMI; ( C ) occupational exposure to asbestos. The projected trend is shown by the blue line, with the grey area representing the 95% confidence interval. A vertical grey dashed line marks the divide between the historical data (1990–2021) on the left and the forecast (2021–2036) on the right. A set of three line graphs showing female disability adjusted life years trends by risk factor over time. Image A shows a line graph titled ′All risk factors of disability adjusted life years of Female.′ The x-axis spans 1990 to 2036 and the y-axis ranges from 80 to 140. The line decreases from 125 in 1990 to 92 in 2021. A dashed line at 2021 marks the start of a forecast, spreading from 80 to 140 by 2036. Image B depicts ′High body mass index of disability adjusted life years of Female.′ The x-axis is 1990 to 2036 and the y-axis is 12 to 30. The line rises from 14 in 1990 to 18 in 2021. Post-2021, the forecast centers at 18, reaching 22 by 2036, with a spread from 16 to 30. Image C illustrates ′Occupational exposure to asbestos of disability adjusted life years of Female.′ The x-axis covers 1990 to 2036 and the y-axis is 1 to 6. The line drops from 5.8 in 1990 to 3.2 in 2021. After 2021, the forecast centers at 3.2, declining to 2.2 by 2036, with a spread from 1.6 to 3.0.
+Trend in ASMR from 2022 to 2036. ( A ) all risk factors; ( B ) high BMI; ( C ) occupational exposure to asbestos. The projected trend is shown by the blue line, with the grey area representing the 95% confidence interval. A vertical grey dashed line marks the divide between the historical data (1990–2021) on the left and the forecast (2021–2036) on the right.
+Trend in ASDR from 2022 to 2036. ( A ) all risk factors; ( B ) high BMI; ( C ) occupational exposure to asbestos. The projected trend is shown by the blue line, with the grey area representing the 95% confidence interval. A vertical grey dashed line marks the divide between the historical data (1990–2021) on the left and the forecast (2021–2036) on the right.
+Cross-National Health Inequality ( Figures 7 and 8 )
+For all risk factors, the SII for DALYs rose from 186.96 per 100,000 in 1990 to 208.7 per 100,000 in 2021, reflecting a positive association between DALY rates and SDI levels. For high BMI, the SII values for DALYs stood at 17.72 per 100,000 in 1990 and 29.9 per 100,000 in 2021. The SII for DALYs due to occupational asbestos exposure—3.06 per 100,000 in 1990 and 5.44 per 100,000 in 2021—showed an upward trajectory. However, the concentration curve showed that relative inequality between countries had decreased. For all risk factors, in 1990 and 2021, the CI for DALYs were −0.34 and −0.13, respectively. The CI for DALYs attributable to high BMI increased from −0.57 to −0.26 between 1990 and 2021. Regarding occupational exposure to asbestos, the CI for DALYs stood at −0.7 in 1990 and rose to −0.55 by 2021 ( Figure 7 ). Figure 7 Healthy inequality analysis of DALYs. ( A ) all risk factors; ( B ) high BMI; ( C ) occupational exposure to asbestos. Nine graphs on DALYs inequality by SDI, risk factors, high BMI, asbestos trends and concentration curves. Panel A1: Scatter plot for all risk factors of DALYs. X-axis: Relative rank by SDI; Y-axis: Cumulative DALYs per 100,000. Slope Index of Inequality: 1990 is 186.96, 2021 is 208.7. Larger markers indicate higher population. Panel A2: Concentration curve for all risk factors. X-axis: Cumulative population by SDI; Y-axis: Cumulative DALYs. Indices: 1990 is -0.34, 2021 is -0.13. Curve lies below equality line, indicating inequality. Panel A3: Time trend for all risk factors. X-axis: Year; Y-axis: Slope Index of Inequality. Trend shows increase from 1990 to 2021. Panel B1: Scatter plot for high BMI. X-axis: Relative rank by SDI; Y-axis: Cumulative DALYs per 100,000. Slope Index: 1990 is 17.72, 2021 is 29.9. Panel B2: Concentration curve for high BMI. Indices: 1990 is -0.57, 2021 is -0.26. Panel B3: Time trend for high BMI. Trend shows increase. Panel C1: Scatter plot for asbestos exposure. Slope Index: 1990 is 3.06, 2021 is 5.44. Panel C2: Concentration curve for asbestos. Indices: 1990 is -0.7, 2021 is -0.55. Panel C3: Time trend for asbestos. Trend shows increase. Each row shows how inequality changes over time and across risk factors, with visual differentiation by color and marker size. Figure 8 Healthy inequality analysis of deaths. ( A ) all risk factors; ( B ) high BMI; ( C ) occupational exposure to asbestos. Graphs of death inequality trends for risk factors: high BMI, asbestos exposure, 1990-2021. The image contains three sets of graphs labeled A, B and C, each with three graphs. For each set: 1) Scatter plot shows death rate per 100,000 against SDI rank. Slope Index of Inequality (SII) values: A: 1990: 6.78, 2021: 9.47; B: 1990: 0.65, 2021: 1.24; C: 1990: 0.13, 2021: 0.28. Larger points indicate larger populations. 2) Concentration curve shows cumulative deaths by SDI percent. Concentration Index values: A: 1990: -0.41, 2021: -0.2; B: 1990: -0.6, 2021: -0.32; C: 1990: -0.73, 2021: -0.59. The diagonal line represents equality. 3) Time trend graph shows SII over years from 1990 to 2021. All graphs indicate increasing inequality over time. Color and line styles differentiate years, with larger points representing larger populations. Overall, inequality increases for all risk factors, high BMI and asbestos exposure, with deaths more concentrated in lower SDI regions.
+Healthy inequality analysis of DALYs. ( A ) all risk factors; ( B ) high BMI; ( C ) occupational exposure to asbestos.
+Healthy inequality analysis of deaths. ( A ) all risk factors; ( B ) high BMI; ( C ) occupational exposure to asbestos.
+The health disparities of ovarian cancer about death showed a similar trend. The Slope Index of Inequality (SII) for death increased for all risk factors combined (from 6.78 to 9.47), for high BMI (from 0.65 to 1.24), and for occupational asbestos exposure (from 0.13 to 0.28) from 1990 to 2021. This trend in absolute inequalities (SII) showed a positive correlation with the SDI. Conversely, concentration indices (CI) revealed a decrease in relative inequality. The CI for all risk factors improved from −0.41 to −0.2. Similarly, the CI for high BMI-related death rose from −0.6 to −0.32, and for asbestos exposure, from −0.73 to −0.59 ( Figure 8 ).
+Two-Sample MR Analysis
+Following a selection process, 12 variables were determined to be relevant for examining causal links to ovarian cancer. The resulting associations are visualized in Figure 9 . Using the IVW method, we identified positive causal associations with ovarian cancer risk for HIP (OR=1.29, 95% CI [1.13, 1.48]), visceral adiposity (OR=1.22, 95% CI [1.07, 1.38]), and waist circumference (WC) (OR=1.28, 95% CI [1.10, 1.48]). These findings suggest that poorer physical condition correlates with increased ovarian cancer susceptibility. The results obtained with the IVW method were corroborated by both the maximum likelihood and weighted median approaches (P < 0.05 for both methods). For the other variable factors, multiple MR methods (IVW, maximum likelihood, and WM) were similarly employed. Among the factors investigated, alcohol intake frequency, childhood BMI, hip circumference adjusted for body mass index (HIPadjBMI), and lifetime smoking were found to be positively associated with ovarian cancer, as demonstrated by two MR methods including IVW. On the contrary, alcohol use disorder was negatively correlated with ovarian cancer (OR=0.91, 95% CI [0.83, 0.99]), proved by IVW, maximum likelihood and WM. While dried fruit intake, education, fresh fruit intake and magnesium were negatively related to ovarian cancer, verified by two methods including IVW. Heterogeneity was detected by Cochran’s Q test in alcohol intake frequency, education, fresh fruit intake, HIPadjBMI, and visceral adiposity. (P < 0.05). After correcting for outliers identified by the MR-PRESSO test, the conclusion of the association did not change ( Table 3 ). We calculated their P-values of the intercept by MR-Egger regression and found no pleiotropy (P > 0.05) ( Table 3 ). The leave-one-out analysis supported these conclusions ( Figure 10a–10l ). In conclusion, our discovery of causal relationships was reliable. Table 3 MR Sensitivity Analyses of Associations Between Variable Factors and Ovarian Cancer Exposure Egger Intercept p Value Q P -value MR-PRESSO MR-PRESSO Global P-Value Alcohol intake frequency 0.84 0.004 0.0065 0.798 Childhood bmi 0.86 0.595 0.5785 HIP 0.65 0.032 0.533 HIPadjBMI 0.401 0.0003 <5e-04 0.067 Lifetime smoking 0.57 0.744 0.751 Visceral adiposity 0.62 3.29E-05 <5e-04 0.863 Waist circumference 0.87 0.093 0.1125 Alcohol use disorder 0.27 0.7563 0.796 Dried fruit intake 0.25 0.135 0.109 Education 0.43 4.13E-05 0.0015 0.126 Fresh fruit intake 0.89 0.003 0.0035 0.214 Mg 0.66 0.511 Figure 9 Analysis of the relationship between the variable factors and the risk of ovarian cancer. A forest plot of odds ratios for ovarian cancer across 12 characteristics using three methods. A forest plot table displays characteristics, SNPs, odds ratios (95% CI) and P values, with a forest plot on the right. The x-axis shows odds ratios from 0 to 2, with a reference line at 1. The y-axis lists 12 characteristics, each with three rows: Inverse variance weighted, Maximum likelihood, Weighted median. Key findings include: Alcohol intake frequency: 1.20 (1.03–1.40), P 0.022; Childhood BMI: 1.22 (1.07–1.39), P 0.004; HIP: 1.29 (1.13–1.48), P 2.3e-4; HIPadjBMI: 1.21 (1.04–1.39), P 0.012; Lifetime smoking: 1.21 (1.01–1.46), P 0.044; Visceral adiposity: 1.22 (1.07–1.38), P 0.003; Waist circumference: 1.28 (1.10–1.48), P 0.002; Alcohol use disorder: 0.91 (0.83–0.99), P 0.028; Dried fruit intake: 0.61 (0.41–0.92), P 0.017; Education: 0.86 (0.78–0.95), P 0.002; Fresh fruit intake: 0.49 (0.26–0.91), P 0.024; Mg: 0.04 (0.00–0.69), P 0.026. Each row is represented by a square point estimate with a horizontal confidence interval line at the odds ratio values. Abbreviation : HIPadjBMI, hip circumference adjusted for body mass index. Figure 10 Leave-one-out sensitivity analysis for alcohol intake frequency ( a ), alcohol use disorder ( b ), childhood BMI ( c ), dried fruit intake ( d ), education ( e ), fresh fruit intake ( f ), HIPadjBMI ( g ), Hip ( h ), lifetime smoking ( i ), Mg ( j ), visceral adiposity ( k ), and waist circumference ( l ) on ovarian cancer. Twelve forest plots showing leave-one-out sensitivity analyses for twelve risk factors on ovarian cancer. Twelve forest plots analyze ovarian cancer sensitivity, each showing SNP identifiers on the y-axis and effect estimates on the x-axis, with a null line and summary row labeled ′All.′ Plot 1: Alcohol intake frequency, x-axis from -0.1 to 0.4, stable estimates. Plot 2: Alcohol use disorder, x-axis from -0.20 to 0.05, estimates near/below null. Plot 3: Childhood BMI, x-axis from 0.0 to 0.3, generally positive estimates. Plot 4: Dried fruit intake, x-axis from -1.00 to 0.00, consistently negative estimates. Plot 5: Education, x-axis from -0.50 to 0.25, negative clustering. Plot 6: Fresh fruit intake, x-axis from -0.5 to 0.1. Plot 7: HIPadjBMI, x-axis from 0.0 to 0.3. Plot 8: Hip, x-axis from 0.0 to 0.4. Plot 9: Lifetime smoking, x-axis from 0.0 to 0.1. Plot 10: Magnesium, x-axis from -0.5 to 0.1. Plot 11: Visceral adiposity, x-axis from 0.0 to 0.4. Plot 12: Waist circumference, x-axis from 0.0 to 0.4. All plots feature dot estimates with horizontal confidence intervals. Abbreviation : WC, waist circumference.
+MR Sensitivity Analyses of Associations Between Variable Factors and Ovarian Cancer
+Exposure
+Egger Intercept p Value
+Q P -value
+MR-PRESSO
+MR-PRESSO Global P-Value
+Alcohol intake frequency
+0.84
+0.004
+0.0065
+0.798
+Childhood bmi
+0.86
+0.595
+0.5785
+HIP
+0.65
+0.032
+0.533
+HIPadjBMI
+0.401
+0.0003
+<5e-04
+0.067
+Lifetime smoking
+0.57
+0.744
+0.751
+Visceral adiposity
+0.62
+3.29E-05
+<5e-04
+0.863
+Waist circumference
+0.87
+0.093
+0.1125
+Alcohol use disorder
+0.27
+0.7563
+0.796
+Dried fruit intake
+0.25
+0.135
+0.109
+Education
+0.43
+4.13E-05
+0.0015
+0.126
+Fresh fruit intake
+0.89
+0.003
+0.0035
+0.214
+Mg
+0.66
+0.511
+Analysis of the relationship between the variable factors and the risk of ovarian cancer.
+Leave-one-out sensitivity analysis for alcohol intake frequency ( a ), alcohol use disorder ( b ), childhood BMI ( c ), dried fruit intake ( d ), education ( e ), fresh fruit intake ( f ), HIPadjBMI ( g ), Hip ( h ), lifetime smoking ( i ), Mg ( j ), visceral adiposity ( k ), and waist circumference ( l ) on ovarian cancer.
+Discussion
+Ovarian cancer (OC) threatens women’s physical conditions seriously and poses a significant obstacle to the management of health due to their rising rates of incidence and mortality. 9 Thus, it places a heavy financial strain on families and society. Our study focuses on risk factors of ovarian cancer, especially high BMI and occupational exposure to asbestos. Accumulating research has identified that high BMI is a key modifiable risk factor for ovarian cancer. 10 A systematic review reveals that women who are exposed to asbestos at work have a roughly twofold greater risk of ovarian cancer diagnosis and death. 11 In our study, we found that owing to all risk factors, globally, from 1990 to 2021, the mortality and the DALYs numbers of ovarian cancer showed an increasing trend, although the ASMR and ASDR revealed a declining tendency. This reflects that, with the continuous advancement of medicine, the burden of ovarian cancer is diminishing gradually. Advances in surgery, chemotherapy and Poly adenosine diphosphate ribose polymerase inhibitors (PARPi) are effective approaches against ovarian cancer. Occupational exposure to asbestos showed a similar result. Due to high BMI, mortality number, DALYs number, the ASMR and ASDR all indicated a tendency of growth. This aligns with the findings of previous studies that high BMI is a significant risk factor for ovarian cancer. And our findings suggested the importance of weight management.
+At the age level, attributable to all risk factors, high BMI, and occupational asbestos exposure, ovarian cancer mortality exhibited an age-dependent increase. Literature reported that as women age, their chance of developing ovarian cancer rises. 12 In fact, in clinical practice, we have observed that elderly patients often present with poorer overall health, exhibit reduced tolerance for surgery and chemotherapy, and are more prone to risks during treatment. Secondly, our findings pinpoint the 65–69 age group as the most affected: they registered the highest mortality counts for all risk factors and high BMI, and also topped in DALYs from occupational asbestos exposure. This underscores the necessity of enhancing healthcare services for the elderly and prioritizing weight management. Thirdly, the highest number of deaths attributable to occupational asbestos exposure was observed in the 75–79 age group. This may be explained by the theory that latency of exposure plays an important role in ovarian cancer risk. 11 The carcinogenic effects of asbestos may show delayed onset, so it has a long-tail effect for elderly. 13
+Owing to its substantial population, South Asia recorded the highest regional figures for ovarian cancer deaths and DALYs associated with all risk factors. And the central Europe showed the highest ASMR and ASDR. This may be due to the greater burden of environmental, lifestyle, and metabolic risk factors in developed nations. And people have lower desire to have children and they use menopausal hormone therapy more. Long-term exposure to high levels of estrogen could increase the risk of ovarian cancer. And the familial predisposition could be a contributing factor. 12 Owing to high BMI, Western Europe bore the greatest number of ovarian cancer deaths in 2021. Meanwhile, the region with the highest ASMR for this risk factor was Central Europe. High-income North America had the highest number of DALYs caused by ovarian cancer in 2021, and Eastern Europe exhibited the highest ASDR. These regions should pay attention to weight management. For occupational exposure to asbestos, western Europe had the highest number of death and DALYs and Australasia exhibited the highest ASMR and ASDR. Two factors may explain this finding: the increased utilization of amphiboles in Europe and an earlier exposure period, both of which contributed to higher exposure levels. 11 This situation might also exist in Australasia.
+Across SDI levels, high SDI regions bore the greatest burden of ovarian cancer from all risk factors combined, recording the highest figures for death number, ASMR, DALYs number, and ASDR. Due to high BMI and occupational exposure to asbestos, the high SDI region likewise bears the greatest burden. From 1990 to 2021, however, high SDI regions experienced declining trends in ovarian cancer mortality, ASMR, DALYs number, and ASDR attributable to all risk factors, high BMI, and occupational asbestos exposure. Their sophisticated healthcare systems, greater levels of education, and easier access to therapies and preventative measures could all be contributing factors to these declines. 3 In low, low-middle, and middle SDI regions, there was an increasing trend in mortality, ASMR, DALYs, and ASDR associated with all risk factors, high BMI and occupational asbestos exposure. This outcome is linked to limited access to healthcare, delays in diagnosis, inadequate treatment, and broader socioeconomic determinants. 9 This finding deserves the attention of policymakers of these regions. The high-middle SDI regions exhibited a declining burden attributable to all risk factors and occupational asbestos exposure while demonstrated an increasing trend linked to high BMI. The gap between high-middle SDI and high SDI regions lies in the latter’s better implementation of weight control interventions. Our findings highlighted the importance of weight loss.
+At the country level, China topped in ovarian cancer deaths and DALYs from all risk factors in 2021. This heavy absolute burden revealed by our GBD data can be contextualized by the country’s rapid socioeconomic transitions. Several factors contribute to the rising burden of ovarian cancer in China: 1) Aging Population: The exponential growth of the elderly, a group more vulnerable to ovarian cancer, is a key driver. 2) Lifestyle Changes: The transition to poor dietary habits and reduced exercise has been linked to increased susceptibility to disease. 3) Reproductive Factors: Nulliparity or low parity, along with delayed first pregnancy, elevate ovarian cancer susceptibility. 4) Lack of Effective Screening: No widely available early detection method leads to frequent late-stage diagnoses. 5) Environmental Exposures: Heightened exposure to endocrine-disrupting chemicals may result from industrial activities and pollution. 6) Healthcare Accessibility: Delayed diagnosis and worse outcomes are linked to unequal access to care, especially in rural regions. 7) Genetic Mutations: BRCA1/BRCA2 gene mutations significantly raise ovarian cancer risk. 14 For both all risk factors and high BMI, the United Arab Emirates topped the list in ASMR and ASDR. The United Kingdom ranked first in ASMR and ASDR resulting from occupational asbestos exposure. So ovarian cancer prevention and control strategies need to be tailored to the specific circumstances of each country.
+Trend prediction serves as a valuable tool for informing health policy formulation and directing resource allocation strategies. BAPC models project a slow rate of decrease in ovarian cancer ASMR and ASDR related to both all risk factors and occupational asbestos exposure over the next decade. Increases in ASMR and ASDR are predicted for ovarian cancer attributable to high BMI over the next decade. This finding also highlights the importance of BMI supervision.
+Health inequality analysis showed that higher-income countries and regions shoulder a heavier ovarian cancer burden. Between 1990 and 2021, the Slope Index of Inequality (SII) for ovarian cancer burden (death rate) showed a rising trend, related to all risk factors, high BMI and occupational exposure to asbestos. This increase signifies that absolute inequalities widened among the 204 countries over this period. In high-SDI countries, patients with ovarian cancer tend to experience longer survival, attributed to improved access to timely diagnosis and more effective therapies. So the SII for DALYs also showed a increasing trend. 15 Conversely, the Concentration Index showed slightly declining relative inequalities, implying regional convergence in ovarian cancer burden distribution. This gap reflects how medical progress has reduced ovarian cancer burden in high-SDI countries, while resource scarcity worsens it in underdeveloped regions. Significant reductions in ovarian cancer mortality and disability could be achieved through reinforced primary care, expanded early detection programs, and improved weight control efforts, with particular emphasis on underserved populations.
+At the individual level, we further investigated modifiable factors that might reduce ovarian cancer burden. Firstly, we explored the association between physical conditions and ovarian cancer. Epidemiological studies have consistently demonstrated that obesity is strongly associated with an elevated risk of multiple cancers, including ovarian cancer. 16 Substantial evidence indicates that the underlying cause of obesity-related tumors is adiposity. While the precise biological mechanisms linking excess body fat to cancer are still being uncovered, molecular epidemiological research has established key contributing pathways. These include dysregulation in sex hormone metabolism, altered insulin signaling, and chronic inflammation within adipose tissue, all of which play significant roles in connecting adiposity to tumor development. High BMI is widely recognized as a risk factor for ovarian cancer. However, BMI belonged to traditional anthropometric measures, is limited in its ability to assess the precise fat accumulation of trunk or the distribution of fat across the extremities. 17 The MR study revealed that HIP, visceral adiposity, waist circumference and HIPadjBMI all had a genetic relationship with ovarian cancer. These findings substantiate the hypothesis that genetic factors significantly influence adiposity and ovarian cancer.
+The global rate of childhood obesity has risen sharply in recent decades, raising serious concerns due to its potential long-term health impacts throughout life. In parallel, numerous international reports have highlighted a troubling rise in the incidence of early-onset cancers—many of which are types previously linked to obesity primarily in adulthood. 18 Our study supported that childhood BMI was positively associated with ovarian cancer. Therefore, a collective change in culture to modify the factors that contribute to obesity in childhood is needed.
+The link between alcohol intake and cancer risk derives primarily from observational epidemiological studies. Earlier meta-analyses, however, revealed no significant link between alcoholism and ovarian cancer. Fu’s study revealed that frequent alcohol consumption is a risk factor of ovarian cancer. 19 Notably, Larsson et al observed statistically significant protective effects of alcohol consumption against the common pathological types of ovarian cancer, including non-mucinous and high-grade serous epithelial cancer. No significant associations were detected for the other ovarian cancer subtypes examined. 20 Our MR study showed that alcohol intake frequency was positively associated with ovarian cancer, which was consistent with Fu’s study. On the other hand, our study exposed that alcohol use disorder was negatively correlated with ovarian cancer, which supported the protective effect for ovarian cancer. This evolution in the findings may indicate advancements in research methodology, more precise measurement of exposure (eg. alcohol intake frequency or alcohol use disorder), or the consideration of genetically susceptible subgroups (eg different subtypes of ovarian cancer). Mechanistically, regular alcohol intake may drive oncogenesis via elevated circulating estrogens and oxidative stress, whereas severe alcohol use disorder often leads to hepatic dysfunction and malnutrition, which might paradoxically lower endogenous estrogen production. This highlights alcohol as a modifiable risk factor that merits additional research.
+Whereas tobacco smoking is strongly linked to cervical carcinogenesis, its association with ovarian cancer remains inconsistent across epidemiological studies. Previous literature reported the association between smoking and ovarian cancers is likely driven by both direct cellular effects and microenvironmental alterations. Nicotine may exert direct pro-cancer effects, with prolonged exposure linked to cancer cell proliferation and epithelial-mesenchymal transition. Moreover, carcinogens in tobacco smoke, including aromatic amines and N-nitrosamines, can foster a tumor-promoting microenvironment by elevating pro-inflammatory factors and chemokines, a change that may also contribute to chemotherapy resistance. 19 Findings from a prospective study suggested that exposure to cigarette smoke during early life could slightly elevate the risk of developing ovarian tumors. 21 Our MR analysis provided evidence supporting a causal link between smoking and ovarian cancer. Therefore, smoking cessation is important in ovarian cancer prevention.
+We further analyzed the association between diet and ovarian cancer. Our MR analysis revealed that dried fruit and fresh fruit consumption may serve as protective factors against ovarian cancer. Experimental data demonstrated that methyllucidone—a bioactive phytochemical derived from dried fruit—inhibits ovarian cancer cell viability in a concentration-dependent manner. Cell cycle arrest at the G2/M phase and the induction of apoptosis are important for tumor growth suppression. The underlying mechanism involves enhanced activity of the intrinsic apoptosis pathway coupled with inhibition of the PI3K/Akt signaling axis. 22 Another prospective cohort study showed that significant correlations between the intake of dietary protein from fruits and a reduced overall mortality rate in ovarian cancer. 23 This suggests that ingestion of more fruit may be beneficial for the prevention of ovarian cancer, but this requires further support from experimental data. This also provides new insights for oncology physicians in their daily patient education, suggesting that consuming more fruits is beneficial for the prevention and treatment of ovarian cancer.
+Additionally, Mendelian randomization analyses supported a protective role for higher educational level against ovarian cancer. A cross-sectional study revealed that higher educational attainment among women is associated with greater awareness of ovarian cancer and its risk factors, enabling them to recognize symptoms early, keep consistent with routine screening, and adopt healthy lifestyles. This, in turn, enhanced early diagnosis and reinforced preventive health behaviors, which is beneficial for prevention and early treatment of ovarian cancer. 24 On the other hand, patients with higher levels of education tend to show greater treatment compliance, which benefits disease management. This finding aligns with the observed decline in disease burden of ovarian cancer in high SDI regions between 1990 and 2021, as previously indicated.
+Notably, we found that magnesium was a protective factor for ovarian cancer. This has been rarely mentioned in the previous literature. Prior research has established that magnesium is essential for cell growth and contributes to cancer pathogenesis via two key mechanisms: preserving genomic stability and modulating critical cellular processes including differentiation, proliferation, apoptosis, and angiogenesis. Gong’s study found that a significant correlation was observed between a higher Ca:Mg intake ratio and poorer survival rates of ovarian cancer while pre-diagnostic magnesium intake did not appear to influence OC survival outcomes. 25 Future investigations are needed to substantiate these findings and uncover the specific molecular mechanisms.
+The most significant highlight of this study is the first-time integration of GBD and MR systems in research on risk factors for ovarian cancer and the MR design effectively reduces confounding factors. While similar integrated GBD-MR frameworks have recently been applied to other gynecologic malignancies like cervical or endometrial cancer, our study uniquely targets ovarian cancer by simultaneously evaluating pervasive lifestyle metrics (such as detailed alcohol consumption patterns) and specific occupational hazards (asbestos). While this study offers several strengths, a number of limitations must be considered. Firstly, despite the continuous updates and expansion of the GBD database, data for all countries and regions worldwide were not available. Secondly, the analysis did not account for histological subtype or disease stage, which may obscure important etiological differences and subtype-specific patterns. Thirdly, given that the MR analysis was limited to individuals of European ancestry, caution is needed when applying these findings to other populations, particularly since our GBD component clearly highlights that Asia carries the greatest absolute burden of ovarian cancer. Finally, we did not apply multiple testing correction because our selection of the 12 risk factors was hypothesis-driven and based on prior observational evidence; however, this exploratory nature means the results should be interpreted with caution. To improve generalizability, future studies should validate the association between risk factors and ovarian cancer across diverse populations.
+In summary, this study clarifies the epidemiology and burden of ovarian cancer, providing actionable insights for policymakers globally. Furthermore, this MR study indicated a probably causal link between adiposity (supported by three MR methods), alcohol intake frequency and smoking (supported by two MR methods) and ovarian cancer, and alcohol use disorder, dried fruit intake, education, and fresh fruit intake may be protective factors for ovarian cancer. Our findings provide a basis for developing targeted public health and clinical approaches to prevent ovarian cancer, particularly emphasizing weight management and smoking cessation strategies in low-to-middle SDI regions where the burden is increasing.
+Acknowledgments
+We are grateful to the Global Burden of Disease study 2021 collaborators and the researchers for making the UK Biobank GWAS summary data available.
+Data Sharing Statement
+The data used in this study are derived from publicly accessible GWAS summary statistics and the GBD 2021 repository, which is accessible via the following portal: http://ghdx.healthdata.org/gbd-2021 . 26 All data analyzed during this study are included in this article and its supplementary information files ( Supplementary Files 1 and 2 ).
+Ethics Approval and Consent to Participate
+This study utilized anonymized data from publicly available sources. This research is exempt from local institutional ethical review based on items 1 and 2 of Article 32 of the Measures for Ethical Review of Life Science and Medical Research Involving Human Subjects dated February 18, 2023, China. The GBD 2021 data received ethical approval with a waiver of informed consent from the University of Washington’s Institutional Review Board; further ethical details are available online. Regarding the GWAS datasets (GSCAN, UK Biobank, OCAC), all original studies obtained written informed consent from participants, explicitly permitting the use of aggregated genetic data for subsequent research.
+Author Contributions
+All authors made a significant contribution to the work reported, whether that is in the conception, study design, execution, acquisition of data, analysis and interpretation, or in all these areas; took part in drafting, revising or critically reviewing the article; gave final approval of the version to be published; have agreed on the journal to which the article has been submitted; and agree to be accountable for all aspects of the work.
+Disclosure
+The authors declare no competing interests in this work.
+References
+Changes in epithelial ovarian cancer recurrence and survival according to treatment paradigm shifts
+Global trends, risk factors, and future projections of ovarian cancer burden among women aged 50 years and older: a systematic analysis based on GBD 2021
+Global, regional, and national burden of ovarian cancer, 1990-2021, and projections to 2050: a cross-sectional analysis of the global burden of disease study 2021
+Plant-based diets and ovarian cancer risk
+Strengthening the reporting of observational studies in epidemiology using mendelian randomisation (STROBE-MR): explanation and elaboration
+Consistent estimation in Mendelian Randomization with some invalid instruments using a weighted median estimator
+Global burden of schizophrenia in 204 countries and regions from 1990 to 2021 and machine learning-based projections to 2036: an analysis of the 2021 global burden of disease study
+Trends and projections of dermatitis burden (1990–2040): a 2021 global burden of disease analysis
+Global, regional, and national burden and trends of female cancers among the elderly women (≥60 years old): an analysis based on the 2021 global burden of disease study
+Burden and trends of ovarian and uterine cancer due to high body mass index from 1990 to 2021: an age-period-cohort study based on the GBD 2021, and projections through 2036
+Occupational asbestos exposure and ovarian cancer: updated systematic review
+Worldwide burden, risk factors, and temporal trends of ovarian cancer: a global study
+Asbestos exposure and ovarian cancer: a meta-analysis
+Long-term trends and projections of ovarian cancer burden in China (1990 to 2040): an age-period-cohort analysis based on GBD 2021 data
+Global socioeconomic inequalities in breast, cervical, ovarian, and uterine cancers incidence, mortality, disability-adjusted life year’s rates: a relative concentration index analysis
+Associations of lipid metabolism abnormalities and obesity with endometriosis‐associated ovarian cancer
+Investigating the shared genetic architecture between adiposity measures and obesity-related cancers
+Does childhood obesity foreshadow a future time-bomb of early and more aggressive cancers?
+Causal relationship between diet and common female diseases: a comprehensive Mendelian randomization study
+Alcohol consumption and risk of cancer: a Mendelian randomization analysis of four biobanks and consortium data
+Lifetime exposure to cigarette smoke and risk of ovarian cancer by T-cell tumor immune infiltration
+Methyl lucidone induces apoptosis and G2/M phase arrest via the PI3K/Akt/NF-κB pathway in ovarian cancer cells
+Dietary protein intake and PM(2.5) on ovarian cancer survival: a prospective cohort study
+Ovarian cancer and healthy lifestyle awareness among women of reproductive age
+Pre-diagnostic dietary consumption of calcium and magnesium and calcium-to-magnesium intake ratio and ovarian cancer mortality: results from the ovarian cancer follow-up study (OOPS)
+Global burden of disease study 2021 (GBD 2021) results

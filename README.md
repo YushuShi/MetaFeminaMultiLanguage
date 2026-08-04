@@ -29,6 +29,18 @@ MetaFemina conducts nutritional exposure meta-analyses across breast, ovarian, a
       ```
       PUBMED_EMAIL=your_email@example.com
       ```
+    - Configure an SMTP account so matching crowdsourced submissions and repeated
+      exclusion flags can email the developer review list without changing results:
+      ```
+      SMTP_HOST=smtp.gmail.com
+      SMTP_PORT=587
+      SMTP_USE_TLS=true
+      SMTP_USE_SSL=false
+      SMTP_USERNAME=your_sender@gmail.com
+      SMTP_PASSWORD=your_app_password
+      SMTP_FROM=your_sender@gmail.com
+      ```
+      For Gmail, use an app password rather than the account's normal password.
 
 ## Usage
 
