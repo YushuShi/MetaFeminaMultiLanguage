@@ -672,6 +672,12 @@ make_caption <- function(direction, cancer_label) {
 }
 
 # ---- Compose & save ----
+forest_height_mm <- function(total_rows) {
+  # Preserve enough room for the title, legend, and caption while allocating
+  # vertical space in proportion to the group and exposure rows actually shown.
+  max(105, min(420, 80 + 12 * total_rows))
+}
+
 save_forest_figure <- function(dat_clean, direction, cancer_label,
                                title_text, xlim_max, filename,
                                locale = NULL) {
@@ -714,12 +720,14 @@ save_forest_figure <- function(dat_clean, direction, cancer_label,
     draw_line(x = c(0, 1, 1, 0, 0),
               y = c(0, 0, 1, 1, 0),
               color = "#B0BEC5", linewidth = 0.8)
+
+  figure_height <- forest_height_mm(total_rows)
   
   save_plot_pdf(
-    output_path, plot = final, width = 297, height = 250,
+    output_path, plot = final, width = 297, height = figure_height,
     locale = locale, font_family = font_family
   )
-  message("Saved: ", output_path)
+  message("Saved: ", output_path, " (", total_rows, " rows; ", figure_height, " mm high)")
   invisible(final)
 }
 

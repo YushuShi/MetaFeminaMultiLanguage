@@ -125,6 +125,15 @@ class MultiLanguagePageTests(unittest.TestCase):
         self.assertIn('${study.exposure_measurement_supporting_text}', script)
         self.assertIn('class="notranslate" translate="no">"${study.exposure_measurement_supporting_text}"', script)
 
+    def test_per_item_jbi_scores_remain_available_on_hover(self):
+        script = (ROOT / 'static' / 'script.js').read_text()
+
+        self.assertIn("if (study.JBI && typeof study.JBI === 'object')", script)
+        self.assertIn(".map(([q, ans]) => `${q.toUpperCase()}: ${ans}`)", script)
+        self.assertIn('tr.title = qualityDetails;', script)
+        self.assertIn('title="${qualityDetails}"', script)
+        self.assertNotIn('tr.title = "";', script)
+
     def test_dynamic_statistical_interpretations_are_localized_and_rerendered(self):
         script = (ROOT / 'static' / 'script.js').read_text()
 

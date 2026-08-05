@@ -1034,6 +1034,12 @@ def _localized_summary_plot_paths(plot_paths: dict[str, Path], locale: str) -> d
     }
 
 
+def _summary_forest_height(total_rows: int) -> float:
+    """Return a bounded figure height proportional to displayed plot rows."""
+    height_mm = max(105.0, min(420.0, 80.0 + 12.0 * total_rows))
+    return height_mm / 25.4
+
+
 def _cross_exposure_forest(
     path: Path,
     title: str,
@@ -1090,7 +1096,7 @@ def _cross_exposure_forest(
     fig, (table_ax, forest_ax) = plt.subplots(
         1,
         2,
-        figsize=(11.69, 9.84),
+        figsize=(11.69, _summary_forest_height(total_rows)),
         gridspec_kw={"width_ratios": [1.55, 1]},
     )
     fig.subplots_adjust(left=0.035, right=0.985, top=0.91, bottom=0.18, wspace=0.01)

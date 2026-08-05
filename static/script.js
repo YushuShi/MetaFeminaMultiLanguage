@@ -976,7 +976,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 qualityDetails += `\n\nJBI Assessment:\n${answers}`;
             }
 
-            tr.title = ""; // Removed whole-row tooltip
+            // Keep the per-item JBI assessment available when hovering either
+            // the study row or its Quality badge.
+            tr.title = qualityDetails;
             if (study.verification_status === 'review_requested') {
                 tr.style.backgroundColor = '#fff8e1';
             } else if (!isChecked) {

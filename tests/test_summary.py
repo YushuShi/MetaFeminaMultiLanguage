@@ -275,6 +275,9 @@ class SummaryPageTests(unittest.TestCase):
         self.assertIn('min_studies = 3', paper_plot_source)
         self.assertIn('n_studies >= min_studies', paper_plot_source)
         self.assertIn('I2 > 0', paper_plot_source)
+        self.assertIn('forest_height_mm <- function(total_rows)', paper_plot_source)
+        self.assertIn('height = figure_height', paper_plot_source)
+        self.assertIn('figsize=(11.69, _summary_forest_height(total_rows))', analysis_source)
 
     def test_named_summary_rows_match_saved_study_recalculation(self):
         root = Path(__file__).resolve().parents[1]

@@ -7,7 +7,11 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from subcategory_analysis import _localized_exposure, build_subcategory_outputs
+from subcategory_analysis import (
+    _localized_exposure,
+    _summary_forest_height,
+    build_subcategory_outputs,
+)
 
 
 class SubcategoryAnalysisTests(unittest.TestCase):
@@ -74,6 +78,11 @@ class SubcategoryAnalysisTests(unittest.TestCase):
             "비타민 A, C, D, E, K",
         )
         self.assertEqual(_localized_exposure("Vitamin A"), "Vitamin A")
+
+    def test_summary_forest_height_tracks_displayed_rows(self):
+        self.assertAlmostEqual(_summary_forest_height(0), 105 / 25.4)
+        self.assertGreater(_summary_forest_height(8), _summary_forest_height(2))
+        self.assertAlmostEqual(_summary_forest_height(100), 420 / 25.4)
 
     def test_builds_isolated_result_and_placeholder_diagnostics(self):
         stale_result = self.results / "breast" / "triple_negative_breast_cancer" / "stale.json"
