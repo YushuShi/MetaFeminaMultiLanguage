@@ -9,14 +9,15 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class ExportStudiesTests(unittest.TestCase):
-    def test_export_button_is_immediately_after_select_all(self):
+    def test_export_button_is_immediately_after_update_analysis(self):
         html = app.test_client().get('/').get_data(as_text=True)
 
-        select_position = html.index('id="select-all-btn"')
-        export_position = html.index('id="export-studies-btn"')
         deselect_position = html.index('id="deselect-all-btn"')
-        self.assertLess(select_position, export_position)
-        self.assertLess(export_position, deselect_position)
+        update_position = html.index('id="update-btn"')
+        export_position = html.index('id="export-studies-btn"')
+        self.assertLess(deselect_position, update_position)
+        self.assertLess(update_position, export_position)
+        self.assertIn('background-color: var(--primary);">Export</button>', html)
 
     def test_csv_export_uses_displayed_studies_and_identifiers(self):
         script = (ROOT / 'static' / 'script.js').read_text(encoding='utf-8')
