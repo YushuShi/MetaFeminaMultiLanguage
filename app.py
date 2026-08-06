@@ -844,6 +844,7 @@ def analyze():
     context_key = f"{disease}_{canonical_exp}_{outcome}_{subcategory_slug or 'all'}".lower().replace(" ", "_")
     
     if "studies" in result:
+        saved_quality_by_pmid = {}
         for study in result['studies']:
             if 'exposure_measurement_type' not in study or study['exposure_measurement_type'] in [None, '', '-']:
                 study['exposure_measurement_type'] = 'unclear'
@@ -865,6 +866,17 @@ def analyze():
                     if k not in est or est[k] is None:
                         est[k] = ""
             pmid = str(study.get('PMID'))
+            if (
+                not isinstance(study.get('JBI'), dict)
+                or not study.get('JBI')
+                or not study.get('Quality Score')
+            ):
+                if pmid not in saved_quality_by_pmid:
+                    saved_quality_by_pmid[pmid] = find_saved_study(pmid, exposure)
+                saved_study = saved_quality_by_pmid[pmid]
+                for field in ('JBI', 'Quality Score', 'Quality %'):
+                    if (not study.get(field)) and saved_study.get(field) not in (None, ''):
+                        study[field] = saved_study[field]
             v_info = verifications.get(pmid, {})
             
             study['exclusions'] = 0

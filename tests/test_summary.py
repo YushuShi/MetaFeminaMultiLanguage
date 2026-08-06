@@ -257,6 +257,8 @@ class SummaryPageTests(unittest.TestCase):
                 study['exposure_measurement_supporting_text'],
                 main_study['exposure_measurement_supporting_text'],
             )
+            self.assertEqual(study['Quality Score'], main_study['Quality Score'])
+            self.assertEqual(study['JBI'], main_study['JBI'])
 
         self.assertEqual(
             {item['omitted'] for item in payload['headline']['loo_results']},

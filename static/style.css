@@ -470,10 +470,47 @@ th.sort-desc .sort-icon::after {
     display: inline-block;
     text-align: center;
     min-width: 70px;
+    cursor: default;
+}
+.quality-badge:focus-visible {
+    outline: 3px solid rgba(33, 90, 142, 0.35);
+    outline-offset: 2px;
 }
 .quality-good { background-color: #238636; }
 .quality-moderate { background-color: #d29922; }
 .quality-fair { background-color: #f85149; }
+
+.jbi-tooltip {
+    position: fixed;
+    z-index: 10000;
+    width: max-content;
+    min-width: 220px;
+    max-width: min(320px, calc(100vw - 16px));
+    max-height: min(420px, calc(100vh - 16px));
+    overflow-y: auto;
+    padding: 0.75rem 0.85rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+    background: #1f2937;
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+    pointer-events: none;
+    text-align: left;
+    font-size: 0.78rem;
+    line-height: 1.35;
+}
+.jbi-tooltip[hidden] { display: none; }
+.jbi-tooltip-heading { font-size: 0.9rem; font-weight: 800; }
+.jbi-tooltip-rating { margin-top: 0.2rem; color: #dbeafe; }
+.jbi-tooltip-list {
+    display: grid;
+    grid-template-columns: minmax(36px, auto) minmax(90px, 1fr);
+    gap: 0.18rem 0.65rem;
+    margin: 0.6rem 0 0;
+}
+.jbi-tooltip-list dt { margin: 0; font-weight: 700; color: #bfdbfe; }
+.jbi-tooltip-list dd { margin: 0; }
+.jbi-tooltip-unavailable { margin-top: 0.6rem; color: #fcd34d; }
 
 /* Tab Navigation */
 .tabs {

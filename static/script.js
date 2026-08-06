@@ -87,6 +87,87 @@ document.addEventListener('DOMContentLoaded', async () => {
         pooledPi: document.getElementById('pooled-pi'),
         pooledPowerPerGroup: document.getElementById('pooled-power-per-group')
     };
+
+    function meetsDefaultJbiThreshold(study) {
+        const rating = String(study['Quality Score'] || '').trim().toLowerCase();
+        return rating === 'good' || rating === 'moderate';
+    }
+
+    function itemizedJbiEntries(study) {
+        if (!study.JBI || typeof study.JBI !== 'object' || Array.isArray(study.JBI)) return [];
+        return Object.entries(study.JBI)
+            .filter(([question]) => /^q\d+$/i.test(question))
+            .sort(([a], [b]) => {
+                const numberA = parseInt(a.replace(/[^0-9]/g, '')) || 0;
+                const numberB = parseInt(b.replace(/[^0-9]/g, '')) || 0;
+                return numberA - numberB;
+            })
+            .map(([question, answer]) => ({
+                question: question.toUpperCase(),
+                answer: String(answer || 'Unclear')
+            }));
+    }
+
+    const jbiTooltip = document.createElement('div');
+    jbiTooltip.className = 'jbi-tooltip';
+    jbiTooltip.id = 'jbi-item-tooltip';
+    jbiTooltip.setAttribute('role', 'tooltip');
+    jbiTooltip.hidden = true;
+    document.body.appendChild(jbiTooltip);
+
+    function hideJbiTooltip() {
+        jbiTooltip.hidden = true;
+        jbiTooltip.replaceChildren();
+    }
+
+    function showJbiTooltip(anchor, qualityScore, entries) {
+        jbiTooltip.replaceChildren();
+
+        const heading = document.createElement('div');
+        heading.className = 'jbi-tooltip-heading';
+        heading.textContent = uiText('JBI Assessment:');
+        jbiTooltip.appendChild(heading);
+
+        const rating = document.createElement('div');
+        rating.className = 'jbi-tooltip-rating';
+        rating.textContent = uiText('Overall rating: {rating}', { rating: uiText(qualityScore) });
+        jbiTooltip.appendChild(rating);
+
+        if (entries.length) {
+            const list = document.createElement('dl');
+            list.className = 'jbi-tooltip-list';
+            entries.forEach((entry) => {
+                const question = document.createElement('dt');
+                question.textContent = entry.question;
+                const answer = document.createElement('dd');
+                answer.textContent = uiText(entry.answer);
+                list.append(question, answer);
+            });
+            jbiTooltip.appendChild(list);
+        } else {
+            const unavailable = document.createElement('div');
+            unavailable.className = 'jbi-tooltip-unavailable';
+            unavailable.textContent = uiText('Itemized JBI assessment is unavailable.');
+            jbiTooltip.appendChild(unavailable);
+        }
+
+        jbiTooltip.hidden = false;
+        jbiTooltip.style.visibility = 'hidden';
+        const anchorRect = anchor.getBoundingClientRect();
+        const tooltipRect = jbiTooltip.getBoundingClientRect();
+        const margin = 8;
+        const left = Math.min(
+            window.innerWidth - tooltipRect.width - margin,
+            Math.max(margin, anchorRect.left + (anchorRect.width - tooltipRect.width) / 2)
+        );
+        let top = anchorRect.bottom + margin;
+        if (top + tooltipRect.height > window.innerHeight - margin) {
+            top = Math.max(margin, anchorRect.top - tooltipRect.height - margin);
+        }
+        jbiTooltip.style.left = `${left}px`;
+        jbiTooltip.style.top = `${top}px`;
+        jbiTooltip.style.visibility = 'visible';
+    }
     let exposures = [];
 
     function selectedExposureValue() {
@@ -703,7 +784,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     function applyFilters() {
         const timing = elements.filterTiming ? elements.filterTiming.value : 'All';
         const stage = elements.filterStage ? elements.filterStage.value : 'All';
-        const quality = elements.filterQuality ? elements.filterQuality.value : 'All';
+        const quality = elements.filterQuality ? elements.filterQuality.value : 'Moderate+';
         const measure = elements.filterMeasure ? elements.filterMeasure.value : 'All';
         const exposureType = elements.filterExposureType ? elements.filterExposureType.value : 'Anything';
 
@@ -717,8 +798,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
             if (stage !== 'All' && study.Stage !== stage) return false;
             if (quality === 'Moderate+') {
-                const score = (study['Quality Score'] || 'Fair');
-                if (score !== 'Good' && score !== 'Moderate') return false;
+                if (!meetsDefaultJbiThreshold(study)) return false;
             } else if (quality !== 'All' && quality !== 'Fair+' && (study['Quality Score'] || 'Fair') !== quality) return false;
             if (measure !== 'All' && (study['Effect Type'] || '').toUpperCase() !== measure) return false;
             
@@ -834,12 +914,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 elements.errorMsg.textContent = data.error;
                 elements.errorMsg.classList.remove('hidden');
             } else {
-                allStudies = data.studies;
-
-                currentStudies = [...data.studies];
-                sortCurrentStudies();
+                allStudies = Array.isArray(data.studies) ? data.studies : [];
                 updateResultsUI(data, { disease, exposure });
-                renderStudiesTable();
+                applyFilters();
                 elements.results.classList.remove('hidden');
 
                 // A saved subtype result already is its own derived analysis;
@@ -946,12 +1023,16 @@ document.addEventListener('DOMContentLoaded', async () => {
             const finalCasesVal = !isNaN(casesVal) ? casesVal : (!isNaN(estCasesVal) ? estCasesVal : NaN);
             const isARR = (study['Effect Type'] || '').toUpperCase() === 'ARR';
             const minCases = elements.filterMinCases ? (parseInt(elements.filterMinCases.value) || 0) : 50;
-            const isChecked = (!isARR && !isNaN(finalCasesVal) && finalCasesVal > minCases) ? 'checked' : '';
+            const qualityScore = String(study['Quality Score'] || 'Fair');
+            const qualityIsEligible = meetsDefaultJbiThreshold(study);
+            const jbiEntries = itemizedJbiEntries(study);
+            const isChecked = (qualityIsEligible && !isARR && !isNaN(finalCasesVal) && finalCasesVal > minCases) ? 'checked' : '';
 
             // Build Exclusion Reason Title
             let unselectedReason = "";
             if (!isChecked) {
-                if (isARR) unselectedReason = uiText('Excluded: Effect type is ARR');
+                if (!qualityIsEligible) unselectedReason = uiText('Excluded by default: JBI rating is below Moderate');
+                else if (isARR) unselectedReason = uiText('Excluded: Effect type is ARR');
                 else if (isNaN(finalCasesVal)) unselectedReason = uiText('Excluded: Cases not specified or invalid');
                 else if (finalCasesVal <= minCases) {
                     const isEst = isNaN(casesVal);
@@ -962,23 +1043,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 }
             }
 
-            // Build Quality Hover Details
-            let qualityDetails = study['Quality Score'] || 'Fair';
-            if (study.JBI && typeof study.JBI === 'object') {
-                const answers = Object.entries(study.JBI)
-                    .sort(([a], [b]) => {
-                        const numA = parseInt(a.replace(/[^0-9]/g, '')) || 0;
-                        const numB = parseInt(b.replace(/[^0-9]/g, '')) || 0;
-                        return numA - numB;
-                    })
-                    .map(([q, ans]) => `${q.toUpperCase()}: ${ans}`)
-                    .join('\n');
-                qualityDetails += `\n\nJBI Assessment:\n${answers}`;
-            }
-
-            // Keep the per-item JBI assessment available when hovering either
-            // the study row or its Quality badge.
-            tr.title = qualityDetails;
             if (study.verification_status === 'review_requested') {
                 tr.style.backgroundColor = '#fff8e1';
             } else if (!isChecked) {
@@ -1071,7 +1135,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                                         const cb = document.querySelector('.study-checkbox[data-index=\''+idx+'\']');
                                         const row = cb ? cb.closest('tr') : null;
                                         if(cb){
-                                            const shouldCheck = !isNaN(finalVal) && finalVal > minC;
+                                            const quality = String(currentStudies[idx]['Quality Score'] || '').trim().toLowerCase();
+                                            const qualityEligible = quality === 'good' || quality === 'moderate';
+                                            const shouldCheck = qualityEligible && !isNaN(finalVal) && finalVal > minC;
                                             cb.checked = shouldCheck;
                                             if(row){ row.style.opacity = shouldCheck ? '' : '0.6'; row.style.backgroundColor = shouldCheck ? '' : 'rgba(200,200,200,0.15)'; }
                                         }
@@ -1080,10 +1146,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                     </div>
                 </td>
                 <td>
-                    <div class="quality-badge quality-${(study['Quality Score'] || 'fair').toLowerCase()}" 
-                         title="${qualityDetails}"
-                         style="font-size: 0.7rem; padding: 2px 6px; border-radius: 12px; color: white; cursor: help;">
-                         ${study['Quality Score'] || 'Fair'}
+                    <div class="quality-badge quality-${qualityScore.toLowerCase()}"
+                         tabindex="0" aria-describedby="jbi-item-tooltip"
+                         style="font-size: 0.7rem; padding: 2px 6px; border-radius: 12px; color: white;">
+                         ${uiText(qualityScore)}
                     </div>
                 </td>
                 <td>
@@ -1123,6 +1189,21 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <td class="notranslate" translate="no" style="font-size: 0.75em;" title="${unselectedReason}">${study.Journal || '-'}</td>
                 <td class="notranslate" translate="no" style="font-size: 0.75em;" title="${unselectedReason}">${study.Year || '-'}</td>
             `;
+
+            const qualityBadge = tr.querySelector('.quality-badge');
+            if (qualityBadge) {
+                const showTooltip = () => showJbiTooltip(qualityBadge, qualityScore, jbiEntries);
+                qualityBadge.addEventListener('mouseenter', showTooltip);
+                qualityBadge.addEventListener('mouseleave', hideJbiTooltip);
+                qualityBadge.addEventListener('focus', showTooltip);
+                qualityBadge.addEventListener('blur', hideJbiTooltip);
+                qualityBadge.addEventListener('keydown', (event) => {
+                    if (event.key === 'Escape') {
+                        hideJbiTooltip();
+                        qualityBadge.blur();
+                    }
+                });
+            }
 
             // Build Details row
             const detailsTr = document.createElement('tr');

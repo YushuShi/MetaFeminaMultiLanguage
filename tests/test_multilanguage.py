@@ -127,12 +127,23 @@ class MultiLanguagePageTests(unittest.TestCase):
 
     def test_per_item_jbi_scores_remain_available_on_hover(self):
         script = (ROOT / 'static' / 'script.js').read_text()
+        style = (ROOT / 'static' / 'style.css').read_text()
 
-        self.assertIn("if (study.JBI && typeof study.JBI === 'object')", script)
-        self.assertIn(".map(([q, ans]) => `${q.toUpperCase()}: ${ans}`)", script)
-        self.assertIn('tr.title = qualityDetails;', script)
-        self.assertIn('title="${qualityDetails}"', script)
-        self.assertNotIn('tr.title = "";', script)
+        self.assertIn('function itemizedJbiEntries(study)', script)
+        self.assertIn("qualityBadge.addEventListener('mouseenter', showTooltip)", script)
+        self.assertIn("qualityBadge.addEventListener('focus', showTooltip)", script)
+        self.assertIn("uiText('Overall rating: {rating}'", script)
+        self.assertNotIn('cursor: help', script)
+        self.assertIn('.jbi-tooltip-list', style)
+
+    def test_default_quality_filter_is_moderate_or_better(self):
+        response = self.client.get('/')
+        script = (ROOT / 'static' / 'script.js').read_text()
+
+        self.assertIn(b'<option value="Moderate+" selected>Moderate and above</option>', response.data)
+        self.assertIn("const quality = elements.filterQuality ? elements.filterQuality.value : 'Moderate+';", script)
+        self.assertIn('const qualityIsEligible = meetsDefaultJbiThreshold(study);', script)
+        self.assertIn('qualityIsEligible && !isARR', script)
 
     def test_dynamic_statistical_interpretations_are_localized_and_rerendered(self):
         script = (ROOT / 'static' / 'script.js').read_text()
