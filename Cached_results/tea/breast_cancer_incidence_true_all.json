@@ -44,11 +44,12 @@
                 "sample_size": "52,062 women aged 21-69 at enrollment in 1995",
                 "effect_size": "The IRRs for consumption of \u22654 cups/day compared with none were 1.13 (95% CI 0.78-1.63) for tea",
                 "effect_direction": "Intakes of tea, coffee, and caffeine were not significantly associated with the risk of breast cancer overall.",
-                "p_value": "not significantly associated",
+                "p_value": "not significantly associated Computed from the reported effect and 95% CI using a normal approximation: p=0.516.",
                 "confidence_interval": "1.13 (95% CI 0.78-1.63)",
                 "outcome_definition": "risk of breast cancer",
                 "exposure_definition": "tea consumption"
-            }
+            },
+            "P Value": 0.5156780002439856
         },
         {
             "Study": "Iwasaki M et al. (2010) [PMID: 22889409]",
@@ -239,11 +240,12 @@
                 "sample_size": "We prospectively followed up 61,433 women who were cancer free at baseline in 1987-1990.",
                 "effect_size": "The multivariate RRs comparing \u2265 2 cups/day of tea with no consumption were 1.22 (95% CI, 1.05-1.42) for overall breast cancer",
                 "effect_direction": "Black tea consumption was significantly positively associated with risk of overall breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.010.",
                 "confidence_interval": "1.22 (95% CI, 1.05-1.42)",
                 "outcome_definition": "Incident invasive breast cancer cases were ascertained by linkage with Swedish Cancer registers.",
                 "exposure_definition": "Coffee and tea consumption was assessed with a food-frequency questionnaire administered at baseline and in 1997."
-            }
+            },
+            "P Value": 0.009815839314242701
         },
         {
             "Study": "Shrubsole MJ et al. (2009) [PMID: 19074205]",
@@ -287,11 +289,12 @@
                 "sample_size": "3454 incident cases and 3474 controls",
                 "effect_size": "regular drinking of green tea was associated with a slightly decreased risk for breast cancer (OR, 0.88; 95% CI, 0.79-0.98)",
                 "effect_direction": "slightly decreased risk for breast cancer",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.020.",
                 "confidence_interval": "OR, 0.88; 95% CI, 0.79-0.98",
                 "outcome_definition": "breast cancer risk among 3454 incident cases",
                 "exposure_definition": "regular green tea consumption"
-            }
+            },
+            "P Value": 0.020066084470443203
         },
         {
             "Study": "Suzuki Y et al. (2004) [PMID: 15054454]",
@@ -385,11 +388,12 @@
                 "sample_size": "a large population-based prospective cohort study in Sweden comprising 59,036 women aged 40-76 years",
                 "effect_size": "The corresponding hazard ratio for tea consumption was 1.13 (95% CI 0.91-1.40)",
                 "effect_direction": "consumption of coffee, tea, and caffeine was not associated with breast cancer incidence",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.266.",
                 "confidence_interval": "1.13 (95% CI 0.91-1.40)",
                 "outcome_definition": "1271 cases of invasive breast cancer were diagnosed",
                 "exposure_definition": "tea consumption"
-            }
+            },
+            "P Value": 0.2660757572313299
         },
         {
             "Study": "Oh JK et al. (2015) [PMID: 25885188]",
@@ -434,11 +438,12 @@
                 "sample_size": "42,099 women from the Swedish Women's Lifestyle and Health study",
                 "effect_size": "women consuming >1 cups tea/day showed an increased breast cancer risk (RR\u2009=\u20091.19, 95% CI 1.00-1.42)",
                 "effect_direction": "increased breast cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.052.",
                 "confidence_interval": "RR\u2009=\u20091.19, 95% CI 1.00-1.42",
                 "outcome_definition": "Complete follow-up for breast cancer incidence was performed through 2012 via linkage to national registries.",
                 "exposure_definition": "We assessed coffee and tea consumption, caffeine intake, and possible confounding factors..."
-            }
+            },
+            "P Value": 0.05181983792827584
         },
         {
             "Study": "Goldbohm RA et al. (1996) [PMID: 8537983]",
@@ -483,11 +488,12 @@
                 "sample_size": "58,279 men and 62,573 women aged 55-69 years.",
                 "effect_size": "The RR of breast cancer among consumers of five or more cups of tea per day was 1.3",
                 "effect_direction": "No association was observed between tea consumption and risk of colorectal cancer...no dose-response association was observed [for breast cancer]",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.198.",
                 "confidence_interval": "95% confidence interval = 0.9-2.0",
                 "outcome_definition": "During 4.3 years of follow-up, ... 650 cases of ... breast cancers were diagnosed",
                 "exposure_definition": "Tea was not used by 13% of the subjects in the cohort, whereas 37%, 34%, and 16% consumed one to two, three to four, and five or more cups of tea per day, respectively."
-            }
+            },
+            "P Value": 0.19775032087170047
         },
         {
             "Study": "Kumar N et al. (2009) [PMID: 19124518]",
@@ -627,11 +633,12 @@
                 "sample_size": "501 breast cancer patients and 594 control subjects",
                 "effect_size": "adjusted odds ratios being 1.00, 0.71 (95% confidence interval [CI] 0.51-0.99) and 0.53 (95% CI 0.35-0.78), respectively, in association with no, 0-85.7 and >85.7 ml of green tea per day.",
                 "effect_direction": "green tea drinkers showed a significantly reduced risk of breast cancer",
-                "p_value": "significant trend of decreasing risk with increasing amount of green tea intake",
+                "p_value": "significant trend of decreasing risk with increasing amount of green tea intake Computed from the reported effect and 95% CI using a normal approximation: p=0.002.",
                 "confidence_interval": "0.53 (95% CI 0.35-0.78)",
                 "outcome_definition": "case-control study of breast cancer",
                 "exposure_definition": "intake of black and green tea"
-            }
+            },
+            "P Value": 0.0018987991046631755
         },
         {
             "Study": "Nagano J et al. (2001) [PMID: 11519758]",
@@ -676,11 +683,12 @@
                 "sample_size": "Subjects were 38,540 people",
                 "effect_size": "The relative risks of all cancers for those consuming green tea ... five or more times per day were ... 0.98 (0.88-1.1)",
                 "effect_direction": "Green tea consumption was virtually unrelated to incidence of cancers under study.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.723.",
                 "confidence_interval": "0.98 (0.88-1.1)",
                 "outcome_definition": "breast (281)",
                 "exposure_definition": "consumption frequency of green tea using precoded answers"
-            }
+            },
+            "P Value": 0.722661264129244
         },
         {
             "Study": "Li X et al. (2019) [PMID: 31152367]",
@@ -725,11 +733,12 @@
                 "sample_size": "455,981 participants aged 30-79\u00a0years in the prospective cohort China Kadoorie Biobank.",
                 "effect_size": "HR, 1.03; 95%CI, 0.93-1.13",
                 "effect_direction": "tea consumption was not associated with all cancers ... female breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.552.",
                 "confidence_interval": "HR, 1.03; 95%CI, 0.93-1.13",
                 "outcome_definition": "female breast cancer",
                 "exposure_definition": "Tea consumption was assessed at baseline (2004-2008) with an interviewer-administered questionnaire."
-            }
+            },
+            "P Value": 0.5519414448440055
         },
         {
             "Study": "Li M et al. (2016) [PMID: 26680603]",
@@ -773,11 +782,12 @@
                 "sample_size": "We consecutively recruited 756 incident breast cancer cases and 789 hospital controls",
                 "effect_size": "showing an adjusted OR of 1.01 (95%CI: 0.78-1.31)",
                 "effect_direction": "Tea or green tea drinking was not associated with overall breast cancer risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.940.",
                 "confidence_interval": "adjusted OR of 1.01 (95%CI: 0.78-1.31)",
                 "outcome_definition": "incident breast cancer cases",
                 "exposure_definition": "information on tea consumption"
-            }
+            },
+            "P Value": 0.9400326248609048
         },
         {
             "Study": "Iwasaki M et al. (2014) [PMID: 24274352]",
@@ -870,11 +880,12 @@
                 "sample_size": "a total of 100 218 participants were included in this study",
                 "effect_size": "the HR (95%CI) of daily tea drinkers for ... female breast cancer ... 0.63 (0.28-1.38)",
                 "effect_direction": "there were no significant associations of three tea consumption variables with the incidence of cancer and cancer subtypes",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.256.",
                 "confidence_interval": "0.63 (0.28-1.38)",
                 "outcome_definition": "incidence of cancer and some subtypes, including ... female breast cancer",
                 "exposure_definition": "daily tea consumption or not"
-            }
+            },
+            "P Value": 0.25616570773148845
         },
         {
             "Study": "Zheng KH et al. (2021) [PMID: 34418085]",
@@ -1016,11 +1027,12 @@
                 "sample_size": "353 incident breast cancer cases and 701 individually matched controls",
                 "effect_size": "Urinary excretion of epicatechin was inversely associated with breast cancer risk [odds ratio (OR) and 95% confidence interval (CI) of 0.59 (0.39-0.88) for the intermediate tertile]",
                 "effect_direction": "Urinary excretion of epicatechin was inversely associated with breast cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.011.",
                 "confidence_interval": "odds ratio (OR) and 95% confidence interval (CI) of 0.59 (0.39-0.88) for the intermediate tertile",
                 "outcome_definition": "incident breast cancer cases",
                 "exposure_definition": "urinary excretion rates of polyphenols"
-            }
+            },
+            "P Value": 0.011033497914234433
         },
         {
             "Study": "Ishitani K et al. (2008) [PMID: 18852405]",
@@ -1065,11 +1077,12 @@
                 "sample_size": "Detailed dietary information was obtained at baseline (1992-1995) from 38 432 women 45 years or older and free of cancer.",
                 "effect_size": "1.03 (0.85-1.25) for tea (> or =2 cups daily vs almost never)",
                 "effect_direction": "Consumption of caffeine and caffeinated beverages and foods was not statistically significantly associated with overall risk of breast cancer.",
-                "p_value": "not statistically significantly associated",
+                "p_value": "not statistically significantly associated Computed from the reported effect and 95% CI using a normal approximation: p=0.764.",
                 "confidence_interval": "1.03 (0.85-1.25)",
                 "outcome_definition": "During a mean follow-up of 10 years, we identified 1188 invasive breast cancer cases.",
                 "exposure_definition": "1.03 (0.85-1.25) for tea (> or =2 cups daily vs almost never)"
-            }
+            },
+            "P Value": 0.7638374648123272
         },
         {
             "Study": "Sinnadurai S et al. (2020) [PMID: 32592367]",
@@ -1114,11 +1127,12 @@
                 "sample_size": "This study included 33,396 Japanese women aged 40-79 years",
                 "effect_size": "odds ratio OR 1.15",
                 "effect_direction": "No significant associations were identified between the intake of green tea ... with breast cancer risk",
-                "p_value": "No significant associations",
+                "p_value": "No significant associations Computed from the reported effect and 95% CI using a normal approximation: p=0.412.",
                 "confidence_interval": "95% confidence interval [CI] 0.82-1.60",
                 "outcome_definition": "245 incidents or mortal breast cancers were documented",
                 "exposure_definition": "intake of Japanese green tea"
-            }
+            },
+            "P Value": 0.4124429364839473
         },
         {
             "Study": "Tavani A et al. (1998) [PMID: 9511854]",
@@ -1162,11 +1176,12 @@
                 "sample_size": "Cases were 5,984 women...controls were 5,504 women",
                 "effect_size": "Tea consumption was also low and not associated with the risk of breast cancer (OR 0.94, 95% CI 0.85-1.03)",
                 "effect_direction": "not associated with the risk of breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.207.",
                 "confidence_interval": "OR 0.94, 95% CI 0.85-1.03",
                 "outcome_definition": "histologically confirmed breast cancer",
                 "exposure_definition": "Tea consumption"
-            }
+            },
+            "P Value": 0.20666888214974224
         },
         {
             "Study": "Yuan G et al. (2020) [PMID: 33133556]",
@@ -1210,11 +1225,12 @@
                 "sample_size": "A 1:2 paired retrospective case-control study with 210 cases and 420 controls",
                 "effect_size": "green tea (OR = 0.997, 95% CI = 0.994-0.999)",
                 "effect_direction": "green tea ... were significantly associated with a lower risk of breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.019.",
                 "confidence_interval": "green tea (OR = 0.997, 95% CI = 0.994-0.999)",
                 "outcome_definition": "retrospective cases were confirmed by pathological diagnosis with breast cancer",
                 "exposure_definition": "individual dietary intake, by food frequency questionnaire (FFQ)"
-            }
+            },
+            "P Value": 0.018910744289288153
         },
         {
             "Study": "Shirlina NG et al. (2015) [PMID: 26856173]",
@@ -1258,11 +1274,12 @@
                 "sample_size": "1002 women (797 women without breast cancer; 205--with breast cancer)",
                 "effect_size": "a significant consumption of black tea (OR: 5,182, CI: 95% 3,721 \u00f7 7,218)",
                 "effect_direction": "confirmed their importance: a significant consumption of black tea",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=2.174e-22.",
                 "confidence_interval": "CI: 95% 3,721 \u00f7 7,218",
                 "outcome_definition": "appearance of breast cancer",
                 "exposure_definition": "significant consumption of black tea"
-            }
+            },
+            "P Value": 2.174031984508689e-22
         },
         {
             "Study": "Wang L et al. (2013) [PMID: 23421337]",
@@ -1306,11 +1323,12 @@
                 "sample_size": "A total of 157 cases and 314 controls completed a structured questionnaire.",
                 "effect_size": "intake of less than 100 ml of green tea per day (AOR, 2.47; 95% CI, 1.40-4.38)",
                 "effect_direction": "Breast cancer was related to joint interactions between high perceived stress and intake of less than 100 ml of green tea per day",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.002.",
                 "confidence_interval": "AOR, 2.47; 95% CI, 1.40-4.38",
                 "outcome_definition": "to investigate the relations of perceived stress and lifestyle to breast cancer",
                 "exposure_definition": "intake of less than 100 ml of green tea per day"
-            }
+            },
+            "P Value": 0.0018890942894369785
         },
         {
             "Study": "Zhou L et al. (2025) [PMID: 41428133]",
@@ -1400,11 +1418,12 @@
                 "sample_size": "using population and hospital controls to separately match 540 incident cases by age, gender and residency at a 1:1 ratio",
                 "effect_size": "the adjusted ORs (95% CIs) comparing green tealeaves intake \u2265 1000 grams annually with non-drinkers were ... 0.06 (0.01, 0.61) ... for breast cancer ... using hospital ... controls",
                 "effect_direction": "adjusted OR ... 0.06 ... for breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.007.",
                 "confidence_interval": "0.06 (0.01, 0.61)",
                 "outcome_definition": "540 incident cases ... on leukemia, breast and colorectal cancers",
                 "exposure_definition": "For exposure of green tea drinking, the adjusted ORs (95% CIs) comparing green tealeaves intake \u2265 1000 grams annually with non-drinkers"
-            }
+            },
+            "P Value": 0.007301301266843235
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Li L et al. (2011) [PMID: 22171783]</th>\n      <td>-2.6831</td>\n      <td>1.0268</td>\n      <td>-4.6956</td>\n      <td>-0.6705</td>\n      <td>540.0</td>\n      <td>1080.0</td>\n    </tr>\n    <tr>\n      <th>Zhang M et al. (2009) [PMID: 19048616]</th>\n      <td>-2.0843</td>\n      <td>0.3019</td>\n      <td>-2.6760</td>\n      <td>-1.4926</td>\n      <td>1009.0</td>\n      <td>2018.0</td>\n    </tr>\n    <tr>\n      <th>Wang L et al. (2013) [PMID: 23421337]</th>\n      <td>-0.8236</td>\n      <td>0.2737</td>\n      <td>-1.3600</td>\n      <td>-0.2872</td>\n      <td>157.0</td>\n      <td>471.0</td>\n    </tr>\n    <tr>\n      <th>Wu AH et al. (2003) [PMID: 12845655]</th>\n      <td>-0.5718</td>\n      <td>0.1893</td>\n      <td>-0.9429</td>\n      <td>-0.2008</td>\n      <td>501.0</td>\n      <td>1095.0</td>\n    </tr>\n    <tr>\n      <th>Luo J et al. (2010) [PMID: 19653095]</th>\n      <td>-0.4729</td>\n      <td>0.1905</td>\n      <td>-0.8463</td>\n      <td>-0.0994</td>\n      <td>353.0</td>\n      <td>1054.0</td>\n    </tr>\n    <tr>\n      <th>Kumar N et al. (2009) [PMID: 19124518]</th>\n      <td>-0.4127</td>\n      <td>0.1641</td>\n      <td>-0.7344</td>\n      <td>-0.0911</td>\n      <td>5082.0</td>\n      <td>9583.0</td>\n    </tr>\n    <tr>\n      <th>Liu CY et al. (2023) [PMID: 37482703]</th>\n      <td>-0.4368</td>\n      <td>0.3877</td>\n      <td>-1.1967</td>\n      <td>0.3232</td>\n      <td>-</td>\n      <td>100218.0</td>\n    </tr>\n    <tr>\n      <th>Suzuki Y et al. (2004) [PMID: 15054454]</th>\n      <td>-0.1744</td>\n      <td>0.1983</td>\n      <td>-0.5630</td>\n      <td>0.2143</td>\n      <td>222.0</td>\n      <td>35004.0</td>\n    </tr>\n    <tr>\n      <th>Shrubsole MJ et al. (2009) [PMID: 19074205]</th>\n      <td>-0.1121</td>\n      <td>0.0486</td>\n      <td>-0.2073</td>\n      <td>-0.0169</td>\n      <td>3454.0</td>\n      <td>6928.0</td>\n    </tr>\n    <tr>\n      <th>Iwasaki M et al. (2010) [PMID: 20440552]</th>\n      <td>-0.0923</td>\n      <td>0.3430</td>\n      <td>-0.7645</td>\n      <td>0.5799</td>\n      <td>144.0</td>\n      <td>24226.0</td>\n    </tr>\n    <tr>\n      <th>Tavani A et al. (1998) [PMID: 9511854]</th>\n      <td>-0.0540</td>\n      <td>0.0430</td>\n      <td>-0.1383</td>\n      <td>0.0302</td>\n      <td>5984.0</td>\n      <td>11488.0</td>\n    </tr>\n    <tr>\n      <th>Nagano J et al. (2001) [PMID: 11519758]</th>\n      <td>-0.0202</td>\n      <td>0.0569</td>\n      <td>-0.1318</td>\n      <td>0.0914</td>\n      <td>281.0</td>\n      <td>38540.0</td>\n    </tr>\n    <tr>\n      <th>Yuan G et al. (2020) [PMID: 33133556]</th>\n      <td>-0.0026</td>\n      <td>0.0011</td>\n      <td>-0.0048</td>\n      <td>-0.0004</td>\n      <td>210.0</td>\n      <td>630.0</td>\n    </tr>\n    <tr>\n      <th>Li M et al. (2016) [PMID: 26680603]</th>\n      <td>0.0087</td>\n      <td>0.1148</td>\n      <td>-0.2163</td>\n      <td>0.2336</td>\n      <td>756.0</td>\n      <td>1545.0</td>\n    </tr>\n    <tr>\n      <th>Zhou L et al. (2025) [PMID: 41428133]</th>\n      <td>0.0129</td>\n      <td>0.0061</td>\n      <td>0.0009</td>\n      <td>0.0249</td>\n      <td>-</td>\n      <td>228951.0</td>\n    </tr>\n    <tr>\n      <th>Deng Y et al. (2022) [PMID: 36330145]</th>\n      <td>0.0248</td>\n      <td>0.0202</td>\n      <td>-0.0148</td>\n      <td>0.0644</td>\n      <td>122977.0</td>\n      <td>349376.0</td>\n    </tr>\n    <tr>\n      <th>Ishitani K et al. (2008) [PMID: 18852405]</th>\n      <td>0.0296</td>\n      <td>0.0984</td>\n      <td>-0.1633</td>\n      <td>0.2224</td>\n      <td>1188.0</td>\n      <td>38432.0</td>\n    </tr>\n    <tr>\n      <th>Zheng KH et al. (2021) [PMID: 34418085]</th>\n      <td>0.0275</td>\n      <td>0.0437</td>\n      <td>-0.0581</td>\n      <td>0.1131</td>\n      <td>4719.0</td>\n      <td>79871.0</td>\n    </tr>\n    <tr>\n      <th>Li X et al. (2019) [PMID: 31152367]</th>\n      <td>0.0275</td>\n      <td>0.0462</td>\n      <td>-0.0631</td>\n      <td>0.1181</td>\n      <td>22652.0</td>\n      <td>455981.0</td>\n    </tr>\n    <tr>\n      <th>Iwasaki M et al. (2010) [PMID: 22889409]</th>\n      <td>0.1052</td>\n      <td>0.1542</td>\n      <td>-0.1971</td>\n      <td>0.4075</td>\n      <td>581.0</td>\n      <td>53793.0</td>\n    </tr>\n    <tr>\n      <th>Michels KB et al. (2002) [PMID: 11750236]</th>\n      <td>0.1134</td>\n      <td>0.1014</td>\n      <td>-0.0854</td>\n      <td>0.3122</td>\n      <td>1271.0</td>\n      <td>59036.0</td>\n    </tr>\n    <tr>\n      <th>Boggs DA et al. (2010) [PMID: 20680436]</th>\n      <td>0.1134</td>\n      <td>0.1733</td>\n      <td>-0.2264</td>\n      <td>0.4531</td>\n      <td>1268.0</td>\n      <td>52062.0</td>\n    </tr>\n    <tr>\n      <th>Sinnadurai S et al. (2020) [PMID: 32592367]</th>\n      <td>0.1204</td>\n      <td>0.1453</td>\n      <td>-0.1644</td>\n      <td>0.4053</td>\n      <td>245.0</td>\n      <td>33396.0</td>\n    </tr>\n    <tr>\n      <th>Oh JK et al. (2015) [PMID: 25885188]</th>\n      <td>0.1740</td>\n      <td>0.0895</td>\n      <td>-0.0014</td>\n      <td>0.3493</td>\n      <td>1395.0</td>\n      <td>42099.0</td>\n    </tr>\n    <tr>\n      <th>Larsson SC et al. (2009) [PMID: 19597749]</th>\n      <td>0.1989</td>\n      <td>0.0770</td>\n      <td>0.0479</td>\n      <td>0.3498</td>\n      <td>2952.0</td>\n      <td>61433.0</td>\n    </tr>\n    <tr>\n      <th>Iwasaki M et al. (2014) [PMID: 24274352]</th>\n      <td>0.2045</td>\n      <td>0.2238</td>\n      <td>-0.2341</td>\n      <td>0.6431</td>\n      <td>369.0</td>\n      <td>369.0</td>\n    </tr>\n    <tr>\n      <th>Goldbohm RA et al. (1996) [PMID: 8537983]</th>\n      <td>0.2624</td>\n      <td>0.2037</td>\n      <td>-0.1369</td>\n      <td>0.6616</td>\n      <td>650.0</td>\n      <td>120852.0</td>\n    </tr>\n    <tr>\n      <th>Dai Q et al. (2010) [PMID: 20006278]</th>\n      <td>0.4350</td>\n      <td>0.1415</td>\n      <td>0.1577</td>\n      <td>0.7124</td>\n      <td>-</td>\n      <td>74942.0</td>\n    </tr>\n    <tr>\n      <th>Shirlina NG et al. (2015) [PMID: 26856173]</th>\n      <td>1.2110</td>\n      <td>0.0952</td>\n      <td>1.0245</td>\n      <td>1.3976</td>\n      <td>205.0</td>\n      <td>1002.0</td>\n    </tr>\n  </tbody>\n</table>",

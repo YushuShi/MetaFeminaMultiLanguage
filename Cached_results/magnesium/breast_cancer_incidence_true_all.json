@@ -43,11 +43,12 @@
                 "sample_size": "A nested case-control study with 228 incident cancer cases and 228 matched controls",
                 "effect_size": "quartile 4 (\u22650.89 mmol/L; OR = 2.05; 95% CI: 1.12-3.76)",
                 "effect_direction": "Both low and high plasma magnesium concentrations were significantly associated with an increased incident risk of cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.020.",
                 "confidence_interval": "OR = 2.05; 95% CI: 1.12-3.76",
                 "outcome_definition": "Study outcomes included incident cancer and its subtypes... similar trends were found for gastrointestinal cancer, esophageal cancer, gastric cancer, breast cancer, lung cancer, and other cancers.",
                 "exposure_definition": "baseline plasma magnesium concentrations"
-            }
+            },
+            "P Value": 0.02015391415569333
         },
         {
             "Study": "Huang WQ et al. (2019) [PMID: 30962499]",
@@ -91,11 +92,12 @@
                 "sample_size": "This case-control study recruited 1050 case patients and 1229 control subjects.",
                 "effect_size": "A higher magnesium intake was associated with a lower breast cancer risk (adjusted OR\u2009=\u20090.80, 95% CI\u2009=\u20090.65, 0.99).",
                 "effect_direction": "A higher magnesium intake was associated with a lower breast cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.038.",
                 "confidence_interval": "95% CI\u2009=\u20090.65, 0.99",
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "dietary magnesium intake"
-            }
+            },
+            "P Value": 0.037613049894670875
         },
         {
             "Study": "Papadimitriou N et al. (2021) [PMID: 32761610]",
@@ -188,12 +190,13 @@
                 "sample_size": "UK Biobank (UKB; 67,045 cancer-free participants; 3,397 breast cancer patients)",
                 "effect_size": "Higher intakes of vitamins B2 and C, calcium, and magnesium were inversely associated with risk and mortality",
                 "effect_direction": "inversely associated with risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.027.",
                 "confidence_interval": "HR = 0.96, 95%CI: 0.93-1.00",
                 "outcome_definition": "breast cancer incidence",
                 "exposure_definition": "Higher intakes of vitamins B2 and C, calcium, and magnesium"
             },
-            "exclusions": 2
+            "exclusions": 2,
+            "P Value": 0.027450380874470576
         },
         {
             "Study": "Kim JY et al. (2023) [PMID: 37605270]",

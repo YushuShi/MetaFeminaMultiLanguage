@@ -92,11 +92,12 @@
                 "sample_size": "2762 subcohort members, 306 total BC cases",
                 "effect_size": "linoleyl-carnitine (HR: 0.81; 95% CI: 0.68, 0.96)",
                 "effect_direction": "A pattern enriched in unconjugated bile acids was inversely associated (HR: 0.86; 95% CI: 0.75, 0.99), as was linoleyl-carnitine (HR: 0.81; 95% CI: 0.68, 0.96)",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.017.",
                 "confidence_interval": "linoleyl-carnitine (HR: 0.81; 95% CI: 0.68, 0.96)",
                 "outcome_definition": "Breast cancer (BC) is the most common cancer in females. ... This study aimed to identify plasma metabolites associated with incident BC",
                 "exposure_definition": "linoleyl-carnitine"
-            }
+            },
+            "P Value": 0.016602827740717696
         },
         {
             "Study": "Mahamat-Saleh Y et al. (2025) [PMID: 40528579]",
@@ -189,11 +190,12 @@
                 "sample_size": "Breast cancer incidence data were obtained from a large cohort study involving 138,389 cases and 240,341 controls.",
                 "effect_size": "succinyl carnitine (OR = 1.58; 95% CI: 1.06-2.34)",
                 "effect_direction": "succinyl carnitine (OR = 1.58; 95% CI: 1.06-2.34)",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.024.",
                 "confidence_interval": "succinyl carnitine (OR = 1.58; 95% CI: 1.06-2.34)",
                 "outcome_definition": "Breast cancer incidence data were obtained from a large cohort study",
                 "exposure_definition": "succinyl carnitine"
-            }
+            },
+            "P Value": 0.023552026542002634
         },
         {
             "Study": "Chen H et al. (2025) [PMID: 41105334]",

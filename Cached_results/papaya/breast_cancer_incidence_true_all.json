@@ -43,11 +43,12 @@
                 "sample_size": "Four hundred and thirty-eight cases were frequency matched to 438 controls",
                 "effect_size": "The ORs of the highest quartile relative to the lowest quartile of ... watermelon/papaya/cantaloupe were all inversely and significantly related with breast cancer risk.",
                 "effect_direction": "Consumption of ... watermelon/papaya/cantaloupe were all inversely and significantly related with breast cancer risk.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.005.",
                 "confidence_interval": "The ORs of the highest quartile relative to the lowest quartile ... 0.53 (95% CI 0.34-0.82)",
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "Consumption of individual vegetable and fruit groups such as ... watermelon/papaya/cantaloupe"
-            }
+            },
+            "P Value": 0.004699487554888096
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>438</td>\n      <td>876</td>\n      <td>0.56449</td>\n      <td>0.37191</td>\n      <td>0.839648</td>\n    </tr>\n  </tbody>\n</table>",

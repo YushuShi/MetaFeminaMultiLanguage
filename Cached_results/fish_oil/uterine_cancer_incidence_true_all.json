@@ -93,11 +93,12 @@
                 "sample_size": "556 incident cancer cases and 533 age-matched controls",
                 "effect_size": "Fish oil supplement use was significantly associated with reduced risk of endometrial cancer: OR = 0.63 (95 % CI: 0.45-0.88).",
                 "effect_direction": "significantly associated with reduced risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.007.",
                 "confidence_interval": "OR = 0.63 (95 % CI: 0.45-0.88)",
                 "outcome_definition": "endometrial cancer risk",
                 "exposure_definition": "Fish oil supplement use"
-            }
+            },
+            "P Value": 0.006922820332552697
         },
         {
             "Study": "Brasky TM et al. (2015) [PMID: 25739930]",

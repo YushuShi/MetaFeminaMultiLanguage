@@ -93,11 +93,12 @@
                 "sample_size": "We included 10 713 young and middle-aged - mainly premenopausal - women.",
                 "effect_size": "adherence to a MDP was inversely associated with premenopausal BC (multivariable-adjusted HR Q4 v. Q1 0\u00b733; 95 % CI 0\u00b712, 0\u00b791)",
                 "effect_direction": "adherence to a MDP was inversely associated with premenopausal BC",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.032.",
                 "confidence_interval": "HR Q4 v. Q1 0\u00b733; 95 % CI 0\u00b712, 0\u00b791",
                 "outcome_definition": "BC cases were initially identified through self-report or, if deceased, from death certificates or by notification by the next kin.",
                 "exposure_definition": "'Mediterranean dietary pattern' (MDP)"
-            }
+            },
+            "P Value": 0.03194145875176408
         },
         {
             "Study": "Buckland G et al. (2013) [PMID: 23180513]",
@@ -191,11 +192,12 @@
                 "sample_size": "The Swedish Women's Lifestyle and Health cohort study includes 49,258 women aged 30 to 49 years at recruitment in 1991-1992.",
                 "effect_size": "A RR (95% confidence interval) for breast cancer associated with a two-point increment in the Mediterranean diet score was 1.08 (1.00-1.15) in all women",
                 "effect_direction": "Adherence to a Mediterranean dietary pattern was not statistically significantly associated with reduced risk of breast cancer overall",
-                "p_value": "not statistically significantly associated",
+                "p_value": "not statistically significantly associated Computed from the reported effect and 95% CI using a normal approximation: p=0.031.",
                 "confidence_interval": "1.08 (1.00-1.15)",
                 "outcome_definition": "1,278 incident breast cancers were diagnosed.",
                 "exposure_definition": "A Mediterranean diet score was constructed based on the consumption of alcohol, vegetables, fruits, legumes, cereals, fish, the ratio of unsaturated to saturated fat, and dairy and meat products."
-            }
+            },
+            "P Value": 0.03088279482763163
         },
         {
             "Study": "Cade JE et al. (2011) [PMID: 21587285]",
@@ -288,11 +290,12 @@
                 "sample_size": "350 new cases of breast cancer and 700 age- and socioeconomic status-matched controls were enrolled.",
                 "effect_size": "individuals in the highest tertile of the Mediterranean diet score compared with those in the lowest tertile were 57% less likely to have breast cancer [odds ratio (OR): 0.43, 95% confidence interval (CI): 0.28-0.67]",
                 "effect_direction": "significant inverse association between the Mediterranean diet and breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.495e-04.",
                 "confidence_interval": "odds ratio (OR): 0.43, 95% confidence interval (CI): 0.28-0.67",
                 "outcome_definition": "breast cancer",
                 "exposure_definition": "Mediterranean diet score according to the dietary intakes of participants"
-            }
+            },
+            "P Value": 0.00014951635957585456
         },
         {
             "Study": "Yiannakou I et al. (2023) [PMID: 37025613]",
@@ -337,11 +340,12 @@
                 "sample_size": "Participants included 1579 women aged \u2264 30 years who were free of prevalent cancer.",
                 "effect_size": "HR = 0.45",
                 "effect_direction": "Women in the highest (vs. lowest) score category of the pyramid-based scores (i.e., MeDiet or MSDP) had approximately 45% statistically significantly lower breast cancer risks.",
-                "p_value": "statistically significantly lower breast cancer risks",
+                "p_value": "statistically significantly lower breast cancer risks Computed from the reported effect and 95% CI using a normal approximation: p=0.026.",
                 "confidence_interval": "HR = 0.45, 95% CI: 0.22-0.90",
                 "outcome_definition": "breast cancer risk (including total, postmenopausal, and hormone receptor positive cases)",
                 "exposure_definition": "adherence to four established Mediterranean diet indices"
-            }
+            },
+            "P Value": 0.02628957069583661
         },
         {
             "Study": "Cao S et al. (2022) [PMID: 35425800]",
@@ -532,11 +536,12 @@
                 "sample_size": "women without a prior history of breast cancer (n = 4152)",
                 "effect_size": "The multivariable-adjusted hazard ratios vs the control group were 0.32 (95% CI, 0.13-0.79) for the Mediterranean diet with extra-virgin olive oil group",
                 "effect_direction": "Our results suggest a beneficial effect of a Mediterranean diet supplemented with extra-virgin olive oil in the primary prevention of breast cancer.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.013.",
                 "confidence_interval": "0.32 (95% CI, 0.13-0.79)",
                 "outcome_definition": "Breast cancer incidence was a prespecified secondary outcome of the trial for women without a prior history of breast cancer",
                 "exposure_definition": "Mediterranean diet supplemented with extra-virgin olive oil"
-            }
+            },
+            "P Value": 0.013314345846812488
         },
         {
             "Study": "Castell\u00f3 A et al. (2014) [PMID: 25101568]",
@@ -580,11 +585,12 @@
                 "sample_size": "We recruited 1017 incident BC cases and 1017 matched healthy controls",
                 "effect_size": "Mediterranean pattern was related to a lower risk (OR for the top quartile vs the bottom quartile 0.56 (95% CI 0.40-0.79))",
                 "effect_direction": "Mediterranean pattern was related to a lower risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=8.387e-04.",
                 "confidence_interval": "OR for the top quartile vs the bottom quartile 0.56 (95% CI 0.40-0.79)",
                 "outcome_definition": "risk of BC in Spanish women",
                 "exposure_definition": "Mediterranean pattern"
-            }
+            },
+            "P Value": 0.0008387150031455678
         },
         {
             "Study": "Mourouti N et al. (2014) [PMID: 24847911]",
@@ -628,11 +634,12 @@
                 "sample_size": "Two-hundred-and-fifty consecutive, newly diagnosed breast-cancer female patients ... and 250 ... controls, were studied.",
                 "effect_size": "One unit increase in the MedDietScore ... was associated with 9% lower likelihood of having breast cancer (odds ratio = 0.91 ...)",
                 "effect_direction": "greater adherence to the Mediterranean diet ... associated with 9% lower likelihood of having breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.002.",
                 "confidence_interval": "odds ratio = 0.91; 95% confidence interval, 0.86, 0.97",
                 "outcome_definition": "newly diagnosed breast-cancer female patients",
                 "exposure_definition": "Adherence to the Mediterranean diet was evaluated using the 11-components MedDietScore"
-            }
+            },
+            "P Value": 0.002129813423847171
         },
         {
             "Study": "Demetriou CA et al. (2012) [PMID: 22443862]",
@@ -724,11 +731,12 @@
                 "sample_size": "A total of 94 cases and 88 controls were enrolled",
                 "effect_size": "MD Score over 6 was associated with low odds of having breast cancer (OR = 0.29; 95% CI: 0.12-0.69)",
                 "effect_direction": "MD Score over 6 was associated with low odds of having breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.006.",
                 "confidence_interval": "95% CI: 0.12-0.69",
                 "outcome_definition": "on the occurrence of breast cancer (BC)",
                 "exposure_definition": "level of adherence to MD"
-            }
+            },
+            "P Value": 0.005535347721076055
         },
         {
             "Study": "Fung TT et al. (2006) [PMID: 16424129]",
@@ -967,11 +975,12 @@
                 "sample_size": "610 breast cancer cases and 1891 matched controls",
                 "effect_size": "OR comparing first tertile with third 1.20 (95% CI 0.92; 1.56)",
                 "effect_direction": "The MDS was not associated with breast cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.176.",
                 "confidence_interval": "OR comparing first tertile with third 1.20 (95% CI 0.92; 1.56)",
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "The Mediterranean Diet Score (MDS)"
-            }
+            },
+            "P Value": 0.17589005102775798
         },
         {
             "Study": "Voevodina O et al. (2013) [PMID: 23497280]",
@@ -1112,11 +1121,12 @@
                 "sample_size": "6374 postmenopausal women",
                 "effect_size": "the HR for highest vs. lowest quintile of index was ... 0.88 ... for mMEDI",
                 "effect_direction": "the HR for highest vs. lowest quintile of index was ... 0.88 ... for mMEDI",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.526.",
                 "confidence_interval": "95 %CI 0.59-1.30",
                 "outcome_definition": "postmenopausal BC risk",
                 "exposure_definition": "Mediterranean diet (mMEDI)"
-            }
+            },
+            "P Value": 0.5258753806249563
         },
         {
             "Study": "Wu AH et al. (2009) [PMID: 19211822]",
@@ -1208,11 +1218,12 @@
                 "sample_size": "106 histopathologically confirmed breast cancer cases and 107 age-matched controls.",
                 "effect_size": "women in the highest tertile of MD ... had a 75% (OR = 0.25, 95% CI: 0.10-0.64) reduced odds of breast cancer",
                 "effect_direction": "had a 75% (OR = 0.25, 95% CI: 0.10-0.64) reduced odds of breast cancer",
-                "p_value": "All trends were statistically significant.",
+                "p_value": "All trends were statistically significant. Computed from the reported effect and 95% CI using a normal approximation: p=0.003.",
                 "confidence_interval": "OR = 0.25, 95% CI: 0.10-0.64",
                 "outcome_definition": "106 histopathologically confirmed breast cancer cases",
                 "exposure_definition": "adherence to the Mediterranean diet (MD)"
-            }
+            },
+            "P Value": 0.003417218345728485
         },
         {
             "Study": "Lamchabbek N et al. (2025) [PMID: 41417097]",

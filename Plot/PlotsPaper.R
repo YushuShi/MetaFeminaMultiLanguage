@@ -21,6 +21,8 @@ for (pkg in c("ggtext", "cowplot", "ggrepel", "patchwork", "jsonlite")) {
 
 output_dir <- "."
 dir.create(output_dir, showWarnings = FALSE, recursive = TRUE)
+analysis_json_path <- Sys.getenv("METAFEMINA_ANALYSIS_JSON", "")
+analysis_json <- if (nzchar(analysis_json_path)) jsonlite::fromJSON(analysis_json_path) else NULL
 
 summary_plot_locales <- c("zh-CN", "zh-TW", "nl", "ko")
 translation_catalog_path <- file.path("..", "static", "i18n-translations.json")
@@ -183,7 +185,17 @@ save_plot_pdf <- function(output_path, plot, width, height,
 # =============================================================================
 
 read_analysis_data <- function(path) {
-  raw <- read_excel(path)
+  if (!is.null(analysis_json)) {
+    dataset_key <- if (str_detect(path, "_dietary\\.xlsx$")) "dietary" else "combined"
+    disease_key <- case_when(
+      str_detect(path, "breast") ~ "breast",
+      str_detect(path, "ovarian") ~ "ovarian",
+      str_detect(path, "uterine") ~ "uterine"
+    )
+    raw <- as_tibble(analysis_json[[dataset_key]][[disease_key]])
+  } else {
+    raw <- read_excel(path)
+  }
   if (ncol(raw) != 11) {
     stop("Expected 11 columns in ", path, "; found ", ncol(raw), ".")
   }

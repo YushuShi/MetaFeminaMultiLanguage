@@ -43,11 +43,12 @@
                 "sample_size": "Blood samples were obtained during 1989 and 1990 from 32 826 women in the Nurses' Health Study",
                 "effect_size": "Plasma vitamin B(12) levels were inversely associated with breast cancer risk among premenopausal women (multivariable RR = 0.36, 95% CI = 0.15 to 0.86 for highest versus lowest quintile)",
                 "effect_direction": "Plasma vitamin B(12) levels were inversely associated with breast cancer risk among premenopausal women",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.022.",
                 "confidence_interval": "95% CI = 0.15 to 0.86",
                 "outcome_definition": "followed through 1996 for the development of breast cancer",
                 "exposure_definition": "Plasma vitamin B(12) levels"
-            }
+            },
+            "P Value": 0.0218277821612084
         },
         {
             "Study": "Matejcic M et al. (2017) [PMID: 27905104]",

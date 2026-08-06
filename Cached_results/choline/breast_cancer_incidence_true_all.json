@@ -43,11 +43,12 @@
                 "sample_size": "blood samples were available for 500 cases and 500 controls",
                 "effect_size": "for serum choline (fourth vs first quartile adjusted OR 0.80, 95% CI 0.56-1.15)",
                 "effect_direction": "This study suggested that serum betaine but not choline was inversely associated with breast cancer risk.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.224.",
                 "confidence_interval": "95% CI 0.56-1.15",
                 "outcome_definition": "breast cancer cases",
                 "exposure_definition": "serum choline"
-            }
+            },
+            "P Value": 0.22413694160413616
         },
         {
             "Study": "Cho E et al. (2010) [PMID: 20051955]",
@@ -140,11 +141,12 @@
                 "sample_size": "population-based study of 1508 cases and 1556 controls",
                 "effect_size": "odds ratio (OR): 0.76",
                 "effect_direction": "associated with a lower risk of breast cancer",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.048.",
                 "confidence_interval": "95% confidence interval (CI): 0.58-1.00",
                 "outcome_definition": "risk of breast cancer",
                 "exposure_definition": "dietary intake of choline"
-            }
+            },
+            "P Value": 0.04827726030919336
         },
         {
             "Study": "Zhang CX et al. (2013) [PMID: 23140534]",

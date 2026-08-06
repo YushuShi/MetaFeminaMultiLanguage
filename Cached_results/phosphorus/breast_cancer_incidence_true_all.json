@@ -185,11 +185,12 @@
                 "sample_size": null,
                 "effect_size": "breast cancer(female)(RR=1.46,95%CI:1.21-1.77)",
                 "effect_direction": "high pollution areas showed increased risks of breast cancer",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=9.612e-05.",
                 "confidence_interval": "RR=1.46,95%CI:1.21-1.77",
                 "outcome_definition": "Incidence data of seven cancers were extracted from the 2019 Annual Report of the China Cancer Registry.",
                 "exposure_definition": "Five key pollutants linked to cancers were identified, including total phosphorus."
-            }
+            },
+            "P Value": 9.611959576623881e-05
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Papadimitriou N et al. (2021) [PMID: 32761610]</th>\n      <td>-0.1533</td>\n      <td>0.0699</td>\n      <td>-0.2902</td>\n      <td>-0.0164</td>\n      <td>122977.0</td>\n      <td>228951.0</td>\n    </tr>\n    <tr>\n      <th>Zhao J et al. (2024) [PMID: 39773504]</th>\n      <td>0.3784</td>\n      <td>0.0970</td>\n      <td>0.1883</td>\n      <td>0.5686</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Brown RB et al. (2023) [PMID: 37686766]</th>\n      <td>0.8329</td>\n      <td>0.4557</td>\n      <td>-0.0603</td>\n      <td>1.7261</td>\n      <td>74.0</td>\n      <td>370.0</td>\n    </tr>\n    <tr>\n      <th>Brown RB (2026) [PMID: 42074990]</th>\n      <td>0.8671</td>\n      <td>0.4680</td>\n      <td>-0.0502</td>\n      <td>1.7844</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n  </tbody>\n</table>",

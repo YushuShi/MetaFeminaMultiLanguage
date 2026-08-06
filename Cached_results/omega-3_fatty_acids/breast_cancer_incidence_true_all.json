@@ -141,11 +141,12 @@
                 "sample_size": "a cohort of healthy Danish women, who in the 1990s donated adipose tissue biopsies to a biobank",
                 "effect_size": "hazard ratio (HR) was 0.96 (95% CI 0.64-1.43) for total marine n-3 PUFA",
                 "effect_direction": "no significant association between the content of marine n-3 PUFA and BC was found",
-                "p_value": "no significant association",
+                "p_value": "no significant association Computed from the reported effect and 95% CI using a normal approximation: p=0.842.",
                 "confidence_interval": "HR was 0.96 (95% CI 0.64-1.43)",
                 "outcome_definition": "subsequent development of breast cancer (BC)",
                 "exposure_definition": "content of marine n-3 polyunsaturated fatty acids (PUFA) in adipose tissue"
-            }
+            },
+            "P Value": 0.8422297891078038
         },
         {
             "Study": "Wakai K et al. (2005) [PMID: 16128744]",
@@ -190,11 +191,12 @@
                 "sample_size": "26 291 women aged 40-79 years completed a questionnaire",
                 "effect_size": "the RR were 0.56 (95% CI 0.33-0.94) and 0.50 (0.30-0.85), respectively",
                 "effect_direction": "a significant decrease in the risk was detected for the highest quartile of intake compared with the lowest for fish fat and long-chain n-3 fatty acids",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.009.",
                 "confidence_interval": "0.50 (0.30-0.85)",
                 "outcome_definition": "129 breast cancer cases were documented",
                 "exposure_definition": "long-chain n-3 fatty acids"
-            }
+            },
+            "P Value": 0.009081137320913646
         },
         {
             "Study": "Hirko KA et al. (2018) [PMID: 29071721]",
@@ -432,11 +434,12 @@
                 "sample_size": "postmenopausal breast cancer cases and controls from five European countries",
                 "effect_size": "In Malaga, Spain, the odds ratio for the highest tertile relative to the lowest reached 0.32 (95% confidence interval 0.13-0.82).",
                 "effect_direction": "the ratio of long-chain omega-3 fatty acids to total omega-6 fat showed an inverse association with breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.015.",
                 "confidence_interval": "odds ratio ... 0.32 (95% confidence interval 0.13-0.82)",
                 "outcome_definition": "breast cancer cases and controls",
                 "exposure_definition": "The fatty acid content of adipose tissue ... omega-3 family"
-            }
+            },
+            "P Value": 0.015301739110980565
         },
         {
             "Study": "De Stefani E et al. (1998) [PMID: 9590123]",
@@ -480,11 +483,12 @@
                 "sample_size": "Our study comprised 365 cases and 397 controls.",
                 "effect_size": "OR for the upper quartile of intake of alpha-linolenic acid 3.79",
                 "effect_direction": "alpha-linolenic acid ... associated with an increased risk of breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.004.",
                 "confidence_interval": "95% CI 1.53-9.40",
                 "outcome_definition": "risk of breast cancer",
                 "exposure_definition": "frequency of intake of different types of fat ... alpha-linolenic acid"
-            }
+            },
+            "P Value": 0.004015819259011892
         },
         {
             "Study": "Kim J et al. (2009) [PMID: 19566923]",
@@ -528,11 +532,12 @@
                 "sample_size": "We recruited 358 incident breast cancer patients and 360 controls",
                 "effect_size": "Among premenopausal women, there was a significant reduction in breast cancer risk for the highest intake quartiles of omega-3 fatty acids (ORs [95% CI]: 0.46 [0.22 to 0.96])",
                 "effect_direction": "significant reduction in breast cancer risk for the highest intake quartiles of omega-3 fatty acids",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.039.",
                 "confidence_interval": "0.46 [0.22 to 0.96]",
                 "outcome_definition": "risk of breast cancer in a case-control study of Korean women",
                 "exposure_definition": "omega-3 fatty acids derived from fish (eicosapentaenoic acid (EPA), and docosahexaenoic acid (DHA))"
-            }
+            },
+            "P Value": 0.03881930292837148
         },
         {
             "Study": "Thi\u00e9baut AC et al. (2009) [PMID: 19035453]",
@@ -722,11 +727,12 @@
                 "sample_size": "35,298 Singapore Chinese women aged 45-74 years",
                 "effect_size": "Relative risk (RR)=0.74",
                 "effect_direction": "high levels of dietary n-3 fatty acids from fish/shellfish (marine n-3 fatty acids) were significantly associated with reduced risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.015.",
                 "confidence_interval": "95% confidence interval (CI)=0.58, 0.94",
                 "outcome_definition": "314 incident cases of breast cancer had occurred",
                 "exposure_definition": "dietary n-3 fatty acids from fish/shellfish (marine n-3 fatty acids)"
-            }
+            },
+            "P Value": 0.014505240810654262
         },
         {
             "Study": "Maillard V et al. (2002) [PMID: 11857389]",
@@ -866,11 +872,12 @@
                 "sample_size": "A case-control study was conducted including 853 newly diagnosed, histologically confirmed breast cancer cases and 892 frequency-matched controls",
                 "effect_size": "The OR values (95 % CI), comparing the highest with the lowest quartile (Q), were ... 0\u00b736 (0\u00b727, 0\u00b749) for ... total n-3 PUFA",
                 "effect_direction": "Erythrocyte membrane n-3 PUFA were inversely associated with odds of breast cancer.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.820e-11.",
                 "confidence_interval": "0\u00b736 (0\u00b727, 0\u00b749)",
                 "outcome_definition": "853 newly diagnosed, histologically confirmed breast cancer cases",
                 "exposure_definition": "Erythrocyte membrane n-3 PUFA were measured by GC."
-            }
+            },
+            "P Value": 1.8200889716430103e-11
         },
         {
             "Study": "Zhang Z et al. (2022) [PMID: 36407524]",
@@ -914,11 +921,12 @@
                 "sample_size": "850 cases and 861 controls",
                 "effect_size": "The adjusted OR tertile 3 v.1 (95% CI) was 0.74 (0.58, 0.94) for total n-3 PUFAs",
                 "effect_direction": "Higher intake of dietary ALA, long-chain n-3 PUFAs and total n-3 PUFAs was associated with lower risk of breast cancer.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.015.",
                 "confidence_interval": "The adjusted OR tertile 3 v.1 (95% CI) was 0.74 (0.58, 0.94) for total n-3 PUFAs",
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "Dietary n-3 polyunsaturated fatty acids (PUFAs)"
-            }
+            },
+            "P Value": 0.014505240810654262
         },
         {
             "Study": "Zhang ZL et al. (2022) [PMID: 35881925]",
@@ -962,11 +970,12 @@
                 "sample_size": "A hospital-based case-control study including 1,589 cases and 1,621 age-frequency-matched controls was conducted.",
                 "effect_size": "adjusted OR quartile 4 v.1 (95% confidence intervals) of 0.56 (0.42-0.75)",
                 "effect_direction": "Higher intake of marine n-3 PUFAs and total n-3 PUFAs was associated with lower risk of breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=8.855e-05.",
                 "confidence_interval": "adjusted OR quartile 4 v.1 (95% confidence intervals) of 0.56 (0.42-0.75)",
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "intake of n-3 polyunsaturated fatty acids (PUFAs)"
-            }
+            },
+            "P Value": 8.854896862414192e-05
         },
         {
             "Study": "Li J et al. (2021) [PMID: 34296713]",
@@ -1010,11 +1019,12 @@
                 "sample_size": "A total of 104 newly diagnosed breast cancer patients and 70 healthy controls were recruited.",
                 "effect_size": "it was inversely associated with breast cancer risk (OR = 0.60; 95% CI: 0.36-0.84)",
                 "effect_direction": "erythrocyte phospholipid n-3 index was significantly lower in breast cancer patients than in healthy controls, and it was inversely associated with breast cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.018.",
                 "confidence_interval": "OR = 0.60; 95% CI: 0.36-0.84",
                 "outcome_definition": "104 newly diagnosed breast cancer patients and 70 healthy controls",
                 "exposure_definition": "erythrocyte phospholipid fatty acid composition was determined by gas-liquid chromatography, and the n-3 index was calculated with the percentage of eicosapentaenoic acid plus docosahexaenoic acid in total fatty acids"
-            }
+            },
+            "P Value": 0.018111995923672165
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Simonsen N et al. (1998) [PMID: 9508101]</th>\n      <td>-1.0469</td>\n      <td>0.4453</td>\n      <td>-1.9196</td>\n      <td>-0.1742</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Klein V et al. (2000) [PMID: 10708934]</th>\n      <td>-0.9348</td>\n      <td>0.5143</td>\n      <td>-1.9428</td>\n      <td>0.0732</td>\n      <td>123.0</td>\n      <td>182</td>\n    </tr>\n    <tr>\n      <th>Zhang ZL et al. (2024) [PMID: 37381894]</th>\n      <td>-0.9348</td>\n      <td>0.1441</td>\n      <td>-1.2172</td>\n      <td>-0.6524</td>\n      <td>853.0</td>\n      <td>1745</td>\n    </tr>\n    <tr>\n      <th>Maillard V et al. (2002) [PMID: 11857389]</th>\n      <td>-0.8590</td>\n      <td>0.3393</td>\n      <td>-1.5240</td>\n      <td>-0.1940</td>\n      <td>241.0</td>\n      <td>329</td>\n    </tr>\n    <tr>\n      <th>Kim J et al. (2009) [PMID: 19566923]</th>\n      <td>-0.7037</td>\n      <td>0.3499</td>\n      <td>-1.3895</td>\n      <td>-0.0180</td>\n      <td>358.0</td>\n      <td>718</td>\n    </tr>\n    <tr>\n      <th>Kiyabu GY et al. (2015) [PMID: 26147326]</th>\n      <td>-0.7187</td>\n      <td>0.3127</td>\n      <td>-1.3316</td>\n      <td>-0.1059</td>\n      <td>556.0</td>\n      <td>38234</td>\n    </tr>\n    <tr>\n      <th>Murff HJ et al. (2011) [PMID: 20878979]</th>\n      <td>-0.7228</td>\n      <td>0.2467</td>\n      <td>-1.2063</td>\n      <td>-0.2393</td>\n      <td>712.0</td>\n      <td>72571</td>\n    </tr>\n    <tr>\n      <th>Wakai K et al. (2005) [PMID: 16128744]</th>\n      <td>-0.6931</td>\n      <td>0.2657</td>\n      <td>-1.2139</td>\n      <td>-0.1724</td>\n      <td>129.0</td>\n      <td>26291</td>\n    </tr>\n    <tr>\n      <th>Kuriki K et al. (2007) [PMID: 17354239]</th>\n      <td>-0.6075</td>\n      <td>0.3041</td>\n      <td>-1.2035</td>\n      <td>-0.0115</td>\n      <td>103.0</td>\n      <td>412</td>\n    </tr>\n    <tr>\n      <th>Nkondjock A et al. (2004) [PMID: 15113726]</th>\n      <td>-0.5895</td>\n      <td>0.3424</td>\n      <td>-1.2606</td>\n      <td>0.0816</td>\n      <td>414.0</td>\n      <td>843</td>\n    </tr>\n    <tr>\n      <th>Zhang ZL et al. (2022) [PMID: 35881925]</th>\n      <td>-0.5209</td>\n      <td>0.1363</td>\n      <td>-0.7881</td>\n      <td>-0.2537</td>\n      <td>1589.0</td>\n      <td>3210</td>\n    </tr>\n    <tr>\n      <th>Bassett JK et al. (2016) [PMID: 27146840]</th>\n      <td>-0.5327</td>\n      <td>0.1758</td>\n      <td>-0.8772</td>\n      <td>-0.1882</td>\n      <td>470.0</td>\n      <td>2021</td>\n    </tr>\n    <tr>\n      <th>Hirko KA et al. (2018) [PMID: 29071721]</th>\n      <td>-0.5046</td>\n      <td>0.2124</td>\n      <td>-0.9209</td>\n      <td>-0.0883</td>\n      <td>794.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Li J et al. (2021) [PMID: 34296713]</th>\n      <td>-0.4574</td>\n      <td>0.1993</td>\n      <td>-0.8481</td>\n      <td>-0.0667</td>\n      <td>104.0</td>\n      <td>174</td>\n    </tr>\n    <tr>\n      <th>Fereidani SS et al. (2018) [PMID: 30256069]</th>\n      <td>-0.3984</td>\n      <td>0.1968</td>\n      <td>-0.7841</td>\n      <td>-0.0126</td>\n      <td>134.0</td>\n      <td>401</td>\n    </tr>\n    <tr>\n      <th>Thi\u00e9baut AC et al. (2009) [PMID: 19035453]</th>\n      <td>-0.2834</td>\n      <td>0.0809</td>\n      <td>-0.4419</td>\n      <td>-0.1248</td>\n      <td>1650.0</td>\n      <td>56007</td>\n    </tr>\n    <tr>\n      <th>Zhang Z et al. (2022) [PMID: 36407524]</th>\n      <td>-0.2667</td>\n      <td>0.1109</td>\n      <td>-0.4840</td>\n      <td>-0.0495</td>\n      <td>850.0</td>\n      <td>1711</td>\n    </tr>\n    <tr>\n      <th>Gago-Dominguez M et al. (2003) [PMID: 14583770]</th>\n      <td>-0.3011</td>\n      <td>0.1232</td>\n      <td>-0.5425</td>\n      <td>-0.0597</td>\n      <td>314.0</td>\n      <td>35298</td>\n    </tr>\n    <tr>\n      <th>Witt PM et al. (2009) [PMID: 19711189]</th>\n      <td>-0.0381</td>\n      <td>0.1914</td>\n      <td>-0.4132</td>\n      <td>0.3370</td>\n      <td>463.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Newell M et al. (2021) [PMID: 33889794]</th>\n      <td>0.4800</td>\n      <td>0.4402</td>\n      <td>-0.3828</td>\n      <td>1.3429</td>\n      <td>393.0</td>\n      <td>1179</td>\n    </tr>\n    <tr>\n      <th>De Stefani E et al. (1998) [PMID: 9590123]</th>\n      <td>1.0229</td>\n      <td>0.2918</td>\n      <td>0.4509</td>\n      <td>1.5949</td>\n      <td>365.0</td>\n      <td>762</td>\n    </tr>\n  </tbody>\n</table>",

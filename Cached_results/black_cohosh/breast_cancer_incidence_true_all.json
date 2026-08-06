@@ -43,11 +43,12 @@
                 "sample_size": "949 breast cancer cases and 1,524 controls",
                 "effect_size": "Use of black cohosh had a significant breast cancer protective effect (adjusted odds ratio 0.39, 95% CI: 0.22-0.70)",
                 "effect_direction": "significant breast cancer protective effect",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.001.",
                 "confidence_interval": "adjusted odds ratio 0.39, 95% CI: 0.22-0.70",
                 "outcome_definition": "breast cancer cases",
                 "exposure_definition": "Use of black cohosh"
-            }
+            },
+            "P Value": 0.0014277077049876772
         },
         {
             "Study": "Obi N et al. (2009) [PMID: 19661079]",

@@ -383,12 +383,13 @@
                 "sample_size": "Cases (n = 46)... control subjects (n = 63)",
                 "effect_size": "odds ratios were ... 0.32 (95% CI: 0.11, 0.94) for lycopene",
                 "effect_direction": "inverse associations between breast adipose concentrations of retinoids and carotenoids and risk of breast cancer",
-                "p_value": "not all were statistically significant",
+                "p_value": "not all were statistically significant Computed from the reported effect and 95% CI using a normal approximation: p=0.037.",
                 "0.32 (95% CI: 0.11, 0.94)": "statistically significant",
                 "confidence_interval": "0.32 (95% CI: 0.11, 0.94)",
                 "outcome_definition": "Cases (n = 46) were women whose biopsies revealed invasive or in situ breast cancer",
                 "exposure_definition": "Breast adipose concentrations of ... lycopene"
-            }
+            },
+            "P Value": 0.037348404647160674
         },
         {
             "Study": "Cui Y et al. (2008) [PMID: 18400726]",
@@ -481,11 +482,12 @@
                 "sample_size": "The cases were 122 female patients... 632 healthy women age-matched were randomly recruited.",
                 "effect_size": "the adjusted ORs were 0.26 (95% CI 0.14-0.46) for lycopene",
                 "effect_direction": "higher intake of lycopene... is associated to a lower risk of breast cancer",
-                "p_value": "statistically significant tests for trend",
+                "p_value": "statistically significant tests for trend Computed from the reported effect and 95% CI using a normal approximation: p=9.039e-06.",
                 "confidence_interval": "0.26 (95% CI 0.14-0.46)",
                 "outcome_definition": "histopathologically confirmed breast cancer",
                 "exposure_definition": "intake of lycopene"
-            }
+            },
+            "P Value": 9.039016124805332e-06
         },
         {
             "Study": "Gaudet MM et al. (2004) [PMID: 15342450]",
@@ -577,11 +579,12 @@
                 "sample_size": "A total of 521 women with breast cancer and age-matched controls (5-year interval) were selected from three teaching hospitals in Guangzhou, China.",
                 "effect_size": "The multivariate OR for the highest quartile of serum concentration compared with the lowest quartile were ... 0\u00b741 (95% CI 0\u00b728, 0\u00b761) for lycopene",
                 "effect_direction": "Significant inverse associations were observed between serum \u03b1-carotene, \u03b2-carotene, lycopene, lutein/zeaxanthin and the risk for breast cancer.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=7.172e-06.",
                 "confidence_interval": "0\u00b741 (95% CI 0\u00b728, 0\u00b761) for lycopene",
                 "outcome_definition": "risk for breast cancer",
                 "exposure_definition": "serum carotenoids, including ... lycopene"
-            }
+            },
+            "P Value": 7.172329775558193e-06
         },
         {
             "Study": "Wang L et al. (2014) [PMID: 24502868]",
@@ -625,11 +628,12 @@
                 "sample_size": "A total of 561 cases and 561 controls",
                 "effect_size": "Lycopene intake was not found to be associated with the risk of breast cancer, with the adjusted OR of 0\u00b789 (95\u00a0% CI 0\u00b761, 1\u00b730).",
                 "effect_direction": "Lycopene intake was not found to be associated with the risk of breast cancer",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.546.",
                 "confidence_interval": "OR of 0\u00b789 (95\u00a0% CI 0\u00b761, 1\u00b730)",
                 "outcome_definition": "the risk of breast cancer among Chinese women",
                 "exposure_definition": "Lycopene intake"
-            }
+            },
+            "P Value": 0.5460285576858454
         },
         {
             "Study": "Darouei B et al. (2025) [PMID: 41029403]",

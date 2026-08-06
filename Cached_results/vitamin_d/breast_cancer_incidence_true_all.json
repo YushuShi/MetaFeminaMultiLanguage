@@ -44,11 +44,12 @@
                 "sample_size": "67,721 women of the French E3N cohort",
                 "effect_size": "HR = 0.68, 95% CI: 0.54-0.85",
                 "effect_direction": "postmenopausal women with high dietary or supplemental vitamin D intake had a significantly lower BC risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=8.610e-04.",
                 "confidence_interval": "HR = 0.68, 95% CI: 0.54-0.85",
                 "outcome_definition": "risk of BC among 67,721 women ... During 10 years of follow-up, a total of 2,871 BC cases were diagnosed",
                 "exposure_definition": "vitamin D intakes, mean daily ultraviolet radiation dose (UVRd) at the place of residence"
-            }
+            },
+            "P Value": 0.0008610292069761001
         },
         {
             "Study": "Engel P et al. (2010) [PMID: 20826834]",
@@ -140,11 +141,12 @@
                 "sample_size": "There were 764 incident breast cancer cases, and 764 controls",
                 "effect_size": "the OR for the 2nd, 3rd and 4th quartiles, as compared to the first, were 0.84 (0.60-1.15), 0.84 (0.60-1.17) and 0.93 (0.66-1.33)",
                 "effect_direction": "There was a weak, nonsignificant inverse association between breast cancer risk and 25OHD(3)",
-                "p_value": "nonsignificant",
+                "p_value": "nonsignificant Computed from the reported effect and 95% CI using a normal approximation: p=0.685.",
                 "confidence_interval": "0.93 (0.66-1.33)",
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "prediagnostic serum levels of vitamin D (25OHD(2) and 25OHD(3))"
-            }
+            },
+            "P Value": 0.6847476389119995
         },
         {
             "Study": "Agborsangaya CB et al. (2010) [PMID: 20022237]",
@@ -188,11 +190,12 @@
                 "sample_size": "100 cases, matched controls",
                 "effect_size": "OR=1.4",
                 "effect_direction": "Serum 25-OHD level was not associated with an increased risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.447.",
                 "confidence_interval": "95%CI 0.6-3.4",
                 "outcome_definition": "risk for subsequent development of breast cancer",
                 "exposure_definition": "Serum 25-hydroxyvitamin (25-OHD) levels"
-            }
+            },
+            "P Value": 0.4470222323707475
         },
         {
             "Study": "McCullough ML et al. (2009) [PMID: 19715600]",
@@ -382,11 +385,12 @@
                 "sample_size": "A total of 34,321 postmenopausal women",
                 "effect_size": "The adjusted RR of breast cancer for women consuming >800 IU/day versus <400 IU/day total vitamin D was 0.89",
                 "effect_direction": "Vitamin D intake of >800 IU/day appears to be associated with a small decrease in risk of breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.116.",
                 "confidence_interval": "0.89 (95% CI: 0.77-1.03)",
                 "outcome_definition": "followed for breast cancer incidence from 1986 to 2004",
                 "exposure_definition": "vitamin D intake and breast cancer risk among women in a large prospective cohort study"
-            }
+            },
+            "P Value": 0.11636509148147622
         },
         {
             "Study": "Lin J et al. (2007) [PMID: 17533208]",
@@ -577,11 +581,12 @@
                 "sample_size": "We followed 88 691 women in the Nurses' Health Study cohort",
                 "effect_size": "total vitamin D (>500 IU/day versus <or=150 IU/day; RR = 0.72, 95% CI = 0.55 to 0.94)",
                 "effect_direction": "inverse associations were seen with components (calcium and vitamin D) of dairy foods",
-                "p_value": "All statistical tests were two-sided.",
+                "p_value": "All statistical tests were two-sided. Computed from the reported effect and 95% CI using a normal approximation: p=0.016.",
                 "confidence_interval": "RR = 0.72, 95% CI = 0.55 to 0.94",
                 "outcome_definition": "We identified 3482 women ... with incident invasive breast cancer.",
                 "exposure_definition": "total vitamin D (>500 IU/day versus <or=150 IU/day)"
-            }
+            },
+            "P Value": 0.016276108986391393
         },
         {
             "Study": "Qin B et al. (2020) [PMID: 31826233]",
@@ -674,11 +679,12 @@
                 "sample_size": "Serum 25(OH)D was measured in 3818 participants (2166 females)",
                 "effect_size": "HR 0.37, 95% CI 0.15, 0.89",
                 "effect_direction": "women with a higher 25(OH)D level had lower risk than women in the lower group",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.029.",
                 "confidence_interval": "HR 0.37, 95% CI 0.15, 0.89",
                 "outcome_definition": "113 women had breast cancer",
                 "exposure_definition": "Serum 25(OH)D was measured"
-            }
+            },
+            "P Value": 0.028606401804963492
         },
         {
             "Study": "O'Brien KM et al. (2019) [PMID: 30608512]",
@@ -723,11 +729,12 @@
                 "sample_size": "This included 827 women with an intervening breast cancer and 771 women without one.",
                 "effect_size": "baseline measurements (per 10-ng/mL increase, odds ratio = 0.87, 95% confidence interval: 0.78, 0.98)",
                 "effect_direction": "odds ratio = 0.87 ... per 10-ng/mL increase",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.017.",
                 "confidence_interval": "95% confidence interval: 0.78, 0.98",
                 "outcome_definition": "827 women with an intervening breast cancer",
                 "exposure_definition": "We measured total serum 25(OH)D levels"
-            }
+            },
+            "P Value": 0.016774330281843938
         },
         {
             "Study": "O'Brien KM et al. (2017) [PMID: 28728134]",
@@ -772,11 +779,12 @@
                 "sample_size": "the Sister Study enrolled 50,884 U.S. women 35-74 y old",
                 "effect_size": "25(OH)D levels were associated with a 21% lower breast cancer hazard (highest versus lowest quartile: adjusted ; CI: 0.63, 0.98)",
                 "effect_direction": "25(OH)D levels were associated with a 21% lower breast cancer hazard",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.036.",
                 "confidence_interval": "CI: 0.63, 0.98",
                 "outcome_definition": "risk of developing breast cancer",
                 "exposure_definition": "baseline serum 25-hydroxyvitamin D [25(OH)D] levels"
-            }
+            },
+            "P Value": 0.03649576394806337
         },
         {
             "Study": "Wu Y et al. (2017) [PMID: 29064397]",
@@ -820,11 +828,12 @@
                 "sample_size": "A total of 237 African-American (Cases = 119, Control = 118) and 423 Hispanic women (Cases = 124, Control = 299) were recruited in the study.",
                 "effect_size": "The 25(OH)D3 level below 20 ng/mL was significantly associated with breast cancer in both African-Americans (OR = 2.5, 95% CI = 1.3-4.8)",
                 "effect_direction": "The 25(OH)D3 level below 20 ng/mL was significantly associated with breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.006.",
                 "confidence_interval": "OR = 2.5, 95% CI = 1.3-4.8",
                 "outcome_definition": "breast cancer risk and progression in African-Americans and Hispanics",
                 "exposure_definition": "serum 25-hydroxyvitamin D (25(OH)D3)"
-            }
+            },
+            "P Value": 0.005968754896848388
         },
         {
             "Study": "Palmer JR et al. (2016) [PMID: 27520657]",
@@ -1160,11 +1169,12 @@
                 "sample_size": "707 postmenopausal breast cancer cases and matched controls",
                 "effect_size": "20 ng/mL increases of plasma 25(OH)D3 (odds ratio (OR) 0.28; 95% confidence interval (CI) 0.14-0.56)",
                 "effect_direction": "inversely associated with breast cancer risk among white women",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=3.188e-04.",
                 "confidence_interval": "odds ratio (OR) 0.28; 95% confidence interval (CI) 0.14-0.56",
                 "outcome_definition": "risk of postmenopausal breast cancer",
                 "exposure_definition": "Pre-diagnostic plasma levels of 25-hydroxyvitamin D3 [25(OH)D3]"
-            }
+            },
+            "P Value": 0.0003187775506081675
         },
         {
             "Study": "K\u00fchn T et al. (2013) [PMID: 23526380]",
@@ -1305,11 +1315,12 @@
                 "sample_size": "319,985 women",
                 "effect_size": "HR and 95% CI were 1.07 (0.87-1.32)",
                 "effect_direction": "no evidence for an association between dietary vitamin D or calcium intake and breast cancer risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.525.",
                 "confidence_interval": "HR and 95% CI were 1.07 (0.87-1.32)",
                 "outcome_definition": "7760 incident invasive breast cancer cases",
                 "exposure_definition": "dietary vitamin D and calcium intake"
-            }
+            },
+            "P Value": 0.5246553526404514
         },
         {
             "Study": "Eliassen AH et al. (2011) [PMID: 21569367]",
@@ -1402,11 +1413,12 @@
                 "sample_size": "A total of 41,811 women from the prospective Norwegian Women and Cancer Study",
                 "effect_size": "Relative risks (95% confidence intervals) for highest versus lowest category were ... 0.95 (0.75-1.21)",
                 "effect_direction": "We found no significant associations between VD dose, or vitamin D intake ... and breast cancer risk.",
-                "p_value": "We found no significant associations ...",
+                "p_value": "We found no significant associations ... Computed from the reported effect and 95% CI using a normal approximation: p=0.674.",
                 "confidence_interval": "Relative risks (95% confidence intervals) for highest versus lowest category were ... 0.95 (0.75-1.21)",
                 "outcome_definition": "During 8.5 years of follow-up, 948 new cases of breast cancer were registered using data from the Norwegian Cancer Registry.",
                 "exposure_definition": "Dietary vitamin D intake was calculated at baseline."
-            }
+            },
+            "P Value": 0.6742064444137683
         },
         {
             "Study": "Yao S et al. (2011) [PMID: 21386992]",
@@ -1690,11 +1702,12 @@
                 "sample_size": "The Sister Study is a prospective cohort of 50,884 women",
                 "effect_size": "recent use of vitamin D supplements \u22651/month was inversely associated with breast cancer (HR = 0.88, 95% CI = 0.78, 1.0)",
                 "effect_direction": "recent use of vitamin D supplements \u22651/month was inversely associated with breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.044.",
                 "confidence_interval": "HR = 0.88, 95% CI = 0.78, 1.0",
                 "outcome_definition": "incident breast cancer (3,502 cases; median follow-up 10.5 years)",
                 "exposure_definition": "Vitamin D supplement use was common, with 64% reporting ever use (at least once per month) in the year before enrollment."
-            }
+            },
+            "P Value": 0.043712209614550634
         },
         {
             "Study": "Janowsky EC et al. (1999) [PMID: 10512563]",
@@ -1738,11 +1751,12 @@
                 "sample_size": "One hundred and fifty-six women with histologically documented adenocarcinoma of the breast and 184 breast clinic controls.",
                 "effect_size": "the odds ratio (95% confidence interval, CI) for lowest relative to highest quartile was 5.2 (95% CI 2.1, 12.8) for white cases and controls.",
                 "effect_direction": "white cases had lower 1,25-D levels than white controls",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=3.503e-04.",
                 "confidence_interval": "5.2 (95% CI 2.1, 12.8)",
                 "outcome_definition": "women with histologically documented adenocarcinoma of the breast",
                 "exposure_definition": "blood levels of 25-hydroxyvitamin D (25-D) or its active metabolite, 1,25-dihydroxyvitamin D (1,25-D)"
-            }
+            },
+            "P Value": 0.00035034457025581
         },
         {
             "Study": "Lee MS et al. (2011) [PMID: 21160130]",
@@ -1786,11 +1800,12 @@
                 "sample_size": "A total of 200 incident breast cancer cases in a Taipei hospital were matched with 200 controls",
                 "effect_size": "the risk of breast cancer in participants with a dietary vitamin D intake greater than 5 \u00b5g per day was significantly lower (odds ratio [OR], 0.48; 95% confidence interval [CI], 0.24-0.97)",
                 "effect_direction": "Vitamin D had a protective effect against breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.039.",
                 "confidence_interval": "95% confidence interval [CI], 0.24-0.97",
                 "outcome_definition": "incident breast cancer cases",
                 "exposure_definition": "vitamin D intake (foods and nutrients)"
-            }
+            },
+            "P Value": 0.03939543054483339
         },
         {
             "Study": "Anderson LN et al. (2010) [PMID: 20392891]",
@@ -1834,11 +1849,12 @@
                 "sample_size": "3101 cases and 3471 controls completed epidemiologic and food-frequency questionnaires.",
                 "effect_size": "Vitamin D supplement intake >10 microg/d (400 IU/d) compared with no intake was associated with a reduced risk of breast cancer (adjusted OR: 0.76; 95% CI: 0.59, 0.98).",
                 "effect_direction": "associated with a reduced risk of breast cancer",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.034.",
                 "confidence_interval": "adjusted OR: 0.76; 95% CI: 0.59, 0.98",
                 "outcome_definition": "Breast cancer cases aged 25-74 y (diagnosed 2002-2003) were identified through the Ontario Cancer Registry.",
                 "exposure_definition": "Vitamin D supplement intake >10 microg/d (400 IU/d) compared with no intake"
-            }
+            },
+            "P Value": 0.03399927153267892
         },
         {
             "Study": "Kawase T et al. (2010) [PMID: 20151981]",
@@ -1930,11 +1946,12 @@
                 "sample_size": "n = 2,465",
                 "effect_size": "relative risk, 0.52; 95% confidence interval, 0.32-0.85",
                 "effect_direction": "risk of breast cancer was significantly reduced among women in the highest tertile",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.009.",
                 "confidence_interval": "95% confidence interval, 0.32-0.85",
                 "outcome_definition": "Cases were women diagnosed with an incident breast cancer (n = 142).",
                 "exposure_definition": "prediagnostic plasma 25-hydroxyvitamin D (25OHD) levels"
-            }
+            },
+            "P Value": 0.008691270121958446
         },
         {
             "Study": "Crew KD et al. (2009) [PMID: 19470790]",
@@ -2029,11 +2046,12 @@
                 "sample_size": "Postmenopausal women (N = 36 282)",
                 "effect_size": "hazard ratio = 0.96",
                 "effect_direction": "Invasive breast cancer incidence was similar in the two groups",
-                "p_value": "Statistical tests were two-sided.",
+                "p_value": "Statistical tests were two-sided. Computed from the reported effect and 95% CI using a normal approximation: p=0.520.",
                 "confidence_interval": "hazard ratio = 0.96; 95% confidence interval = 0.85 to 1.09",
                 "outcome_definition": "Invasive breast cancer was a secondary outcome.",
                 "exposure_definition": "randomly assigned to 1000 mg of elemental calcium with 400 IU of vitamin D(3) daily or placebo"
-            }
+            },
+            "P Value": 0.5199363879635546
         },
         {
             "Study": "Abbas S et al. (2009) [PMID: 18839430]",
@@ -2125,11 +2143,12 @@
                 "sample_size": "759 cases and 1,135 controls from a case-control study (Ontario, Canada, 2003-2005)",
                 "effect_size": "odds ratio = 0.76, 95% confidence interval: 0.59, 0.97 for use of cod liver oil during adolescence",
                 "effect_direction": "increased intake of vitamin D (from the sun and diet) was most consistently associated with a significantly reduced risk of ER+/PR+ tumors",
-                "p_value": "significantly reduced risk",
+                "p_value": "significantly reduced risk Computed from the reported effect and 95% CI using a normal approximation: p=0.030.",
                 "confidence_interval": "95% confidence interval: 0.59, 0.97",
                 "outcome_definition": "the association between vitamin D intake at specific ages and combined estrogen-receptor- (ER) and progesterone-receptor- (PR) defined breast cancer",
                 "exposure_definition": "vitamin D intake at specific ages; use of cod liver oil during adolescence"
-            }
+            },
+            "P Value": 0.03047841404442408
         },
         {
             "Study": "Rossi M et al. (2009) [PMID: 18711029]",
@@ -2173,11 +2192,12 @@
                 "sample_size": "Subjects were 2569 women with incident, histologically confirmed breast cancer and 2588 hospital controls.",
                 "effect_size": "The OR for subjects in the three highest deciles of consumption compared with those in the lowest ones combined was 0.79",
                 "effect_direction": "the overall trend was statistically significantly inverse",
-                "p_value": "the overall trend was statistically significantly inverse",
+                "p_value": "the overall trend was statistically significantly inverse Computed from the reported effect and 95% CI using a normal approximation: p=2.362e-04.",
                 "confidence_interval": "0.79 (95% CI 0.70-0.90)",
                 "outcome_definition": "incident, histologically confirmed breast cancer",
                 "exposure_definition": "dietary intake of vitamin D"
-            }
+            },
+            "P Value": 0.00023618300810646114
         },
         {
             "Study": "Abbas S et al. (2007) [PMID: 17927502]",
@@ -2413,11 +2433,12 @@
                 "sample_size": "A total of 411 newly diagnosed histologically confirmed primary breast cancer cases were enrolled and 784 controls",
                 "effect_size": "women with serum vitamin D deficiency (<20ng/ml), had a higher risk of breast cancer (OR = 1.65, 95%CI: 1.10, 2.50)",
                 "effect_direction": "Serum vitamin D deficiency was associated with increased risk of breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.017.",
                 "confidence_interval": "OR = 1.65, 95%CI: 1.10, 2.50",
                 "outcome_definition": "411 newly diagnosed histologically confirmed primary breast cancer cases",
                 "exposure_definition": "serum 25-hydroxyvitamin D (25(OH)D) concentration"
-            }
+            },
+            "P Value": 0.016813932070515923
         },
         {
             "Study": "Husain NE et al. (2019) [PMID: 31198741]",
@@ -2510,11 +2531,12 @@
                 "sample_size": "a sex-stratified random sample of participants (n = 2,996)",
                 "effect_size": "no inverse associations with breast cancer (HR, 0.98; 95% CI, 0.70-1.36)",
                 "effect_direction": "There were no inverse associations with breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.905.",
                 "confidence_interval": "HR, 0.98; 95% CI, 0.70-1.36",
                 "outcome_definition": "risk of breast cancer",
                 "exposure_definition": "circulating 25-hydroxyvitamin D (25(OH)D)"
-            }
+            },
+            "P Value": 0.9050849587042858
         },
         {
             "Study": "Lope V et al. (2018) [PMID: 29679754]",
@@ -2558,11 +2580,12 @@
                 "sample_size": "546 histologically-confirmed breast cancer cases and 558 population controls",
                 "effect_size": "OR per 10\u202fnmol/L\u202f=\u202f0.88",
                 "effect_direction": "We found a clear protective effect between 25(OH)D levels and breast cancer risk",
-                "p_value": "significant dose-response trend",
+                "p_value": "significant dose-response trend Computed from the reported effect and 95% CI using a normal approximation: p=2.434e-04.",
                 "confidence_interval": "OR per 10\u202fnmol/L\u202f=\u202f0.88; 95%CI\u202f=\u202f0.82-0.94",
                 "outcome_definition": "546 histologically-confirmed breast cancer cases",
                 "exposure_definition": "serum 25-hydroxyvitamin D (25(OH)D)"
-            }
+            },
+            "P Value": 0.00024342314289724364
         },
         {
             "Study": "Cheney CP et al. (2018) [PMID: 29485414]",
@@ -2607,11 +2630,12 @@
                 "sample_size": "including 2,003 initially cancer-free participants",
                 "effect_size": "breast cancer (HR 1.03, 95% CI 0.97-1.09)",
                 "effect_direction": "no significant relationship between serum 25(OH)D levels and cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.321.",
                 "confidence_interval": "breast cancer (HR 1.03, 95% CI 0.97-1.09)",
                 "outcome_definition": "69 of the participants developed cancer ... subgroup analysis for ... breast cancer",
                 "exposure_definition": "serum 25-hydroxyvitamin D (25(OH)D) measurements"
-            }
+            },
+            "P Value": 0.3205008423411932
         },
         {
             "Study": "Chandler PD et al. (2018) [PMID: 29315215]",
@@ -2800,11 +2824,12 @@
                 "sample_size": "A total of 135 incident breast cancer cases ... matched with 135 controls",
                 "effect_size": "odds ratio [OR] = 0.269",
                 "effect_direction": "Women in the fourth quartile of serum 25(OH)D level had 3 times lower risk of developing breast cancer compared to those in the first quartile.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.001.",
                 "confidence_interval": "95% confidence interval [CI], 0.122-0.593",
                 "outcome_definition": "risk of developing breast cancer",
                 "exposure_definition": "serum 25-hydroxyvitamin D (25(OH)D) using an enzyme-linked immunosorbent assay method"
-            }
+            },
+            "P Value": 0.0011328816922971843
         },
         {
             "Study": "Oliveira Sediyama CM et al. (2016) [PMID: 27759988]",
@@ -2848,11 +2873,12 @@
                 "sample_size": "181 women with breast cancer and 197 healthy controls",
                 "effect_size": "level of vitamin D (OR 0.95, 95%CI 0.91-0.99)",
                 "effect_direction": "Vitamin D status ... considered protective factors for breast cancer.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.017.",
                 "confidence_interval": "level of vitamin D (OR 0.95, 95%CI 0.91-0.99)",
                 "outcome_definition": "evaluate the association vitamin D level with breast cancer in women",
                 "exposure_definition": "Vitamin D status, calcium, phosphorus and PTH serum dosage"
-            }
+            },
+            "P Value": 0.017019270182059957
         },
         {
             "Study": "Sofi NY et al. (2018) [PMID: 27687737]",
@@ -2990,11 +3016,12 @@
                 "sample_size": "breast cancer patients (N = 3634) and general population (N = 17,133)",
                 "effect_size": "Adjusted odds ratio (OR) for breast cancer comparing women with deficient level of serum 25(OH)D to women with sufficient level of serum 25(OH)D was 1.27",
                 "effect_direction": "deficient level of serum 25(OH)D ... 1.27 ... increased risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=7.759e-07.",
                 "confidence_interval": "1.27 [95 % confidence interval (CI) 1.15-1.39]",
                 "outcome_definition": "breast cancer patients",
                 "exposure_definition": "serum 25-hydroxyvitamin D (25(OH)D)"
-            }
+            },
+            "P Value": 7.759181704331146e-07
         },
         {
             "Study": "Bidgoli SA et al. (2014) [PMID: 24870727]",
@@ -3086,11 +3113,12 @@
                 "sample_size": "490 women with incident breast cancer",
                 "effect_size": "odds ratio [OR] = 7.32",
                 "effect_direction": "highest likelihood of having ER negative cancer",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=3.847e-04.",
                 "confidence_interval": "95% confidence interval [CI] = 2.44-21.98",
                 "outcome_definition": "ER negative breast cancer",
                 "exposure_definition": "levels of 25OHD"
-            }
+            },
+            "P Value": 0.00038470524363470415
         },
         {
             "Study": "Yousef FM et al. (2013) [PMID: 23697705]",
@@ -3183,11 +3211,12 @@
                 "sample_size": "population-based cohort study of 9,949 men and women",
                 "effect_size": "Low season-standardized 25(OH)D ... was neither significantly associated with total cancer incidence (HR, 1.10; 95% CI, 0.93-1.30) nor with site-specific cancer incidence.",
                 "effect_direction": "was neither significantly associated with total cancer incidence ... nor with site-specific cancer incidence",
-                "p_value": "was neither significantly associated",
+                "p_value": "was neither significantly associated Computed from the reported effect and 95% CI using a normal approximation: p=0.265.",
                 "confidence_interval": "HR, 1.10; 95% CI, 0.93-1.30",
                 "outcome_definition": "the most common being prostate (171), breast (137), lung (136), and colorectal (136) cancer",
                 "exposure_definition": "Serum 25-hydroxyvitamin D [25(OH)D] concentrations"
-            }
+            },
+            "P Value": 0.26478993184827526
         },
         {
             "Study": "Bilinski K et al. (2013) [PMID: 23239153]",
@@ -3327,11 +3356,12 @@
                 "sample_size": "breast cancer (1,080 cases, 1,080 controls)",
                 "effect_size": "OR = 1.06",
                 "effect_direction": "associations were no longer significant",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.706.",
                 "confidence_interval": "95% CI: 0.78, 1.43",
                 "outcome_definition": "breast cancer",
                 "exposure_definition": "serum 25-hydroxyvitamin D (25(OH)D)"
-            }
+            },
+            "P Value": 0.7063323261422068
         },
         {
             "Study": "Mohr SB et al. (2011) [PMID: 21868542]",
@@ -3375,11 +3405,12 @@
                 "sample_size": "Data from all 11 studies were combined",
                 "effect_size": "The overall Peto odds ratio summarizing the estimated risk in the highest compared to the lowest quantile across all 11 studies was 0.61",
                 "effect_direction": "higher serum 25(OH)D levels reduce the risk of breast cancer",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=2.695e-04.",
                 "confidence_interval": "0.61 (95% confidence interval 0.47, 0.80)",
                 "outcome_definition": "risk of breast cancer",
                 "exposure_definition": "serum levels of 25-hydroxyvitamin D [25(OH)D]"
-            }
+            },
+            "P Value": 0.00026946650314191994
         },
         {
             "Study": "Abdulqadir MO et al. (2023) [PMID: 38279444]",
@@ -3568,11 +3599,12 @@
                 "sample_size": "A total of 36 282 cancer-free postmenopausal women (50-79\u2009years) were randomly assigned",
                 "effect_size": "The intervention group had a lower risk of DCIS throughout follow-up (HR\u2009=\u20090.82, 95% CI\u2009=\u20090.70 to 0.96)",
                 "effect_direction": "The intervention group had a lower risk of DCIS throughout follow-up",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.014.",
                 "confidence_interval": "HR\u2009=\u20090.82, 95% CI\u2009=\u20090.70 to 0.96",
                 "outcome_definition": "risk of ductal carcinoma in situ (DCIS) of the breast",
                 "exposure_definition": "daily calcium (1000\u2009mg) plus vitamin D (400\u2009IU) supplementation"
-            }
+            },
+            "P Value": 0.013780198060764541
         },
         {
             "Study": "Bendardaf R et al. (2020) [PMID: 33149700]",
@@ -3616,11 +3648,12 @@
                 "sample_size": "We conducted this retrospective case-control study on 1,048 women",
                 "effect_size": "odd ratio, 4.63; 95% CI, 2.61-8.23",
                 "effect_direction": "women with serum 25-hydroxyvitamin D [25(OH)D] levels lower than 20 ng/mL were found to be at higher risk of breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.685e-07.",
                 "confidence_interval": "95% CI, 2.61-8.23",
                 "outcome_definition": "94 (10%) were diagnosed with breast cancer (1 in 11)",
                 "exposure_definition": "serum 25-hydroxyvitamin D [25(OH)D] levels lower than 20 ng/mL"
-            }
+            },
+            "P Value": 1.6849688935336737e-07
         },
         {
             "Study": "Jiang X et al. (2019) [PMID: 30597039]",
@@ -3716,11 +3749,12 @@
                 "sample_size": "A total of 25,871 participants ... underwent randomization.",
                 "effect_size": "for breast cancer, 1.02 (95% CI, 0.79 to 1.31)",
                 "effect_direction": "Supplementation with vitamin D was not associated with a lower risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.878.",
                 "confidence_interval": "for breast cancer, 1.02 (95% CI, 0.79 to 1.31)",
                 "outcome_definition": "Secondary end points included site-specific cancers ... for breast cancer",
                 "exposure_definition": "randomized, placebo-controlled trial, of vitamin D3 (cholecalciferol) at a dose of 2000 IU per day"
-            }
+            },
+            "P Value": 0.8780137268347724
         },
         {
             "Study": "Farvid MS et al. (2018) [PMID: 29716928]",
@@ -3765,11 +3799,12 @@
                 "sample_size": "we included 90,503 premenopausal women ages 27 to 44 years in 1991",
                 "effect_size": "intakes of calcium, vitamin D, and lactose. Adolescent and early adulthood total dairy consumption was not associated with overall breast cancer risk ... for early adulthood total dairy HR = 1.01, 95% CI, 0.97-1.04, as were intakes of calcium, vitamin D, and lactose.",
                 "effect_direction": "not associated with overall breast cancer risk ... as were intakes of calcium, vitamin D, and lactose",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.000.",
                 "confidence_interval": "HR = 1.01, 95% CI, 0.97-1.04",
                 "outcome_definition": "incident breast cancer in the Nurses' Health Study II cohort",
                 "exposure_definition": "intakes of calcium, vitamin D, and lactose"
-            }
+            },
+            "P Value": 1.0
         },
         {
             "Study": "Dimitrakopoulou VI et al. (2017) [PMID: 29089348]",
@@ -3813,11 +3848,12 @@
                 "sample_size": "70\u2009563 cases of cancer ... and 84\u2009418 controls.",
                 "effect_size": "odds ratios per 25 nmol/L increase in genetically determined 25(OH)D concentrations were ... 1.05 (0.89 to 1.24) for breast cancer",
                 "effect_direction": "There was little evidence that the multi-polymorphism score of 25(OH)D was associated with risk of any of the seven cancers",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.564.",
                 "confidence_interval": "1.05 (0.89 to 1.24) for breast cancer",
                 "outcome_definition": "risk of incident ... breast cancer",
                 "exposure_definition": "circulating concentrations of vitamin D ... multi-polymorphism score for circulating 25-hydroxyvitamin D (25(OH)D) concentrations"
-            }
+            },
+            "P Value": 0.5641469015053026
         },
         {
             "Study": "Redaniel MT et al. (2014) [PMID: 24337883]",
@@ -3861,11 +3897,12 @@
                 "sample_size": "cases were women aged \u226555 years with a first diagnosis ... between 2002 and 2009, with at least 5 years of CPRD follow-up ... controls were women without cancer, frequency-matched to cases",
                 "effect_size": "this effect disappeared when omitting women first exposed within a year of diagnosis (OR 1.0, 95 % CI 0.82-1.23)",
                 "effect_direction": "this effect disappeared ... OR 1.0",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.000.",
                 "confidence_interval": "OR 1.0, 95 % CI 0.82-1.23",
                 "outcome_definition": "cases were women aged \u226555 years with a first diagnosis of ... breast ... cancer",
                 "exposure_definition": "Exposure to three or more prescriptions of vitamin D"
-            }
+            },
+            "P Value": 1.0
         },
         {
             "Study": "Cauley JA et al. (2013) [PMID: 24131320]",
@@ -4009,11 +4046,12 @@
                 "sample_size": "A total of 12,204 individuals 18 to 71 years old were included.",
                 "effect_size": "breast cancer (HR = 1.02; 95% CI, 0.96-1.09)",
                 "effect_direction": "no statistically significant associations between vitamin D status and total or specific cancers",
-                "p_value": "no statistically significant associations",
+                "p_value": "no statistically significant associations Computed from the reported effect and 95% CI using a normal approximation: p=0.541.",
                 "confidence_interval": "breast cancer (HR = 1.02; 95% CI, 0.96-1.09)",
                 "outcome_definition": "information about cancer was obtained from the Danish Cancer Registry",
                 "exposure_definition": "The level of 25-hydroxyvitamin D was measured at baseline."
-            }
+            },
+            "P Value": 0.5410458762047201
         },
         {
             "Study": "Shamsi U et al. (2013) [PMID: 23534721]",
@@ -4057,11 +4095,12 @@
                 "sample_size": "The study population included 297 pathologically confirmed incident cases of BC patients... 586 controls",
                 "effect_size": "MOR=0.27; 95%CI: 0.13, 0.56 for >3 years",
                 "effect_direction": "Intake of Vitamin D supplements ... was protective compared to non-users of Vitamin D.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=4.406e-04.",
                 "confidence_interval": "95%CI: 0.13, 0.56",
                 "outcome_definition": "297 pathologically confirmed incident cases of BC patients diagnosed between January 2009 and December 2010",
                 "exposure_definition": "Intake of Vitamin D supplements"
-            }
+            },
+            "P Value": 0.0004405797026222161
         },
         {
             "Study": "Anderson LN et al. (2011) [PMID: 21659351]",
@@ -4105,11 +4144,12 @@
                 "sample_size": "n = 3,101 cases and n = 3,471 controls",
                 "effect_size": "age-adjusted odds ratio (OR) = 0.71, 95% confidence interval (CI): 0.60, 0.85 in the teenage years",
                 "effect_direction": "Time spent outdoors was associated with reduced breast cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.159e-04.",
                 "confidence_interval": "95% confidence interval (CI): 0.60, 0.85",
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "Time spent outdoors (proxy for cutaneous vitamin D production)"
-            }
+            },
+            "P Value": 0.00011594752745795429
         },
         {
             "Study": "Qi J et al. (2026) [PMID: 42163968]",
@@ -4153,11 +4193,12 @@
                 "sample_size": "This retrospective analysis involved 800 women",
                 "effect_size": "Vitamin D deficiency was noted in 48.5% of subjects and was related with higher breast cancer incidence (adjusted OR\u202f=\u202f1.68; 95% CI: 1.21-2.33).",
                 "effect_direction": "Vitamin D deficiency ... was related with higher breast cancer incidence",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.002.",
                 "confidence_interval": "adjusted OR\u202f=\u202f1.68; 95% CI: 1.21-2.33",
                 "outcome_definition": "breast cancer incidence",
                 "exposure_definition": "Vitamin D deficiency was noted in 48.5% of subjects"
-            }
+            },
+            "P Value": 0.0019060973484189198
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Bissan ADT et al. (2023) [PMID: 38132250]</th>\n      <td>-4.1387</td>\n      <td>1.9643</td>\n      <td>-7.9886</td>\n      <td>-0.2887</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Shaukat N et al. (2017) [PMID: 28811787]</th>\n      <td>-1.9339</td>\n      <td>0.6798</td>\n      <td>-3.2662</td>\n      <td>-0.6016</td>\n      <td>42.0</td>\n      <td>94</td>\n    </tr>\n    <tr>\n      <th>Yao S et al. (2014) [PMID: 24473087]</th>\n      <td>-1.8716</td>\n      <td>0.5473</td>\n      <td>-2.9443</td>\n      <td>-0.7990</td>\n      <td>490.0</td>\n      <td>490</td>\n    </tr>\n    <tr>\n      <th>Meles M et al. (2026) [PMID: 41965576]</th>\n      <td>-1.8420</td>\n      <td>0.7131</td>\n      <td>-3.2396</td>\n      <td>-0.4444</td>\n      <td>69.0</td>\n      <td>138</td>\n    </tr>\n    <tr>\n      <th>Yousef FM et al. (2013) [PMID: 23697705]</th>\n      <td>-1.6934</td>\n      <td>0.4564</td>\n      <td>-2.5880</td>\n      <td>-0.7989</td>\n      <td>120.0</td>\n      <td>240</td>\n    </tr>\n    <tr>\n      <th>Janowsky EC et al. (1999) [PMID: 10512563]</th>\n      <td>-1.5378</td>\n      <td>0.4466</td>\n      <td>-2.4131</td>\n      <td>-0.6624</td>\n      <td>156.0</td>\n      <td>340</td>\n    </tr>\n    <tr>\n      <th>Bendardaf R et al. (2020) [PMID: 33149700]</th>\n      <td>-1.4250</td>\n      <td>0.2833</td>\n      <td>-1.9803</td>\n      <td>-0.8696</td>\n      <td>94.0</td>\n      <td>1048</td>\n    </tr>\n    <tr>\n      <th>Jamshidinaeini Y et al. (2016) [PMID: 27331363]</th>\n      <td>-1.2132</td>\n      <td>0.3863</td>\n      <td>-1.9703</td>\n      <td>-0.4560</td>\n      <td>135.0</td>\n      <td>270</td>\n    </tr>\n    <tr>\n      <th>Shamsi U et al. (2013) [PMID: 23534721]</th>\n      <td>-1.2096</td>\n      <td>0.3570</td>\n      <td>-1.9093</td>\n      <td>-0.5100</td>\n      <td>297.0</td>\n      <td>883</td>\n    </tr>\n    <tr>\n      <th>Kim Y et al. (2014) [PMID: 24438060]</th>\n      <td>-1.1747</td>\n      <td>0.3384</td>\n      <td>-1.8380</td>\n      <td>-0.5114</td>\n      <td>707.0</td>\n      <td>1414</td>\n    </tr>\n    <tr>\n      <th>Colston KW et al. (2006) [PMID: 16886666]</th>\n      <td>-1.1662</td>\n      <td>0.3057</td>\n      <td>-1.7652</td>\n      <td>-0.5671</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Abbas S et al. (2008) [PMID: 17974532]</th>\n      <td>-1.0772</td>\n      <td>0.1362</td>\n      <td>-1.3442</td>\n      <td>-0.8102</td>\n      <td>1394.0</td>\n      <td>2759</td>\n    </tr>\n    <tr>\n      <th>Krusinska B et al. (2019) [PMID: 31540424]</th>\n      <td>-1.0175</td>\n      <td>0.5249</td>\n      <td>-2.0464</td>\n      <td>0.0113</td>\n      <td>47.0</td>\n      <td>129</td>\n    </tr>\n    <tr>\n      <th>Yao S et al. (2011) [PMID: 21386992]</th>\n      <td>-0.9348</td>\n      <td>0.2261</td>\n      <td>-1.3779</td>\n      <td>-0.4916</td>\n      <td>579.0</td>\n      <td>1153</td>\n    </tr>\n    <tr>\n      <th>Zhu K et al. (2019) [PMID: 30982554]</th>\n      <td>-0.9511</td>\n      <td>0.4412</td>\n      <td>-1.8159</td>\n      <td>-0.0863</td>\n      <td>113.0</td>\n      <td>3818</td>\n    </tr>\n    <tr>\n      <th>Sofi NY et al. (2018) [PMID: 27687737]</th>\n      <td>-0.8351</td>\n      <td>0.5034</td>\n      <td>-1.8218</td>\n      <td>0.1516</td>\n      <td>100.0</td>\n      <td>200</td>\n    </tr>\n    <tr>\n      <th>Wu Y et al. (2017) [PMID: 29064397]</th>\n      <td>-0.8351</td>\n      <td>0.3133</td>\n      <td>-1.4492</td>\n      <td>-0.2210</td>\n      <td>243.0</td>\n      <td>660</td>\n    </tr>\n    <tr>\n      <th>Bilinski K et al. (2013) [PMID: 23239153]</th>\n      <td>-0.8351</td>\n      <td>0.2077</td>\n      <td>-1.2421</td>\n      <td>-0.4280</td>\n      <td>214.0</td>\n      <td>1066</td>\n    </tr>\n    <tr>\n      <th>Sofi NY et al. (2018) [PMID: 29137944]</th>\n      <td>-0.7965</td>\n      <td>0.3465</td>\n      <td>-1.4757</td>\n      <td>-0.1174</td>\n      <td>200.0</td>\n      <td>400</td>\n    </tr>\n    <tr>\n      <th>Ganji V et al. (2022) [PMID: 35743729]</th>\n      <td>-0.7965</td>\n      <td>0.2513</td>\n      <td>-1.2891</td>\n      <td>-0.3040</td>\n      <td>-</td>\n      <td>8108</td>\n    </tr>\n    <tr>\n      <th>Abdulqadir MO et al. (2023) [PMID: 38279444]</th>\n      <td>-0.7566</td>\n      <td>0.3542</td>\n      <td>-1.4508</td>\n      <td>-0.0623</td>\n      <td>65.0</td>\n      <td>130</td>\n    </tr>\n    <tr>\n      <th>Abbas S et al. (2009) [PMID: 18839430]</th>\n      <td>-0.7243</td>\n      <td>0.2102</td>\n      <td>-1.1364</td>\n      <td>-0.3123</td>\n      <td>289.0</td>\n      <td>884</td>\n    </tr>\n    <tr>\n      <th>Lee MS et al. (2011) [PMID: 21160130]</th>\n      <td>-0.6640</td>\n      <td>0.3307</td>\n      <td>-1.3122</td>\n      <td>-0.0157</td>\n      <td>200.0</td>\n      <td>400</td>\n    </tr>\n    <tr>\n      <th>Abbas S et al. (2007) [PMID: 17927502]</th>\n      <td>-0.6259</td>\n      <td>0.3088</td>\n      <td>-1.2311</td>\n      <td>-0.0208</td>\n      <td>278.0</td>\n      <td>944</td>\n    </tr>\n    <tr>\n      <th>Rejnmark L et al. (2009) [PMID: 19789365]</th>\n      <td>-0.6539</td>\n      <td>0.2492</td>\n      <td>-1.1424</td>\n      <td>-0.1655</td>\n      <td>142.0</td>\n      <td>2465</td>\n    </tr>\n    <tr>\n      <th>Qin B et al. (2020) [PMID: 31826233]</th>\n      <td>-0.5718</td>\n      <td>0.2537</td>\n      <td>-1.0692</td>\n      <td>-0.0745</td>\n      <td>1724.0</td>\n      <td>2957</td>\n    </tr>\n    <tr>\n      <th>Fedirko V et al. (2012) [PMID: 22622862]</th>\n      <td>-0.5718</td>\n      <td>0.2997</td>\n      <td>-1.1592</td>\n      <td>0.0155</td>\n      <td>573.0</td>\n      <td>1212</td>\n    </tr>\n    <tr>\n      <th>Guyonnet E et al. (2023) [PMID: 37345127]</th>\n      <td>-0.5545</td>\n      <td>0.2537</td>\n      <td>-1.0518</td>\n      <td>-0.0572</td>\n      <td>134.0</td>\n      <td>410</td>\n    </tr>\n    <tr>\n      <th>Crew KD et al. (2009) [PMID: 19470790]</th>\n      <td>-0.5209</td>\n      <td>0.1511</td>\n      <td>-0.8171</td>\n      <td>-0.2247</td>\n      <td>1026.0</td>\n      <td>2101</td>\n    </tr>\n    <tr>\n      <th>Qi J et al. (2026) [PMID: 42163968]</th>\n      <td>-0.4648</td>\n      <td>0.1533</td>\n      <td>-0.7652</td>\n      <td>-0.1644</td>\n      <td>-</td>\n      <td>800</td>\n    </tr>\n    <tr>\n      <th>Shamsi U et al. (2020) [PMID: 31967989]</th>\n      <td>-0.4481</td>\n      <td>0.1918</td>\n      <td>-0.8240</td>\n      <td>-0.0723</td>\n      <td>411.0</td>\n      <td>1195</td>\n    </tr>\n    <tr>\n      <th>Mohr SB et al. (2011) [PMID: 21868542]</th>\n      <td>-0.4423</td>\n      <td>0.1242</td>\n      <td>-0.6857</td>\n      <td>-0.1989</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Knight JA et al. (2007) [PMID: 17372236]</th>\n      <td>-0.3842</td>\n      <td>0.1232</td>\n      <td>-0.6258</td>\n      <td>-0.1427</td>\n      <td>972.0</td>\n      <td>2107</td>\n    </tr>\n    <tr>\n      <th>Lin J et al. (2007) [PMID: 17533208]</th>\n      <td>-0.4069</td>\n      <td>0.2112</td>\n      <td>-0.8208</td>\n      <td>0.0070</td>\n      <td>276.0</td>\n      <td>10578</td>\n    </tr>\n    <tr>\n      <th>Engel P et al. (2011) [PMID: 21127286]</th>\n      <td>-0.3638</td>\n      <td>0.1103</td>\n      <td>-0.5800</td>\n      <td>-0.1476</td>\n      <td>2871.0</td>\n      <td>67721</td>\n    </tr>\n    <tr>\n      <th>Anderson LN et al. (2011) [PMID: 21659351]</th>\n      <td>-0.3041</td>\n      <td>0.0803</td>\n      <td>-0.4614</td>\n      <td>-0.1468</td>\n      <td>3101.0</td>\n      <td>6572</td>\n    </tr>\n    <tr>\n      <th>Shin MH et al. (2002) [PMID: 12208895]</th>\n      <td>-0.3285</td>\n      <td>0.1367</td>\n      <td>-0.5965</td>\n      <td>-0.0605</td>\n      <td>3482.0</td>\n      <td>88691</td>\n    </tr>\n    <tr>\n      <th>Bertone-Johnson ER et al. (2005) [PMID: 16103450]</th>\n      <td>-0.3147</td>\n      <td>0.1992</td>\n      <td>-0.7052</td>\n      <td>0.0758</td>\n      <td>701.0</td>\n      <td>1425</td>\n    </tr>\n    <tr>\n      <th>Engel P et al. (2010) [PMID: 20826834]</th>\n      <td>-0.2790</td>\n      <td>0.1280</td>\n      <td>-0.5299</td>\n      <td>-0.0280</td>\n      <td>636.0</td>\n      <td>1908</td>\n    </tr>\n    <tr>\n      <th>McCullough ML et al. (2005) [PMID: 16365007]</th>\n      <td>-0.3011</td>\n      <td>0.1161</td>\n      <td>-0.5286</td>\n      <td>-0.0736</td>\n      <td>2855.0</td>\n      <td>68567</td>\n    </tr>\n    <tr>\n      <th>Anderson LN et al. (2010) [PMID: 20392891]</th>\n      <td>-0.2427</td>\n      <td>0.1161</td>\n      <td>-0.4704</td>\n      <td>-0.0151</td>\n      <td>3101.0</td>\n      <td>6572</td>\n    </tr>\n    <tr>\n      <th>Blackmore KM et al. (2008) [PMID: 18756015]</th>\n      <td>-0.2427</td>\n      <td>0.1139</td>\n      <td>-0.4659</td>\n      <td>-0.0196</td>\n      <td>759.0</td>\n      <td>1894</td>\n    </tr>\n    <tr>\n      <th>Kawase T et al. (2010) [PMID: 20151981]</th>\n      <td>-0.2427</td>\n      <td>0.0818</td>\n      <td>-0.4030</td>\n      <td>-0.0825</td>\n      <td>1803.0</td>\n      <td>5409</td>\n    </tr>\n    <tr>\n      <th>Park S et al. (2015) [PMID: 26037255]</th>\n      <td>-0.2110</td>\n      <td>0.0433</td>\n      <td>-0.2958</td>\n      <td>-0.1262</td>\n      <td>3634.0</td>\n      <td>20767</td>\n    </tr>\n    <tr>\n      <th>O'Brien KM et al. (2017) [PMID: 28728134]</th>\n      <td>-0.2214</td>\n      <td>0.1066</td>\n      <td>-0.4304</td>\n      <td>-0.0124</td>\n      <td>1611.0</td>\n      <td>50884</td>\n    </tr>\n    <tr>\n      <th>Rossi M et al. (2009) [PMID: 18711029]</th>\n      <td>-0.2080</td>\n      <td>0.0573</td>\n      <td>-0.3204</td>\n      <td>-0.0957</td>\n      <td>2569.0</td>\n      <td>5157</td>\n    </tr>\n    <tr>\n      <th>O'Brien KM et al. (2022) [PMID: 35466399]</th>\n      <td>-0.2214</td>\n      <td>0.1240</td>\n      <td>-0.4644</td>\n      <td>0.0216</td>\n      <td>415.0</td>\n      <td>1960</td>\n    </tr>\n    <tr>\n      <th>Palmer JR et al. (2016) [PMID: 27520657]</th>\n      <td>-0.1943</td>\n      <td>0.0817</td>\n      <td>-0.3544</td>\n      <td>-0.0341</td>\n      <td>1454.0</td>\n      <td>59000</td>\n    </tr>\n    <tr>\n      <th>Cadeau C et al. (2015) [PMID: 26354532]</th>\n      <td>-0.1862</td>\n      <td>0.0820</td>\n      <td>-0.3469</td>\n      <td>-0.0254</td>\n      <td>2482.0</td>\n      <td>57403</td>\n    </tr>\n    <tr>\n      <th>Peila R et al. (2021) [PMID: 34476342]</th>\n      <td>-0.1862</td>\n      <td>0.0760</td>\n      <td>-0.3352</td>\n      <td>-0.0371</td>\n      <td>595.0</td>\n      <td>36282</td>\n    </tr>\n    <tr>\n      <th>Husain NE et al. (2019) [PMID: 31198741]</th>\n      <td>-0.1304</td>\n      <td>0.0531</td>\n      <td>-0.2345</td>\n      <td>-0.0263</td>\n      <td>100.0</td>\n      <td>200</td>\n    </tr>\n    <tr>\n      <th>O'Brien KM et al. (2019) [PMID: 30608512]</th>\n      <td>-0.1222</td>\n      <td>0.0515</td>\n      <td>-0.2231</td>\n      <td>-0.0213</td>\n      <td>827.0</td>\n      <td>1598</td>\n    </tr>\n    <tr>\n      <th>Eliassen AH et al. (2016) [PMID: 27530324]</th>\n      <td>-0.1393</td>\n      <td>0.1333</td>\n      <td>-0.4006</td>\n      <td>0.1221</td>\n      <td>1506.0</td>\n      <td>Not explicitly stated; nested case-control within Nurses' Health Study</td>\n    </tr>\n    <tr>\n      <th>Lope V et al. (2018) [PMID: 29679754]</th>\n      <td>-0.1121</td>\n      <td>0.0308</td>\n      <td>-0.1725</td>\n      <td>-0.0517</td>\n      <td>546.0</td>\n      <td>1104</td>\n    </tr>\n    <tr>\n      <th>O'Brien KM et al. (2022) [PMID: 34847083]</th>\n      <td>-0.1197</td>\n      <td>0.0596</td>\n      <td>-0.2364</td>\n      <td>-0.0029</td>\n      <td>3502.0</td>\n      <td>50884</td>\n    </tr>\n    <tr>\n      <th>Robien K et al. (2007) [PMID: 17549593]</th>\n      <td>-0.1165</td>\n      <td>0.0742</td>\n      <td>-0.2620</td>\n      <td>0.0289</td>\n      <td>-</td>\n      <td>34321</td>\n    </tr>\n    <tr>\n      <th>Ord\u00f3\u00f1ez-Mena JM et al. (2013) [PMID: 23462913]</th>\n      <td>-0.0891</td>\n      <td>0.0801</td>\n      <td>-0.2462</td>\n      <td>0.0680</td>\n      <td>137.0</td>\n      <td>9949</td>\n    </tr>\n    <tr>\n      <th>Almquist M et al. (2010) [PMID: 20112341]</th>\n      <td>-0.0634</td>\n      <td>0.1565</td>\n      <td>-0.3702</td>\n      <td>0.2433</td>\n      <td>764.0</td>\n      <td>1528</td>\n    </tr>\n    <tr>\n      <th>Scarmo S et al. (2013) [PMID: 23442740]</th>\n      <td>-0.0540</td>\n      <td>0.0945</td>\n      <td>-0.2393</td>\n      <td>0.1312</td>\n      <td>1585.0</td>\n      <td>4525</td>\n    </tr>\n    <tr>\n      <th>Neuhouser ML et al. (2012) [PMID: 22362582]</th>\n      <td>-0.0509</td>\n      <td>0.1353</td>\n      <td>-0.3160</td>\n      <td>0.2143</td>\n      <td>1080.0</td>\n      <td>2160</td>\n    </tr>\n    <tr>\n      <th>Oliveira Sediyama CM et al. (2016) [PMID: 27759988]</th>\n      <td>-0.0448</td>\n      <td>0.0188</td>\n      <td>-0.0817</td>\n      <td>-0.0079</td>\n      <td>181.0</td>\n      <td>378</td>\n    </tr>\n    <tr>\n      <th>Edvardsen K et al. (2011) [PMID: 20473950]</th>\n      <td>-0.0513</td>\n      <td>0.1220</td>\n      <td>-0.2904</td>\n      <td>0.1879</td>\n      <td>948.0</td>\n      <td>41811</td>\n    </tr>\n    <tr>\n      <th>Chlebowski RT et al. (2008) [PMID: 19001601]</th>\n      <td>-0.0381</td>\n      <td>0.0593</td>\n      <td>-0.1543</td>\n      <td>0.0781</td>\n      <td>1074.0</td>\n      <td>36282</td>\n    </tr>\n    <tr>\n      <th>Heath AK et al. (2019) [PMID: 30842127]</th>\n      <td>-0.0188</td>\n      <td>0.1580</td>\n      <td>-0.3285</td>\n      <td>0.2908</td>\n      <td>634.0</td>\n      <td>2996</td>\n    </tr>\n    <tr>\n      <th>Visvanathan K et al. (2023) [PMID: 36593337]</th>\n      <td>-0.0101</td>\n      <td>0.0206</td>\n      <td>-0.0505</td>\n      <td>0.0304</td>\n      <td>10484.0</td>\n      <td>23437</td>\n    </tr>\n    <tr>\n      <th>Farvid MS et al. (2018) [PMID: 29716928]</th>\n      <td>0.0000</td>\n      <td>0.0166</td>\n      <td>-0.0325</td>\n      <td>0.0325</td>\n      <td>3191.0</td>\n      <td>90503</td>\n    </tr>\n    <tr>\n      <th>Redaniel MT et al. (2014) [PMID: 24337883]</th>\n      <td>0.0000</td>\n      <td>0.0899</td>\n      <td>-0.1762</td>\n      <td>0.1762</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Chandler PD et al. (2018) [PMID: 29315215]</th>\n      <td>0.0184</td>\n      <td>0.0140</td>\n      <td>-0.0089</td>\n      <td>0.0458</td>\n      <td>1560.0</td>\n      <td>23294</td>\n    </tr>\n    <tr>\n      <th>Manson JE et al. (2019) [PMID: 30415629]</th>\n      <td>0.0184</td>\n      <td>0.1200</td>\n      <td>-0.2168</td>\n      <td>0.2537</td>\n      <td>-</td>\n      <td>25871</td>\n    </tr>\n    <tr>\n      <th>Skaaby T et al. (2014) [PMID: 24789846]</th>\n      <td>0.0184</td>\n      <td>0.0301</td>\n      <td>-0.0406</td>\n      <td>0.0775</td>\n      <td>-</td>\n      <td>12204</td>\n    </tr>\n    <tr>\n      <th>Jiang X et al. (2019) [PMID: 30597039]</th>\n      <td>0.0172</td>\n      <td>0.0238</td>\n      <td>-0.0294</td>\n      <td>0.0638</td>\n      <td>122977.0</td>\n      <td>73699</td>\n    </tr>\n    <tr>\n      <th>Cheney CP et al. (2018) [PMID: 29485414]</th>\n      <td>0.0275</td>\n      <td>0.0277</td>\n      <td>-0.0267</td>\n      <td>0.0818</td>\n      <td>-</td>\n      <td>2003</td>\n    </tr>\n    <tr>\n      <th>Shiryazdi SM et al. (2015) [PMID: 26903700]</th>\n      <td>0.0257</td>\n      <td>0.4932</td>\n      <td>-0.9410</td>\n      <td>0.9923</td>\n      <td>57.0</td>\n      <td>142</td>\n    </tr>\n    <tr>\n      <th>Freedman DM et al. (2008) [PMID: 18381472]</th>\n      <td>0.0392</td>\n      <td>0.1682</td>\n      <td>-0.2904</td>\n      <td>0.3688</td>\n      <td>1005.0</td>\n      <td>2010</td>\n    </tr>\n    <tr>\n      <th>Dimitrakopoulou VI et al. (2017) [PMID: 29089348]</th>\n      <td>0.0423</td>\n      <td>0.0731</td>\n      <td>-0.1009</td>\n      <td>0.1856</td>\n      <td>15748.0</td>\n      <td>154981</td>\n    </tr>\n    <tr>\n      <th>K\u00fchn T et al. (2013) [PMID: 23526380]</th>\n      <td>0.0586</td>\n      <td>0.1032</td>\n      <td>-0.1437</td>\n      <td>0.2609</td>\n      <td>1391.0</td>\n      <td>2782</td>\n    </tr>\n    <tr>\n      <th>Abbas S et al. (2013) [PMID: 23441605]</th>\n      <td>0.0629</td>\n      <td>0.0986</td>\n      <td>-0.1303</td>\n      <td>0.2561</td>\n      <td>7760.0</td>\n      <td>319985</td>\n    </tr>\n    <tr>\n      <th>McCullough ML et al. (2009) [PMID: 19715600]</th>\n      <td>0.0745</td>\n      <td>0.1916</td>\n      <td>-0.3009</td>\n      <td>0.4500</td>\n      <td>516.0</td>\n      <td>21965</td>\n    </tr>\n    <tr>\n      <th>Bidgoli SA et al. (2014) [PMID: 24870727]</th>\n      <td>0.0940</td>\n      <td>0.0270</td>\n      <td>0.0411</td>\n      <td>0.1470</td>\n      <td>60.0</td>\n      <td>176</td>\n    </tr>\n    <tr>\n      <th>Eliassen AH et al. (2011) [PMID: 21569367]</th>\n      <td>0.1823</td>\n      <td>0.1572</td>\n      <td>-0.1259</td>\n      <td>0.4905</td>\n      <td>613.0</td>\n      <td>1831</td>\n    </tr>\n    <tr>\n      <th>Wang J et al. (2014) [PMID: 24748579]</th>\n      <td>0.1906</td>\n      <td>0.1932</td>\n      <td>-0.1880</td>\n      <td>0.5693</td>\n      <td>584.0</td>\n      <td>1168</td>\n    </tr>\n    <tr>\n      <th>Cauley JA et al. (2013) [PMID: 24131320]</th>\n      <td>0.2279</td>\n      <td>0.1025</td>\n      <td>0.0269</td>\n      <td>0.4289</td>\n      <td>-</td>\n      <td>36282</td>\n    </tr>\n    <tr>\n      <th>Agborsangaya CB et al. (2010) [PMID: 20022237]</th>\n      <td>0.2858</td>\n      <td>0.3596</td>\n      <td>-0.4190</td>\n      <td>0.9906</td>\n      <td>100.0</td>\n      <td>200</td>\n    </tr>\n    <tr>\n      <th>Cadeau C et al. (2016) [PMID: 27451078]</th>\n      <td>0.3776</td>\n      <td>0.1330</td>\n      <td>0.1171</td>\n      <td>0.6382</td>\n      <td>2482.0</td>\n      <td>57403</td>\n    </tr>\n    <tr>\n      <th>Deschasaux M et al. (2016) [PMID: 26817718]</th>\n      <td>0.7234</td>\n      <td>0.2847</td>\n      <td>0.1654</td>\n      <td>1.2814</td>\n      <td>233.0</td>\n      <td>699</td>\n    </tr>\n    <tr>\n      <th>Green AK et al. (2010) [PMID: 19960434]</th>\n      <td>1.3350</td>\n      <td>0.3303</td>\n      <td>0.6876</td>\n      <td>1.9824</td>\n      <td>463.0</td>\n      <td>960</td>\n    </tr>\n  </tbody>\n</table>",

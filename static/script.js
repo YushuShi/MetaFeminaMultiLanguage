@@ -1040,17 +1040,19 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
             const finalCasesVal = !isNaN(casesVal) ? casesVal : (!isNaN(estCasesVal) ? estCasesVal : NaN);
             const isARR = (study['Effect Type'] || '').toUpperCase() === 'ARR';
+            const isPAF = (study['Effect Type'] || '').toUpperCase() === 'PAF';
             const minCases = elements.filterMinCases ? (parseInt(elements.filterMinCases.value) || 0) : 50;
             const qualityScore = String(study['Quality Score'] || 'Fair');
             const qualityIsEligible = meetsDefaultJbiThreshold(study);
             const jbiEntries = itemizedJbiEntries(study);
-            const isChecked = (qualityIsEligible && !isARR && !isNaN(finalCasesVal) && finalCasesVal > minCases) ? 'checked' : '';
+            const isChecked = (qualityIsEligible && !isARR && !isPAF && !isNaN(finalCasesVal) && finalCasesVal > minCases) ? 'checked' : '';
 
             // Build Exclusion Reason Title
             let unselectedReason = "";
             if (!isChecked) {
                 if (!qualityIsEligible) unselectedReason = uiText('Excluded by default: JBI rating is below Moderate');
                 else if (isARR) unselectedReason = uiText('Excluded: Effect type is ARR');
+                else if (isPAF) unselectedReason = uiText('Excluded from meta-analysis: Effect type is PAF');
                 else if (isNaN(finalCasesVal)) unselectedReason = uiText('Excluded: Cases not specified or invalid');
                 else if (finalCasesVal <= minCases) {
                     const isEst = isNaN(casesVal);
@@ -1155,7 +1157,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                                         if(cb){
                                             const quality = String(currentStudies[idx]['Quality Score'] || '').trim().toLowerCase();
                                             const qualityEligible = quality === 'good' || quality === 'moderate';
-                                            const shouldCheck = qualityEligible && !isNaN(finalVal) && finalVal > minC;
+                                            const effectType = String(currentStudies[idx]['Effect Type'] || '').trim().toUpperCase();
+                                            const shouldCheck = qualityEligible && effectType !== 'ARR' && effectType !== 'PAF' && !isNaN(finalVal) && finalVal > minC;
                                             cb.checked = shouldCheck;
                                             if(row){ row.style.opacity = shouldCheck ? '' : '0.6'; row.style.backgroundColor = shouldCheck ? '' : 'rgba(200,200,200,0.15)'; }
                                         }

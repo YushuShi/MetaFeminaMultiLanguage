@@ -44,18 +44,19 @@
                 "sample_size": "an aggregated population 2003-2017 of 124,896,418,350",
                 "effect_size": "For cannabidiol RR declined from 1.397 (95%C.I. 1.392, 1.402)",
                 "effect_direction": "Fifteen cancers displayed elevated E-Values in the highest compared to the lowest quintiles of cannabidiol exposure... breast.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p<1e-300.",
                 "confidence_interval": "For cannabidiol RR declined from 1.397 (95%C.I. 1.392, 1.402)",
                 "outcome_definition": "age-standardized state census incidence of 28 cancer types (including ... breast)",
                 "exposure_definition": "cannabidiol exposure"
-            }
+            },
+            "P Value": 0.0
         },
         {
             "Study": "Reece AS et al. (2022) [PMID: 35386387]",
             "PMID": "35386387",
-            "Effect Size": 16.16,
-            "Lower CI": 0.39,
-            "Upper CI": 31.93,
+            "Effect Size": 3.93,
+            "Lower CI": 2.99,
+            "Upper CI": 4.87,
             "Population": "General",
             "Reference": "Geospatiotemporal and causal inference study of cannabis and other drugs as risk factors for female breast cancer USA 2003-2017.",
             "Authors": "Reece AS, Hulse GK",
@@ -63,7 +64,7 @@
             "Year": "2022",
             "Link": "https://pubmed.ncbi.nlm.nih.gov/35386387/",
             "Effect Type": "\u03b2-est.",
-            "SE": 8.045918367346939,
+            "SE": 0.47959183673469385,
             "Sample Size": null,
             "Cases": null,
             "Estimated Cases": null,
@@ -85,32 +86,24 @@
                 "q8": "Yes"
             },
             "exposure_measurement_type": "unclear",
-            "exposure_measurement_supporting_text": "Terms including cannabidiol [CBD; \u03b2-est.\u2009=\u200916.16 (0.39, 31.93), P\u2009=\u20090.446] were significant in spatiotemporal models lagged 1:2\u2009years.",
+            "exposure_measurement_supporting_text": "In bivariate analysis BCI was shown to be significantly linked with rising cannabis exposure {\u03b2-est. = 3.93 [95% confidence interval 2.99, 4.87], P = 1.10 \u00d7 10-15}.",
             "extraction_supporting_text": {
                 "sample_size": "Age-adjusted state-based BCI 2003-2017 was taken from the Surveillance Epidemiology and End Results database",
-                "effect_size": "Terms including cannabidiol [CBD; \u03b2-est.\u2009=\u200916.16 (0.39, 31.93), P\u2009=\u20090.446]",
+                "effect_size": "In bivariate analysis BCI was shown to be significantly linked with rising cannabis exposure {\u03b2-est. = 3.93 [95% confidence interval 2.99, 4.87], P = 1.10 \u00d7 10-15}.",
                 "effect_direction": "BCI was shown to be significantly linked with rising cannabis exposure",
-                "p_value": "P\u2009=\u20090.446",
-                "confidence_interval": "(0.39, 31.93)",
+                "p_value": "P = 1.10 \u00d7 10-15",
+                "confidence_interval": "95% confidence interval 2.99, 4.87",
                 "outcome_definition": "Breast cancer (BC) is the commonest human cancer and its incidence (BC incidence, BCI) is rising worldwide.",
-                "exposure_definition": "Terms including cannabidiol [CBD; \u03b2-est.\u2009=\u200916.16 (0.39, 31.93), P\u2009=\u20090.446]"
+                "exposure_definition": "rising cannabis exposure"
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Reece AS et al. (2022) [PMID: 35354495]</th>\n      <td>0.3343</td>\n      <td>0.0018</td>\n      <td>0.3307</td>\n      <td>0.3379</td>\n      <td>51623922.0</td>\n      <td>124896418350.0</td>\n    </tr>\n    <tr>\n      <th>Reece AS et al. (2022) [PMID: 35386387]</th>\n      <td>16.1600</td>\n      <td>8.0459</td>\n      <td>0.3903</td>\n      <td>31.9297</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>51623922.0</td>\n      <td>1.248964e+11</td>\n      <td>1.397</td>\n      <td>1.392</td>\n      <td>1.402</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 493.69,
-        "ci_low": 0.0,
-        "ci_upp": 1584761880.71,
-        "pi_low": null,
-        "pi_upp": null,
-        "interpretation": "Not statistically significant",
-        "i2": 74.15,
-        "tau2": 92.86,
-        "eggers_p": null,
-        "funnel_interpretation": "Insufficient studies to perform formal publication bias testing.",
-        "loo_results": [],
-        "results_interpretation": "The pooled analysis of 2 studies yielded an effect size of 493.69 (95% CI: 0.0\u20131584761880.71), indicating no statistically significant association between cannabidiol and breast cancer. Although the point estimate suggests a potential positive relationship, the confidence interval includes the null. These findings were accompanied by substantial heterogeneity (I\u00b2 = 74.15%), reflecting considerable variability across studies."
+        "pooled_es": 1.4,
+        "ci_low": 1.39,
+        "ci_upp": 1.4,
+        "interpretation": "statistically significant (increased risk/odds)"
     },
     "screening_stats": {
         "llm_screened_out": 4,
@@ -129,8 +122,8 @@
         },
         "extracted": 2
     },
-    "plot_url": "static/cannabidiol/forest_breast_cancer_incidence_primary.png?t=5521",
-    "funnel_plot_url": "static/cannabidiol/funnel_breast_cancer_incidence_primary.png?t=6951",
+    "plot_url": "static/cannabidiol/forest_breast_cancer_incidence_primary.png?t=3919",
+    "funnel_plot_url": "static/cannabidiol/funnel_breast_cancer_incidence_primary.png?t=4906",
     "baujat_plot_url": null,
     "last_run": "2026-06-14 16:00:47"
 }

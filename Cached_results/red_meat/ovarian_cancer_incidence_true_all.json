@@ -43,11 +43,12 @@
                 "sample_size": "Controls included 11 656 patients admitted for acute, non-neoplastic conditions. The studies included 1031 ovarian cancer cases.",
                 "effect_size": "ovary (OR = 1.29; 95% CI: 1.16-1.43)",
                 "effect_direction": "Daily intake of red meat was significantly associated with the risk of ovary cancer",
-                "p_value": "significantly associated",
+                "p_value": "significantly associated Computed from the reported effect and 95% CI using a normal approximation: p=1.840e-06.",
                 "confidence_interval": "95% CI: 1.16-1.43",
                 "outcome_definition": "1031 ovarian cancer cases",
                 "exposure_definition": "Daily intake of red meat (OR for increase of 50 g/day)"
-            }
+            },
+            "P Value": 1.8399083504940124e-06
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>1031</td>\n      <td>NaN</td>\n      <td>1.243134</td>\n      <td>1.136364</td>\n      <td>1.354295</td>\n    </tr>\n  </tbody>\n</table>",

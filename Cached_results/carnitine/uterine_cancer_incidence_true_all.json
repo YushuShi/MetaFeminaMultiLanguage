@@ -43,11 +43,12 @@
                 "sample_size": "853 case-control pairs",
                 "effect_size": "free carnitine (C0) ... OR1SD: 0.91",
                 "effect_direction": "free carnitine (C0) were inversely ... associated with endometrial cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.079.",
                 "confidence_interval": "OR1SD: 0.91, 95% CI: 0.81-1.00",
                 "outcome_definition": "endometrial cancer risk",
                 "exposure_definition": "free carnitine (C0)"
-            }
+            },
+            "P Value": 0.07935477080192402
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>853</td>\n      <td>1706</td>\n      <td>0.920773</td>\n      <td>0.830514</td>\n      <td>1.0</td>\n    </tr>\n  </tbody>\n</table>",

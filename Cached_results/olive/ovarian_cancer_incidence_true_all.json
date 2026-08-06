@@ -43,11 +43,12 @@
                 "sample_size": "a total of 1031 incident with a first diagnosis, histologically confirmed epithelial ovarian cancer cases and 2,411 hospital controls",
                 "effect_size": "odds ratio (OR) = 0.68",
                 "effect_direction": "reduced risk of ovarian cancer was observed for high intake of olive oil",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.015.",
                 "confidence_interval": "95% confidence interval (CI) 0.50-0.93",
                 "outcome_definition": "incident with a first diagnosis, histologically confirmed epithelial ovarian cancer cases",
                 "exposure_definition": "high intake of olive oil ... usual diet was investigated through a validated food-frequency questionnaire"
-            }
+            },
+            "P Value": 0.014845882207995311
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>1031</td>\n      <td>3442</td>\n      <td>0.709516</td>\n      <td>0.534759</td>\n      <td>0.938541</td>\n    </tr>\n  </tbody>\n</table>",

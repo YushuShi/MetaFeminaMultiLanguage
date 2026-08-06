@@ -44,11 +44,12 @@
                 "sample_size": "The Netherlands Cohort Study was started in 1986 among 120,852 Dutch men and women",
                 "effect_size": "Garlic supplement use was also not associated with breast carcinoma incidence (rate ratio = 0.87, 95% confidence interval 0.58-1.31)",
                 "effect_direction": "Garlic supplement use was also not associated with breast carcinoma incidence",
-                "p_value": "The tests for trend in the rate ratios were neither significant.",
+                "p_value": "The tests for trend in the rate ratios were neither significant. Computed from the reported effect and 95% CI using a normal approximation: p=0.503.",
                 "confidence_interval": "rate ratio = 0.87, 95% confidence interval 0.58-1.31",
                 "outcome_definition": "469 incident female breast carcinoma cases",
                 "exposure_definition": "the use of garlic supplements was evaluated"
-            }
+            },
+            "P Value": 0.50284064418233
         },
         {
             "Study": "Desai G et al. (2020) [PMID: 31402709]",
@@ -140,11 +141,12 @@
                 "sample_size": "A validated, quantitative, food frequency questionnaire was completed in 285 women (aged 25-65 years old) newly diagnosed with histopathologically confirmed breast cancer",
                 "effect_size": "reduced risk of breast cancer was associated with higher consumption of garlic ... with adjusted ORs of 0.41 (95% CI, 0.20-0.83)",
                 "effect_direction": "reduced risk of breast cancer was associated with higher consumption of garlic",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.014.",
                 "confidence_interval": "adjusted ORs of 0.41 (95% CI, 0.20-0.83)",
                 "outcome_definition": "newly diagnosed with histopathologically confirmed breast cancer (grade II, III or clinical stage II, III)",
                 "exposure_definition": "higher consumption of garlic"
-            }
+            },
+            "P Value": 0.014051773028047288
         },
         {
             "Study": "Yu ZG et al. (2012) [PMID: 22723840]",
@@ -186,11 +188,12 @@
                 "sample_size": "A total of 122,058 female subjects completed the study",
                 "effect_size": "1.231 (0.972-1.559) for infrequent consumption of garlic (frequent garlic consumption is a protective factor)",
                 "effect_direction": "frequent garlic consumption is a protective factor",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.085.",
                 "confidence_interval": "1.231 (0.972-1.559)",
                 "outcome_definition": "320 confirmed cases of breast cancer",
                 "exposure_definition": "infrequent consumption of garlic (frequent garlic consumption is a protective factor)"
-            }
+            },
+            "P Value": 0.08458189027673678
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pourzand A et al. (2016) [PMID: 27721879]</th>\n      <td>-0.8118</td>\n      <td>0.3407</td>\n      <td>-1.4796</td>\n      <td>-0.1440</td>\n      <td>285.0</td>\n      <td>285.0</td>\n    </tr>\n    <tr>\n      <th>Desai G et al. (2020) [PMID: 31402709]</th>\n      <td>-0.6075</td>\n      <td>0.2516</td>\n      <td>-1.1007</td>\n      <td>-0.1144</td>\n      <td>314.0</td>\n      <td>660.0</td>\n    </tr>\n    <tr>\n      <th>Yu ZG et al. (2012) [PMID: 22723840]</th>\n      <td>-0.1832</td>\n      <td>0.1074</td>\n      <td>-0.3937</td>\n      <td>0.0273</td>\n      <td>320.0</td>\n      <td>122058.0</td>\n    </tr>\n    <tr>\n      <th>Dorant E et al. (1995) [PMID: 7749142]</th>\n      <td>-0.1393</td>\n      <td>0.2078</td>\n      <td>-0.5466</td>\n      <td>0.2681</td>\n      <td>469.0</td>\n      <td>120852.0</td>\n    </tr>\n  </tbody>\n</table>",

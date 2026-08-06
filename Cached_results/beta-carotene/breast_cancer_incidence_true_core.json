@@ -44,11 +44,12 @@
                 "sample_size": "During a median follow-up time of 8.8 years, 7,502 primary invasive breast cancer cases were identified.",
                 "effect_size": "In the multivariate analyses, dietary intake of beta-carotene... was not associated with breast cancer risk in... postmenopausal women [0.93 (0.82-1.04)]",
                 "effect_direction": "dietary intake of beta-carotene... was not associated with breast cancer risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.231.",
                 "confidence_interval": "postmenopausal women [0.93 (0.82-1.04)]",
                 "outcome_definition": "7,502 primary invasive breast cancer cases were identified",
                 "exposure_definition": "dietary antioxidant intake, including beta-carotene... dietary intake of beta-carotene"
-            }
+            },
+            "P Value": 0.23133255135736103
         },
         {
             "Study": "Zhang S et al. (1999) [PMID: 10088626]",
@@ -143,11 +144,12 @@
                 "sample_size": "In a prospective cohort study of 26,224 postmenopausal women",
                 "effect_size": "dietary but not supplemental beta-carotene showed a protective effect against lobular breast cancer [incidence rate ratio (IRR): 0.72; 95% confidence interval (CI): 0.57-0.91]",
                 "effect_direction": "dietary beta-carotene showed a protective effect against lobular breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.006.",
                 "confidence_interval": "95% confidence interval (CI): 0.57-0.91",
                 "outcome_definition": "One thousand seventy-two cases were identified during follow-up. Incidence rate ratios of total breast cancers and breast cancer subtypes defined by histology (ductal/lobular)",
                 "exposure_definition": "vitamin C, vitamin E, folate and beta-carotene from diet and supplements"
-            }
+            },
+            "P Value": 0.0059105952759821055
         },
         {
             "Study": "Larsson SC et al. (2010) [PMID: 20116235]",
@@ -241,12 +243,13 @@
                 "sample_size": "Of 5450 women with baseline measurements",
                 "effect_size": "Analysis of repeated measurements indicated that alpha-carotene and beta-carotene were inversely associated with breast cancer",
                 "effect_direction": "beta-carotene were inversely associated with breast cancer",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.016.",
                 "confidence_interval": null,
                 "outcome_definition": "190 incident cases of breast cancer were ascertained over a median of 8.0 y of follow-up",
                 "exposure_definition": "Serum concentrations of alpha-carotene, beta-carotene, beta-cryptoxanthin, lycopene, lutein + zeaxanthin, retinol, alpha-tocopherol, and gamma-tocopherol were measured"
             },
-            "exclusions": 2
+            "exclusions": 2,
+            "P Value": 0.01606477318029673
         },
         {
             "Study": "Tamimi RM et al. (2009) [PMID: 19934322]",
@@ -483,11 +486,12 @@
                 "sample_size": "In a case-control study (270 cases, 270 controls) nested within a cohort in New York during 1985-1994",
                 "effect_size": "The risk of breast cancer approximately doubled among subjects with blood levels of beta-carotene at the lowest quartile, as compared with those at the highest quartile (odds ratio = 2.21; 95% confidence interval (CI): 1.29, 3.79)",
                 "effect_direction": "There was an evident increase in the risk of breast cancer for decreasing beta-carotene",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.004.",
                 "confidence_interval": "95% confidence interval (CI): 1.29, 3.79",
                 "outcome_definition": "risk of breast cancer",
                 "exposure_definition": "blood levels of beta-carotene at the lowest quartile, as compared with those at the highest quartile"
-            }
+            },
+            "P Value": 0.0039176161476274325
         },
         {
             "Study": "Bakker MF et al. (2016) [PMID: 26791185]",
@@ -678,11 +682,12 @@
                 "sample_size": "Data was used from women participating in the Rotterdam Study, a prospective cohort study among subjects aged 55 years and older (N = 3,209).",
                 "effect_size": "low intake of alpha carotene and beta carotene was associated with a higher risk of breast cancer among smokers (HR: 2.48; 95% CI: 1.21, 5.12 and HR: 2.31; 95% CI: 1.12, 4.76 for alpha and beta carotene, respectively)",
                 "effect_direction": "low intake of beta carotene was associated with a higher risk of breast cancer among smokers",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.023.",
                 "confidence_interval": "HR: 2.31; 95% CI: 1.12, 4.76 for beta carotene",
                 "outcome_definition": "Incident cases of breast cancer were confirmed through medical reports. During a median follow-up of 17 years, 199 cases with breast cancer were identified.",
                 "exposure_definition": "antioxidant intake (i.e., vitamin A, C, E, selenium, flavonoids and carotenoids) was assessed at baseline by a food frequency questionnaire"
-            }
+            },
+            "P Value": 0.023309606330564444
         },
         {
             "Study": "Eliassen AH et al. (2012) [PMID: 23221879]",
@@ -776,11 +781,12 @@
                 "sample_size": "Of 1,028,438 participants followed for a maximum follow-up of 26 y across studies, 33,380 incident invasive breast cancers were identified.",
                 "effect_size": "\u03b2-carotene (0.84; 95% CI: 0.77, 0.93)",
                 "effect_direction": "\u03b2-carotene intakes were inversely associated with the risk of ER-negative (ER-) breast cancer",
-                "p_value": "Not explicitly stated for \u03b2-carotene ER- association",
+                "p_value": "Not explicitly stated for \u03b2-carotene ER- association Computed from the reported effect and 95% CI using a normal approximation: p=2.944e-04.",
                 "confidence_interval": "\u03b2-carotene (0.84; 95% CI: 0.77, 0.93)",
                 "outcome_definition": "33,380 incident invasive breast cancers were identified. Risk of ER-negative (ER-) breast cancer",
                 "exposure_definition": "\u03b2-carotene intakes; pooled multivariable RRs of the comparison between the highest and lowest quintiles"
-            }
+            },
+            "P Value": 0.00029441768985281343
         },
         {
             "Study": "Rohan TE et al. (1988) [PMID: 3414656]",
@@ -824,11 +830,12 @@
                 "sample_size": "involving 451 case-control pairs aged 20-74 years",
                 "effect_size": "the relative risk of breast cancer at the uppermost fifth of beta-carotene intake was 0.76 (95% CI 0.50-1.18)",
                 "effect_direction": "Risk varied little with level of retinol intake, but it decreased with increasing intake of beta-carotene, a trend that was statistically significant",
-                "p_value": "a trend that was statistically significant",
+                "p_value": "a trend that was statistically significant Computed from the reported effect and 95% CI using a normal approximation: p=0.210.",
                 "confidence_interval": "95% CI 0.50-1.18",
                 "outcome_definition": "Cases were identified through the state cancer registry between April 1982 and July 1984",
                 "exposure_definition": "beta-carotene intake"
-            }
+            },
+            "P Value": 0.2102525751901504
         },
         {
             "Study": "Bohlke K et al. (1999) [PMID: 10408688]",
@@ -872,11 +879,12 @@
                 "sample_size": "Eight hundred and twenty women with histologically confirmed breast cancer were compared with 1548 control women.",
                 "effect_size": "the odds ratio (OR) for a one-quintile increase in beta-carotene intake was 0.84 (95% confidence interval 0.73-0.97)",
                 "effect_direction": "Among premenopausal women, beta-carotene, vitamin C and vitamin E were each inversely associated with breast cancer risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.016.",
                 "confidence_interval": "95% confidence interval 0.73-0.97",
                 "outcome_definition": "Eight hundred and twenty women with histologically confirmed breast cancer",
                 "exposure_definition": "beta-carotene intake"
-            }
+            },
+            "P Value": 0.016197341072651427
         },
         {
             "Study": "Fioretti F et al. (1999) [PMID: 10206315]",
@@ -920,11 +928,12 @@
                 "sample_size": "The study included 1041 nulliparae with histologically confirmed incident breast cancer and 1002 nulliparous controls",
                 "effect_size": "beta-carotene was inversely related to risk (OR 0.60, 95% CI 0.38-0.95) for the highest tertile",
                 "effect_direction": "beta-carotene was inversely related to risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.029.",
                 "confidence_interval": "95% CI 0.38-0.95",
                 "outcome_definition": "1041 nulliparae with histologically confirmed incident breast cancer",
                 "exposure_definition": "beta-carotene... for the highest tertile"
-            }
+            },
+            "P Value": 0.028861555288327286
         },
         {
             "Study": "Longnecker MP et al. (1997) [PMID: 9367061]",
@@ -968,12 +977,13 @@
                 "sample_size": "Multivariate-adjusted models were fit to data for 3543 cases and 9406 controls.",
                 "effect_size": "Eating carrots or spinach more than twice weekly, compared with no intake, was associated with an odds ratio of 0.56",
                 "effect_direction": "The findings are, however, consistent with a diet rich in these foods having a modest protective effect.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.021.",
                 "confidence_interval": "95% confidence interval 0.34-0.91",
                 "outcome_definition": "population-based case-control study of breast cancer risk",
                 "exposure_definition": "To estimate intake of beta-carotene and vitamin A, the authors included nine questions on food and supplement use. Eating carrots or spinach more than twice weekly"
             },
-            "exclusions": 2
+            "exclusions": 2,
+            "P Value": 0.020961604900680816
         },
         {
             "Study": "Zhang S et al. (1997) [PMID: 9280184]",
@@ -1065,11 +1075,12 @@
                 "sample_size": "The study group comprised 347 incident breast cancer cases and 374 controls.",
                 "effect_size": "Odds ratios for highest versus lowest tertiles of exposure, adjusted for potential confounders, were 1.15 (95% confidence interval, 0.75-1.77), 0.74 (0.45-1.23), and 0.96 (0.63-1.47), respectively",
                 "effect_direction": "beta-carotene (3.0% lower)... 0.74 (0.45-1.23)... without evidence for a decreasing trend",
-                "p_value": "without evidence for a decreasing trend",
+                "p_value": "without evidence for a decreasing trend Computed from the reported effect and 95% CI using a normal approximation: p=0.240.",
                 "confidence_interval": "0.74 (0.45-1.23)",
                 "outcome_definition": "347 incident breast cancer cases... postmenopausal women, ages 50-74 years",
                 "exposure_definition": "beta-carotene in adipose tissue"
-            }
+            },
+            "P Value": 0.24045506413721437
         },
         {
             "Study": "Freudenheim JL et al. (1996) [PMID: 8609642]",
@@ -1113,11 +1124,12 @@
                 "sample_size": "Case patients (n=297) were identified through pathology records from hospitals in Erie and Niagara counties in western New York. Control subjects (n=311), frequency-matched to case patients on the basis of age and county of residence",
                 "effect_size": "beta-carotene (OR=0.46; 95% CI=0.28-0.74)",
                 "effect_direction": "There was a reduction in risk associated with high intake of several nutrients. With the lowest quartile of intake as the referent, adjusted ORs for the highest quartile of intake",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.002.",
                 "confidence_interval": "beta-carotene (OR=0.46; 95% CI=0.28-0.74)",
                 "outcome_definition": "premenopausal women 40 years of age or older who were diagnosed with breast cancer from November 1986 through April 1991",
                 "exposure_definition": "usual intake of vegetables and fruits, vitamins C and E, folic acid, individual carotenoids, and dietary fiber with its components"
-            }
+            },
+            "P Value": 0.0017354352106156714
         },
         {
             "Study": "Holmberg L et al. (1994) [PMID: 8053747]",
@@ -1161,11 +1173,12 @@
                 "sample_size": "A total of 380 cases and 525 control subjects, frequency-matched for age, month of mammography, and county of residence, were identified. Of these, 265 cases and 432 control subjects were included in this analysis.",
                 "effect_size": "Exposure in the highest quartile of beta-carotene intake gave an odds ratio of 0.6",
                 "effect_direction": "The negative association between breast cancer risk and beta-carotene intake may be supported by a plausible mechanism",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.029.",
                 "confidence_interval": "95% confidence interval, 0.4 to 1.0",
                 "outcome_definition": "Cases were recruited from a mammography screening program used within the national health care system; the control subjects were selected from subjects free of breast cancer in the same population.",
                 "exposure_definition": "Odds ratios for breast cancer in relation to food and nutrient intake were the main outcome measures. Exposure in the highest quartile of beta-carotene intake"
-            }
+            },
+            "P Value": 0.028861555288327286
         },
         {
             "Study": "Zaridze D et al. (1991) [PMID: 2045197]",
@@ -1306,11 +1319,12 @@
                 "sample_size": "The cases were 122 female patients aged 24-87 years with histopathologically confirmed breast cancer. 632 healthy women age-matched were randomly recruited from outpatient clinics.",
                 "effect_size": "Compared with the highest versus lowest quartile of intake, the adjusted ORs were 0.26 (95% CI 0.14-0.46) for lycopene, 0.38 (95% CI 0.21-0.71) for beta-carotene",
                 "effect_direction": "higher intake of lycopene, beta-carotene and beta-cryptoxanthin is associated to a lower risk of breast cancer among Chinese women",
-                "p_value": "with statistically significant tests for trend",
+                "p_value": "with statistically significant tests for trend Computed from the reported effect and 95% CI using a normal approximation: p=0.002.",
                 "confidence_interval": "0.38 (95% CI 0.21-0.71) for beta-carotene",
                 "outcome_definition": "122 female patients aged 24-87 years with histopathologically confirmed breast cancer",
                 "exposure_definition": "intake of lycopene, alpha-carotene, beta-carotene, beta-cryptoxanthin, and lutein/zeaxanthin"
-            }
+            },
+            "P Value": 0.0018478162710791257
         },
         {
             "Study": "Zaroukian S et al. (2005) [PMID: 15927830]",
@@ -1354,11 +1368,12 @@
                 "sample_size": "A total of 414 French-Canadians in Montreal with new diagnoses of breast cancer were age-matched to 429 population-based controls.",
                 "effect_size": "Significant positive associations were observed in adipose tissue for beta carotene [OR=3.18; 95% CI (1.70-5.93)]",
                 "effect_direction": "high concentrations of retinoids and carotenes in adipose tissue and cheek cells are associated with increased risk of breast cancer",
-                "p_value": "Significant positive associations were observed in adipose tissue for beta carotene",
+                "p_value": "Significant positive associations were observed in adipose tissue for beta carotene Computed from the reported effect and 95% CI using a normal approximation: p=2.837e-04.",
                 "confidence_interval": "OR=3.18; 95% CI (1.70-5.93)",
                 "outcome_definition": "414 French-Canadians in Montreal with new diagnoses of breast cancer",
                 "exposure_definition": "beta carotene concentrations in adipose tissue, cheek cells and plasma"
-            }
+            },
+            "P Value": 0.00028371406125995535
         },
         {
             "Study": "Gaudet MM et al. (2004) [PMID: 15342450]",
@@ -1499,11 +1514,12 @@
                 "sample_size": "Three hundred ten consecutively recruited cases with primary breast cancer were matched according to 10-yr age groups to 353 controls",
                 "effect_size": "b-carotene (OR = 0.46, 95% CI = 0.27-0.80)",
                 "effect_direction": "high intake of some selected vitamins and minerals possessing putative DNA-stabilizing properties displayed significant inverse risk associations",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.005.",
                 "confidence_interval": "b-carotene (OR = 0.46, 95% CI = 0.27-0.80)",
                 "outcome_definition": "Three hundred ten consecutively recruited cases with primary breast cancer",
                 "exposure_definition": "high intake of some selected vitamins and minerals possessing putative DNA-stabilizing properties displayed significant inverse risk associations. Adjusted ORs were as follows: b-carotene"
-            }
+            },
+            "P Value": 0.005071602830837228
         },
         {
             "Study": "Kim MK et al. (2002) [PMID: 12588696]",
@@ -1595,11 +1611,12 @@
                 "sample_size": "Blood samples were collected from 153 breast cancer cases and 151 controls",
                 "effect_size": "0.47 [95% confidence interval (CI) 0.24, 0.91] for beta-carotene",
                 "effect_direction": "increased serum levels of beta-carotene, retinol, bilirubin and total antioxidant status are associated with reductions in breast cancer risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.026.",
                 "confidence_interval": "0.47 [95% confidence interval (CI) 0.24, 0.91] for beta-carotene",
                 "outcome_definition": "Newly diagnosed breast cancer cases were recruited before any treatment",
                 "exposure_definition": "Serum samples were analyzed for retinol, alpha-tocopherol, lycopene, alpha- and beta-carotene by HPLC"
-            }
+            },
+            "P Value": 0.026375001652813975
         },
         {
             "Study": "Tayyem RF et al. (2019) [PMID: 30999736]",
@@ -1691,11 +1708,12 @@
                 "sample_size": "A total of 521 women with breast cancer and age-matched controls (5-year interval) were selected from three teaching hospitals in Guangzhou, China.",
                 "effect_size": "The multivariate OR for the highest quartile of serum concentration compared with the lowest quartile were 0\u00b727 (95% CI 0\u00b718, 0\u00b740) for \u03b2-carotene",
                 "effect_direction": "Significant inverse associations were observed between serum \u03b2-carotene and the risk for breast cancer.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.295e-10.",
                 "confidence_interval": "0\u00b727 (95% CI 0\u00b718, 0\u00b740) for \u03b2-carotene",
                 "outcome_definition": "521 women with breast cancer",
                 "exposure_definition": "serum \u03b2-carotene measured using HPLC"
-            }
+            },
+            "P Value": 1.2952914410542933e-10
         },
         {
             "Study": "Wang L et al. (2014) [PMID: 24502868]",
@@ -1739,11 +1757,12 @@
                 "sample_size": "A total of 561 cases and 561 controls who were frequency matched by age (5-year interval) and residence were recruited",
                 "effect_size": "The multivariate-adjusted OR for the highest quartile of intake compared with the lowest quartile of intake were 0\u00b754 (95 % CI 0\u00b738, 0\u00b778) for \u03b2-carotene",
                 "effect_direction": "An inverse association was observed between the consumption of \u03b2-carotene and the risk of breast cancer",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=7.826e-04.",
                 "confidence_interval": "95 % CI 0\u00b738, 0\u00b778",
                 "outcome_definition": "the risk of breast cancer among Chinese women",
                 "exposure_definition": "dietary carotenoid intake, specifically \u03b2-carotene intake measured by validated FFQ"
-            }
+            },
+            "P Value": 0.0007825789162447793
         },
         {
             "Study": "Pan SY et al. (2011) [PMID: 21864361]",
@@ -1787,11 +1806,12 @@
                 "sample_size": "The study population included 2,362 cases with pathologically confirmed incident breast cancer (866 premenopausal and 1,496 postmenopausal) and 2,462 controls in Canada.",
                 "effect_size": "supplementation of 10 years or longer of multiple vitamin, beta-carotene, vitamin C, vitamin E and zinc had multivariable-adjusted ORs (95% CIs) of 0.74 (0.59, 0.92), 0.58 (0.36, 0.95), 0.79 (0.63-0.99), 0.75 (0.58, 0.97), and 0.47 (0.28-0.78), respectively, for postmenopausal women.",
                 "effect_direction": "supplementation of multiple vitamin, beta-carotene, vitamin C, vitamin E and zinc in postmenopausal women for 10 or more years may protect women from developing breast cancer.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.028.",
                 "confidence_interval": "beta-carotene...0.58 (0.36, 0.95)",
                 "outcome_definition": "2,362 cases with pathologically confirmed incident breast cancer",
                 "exposure_definition": "supplementation of 10 years or longer of...beta-carotene"
-            }
+            },
+            "P Value": 0.027767214943195548
         },
         {
             "Study": "Darouei B et al. (2025) [PMID: 41029403]",
@@ -1835,11 +1855,12 @@
                 "sample_size": "This population-based case-control study recruited 600 patients with newly diagnosed BC and 600 healthy controls.",
                 "effect_size": "Total provitamin A (Q4 OR = 0.46; 95% CI: 0.29-0.75)",
                 "effect_direction": "Higher intake of lycopene, phytoene, phytofluene, total non-provitamin A and provitamin A, \u03b2-carotene, lutein/zeaxanthin, as well as total carotenoids was significantly associated with reduced BC risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.001.",
                 "confidence_interval": "Total provitamin A (Q4 OR = 0.46; 95% CI: 0.29-0.75)",
                 "outcome_definition": "600 patients with newly diagnosed BC",
                 "exposure_definition": "\u03b2-carotene... total carotenoids were categorized into quartiles. Total provitamin A... \u03b2-carotene"
-            }
+            },
+            "P Value": 0.0013574230116039949
         },
         {
             "Study": "Shah S et al. (2026) [PMID: 41954817]",

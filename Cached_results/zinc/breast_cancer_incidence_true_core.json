@@ -187,11 +187,12 @@
                 "sample_size": "The case-control study included 1591 cases and 1622 age-frequency matched controls.",
                 "effect_size": "Zn from white meat intake was linearly and inversely associated with breast cancer risk, with adjusted odds ratio and 95% confidence interval of 0.76 (0.61-0.95).",
                 "effect_direction": "Zn from white meat intake was linearly and inversely associated with breast cancer risk.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.015.",
                 "confidence_interval": "0.76 (0.61-0.95)",
                 "outcome_definition": "This study aimed to investigate the relationship between dietary Zn, Se intake and breast cancer risk in Chinese women.",
                 "exposure_definition": "Dietary Zn and Se were divided into four categories: Zn/Se from plants, Zn/Se from meat, Zn/Se from red meat, and Zn/Se from white meat."
-            }
+            },
+            "P Value": 0.015165240116201203
         },
         {
             "Study": "Garland M et al. (1996) [PMID: 8823061]",
@@ -235,11 +236,12 @@
                 "sample_size": "62,641 US women who provided toenail clippings and were free from diagnosed breast cancer in 1982.",
                 "effect_size": "for zinc, 1.09 (95% CI 0.70-1.70).",
                 "effect_direction": "These results do not provide evidence for an important effect of arsenic, copper, chromium, iron, or zinc on breast cancer risk.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.703.",
                 "confidence_interval": "1.09 (95% CI 0.70-1.70).",
                 "outcome_definition": "433 cases of breast cancer identified during 4 years of follow-up.",
                 "exposure_definition": "Toenail levels of five trace elements."
-            }
+            },
+            "P Value": 0.7034089384441635
         },
         {
             "Study": "Fernandez-Lazaro CI et al. (2021) [PMID: 33668391]",
@@ -332,11 +334,12 @@
                 "sample_size": "319 cases and 344 controls.",
                 "effect_size": "serum zinc, OR = 12.2 (5.4-27.7)",
                 "effect_direction": "zinc serum level was higher in Italian cases than in Italian controls.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=2.007e-09.",
                 "confidence_interval": "OR = 12.2 (5.4-27.7)",
                 "outcome_definition": "Nutritional factors related to breast cancer were investigated.",
                 "exposure_definition": "Serum zinc was assessed in the Italian samples."
-            }
+            },
+            "P Value": 2.007440242110925e-09
         },
         {
             "Study": "Adzersen KH et al. (2003) [PMID: 14690788]",
@@ -380,11 +383,12 @@
                 "sample_size": "Three hundred ten consecutively recruited cases with primary breast cancer were matched according to 10-yr age groups to 353 controls.",
                 "effect_size": "Adjusted ORs were as follows: zinc (OR = 0.35, 95% CI = 0.15-0.78).",
                 "effect_direction": "High intake of zinc displayed significant inverse risk associations.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.013.",
                 "confidence_interval": "95% CI = 0.15-0.78",
                 "outcome_definition": "A case-control study of breast cancer was conducted in Heidelberg, Germany.",
                 "exposure_definition": "High intake of some selected vitamins and minerals possessing putative DNA-stabilizing properties."
-            }
+            },
+            "P Value": 0.012554874714358365
         },
         {
             "Study": "Pan SY et al. (2011) [PMID: 21864361]",
@@ -428,11 +432,12 @@
                 "sample_size": "The study population included 2,362 cases with pathologically confirmed incident breast cancer (866 premenopausal and 1,496 postmenopausal) and 2,462 controls in Canada.",
                 "effect_size": "10 years or longer supplementation of zinc had multivariable-adjusted odds ratios (OR) and 95% confidence intervals (CI) of 0.46 (0.25-0.85) for premenopausal women.",
                 "effect_direction": "10 years or longer supplementation of zinc had multivariable-adjusted odds ratios (OR) and 95% confidence intervals (CI) of 0.46 (0.25-0.85) for premenopausal women.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.013.",
                 "confidence_interval": "95% confidence intervals (CI) of 0.46 (0.25-0.85)",
                 "outcome_definition": "The study population included 2,362 cases with pathologically confirmed incident breast cancer.",
                 "exposure_definition": "10 years or longer supplementation of zinc."
-            }
+            },
+            "P Value": 0.012868835609721303
         },
         {
             "Study": "Lubi\u0144ski J et al. (2023) [PMID: 37299574]",
@@ -465,12 +470,13 @@
                 "sample_size": "",
                 "effect_size": "",
                 "effect_direction": "",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.042e-04.",
                 "confidence_interval": "",
                 "outcome_definition": "",
                 "exposure_definition": ""
             },
-            "exclusions": 0
+            "exclusions": 0,
+            "P Value": 0.00010422432833989704
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Adzersen KH et al. (2003) [PMID: 14690788]</th>\n      <td>-0.9615</td>\n      <td>0.3981</td>\n      <td>-1.7418</td>\n      <td>-0.1813</td>\n      <td>310.0</td>\n      <td>663.0</td>\n    </tr>\n    <tr>\n      <th>Pan SY et al. (2011) [PMID: 21864361]</th>\n      <td>-0.7037</td>\n      <td>0.2910</td>\n      <td>-1.2742</td>\n      <td>-0.1333</td>\n      <td>2362.0</td>\n      <td>4824.0</td>\n    </tr>\n    <tr>\n      <th>Lubi\u0144ski J et al. (2023) [PMID: 37299574]</th>\n      <td>-0.5978</td>\n      <td>0.1541</td>\n      <td>-0.8998</td>\n      <td>-0.2959</td>\n      <td>514.0</td>\n      <td>1475.0</td>\n    </tr>\n    <tr>\n      <th>Tu K et al. (2023) [PMID: 37513671]</th>\n      <td>-0.2427</td>\n      <td>0.1014</td>\n      <td>-0.4415</td>\n      <td>-0.0440</td>\n      <td>1591.0</td>\n      <td>3213.0</td>\n    </tr>\n    <tr>\n      <th>Fernandez-Lazaro CI et al. (2021) [PMID: 33668391]</th>\n      <td>0.0093</td>\n      <td>0.2413</td>\n      <td>-0.4636</td>\n      <td>0.4822</td>\n      <td>107.0</td>\n      <td>9983.0</td>\n    </tr>\n    <tr>\n      <th>Bengtsson Y et al. (2021) [PMID: 34224055]</th>\n      <td>0.0745</td>\n      <td>0.1108</td>\n      <td>-0.1427</td>\n      <td>0.2918</td>\n      <td>1186.0</td>\n      <td>2372.0</td>\n    </tr>\n    <tr>\n      <th>Garland M et al. (1996) [PMID: 8823061]</th>\n      <td>0.0745</td>\n      <td>0.1940</td>\n      <td>-0.3057</td>\n      <td>0.4548</td>\n      <td>433.0</td>\n      <td>62641.0</td>\n    </tr>\n    <tr>\n      <th>Cui Y et al. (2007) [PMID: 17684146]</th>\n      <td>0.2678</td>\n      <td>0.1715</td>\n      <td>-0.0684</td>\n      <td>0.6040</td>\n      <td>252.0</td>\n      <td>9315.0</td>\n    </tr>\n    <tr>\n      <th>Cavallo F et al. (1991) [PMID: 1985767]</th>\n      <td>1.5070</td>\n      <td>0.1398</td>\n      <td>1.2330</td>\n      <td>1.7810</td>\n      <td>261.0</td>\n      <td>522.0</td>\n    </tr>\n    <tr>\n      <th>Gerber M et al. (1990) [PMID: 2399562]</th>\n      <td>1.6029</td>\n      <td>0.1505</td>\n      <td>1.3080</td>\n      <td>1.8978</td>\n      <td>319.0</td>\n      <td>663.0</td>\n    </tr>\n  </tbody>\n</table>",

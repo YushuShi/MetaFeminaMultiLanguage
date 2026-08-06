@@ -288,11 +288,12 @@
                 "sample_size": "40,432 women without a history of cancer at baseline were included in this study.",
                 "effect_size": "vitamin B6 levels above the recommended level (HR = 0.48, 95% CI: 0.25\u22120.89)",
                 "effect_direction": "the risk of breast cancer was significantly reduced in the group that consumed vitamin B6 levels above the recommended level",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.023.",
                 "confidence_interval": "HR = 0.48, 95% CI: 0.25\u22120.89",
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "vitamin B6 levels above the recommended level"
-            }
+            },
+            "P Value": 0.023457084726412624
         },
         {
             "Study": "Hatami M et al. (2020) [PMID: 30758268]",

@@ -44,11 +44,12 @@
                 "sample_size": "The study included 161 808 participants from the Women's Health Initiative",
                 "effect_size": "HR, 1.05, and 95% CI, 0.90-1.21 for endometrial cancer",
                 "effect_direction": "no association of multivitamin use with risk of cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.518.",
                 "confidence_interval": "HR, 1.05, and 95% CI, 0.90-1.21 for endometrial cancer",
                 "outcome_definition": "We documented cancers of the breast (invasive), colon/rectum, endometrium, kidney, bladder, stomach, ovary, and lung",
                 "exposure_definition": "Detailed data were collected on multivitamin use at baseline and follow-up time points."
-            }
+            },
+            "P Value": 0.5181616493003389
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>NaN</td>\n      <td>161808</td>\n      <td>1.046437</td>\n      <td>0.90615</td>\n      <td>1.192883</td>\n    </tr>\n  </tbody>\n</table>",

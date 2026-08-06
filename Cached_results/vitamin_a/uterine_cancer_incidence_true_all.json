@@ -43,11 +43,12 @@
                 "sample_size": "454 women with incident, histologically confirmed endometrial cancer and 908 controls",
                 "effect_size": "No association emerged with retinol (OR = 1.31, 95% CI, 0.94-1.84)",
                 "effect_direction": "No association emerged with retinol",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.115.",
                 "confidence_interval": "OR = 1.31, 95% CI, 0.94-1.84",
                 "outcome_definition": "454 women with incident, histologically confirmed endometrial cancer",
                 "exposure_definition": "Intake of carotenoids and retinol was computed from a validated and reproducible food frequency questionnaire."
-            }
+            },
+            "P Value": 0.11502573433225408
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>454.0</td>\n      <td>1362</td>\n      <td>1.259252</td>\n      <td>0.94739</td>\n      <td>1.658853</td>\n    </tr>\n  </tbody>\n</table>",

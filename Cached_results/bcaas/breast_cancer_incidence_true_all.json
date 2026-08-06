@@ -93,12 +93,13 @@
                 "sample_size": "N\u2009=\u200926,711",
                 "effect_size": "modest association for leucine with obesity-related cancers (1.04 [1.00-1.08])",
                 "effect_direction": "positive associations between leucine and postmenopausal breast cancer",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.046.",
                 "confidence_interval": "1.04 [1.00-1.08]",
                 "outcome_definition": "positive associations between leucine and postmenopausal breast cancer",
                 "exposure_definition": "BCAAs were quantified via NMR spectroscopy, log-transformed, and standardized."
             },
-            "exclusions": 2
+            "exclusions": 2,
+            "P Value": 0.045749019887994694
         },
         {
             "Study": "Nouri-Majd S et al. (2022) [PMID: 35794412]",
@@ -142,11 +143,12 @@
                 "sample_size": "Overall 1050 women including 350 patients and 700 controls were included.",
                 "effect_size": "women in the highest quartile of BCAAs had lower odds of breast cancer compared with the first quartile (OR: 0.50; 95% CI 0.34-0.72)",
                 "effect_direction": "women in the highest quartile of BCAAs had lower odds of breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=2.930e-04.",
                 "confidence_interval": "OR: 0.50; 95% CI 0.34-0.72",
                 "outcome_definition": "Breast cancer was diagnosed by physical examination, mammography and pathological confirmation.",
                 "exposure_definition": "The total intake of valine, leucine, and isoleucine from all food items in the questionnaire was used to calculate BCAAs intake."
-            }
+            },
+            "P Value": 0.00029304285749023033
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Nouri-Majd S et al. (2022) [PMID: 35794412]</th>\n      <td>-0.6259</td>\n      <td>0.1780</td>\n      <td>-0.9748</td>\n      <td>-0.2771</td>\n      <td>350.0</td>\n      <td>1050.0</td>\n    </tr>\n    <tr>\n      <th>Tobias DK et al. (2021) [PMID: 34632269]</th>\n      <td>0.0454</td>\n      <td>0.0316</td>\n      <td>-0.0166</td>\n      <td>0.1074</td>\n      <td>10046.0</td>\n      <td>196161.0</td>\n    </tr>\n  </tbody>\n</table>",

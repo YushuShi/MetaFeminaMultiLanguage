@@ -26,10 +26,10 @@ jobs:
       CORNELL_API_BASE_URL: ${{ secrets.CORNELL_API_BASE_URL }}
 
     steps:
-      - name: Check out update branch
+      - name: Check out main branch
         uses: actions/checkout@v4
         with:
-          ref: YSClose2Submission
+          ref: main
           fetch-depth: 0
 
       - name: Set up Python
@@ -140,7 +140,7 @@ jobs:
             echo "No repository changes for this month." | tee -a monthly_update.log
           else
             git commit -m "Monthly evidence update $(date -u +%Y-%m)" 2>&1 | tee -a monthly_update.log
-            git push origin HEAD:YSClose2Submission 2>&1 | tee -a monthly_update.log
+            git push origin HEAD:main 2>&1 | tee -a monthly_update.log
           fi
 
       - name: Email developers when the update fails

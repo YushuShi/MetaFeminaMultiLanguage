@@ -43,11 +43,12 @@
                 "sample_size": "170 incident cases of EOC and 373 matched controls",
                 "effect_size": "adjusted OR for the top tertile versus the reference tertile, 1.09",
                 "effect_direction": "circulating 25(OH)D levels were not associated with the risk of EOC",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.783.",
                 "confidence_interval": "95% CI, 0.59-2.01",
                 "outcome_definition": "incident cases of EOC (invasive epithelial ovarian cancer)",
                 "exposure_definition": "prediagnostic circulating levels of 25-hydroxy vitamin D (25(OH)D)"
-            }
+            },
+            "P Value": 0.7828584078288929
         },
         {
             "Study": "Toriola AT et al. (2010) [PMID: 20601305]",
@@ -139,11 +140,12 @@
                 "sample_size": "516 cases and 770 matched controls",
                 "effect_size": "Compared with 25(OH)D concentrations of 50-<75 nmol/L, no statistically significant associations were observed for <37.5 (odds ratio (OR) = 1.21, 95% confidence interval (CI): 0.87, 1.70), 37.5-<50 (OR = 1.03, 95% CI: 0.75, 1.41), or > or =75 (OR = 1.11, 95% CI: 0.79, 1.55) nmol/L.",
                 "effect_direction": "no statistically significant associations were observed; this large pooled analysis did not support an overall association between circulating 25(OH)D and ovarian cancer risk",
-                "p_value": "no statistically significant associations were observed",
+                "p_value": "no statistically significant associations were observed Computed from the reported effect and 95% CI using a normal approximation: p=0.544.",
                 "confidence_interval": "95% confidence interval (CI): 0.79, 1.55",
                 "outcome_definition": "epithelial ovarian cancer risk",
                 "exposure_definition": "circulating 25-hydroxyvitamin D (25(OH)D), an integrated measure of vitamin D status"
-            }
+            },
+            "P Value": 0.5438636531994694
         },
         {
             "Study": "Toriola AT et al. (2010) [PMID: 19713101]",
@@ -428,11 +430,12 @@
                 "sample_size": "We included 31 719 women of European ancestry (10 065 cases, 21 654 controls)",
                 "effect_size": "The odds ratio for epithelial ovarian cancer risk (10 065 cases) estimated by combining the individual SNP associations using inverse variance weighting was 1.27 (95% confidence interval: 1.06 to 1.51) per 20 nmol/L decrease in 25(OH)D concentration.",
                 "effect_direction": "Genetically lowered 25-hydroxyvitamin D concentrations were associated with higher ovarian cancer susceptibility in Europeans. These findings suggest that increasing plasma vitamin D levels may reduce risk of ovarian cancer.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.008.",
                 "confidence_interval": "95% confidence interval: 1.06 to 1.51",
                 "outcome_definition": "epithelial ovarian cancer risk (10 065 cases) and for high-grade serous ovarian cancer (4121 cases)",
                 "exposure_definition": "single nucleotide polymorphisms (SNPs) associated with circulating 25-hydroxyvitamin D [25(OH)D] concentration. SNPs: rs7944926 (DHCR7), rs12794714 (CYP2R1) and rs2282679 (GC)"
-            }
+            },
+            "P Value": 0.008085686614294537
         },
         {
             "Study": "Ritonja JA et al. (2024) [PMID: 38754871]",
@@ -476,11 +479,12 @@
                 "sample_size": "population-based case-control study conducted from 2011 to 2016 in Montreal, Canada (n = 490 cases and 896 controls)",
                 "effect_size": "For each 20-nmol/L increase in average predicted 25(OH)D over the adult lifetime, the aOR (95% CI) was 0.73 (0.55-0.96)",
                 "effect_direction": "These results support an inverse association between 25(OH)D levels in adulthood and ovarian cancer risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.027.",
                 "confidence_interval": "aOR (95% CI) was 0.73 (0.55-0.96)",
                 "outcome_definition": "ovarian cancer risk in a population-based case-control study",
                 "exposure_definition": "serum 25-hydroxyvitamin D (25(OH)D); Predicted 25(OH)D was computed using previously validated regression models"
-            }
+            },
+            "P Value": 0.02677511633342705
         },
         {
             "Study": "Ye Y et al. (2021) [PMID: 32918767]",
@@ -574,11 +578,12 @@
                 "sample_size": null,
                 "effect_size": "ovarian cancers (OR 0.89; 95% C.I: 0.82 to 0.96 per 1 SD change in 25(OH)D concentration)",
                 "effect_direction": "lower 25(OH)D is unlikely to be a causal risk factor for most cancers",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.004.",
                 "confidence_interval": "95% C.I: 0.82 to 0.96",
                 "outcome_definition": "ovarian cancers",
                 "exposure_definition": "25-hydroxyvitamin D (25(OH)D) and 25(OH)D concentration"
-            }
+            },
+            "P Value": 0.0037552112076359575
         },
         {
             "Study": "Salazar-Martinez E et al. (2002) [PMID: 12239450]",
@@ -670,11 +675,12 @@
                 "sample_size": "New England case-control study (1,909 cases and 1,989 controls)",
                 "effect_size": "High intake of total vitamin D was not associated overall with ovarian cancer risk, but was inversely associated with risk of serous borderline (Q4, >559 IU/day vs. Q1, <164 IU/day, OR = 0.51, 95% CI = 0.34-0.76) and endometrioid tumors (Q4 vs. Q1, OR = 0.55, 95% CI = 0.39-0.80)",
                 "effect_direction": "inversely associated with risk of serous borderline and endometrioid tumors",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.001.",
                 "confidence_interval": "95% CI = 0.39-0.80",
                 "outcome_definition": "risk of ovarian cancer overall, histological subtypes and rapidly fatal versus less aggressive disease",
                 "exposure_definition": "total vitamin D (dietary plus supplements), measured in IU/day"
-            }
+            },
+            "P Value": 0.0011068985973752598
         },
         {
             "Study": "Hu Y et al. (2025) [PMID: 41031356]",
@@ -719,11 +725,12 @@
                 "sample_size": "We analyzed data from 51,286 UK Biobank participants",
                 "effect_size": "Each 10 nmol/L increase in 25 (OH) D reduced ovarian cancer risk (HR: 0.904, 95% CI: 0.835-0.979)",
                 "effect_direction": "Each 10 nmol/L increase in 25 (OH) D reduced ovarian cancer risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.013.",
                 "confidence_interval": "HR: 0.904, 95% CI: 0.835-0.979",
                 "outcome_definition": "ovarian cancer at 0.3% (n = 176)",
                 "exposure_definition": "Serum 25 (OH) D levels"
-            }
+            },
+            "P Value": 0.0128943560077939
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Bakhru A et al. (2010) [PMID: 20684976]</th>\n      <td>-1.2642</td>\n      <td>0.6144</td>\n      <td>-2.4684</td>\n      <td>-0.0601</td>\n      <td>-</td>\n      <td>7273.0</td>\n    </tr>\n    <tr>\n      <th>Toriola AT et al. (2010) [PMID: 20601305]</th>\n      <td>-1.0469</td>\n      <td>0.4888</td>\n      <td>-2.0050</td>\n      <td>-0.0888</td>\n      <td>172.0</td>\n      <td>344.0</td>\n    </tr>\n    <tr>\n      <th>Salazar-Martinez E et al. (2002) [PMID: 12239450]</th>\n      <td>-0.7670</td>\n      <td>0.2978</td>\n      <td>-1.3507</td>\n      <td>-0.1833</td>\n      <td>84.0</td>\n      <td>713.0</td>\n    </tr>\n    <tr>\n      <th>Merritt MA et al. (2013) [PMID: 22740148]</th>\n      <td>-0.5376</td>\n      <td>0.1689</td>\n      <td>-0.8686</td>\n      <td>-0.2065</td>\n      <td>1909.0</td>\n      <td>3898.0</td>\n    </tr>\n    <tr>\n      <th>Toriola AT et al. (2010) [PMID: 19713101]</th>\n      <td>-0.5282</td>\n      <td>0.3180</td>\n      <td>-1.1514</td>\n      <td>0.0950</td>\n      <td>201.0</td>\n      <td>805.0</td>\n    </tr>\n    <tr>\n      <th>Prescott J et al. (2013) [PMID: 24351671]</th>\n      <td>-0.4005</td>\n      <td>0.1471</td>\n      <td>-0.6888</td>\n      <td>-0.1122</td>\n      <td>1225.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Ritonja JA et al. (2024) [PMID: 38754871]</th>\n      <td>-0.2790</td>\n      <td>0.1280</td>\n      <td>-0.5299</td>\n      <td>-0.0280</td>\n      <td>490.0</td>\n      <td>1386.0</td>\n    </tr>\n    <tr>\n      <th>Ong JS et al. (2016) [PMID: 27594614]</th>\n      <td>-0.2110</td>\n      <td>0.0807</td>\n      <td>-0.3691</td>\n      <td>-0.0529</td>\n      <td>10065.0</td>\n      <td>31719.0</td>\n    </tr>\n    <tr>\n      <th>Tworoger SS et al. (2007) [PMID: 17416771]</th>\n      <td>-0.1863</td>\n      <td>0.2660</td>\n      <td>-0.7076</td>\n      <td>0.3350</td>\n      <td>224.0</td>\n      <td>827.0</td>\n    </tr>\n    <tr>\n      <th>Ong JS et al. (2021) [PMID: 33431812]</th>\n      <td>-0.1021</td>\n      <td>0.0355</td>\n      <td>-0.1717</td>\n      <td>-0.0325</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Hu Y et al. (2025) [PMID: 41031356]</th>\n      <td>-0.0944</td>\n      <td>0.0381</td>\n      <td>-0.1690</td>\n      <td>-0.0197</td>\n      <td>176.0</td>\n      <td>51286.0</td>\n    </tr>\n    <tr>\n      <th>Sajo EA et al. (2020) [PMID: 32863872]</th>\n      <td>-0.0356</td>\n      <td>0.0139</td>\n      <td>-0.0629</td>\n      <td>-0.0083</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Ye Y et al. (2021) [PMID: 32918767]</th>\n      <td>-0.0356</td>\n      <td>0.0139</td>\n      <td>-0.0629</td>\n      <td>-0.0083</td>\n      <td>-</td>\n      <td>326409.0</td>\n    </tr>\n    <tr>\n      <th>Arslan AA et al. (2009) [PMID: 19727412]</th>\n      <td>0.0745</td>\n      <td>0.2673</td>\n      <td>-0.4493</td>\n      <td>0.5983</td>\n      <td>170.0</td>\n      <td>543.0</td>\n    </tr>\n    <tr>\n      <th>Zheng W et al. (2010) [PMID: 20562186]</th>\n      <td>0.0902</td>\n      <td>0.1473</td>\n      <td>-0.1985</td>\n      <td>0.3788</td>\n      <td>516.0</td>\n      <td>1286.0</td>\n    </tr>\n  </tbody>\n</table>",

@@ -44,11 +44,12 @@
                 "sample_size": "Among 521,911 women",
                 "effect_size": "0.96 for a 2,500 microg/day increase in beta-carotene intake",
                 "effect_direction": "The major carotenoids were not significantly associated with the risk of ovarian cancer.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.117.",
                 "confidence_interval": "0.93-1.03",
                 "outcome_definition": "risk of invasive epithelial ovarian cancer",
                 "exposure_definition": "intakes of ... beta-carotene"
-            }
+            },
+            "P Value": 0.11714833970065745
         },
         {
             "Study": "Fairfield KM et al. (2001) [PMID: 11745286]",
@@ -93,11 +94,12 @@
                 "sample_size": "80,326 participants in the Nurses' Health Study",
                 "effect_size": "1.10",
                 "effect_direction": "no association between ovarian carcinoma risk and antioxidant vitamin consumption",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.613.",
                 "confidence_interval": "95% CI, 0.76-1.59",
                 "outcome_definition": "301 incident cases of invasive epithelial ovarian carcinoma",
                 "exposure_definition": "beta-carotene"
-            }
+            },
+            "P Value": 0.6127601741714916
         },
         {
             "Study": "Slattery ML et al. (1989) [PMID: 2763995]",
@@ -141,11 +143,12 @@
                 "sample_size": "85 first primary ovarian cancer cases and 492 population-based controls.",
                 "effect_size": "odds ratio = 0.5",
                 "effect_direction": "high intake of beta-carotene appears to confer protection against ovarian cancer",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.024.",
                 "confidence_interval": "95% confidence interval 0.3-1.0",
                 "outcome_definition": "risk of developing ovarian cancer",
                 "exposure_definition": "high intake of beta-carotene"
-            }
+            },
+            "P Value": 0.024019997215854627
         },
         {
             "Study": "Engle A et al. (1991) [PMID: 1866317]",
@@ -189,11 +192,12 @@
                 "sample_size": "71 women with epithelial cancer of the ovary and 141 matched controls",
                 "effect_size": "odds ratio = 0.3",
                 "effect_direction": "protective effect of high beta-carotene intake",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.023.",
                 "confidence_interval": "95% confidence interval = 0.1-0.8",
                 "outcome_definition": "epithelial cancer of the ovary",
                 "exposure_definition": "high beta-carotene intake"
-            }
+            },
+            "P Value": 0.02322973558681059
         },
         {
             "Study": "Jeong NH et al. (2009) [PMID: 19266359]",
@@ -237,11 +241,12 @@
                 "sample_size": "Forty-five epithelial ovarian cancers and 135 age-matched controls.",
                 "effect_size": "OR 0.12",
                 "effect_direction": "had 0.12-times the risk of ovarian cancer",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.551e-04.",
                 "confidence_interval": "95%CI 0.04-0.36",
                 "outcome_definition": "epithelial ovarian cancers",
                 "exposure_definition": "plasma concentrations of beta-carotene"
-            }
+            },
+            "P Value": 0.00015513871950793016
         },
         {
             "Study": "Zhang M et al. (2007) [PMID: 17367574]",
@@ -285,11 +290,12 @@
                 "sample_size": "The cases were 254 patients with histologically confirmed epithelial ovarian cancer and 652 age-matched controls were randomly recruited",
                 "effect_size": "the adjusted OR were ... 0.51 ... for beta-carotene",
                 "effect_direction": "a higher intake of carotenoids can reduce the risk of epithelial ovarian cancer.",
-                "p_value": "with statistically significant tests for trend.",
+                "p_value": "with statistically significant tests for trend. Computed from the reported effect and 95% CI using a normal approximation: p=0.008.",
                 "confidence_interval": "95 % CI 0.31, 0.84",
                 "outcome_definition": "histologically confirmed epithelial ovarian cancer",
                 "exposure_definition": "intake of ... beta-carotene ... collected by face-to-face interview using a validated and reliable FFQ."
-            }
+            },
+            "P Value": 0.008099214175410934
         },
         {
             "Study": "Pan SY et al. (2004) [PMID: 15342455]",
@@ -333,11 +339,12 @@
                 "sample_size": "442 incident cases of ovarian cancer diagnosed in 1994 to 1997 and 2,135 population controls",
                 "effect_size": "ORs (95% CIs) ... 0.31",
                 "effect_direction": "inversely associated with ... supplementation of ... beta-carotene",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.030.",
                 "confidence_interval": "0.31 (0.11-0.91)",
                 "outcome_definition": "incident cases of ovarian cancer",
                 "exposure_definition": "supplements of vitamin E, beta-carotene, and B-complex vitamins for > or =10 years"
-            }
+            },
+            "P Value": 0.029795779548667835
         },
         {
             "Study": "Bidoli E et al. (2001) [PMID: 11822759]",
@@ -381,11 +388,12 @@
                 "sample_size": "Cases were 1,031 patients with histologically confirmed incident epithelial ovarian cancer. Controls were 2,411 subjects...",
                 "effect_size": "beta-carotene (OR = 0.8)",
                 "effect_direction": "Inverse associations emerged for ... beta-carotene",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.087.",
                 "confidence_interval": "95% CI: 0.6-1.0",
                 "outcome_definition": "histologically confirmed incident epithelial ovarian cancer",
                 "exposure_definition": "beta-carotene (OR = 0.8; 95% CI: 0.6-1.0)"
-            }
+            },
+            "P Value": 0.08682841469268901
         },
         {
             "Study": "McCann SE et al. (2001) [PMID: 11588898]",
@@ -429,11 +437,12 @@
                 "sample_size": "496 women with primary, histologically confirmed epithelial ovarian cancer and 1,425 women with nonneoplastic diagnoses",
                 "effect_size": "OR = 0.68",
                 "effect_direction": "Significantly reduced risks were associated with higher intakes of ... beta-carotene",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.046.",
                 "confidence_interval": "95% CI = 0.46-0.98",
                 "outcome_definition": "primary, histologically confirmed epithelial ovarian cancer",
                 "exposure_definition": "higher intakes of ... beta-carotene"
-            }
+            },
+            "P Value": 0.04562250602502864
         },
         {
             "Study": "Guo Y et al. (2020) [PMID: 32355161]",

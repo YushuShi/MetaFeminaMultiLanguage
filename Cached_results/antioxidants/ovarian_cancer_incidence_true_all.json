@@ -43,12 +43,13 @@
                 "sample_size": "168 histologically confirmed epithelial ovarian cancer cases, 159 community controls",
                 "effect_size": "OR = 0.33",
                 "effect_direction": "protective",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=3.066e-04.",
                 "confidence_interval": "95% confidence interval (CI) = 0.18-0.60",
                 "outcome_definition": "histologically confirmed epithelial ovarian cancer cases",
                 "exposure_definition": "highest levels of intake of vitamins E from supplements"
             },
-            "exclusions": 2
+            "exclusions": 2,
+            "P Value": 0.000306574055692808
         },
         {
             "Study": "Koushik A et al. (2006) [PMID: 16823847]",
@@ -93,12 +94,13 @@
                 "sample_size": "Among 521,911 women",
                 "effect_size": "1.00",
                 "effect_direction": "The major carotenoids were not significantly associated with the risk of ovarian cancer.",
-                "p_value": "The major carotenoids were not significantly associated",
+                "p_value": "The major carotenoids were not significantly associated Computed from the reported effect and 95% CI using a normal approximation: p=1.000.",
                 "confidence_interval": "(0.95-1.05)",
                 "outcome_definition": "risk of invasive epithelial ovarian cancer",
                 "exposure_definition": "intakes of alpha-carotene, beta-carotene, beta-cryptoxanthin, lutein/zeaxanthin and lycopene and the risk of invasive epithelial ovarian cancer. ... functions as ... antioxidants."
             },
-            "exclusions": 2
+            "exclusions": 2,
+            "P Value": 1.0
         },
         {
             "Study": "Plagens-Rotman K et al. (2018) [PMID: 29575880]",
@@ -239,12 +241,13 @@
                 "sample_size": "A total of 205 ovarian cancer cases and 390 controls were included.",
                 "effect_size": "OR: 0.41",
                 "effect_direction": "strong inverse association with selenium from food sources",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.016.",
                 "confidence_interval": "95 % CI: 0.20-0.85",
                 "outcome_definition": "newly diagnosed epithelial ovarian cancer",
                 "exposure_definition": "selenium from food sources (OR: 0.41; 95 % CI: 0.20-0.85, for the highest vs. lowest tertile of dietary selenium intake)"
             },
-            "exclusions": 2
+            "exclusions": 2,
+            "P Value": 0.015712673487705643
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>None</td>\n      <td>850</td>\n      <td>0.319489</td>\n      <td>0.045704</td>\n      <td>1.776717</td>\n    </tr>\n  </tbody>\n</table>",

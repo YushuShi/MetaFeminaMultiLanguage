@@ -43,11 +43,12 @@
                 "sample_size": "232 endometrial cancer cases and 639 controls",
                 "effect_size": "lutein + zeaxanthin (OR 0.3, 95% CI: 0.2-0.5)",
                 "effect_direction": "Risks were reduced for women in the highest quartiles of intake of ... lutein + zeaxanthin",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=2.595e-07.",
                 "confidence_interval": "lutein + zeaxanthin (OR 0.3, 95% CI: 0.2-0.5)",
                 "outcome_definition": "risk of endometrial cancer",
                 "exposure_definition": "lutein + zeaxanthin"
-            }
+            },
+            "P Value": 2.594635893334358e-07
         },
         {
             "Study": "Yeh M et al. (2009) [PMID: 19074206]",
@@ -91,11 +92,12 @@
                 "sample_size": "541 women with histologically confirmed EC and 541 women with an intact uterus and noncancer diagnoses",
                 "effect_size": "lutein (OR, 0.52; 95% CI, 0.34-0.78)",
                 "effect_direction": "We observed significant inverse associations for women in the highest vs. lowest quartiles of intake of ... lutein",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.002.",
                 "confidence_interval": "lutein (OR, 0.52; 95% CI, 0.34-0.78)",
                 "outcome_definition": "541 women with histologically confirmed EC",
                 "exposure_definition": "intakes of selected food groups and nutrients ... lutein"
-            }
+            },
+            "P Value": 0.002021003393506365
         },
         {
             "Study": "Pelucchi C et al. (2008) [PMID: 18592384]",
@@ -139,11 +141,12 @@
                 "sample_size": "454 women with incident, histologically confirmed endometrial cancer and 908 controls",
                 "effect_size": "the ORs of endometrial cancer were ... 0.59 (95% CI, 0.41-0.85) for lutein plus zeaxanthin intake",
                 "effect_direction": "Our results support a favorable role of selected dietary carotenoids on endometrial cancer risk.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.005.",
                 "confidence_interval": "0.59 (95% CI, 0.41-0.85)",
                 "outcome_definition": "454 women with incident, histologically confirmed endometrial cancer",
                 "exposure_definition": "lutein plus zeaxanthin intake"
-            }
+            },
+            "P Value": 0.004555473910005188
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>McCann SE et al. (2000) [PMID: 11142531]</th>\n      <td>-1.1086</td>\n      <td>0.2229</td>\n      <td>-1.5454</td>\n      <td>-0.6717</td>\n      <td>232.0</td>\n      <td>871.0</td>\n    </tr>\n    <tr>\n      <th>Yeh M et al. (2009) [PMID: 19074206]</th>\n      <td>-0.5895</td>\n      <td>0.1963</td>\n      <td>-0.9743</td>\n      <td>-0.2047</td>\n      <td>541.0</td>\n      <td>1082.0</td>\n    </tr>\n    <tr>\n      <th>Pelucchi C et al. (2008) [PMID: 18592384]</th>\n      <td>-0.4729</td>\n      <td>0.1707</td>\n      <td>-0.8073</td>\n      <td>-0.1384</td>\n      <td>454.0</td>\n      <td>1362.0</td>\n    </tr>\n  </tbody>\n</table>",

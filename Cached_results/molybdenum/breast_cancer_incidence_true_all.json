@@ -92,11 +92,12 @@
                 "sample_size": "A total of 499 histologically confirmed BC cases and 499 controls were included.",
                 "effect_size": "Mo and Co (OR = 0.56; CI95% 0.49,0.64)",
                 "effect_direction": "the individual urinary concentrations of ... Mo were lower among cases compared to controls",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.729e-17.",
                 "confidence_interval": "Mo and Co (OR = 0.56; CI95% 0.49,0.64)",
                 "outcome_definition": "women with and without BC",
                 "exposure_definition": "Urinary concentrations of ... molybdenum (Mo) ... were determined"
-            }
+            },
+            "P Value": 1.7290174605531108e-17
         },
         {
             "Study": "Niehoff NM et al. (2021) [PMID: 34268559]",
@@ -141,11 +142,12 @@
                 "sample_size": "a race/ethnicity-stratified sample of 1,495 cases and a subcohort of 1,605 women",
                 "effect_size": "hazard ratio = 0.82",
                 "effect_direction": "molybdenum, which was associated with reduced incidence of overall breast cancer risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.052.",
                 "confidence_interval": "hazard ratio = 0.82, 95% confidence interval: 0.67, 1.00",
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "measured concentrations of 15 metals in toenails"
-            }
+            },
+            "P Value": 0.05207659792137463
         },
         {
             "Study": "M\u00e9rida-Ortega \u00c1 et al. (2025) [PMID: 41092495]",
@@ -189,11 +191,12 @@
                 "sample_size": "386 population-based controls and 336 incident BC cases",
                 "effect_size": "HR+\u202f/HER2\u202f- (OR = 0.09; 95\u202f%CI 0.05,0.18)",
                 "effect_direction": "mixtures mainly constituted by p'p DDE, cis-nonachlor and molybdenum were negatively related to all BC immunophenotypes",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.720e-13.",
                 "confidence_interval": "HR+\u202f/HER2\u202f- (OR = 0.09; 95\u202f%CI 0.05,0.18)",
                 "outcome_definition": "336 incident BC cases",
                 "exposure_definition": "mixtures mainly constituted by p'p DDE, cis-nonachlor and molybdenum"
-            }
+            },
+            "P Value": 1.7196775190681917e-13
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>M\u00e9rida-Ortega \u00c1 et al. (2025) [PMID: 41092495]</th>\n      <td>-2.2820</td>\n      <td>0.3219</td>\n      <td>-2.9129</td>\n      <td>-1.6511</td>\n      <td>336.0</td>\n      <td>722.0</td>\n    </tr>\n    <tr>\n      <th>M\u00e9rida-Ortega \u00c1 et al. (2022) [PMID: 35217012]</th>\n      <td>-0.5209</td>\n      <td>0.0629</td>\n      <td>-0.6441</td>\n      <td>-0.3977</td>\n      <td>499.0</td>\n      <td>998.0</td>\n    </tr>\n    <tr>\n      <th>Niehoff NM et al. (2021) [PMID: 34268559]</th>\n      <td>-0.1862</td>\n      <td>0.0964</td>\n      <td>-0.3752</td>\n      <td>0.0028</td>\n      <td>1495.0</td>\n      <td>3100.0</td>\n    </tr>\n    <tr>\n      <th>Matuszczak M et al. (2024) [PMID: 39300540]</th>\n      <td>0.3473</td>\n      <td>0.2156</td>\n      <td>-0.0752</td>\n      <td>0.7698</td>\n      <td>-</td>\n      <td>989.0</td>\n    </tr>\n  </tbody>\n</table>",

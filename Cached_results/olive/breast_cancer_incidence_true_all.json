@@ -44,11 +44,12 @@
                 "sample_size": "71,330 (Nurses' Health Study, 1990-2016) and 93,295 women (Nurses' Health Study II, 1991-2017)",
                 "effect_size": "The multivariable-adjusted HR (95% CI) for breast cancer among women who had the highest consumption of olive oil (>1/2 tablespoon/d or >7\u2009g/d) compared with those who never or rarely consumed olive oil, was 1.01 (0.93, 1.09).",
                 "effect_direction": "Higher olive oil consumption was not associated with any subtype of breast cancer.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.806.",
                 "confidence_interval": "1.01 (0.93, 1.09)",
                 "outcome_definition": "9,638 women developed invasive breast cancer.",
                 "exposure_definition": "olive oil intake was associated with breast cancer risk"
-            }
+            },
+            "P Value": 0.80591048432354
         },
         {
             "Study": "Buckland G et al. (2012) [PMID: 22392404]",
@@ -93,11 +94,12 @@
                 "sample_size": "The analysis included 62,284 postmenopausal women recruited from Spain, Italy and Greece",
                 "effect_size": "The multivariate HRs for BC risk by olive oil intake (highest vs. lowest tertile of g/day/2,000 kcal) were 1.07 (95% CI = 0.91-1.25)",
                 "effect_direction": "The results from our prospective study showed that olive oil consumption during adult life was not associated with the risk of BC.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.403.",
                 "confidence_interval": "1.07 (95% CI = 0.91-1.25)",
                 "outcome_definition": "After a mean follow-up of 9 years, 1,256 women were diagnosed with a primary incident invasive BC.",
                 "exposure_definition": "olive oil intake (highest vs. lowest tertile of g/day/2,000 kcal)"
-            }
+            },
+            "P Value": 0.4034559399301794
         },
         {
             "Study": "la Vecchia C et al. (1995) [PMID: 8580304]",
@@ -189,11 +191,12 @@
                 "sample_size": "762 women...with breast cancer, and 988 randomly selected female controls",
                 "effect_size": "odds ratio (OR) = 0.66",
                 "effect_direction": "higher consumption of olive oil...was significantly related to a lower risk of breast cancer",
-                "p_value": "significant dose-response trend",
+                "p_value": "significant dose-response trend Computed from the reported effect and 95% CI using a normal approximation: p=0.029.",
                 "confidence_interval": "95% CI, 0.46-0.97",
                 "outcome_definition": "histologically confirmed, newly diagnosed breast cancer",
                 "exposure_definition": "higher consumption of olive oil (rich in monounsaturated fat)"
-            }
+            },
+            "P Value": 0.029020943793109665
         },
         {
             "Study": "Trichopoulou A et al. (1995) [PMID: 7503842]",
@@ -237,11 +240,12 @@
                 "sample_size": "820 women with breast cancer and 1548 control women",
                 "effect_size": "OR = 0.75 [95% confidence interval = 0.57-0.98] for more than once a day versus once a day",
                 "effect_direction": "Increased olive oil consumption was associated with significantly reduced breast cancer risk",
-                "p_value": "statistically significant",
+                "p_value": "statistically significant Computed from the reported effect and 95% CI using a normal approximation: p=0.037.",
                 "confidence_interval": "95% confidence interval = 0.57-0.98",
                 "outcome_definition": "risk of breast cancer",
                 "exposure_definition": "consumption of olive oil"
-            }
+            },
+            "P Value": 0.03743625569219722
         },
         {
             "Study": "Garc\u00eda-Segovia P et al. (2006) [PMID: 16512965]",
@@ -285,11 +289,12 @@
                 "sample_size": "including a total of 755 women: 291 incident cases with confirmed breast cancer and 464 controls",
                 "effect_size": "the odds ratio for women in the three upper quintiles of consumption (> or =8.8 g/day) was 0.27",
                 "effect_direction": "protective role of olive oil consumption on breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.389e-08.",
                 "confidence_interval": "odds ratio for women in the three upper quintiles of consumption (> or =8.8 g/day) was 0.27 (95% CI 0.17-0.42)",
                 "outcome_definition": "291 incident cases with confirmed breast cancer",
                 "exposure_definition": "olive oil consumption"
-            }
+            },
+            "P Value": 1.3887037860212673e-08
         },
         {
             "Study": "Donat-Vargas C et al. (2022) [PMID: 35194197]",
@@ -478,12 +483,13 @@
                 "sample_size": "Gluteal fat aspirates were obtained from 291 postmenopausal incident breast cancer patients and 351 control subjects",
                 "effect_size": "The odds ratio for the difference between 75th and 25th percentiles was 0.40 (95% CI: 0.28, 0.58) in Malaga",
                 "effect_direction": "Oleic acid showed a strong inverse association with breast cancer in the Spanish center.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=8.128e-07.",
                 "confidence_interval": "0.40 (95% CI: 0.28, 0.58)",
                 "outcome_definition": "291 postmenopausal incident breast cancer patients",
                 "exposure_definition": "intake of oleic acid sources, particularly olive oil, appears protective"
             },
-            "exclusions": 2
+            "exclusions": 2,
+            "P Value": 8.128473999116556e-07
         },
         {
             "Study": "Toledo E et al. (2015) [PMID: 26365989]",
@@ -530,11 +536,12 @@
                 "sample_size": "Breast cancer incidence was a prespecified secondary outcome of the trial for women without a prior history of breast cancer (n = 4152).",
                 "effect_size": "The multivariable-adjusted hazard ratios vs the control group were 0.32 (95% CI, 0.13-0.79) for the Mediterranean diet with extra-virgin olive oil group",
                 "effect_direction": "Our results suggest a beneficial effect of a Mediterranean diet supplemented with extra-virgin olive oil in the primary prevention of breast cancer.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.013.",
                 "confidence_interval": "0.32 (95% CI, 0.13-0.79)",
                 "outcome_definition": "Breast cancer incidence was a prespecified secondary outcome of the trial for women without a prior history of breast cancer",
                 "exposure_definition": "Mediterranean diet supplemented with extra-virgin olive oil"
-            }
+            },
+            "P Value": 0.013314345846812488
         },
         {
             "Study": "Mourouti N et al. (2015) [PMID: 25049109]",
@@ -578,11 +585,12 @@
                 "sample_size": "Two-hundred and fifty consecutive, newly diagnosed breast cancer female patients ... and 250 one-to-one age-matched, healthy controls",
                 "effect_size": "component 3 was favorably associated with the absence of having breast cancer [odds ratio (OR) 0.81, 95% CI 0.66-0.99]",
                 "effect_direction": "favorably associated with the absence of having breast cancer",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.042.",
                 "confidence_interval": "odds ratio (OR) 0.81, 95% CI 0.66-0.99",
                 "outcome_definition": "newly diagnosed breast cancer female patients",
                 "exposure_definition": "component 3 was characterized by olive oil and fish consumption"
-            }
+            },
+            "P Value": 0.04162681095451293
         },
         {
             "Study": "Bessaoud F et al. (2012) [PMID: 22571994]",
@@ -626,11 +634,12 @@
                 "sample_size": null,
                 "effect_size": "an excess of raw vegetables and olive oil increased BC risk (OR 1 se = 1.22, 95% CI = 1.06-1.32)",
                 "effect_direction": "increased BC risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=3.802e-04.",
                 "confidence_interval": "95% CI = 1.06-1.32",
                 "outcome_definition": "risk of breast cancer (BC)",
                 "exposure_definition": "\"raw vegetables and olive oil\" dietary pattern"
-            }
+            },
+            "P Value": 0.0003802100170067733
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Garc\u00eda-Segovia P et al. (2006) [PMID: 16512965]</th>\n      <td>-1.2096</td>\n      <td>0.2216</td>\n      <td>-1.6440</td>\n      <td>-0.7753</td>\n      <td>291.0</td>\n      <td>755.0</td>\n    </tr>\n    <tr>\n      <th>Toledo E et al. (2015) [PMID: 26365989]</th>\n      <td>-1.0928</td>\n      <td>0.4487</td>\n      <td>-1.9723</td>\n      <td>-0.2133</td>\n      <td>35.0</td>\n      <td>4152.0</td>\n    </tr>\n    <tr>\n      <th>Morales Su\u00e1rez-Varela M et al. (1998) [PMID: 9889560]</th>\n      <td>-0.6259</td>\n      <td>0.7013</td>\n      <td>-2.0005</td>\n      <td>0.7486</td>\n      <td>65.0</td>\n      <td>143.0</td>\n    </tr>\n    <tr>\n      <th>Martin-Moreno JM et al. (1994) [PMID: 7927867]</th>\n      <td>-0.3703</td>\n      <td>0.1728</td>\n      <td>-0.7089</td>\n      <td>-0.0317</td>\n      <td>762.0</td>\n      <td>1750.0</td>\n    </tr>\n    <tr>\n      <th>Sieri S et al. (2004) [PMID: 15066921]</th>\n      <td>-0.4155</td>\n      <td>0.1795</td>\n      <td>-0.7674</td>\n      <td>-0.0637</td>\n      <td>207.0</td>\n      <td>8984.0</td>\n    </tr>\n    <tr>\n      <th>Donat-Vargas C et al. (2022) [PMID: 35194197]</th>\n      <td>-0.2914</td>\n      <td>0.1615</td>\n      <td>-0.6080</td>\n      <td>0.0252</td>\n      <td>1017.0</td>\n      <td>2034.0</td>\n    </tr>\n    <tr>\n      <th>Trichopoulou A et al. (1995) [PMID: 7503842]</th>\n      <td>-0.2546</td>\n      <td>0.1242</td>\n      <td>-0.4981</td>\n      <td>-0.0111</td>\n      <td>820.0</td>\n      <td>2368.0</td>\n    </tr>\n    <tr>\n      <th>Mourouti N et al. (2015) [PMID: 25049109]</th>\n      <td>-0.1857</td>\n      <td>0.0922</td>\n      <td>-0.3665</td>\n      <td>-0.0049</td>\n      <td>250.0</td>\n      <td>500.0</td>\n    </tr>\n    <tr>\n      <th>la Vecchia C et al. (1995) [PMID: 8580304]</th>\n      <td>-0.1021</td>\n      <td>0.0451</td>\n      <td>-0.1906</td>\n      <td>-0.0137</td>\n      <td>2564.0</td>\n      <td>5152.0</td>\n    </tr>\n    <tr>\n      <th>Romanos-Nanclares A et al. (2023) [PMID: 37311975]</th>\n      <td>0.0093</td>\n      <td>0.0377</td>\n      <td>-0.0647</td>\n      <td>0.0832</td>\n      <td>9638.0</td>\n      <td>164625.0</td>\n    </tr>\n    <tr>\n      <th>Buckland G et al. (2012) [PMID: 22392404]</th>\n      <td>0.0629</td>\n      <td>0.0751</td>\n      <td>-0.0843</td>\n      <td>0.2101</td>\n      <td>1256.0</td>\n      <td>62284.0</td>\n    </tr>\n    <tr>\n      <th>Bessaoud F et al. (2012) [PMID: 22571994]</th>\n      <td>0.1707</td>\n      <td>0.0475</td>\n      <td>0.0775</td>\n      <td>0.2638</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n  </tbody>\n</table>",

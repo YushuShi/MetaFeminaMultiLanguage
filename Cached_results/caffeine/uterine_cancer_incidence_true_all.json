@@ -93,11 +93,12 @@
                 "sample_size": "Prospective cohort of 23,356 postmenopausal women",
                 "effect_size": "relative risk (RR)=0.65 for 4+ cups per day vs \u22641 cup per month",
                 "effect_direction": "Type I EC was statistically significantly associated with caffeinated...coffee intake",
-                "p_value": "statistically significantly associated",
+                "p_value": "statistically significantly associated Computed from the reported effect and 95% CI using a normal approximation: p=0.008.",
                 "confidence_interval": "95% confidence interval (CI): 0.47-0.89",
                 "outcome_definition": "Type I EC",
                 "exposure_definition": "caffeinated...coffee intake"
-            }
+            },
+            "P Value": 0.008174150730043704
         },
         {
             "Study": "Giri A et al. (2011) [PMID: 22254087]",
@@ -142,11 +143,12 @@
                 "sample_size": "primary analyses included 45,696 women",
                 "effect_size": "hazard ratios for women who drank \u22654 cups/day were ... 0.89 (95% CI 0.63, 1.27) for caffeinated coffee",
                 "effect_direction": "we did not find an association between coffee consumption and endometrial cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.515.",
                 "confidence_interval": "0.89 (95% CI 0.63, 1.27)",
                 "outcome_definition": "427 incident endometrial cancer cases",
                 "exposure_definition": "self-reported total coffee, caffeinated coffee and decaffeinated coffee"
-            }
+            },
+            "P Value": 0.514652950240141
         },
         {
             "Study": "Arthur R et al. (2018) [PMID: 30075330]",
@@ -191,11 +193,12 @@
                 "sample_size": "a cohort of 39,532 female participants",
                 "effect_size": "HR_per 100mg increase: 0.93",
                 "effect_direction": "Total coffee, caffeinated coffee, and caffeine were inversely associated with risk of endometrial cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.028.",
                 "confidence_interval": "95% CI: 0.87-0.99",
                 "outcome_definition": "endometrial cancer cases",
                 "exposure_definition": "caffeine"
-            }
+            },
+            "P Value": 0.027691076658869773
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Uccella S et al. (2013) [PMID: 24022184]</th>\n      <td>-0.4308</td>\n      <td>0.1629</td>\n      <td>-0.7500</td>\n      <td>-0.1115</td>\n      <td>471.0</td>\n      <td>23356.0</td>\n    </tr>\n    <tr>\n      <th>Giri A et al. (2011) [PMID: 22254087]</th>\n      <td>-0.1090</td>\n      <td>0.1677</td>\n      <td>-0.4378</td>\n      <td>0.2197</td>\n      <td>427.0</td>\n      <td>45696.0</td>\n    </tr>\n    <tr>\n      <th>Arthur R et al. (2018) [PMID: 30075330]</th>\n      <td>-0.0678</td>\n      <td>0.0309</td>\n      <td>-0.1283</td>\n      <td>-0.0073</td>\n      <td>180.0</td>\n      <td>39532.0</td>\n    </tr>\n    <tr>\n      <th>Weiderpass E et al. (2014) [PMID: 25181598]</th>\n      <td>0.2776</td>\n      <td>0.2111</td>\n      <td>-0.1361</td>\n      <td>0.6913</td>\n      <td>144.0</td>\n      <td>42270.0</td>\n    </tr>\n  </tbody>\n</table>",

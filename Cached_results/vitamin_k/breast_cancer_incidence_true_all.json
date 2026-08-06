@@ -93,11 +93,12 @@
                 "sample_size": "2762 subcohort members, 306 total BC cases",
                 "effect_size": "vitamin K intake was inversely associated with BC (HR: 0.82; 95% CI: 0.68, 0.93)",
                 "effect_direction": "vitamin K intake was inversely associated with BC",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.013.",
                 "confidence_interval": "HR: 0.82; 95% CI: 0.68, 0.93",
                 "outcome_definition": "incident BC",
                 "exposure_definition": "vitamin K intake"
-            }
+            },
+            "P Value": 0.012967401263213857
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Larnder AH et al. (2026) [PMID: 42114757]</th>\n      <td>-0.1862</td>\n      <td>0.0755</td>\n      <td>-0.3342</td>\n      <td>-0.0382</td>\n      <td>306.0</td>\n      <td>2762.0</td>\n    </tr>\n    <tr>\n      <th>Wang K et al. (2021) [PMID: 33277073]</th>\n      <td>0.2135</td>\n      <td>0.0863</td>\n      <td>0.0444</td>\n      <td>0.3826</td>\n      <td>2286.0</td>\n      <td>2286.0</td>\n    </tr>\n  </tbody>\n</table>",

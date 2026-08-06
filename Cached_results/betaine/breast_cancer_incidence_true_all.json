@@ -92,11 +92,12 @@
                 "sample_size": "blood samples were available for 500 cases and 500 controls",
                 "effect_size": "serum betaine (fourth vs first quartile adjusted OR 0.68, 95 % CI 0.47-0.97)",
                 "effect_direction": "An inverse association with breast cancer risk was observed for serum betaine",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.037.",
                 "confidence_interval": "95 % CI 0.47-0.97",
                 "outcome_definition": "breast cancer cases",
                 "exposure_definition": "serum betaine"
-            }
+            },
+            "P Value": 0.03693392480382382
         },
         {
             "Study": "Zhang CX et al. (2013) [PMID: 23140534]",

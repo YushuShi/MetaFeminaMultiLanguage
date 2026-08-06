@@ -43,11 +43,12 @@
                 "sample_size": "including 417 cases and 395 controls",
                 "effect_size": "OR: 0.62; 95 % CI: 0.39-0.98",
                 "effect_direction": "we found decreased risks for the highest tertile of total phenolic intake compared with the lowest",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.042.",
                 "confidence_interval": "OR: 0.62; 95 % CI: 0.39-0.98",
                 "outcome_definition": "endometrial cancer risk",
                 "exposure_definition": "total dietary antioxidant capacity and of individual antioxidants"
-            }
+            },
+            "P Value": 0.04197776850178452
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>417</td>\n      <td>812</td>\n      <td>0.65222</td>\n      <td>0.423591</td>\n      <td>0.982555</td>\n    </tr>\n  </tbody>\n</table>",

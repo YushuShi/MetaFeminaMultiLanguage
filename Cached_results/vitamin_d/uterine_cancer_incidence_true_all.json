@@ -189,11 +189,12 @@
                 "sample_size": "A total of 12,204 individuals 18 to 71 years old were included.",
                 "effect_size": "cancer of the uterus (HR = 1.10; 95% CI, 0.95-1.27)",
                 "effect_direction": "we found no statistically significant associations between vitamin D status and total or specific cancers",
-                "p_value": "we found no statistically significant associations",
+                "p_value": "we found no statistically significant associations Computed from the reported effect and 95% CI using a normal approximation: p=0.198.",
                 "confidence_interval": "cancer of the uterus (HR = 1.10; 95% CI, 0.95-1.27)",
                 "outcome_definition": "information about cancer was obtained from the Danish Cancer Registry",
                 "exposure_definition": "The level of 25-hydroxyvitamin D was measured at baseline"
-            }
+            },
+            "P Value": 0.19811027586792668
         },
         {
             "Study": "Hu Y et al. (2025) [PMID: 41031356]",
@@ -238,11 +239,12 @@
                 "sample_size": "We analyzed data from 51,286 UK Biobank participants",
                 "effect_size": "Low serum 25 (OH) D (50\u202fnmol/L) was linked to increased risks of ... uterine body cancer (HR: 1.372, 95% CI: 1.023-1.841)",
                 "effect_direction": "Low serum 25 (OH) D ... was linked to increased risks",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.035.",
                 "confidence_interval": "HR: 1.372, 95% CI: 1.023-1.841",
                 "outcome_definition": "uterine body cancer at 0.5% (n\u202f=\u202f235)",
                 "exposure_definition": "Serum 25 (OH) D levels"
-            }
+            },
+            "P Value": 0.034871741267657116
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Salazar-Martinez E et al. (2005) [PMID: 16174249]</th>\n      <td>-0.8836</td>\n      <td>0.3641</td>\n      <td>-1.5972</td>\n      <td>-0.1699</td>\n      <td>85.0</td>\n      <td>714.0</td>\n    </tr>\n    <tr>\n      <th>Hu Y et al. (2025) [PMID: 41031356]</th>\n      <td>-0.2977</td>\n      <td>0.1423</td>\n      <td>-0.5766</td>\n      <td>-0.0188</td>\n      <td>235.0</td>\n      <td>51286.0</td>\n    </tr>\n    <tr>\n      <th>Zeleniuch-Jacquotte A et al. (2010) [PMID: 20562189]</th>\n      <td>-0.0923</td>\n      <td>0.2531</td>\n      <td>-0.5884</td>\n      <td>0.4038</td>\n      <td>830.0</td>\n      <td>1822.0</td>\n    </tr>\n    <tr>\n      <th>Liu JJ et al. (2013) [PMID: 23136228]</th>\n      <td>0.0000</td>\n      <td>0.1478</td>\n      <td>-0.2897</td>\n      <td>0.2897</td>\n      <td>644.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Skaaby T et al. (2014) [PMID: 24789846]</th>\n      <td>0.0885</td>\n      <td>0.0685</td>\n      <td>-0.0458</td>\n      <td>0.2228</td>\n      <td>1248.0</td>\n      <td>12204.0</td>\n    </tr>\n  </tbody>\n</table>",

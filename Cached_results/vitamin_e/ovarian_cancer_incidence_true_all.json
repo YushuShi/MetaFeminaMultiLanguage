@@ -44,11 +44,12 @@
                 "sample_size": "80,326 participants in the Nurses' Health Study who had no history of cancer other than nonmelanoma skin carcinoma",
                 "effect_size": "The multivariate relative risks (95% confidence intervals [CIs]) for ovarian carcinoma among women in the highest versus lowest quintile of intake were... 0.88 (95% CI, 0.61-1.27) for vitamin E",
                 "effect_direction": "The authors observed no association between ovarian carcinoma risk and antioxidant vitamin consumption from foods, or foods and supplements together.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.494.",
                 "confidence_interval": "0.88 (95% CI, 0.61-1.27) for vitamin E",
                 "outcome_definition": "The authors confirmed 301 incident cases of invasive epithelial ovarian carcinoma during 16 years of dietary follow-up (1980-1996).",
                 "exposure_definition": "consumption of vitamins A, C, and E and specific carotenoids, as well as fruit and vegetable intake... Food frequency questionnaires were included in 1980, 1984, 1986, and 1990."
-            }
+            },
+            "P Value": 0.4943880964545048
         },
         {
             "Study": "Koushik A et al. (2015) [PMID: 26169298]",
@@ -93,11 +94,12 @@
                 "sample_size": "Among 501,857 women, 1,973 cases of ovarian cancer occurred over a median follow-up period of 7-16 years across studies.",
                 "effect_size": "The pooled multivariate RRs [95% confidence intervals (CIs)] for incremental increases in total intake of each vitamin were...1.02 (0.97-1.06) for vitamin E (130 mg/day)",
                 "effect_direction": "Greater vitamin intakes were associated with modestly higher risks of endometrioid tumors (n = 156 cases), but not with other histological types. These results suggest that consumption of vitamins A, C, and E and folate during adulthood does not play a major role in ovarian cancer risk.",
-                "p_value": "Dietary and total intakes of each vitamin were not significantly associated with ovarian cancer risk.",
+                "p_value": "Dietary and total intakes of each vitamin were not significantly associated with ovarian cancer risk. Computed from the reported effect and 95% CI using a normal approximation: p=0.382.",
                 "confidence_interval": "1.02 (0.97-1.06) for vitamin E (130 mg/day)",
                 "outcome_definition": "invasive epithelial ovarian cancer",
                 "exposure_definition": "total (food and supplemental) vitamin intake...vitamin E (130 mg/day)"
-            }
+            },
+            "P Value": 0.38164015161132303
         },
         {
             "Study": "Jeong NH et al. (2009) [PMID: 19266359]",
@@ -141,11 +143,12 @@
                 "sample_size": "Forty-five epithelial ovarian cancers and 135 age-matched controls.",
                 "effect_size": "Women with the highest tertiles of alpha-tocopherol (OR 0.23; 95%CI 0.10-0.53) had lower risk of ovarian cancer than women in the lowest tertiles.",
                 "effect_direction": "Women with the highest tertiles of alpha-tocopherol had lower risk of ovarian cancer than women in the lowest tertiles.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=5.513e-04.",
                 "confidence_interval": "95%CI 0.10-0.53",
                 "outcome_definition": "Forty-five epithelial ovarian cancers",
                 "exposure_definition": "Preoperative plasma concentrations of alpha-tocopherol were measured by reverse-phase, gradient high-pressure liquid chromatography."
-            }
+            },
+            "P Value": 0.0005512693584990948
         },
         {
             "Study": "Pan SY et al. (2004) [PMID: 15342455]",
@@ -189,11 +192,12 @@
                 "sample_size": "Diet information was collected on 442 incident cases of ovarian cancer diagnosed in 1994 to 1997 and 2,135 population controls",
                 "effect_size": "Women who took supplements of vitamin E, beta-carotene, and B-complex vitamins for > or =10 years had ORs (95% CIs) of 0.49 (0.30-0.81)",
                 "effect_direction": "inversely associated with higher intake of total vegetables and cruciferous vegetables and supplementation of vitamin E",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.005.",
                 "confidence_interval": "ORs (95% CIs) of 0.49 (0.30-0.81)",
                 "outcome_definition": "442 incident cases of ovarian cancer diagnosed in 1994 to 1997",
                 "exposure_definition": "Women who took supplements of vitamin E, beta-carotene, and B-complex vitamins for > or =10 years"
-            }
+            },
+            "P Value": 0.004872716245022842
         },
         {
             "Study": "Zhang M et al. (2004) [PMID: 14751177]",
@@ -237,11 +241,12 @@
                 "sample_size": "Cases were 254 patients with histologically confirmed epithelial ovarian cancer. Controls were 652 women without neoplasm",
                 "effect_size": "For the highest versus the lowest quartile intakes of nutrients, the OR were...0.41 (95% CI 0.2-0.7) for vitamin E",
                 "effect_direction": "consumption of foods low in fat but high in fibre, carotene and vitamins appears to be protective against ovarian cancer",
-                "p_value": "with significant dose-response relationships",
+                "p_value": "with significant dose-response relationships Computed from the reported effect and 95% CI using a normal approximation: p=0.005.",
                 "confidence_interval": "0.41 (95% CI 0.2-0.7) for vitamin E",
                 "outcome_definition": "254 patients with histologically confirmed epithelial ovarian cancer",
                 "exposure_definition": "For the highest versus the lowest quartile intakes of nutrients...for vitamin E"
-            }
+            },
+            "P Value": 0.00527267644030433
         },
         {
             "Study": "Bidoli E et al. (2001) [PMID: 11822759]",
@@ -285,11 +290,12 @@
                 "sample_size": "Cases were 1,031 patients with histologically confirmed incident epithelial ovarian cancer. Controls were 2,411 subjects admitted for acute, non-neoplastic diseases",
                 "effect_size": "vitamin E (OR = 0.6; 95% CI: 0.5-0.8)",
                 "effect_direction": "Inverse associations emerged for vitamin E",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=2.040e-05.",
                 "confidence_interval": "vitamin E (OR = 0.6; 95% CI: 0.5-0.8)",
                 "outcome_definition": "Cases were 1,031 patients with histologically confirmed incident epithelial ovarian cancer",
                 "exposure_definition": "vitamin E (OR = 0.6; 95% CI: 0.5-0.8) for the highest vs. the lowest quintile of intake"
-            }
+            },
+            "P Value": 2.0399730329305457e-05
         },
         {
             "Study": "McCann SE et al. (2001) [PMID: 11588898]",
@@ -333,11 +339,12 @@
                 "sample_size": "496 women with primary, histologically confirmed epithelial ovarian cancer and 1,425 women with nonneoplastic diagnoses, ages 20-87 years",
                 "effect_size": "vitamin E (OR = 0.58, 95% CI = 0.38-0.88)",
                 "effect_direction": "Significantly reduced risks were associated with higher intakes of dietary fiber, vitamin A, carotenoid, vitamin E, beta-carotene, and total fruit and vegetable intake",
-                "p_value": "Significantly reduced risks were associated with higher intakes of vitamin E",
+                "p_value": "Significantly reduced risks were associated with higher intakes of vitamin E Computed from the reported effect and 95% CI using a normal approximation: p=0.011.",
                 "confidence_interval": "vitamin E (OR = 0.58, 95% CI = 0.38-0.88)",
                 "outcome_definition": "496 women with primary, histologically confirmed epithelial ovarian cancer",
                 "exposure_definition": "Women in the highest vs. the lowest quartile of vitamin E intake"
-            }
+            },
+            "P Value": 0.010996344600056348
         },
         {
             "Study": "Guo Y et al. (2020) [PMID: 32355161]",

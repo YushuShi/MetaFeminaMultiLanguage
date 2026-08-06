@@ -44,12 +44,13 @@
                 "sample_size": "30,454 women aged 40-79 years",
                 "effect_size": "the multivariate HRs (95% CI) in the highest category of consumption were ... boiled beans ... 0.77 (0.47-1.27)",
                 "effect_direction": "We found no significant association between the risk of breast cancer and consumption of tofu, boiled beans, and miso soup",
-                "p_value": "We found no significant association",
+                "p_value": "We found no significant association Computed from the reported effect and 95% CI using a normal approximation: p=0.303.",
                 "confidence_interval": "0.77 (0.47-1.27)",
                 "outcome_definition": "risk of breast cancer",
                 "exposure_definition": "consumption of tofu, boiled beans, and miso soup"
             },
-            "exclusions": 0
+            "exclusions": 0,
+            "P Value": 0.30268464948554874
         },
         {
             "Study": "Do MH et al. (2007) [PMID: 17896586]",
@@ -287,11 +288,12 @@
                 "sample_size": "we enrolled 350 pathologically confirmed new cases of breast cancer and 700 controls",
                 "effect_size": "participants in the top tertile of legume intake had 46% lower odds of breast cancer compared with those in the bottom tertile (OR: 0.54, 95% CI: 0.36-0.88)",
                 "effect_direction": "A significant inverse association was found between legume intake and breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.007.",
                 "confidence_interval": "OR: 0.54, 95% CI: 0.36-0.88",
                 "outcome_definition": "350 pathologically confirmed new cases of breast cancer",
                 "exposure_definition": "Legume intake was computed by summing up the consumption of lentils, peas, chickpeas, and different kinds of beans, including red beans and pinto beans."
-            }
+            },
+            "P Value": 0.006884176030077475
         },
         {
             "Study": "Farvid MS et al. (2014) [PMID: 24916719]",
@@ -336,11 +338,12 @@
                 "sample_size": "88,803 premenopausal women from the Nurses' Health Study II",
                 "effect_size": "substituting one serving/day of legumes for one serving/day of red meat was associated with a 15% lower risk of breast cancer among all women (0.85, 0.73 to 0.98)",
                 "effect_direction": "15% lower risk of breast cancer among all women",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.031.",
                 "confidence_interval": "(0.85, 0.73 to 0.98)",
                 "outcome_definition": "Incident cases of invasive breast carcinoma, identified through self report and confirmed by pathology report.",
                 "exposure_definition": "dietary protein sources in early adulthood; substituting one serving/day of legumes for one serving/day of red meat"
-            }
+            },
+            "P Value": 0.030527257757856575
         },
         {
             "Study": "Potischman N et al. (1999) [PMID: 10399945]",
@@ -384,11 +387,12 @@
                 "sample_size": "Analyses were restricted to 568 cases with in situ and localized disease and 1,451 population-based controls.",
                 "effect_size": "beans (OR = 0.87, 95% CI = 0.7-1.2)",
                 "effect_direction": "Reduced risks were observed for high intake of ... beans",
-                "p_value": "no trends of decreasing risk across quartiles of increasing intake were observed",
+                "p_value": "no trends of decreasing risk across quartiles of increasing intake were observed Computed from the reported effect and 95% CI using a normal approximation: p=0.311.",
                 "confidence_interval": "beans (OR = 0.87, 95% CI = 0.7-1.2)",
                 "outcome_definition": "risk of early-stage breast cancer",
                 "exposure_definition": "beans"
-            }
+            },
+            "P Value": 0.31114537645417395
         },
         {
             "Study": "Aune D et al. (2009) [PMID: 19653110]",
@@ -432,11 +436,12 @@
                 "sample_size": "including 3,539 cancer cases and 2,032 hospital controls",
                 "effect_size": "breast (OR = 0.89, 95% CI: 0.65-1.20)",
                 "effect_direction": "No significant association was observed between legume intake and cancers of the ... breast",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.456.",
                 "confidence_interval": "breast (OR = 0.89, 95% CI: 0.65-1.20)",
                 "outcome_definition": "cancers of the ... breast",
                 "exposure_definition": "legume intake"
-            }
+            },
+            "P Value": 0.45622268939085536
         },
         {
             "Study": "Flores-Garc\u00eda MK et al. (2021) [PMID: 33356597]",
@@ -480,11 +485,12 @@
                 "sample_size": "a subsample of 509 cases matched 1:1 by age with 509 controls was selected",
                 "effect_size": "the second (consisting of corn, legumes, and other vegetables) was inversely associated with BC (OR = 0.50; 95% CI: 0.40, 0.62)",
                 "effect_direction": "inversely associated with BC",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=5.650e-10.",
                 "confidence_interval": "OR = 0.50; 95% CI: 0.40, 0.62",
                 "outcome_definition": "association between dietary patterns and breast cancer (BC) subtypes among women from Northern Mexico",
                 "exposure_definition": "the second (consisting of corn, legumes, and other vegetables)"
-            }
+            },
+            "P Value": 5.649888247994685e-10
         },
         {
             "Study": "Yuan G et al. (2020) [PMID: 33133556]",
@@ -528,11 +534,12 @@
                 "sample_size": "A 1:2 paired retrospective case-control study with 210 cases and 420 controls",
                 "effect_size": "Beans (OR = 0.997, 95% CI = 0.995-0.999)",
                 "effect_direction": "Beans ... were significantly associated with a lower risk of breast cancer.",
-                "p_value": "statistically significantly associated",
+                "p_value": "statistically significantly associated Computed from the reported effect and 95% CI using a normal approximation: p=0.003.",
                 "confidence_interval": "95% CI = 0.995-0.999",
                 "outcome_definition": "cases were confirmed by pathological diagnosis with breast cancer",
                 "exposure_definition": "evaluate individual dietary intake, by food frequency questionnaire (FFQ)"
-            }
+            },
+            "P Value": 0.0033292298625283673
         },
         {
             "Study": "Tajaddini A et al. (2015) [PMID: 26028070]",
@@ -624,11 +631,12 @@
                 "sample_size": "Dietary data were collected from 2,884 cases and 5,509 controls",
                 "effect_size": "High and low consumption of soybeans ... were associated with significantly reduced breast cancer risk compared to no consumption (OR = 0.83, 95% CI = 0.70-0.97)",
                 "effect_direction": "significantly reduced breast cancer risk",
-                "p_value": "significantly reduced breast cancer risk",
+                "p_value": "significantly reduced breast cancer risk Computed from the reported effect and 95% CI using a normal approximation: p=0.025.",
                 "confidence_interval": "OR = 0.83, 95% CI = 0.70-0.97",
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "High and low consumption of soybeans"
-            }
+            },
+            "P Value": 0.025152941886120262
         },
         {
             "Study": "Do TM et al. (2024) [PMID: 39363187]",

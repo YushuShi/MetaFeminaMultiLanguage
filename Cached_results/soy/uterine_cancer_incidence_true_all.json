@@ -44,11 +44,12 @@
                 "sample_size": "Forty nine thousand one hundred and twenty-one women of age 45-74 years who responded to a 5-year follow-up survey questionnaire.",
                 "effect_size": "The multivariate-adjusted HR per 25 g/day increase in the intake of soy food was 1.02 (95% CI 0.94-1.10)",
                 "effect_direction": "we observed no evidence of a protective association between soy food or isoflavone intake and endometrial cancer risk.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.621.",
                 "confidence_interval": "1.02 (95% CI 0.94-1.10)",
                 "outcome_definition": "Incidence of endometrial cancer. During an average of 12.1 years of follow up, 112 newly diagnosed endometrial cancer cases were identified.",
                 "exposure_definition": "Intakes of soy foods as well as other covariates were assessed in 1995-1998 by a self-administered food frequency questionnaire."
-            }
+            },
+            "P Value": 0.6214112261583487
         },
         {
             "Study": "Goodman MT et al. (1997) [PMID: 9270408]",
@@ -141,12 +142,13 @@
                 "sample_size": "46\u2009027 nonhysterectomized postmenopausal women",
                 "effect_size": "RR = 0.66",
                 "effect_direction": "A reduced risk of endometrial cancer was associated with total isoflavone intake",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.014.",
                 "confidence_interval": "95% CI = 0.47 to 0.91",
                 "outcome_definition": "489 women diagnosed with incident endometrial cancer were identified through the Surveillance, Epidemiology, and End Results tumor registry linkages",
                 "exposure_definition": "total isoflavone intake (highest vs lowest quintile, \u22657.82 vs <1.59 mg per 1000 kcal/d)"
             },
-            "exclusions": 2
+            "exclusions": 2,
+            "P Value": 0.013691738489256016
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Goodman MT et al. (1997) [PMID: 9270408]</th>\n      <td>-0.7037</td>\n      <td>0.2760</td>\n      <td>-1.2447</td>\n      <td>-0.1628</td>\n      <td>332.0</td>\n      <td>843.0</td>\n    </tr>\n    <tr>\n      <th>Budhathoki S et al. (2015) [PMID: 24941880]</th>\n      <td>0.0184</td>\n      <td>0.0373</td>\n      <td>-0.0547</td>\n      <td>0.0916</td>\n      <td>112.0</td>\n      <td>49121.0</td>\n    </tr>\n  </tbody>\n</table>",

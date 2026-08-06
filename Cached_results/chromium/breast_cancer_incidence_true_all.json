@@ -44,11 +44,12 @@
                 "sample_size": "a cohort of 62,641 US women",
                 "effect_size": "for chromium, 0.96 (95% CI 0.61-1.52)",
                 "effect_direction": "these results do not provide evidence for an important effect of ... chromium ... on breast cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.861.",
                 "confidence_interval": "for chromium, 0.96 (95% CI 0.61-1.52)",
                 "outcome_definition": "433 cases of breast cancer identified during 4 years of follow-up",
                 "exposure_definition": "toenail levels of five trace elements"
-            }
+            },
+            "P Value": 0.8608678777120755
         },
         {
             "Study": "Ellis ET et al. (2025) [PMID: 39828205]",
@@ -140,11 +141,12 @@
                 "sample_size": "A total of 499 histologically confirmed BC cases and 499 controls were included.",
                 "effect_size": "Cr, Ni, Sb, Al, Pb and Sn (OR\u00a0=\u00a01.15; CI95% 1.06,1.25)",
                 "effect_direction": "principal component mixture including Cr ... OR\u00a0=\u00a01.15",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=8.908e-04.",
                 "confidence_interval": "CI95% 1.06,1.25",
                 "outcome_definition": "histologically confirmed BC cases",
                 "exposure_definition": "Urinary concentrations of ... chromium (Cr) ... were determined"
-            }
+            },
+            "P Value": 0.0008907742710745137
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Garland M et al. (1996) [PMID: 8823061]</th>\n      <td>-0.0356</td>\n      <td>0.2029</td>\n      <td>-0.4334</td>\n      <td>0.3622</td>\n      <td>433.0</td>\n      <td>62641.0</td>\n    </tr>\n    <tr>\n      <th>M\u00e9rida-Ortega \u00c1 et al. (2022) [PMID: 35217012]</th>\n      <td>0.1204</td>\n      <td>0.0359</td>\n      <td>0.0501</td>\n      <td>0.1908</td>\n      <td>499.0</td>\n      <td>998.0</td>\n    </tr>\n    <tr>\n      <th>Ellis ET et al. (2025) [PMID: 39828205]</th>\n      <td>0.2305</td>\n      <td>0.1131</td>\n      <td>0.0088</td>\n      <td>0.4523</td>\n      <td>574.0</td>\n      <td>2869.0</td>\n    </tr>\n  </tbody>\n</table>",

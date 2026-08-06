@@ -10,13 +10,21 @@ library(tidyverse)
 library(readxl)
 library(ggrepel)
 library(scales)
+library(jsonlite)
+
+analysis_json_path <- Sys.getenv("METAFEMINA_ANALYSIS_JSON", "")
+analysis_json <- if (nzchar(analysis_json_path)) jsonlite::fromJSON(analysis_json_path) else NULL
 
 # =============================================================================
 # 1. Load data
 # =============================================================================
 
 read_cancer <- function(path, cancer) {
-  raw <- read_excel(path)
+  if (!is.null(analysis_json)) {
+    raw <- as_tibble(analysis_json$combined[[str_to_lower(cancer)]])
+  } else {
+    raw <- read_excel(path)
+  }
   names(raw) <- c(
     "Exposure", "n_studies", "pooled_es_num",
     "ci_low", "ci_high",

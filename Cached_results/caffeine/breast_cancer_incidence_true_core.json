@@ -44,11 +44,12 @@
                 "sample_size": "52,062 women aged 21-69 at enrollment in 1995",
                 "effect_size": "the IRR for the top quintile relative to the bottom quintile of caffeine intake was 1.04",
                 "effect_direction": "Intakes of tea, coffee, and caffeine were not significantly associated with the risk of breast cancer overall.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.664.",
                 "confidence_interval": "1.04 (95% CI 0.87-1.24)",
                 "outcome_definition": "risk of breast cancer",
                 "exposure_definition": "caffeine intake"
-            }
+            },
+            "P Value": 0.6643968055009375
         },
         {
             "Study": "Michels KB et al. (2002) [PMID: 11750236]",
@@ -93,11 +94,12 @@
                 "sample_size": "59,036 women aged 40-76 years",
                 "effect_size": "hazard ratio of beast cancer of 1.04 (95% CI 0.87-1.24)",
                 "effect_direction": "consumption of coffee, tea, and caffeine was not associated with breast cancer incidence",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.664.",
                 "confidence_interval": "1.04 (95% CI 0.87-1.24)",
                 "outcome_definition": "1271 cases of invasive breast cancer were diagnosed",
                 "exposure_definition": "women in the highest quintile of self-reported caffeine intake"
-            }
+            },
+            "P Value": 0.6643968055009375
         },
         {
             "Study": "Ganmaa D et al. (2008) [PMID: 18183588]",
@@ -191,11 +193,12 @@
                 "sample_size": "Among 57,075 postmenopausal women in the Cancer Prevention Study-II Nutrition Cohort",
                 "effect_size": "HRs (95% CIs) comparing consumption of \u22652 cups per day with <1 cup per month were 0.99 (0.89-1.11), 0.96 (0.87-1.06), and 1.06 (0.95-1.19), respectively.",
                 "effect_direction": "Neither total, caffeinated, nor decaffeinated coffee consumption was associated with invasive breast cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.418.",
                 "confidence_interval": "0.96 (0.87-1.06)",
                 "outcome_definition": "invasive breast cancer incidence",
                 "exposure_definition": "caffeinated coffee consumption"
-            }
+            },
+            "P Value": 0.4178757936883071
         },
         {
             "Study": "Oh JK et al. (2015) [PMID: 25885188]",
@@ -240,11 +243,12 @@
                 "sample_size": "42,099 women from the Swedish Women's Lifestyle and Health study",
                 "effect_size": "\u22655 cups/day: RR\u2009=\u20090.81, 95% CI 0.70-0.94",
                 "effect_direction": "women with higher consumption had a decreased breast cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.005.",
                 "confidence_interval": "\u22655 cups/day: RR\u2009=\u20090.81, 95% CI 0.70-0.94",
                 "outcome_definition": "Complete follow-up for breast cancer incidence was performed through 2012 via linkage to national registries.",
                 "exposure_definition": "caffeine intake as risk factors for breast cancer"
-            }
+            },
+            "P Value": 0.0050787871667604375
         },
         {
             "Study": "Bhoo-Pathy N et al. (2015) [PMID: 25637171]",
@@ -387,11 +391,12 @@
                 "sample_size": "38 432 women 45 years or older and free of cancer",
                 "effect_size": "The multivariate relative risks (RRs) of breast cancer were 1.02 (95% confidence interval [CI], 0.84-1.22) for caffeine (top vs bottom quintile)",
                 "effect_direction": "Consumption of caffeine ... was not statistically significantly associated with overall risk of breast cancer.",
-                "p_value": "not statistically significantly associated",
+                "p_value": "not statistically significantly associated Computed from the reported effect and 95% CI using a normal approximation: p=0.835.",
                 "confidence_interval": "1.02 (95% confidence interval [CI], 0.84-1.22)",
                 "outcome_definition": "we identified 1188 invasive breast cancer cases",
                 "exposure_definition": "caffeine consumption"
-            }
+            },
+            "P Value": 0.8352293526158923
         },
         {
             "Study": "Tavani A et al. (1998) [PMID: 9511854]",
@@ -435,11 +440,12 @@
                 "sample_size": "Cases were 5,984 women...controls were 5,504 women",
                 "effect_size": "The multivariate ORs were...0.96 (0.83-1.11) for women drinking > or = 4 cups/day compared to non-drinkers.",
                 "effect_direction": "No relationship was observed between coffee intake and the risk of breast cancer.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.582.",
                 "confidence_interval": "0.96 (0.83-1.11)",
                 "outcome_definition": "histologically confirmed breast cancer",
                 "exposure_definition": "coffee (mostly expresso and mocha)...cups/day compared to non-drinkers"
-            }
+            },
+            "P Value": 0.5819821445828143
         },
         {
             "Study": "Zheng KH et al. (2021) [PMID: 34418085]",
@@ -533,11 +539,12 @@
                 "sample_size": "This study included 33,396 Japanese women aged 40-79 years",
                 "effect_size": "No significant associations were identified between the intake of green tea and coffee with breast cancer risk (odds ratio OR 1.15, 95% confidence interval [CI] 0.82-1.60, and OR 0.84, 95% CI 0.64-1.10, respectively).",
                 "effect_direction": "No significant associations were identified between the intake of green tea and coffee with breast cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.207.",
                 "confidence_interval": "OR 0.84, 95% CI 0.64-1.10",
                 "outcome_definition": "245 incidents or mortal breast cancers were documented",
                 "exposure_definition": "intake of Japanese green tea, coffee, and alcohol"
-            }
+            },
+            "P Value": 0.20696904632828447
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Oh JK et al. (2015) [PMID: 25885188]</th>\n      <td>-0.2107</td>\n      <td>0.0752</td>\n      <td>-0.3581</td>\n      <td>-0.0633</td>\n      <td>1395.0</td>\n      <td>42099.0</td>\n    </tr>\n    <tr>\n      <th>Sinnadurai S et al. (2020) [PMID: 32592367]</th>\n      <td>-0.1533</td>\n      <td>0.1226</td>\n      <td>-0.3937</td>\n      <td>0.0870</td>\n      <td>245.0</td>\n      <td>33396.0</td>\n    </tr>\n    <tr>\n      <th>Bhoo-Pathy N et al. (2015) [PMID: 25637171]</th>\n      <td>-0.0986</td>\n      <td>0.0427</td>\n      <td>-0.1822</td>\n      <td>-0.0149</td>\n      <td>9134.0</td>\n      <td>335060.0</td>\n    </tr>\n    <tr>\n      <th>Ganmaa D et al. (2008) [PMID: 18183588]</th>\n      <td>-0.0726</td>\n      <td>0.0440</td>\n      <td>-0.1588</td>\n      <td>0.0137</td>\n      <td>5272.0</td>\n      <td>85987.0</td>\n    </tr>\n    <tr>\n      <th>Gapstur SM et al. (2020) [PMID: 32817071]</th>\n      <td>-0.0381</td>\n      <td>0.0471</td>\n      <td>-0.1304</td>\n      <td>0.0542</td>\n      <td>2980.0</td>\n      <td>57075.0</td>\n    </tr>\n    <tr>\n      <th>Tavani A et al. (1998) [PMID: 9511854]</th>\n      <td>-0.0356</td>\n      <td>0.0648</td>\n      <td>-0.1627</td>\n      <td>0.0915</td>\n      <td>5984.0</td>\n      <td>11488.0</td>\n    </tr>\n    <tr>\n      <th>Ishitani K et al. (2008) [PMID: 18852405]</th>\n      <td>0.0198</td>\n      <td>0.0952</td>\n      <td>-0.1668</td>\n      <td>0.2064</td>\n      <td>1188.0</td>\n      <td>38432.0</td>\n    </tr>\n    <tr>\n      <th>Zheng KH et al. (2021) [PMID: 34418085]</th>\n      <td>0.0275</td>\n      <td>0.0437</td>\n      <td>-0.0581</td>\n      <td>0.1131</td>\n      <td>4719.0</td>\n      <td>79871.0</td>\n    </tr>\n    <tr>\n      <th>Boggs DA et al. (2010) [PMID: 20680436]</th>\n      <td>0.0392</td>\n      <td>0.0904</td>\n      <td>-0.1380</td>\n      <td>0.2164</td>\n      <td>1268.0</td>\n      <td>52062.0</td>\n    </tr>\n    <tr>\n      <th>Michels KB et al. (2002) [PMID: 11750236]</th>\n      <td>0.0365</td>\n      <td>0.0840</td>\n      <td>-0.1281</td>\n      <td>0.2011</td>\n      <td>1271.0</td>\n      <td>59036.0</td>\n    </tr>\n    <tr>\n      <th>Yaghjyan L et al. (2022) [PMID: 35583696]</th>\n      <td>0.0454</td>\n      <td>0.0337</td>\n      <td>-0.0207</td>\n      <td>0.1115</td>\n      <td>5005.0</td>\n      <td>77688.0</td>\n    </tr>\n  </tbody>\n</table>",

@@ -188,11 +188,12 @@
                 "sample_size": "case-control study (270 cases, 270 controls)",
                 "effect_size": "varying between 2.08 (95% CI: 1.11, 3.90) for lutein",
                 "effect_direction": "increase in the risk of breast cancer for decreasing ... lutein",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.022.",
                 "confidence_interval": "2.08 (95% CI: 1.11, 3.90)",
                 "outcome_definition": "risk of breast cancer",
                 "exposure_definition": "the carotenoids lutein ... were measured in archived serum samples"
-            }
+            },
+            "P Value": 0.022351427915507035
         },
         {
             "Study": "Eliassen AH et al. (2012) [PMID: 23221879]",
@@ -285,11 +286,12 @@
                 "sample_size": "Of 1,028,438 participants followed for a maximum follow-up of 26 y across studies",
                 "effect_size": "lutein/zeaxanthin (0.87; 95% CI: 0.79, 0.95)",
                 "effect_direction": "lutein/zeaxanthin intakes were inversely associated with the risk of ER-negative (ER-) breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.003.",
                 "confidence_interval": "lutein/zeaxanthin (0.87; 95% CI: 0.79, 0.95)",
                 "outcome_definition": "33,380 incident invasive breast cancers were identified",
                 "exposure_definition": "lutein/zeaxanthin intakes"
-            }
+            },
+            "P Value": 0.003076534011391361
         },
         {
             "Study": "Zhang S et al. (1997) [PMID: 9280184]",
@@ -333,11 +335,12 @@
                 "sample_size": "Cases (n = 46)... control subjects (n = 63)...",
                 "effect_size": "odds ratio... for lutein/zeaxanthin. There was a nonsignificant positive correlation...",
                 "effect_direction": "inverse associations between breast adipose concentrations of retinoids and carotenoids and risk of breast cancer",
-                "p_value": "NS",
+                "p_value": "NS Computed from the reported effect and 95% CI using a normal approximation: p=0.416.",
                 "confidence_interval": "odds ratios were... 0.68 (95% CI: 0.27, 1.73; NS) for lutein/zeaxanthin",
                 "outcome_definition": "Cases (n = 46) were women whose biopsies revealed invasive or in situ breast cancer; control subjects (n = 63) were women whose biopsies revealed benign disease.",
                 "exposure_definition": "Breast adipose tissue was collected during breast biopsy."
-            }
+            },
+            "P Value": 0.4156977617223148
         },
         {
             "Study": "Freudenheim JL et al. (1996) [PMID: 8609642]",
@@ -381,11 +384,12 @@
                 "sample_size": "Case patients (n=297)... Control subjects (n=311)...",
                 "effect_size": "lutein + zeaxanthin (OR=0.47; 95% CI=0.28-0.77)",
                 "effect_direction": "There was a reduction in risk associated with high intake of several nutrients.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.003.",
                 "confidence_interval": "lutein + zeaxanthin (OR=0.47; 95% CI=0.28-0.77)",
                 "outcome_definition": "diagnosed with breast cancer from November 1986 through April 1991",
                 "exposure_definition": "usual intake of vegetables and fruits... individual carotenoids"
-            }
+            },
+            "P Value": 0.0034363005313392345
         },
         {
             "Study": "Gaudet MM et al. (2004) [PMID: 15342450]",
@@ -524,11 +528,12 @@
                 "sample_size": "Breast cancer cases (n = 92) and controls (n = 122) were recruited",
                 "effect_size": "The adjusted odds ratios for the highest compared with the lowest quartile were ... 0.34 (95% CI = 0.06-1.87) for zeaxanthin + lutein in p53-positive cancer cases",
                 "effect_direction": "Serum concentrations of beta-carotene and zeaxanthin + lutein were significantly associated with the risk of breast cancer in p53-positive and p53-negative cancers.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.219.",
                 "confidence_interval": "0.34 (95% CI = 0.06-1.87)",
                 "outcome_definition": "breast cancer",
                 "exposure_definition": "serum concentrations of ... zeaxanthin + lutein"
-            }
+            },
+            "P Value": 0.2188567165700891
         },
         {
             "Study": "Yan B et al. (2016) [PMID: 26482064]",
@@ -572,11 +577,12 @@
                 "sample_size": "A total of 521 women with breast cancer and age-matched controls (5-year interval) were selected",
                 "effect_size": "The multivariate OR for the highest quartile of serum concentration compared with the lowest quartile were ... 0\u00b726 (95% CI 0\u00b717, 0\u00b738) for lutein/zeaxanthin.",
                 "effect_direction": "Significant inverse associations were observed between serum ... lutein/zeaxanthin and the risk for breast cancer.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=5.211e-11.",
                 "confidence_interval": "0\u00b726 (95% CI 0\u00b717, 0\u00b738) for lutein/zeaxanthin.",
                 "outcome_definition": "risk for breast cancer",
                 "exposure_definition": "serum ... lutein/zeaxanthin"
-            }
+            },
+            "P Value": 5.211055389586284e-11
         },
         {
             "Study": "Wang L et al. (2014) [PMID: 24502868]",
@@ -620,11 +626,12 @@
                 "sample_size": "A total of 561 cases and 561 controls ... were recruited",
                 "effect_size": "OR ... 0\u00b749 (95\u00a0% CI 0\u00b734, 0\u00b771) for lutein/zeaxanthin",
                 "effect_direction": "An inverse association was observed between the consumption of ... lutein/zeaxanthin and the risk of breast cancer.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.460e-04.",
                 "confidence_interval": "0\u00b749 (95\u00a0% CI 0\u00b734, 0\u00b771)",
                 "outcome_definition": "the risk of breast cancer",
                 "exposure_definition": "dietary carotenoid intake ... lutein/zeaxanthin"
-            }
+            },
+            "P Value": 0.00014603568461478935
         },
         {
             "Study": "Darouei B et al. (2025) [PMID: 41029403]",

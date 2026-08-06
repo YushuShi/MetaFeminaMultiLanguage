@@ -43,11 +43,12 @@
                 "sample_size": "Cases were 1411 women...controls were 3668 patients...total n=5079",
                 "effect_size": "The adjusted OR for a 6-9 components of the MDS (high adherence) compared with 0-3 (low adherence) was 0.43",
                 "effect_direction": "provides evidence for a beneficial role of the Mediterranean diet on endometrial cancer risk, suggesting a favourable effect",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=3.355e-11.",
                 "confidence_interval": "OR for a 6-9 components...was 0.43 (95% CI 0.34-0.56)",
                 "outcome_definition": "Cases were 1411 women with incident, histologically confirmed endometrial cancer",
                 "exposure_definition": "adherence to the Mediterranean diet using a Mediterranean Diet Score (MDS), based on the nine dietary components"
-            }
+            },
+            "P Value": 3.3545340384218494e-11
         },
         {
             "Study": "Ricceri F et al. (2017) [PMID: 29132343]",
@@ -91,11 +92,12 @@
                 "sample_size": "we recruited 297 women with newly diagnosed endometrial cancer and 307 controls",
                 "effect_size": "Women with high adherence to the MD had a risk of endometrial cancer that was about half that of women with low adherence to the MD (adjusted OR: 0.51, 95% CI 0.39-0.86)",
                 "effect_direction": "had a risk of endometrial cancer that was about half that of women with low adherence to the MD",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=8.443e-04.",
                 "confidence_interval": "95% CI 0.39-0.86",
                 "outcome_definition": "endometrial cancer is the fourth most common cancer in European women",
                 "exposure_definition": "adherence to the Mediterranean diet (MD)"
-            }
+            },
+            "P Value": 0.0008443439933947093
         },
         {
             "Study": "George SM et al. (2015) [PMID: 26260777]",
@@ -140,11 +142,12 @@
                 "sample_size": "84,415 postmenopausal women",
                 "effect_size": "HR: 0.98",
                 "effect_direction": "not associated with the risk of endometrial cancer",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.824.",
                 "confidence_interval": "95% CI: 0.82-1.17",
                 "outcome_definition": "endometrial cancer",
                 "exposure_definition": "alternate Mediterranean Diet"
-            }
+            },
+            "P Value": 0.823692682591118
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Filomeno M et al. (2015) [PMID: 26010500]</th>\n      <td>-0.7670</td>\n      <td>0.1194</td>\n      <td>-1.0011</td>\n      <td>-0.5329</td>\n      <td>1411.0</td>\n      <td>5079.0</td>\n    </tr>\n    <tr>\n      <th>Ricceri F et al. (2017) [PMID: 29132343]</th>\n      <td>-0.6075</td>\n      <td>0.1853</td>\n      <td>-0.9708</td>\n      <td>-0.2443</td>\n      <td>297.0</td>\n      <td>604.0</td>\n    </tr>\n    <tr>\n      <th>George SM et al. (2015) [PMID: 26260777]</th>\n      <td>-0.0188</td>\n      <td>0.0846</td>\n      <td>-0.1847</td>\n      <td>0.1470</td>\n      <td>1392.0</td>\n      <td>84415.0</td>\n    </tr>\n  </tbody>\n</table>",

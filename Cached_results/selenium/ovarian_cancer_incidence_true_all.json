@@ -139,11 +139,12 @@
                 "sample_size": "A total of 205 ovarian cancer cases and 390 controls were included.",
                 "effect_size": "We found a strong inverse association with selenium from food sources (OR: 0.41; 95 % CI: 0.20-0.85, for the highest vs. lowest tertile of dietary selenium intake).",
                 "effect_direction": "We found a strong inverse association with selenium from food sources",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.016.",
                 "confidence_interval": "95 % CI: 0.20-0.85",
                 "outcome_definition": "Cases were women ages 21 years and older with newly diagnosed epithelial ovarian cancer who resided in six counties of New Jersey.",
                 "exposure_definition": "selenium from food sources... for the highest vs. lowest tertile of dietary selenium intake"
-            }
+            },
+            "P Value": 0.015712673487705643
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Kluza M et al. (2023) [PMID: 36839209]</th>\n      <td>-3.6898</td>\n      <td>0.6477</td>\n      <td>-4.9593</td>\n      <td>-2.4204</td>\n      <td>157.0</td>\n      <td>314.0</td>\n    </tr>\n    <tr>\n      <th>Gifkins D et al. (2012) [PMID: 22656322]</th>\n      <td>-0.8118</td>\n      <td>0.3461</td>\n      <td>-1.4902</td>\n      <td>-0.1334</td>\n      <td>205.0</td>\n      <td>595.0</td>\n    </tr>\n    <tr>\n      <th>Terry PD et al. (2017) [PMID: 28202637]</th>\n      <td>-0.3566</td>\n      <td>0.1728</td>\n      <td>-0.6952</td>\n      <td>-0.0180</td>\n      <td>406.0</td>\n      <td>1038.0</td>\n    </tr>\n  </tbody>\n</table>",

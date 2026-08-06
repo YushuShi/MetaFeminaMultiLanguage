@@ -44,11 +44,12 @@
                 "sample_size": "Among 60,895 women in the Swedish Mammography Cohort",
                 "effect_size": "total iron (RR: 1.31; 95% CI: 1.07, 1.61 for \u226515.09 compared with <12.27 mg/d)",
                 "effect_direction": "a 20-30% higher risk of endometrial cancer for higher intakes of heme iron, total iron",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.010.",
                 "confidence_interval": "RR: 1.31; 95% CI: 1.07, 1.61",
                 "outcome_definition": "720 endometrial cancer cases were confirmed during 21 y of follow-up",
                 "exposure_definition": "intakes of heme and total iron, types of meat"
-            }
+            },
+            "P Value": 0.009577430638471131
         },
         {
             "Study": "Kallianpur AR et al. (2010) [PMID: 20043258]",
@@ -186,12 +187,13 @@
                 "sample_size": "We analyzed on 5,480 adult participants from 2015 to 2018 National Health and Nutrition Examination Survey (NHANES).",
                 "effect_size": "uterus (1.66: 1.02-2.69; respectively)",
                 "effect_direction": "elevated level of sTfR was associated with the prevalence of cancers, especially in sex-specific cancers",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.040.",
                 "confidence_interval": "uterus (1.66: 1.02-2.69; respectively)",
                 "outcome_definition": "female-specific cancers of ... uterus",
                 "exposure_definition": "serum soluble transferrin receptor (sTfR), a promising marker representing unmet cellular iron demands"
             },
-            "exclusions": 2
+            "exclusions": 2,
+            "P Value": 0.04048927982678377
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Genkinger JM et al. (2012) [PMID: 22952183]</th>\n      <td>0.2700</td>\n      <td>0.1042</td>\n      <td>0.0657</td>\n      <td>0.4743</td>\n      <td>720.0</td>\n      <td>60895.0</td>\n    </tr>\n    <tr>\n      <th>Terry P et al. (2002) [PMID: 12235647]</th>\n      <td>0.4435</td>\n      <td>0.2614</td>\n      <td>-0.0688</td>\n      <td>0.9558</td>\n      <td>709.0</td>\n      <td>3596.0</td>\n    </tr>\n    <tr>\n      <th>Kallianpur AR et al. (2010) [PMID: 20043258]</th>\n      <td>0.5312</td>\n      <td>0.1295</td>\n      <td>0.2773</td>\n      <td>0.7851</td>\n      <td>1204.0</td>\n      <td>2416.0</td>\n    </tr>\n  </tbody>\n</table>",

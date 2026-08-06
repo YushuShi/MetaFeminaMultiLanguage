@@ -43,11 +43,12 @@
                 "sample_size": "145 women residents of Greater Athens with confirmed cancer of the endometrium were compared with 298 control patients",
                 "effect_size": "increasing intake of monounsaturated fat, mostly olive oil, by about one standard deviation was associated with a 26% risk reduction (odds ratio = 0.74; 95% confidence interval 0.54-1.3). Among micronutrients, only calcium intake was significantly inversely associated with endometrial cancer risk",
                 "effect_direction": "only calcium intake was significantly inversely associated with endometrial cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.179.",
                 "confidence_interval": "odds ratio = 0.74; 95% confidence interval 0.54-1.3",
                 "outcome_definition": "confirmed cancer of the endometrium",
                 "exposure_definition": "calcium intake"
-            }
+            },
+            "P Value": 0.17911031163357183
         },
         {
             "Study": "Salazar-Martinez E et al. (2005) [PMID: 16174249]",

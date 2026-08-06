@@ -44,11 +44,12 @@
                 "sample_size": "prospective study of 34759 women",
                 "effect_size": "relative risks ... 1.07 (0.78-1.47) for consumption five or more times per week, relative to consumption once a week or less",
                 "effect_direction": "The risk for breast cancer was not significantly associated with consumption of soya foods",
-                "p_value": "not significantly associated",
+                "p_value": "not significantly associated Computed from the reported effect and 95% CI using a normal approximation: p=0.676.",
                 "confidence_interval": "1.07 (0.78-1.47)",
                 "outcome_definition": "followed for incident breast cancer until 1993",
                 "exposure_definition": "consumption of soya foods: for tofu ... for miso soup"
-            }
+            },
+            "P Value": 0.675571772321568
         },
         {
             "Study": "Wu AH et al. (2008) [PMID: 18594543]",
@@ -191,11 +192,12 @@
                 "sample_size": "30,454 women aged 40-79 years",
                 "effect_size": "the multivariate HRs (95% CI) in the highest category of consumption were 1.14 (0.74-1.77)",
                 "effect_direction": "We found no significant association between the risk of breast cancer and consumption of tofu, boiled beans, and miso soup",
-                "p_value": "We found no significant association",
+                "p_value": "We found no significant association Computed from the reported effect and 95% CI using a normal approximation: p=0.556.",
                 "confidence_interval": "1.14 (0.74-1.77)",
                 "outcome_definition": "risk of breast cancer",
                 "exposure_definition": "consumption of tofu, boiled beans, and miso soup"
-            }
+            },
+            "P Value": 0.555882091835259
         },
         {
             "Study": "Wu AH et al. (2002) [PMID: 12189192]",
@@ -239,11 +241,12 @@
                 "sample_size": "501 breast cancer patients and 594 control subjects",
                 "effect_size": "subjects who were high-soy consumers during both time periods showed the lowest risk (OR=0.53, 95% CI=0.36-0.78)",
                 "effect_direction": "The risk of breast cancer was significantly inversely associated with soy intake during adolescence and adult life.",
-                "p_value": "statistically significantly reduced risk",
+                "p_value": "statistically significantly reduced risk Computed from the reported effect and 95% CI using a normal approximation: p=0.001.",
                 "confidence_interval": "OR=0.53, 95% CI=0.36-0.78",
                 "outcome_definition": "breast cancer",
                 "exposure_definition": "intake of soy during adolescence and adult life"
-            }
+            },
+            "P Value": 0.0012874030359296526
         },
         {
             "Study": "Yamamoto S et al. (2003) [PMID: 12813174]",
@@ -385,11 +388,12 @@
                 "sample_size": "The study cohort contains 52 795 North American women",
                 "effect_size": "HR of 0.68",
                 "effect_direction": "Substituting median intakes of dairy milk users by those of soy milk consumers was associated with HR of 0.68",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=5.150e-04.",
                 "confidence_interval": "95% confidence interval (CI): 0.55-0.85",
                 "outcome_definition": "Incident invasive breast cancers were detected mainly by matching with cancer registries.",
                 "exposure_definition": "Substituting median intakes of dairy milk users by those of soy milk consumers"
-            }
+            },
+            "P Value": 0.0005149517899599958
         },
         {
             "Study": "Shirabe R et al. (2021) [PMID: 33340281]",
@@ -483,11 +487,12 @@
                 "sample_size": "In total, 76,442 women ... were followed",
                 "effect_size": "HRs associated with current use of soy supplements were 0.92 (95% CI: 0.76, 1.11) for all",
                 "effect_direction": "HRs associated with current use of soy supplements were 0.92 ... for all",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.388.",
                 "confidence_interval": "HRs associated with current use of soy supplements were 0.92 (95% CI: 0.76, 1.11)",
                 "outcome_definition": "risk of breast cancer, overall and by tumor hormone receptor status",
                 "exposure_definition": "consumption of soy supplements"
-            }
+            },
+            "P Value": 0.3882039247190922
         },
         {
             "Study": "Baglia ML et al. (2016) [PMID: 27038352]",
@@ -532,11 +537,12 @@
                 "sample_size": "70,578 Chinese women, aged 40-70 years, recruited to the Shanghai Women's Health Study",
                 "effect_size": "hazard ratio (HR) for fifth versus first quintile soy protein intake\u2009=\u20090.78",
                 "effect_direction": "adult soy intake was inversely associated with breast cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.024.",
                 "confidence_interval": "95% confidence interval (CI):0.63-0.97",
                 "outcome_definition": "1,034 incident breast cancer cases were identified",
                 "exposure_definition": "usual soy food intake in adolescence and adulthood via food frequency questionnaire"
-            }
+            },
+            "P Value": 0.0240224227148987
         },
         {
             "Study": "Cho YA et al. (2010) [PMID: 20571498]",
@@ -580,11 +586,12 @@
                 "sample_size": "358 incident breast cancer patients and 360 age-matched controls",
                 "effect_size": "odds ratios (OR) (95% confidence interval (CI)) for the highest vs the lowest intake quartile: 0.36 (0.20-0.64)",
                 "effect_direction": "significant inverse association between soy intake and breast cancer risk",
-                "p_value": "significant inverse association",
+                "p_value": "significant inverse association Computed from the reported effect and 95% CI using a normal approximation: p=5.750e-04.",
                 "confidence_interval": "0.36 (0.20-0.64)",
                 "outcome_definition": "358 incident breast cancer patients",
                 "exposure_definition": "Dietary consumption of soy products was examined using a 103-item food frequency questionnaire."
-            }
+            },
+            "P Value": 0.0005750348182159856
         },
         {
             "Study": "Zhang C et al. (2010) [PMID: 19860847]",
@@ -628,11 +635,12 @@
                 "sample_size": "A total of 438 consecutively recruited cases with primary breast cancer were frequency matched to 438 controls",
                 "effect_size": "The multivariate ORs (95% CIs) of breast cancer risk for the highest quartile compared with the lowest quartile were 0.54 (0.34-0.84) for soy isoflavone",
                 "effect_direction": "statistically significant inverse association between soy isoflavone and soy protein intake with breast cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.008.",
                 "confidence_interval": "0.54 (0.34-0.84)",
                 "outcome_definition": "primary breast cancer",
                 "exposure_definition": "soy food intake; soy isoflavone and soy protein intake"
-            }
+            },
+            "P Value": 0.00757136350079235
         },
         {
             "Study": "Korde LA et al. (2009) [PMID: 19318430]",
@@ -1012,11 +1020,12 @@
                 "sample_size": "183 cases and 192 controls",
                 "effect_size": "OR=0.42",
                 "effect_direction": "associated with a 58% decrease risk of breast cancer",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.008.",
                 "confidence_interval": "95% CI=0.22-0.80",
                 "outcome_definition": "reduced risk of breast cancer, by far the most frequent cancer among women",
                 "exposure_definition": "soy food intake; soy isoflavone intake"
-            }
+            },
+            "P Value": 0.008435663615377302
         },
         {
             "Study": "Wu AH et al. (1996) [PMID: 8922298]",
@@ -1060,11 +1069,12 @@
                 "sample_size": "597 Asian-American women (70% of those eligible) diagnosed with incident, primary breast cancer during 1983-1987 and 966 population-based controls (75% of those eligible) were interviewed.",
                 "effect_size": "the adjusted OR associated with each additional serving per week was 0.85",
                 "effect_direction": "Risk of breast cancer decreased with increasing frequency of intake of tofu",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.029.",
                 "confidence_interval": "the adjusted OR associated with each additional serving per week was 0.85 (95% CI = 0.74-0.99)",
                 "outcome_definition": "597 Asian-American women ... diagnosed with incident, primary breast cancer",
                 "exposure_definition": "usual adult intake of soy (estimated primarily from tofu intake)"
-            }
+            },
+            "P Value": 0.02860799428742138
         },
         {
             "Study": "Zheng W et al. (1999) [PMID: 9950237]",
@@ -1253,11 +1263,12 @@
                 "sample_size": "a cohort of 37,643 British women",
                 "effect_size": "hazard ratios for those with a moderate (median intake 10.8 mg/day) or high intake of isoflavones (median intake 31.6 mg/day) were 1.08 (95% CI 0.85-1.38) and 1.17 (0.79-1.71), respectively.",
                 "effect_direction": "we found no evidence for a strong association between ... dietary isoflavone intake and risk for breast cancer.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.425.",
                 "confidence_interval": "1.17 (0.79-1.71)",
                 "outcome_definition": "585 women were diagnosed with breast cancer during 7.4 years of follow-up.",
                 "exposure_definition": "Isoflavone intake was calculated from FFQ data on consumption of soy foods and soymilk"
-            }
+            },
+            "P Value": 0.42545194945436576
         },
         {
             "Study": "Dai Q et al. (2002) [PMID: 12223422]",
@@ -1349,11 +1360,12 @@
                 "sample_size": "A total of 582 cases of young patients (\u226440 years old) with breast cancer and 540 controls of young patients (\u226440 years old) with benign breast disease were included in this study.",
                 "effect_size": "weekly intake of soy products (OR\u200a=\u200a1.24, 95% CI: 1.02-1.49)",
                 "effect_direction": "risk factors for breast cancer in young women include ... weekly intake of soy products",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.026.",
                 "confidence_interval": "weekly intake of soy products (OR\u200a=\u200a1.24, 95% CI: 1.02-1.49)",
                 "outcome_definition": "risk factors associated with the development of early onset breast cancer",
                 "exposure_definition": "weekly intake of soy products"
-            }
+            },
+            "P Value": 0.026077591598934857
         },
         {
             "Study": "Atkinson C et al. (2016) [PMID: 27440541]",
@@ -1397,12 +1409,13 @@
                 "sample_size": "Plasma from women in a breast self-examination trial in Shanghai with BC (n=269) or FBC (n=443), and age-matched controls (n=1027)",
                 "effect_size": "OR 2.37",
                 "effect_direction": "positive associations",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=8.712e-04.",
                 "confidence_interval": "95% CI 1.43-3.95",
                 "outcome_definition": "breast cancer (BC)",
                 "exposure_definition": "log10 equol:daidzein ratio"
             },
-            "exclusions": 0
+            "exclusions": 0,
+            "P Value": 0.0008711908502306384
         },
         {
             "Study": "Morimoto Y et al. (2014) [PMID: 25201305]",
@@ -1496,11 +1509,12 @@
                 "sample_size": "This study included 13,567 participants",
                 "effect_size": "3-6 portions of soy milk were associated with a lower BC risk (HR 0.31, 95% CI 0.10-0.98)",
                 "effect_direction": "associated with a lower BC risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.044.",
                 "confidence_interval": "HR 0.31, 95% CI 0.10-0.98",
                 "outcome_definition": "BC cases were identified through cancer registry linkage over a mean follow-up of 14.8 years",
                 "exposure_definition": "beverage consumption was assessed at baseline using a food frequency questionnaire"
-            }
+            },
+            "P Value": 0.044271509040202495
         },
         {
             "Study": "Wu AH et al. (2009) [PMID: 19211822]",
@@ -1592,11 +1606,12 @@
                 "sample_size": "278 premenopausal cases and 666 age-matched controls",
                 "effect_size": "genistein yielded significantly reduced ORs (95% CI) for breast cancer risk of 0.47 (0.29-0.74)",
                 "effect_direction": "significantly reduced ORs ... for breast cancer risk",
-                "p_value": "significantly reduced ORs",
+                "p_value": "significantly reduced ORs Computed from the reported effect and 95% CI using a normal approximation: p=0.002.",
                 "confidence_interval": "0.47 (0.29-0.74)",
                 "outcome_definition": "case-control study of breast cancer by age 50 in southern Germany",
                 "exposure_definition": "dietary intake of different phytoestrogens"
-            }
+            },
+            "P Value": 0.0015805976115596746
         },
         {
             "Study": "Horn-Ross PL et al. (2001) [PMID: 11532785]",
@@ -1640,11 +1655,12 @@
                 "sample_size": "Interviews were conducted with 1,326 cases and 1,657 controls.",
                 "effect_size": "odds ratio = 1.0, 95% confidence interval: 0.80, 1.3 for the highest vs. lowest quartile",
                 "effect_direction": "Phytoestrogen intake was not associated with breast cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.000.",
                 "confidence_interval": "odds ratio = 1.0, 95% confidence interval: 0.80, 1.3",
                 "outcome_definition": "women aged 35-79 years, who were diagnosed with breast cancer between 1995 and 1998",
                 "exposure_definition": "Usual intake of specific phytoestrogenic compounds was assessed via a food frequency questionnaire and a newly developed nutrient database."
-            }
+            },
+            "P Value": 1.0
         },
         {
             "Study": "Balekouzou A et al. (2017) [PMID: 28178283]",
@@ -1688,11 +1704,12 @@
                 "sample_size": "In total, 522 women were studied",
                 "effect_size": "soybean consumption [16.74 (95% CI, 8.03-39.84)]",
                 "effect_direction": "soybean consumption ... were associated with breast cancer risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=5.336e-12.",
                 "confidence_interval": "soybean consumption [16.74 (95% CI, 8.03-39.84)]",
                 "outcome_definition": "174 cases confirmed histologically by the pathology unit of the National Laboratory",
                 "exposure_definition": "soybean consumption"
-            }
+            },
+            "P Value": 5.335876612502907e-12
         },
         {
             "Study": "Virk-Baker MK et al. (2014) [PMID: 24461312]",
@@ -1734,11 +1751,12 @@
                 "sample_size": "urine from 143 subjects",
                 "effect_size": "breast cancer (OR, 0.56",
                 "effect_direction": "no statistically significant associations",
-                "p_value": "no statistically significant associations",
+                "p_value": "no statistically significant associations Computed from the reported effect and 95% CI using a normal approximation: p=0.355.",
                 "confidence_interval": "95% confidence interval [CI], 0.16-1.87",
                 "outcome_definition": "prevalence of breast cancer",
                 "exposure_definition": "S-(-)equol producing status"
-            }
+            },
+            "P Value": 0.3552288331549667
         },
         {
             "Study": "Zaineddin AK et al. (2012) [PMID: 22591208]",
@@ -1782,11 +1800,12 @@
                 "sample_size": "Dietary data were collected from 2,884 cases and 5,509 controls",
                 "effect_size": "High and low consumption of soybeans ... were associated with significantly reduced breast cancer risk compared to no consumption (OR = 0.83, 95% CI = 0.70-0.97; ...)",
                 "effect_direction": "significantly reduced breast cancer risk",
-                "p_value": "significantly reduced breast cancer risk",
+                "p_value": "significantly reduced breast cancer risk Computed from the reported effect and 95% CI using a normal approximation: p=0.025.",
                 "confidence_interval": "OR = 0.83, 95% CI = 0.70-0.97",
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "High and low consumption of soybeans"
-            }
+            },
+            "P Value": 0.025152941886120262
         },
         {
             "Study": "Zhang CX et al. (2011) [PMID: 21540873]",
@@ -1830,11 +1849,12 @@
                 "sample_size": "Four hundred and thirty-eight cases with primary breast cancer were consecutively recruited ... and frequency matched to 438 controls",
                 "effect_size": "The adjusted ORs (95% CIs) for the highest versus the lowest quartile of intake were ... 0.73 (0.48-1.11) for soy fiber",
                 "effect_direction": "A statistically significant inverse association was found between total dietary fiber and fiber fractions intake and breast cancer risk.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.141.",
                 "confidence_interval": "0.73 (0.48-1.11) for soy fiber",
                 "outcome_definition": "cases with primary breast cancer",
                 "exposure_definition": "soy fiber"
-            }
+            },
+            "P Value": 0.1411350871710605
         },
         {
             "Study": "Do TM et al. (2024) [PMID: 39363187]",
@@ -1926,11 +1946,12 @@
                 "sample_size": "A total of 792 cases and 813 age-matched controls were included.",
                 "effect_size": "the adjusted odds ratios (95% confidence intervals) for the highest versus the lowest serum concentration groups were 0.60 (0.41-0.87) for total soy isoflavones precursors",
                 "effect_direction": "Significant inverse associations were found between serum total soy isoflavone precursors ... and the odds of breast cancer in premenopausal but not postmenopausal women.",
-                "p_value": "Significant inverse associations",
+                "p_value": "Significant inverse associations Computed from the reported effect and 95% CI using a normal approximation: p=0.008.",
                 "confidence_interval": "0.60 (0.41-0.87)",
                 "outcome_definition": "odds of breast cancer among Chinese pre- and postmenopausal women",
                 "exposure_definition": "serum total soy isoflavone precursors"
-            }
+            },
+            "P Value": 0.007776446062582674
         },
         {
             "Study": "Wei Y et al. (2020) [PMID: 31754945]",
@@ -1975,11 +1996,12 @@
                 "sample_size": "The CKB study included over 300,000 women aged 30-79 from 10 regions across China",
                 "effect_size": "The multivariable-adjusted relative risk was 1.00 (95% confidence interval [CI] 0.81-1.22) for the fourth (19.1 mg/day) versus the first (4.5 mg/day) soy isoflavone intake quartile.",
                 "effect_direction": "moderate soy intake was not associated with breast cancer risk among Chinese women",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.000.",
                 "confidence_interval": "1.00 (95% confidence interval [CI] 0.81-1.22)",
                 "outcome_definition": "followed-up for breast cancer events until 31 December 2016",
                 "exposure_definition": "Information on soy intake was collected from baseline, two resurveys and twelve 24-h dietary recalls."
-            }
+            },
+            "P Value": 1.0
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Zheng W et al. (1999) [PMID: 9950237]</th>\n      <td>-1.8476</td>\n      <td>0.9346</td>\n      <td>-3.6793</td>\n      <td>-0.0158</td>\n      <td>60.0</td>\n      <td>120.0</td>\n    </tr>\n    <tr>\n      <th>Lampe JW et al. (2007) [PMID: 18086761]</th>\n      <td>-1.2459</td>\n      <td>0.3302</td>\n      <td>-1.8930</td>\n      <td>-0.5988</td>\n      <td>196.0</td>\n      <td>1502.0</td>\n    </tr>\n    <tr>\n      <th>Lin X et al. (2025) [PMID: 40121496]</th>\n      <td>-1.1239</td>\n      <td>0.5668</td>\n      <td>-2.2348</td>\n      <td>-0.0130</td>\n      <td>243.0</td>\n      <td>13567.0</td>\n    </tr>\n    <tr>\n      <th>Cho YA et al. (2010) [PMID: 20571498]</th>\n      <td>-0.9348</td>\n      <td>0.2809</td>\n      <td>-1.4854</td>\n      <td>-0.3842</td>\n      <td>358.0</td>\n      <td>718.0</td>\n    </tr>\n    <tr>\n      <th>Kim MK et al. (2008) [PMID: 18791919]</th>\n      <td>-0.8590</td>\n      <td>0.3428</td>\n      <td>-1.5309</td>\n      <td>-0.1871</td>\n      <td>362.0</td>\n      <td>724.0</td>\n    </tr>\n    <tr>\n      <th>Korde LA et al. (2009) [PMID: 19318430]</th>\n      <td>-0.9163</td>\n      <td>0.3899</td>\n      <td>-1.6805</td>\n      <td>-0.1521</td>\n      <td>597.0</td>\n      <td>1563.0</td>\n    </tr>\n    <tr>\n      <th>Lee SA et al. (2009) [PMID: 19403632]</th>\n      <td>-0.8916</td>\n      <td>0.2627</td>\n      <td>-1.4064</td>\n      <td>-0.3768</td>\n      <td>592.0</td>\n      <td>73223.0</td>\n    </tr>\n    <tr>\n      <th>Zhu YY et al. (2011) [PMID: 22393950]</th>\n      <td>-0.7891</td>\n      <td>0.3088</td>\n      <td>-1.3943</td>\n      <td>-0.1839</td>\n      <td>183.0</td>\n      <td>375.0</td>\n    </tr>\n    <tr>\n      <th>Do TM et al. (2024) [PMID: 39363187]</th>\n      <td>-0.7243</td>\n      <td>0.3037</td>\n      <td>-1.3196</td>\n      <td>-0.1290</td>\n      <td>370.0</td>\n      <td>740.0</td>\n    </tr>\n    <tr>\n      <th>Wu AH et al. (2009) [PMID: 19211822]</th>\n      <td>-0.7107</td>\n      <td>0.2129</td>\n      <td>-1.1279</td>\n      <td>-0.2934</td>\n      <td>1248.0</td>\n      <td>2396.0</td>\n    </tr>\n    <tr>\n      <th>Yamamoto S et al. (2003) [PMID: 12813174]</th>\n      <td>-0.7765</td>\n      <td>0.3092</td>\n      <td>-1.3825</td>\n      <td>-0.1706</td>\n      <td>179.0</td>\n      <td>21852.0</td>\n    </tr>\n    <tr>\n      <th>Linseisen J et al. (2004) [PMID: 15069695]</th>\n      <td>-0.6836</td>\n      <td>0.2230</td>\n      <td>-1.1208</td>\n      <td>-0.2465</td>\n      <td>278.0</td>\n      <td>944.0</td>\n    </tr>\n    <tr>\n      <th>Dai Q et al. (2002) [PMID: 12223422]</th>\n      <td>-0.6640</td>\n      <td>0.2551</td>\n      <td>-1.1639</td>\n      <td>-0.1640</td>\n      <td>1459.0</td>\n      <td>3015.0</td>\n    </tr>\n    <tr>\n      <th>Hirose K et al. (2005) [PMID: 15942624]</th>\n      <td>-0.6447</td>\n      <td>0.3161</td>\n      <td>-1.2642</td>\n      <td>-0.0253</td>\n      <td>167.0</td>\n      <td>1021.0</td>\n    </tr>\n    <tr>\n      <th>Shu XO et al. (2001) [PMID: 11352858]</th>\n      <td>-0.6075</td>\n      <td>0.1150</td>\n      <td>-0.8330</td>\n      <td>-0.3821</td>\n      <td>1459.0</td>\n      <td>3015.0</td>\n    </tr>\n    <tr>\n      <th>Wu AH et al. (2002) [PMID: 12189192]</th>\n      <td>-0.5718</td>\n      <td>0.1825</td>\n      <td>-0.9295</td>\n      <td>-0.2142</td>\n      <td>501.0</td>\n      <td>1095.0</td>\n    </tr>\n    <tr>\n      <th>Zhang C et al. (2010) [PMID: 19860847]</th>\n      <td>-0.5545</td>\n      <td>0.2132</td>\n      <td>-0.9724</td>\n      <td>-0.1366</td>\n      <td>438.0</td>\n      <td>876.0</td>\n    </tr>\n    <tr>\n      <th>Virk-Baker MK et al. (2014) [PMID: 24461312]</th>\n      <td>-0.5209</td>\n      <td>0.5703</td>\n      <td>-1.6388</td>\n      <td>0.5969</td>\n      <td>-</td>\n      <td>143.0</td>\n    </tr>\n    <tr>\n      <th>Feng XL et al. (2021) [PMID: 33399319]</th>\n      <td>-0.4574</td>\n      <td>0.1759</td>\n      <td>-0.8022</td>\n      <td>-0.1126</td>\n      <td>792.0</td>\n      <td>1605.0</td>\n    </tr>\n    <tr>\n      <th>Do MH et al. (2007) [PMID: 17896586]</th>\n      <td>-0.4423</td>\n      <td>0.2263</td>\n      <td>-0.8857</td>\n      <td>0.0012</td>\n      <td>359.0</td>\n      <td>1067.0</td>\n    </tr>\n    <tr>\n      <th>Dai Q et al. (2001) [PMID: 11487268]</th>\n      <td>-0.3703</td>\n      <td>0.1681</td>\n      <td>-0.6998</td>\n      <td>-0.0408</td>\n      <td>1459.0</td>\n      <td>3015.0</td>\n    </tr>\n    <tr>\n      <th>Do MH et al. (2007) [PMID: 17516859]</th>\n      <td>-0.3566</td>\n      <td>0.1637</td>\n      <td>-0.6775</td>\n      <td>-0.0357</td>\n      <td>359.0</td>\n      <td>1067.0</td>\n    </tr>\n    <tr>\n      <th>Fraser GE et al. (2020) [PMID: 32095830]</th>\n      <td>-0.3638</td>\n      <td>0.1058</td>\n      <td>-0.5712</td>\n      <td>-0.1564</td>\n      <td>1057.0</td>\n      <td>52795.0</td>\n    </tr>\n    <tr>\n      <th>Zhang CX et al. (2011) [PMID: 21540873]</th>\n      <td>-0.2790</td>\n      <td>0.1924</td>\n      <td>-0.6560</td>\n      <td>0.0981</td>\n      <td>438.0</td>\n      <td>876.0</td>\n    </tr>\n    <tr>\n      <th>Suzuki T et al. (2008) [PMID: 18623079]</th>\n      <td>-0.2667</td>\n      <td>0.1109</td>\n      <td>-0.4840</td>\n      <td>-0.0495</td>\n      <td>678.0</td>\n      <td>4068.0</td>\n    </tr>\n    <tr>\n      <th>Baglia ML et al. (2016) [PMID: 27038352]</th>\n      <td>-0.2335</td>\n      <td>0.1042</td>\n      <td>-0.4376</td>\n      <td>-0.0293</td>\n      <td>1034.0</td>\n      <td>70578.0</td>\n    </tr>\n    <tr>\n      <th>Goodman MT et al. (2009) [PMID: 19789300]</th>\n      <td>-0.1968</td>\n      <td>0.0958</td>\n      <td>-0.3845</td>\n      <td>-0.0091</td>\n      <td>251.0</td>\n      <td>36458.0</td>\n    </tr>\n    <tr>\n      <th>Wu AH et al. (2008) [PMID: 18594543]</th>\n      <td>-0.1985</td>\n      <td>0.0832</td>\n      <td>-0.3616</td>\n      <td>-0.0353</td>\n      <td>629.0</td>\n      <td>35303.0</td>\n    </tr>\n    <tr>\n      <th>Zaineddin AK et al. (2012) [PMID: 22591208]</th>\n      <td>-0.1640</td>\n      <td>0.0741</td>\n      <td>-0.3092</td>\n      <td>-0.0188</td>\n      <td>2884.0</td>\n      <td>8393.0</td>\n    </tr>\n    <tr>\n      <th>Wu AH et al. (1996) [PMID: 8922298]</th>\n      <td>-0.1428</td>\n      <td>0.0658</td>\n      <td>-0.2718</td>\n      <td>-0.0138</td>\n      <td>597.0</td>\n      <td>1563.0</td>\n    </tr>\n    <tr>\n      <th>Touillaud M et al. (2019) [PMID: 30831601]</th>\n      <td>-0.0779</td>\n      <td>0.0905</td>\n      <td>-0.2554</td>\n      <td>0.0995</td>\n      <td>3608.0</td>\n      <td>76442.0</td>\n    </tr>\n    <tr>\n      <th>Shirabe R et al. (2021) [PMID: 33340281]</th>\n      <td>-0.0578</td>\n      <td>0.1617</td>\n      <td>-0.3747</td>\n      <td>0.2591</td>\n      <td>825.0</td>\n      <td>47614.0</td>\n    </tr>\n    <tr>\n      <th>Morimoto Y et al. (2014) [PMID: 25201305]</th>\n      <td>-0.0381</td>\n      <td>0.0571</td>\n      <td>-0.1500</td>\n      <td>0.0738</td>\n      <td>4769.0</td>\n      <td>84450.0</td>\n    </tr>\n    <tr>\n      <th>Wei Y et al. (2020) [PMID: 31754945]</th>\n      <td>0.0000</td>\n      <td>0.1045</td>\n      <td>-0.2048</td>\n      <td>0.2048</td>\n      <td>2289.0</td>\n      <td>300000.0</td>\n    </tr>\n    <tr>\n      <th>Horn-Ross PL et al. (2001) [PMID: 11532785]</th>\n      <td>0.0000</td>\n      <td>0.1074</td>\n      <td>-0.2104</td>\n      <td>0.2104</td>\n      <td>1326.0</td>\n      <td>2983.0</td>\n    </tr>\n    <tr>\n      <th>Key TJ et al. (1999) [PMID: 10584890]</th>\n      <td>0.0677</td>\n      <td>0.1617</td>\n      <td>-0.2492</td>\n      <td>0.3845</td>\n      <td>427.0</td>\n      <td>34759.0</td>\n    </tr>\n    <tr>\n      <th>Nishio K et al. (2007) [PMID: 17619154]</th>\n      <td>0.1215</td>\n      <td>0.2047</td>\n      <td>-0.2797</td>\n      <td>0.5227</td>\n      <td>145.0</td>\n      <td>30454.0</td>\n    </tr>\n    <tr>\n      <th>Travis RC et al. (2008) [PMID: 17943732]</th>\n      <td>0.1455</td>\n      <td>0.1811</td>\n      <td>-0.2095</td>\n      <td>0.5005</td>\n      <td>585.0</td>\n      <td>37643.0</td>\n    </tr>\n    <tr>\n      <th>Li P et al. (2016) [PMID: 27977584]</th>\n      <td>0.1844</td>\n      <td>0.0816</td>\n      <td>0.0245</td>\n      <td>0.3443</td>\n      <td>582.0</td>\n      <td>1122.0</td>\n    </tr>\n    <tr>\n      <th>Atkinson C et al. (2016) [PMID: 27440541]</th>\n      <td>0.6990</td>\n      <td>0.1903</td>\n      <td>0.3261</td>\n      <td>1.0719</td>\n      <td>269.0</td>\n      <td>1739.0</td>\n    </tr>\n    <tr>\n      <th>Balekouzou A et al. (2017) [PMID: 28178283]</th>\n      <td>1.7039</td>\n      <td>0.1150</td>\n      <td>1.4785</td>\n      <td>1.9294</td>\n      <td>174.0</td>\n      <td>522.0</td>\n    </tr>\n  </tbody>\n</table>",

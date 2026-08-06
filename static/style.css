@@ -470,7 +470,7 @@ th.sort-desc .sort-icon::after {
     display: inline-block;
     text-align: center;
     min-width: 70px;
-    cursor: default;
+    cursor: pointer !important;
 }
 .quality-badge:focus-visible {
     outline: 3px solid rgba(33, 90, 142, 0.35);

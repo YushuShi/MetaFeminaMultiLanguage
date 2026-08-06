@@ -43,11 +43,12 @@
                 "sample_size": "including 3,539 cancer cases and 2,032 hospital controls",
                 "effect_size": "breast (OR= 2.86, 95% CI: 1.66-4.92)",
                 "effect_direction": "significant increase in the odds",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.499e-04.",
                 "confidence_interval": "breast (OR= 2.86, 95% CI: 1.66-4.92)",
                 "outcome_definition": "cancers of the ... breast",
                 "exposure_definition": "egg intake"
-            }
+            },
+            "P Value": 0.00014985651763124792
         },
         {
             "Study": "Shannon J et al. (2005) [PMID: 15668480]",
@@ -91,11 +92,12 @@
                 "sample_size": "cases (n = 378) and frequency age-matched controls (n = 1,070)",
                 "effect_size": "Egg consumption was also significantly inversely associated with risk of breast cancer (odds ratio for > or =6.0 eggs/wk versus < or =2.0 eggs/wk is 0.56",
                 "effect_direction": "significantly inversely associated with risk of breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.017.",
                 "confidence_interval": "odds ratio for > or =6.0 eggs/wk versus < or =2.0 eggs/wk is 0.56; 95% confidence interval, 0.35-0.91",
                 "outcome_definition": "risk of breast cancer",
                 "exposure_definition": "Egg consumption was also significantly inversely associated with risk of breast cancer"
-            }
+            },
+            "P Value": 0.01737314694114379
         },
         {
             "Study": "Marcondes LH et al. (2019) [PMID: 30832747]",
@@ -188,11 +190,12 @@
                 "sample_size": "A total of 800 women were included in this study (400 cases and 400 controls).",
                 "effect_size": "eggs (OR =1.20; 95% CI, 1.14-1.23)",
                 "effect_direction": "significant factors associated with the etiologie of breast cancer: ... eggs (OR =1.20; 95% CI, 1.14-1.23)",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=5.169e-21.",
                 "confidence_interval": "eggs (OR =1.20; 95% CI, 1.14-1.23)",
                 "outcome_definition": "female patients with breast cancer were compared to healthy controls",
                 "exposure_definition": "food frequency questionnaire to assess the causal relationship between dietary factor, obesity and breast cancer risk"
-            }
+            },
+            "P Value": 5.168593574240886e-21
         },
         {
             "Study": "Morales Su\u00e1rez-Varela M et al. (1998) [PMID: 9889560]",
@@ -381,11 +384,12 @@
                 "sample_size": "\u223c17,000 women aged 45-73 yr",
                 "effect_size": "increased risks with eggs (HR = 1.10, 95% CI = 1.01-1.20)",
                 "effect_direction": "increased risks with eggs",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.030.",
                 "confidence_interval": "HR = 1.10, 95% CI = 1.01-1.20",
                 "outcome_definition": "incident breast cancer, defined by estrogen receptor (ER) and progesterone receptor (PR) status",
                 "exposure_definition": "food intakes ... eggs"
-            }
+            },
+            "P Value": 0.030196187356953046
         },
         {
             "Study": "Do TM et al. (2024) [PMID: 39363187]",

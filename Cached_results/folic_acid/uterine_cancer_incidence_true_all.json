@@ -43,11 +43,12 @@
                 "sample_size": "232 endometrial cancer cases and 639 controls",
                 "effect_size": "folate (OR 0.4, 95% CI: 0.2-0.7)",
                 "effect_direction": "Risks were reduced for women in the highest quartiles of intake of ... folate",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.004.",
                 "confidence_interval": "folate (OR 0.4, 95% CI: 0.2-0.7)",
                 "outcome_definition": "risk of endometrial cancer among women",
                 "exposure_definition": "Self-reported frequency of use of 172 foods and beverages"
-            }
+            },
+            "P Value": 0.004141863133112474
         },
         {
             "Study": "Arthur RS et al. (2019) [PMID: 30955365]",
@@ -92,11 +93,12 @@
                 "sample_size": "a cohort of 73,909 participants",
                 "effect_size": "HRq4 vs q1: 0.52",
                 "effect_direction": "relatively high dietary intake of folate intake was inversely associated with risk of endometrial (HRq4 vs q1: 0.52; 95% CI: 0.29-0.93)",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.028.",
                 "confidence_interval": "95% CI: 0.29-0.93",
                 "outcome_definition": "endometrial (n = 180)",
                 "exposure_definition": "dietary intake of ... folate"
-            }
+            },
+            "P Value": 0.027823722273074225
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>McCann SE et al. (2000) [PMID: 11142531]</th>\n      <td>-0.8351</td>\n      <td>0.3017</td>\n      <td>-1.4264</td>\n      <td>-0.2437</td>\n      <td>232.0</td>\n      <td>871.0</td>\n    </tr>\n    <tr>\n      <th>Arthur RS et al. (2019) [PMID: 30955365]</th>\n      <td>-0.6211</td>\n      <td>0.2861</td>\n      <td>-1.1818</td>\n      <td>-0.0604</td>\n      <td>180.0</td>\n      <td>73809.0</td>\n    </tr>\n  </tbody>\n</table>",

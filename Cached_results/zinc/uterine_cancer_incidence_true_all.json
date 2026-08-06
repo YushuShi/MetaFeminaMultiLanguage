@@ -32,12 +32,13 @@
                 "sample_size": "",
                 "effect_size": "",
                 "effect_direction": "",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.042.",
                 "confidence_interval": "",
                 "outcome_definition": "",
                 "exposure_definition": ""
             },
-            "exclusions": 2
+            "exclusions": 2,
+            "P Value": 0.042321729517561184
         }
     ],
     "summary_html": null,

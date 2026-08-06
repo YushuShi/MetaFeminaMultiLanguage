@@ -44,12 +44,13 @@
                 "sample_size": "From the UK Biobank cohort, 470\u2009804 participants with fish oil supplementation data were included.",
                 "effect_size": "a higher risk of breast cancer was observed (HR\u00a0=\u00a01.16, 95%\u00a0CI\u00a0=\u00a01.01-1.32)",
                 "effect_direction": "a higher risk of breast cancer was observed",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.030.",
                 "confidence_interval": "HR\u00a0=\u00a01.16, 95%\u00a0CI\u00a0=\u00a01.01-1.32",
                 "outcome_definition": "a higher risk of breast cancer was observed",
                 "exposure_definition": "self-report regular fish oil supplementation"
             },
-            "exclusions": 0
+            "exclusions": 0,
+            "P Value": 0.02974245734380303
         },
         {
             "Study": "Brasky TM et al. (2010) [PMID: 20615886]",
@@ -143,12 +144,13 @@
                 "sample_size": "a cohort of healthy Danish women, who in the 1990s donated adipose tissue biopsies to a biobank",
                 "effect_size": "the hazard ratio (HR) was 0.96 (95% CI 0.64-1.43) for total marine n-3 PUFA",
                 "effect_direction": "no significant association between the content of marine n-3 PUFA and BC was found",
-                "p_value": "no significant association",
+                "p_value": "no significant association Computed from the reported effect and 95% CI using a normal approximation: p=0.842.",
                 "confidence_interval": "0.96 (95% CI 0.64-1.43)",
                 "outcome_definition": "subsequent development of breast cancer (BC)",
                 "exposure_definition": "content of marine n-3 polyunsaturated fatty acids (PUFA) in adipose tissue"
             },
-            "exclusions": 0
+            "exclusions": 0,
+            "P Value": 0.8422297891078038
         },
         {
             "Study": "Bassett JK et al. (2016) [PMID: 27146840]",
@@ -289,11 +291,12 @@
                 "sample_size": "A total of 104 newly diagnosed breast cancer patients and 70 healthy controls were recruited.",
                 "effect_size": "it was inversely associated with breast cancer risk (OR = 0.60; 95% CI: 0.36-0.84)",
                 "effect_direction": "erythrocyte phospholipid n-3 index was significantly lower in breast cancer patients than in healthy controls, and it was inversely associated with breast cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.018.",
                 "confidence_interval": "OR = 0.60; 95% CI: 0.36-0.84",
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "erythrocyte phospholipid n-3 index"
-            }
+            },
+            "P Value": 0.018111995923672165
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Kuriki K et al. (2007) [PMID: 17354239]</th>\n      <td>-0.6075</td>\n      <td>0.3041</td>\n      <td>-1.2035</td>\n      <td>-0.0115</td>\n      <td>103.0</td>\n      <td>412.0</td>\n    </tr>\n    <tr>\n      <th>Bassett JK et al. (2016) [PMID: 27146840]</th>\n      <td>-0.5327</td>\n      <td>0.1758</td>\n      <td>-0.8772</td>\n      <td>-0.1882</td>\n      <td>470.0</td>\n      <td>2021.0</td>\n    </tr>\n    <tr>\n      <th>Li J et al. (2021) [PMID: 34296713]</th>\n      <td>-0.4574</td>\n      <td>0.1993</td>\n      <td>-0.8481</td>\n      <td>-0.0667</td>\n      <td>104.0</td>\n      <td>174.0</td>\n    </tr>\n    <tr>\n      <th>Brasky TM et al. (2010) [PMID: 20615886]</th>\n      <td>-0.3638</td>\n      <td>0.1482</td>\n      <td>-0.6543</td>\n      <td>-0.0733</td>\n      <td>880.0</td>\n      <td>35016.0</td>\n    </tr>\n    <tr>\n      <th>Witt PM et al. (2009) [PMID: 19711189]</th>\n      <td>-0.0381</td>\n      <td>0.1914</td>\n      <td>-0.4132</td>\n      <td>0.3370</td>\n      <td>463.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Liu Z et al. (2022) [PMID: 34558660]</th>\n      <td>0.1376</td>\n      <td>0.0629</td>\n      <td>0.0142</td>\n      <td>0.2609</td>\n      <td>-</td>\n      <td>470804.0</td>\n    </tr>\n  </tbody>\n</table>",

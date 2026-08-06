@@ -239,11 +239,12 @@
                 "sample_size": "a case-control study of 303 ovarian cancer cases and 606 age-matched nonmalignant-disease controls",
                 "effect_size": "relative risk of 3.1",
                 "effect_direction": "associated with an increased risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=7.167e-05.",
                 "confidence_interval": "95% confidence interval (CI) 1.8-5.5",
                 "outcome_definition": "ovarian cancer cases",
                 "exposure_definition": "Usually drinking more than one glass of whole milk daily relative to never drinking whole milk"
-            }
+            },
+            "P Value": 7.166781927312507e-05
         },
         {
             "Study": "Goodman MT et al. (2002) [PMID: 12117706]",
@@ -384,11 +385,12 @@
                 "sample_size": "554 women with epithelial ovarian cancer and 1554 randomly selected age-matched controls",
                 "effect_size": "OR = 1.11",
                 "effect_direction": "Total dairy intake was associated with ovarian cancer risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.398e-08.",
                 "confidence_interval": "95% CI: 1.07-1.15",
                 "outcome_definition": "overall ovarian cancer and histological types of ovarian cancer",
                 "exposure_definition": "Total dairy intake"
-            }
+            },
+            "P Value": 1.3975934163311014e-08
         },
         {
             "Study": "Gallus S et al. (2006) [PMID: 16596295]",
@@ -432,11 +434,12 @@
                 "sample_size": "ovary (1031 cases, 2411 controls)",
                 "effect_size": "OR=1.25",
                 "effect_direction": "whole milk consumption was directly associated",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.005.",
                 "confidence_interval": "95% CI: 1.07-1.46",
                 "outcome_definition": "cancers of the ... ovary",
                 "exposure_definition": "whole milk consumption"
-            }
+            },
+            "P Value": 0.0048834283522839255
         },
         {
             "Study": "Fairfield KM et al. (2004) [PMID: 15069693]",
@@ -481,11 +484,12 @@
                 "sample_size": "80326 participants in the Nurses' Health Study",
                 "effect_size": "RR 2.07",
                 "effect_direction": "2-fold higher risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.004.",
                 "confidence_interval": "95% CI, 1.27-3.40",
                 "outcome_definition": "serous ovarian cancer subtype",
                 "exposure_definition": "highest category of lactose consumption compared to the lowest"
-            }
+            },
+            "P Value": 0.0037779363938923363
         },
         {
             "Study": "Yen ML et al. (2003) [PMID: 12713998]",
@@ -529,11 +533,12 @@
                 "sample_size": "Cases were 86 women ... Controls were 369 women",
                 "effect_size": "OR = 0.45",
                 "effect_direction": "Milk intake was associated with a decreased disease risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.001.",
                 "confidence_interval": "95% confidence interval (CI) = 0.28-0.74",
                 "outcome_definition": "primary, invasive epithelial ovarian cancer",
                 "exposure_definition": "Milk intake"
-            }
+            },
+            "P Value": 0.001278417658817602
         },
         {
             "Study": "Huusom LD et al. (2006) [PMID: 16783610]",
@@ -577,11 +582,12 @@
                 "sample_size": "202 cases and 1,564 randomly selected controls were included.",
                 "effect_size": "OR=1.04",
                 "effect_direction": "increase the risk of borderline disease",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=6.418e-05.",
                 "confidence_interval": "95% CI: 1.02-1.06",
                 "outcome_definition": "ovarian borderline tumors overall, and according to histological subtype (serous vs. mucinous)",
                 "exposure_definition": "increasing consumption of milk (all types)"
-            }
+            },
+            "P Value": 6.418220238781876e-05
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Koralek DO et al. (2006) [PMID: 17176214]</th>\n      <td>-0.8675</td>\n      <td>0.3808</td>\n      <td>-1.6139</td>\n      <td>-0.1211</td>\n      <td>146.0</td>\n      <td>31925.0</td>\n    </tr>\n    <tr>\n      <th>Yen ML et al. (2003) [PMID: 12713998]</th>\n      <td>-0.7243</td>\n      <td>0.2316</td>\n      <td>-1.1783</td>\n      <td>-0.2703</td>\n      <td>86.0</td>\n      <td>455.0</td>\n    </tr>\n    <tr>\n      <th>Goodman MT et al. (2002) [PMID: 12117706]</th>\n      <td>-0.7037</td>\n      <td>0.2467</td>\n      <td>-1.1872</td>\n      <td>-0.2203</td>\n      <td>558.0</td>\n      <td>1165.0</td>\n    </tr>\n    <tr>\n      <th>Merritt MA et al. (2014) [PMID: 24722953]</th>\n      <td>-0.1304</td>\n      <td>0.1140</td>\n      <td>-0.3538</td>\n      <td>0.0930</td>\n      <td>764.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Huusom LD et al. (2006) [PMID: 16783610]</th>\n      <td>0.0340</td>\n      <td>0.0085</td>\n      <td>0.0174</td>\n      <td>0.0507</td>\n      <td>202.0</td>\n      <td>1766.0</td>\n    </tr>\n    <tr>\n      <th>Faber MT et al. (2012) [PMID: 22397392]</th>\n      <td>0.0902</td>\n      <td>0.0158</td>\n      <td>0.0592</td>\n      <td>0.1211</td>\n      <td>554.0</td>\n      <td>2108.0</td>\n    </tr>\n    <tr>\n      <th>Genkinger JM et al. (2006) [PMID: 16492930]</th>\n      <td>0.1740</td>\n      <td>0.0833</td>\n      <td>0.0107</td>\n      <td>0.3372</td>\n      <td>2132.0</td>\n      <td>553217.0</td>\n    </tr>\n    <tr>\n      <th>Gallus S et al. (2006) [PMID: 16596295]</th>\n      <td>0.1912</td>\n      <td>0.0668</td>\n      <td>0.0603</td>\n      <td>0.3220</td>\n      <td>1031.0</td>\n      <td>3442.0</td>\n    </tr>\n    <tr>\n      <th>Qin B et al. (2016) [PMID: 27632371]</th>\n      <td>0.5593</td>\n      <td>0.1783</td>\n      <td>0.2098</td>\n      <td>0.9087</td>\n      <td>490.0</td>\n      <td>1146.0</td>\n    </tr>\n    <tr>\n      <th>Larsson SC et al. (2004) [PMID: 15531686]</th>\n      <td>0.6931</td>\n      <td>0.3094</td>\n      <td>0.0866</td>\n      <td>1.2996</td>\n      <td>125.0</td>\n      <td>61084.0</td>\n    </tr>\n    <tr>\n      <th>Fairfield KM et al. (2004) [PMID: 15069693]</th>\n      <td>0.7275</td>\n      <td>0.2512</td>\n      <td>0.2352</td>\n      <td>1.2199</td>\n      <td>301.0</td>\n      <td>80326.0</td>\n    </tr>\n    <tr>\n      <th>Mettlin CJ et al. (1990) [PMID: 2239901]</th>\n      <td>1.1314</td>\n      <td>0.2849</td>\n      <td>0.5729</td>\n      <td>1.6899</td>\n      <td>303.0</td>\n      <td>909.0</td>\n    </tr>\n  </tbody>\n</table>",

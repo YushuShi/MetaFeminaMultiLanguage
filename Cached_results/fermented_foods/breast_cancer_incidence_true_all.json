@@ -286,11 +286,12 @@
                 "sample_size": "1941 women diagnosed with breast cancer ... and 1237 control participants.",
                 "effect_size": "Higher intakes of yogurt were associated with reduced risk of breast cancer (OR: 0.61; 95% CI: 0.46, 0.82)",
                 "effect_direction": "Higher intakes of yogurt were associated with reduced risk of breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=8.027e-04.",
                 "confidence_interval": "OR: 0.61; 95% CI: 0.46, 0.82",
                 "outcome_definition": "women diagnosed with breast cancer",
                 "exposure_definition": "Intakes of dairy foods ... grouped into monthly intakes of ... yogurt"
-            }
+            },
+            "P Value": 0.0008026781307760413
         },
         {
             "Study": "Wirf\u00e4lt E et al. (2011) [PMID: 21767080]",
@@ -335,11 +336,12 @@
                 "sample_size": "\u223c17,000 women aged 45-73 yr",
                 "effect_size": "a protective linear risk trend, indicating change between adjoining food categories, was seen with yogurt (HR = 0.89, 95% CI = 0.80-0.99)",
                 "effect_direction": "a protective linear risk trend ... was seen with yogurt",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.032.",
                 "confidence_interval": "HR = 0.89, 95% CI = 0.80-0.99",
                 "outcome_definition": "incident breast cancer, defined by estrogen receptor (ER) and progesterone receptor (PR) status",
                 "exposure_definition": "yogurt"
-            }
+            },
+            "P Value": 0.03205518878616076
         },
         {
             "Study": "Key TJ et al. (1999) [PMID: 10584890]",
@@ -384,11 +386,12 @@
                 "sample_size": "prospective study of 34759 women",
                 "effect_size": "for miso soup, relative risks were ... 0.87 (0.68-1.12) for consumption five or more times per week, relative to consumption once a week or less",
                 "effect_direction": "The risk for breast cancer was not significantly associated with consumption of soya foods",
-                "p_value": "not significantly associated",
+                "p_value": "not significantly associated Computed from the reported effect and 95% CI using a normal approximation: p=0.274.",
                 "confidence_interval": "0.87 (0.68-1.12)",
                 "outcome_definition": "followed for incident breast cancer until 1993",
                 "exposure_definition": "consumption of soya foods: for miso soup"
-            }
+            },
+            "P Value": 0.27394533796236237
         },
         {
             "Study": "Yu H et al. (2010) [PMID: 20432165]",
@@ -481,11 +484,12 @@
                 "sample_size": "30,454 women aged 40-79 years, completed a questionnaire on diet and other lifestyle features.",
                 "effect_size": "the multivariate HRs (95% CI) in the highest category of consumption were ... 1.01 (0.65-1.56), respectively.",
                 "effect_direction": "We found no significant association between the risk of breast cancer and consumption of tofu, boiled beans, and miso soup",
-                "p_value": "We found no significant association ...",
+                "p_value": "We found no significant association ... Computed from the reported effect and 95% CI using a normal approximation: p=0.964.",
                 "confidence_interval": "1.01 (0.65-1.56)",
                 "outcome_definition": "lower incidence of breast cancer within the Asian population",
                 "exposure_definition": "consumption of tofu, boiled beans, and miso soup"
-            }
+            },
+            "P Value": 0.964463115896991
         },
         {
             "Study": "Kaluza J et al. (2021) [PMID: 33004231]",
@@ -530,11 +534,12 @@
                 "sample_size": "The population-based Swedish Mammography Cohort included 33,780 women",
                 "effect_size": "consumption of fermented dairy products was inversely associated with ER-/PR- breast cancer (for consistently high intake \u22653 vs. <1 servings/day HR = 0.28, 95%CI:0.10-0.78)",
                 "effect_direction": "consumption of fermented dairy products was inversely associated with ER-/PR- breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.015.",
                 "confidence_interval": "HR = 0.28, 95%CI:0.10-0.78",
                 "outcome_definition": "risk of breast cancer by estrogen (ER) and progesterone receptor (PR) status",
                 "exposure_definition": "consumption of fermented dairy products"
-            }
+            },
+            "P Value": 0.015129173692713166
         },
         {
             "Study": "Van 't Veer P et al. (1991) [PMID: 1848533]",
@@ -578,11 +583,12 @@
                 "sample_size": "133 breast cancer cases and 289 population controls",
                 "effect_size": "age-and-fat-adjusted OR for interaction = 0.48",
                 "effect_direction": "synergistic protection",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.006.",
                 "confidence_interval": "95% confidence interval (CI) = 0.21 - 1.13",
                 "outcome_definition": "breast-cancer occurrence",
                 "exposure_definition": "high intake of fermented milk products"
-            }
+            },
+            "P Value": 0.006024991419931931
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pathak DR et al. (2021) [PMID: 34682540]</th>\n      <td>-1.3642</td>\n      <td>0.5475</td>\n      <td>-2.4373</td>\n      <td>-0.2911</td>\n      <td>131.0</td>\n      <td>415</td>\n    </tr>\n    <tr>\n      <th>Kaluza J et al. (2021) [PMID: 33004231]</th>\n      <td>-1.2236</td>\n      <td>0.5121</td>\n      <td>-2.2272</td>\n      <td>-0.2200</td>\n      <td>195.0</td>\n      <td>33780</td>\n    </tr>\n    <tr>\n      <th>Van 't Veer P et al. (1991) [PMID: 1848533]</th>\n      <td>-1.0175</td>\n      <td>0.3829</td>\n      <td>-1.7680</td>\n      <td>-0.2670</td>\n      <td>133.0</td>\n      <td>422</td>\n    </tr>\n    <tr>\n      <th>Yamamoto S et al. (2003) [PMID: 12813174]</th>\n      <td>-0.7765</td>\n      <td>0.3092</td>\n      <td>-1.3825</td>\n      <td>-0.1706</td>\n      <td>179.0</td>\n      <td>21852</td>\n    </tr>\n    <tr>\n      <th>McCann SE et al. (2017) [PMID: 29955696]</th>\n      <td>-0.4423</td>\n      <td>0.1349</td>\n      <td>-0.7067</td>\n      <td>-0.1778</td>\n      <td>1941.0</td>\n      <td>3178</td>\n    </tr>\n    <tr>\n      <th>van't Veer P et al. (1989) [PMID: 2736542]</th>\n      <td>-0.4127</td>\n      <td>0.1980</td>\n      <td>-0.8008</td>\n      <td>-0.0247</td>\n      <td>133.0</td>\n      <td>422</td>\n    </tr>\n    <tr>\n      <th>Key TJ et al. (1999) [PMID: 10584890]</th>\n      <td>-0.1393</td>\n      <td>0.1273</td>\n      <td>-0.3888</td>\n      <td>0.1102</td>\n      <td>427.0</td>\n      <td>34759</td>\n    </tr>\n    <tr>\n      <th>Wirf\u00e4lt E et al. (2011) [PMID: 21767080]</th>\n      <td>-0.1090</td>\n      <td>0.0511</td>\n      <td>-0.2091</td>\n      <td>-0.0090</td>\n      <td>270.0</td>\n      <td>17000</td>\n    </tr>\n    <tr>\n      <th>Wu Y et al. (2021) [PMID: 33964859]</th>\n      <td>-0.0986</td>\n      <td>0.0398</td>\n      <td>-0.1765</td>\n      <td>-0.0206</td>\n      <td>37861.0</td>\n      <td>over 1 million</td>\n    </tr>\n    <tr>\n      <th>Shirabe R et al. (2021) [PMID: 33340281]</th>\n      <td>-0.0578</td>\n      <td>0.1617</td>\n      <td>-0.3747</td>\n      <td>0.2591</td>\n      <td>825.0</td>\n      <td>47614</td>\n    </tr>\n    <tr>\n      <th>Nishio K et al. (2007) [PMID: 17619154]</th>\n      <td>0.0093</td>\n      <td>0.2076</td>\n      <td>-0.3976</td>\n      <td>0.4161</td>\n      <td>145.0</td>\n      <td>30454</td>\n    </tr>\n    <tr>\n      <th>Yu H et al. (2010) [PMID: 20432165]</th>\n      <td>1.3115</td>\n      <td>0.1488</td>\n      <td>1.0198</td>\n      <td>1.6031</td>\n      <td>358.0</td>\n      <td>718</td>\n    </tr>\n  </tbody>\n</table>",

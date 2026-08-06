@@ -44,11 +44,12 @@
                 "sample_size": "Among 521,911 women",
                 "effect_size": "1.01",
                 "effect_direction": "The major carotenoids were not significantly associated with the risk of ovarian cancer.",
-                "p_value": "The major carotenoids were not significantly associated with the risk of ovarian cancer.",
+                "p_value": "The major carotenoids were not significantly associated with the risk of ovarian cancer. Computed from the reported effect and 95% CI using a normal approximation: p=0.623.",
                 "confidence_interval": "(0.97-1.05)",
                 "outcome_definition": "invasive epithelial ovarian cancer",
                 "exposure_definition": "lycopene intake and 4,000 microg/day increase in lycopene intake"
-            }
+            },
+            "P Value": 0.6225890583662448
         },
         {
             "Study": "Jeong NH et al. (2009) [PMID: 19266359]",
@@ -92,11 +93,12 @@
                 "sample_size": "Forty-five epithelial ovarian cancers and 135 age-matched controls.",
                 "effect_size": "OR 0.09",
                 "effect_direction": "Women with the highest tertiles of lycopene ... had lower risk of ovarian cancer than women in the lowest tertiles.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=6.674e-05.",
                 "confidence_interval": "95%CI 0.03-0.32",
                 "outcome_definition": "ovarian cancer risk",
                 "exposure_definition": "plasma concentrations of ... lycopene"
-            }
+            },
+            "P Value": 6.674451990774869e-05
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Jeong NH et al. (2009) [PMID: 19266359]</th>\n      <td>-2.282</td>\n      <td>0.5931</td>\n      <td>-3.4445</td>\n      <td>-1.1196</td>\n      <td>45.0</td>\n      <td>180.0</td>\n    </tr>\n    <tr>\n      <th>Koushik A et al. (2006) [PMID: 16823847]</th>\n      <td>0.010</td>\n      <td>0.0202</td>\n      <td>-0.0297</td>\n      <td>0.0496</td>\n      <td>2012.0</td>\n      <td>521911.0</td>\n    </tr>\n  </tbody>\n</table>",

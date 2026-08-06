@@ -43,11 +43,12 @@
                 "sample_size": "Controls included 11 656 patients... The studies included... 454 endometrial... cancer cases.",
                 "effect_size": "endometrium (OR = 1.30; 95% CI: 1.10-1.55)",
                 "effect_direction": "Consumption of red meat has been related to increased risk of several cancers.",
-                "p_value": "significantly associated",
+                "p_value": "significantly associated Computed from the reported effect and 95% CI using a normal approximation: p=0.003.",
                 "confidence_interval": "95% CI: 1.10-1.55",
                 "outcome_definition": "endometrial... cancer cases",
                 "exposure_definition": "Consumption of red meat"
-            }
+            },
+            "P Value": 0.0027092795295038385
         },
         {
             "Study": "van Lonkhuijzen L et al. (2011) [PMID: 21422932]",
@@ -140,11 +141,12 @@
                 "sample_size": "The research included a total of 548 female respondents aged between 40 and 84 years.",
                 "effect_size": "OR = 2.16",
                 "effect_direction": "have an increased risk of developing the disease",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.027.",
                 "confidence_interval": "95% CI: 1.09-4.28",
                 "outcome_definition": "risk of developing endometrial cancer",
                 "exposure_definition": "Respondents who consumed red meat, such as veal, pork, and lamb in the amount of 101-200 g per day"
-            }
+            },
+            "P Value": 0.027306699220905045
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Di Maso M et al. (2013) [PMID: 24121119]</th>\n      <td>0.2241</td>\n      <td>0.0732</td>\n      <td>0.0807</td>\n      <td>0.3675</td>\n      <td>454.0</td>\n      <td>13145.0</td>\n    </tr>\n    <tr>\n      <th>van Lonkhuijzen L et al. (2011) [PMID: 21422932]</th>\n      <td>0.4406</td>\n      <td>0.2878</td>\n      <td>-0.1235</td>\n      <td>1.0047</td>\n      <td>107.0</td>\n      <td>26024.0</td>\n    </tr>\n    <tr>\n      <th>Plagens-Rotman K et al. (2016) [PMID: 27095953]</th>\n      <td>0.6297</td>\n      <td>0.2613</td>\n      <td>0.1175</td>\n      <td>1.1418</td>\n      <td>-</td>\n      <td>548.0</td>\n    </tr>\n  </tbody>\n</table>",

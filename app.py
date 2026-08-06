@@ -1103,6 +1103,11 @@ def reanalyze():
             study for study in studies
             if str(study.get('Quality Score') or '').strip().lower() in {'good', 'moderate'}
         ]
+
+    studies = [
+        study for study in studies
+        if str(study.get('Effect Type') or '').strip().upper() != 'PAF'
+    ]
     
     if not studies:
         return jsonify({"error": "No studies meet the selected analysis criteria."}), 400

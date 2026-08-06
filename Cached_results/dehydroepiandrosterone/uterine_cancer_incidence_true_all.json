@@ -43,11 +43,12 @@
                 "sample_size": "313 endometrial cancer case subjects, 354 matched control subjects",
                 "effect_size": "dehydroepiandrosterone (5th vs 1st quintile: OR = 1.85, 95% CI = 1.06 to 3.25)",
                 "effect_direction": "the highest levels of adrenal androgens were associated with increased endometrial cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.031.",
                 "confidence_interval": "OR = 1.85, 95% CI = 1.06 to 3.25",
                 "outcome_definition": "endometrial cancer risk",
                 "exposure_definition": "prediagnostic serum concentrations of 12 androgens and their metabolites"
-            }
+            },
+            "P Value": 0.03136525342798986
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>313.0</td>\n      <td>667.0</td>\n      <td>1.665916</td>\n      <td>1.051796</td>\n      <td>2.514507</td>\n    </tr>\n  </tbody>\n</table>",

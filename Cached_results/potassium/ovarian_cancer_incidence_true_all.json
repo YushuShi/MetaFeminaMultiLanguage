@@ -44,11 +44,12 @@
                 "sample_size": "Among 232,908 women (1,110 ovarian cancer cases diagnosed from 2006-2020)",
                 "effect_size": "Potassium was associated with endometrioid (Q4 vs. Q1: 0.33, 0.11-0.98)",
                 "effect_direction": "Potassium was associated with endometrioid (Q4 vs. Q1: 0.33, 0.11-0.98) - protective association for endometrioid tumors",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.047.",
                 "confidence_interval": "Potassium was associated with endometrioid (Q4 vs. Q1: 0.33, 0.11-0.98)",
                 "outcome_definition": "ovarian cancer cases diagnosed from 2006-2020, evaluated overall and by histology including endometrioid and clear cell tumors",
                 "exposure_definition": "quartiles of serum and urine markers including potassium, evaluated in prospectively collected samples"
-            }
+            },
+            "P Value": 0.046909983542438055
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>1110</td>\n      <td>232908</td>\n      <td>0.345511</td>\n      <td>0.116939</td>\n      <td>0.981334</td>\n    </tr>\n  </tbody>\n</table>",

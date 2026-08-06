@@ -44,11 +44,12 @@
                 "sample_size": "2,762 women",
                 "effect_size": "hazard ratio, HR = 0.98",
                 "effect_direction": "no evidence for an association",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.936.",
                 "confidence_interval": "95% CI: 0.60-1.60",
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "total ... serum calcium levels"
-            }
+            },
+            "P Value": 0.9356467315706566
         },
         {
             "Study": "Almquist M et al. (2010) [PMID: 20112341]",
@@ -141,11 +142,12 @@
                 "sample_size": "In a population-based prospective cohort study of 64,904 Norwegian women followed from 1996/1999 through 2006.",
                 "effect_size": "Hazard rate ratio in the 4th quartile vs. the 1st quartile 0.65.",
                 "effect_direction": "Total calcium intake tended to be inversely related to premenopausal breast cancer.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.097.",
                 "confidence_interval": "95% confidence interval 0.39-1.08.",
                 "outcome_definition": "218 premenopausal and 1,189 postmenopausal incident breast cancer cases were diagnosed during follow-up.",
                 "exposure_definition": "We also examined breast cancer in relation to calcium intake."
-            }
+            },
+            "P Value": 0.09734111612080812
         },
         {
             "Study": "Larsson SC et al. (2009) [PMID: 19056569]",
@@ -385,11 +387,12 @@
                 "sample_size": "We have examined this in a cohort of 7,847 women.",
                 "effect_size": "The adjusted RR (95% CI) of breast cancer was in the 4th quartile 0.56 (0.32-0.98).",
                 "effect_direction": "In premenopausal women, serum calcium levels were inversely associated with breast cancer risk in a dose-response manner.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.042.",
                 "confidence_interval": "0.56 (0.32-0.98)",
                 "outcome_definition": "During a mean follow-up of 17.8 years, 437 incident breast cancer cases were diagnosed.",
                 "exposure_definition": "Serum calcium levels and established risk factors for breast cancer had been assessed at baseline."
-            }
+            },
+            "P Value": 0.0422795472544627
         },
         {
             "Study": "Boyapati SM et al. (2003) [PMID: 12925302]",
@@ -433,11 +436,12 @@
                 "sample_size": "Data from a large, population-based, case-control study (n = 1,459 cases, 1,556 controls).",
                 "effect_size": "The multivariate-adjusted odds ratio (OR) comparing all women combined in the highest to lowest deciles of total calcium intake was 0.74.",
                 "effect_direction": "Calcium intake may be related to breast cancer risk.",
-                "p_value": "Statistically significant test for trend for calcium derived from poultry.",
+                "p_value": "Statistically significant test for trend for calcium derived from poultry. Computed from the reported effect and 95% CI using a normal approximation: p=0.218.",
                 "confidence_interval": "95% confidence interval [CI] = 0.46-1.20.",
                 "outcome_definition": "Risk for breast cancer.",
                 "exposure_definition": "Calcium intake assessed using a quantitative food-frequency questionnaire."
-            }
+            },
+            "P Value": 0.2183278620117467
         },
         {
             "Study": "McCullough ML et al. (2005) [PMID: 16365007]",
@@ -531,11 +535,12 @@
                 "sample_size": "We followed 88 691 women in the Nurses' Health Study cohort.",
                 "effect_size": "Dairy calcium (>800 mg/day versus \u2264200 mg/day; RR = 0.69, 95% CI = 0.48 to 0.98).",
                 "effect_direction": "Inverse associations were seen with components (calcium and vitamin D) of dairy foods.",
-                "p_value": "All statistical tests were two-sided.",
+                "p_value": "All statistical tests were two-sided. Computed from the reported effect and 95% CI using a normal approximation: p=0.042.",
                 "confidence_interval": "RR = 0.69, 95% CI = 0.48 to 0.98.",
                 "outcome_definition": "We identified 3482 women with incident invasive breast cancer.",
                 "exposure_definition": "We examined data to evaluate whether high intake of dairy products, calcium, or vitamin D is associated with reduced risk of breast cancer."
-            }
+            },
+            "P Value": 0.041562044272265605
         },
         {
             "Study": "Abbas S et al. (2013) [PMID: 23441605]",
@@ -726,11 +731,12 @@
                 "sample_size": "350 newly diagnosed breast cancer cases were recruited and 700 age-matched subjects were enrolled as controls.",
                 "effect_size": "The association remained significant even after additional controlling for dietary covariates (OR: 0.21; 95% CI: 0.04-0.93).",
                 "effect_direction": "Dietary calcium intake was protectively associated with odds of breast cancer in premenopausal women.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.052.",
                 "confidence_interval": "95% CI: 0.04-0.93",
                 "outcome_definition": "odds of having breast cancer among Iranian women.",
                 "exposure_definition": "Total dietary calcium intake of each participant was computed by summing up calcium intake from all foods and dishes."
-            }
+            },
+            "P Value": 0.051844802993451185
         },
         {
             "Study": "Kawase T et al. (2010) [PMID: 20151981]",
@@ -874,11 +880,12 @@
                 "sample_size": "Postmenopausal women (N = 36 282) who were enrolled in a Women's Health Initiative clinical trial.",
                 "effect_size": "Invasive breast cancer incidence was similar in the two groups (528 supplement vs 546 placebo; hazard ratio = 0.96).",
                 "effect_direction": "Calcium and vitamin D supplementation did not reduce invasive breast cancer incidence in postmenopausal women.",
-                "p_value": "Statistical tests were two-sided.",
+                "p_value": "Statistical tests were two-sided. Computed from the reported effect and 95% CI using a normal approximation: p=0.520.",
                 "confidence_interval": "hazard ratio = 0.96; 95% confidence interval = 0.85 to 1.09.",
                 "outcome_definition": "Invasive breast cancer was a secondary outcome.",
                 "exposure_definition": "Postmenopausal women were randomly assigned to 1000 mg of elemental calcium with 400 IU of vitamin D(3) daily or placebo."
-            }
+            },
+            "P Value": 0.5199363879635546
         },
         {
             "Study": "Abbas S et al. (2007) [PMID: 17927502]",
@@ -1064,11 +1071,12 @@
                 "sample_size": "Four hundred and thirty-eight consecutively recruited cases with primary breast cancer were frequency-matched to 438 controls.",
                 "effect_size": "We observed a statistically significant inverse association of dietary calcium intake with breast cancer risk, with the adjusted OR (95% CI) of 0.35 (0.22-0.56) comparing the highest with the lowest quartile.",
                 "effect_direction": "We observed a statistically significant inverse association of dietary calcium intake with breast cancer risk.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.060e-05.",
                 "confidence_interval": "with the adjusted OR (95% CI) of 0.35 (0.22-0.56)",
                 "outcome_definition": "Four hundred and thirty-eight consecutively recruited cases with primary breast cancer.",
                 "exposure_definition": "Dietary intake information was collected by interviewers using a validated food frequency questionnaire."
-            }
+            },
+            "P Value": 1.0595608946291145e-05
         },
         {
             "Study": "Peila R et al. (2021) [PMID: 34476342]",
@@ -1115,11 +1123,12 @@
                 "sample_size": "A total of 36 282 cancer-free postmenopausal women (50-79 years) were randomly assigned.",
                 "effect_size": "The intervention group had a lower risk of DCIS throughout follow-up (HR = 0.82, 95% CI = 0.70 to 0.96).",
                 "effect_direction": "The intervention group had a lower risk of DCIS.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.014.",
                 "confidence_interval": "HR = 0.82, 95% CI = 0.70 to 0.96",
                 "outcome_definition": "Risk of ductal carcinoma in situ (DCIS) of the breast.",
                 "exposure_definition": "Daily calcium (1000 mg) plus vitamin D (400 IU) supplementation or placebo."
-            }
+            },
+            "P Value": 0.013780198060764541
         },
         {
             "Study": "Cauley JA et al. (2013) [PMID: 24131320]",
@@ -1218,11 +1227,12 @@
                 "sample_size": "The WHI CaD was a 7-y, randomized, placebo-controlled trial of CaD (1 g Ca/400 IU vitamin D daily) in 36,282 community-dwelling, postmenopausal women.",
                 "effect_size": "CaD significantly decreased the risk of total, breast, and invasive breast cancers by 14-20%.",
                 "effect_direction": "CaD significantly decreased the risk of total, breast, and invasive breast cancers by 14-20%.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.122e-33.",
                 "confidence_interval": "CaD significantly decreased the risk of total, breast, and invasive breast cancers by 14-20%.",
                 "outcome_definition": "The incidence of total cancer (excluding nonmelanoma skin cancers), breast and colorectal cancers, hip and total fracture, and mortality was assessed.",
                 "exposure_definition": "CaD (1 g Ca/400 IU vitamin D daily) supplementation was administered."
-            }
+            },
+            "P Value": 1.1216065795919366e-33
         },
         {
             "Study": "Krusinska B et al. (2019) [PMID: 31540424]",
@@ -1314,11 +1324,12 @@
                 "sample_size": "Overall, 405 cases and 418 controls, in 3 large hospitals where cancer patients are treated, participated.",
                 "effect_size": "Calcium intake (>3 times a week) (OR=0.51; 95% CI=0.34-0.77).",
                 "effect_direction": "Calcium intake (>3 times a week) was associated with increased risk of breast cancer.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.001.",
                 "confidence_interval": "95% CI=0.34-0.77",
                 "outcome_definition": "The main aim was to identify lifestyle-related risk factors for breast cancer among Jordanian women.",
                 "exposure_definition": "Calcium intake (>3 times a week)."
-            }
+            },
+            "P Value": 0.001242339512975869
         },
         {
             "Study": "Sofi NY et al. (2018) [PMID: 29137944]",
@@ -1458,12 +1469,13 @@
                 "sample_size": null,
                 "effect_size": "this effect disappeared when omitting women first exposed within a year of diagnosis (OR 1.0, 95 % CI 0.82-1.23).",
                 "effect_direction": "this effect disappeared",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.000.",
                 "confidence_interval": "95 % CI 0.82-1.23",
                 "outcome_definition": "risk of breast cancer",
                 "exposure_definition": "vitamin D (\u00b1calcium) supplementation; Ninety-seven percent of women took vitamin D with a calcium supplement; Exposure to three or more prescriptions of vitamin D"
             },
-            "exclusions": 2
+            "exclusions": 2,
+            "P Value": 1.0
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Ebrahimpour-Koujan S et al. (2022) [PMID: 34319190]</th>\n      <td>-1.4523</td>\n      <td>0.7710</td>\n      <td>-2.9633</td>\n      <td>0.0588</td>\n      <td>350.0</td>\n      <td>1050.0</td>\n    </tr>\n    <tr>\n      <th>Sofi NY et al. (2018) [PMID: 29137944]</th>\n      <td>-1.2086</td>\n      <td>0.4315</td>\n      <td>-2.0543</td>\n      <td>-0.3628</td>\n      <td>200.0</td>\n      <td>400.0</td>\n    </tr>\n    <tr>\n      <th>Krusinska B et al. (2019) [PMID: 31540424]</th>\n      <td>-1.0469</td>\n      <td>0.5107</td>\n      <td>-2.0477</td>\n      <td>-0.0460</td>\n      <td>47.0</td>\n      <td>129.0</td>\n    </tr>\n    <tr>\n      <th>Zhang CX et al. (2011) [PMID: 21128178]</th>\n      <td>-0.9615</td>\n      <td>0.2261</td>\n      <td>-1.4047</td>\n      <td>-0.5184</td>\n      <td>438.0</td>\n      <td>876.0</td>\n    </tr>\n    <tr>\n      <th>Kesse-Guyot E et al. (2007) [PMID: 17536191]</th>\n      <td>-0.6931</td>\n      <td>0.3100</td>\n      <td>-1.3006</td>\n      <td>-0.0856</td>\n      <td>92.0</td>\n      <td>3627.0</td>\n    </tr>\n    <tr>\n      <th>Shiryazdi SM et al. (2015) [PMID: 26903700]</th>\n      <td>-0.6075</td>\n      <td>0.5089</td>\n      <td>-1.6049</td>\n      <td>0.3899</td>\n      <td>57.0</td>\n      <td>142.0</td>\n    </tr>\n    <tr>\n      <th>Al Qadire M et al. (2018) [PMID: 29318117]</th>\n      <td>-0.6075</td>\n      <td>0.1934</td>\n      <td>-0.9866</td>\n      <td>-0.2285</td>\n      <td>405.0</td>\n      <td>823.0</td>\n    </tr>\n    <tr>\n      <th>Fernandez-Lazaro CI et al. (2021) [PMID: 33818633]</th>\n      <td>-0.5671</td>\n      <td>0.2486</td>\n      <td>-1.0543</td>\n      <td>-0.0798</td>\n      <td>101.0</td>\n      <td>10812.0</td>\n    </tr>\n    <tr>\n      <th>Almquist M et al. (2007) [PMID: 17410477]</th>\n      <td>-0.5798</td>\n      <td>0.2855</td>\n      <td>-1.1394</td>\n      <td>-0.0202</td>\n      <td>437.0</td>\n      <td>7847.0</td>\n    </tr>\n    <tr>\n      <th>Lin J et al. (2007) [PMID: 17533208]</th>\n      <td>-0.4676</td>\n      <td>0.2034</td>\n      <td>-0.8663</td>\n      <td>-0.0690</td>\n      <td>276.0</td>\n      <td>31587.0</td>\n    </tr>\n    <tr>\n      <th>Hjart\u00e5ker A et al. (2010) [PMID: 20658314]</th>\n      <td>-0.4069</td>\n      <td>0.2478</td>\n      <td>-0.8925</td>\n      <td>0.0788</td>\n      <td>1407.0</td>\n      <td>64904.0</td>\n    </tr>\n    <tr>\n      <th>Shin MH et al. (2002) [PMID: 12208895]</th>\n      <td>-0.3711</td>\n      <td>0.1821</td>\n      <td>-0.7279</td>\n      <td>-0.0142</td>\n      <td>3482.0</td>\n      <td>88691.0</td>\n    </tr>\n    <tr>\n      <th>Vergne Y et al. (2013) [PMID: 24817834]</th>\n      <td>-0.3169</td>\n      <td>0.2530</td>\n      <td>-0.8128</td>\n      <td>0.1790</td>\n      <td>312.0</td>\n      <td>836.0</td>\n    </tr>\n    <tr>\n      <th>Abbas S et al. (2007) [PMID: 17927502]</th>\n      <td>-0.2790</td>\n      <td>0.2626</td>\n      <td>-0.7937</td>\n      <td>0.2357</td>\n      <td>278.0</td>\n      <td>944.0</td>\n    </tr>\n    <tr>\n      <th>Boyapati SM et al. (2003) [PMID: 12925302]</th>\n      <td>-0.2667</td>\n      <td>0.2195</td>\n      <td>-0.6969</td>\n      <td>0.1635</td>\n      <td>1459.0</td>\n      <td>3015.0</td>\n    </tr>\n    <tr>\n      <th>Bolland MJ et al. (2011) [PMID: 21880848]</th>\n      <td>-0.2095</td>\n      <td>0.0174</td>\n      <td>-0.2436</td>\n      <td>-0.1754</td>\n      <td>-</td>\n      <td>15646.0</td>\n    </tr>\n    <tr>\n      <th>McCullough ML et al. (2005) [PMID: 16365007]</th>\n      <td>-0.2231</td>\n      <td>0.0891</td>\n      <td>-0.3977</td>\n      <td>-0.0486</td>\n      <td>2855.0</td>\n      <td>68567.0</td>\n    </tr>\n    <tr>\n      <th>Peila R et al. (2021) [PMID: 34476342]</th>\n      <td>-0.1862</td>\n      <td>0.0760</td>\n      <td>-0.3352</td>\n      <td>-0.0371</td>\n      <td>595.0</td>\n      <td>36282.0</td>\n    </tr>\n    <tr>\n      <th>Kawase T et al. (2010) [PMID: 20151981]</th>\n      <td>-0.1640</td>\n      <td>0.0819</td>\n      <td>-0.3246</td>\n      <td>-0.0034</td>\n      <td>1803.0</td>\n      <td>5409.0</td>\n    </tr>\n    <tr>\n      <th>Bidgoli SA et al. (2014) [PMID: 24870727]</th>\n      <td>-0.0953</td>\n      <td>0.0278</td>\n      <td>-0.1498</td>\n      <td>-0.0408</td>\n      <td>60.0</td>\n      <td>176.0</td>\n    </tr>\n    <tr>\n      <th>Abbas S et al. (2013) [PMID: 23441605]</th>\n      <td>-0.0986</td>\n      <td>0.0612</td>\n      <td>-0.2185</td>\n      <td>0.0214</td>\n      <td>7760.0</td>\n      <td>319985.0</td>\n    </tr>\n    <tr>\n      <th>Chlebowski RT et al. (2008) [PMID: 19001601]</th>\n      <td>-0.0381</td>\n      <td>0.0593</td>\n      <td>-0.1543</td>\n      <td>0.0781</td>\n      <td>1074.0</td>\n      <td>36282.0</td>\n    </tr>\n    <tr>\n      <th>Larsson SC et al. (2009) [PMID: 19056569]</th>\n      <td>-0.0305</td>\n      <td>0.0575</td>\n      <td>-0.1432</td>\n      <td>0.0823</td>\n      <td>2952.0</td>\n      <td>61433.0</td>\n    </tr>\n    <tr>\n      <th>Wu Y et al. (2021) [PMID: 33964859]</th>\n      <td>-0.0188</td>\n      <td>0.0049</td>\n      <td>-0.0284</td>\n      <td>-0.0093</td>\n      <td>37861.0</td>\n      <td>1000000.0</td>\n    </tr>\n    <tr>\n      <th>Sprague BL et al. (2010) [PMID: 20006279]</th>\n      <td>-0.0188</td>\n      <td>0.2329</td>\n      <td>-0.4753</td>\n      <td>0.4376</td>\n      <td>-</td>\n      <td>2762.0</td>\n    </tr>\n    <tr>\n      <th>Cui Y et al. (2007) [PMID: 17684146]</th>\n      <td>0.3204</td>\n      <td>0.1660</td>\n      <td>-0.0050</td>\n      <td>0.6457</td>\n      <td>252.0</td>\n      <td>9315.0</td>\n    </tr>\n    <tr>\n      <th>Almquist M et al. (2010) [PMID: 20112341]</th>\n      <td>0.8900</td>\n      <td>0.2911</td>\n      <td>0.3195</td>\n      <td>1.4606</td>\n      <td>764.0</td>\n      <td>1528.0</td>\n    </tr>\n  </tbody>\n</table>",

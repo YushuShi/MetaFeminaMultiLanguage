@@ -1,5 +1,6 @@
 import os
 import re
+import math
 import numpy as np
 import pandas as pd
 import matplotlib
@@ -47,6 +48,49 @@ EGGERS_MIN_STUDIES = 10
 EGGERS_FEWER_THAN_TEN_MESSAGE = (
     "Egger’s test is generally not recommended when fewer than 10 studies are available."
 )
+
+RATIO_EFFECT_TYPES = {
+    'OR', 'RR', 'HR', 'IRR', 'ODDS RATIO', 'RISK RATIO',
+    'HAZARD RATIO', 'INCIDENCE RATE RATIO', 'RATE RATIO',
+}
+
+
+def p_value_from_effect_ci(effect, lower, upper, effect_type=None):
+    """Compute a two-sided normal-approximation p-value from a 95% CI."""
+    try:
+        effect, lower, upper = float(effect), float(lower), float(upper)
+    except (TypeError, ValueError):
+        return None
+    if not all(math.isfinite(value) for value in (effect, lower, upper)):
+        return None
+    if lower >= upper or not lower <= effect <= upper:
+        return None
+
+    normalized_type = str(effect_type or '').strip().upper()
+    if normalized_type == 'PAF':
+        return None
+    if normalized_type in RATIO_EFFECT_TYPES:
+        if min(effect, lower, upper) <= 0:
+            return None
+        theta, ci_lower, ci_upper = math.log(effect), math.log(lower), math.log(upper)
+    else:
+        theta, ci_lower, ci_upper = effect, lower, upper
+
+    standard_error = (ci_upper - ci_lower) / 3.92
+    if standard_error <= 0 or not math.isfinite(standard_error):
+        return None
+    z_score = theta / standard_error
+    return math.erfc(abs(z_score) / math.sqrt(2.0))
+
+
+def format_computed_p_value(p_value):
+    if p_value is None:
+        return None
+    if p_value < 1e-300:
+        return "p<1e-300"
+    if p_value < 0.001:
+        return f"p={p_value:.3e}"
+    return f"p={p_value:.3f}"
 
 # ... (rest of imports)
 
@@ -624,6 +668,15 @@ def perform_meta_analysis(
     if df_all is None:
         df_all = df_clean
 
+    # PAF is an attributable-burden measure, not a relative effect estimate.
+    # Keep PAF articles in the returned study list, but never pool them or draw
+    # them in meta-analysis diagnostics.
+    df_all = df_all.copy()
+    df_clean = df_clean.copy()
+    if 'Effect Type' in df_clean.columns:
+        effect_types = df_clean['Effect Type'].fillna('').astype(str).str.strip().str.upper()
+        df_clean = df_clean.loc[effect_types.ne('PAF')].copy()
+
     safe_disease = re.sub(r'[^a-zA-Z0-9]+', '_', disease.lower()).strip('_')
     safe_exposure = re.sub(r'[^a-zA-Z0-9]+', '_', exposure.lower()).strip('_')
     safe_outcome = re.sub(r'[^a-zA-Z0-9]+', '_', outcome.lower()).strip('_')
@@ -651,11 +704,17 @@ def perform_meta_analysis(
     df_clean['converted_Lower_CI'] = df_clean.apply(lambda x: convert_to_rr(x['Lower CI'], x['Effect Type']), axis=1)
     df_clean['converted_Upper_CI'] = df_clean.apply(lambda x: convert_to_rr(x['Upper CI'], x['Effect Type']), axis=1)
 
-    df_clean['log_ES'] = df_clean.apply(lambda x: np.log(x['converted_ES']) if x['Effect Type'].upper() in ['OR', 'RR', 'HR', 'ODDS RATIO', 'RISK RATIO'] and x['converted_ES'] > 0 else x['converted_ES'], axis=1)
+    ratio_effect_types = RATIO_EFFECT_TYPES
+    df_clean['log_ES'] = df_clean.apply(
+        lambda x: np.log(x['converted_ES'])
+        if str(x['Effect Type']).upper().strip() in ratio_effect_types and x['converted_ES'] > 0
+        else x['converted_ES'],
+        axis=1,
+    )
     
     def calc_log_se(row):
         eff_type_str = str(row['Effect Type']).upper().strip()
-        if eff_type_str in ['OR', 'RR', 'HR', 'ODDS RATIO', 'RISK RATIO'] and row['converted_Lower_CI'] > 0 and row['converted_Upper_CI'] > 0:
+        if eff_type_str in ratio_effect_types and row['converted_Lower_CI'] > 0 and row['converted_Upper_CI'] > 0:
              return (np.log(row['converted_Upper_CI']) - np.log(row['converted_Lower_CI'])) / 3.92
         return row['SE']
 
@@ -702,7 +761,7 @@ def perform_meta_analysis(
             
             # Let's improve significance check based on type
             eff_type = row['Effect Type'] if len(analysis_df) == 1 else 'OR' # Default to OR for interpretation if empty
-            if eff_type in ['OR', 'RR', 'HR', 'ODDS RATIO', 'RISK RATIO']:
+            if str(eff_type).upper().strip() in ratio_effect_types:
                  is_significant = (pooled_lower > 1) or (pooled_upper < 1)
                  log_eff = np.log(pooled_es) if pooled_es > 0 else 0 # For direction check
             else:
@@ -963,7 +1022,7 @@ def perform_meta_analysis(
                 fp_df['Est. RR (95% CI)'] = fp_df.apply(format_ci, axis=1)
                 
                 # Log scale check for xlabel
-                is_log = any(str(row['Effect Type']).upper() in ['OR', 'RR', 'HR', 'ODDS RATIO', 'RISK RATIO'] for _, row in fp_df.iterrows())
+                is_log = any(str(row['Effect Type']).upper().strip() in ratio_effect_types for _, row in fp_df.iterrows())
                 xlbl = "Log Relative Risk (95% CI)" if is_log else "Effect Size (95% CI)"
                 
                 forest_ax = forestplot.forestplot(
@@ -1045,7 +1104,7 @@ def perform_meta_analysis(
         # Convert df to records
         # Use df_all for the return list so the table shows everything
         # Gracefully handle missing columns (like 'Sample Size' or 'Cases' if regex/llm both missed them)
-        cols_to_keep = ['Study', 'PMID', 'Effect Size', 'Lower CI', 'Upper CI', 'Population', 'Reference', 'Authors', 'Journal', 'Year', 'Link', 'Effect Type', 'SE', 'Sample Size', 'Cases', 'Estimated Cases', 'Design', 'Timing', 'Continent', 'Stage', 'Quality %', 'Quality Score', 'comparison_type', 'JBI', 'exposure_measurement_type', 'exposure_measurement_supporting_text', 'extraction_supporting_text']
+        cols_to_keep = ['Study', 'PMID', 'Effect Size', 'Lower CI', 'Upper CI', 'P Value', 'Population', 'Reference', 'Authors', 'Journal', 'Year', 'Link', 'Effect Type', 'SE', 'Sample Size', 'Cases', 'Estimated Cases', 'Design', 'Timing', 'Continent', 'Stage', 'Quality %', 'Quality Score', 'comparison_type', 'JBI', 'exposure_measurement_type', 'exposure_measurement_supporting_text', 'extraction_supporting_text']
         
         # Ensure columns exist in df_all
         for col in cols_to_keep:

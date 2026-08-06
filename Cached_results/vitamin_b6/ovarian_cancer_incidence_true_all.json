@@ -44,11 +44,12 @@
                 "sample_size": "cohort of 73,909 participants",
                 "effect_size": "relatively high dietary intake of vitamin B6 was inversely associated with ovarian cancer risk (HRq3 vs q1: 0.49; 95% CI: 0.24-0.98)",
                 "effect_direction": "relatively high dietary intake of vitamin B6 was inversely associated with ovarian cancer risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.047.",
                 "confidence_interval": "95% CI: 0.24-0.98",
                 "outcome_definition": "ovarian (n = 104) cancers",
                 "exposure_definition": "dietary intake of vitamin B6"
-            }
+            },
+            "P Value": 0.04685988060891929
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>104</td>\n      <td>73909</td>\n      <td>0.507402</td>\n      <td>0.25285</td>\n      <td>0.981334</td>\n    </tr>\n  </tbody>\n</table>",

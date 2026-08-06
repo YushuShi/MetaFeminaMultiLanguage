@@ -141,11 +141,12 @@
                 "sample_size": "803 AA cases, 889 AA controls, 755 Caucasian cases, and 701 Caucasian controls",
                 "effect_size": "unprocessed red meat (OR = 1.40; 95 % CI 1.01-1.94)",
                 "effect_direction": "increased breast cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.043.",
                 "confidence_interval": "OR = 1.40; 95 % CI 1.01-1.94",
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "unprocessed red meat"
-            }
+            },
+            "P Value": 0.04331333494152273
         },
         {
             "Study": "Kabat GC et al. (2010) [PMID: 20962158]",
@@ -288,11 +289,12 @@
                 "sample_size": "a population-based cohort of 61,433 women",
                 "effect_size": "The multivariate relative risks (95% confidence interval) for the highest quintile of total red meat intake (98 g/d) compared with the lowest quintile (<46 g/d) were 0.98 (0.86-1.12) for overall breast cancer",
                 "effect_direction": "We found no association of total red meat, fresh red meat or processed meat intake with breast cancer risk.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.764.",
                 "confidence_interval": "0.98 (0.86-1.12)",
                 "outcome_definition": "incidence of breast cancer",
                 "exposure_definition": "total red meat intake"
-            }
+            },
+            "P Value": 0.7643240249241008
         },
         {
             "Study": "Taylor EF et al. (2007) [PMID: 17406351]",
@@ -337,11 +339,12 @@
                 "sample_size": "a cohort of 35 372 women was recruited",
                 "effect_size": "red meat consumption... HR=1.64 (95% CI: 1.14-2.37) for high consumption compared with none",
                 "effect_direction": "significant associations with total, processed and red meat consumption",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.008.",
                 "confidence_interval": "HR=1.64 (95% CI: 1.14-2.37)",
                 "outcome_definition": "risk of breast cancer",
                 "exposure_definition": "red meat consumption"
-            }
+            },
+            "P Value": 0.008056479069335055
         },
         {
             "Study": "Cho E et al. (2003) [PMID: 12865454]",
@@ -435,11 +438,12 @@
                 "sample_size": "We followed 88,647 women for 18 years",
                 "effect_size": "the RR and 95% CI for the highest quintile of intake were ... 0.93 (0.83-1.05) for red meat",
                 "effect_direction": "We found no evidence that intake of meat or fish during mid-life and later was associated with risk of breast cancer.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.226.",
                 "confidence_interval": "0.93 (0.83-1.05) for red meat",
                 "outcome_definition": "risk of developing invasive breast cancer",
                 "exposure_definition": "red meat"
-            }
+            },
+            "P Value": 0.22630789904968576
         },
         {
             "Study": "Dai Q et al. (2002) [PMID: 12223422]",
@@ -678,11 +682,12 @@
                 "sample_size": "A total of 800 women were included in this study (400 cases and 400 controls).",
                 "effect_size": "red meat (OR =4.61; 95% CI, 2.26-9.44)",
                 "effect_direction": "a significantly elevated risk of contracting breast cancer was associated with ... red meat",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=2.784e-05.",
                 "confidence_interval": "red meat (OR =4.61; 95% CI, 2.26-9.44)",
                 "outcome_definition": "female patients with breast cancer were compared to healthy controls",
                 "exposure_definition": "red meat"
-            }
+            },
+            "P Value": 2.783821108382045e-05
         },
         {
             "Study": "Farvid MS et al. (2014) [PMID: 24916719]",
@@ -775,11 +780,12 @@
                 "sample_size": "Controls included 11 656 patients... The studies included ... 3034 breast ... cancer cases.",
                 "effect_size": "breast (OR = 1.12; 95% CI: 1.04-1.19)",
                 "effect_direction": "Consumption of red meat has been related to increased risk of several cancers.",
-                "p_value": "significantly associated",
+                "p_value": "significantly associated Computed from the reported effect and 95% CI using a normal approximation: p=9.763e-04.",
                 "confidence_interval": "breast (OR = 1.12; 95% CI: 1.04-1.19)",
                 "outcome_definition": "breast ... cancer cases",
                 "exposure_definition": "Daily intake of red meat"
-            }
+            },
+            "P Value": 0.0009763293731162751
         },
         {
             "Study": "Fu Z et al. (2011) [PMID: 21537933]",
@@ -921,11 +927,12 @@
                 "sample_size": "Cases were 65 women aged 35-78 years. Controls included 78 women aged 34-82.",
                 "effect_size": "beef meat (OR = 1.3: 95% CI: 0.5-3.6)",
                 "effect_direction": "A significant trend of increasing risk with increasing intake emerged for the following food groups: ... beef meat",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.602.",
                 "confidence_interval": "beef meat (OR = 1.3: 95% CI: 0.5-3.6)",
                 "outcome_definition": "in the development of cancer of the breast",
                 "exposure_definition": "beef meat"
-            }
+            },
+            "P Value": 0.6023767572736929
         },
         {
             "Study": "Ronco A et al. (1996) [PMID: 8575853]",
@@ -969,11 +976,12 @@
                 "sample_size": "",
                 "effect_size": "The strongest effect was observed for red meat intake (OR 4.2, 95% CL 2.3-7.7) for consumption in the upper quartile",
                 "effect_direction": "an increased risk associated with consumption of ... red meat intake",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=3.229e-06.",
                 "confidence_interval": "OR 4.2, 95% CL 2.3-7.7",
                 "outcome_definition": "breast-cancer risk",
                 "exposure_definition": "red meat intake"
-            }
+            },
+            "P Value": 3.2288587407795273e-06
         },
         {
             "Study": "Lima FE et al. (2008) [PMID: 18392359]",
@@ -1065,11 +1073,12 @@
                 "sample_size": "case-control study of 2,686 case women and 3,508 controls",
                 "effect_size": "OR = 0.99",
                 "effect_direction": "We observed no association between total meat, red meat, or chicken with breast cancer risk.",
-                "p_value": "No statistically significant associations",
+                "p_value": "No statistically significant associations Computed from the reported effect and 95% CI using a normal approximation: p=0.900.",
                 "confidence_interval": "OR = 0.99, 95% CI 0.84-1.15",
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "usual intake, cooking method, and preferred doneness of specific meats"
-            }
+            },
+            "P Value": 0.9001886059940977
         },
         {
             "Study": "Lee MM et al. (2005) [PMID: 16132802]",
@@ -1113,11 +1122,12 @@
                 "sample_size": "Two-hundred-and-fifty cases and 219 age-matched controls",
                 "effect_size": "highest quartile of beef and pork intake significantly increased risk in younger women (OR = 2.5, 95% CI = 1.0-6.0) and all women (OR = 2.5, 95% CI = 1.1-3.3)",
                 "effect_direction": "highest quartile of beef and pork intake significantly increased risk",
-                "p_value": "statistically significant",
+                "p_value": "statistically significant Computed from the reported effect and 95% CI using a normal approximation: p=0.001.",
                 "confidence_interval": "OR = 2.5, 95% CI = 1.1-3.3",
                 "outcome_definition": "risk of breast cancer in a case-control study in Taiwan",
                 "exposure_definition": "beef and pork intake"
-            }
+            },
+            "P Value": 0.0010775618280511009
         },
         {
             "Study": "Hermann S et al. (2002) [PMID: 12672638]",
@@ -1209,11 +1219,12 @@
                 "sample_size": "A 1:2 paired retrospective case-control study with 210 cases and 420 controls",
                 "effect_size": "the more frequency of red meat (OR = 1.002, 95% CI = 1.001-1.004)",
                 "effect_direction": "statistically significantly associated with a greater risk of breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.009.",
                 "confidence_interval": "OR = 1.002, 95% CI = 1.001-1.004",
                 "outcome_definition": "retrospective cases were confirmed by pathological diagnosis with breast cancer",
                 "exposure_definition": "individual dietary intake, by food frequency questionnaire (FFQ)"
-            }
+            },
+            "P Value": 0.008864182603228436
         },
         {
             "Study": "Lo JJ et al. (2020) [PMID: 31389007]",
@@ -1306,11 +1317,12 @@
                 "sample_size": "1006 Histologically confirmed incident BC cases and 1370 controls were recruited",
                 "effect_size": "Intakes of well-done (ORwell-donevsrare (95% CI)\u202f=\u202f1.62 (1.15-2.30)) red meat were associated with increased BC risk",
                 "effect_direction": "associated with increased BC risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.006.",
                 "confidence_interval": "ORwell-donevsrare (95% CI)\u202f=\u202f1.62 (1.15-2.30)",
                 "outcome_definition": "Histologically confirmed incident BC cases",
                 "exposure_definition": "Intakes of well-done ... red meat"
-            }
+            },
+            "P Value": 0.006366250231963733
         },
         {
             "Study": "Fararouei M et al. (2019) [PMID: 30503310]",
@@ -1451,11 +1463,12 @@
                 "sample_size": "A total of 762 women aged 21-84 years were included into the research.",
                 "effect_size": "The respondents consuming 100 grams of red meat ... have the risk of developing cancer thrice as high (OR = 3.34; 95% CI 0.43-25.97).",
                 "effect_direction": "have the risk of developing cancer thrice as high",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.249.",
                 "confidence_interval": "OR = 3.34; 95% CI 0.43-25.97",
                 "outcome_definition": "women diagnosed with breast cancer on basis of histopathological examination",
                 "exposure_definition": "consuming 100 grams of red meat such as veal, pork, and mutton a day"
-            }
+            },
+            "P Value": 0.249005088697598
         },
         {
             "Study": "Espejo-Herrera N et al. (2016) [PMID: 26942716]",
@@ -1547,11 +1560,12 @@
                 "sample_size": "The study included 858 women with histological confirmed breast cancer and 1,085 controls",
                 "effect_size": "Women with a high intake of red meat ... showed increased risk of breast cancer: OR=2.70",
                 "effect_direction": "Women with a high intake of red meat ... showed increased risk of breast cancer",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.015.",
                 "confidence_interval": "OR=2.70, 95%CI=1.21-6.03",
                 "outcome_definition": "858 women with histological confirmed breast cancer",
                 "exposure_definition": "high intake of red meat"
-            }
+            },
+            "P Value": 0.015342818490735077
         },
         {
             "Study": "Ronco AL et al. (2012) [PMID: 22938477]",
@@ -1595,11 +1609,12 @@
                 "sample_size": "253 incident BC cases and 497 frequency-matched healthy controls",
                 "effect_size": "High consumption of red meat was positively associated with the disease risk (OR=2.20, 95% CI 1.35-3.60)",
                 "effect_direction": "High consumption of red meat was positively associated with the disease risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.002.",
                 "confidence_interval": "OR=2.20, 95% CI 1.35-3.60",
                 "outcome_definition": "incident BC cases",
                 "exposure_definition": "High consumption of red meat"
-            }
+            },
+            "P Value": 0.0016262170657921488
         },
         {
             "Study": "Zheng C et al. (2022) [PMID: 35289908]",
@@ -1644,11 +1659,12 @@
                 "sample_size": "among 81,954 WHI participants (1993-2020)",
                 "effect_size": "breast cancer (HR: 1.10; 95% CI: 1.07, 1.13)",
                 "effect_direction": "A relatively high-meat dietary pattern is associated with somewhat higher chronic disease risks.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=7.493e-12.",
                 "confidence_interval": "breast cancer (HR: 1.10; 95% CI: 1.07, 1.13)",
                 "outcome_definition": "breast cancer (HR: 1.10; 95% CI: 1.07, 1.13)",
                 "exposure_definition": "meat intake biomarkers from serum and 24-h urine metabolites"
-            }
+            },
+            "P Value": 7.492813050962791e-12
         },
         {
             "Study": "Omofuma OO et al. (2022) [PMID: 35275284]",
@@ -1692,11 +1708,12 @@
                 "sample_size": "AA: 548 cases, 452 controls; EA: 858 cases, 748 controls",
                 "effect_size": "pan-fried/oven-broiled beef steak (\u2265\u2009once/week, OR: 1.36; 95% CI 1.08, 1.72)",
                 "effect_direction": "More frequent consumption of beef prepared with high temperature methods was associated with higher odds of breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.010.",
                 "confidence_interval": "OR: 1.36; 95% CI 1.08, 1.72",
                 "outcome_definition": "women aged 20-74\u00a0years with a first diagnosis of invasive or in situ breast cancers",
                 "exposure_definition": "intake of meat and fish by preparation methods"
-            }
+            },
+            "P Value": 0.009594645625372022
         },
         {
             "Study": "Aune D et al. (2009) [PMID: 19640186]",
@@ -1740,11 +1757,12 @@
                 "sample_size": "including 3,539 cancer cases and 2,032 hospital controls",
                 "effect_size": "breast (OR= 1.97, 95% CI: 1.04-3.75)",
                 "effect_direction": "significant increase in the odds... with high intake of red meat",
-                "p_value": "significant increase",
+                "p_value": "significant increase Computed from the reported effect and 95% CI using a normal approximation: p=0.038.",
                 "confidence_interval": "breast (OR= 1.97, 95% CI: 1.04-3.75)",
                 "outcome_definition": "breast",
                 "exposure_definition": "high intake of red meat"
-            }
+            },
+            "P Value": 0.038230646136894926
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Holmes MD et al. (2003) [PMID: 12569578]</th>\n      <td>-0.0726</td>\n      <td>0.0600</td>\n      <td>-0.1901</td>\n      <td>0.0450</td>\n      <td>4107.0</td>\n      <td>88647.0</td>\n    </tr>\n    <tr>\n      <th>Larsson SC et al. (2009) [PMID: 19464165]</th>\n      <td>-0.0202</td>\n      <td>0.0674</td>\n      <td>-0.1523</td>\n      <td>0.1119</td>\n      <td>2952.0</td>\n      <td>61433.0</td>\n    </tr>\n    <tr>\n      <th>Mignone LI et al. (2009) [PMID: 19116874]</th>\n      <td>-0.0087</td>\n      <td>0.0698</td>\n      <td>-0.1456</td>\n      <td>0.1281</td>\n      <td>2686.0</td>\n      <td>6194.0</td>\n    </tr>\n    <tr>\n      <th>Kabat GC et al. (2010) [PMID: 20962158]</th>\n      <td>0.0000</td>\n      <td>0.0588</td>\n      <td>-0.1153</td>\n      <td>0.1153</td>\n      <td>3396.0</td>\n      <td>116674.0</td>\n    </tr>\n    <tr>\n      <th>Yuan G et al. (2020) [PMID: 33133556]</th>\n      <td>0.0017</td>\n      <td>0.0007</td>\n      <td>0.0004</td>\n      <td>0.0030</td>\n      <td>210.0</td>\n      <td>630.0</td>\n    </tr>\n    <tr>\n      <th>Zheng C et al. (2022) [PMID: 35289908]</th>\n      <td>0.0885</td>\n      <td>0.0129</td>\n      <td>0.0633</td>\n      <td>0.1138</td>\n      <td>-</td>\n      <td>81954.0</td>\n    </tr>\n    <tr>\n      <th>Di Maso M et al. (2013) [PMID: 24121119]</th>\n      <td>0.0978</td>\n      <td>0.0295</td>\n      <td>0.0401</td>\n      <td>0.1556</td>\n      <td>3034.0</td>\n      <td>14690.0</td>\n    </tr>\n    <tr>\n      <th>Fararouei M et al. (2019) [PMID: 30503310]</th>\n      <td>0.1204</td>\n      <td>0.0452</td>\n      <td>0.0319</td>\n      <td>0.2090</td>\n      <td>1010.0</td>\n      <td>1010.0</td>\n    </tr>\n    <tr>\n      <th>Farvid MS et al. (2014) [PMID: 24916719]</th>\n      <td>0.1989</td>\n      <td>0.0710</td>\n      <td>0.0598</td>\n      <td>0.3379</td>\n      <td>2830.0</td>\n      <td>88803.0</td>\n    </tr>\n    <tr>\n      <th>Lo JJ et al. (2020) [PMID: 31389007]</th>\n      <td>0.1914</td>\n      <td>0.0870</td>\n      <td>0.0208</td>\n      <td>0.3620</td>\n      <td>1536.0</td>\n      <td>42012.0</td>\n    </tr>\n    <tr>\n      <th>Ferrucci LM et al. (2009) [PMID: 19513076]</th>\n      <td>0.1914</td>\n      <td>0.0963</td>\n      <td>0.0026</td>\n      <td>0.3802</td>\n      <td>1205.0</td>\n      <td>52158.0</td>\n    </tr>\n    <tr>\n      <th>Inoue-Choi M et al. (2016) [PMID: 26505173]</th>\n      <td>0.2062</td>\n      <td>0.0908</td>\n      <td>0.0282</td>\n      <td>0.3842</td>\n      <td>9305.0</td>\n      <td>193742.0</td>\n    </tr>\n    <tr>\n      <th>Morales Su\u00e1rez-Varela M et al. (1998) [PMID: 9889560]</th>\n      <td>0.2241</td>\n      <td>0.4122</td>\n      <td>-0.5837</td>\n      <td>1.0319</td>\n      <td>65.0</td>\n      <td>143.0</td>\n    </tr>\n    <tr>\n      <th>Catsburg C et al. (2015) [PMID: 25833979]</th>\n      <td>0.2490</td>\n      <td>0.1360</td>\n      <td>-0.0174</td>\n      <td>0.5155</td>\n      <td>3659.0</td>\n      <td>49410.0</td>\n    </tr>\n    <tr>\n      <th>Cho E et al. (2003) [PMID: 12865454]</th>\n      <td>0.2852</td>\n      <td>0.1348</td>\n      <td>0.0210</td>\n      <td>0.5493</td>\n      <td>714.0</td>\n      <td>90655.0</td>\n    </tr>\n    <tr>\n      <th>Linos E et al. (2008) [PMID: 18669582]</th>\n      <td>0.2927</td>\n      <td>0.1782</td>\n      <td>-0.0566</td>\n      <td>0.6419</td>\n      <td>455.0</td>\n      <td>39268.0</td>\n    </tr>\n    <tr>\n      <th>Omofuma OO et al. (2022) [PMID: 35275284]</th>\n      <td>0.2617</td>\n      <td>0.0985</td>\n      <td>0.0686</td>\n      <td>0.4549</td>\n      <td>1406.0</td>\n      <td>2606.0</td>\n    </tr>\n    <tr>\n      <th>Chandran U et al. (2013) [PMID: 24091794]</th>\n      <td>0.2858</td>\n      <td>0.1374</td>\n      <td>0.0164</td>\n      <td>0.5551</td>\n      <td>1558.0</td>\n      <td>3148.0</td>\n    </tr>\n    <tr>\n      <th>Farvid MS et al. (2015) [PMID: 25220168]</th>\n      <td>0.3577</td>\n      <td>0.1566</td>\n      <td>0.0507</td>\n      <td>0.6646</td>\n      <td>1132.0</td>\n      <td>44231.0</td>\n    </tr>\n    <tr>\n      <th>Fu Z et al. (2011) [PMID: 21537933]</th>\n      <td>0.3425</td>\n      <td>0.0783</td>\n      <td>0.1889</td>\n      <td>0.4960</td>\n      <td>2386.0</td>\n      <td>4089.0</td>\n    </tr>\n    <tr>\n      <th>Boldo E et al. (2018) [PMID: 29563037]</th>\n      <td>0.4049</td>\n      <td>0.1419</td>\n      <td>0.1268</td>\n      <td>0.6831</td>\n      <td>1006.0</td>\n      <td>2376.0</td>\n    </tr>\n    <tr>\n      <th>Taylor EF et al. (2007) [PMID: 17406351]</th>\n      <td>0.4515</td>\n      <td>0.1657</td>\n      <td>0.1267</td>\n      <td>0.7763</td>\n      <td>-</td>\n      <td>35372.0</td>\n    </tr>\n    <tr>\n      <th>Espejo-Herrera N et al. (2016) [PMID: 26942716]</th>\n      <td>0.4148</td>\n      <td>0.1706</td>\n      <td>0.0805</td>\n      <td>0.7491</td>\n      <td>1245.0</td>\n      <td>2765.0</td>\n    </tr>\n    <tr>\n      <th>Diallo A et al. (2018) [PMID: 28913916]</th>\n      <td>0.5484</td>\n      <td>0.1420</td>\n      <td>0.2701</td>\n      <td>0.8267</td>\n      <td>544.0</td>\n      <td>61476.0</td>\n    </tr>\n    <tr>\n      <th>Hermann S et al. (2002) [PMID: 12672638]</th>\n      <td>0.5104</td>\n      <td>0.1624</td>\n      <td>0.1920</td>\n      <td>0.8287</td>\n      <td>355.0</td>\n      <td>1193.0</td>\n    </tr>\n    <tr>\n      <th>Dai Q et al. (2002) [PMID: 12223422]</th>\n      <td>0.5394</td>\n      <td>0.1538</td>\n      <td>0.2380</td>\n      <td>0.8407</td>\n      <td>1459.0</td>\n      <td>3015.0</td>\n    </tr>\n    <tr>\n      <th>Cho E et al. (2006) [PMID: 17101944]</th>\n      <td>0.6780</td>\n      <td>0.1933</td>\n      <td>0.2992</td>\n      <td>1.0569</td>\n      <td>1021.0</td>\n      <td>90659.0</td>\n    </tr>\n    <tr>\n      <th>Aune D et al. (2009) [PMID: 19640186]</th>\n      <td>0.5593</td>\n      <td>0.2505</td>\n      <td>0.0682</td>\n      <td>1.0503</td>\n      <td>3539.0</td>\n      <td>5571.0</td>\n    </tr>\n    <tr>\n      <th>Ronco AL et al. (2012) [PMID: 22938477]</th>\n      <td>0.6435</td>\n      <td>0.1873</td>\n      <td>0.2764</td>\n      <td>1.0106</td>\n      <td>253.0</td>\n      <td>750.0</td>\n    </tr>\n    <tr>\n      <th>Lee MM et al. (2005) [PMID: 16132802]</th>\n      <td>0.7381</td>\n      <td>0.2168</td>\n      <td>0.3132</td>\n      <td>1.1631</td>\n      <td>250.0</td>\n      <td>469.0</td>\n    </tr>\n    <tr>\n      <th>Kruk J et al. (2013) [PMID: 23725163]</th>\n      <td>0.7936</td>\n      <td>0.2882</td>\n      <td>0.2286</td>\n      <td>1.3585</td>\n      <td>858.0</td>\n      <td>1943.0</td>\n    </tr>\n    <tr>\n      <th>Plagens-Rotman K et al. (2017) [PMID: 29693885]</th>\n      <td>0.9404</td>\n      <td>0.6576</td>\n      <td>-0.3486</td>\n      <td>2.2293</td>\n      <td>-</td>\n      <td>762.0</td>\n    </tr>\n    <tr>\n      <th>Ronco A et al. (1996) [PMID: 8575853]</th>\n      <td>1.0872</td>\n      <td>0.1883</td>\n      <td>0.7183</td>\n      <td>1.4562</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Lima FE et al. (2008) [PMID: 18392359]</th>\n      <td>1.1016</td>\n      <td>0.2784</td>\n      <td>0.5560</td>\n      <td>1.6473</td>\n      <td>89.0</td>\n      <td>183.0</td>\n    </tr>\n    <tr>\n      <th>Laamiri FZ et al. (2014) [PMID: 25207209]</th>\n      <td>1.1434</td>\n      <td>0.2145</td>\n      <td>0.7231</td>\n      <td>1.5638</td>\n      <td>400.0</td>\n      <td>800.0</td>\n    </tr>\n  </tbody>\n</table>",

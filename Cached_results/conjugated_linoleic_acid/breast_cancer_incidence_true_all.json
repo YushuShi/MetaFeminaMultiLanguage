@@ -93,11 +93,12 @@
                 "sample_size": "61,433 cancer-free women completed a food-frequency questionnaire",
                 "effect_size": "The multivariate relative risks (95% CI) for the highest quintile of CLA intake ... were 1.04 (0.92, 1.17) for overall breast cancer",
                 "effect_direction": "no significant association was observed between dietary CLA intake and risk of breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.522.",
                 "confidence_interval": "1.04 (0.92, 1.17)",
                 "outcome_definition": "incidence of invasive breast cancer",
                 "exposure_definition": "conjugated linoleic acids (CLAs), a group of fatty acids found mainly in dairy products and in the meat of ruminants"
-            }
+            },
+            "P Value": 0.5224469640308758
         },
         {
             "Study": "Aro A et al. (2000) [PMID: 11525591]",
@@ -141,11 +142,12 @@
                 "sample_size": "68 premenopausal and 127 postmenopausal breast cancer cases; 75 premenopausal and 133 postmenopausal controls",
                 "effect_size": "The odds ratio for breast cancer in the highest quintile vs. the lowest was 0.4 [95% confidence interval (CI) = 0.2-0.9] for CLA",
                 "effect_direction": "dietary CLA ... were significantly lower in cases than in controls",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.017.",
                 "confidence_interval": "0.4 [95% confidence interval (CI) = 0.2-0.9]",
                 "outcome_definition": "women with breast cancer (68 premenopausal and 127 postmenopausal)",
                 "exposure_definition": "Conjugated linoleic acid (CLA); Diet was assessed by a validated food frequency questionnaire"
-            }
+            },
+            "P Value": 0.016936577390460263
         },
         {
             "Study": "Matta M et al. (2021) [PMID: 33781249]",

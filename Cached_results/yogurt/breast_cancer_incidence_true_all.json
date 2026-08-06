@@ -140,11 +140,12 @@
                 "sample_size": "white female cases (N = 172) and controls (N = 190)",
                 "effect_size": "fat from milk, cheese and yogurt reduced the odds ratios in both premenopausal (OR = 0.4, CI = 0.1-1.1 for highest versus lowest quartile)",
                 "effect_direction": "fat from milk, cheese and yogurt reduced the odds ratios",
-                "p_value": "Although not statistically significant",
+                "p_value": "Although not statistically significant Computed from the reported effect and 95% CI using a normal approximation: p=0.134.",
                 "confidence_interval": "CI = 0.1-1.1 for highest versus lowest quartile",
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "fat from milk, cheese and yogurt"
-            }
+            },
+            "P Value": 0.1341535618997597
         },
         {
             "Study": "McCann SE et al. (2017) [PMID: 29955696]",
@@ -188,11 +189,12 @@
                 "sample_size": "1941 women diagnosed with breast cancer ... and 1237 control participants.",
                 "effect_size": "Higher intakes of yogurt were associated with reduced risk of breast cancer (OR: 0.61; 95% CI: 0.46, 0.82)",
                 "effect_direction": "Higher intakes of yogurt were associated with reduced risk of breast cancer",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=8.027e-04.",
                 "confidence_interval": "OR: 0.61; 95% CI: 0.46, 0.82",
                 "outcome_definition": "women diagnosed with breast cancer",
                 "exposure_definition": "Intakes of dairy foods were queried with a self-administered food-frequency questionnaire and grouped into monthly intakes of ... yogurt"
-            }
+            },
+            "P Value": 0.0008026781307760413
         },
         {
             "Study": "Wirf\u00e4lt E et al. (2011) [PMID: 21767080]",
@@ -237,11 +239,12 @@
                 "sample_size": "Malm\u00f6 Diet and Cancer cohort (\u223c17,000 women aged 45-73 yr)",
                 "effect_size": "a protective linear risk trend, indicating change between adjoining food categories, was seen with yogurt (HR = 0.89, 95% CI = 0.80-0.99)",
                 "effect_direction": "a protective linear risk trend... was seen with yogurt",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.032.",
                 "confidence_interval": "HR = 0.89, 95% CI = 0.80-0.99",
                 "outcome_definition": "incident breast cancer, defined by estrogen receptor (ER) and progesterone receptor (PR) status",
                 "exposure_definition": "associations between food intakes and incident breast cancer"
-            }
+            },
+            "P Value": 0.03205518878616076
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pryor M et al. (1989) [PMID: 2539254]</th>\n      <td>-0.8351</td>\n      <td>0.5767</td>\n      <td>-1.9653</td>\n      <td>0.2952</td>\n      <td>172.0</td>\n      <td>362</td>\n    </tr>\n    <tr>\n      <th>McCann SE et al. (2017) [PMID: 29955696]</th>\n      <td>-0.4423</td>\n      <td>0.1349</td>\n      <td>-0.7067</td>\n      <td>-0.1778</td>\n      <td>1941.0</td>\n      <td>3178</td>\n    </tr>\n    <tr>\n      <th>van't Veer P et al. (1989) [PMID: 2736542]</th>\n      <td>-0.4127</td>\n      <td>0.1980</td>\n      <td>-0.8008</td>\n      <td>-0.0247</td>\n      <td>133.0</td>\n      <td>422</td>\n    </tr>\n    <tr>\n      <th>Wirf\u00e4lt E et al. (2011) [PMID: 21767080]</th>\n      <td>-0.1090</td>\n      <td>0.0511</td>\n      <td>-0.2091</td>\n      <td>-0.0090</td>\n      <td>270.0</td>\n      <td>17000</td>\n    </tr>\n    <tr>\n      <th>Wu Y et al. (2021) [PMID: 33964859]</th>\n      <td>-0.0986</td>\n      <td>0.0398</td>\n      <td>-0.1765</td>\n      <td>-0.0206</td>\n      <td>37861.0</td>\n      <td>over 1 million</td>\n    </tr>\n  </tbody>\n</table>",

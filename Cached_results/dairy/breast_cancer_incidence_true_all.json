@@ -93,11 +93,12 @@
                 "sample_size": "The study cohort contains 52\u00a0795 North American women",
                 "effect_size": "higher intakes of dairy calories and dairy milk were associated with hazard ratios (HRs) of 1.22 [95% confidence interval (CI): 1.05-1.40] and 1.50 (95% CI 1.22-1.84), respectively, comparing 90th to 10th percentiles of intakes.",
                 "effect_direction": "Higher intakes of dairy milk were associated with greater risk of breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.097e-04.",
                 "confidence_interval": "HR of 1.50 (95% CI 1.22-1.84)",
                 "outcome_definition": "Incident invasive breast cancers were detected mainly by matching with cancer registries.",
                 "exposure_definition": "Dietary intakes were estimated from food frequency questionnaires and, for 1011 calibration study subjects, from six structured 24-h dietary recalls."
-            }
+            },
+            "P Value": 0.0001097260655832021
         },
         {
             "Study": "Hjart\u00e5ker A et al. (2010) [PMID: 20658314]",
@@ -142,12 +143,13 @@
                 "sample_size": "64,904 Norwegian women",
                 "effect_size": "hazard rate ratio in the 4th quartile vs. the 1st quartile 0.50",
                 "effect_direction": "half the risk of breast cancer",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.013.",
                 "confidence_interval": "95% confidence interval 0.29-0.87",
                 "outcome_definition": "incident breast cancer cases",
                 "exposure_definition": "consumption of dairy products",
                 "jbi_checklist_type": "cohort"
-            }
+            },
+            "P Value": 0.013389245512567143
         },
         {
             "Study": "Kesse-Guyot E et al. (2007) [PMID: 17536191]",
@@ -290,11 +292,12 @@
                 "sample_size": "We followed 88 691 women in the Nurses' Health Study cohort",
                 "effect_size": "The multivariable RRs comparing highest (>1 serving/day) and lowest (\u22643 servings/month) intake categories were 0.68 (95% CI = 0.55 to 0.86) for low-fat dairy foods",
                 "effect_direction": "consumption of dairy products, especially of low-fat dairy foods and skim/low-fat milk, was inversely associated with risk of breast cancer",
-                "p_value": "All statistical tests were two-sided.",
+                "p_value": "All statistical tests were two-sided. Computed from the reported effect and 95% CI using a normal approximation: p=7.196e-04.",
                 "confidence_interval": "0.68 (95% CI = 0.55 to 0.86)",
                 "outcome_definition": "incident invasive breast cancer",
                 "exposure_definition": "consumption of dairy products, especially of low-fat dairy foods and skim/low-fat milk"
-            }
+            },
+            "P Value": 0.0007196295675126695
         },
         {
             "Study": "Hjart\u00e5ker A et al. (2001) [PMID: 11519053]",
@@ -437,11 +440,12 @@
                 "sample_size": "The population-based Swedish Mammography Cohort included 33,780 women",
                 "effect_size": "HR = 1.30, 95%CI:1.02-1.65 for the average of 1987 and 1997 intake \u22652 vs. 0 servings/day",
                 "effect_direction": "High long-term non-fermented milk consumption was associated with increased ER+/PR+ breast cancer incidence",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.032.",
                 "confidence_interval": "HR = 1.30, 95%CI:1.02-1.65",
                 "outcome_definition": "risk of breast cancer by estrogen (ER) and progesterone receptor (PR) status",
                 "exposure_definition": "Long-term consumption of milk and fermented dairy products"
-            }
+            },
+            "P Value": 0.03249171512604297
         },
         {
             "Study": "Farvid MS et al. (2018) [PMID: 29716928]",
@@ -486,11 +490,12 @@
                 "sample_size": "In 1998, 44,264 women recalled adolescent dairy consumption.",
                 "effect_size": "each serving/day during adolescence, total dairy HR = 1.02",
                 "effect_direction": "not associated with overall breast cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.429.",
                 "confidence_interval": "HR = 1.02, 95% CI, 0.97-1.07",
                 "outcome_definition": "incident breast cancer",
                 "exposure_definition": "dairy consumption during adolescence"
-            }
+            },
+            "P Value": 0.4288543402587516
         },
         {
             "Study": "Genkinger JM et al. (2013) [PMID: 23329367]",
@@ -535,11 +540,12 @@
                 "sample_size": "52,062 women",
                 "effect_size": "MV RR = 1.05",
                 "effect_direction": "Null associations were observed for total milk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.778.",
                 "confidence_interval": "95 % CI 0.74-1.46",
                 "outcome_definition": "risk of breast cancer",
                 "exposure_definition": "intake of dairy"
-            }
+            },
+            "P Value": 0.7783647307314849
         },
         {
             "Study": "Huang Y et al. (2024) [PMID: 39487869]",
@@ -633,11 +639,12 @@
                 "sample_size": "We analyzed data from 63,847 females in the NHS",
                 "effect_size": "nonsignificant HRs comparing highest with lowest quintile range = 0.97-1.08",
                 "effect_direction": "Lifetime, adolescent, adulthood, and postmenopausal total dairy and milk intakes were not associated with overall breast cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.266.",
                 "confidence_interval": "nonsignificant HRs comparing highest with lowest quintile range = 0.97-1.08",
                 "outcome_definition": "incidence of breast cancer",
                 "exposure_definition": "dairy consumption from adolescence through later adulthood"
-            }
+            },
+            "P Value": 0.26634323019469014
         },
         {
             "Study": "Wu Y et al. (2021) [PMID: 33964859]",
@@ -828,11 +835,12 @@
                 "sample_size": "4697 initially cancer-free women, aged 15 years or over.",
                 "effect_size": "the age-adjusted relative risk of breast cancer being 0.42 (95% confidence interval=0.24-0.74) between the highest and lowest tertiles of milk consumption.",
                 "effect_direction": "There was a significant inverse gradient between milk intake and incidence of breast cancer",
-                "p_value": "significant inverse gradient",
+                "p_value": "significant inverse gradient Computed from the reported effect and 95% CI using a normal approximation: p=0.003.",
                 "confidence_interval": "0.42 (95% confidence interval=0.24-0.74)",
                 "outcome_definition": "88 breast cancers were diagnosed.",
                 "exposure_definition": "Intakes of foods were calculated from dietary history interviews covering the habitual diet of examinees over the preceding year."
-            }
+            },
+            "P Value": 0.0025273895406413907
         },
         {
             "Study": "Yu L et al. (2019) [PMID: 30854047]",
@@ -1021,11 +1029,12 @@
                 "sample_size": "white British participants of the UK Biobank (n\u00a0=\u00a0up to 255,196)",
                 "effect_size": "in the UK Biobank greater risk of female breast cancer (1.12, 1.03-1.23)",
                 "effect_direction": "greater risk of female breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.012.",
                 "confidence_interval": "(1.12, 1.03-1.23)",
                 "outcome_definition": "female breast cancer",
                 "exposure_definition": "genetically predicted milk consumption"
-            }
+            },
+            "P Value": 0.01229933510724801
         },
         {
             "Study": "Kakkoura MG et al. (2022) [PMID: 35513801]",
@@ -1070,11 +1079,12 @@
                 "sample_size": "510,146 participants who were free of cancer at baseline",
                 "effect_size": "adjusted HRs per 50 g/day usual consumption being ... 1.19 (1.01-1.41) ... for ... female breast cancer (n = 2582)",
                 "effect_direction": "higher dairy intake was associated with higher risks of ... female breast cancer",
-                "p_value": "significant positive associations",
+                "p_value": "significant positive associations Computed from the reported effect and 95% CI using a normal approximation: p=0.041.",
                 "confidence_interval": "1.19 (1.01-1.41)",
                 "outcome_definition": "female breast cancer (n = 2582)",
                 "exposure_definition": "dairy products (mainly milk)"
-            }
+            },
+            "P Value": 0.04097188370782051
         },
         {
             "Study": "Dashti F et al. (2022) [PMID: 35083630]",
@@ -1118,11 +1128,12 @@
                 "sample_size": "350 patients with pathologically confirmed cases of breast cancer and 700 age-matched controls",
                 "effect_size": "those with the highest intake of high-fat dairy intake had greater odds for breast cancer than those with the lowest intake (OR 8.62; 95% CI 4.78-15.55)",
                 "effect_direction": "greater odds for breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.007.",
                 "confidence_interval": "95% CI 4.78-15.55",
                 "outcome_definition": "patients with pathologically confirmed cases of breast cancer",
                 "exposure_definition": "Consumption of low- and high-fat dairy products as well as dietary intakes of pasteurized milk, cheese and yogurt were computed"
-            }
+            },
+            "P Value": 0.007309780705282905
         },
         {
             "Study": "Jabbari M et al. (2022) [PMID: 35048753]",
@@ -1215,12 +1226,13 @@
                 "sample_size": "61,433 cancer-free women",
                 "effect_size": "The multivariate relative risks (95% CI) for the highest quintile of CLA intake (> or =155.7 mg/d) compared with the lowest quintile (<78.1 mg/d) were 1.04 (0.92, 1.17) for overall breast cancer",
                 "effect_direction": "no significant association was observed between dietary CLA intake and risk of breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.522.",
                 "confidence_interval": "1.04 (0.92, 1.17)",
                 "outcome_definition": "incidence of invasive breast cancer",
                 "exposure_definition": "CLA intake estimated from food-frequency questionnaire"
             },
-            "exclusions": 0
+            "exclusions": 0,
+            "P Value": 0.5224469640308758
         },
         {
             "Study": "Jayalekshmi P et al. (2009) [PMID: 19548367]",
@@ -1312,11 +1324,12 @@
                 "sample_size": "breast (2569 cases, 2588 controls)",
                 "effect_size": "Multivariate odds ratio (OR) for the highest consumption level of any type of milk was ... 0.91 (95% CI: 0.76-1.10) for breast",
                 "effect_direction": "our findings indicate that milk and dairy products are not strong risk indicators for any of the cancers considered",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.317.",
                 "confidence_interval": "0.91 (95% CI: 0.76-1.10) for breast",
                 "outcome_definition": "breast (2569 cases, 2588 controls)",
                 "exposure_definition": "highest consumption level of any type of milk"
-            }
+            },
+            "P Value": 0.3173748575379613
         },
         {
             "Study": "Michels KB et al. (2006) [PMID: 16094624]",
@@ -1360,11 +1373,12 @@
                 "sample_size": "582 women with breast cancer and 1,569 controls",
                 "effect_size": "covariate-adjusted OR for every additional glass of milk per day = 0.90",
                 "effect_direction": "Consumption of whole milk was associated with a slightly decreased risk of breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.028.",
                 "confidence_interval": "95% CI = 0.82-0.99",
                 "outcome_definition": "adult risk of breast cancer",
                 "exposure_definition": "Consumption of whole milk"
-            }
+            },
+            "P Value": 0.028364524572871565
         },
         {
             "Study": "Cho E et al. (2003) [PMID: 12865454]",
@@ -1509,12 +1523,13 @@
                 "sample_size": "In total, 6223 survivors ... participated in this study.",
                 "effect_size": "breast cancer (0.72, 0.52-0.89)",
                 "effect_direction": "a significant decrease in cancer incidence rate was observed for ... breast cancer (0.72, 0.52-0.89)",
-                "p_value": "a significant decrease",
+                "p_value": "a significant decrease Computed from the reported effect and 95% CI using a normal approximation: p=0.017.",
                 "confidence_interval": "breast cancer (0.72, 0.52-0.89)",
                 "outcome_definition": "breast cancer",
                 "exposure_definition": "ingested contaminated milk when they were aged \u2264 2 y"
             },
-            "exclusions": 0
+            "exclusions": 0,
+            "P Value": 0.016563048283995945
         },
         {
             "Study": "Larsson SC et al. (2020) [PMID: 33261611]",
@@ -1705,11 +1720,12 @@
                 "sample_size": "This study included 13,567 participants",
                 "effect_size": "Weekly consumption of\u2009>\u20096 portions of dairy-based milk was associated with a non-significantly higher BC risk (HR 1.41, 95% CI 0.99-2.03)",
                 "effect_direction": "non-significantly higher BC risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.061.",
                 "confidence_interval": "HR 1.41, 95% CI 0.99-2.03",
                 "outcome_definition": "BC cases were identified through cancer registry linkage over a mean follow-up of 14.8\u00a0years",
                 "exposure_definition": "Weekly consumption of\u2009>\u20096 portions of dairy-based milk"
-            }
+            },
+            "P Value": 0.06070462000019809
         },
         {
             "Study": "Pryor M et al. (1989) [PMID: 2539254]",
@@ -1753,11 +1769,12 @@
                 "sample_size": "cases (N = 172) and controls (N = 190)",
                 "effect_size": "fat from milk, cheese and yogurt reduced the odds ratios in both premenopausal (OR = 0.4, CI = 0.1-1.1 for highest versus lowest quartile)",
                 "effect_direction": "fat from milk, cheese and yogurt reduced the odds ratios",
-                "p_value": "not statistically significant",
+                "p_value": "not statistically significant Computed from the reported effect and 95% CI using a normal approximation: p=0.134.",
                 "confidence_interval": "CI = 0.1-1.1 for highest versus lowest quartile",
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "fat from milk, cheese and yogurt"
-            }
+            },
+            "P Value": 0.1341535618997597
         },
         {
             "Study": "Aro A et al. (2000) [PMID: 11525591]",
@@ -1801,12 +1818,13 @@
                 "sample_size": "Participants were consecutive women with breast cancer (68 premenopausal and 127 postmenopausal) and population-based control women (75 premenopausal and 133 postmenopausal)",
                 "effect_size": "The odds ratio for breast cancer in the highest quintile vs. the lowest was 0.4 [95% confidence interval (CI) = 0.2-0.9] for CLA",
                 "effect_direction": "dietary CLA ... were significantly lower in cases than in controls",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.017.",
                 "confidence_interval": "0.4 [95% confidence interval (CI) = 0.2-0.9]",
                 "outcome_definition": "breast cancer",
                 "exposure_definition": "dietary CLA, serum CLA, myristic acid, and trans-vaccenic acid"
             },
-            "exclusions": 0
+            "exclusions": 0,
+            "P Value": 0.016936577390460263
         },
         {
             "Study": "Bessaoud F et al. (2008) [PMID: 18444149]",
@@ -1850,11 +1868,12 @@
                 "sample_size": "437 cases and 922 controls",
                 "effect_size": "Adjusted OR for dairy consumption between (134.3 and 271.2 g/day) vs. (< 134.3 g/day) was 1.57",
                 "effect_direction": "the classical method showed significant associations related to the lowest consumption of raw vegetables or dairy products and breast cancer risk",
-                "p_value": "significant associations",
+                "p_value": "significant associations Computed from the reported effect and 95% CI using a normal approximation: p=0.024.",
                 "confidence_interval": "95% CI = 1.06-2.32",
                 "outcome_definition": "breast cancer",
                 "exposure_definition": "dairy consumption between (134.3 and 271.2 g/day) vs. (< 134.3 g/day)"
-            }
+            },
+            "P Value": 0.023983179703865085
         },
         {
             "Study": "Knight JA et al. (2007) [PMID: 17372236]",
@@ -1946,13 +1965,14 @@
                 "sample_size": "1,122 women with primary, incident, histologically confirmed breast cancer and 2,036 controls",
                 "effect_size": "odds ratio, 0.40",
                 "effect_direction": "marginally significant reduction in risk",
-                "p_value": "marginally significant",
+                "p_value": "marginally significant Computed from the reported effect and 95% CI using a normal approximation: p=0.051.",
                 "confidence_interval": "95% confidence interval, 0.16-1.01",
                 "outcome_definition": "primary, incident, histologically confirmed breast cancer",
                 "exposure_definition": "dietary CLA intake",
                 "jbi_checklist_type": "case_control"
             },
-            "exclusions": 0
+            "exclusions": 0,
+            "P Value": 0.051245848974322876
         },
         {
             "Study": "Yuan G et al. (2020) [PMID: 33133556]",
@@ -1996,11 +2016,12 @@
                 "sample_size": "A 1:2 paired retrospective case-control study with 210 cases and 420 controls",
                 "effect_size": "milk (OR = 0.998, 95% CI = 0.996-0.999)",
                 "effect_direction": "milk ... were protective factors",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.009.",
                 "confidence_interval": "milk (OR = 0.998, 95% CI = 0.996-0.999)",
                 "outcome_definition": "retrospective cases were confirmed by pathological diagnosis with breast cancer",
                 "exposure_definition": "individual dietary intake, by food frequency questionnaire (FFQ)"
-            }
+            },
+            "P Value": 0.00906989475367146
         },
         {
             "Study": "Plagens-Rotman K et al. (2017) [PMID: 29693885]",
@@ -2044,11 +2065,12 @@
                 "sample_size": "A total of 762 women aged 21-84 years were included into the research.",
                 "effect_size": "Women consuming one milk product a day in amount of 125 grams have the risk decreased (OR = 0.58; 95% CI 0.30 -1.11)",
                 "effect_direction": "have the risk decreased",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.103.",
                 "confidence_interval": "95% CI 0.30 -1.11",
                 "outcome_definition": "women diagnosed with breast cancer on basis of histopathological examination",
                 "exposure_definition": "Women consuming one milk product a day in amount of 125 grams"
-            }
+            },
+            "P Value": 0.10265833600074015
         },
         {
             "Study": "Ahmadnia Z et al. (2016) [PMID: 27221892]",
@@ -2190,11 +2212,12 @@
                 "sample_size": "Malm\u00f6 Diet and Cancer cohort (\u223c17,000 women aged 45-73 yr)",
                 "effect_size": "a protective linear risk trend, indicating change between adjoining food categories, was seen with yogurt (HR = 0.89, 95% CI = 0.80-0.99)",
                 "effect_direction": "a protective linear risk trend, indicating change between adjoining food categories, was seen with yogurt",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.032.",
                 "confidence_interval": "HR = 0.89, 95% CI = 0.80-0.99",
                 "outcome_definition": "incident breast cancer, defined by estrogen receptor (ER) and progesterone receptor (PR) status",
                 "exposure_definition": "food intakes ... yogurt"
-            }
+            },
+            "P Value": 0.03205518878616076
         },
         {
             "Study": "Lamchabbek N et al. (2025) [PMID: 41417097]",
@@ -2286,11 +2309,12 @@
                 "sample_size": "In total, 5186 breast cancer patients and 5571 controls were recruited.",
                 "effect_size": "dairy-rich diet (AOR\u2009=\u20093.33; 95% CI\u2009=\u20092.01-5.52)",
                 "effect_direction": "dairy-rich diet ... were found to be associated with an increased risk of breast cancer.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=3.044e-06.",
                 "confidence_interval": "dairy-rich diet (AOR\u2009=\u20093.33; 95% CI\u2009=\u20092.01-5.52)",
                 "outcome_definition": "breast cancer patients from the Hong Kong Breast Cancer Registry",
                 "exposure_definition": "dairy-rich diet"
-            }
+            },
+            "P Value": 3.043855675917923e-06
         },
         {
             "Study": "Jacobs I et al. (2021) [PMID: 34836361]",
@@ -2382,12 +2406,13 @@
                 "sample_size": "133 breast cancer cases and 289 population controls",
                 "effect_size": "age-and-fat-adjusted OR for interaction = 0.48",
                 "effect_direction": "synergistic protection",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.087.",
                 "confidence_interval": "95% confidence interval (CI) = 0.21 - 1.13",
                 "outcome_definition": "breast-cancer occurrence",
                 "exposure_definition": "high intake of fermented milk products"
             },
-            "exclusions": 0
+            "exclusions": 0,
+            "P Value": 0.08732529597313352
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Bahadoran Z et al. (2013) [PMID: 24066929]</th>\n      <td>-1.8476</td>\n      <td>0.5617</td>\n      <td>-2.9485</td>\n      <td>-0.7466</td>\n      <td>100.0</td>\n      <td>275</td>\n    </tr>\n    <tr>\n      <th>Huang Y et al. (2024) [PMID: 39487869]</th>\n      <td>-0.9891</td>\n      <td>0.5099</td>\n      <td>-1.9885</td>\n      <td>0.0103</td>\n      <td>-</td>\n      <td>360806</td>\n    </tr>\n    <tr>\n      <th>Pryor M et al. (1989) [PMID: 2539254]</th>\n      <td>-0.8351</td>\n      <td>0.5767</td>\n      <td>-1.9653</td>\n      <td>0.2952</td>\n      <td>172.0</td>\n      <td>362</td>\n    </tr>\n    <tr>\n      <th>Aro A et al. (2000) [PMID: 11525591]</th>\n      <td>-0.8351</td>\n      <td>0.3590</td>\n      <td>-1.5387</td>\n      <td>-0.1314</td>\n      <td>195.0</td>\n      <td>403</td>\n    </tr>\n    <tr>\n      <th>McCann SE et al. (2004) [PMID: 15342449]</th>\n      <td>-0.8351</td>\n      <td>0.4402</td>\n      <td>-1.6979</td>\n      <td>0.0277</td>\n      <td>1122.0</td>\n      <td>3158</td>\n    </tr>\n    <tr>\n      <th>Knekt P et al. (1996) [PMID: 8605108]</th>\n      <td>-0.8675</td>\n      <td>0.2872</td>\n      <td>-1.4305</td>\n      <td>-0.3045</td>\n      <td>88.0</td>\n      <td>4697</td>\n    </tr>\n    <tr>\n      <th>Van 't Veer P et al. (1991) [PMID: 1848533]</th>\n      <td>-0.6640</td>\n      <td>0.3974</td>\n      <td>-1.4428</td>\n      <td>0.1149</td>\n      <td>133.0</td>\n      <td>422</td>\n    </tr>\n    <tr>\n      <th>Aguilera-Buenosvinos I et al. (2021) [PMID: 33669972]</th>\n      <td>-0.6785</td>\n      <td>0.2617</td>\n      <td>-1.1913</td>\n      <td>-0.1656</td>\n      <td>119.0</td>\n      <td>10930</td>\n    </tr>\n    <tr>\n      <th>van't Veer P et al. (1989) [PMID: 2736542]</th>\n      <td>-0.6259</td>\n      <td>0.3650</td>\n      <td>-1.3413</td>\n      <td>0.0895</td>\n      <td>133.0</td>\n      <td>422</td>\n    </tr>\n    <tr>\n      <th>Hjart\u00e5ker A et al. (2010) [PMID: 20658314]</th>\n      <td>-0.6589</td>\n      <td>0.2701</td>\n      <td>-1.1883</td>\n      <td>-0.1296</td>\n      <td>1407.0</td>\n      <td>64904</td>\n    </tr>\n    <tr>\n      <th>Yu L et al. (2019) [PMID: 30854047]</th>\n      <td>-0.5718</td>\n      <td>0.1448</td>\n      <td>-0.8556</td>\n      <td>-0.2881</td>\n      <td>1286.0</td>\n      <td>2747</td>\n    </tr>\n    <tr>\n      <th>Kesse-Guyot E et al. (2007) [PMID: 17536191]</th>\n      <td>-0.5978</td>\n      <td>0.3233</td>\n      <td>-1.2315</td>\n      <td>0.0359</td>\n      <td>92.0</td>\n      <td>3627</td>\n    </tr>\n    <tr>\n      <th>Hjart\u00e5ker A et al. (2001) [PMID: 11519053]</th>\n      <td>-0.5798</td>\n      <td>0.3013</td>\n      <td>-1.1704</td>\n      <td>0.0107</td>\n      <td>317.0</td>\n      <td>48844</td>\n    </tr>\n    <tr>\n      <th>Plagens-Rotman K et al. (2017) [PMID: 29693885]</th>\n      <td>-0.4886</td>\n      <td>0.3058</td>\n      <td>-1.0879</td>\n      <td>0.1108</td>\n      <td>-</td>\n      <td>762</td>\n    </tr>\n    <tr>\n      <th>Shin WK et al. (2019) [PMID: 31877693]</th>\n      <td>-0.5160</td>\n      <td>0.2492</td>\n      <td>-1.0044</td>\n      <td>-0.0276</td>\n      <td>359.0</td>\n      <td>93306</td>\n    </tr>\n    <tr>\n      <th>Ahmadnia Z et al. (2016) [PMID: 27221892]</th>\n      <td>-0.4574</td>\n      <td>0.1895</td>\n      <td>-0.8288</td>\n      <td>-0.0860</td>\n      <td>225.0</td>\n      <td>450</td>\n    </tr>\n    <tr>\n      <th>Jabbari M et al. (2022) [PMID: 35048753]</th>\n      <td>-0.4423</td>\n      <td>0.3981</td>\n      <td>-1.2226</td>\n      <td>0.3380</td>\n      <td>134.0</td>\n      <td>401</td>\n    </tr>\n    <tr>\n      <th>Knight JA et al. (2007) [PMID: 17372236]</th>\n      <td>-0.4274</td>\n      <td>0.1510</td>\n      <td>-0.7233</td>\n      <td>-0.1314</td>\n      <td>972.0</td>\n      <td>2107</td>\n    </tr>\n    <tr>\n      <th>Shin MH et al. (2002) [PMID: 12208895]</th>\n      <td>-0.3857</td>\n      <td>0.1140</td>\n      <td>-0.6092</td>\n      <td>-0.1622</td>\n      <td>827.0</td>\n      <td>88691</td>\n    </tr>\n    <tr>\n      <th>Liu R et al. (2020) [PMID: 32885537]</th>\n      <td>-0.3285</td>\n      <td>0.1371</td>\n      <td>-0.5972</td>\n      <td>-0.0598</td>\n      <td>524.0</td>\n      <td>6223</td>\n    </tr>\n    <tr>\n      <th>Jacobs I et al. (2021) [PMID: 34836361]</th>\n      <td>-0.2790</td>\n      <td>0.0971</td>\n      <td>-0.4693</td>\n      <td>-0.0887</td>\n      <td>396.0</td>\n      <td>792</td>\n    </tr>\n    <tr>\n      <th>Bao PP et al. (2012) [PMID: 22860889]</th>\n      <td>-0.1968</td>\n      <td>0.0796</td>\n      <td>-0.3527</td>\n      <td>-0.0409</td>\n      <td>3443.0</td>\n      <td>6917</td>\n    </tr>\n    <tr>\n      <th>McCullough ML et al. (2005) [PMID: 16365007]</th>\n      <td>-0.2107</td>\n      <td>0.0816</td>\n      <td>-0.3706</td>\n      <td>-0.0508</td>\n      <td>2855.0</td>\n      <td>68567</td>\n    </tr>\n    <tr>\n      <th>McCann SE et al. (2017) [PMID: 29955696]</th>\n      <td>-0.1428</td>\n      <td>0.0809</td>\n      <td>-0.3014</td>\n      <td>0.0157</td>\n      <td>1941.0</td>\n      <td>3178</td>\n    </tr>\n    <tr>\n      <th>Wirf\u00e4lt E et al. (2011) [PMID: 21767080]</th>\n      <td>-0.1090</td>\n      <td>0.0511</td>\n      <td>-0.2091</td>\n      <td>-0.0090</td>\n      <td>544.0</td>\n      <td>17000</td>\n    </tr>\n    <tr>\n      <th>Wu Y et al. (2021) [PMID: 33964859]</th>\n      <td>-0.0986</td>\n      <td>0.0398</td>\n      <td>-0.1765</td>\n      <td>-0.0206</td>\n      <td>37861.0</td>\n      <td>over 1 million</td>\n    </tr>\n    <tr>\n      <th>Michels KB et al. (2006) [PMID: 16094624]</th>\n      <td>-0.0923</td>\n      <td>0.0424</td>\n      <td>-0.1753</td>\n      <td>-0.0093</td>\n      <td>582.0</td>\n      <td>2151</td>\n    </tr>\n    <tr>\n      <th>Gallus S et al. (2006) [PMID: 16596295]</th>\n      <td>-0.0825</td>\n      <td>0.0829</td>\n      <td>-0.2451</td>\n      <td>0.0800</td>\n      <td>2569.0</td>\n      <td>5157</td>\n    </tr>\n    <tr>\n      <th>Riseberg E et al. (2024) [PMID: 38042408]</th>\n      <td>-0.0284</td>\n      <td>0.0255</td>\n      <td>-0.0784</td>\n      <td>0.0216</td>\n      <td>5733.0</td>\n      <td>63847</td>\n    </tr>\n    <tr>\n      <th>Yuan G et al. (2020) [PMID: 33133556]</th>\n      <td>-0.0017</td>\n      <td>0.0007</td>\n      <td>-0.0031</td>\n      <td>-0.0004</td>\n      <td>210.0</td>\n      <td>630</td>\n    </tr>\n    <tr>\n      <th>Larsson SC et al. (2020) [PMID: 33261611]</th>\n      <td>0.0087</td>\n      <td>0.0044</td>\n      <td>0.0000</td>\n      <td>0.0173</td>\n      <td>-</td>\n      <td>228951</td>\n    </tr>\n    <tr>\n      <th>Farvid MS et al. (2018) [PMID: 29716928]</th>\n      <td>0.0184</td>\n      <td>0.0233</td>\n      <td>-0.0272</td>\n      <td>0.0641</td>\n      <td>1318.0</td>\n      <td>44264</td>\n    </tr>\n    <tr>\n      <th>Larsson SC et al. (2009) [PMID: 19491389]</th>\n      <td>0.0392</td>\n      <td>0.0613</td>\n      <td>-0.0810</td>\n      <td>0.1594</td>\n      <td>2952.0</td>\n      <td>61433</td>\n    </tr>\n    <tr>\n      <th>Genkinger JM et al. (2013) [PMID: 23329367]</th>\n      <td>0.0488</td>\n      <td>0.1734</td>\n      <td>-0.2910</td>\n      <td>0.3886</td>\n      <td>1268.0</td>\n      <td>52062</td>\n    </tr>\n    <tr>\n      <th>Lumsden AL et al. (2023) [PMID: 36473423]</th>\n      <td>0.0978</td>\n      <td>0.0387</td>\n      <td>0.0219</td>\n      <td>0.1738</td>\n      <td>-</td>\n      <td>255196</td>\n    </tr>\n    <tr>\n      <th>Kakkoura MG et al. (2022) [PMID: 35513801]</th>\n      <td>0.1611</td>\n      <td>0.0782</td>\n      <td>0.0078</td>\n      <td>0.3143</td>\n      <td>2582.0</td>\n      <td>510146</td>\n    </tr>\n    <tr>\n      <th>Voorrips LE et al. (2002) [PMID: 12324303]</th>\n      <td>0.2151</td>\n      <td>0.1579</td>\n      <td>-0.0944</td>\n      <td>0.5246</td>\n      <td>941.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Pala V et al. (2009) [PMID: 19491385]</th>\n      <td>0.2279</td>\n      <td>0.0855</td>\n      <td>0.0603</td>\n      <td>0.3955</td>\n      <td>7119.0</td>\n      <td>319,826</td>\n    </tr>\n    <tr>\n      <th>Kaluza J et al. (2021) [PMID: 33004231]</th>\n      <td>0.2420</td>\n      <td>0.1119</td>\n      <td>0.0228</td>\n      <td>0.4613</td>\n      <td>1870.0</td>\n      <td>33780</td>\n    </tr>\n    <tr>\n      <th>Cho E et al. (2003) [PMID: 12865454]</th>\n      <td>0.2852</td>\n      <td>0.1348</td>\n      <td>0.0210</td>\n      <td>0.5493</td>\n      <td>714.0</td>\n      <td>90655</td>\n    </tr>\n    <tr>\n      <th>Lin X et al. (2025) [PMID: 40121496]</th>\n      <td>0.3158</td>\n      <td>0.1654</td>\n      <td>-0.0083</td>\n      <td>0.6399</td>\n      <td>243.0</td>\n      <td>13567</td>\n    </tr>\n    <tr>\n      <th>Jordan I et al. (2013) [PMID: 22729968]</th>\n      <td>0.2975</td>\n      <td>0.1154</td>\n      <td>0.0714</td>\n      <td>0.5236</td>\n      <td>115.0</td>\n      <td>345</td>\n    </tr>\n    <tr>\n      <th>Fraser GE et al. (2020) [PMID: 32095830]</th>\n      <td>0.3717</td>\n      <td>0.0942</td>\n      <td>0.1870</td>\n      <td>0.5563</td>\n      <td>1057.0</td>\n      <td>52795</td>\n    </tr>\n    <tr>\n      <th>Bessaoud F et al. (2008) [PMID: 18444149]</th>\n      <td>0.3796</td>\n      <td>0.1614</td>\n      <td>0.0632</td>\n      <td>0.6959</td>\n      <td>437.0</td>\n      <td>1359</td>\n    </tr>\n    <tr>\n      <th>Dashti F et al. (2022) [PMID: 35083630]</th>\n      <td>0.4711</td>\n      <td>0.1664</td>\n      <td>0.1449</td>\n      <td>0.7973</td>\n      <td>350.0</td>\n      <td>1050</td>\n    </tr>\n    <tr>\n      <th>Jayalekshmi P et al. (2009) [PMID: 19548367]</th>\n      <td>0.4800</td>\n      <td>0.1673</td>\n      <td>0.1521</td>\n      <td>0.8079</td>\n      <td>264.0</td>\n      <td>359619</td>\n    </tr>\n    <tr>\n      <th>Lamchabbek N et al. (2025) [PMID: 41417097]</th>\n      <td>0.4845</td>\n      <td>0.0974</td>\n      <td>0.2935</td>\n      <td>0.6754</td>\n      <td>-</td>\n      <td>2800</td>\n    </tr>\n    <tr>\n      <th>Hirko KA et al. (2018) [PMID: 29071721]</th>\n      <td>0.5018</td>\n      <td>0.1821</td>\n      <td>0.1450</td>\n      <td>0.8587</td>\n      <td>794.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Yeo W et al. (2025) [PMID: 39868354]</th>\n      <td>0.9384</td>\n      <td>0.1713</td>\n      <td>0.6027</td>\n      <td>1.2741</td>\n      <td>5186.0</td>\n      <td>10757</td>\n    </tr>\n  </tbody>\n</table>",

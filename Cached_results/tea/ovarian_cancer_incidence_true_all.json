@@ -140,11 +140,12 @@
                 "sample_size": "Women with epithelial ovarian cancer (EOC) (n = 696) and control women selected from the Electoral Roll (n = 786)",
                 "effect_size": "tea consumption was not related to EOC (OR: 1.10 95% CI: 0.76-1.61 for >/=4 cups/day versus none)",
                 "effect_direction": "tea consumption was not related to EOC",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.619.",
                 "confidence_interval": "OR: 1.10 95% CI: 0.76-1.61",
                 "outcome_definition": "Women with epithelial ovarian cancer (EOC)",
                 "exposure_definition": "tea consumption... >/=4 cups/day versus none"
-            }
+            },
+            "P Value": 0.6186889948120945
         },
         {
             "Study": "Leung AC et al. (2016) [PMID: 27810483]",
@@ -188,11 +189,12 @@
                 "sample_size": "there were a total of 524 cases and 1587 controls",
                 "effect_size": "there was an increase in risk in black tea only drinkers (aOR=1.56; 95% CI:1.07-2.28 for >40 cup-years)",
                 "effect_direction": "Black tea consumption may be associated with an increased risk epithelial ovarian carcinoma",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.021.",
                 "confidence_interval": "aOR=1.56; 95% CI:1.07-2.28 for >40 cup-years",
                 "outcome_definition": "After restricting to cases of epithelial invasive cancers and controls aged 40-79 years",
                 "exposure_definition": "tea (black/caffeinated tea and green tea separately), Adult lifetime cumulative consumption (cup-years=cups/day*years) was calculated"
-            }
+            },
+            "P Value": 0.02121123961960882
         },
         {
             "Study": "Lee AH et al. (2013) [PMID: 23107758]",
@@ -383,12 +385,13 @@
                 "sample_size": "Among 497 cases and 904 controls in a population-based case-control study",
                 "effect_size": "The OR (95% CI) of ovarian cancer for the highest versus lowest quartile of lifetime caffeine intake was 1.17 (0.83-1.64)",
                 "effect_direction": "Lifetime caffeine intake was not strongly associated with ovarian cancer risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.366.",
                 "confidence_interval": "The OR (95% CI) of ovarian cancer for the highest versus lowest quartile of lifetime caffeine intake was 1.17 (0.83-1.64)",
                 "outcome_definition": "ovarian cancer risk overall, as well as by menopausal status. Multivariable polytomous logistic regression was used to estimate the associations for invasive and borderline ovarian cancers separately",
                 "exposure_definition": "lifetime intake of caffeinated coffee, black tea, green tea and cola sodas was assessed and used to calculate lifetime total intake of caffeine"
             },
-            "exclusions": 2
+            "exclusions": 2,
+            "P Value": 0.3661454167529092
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Lee AH et al. (2013) [PMID: 23107758]</th>\n      <td>-1.1410</td>\n      <td>0.1399</td>\n      <td>-1.4151</td>\n      <td>-0.8669</td>\n      <td>500.0</td>\n      <td>1000.0</td>\n    </tr>\n    <tr>\n      <th>Cassidy A et al. (2014) [PMID: 25332332]</th>\n      <td>-0.3638</td>\n      <td>0.1381</td>\n      <td>-0.6344</td>\n      <td>-0.0932</td>\n      <td>723.0</td>\n      <td>171940.0</td>\n    </tr>\n    <tr>\n      <th>Baker JA et al. (2007) [PMID: 17291231]</th>\n      <td>-0.3169</td>\n      <td>0.1482</td>\n      <td>-0.6074</td>\n      <td>-0.0264</td>\n      <td>414.0</td>\n      <td>1282.0</td>\n    </tr>\n    <tr>\n      <th>Larsson SC et al. (2005) [PMID: 16344429]</th>\n      <td>-0.1862</td>\n      <td>0.0904</td>\n      <td>-0.3634</td>\n      <td>-0.0090</td>\n      <td>301.0</td>\n      <td>61057.0</td>\n    </tr>\n    <tr>\n      <th>Jordan SJ et al. (2004) [PMID: 15141137]</th>\n      <td>0.0824</td>\n      <td>0.1639</td>\n      <td>-0.2389</td>\n      <td>0.4037</td>\n      <td>696.0</td>\n      <td>1482.0</td>\n    </tr>\n    <tr>\n      <th>Leung AC et al. (2016) [PMID: 27810483]</th>\n      <td>0.3744</td>\n      <td>0.1560</td>\n      <td>0.0686</td>\n      <td>0.6802</td>\n      <td>524.0</td>\n      <td>2111.0</td>\n    </tr>\n  </tbody>\n</table>",

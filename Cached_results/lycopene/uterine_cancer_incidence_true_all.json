@@ -43,11 +43,12 @@
                 "sample_size": "232 endometrial cancer cases and 639 controls",
                 "effect_size": "lycopene (OR 0.6, 95% CI: 0.4-1.0)",
                 "effect_direction": "Risks were reduced for women in the highest quartiles of intake ... lycopene (OR 0.6, 95% CI: 0.4-1.0)",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.029.",
                 "confidence_interval": "lycopene (OR 0.6, 95% CI: 0.4-1.0)",
                 "outcome_definition": "risk of endometrial cancer among women",
                 "exposure_definition": "Self-reported frequency of use of 172 foods and beverages"
-            }
+            },
+            "P Value": 0.028861555288327286
         },
         {
             "Study": "Jeong NH et al. (2009) [PMID: 19235557]",
@@ -139,11 +140,12 @@
                 "sample_size": "454 women with incident, histologically confirmed endometrial cancer and 908 controls",
                 "effect_size": "lycopene (OR = 0.95, 95% CI, 0.68-1.34)",
                 "effect_direction": "No association emerged with ... lycopene",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.767.",
                 "confidence_interval": "lycopene (OR = 0.95, 95% CI, 0.68-1.34)",
                 "outcome_definition": "454 women with incident, histologically confirmed endometrial cancer",
                 "exposure_definition": "Intake of carotenoids and retinol was computed from a validated and reproducible food frequency questionnaire."
-            }
+            },
+            "P Value": 0.7669110257223221
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Jeong NH et al. (2009) [PMID: 19235557]</th>\n      <td>-1.7800</td>\n      <td>0.6743</td>\n      <td>-3.1017</td>\n      <td>-0.4584</td>\n      <td>28.0</td>\n      <td>168.0</td>\n    </tr>\n    <tr>\n      <th>McCann SE et al. (2000) [PMID: 11142531]</th>\n      <td>-0.4574</td>\n      <td>0.2130</td>\n      <td>-0.8750</td>\n      <td>-0.0399</td>\n      <td>232.0</td>\n      <td>871.0</td>\n    </tr>\n    <tr>\n      <th>Pelucchi C et al. (2008) [PMID: 18592384]</th>\n      <td>-0.0448</td>\n      <td>0.1512</td>\n      <td>-0.3411</td>\n      <td>0.2515</td>\n      <td>454.0</td>\n      <td>1362.0</td>\n    </tr>\n  </tbody>\n</table>",

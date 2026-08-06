@@ -44,11 +44,12 @@
                 "sample_size": "47,602 African-American women living in the United States, aged 21-69 years at baseline in 1995, and followed them until 2013 (n = 282 cases)",
                 "effect_size": "The hazard ratio for quintile 5 of total dietary LC \u03c9-3 PUFAs versus quintile 1 was 0.79",
                 "effect_direction": "hazard ratio for quintile 5 ... versus quintile 1 was 0.79 ... there was no linear trend",
-                "p_value": "there was no linear trend",
+                "p_value": "there was no linear trend Computed from the reported effect and 95% CI using a normal approximation: p=0.298.",
                 "confidence_interval": "0.79 (95% confidence interval (CI): 0.51, 1.24)",
                 "outcome_definition": "endometrial cancer risk",
                 "exposure_definition": "dietary LC \u03c9-3 PUFAs"
-            }
+            },
+            "P Value": 0.29832035568986753
         },
         {
             "Study": "Brasky TM et al. (2014) [PMID: 24500149]",
@@ -239,11 +240,12 @@
                 "sample_size": "a population-based sample of 556 incident cancer cases and 533 age-matched controls",
                 "effect_size": "higher intakes of eicosapentaenoic (EPA 20:5) ... OR = 0.57, 95 % CI: 0.39-0.84",
                 "effect_direction": "higher intakes of eicosapentaenoic (EPA 20:5) and docosahexaenoic (DHA 22:6) fatty acids were significantly associated with lower risks",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.004.",
                 "confidence_interval": "OR = 0.57, 95 % CI: 0.39-0.84",
                 "outcome_definition": "endometrial cancer risk",
                 "exposure_definition": "intake of fatty acids and fish"
-            }
+            },
+            "P Value": 0.00407968162665855
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Arem H et al. (2013) [PMID: 22915050]</th>\n      <td>-0.5046</td>\n      <td>0.1800</td>\n      <td>-0.8574</td>\n      <td>-0.1518</td>\n      <td>556.0</td>\n      <td>1089.0</td>\n    </tr>\n    <tr>\n      <th>Brasky TM et al. (2015) [PMID: 25739930]</th>\n      <td>-0.4996</td>\n      <td>0.1758</td>\n      <td>-0.8441</td>\n      <td>-0.1551</td>\n      <td>1253.0</td>\n      <td>87360.0</td>\n    </tr>\n    <tr>\n      <th>Brasky TM et al. (2016) [PMID: 26755676]</th>\n      <td>-0.2214</td>\n      <td>0.2139</td>\n      <td>-0.6407</td>\n      <td>0.1979</td>\n      <td>282.0</td>\n      <td>47602.0</td>\n    </tr>\n    <tr>\n      <th>Yammine SG et al. (2023) [PMID: 36797668]</th>\n      <td>-0.0678</td>\n      <td>0.0309</td>\n      <td>-0.1283</td>\n      <td>-0.0073</td>\n      <td>1886.0</td>\n      <td>299318.0</td>\n    </tr>\n    <tr>\n      <th>Brasky TM et al. (2014) [PMID: 24500149]</th>\n      <td>0.5290</td>\n      <td>0.1932</td>\n      <td>0.1503</td>\n      <td>0.9077</td>\n      <td>263.0</td>\n      <td>22494.0</td>\n    </tr>\n  </tbody>\n</table>",

@@ -43,11 +43,12 @@
                 "sample_size": "240 women with incident invasive breast cancer ... and 246 age-matched female controls",
                 "effect_size": "ORs and 95% CIs: 0.75 (0.46- 1.22) and 0.50 (0.30-0.82), respectively",
                 "effect_direction": "women in the second and highest tertile of cesium showed a decreased risk of breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.007.",
                 "confidence_interval": "ORs and 95% CIs: 0.75 (0.46- 1.22) and 0.50 (0.30-0.82), respectively",
                 "outcome_definition": "incident invasive breast cancer",
                 "exposure_definition": "Urinary concentrations of cesium"
-            }
+            },
+            "P Value": 0.006887906666635587
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>240</td>\n      <td>486</td>\n      <td>0.534759</td>\n      <td>0.330033</td>\n      <td>0.839648</td>\n    </tr>\n  </tbody>\n</table>",

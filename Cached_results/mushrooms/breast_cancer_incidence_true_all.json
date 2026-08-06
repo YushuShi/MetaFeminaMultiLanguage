@@ -139,12 +139,13 @@
                 "sample_size": "128 breast cancer (BC) cases newly diagnosed in 1988--2001 and 640 cancer-free controls",
                 "effect_size": "adjusted odds ratio (OR) was 6.00 (95% CI 2.01-18.0)",
                 "effect_direction": "Risk of breast cancer was not associated with work with any specific crops or commodities except mushrooms",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.001.",
                 "confidence_interval": "adjusted odds ratio (OR) was 6.00 (95% CI 2.01-18.0)",
                 "outcome_definition": "breast cancer (BC) cases newly diagnosed in 1988--2001",
                 "exposure_definition": "work with any specific crops or commodities except mushrooms"
             },
-            "exclusions": 2
+            "exclusions": 2,
+            "P Value": 0.0013558194774063014
         },
         {
             "Study": "Shin A et al. (2010) [PMID: 20432168]",
@@ -188,11 +189,12 @@
                 "sample_size": "358 breast cancer patients and 360 cancer-free controls",
                 "effect_size": "odds ratio [OR] = 0.35",
                 "effect_direction": "Greater mushroom intake was related to lower risk of breast cancers among premenopausal women",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.034.",
                 "confidence_interval": "95% confidence interval [CI] = 0.13-0.91",
                 "outcome_definition": "the risk of breast cancer according to hormone receptor status among Korean women",
                 "exposure_definition": "Mushroom intake was assessed using a quantitative food frequency questionnaire"
-            }
+            },
+            "P Value": 0.034442968249291446
         },
         {
             "Study": "Sofi NY et al. (2018) [PMID: 27687737]",
@@ -236,11 +238,12 @@
                 "sample_size": "A total of 100 women (cases) with confirmed breast cancer (BC) matched with equal number of healthy females (controls) of similar age and socioeconomic status (SES) were included in study.",
                 "effect_size": "Mushroom intake was inversely associated with risk of BC (ORs, 95% CI) (5.6, 1.9-16.6).",
                 "effect_direction": "Mushroom intake was inversely associated with risk of BC",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.002.",
                 "confidence_interval": "(ORs, 95% CI) (5.6, 1.9-16.6)",
                 "outcome_definition": "patients with confirmed breast cancer (BC)",
                 "exposure_definition": "Mushroom intake"
-            }
+            },
+            "P Value": 0.00203163812379054
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Sofi NY et al. (2018) [PMID: 27687737]</th>\n      <td>-1.6021</td>\n      <td>0.5386</td>\n      <td>-2.6577</td>\n      <td>-0.5465</td>\n      <td>100.0</td>\n      <td>200.0</td>\n    </tr>\n    <tr>\n      <th>Shin A et al. (2010) [PMID: 20432168]</th>\n      <td>-0.9615</td>\n      <td>0.4688</td>\n      <td>-1.8803</td>\n      <td>-0.0427</td>\n      <td>358.0</td>\n      <td>718.0</td>\n    </tr>\n    <tr>\n      <th>Zhang M et al. (2009) [PMID: 19048616]</th>\n      <td>-0.9348</td>\n      <td>0.1725</td>\n      <td>-1.2729</td>\n      <td>-0.5967</td>\n      <td>1009.0</td>\n      <td>2018.0</td>\n    </tr>\n    <tr>\n      <th>Hong SA et al. (2008) [PMID: 17943725]</th>\n      <td>-0.6640</td>\n      <td>0.2268</td>\n      <td>-1.1085</td>\n      <td>-0.2194</td>\n      <td>362.0</td>\n      <td>724.0</td>\n    </tr>\n  </tbody>\n</table>",

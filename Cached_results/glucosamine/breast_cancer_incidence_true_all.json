@@ -44,11 +44,12 @@
                 "sample_size": "The study cohort of patients with osteoarthritis included 20,541 glucosamine initiators who were matched to 20,541 non-users.",
                 "effect_size": "it was 1.07 (95% CI 0.93-1.23) for breast cancer in women",
                 "effect_direction": "treatment with glucosamine did not reduce the incidence of cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.343.",
                 "confidence_interval": "it was 1.07 (95% CI 0.93-1.23) for breast cancer in women",
                 "outcome_definition": "incidence of breast cancer in women",
                 "exposure_definition": "Glucosamine initiators vs non-users"
-            }
+            },
+            "P Value": 0.34281007546330794
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>None</td>\n      <td>41082</td>\n      <td>1.064922</td>\n      <td>0.934442</td>\n      <td>1.21096</td>\n    </tr>\n  </tbody>\n</table>",

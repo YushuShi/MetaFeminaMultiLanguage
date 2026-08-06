@@ -43,11 +43,12 @@
                 "sample_size": "Cases (n = 131)...controls (n = 284)",
                 "effect_size": "the OR was 0.23 (95% CI = 0.07-0.65)",
                 "effect_direction": "Greater consumption of total and raw/short-cooked cabbage/sauerkraut foods either during adolescence or adulthood was associated with significantly reduced BC risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.010.",
                 "confidence_interval": "the OR was 0.23 (95% CI = 0.07-0.65)",
                 "outcome_definition": "Cases (n = 131) were 20-79 years old with histological/cytological confirmation of invasive BC",
                 "exposure_definition": "Consumption of total, raw/short-cooked, and long-cooked cabbage/sauerkraut foods was categorized as low, medium, or high (frequency of servings/week)"
-            }
+            },
+            "P Value": 0.009731356402431718
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>131</td>\n      <td>415</td>\n      <td>0.255584</td>\n      <td>0.079627</td>\n      <td>0.680985</td>\n    </tr>\n  </tbody>\n</table>",

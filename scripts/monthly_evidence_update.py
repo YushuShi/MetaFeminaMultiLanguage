@@ -1751,6 +1751,19 @@ def study_row(item: dict[str, Any]) -> dict[str, Any]:
         if lower is not None and upper is not None
         else None
     )
+    p_value = extraction.get("p_value")
+    computed_p_value = None
+    if p_value in (None, ""):
+        computed_p_value = meta_analysis.p_value_from_effect_ci(
+            effect, lower, upper, extraction.get("effect_type")
+        )
+        p_value = computed_p_value
+    p_value_support = str(extraction.get("p_value") or "")
+    if computed_p_value is not None:
+        p_value_support = (
+            "Computed from the reported effect and 95% CI using a normal approximation: "
+            f"{meta_analysis.format_computed_p_value(computed_p_value)}."
+        )
     supporting = one_line(extraction.get("supporting_text"))
     raw_measurement = one_line(extraction.get("exposure_measurement_type")).lower()
     if any(term in raw_measurement for term in ("diet", "questionnaire", "self-report", "recall")):
@@ -1765,6 +1778,7 @@ def study_row(item: dict[str, Any]) -> dict[str, Any]:
         "Effect Size": effect,
         "Lower CI": lower,
         "Upper CI": upper,
+        "P Value": p_value,
         "Population": "Human study population described in the cited article",
         "Reference": one_line(item.get("title")),
         "Authors": ", ".join(authors),
@@ -1790,7 +1804,7 @@ def study_row(item: dict[str, Any]) -> dict[str, Any]:
             "sample_size": supporting,
             "effect_size": supporting,
             "effect_direction": "",
-            "p_value": str(extraction.get("p_value") or ""),
+            "p_value": p_value_support,
             "confidence_interval": f"95% CI {lower}-{upper}" if lower is not None and upper is not None else "",
             "outcome_definition": f"Incident {item.get('cancer')}",
             "exposure_definition": one_line(extraction.get("comparison_type")),

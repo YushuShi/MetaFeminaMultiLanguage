@@ -43,12 +43,13 @@
                 "sample_size": "405 endometrial cancer cases and 297 population controls",
                 "effect_size": "those who used devices containing copper (RR = 1.08; 95% CI: 0.1-3.6)",
                 "effect_direction": "Risk was not increased among women who used... devices containing copper",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.933.",
                 "confidence_interval": "RR = 1.08; 95% CI: 0.1-3.6",
                 "outcome_definition": "endometrial cancer cases",
                 "exposure_definition": "devices containing copper"
             },
-            "exclusions": 2
+            "exclusions": 2,
+            "P Value": 0.9329074051327164
         },
         {
             "Study": "Zhu G et al. (2022) [PMID: 36501056]",

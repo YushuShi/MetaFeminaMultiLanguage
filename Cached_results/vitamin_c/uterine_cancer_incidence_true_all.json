@@ -91,11 +91,12 @@
                 "sample_size": "232 endometrial cancer cases and 639 controls",
                 "effect_size": "vitamin C (OR 0.5, 95% CI: 0.3-0.8)",
                 "effect_direction": "Risks were reduced for women in the highest quartiles of intake of ... vitamin C",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.006.",
                 "confidence_interval": "vitamin C (OR 0.5, 95% CI: 0.3-0.8)",
                 "outcome_definition": "risk of endometrial cancer among women",
                 "exposure_definition": "intake of ... vitamin C"
-            }
+            },
+            "P Value": 0.005601420919945472
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>McCann SE et al. (2000) [PMID: 11142531]</th>\n      <td>-0.6259</td>\n      <td>0.2326</td>\n      <td>-1.0818</td>\n      <td>-0.1701</td>\n      <td>232.0</td>\n      <td>871.0</td>\n    </tr>\n    <tr>\n      <th>Peng H et al. (2022) [PMID: 35402429]</th>\n      <td>0.2703</td>\n      <td>0.0835</td>\n      <td>0.1066</td>\n      <td>0.4339</td>\n      <td>12906.0</td>\n      <td>120885.0</td>\n    </tr>\n  </tbody>\n</table>",

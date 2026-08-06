@@ -149,11 +149,15 @@ def run_export(disease_key, disease_config):
 
             # Filter Cases >= 50 (standardised)
             cases_col = df['Cases'].fillna(df.get('Estimated Cases', np.nan)) if 'Cases' in df.columns else df.get('Estimated Cases', np.nan)
+            effect_types = df.get('Effect Type', pd.Series('', index=df.index)).fillna('').astype(str).str.strip().str.upper()
+            quality_scores = df.get('Quality Score', pd.Series('Fair', index=df.index)).fillna('Fair').astype(str).str.strip().str.lower()
             df_valid = df[
                 (df['Effect Size'] > 0) &
                 (df['Lower CI'] > 0) &
                 (df['Upper CI'] > 0) &
-                (cases_col >= 50)
+                (cases_col >= 50) &
+                effect_types.ne('PAF') &
+                quality_scores.isin({'good', 'moderate'})
             ].copy()
 
             if len(df_valid) == 0:

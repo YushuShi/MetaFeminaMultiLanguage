@@ -44,11 +44,12 @@
                 "sample_size": "35,329 cancer-free women",
                 "effect_size": "The multivariable RR of women who reported the use of multivitamins was 1.19 (95% CI: 1.04, 1.37).",
                 "effect_direction": "Multivitamin use was associated with a statistically significant increased risk of breast cancer.",
-                "p_value": "statistically significant",
+                "p_value": "statistically significant Computed from the reported effect and 95% CI using a normal approximation: p=0.013.",
                 "confidence_interval": "1.19 (95% CI: 1.04, 1.37)",
                 "outcome_definition": "incidence of invasive breast cancer",
                 "exposure_definition": "multivitamin use"
-            }
+            },
+            "P Value": 0.013349135890743297
         },
         {
             "Study": "Ishitani K et al. (2008) [PMID: 18344515]",
@@ -93,11 +94,12 @@
                 "sample_size": "At baseline (1992-1995), 37,920 US women aged > or =45 years and free of cancer provided detailed information on multivitamin supplement use.",
                 "effect_size": "the multivariable relative risks were 0.97 (95% confidence interval: 0.81, 1.16) for past users and 0.99 (95% confidence interval: 0.82, 1.19) for current users.",
                 "effect_direction": "Multivitamin use was not significantly associated with overall risk of breast cancer.",
-                "p_value": "not significantly associated",
+                "p_value": "not significantly associated Computed from the reported effect and 95% CI using a normal approximation: p=0.916.",
                 "confidence_interval": "0.99 (95% confidence interval: 0.82, 1.19)",
                 "outcome_definition": "1,171 cases of invasive breast cancer were documented.",
                 "exposure_definition": "multivitamin supplement use"
-            }
+            },
+            "P Value": 0.9157475406943929
         },
         {
             "Study": "Meulepas JM et al. (2010) [PMID: 19954572]",
@@ -141,11 +143,12 @@
                 "sample_size": "2968 incident breast cancer cases ... and 2982 control women",
                 "effect_size": "the OR for breast cancer was 1.02 (95 % CI 0.87, 1.19) for current users",
                 "effect_direction": "The current study found no association between multivitamin supplement use and breast cancer risk in women.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.804.",
                 "confidence_interval": "OR for breast cancer was 1.02 (95 % CI 0.87, 1.19)",
                 "outcome_definition": "incident breast cancer cases (aged 20-69 years), diagnosed between 2004 and 2007",
                 "exposure_definition": "ascertained supplement use prior to diagnosis"
-            }
+            },
+            "P Value": 0.8042606735715216
         },
         {
             "Study": "Neuhouser ML et al. (2009) [PMID: 19204221]",
@@ -190,11 +193,12 @@
                 "sample_size": "The study included 161 808 participants from the Women's Health Initiative clinical trials ... or an observational study.",
                 "effect_size": "hazard ratio [HR], 0.98, and 95% confidence interval [CI], 0.91-1.05 for breast cancer",
                 "effect_direction": "no association of multivitamin use with risk of cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.580.",
                 "confidence_interval": "hazard ratio [HR], 0.98, and 95% confidence interval [CI], 0.91-1.05 for breast cancer",
                 "outcome_definition": "We documented cancers of the breast (invasive), colon/rectum, endometrium, kidney, bladder, stomach, ovary, and lung",
                 "exposure_definition": "Detailed data were collected on multivitamin use at baseline and follow-up time points."
-            }
+            },
+            "P Value": 0.5799770726328315
         },
         {
             "Study": "Vergne Y et al. (2013) [PMID: 24817834]",
@@ -287,11 +291,12 @@
                 "sample_size": "A total of 88818 women who completed the dietary questionnaire section of the Nurses' Health Study in 1980.",
                 "effect_size": "for current users of supplements vs never users, RR, 0.74; 95% CI, 0.59-0.93",
                 "effect_direction": "Current use of multivitamin supplements ... was associated with lower breast cancer risk among women who consumed at least 15 g/d of alcohol",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.009.",
                 "confidence_interval": "RR, 0.74; 95% CI, 0.59-0.93",
                 "outcome_definition": "Incidence of invasive breast cancer by levels of folate and alcohol intake.",
                 "exposure_definition": "Current use of multivitamin supplements, the major source of folate"
-            }
+            },
+            "P Value": 0.009492652738317224
         },
         {
             "Study": "Sesso HD et al. (2022) [PMID: 35294969]",
@@ -338,11 +343,12 @@
                 "sample_size": "21,442 US adults (12,666 women aged \u226565 y and 8776 men aged \u226560 y)",
                 "effect_size": "no significant effect of a daily MVM on breast cancer (HR: 1.06; 95% CI: 0.79, 1.42)",
                 "effect_direction": "no significant effect of a daily MVM on breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.697.",
                 "confidence_interval": "HR: 1.06; 95% CI: 0.79, 1.42",
                 "outcome_definition": "no significant effect of a daily MVM on breast cancer",
                 "exposure_definition": "Participants were randomly assigned to daily MVM or placebo."
-            }
+            },
+            "P Value": 0.6968818170781494
         },
         {
             "Study": "Vishwakarma G et al. (2022) [PMID: 35901355]",

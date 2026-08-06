@@ -286,11 +286,12 @@
                 "sample_size": "A case-cohort sample of 6,008 women, including 3,011 incident cases",
                 "effect_size": "Adjusted HRs for the highest versus lowest quartiles of iron ... were 1.06 (0.90-1.25)",
                 "effect_direction": "does not support a strong association between elevated iron stores and breast cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.487.",
                 "confidence_interval": "1.06 (0.90-1.25)",
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "iron, ferritin, percent transferrin saturation, and their first principal component (PC)"
-            }
+            },
+            "P Value": 0.48685731605413385
         },
         {
             "Study": "Inoue-Choi M et al. (2016) [PMID: 26505173]",
@@ -383,11 +384,12 @@
                 "sample_size": "A total of 107 cases and 212 controls were available for analysis.",
                 "effect_size": "This translates to an RR of 1.64 comparing high and low values of the interquartile range among controls (58 and 13.2 ng/mL, respectively).",
                 "effect_direction": "The results support the hypothesis that elevated body iron stores increase the risk of breast cancer.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=8.228e-05.",
                 "confidence_interval": "relative risk (RR) of breast cancer for a 1 log unit increase in ferritin was 1.4 (95% confidence interval 1.1-1.8)",
                 "outcome_definition": "a nested case-control study of breast cancer was conducted in Japanese atomic bomb survivors",
                 "exposure_definition": "Stored serum samples ... were assayed for ferritin levels"
-            }
+            },
+            "P Value": 8.227706610434655e-05
         },
         {
             "Study": "Diallo A et al. (2016) [PMID: 27738321]",
@@ -481,11 +483,12 @@
                 "sample_size": "This cohort study included 140,747 Korean women screened for breast cancer from 2011 to 2020.",
                 "effect_size": "The adjusted HR for breast cancer in the highest versus lowest ferritin quartile was 0.76 (95% CI, 0.64-0.89) in premenopausal ... women.",
                 "effect_direction": "Serum ferritin levels were associated with decreased risk of breast cancer in premenopausal ... women.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.001.",
                 "confidence_interval": "0.76 (95% CI, 0.64-0.89)",
                 "outcome_definition": "Breast cancer incidence until December 2022 was tracked through the National Cancer Registry.",
                 "exposure_definition": "Iron-related markers, including serum ferritin, iron, total iron-binding capacity, and transferrin saturation, were measured."
-            }
+            },
+            "P Value": 0.0011046686120359146
         },
         {
             "Study": "De Troy J et al. (2025) [PMID: 39927294]",
@@ -530,11 +533,12 @@
                 "sample_size": "In total, 1113 patients were included",
                 "effect_size": "a serum iron increment of 10\u2009\u00b5g/dL led to a 6% increase in risk (HR\u2009=\u20091.06; 95% CI\u2009=\u2009[1.01-1.12])",
                 "effect_direction": "serum iron were significantly associated with an increased risk of breast cancer metastasis",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.027.",
                 "confidence_interval": "HR\u2009=\u20091.06; 95% CI\u2009=\u2009[1.01-1.12]",
                 "outcome_definition": "risk of developing metastatic disease",
                 "exposure_definition": "plasma iron levels at diagnosis of early-stage breast cancer"
-            }
+            },
+            "P Value": 0.027140120542068956
         },
         {
             "Study": "Al Khamees M et al. (2023) [PMID: 37223318]",
@@ -769,11 +773,12 @@
                 "sample_size": "a random subcohort (n\u2009=\u20092738)",
                 "effect_size": "hazard ratio (HR) of 0.67 [95% confidence interval: 0.49, 0.92] for women in the highest quartile compared to those in the lowest quartile",
                 "effect_direction": "Ferritin levels were inversely associated with breast cancer risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.013.",
                 "confidence_interval": "HR of 0.67 [95% confidence interval: 0.49, 0.92]",
                 "outcome_definition": "incident cases of breast cancer (n\u2009=\u2009627)",
                 "exposure_definition": "prediagnostic serum concentrations of ferritin, iron and transferrin as well as transferrin saturation (TSAT)"
-            }
+            },
+            "P Value": 0.01270310844367521
         },
         {
             "Study": "Chua AC et al. (2016) [PMID: 27488234]",
@@ -867,11 +872,12 @@
                 "sample_size": "A cohort of 309,443 adults in Taiwan",
                 "effect_size": "the breast (HR, 1.31; 95% CI, 1.01-1.70)",
                 "effect_direction": "high serum iron is ... a marker of increased risk for several cancers",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.042.",
                 "confidence_interval": "the breast (HR, 1.31; 95% CI, 1.01-1.70)",
                 "outcome_definition": "the breast ... significant cancer risks were observed for serum iron",
                 "exposure_definition": "serum iron levels tested at the time of recruitment"
-            }
+            },
+            "P Value": 0.04205870030662824
         },
         {
             "Study": "Lu Y et al. (2024) [PMID: 38965945]",
@@ -1013,11 +1019,12 @@
                 "sample_size": "a cohort of 62,641 US women",
                 "effect_size": "for iron, 0.89 (95% CI 0.56-1.40)",
                 "effect_direction": "these results do not provide evidence for an important effect of ... iron ... on breast cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.618.",
                 "confidence_interval": "for iron, 0.89 (95% CI 0.56-1.40)",
                 "outcome_definition": "433 cases of breast cancer identified during 4 years of follow-up",
                 "exposure_definition": "toenail levels of five trace elements"
-            }
+            },
+            "P Value": 0.6180996548006779
         },
         {
             "Study": "Gaur A et al. (2013) [PMID: 23649231]",
@@ -1062,11 +1069,12 @@
                 "sample_size": "n = 220,642",
                 "effect_size": "HR for standardized SI 1.09 (95% CI 1.02-1.15)",
                 "effect_direction": "No statistically significant association was found between SI and cancer risk except for postmenopausal breast cancer [HR for standardized SI 1.09 (95% CI 1.02-1.15)]",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.005.",
                 "confidence_interval": "HR for standardized SI 1.09 (95% CI 1.02-1.15)",
                 "outcome_definition": "Similar analyses were performed for specific cancers (pancreatic, colon, liver, respiratory, kidney, prostate, stomach, and breast cancer).",
                 "exposure_definition": "baseline measurements of serum SI, TIBC, and CRP"
-            }
+            },
+            "P Value": 0.004861161558046744
         },
         {
             "Study": "Kotsopoulos J et al. (2012) [PMID: 22576580]",
@@ -1204,12 +1212,13 @@
                 "sample_size": "We analyzed on 5,480 adult participants",
                 "effect_size": "breast, cervix, ovary and uterus (1.92: 1.11-3.35; 1.66: 1.02-2.69; respectively)",
                 "effect_direction": "elevated level of sTfR was associated with the prevalence of cancers, especially in sex-specific cancers",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.021.",
                 "confidence_interval": "breast, cervix, ovary and uterus (1.92: 1.11-3.35; 1.66: 1.02-2.69; respectively)",
                 "outcome_definition": "prevalence of cancers, especially in sex-specific cancers. ... breast, cervix, ovary and uterus",
                 "exposure_definition": "serum soluble transferrin receptor (sTfR), a promising marker representing unmet cellular iron demands"
             },
-            "exclusions": 2
+            "exclusions": 2,
+            "P Value": 0.020614667961501534
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Krusinska B et al. (2019) [PMID: 31540424]</th>\n      <td>-1.9988</td>\n      <td>0.9346</td>\n      <td>-3.8306</td>\n      <td>-0.1670</td>\n      <td>47.0</td>\n      <td>129.0</td>\n    </tr>\n    <tr>\n      <th>Rajizadeh A et al. (2017) [PMID: 29951415]</th>\n      <td>-1.5495</td>\n      <td>0.1039</td>\n      <td>-1.7532</td>\n      <td>-1.3458</td>\n      <td>26.0</td>\n      <td>55.0</td>\n    </tr>\n    <tr>\n      <th>Kotsopoulos J et al. (2012) [PMID: 22576580]</th>\n      <td>-0.7670</td>\n      <td>0.4174</td>\n      <td>-1.5850</td>\n      <td>0.0511</td>\n      <td>48.0</td>\n      <td>144.0</td>\n    </tr>\n    <tr>\n      <th>Liu KY et al. (2021) [PMID: 33618790]</th>\n      <td>-0.3842</td>\n      <td>0.1483</td>\n      <td>-0.6750</td>\n      <td>-0.0935</td>\n      <td>1591.0</td>\n      <td>3213.0</td>\n    </tr>\n    <tr>\n      <th>Quintana Pacheco DA et al. (2018) [PMID: 29574909]</th>\n      <td>-0.3779</td>\n      <td>0.1532</td>\n      <td>-0.6782</td>\n      <td>-0.0777</td>\n      <td>627.0</td>\n      <td>2738.0</td>\n    </tr>\n    <tr>\n      <th>Kim EY et al. (2025) [PMID: 40920348]</th>\n      <td>-0.2581</td>\n      <td>0.0798</td>\n      <td>-0.4144</td>\n      <td>-0.1017</td>\n      <td>1437.0</td>\n      <td>140747.0</td>\n    </tr>\n    <tr>\n      <th>Lu Y et al. (2024) [PMID: 38965945]</th>\n      <td>-0.2069</td>\n      <td>0.0898</td>\n      <td>-0.3828</td>\n      <td>-0.0310</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Garland M et al. (1996) [PMID: 8823061]</th>\n      <td>-0.1021</td>\n      <td>0.2058</td>\n      <td>-0.5055</td>\n      <td>0.3012</td>\n      <td>433.0</td>\n      <td>62641.0</td>\n    </tr>\n    <tr>\n      <th>Al Khamees M et al. (2023) [PMID: 37223318]</th>\n      <td>-0.0923</td>\n      <td>0.0270</td>\n      <td>-0.1452</td>\n      <td>-0.0393</td>\n      <td>-</td>\n      <td>357.0</td>\n    </tr>\n    <tr>\n      <th>Kabat GC et al. (2010) [PMID: 20962158]</th>\n      <td>0.0093</td>\n      <td>0.0588</td>\n      <td>-0.1060</td>\n      <td>0.1246</td>\n      <td>3396.0</td>\n      <td>116674.0</td>\n    </tr>\n    <tr>\n      <th>De Troy J et al. (2025) [PMID: 39927294]</th>\n      <td>0.0542</td>\n      <td>0.0245</td>\n      <td>0.0062</td>\n      <td>0.1021</td>\n      <td>111.0</td>\n      <td>1113.0</td>\n    </tr>\n    <tr>\n      <th>Von Holle A et al. (2021) [PMID: 33293341]</th>\n      <td>0.0542</td>\n      <td>0.0777</td>\n      <td>-0.0982</td>\n      <td>0.2066</td>\n      <td>3011.0</td>\n      <td>6008.0</td>\n    </tr>\n    <tr>\n      <th>Gaur A et al. (2013) [PMID: 23649231]</th>\n      <td>0.0801</td>\n      <td>0.0284</td>\n      <td>0.0245</td>\n      <td>0.1356</td>\n      <td>-</td>\n      <td>220642.0</td>\n    </tr>\n    <tr>\n      <th>Hou C et al. (2021) [PMID: 34229617]</th>\n      <td>0.1741</td>\n      <td>0.0607</td>\n      <td>0.0552</td>\n      <td>0.2931</td>\n      <td>122977.0</td>\n      <td>228951.0</td>\n    </tr>\n    <tr>\n      <th>Inoue-Choi M et al. (2016) [PMID: 26505173]</th>\n      <td>0.1914</td>\n      <td>0.0568</td>\n      <td>0.0800</td>\n      <td>0.3028</td>\n      <td>9305.0</td>\n      <td>193742.0</td>\n    </tr>\n    <tr>\n      <th>Ferrucci LM et al. (2009) [PMID: 19513076]</th>\n      <td>0.2062</td>\n      <td>0.0931</td>\n      <td>0.0236</td>\n      <td>0.3887</td>\n      <td>1205.0</td>\n      <td>52158.0</td>\n    </tr>\n    <tr>\n      <th>Wen CP et al. (2014) [PMID: 25228650]</th>\n      <td>0.2490</td>\n      <td>0.1210</td>\n      <td>0.0120</td>\n      <td>0.4861</td>\n      <td>-</td>\n      <td>309443.0</td>\n    </tr>\n    <tr>\n      <th>Kallianpur AR et al. (2008) [PMID: 17431764]</th>\n      <td>0.3370</td>\n      <td>0.0737</td>\n      <td>0.1926</td>\n      <td>0.4815</td>\n      <td>3452.0</td>\n      <td>6926.0</td>\n    </tr>\n    <tr>\n      <th>Cui Y et al. (2007) [PMID: 17684146]</th>\n      <td>0.3847</td>\n      <td>0.1794</td>\n      <td>0.0331</td>\n      <td>0.7363</td>\n      <td>252.0</td>\n      <td>9315.0</td>\n    </tr>\n    <tr>\n      <th>Stevens RG et al. (2011) [PMID: 21883693]</th>\n      <td>0.4947</td>\n      <td>0.1256</td>\n      <td>0.2485</td>\n      <td>0.7409</td>\n      <td>107.0</td>\n      <td>319.0</td>\n    </tr>\n    <tr>\n      <th>Diallo A et al. (2016) [PMID: 27738321]</th>\n      <td>0.4676</td>\n      <td>0.2206</td>\n      <td>0.0353</td>\n      <td>0.8999</td>\n      <td>188.0</td>\n      <td>4646.0</td>\n    </tr>\n    <tr>\n      <th>Chang VC et al. (2020) [PMID: 32022258]</th>\n      <td>0.4388</td>\n      <td>0.1534</td>\n      <td>0.1381</td>\n      <td>0.7396</td>\n      <td>3030.0</td>\n      <td>6432.0</td>\n    </tr>\n    <tr>\n      <th>Chua AC et al. (2016) [PMID: 27488234]</th>\n      <td>0.7992</td>\n      <td>0.3291</td>\n      <td>0.1542</td>\n      <td>1.4441</td>\n      <td>-</td>\n      <td>3392.0</td>\n    </tr>\n    <tr>\n      <th>Moore AB et al. (2009) [PMID: 19444907]</th>\n      <td>0.7748</td>\n      <td>0.3347</td>\n      <td>0.1187</td>\n      <td>1.4308</td>\n      <td>248.0</td>\n      <td>1634.0</td>\n    </tr>\n  </tbody>\n</table>",

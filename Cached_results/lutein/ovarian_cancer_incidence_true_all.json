@@ -44,11 +44,12 @@
                 "sample_size": "Among 521,911 women",
                 "effect_size": "0.98 (...) for a 2,500 microg/day increase in lutein/zeaxanthin intake",
                 "effect_direction": "The major carotenoids were not significantly associated with the risk of ovarian cancer.",
-                "p_value": "The major carotenoids were not significantly associated with the risk of ovarian cancer.",
+                "p_value": "The major carotenoids were not significantly associated with the risk of ovarian cancer. Computed from the reported effect and 95% CI using a normal approximation: p=0.386.",
                 "confidence_interval": "0.98 (0.94-1.03)",
                 "outcome_definition": "invasive epithelial ovarian cancer",
                 "exposure_definition": "lutein/zeaxanthin intake"
-            }
+            },
+            "P Value": 0.3864146540458739
         },
         {
             "Study": "Jeong NH et al. (2009) [PMID: 19266359]",
@@ -92,11 +93,12 @@
                 "sample_size": "Forty-five epithelial ovarian cancers and 135 age-matched controls.",
                 "effect_size": "OR 0.21",
                 "effect_direction": "had lower risk of ovarian cancer",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=4.869e-04.",
                 "confidence_interval": "95%CI 0.09-0.52",
                 "outcome_definition": "ovarian cancer risk",
                 "exposure_definition": "plasma concentrations of... zeaxanthin plus lutein"
-            }
+            },
+            "P Value": 0.0004869382845166542
         },
         {
             "Study": "Zhang M et al. (2007) [PMID: 17367574]",
@@ -140,11 +142,12 @@
                 "sample_size": "The cases were 254 patients with histologically confirmed epithelial ovarian cancer and 652 age-matched controls",
                 "effect_size": "the adjusted OR were ... 0.45",
                 "effect_direction": "a higher intake of carotenoids can reduce the risk",
-                "p_value": "statistically significant tests for trend",
+                "p_value": "statistically significant tests for trend Computed from the reported effect and 95% CI using a normal approximation: p=0.002.",
                 "confidence_interval": "95 % CI 0.27, 0.76",
                 "outcome_definition": "histologically confirmed epithelial ovarian cancer",
                 "exposure_definition": "intake of alpha-carotene, beta-carotene, beta-cryptoxanthin, lutein and zeaxanthin, and lycopene is inversely associated with ovarian cancer risk, a case-control study was conducted in China during 1999-2000. The cases were 254 patients with histologically confirmed epithelial ovarian cancer and 652 age-matched controls were randomly recruited during the same period. Habitual dietary intake and lifestyle were collected by face-to-face interview using a validated and reliable FFQ. The US Department of Agriculture nutrient composition database was used to calculate the intake of specific carotenoids."
-            }
+            },
+            "P Value": 0.0024896032936128775
         },
         {
             "Study": "Bidoli E et al. (2001) [PMID: 11822759]",
@@ -188,11 +191,12 @@
                 "sample_size": "Cases were 1,031 patients with histologically confirmed incident epithelial ovarian cancer. Controls were 2,411 subjects admitted for acute, non-neoplastic diseases",
                 "effect_size": "lutein/zeaxanthin (OR = 0.6)",
                 "effect_direction": "Inverse associations emerged for... lutein/zeaxanthin",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=2.040e-05.",
                 "confidence_interval": "95% CI: 0.5-0.8",
                 "outcome_definition": "histologically confirmed incident epithelial ovarian cancer",
                 "exposure_definition": "lutein/zeaxanthin ... for the highest vs. the lowest quintile of intake. Dietary habits were elicited using a validated food frequency questionnaire."
-            }
+            },
+            "P Value": 2.0399730329305457e-05
         },
         {
             "Study": "Bertone ER et al. (2001) [PMID: 11227928]",
@@ -236,11 +240,12 @@
                 "sample_size": "327 cases and 3129 controls were included in the analysis.",
                 "effect_size": "40% lower risk",
                 "effect_direction": "experienced a 40% lower risk of ovarian cancer",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.048.",
                 "confidence_interval": "95% CI = 0.36-0.99",
                 "outcome_definition": "incidence of ovarian cancer",
                 "exposure_definition": "dietary intake of lutein/zeaxanthin"
-            }
+            },
+            "P Value": 0.047762804002693476
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Jeong NH et al. (2009) [PMID: 19266359]</th>\n      <td>-1.4523</td>\n      <td>0.4318</td>\n      <td>-2.2985</td>\n      <td>-0.6060</td>\n      <td>45.0</td>\n      <td>180.0</td>\n    </tr>\n    <tr>\n      <th>Zhang M et al. (2007) [PMID: 17367574]</th>\n      <td>-0.7243</td>\n      <td>0.2467</td>\n      <td>-1.2078</td>\n      <td>-0.2409</td>\n      <td>254.0</td>\n      <td>906.0</td>\n    </tr>\n    <tr>\n      <th>Bidoli E et al. (2001) [PMID: 11822759]</th>\n      <td>-0.4574</td>\n      <td>0.1095</td>\n      <td>-0.6720</td>\n      <td>-0.2429</td>\n      <td>1031.0</td>\n      <td>3442.0</td>\n    </tr>\n    <tr>\n      <th>Bertone ER et al. (2001) [PMID: 11227928]</th>\n      <td>-0.4574</td>\n      <td>0.2362</td>\n      <td>-0.9204</td>\n      <td>0.0056</td>\n      <td>327.0</td>\n      <td>3456.0</td>\n    </tr>\n    <tr>\n      <th>Koushik A et al. (2006) [PMID: 16823847]</th>\n      <td>-0.0202</td>\n      <td>0.0233</td>\n      <td>-0.0659</td>\n      <td>0.0255</td>\n      <td>2012.0</td>\n      <td>521911.0</td>\n    </tr>\n  </tbody>\n</table>",

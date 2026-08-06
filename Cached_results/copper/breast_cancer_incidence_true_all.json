@@ -43,11 +43,12 @@
                 "sample_size": "First 496 breast cancer cases and matched controls",
                 "effect_size": "OR, 2.37",
                 "effect_direction": "breast cancer risk was higher",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.004.",
                 "confidence_interval": "95% CI, 1.32-4.25",
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "Cu/Zn ratio in plasma and urine"
-            }
+            },
+            "P Value": 0.0038180929456033677
         },
         {
             "Study": "Wang N et al. (2026) [PMID: 42213466]",
@@ -91,11 +92,12 @@
                 "sample_size": "We conducted a nested case-control study (226 matched pairs) within the Taizhou Longitudinal Study.",
                 "effect_size": "Higher plasma Cu was significantly associated with increased breast cancer risk (adjusted OR=1.29, 95% CI: 1.04-1.61).",
                 "effect_direction": "Higher plasma Cu was significantly associated with increased breast cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.022.",
                 "confidence_interval": "adjusted OR=1.29, 95% CI: 1.04-1.61",
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "Plasma levels of Cu and Zn were quantified"
-            }
+            },
+            "P Value": 0.022363632704271698
         },
         {
             "Study": "Garland M et al. (1996) [PMID: 8823061]",
@@ -139,11 +141,12 @@
                 "sample_size": "a cohort of 62,641 US women",
                 "effect_size": "for copper, 0.91 (95% CI 0.59-1.42)",
                 "effect_direction": "these results do not provide evidence for an important effect of ... copper ... on breast cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.674.",
                 "confidence_interval": "for copper, 0.91 (95% CI 0.59-1.42)",
                 "outcome_definition": "433 cases of breast cancer identified during 4 years of follow-up",
                 "exposure_definition": "toenail levels of five trace elements"
-            }
+            },
+            "P Value": 0.6738066830869192
         },
         {
             "Study": "Fern\u00e1ndez-Mart\u00ednez NF et al. (2024) [PMID: 38036124]",
@@ -236,11 +239,12 @@
                 "sample_size": "Three hundred ten consecutively recruited cases... matched... to 353 controls",
                 "effect_size": "copper (OR = 0.51, 95% CI = 0.31-1.03)",
                 "effect_direction": "high intake... displayed significant inverse risk associations",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.028.",
                 "confidence_interval": "copper (OR = 0.51, 95% CI = 0.31-1.03)",
                 "outcome_definition": "cases with primary breast cancer",
                 "exposure_definition": "high intake of... copper"
-            }
+            },
+            "P Value": 0.027932480344662607
         },
         {
             "Study": "Njale E et al. (2026) [PMID: 41604780]",
@@ -284,11 +288,12 @@
                 "sample_size": "100 breast cancer patients and 80 controls",
                 "effect_size": "the second quartile of Cu (OR = 10.83, 95\u202f% CI: 2.54-46.23)",
                 "effect_direction": "the second quartile of Cu ... was significantly associated with increased breast cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.001.",
                 "confidence_interval": "OR = 10.83, 95\u202f% CI: 2.54-46.23",
                 "outcome_definition": "risk of breast cancer",
                 "exposure_definition": "Urinary trace metals were determined"
-            }
+            },
+            "P Value": 0.0012881187548623423
         },
         {
             "Study": "Cao B et al. (2022) [PMID: 34671925]",

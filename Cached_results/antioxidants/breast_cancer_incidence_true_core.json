@@ -188,11 +188,12 @@
                 "sample_size": "Blood samples were collected from 153 breast cancer cases and 151 controls.",
                 "effect_size": "0.47 ... for total antioxidant status",
                 "effect_direction": "increased serum levels of ... total antioxidant status are associated with reductions in breast cancer risk.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.030.",
                 "confidence_interval": "0.47 (CI 0.24, 0.94) for total antioxidant status",
                 "outcome_definition": "risk of breast cancer",
                 "exposure_definition": "total antioxidant status by the Trolox-equivalent antioxidant assay"
-            }
+            },
+            "P Value": 0.030167261855852785
         },
         {
             "Study": "Pan SY et al. (2011) [PMID: 21864361]",
@@ -236,11 +237,12 @@
                 "sample_size": "The study population included 2,362 cases ... and 2,462 controls in Canada.",
                 "effect_size": "supplementation of 10 years or longer of ... zinc had multivariable-adjusted ORs (95% CIs) of ... 0.47 (0.28-0.78), respectively, for postmenopausal women.",
                 "effect_direction": "may protect women from developing breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.004.",
                 "confidence_interval": "0.47 (0.28-0.78)",
                 "outcome_definition": "cases with pathologically confirmed incident breast cancer",
                 "exposure_definition": "Intakes of antioxidants from diet and from supplementation ... collected by a self-reported questionnaire."
-            }
+            },
+            "P Value": 0.0038659438151838086
         },
         {
             "Study": "Luo J et al. (2010) [PMID: 19653095]",
@@ -284,11 +286,12 @@
                 "sample_size": "353 incident breast cancer cases and 701 individually matched controls",
                 "effect_size": "Urinary excretion of epicatechin was inversely associated with breast cancer risk [odds ratio (OR) and 95% confidence interval (CI) of 0.59 (0.39-0.88) for the intermediate tertile]",
                 "effect_direction": "Urinary excretion of epicatechin was inversely associated with breast cancer risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.011.",
                 "confidence_interval": "odds ratio (OR) and 95% confidence interval (CI) of 0.59 (0.39-0.88)",
                 "outcome_definition": "353 incident breast cancer cases",
                 "exposure_definition": "Liquid chromatography ... was used to measure tea polyphenols (epicatechin, epigallocatechin, and their metabolites) and flavonols"
-            }
+            },
+            "P Value": 0.011033497914234433
         },
         {
             "Study": "Pantavos A et al. (2015) [PMID: 25284450]",
@@ -333,11 +336,12 @@
                 "sample_size": "N\u2009=\u20093,209",
                 "effect_size": "HR: 0.68",
                 "effect_direction": "High dietary FRAP score was associated with a lower risk of breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.025.",
                 "confidence_interval": "95% confidence intervals (CI): 0.49, 0.96",
                 "outcome_definition": "Incident cases of breast cancer were confirmed through medical reports.",
                 "exposure_definition": "overall dietary antioxidant capacity, as assessed by dietary ferric reducing antioxidant potential (FRAP), and individual dietary antioxidant intake"
-            }
+            },
+            "P Value": 0.02458053081484341
         },
         {
             "Study": "Bakker MF et al. (2016) [PMID: 26791185]",
@@ -430,11 +434,12 @@
                 "sample_size": "The EPIC cohort includes 257,960 adult women from seven European countries.",
                 "effect_size": "HR<sub>Q5 vs. Q1</sub> = 1.02; 95% CI: 0.95-1.11",
                 "effect_direction": "No significant associations were found between total (poly)phenol intake and overall BC risk",
-                "p_value": "No significant associations were found",
+                "p_value": "No significant associations were found Computed from the reported effect and 95% CI using a normal approximation: p=0.618.",
                 "confidence_interval": "95% CI: 0.95-1.11",
                 "outcome_definition": "10,722 incident overall BC cases",
                 "exposure_definition": "intake of total (poly)phenols-and its classes and subclasses"
-            }
+            },
+            "P Value": 0.6179817209939016
         },
         {
             "Study": "Mariosa D et al. (2025) [PMID: 40797303]",
@@ -673,11 +678,12 @@
                 "sample_size": "The study included 442 newly diagnosed cases of BC and 442 hospitalized controls.",
                 "effect_size": "the antioxidants pattern displayed a protective effect (OR=0.44, 95 % CI 0.27-0.74)",
                 "effect_direction": "the antioxidants pattern displayed a protective effect",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.001.",
                 "confidence_interval": "OR=0.44, 95 % CI 0.27-0.74",
                 "outcome_definition": "442 newly diagnosed cases of BC",
                 "exposure_definition": "antioxidants pattern"
-            }
+            },
+            "P Value": 0.0014130139412006114
         },
         {
             "Study": "Sharhar S et al. (2008) [PMID: 18712988]",

@@ -44,11 +44,12 @@
                 "sample_size": "62,573 women aged 55-69 years",
                 "effect_size": "For retinol, a weak positive association was observed (RR highest/lowest quintile = 1.24, 95% CI 0.83-1.83)",
                 "effect_direction": "a weak positive association was observed",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.286.",
                 "confidence_interval": "95% CI 0.83-1.83",
                 "outcome_definition": "650 incident breast cancer cases were identified",
                 "exposure_definition": "intake of ... retinol"
-            }
+            },
+            "P Value": 0.28619017329867263
         },
         {
             "Study": "Maillard V et al. (2010) [PMID: 20039325]",
@@ -285,11 +286,12 @@
                 "sample_size": "The study included 1,954 women who developed breast cancer and 3,897 matched controls.",
                 "effect_size": "RR = 1.00",
                 "effect_direction": "Plasma retinol was not associated with breast cancer risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.000.",
                 "confidence_interval": "95% CI 0.80-1.25",
                 "outcome_definition": "breast cancer",
                 "exposure_definition": "Plasma retinol"
-            }
+            },
+            "P Value": 1.0
         },
         {
             "Study": "Bitsie KR et al. (2021) [PMID: 34494098]",
@@ -527,11 +529,12 @@
                 "sample_size": "3758 incident cancer cases ... and 2995 hospital controls",
                 "effect_size": "Both the lowest and highest intakes were associated with an increased cancer risk, with OR (95% CI) values 1.98 (1.57, 2.49) and 2.06 (1.66, 2.56), respectively.",
                 "effect_direction": "Both the lowest and highest intakes were associated with an increased cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=6.157e-11.",
                 "confidence_interval": "OR (95% CI) values 1.98 (1.57, 2.49) and 2.06 (1.66, 2.56)",
                 "outcome_definition": "cancers of the esophagus, stomach, breast, and rectum",
                 "exposure_definition": "Dietary vitamin A intake was assessed using a validated semi-quantitative food frequency questionnaire."
-            }
+            },
+            "P Value": 6.156908421712681e-11
         },
         {
             "Study": "Fernandez-Lazaro CI et al. (2021) [PMID: 33668391]",
@@ -624,11 +627,12 @@
                 "sample_size": "The case series consisted of 120 consecutive patients... The controls were 120 patients...",
                 "effect_size": "The odds ratio estimated for consumption of vitamin A equal to the value of the 90th centile versus consumption equal to the value of the 10th centile was 0.46",
                 "effect_direction": "Cases reported significantly less frequent consumption of vitamin A",
-                "p_value": "Cases reported significantly less frequent consumption of vitamin A",
+                "p_value": "Cases reported significantly less frequent consumption of vitamin A Computed from the reported effect and 95% CI using a normal approximation: p=0.008.",
                 "confidence_interval": "odds ratio... was 0.46 with 90% confidence limits 0.26-0.82",
                 "outcome_definition": "120 consecutive patients with histologically confirmed breast cancer",
                 "exposure_definition": "consumption of vitamin A"
-            }
+            },
+            "P Value": 0.008046218231007046
         },
         {
             "Study": "Zhang S et al. (1997) [PMID: 9280184]",
@@ -672,11 +676,12 @@
                 "sample_size": "Cases (n = 46)...control subjects (n = 63)",
                 "effect_size": "The multivariate-adjusted odds ratio comparing women above the median value of the control group for retinol with those below or equal to the median was 0.71",
                 "effect_direction": "We observed inverse associations between breast adipose concentrations of retinoids and carotenoids and risk of breast cancer",
-                "p_value": "NS",
+                "p_value": "NS Computed from the reported effect and 95% CI using a normal approximation: p=0.503.",
                 "confidence_interval": "0.71 (95% CI: 0.26, 1.93; NS)",
                 "outcome_definition": "Cases (n = 46) were women whose biopsies revealed invasive or in situ breast cancer",
                 "exposure_definition": "retinol concentration in breast adipose tissue"
-            }
+            },
+            "P Value": 0.5030218115337421
         },
         {
             "Study": "Ching S et al. (2002) [PMID: 11823595]",
@@ -720,11 +725,12 @@
                 "sample_size": "Blood samples were collected from 153 breast cancer cases and 151 controls.",
                 "effect_size": "0.53 (CI 0.28, 1.01) for retinol",
                 "effect_direction": "reductions in odds ratios for breast cancer risk comparing the highest with the lowest quartiles",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.052.",
                 "confidence_interval": "0.53 (CI 0.28, 1.01) for retinol",
                 "outcome_definition": "risk of breast cancer",
                 "exposure_definition": "Serum samples were analyzed for retinol ... by HPLC."
-            }
+            },
+            "P Value": 0.0523924062731236
         },
         {
             "Study": "Zhao H et al. (2022) [PMID: 35027466]",

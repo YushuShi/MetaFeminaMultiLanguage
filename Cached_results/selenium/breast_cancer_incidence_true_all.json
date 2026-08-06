@@ -43,11 +43,12 @@
                 "sample_size": "toenail clippings from 62,641 women in the Nurses' Health Study cohort",
                 "effect_size": "the relative risk for women in the highest quintile of selenium as compared with the lowest quintile was 1.10",
                 "effect_direction": "there was no trend across quintiles",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.678.",
                 "confidence_interval": "95% confidence interval, 0.70 to 1.72",
                 "outcome_definition": "434 cases of breast cancer were diagnosed among women who had submitted a set of toenail clippings",
                 "exposure_definition": "The selenium concentration in nails has been shown to reflect dietary intake of selenium."
-            }
+            },
+            "P Value": 0.6777093836497523
         },
         {
             "Study": "Cui Y et al. (2007) [PMID: 17684146]",
@@ -188,11 +189,12 @@
                 "sample_size": "Our study included 1,186 women with breast cancer and an equal number of controls.",
                 "effect_size": "the adjusted OR for breast cancer was 0.98 (0.75-1.26)",
                 "effect_direction": "it is unlikely that prediagnostic serum selenium is overall associated with breast cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.879.",
                 "confidence_interval": "0.98 (0.75-1.26)",
                 "outcome_definition": "breast cancer cases with controls using logistic regression yielding odds ratios (OR) with 95% confidence intervals",
                 "exposure_definition": "Selenium levels were analysed from stored serum samples."
-            }
+            },
+            "P Value": 0.8786731676414639
         },
         {
             "Study": "Bengtsson Y et al. (2021) [PMID: 33914217]",
@@ -285,11 +287,12 @@
                 "sample_size": "133 breast cancer cases and 238 population controls.",
                 "effect_size": "The multivariate adjusted odds ratios of breast cancer for subjects in the lowest quartile compared with the highest quartile were 1.6 (95% confidence interval (CI) 0.8-3.4) for dietary selenium",
                 "effect_direction": "Absolute and energy-adjusted selenium intake and selenium concentrations in plasma, erythrocytes, and toenails were similar in cases and controls.",
-                "p_value": "No statistically significant trend was observed in the odds ratios for any of the four indicators of selenium.",
+                "p_value": "No statistically significant trend was observed in the odds ratios for any of the four indicators of selenium. Computed from the reported effect and 95% CI using a normal approximation: p=0.203.",
                 "confidence_interval": "1.6 (95% confidence interval (CI) 0.8-3.4)",
                 "outcome_definition": "breast cancer cases",
                 "exposure_definition": "selenium, measured in the diet, plasma, erythrocytes, and toenails"
-            }
+            },
+            "P Value": 0.20291751831121121
         },
         {
             "Study": "M\u00e4nnist\u00f6 S et al. (2000) [PMID: 10694779]",
@@ -333,11 +336,12 @@
                 "sample_size": "289 pre- and postmenopausal breast cancer cases and 433 community controls",
                 "effect_size": "The odds ratio (OR) comparing the highest with the lowest quintiles of toenail selenium concentration was 1.1 (95% CI 0.4-3.2) in premenopausal women",
                 "effect_direction": "selenium seems not to be an important factor in the etiology of breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.857.",
                 "confidence_interval": "1.1 (95% CI 0.4-3.2)",
                 "outcome_definition": "the risk of breast cancer was examined",
                 "exposure_definition": "toenail selenium"
-            }
+            },
+            "P Value": 0.8574106487666727
         },
         {
             "Study": "Garland M et al. (1995) [PMID: 7707436]",
@@ -382,11 +386,12 @@
                 "sample_size": "62,641 participants with no history of cancer returned these clippings.",
                 "effect_size": "the RR comparing the highest with the lowest quintile was 1.24 (95% CI = 0.93-1.65)",
                 "effect_direction": "Toenail selenium levels were not inversely associated with cancer risk in this study.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.141.",
                 "confidence_interval": "1.24 (95% CI = 0.93-1.65)",
                 "outcome_definition": "data from 434 breast cancer case patients and their matched control subjects identified in parallel from this same cohort",
                 "exposure_definition": "selenium levels in toenails (previously shown to reflect selenium intake)"
-            }
+            },
+            "P Value": 0.1413643979574798
         },
         {
             "Study": "Suzana S et al. (2009) [PMID: 19352569]",
@@ -575,11 +580,12 @@
                 "sample_size": "enrolled 240 incident invasive breast cancer patients and 246 age-matched controls",
                 "effect_size": "women with the second tertile of selenium concentration had a significantly decreased risk of breast cancer as compared with those in the lowest tertile [OR (95% CI): 0.50 (0.30-0.81)]",
                 "effect_direction": "significantly decreased risk of breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.006.",
                 "confidence_interval": "0.50 (0.30-0.81)",
                 "outcome_definition": "incident invasive breast cancer patients",
                 "exposure_definition": "urinary concentrations of cadmium and selenium"
-            }
+            },
+            "P Value": 0.006226715963781132
         },
         {
             "Study": "Wang Y et al. (2025) [PMID: 40081383]",
@@ -669,11 +675,12 @@
                 "sample_size": "The case-control study included 1591 cases and 1622 age-frequency matched controls.",
                 "effect_size": "Se from red meat intake was linearly and positively associated with breast cancer risk, with adjusted odds ratio and 95% confidence interval of 1.36 (1.04-1.77)",
                 "effect_direction": "Se from red meat intake was linearly and positively associated with breast cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.023.",
                 "confidence_interval": "adjusted odds ratio and 95% confidence interval of 1.36 (1.04-1.77)",
                 "outcome_definition": "breast cancer risk in Chinese women",
                 "exposure_definition": "dietary Zn, Se intake ... Zn/Se from plants, Zn/Se from meat, Zn/Se from red meat, and Zn/Se from white meat"
-            }
+            },
+            "P Value": 0.02340829686538391
         },
         {
             "Study": "Ghadirian P et al. (2000) [PMID: 11059562]",
@@ -717,11 +724,12 @@
                 "sample_size": "a total of 501 cancer cases and 202 controls produced toenail samples",
                 "effect_size": "no association between toenail selenium and breast cancer (odds ratio [OR], 0.72; 95% confidence interval [CI], 0.4-1.31)",
                 "effect_direction": "no association between toenail selenium and breast cancer",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.278.",
                 "confidence_interval": "odds ratio [OR], 0.72; 95% confidence interval [CI], 0.4-1.31",
                 "outcome_definition": "case-control study of breast, colon, and prostate cancer",
                 "exposure_definition": "toenail samples for their selenium concentrations, which were determined by neutron activation analysis"
-            }
+            },
+            "P Value": 0.27770478034388063
         },
         {
             "Study": "Fernandez-Lazaro CI et al. (2021) [PMID: 33668391]",
@@ -862,11 +870,12 @@
                 "sample_size": "Another 69 female cases with controls from a breast cancer screening registry were included in sex-specific analyses.",
                 "effect_size": "Odds ratios for the third compared with the first tertile were ... 0.75 (95% CI: 0.53, 1.06) for Ery-Se",
                 "effect_direction": "No association was seen for reported fish consumption.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.104.",
                 "confidence_interval": "0.75 (95% CI: 0.53, 1.06) for Ery-Se",
                 "outcome_definition": "Another 69 female cases with controls from a breast cancer screening registry were included in sex-specific analyses.",
                 "exposure_definition": "erythrocyte concentrations of selenium (Ery-Se)"
-            }
+            },
+            "P Value": 0.10374835526730734
         },
         {
             "Study": "Zhang H et al. (2025) [PMID: 41327224]",
@@ -908,11 +917,12 @@
                 "sample_size": "We analyzed data from 2,939 female participants in the National Health and Nutrition Examination Survey (NHANES) 2013-2020.",
                 "effect_size": "non-significant associations for Cd (OR\u2009=\u20091.17, 95% CI\u2009=\u20090.98-1.39) and Se (OR\u2009=\u20091.07, 95% CI\u2009=\u20090.90-1.27)",
                 "effect_direction": "non-significant associations for Cd (OR\u2009=\u20091.17, 95% CI\u2009=\u20090.98-1.39) and Se (OR\u2009=\u20091.07, 95% CI\u2009=\u20090.90-1.27)",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.441.",
                 "confidence_interval": "Se (OR\u2009=\u20091.07, 95% CI\u2009=\u20090.90-1.27)",
                 "outcome_definition": "breast cancer (BC) risk",
                 "exposure_definition": "blood metals... selenium (Se)"
-            }
+            },
+            "P Value": 0.4412115480608529
         },
         {
             "Study": "Xue H et al. (2021) [PMID: 34447692]",

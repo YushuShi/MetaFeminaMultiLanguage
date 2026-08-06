@@ -43,11 +43,12 @@
                 "sample_size": "541 women with histologically confirmed EC and 541 women with an intact uterus and noncancer diagnoses",
                 "effect_size": "vitamin E (OR, 0.44; 95% CI, 0.27-0.70)",
                 "effect_direction": "significant inverse associations for women in the highest vs. lowest quartiles of intake of ... vitamin E",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=7.297e-04.",
                 "confidence_interval": "vitamin E (OR, 0.44; 95% CI, 0.27-0.70)",
                 "outcome_definition": "541 women with histologically confirmed EC",
                 "exposure_definition": "intakes of selected food groups and nutrients ... vitamin E"
-            }
+            },
+            "P Value": 0.0007296944874727871
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>541.0</td>\n      <td>1082.0</td>\n      <td>0.474547</td>\n      <td>0.29831</td>\n      <td>0.728408</td>\n    </tr>\n  </tbody>\n</table>",

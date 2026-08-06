@@ -43,11 +43,12 @@
                 "sample_size": "2,999 women with breast cancer and 3,370 healthy control women",
                 "effect_size": "Consumption of flaxseed was associated with a significant reduction in breast cancer risk (odds ratio (OR) = 0.82, 95 % confidence interval (CI) 0.69-0.97)",
                 "effect_direction": "Consumption of flaxseed was associated with a significant reduction in breast cancer risk",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.022.",
                 "confidence_interval": "odds ratio (OR) = 0.82, 95 % confidence interval (CI) 0.69-0.97",
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "intake of flaxseed-the richest source of dietary lignans (a class of phytoestrogens)"
-            }
+            },
+            "P Value": 0.022373763558088795
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>2999</td>\n      <td>6369</td>\n      <td>0.839648</td>\n      <td>0.718975</td>\n      <td>0.973798</td>\n    </tr>\n  </tbody>\n</table>",

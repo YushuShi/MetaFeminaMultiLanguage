@@ -44,11 +44,12 @@
                 "sample_size": "80,326 participants in the Nurses' Health Study who had no history of cancer other than nonmelanoma skin carcinoma",
                 "effect_size": "The multivariate relative risks (95% confidence intervals [CIs]) for ovarian carcinoma among women in the highest versus lowest quintile of intake were 1.01 (95% CI, 0.69-1.47) for vitamin C",
                 "effect_direction": "The authors observed no association between ovarian carcinoma risk and antioxidant vitamin consumption from foods, or foods and supplements together.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.959.",
                 "confidence_interval": "1.01 (95% CI, 0.69-1.47) for vitamin C",
                 "outcome_definition": "The authors confirmed 301 incident cases of invasive epithelial ovarian carcinoma during 16 years of dietary follow-up (1980-1996).",
                 "exposure_definition": "consumption of vitamins A, C, and E and specific carotenoids, as well as fruit and vegetable intake; Food frequency questionnaires were included in 1980, 1984, 1986, and 1990"
-            }
+            },
+            "P Value": 0.9588696795864822
         },
         {
             "Study": "Koushik A et al. (2015) [PMID: 26169298]",
@@ -93,11 +94,12 @@
                 "sample_size": "Among 501,857 women, 1,973 cases of ovarian cancer occurred over a median follow-up period of 7-16 years across studies.",
                 "effect_size": "The pooled multivariate RRs [95% confidence intervals (CIs)] for incremental increases in total intake of each vitamin were 1.01 (0.99-1.04) for vitamin C (400 mg/day)",
                 "effect_direction": "Dietary and total intakes of each vitamin were not significantly associated with ovarian cancer risk.",
-                "p_value": "not significantly associated",
+                "p_value": "not significantly associated Computed from the reported effect and 95% CI using a normal approximation: p=0.429.",
                 "confidence_interval": "1.01 (0.99-1.04) for vitamin C (400 mg/day)",
                 "outcome_definition": "invasive epithelial ovarian cancer",
                 "exposure_definition": "total (food and supplemental) vitamin intake; vitamin C (400 mg/day)"
-            }
+            },
+            "P Value": 0.42856631111358195
         },
         {
             "Study": "Zhang M et al. (2004) [PMID: 14751177]",
@@ -141,11 +143,12 @@
                 "sample_size": "Cases were 254 patients with histologically confirmed epithelial ovarian cancer. Controls were 652 women without neoplasm",
                 "effect_size": "For the highest versus the lowest quartile intakes of nutrients, the OR were...0.31 (95% CI 0.2-0.5) for vitamin C",
                 "effect_direction": "consumption of foods low in fat but high in fibre, carotene and vitamins appears to be protective against ovarian cancer",
-                "p_value": "with significant dose-response relationships",
+                "p_value": "with significant dose-response relationships Computed from the reported effect and 95% CI using a normal approximation: p=5.430e-07.",
                 "confidence_interval": "0.31 (95% CI 0.2-0.5) for vitamin C",
                 "outcome_definition": "254 patients with histologically confirmed epithelial ovarian cancer",
                 "exposure_definition": "For the highest versus the lowest quartile intakes of nutrients...vitamin C"
-            }
+            },
+            "P Value": 5.430032235327173e-07
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Zhang M et al. (2004) [PMID: 14751177]</th>\n      <td>-1.0772</td>\n      <td>0.2229</td>\n      <td>-1.5140</td>\n      <td>-0.6404</td>\n      <td>254.0</td>\n      <td>906.0</td>\n    </tr>\n    <tr>\n      <th>Fairfield KM et al. (2001) [PMID: 11745286]</th>\n      <td>0.0100</td>\n      <td>0.1929</td>\n      <td>-0.3682</td>\n      <td>0.3881</td>\n      <td>301.0</td>\n      <td>80326.0</td>\n    </tr>\n    <tr>\n      <th>Koushik A et al. (2015) [PMID: 26169298]</th>\n      <td>0.0100</td>\n      <td>0.0126</td>\n      <td>-0.0147</td>\n      <td>0.0346</td>\n      <td>1973.0</td>\n      <td>501857.0</td>\n    </tr>\n  </tbody>\n</table>",

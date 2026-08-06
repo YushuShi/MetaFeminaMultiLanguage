@@ -43,11 +43,12 @@
                 "sample_size": "554 women with epithelial ovarian cancer and 1554 randomly selected age-matched controls",
                 "effect_size": "yoghurt [OR = 1.65",
                 "effect_direction": "associated with a modest increased risk of ovarian cancer",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.001.",
                 "confidence_interval": "95% CI: 1.22-2.23",
                 "outcome_definition": "overall ovarian cancer and histological types of ovarian cancer",
                 "exposure_definition": "yoghurt [OR = 1.65; 95% CI: 1.22-2.23 per portion (250 ml)/day]"
-            }
+            },
+            "P Value": 0.001135357559113866
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>554</td>\n      <td>2108</td>\n      <td>1.521438</td>\n      <td>1.186078</td>\n      <td>1.92258</td>\n    </tr>\n  </tbody>\n</table>",

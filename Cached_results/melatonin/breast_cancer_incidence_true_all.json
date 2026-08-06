@@ -237,11 +237,12 @@
                 "sample_size": "147 women with invasive breast cancer and 291 matched control subjects",
                 "effect_size": "the relative risk (reported as the odds ratio [OR]) of invasive breast cancer for women in the highest quartile of urinary aMT6s compared with those in the lowest was 0.59",
                 "effect_direction": "higher melatonin levels, as measured in first morning urine, are associated with a lower risk of breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.037.",
                 "confidence_interval": "0.59 (95% confidence interval [CI] = 0.36 to 0.97)",
                 "outcome_definition": "invasive breast cancer",
                 "exposure_definition": "concentration of the major melatonin metabolite, 6-sulphatoxymelatonin (aMT6s), in the first morning urine"
-            }
+            },
+            "P Value": 0.036915268670789377
         },
         {
             "Study": "Travis RC et al. (2004) [PMID: 15026473]",
@@ -477,11 +478,12 @@
                 "sample_size": "248 incident breast cancer and 743 individually matched cohort controls",
                 "effect_size": "adjusted OR for highest versus lowest quartiles is 1.00",
                 "effect_direction": "Melatonin levels derived from randomly timed spot urine are unrelated to breast cancer.",
-                "p_value": "Breast cancer risk was not significantly associated",
+                "p_value": "Breast cancer risk was not significantly associated Computed from the reported effect and 95% CI using a normal approximation: p=1.000.",
                 "confidence_interval": "95% CI = 0.64-1.54",
                 "outcome_definition": "incident breast cancer",
                 "exposure_definition": "prediagnostic urinary aMT6s concentrations"
-            }
+            },
+            "P Value": 1.0
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Schernhammer ES et al. (2008) [PMID: 18544743]</th>\n      <td>-0.5209</td>\n      <td>0.2528</td>\n      <td>-1.0164</td>\n      <td>-0.0254</td>\n      <td>178.0</td>\n      <td>3966.0</td>\n    </tr>\n    <tr>\n      <th>Schernhammer ES et al. (2005) [PMID: 16030307]</th>\n      <td>-0.4729</td>\n      <td>0.2317</td>\n      <td>-0.9270</td>\n      <td>-0.0188</td>\n      <td>147.0</td>\n      <td>438.0</td>\n    </tr>\n    <tr>\n      <th>Schernhammer ES et al. (2009) [PMID: 19124483]</th>\n      <td>-0.4274</td>\n      <td>0.1957</td>\n      <td>-0.8109</td>\n      <td>-0.0439</td>\n      <td>357.0</td>\n      <td>18643.0</td>\n    </tr>\n    <tr>\n      <th>Devore EE et al. (2017) [PMID: 28151704]</th>\n      <td>-0.2485</td>\n      <td>0.1235</td>\n      <td>-0.4906</td>\n      <td>-0.0063</td>\n      <td>555.0</td>\n      <td>1354.0</td>\n    </tr>\n    <tr>\n      <th>Brown SB et al. (2015) [PMID: 25587174]</th>\n      <td>-0.0825</td>\n      <td>0.1555</td>\n      <td>-0.3873</td>\n      <td>0.2222</td>\n      <td>600.0</td>\n      <td>1386.0</td>\n    </tr>\n    <tr>\n      <th>Travis RC et al. (2004) [PMID: 15026473]</th>\n      <td>-0.0087</td>\n      <td>0.2378</td>\n      <td>-0.4748</td>\n      <td>0.4573</td>\n      <td>127.0</td>\n      <td>480.0</td>\n    </tr>\n    <tr>\n      <th>Wu AH et al. (2013) [PMID: 22644618]</th>\n      <td>0.0000</td>\n      <td>0.1945</td>\n      <td>-0.3811</td>\n      <td>0.3811</td>\n      <td>248.0</td>\n      <td>991.0</td>\n    </tr>\n    <tr>\n      <th>Sturgeon SR et al. (2014) [PMID: 24510738]</th>\n      <td>0.1912</td>\n      <td>0.2036</td>\n      <td>-0.2078</td>\n      <td>0.5902</td>\n      <td>258.0</td>\n      <td>773.0</td>\n    </tr>\n    <tr>\n      <th>Schernhammer ES et al. (2010) [PMID: 20200429]</th>\n      <td>0.3033</td>\n      <td>0.2264</td>\n      <td>-0.1404</td>\n      <td>0.7470</td>\n      <td>180.0</td>\n      <td>863.0</td>\n    </tr>\n  </tbody>\n</table>",

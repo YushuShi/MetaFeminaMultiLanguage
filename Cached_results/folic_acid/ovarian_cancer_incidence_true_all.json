@@ -93,11 +93,12 @@
                 "sample_size": "80,254 Nurses' Health Study participants",
                 "effect_size": "relative risk (RR) = 1.21",
                 "effect_direction": "no associations between total folate... and ovarian cancer risk.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.177.",
                 "confidence_interval": "95% confidence interval (CI): 0.92, 1.60",
                 "outcome_definition": "481 incident epithelial ovarian cancers",
                 "exposure_definition": "total folate (top quintile vs. bottom"
-            }
+            },
+            "P Value": 0.17692225077549903
         },
         {
             "Study": "Larsson SC et al. (2004) [PMID: 14996861]",
@@ -241,11 +242,12 @@
                 "sample_size": "Among 501,857 women",
                 "effect_size": "1.01 for folate",
                 "effect_direction": "not significantly associated with ovarian cancer risk",
-                "p_value": "not significantly associated",
+                "p_value": "not significantly associated Computed from the reported effect and 95% CI using a normal approximation: p=0.719.",
                 "confidence_interval": "95% confidence intervals (CIs)]... (0.96-1.07) for folate",
                 "outcome_definition": "invasive epithelial ovarian cancer",
                 "exposure_definition": "total intake of folate (250 mcg/day)"
-            }
+            },
+            "P Value": 0.7191762219800057
         },
         {
             "Study": "Kotsopoulos J et al. (2010) [PMID: 19585555]",
@@ -289,11 +291,12 @@
                 "sample_size": "152 ovarian cancers",
                 "effect_size": "OR = 0.62",
                 "effect_direction": "associated with decreased risk of developing ovarian cancer",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.032.",
                 "confidence_interval": "95%CI 0.40-0.96",
                 "outcome_definition": "developing ovarian cancer",
                 "exposure_definition": "Recent dietary folate intake > or = 300 microg/day compared to < 300 microg/day"
-            }
+            },
+            "P Value": 0.03231811488939166
         },
         {
             "Study": "Kelemen LE et al. (2005) [PMID: 16172227]",
@@ -337,11 +340,12 @@
                 "sample_size": "Cases (n = 148) ... those with tumor specimens (n = 108) were included in analyses. Outpatient controls (n = 148)",
                 "effect_size": "the RRs of multivitamin intake with [...] strong-expressing FRalpha tumors were 0.47",
                 "effect_direction": "RRs [...] were 0.30 [...] and 0.47",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.026.",
                 "confidence_interval": "(95% CI, 0.24-0.91)",
                 "outcome_definition": "epithelial ovarian cancer",
                 "exposure_definition": "multivitamin intake, a proxy for folic acid, and assessed whether the relation was modified by alcohol intake"
-            }
+            },
+            "P Value": 0.026375001652813975
         },
         {
             "Study": "Webb PM et al. (2011) [PMID: 21629268]",
@@ -433,11 +437,12 @@
                 "sample_size": "We included 570 cases/558 controls with and 5,171/7,559 without endometriosis.",
                 "effect_size": "OR, 1.37",
                 "effect_direction": "associated with an increased risk of ovarian cancer",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.043.",
                 "confidence_interval": "(1.01-1.86)",
                 "outcome_definition": "risk of ovarian cancer",
                 "exposure_definition": "folate intake (dietary, supplemental, and total)"
-            }
+            },
+            "P Value": 0.043282708656800596
         },
         {
             "Study": "Arthur RS et al. (2019) [PMID: 30955365]",
@@ -482,11 +487,12 @@
                 "sample_size": "among age-stratified subcohorts of 3,185 women who were randomly selected from a cohort of 73,909 participants.",
                 "effect_size": "HRq3 vs q1: 0.39",
                 "effect_direction": "relatively high dietary intake of folate intake was inversely associated with risk of ... ovarian cancers",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.010.",
                 "confidence_interval": "95% CI: 0.19-0.80",
                 "outcome_definition": "risk of ... ovarian cancers",
                 "exposure_definition": "dietary intake of ... folate"
-            }
+            },
+            "P Value": 0.010241440942936287
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Larsson SC et al. (2004) [PMID: 14996861]</th>\n      <td>-1.3471</td>\n      <td>0.4328</td>\n      <td>-2.1953</td>\n      <td>-0.4989</td>\n      <td>266.0</td>\n      <td>61084.0</td>\n    </tr>\n    <tr>\n      <th>Arthur RS et al. (2019) [PMID: 30955365]</th>\n      <td>-0.8998</td>\n      <td>0.3560</td>\n      <td>-1.5976</td>\n      <td>-0.2020</td>\n      <td>104.0</td>\n      <td>3185.0</td>\n    </tr>\n    <tr>\n      <th>Kelemen LE et al. (2005) [PMID: 16172227]</th>\n      <td>-0.7550</td>\n      <td>0.3400</td>\n      <td>-1.4214</td>\n      <td>-0.0886</td>\n      <td>108.0</td>\n      <td>256.0</td>\n    </tr>\n    <tr>\n      <th>Kotsopoulos J et al. (2010) [PMID: 19585555]</th>\n      <td>-0.4274</td>\n      <td>0.2039</td>\n      <td>-0.8271</td>\n      <td>-0.0276</td>\n      <td>152.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Navarro Silvera SA et al. (2006) [PMID: 17106331]</th>\n      <td>-0.2706</td>\n      <td>0.2800</td>\n      <td>-0.8193</td>\n      <td>0.2781</td>\n      <td>264.0</td>\n      <td>48766.0</td>\n    </tr>\n    <tr>\n      <th>Koushik A et al. (2015) [PMID: 26169298]</th>\n      <td>0.0100</td>\n      <td>0.0277</td>\n      <td>-0.0443</td>\n      <td>0.0642</td>\n      <td>1973.0</td>\n      <td>501857.0</td>\n    </tr>\n    <tr>\n      <th>Tworoger SS et al. (2006) [PMID: 16554344]</th>\n      <td>0.1906</td>\n      <td>0.1412</td>\n      <td>-0.0861</td>\n      <td>0.4673</td>\n      <td>481.0</td>\n      <td>80254.0</td>\n    </tr>\n    <tr>\n      <th>Gersekowski K et al. (2023) [PMID: 37220873]</th>\n      <td>0.2678</td>\n      <td>0.1291</td>\n      <td>0.0149</td>\n      <td>0.5208</td>\n      <td>5741.0</td>\n      <td>13858.0</td>\n    </tr>\n    <tr>\n      <th>Webb PM et al. (2011) [PMID: 21629268]</th>\n      <td>0.4148</td>\n      <td>0.1805</td>\n      <td>0.0611</td>\n      <td>0.7685</td>\n      <td>1363.0</td>\n      <td>2777.0</td>\n    </tr>\n  </tbody>\n</table>",

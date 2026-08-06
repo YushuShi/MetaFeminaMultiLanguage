@@ -92,12 +92,13 @@
                 "sample_size": "3101 cases and 3471 controls",
                 "effect_size": "adjusted OR: 0.76",
                 "effect_direction": "reduced risk of breast cancer",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.034.",
                 "confidence_interval": "95% CI: 0.59, 0.98",
                 "outcome_definition": "Breast cancer cases aged 25-74 y (diagnosed 2002-2003) were identified through the Ontario Cancer Registry.",
                 "exposure_definition": "Vitamin D supplement intake >10 microg/d (400 IU/d) compared with no intake"
             },
-            "exclusions": 2
+            "exclusions": 2,
+            "P Value": 0.03399927153267892
         },
         {
             "Study": "Rajizadeh A et al. (2017) [PMID: 29951415]",

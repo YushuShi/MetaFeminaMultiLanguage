@@ -44,11 +44,12 @@
                 "sample_size": "at-risk cohort of 25,170 women",
                 "effect_size": "The RRs of endometrial cancer associated with < 4.0 and \u2265 4.0 g of alcohol per day compared with abstainers were 0.7 (CI = 0.5-1.1) and 1.0 (CI = 0.7-1.6), respectively.",
                 "effect_direction": "These data do not support an association between alcohol and endometrial cancer among postmenopausal women.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.000.",
                 "confidence_interval": "CI = 0.7-1.6",
                 "outcome_definition": "167 incident endometrial cancer cases occurred",
                 "exposure_definition": "Information on alcohol consumption and other variables was obtained through a mailed questionnaire in January 1986."
-            }
+            },
+            "P Value": 1.0
         },
         {
             "Study": "Friberg E et al. (2009) [PMID: 19124521]",
@@ -93,11 +94,12 @@
                 "sample_size": "We used data from the prospective population-based Swedish Mammography Cohort including 61,226 women.",
                 "effect_size": "The multivariable rate ratios (95% confidence intervals) for the three upper categories of long-term alcohol consumption as compared with no consumption were 1.01 (0.84-1.22) for <3.4 g/d, 1.01 (0.80-1.27) for 3.4 to 9.9 g/d, and 1.09 (0.71-1.67) for >or=10 g/d, respectively.",
                 "effect_direction": "We found no association between alcohol consumption and endometrial cancer risk after adjustment for age, body mass index, and smoking.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.693.",
                 "confidence_interval": "1.09 (0.71-1.67)",
                 "outcome_definition": "During a mean follow-up of 17.6 years, 687 endometrial cancer cases were identified in the Swedish cancer registries.",
                 "exposure_definition": "Alcohol consumption was assessed with validated food frequency questionnaires at baseline 1987 to 1990 and at follow-up in 1997."
-            }
+            },
+            "P Value": 0.6928708748251654
         },
         {
             "Study": "Yang HP et al. (2011) [PMID: 20725997]",
@@ -241,11 +243,12 @@
                 "sample_size": "A self-administered questionnaire on dietary habits and other cancer risk factors was completed by 62,573 women.",
                 "effect_size": "The rate ratio (RR) for alcohol users versus non-users was 1.06 (95% Confidence Interval (95% CI)=0.78-1.43).",
                 "effect_direction": "There is no association between alcohol consumption and endometrial cancer.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.706.",
                 "confidence_interval": "95% Confidence Interval (95% CI)=0.78-1.43",
                 "outcome_definition": "Follow-up for cancer was established by record linkage to the Netherlands Cancer Registry.",
                 "exposure_definition": "A self-administered questionnaire on dietary habits and other cancer risk factors was completed by 62,573 women."
-            }
+            },
+            "P Value": 0.7062950830866443
         },
         {
             "Study": "Je Y et al. (2014) [PMID: 24853180]",
@@ -290,11 +293,12 @@
                 "sample_size": "68\u2009067 female participants aged 34-59 years in 1980.",
                 "effect_size": "We found an inverse association among alcohol drinkers (multivariable RR=0.81; 95% CI: 0.68-0.96) compared with nondrinkers.",
                 "effect_direction": "We found an inverse association among alcohol drinkers.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.017.",
                 "confidence_interval": "95% CI: 0.68-0.96",
                 "outcome_definition": "We identified a total of 794 invasive endometrial adenocarcinoma from 1980 to 2010.",
                 "exposure_definition": "Alcohol intake was measured several times with validated dietary questionnaires."
-            }
+            },
+            "P Value": 0.016602827740717696
         },
         {
             "Study": "Webster LA et al. (1989) [PMID: 2695474]",
@@ -338,11 +342,12 @@
                 "sample_size": "A total of 351 women with primary epithelial endometrial cancer and 2247 women selected from the same geographical areas as the cases were interviewed for the study.",
                 "effect_size": "Women who were non-drinkers had a risk of endometrial cancer of 1.83 relative to the risk of women who had consumed an average of 150 grams or more of alcohol per week.",
                 "effect_direction": "The increased risk associated with abstinence from alcohol consumption was particularly great in overweight women and was virtually absent in lean women.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.018.",
                 "confidence_interval": "95% Cl, 1.11, 3.01",
                 "outcome_definition": "Primary epithelial endometrial cancer.",
                 "exposure_definition": "Participants provided information regarding their alcohol consumption during the preceding five years."
-            }
+            },
+            "P Value": 0.017557147065390636
         },
         {
             "Study": "Newcomb PA et al. (1997) [PMID: 9332758]",
@@ -531,11 +536,12 @@
                 "sample_size": "the 3,093 women",
                 "effect_size": "RR = 2.0",
                 "effect_direction": "significantly increased risk of cervical cancer",
-                "p_value": "significantly increased risk",
+                "p_value": "significantly increased risk Computed from the reported effect and 95% CI using a normal approximation: p=0.003.",
                 "confidence_interval": "95% CI 1.2-3.0",
                 "outcome_definition": "cervical cancer",
                 "exposure_definition": "alcohol abusers"
-            }
+            },
+            "P Value": 0.0030232348462691135
         },
         {
             "Study": "Hosono S et al. (2008) [PMID: 18422741]",
@@ -722,11 +728,12 @@
                 "sample_size": "1,740 cases of breast cancer, 239 cases of cancer of the corpus uteri, 417 cases of ovarian cancer and 8,920 controls.",
                 "effect_size": "The age-adjusted relative risk (RR) of daily alcohol drinkers compared to non-drinkers was lowered insignificantly (RR = 0.44).",
                 "effect_direction": "The risk for cancer of the corpus uteri was lowered insignificantly.",
-                "p_value": "Despite the several limitations of the study, the results were consistent with those of previous studies.",
+                "p_value": "Despite the several limitations of the study, the results were consistent with those of previous studies. Computed from the reported effect and 95% CI using a normal approximation: p=0.147.",
                 "confidence_interval": "95% confidence interval (CI) 0.15-1.38.",
                 "outcome_definition": "Cancer of the corpus uteri.",
                 "exposure_definition": "Daily alcohol drinkers compared to non-drinkers."
-            }
+            },
+            "P Value": 0.14700842428024394
         },
         {
             "Study": "Larsson SC et al. (2025) [PMID: 41398582]",
@@ -866,11 +873,12 @@
                 "sample_size": "The prospective cohort analysis used 26 years of follow-up data from the Nurses' Health Study.",
                 "effect_size": "Alcohol consumption of <1 drink a day was significantly protective (hazard ratio: 0.80; 95% CI: 0.68, 0.94).",
                 "effect_direction": "Alcohol consumption of <1 drink a day was significantly protective.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.007.",
                 "confidence_interval": "95% CI: 0.68, 0.94",
                 "outcome_definition": "788 incident endometrial cancer events from 1980 to 2006.",
                 "exposure_definition": "Alcohol consumption of <1 drink a day."
-            }
+            },
+            "P Value": 0.006901983102242043
         },
         {
             "Study": "Wu MM et al. (2014) [PMID: 25115836]",
@@ -915,11 +923,12 @@
                 "sample_size": "Totally, 11,258 women, aged 30-65, were recruited into the Community-Based Cancer Screening Program (CBCSP) study during 1991-1993.",
                 "effect_size": "Multivariate analysis showed that alcohol intake (HR = 16.00, 95%\u200a = 4.83-53.00).",
                 "effect_direction": "Alcohol intake was associated with increased UCC risk.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=5.701e-06.",
                 "confidence_interval": "95%\u200a = 4.83-53.00",
                 "outcome_definition": "Newly-developed cancer cases were determined from data in the government's National Cancer Registry and Death Certification System.",
                 "exposure_definition": "Alcohol intake was assessed as part of risk covariates at recruitment."
-            }
+            },
+            "P Value": 5.701362990325907e-06
         },
         {
             "Study": "Zhang X et al. (2024) [PMID: 39427281]",
@@ -961,11 +970,12 @@
                 "sample_size": "This GWAS encompassed 12,906 EC patients and 108,979 healthy controls.",
                 "effect_size": "frequency of alcohol consumption (OR:1.23; 95% CI 1.04-1.45)",
                 "effect_direction": "Our study revealed the relationship among EC with ... frequency of alcohol consumption.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.015.",
                 "confidence_interval": "frequency of alcohol consumption (OR:1.23; 95% CI 1.04-1.45)",
                 "outcome_definition": "Endometrial carcinoma (EC) remain a malignancy with incompletely understood risk factors.",
                 "exposure_definition": "frequency of alcohol consumption"
-            }
+            },
+            "P Value": 0.014616580323458363
         },
         {
             "Study": "Zhu G et al. (2022) [PMID: 36501056]",

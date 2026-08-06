@@ -93,11 +93,12 @@
                 "sample_size": "white British participants of the UK Biobank (n\u00a0=\u00a0up to 255,196)",
                 "effect_size": "uterine cancer in pre-menopausal females (3.98, 1.48-10.7)",
                 "effect_direction": "greater risk of uterine cancer in pre-menopausal females",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.006.",
                 "confidence_interval": "3.98, 1.48-10.7",
                 "outcome_definition": "uterine cancer in pre-menopausal females",
                 "exposure_definition": "Milk consumption was proxied using a genetic variant (rs4988235) near the lactase gene (LCT) locus."
-            }
+            },
+            "P Value": 0.006197497282321578
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Ganmaa D et al. (2012) [PMID: 21717454]</th>\n      <td>0.3436</td>\n      <td>0.1717</td>\n      <td>0.0070</td>\n      <td>0.6802</td>\n      <td>-</td>\n      <td>68019.0</td>\n    </tr>\n    <tr>\n      <th>Lumsden AL et al. (2023) [PMID: 36473423]</th>\n      <td>1.0539</td>\n      <td>0.3120</td>\n      <td>0.4424</td>\n      <td>1.6653</td>\n      <td>-</td>\n      <td>255196.0</td>\n    </tr>\n  </tbody>\n</table>",

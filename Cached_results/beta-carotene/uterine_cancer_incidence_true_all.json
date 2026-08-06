@@ -43,11 +43,12 @@
                 "sample_size": "232 endometrial cancer cases and 639 controls",
                 "effect_size": "beta-carotene (OR 0.4, 95% CI: 0.2-0.6)",
                 "effect_direction": "Risks were reduced for women in the highest quartiles of intake of ... beta-carotene",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.001.",
                 "confidence_interval": "beta-carotene (OR 0.4, 95% CI: 0.2-0.6)",
                 "outcome_definition": "risk of endometrial cancer among women",
                 "exposure_definition": "Self-reported frequency of use of 172 foods and beverages"
-            }
+            },
+            "P Value": 0.0010775618280511033
         },
         {
             "Study": "Jeong NH et al. (2009) [PMID: 19235557]",
@@ -139,11 +140,12 @@
                 "sample_size": "541 women with histologically confirmed EC and 541 women with an intact uterus and noncancer diagnoses",
                 "effect_size": "beta-carotene (OR, 0.55; 95% CI, 0.37-0.82)",
                 "effect_direction": "significant inverse associations for women in the highest vs. lowest quartiles of intake of ... beta-carotene",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.003.",
                 "confidence_interval": "beta-carotene (OR, 0.55; 95% CI, 0.37-0.82)",
                 "outcome_definition": "541 women with histologically confirmed EC",
                 "exposure_definition": "intakes of selected food groups and nutrients ... beta-carotene"
-            }
+            },
+            "P Value": 0.0032310407281584495
         },
         {
             "Study": "Pelucchi C et al. (2008) [PMID: 18592384]",
@@ -187,11 +189,12 @@
                 "sample_size": "454 women with incident, histologically confirmed endometrial cancer and 908 controls",
                 "effect_size": "the ORs of endometrial cancer were 0.69 (95% CI, 0.48-0.99) for beta-carotene",
                 "effect_direction": "Our results support a favorable role of selected dietary carotenoids on endometrial cancer risk.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.045.",
                 "confidence_interval": "0.69 (95% CI, 0.48-0.99)",
                 "outcome_definition": "454 women with incident, histologically confirmed endometrial cancer",
                 "exposure_definition": "Intake of carotenoids and retinol was computed from a validated and reproducible food frequency questionnaire."
-            }
+            },
+            "P Value": 0.04450540003770198
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Jeong NH et al. (2009) [PMID: 19235557]</th>\n      <td>-1.9988</td>\n      <td>0.6908</td>\n      <td>-3.3526</td>\n      <td>-0.6449</td>\n      <td>28.0</td>\n      <td>168.0</td>\n    </tr>\n    <tr>\n      <th>McCann SE et al. (2000) [PMID: 11142531]</th>\n      <td>-0.8351</td>\n      <td>0.2659</td>\n      <td>-1.3562</td>\n      <td>-0.3140</td>\n      <td>232.0</td>\n      <td>871.0</td>\n    </tr>\n    <tr>\n      <th>Yeh M et al. (2009) [PMID: 19074206]</th>\n      <td>-0.5376</td>\n      <td>0.1873</td>\n      <td>-0.9046</td>\n      <td>-0.1705</td>\n      <td>541.0</td>\n      <td>1082.0</td>\n    </tr>\n    <tr>\n      <th>Pelucchi C et al. (2008) [PMID: 18592384]</th>\n      <td>-0.3299</td>\n      <td>0.1671</td>\n      <td>-0.6575</td>\n      <td>-0.0023</td>\n      <td>454.0</td>\n      <td>1362.0</td>\n    </tr>\n  </tbody>\n</table>",

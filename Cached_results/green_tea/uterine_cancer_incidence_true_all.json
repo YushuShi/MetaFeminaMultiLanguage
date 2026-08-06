@@ -139,11 +139,12 @@
                 "sample_size": "417 cases and 395 controls",
                 "effect_size": "adjusted OR for one or more cups/week vs. none: 0.75",
                 "effect_direction": "suggestion of a decreased risk associated with green tea",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.210.",
                 "confidence_interval": "95% CI: 0.48-1.18",
                 "outcome_definition": "endometrial cancer risk",
                 "exposure_definition": "green tea"
-            }
+            },
+            "P Value": 0.20993848910316087
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Kakuta Y et al. (2009) [PMID: 19067194]</th>\n      <td>-1.0175</td>\n      <td>0.3891</td>\n      <td>-1.7802</td>\n      <td>-0.2549</td>\n      <td>152.0</td>\n      <td>437.0</td>\n    </tr>\n    <tr>\n      <th>Bandera EV et al. (2010) [PMID: 20467800]</th>\n      <td>-0.2546</td>\n      <td>0.2057</td>\n      <td>-0.6578</td>\n      <td>0.1485</td>\n      <td>417.0</td>\n      <td>812.0</td>\n    </tr>\n    <tr>\n      <th>Gao J et al. (2005) [PMID: 16053753]</th>\n      <td>-0.2427</td>\n      <td>0.1053</td>\n      <td>-0.4491</td>\n      <td>-0.0364</td>\n      <td>995.0</td>\n      <td>2082.0</td>\n    </tr>\n  </tbody>\n</table>",

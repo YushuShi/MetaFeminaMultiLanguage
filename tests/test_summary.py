@@ -15,6 +15,59 @@ class SummaryPageTests(unittest.TestCase):
     def setUp(self):
         self.client = app.test_client()
 
+    def test_jbi_hover_uses_pointer_cursor(self):
+        root = Path(__file__).resolve().parents[1]
+        script = (root / 'static' / 'script.js').read_text()
+        style = (root / 'static' / 'style.css').read_text()
+
+        self.assertIn("qualityBadge.addEventListener('mouseenter', showTooltip)", script)
+        self.assertNotIn('cursor: help', script)
+        self.assertIn('cursor: pointer !important;', style)
+
+    def test_exclusion_flags_request_review_without_changing_results(self):
+        script = (Path(__file__).resolve().parents[1] / 'static' / 'script.js').read_text()
+        verification_data = {}
+        with (
+            patch('app.load_json', return_value=verification_data),
+            patch('app.save_json'),
+            patch('app.send_developer_notification', return_value=(True, None)) as notify,
+            patch('app.update_cache_from_verifications') as update_cache,
+        ):
+            first = self.client.post('/exclude', json={
+                'pmid': '123', 'disease': 'Breast cancer',
+                'exposure': 'Alcohol', 'outcome': 'Incidence',
+            })
+            second = self.client.post('/exclude', json={
+                'pmid': '123', 'disease': 'Breast cancer',
+                'exposure': 'Alcohol', 'outcome': 'Incidence',
+            })
+
+        self.assertFalse(first.get_json()['results_changed'])
+        self.assertFalse(second.get_json()['results_changed'])
+        self.assertEqual(second.get_json()['exclusions'], 2)
+        notify.assert_called_once()
+        update_cache.assert_not_called()
+        self.assertNotIn('isCrowdExcluded', script)
+        self.assertNotIn('automatically deselected', script)
+
+    def test_paf_is_never_sent_to_reanalysis(self):
+        studies = [
+            {'PMID': '1', 'Quality Score': 'Good', 'Effect Type': 'RR', 'Effect Size': 1.1, 'Lower CI': 1.0, 'Upper CI': 1.2},
+            {'PMID': '2', 'Quality Score': 'Good', 'Effect Type': 'PAF', 'Effect Size': 5.6, 'Lower CI': 1.9, 'Upper CI': 9.3},
+        ]
+        with patch('app.meta_analysis.perform_meta_analysis', return_value={'headline': {}}) as perform:
+            response = self.client.post('/reanalyze', json={'studies': studies})
+
+        self.assertEqual(response.status_code, 200)
+        analyzed = perform.call_args.args[0]
+        self.assertEqual(list(analyzed['PMID']), ['1'])
+
+    def test_p_value_is_computed_on_the_effect_measure_scale(self):
+        from meta_analysis import p_value_from_effect_ci
+
+        self.assertAlmostEqual(p_value_from_effect_ci(0.5, 0.2083, 1.25, 'OR'), 0.1294365, places=6)
+        self.assertIsNone(p_value_from_effect_ci(5.6, 1.9, 9.3, 'PAF'))
+
     def test_reanalysis_rejects_fair_studies_by_default(self):
         studies = [
             {'PMID': '1', 'Quality Score': 'Good', 'Effect Size': 1.1, 'Lower CI': 1.0, 'Upper CI': 1.2},

@@ -43,11 +43,12 @@
                 "sample_size": "Cases were 254 patients with histologically confirmed epithelial ovarian cancer. The 652 controls comprised 340 hospital visitors, 261 non-neoplastic hospital outpatients, and 51 women recruited from the community.",
                 "effect_size": "Compared with the highest versus the lowest quartile intake, the ORs were 0.50 (95% CI = 0.31-0.82) for total soy foods",
                 "effect_direction": "Intake of soy and isoflavones was inversely related to the risk of ovarian cancer.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.005.",
                 "confidence_interval": "95% CI = 0.31-0.82",
                 "outcome_definition": "Cases were 254 patients with histologically confirmed epithelial ovarian cancer.",
                 "exposure_definition": "Habitual dietary intakes including 9 soy foods were measured by face-to-face interview using a validated and reliable food-frequency questionnaire."
-            }
+            },
+            "P Value": 0.005217252903967198
         },
         {
             "Study": "Lee AH et al. (2014) [PMID: 24774066]",

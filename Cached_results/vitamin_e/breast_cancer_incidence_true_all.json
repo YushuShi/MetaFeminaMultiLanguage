@@ -143,11 +143,12 @@
                 "sample_size": "We prospectively studied 89,494 women who were 34 to 59 years old in 1980 and who did not have cancer.",
                 "effect_size": "for vitamin E, after vitamin A intake had been controlled for, the relative risk was 0.99 (95 percent confidence interval, 0.83 to 1.19).",
                 "effect_direction": "Large intakes of vitamin C or E did not protect women in our study from breast cancer.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.913.",
                 "confidence_interval": "95 percent confidence interval, 0.83 to 1.19",
                 "outcome_definition": "Breast cancer was diagnosed in 1439 women during eight years of follow-up.",
                 "exposure_definition": "Their intakes of vitamins C, E, and A from foods and supplements were assessed at base line and in 1984 with the use of a validated semiquantitative food-frequency questionnaire."
-            }
+            },
+            "P Value": 0.9129240468459504
         },
         {
             "Study": "Roswall N et al. (2010) [PMID: 20698054]",
@@ -192,11 +193,12 @@
                 "sample_size": "In a prospective cohort study of 26,224 postmenopausal women.",
                 "effect_size": "Dietary vitamin E was associated with decreased risk of ER and PGR positive breast cancer (IRR: 0.50).",
                 "effect_direction": "Dietary vitamin E was associated with decreased risk of ER and PGR positive breast cancer.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.047.",
                 "confidence_interval": "95% confidence interval (CI): 0.25-0.98.",
                 "outcome_definition": "Risk of postmenopausal breast cancer subtypes defined by histology (ductal/lobular), estrogen receptor (ER) and progesterone receptor (PGR) status.",
                 "exposure_definition": "Associations between vitamin C, vitamin E, folate and beta-carotene from diet and supplements."
-            }
+            },
+            "P Value": 0.046702766556461016
         },
         {
             "Study": "Maillard V et al. (2010) [PMID: 20039325]",
@@ -289,11 +291,12 @@
                 "sample_size": "During a median follow-up time of 8.8 years, 7,502 primary invasive breast cancer cases were identified.",
                 "effect_size": "dietary intake of beta-carotene, vitamin C and E was not associated with breast cancer risk in premenopausal [highest vs. lowest quintile: HR, 1.04 (95% CI, 0.85-1.27), 1.12 (0.92-1.36) and 1.11 (0.84-1.46), respectively]",
                 "effect_direction": "dietary intake of beta-carotene, vitamin C and E was not associated with breast cancer risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.459.",
                 "confidence_interval": "1.11 (0.84-1.46)",
                 "outcome_definition": "7,502 primary invasive breast cancer cases were identified.",
                 "exposure_definition": "dietary intake of beta-carotene, vitamin C and E"
-            }
+            },
+            "P Value": 0.4592705871227403
         },
         {
             "Study": "Dorjgochoo T et al. (2008) [PMID: 17917808]",
@@ -337,11 +340,12 @@
                 "sample_size": "The analyses included 3,454 incident breast cancer cases and 3,474 controls.",
                 "effect_size": "A 20% reduction in breast cancer risk was observed with vitamin E supplement use among women with low-dietary vitamin E intake (OR = 0.8; 95% confidence interval (CI), 0.6-1.0).",
                 "effect_direction": "A 20% reduction in breast cancer risk was observed with vitamin E supplement use among women with low-dietary vitamin E intake.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.087.",
                 "confidence_interval": "95% confidence interval (CI), 0.6-1.0",
                 "outcome_definition": "The analyses included 3,454 incident breast cancer cases.",
                 "exposure_definition": "Self-reported vitamin supplement use (multivitamin, A, B, C, and E)."
-            }
+            },
+            "P Value": 0.08682841469268901
         },
         {
             "Study": "Frazier AL et al. (2004) [PMID: 14970737]",
@@ -482,11 +486,12 @@
                 "sample_size": "319 cases and 344 controls",
                 "effect_size": "The odds ratio values for the highest quantiles are: plasma vitamin E, OR = 4.2 (1.9-9.0);",
                 "effect_direction": "A statistically significant higher serum level of cholesterol and plasma level of vitamin E was observed in cases compared to controls in both populations.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=2.982e-04.",
                 "confidence_interval": "OR = 4.2 (1.9-9.0)",
                 "outcome_definition": "Nutritional factors related to breast cancer were investigated by means of a hospital-based case-control study.",
                 "exposure_definition": "Plasma level of vitamin E was measured in blood samples taken from interviewed subjects."
-            }
+            },
+            "P Value": 0.0002982182507531115
         },
         {
             "Study": "Fernandez-Lazaro CI et al. (2021) [PMID: 33668391]",
@@ -579,11 +584,12 @@
                 "sample_size": "These parameters were measured in blood samples taken from 319 cases and 344 controls.",
                 "effect_size": "The odds ratio value for the highest quintile of plasma vitamin E is: 4.2 (1.9-9.0).",
                 "effect_direction": "A statistically significantly higher plasma level of vitamin E existed in cases compared to controls.",
-                "p_value": "No explicit p-value provided, but statistical significance is mentioned.",
+                "p_value": "No explicit p-value provided, but statistical significance is mentioned. Computed from the reported effect and 95% CI using a normal approximation: p=2.982e-04.",
                 "confidence_interval": "The odds ratio value for the highest quintile of plasma vitamin E is: 4.2 (1.9-9.0).",
                 "outcome_definition": "The relationship between breast cancer and liposoluble vitamins was investigated.",
                 "exposure_definition": "Plasma level of vitamin E was measured."
-            }
+            },
+            "P Value": 0.0002982182507531115
         },
         {
             "Study": "van 't Veer P et al. (1996) [PMID: 8781740]",
@@ -675,11 +681,12 @@
                 "sample_size": "Case patients (n=297) ... Control subjects (n=311)",
                 "effect_size": "alpha-tocopheral (OR=0.55",
                 "effect_direction": "reduction in risk associated with high intake of several nutrients.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.014.",
                 "confidence_interval": "95% CI=0.34-0.88",
                 "outcome_definition": "premenopausal breast cancer risk",
                 "exposure_definition": "intake of ... vitamins C and E, ... alpha-tocopheral"
-            }
+            },
+            "P Value": 0.013726900178143391
         },
         {
             "Study": "Sharhar S et al. (2008) [PMID: 18712988]",
@@ -819,11 +826,12 @@
                 "sample_size": "The analyses included 861 cases and 790 controls.",
                 "effect_size": "Modest inverse associations were observed among white women for use of vitamin E 95% CI: 0.49-1.13).",
                 "effect_direction": "Modest inverse associations were observed among white women for use of vitamin E.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.323.",
                 "confidence_interval": "95% CI: 0.49-1.13",
                 "outcome_definition": "We examined the association between self-reported vitamin supplement use and breast cancer.",
                 "exposure_definition": "The association between self-reported vitamin supplement use and breast cancer was examined."
-            }
+            },
+            "P Value": 0.32286802920622004
         },
         {
             "Study": "Pan SY et al. (2011) [PMID: 21864361]",
@@ -867,11 +875,12 @@
                 "sample_size": "The study population included 2,362 cases with pathologically confirmed incident breast cancer (866 premenopausal and 1,496 postmenopausal) and 2,462 controls in Canada.",
                 "effect_size": "Supplementation of 10 years or longer of multiple vitamin, beta-carotene, vitamin C, vitamin E and zinc had multivariable-adjusted ORs (95% CIs) of 0.75 (0.58, 0.97).",
                 "effect_direction": "This study suggests that supplementation of multiple vitamin, beta-carotene, vitamin C, vitamin E and zinc in postmenopausal women for 10 or more years may protect women from developing breast cancer.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.028.",
                 "confidence_interval": "0.75 (0.58, 0.97)",
                 "outcome_definition": "The study population included 2,362 cases with pathologically confirmed incident breast cancer.",
                 "exposure_definition": "Intakes of antioxidants from diet and from supplementation as well as other potential risk factors for breast cancer were collected by a self-reported questionnaire."
-            }
+            },
+            "P Value": 0.028318018501207003
         },
         {
             "Study": "Zhao H et al. (2023) [PMID: 37100890]",

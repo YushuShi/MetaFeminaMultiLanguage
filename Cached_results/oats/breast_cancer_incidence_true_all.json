@@ -44,11 +44,12 @@
                 "sample_size": "The study included 25,278 postmenopausal women",
                 "effect_size": "the adjusted incidence rate ratio (95% confidence interval) was 1.01 (0.96-1.07)",
                 "effect_direction": "A higher intake of whole grain products was not associated with a lower risk of breast cancer.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.719.",
                 "confidence_interval": "1.01 (0.96-1.07)",
                 "outcome_definition": "risk of breast cancer",
                 "exposure_definition": "Intake of rye bread, oatmeal and whole grain bread"
-            }
+            },
+            "P Value": 0.7191762219800057
         },
         {
             "Study": "Haraldsdottir A et al. (2018) [PMID: 29847592]",
@@ -93,11 +94,12 @@
                 "sample_size": "3,326 women with a mean age of 77 years (SD 6.0) participated.",
                 "effect_size": "persistent high consumption of oatmeal was negatively associated with breast cancer (0.4, 95% CI 0.2-0.9)",
                 "effect_direction": "persistent high consumption of oatmeal was negatively associated with breast cancer",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.017.",
                 "confidence_interval": "0.4, 95% CI 0.2-0.9",
                 "outcome_definition": "97 women were diagnosed with breast cancer",
                 "exposure_definition": "persistent high consumption of oatmeal"
-            }
+            },
+            "P Value": 0.016936577390460263
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Haraldsdottir A et al. (2018) [PMID: 29847592]</th>\n      <td>-0.8752</td>\n      <td>0.3714</td>\n      <td>-1.6032</td>\n      <td>-0.1472</td>\n      <td>97.0</td>\n      <td>3326.0</td>\n    </tr>\n    <tr>\n      <th>Egeberg R et al. (2009) [PMID: 19004010]</th>\n      <td>0.0093</td>\n      <td>0.0258</td>\n      <td>-0.0412</td>\n      <td>0.0598</td>\n      <td>978.0</td>\n      <td>25278.0</td>\n    </tr>\n  </tbody>\n</table>",

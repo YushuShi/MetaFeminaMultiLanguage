@@ -93,11 +93,12 @@
                 "sample_size": "The analysis included 529 638 women.",
                 "effect_size": "pooled multivariate RR=1.12",
                 "effect_direction": "no associations were observed for intakes of total alcohol.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.389.",
                 "confidence_interval": "95% CI 0.86-1.44",
                 "outcome_definition": "2001 incident epithelial ovarian cases were documented.",
                 "exposure_definition": "intakes of total alcohol (pooled multivariate RR=1.12, 95% CI 0.86-1.44 comparing > or =30 to 0 g day(-1) of alcohol)."
-            }
+            },
+            "P Value": 0.38877639629206784
         },
         {
             "Study": "Schouten LJ et al. (2004) [PMID: 15017133]",
@@ -142,11 +143,12 @@
                 "sample_size": "62,573 postmenopausal women.",
                 "effect_size": "The RRs of ovarian cancer for women who consumed >15 g of alcohol per day were 0.92.",
                 "effect_direction": "These data do not suggest a major association between alcohol intake and ovarian cancer risk.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.751.",
                 "confidence_interval": "95% CI = 0.55-1.54",
                 "outcome_definition": "214 incident invasive epithelial ovarian cancer cases.",
                 "exposure_definition": "Alcohol consumption in the form of wine, beer or liquor."
-            }
+            },
+            "P Value": 0.750899798126131
         },
         {
             "Study": "Kelemen LE et al. (2004) [PMID: 15801492]",
@@ -240,11 +242,12 @@
                 "sample_size": "",
                 "effect_size": "The multivariable-adjusted hazard ratios (HR) for a one standard drink/day increase was 1.00 (0.92, 1.08) for EOC.",
                 "effect_direction": "Our data provide additional evidence that alcohol intake is unlikely to have anything other than a very small effect on risk of EOC.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.000.",
                 "confidence_interval": "1.00 (0.92, 1.08)",
                 "outcome_definition": "The association with epithelial ovarian cancer (EOC) is unclear.",
                 "exposure_definition": "Alcohol consumption was measured as a one standard drink/day increase."
-            }
+            },
+            "P Value": 1.0
         },
         {
             "Study": "Gwinn ML et al. (1986) [PMID: 3962959]",
@@ -288,11 +291,12 @@
                 "sample_size": "433 women with ovarian cancer and 2,915 women selected at random from the same geographic areas.",
                 "effect_size": "Women who drank more than about 20 drinks per week had a relative risk of ovarian cancer of 0.5.",
                 "effect_direction": "Women who drank more than about 20 drinks per week had a relative risk of ovarian cancer of 0.5.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.071.",
                 "confidence_interval": "95% CI = 0.2-0.9",
                 "outcome_definition": "433 women 20-54 years of age with newly diagnosed ovarian cancer.",
                 "exposure_definition": "Women were asked about their consumption of alcoholic beverages during the previous five years."
-            }
+            },
+            "P Value": 0.07083808170705697
         },
         {
             "Study": "La Vecchia C et al. (1992) [PMID: 1432017]",
@@ -336,11 +340,12 @@
                 "sample_size": "801 histologically confirmed epithelial ovarian cancers and 2114 controls.",
                 "effect_size": "The multivariate relative risks (RRs) were 1.3 (95% CI 0.9 to 1.8) for three or more drinks per day.",
                 "effect_direction": "A significant direct trend in risk with dose emerged.",
-                "p_value": "A significant direct trend in risk with dose emerged.",
+                "p_value": "A significant direct trend in risk with dose emerged. Computed from the reported effect and 95% CI using a normal approximation: p=0.138.",
                 "confidence_interval": "95% CI 0.9 to 1.8",
                 "outcome_definition": "Histologically confirmed epithelial ovarian cancers.",
                 "exposure_definition": "Alcohol consumption, primarily wine, measured in drinks per day."
-            }
+            },
+            "P Value": 0.1378711259299657
         },
         {
             "Study": "Peterson NB et al. (2006) [PMID: 16921486]",
@@ -432,12 +437,13 @@
                 "sample_size": "Cases (n = 148)... Outpatient controls (n = 148)",
                 "effect_size": "For alcohol, the associations were ... 1.65",
                 "effect_direction": "1.65",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.259.",
                 "confidence_interval": "(95% CI, 0.69-3.93)",
                 "outcome_definition": "epithelial ovarian cancer",
                 "exposure_definition": "weekly alcohol (> or = 5 drinks) intakes"
             },
-            "exclusions": 0
+            "exclusions": 0,
+            "P Value": 0.259161184546498
         },
         {
             "Study": "Webb PM et al. (2004) [PMID: 15066924]",
@@ -481,11 +487,12 @@
                 "sample_size": "696 Australian women with histologically confirmed epithelial ovarian cancer and 786 cancer-free control women.",
                 "effect_size": "Compared with nondrinkers, the OR for women who drank an average of > or =2 standard drinks/day was 0.49.",
                 "effect_direction": "These data suggest that alcohol does not increase risk of ovarian cancer.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.005.",
                 "confidence_interval": "95% CI = 0.30-0.81",
                 "outcome_definition": "696 Australian women with histologically confirmed epithelial ovarian cancer.",
                 "exposure_definition": "Information about diet and alcohol consumption was obtained from a food frequency questionnaire."
-            }
+            },
+            "P Value": 0.004872716245022842
         },
         {
             "Study": "Modugno F et al. (2003) [PMID: 14662224]",
@@ -529,11 +536,12 @@
                 "sample_size": "761 incident cases of epithelial ovarian cancer with 1352 community controls.",
                 "effect_size": "Current heavy alcohol consumption (24 g or more per day) was associated with mucinous (OR 1.93; 95% CI 1.02, 3.65).",
                 "effect_direction": "Current heavy alcohol consumption might be a risk factor for mucinous epithelial ovarian cancer.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.043.",
                 "confidence_interval": "OR 1.93; 95% CI 1.02, 3.65",
                 "outcome_definition": "Epithelial ovarian cancer according to tumor histology.",
                 "exposure_definition": "Total alcohol consumption and consumption of beer, wine, and spirits."
-            }
+            },
+            "P Value": 0.043210315972492565
         },
         {
             "Study": "Tavani A et al. (2001) [PMID: 11588899]",
@@ -577,11 +585,12 @@
                 "sample_size": "Cases were 1,031 women, aged 18-79 years, and controls were 2,411 women, aged 17-79 years.",
                 "effect_size": "OR = 1.09, 95% CI = 0.76-1.57 in drinkers of > or = 36 g/day compared with never drinkers.",
                 "effect_direction": "Total alcohol intake was not associated with ovarian cancer risk.",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.641.",
                 "confidence_interval": "95% CI = 0.76-1.57",
                 "outcome_definition": "Incident, histologically confirmed invasive epithelial ovarian cancer.",
                 "exposure_definition": "Total alcohol intake was measured in drinkers of > or = 36 g/day compared with never drinkers."
-            }
+            },
+            "P Value": 0.6414841150108426
         },
         {
             "Study": "Zhu J et al. (2020) [PMID: 32585585]",
@@ -815,11 +824,12 @@
                 "sample_size": "In a population-based case-control study of 495 cases and 902 controls, conducted in Montreal, Canada.",
                 "effect_size": "For each one drink/week increment in average alcohol intake over the lifetime, the adjusted OR (95% CI) was 1.06 (1.01-1.10) for ovarian cancer overall.",
                 "effect_direction": "Our results support the hypothesis that a higher alcohol intake modestly increases the risk of overall ovarian cancer.",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.007.",
                 "confidence_interval": "1.06 (1.01-1.10)",
                 "outcome_definition": "To investigate the association between alcohol intake over the lifetime and the risk of overall, borderline, and invasive ovarian cancer.",
                 "exposure_definition": "Average alcohol intake over the lifetime and during specific age periods were computed from a detailed assessment of the intake of beer, red wine, white wine and spirits."
-            }
+            },
+            "P Value": 0.007452966026477461
         },
         {
             "Study": "Kato I et al. (1989) [PMID: 2810820]",
@@ -863,11 +873,12 @@
                 "sample_size": "1,740 cases of breast cancer, 239 cases of cancer of the corpus uteri, 417 cases of ovarian cancer and 8,920 controls.",
                 "effect_size": "The age-adjusted relative risk (RR) of daily alcohol drinkers compared to non-drinkers ... for ovarian cancer was significantly lowered (RR = 0.38).",
                 "effect_direction": "The relative risk for ovarian cancer was significantly lowered.",
-                "p_value": "The abstract does not explicitly mention a p-value but states the result was 'significantly lowered'.",
+                "p_value": "The abstract does not explicitly mention a p-value but states the result was 'significantly lowered'. Computed from the reported effect and 95% CI using a normal approximation: p=0.028.",
                 "confidence_interval": "95% confidence interval (CI) 0.16-0.90.",
                 "outcome_definition": "Cancers of the breast, corpus uteri, and ovary were investigated.",
                 "exposure_definition": "The relations between alcohol consumption and cancers ... were investigated."
-            }
+            },
+            "P Value": 0.02809392505797618
         },
         {
             "Study": "Larsson SC et al. (2004) [PMID: 14996861]",
@@ -1104,11 +1115,12 @@
                 "sample_size": "As a result of matching, 531 cases and 2,124 controls were selected.",
                 "effect_size": "Alcohol consumption had positive association with mucinous type (MUC) (OR = 3.63, 95% CI = 1.39-9.49).",
                 "effect_direction": "Alcohol consumption had positive association with mucinous type (MUC).",
-                "p_value": "",
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.009.",
                 "confidence_interval": "95% CI = 1.39-9.49",
                 "outcome_definition": "This study aimed to verify the association between ovarian cancer (OC) and reproductive- and lifestyle-related risk factors stratified by the subtype of OC.",
                 "exposure_definition": "Alcohol consumption had positive association with mucinous type (MUC)."
-            }
+            },
+            "P Value": 0.008515850989774535
         },
         {
             "Study": "Trentham-Dietz A et al. (2007) [PMID: 17186360]",
@@ -1153,12 +1165,13 @@
                 "sample_size": "Among the 10,953 breast cancer cases",
                 "effect_size": "55% reduction in ovarian cancer risk",
                 "effect_direction": "55% reduction in ovarian cancer risk",
-                "p_value": null,
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.052.",
                 "confidence_interval": "(95% CI: 0.2-1.0)",
                 "outcome_definition": "second ovarian cancer",
                 "exposure_definition": "recent alcohol intake",
                 "family_history_interaction": "Risk of second ovarian cancer appeared related to recent alcohol intake and family history of breast cancer."
-            }
+            },
+            "P Value": 0.05179042782728565
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Larsson SC et al. (2004) [PMID: 14996861]</th>\n      <td>-1.3471</td>\n      <td>0.4328</td>\n      <td>-2.1953</td>\n      <td>-0.4989</td>\n      <td>266.0</td>\n      <td>61084.0</td>\n    </tr>\n    <tr>\n      <th>Kato I et al. (1989) [PMID: 2810820]</th>\n      <td>-0.9676</td>\n      <td>0.4406</td>\n      <td>-1.8312</td>\n      <td>-0.1040</td>\n      <td>417.0</td>\n      <td>10679.0</td>\n    </tr>\n    <tr>\n      <th>Trentham-Dietz A et al. (2007) [PMID: 17186360]</th>\n      <td>-0.7609</td>\n      <td>0.3966</td>\n      <td>-1.5381</td>\n      <td>0.0164</td>\n      <td>36.0</td>\n      <td>10953.0</td>\n    </tr>\n    <tr>\n      <th>Webb PM et al. (2004) [PMID: 15066924]</th>\n      <td>-0.6447</td>\n      <td>0.2354</td>\n      <td>-1.1062</td>\n      <td>-0.1833</td>\n      <td>696.0</td>\n      <td>1482.0</td>\n    </tr>\n    <tr>\n      <th>Gwinn ML et al. (1986) [PMID: 3962959]</th>\n      <td>-0.6931</td>\n      <td>0.3837</td>\n      <td>-1.4452</td>\n      <td>0.0589</td>\n      <td>433.0</td>\n      <td>3348.0</td>\n    </tr>\n    <tr>\n      <th>Kelemen LE et al. (2004) [PMID: 15801492]</th>\n      <td>-0.5447</td>\n      <td>0.3338</td>\n      <td>-1.1989</td>\n      <td>0.1094</td>\n      <td>147.0</td>\n      <td>27205.0</td>\n    </tr>\n    <tr>\n      <th>Kolahdooz F et al. (2009) [PMID: 19056595]</th>\n      <td>-0.4729</td>\n      <td>0.1511</td>\n      <td>-0.7690</td>\n      <td>-0.1768</td>\n      <td>683.0</td>\n      <td>1460.0</td>\n    </tr>\n    <tr>\n      <th>Cook LS et al. (2016) [PMID: 26691218]</th>\n      <td>-0.3566</td>\n      <td>0.1311</td>\n      <td>-0.6135</td>\n      <td>-0.0997</td>\n      <td>1144.0</td>\n      <td>3657.0</td>\n    </tr>\n    <tr>\n      <th>Goodman MT et al. (2003) [PMID: 12798528]</th>\n      <td>-0.3299</td>\n      <td>0.1506</td>\n      <td>-0.6251</td>\n      <td>-0.0348</td>\n      <td>558.0</td>\n      <td>1165.0</td>\n    </tr>\n    <tr>\n      <th>Zhu J et al. (2020) [PMID: 32585585]</th>\n      <td>-0.1640</td>\n      <td>0.0708</td>\n      <td>-0.3027</td>\n      <td>-0.0252</td>\n      <td>25509.0</td>\n      <td>1500000.0</td>\n    </tr>\n    <tr>\n      <th>Schouten LJ et al. (2004) [PMID: 15017133]</th>\n      <td>-0.0834</td>\n      <td>0.2627</td>\n      <td>-0.5982</td>\n      <td>0.4314</td>\n      <td>214.0</td>\n      <td>62573.0</td>\n    </tr>\n    <tr>\n      <th>Kelemen LE et al. (2013) [PMID: 23339562]</th>\n      <td>-0.0729</td>\n      <td>0.0829</td>\n      <td>-0.2355</td>\n      <td>0.0896</td>\n      <td>5342.0</td>\n      <td>17155.0</td>\n    </tr>\n    <tr>\n      <th>Ong JS et al. (2021) [PMID: 32976626]</th>\n      <td>0.0000</td>\n      <td>0.0381</td>\n      <td>-0.0747</td>\n      <td>0.0747</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>L'Esp\u00e9rance K et al. (2023) [PMID: 36933150]</th>\n      <td>0.0505</td>\n      <td>0.0188</td>\n      <td>0.0136</td>\n      <td>0.0874</td>\n      <td>495.0</td>\n      <td>1397.0</td>\n    </tr>\n    <tr>\n      <th>Tavani A et al. (2001) [PMID: 11588899]</th>\n      <td>0.0745</td>\n      <td>0.1588</td>\n      <td>-0.2366</td>\n      <td>0.3857</td>\n      <td>1031.0</td>\n      <td>3442.0</td>\n    </tr>\n    <tr>\n      <th>Genkinger JM et al. (2006) [PMID: 16495916]</th>\n      <td>0.1133</td>\n      <td>0.1315</td>\n      <td>-0.1444</td>\n      <td>0.3711</td>\n      <td>2001.0</td>\n      <td>529638.0</td>\n    </tr>\n    <tr>\n      <th>Miao J et al. (2025) [PMID: 40487677]</th>\n      <td>0.1810</td>\n      <td>0.0647</td>\n      <td>0.0541</td>\n      <td>0.3079</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>La Vecchia C et al. (1992) [PMID: 1432017]</th>\n      <td>0.2624</td>\n      <td>0.1768</td>\n      <td>-0.0842</td>\n      <td>0.6089</td>\n      <td>801.0</td>\n      <td>2915.0</td>\n    </tr>\n    <tr>\n      <th>Peterson NB et al. (2006) [PMID: 16921486]</th>\n      <td>0.3692</td>\n      <td>0.1544</td>\n      <td>0.0667</td>\n      <td>0.6717</td>\n      <td>762.0</td>\n      <td>7033.0</td>\n    </tr>\n    <tr>\n      <th>Chang ET et al. (2007) [PMID: 17186425]</th>\n      <td>0.4511</td>\n      <td>0.1768</td>\n      <td>0.1045</td>\n      <td>0.7976</td>\n      <td>253.0</td>\n      <td>90371.0</td>\n    </tr>\n    <tr>\n      <th>Webb PM et al. (2011) [PMID: 21629268]</th>\n      <td>0.4148</td>\n      <td>0.1805</td>\n      <td>0.0611</td>\n      <td>0.7685</td>\n      <td>1363.0</td>\n      <td>2777.0</td>\n    </tr>\n    <tr>\n      <th>Kelemen LE et al. (2005) [PMID: 16172227]</th>\n      <td>0.5008</td>\n      <td>0.4438</td>\n      <td>-0.3691</td>\n      <td>1.3706</td>\n      <td>148.0</td>\n      <td>296.0</td>\n    </tr>\n    <tr>\n      <th>Modugno F et al. (2003) [PMID: 14662224]</th>\n      <td>0.5434</td>\n      <td>0.2504</td>\n      <td>0.0526</td>\n      <td>1.0341</td>\n      <td>761.0</td>\n      <td>2113.0</td>\n    </tr>\n    <tr>\n      <th>Sung S et al. (2023) [PMID: 36789760]</th>\n      <td>0.9951</td>\n      <td>0.3129</td>\n      <td>0.3818</td>\n      <td>1.6085</td>\n      <td>531.0</td>\n      <td>2655.0</td>\n    </tr>\n  </tbody>\n</table>",
