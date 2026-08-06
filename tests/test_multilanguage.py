@@ -144,6 +144,8 @@ class MultiLanguagePageTests(unittest.TestCase):
         self.assertIn("const quality = elements.filterQuality ? elements.filterQuality.value : 'Moderate+';", script)
         self.assertIn('const qualityIsEligible = meetsDefaultJbiThreshold(study);', script)
         self.assertIn('qualityIsEligible && !isARR', script)
+        self.assertIn('displayedAnalysis = await requestReanalysis(selectedStudies, analysisContext);', script)
+        self.assertIn("quality_filter: elements.filterQuality ? elements.filterQuality.value : 'Moderate+'", script)
 
     def test_dynamic_statistical_interpretations_are_localized_and_rerendered(self):
         script = (ROOT / 'static' / 'script.js').read_text()
@@ -158,7 +160,7 @@ class MultiLanguagePageTests(unittest.TestCase):
         self.assertIn('if (lastHeadlineData) applyResultMeasureTransformation();', script)
         self.assertIn('lastAnalysisContext ? lastAnalysisContext.exposure', script)
         self.assertIn('lastAnalysisContext ? lastAnalysisContext.disease', script)
-        self.assertIn('updateResultsUI(data, { disease, exposure });', script)
+        self.assertIn('updateResultsUI(displayedAnalysis, analysisContext);', script)
 
         self.assertNotIn("elements.interpretation.classList.add('notranslate')", script)
         self.assertNotIn("elements.funnelInterpretation.classList.add('notranslate')", script)

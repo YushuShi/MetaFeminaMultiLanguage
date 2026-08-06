@@ -1096,9 +1096,16 @@ def reanalyze():
     studies = data.get('studies', [])
     disease = data.get('disease', 'Custom Analysis')
     exposure = data.get('exposure', 'Custom Exposure')
+    quality_filter = data.get('quality_filter', 'Moderate+')
+
+    if quality_filter == 'Moderate+':
+        studies = [
+            study for study in studies
+            if str(study.get('Quality Score') or '').strip().lower() in {'good', 'moderate'}
+        ]
     
     if not studies:
-        return jsonify({"error": "No studies provided for analysis."})
+        return jsonify({"error": "No studies meet the selected analysis criteria."}), 400
     
     # Convert list of dicts to DataFrame
     df = pd.DataFrame(studies)

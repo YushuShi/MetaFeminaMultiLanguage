@@ -165,6 +165,8 @@
   "JBI Assessment:": {"zh-CN": "JBI 评价：", "zh-TW": "JBI 評估：", "nl": "JBI-beoordeling:", "ko": "JBI 평가:"},
   "Overall rating: {rating}": {"zh-CN": "总体评级：{rating}", "zh-TW": "整體評級：{rating}", "nl": "Algemene beoordeling: {rating}", "ko": "종합 등급: {rating}"},
   "Itemized JBI assessment is unavailable.": {"zh-CN": "暂无逐项 JBI 评价。", "zh-TW": "暫無逐項 JBI 評估。", "nl": "De JBI-beoordeling per item is niet beschikbaar.", "ko": "항목별 JBI 평가를 사용할 수 없습니다."},
+  "No studies meet the default analysis criteria.": {"zh-CN": "没有研究符合默认分析标准。", "zh-TW": "沒有研究符合預設分析標準。", "nl": "Geen studies voldoen aan de standaardanalysecriteria.", "ko": "기본 분석 기준을 충족하는 연구가 없습니다."},
+  "No studies meet the selected analysis criteria.": {"zh-CN": "没有研究符合所选分析标准。", "zh-TW": "沒有研究符合所選分析標準。", "nl": "Geen studies voldoen aan de geselecteerde analysecriteria.", "ko": "선택한 분석 기준을 충족하는 연구가 없습니다."},
   "Excluded by default: JBI rating is below Moderate": {"zh-CN": "默认排除：JBI 评级低于中等", "zh-TW": "預設排除：JBI 評級低於中等", "nl": "Standaard uitgesloten: JBI-beoordeling is lager dan matig", "ko": "기본 제외: JBI 등급이 중간 미만임"},
   "Yes": {"zh-CN": "是", "zh-TW": "是", "nl": "Ja", "ko": "예"},
   "No": {"zh-CN": "否", "zh-TW": "否", "nl": "Nee", "ko": "아니요"},

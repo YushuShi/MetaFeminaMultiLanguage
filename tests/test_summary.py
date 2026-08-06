@@ -15,6 +15,35 @@ class SummaryPageTests(unittest.TestCase):
     def setUp(self):
         self.client = app.test_client()
 
+    def test_reanalysis_rejects_fair_studies_by_default(self):
+        studies = [
+            {'PMID': '1', 'Quality Score': 'Good', 'Effect Size': 1.1, 'Lower CI': 1.0, 'Upper CI': 1.2},
+            {'PMID': '2', 'Quality Score': 'Moderate', 'Effect Size': 1.2, 'Lower CI': 1.0, 'Upper CI': 1.4},
+            {'PMID': '3', 'Quality Score': 'Fair', 'Effect Size': 1.3, 'Lower CI': 1.0, 'Upper CI': 1.6},
+        ]
+        with patch('app.meta_analysis.perform_meta_analysis', return_value={'headline': {}}) as perform:
+            response = self.client.post('/reanalyze', json={'studies': studies})
+
+        self.assertEqual(response.status_code, 200)
+        analyzed = perform.call_args.args[0]
+        self.assertEqual(set(analyzed['PMID']), {'1', '2'})
+        self.assertNotIn('Fair', set(analyzed['Quality Score']))
+
+    def test_reanalysis_can_include_fair_studies_when_requested(self):
+        studies = [
+            {'PMID': '1', 'Quality Score': 'Good', 'Effect Size': 1.1, 'Lower CI': 1.0, 'Upper CI': 1.2},
+            {'PMID': '2', 'Quality Score': 'Fair', 'Effect Size': 1.3, 'Lower CI': 1.0, 'Upper CI': 1.6},
+        ]
+        with patch('app.meta_analysis.perform_meta_analysis', return_value={'headline': {}}) as perform:
+            response = self.client.post('/reanalyze', json={
+                'studies': studies,
+                'quality_filter': 'Fair+',
+            })
+
+        self.assertEqual(response.status_code, 200)
+        analyzed = perform.call_args.args[0]
+        self.assertEqual(set(analyzed['PMID']), {'1', '2'})
+
     def test_homepage_places_summary_navigation_next_to_about(self):
         response = self.client.get('/')
 

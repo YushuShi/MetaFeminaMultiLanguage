@@ -864,6 +864,37 @@ document.addEventListener('DOMContentLoaded', async () => {
         elements.analyzeBtn.addEventListener('click', () => runAnalysis(false));
     }
 
+    function selectedStudiesFromTable() {
+        return Array.from(document.querySelectorAll('.study-checkbox'))
+            .filter((checkbox) => checkbox.checked)
+            .map((checkbox) => currentStudies[Number(checkbox.dataset.index)])
+            .filter(Boolean);
+    }
+
+    async function requestReanalysis(selectedStudies, analysisContext) {
+        const context = analysisContext || lastAnalysisContext || {
+            disease: selectedDiseaseValue(),
+            exposure: selectedExposureValue()
+        };
+        const response = await fetch('/reanalyze', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                studies: selectedStudies,
+                disease: context.disease,
+                exposure: context.exposure,
+                outcome: elements.outcome ? elements.outcome.value : 'Incidence',
+                exclude_meta: true,
+                quality_filter: elements.filterQuality ? elements.filterQuality.value : 'Moderate+'
+            })
+        });
+        const data = await response.json();
+        if (!response.ok || data.error) {
+            throw new Error(uiText(data.error || `Server returned ${response.status}: ${response.statusText}`));
+        }
+        return data;
+    }
+
     // Run Analysis Function
     async function runAnalysis(forceRefresh = false) {
         const disease = selectedDiseaseValue();
@@ -915,15 +946,23 @@ document.addEventListener('DOMContentLoaded', async () => {
                 elements.errorMsg.classList.remove('hidden');
             } else {
                 allStudies = Array.isArray(data.studies) ? data.studies : [];
-                updateResultsUI(data, { disease, exposure });
                 applyFilters();
-                elements.results.classList.remove('hidden');
+                const analysisContext = { disease, exposure };
+                let displayedAnalysis = data;
 
-                // A saved subtype result already is its own derived analysis;
-                // do not immediately replace it with an ad-hoc reanalysis.
-                if (elements.updateBtn && !subcategory) {
-                    setTimeout(() => elements.updateBtn.click(), 500);
+                // Do not expose the cached all-quality result while waiting for
+                // the default Moderate+ analysis. The result shown first must
+                // already match the checked studies in the filtered table.
+                if (!subcategory) {
+                    const selectedStudies = selectedStudiesFromTable();
+                    if (selectedStudies.length === 0) {
+                        throw new Error(uiText('No studies meet the default analysis criteria.'));
+                    }
+                    displayedAnalysis = await requestReanalysis(selectedStudies, analysisContext);
                 }
+
+                updateResultsUI(displayedAnalysis, analysisContext);
+                elements.results.classList.remove('hidden');
             }
         } catch (e) {
             elements.errorMsg.textContent = uiText(
@@ -940,15 +979,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Update (Re-analyze) Logic
     if (elements.updateBtn) {
         elements.updateBtn.addEventListener('click', async () => {
-            const checkboxes = document.querySelectorAll('.study-checkbox');
-            const selectedStudies = [];
-
-            checkboxes.forEach((cb) => {
-                if (cb.checked) {
-                    const idx = cb.getAttribute('data-index');
-                    selectedStudies.push(currentStudies[idx]);
-                }
-            });
+            const selectedStudies = selectedStudiesFromTable();
 
             if (selectedStudies.length === 0) {
                 alert(uiText('Please select at least one study.'));
@@ -963,24 +994,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             };
 
             try {
-                const res = await fetch('/reanalyze', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        studies: selectedStudies,
-                        disease: analysisContext.disease,
-                        exposure: analysisContext.exposure,
-                        outcome: elements.outcome ? elements.outcome.value : 'Incidence',
-                        exclude_meta: true
-                    })
-                });
-
-                const data = await res.json();
-                if (data.error) alert(data.error);
-                else updateResultsUI(data, analysisContext);
+                const data = await requestReanalysis(selectedStudies, analysisContext);
+                updateResultsUI(data, analysisContext);
             } catch (e) {
                 console.error("Update error:", e);
-                alert(uiText('Failed to update analysis.'));
+                alert(`${uiText('Failed to update analysis.')} ${e.message}`);
             } finally {
                 elements.updateBtn.textContent = uiText('Update Analysis');
                 elements.updateBtn.disabled = false;
