@@ -50,10 +50,12 @@ class SummaryPageTests(unittest.TestCase):
         self.assertNotIn('isCrowdExcluded', script)
         self.assertNotIn('automatically deselected', script)
 
-    def test_paf_is_never_sent_to_reanalysis(self):
+    def test_only_rr_or_hr_are_sent_to_reanalysis(self):
         studies = [
             {'PMID': '1', 'Quality Score': 'Good', 'Effect Type': 'RR', 'Effect Size': 1.1, 'Lower CI': 1.0, 'Upper CI': 1.2},
             {'PMID': '2', 'Quality Score': 'Good', 'Effect Type': 'PAF', 'Effect Size': 5.6, 'Lower CI': 1.9, 'Upper CI': 9.3},
+            {'PMID': '3', 'Quality Score': 'Good', 'Effect Type': 'IRR', 'Effect Size': 1.3, 'Lower CI': 1.1, 'Upper CI': 1.5},
+            {'PMID': '4', 'Quality Score': 'Good', 'Effect Type': 'beta', 'Effect Size': 0.4, 'Lower CI': 0.2, 'Upper CI': 0.6},
         ]
         with patch('app.meta_analysis.perform_meta_analysis', return_value={'headline': {}}) as perform:
             response = self.client.post('/reanalyze', json={'studies': studies})
@@ -70,9 +72,9 @@ class SummaryPageTests(unittest.TestCase):
 
     def test_reanalysis_rejects_fair_studies_by_default(self):
         studies = [
-            {'PMID': '1', 'Quality Score': 'Good', 'Effect Size': 1.1, 'Lower CI': 1.0, 'Upper CI': 1.2},
-            {'PMID': '2', 'Quality Score': 'Moderate', 'Effect Size': 1.2, 'Lower CI': 1.0, 'Upper CI': 1.4},
-            {'PMID': '3', 'Quality Score': 'Fair', 'Effect Size': 1.3, 'Lower CI': 1.0, 'Upper CI': 1.6},
+            {'PMID': '1', 'Quality Score': 'Good', 'Effect Type': 'RR', 'Effect Size': 1.1, 'Lower CI': 1.0, 'Upper CI': 1.2},
+            {'PMID': '2', 'Quality Score': 'Moderate', 'Effect Type': 'OR', 'Effect Size': 1.2, 'Lower CI': 1.0, 'Upper CI': 1.4},
+            {'PMID': '3', 'Quality Score': 'Fair', 'Effect Type': 'HR', 'Effect Size': 1.3, 'Lower CI': 1.0, 'Upper CI': 1.6},
         ]
         with patch('app.meta_analysis.perform_meta_analysis', return_value={'headline': {}}) as perform:
             response = self.client.post('/reanalyze', json={'studies': studies})
@@ -84,8 +86,8 @@ class SummaryPageTests(unittest.TestCase):
 
     def test_reanalysis_can_include_fair_studies_when_requested(self):
         studies = [
-            {'PMID': '1', 'Quality Score': 'Good', 'Effect Size': 1.1, 'Lower CI': 1.0, 'Upper CI': 1.2},
-            {'PMID': '2', 'Quality Score': 'Fair', 'Effect Size': 1.3, 'Lower CI': 1.0, 'Upper CI': 1.6},
+            {'PMID': '1', 'Quality Score': 'Good', 'Effect Type': 'RR', 'Effect Size': 1.1, 'Lower CI': 1.0, 'Upper CI': 1.2},
+            {'PMID': '2', 'Quality Score': 'Fair', 'Effect Type': 'OR', 'Effect Size': 1.3, 'Lower CI': 1.0, 'Upper CI': 1.6},
         ]
         with patch('app.meta_analysis.perform_meta_analysis', return_value={'headline': {}}) as perform:
             response = self.client.post('/reanalyze', json={

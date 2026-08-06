@@ -507,30 +507,33 @@
             "Link": "https://pubmed.ncbi.nlm.nih.gov/36941558/",
             "Effect Type": "OR",
             "SE": 0.23214285714285712,
-            "Sample Size": null,
+            "Sample Size": 66450,
             "Cases": null,
-            "Estimated Cases": null,
+            "Estimated Cases": 864,
             "Design": "Mendelian Randomization",
             "Timing": "Unclear",
             "Continent": "Unclear",
             "Stage": "Overall",
-            "Quality %": 62.5,
-            "Quality Score": "Moderate",
+            "Quality %": 85.7,
+            "Quality Score": "Good",
             "comparison_type": "per 50% increase",
             "JBI": {
-                "q1": "Unclear",
-                "q2": "Unclear",
-                "q3": "Unclear",
-                "q4": "Yes",
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Unclear",
                 "q5": "Yes",
-                "q6": "Yes",
+                "q6": "NA",
                 "q7": "Yes",
-                "q8": "Yes"
+                "q8": "NA",
+                "q9": "NA",
+                "q10": "NA",
+                "q11": "Yes"
             },
             "exposure_measurement_type": "unclear",
             "exposure_measurement_supporting_text": "Genetically predicted coffee consumption was used as the exposure, with SNPs as instrumental variables.",
             "extraction_supporting_text": {
-                "sample_size": null,
+                "sample_size": "The overall ovarian cancer outcome used OCAC summary data from 66,450 samples, comprising 25,509 cases and 40,941 controls; the coffee\u2013overall ovarian cancer estimate was based on this dataset.",
                 "effect_size": "OR: 1.40",
                 "effect_direction": "causal association of genetically predicted ... coffee consumption ... with the risk of OC",
                 "p_value": "P = 0.040",
@@ -638,7 +641,7 @@
             "P Value": 0.11637064545104328
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Park SY et al. (2018) [PMID: 29777049]</th>\n      <td>-1.0627</td>\n      <td>0.3337</td>\n      <td>-1.7168</td>\n      <td>-0.4087</td>\n      <td>34031.0</td>\n      <td>167720.0</td>\n    </tr>\n    <tr>\n      <th>Huang C et al. (2024) [PMID: 38733325]</th>\n      <td>-0.4724</td>\n      <td>0.1901</td>\n      <td>-0.8449</td>\n      <td>-0.0999</td>\n      <td>-</td>\n      <td>24715.0</td>\n    </tr>\n    <tr>\n      <th>Riman T et al. (2004) [PMID: 15648594]</th>\n      <td>-0.3432</td>\n      <td>0.2223</td>\n      <td>-0.7789</td>\n      <td>0.0926</td>\n      <td>655.0</td>\n      <td>4554.0</td>\n    </tr>\n    <tr>\n      <th>Tworoger SS et al. (2008) [PMID: 18213613]</th>\n      <td>-0.2231</td>\n      <td>0.1476</td>\n      <td>-0.5124</td>\n      <td>0.0661</td>\n      <td>507.0</td>\n      <td>80253.0</td>\n    </tr>\n    <tr>\n      <th>Gosvig CF et al. (2015) [PMID: 25629440]</th>\n      <td>-0.0634</td>\n      <td>0.0241</td>\n      <td>-0.1107</td>\n      <td>-0.0162</td>\n      <td>267.0</td>\n      <td>1178.0</td>\n    </tr>\n    <tr>\n      <th>Tavani A et al. (2001) [PMID: 11588899]</th>\n      <td>-0.0634</td>\n      <td>0.1363</td>\n      <td>-0.3306</td>\n      <td>0.2038</td>\n      <td>1031.0</td>\n      <td>3442.0</td>\n    </tr>\n    <tr>\n      <th>Ong JS et al. (2018) [PMID: 29186515]</th>\n      <td>0.0087</td>\n      <td>0.0416</td>\n      <td>-0.0729</td>\n      <td>0.0902</td>\n      <td>-</td>\n      <td>44062.0</td>\n    </tr>\n    <tr>\n      <th>Miller DR et al. (1987) [PMID: 3570612]</th>\n      <td>0.0953</td>\n      <td>0.3071</td>\n      <td>-0.5067</td>\n      <td>0.6973</td>\n      <td>290.0</td>\n      <td>870.0</td>\n    </tr>\n    <tr>\n      <th>Grundy A et al. (2022) [PMID: 34800867]</th>\n      <td>0.1351</td>\n      <td>0.1476</td>\n      <td>-0.1542</td>\n      <td>0.4245</td>\n      <td>497.0</td>\n      <td>1401.0</td>\n    </tr>\n    <tr>\n      <th>Liu S et al. (2023) [PMID: 36941558]</th>\n      <td>0.2858</td>\n      <td>0.1342</td>\n      <td>0.0227</td>\n      <td>0.5489</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Leung AC et al. (2016) [PMID: 27810483]</th>\n      <td>0.3744</td>\n      <td>0.1560</td>\n      <td>0.0686</td>\n      <td>0.6802</td>\n      <td>524.0</td>\n      <td>2111.0</td>\n    </tr>\n    <tr>\n      <th>Silvera SA et al. (2007) [PMID: 17571963]</th>\n      <td>0.4406</td>\n      <td>0.2405</td>\n      <td>-0.0309</td>\n      <td>0.9120</td>\n      <td>264.0</td>\n      <td>49613.0</td>\n    </tr>\n    <tr>\n      <th>Trichopoulos D et al. (1981) [PMID: 7333704]</th>\n      <td>0.7885</td>\n      <td>0.4002</td>\n      <td>0.0042</td>\n      <td>1.5728</td>\n      <td>92.0</td>\n      <td>197.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Park SY et al. (2018) [PMID: 29777049]</th>\n      <td>-1.0627</td>\n      <td>0.3337</td>\n      <td>-1.7168</td>\n      <td>-0.4087</td>\n      <td>34031.0</td>\n      <td>167720.0</td>\n    </tr>\n    <tr>\n      <th>Huang C et al. (2024) [PMID: 38733325]</th>\n      <td>-0.4724</td>\n      <td>0.1901</td>\n      <td>-0.8449</td>\n      <td>-0.0999</td>\n      <td>-</td>\n      <td>24715.0</td>\n    </tr>\n    <tr>\n      <th>Riman T et al. (2004) [PMID: 15648594]</th>\n      <td>-0.3432</td>\n      <td>0.2223</td>\n      <td>-0.7789</td>\n      <td>0.0926</td>\n      <td>655.0</td>\n      <td>4554.0</td>\n    </tr>\n    <tr>\n      <th>Tworoger SS et al. (2008) [PMID: 18213613]</th>\n      <td>-0.2231</td>\n      <td>0.1476</td>\n      <td>-0.5124</td>\n      <td>0.0661</td>\n      <td>507.0</td>\n      <td>80253.0</td>\n    </tr>\n    <tr>\n      <th>Tavani A et al. (2001) [PMID: 11588899]</th>\n      <td>-0.0634</td>\n      <td>0.1363</td>\n      <td>-0.3306</td>\n      <td>0.2038</td>\n      <td>1031.0</td>\n      <td>3442.0</td>\n    </tr>\n    <tr>\n      <th>Gosvig CF et al. (2015) [PMID: 25629440]</th>\n      <td>-0.0634</td>\n      <td>0.0241</td>\n      <td>-0.1107</td>\n      <td>-0.0162</td>\n      <td>267.0</td>\n      <td>1178.0</td>\n    </tr>\n    <tr>\n      <th>Ong JS et al. (2018) [PMID: 29186515]</th>\n      <td>0.0087</td>\n      <td>0.0416</td>\n      <td>-0.0729</td>\n      <td>0.0902</td>\n      <td>-</td>\n      <td>44062.0</td>\n    </tr>\n    <tr>\n      <th>Miller DR et al. (1987) [PMID: 3570612]</th>\n      <td>0.0953</td>\n      <td>0.3071</td>\n      <td>-0.5067</td>\n      <td>0.6973</td>\n      <td>290.0</td>\n      <td>870.0</td>\n    </tr>\n    <tr>\n      <th>Grundy A et al. (2022) [PMID: 34800867]</th>\n      <td>0.1351</td>\n      <td>0.1476</td>\n      <td>-0.1542</td>\n      <td>0.4245</td>\n      <td>497.0</td>\n      <td>1401.0</td>\n    </tr>\n    <tr>\n      <th>Liu S et al. (2023) [PMID: 36941558]</th>\n      <td>0.2858</td>\n      <td>0.1342</td>\n      <td>0.0227</td>\n      <td>0.5489</td>\n      <td>-</td>\n      <td>66450.0</td>\n    </tr>\n    <tr>\n      <th>Leung AC et al. (2016) [PMID: 27810483]</th>\n      <td>0.3744</td>\n      <td>0.1560</td>\n      <td>0.0686</td>\n      <td>0.6802</td>\n      <td>524.0</td>\n      <td>2111.0</td>\n    </tr>\n    <tr>\n      <th>Silvera SA et al. (2007) [PMID: 17571963]</th>\n      <td>0.4406</td>\n      <td>0.2405</td>\n      <td>-0.0309</td>\n      <td>0.9120</td>\n      <td>264.0</td>\n      <td>49613.0</td>\n    </tr>\n    <tr>\n      <th>Trichopoulos D et al. (1981) [PMID: 7333704]</th>\n      <td>0.7885</td>\n      <td>0.4002</td>\n      <td>0.0042</td>\n      <td>1.5728</td>\n      <td>92.0</td>\n      <td>197.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 1.0,
         "ci_low": 0.88,
@@ -648,12 +651,12 @@
         "interpretation": "Not statistically significant",
         "i2": 72.16,
         "tau2": 0.02,
-        "eggers_p": 0.6526141509363799,
+        "eggers_p": 0.6526141509363801,
         "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.6526). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
         "loo_results": [
             {
                 "omitted": "Park SY et al. (2018) [PMID: 29777049]",
-                "pooled_es": 1.0234758876962604,
+                "pooled_es": 1.0234758876962606,
                 "ci_low": 0.8806704066170644,
                 "ci_upp": 1.1894380517672223,
                 "is_significant": false
@@ -662,13 +665,13 @@
                 "omitted": "Huang C et al. (2024) [PMID: 38733325]",
                 "pooled_es": 1.028042220085581,
                 "ci_low": 0.8629047236251278,
-                "ci_upp": 1.2247827336469967,
+                "ci_upp": 1.2247827336469965,
                 "is_significant": false
             },
             {
                 "omitted": "Riman T et al. (2004) [PMID: 15648594]",
                 "pooled_es": 1.0149951278216272,
-                "ci_low": 0.8426910004371353,
+                "ci_low": 0.8426910004371352,
                 "ci_upp": 1.2225300958088199,
                 "is_significant": false
             },
@@ -680,17 +683,17 @@
                 "is_significant": false
             },
             {
-                "omitted": "Gosvig CF et al. (2015) [PMID: 25629440]",
-                "pooled_es": 1.001104626131584,
-                "ci_low": 0.7999195184937172,
-                "ci_upp": 1.2528891335834182,
-                "is_significant": false
-            },
-            {
                 "omitted": "Tavani A et al. (2001) [PMID: 11588899]",
                 "pooled_es": 1.0019464582392563,
                 "ci_low": 0.8212356276862351,
                 "ci_upp": 1.2224222517069643,
+                "is_significant": false
+            },
+            {
+                "omitted": "Gosvig CF et al. (2015) [PMID: 25629440]",
+                "pooled_es": 1.001104626131584,
+                "ci_low": 0.7999195184937172,
+                "ci_upp": 1.2528891335834182,
                 "is_significant": false
             },
             {
@@ -762,8 +765,8 @@
         },
         "extracted": 15
     },
-    "plot_url": "static/caffeine/forest_ovarian_cancer_incidence_primary.png?t=1365",
-    "funnel_plot_url": "static/caffeine/funnel_ovarian_cancer_incidence_primary.png?t=6385",
-    "baujat_plot_url": "static\\caffeine\\baujat_ovarian_cancer_incidence_primary.png?t=9057",
+    "plot_url": "static/caffeine/forest_ovarian_cancer_incidence_primary.png?t=4850",
+    "funnel_plot_url": "static/caffeine/funnel_ovarian_cancer_incidence_primary.png?t=4655",
+    "baujat_plot_url": "static/caffeine/baujat_ovarian_cancer_incidence_primary.png?t=772",
     "last_run": "2026-06-16 11:41:31"
 }

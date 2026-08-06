@@ -37,6 +37,10 @@ DEFAULT_CACHE_ROOT = MODULE_DIR / "Cached_results"
 SCHEMA_VERSION = "1.0"
 FORMAL_EGGER_MIN_STUDIES = 10
 TERRA_INPUT_USD_PER_MILLION = 2.0
+ELIGIBLE_EFFECT_TYPES = {
+    "OR", "RR", "HR", "ODDS RATIO", "RISK RATIO", "RELATIVE RISK",
+    "HAZARD RATIO",
+}
 SUMMARY_PLOT_LOCALES = ("zh-CN", "zh-TW", "nl", "ko")
 SUMMARY_TRANSLATIONS = MODULE_DIR / "static" / "i18n-translations.json"
 
@@ -169,6 +173,11 @@ def _cached_study_metadata(cache_root: Path) -> dict[str, dict[str, Any]]:
                 "exposure_measurement_supporting_text": _first(
                     study, "exposure_measurement_supporting_text"
                 ),
+                "Quality Score": _first(study, "Quality Score", "quality_score"),
+                "Quality %": _first(study, "Quality %", "quality_percent"),
+                "JBI": study.get("JBI") if isinstance(study.get("JBI"), dict) else {},
+                "Sample Size": _first(study, "Sample Size", "sample_size"),
+                "Cases": _first(study, "Cases", "cases", "Estimated Cases"),
             }
             completeness = sum(value not in (None, "") for value in candidate.values())
             # PMID-only entries provide the bibliographic fallback.
@@ -462,11 +471,11 @@ def _estimate(outcome: dict[str, Any]) -> dict[str, Any] | None:
         or lower > effect or effect > upper
     ):
         return None
-    effect_type = str(_first(candidate, "effect_type", "Effect Type", "measure") or "RR").upper()
-    if effect_type not in {
-        "OR", "RR", "HR", "IRR", "ODDS RATIO", "RISK RATIO",
-        "HAZARD RATIO", "INCIDENCE RATE RATIO",
-    }:
+    effect_type = re.sub(
+        r"[^A-Z]+", " ",
+        str(_first(candidate, "effect_type", "Effect Type", "measure") or "").upper(),
+    ).strip()
+    if effect_type not in ELIGIBLE_EFFECT_TYPES:
         return None
     return {
         "effect_size": effect,
@@ -539,6 +548,27 @@ def extract_eligible_rows(
                     reference = _first(metadata, "Reference", "reference") or _first(
                         source, "Reference", "reference", "title", "Title"
                     )
+                    quality_score = str(
+                        _first(metadata, "Quality Score", "quality_score")
+                        or _first(source, "Quality Score", "quality_score")
+                        or ""
+                    ).strip()
+                    if quality_score.lower() not in {"good", "moderate"}:
+                        skipped.append({
+                            "context_id": context_id,
+                            "reason": "jbi_below_moderate",
+                            "subcategory_id": category_id,
+                            "quality_score": quality_score or None,
+                        })
+                        continue
+                    if estimate.get("sample_size") is None:
+                        estimate["sample_size"] = _as_float(
+                            _first(metadata, "Sample Size", "sample_size")
+                        )
+                    if estimate.get("cases") is None:
+                        estimate["cases"] = _as_float(
+                            _first(metadata, "Cases", "cases", "Estimated Cases")
+                        )
                     rows.append({
                         "context_id": context_id,
                         "exposure": exposure,
@@ -547,6 +577,9 @@ def extract_eligible_rows(
                         "authors": _first(metadata, "Authors", "authors"),
                         "journal": _first(metadata, "Journal", "journal"),
                         "year": _first(metadata, "Year", "year", "publication_year"),
+                        "quality_score": quality_score,
+                        "quality_percent": _first(metadata, "Quality %", "quality_percent"),
+                        "jbi": metadata.get("JBI") if isinstance(metadata.get("JBI"), dict) else {},
                         "exposure_measurement_type": _first(
                             metadata, "exposure_measurement_type"
                         ) or "unclear",
@@ -787,7 +820,7 @@ def _compact_study(row: dict[str, Any]) -> dict[str, Any]:
         "effect_size", "lower_ci", "upper_ci", "effect_type", "se", "comparison_type",
         "cases", "sample_size", "exposure_measurement_type",
         "exposure_measurement_supporting_text", "evidence_source", "evidence_locator",
-        "outcome_definition",
+        "outcome_definition", "quality_score", "quality_percent", "jbi",
     )}
     # Preserve the existing frontend contract while retaining normalized keys
     # for machine-readable reuse.
@@ -806,6 +839,9 @@ def _compact_study(row: dict[str, Any]) -> dict[str, Any]:
         "Cases": row.get("cases"),
         "Sample Size": row.get("sample_size"),
         "Participants": row.get("sample_size"),
+        "Quality Score": row.get("quality_score"),
+        "Quality %": row.get("quality_percent"),
+        "JBI": row.get("jbi") or {},
         "exposure_measurement_type": row.get("exposure_measurement_type"),
         "exposure_measurement_supporting_text": row.get(
             "exposure_measurement_supporting_text"

@@ -1,5 +1,5 @@
 {
-  "annotations_path": "/Users/yushushi/Library/CloudStorage/OneDrive-WeillCornellMedicine/MetaFeminaYSClose2Submission/MetaFemina/data/subcategory_annotations.json",
+  "annotations_path": "/Users/yushushi/Library/CloudStorage/OneDrive-WeillCornellMedicine/MetaFeminaYSClose2Submission/YSmultiLanguage-worktree/data/subcategory_annotations.json",
   "classification_audit": {
     "active_saved_article_count": 948,
     "by_stage": {
@@ -22,14 +22,20 @@
     },
     "classified_article_count": 948
   },
-  "eligible_estimate_count": 58,
+  "eligible_estimate_count": 57,
   "notes": [
     "No major-cancer cache was read or modified.",
     "No network or LLM operation was performed."
   ],
   "result_count": 38,
   "schema_version": "1.0",
-  "skipped_annotations": [],
+  "skipped_annotations": [
+    {
+      "context_id": "20698054|breast|beta_carotene|0",
+      "reason": "invalid_or_missing_subtype_estimate",
+      "subcategory_id": "breast_invasive_lobular_carcinoma"
+    }
+  ],
   "summaries": {
     "breast/ductal_carcinoma_in_situ": {
       "eligible_exposure_count": 3,
@@ -133,8 +139,8 @@
           "headline": {
             "ci_low": 0.6877471677611354,
             "ci_upp": 0.891367408974545,
-            "eggers_intercept": -0.3020866569514974,
-            "eggers_p": 0.9063591543931842,
+            "eggers_intercept": -0.30208665695149844,
+            "eggers_p": 0.9063591543931837,
             "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
             "i2": 0.0,
             "interpretation": "The pooled subtype-specific estimate is 0.78, indicating a lower relative association for this exposure.",
@@ -325,8 +331,8 @@
           "headline": {
             "ci_low": 0.9633974824946023,
             "ci_upp": 1.7957866859460045,
-            "eggers_intercept": 2.543796138567023,
-            "eggers_p": 0.76859963290777,
+            "eggers_intercept": 2.5437961385670236,
+            "eggers_p": 0.7685996329077701,
             "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
             "i2": 79.1870680590318,
             "interpretation": "The pooled subtype-specific estimate is 1.32, indicating a higher relative association for this exposure.",
@@ -523,7 +529,7 @@
       }
     },
     "breast/invasive_lobular_carcinoma": {
-      "eligible_exposure_count": 4,
+      "eligible_exposure_count": 3,
       "exposure_count": 4,
       "exposures": [
         {
@@ -551,7 +557,7 @@
             "ci_low": 1.3073986347571511,
             "ci_upp": 2.2138744806249617,
             "eggers_intercept": 3.223615535151568,
-            "eggers_p": 0.11291900617806704,
+            "eggers_p": 0.11291900617806698,
             "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
             "i2": 56.05602426705886,
             "interpretation": "The pooled subtype-specific estimate is 1.70, indicating a higher relative association for this exposure.",
@@ -605,35 +611,32 @@
               "available": false,
               "reason": "baujat_requires_3_studies"
             },
-            "eligible_study_count": 1,
+            "eligible_study_count": 0,
             "forest": {
-              "available": true,
-              "reason": null
+              "available": false,
+              "reason": "forest_requires_1_study"
             },
             "formal_egger": {
               "available": false,
               "reason": "egger_requires_10_studies"
             },
             "funnel": {
-              "available": true,
-              "reason": "egger_requires_10_studies"
+              "available": false,
+              "reason": "no_eligible_studies"
             }
           },
           "exposure": "Beta-carotene",
           "headline": {
-            "ci_low": 0.5698351409943826,
-            "ci_upp": 0.9097368040436635,
+            "ci_low": null,
+            "ci_upp": null,
             "eggers_intercept": null,
             "eggers_p": null,
-            "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
-            "i2": 0.0,
-            "interpretation": "The pooled subtype-specific estimate is 0.72, indicating a lower relative association for this exposure.",
+            "i2": null,
             "loo_results": [],
-            "n_studies": 1,
-            "pooled_es": 0.72,
-            "q": 0.0,
-            "results_interpretation": "This saved analysis contains 1 separately reported Invasive lobular carcinoma estimate.",
-            "tau2": 0.0
+            "n_studies": 0,
+            "pooled_es": null,
+            "q": null,
+            "tau2": null
           }
         },
         {
@@ -782,8 +785,8 @@
           "headline": {
             "ci_low": 0.7993028662776337,
             "ci_upp": 1.5285959868192904,
-            "eggers_intercept": -0.043078079619474186,
-            "eggers_p": 0.9775798369059038,
+            "eggers_intercept": -0.04307807961947408,
+            "eggers_p": 0.9775798369059039,
             "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
             "i2": 78.80073199671503,
             "interpretation": "The pooled subtype-specific estimate is 1.11, indicating a higher relative association for this exposure.",
@@ -973,8 +976,8 @@
           "headline": {
             "ci_low": 0.40224255609350307,
             "ci_upp": 2.4395906133154215,
-            "eggers_intercept": -1.6183845519918212,
-            "eggers_p": 0.7547171336579688,
+            "eggers_intercept": -1.618384551991823,
+            "eggers_p": 0.7547171336579687,
             "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
             "i2": 92.73379258069934,
             "interpretation": "The pooled subtype-specific estimate is 0.99, indicating a lower relative association for this exposure.",
@@ -1796,8 +1799,8 @@
           "headline": {
             "ci_low": 0.874902741140634,
             "ci_upp": 3.429313754575854,
-            "eggers_intercept": 3.1598917095779697,
-            "eggers_p": 0.043800124149738336,
+            "eggers_intercept": 3.15989170957797,
+            "eggers_p": 0.04380012414973833,
             "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
             "i2": 75.96093310590761,
             "interpretation": "The pooled subtype-specific estimate is 1.73, indicating a higher relative association for this exposure.",

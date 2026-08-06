@@ -36,7 +36,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "28a21babb76d0c75477a13d2aed8e6641feddff1fa68f4093f480b23d036aa0a",
+  "input_fingerprint": "661a5e8de9dcd5cea20bf66d98f1192601ffd110893be6524bbb46a9e1a0b6bf",
   "plot_url": "Plot/subcategories/uterus/endometrioid_carcinoma/green_tea_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/uterus/endometrioid_carcinoma/green_tea_baujat.png",
@@ -51,18 +51,32 @@
     "subcategory_label": "Endometrioid carcinoma",
     "subcategory_slug": "endometrioid_carcinoma"
   },
-  "skipped_annotation_count_for_build": 0,
+  "skipped_annotation_count_for_build": 1,
   "studies": [
     {
       "Authors": "Kakuta Y, Nakaya N, Nagase S, Fujita M, Koizumi T, Okamura C, Niikura H, Ohmori K, Kuriyama S, Tase T, Ito K, Minami Y, Yaegashi N, Tsuji I",
       "Cases": 152.0,
       "Effect Size": 0.33,
       "Effect Type": "OR",
+      "JBI": {
+        "q1": "Yes",
+        "q10": "Yes",
+        "q2": "Yes",
+        "q3": "Yes",
+        "q4": "Yes",
+        "q5": "Yes",
+        "q6": "Yes",
+        "q7": "Yes",
+        "q8": "Yes",
+        "q9": "Yes"
+      },
       "Journal": "Cancer causes & control : CCC",
       "Link": "https://pubmed.ncbi.nlm.nih.gov/19067194/",
       "Lower CI": 0.15,
       "PMID": "19067194",
       "Participants": 437.0,
+      "Quality %": 100.0,
+      "Quality Score": "Good",
       "Reference": "Case-control study of green tea consumption and the risk of endometrial endometrioid adenocarcinoma.",
       "Sample Size": 437.0,
       "Study": "Kakuta Y et al. (2009) [PMID: 19067194]",
@@ -83,10 +97,24 @@
         "effect_size": "The multivariate-adjusted OR of EEA was 0.33 (0.15-0.75) in the highest quartile (>=4 cups/day), referenced with the lowest quartile (<=4 cups/week).",
         "outcome_definition": ""
       },
+      "jbi": {
+        "q1": "Yes",
+        "q10": "Yes",
+        "q2": "Yes",
+        "q3": "Yes",
+        "q4": "Yes",
+        "q5": "Yes",
+        "q6": "Yes",
+        "q7": "Yes",
+        "q8": "Yes",
+        "q9": "Yes"
+      },
       "journal": "Cancer causes & control : CCC",
       "lower_ci": 0.15,
       "outcome_definition": null,
       "pmid": "19067194",
+      "quality_percent": 100.0,
+      "quality_score": "Good",
       "reference": "Case-control study of green tea consumption and the risk of endometrial endometrioid adenocarcinoma.",
       "sample_size": 437.0,
       "se": null,

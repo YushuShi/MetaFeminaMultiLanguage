@@ -8,6 +8,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from subcategory_analysis import (
+    _estimate,
     _localized_exposure,
     _summary_forest_height,
     build_subcategory_outputs,
@@ -15,6 +16,14 @@ from subcategory_analysis import (
 
 
 class SubcategoryAnalysisTests(unittest.TestCase):
+    def test_only_rr_or_hr_subcategory_estimates_are_eligible(self):
+        base = {"effect_size": 1.2, "lower_ci": 1.0, "upper_ci": 1.4}
+        self.assertIsNotNone(_estimate({**base, "effect_type": "RR"}))
+        self.assertIsNotNone(_estimate({**base, "effect_type": "OR"}))
+        self.assertIsNotNone(_estimate({**base, "effect_type": "HR"}))
+        self.assertIsNone(_estimate({**base, "effect_type": "IRR"}))
+        self.assertIsNone(_estimate({**base, "effect_type": "PAF"}))
+
     def setUp(self):
         self.tempdir = tempfile.TemporaryDirectory()
         self.root = Path(self.tempdir.name)
@@ -48,7 +57,7 @@ class SubcategoryAnalysisTests(unittest.TestCase):
     def _write_annotations(self, status="reported_separate_estimate", known_context=True):
         context_id = "ctx-1" if known_context else "not-saved"
         payload = {
-            "contexts": [{"context_id": "ctx-1", "exposure": "Coffee", "study": {"Study": "Doe et al. (2020)", "PMID": "1"}}],
+            "contexts": [{"context_id": "ctx-1", "exposure": "Coffee", "study": {"Study": "Doe et al. (2020)", "PMID": "1", "Quality Score": "Good"}}],
             "annotations": [{
                 "context_id": context_id,
                 "major_outcomes": [{
@@ -157,6 +166,7 @@ class SubcategoryAnalysisTests(unittest.TestCase):
         cache_file.parent.mkdir()
         cache_file.write_text(json.dumps({"studies": [{
             "PMID": "10",
+            "Quality Score": "Good",
             "Study": "Doe AB et al. (2020) [PMID: 10]",
             "Authors": "Doe AB, Roe CD",
             "Journal": "Journal of Saved Studies",

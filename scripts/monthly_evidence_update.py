@@ -29,6 +29,9 @@ from openai import OpenAI
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(REPO_ROOT))
+import meta_analysis  # noqa: E402
+
 DATA_DIR = REPO_ROOT / "data"
 CACHE_DIR = REPO_ROOT / "Cached_results"
 EXPOSURES_FILE = REPO_ROOT / "static" / "exposures.json"
@@ -640,7 +643,7 @@ def discover(start_date: str, end_date: str, output_dir: Path) -> dict[str, Any]
                     f"Discovery progress: {queries}/{total_contexts} exposure-cancer searches; "
                     f"{len(contexts_by_pmid)} unique unsaved PMIDs",
                     flush=True,
-                )
+                ) and meta_analysis.is_eligible_effect_type(extraction.get("effect_type"))
 
     pmids = sorted(contexts_by_pmid, key=lambda value: int(value))
     articles, fetch_requests = entrez_fetch(pmids)
@@ -1703,6 +1706,7 @@ def append_mr_report(path: Path, final_results: list[dict[str, Any]], packet: di
     ]
     for item in mr_results:
         extraction = item.get("extraction") or {}
+        pubmed_url = item.get("pubmed_url") or f"https://pubmed.ncbi.nlm.nih.gov/{item.get('pmid')}/"
         lines.extend(
             [
                 "",
@@ -1715,7 +1719,7 @@ def append_mr_report(path: Path, final_results: list[dict[str, Any]], packet: di
                 f"p={extraction.get('p_value')}",
                 f"Comparison: {one_line(extraction.get('comparison_type'))}",
                 f"Reason kept separate: {one_line(item.get('reason'))}",
-                f"PubMed: {item.get('pubmed_url') or f'https://pubmed.ncbi.nlm.nih.gov/{item.get('pmid')}/'}",
+                f"PubMed: {pubmed_url}",
             ]
         )
     path.write_text(existing.rstrip() + "\n" + "\n".join(lines) + "\n", encoding="utf-8")
@@ -1815,9 +1819,6 @@ def study_row(item: dict[str, Any]) -> dict[str, Any]:
 def apply_to_saved_results(output_dir: Path) -> dict[str, Any]:
     """Add only final Good, poolable, conventional studies and rebuild diagnostics."""
     import pandas as pd
-
-    sys.path.insert(0, str(REPO_ROOT))
-    import meta_analysis
 
     final_packet = load_json(output_dir / "final_screening.json", {})
     included = [

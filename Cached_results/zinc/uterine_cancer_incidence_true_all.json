@@ -39,6 +39,36 @@
             },
             "exclusions": 2,
             "P Value": 0.042321729517561184
+        },
+        {
+            "Study": "Peng JT et al. (2019) [PMID: 31599404]",
+            "PMID": "31599404",
+            "Effect Size": 1.31,
+            "Lower CI": 1.08,
+            "Upper CI": 1.6,
+            "Population": "General",
+            "Reference": "A functional Cis-eQTL locus in lncRNA ZNRD1-AS1 contributes to the susceptibility of endometrial cancer.",
+            "Authors": "Peng JT, Li MC",
+            "Journal": "European review for medical and pharmacological sciences",
+            "Year": "2019",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/31599404/",
+            "Effect Type": "OR",
+            "SE": 0.1326530612244898,
+            "Sample Size": "N/A",
+            "Cases": "N/A",
+            "Design": "Unknown",
+            "Timing": "Unknown",
+            "Continent": "Asia",
+            "Stage": "Unspecified",
+            "Quality %": 0,
+            "Quality Score": "Fair",
+            "comparison_type": "-",
+            "JBI": "-",
+            "exclusions": 2,
+            "extraction_supporting_text": {
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.007."
+            },
+            "P Value": 0.007078920484459753
         }
     ],
     "summary_html": null,

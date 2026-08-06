@@ -589,9 +589,51 @@
                 "exposure_definition": "high intake of fermented milk products"
             },
             "P Value": 0.006024991419931931
+        },
+        {
+            "Study": "Guinter MA et al. (2018) [PMID: 29574860]",
+            "PMID": "29574860",
+            "Effect Size": 1.2048,
+            "Lower CI": 1.0204,
+            "Upper CI": 1.4286,
+            "Population": "General",
+            "Reference": "A dietary pattern based on estrogen metabolism is associated with breast cancer risk in a prospective cohort of postmenopausal women.",
+            "Authors": "Guinter MA, McLain AC, Merchant AT, Sandler DP, Steck SE",
+            "Journal": "International journal of cancer",
+            "Year": "2018",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/29574860/",
+            "Effect Type": "HR",
+            "SE": 0.10413265306122452,
+            "Sample Size": 27488,
+            "Cases": null,
+            "Design": "Cohort",
+            "Timing": "Prospective",
+            "Continent": "North America",
+            "Stage": "Invasive",
+            "Quality %": 72.7,
+            "Quality Score": "Moderate",
+            "comparison_type": "Highest Fermented Foods (Q1 ERDP) vs Lowest Fermented Foods (Q4 ERDP) [inverted \u21d2 high vs low]",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Unclear",
+                "q9": "Unclear",
+                "q10": "Unclear",
+                "q11": "Yes"
+            },
+            "exclusions": 2,
+            "extraction_supporting_text": {
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.030."
+            },
+            "P Value": 0.029974507097459666
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pathak DR et al. (2021) [PMID: 34682540]</th>\n      <td>-1.3642</td>\n      <td>0.5475</td>\n      <td>-2.4373</td>\n      <td>-0.2911</td>\n      <td>131.0</td>\n      <td>415</td>\n    </tr>\n    <tr>\n      <th>Kaluza J et al. (2021) [PMID: 33004231]</th>\n      <td>-1.2236</td>\n      <td>0.5121</td>\n      <td>-2.2272</td>\n      <td>-0.2200</td>\n      <td>195.0</td>\n      <td>33780</td>\n    </tr>\n    <tr>\n      <th>Van 't Veer P et al. (1991) [PMID: 1848533]</th>\n      <td>-1.0175</td>\n      <td>0.3829</td>\n      <td>-1.7680</td>\n      <td>-0.2670</td>\n      <td>133.0</td>\n      <td>422</td>\n    </tr>\n    <tr>\n      <th>Yamamoto S et al. (2003) [PMID: 12813174]</th>\n      <td>-0.7765</td>\n      <td>0.3092</td>\n      <td>-1.3825</td>\n      <td>-0.1706</td>\n      <td>179.0</td>\n      <td>21852</td>\n    </tr>\n    <tr>\n      <th>McCann SE et al. (2017) [PMID: 29955696]</th>\n      <td>-0.4423</td>\n      <td>0.1349</td>\n      <td>-0.7067</td>\n      <td>-0.1778</td>\n      <td>1941.0</td>\n      <td>3178</td>\n    </tr>\n    <tr>\n      <th>van't Veer P et al. (1989) [PMID: 2736542]</th>\n      <td>-0.4127</td>\n      <td>0.1980</td>\n      <td>-0.8008</td>\n      <td>-0.0247</td>\n      <td>133.0</td>\n      <td>422</td>\n    </tr>\n    <tr>\n      <th>Key TJ et al. (1999) [PMID: 10584890]</th>\n      <td>-0.1393</td>\n      <td>0.1273</td>\n      <td>-0.3888</td>\n      <td>0.1102</td>\n      <td>427.0</td>\n      <td>34759</td>\n    </tr>\n    <tr>\n      <th>Wirf\u00e4lt E et al. (2011) [PMID: 21767080]</th>\n      <td>-0.1090</td>\n      <td>0.0511</td>\n      <td>-0.2091</td>\n      <td>-0.0090</td>\n      <td>270.0</td>\n      <td>17000</td>\n    </tr>\n    <tr>\n      <th>Wu Y et al. (2021) [PMID: 33964859]</th>\n      <td>-0.0986</td>\n      <td>0.0398</td>\n      <td>-0.1765</td>\n      <td>-0.0206</td>\n      <td>37861.0</td>\n      <td>over 1 million</td>\n    </tr>\n    <tr>\n      <th>Shirabe R et al. (2021) [PMID: 33340281]</th>\n      <td>-0.0578</td>\n      <td>0.1617</td>\n      <td>-0.3747</td>\n      <td>0.2591</td>\n      <td>825.0</td>\n      <td>47614</td>\n    </tr>\n    <tr>\n      <th>Nishio K et al. (2007) [PMID: 17619154]</th>\n      <td>0.0093</td>\n      <td>0.2076</td>\n      <td>-0.3976</td>\n      <td>0.4161</td>\n      <td>145.0</td>\n      <td>30454</td>\n    </tr>\n    <tr>\n      <th>Yu H et al. (2010) [PMID: 20432165]</th>\n      <td>1.3115</td>\n      <td>0.1488</td>\n      <td>1.0198</td>\n      <td>1.6031</td>\n      <td>358.0</td>\n      <td>718</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pathak DR et al. (2021) [PMID: 34682540]</th>\n      <td>-1.3642</td>\n      <td>0.5475</td>\n      <td>-2.4373</td>\n      <td>-0.2911</td>\n      <td>131.0</td>\n      <td>415.0</td>\n    </tr>\n    <tr>\n      <th>Kaluza J et al. (2021) [PMID: 33004231]</th>\n      <td>-1.2236</td>\n      <td>0.5121</td>\n      <td>-2.2272</td>\n      <td>-0.2200</td>\n      <td>195.0</td>\n      <td>33780.0</td>\n    </tr>\n    <tr>\n      <th>Van 't Veer P et al. (1991) [PMID: 1848533]</th>\n      <td>-1.0175</td>\n      <td>0.3829</td>\n      <td>-1.7680</td>\n      <td>-0.2670</td>\n      <td>133.0</td>\n      <td>422.0</td>\n    </tr>\n    <tr>\n      <th>Yamamoto S et al. (2003) [PMID: 12813174]</th>\n      <td>-0.7765</td>\n      <td>0.3092</td>\n      <td>-1.3825</td>\n      <td>-0.1706</td>\n      <td>179.0</td>\n      <td>21852.0</td>\n    </tr>\n    <tr>\n      <th>McCann SE et al. (2017) [PMID: 29955696]</th>\n      <td>-0.4423</td>\n      <td>0.1349</td>\n      <td>-0.7067</td>\n      <td>-0.1778</td>\n      <td>1941.0</td>\n      <td>3178.0</td>\n    </tr>\n    <tr>\n      <th>van't Veer P et al. (1989) [PMID: 2736542]</th>\n      <td>-0.4127</td>\n      <td>0.1980</td>\n      <td>-0.8008</td>\n      <td>-0.0247</td>\n      <td>133.0</td>\n      <td>422.0</td>\n    </tr>\n    <tr>\n      <th>Key TJ et al. (1999) [PMID: 10584890]</th>\n      <td>-0.1393</td>\n      <td>0.1273</td>\n      <td>-0.3888</td>\n      <td>0.1102</td>\n      <td>427.0</td>\n      <td>34759.0</td>\n    </tr>\n    <tr>\n      <th>Wirf\u00e4lt E et al. (2011) [PMID: 21767080]</th>\n      <td>-0.1090</td>\n      <td>0.0511</td>\n      <td>-0.2091</td>\n      <td>-0.0090</td>\n      <td>270.0</td>\n      <td>17000.0</td>\n    </tr>\n    <tr>\n      <th>Wu Y et al. (2021) [PMID: 33964859]</th>\n      <td>-0.0986</td>\n      <td>0.0398</td>\n      <td>-0.1765</td>\n      <td>-0.0206</td>\n      <td>37861.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Shirabe R et al. (2021) [PMID: 33340281]</th>\n      <td>-0.0578</td>\n      <td>0.1617</td>\n      <td>-0.3747</td>\n      <td>0.2591</td>\n      <td>825.0</td>\n      <td>47614.0</td>\n    </tr>\n    <tr>\n      <th>Nishio K et al. (2007) [PMID: 17619154]</th>\n      <td>0.0093</td>\n      <td>0.2076</td>\n      <td>-0.3976</td>\n      <td>0.4161</td>\n      <td>145.0</td>\n      <td>30454.0</td>\n    </tr>\n    <tr>\n      <th>Yu H et al. (2010) [PMID: 20432165]</th>\n      <td>1.3115</td>\n      <td>0.1488</td>\n      <td>1.0198</td>\n      <td>1.6031</td>\n      <td>358.0</td>\n      <td>718.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 0.82,
         "ci_low": 0.65,
@@ -601,7 +643,7 @@
         "interpretation": "Not statistically significant",
         "i2": 90.83,
         "tau2": 0.13,
-        "eggers_p": 0.5897124894853762,
+        "eggers_p": 0.5897124894853758,
         "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.5897). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
         "loo_results": [
             {
@@ -689,7 +731,7 @@
                 "is_significant": true
             }
         ],
-        "results_interpretation": "The pooled analysis of 12 studies yielded an effect size of 0.82 (95% CI: 0.65\u20131.04), indicating no statistically significant association between fermented foods and breast cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 90.83%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 12 studies yielded an effect size of 0.82 (95% CI: 0.65\u20131.04), indicating no statistically significant association between fermented_foods and breast cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 90.83%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "total_fetched": 191,
@@ -708,8 +750,8 @@
             "outcome": 0
         }
     },
-    "plot_url": "static/fermented_foods/forest_breast_cancer_incidence_primary.png?t=546",
-    "funnel_plot_url": "static/fermented_foods/funnel_breast_cancer_incidence_primary.png?t=9913",
-    "baujat_plot_url": "static/fermented_foods/baujat_breast_cancer_incidence_primary.png?t=4814",
+    "plot_url": "static/fermented_foods/forest_breast_cancer_incidence_primary.png?t=6334",
+    "funnel_plot_url": "static/fermented_foods/funnel_breast_cancer_incidence_primary.png?t=9130",
+    "baujat_plot_url": "static/fermented_foods/baujat_breast_cancer_incidence_primary.png?t=5213",
     "last_run": "2026-06-24 15:19:35"
 }

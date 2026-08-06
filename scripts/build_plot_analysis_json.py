@@ -36,9 +36,11 @@ def summarize_cache(path: Path, disease: str, exposure: str, dietary: bool) -> d
         if column in frame:
             frame[column] = pd.to_numeric(frame[column].astype(str).str.replace(",", "", regex=False).str.strip(), errors="coerce")
     cases = frame.get("Cases", pd.Series(np.nan, index=frame.index)).fillna(frame.get("Estimated Cases", pd.Series(np.nan, index=frame.index)))
-    effect_types = frame.get("Effect Type", pd.Series("", index=frame.index)).fillna("").astype(str).str.strip().str.upper()
+    eligible_effect = frame.get("Effect Type", pd.Series("", index=frame.index)).map(
+        meta_analysis.is_eligible_effect_type
+    )
     quality = frame.get("Quality Score", pd.Series("Fair", index=frame.index)).fillna("Fair").astype(str).str.strip().str.lower()
-    valid = frame.loc[(frame["Effect Size"] > 0) & (frame["Lower CI"] > 0) & (frame["Upper CI"] > 0) & (cases >= 50) & effect_types.ne("PAF") & quality.isin({"good", "moderate"})].copy()
+    valid = frame.loc[(frame["Effect Size"] > 0) & (frame["Lower CI"] > 0) & (frame["Upper CI"] > 0) & (cases >= 50) & eligible_effect & quality.isin({"good", "moderate"})].copy()
     if valid.empty:
         return None
     result = meta_analysis.perform_meta_analysis(valid, disease, exposure, generate_plots=False, df_all=valid)

@@ -197,7 +197,7 @@
                 "outcome_definition": "147 incident epithelial ovarian cancer cases were identified by linkage to a cancer registry.",
                 "exposure_definition": "total folate (food plus supplement) intake"
             },
-            "exclusions": 3
+            "exclusions": 0
         },
         {
             "Study": "Koushik A et al. (2015) [PMID: 26169298]",
@@ -263,22 +263,22 @@
             "Link": "https://pubmed.ncbi.nlm.nih.gov/19585555/",
             "Effect Type": "OR",
             "SE": 0.14285714285714285,
-            "Sample Size": null,
+            "Sample Size": 593,
             "Cases": 152,
             "Estimated Cases": null,
             "Design": "Case-Control",
             "Timing": "Prospective",
             "Continent": "North America",
             "Stage": null,
-            "Quality %": 50.0,
-            "Quality Score": "Fair",
+            "Quality %": 90.0,
+            "Quality Score": "Good",
             "comparison_type": ">=300 microg/day vs <300 microg/day",
             "JBI": {
-                "q1": "Unclear",
-                "q2": "Unclear",
-                "q3": "Unclear",
-                "q4": "Unclear",
-                "q5": "Unclear",
+                "q1": "No",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
                 "q6": "Yes",
                 "q7": "Yes",
                 "q8": "Yes",
@@ -288,7 +288,7 @@
             "exposure_measurement_type": "dietary_intake",
             "exposure_measurement_supporting_text": "Recent dietary folate intake > or = 300 microg/day compared to < 300 microg/day",
             "extraction_supporting_text": {
-                "sample_size": "152 ovarian cancers",
+                "sample_size": "The reported recent dietary folate estimate used the recent-intake analytic groups: 39 FR\u03b1-positive cases, 72 FR\u03b1-negative cases, and 482 controls, for 593 participants total.",
                 "effect_size": "OR = 0.62",
                 "effect_direction": "associated with decreased risk of developing ovarian cancer",
                 "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.032.",
@@ -495,84 +495,77 @@
             "P Value": 0.010241440942936287
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Larsson SC et al. (2004) [PMID: 14996861]</th>\n      <td>-1.3471</td>\n      <td>0.4328</td>\n      <td>-2.1953</td>\n      <td>-0.4989</td>\n      <td>266.0</td>\n      <td>61084.0</td>\n    </tr>\n    <tr>\n      <th>Arthur RS et al. (2019) [PMID: 30955365]</th>\n      <td>-0.8998</td>\n      <td>0.3560</td>\n      <td>-1.5976</td>\n      <td>-0.2020</td>\n      <td>104.0</td>\n      <td>3185.0</td>\n    </tr>\n    <tr>\n      <th>Kelemen LE et al. (2005) [PMID: 16172227]</th>\n      <td>-0.7550</td>\n      <td>0.3400</td>\n      <td>-1.4214</td>\n      <td>-0.0886</td>\n      <td>108.0</td>\n      <td>256.0</td>\n    </tr>\n    <tr>\n      <th>Kotsopoulos J et al. (2010) [PMID: 19585555]</th>\n      <td>-0.4274</td>\n      <td>0.2039</td>\n      <td>-0.8271</td>\n      <td>-0.0276</td>\n      <td>152.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Navarro Silvera SA et al. (2006) [PMID: 17106331]</th>\n      <td>-0.2706</td>\n      <td>0.2800</td>\n      <td>-0.8193</td>\n      <td>0.2781</td>\n      <td>264.0</td>\n      <td>48766.0</td>\n    </tr>\n    <tr>\n      <th>Koushik A et al. (2015) [PMID: 26169298]</th>\n      <td>0.0100</td>\n      <td>0.0277</td>\n      <td>-0.0443</td>\n      <td>0.0642</td>\n      <td>1973.0</td>\n      <td>501857.0</td>\n    </tr>\n    <tr>\n      <th>Tworoger SS et al. (2006) [PMID: 16554344]</th>\n      <td>0.1906</td>\n      <td>0.1412</td>\n      <td>-0.0861</td>\n      <td>0.4673</td>\n      <td>481.0</td>\n      <td>80254.0</td>\n    </tr>\n    <tr>\n      <th>Gersekowski K et al. (2023) [PMID: 37220873]</th>\n      <td>0.2678</td>\n      <td>0.1291</td>\n      <td>0.0149</td>\n      <td>0.5208</td>\n      <td>5741.0</td>\n      <td>13858.0</td>\n    </tr>\n    <tr>\n      <th>Webb PM et al. (2011) [PMID: 21629268]</th>\n      <td>0.4148</td>\n      <td>0.1805</td>\n      <td>0.0611</td>\n      <td>0.7685</td>\n      <td>1363.0</td>\n      <td>2777.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Larsson SC et al. (2004) [PMID: 14996861]</th>\n      <td>-1.3471</td>\n      <td>0.4328</td>\n      <td>-2.1953</td>\n      <td>-0.4989</td>\n      <td>266.0</td>\n      <td>61084.0</td>\n    </tr>\n    <tr>\n      <th>Arthur RS et al. (2019) [PMID: 30955365]</th>\n      <td>-0.8998</td>\n      <td>0.3560</td>\n      <td>-1.5976</td>\n      <td>-0.2020</td>\n      <td>104.0</td>\n      <td>3185.0</td>\n    </tr>\n    <tr>\n      <th>Kelemen LE et al. (2005) [PMID: 16172227]</th>\n      <td>-0.7550</td>\n      <td>0.3400</td>\n      <td>-1.4214</td>\n      <td>-0.0886</td>\n      <td>108.0</td>\n      <td>256.0</td>\n    </tr>\n    <tr>\n      <th>Kotsopoulos J et al. (2010) [PMID: 19585555]</th>\n      <td>-0.4274</td>\n      <td>0.2039</td>\n      <td>-0.8271</td>\n      <td>-0.0276</td>\n      <td>152.0</td>\n      <td>593.0</td>\n    </tr>\n    <tr>\n      <th>Navarro Silvera SA et al. (2006) [PMID: 17106331]</th>\n      <td>-0.2706</td>\n      <td>0.2800</td>\n      <td>-0.8193</td>\n      <td>0.2781</td>\n      <td>264.0</td>\n      <td>48766.0</td>\n    </tr>\n    <tr>\n      <th>Koushik A et al. (2015) [PMID: 26169298]</th>\n      <td>0.0100</td>\n      <td>0.0277</td>\n      <td>-0.0443</td>\n      <td>0.0642</td>\n      <td>1973.0</td>\n      <td>501857.0</td>\n    </tr>\n    <tr>\n      <th>Tworoger SS et al. (2006) [PMID: 16554344]</th>\n      <td>0.1906</td>\n      <td>0.1412</td>\n      <td>-0.0861</td>\n      <td>0.4673</td>\n      <td>481.0</td>\n      <td>80254.0</td>\n    </tr>\n    <tr>\n      <th>Kelemen LE et al. (2004) [PMID: 15801492]</th>\n      <td>0.5481</td>\n      <td>0.3338</td>\n      <td>-0.1060</td>\n      <td>1.2023</td>\n      <td>147.0</td>\n      <td>27205.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.87,
-        "ci_low": 0.68,
-        "ci_upp": 1.1,
-        "pi_low": 0.42,
-        "pi_upp": 1.8,
+        "pooled_es": 0.77,
+        "ci_low": 0.58,
+        "ci_upp": 1.03,
+        "pi_low": 0.32,
+        "pi_upp": 1.85,
         "interpretation": "Not statistically significant",
-        "i2": 78.77,
-        "tau2": 0.08,
-        "eggers_p": 0.29349984797895423,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.2935). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "i2": 77.38,
+        "tau2": 0.11,
+        "eggers_p": 0.1398697856494959,
+        "funnel_interpretation": "Egger\u2019s test is generally not recommended when fewer than 10 studies are available.",
         "loo_results": [
             {
                 "omitted": "Larsson SC et al. (2004) [PMID: 14996861]",
-                "pooled_es": 0.9446098229906513,
-                "ci_low": 0.7035577717582776,
-                "ci_upp": 1.2682508153672905,
+                "pooled_es": 0.852764195615507,
+                "ci_low": 0.6098727295833334,
+                "ci_upp": 1.1923910318478943,
                 "is_significant": false
             },
             {
                 "omitted": "Arthur RS et al. (2019) [PMID: 30955365]",
-                "pooled_es": 0.9267958647314968,
-                "ci_low": 0.6628592648677275,
-                "ci_upp": 1.2958264603193033,
+                "pooled_es": 0.8296816736839626,
+                "ci_low": 0.5607943195497308,
+                "ci_upp": 1.2274940306095186,
                 "is_significant": false
             },
             {
                 "omitted": "Kelemen LE et al. (2005) [PMID: 16172227]",
-                "pooled_es": 0.9159461247808303,
-                "ci_low": 0.6459114359010967,
-                "ci_upp": 1.2988735867953933,
+                "pooled_es": 0.8165636309529996,
+                "ci_low": 0.5421916315050406,
+                "ci_upp": 1.2297795182568172,
                 "is_significant": false
             },
             {
                 "omitted": "Kotsopoulos J et al. (2010) [PMID: 19585555]",
-                "pooled_es": 0.9003806947525934,
-                "ci_low": 0.6170593011952454,
-                "ci_upp": 1.3137884704320366,
+                "pooled_es": 0.7877117967411994,
+                "ci_low": 0.5038935355576966,
+                "ci_upp": 1.2313908215522278,
                 "is_significant": false
             },
             {
                 "omitted": "Navarro Silvera SA et al. (2006) [PMID: 17106331]",
-                "pooled_es": 0.8724155468328528,
-                "ci_low": 0.595133557086729,
-                "ci_upp": 1.2788875325421265,
+                "pooled_es": 0.7644137095426196,
+                "ci_low": 0.4898470956643347,
+                "ci_upp": 1.1928790116520693,
                 "is_significant": false
             },
             {
                 "omitted": "Koushik A et al. (2015) [PMID: 26169298]",
-                "pooled_es": 0.7816057681125229,
-                "ci_low": 0.517080272687934,
-                "ci_upp": 1.1814559731143701,
+                "pooled_es": 0.6924410122640907,
+                "ci_low": 0.43647622209868026,
+                "ci_upp": 1.0985124302072913,
                 "is_significant": false
             },
             {
                 "omitted": "Tworoger SS et al. (2006) [PMID: 16554344]",
-                "pooled_es": 0.801614829232161,
-                "ci_low": 0.5459202272837542,
-                "ci_upp": 1.1770700229264595,
+                "pooled_es": 0.6836201071878116,
+                "ci_low": 0.44447924843214603,
+                "ci_upp": 1.0514246786547525,
                 "is_significant": false
             },
             {
-                "omitted": "Gersekowski K et al. (2023) [PMID: 37220873]",
-                "pooled_es": 0.7915046548028214,
-                "ci_low": 0.5438446769253305,
-                "ci_upp": 1.1519458499003543,
-                "is_significant": false
-            },
-            {
-                "omitted": "Webb PM et al. (2011) [PMID: 21629268]",
-                "pooled_es": 0.7976838492223443,
-                "ci_low": 0.5616873679211117,
-                "ci_upp": 1.1328357368356252,
+                "omitted": "Kelemen LE et al. (2004) [PMID: 15801492]",
+                "pooled_es": 0.7036659555048763,
+                "ci_low": 0.4847716495309838,
+                "ci_upp": 1.0214000290975014,
                 "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled analysis of 9 studies yielded an effect size of 0.87 (95% CI: 0.68\u20131.1), indicating no statistically significant association between folic acid and ovarian cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 78.77%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 8 studies yielded an effect size of 0.77 (95% CI: 0.58\u20131.03), indicating no statistically significant association between folic_acid and ovarian cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 77.38%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 190,
@@ -591,8 +584,8 @@
         },
         "extracted": 11
     },
-    "plot_url": "static/folic_acid/forest_ovarian_cancer_incidence_primary.png?t=5654",
-    "funnel_plot_url": "static/folic_acid/funnel_ovarian_cancer_incidence_primary.png?t=858",
-    "baujat_plot_url": "static\\folic_acid\\baujat_ovarian_cancer_incidence_primary.png?t=1563",
+    "plot_url": "static/folic_acid/forest_ovarian_cancer_incidence_primary.png?t=218",
+    "funnel_plot_url": "static/folic_acid/funnel_ovarian_cancer_incidence_primary.png?t=7333",
+    "baujat_plot_url": "static/folic_acid/baujat_ovarian_cancer_incidence_primary.png?t=5641",
     "last_run": "2026-06-16 19:45:03"
 }

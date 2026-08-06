@@ -61,14 +61,16 @@ def filtered_result(exposure: str, cancer: str) -> dict:
                 errors="coerce",
             )
     cases = frame["Cases"].fillna(frame.get("Estimated Cases", np.nan))
-    effect_types = frame.get("Effect Type", pd.Series("", index=frame.index)).fillna("").astype(str).str.strip().str.upper()
+    eligible_effect = frame.get("Effect Type", pd.Series("", index=frame.index)).map(
+        meta_analysis.is_eligible_effect_type
+    )
     quality_scores = frame.get("Quality Score", pd.Series("Fair", index=frame.index)).fillna("Fair").astype(str).str.strip().str.lower()
     valid = frame[
         (frame["Effect Size"] > 0)
         & (frame["Lower CI"] > 0)
         & (frame["Upper CI"] > 0)
         & (cases >= 50)
-        & effect_types.ne("PAF")
+        & eligible_effect
         & quality_scores.isin({"good", "moderate"})
     ].copy()
     if valid.empty:

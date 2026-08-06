@@ -22,17 +22,17 @@
             "Timing": "Prospective",
             "Continent": "North America",
             "Stage": "",
-            "Quality %": 81.8,
-            "Quality Score": "Good",
+            "Quality %": 27.3,
+            "Quality Score": "Fair",
             "comparison_type": "Highest vs Lowest quintile of predicted 25(OH)D",
             "JBI": {
                 "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
+                "q2": "Unclear",
+                "q3": "Unclear",
+                "q4": "Unclear",
+                "q5": "Unclear",
+                "q6": "Unclear",
+                "q7": "Unclear",
                 "q8": "Yes",
                 "q9": "Unclear",
                 "q10": "Unclear",
@@ -247,56 +247,49 @@
             "P Value": 0.034871741267657116
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Salazar-Martinez E et al. (2005) [PMID: 16174249]</th>\n      <td>-0.8836</td>\n      <td>0.3641</td>\n      <td>-1.5972</td>\n      <td>-0.1699</td>\n      <td>85.0</td>\n      <td>714.0</td>\n    </tr>\n    <tr>\n      <th>Hu Y et al. (2025) [PMID: 41031356]</th>\n      <td>-0.2977</td>\n      <td>0.1423</td>\n      <td>-0.5766</td>\n      <td>-0.0188</td>\n      <td>235.0</td>\n      <td>51286.0</td>\n    </tr>\n    <tr>\n      <th>Zeleniuch-Jacquotte A et al. (2010) [PMID: 20562189]</th>\n      <td>-0.0923</td>\n      <td>0.2531</td>\n      <td>-0.5884</td>\n      <td>0.4038</td>\n      <td>830.0</td>\n      <td>1822.0</td>\n    </tr>\n    <tr>\n      <th>Liu JJ et al. (2013) [PMID: 23136228]</th>\n      <td>0.0000</td>\n      <td>0.1478</td>\n      <td>-0.2897</td>\n      <td>0.2897</td>\n      <td>644.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Skaaby T et al. (2014) [PMID: 24789846]</th>\n      <td>0.0885</td>\n      <td>0.0685</td>\n      <td>-0.0458</td>\n      <td>0.2228</td>\n      <td>1248.0</td>\n      <td>12204.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Salazar-Martinez E et al. (2005) [PMID: 16174249]</th>\n      <td>-0.8836</td>\n      <td>0.3641</td>\n      <td>-1.5972</td>\n      <td>-0.1699</td>\n      <td>85.0</td>\n      <td>714.0</td>\n    </tr>\n    <tr>\n      <th>Hu Y et al. (2025) [PMID: 41031356]</th>\n      <td>-0.2977</td>\n      <td>0.1423</td>\n      <td>-0.5766</td>\n      <td>-0.0188</td>\n      <td>235.0</td>\n      <td>51286.0</td>\n    </tr>\n    <tr>\n      <th>Zeleniuch-Jacquotte A et al. (2010) [PMID: 20562189]</th>\n      <td>-0.0923</td>\n      <td>0.2531</td>\n      <td>-0.5884</td>\n      <td>0.4038</td>\n      <td>830.0</td>\n      <td>1822.0</td>\n    </tr>\n    <tr>\n      <th>Skaaby T et al. (2014) [PMID: 24789846]</th>\n      <td>0.0885</td>\n      <td>0.0685</td>\n      <td>-0.0458</td>\n      <td>0.2228</td>\n      <td>1248.0</td>\n      <td>12204.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.88,
-        "ci_low": 0.69,
-        "ci_upp": 1.12,
-        "pi_low": 0.4,
-        "pi_upp": 1.91,
+        "pooled_es": 0.82,
+        "ci_low": 0.59,
+        "ci_upp": 1.14,
+        "pi_low": 0.2,
+        "pi_upp": 3.33,
         "interpretation": "Not statistically significant",
-        "i2": 66.72,
-        "tau2": 0.04,
-        "eggers_p": 0.09847070813823804,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.0985). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "i2": 75.03,
+        "tau2": 0.08,
+        "eggers_p": 0.15428852021538117,
+        "funnel_interpretation": "Egger\u2019s test is generally not recommended when fewer than 10 studies are available.",
         "loo_results": [
             {
                 "omitted": "Salazar-Martinez E et al. (2005) [PMID: 16174249]",
-                "pooled_es": 0.9538029566508456,
-                "ci_low": 0.8017119858951309,
-                "ci_upp": 1.1347467620808336,
+                "pooled_es": 0.9240710418224938,
+                "ci_low": 0.7288527076846787,
+                "ci_upp": 1.1715773040721589,
                 "is_significant": false
             },
             {
                 "omitted": "Hu Y et al. (2025) [PMID: 41031356]",
-                "pooled_es": 0.9305743262447913,
-                "ci_low": 0.6734352729816392,
-                "ci_upp": 1.2858972664616535,
+                "pooled_es": 0.8270856307007396,
+                "ci_low": 0.4849338006727335,
+                "ci_upp": 1.4106474730419913,
                 "is_significant": false
             },
             {
                 "omitted": "Zeleniuch-Jacquotte A et al. (2010) [PMID: 20562189]",
-                "pooled_es": 0.8607590492758692,
-                "ci_low": 0.611013557063302,
-                "ci_upp": 1.2125854366821178,
-                "is_significant": false
-            },
-            {
-                "omitted": "Liu JJ et al. (2013) [PMID: 23136228]",
-                "pooled_es": 0.8194166647141752,
-                "ci_low": 0.573208826378078,
-                "ci_upp": 1.1713770610510994,
+                "pooled_es": 0.779203422326102,
+                "ci_low": 0.4731345357811114,
+                "ci_upp": 1.2832670782789828,
                 "is_significant": false
             },
             {
                 "omitted": "Skaaby T et al. (2014) [PMID: 24789846]",
-                "pooled_es": 0.7973299002952918,
-                "ci_low": 0.586052206520342,
-                "ci_upp": 1.084775320068407,
+                "pooled_es": 0.7121106161580958,
+                "ci_low": 0.4924566887437964,
+                "ci_upp": 1.0297383328036906,
                 "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled analysis of 5 studies yielded an effect size of 0.88 (95% CI: 0.69\u20131.12), indicating no statistically significant association between Vitamin D and uterine cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by substantial heterogeneity (I\u00b2 = 66.72%), reflecting considerable variability across studies."
+        "results_interpretation": "The pooled analysis of 4 studies yielded an effect size of 0.82 (95% CI: 0.59\u20131.14), indicating no statistically significant association between vitamin_d and uterine cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 75.03%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 61,
@@ -315,8 +308,8 @@
         },
         "extracted": 12
     },
-    "plot_url": "static/vitamin_d/forest_uterine_cancer_incidence_primary.png?t=2391",
-    "funnel_plot_url": "static/vitamin_d/funnel_uterine_cancer_incidence_primary.png?t=7993",
-    "baujat_plot_url": "static/vitamin_d/baujat_uterine_cancer_incidence_primary.png?t=8654",
+    "plot_url": "static/vitamin_d/forest_uterine_cancer_incidence_primary.png?t=9846",
+    "funnel_plot_url": "static/vitamin_d/funnel_uterine_cancer_incidence_primary.png?t=9179",
+    "baujat_plot_url": "static/vitamin_d/baujat_uterine_cancer_incidence_primary.png?t=2836",
     "last_run": "2026-06-15 16:12:32"
 }

@@ -143,14 +143,16 @@ def export_disease_results(disease, disease_label, outcome="Incidence", exclude_
                     
             # Filter Cases >= 50
             cases_col = df['Cases'].fillna(df.get('Estimated Cases', np.nan)) if 'Cases' in df.columns else df.get('Estimated Cases', np.nan)
-            effect_types = df.get('Effect Type', pd.Series('', index=df.index)).fillna('').astype(str).str.strip().str.upper()
+            eligible_effect = df.get('Effect Type', pd.Series('', index=df.index)).map(
+                meta_analysis.is_eligible_effect_type
+            )
             quality_scores = df.get('Quality Score', pd.Series('Fair', index=df.index)).fillna('Fair').astype(str).str.strip().str.lower()
             df_valid = df[
                 (df['Effect Size'] > 0) & 
                 (df['Lower CI'] > 0) & 
                 (df['Upper CI'] > 0) &
                 (cases_col >= 50) &
-                effect_types.ne('PAF') &
+                eligible_effect &
                 quality_scores.isin({'good', 'moderate'})
             ].copy()
             

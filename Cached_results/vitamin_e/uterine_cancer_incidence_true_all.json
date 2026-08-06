@@ -49,14 +49,65 @@
                 "exposure_definition": "intakes of selected food groups and nutrients ... vitamin E"
             },
             "P Value": 0.0007296944874727871
+        },
+        {
+            "Study": "Hall KT et al. (2019) [PMID: 30624689]",
+            "PMID": "30624689",
+            "Effect Size": 0.88,
+            "Lower CI": 0.8,
+            "Upper CI": 0.97,
+            "Population": "General",
+            "Reference": "COMT and Alpha-Tocopherol Effects in Cancer Prevention: Gene-Supplement Interactions in Two Randomized Clinical Trials.",
+            "Authors": "Hall KT, Buring JE, Mukamal KJ, Vinayaga Moorthy M, Wayne PM, Kaptchuk TJ, Battinelli EM, Ridker PM, Sesso HD, Weinstein SJ, Albanes D, Cook NR, Chasman DI",
+            "Journal": "Journal of the National Cancer Institute",
+            "Year": "2019",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/30624689/",
+            "Effect Type": "HR",
+            "SE": 0.06377551020408163,
+            "Sample Size": 29294,
+            "Cases": 2396,
+            "Design": "Randomized Controlled Trial",
+            "Timing": "Prospective",
+            "Continent": "North America",
+            "Stage": "NA",
+            "Quality %": 80.0,
+            "Quality Score": "Moderate",
+            "comparison_type": "met/met genotype vs placebo",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Unclear",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Unclear",
+                "q10": "Yes"
+            },
+            "exclusions": 2,
+            "Participants": 29294,
+            "exposure_measurement_type": "dietary_intake",
+            "extraction_supporting_text": {
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.009."
+            },
+            "P Value": 0.009304412545617459
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>541.0</td>\n      <td>1082.0</td>\n      <td>0.474547</td>\n      <td>0.29831</td>\n      <td>0.728408</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Yeh M et al. (2009) [PMID: 19074206]</th>\n      <td>-0.7454</td>\n      <td>0.2277</td>\n      <td>-1.1918</td>\n      <td>-0.2990</td>\n      <td>541.0</td>\n      <td>1082.0</td>\n    </tr>\n    <tr>\n      <th>Hall KT et al. (2019) [PMID: 30624689]</th>\n      <td>-0.1197</td>\n      <td>0.0462</td>\n      <td>-0.2102</td>\n      <td>-0.0291</td>\n      <td>2396.0</td>\n      <td>29294.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.47,
-        "ci_low": 0.3,
-        "ci_upp": 0.73,
-        "interpretation": "statistically significant (decreased risk/odds)"
+        "pooled_es": 0.68,
+        "ci_low": 0.37,
+        "ci_upp": 1.24,
+        "pi_low": null,
+        "pi_upp": null,
+        "interpretation": "Not statistically significant",
+        "i2": 86.21,
+        "tau2": 0.17,
+        "eggers_p": null,
+        "funnel_interpretation": "Egger\u2019s test is generally not recommended when fewer than 10 studies are available.",
+        "loo_results": [],
+        "results_interpretation": "The pooled analysis of 2 studies yielded an effect size of 0.68 (95% CI: 0.37\u20131.24), indicating no statistically significant association between vitamin_e and uterine cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 86.21%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 14,
@@ -75,8 +126,8 @@
         },
         "extracted": 6
     },
-    "plot_url": "static/vitamin_e/forest_uterine_cancer_incidence_primary.png?t=444",
-    "funnel_plot_url": "static/vitamin_e/funnel_uterine_cancer_incidence_primary.png?t=4488",
+    "plot_url": "static/vitamin_e/forest_uterine_cancer_incidence_primary.png?t=4682",
+    "funnel_plot_url": "static/vitamin_e/funnel_uterine_cancer_incidence_primary.png?t=6081",
     "baujat_plot_url": null,
     "last_run": "2026-06-15 16:19:04"
 }

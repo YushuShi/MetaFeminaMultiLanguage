@@ -146,44 +146,86 @@
                 "exposure_definition": "Intake of carotenoids and retinol was computed from a validated and reproducible food frequency questionnaire."
             },
             "P Value": 0.7669110257223221
+        },
+        {
+            "Study": "Wise LA et al. (2021) [PMID: 33350944]",
+            "PMID": "33350944",
+            "Effect Size": 1.22,
+            "Lower CI": 0.86,
+            "Upper CI": 1.72,
+            "Population": "General",
+            "Reference": "Intake of Lycopene and other Carotenoids and Incidence of Uterine Leiomyomata: A Prospective Ultrasound Study.",
+            "Authors": "Wise LA, Wesselink AK, Bethea TN, Brasky TM, Wegienka G, Harmon Q, Block T, Baird DD",
+            "Journal": "Journal of the Academy of Nutrition and Dietetics",
+            "Year": "2021",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/33350944/",
+            "Effect Type": "HR",
+            "SE": 0.2193877551020408,
+            "Sample Size": 1230,
+            "Cases": 301,
+            "Design": "Cohort",
+            "Timing": "Prospective",
+            "Continent": "North America",
+            "Stage": "NA",
+            "Quality %": 100.0,
+            "Quality Score": "Good",
+            "comparison_type": "Q3 vs Q1",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Yes",
+                "q10": "Yes",
+                "q11": "Yes"
+            },
+            "exclusions": 2,
+            "extraction_supporting_text": {
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.261."
+            },
+            "P Value": 0.26076955432269683
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Jeong NH et al. (2009) [PMID: 19235557]</th>\n      <td>-1.7800</td>\n      <td>0.6743</td>\n      <td>-3.1017</td>\n      <td>-0.4584</td>\n      <td>28.0</td>\n      <td>168.0</td>\n    </tr>\n    <tr>\n      <th>McCann SE et al. (2000) [PMID: 11142531]</th>\n      <td>-0.4574</td>\n      <td>0.2130</td>\n      <td>-0.8750</td>\n      <td>-0.0399</td>\n      <td>232.0</td>\n      <td>871.0</td>\n    </tr>\n    <tr>\n      <th>Pelucchi C et al. (2008) [PMID: 18592384]</th>\n      <td>-0.0448</td>\n      <td>0.1512</td>\n      <td>-0.3411</td>\n      <td>0.2515</td>\n      <td>454.0</td>\n      <td>1362.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>McCann SE et al. (2000) [PMID: 11142531]</th>\n      <td>-0.4574</td>\n      <td>0.2130</td>\n      <td>-0.8750</td>\n      <td>-0.0399</td>\n      <td>232.0</td>\n      <td>871.0</td>\n    </tr>\n    <tr>\n      <th>Pelucchi C et al. (2008) [PMID: 18592384]</th>\n      <td>-0.0448</td>\n      <td>0.1512</td>\n      <td>-0.3411</td>\n      <td>0.2515</td>\n      <td>454.0</td>\n      <td>1362.0</td>\n    </tr>\n    <tr>\n      <th>Wise LA et al. (2021) [PMID: 33350944]</th>\n      <td>0.1839</td>\n      <td>0.1620</td>\n      <td>-0.1336</td>\n      <td>0.5014</td>\n      <td>301.0</td>\n      <td>1230.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.63,
-        "ci_low": 0.35,
-        "ci_upp": 1.14,
-        "pi_low": 0.0,
-        "pi_upp": 484.47,
+        "pooled_es": 0.92,
+        "ci_low": 0.66,
+        "ci_upp": 1.29,
+        "pi_low": 0.02,
+        "pi_upp": 37.32,
         "interpretation": "Not statistically significant",
-        "i2": 74.76,
-        "tau2": 0.18,
-        "eggers_p": 0.18037613528104798,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.1804). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "i2": 65.18,
+        "tau2": 0.06,
+        "eggers_p": 0.4130854811476988,
+        "funnel_interpretation": "Egger\u2019s test is generally not recommended when fewer than 10 studies are available.",
         "loo_results": [
             {
-                "omitted": "Jeong NH et al. (2009) [PMID: 19235557]",
-                "pooled_es": 0.7994748384515786,
-                "ci_low": 0.5354555224194818,
-                "ci_upp": 1.1936752737726977,
-                "is_significant": false
-            },
-            {
                 "omitted": "McCann SE et al. (2000) [PMID: 11142531]",
-                "pooled_es": 0.454769253731267,
-                "ci_low": 0.08450864594217761,
-                "ci_upp": 2.447265268938284,
+                "pooled_es": 1.0641325690405774,
+                "ci_low": 0.8508762632203508,
+                "ci_upp": 1.3308376005309341,
                 "is_significant": false
             },
             {
                 "omitted": "Pelucchi C et al. (2008) [PMID: 18592384]",
-                "pooled_es": 0.381369969120836,
-                "ci_low": 0.10816186646167403,
-                "ci_upp": 1.3446795816782948,
+                "pooled_es": 0.8852988016113655,
+                "ci_low": 0.4725260967723472,
+                "ci_upp": 1.6586469477306258,
+                "is_significant": false
+            },
+            {
+                "omitted": "Wise LA et al. (2021) [PMID: 33350944]",
+                "pooled_es": 0.7994748384515786,
+                "ci_low": 0.5354555224194818,
+                "ci_upp": 1.1936752737726977,
                 "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled analysis of 3 studies yielded an effect size of 0.63 (95% CI: 0.35\u20131.14), indicating no statistically significant association between lycopene and uterine cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by substantial heterogeneity (I\u00b2 = 74.76%), reflecting considerable variability across studies."
+        "results_interpretation": "The pooled analysis of 3 studies yielded an effect size of 0.92 (95% CI: 0.66\u20131.29), indicating no statistically significant association between lycopene and uterine cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by substantial heterogeneity (I\u00b2 = 65.18%), reflecting considerable variability across studies."
     },
     "screening_stats": {
         "llm_screened_out": 4,
@@ -202,8 +244,8 @@
         },
         "extracted": 5
     },
-    "plot_url": "static/lycopene/forest_uterine_cancer_incidence_primary.png?t=6773",
-    "funnel_plot_url": "static/lycopene/funnel_uterine_cancer_incidence_primary.png?t=1208",
-    "baujat_plot_url": "static/lycopene/baujat_uterine_cancer_incidence_primary.png?t=2065",
+    "plot_url": "static/lycopene/forest_uterine_cancer_incidence_primary.png?t=1528",
+    "funnel_plot_url": "static/lycopene/funnel_uterine_cancer_incidence_primary.png?t=3372",
+    "baujat_plot_url": "static/lycopene/baujat_uterine_cancer_incidence_primary.png?t=5912",
     "last_run": "2026-06-15 14:34:39"
 }

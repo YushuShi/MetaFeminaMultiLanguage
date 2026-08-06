@@ -50,9 +50,29 @@ EGGERS_FEWER_THAN_TEN_MESSAGE = (
 )
 
 RATIO_EFFECT_TYPES = {
-    'OR', 'RR', 'HR', 'IRR', 'ODDS RATIO', 'RISK RATIO',
-    'HAZARD RATIO', 'INCIDENCE RATE RATIO', 'RATE RATIO',
+    'OR', 'RR', 'HR', 'ODDS RATIO', 'RISK RATIO', 'RELATIVE RISK',
+    'HAZARD RATIO',
 }
+
+
+def normalize_effect_type(effect_type):
+    """Return a canonical RR/OR/HR label, or ``None`` when not poolable."""
+    normalized = re.sub(r'[^A-Z]+', ' ', str(effect_type or '').upper()).strip()
+    aliases = {
+        'RR': 'RR',
+        'RISK RATIO': 'RR',
+        'RELATIVE RISK': 'RR',
+        'OR': 'OR',
+        'ODDS RATIO': 'OR',
+        'HR': 'HR',
+        'HAZARD RATIO': 'HR',
+    }
+    return aliases.get(normalized)
+
+
+def is_eligible_effect_type(effect_type):
+    """Only RR, OR, and HR measurements may enter a meta-analysis."""
+    return normalize_effect_type(effect_type) is not None
 
 
 def p_value_from_effect_ci(effect, lower, upper, effect_type=None):
@@ -66,15 +86,12 @@ def p_value_from_effect_ci(effect, lower, upper, effect_type=None):
     if lower >= upper or not lower <= effect <= upper:
         return None
 
-    normalized_type = str(effect_type or '').strip().upper()
-    if normalized_type == 'PAF':
+    normalized_type = normalize_effect_type(effect_type)
+    if normalized_type is None:
         return None
-    if normalized_type in RATIO_EFFECT_TYPES:
-        if min(effect, lower, upper) <= 0:
-            return None
-        theta, ci_lower, ci_upper = math.log(effect), math.log(lower), math.log(upper)
-    else:
-        theta, ci_lower, ci_upper = effect, lower, upper
+    if min(effect, lower, upper) <= 0:
+        return None
+    theta, ci_lower, ci_upper = math.log(effect), math.log(lower), math.log(upper)
 
     standard_error = (ci_upper - ci_lower) / 3.92
     if standard_error <= 0 or not math.isfinite(standard_error):
@@ -668,14 +685,29 @@ def perform_meta_analysis(
     if df_all is None:
         df_all = df_clean
 
-    # PAF is an attributable-burden measure, not a relative effect estimate.
-    # Keep PAF articles in the returned study list, but never pool them or draw
-    # them in meta-analysis diagnostics.
+    # Keep every saved article in the returned study list, but only RR, OR, and
+    # HR measurements may be pooled or drawn in meta-analysis diagnostics.
     df_all = df_all.copy()
     df_clean = df_clean.copy()
     if 'Effect Type' in df_clean.columns:
-        effect_types = df_clean['Effect Type'].fillna('').astype(str).str.strip().str.upper()
-        df_clean = df_clean.loc[effect_types.ne('PAF')].copy()
+        eligible_effect = df_clean['Effect Type'].map(is_eligible_effect_type)
+        df_clean = df_clean.loc[eligible_effect].copy()
+    else:
+        df_clean = df_clean.iloc[0:0].copy()
+    required_effect_columns = {'Effect Size', 'Lower CI', 'Upper CI'}
+    if required_effect_columns.issubset(df_clean.columns):
+        for column in required_effect_columns:
+            df_clean[column] = pd.to_numeric(df_clean[column], errors='coerce')
+        df_clean = df_clean.loc[
+            df_clean['Effect Size'].gt(0)
+            & df_clean['Lower CI'].gt(0)
+            & df_clean['Upper CI'].gt(0)
+            & df_clean['Lower CI'].le(df_clean['Effect Size'])
+            & df_clean['Effect Size'].le(df_clean['Upper CI'])
+        ].copy()
+
+    if df_clean.empty:
+        return {"error": "No studies with eligible RR, OR, or HR measurements were available for meta-analysis."}
 
     safe_disease = re.sub(r'[^a-zA-Z0-9]+', '_', disease.lower()).strip('_')
     safe_exposure = re.sub(r'[^a-zA-Z0-9]+', '_', exposure.lower()).strip('_')
@@ -692,29 +724,26 @@ def perform_meta_analysis(
     def convert_to_rr(es, eff_type):
         if es is None or np.isnan(es) or es <= 0:
             return es
-        eff_type_str = str(eff_type).upper().strip()
-        if eff_type_str in ['OR', 'ODDS RATIO']:
+        eff_type_str = normalize_effect_type(eff_type)
+        if eff_type_str == 'OR':
             return es / (1 - p0 + (p0 * es))
-        elif eff_type_str in ['HR', 'HAZARD RATIO']:
+        elif eff_type_str == 'HR':
             return (1 / p0) * (1 - np.exp(es * np.log(1 - p0)))
-        else:
-            return es # Assume RR or other
+        return es
 
     df_clean['converted_ES'] = df_clean.apply(lambda x: convert_to_rr(x['Effect Size'], x['Effect Type']), axis=1)
     df_clean['converted_Lower_CI'] = df_clean.apply(lambda x: convert_to_rr(x['Lower CI'], x['Effect Type']), axis=1)
     df_clean['converted_Upper_CI'] = df_clean.apply(lambda x: convert_to_rr(x['Upper CI'], x['Effect Type']), axis=1)
 
-    ratio_effect_types = RATIO_EFFECT_TYPES
     df_clean['log_ES'] = df_clean.apply(
         lambda x: np.log(x['converted_ES'])
-        if str(x['Effect Type']).upper().strip() in ratio_effect_types and x['converted_ES'] > 0
+        if is_eligible_effect_type(x['Effect Type']) and x['converted_ES'] > 0
         else x['converted_ES'],
         axis=1,
     )
     
     def calc_log_se(row):
-        eff_type_str = str(row['Effect Type']).upper().strip()
-        if eff_type_str in ratio_effect_types and row['converted_Lower_CI'] > 0 and row['converted_Upper_CI'] > 0:
+        if is_eligible_effect_type(row['Effect Type']) and row['converted_Lower_CI'] > 0 and row['converted_Upper_CI'] > 0:
              return (np.log(row['converted_Upper_CI']) - np.log(row['converted_Lower_CI'])) / 3.92
         return row['SE']
 
@@ -761,7 +790,7 @@ def perform_meta_analysis(
             
             # Let's improve significance check based on type
             eff_type = row['Effect Type'] if len(analysis_df) == 1 else 'OR' # Default to OR for interpretation if empty
-            if str(eff_type).upper().strip() in ratio_effect_types:
+            if is_eligible_effect_type(eff_type):
                  is_significant = (pooled_lower > 1) or (pooled_upper < 1)
                  log_eff = np.log(pooled_es) if pooled_es > 0 else 0 # For direction check
             else:
@@ -1022,7 +1051,7 @@ def perform_meta_analysis(
                 fp_df['Est. RR (95% CI)'] = fp_df.apply(format_ci, axis=1)
                 
                 # Log scale check for xlabel
-                is_log = any(str(row['Effect Type']).upper().strip() in ratio_effect_types for _, row in fp_df.iterrows())
+                is_log = any(is_eligible_effect_type(row['Effect Type']) for _, row in fp_df.iterrows())
                 xlbl = "Log Relative Risk (95% CI)" if is_log else "Effect Size (95% CI)"
                 
                 forest_ax = forestplot.forestplot(

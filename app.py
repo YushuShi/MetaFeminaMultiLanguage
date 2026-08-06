@@ -1106,7 +1106,7 @@ def reanalyze():
 
     studies = [
         study for study in studies
-        if str(study.get('Effect Type') or '').strip().upper() != 'PAF'
+        if meta_analysis.is_eligible_effect_type(study.get('Effect Type'))
     ]
     
     if not studies:

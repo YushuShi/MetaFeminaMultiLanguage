@@ -174,6 +174,7 @@
   "NA": {"zh-CN": "不适用", "zh-TW": "不適用", "nl": "Niet van toepassing", "ko": "해당 없음"},
   "Excluded: Effect type is ARR": {"zh-CN": "已排除：效应类型为 ARR", "zh-TW": "已排除：效應類型為 ARR", "nl": "Uitgesloten: effecttype is ARR", "ko": "제외됨: 효과 유형이 ARR임"},
   "Excluded from meta-analysis: Effect type is PAF": {"zh-CN": "不纳入荟萃分析：效应类型为 PAF", "zh-TW": "不納入統合分析：效應類型為 PAF", "nl": "Uitgesloten van de meta-analyse: effecttype is PAF", "ko": "메타분석에서 제외됨: 효과 유형이 PAF임"},
+  "Excluded from meta-analysis: effect measurement must be RR, OR, or HR": {"zh-CN": "不纳入荟萃分析：效应测量必须为 RR、OR 或 HR", "zh-TW": "不納入薈萃分析：效應測量必須為 RR、OR 或 HR", "nl": "Uitgesloten van de meta-analyse: de effectmaat moet RR, OR of HR zijn", "ko": "메타분석에서 제외됨: 효과 측정값은 RR, OR 또는 HR이어야 함"},
   "Excluded: Cases not specified or invalid": {"zh-CN": "已排除：病例数未指定或无效", "zh-TW": "已排除：病例數未指定或無效", "nl": "Uitgesloten: aantal gevallen niet opgegeven of ongeldig", "ko": "제외됨: 증례 수가 명시되지 않았거나 유효하지 않음"},
   "Excluded: Cases ≤ {minimum}{estimated}": {"zh-CN": "已排除：病例数 ≤ {minimum}{estimated}", "zh-TW": "已排除：病例數 ≤ {minimum}{estimated}", "nl": "Uitgesloten: gevallen ≤ {minimum}{estimated}", "ko": "제외됨: 증례 수 ≤ {minimum}{estimated}"},
   "(estimated)": {"zh-CN": "（估计值）", "zh-TW": "（估計值）", "nl": "(geschat)", "ko": "(추정치)"},

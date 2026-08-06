@@ -1,0 +1,722 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-06T10:35:29.223758+00:00",
+  "model": "gpt-5.6-luna",
+  "results": {
+    "19585555": {
+      "status": "complete",
+      "reviewed_at": "2026-08-06T10:35:29.223769+00:00",
+      "pmcid": "PMC2848529",
+      "model": "gpt-5.6-luna",
+      "result": {
+        "pmid": "19585555",
+        "contexts": [
+          {
+            "context_id": "5882f327115501d73a614878",
+            "sample_size": 593,
+            "sample_size_supporting_text": "The reported recent dietary folate estimate used the recent-intake analytic groups: 39 FRα-positive cases, 72 FRα-negative cases, and 482 controls, for 593 participants total.",
+            "confidence": "high"
+          }
+        ],
+        "jbi": {
+          "checklist_type": "case_control",
+          "answers": {
+            "q1": "No",
+            "q2": "Yes",
+            "q3": "Yes",
+            "q4": "Yes",
+            "q5": "Yes",
+            "q6": "Yes",
+            "q7": "Yes",
+            "q8": "Yes",
+            "q9": "Yes",
+            "q10": "Yes"
+          },
+          "score_percent": 90.0,
+          "grade": "Good"
+        }
+      },
+      "usage": {
+        "model": "gpt-5.6-luna",
+        "input_tokens": 13322,
+        "output_tokens": 799,
+        "reasoning_tokens": 639,
+        "gateway_reported_cost_usd": 0.018116
+      }
+    },
+    "20030812": {
+      "status": "complete",
+      "reviewed_at": "2026-08-06T10:35:30.121194+00:00",
+      "pmcid": "PMC2815555",
+      "model": "gpt-5.6-luna",
+      "result": {
+        "pmid": "20030812",
+        "contexts": [
+          {
+            "context_id": "b5ea50a8ba62d154f7362e0b",
+            "sample_size": 873,
+            "sample_size_supporting_text": "For the dietary folate analysis, Table 3 reports 291 cases and 582 controls across the high- and low-intake strata, totaling 873 participants; the table notes that missing nutrient data account for differences from the overall study total.",
+            "confidence": "medium"
+          }
+        ],
+        "jbi": {
+          "checklist_type": "case_control",
+          "answers": {
+            "q1": "Yes",
+            "q2": "Yes",
+            "q3": "Yes",
+            "q4": "Yes",
+            "q5": "Yes",
+            "q6": "Yes",
+            "q7": "Yes",
+            "q8": "Yes",
+            "q9": "Yes",
+            "q10": "Yes"
+          },
+          "score_percent": 100.0,
+          "grade": "Good"
+        }
+      },
+      "usage": {
+        "model": "gpt-5.6-luna",
+        "input_tokens": 15094,
+        "output_tokens": 819,
+        "reasoning_tokens": 644,
+        "gateway_reported_cost_usd": 0.020007999999999998
+      }
+    },
+    "23136228": {
+      "status": "complete",
+      "reviewed_at": "2026-08-06T10:35:36.360549+00:00",
+      "pmcid": "PMC3574547",
+      "model": "gpt-5.6-luna",
+      "result": {
+        "pmid": "23136228",
+        "contexts": [
+          {
+            "context_id": "13a29f307da634aad790238f",
+            "sample_size": null,
+            "sample_size_supporting_text": "The article reports 644 incident endometrial cancer events in the Nurses' Health Study but does not state the number of participants contributing to the predicted 25(OH)D incidence estimate; the event count is not used as sample size.",
+            "confidence": "high"
+          }
+        ],
+        "jbi": {
+          "checklist_type": "cohort",
+          "answers": {
+            "q1": "Yes",
+            "q2": "Unclear",
+            "q3": "Unclear",
+            "q4": "Unclear",
+            "q5": "Unclear",
+            "q6": "Unclear",
+            "q7": "Unclear",
+            "q8": "Yes",
+            "q9": "Unclear",
+            "q10": "Unclear",
+            "q11": "Yes"
+          },
+          "score_percent": 27.3,
+          "grade": "Fair"
+        }
+      },
+      "usage": {
+        "model": "gpt-5.6-luna",
+        "input_tokens": 1616,
+        "output_tokens": 520,
+        "reasoning_tokens": 344,
+        "gateway_reported_cost_usd": 0.004736
+      }
+    },
+    "23299529": {
+      "status": "complete",
+      "reviewed_at": "2026-08-06T10:35:37.110589+00:00",
+      "pmcid": "PMC3553527",
+      "model": "gpt-5.6-luna",
+      "result": {
+        "pmid": "23299529",
+        "contexts": [
+          {
+            "context_id": "83eb38b29fb8bb7149764ea8",
+            "sample_size": null,
+            "sample_size_supporting_text": "The alcohol HR came from the cohort analysis, which reports 1,448,170 person-years and 788 incident cases, but the full text does not state the number of human participants contributing to the analytic estimate.",
+            "confidence": "high"
+          }
+        ],
+        "jbi": {
+          "checklist_type": "cohort",
+          "answers": {
+            "q1": "Yes",
+            "q2": "Yes",
+            "q3": "Yes",
+            "q4": "Yes",
+            "q5": "Yes",
+            "q6": "Yes",
+            "q7": "Yes",
+            "q8": "Yes",
+            "q9": "Unclear",
+            "q10": "Unclear",
+            "q11": "Yes"
+          },
+          "score_percent": 81.8,
+          "grade": "Good"
+        }
+      },
+      "usage": {
+        "model": "gpt-5.6-luna",
+        "input_tokens": 8776,
+        "output_tokens": 480,
+        "reasoning_tokens": 313,
+        "gateway_reported_cost_usd": 0.011656
+      }
+    },
+    "24008665": {
+      "status": "complete",
+      "reviewed_at": "2026-08-06T10:35:43.701983+00:00",
+      "pmcid": "PMC3790168",
+      "model": "gpt-5.6-luna",
+      "result": {
+        "pmid": "24008665",
+        "contexts": [
+          {
+            "context_id": "80cdca62cde591d4303f196f",
+            "sample_size": 263,
+            "sample_size_supporting_text": "Table 4 reports the >3510-drinks lifetime exposure category as 107 cases and 156 controls, totaling 263 participants for the OR=0.77 estimate.",
+            "confidence": "high"
+          }
+        ],
+        "jbi": {
+          "checklist_type": "case_control",
+          "answers": {
+            "q1": "Yes",
+            "q2": "No",
+            "q3": "Yes",
+            "q4": "Yes",
+            "q5": "Yes",
+            "q6": "Yes",
+            "q7": "Yes",
+            "q8": "Yes",
+            "q9": "Yes",
+            "q10": "Yes"
+          },
+          "score_percent": 90.0,
+          "grade": "Good"
+        }
+      },
+      "usage": {
+        "model": "gpt-5.6-luna",
+        "input_tokens": 14834,
+        "output_tokens": 407,
+        "reasoning_tokens": 255,
+        "gateway_reported_cost_usd": 0.017276
+      }
+    },
+    "24722953": {
+      "status": "complete",
+      "reviewed_at": "2026-08-06T10:35:46.026168+00:00",
+      "pmcid": "PMC4086886",
+      "model": "gpt-5.6-luna",
+      "result": {
+        "pmid": "24722953",
+        "contexts": [
+          {
+            "context_id": "2d9d6ff23b0e6d3e36d8333f",
+            "sample_size": 164599,
+            "sample_size_supporting_text": "The analytic population after exclusions comprised 76,243 NHS and 88,356 NHSII participants; the reported pooled adult cumulative-average lactose estimate was analyzed in these NHS/NHSII cohorts.",
+            "confidence": "high"
+          }
+        ],
+        "jbi": {
+          "checklist_type": "cohort",
+          "answers": {
+            "q1": "Yes",
+            "q2": "Yes",
+            "q3": "Yes",
+            "q4": "Yes",
+            "q5": "Yes",
+            "q6": "Yes",
+            "q7": "Yes",
+            "q8": "Yes",
+            "q9": "Yes",
+            "q10": "Yes",
+            "q11": "Yes"
+          },
+          "score_percent": 100.0,
+          "grade": "Good"
+        }
+      },
+      "usage": {
+        "model": "gpt-5.6-luna",
+        "input_tokens": 20440,
+        "output_tokens": 511,
+        "reasoning_tokens": 344,
+        "gateway_reported_cost_usd": 0.023506
+      }
+    },
+    "32286532": {
+      "status": "complete",
+      "reviewed_at": "2026-08-06T10:35:51.709531+00:00",
+      "pmcid": "PMC7554070",
+      "model": "gpt-5.6-luna",
+      "result": {
+        "pmid": "32286532",
+        "contexts": [
+          {
+            "context_id": "2ff4396bb1b02365331f9429",
+            "sample_size": 101291,
+            "sample_size_supporting_text": "The article states that the final dataset included 101,291 women, and Table 2 reports the aMED Q5-versus-Q1 hazard ratio among women (N=101,291).",
+            "confidence": "high"
+          }
+        ],
+        "jbi": {
+          "checklist_type": "cohort",
+          "answers": {
+            "q1": "Yes",
+            "q2": "Yes",
+            "q3": "Yes",
+            "q4": "Yes",
+            "q5": "Yes",
+            "q6": "Yes",
+            "q7": "Yes",
+            "q8": "Yes",
+            "q9": "Unclear",
+            "q10": "Unclear",
+            "q11": "Yes"
+          },
+          "score_percent": 81.8,
+          "grade": "Good"
+        }
+      },
+      "usage": {
+        "model": "gpt-5.6-luna",
+        "input_tokens": 7241,
+        "output_tokens": 360,
+        "reasoning_tokens": 195,
+        "gateway_reported_cost_usd": 0.009401
+      }
+    },
+    "29071721": {
+      "status": "complete",
+      "reviewed_at": "2026-08-06T10:35:55.348748+00:00",
+      "pmcid": "PMC5773390",
+      "model": "gpt-5.6-luna",
+      "result": {
+        "pmid": "29071721",
+        "contexts": [
+          {
+            "context_id": "4f6a169a018a5b7b9495246e",
+            "sample_size": null,
+            "sample_size_supporting_text": "The BMI≥25 stratum is reported as having a maximum of 325 cases and 365 controls (690 participants), but the article does not establish the exact analytic sample for the dairy-derived fatty-acid estimate.",
+            "confidence": "medium"
+          },
+          {
+            "context_id": "b2c0ec9d1cf206ee04b6c6a5",
+            "sample_size": null,
+            "sample_size_supporting_text": "The BMI≥25 stratum is reported as having a maximum of 325 cases and 365 controls (690 participants), but the article does not establish the exact analytic sample for the n-3 PUFA estimate.",
+            "confidence": "medium"
+          }
+        ],
+        "jbi": {
+          "checklist_type": "case_control",
+          "answers": {
+            "q1": "Yes",
+            "q2": "Yes",
+            "q3": "Unclear",
+            "q4": "Yes",
+            "q5": "Yes",
+            "q6": "Yes",
+            "q7": "Yes",
+            "q8": "Yes",
+            "q9": "Yes",
+            "q10": "Yes"
+          },
+          "score_percent": 90.0,
+          "grade": "Good"
+        }
+      },
+      "usage": {
+        "model": "gpt-5.6-luna",
+        "input_tokens": 26138,
+        "output_tokens": 830,
+        "reasoning_tokens": 580,
+        "gateway_reported_cost_usd": 0.031118
+      }
+    },
+    "33431812": {
+      "status": "complete",
+      "reviewed_at": "2026-08-06T10:36:03.284676+00:00",
+      "pmcid": "PMC7801600",
+      "model": "gpt-5.6-luna",
+      "result": {
+        "pmid": "33431812",
+        "contexts": [
+          {
+            "context_id": "b477f1da9a41d5f854bc0717",
+            "sample_size": 66450,
+            "sample_size_supporting_text": "The epithelial ovarian cancer GWAS included 25,509 women with EOC and 40,941 control women, giving a combined analytic sample of 66,450 participants for the MR estimate.",
+            "confidence": "high"
+          }
+        ],
+        "jbi": {
+          "checklist_type": "cross_sectional",
+          "answers": {
+            "q1": "Yes",
+            "q2": "Yes",
+            "q3": "Yes",
+            "q4": "Yes",
+            "q5": "Yes",
+            "q6": "Yes",
+            "q7": "Yes",
+            "q8": "Yes"
+          },
+          "score_percent": 100.0,
+          "grade": "Good"
+        }
+      },
+      "usage": {
+        "model": "gpt-5.6-luna",
+        "input_tokens": 21091,
+        "output_tokens": 883,
+        "reasoning_tokens": 727,
+        "gateway_reported_cost_usd": 0.026389
+      }
+    },
+    "36941558": {
+      "status": "complete",
+      "reviewed_at": "2026-08-06T10:36:04.622147+00:00",
+      "pmcid": "PMC10026459",
+      "model": "gpt-5.6-luna",
+      "result": {
+        "pmid": "36941558",
+        "contexts": [
+          {
+            "context_id": "677c34cf6b78ff6006b62c3f",
+            "sample_size": 66450,
+            "sample_size_supporting_text": "The overall ovarian cancer outcome used OCAC summary data from 66,450 samples, comprising 25,509 cases and 40,941 controls; the coffee–overall ovarian cancer estimate was based on this dataset.",
+            "confidence": "high"
+          }
+        ],
+        "jbi": {
+          "checklist_type": "cohort",
+          "answers": {
+            "q1": "Yes",
+            "q2": "Yes",
+            "q3": "Yes",
+            "q4": "Unclear",
+            "q5": "Yes",
+            "q6": "NA",
+            "q7": "Yes",
+            "q8": "NA",
+            "q9": "NA",
+            "q10": "NA",
+            "q11": "Yes"
+          },
+          "score_percent": 85.7,
+          "grade": "Good"
+        }
+      },
+      "usage": {
+        "model": "gpt-5.6-luna",
+        "input_tokens": 13711,
+        "output_tokens": 663,
+        "reasoning_tokens": 494,
+        "gateway_reported_cost_usd": 0.017689
+      }
+    },
+    "38132250": {
+      "status": "complete",
+      "reviewed_at": "2026-08-06T10:36:09.895255+00:00",
+      "pmcid": "PMC10742900",
+      "model": "gpt-5.6-luna",
+      "result": {
+        "pmid": "38132250",
+        "contexts": [
+          {
+            "context_id": "edb2d6392294ae8ff63ae962",
+            "sample_size": 70,
+            "sample_size_supporting_text": "Table 4 reports the 1,25(OH)2D logistic regression estimate using n=70 participants (35 cases and 35 controls).",
+            "confidence": "high"
+          }
+        ],
+        "jbi": {
+          "checklist_type": "case_control",
+          "answers": {
+            "q1": "No",
+            "q2": "Yes",
+            "q3": "No",
+            "q4": "Yes",
+            "q5": "Yes",
+            "q6": "Yes",
+            "q7": "Yes",
+            "q8": "Yes",
+            "q9": "Unclear",
+            "q10": "Yes"
+          },
+          "score_percent": 70.0,
+          "grade": "Moderate"
+        }
+      },
+      "usage": {
+        "model": "gpt-5.6-luna",
+        "input_tokens": 13769,
+        "output_tokens": 409,
+        "reasoning_tokens": 260,
+        "gateway_reported_cost_usd": 0.016223
+      }
+    },
+    "38254178": {
+      "status": "complete",
+      "reviewed_at": "2026-08-06T10:36:13.507916+00:00",
+      "pmcid": "PMC10801993",
+      "model": "gpt-5.6-luna",
+      "result": {
+        "pmid": "38254178",
+        "contexts": [
+          {
+            "context_id": "ae9b7e61147966fd43b6b011",
+            "sample_size": null,
+            "sample_size_supporting_text": "The HR 1.22 (95% CI 1.01–1.48) is reported for alcohol consumption among participants born in the 1950s or later, but the article does not state the complete-case analytic sample for this estimate; 66,848 is the birth-cohort total before alcohol missingness and exclusion of one cohort.",
+            "confidence": "high"
+          }
+        ],
+        "jbi": {
+          "checklist_type": "cohort",
+          "answers": {
+            "q1": "Yes",
+            "q2": "Yes",
+            "q3": "Unclear",
+            "q4": "Yes",
+            "q5": "Yes",
+            "q6": "Unclear",
+            "q7": "Yes",
+            "q8": "Yes",
+            "q9": "Yes",
+            "q10": "Unclear",
+            "q11": "Yes"
+          },
+          "score_percent": 72.7,
+          "grade": "Moderate"
+        }
+      },
+      "usage": {
+        "model": "gpt-5.6-luna",
+        "input_tokens": 16089,
+        "output_tokens": 652,
+        "reasoning_tokens": 455,
+        "gateway_reported_cost_usd": 0.020000999999999998
+      }
+    },
+    "39939905": {
+      "status": "complete",
+      "reviewed_at": "2026-08-06T10:36:28.149389+00:00",
+      "pmcid": "PMC11823214",
+      "model": "gpt-5.6-luna",
+      "result": {
+        "pmid": "39939905",
+        "contexts": [
+          {
+            "context_id": "d157b22d44ea318a810873cf",
+            "sample_size": 73224,
+            "sample_size_supporting_text": "The exposure GWAS (MiBioGen) included 18,340 individuals, and the endometrioid endometrial-cancer outcome GWAS included 8,758 cases plus 46,126 controls (54,884); combined reported participants contributing source data total 73,224.",
+            "confidence": "high"
+          }
+        ],
+        "jbi": {
+          "checklist_type": "cohort",
+          "answers": {
+            "q1": "No",
+            "q2": "No",
+            "q3": "Yes",
+            "q4": "Unclear",
+            "q5": "Yes",
+            "q6": "NA",
+            "q7": "Yes",
+            "q8": "NA",
+            "q9": "NA",
+            "q10": "NA",
+            "q11": "Yes"
+          },
+          "score_percent": 57.1,
+          "grade": "Moderate"
+        }
+      },
+      "usage": {
+        "model": "gpt-5.6-luna",
+        "input_tokens": 14848,
+        "output_tokens": 1629,
+        "reasoning_tokens": 1436,
+        "gateway_reported_cost_usd": 0.024621999999999998
+      }
+    },
+    "40487677": {
+      "status": "complete",
+      "reviewed_at": "2026-08-06T10:36:28.569749+00:00",
+      "pmcid": "PMC12145794",
+      "model": "gpt-5.6-luna",
+      "result": {
+        "pmid": "40487677",
+        "contexts": [
+          {
+            "context_id": "c04a1936f5c11631671014a4",
+            "sample_size": 66450,
+            "sample_size_supporting_text": "The ovarian cancer outcome GWAS included 66,450 European participants (25,509 cases and 40,941 controls); the alcohol exposure GWAS source was stated as aggregated UK Biobank data without a participant count.",
+            "confidence": "medium"
+          },
+          {
+            "context_id": "8b76362188c4f4d4a479067c",
+            "sample_size": 121885,
+            "sample_size_supporting_text": "The endometrial cancer outcome meta-GWAS comprised 12,906 cases and 108,979 controls, totaling 121,885 participants; the alcohol exposure GWAS source was stated as aggregated UK Biobank data without a participant count.",
+            "confidence": "medium"
+          }
+        ],
+        "jbi": {
+          "checklist_type": "cohort",
+          "answers": {
+            "q1": "Yes",
+            "q2": "Unclear",
+            "q3": "Yes",
+            "q4": "Yes",
+            "q5": "Yes",
+            "q6": "Unclear",
+            "q7": "Yes",
+            "q8": "NA",
+            "q9": "NA",
+            "q10": "NA",
+            "q11": "Yes"
+          },
+          "score_percent": 75.0,
+          "grade": "Moderate"
+        }
+      },
+      "usage": {
+        "model": "gpt-5.6-luna",
+        "input_tokens": 9329,
+        "output_tokens": 1284,
+        "reasoning_tokens": 1025,
+        "gateway_reported_cost_usd": 0.017033
+      }
+    },
+    "41105334": {
+      "status": "complete",
+      "reviewed_at": "2026-08-06T10:36:38.046338+00:00",
+      "pmcid": "PMC12534670",
+      "model": "gpt-5.6-luna",
+      "result": {
+        "pmid": "41105334",
+        "contexts": [
+          {
+            "context_id": "09d422820658746ac84273e9",
+            "sample_size": 416388,
+            "sample_size_supporting_text": "The reported meta-analysis pooled three breast cancer outcome GWAS cohorts: FinnGen (n=201,713), BCAC OncoArray (n=138,508), and BCAC iCOGS (n=76,167), totaling 416,388 participants.",
+            "confidence": "high"
+          }
+        ],
+        "jbi": {
+          "checklist_type": "cohort",
+          "answers": {
+            "q1": "No",
+            "q2": "Yes",
+            "q3": "Yes",
+            "q4": "Unclear",
+            "q5": "Yes",
+            "q6": "Unclear",
+            "q7": "Yes",
+            "q8": "NA",
+            "q9": "NA",
+            "q10": "NA",
+            "q11": "Yes"
+          },
+          "score_percent": 62.5,
+          "grade": "Moderate"
+        }
+      },
+      "usage": {
+        "model": "gpt-5.6-luna",
+        "input_tokens": 16473,
+        "output_tokens": 689,
+        "reasoning_tokens": 512,
+        "gateway_reported_cost_usd": 0.020607
+      }
+    },
+    "40772270": {
+      "status": "complete",
+      "reviewed_at": "2026-08-06T10:36:39.323676+00:00",
+      "pmcid": "PMC12325068",
+      "model": "gpt-5.6-luna",
+      "result": {
+        "pmid": "40772270",
+        "contexts": [
+          {
+            "context_id": "11be7f17639166a46bdbc56c",
+            "sample_size": 244109,
+            "sample_size_supporting_text": "The vitamin B6 exposure GWAS included 7,864 participants, and the FinnGen ER+ breast cancer outcome GWAS included 14,540 cases plus 221,705 controls; the article states there was no sample overlap, giving 244,109 contributing participants in total.",
+            "confidence": "high"
+          }
+        ],
+        "jbi": {
+          "checklist_type": "cross_sectional",
+          "answers": {
+            "q1": "Unclear",
+            "q2": "Yes",
+            "q3": "Yes",
+            "q4": "Yes",
+            "q5": "Unclear",
+            "q6": "Yes",
+            "q7": "Yes",
+            "q8": "Yes"
+          },
+          "score_percent": 75.0,
+          "grade": "Moderate"
+        }
+      },
+      "usage": {
+        "model": "gpt-5.6-luna",
+        "input_tokens": 12593,
+        "output_tokens": 953,
+        "reasoning_tokens": 779,
+        "gateway_reported_cost_usd": 0.018311
+      }
+    },
+    "42074990": {
+      "status": "complete",
+      "reviewed_at": "2026-08-06T10:36:49.653563+00:00",
+      "pmcid": "PMC13118516",
+      "model": "gpt-5.6-luna",
+      "result": {
+        "pmid": "42074990",
+        "contexts": [
+          {
+            "context_id": "c8ed3b746c7aa4e677d2d397",
+            "sample_size": 85,
+            "sample_size_supporting_text": "For the reported >1800 mg/day versus 800–1000 mg/day estimate, Table 1 lists 10 cases and 25 controls in the highest category and 6 cases and 44 controls in the reference category, totaling 85 participants.",
+            "confidence": "medium"
+          }
+        ],
+        "jbi": {
+          "checklist_type": "case_control",
+          "answers": {
+            "q1": "Yes",
+            "q2": "Yes",
+            "q3": "Unclear",
+            "q4": "Unclear",
+            "q5": "Unclear",
+            "q6": "Yes",
+            "q7": "Yes",
+            "q8": "Unclear",
+            "q9": "Yes",
+            "q10": "Unclear"
+          },
+          "score_percent": 50.0,
+          "grade": "Fair"
+        }
+      },
+      "usage": {
+        "model": "gpt-5.6-luna",
+        "input_tokens": 13244,
+        "output_tokens": 864,
+        "reasoning_tokens": 682,
+        "gateway_reported_cost_usd": 0.018428
+      }
+    }
+  },
+  "updated_at": "2026-08-06T10:36:49.653579+00:00"
+}

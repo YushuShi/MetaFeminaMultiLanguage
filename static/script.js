@@ -93,6 +93,19 @@ document.addEventListener('DOMContentLoaded', async () => {
         return rating === 'good' || rating === 'moderate';
     }
 
+    function hasEligibleEffectMeasurement(study) {
+        const effectType = String(study['Effect Type'] || '')
+            .toUpperCase()
+            .replace(/[^A-Z]+/g, ' ')
+            .trim();
+        const eligibleType = ['RR', 'RISK RATIO', 'RELATIVE RISK', 'OR', 'ODDS RATIO', 'HR', 'HAZARD RATIO']
+            .includes(effectType);
+        const effect = Number(study['Effect Size']);
+        const lower = Number(study['Lower CI']);
+        const upper = Number(study['Upper CI']);
+        return eligibleType && effect > 0 && lower > 0 && upper > 0 && lower <= effect && effect <= upper;
+    }
+
     function itemizedJbiEntries(study) {
         if (!study.JBI || typeof study.JBI !== 'object' || Array.isArray(study.JBI)) return [];
         return Object.entries(study.JBI)
@@ -1039,20 +1052,18 @@ document.addEventListener('DOMContentLoaded', async () => {
                 }
             }
             const finalCasesVal = !isNaN(casesVal) ? casesVal : (!isNaN(estCasesVal) ? estCasesVal : NaN);
-            const isARR = (study['Effect Type'] || '').toUpperCase() === 'ARR';
-            const isPAF = (study['Effect Type'] || '').toUpperCase() === 'PAF';
+            const eligibleEffectMeasurement = hasEligibleEffectMeasurement(study);
             const minCases = elements.filterMinCases ? (parseInt(elements.filterMinCases.value) || 0) : 50;
             const qualityScore = String(study['Quality Score'] || 'Fair');
             const qualityIsEligible = meetsDefaultJbiThreshold(study);
             const jbiEntries = itemizedJbiEntries(study);
-            const isChecked = (qualityIsEligible && !isARR && !isPAF && !isNaN(finalCasesVal) && finalCasesVal > minCases) ? 'checked' : '';
+            const isChecked = (qualityIsEligible && eligibleEffectMeasurement && !isNaN(finalCasesVal) && finalCasesVal > minCases) ? 'checked' : '';
 
             // Build Exclusion Reason Title
             let unselectedReason = "";
             if (!isChecked) {
                 if (!qualityIsEligible) unselectedReason = uiText('Excluded by default: JBI rating is below Moderate');
-                else if (isARR) unselectedReason = uiText('Excluded: Effect type is ARR');
-                else if (isPAF) unselectedReason = uiText('Excluded from meta-analysis: Effect type is PAF');
+                else if (!eligibleEffectMeasurement) unselectedReason = uiText('Excluded from meta-analysis: effect measurement must be RR, OR, or HR');
                 else if (isNaN(finalCasesVal)) unselectedReason = uiText('Excluded: Cases not specified or invalid');
                 else if (finalCasesVal <= minCases) {
                     const isEst = isNaN(casesVal);
@@ -1157,8 +1168,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                                         if(cb){
                                             const quality = String(currentStudies[idx]['Quality Score'] || '').trim().toLowerCase();
                                             const qualityEligible = quality === 'good' || quality === 'moderate';
-                                            const effectType = String(currentStudies[idx]['Effect Type'] || '').trim().toUpperCase();
-                                            const shouldCheck = qualityEligible && effectType !== 'ARR' && effectType !== 'PAF' && !isNaN(finalVal) && finalVal > minC;
+                                            const shouldCheck = qualityEligible && hasEligibleEffectMeasurement(currentStudies[idx]) && !isNaN(finalVal) && finalVal > minC;
                                             cb.checked = shouldCheck;
                                             if(row){ row.style.opacity = shouldCheck ? '' : '0.6'; row.style.backgroundColor = shouldCheck ? '' : 'rgba(200,200,200,0.15)'; }
                                         }

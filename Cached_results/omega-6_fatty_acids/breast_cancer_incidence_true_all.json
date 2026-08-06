@@ -15,8 +15,8 @@
             "Link": "https://pubmed.ncbi.nlm.nih.gov/9508101/",
             "Effect Type": "OR",
             "SE": 1.6505102040816328,
-            "Sample Size": 684.0,
-            "Cases": 317.0,
+            "Sample Size": 684,
+            "Cases": 317,
             "Estimated Cases": null,
             "Design": "Case-Control",
             "Timing": "Retrospective",
@@ -47,7 +47,8 @@
                 "confidence_interval": "95% confidence interval 0.13-0.82.",
                 "outcome_definition": "Breast cancer incidence in postmenopausal women.",
                 "exposure_definition": "Fatty acid content of adipose tissue, specifically omega-6 polyunsaturates."
-            }
+            },
+            "Participants": 684
         },
         {
             "Study": "Dydjow-Bendek D et al. (2020) [PMID: 31882509]",
@@ -194,6 +195,45 @@
                 "outcome_definition": "We evaluated the association between \u03c9-3 and \u03c9-6 PUFA intake and breast cancer risk.",
                 "exposure_definition": "\u03c9-6 PUFA intake was assessed through dietary information provided by in-person interview."
             }
+        },
+        {
+            "Study": "Grill S et al. (2021) [PMID: 33543354]",
+            "PMID": "33543354",
+            "Effect Size": -37.9,
+            "Lower CI": -0.653,
+            "Upper CI": -0.151,
+            "Population": "General",
+            "Reference": "Precursor fractions of neurotensin and enkephalin might point to molecular mechanisms of cancer risk modulation during a lifestyle-intervention in germline BRCA1/2 gene mutation carriers.",
+            "Authors": "Grill S, Yahiaoui-Doktor M, Basrai M, Struck J, Schulte J, Berling-Ernst A, Engel C, Ullrich M, Lammert J, Bischoff SC, Schmidt T, Niederberger U, Chronas D, Rhiem K, Schmutzler R, Halle M, Kiechle M",
+            "Journal": "Breast cancer research and treatment",
+            "Year": "2021",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/33543354/",
+            "Effect Type": "NA",
+            "SE": 0.12806122448979593,
+            "Sample Size": 68,
+            "Cases": "NA",
+            "Design": "Cohort",
+            "Timing": "Prospective",
+            "Continent": "Europe",
+            "Stage": "NA",
+            "Quality %": 81.8,
+            "Quality Score": "Good",
+            "comparison_type": "Continuous",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Unclear",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes",
+                "q9": "Unclear",
+                "q10": "Yes",
+                "q11": "Yes"
+            },
+            "exclusions": 2,
+            "extraction_supporting_text": {}
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Chaj\u00e8s V et al. (2012) [PMID: 22194528]</th>\n      <td>0.5394</td>\n      <td>0.2088</td>\n      <td>0.1300</td>\n      <td>0.9487</td>\n      <td>1000.0</td>\n      <td>2074.0</td>\n    </tr>\n    <tr>\n      <th>Dydjow-Bendek D et al. (2020) [PMID: 31882509]</th>\n      <td>0.5861</td>\n      <td>0.2771</td>\n      <td>0.0430</td>\n      <td>1.1293</td>\n      <td>201.0</td>\n      <td>402.0</td>\n    </tr>\n    <tr>\n      <th>Simonsen N et al. (1998) [PMID: 9508101]</th>\n      <td>0.8955</td>\n      <td>0.3172</td>\n      <td>0.2738</td>\n      <td>1.5172</td>\n      <td>317.0</td>\n      <td>684.0</td>\n    </tr>\n  </tbody>\n</table>",
@@ -206,7 +246,7 @@
         "interpretation": "Statistically significant (increased risk/odds)",
         "i2": 0.0,
         "tau2": 0.0,
-        "eggers_p": 0.3558547673635933,
+        "eggers_p": 0.35585476736359334,
         "funnel_interpretation": "Egger\u2019s test is generally not recommended when fewer than 10 studies are available.",
         "loo_results": [
             {
@@ -251,8 +291,8 @@
         },
         "extracted": 6
     },
-    "plot_url": "static/omega_6_fatty_acids/forest_breast_cancer_incidence_primary.png?t=5663",
-    "funnel_plot_url": "static/omega_6_fatty_acids/funnel_breast_cancer_incidence_primary.png?t=3187",
-    "baujat_plot_url": "static/omega_6_fatty_acids/baujat_breast_cancer_incidence_primary.png?t=9223",
+    "plot_url": "static/omega_6_fatty_acids/forest_breast_cancer_incidence_primary.png?t=9692",
+    "funnel_plot_url": "static/omega_6_fatty_acids/funnel_breast_cancer_incidence_primary.png?t=2430",
+    "baujat_plot_url": "static/omega_6_fatty_acids/baujat_breast_cancer_incidence_primary.png?t=7333",
     "last_run": "2026-06-23 14:14:14"
 }

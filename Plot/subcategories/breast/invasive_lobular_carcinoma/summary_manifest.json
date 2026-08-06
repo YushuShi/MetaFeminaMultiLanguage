@@ -1,5 +1,5 @@
 {
-  "eligible_exposure_count": 4,
+  "eligible_exposure_count": 3,
   "exposure_count": 4,
   "exposures": [
     {
@@ -27,7 +27,7 @@
         "ci_low": 1.3073986347571511,
         "ci_upp": 2.2138744806249617,
         "eggers_intercept": 3.223615535151568,
-        "eggers_p": 0.11291900617806704,
+        "eggers_p": 0.11291900617806698,
         "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
         "i2": 56.05602426705886,
         "interpretation": "The pooled subtype-specific estimate is 1.70, indicating a higher relative association for this exposure.",
@@ -81,35 +81,32 @@
           "available": false,
           "reason": "baujat_requires_3_studies"
         },
-        "eligible_study_count": 1,
+        "eligible_study_count": 0,
         "forest": {
-          "available": true,
-          "reason": null
+          "available": false,
+          "reason": "forest_requires_1_study"
         },
         "formal_egger": {
           "available": false,
           "reason": "egger_requires_10_studies"
         },
         "funnel": {
-          "available": true,
-          "reason": "egger_requires_10_studies"
+          "available": false,
+          "reason": "no_eligible_studies"
         }
       },
       "exposure": "Beta-carotene",
       "headline": {
-        "ci_low": 0.5698351409943826,
-        "ci_upp": 0.9097368040436635,
+        "ci_low": null,
+        "ci_upp": null,
         "eggers_intercept": null,
         "eggers_p": null,
-        "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
-        "i2": 0.0,
-        "interpretation": "The pooled subtype-specific estimate is 0.72, indicating a lower relative association for this exposure.",
+        "i2": null,
         "loo_results": [],
-        "n_studies": 1,
-        "pooled_es": 0.72,
-        "q": 0.0,
-        "results_interpretation": "This saved analysis contains 1 separately reported Invasive lobular carcinoma estimate.",
-        "tau2": 0.0
+        "n_studies": 0,
+        "pooled_es": null,
+        "q": null,
+        "tau2": null
       }
     },
     {

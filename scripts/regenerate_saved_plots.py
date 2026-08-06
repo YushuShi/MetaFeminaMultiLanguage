@@ -34,14 +34,16 @@ def analysis_frame(studies):
             )
 
     quality = frame.get("Quality Score", pd.Series("", index=frame.index)).fillna("").astype(str).str.lower().str.strip()
-    effect_type = frame.get("Effect Type", pd.Series("", index=frame.index)).fillna("").astype(str).str.upper().str.strip()
+    eligible_effect = frame.get("Effect Type", pd.Series("", index=frame.index)).map(
+        meta_analysis.is_eligible_effect_type
+    )
     cases = frame.get("Cases", pd.Series(float("nan"), index=frame.index))
     estimated_cases = frame.get("Estimated Cases", pd.Series(float("nan"), index=frame.index))
     final_cases = cases.where(cases.notna(), estimated_cases)
 
     return frame.loc[
         quality.isin(ELIGIBLE_QUALITY)
-        & ~effect_type.isin({"ARR", "PAF"})
+        & eligible_effect
         & final_cases.gt(50)
     ].copy()
 
@@ -49,7 +51,11 @@ def analysis_frame(studies):
 def regenerate(exposure, disease, outcome):
     exposure_dir = ROOT / "Cached_results" / exposure
     pattern = f"{safe_component(disease)}_{safe_component(outcome)}_true_*.json"
-    paths = sorted(exposure_dir.glob(pattern))
+    exact_name = re.compile(
+        re.escape(f"{safe_component(disease)}_{safe_component(outcome)}_true_")
+        + r"(?:all|core)\.json$"
+    )
+    paths = sorted(path for path in exposure_dir.glob(pattern) if exact_name.match(path.name))
     if not paths:
         raise FileNotFoundError(f"No saved cache matched {exposure}/{pattern}")
 

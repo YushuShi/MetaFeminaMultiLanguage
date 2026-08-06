@@ -36,7 +36,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Inflammatory breast cancer estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "337a6856b904d11218b4fcce0dca533d9f16b426fa2154f8304da82576b1fcde",
+  "input_fingerprint": "6003e3f36cf1666105390dcca9b25ee8672860f549c02a4aba9d4ac863b06a42",
   "plot_url": "Plot/subcategories/breast/inflammatory_breast_cancer/alcohol_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/inflammatory_breast_cancer/alcohol_baujat.png",
@@ -51,18 +51,32 @@
     "subcategory_label": "Inflammatory breast cancer",
     "subcategory_slug": "inflammatory_breast_cancer"
   },
-  "skipped_annotation_count_for_build": 0,
+  "skipped_annotation_count_for_build": 1,
   "studies": [
     {
       "Authors": "Moslehi R, Freedman E, Zeinomar N, Veneroso C, Levine PH",
       "Cases": 141.0,
       "Effect Size": 1.84,
       "Effect Type": "OR",
+      "JBI": {
+        "q1": "Yes",
+        "q10": "Yes",
+        "q2": "Yes",
+        "q3": "Yes",
+        "q4": "Yes",
+        "q5": "Yes",
+        "q6": "Yes",
+        "q7": "Yes",
+        "q8": "Yes",
+        "q9": "Yes"
+      },
       "Journal": "BMC cancer",
       "Link": "https://pubmed.ncbi.nlm.nih.gov/27229687/",
       "Lower CI": 1.2,
       "PMID": "27229687",
       "Participants": 9458.0,
+      "Quality %": 100.0,
+      "Quality Score": "Good",
       "Reference": "Importance of hereditary and selected environmental risk factors in the etiology of inflammatory breast cancer: a case-comparison study.",
       "Sample Size": 9458.0,
       "Study": "Moslehi R et al. (2016) [PMID: 27229687]",
@@ -83,10 +97,24 @@
         "effect_size": "IBC cases had a significantly higher frequency of regular alcohol consumption (≥1 drink per day) compared to WHI controls (OR=1.84, 95% CI:1.20-2.82).",
         "outcome_definition": ""
       },
+      "jbi": {
+        "q1": "Yes",
+        "q10": "Yes",
+        "q2": "Yes",
+        "q3": "Yes",
+        "q4": "Yes",
+        "q5": "Yes",
+        "q6": "Yes",
+        "q7": "Yes",
+        "q8": "Yes",
+        "q9": "Yes"
+      },
       "journal": "BMC cancer",
       "lower_ci": 1.2,
       "outcome_definition": null,
       "pmid": "27229687",
+      "quality_percent": 100.0,
+      "quality_score": "Good",
       "reference": "Importance of hereditary and selected environmental risk factors in the etiology of inflammatory breast cancer: a case-comparison study.",
       "sample_size": 9458.0,
       "se": null,

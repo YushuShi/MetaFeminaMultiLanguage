@@ -36,7 +36,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Mucinous carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "a1b61c1c4ca43d9d6969f82f0d841f63ee4df112d4fb79003cb867963e6c012f",
+  "input_fingerprint": "7d808da6475324c60cfbef35f7bb2331dd62136c929e6ef74ea9daf0b8c1676a",
   "plot_url": "Plot/subcategories/ovary/mucinous_carcinoma/calcium_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/ovary/mucinous_carcinoma/calcium_baujat.png",
@@ -51,18 +51,32 @@
     "subcategory_label": "Mucinous carcinoma",
     "subcategory_slug": "mucinous_carcinoma"
   },
-  "skipped_annotation_count_for_build": 0,
+  "skipped_annotation_count_for_build": 1,
   "studies": [
     {
       "Authors": "Merritt MA, Cramer DW, Vitonis AF, Titus LJ, Terry KL",
       "Cases": 217.0,
       "Effect Size": 0.46,
       "Effect Type": "OR",
+      "JBI": {
+        "q1": "Yes",
+        "q10": "Yes",
+        "q2": "Yes",
+        "q3": "Yes",
+        "q4": "Yes",
+        "q5": "Yes",
+        "q6": "Yes",
+        "q7": "Yes",
+        "q8": "Yes",
+        "q9": "Yes"
+      },
       "Journal": "International journal of cancer",
       "Link": "https://pubmed.ncbi.nlm.nih.gov/22740148/",
       "Lower CI": 0.29,
       "PMID": "22740148",
       "Participants": 2206.0,
+      "Quality %": 100.0,
+      "Quality Score": "Good",
       "Reference": "Dairy foods and nutrients in relation to risk of ovarian cancer and major histological subtypes.",
       "Sample Size": 2206.0,
       "Study": "Merritt MA et al. (2013) [PMID: 22740148]",
@@ -83,10 +97,24 @@
         "effect_size": "For mucinous tumors, total calcium Q4 vs Q1 OR=0.46, 95% CI 0.29–0.72.",
         "outcome_definition": ""
       },
+      "jbi": {
+        "q1": "Yes",
+        "q10": "Yes",
+        "q2": "Yes",
+        "q3": "Yes",
+        "q4": "Yes",
+        "q5": "Yes",
+        "q6": "Yes",
+        "q7": "Yes",
+        "q8": "Yes",
+        "q9": "Yes"
+      },
       "journal": "International journal of cancer",
       "lower_ci": 0.29,
       "outcome_definition": null,
       "pmid": "22740148",
+      "quality_percent": 100.0,
+      "quality_score": "Good",
       "reference": "Dairy foods and nutrients in relation to risk of ovarian cancer and major histological subtypes.",
       "sample_size": 2206.0,
       "se": null,

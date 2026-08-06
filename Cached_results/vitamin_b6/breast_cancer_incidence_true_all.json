@@ -357,14 +357,14 @@
             "Link": "https://pubmed.ncbi.nlm.nih.gov/40772270/",
             "Effect Type": "OR",
             "SE": 0.14872448979591843,
-            "Sample Size": null,
+            "Sample Size": 244109,
             "Cases": null,
-            "Estimated Cases": null,
+            "Estimated Cases": 31734,
             "Design": "Mendelian randomization (MR)",
             "Timing": "Prospective",
             "Continent": "Europe",
             "Stage": "Estrogen receptor-positive (ER+) breast cancer",
-            "Quality %": 63.6,
+            "Quality %": 75.0,
             "Quality Score": "Moderate",
             "comparison_type": "Continuous (genetically predicted elevated vitamin B6 levels)",
             "JBI": {
@@ -372,18 +372,15 @@
                 "q2": "Yes",
                 "q3": "Yes",
                 "q4": "Yes",
-                "q5": "Yes",
+                "q5": "Unclear",
                 "q6": "Yes",
                 "q7": "Yes",
-                "q8": "Unclear",
-                "q9": "Unclear",
-                "q10": "Unclear",
-                "q11": "Yes"
+                "q8": "Yes"
             },
             "exposure_measurement_type": "human_biospecimen",
             "exposure_measurement_supporting_text": "Instrumental variables (IVs) for 15 micronutrients were extracted from the genome-wide association studies (GWAS) database.",
             "extraction_supporting_text": {
-                "sample_size": null,
+                "sample_size": "The vitamin B6 exposure GWAS included 7,864 participants, and the FinnGen ER+ breast cancer outcome GWAS included 14,540 cases plus 221,705 controls; the article states there was no sample overlap, giving 244,109 contributing participants in total.",
                 "effect_size": "Odds Ratio (OR): 1.275",
                 "effect_direction": "genetically predicted elevated vitamin B6 levels were significantly associated with an increased risk of ER+ breast cancer",
                 "p_value": "P = 0.035",
@@ -393,7 +390,7 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Hatami M et al. (2020) [PMID: 30758268]</th>\n      <td>-2.0843</td>\n      <td>0.4220</td>\n      <td>-2.9114</td>\n      <td>-1.2572</td>\n      <td>151.0</td>\n      <td>305.0</td>\n    </tr>\n    <tr>\n      <th>Zhang CX et al. (2011) [PMID: 21736840]</th>\n      <td>-0.7037</td>\n      <td>0.1986</td>\n      <td>-1.0931</td>\n      <td>-0.3144</td>\n      <td>438.0</td>\n      <td>876.0</td>\n    </tr>\n    <tr>\n      <th>Song H et al. (2022) [PMID: 35807825]</th>\n      <td>-0.6984</td>\n      <td>0.3127</td>\n      <td>-1.3113</td>\n      <td>-0.0855</td>\n      <td>-</td>\n      <td>40432.0</td>\n    </tr>\n    <tr>\n      <th>Cancarini I et al. (2015) [PMID: 26376452]</th>\n      <td>-0.5276</td>\n      <td>0.2133</td>\n      <td>-0.9457</td>\n      <td>-0.1095</td>\n      <td>391.0</td>\n      <td>10786.0</td>\n    </tr>\n    <tr>\n      <th>Zhang SM et al. (2003) [PMID: 12618502]</th>\n      <td>-0.3567</td>\n      <td>0.1923</td>\n      <td>-0.7336</td>\n      <td>0.0202</td>\n      <td>712.0</td>\n      <td>32826.0</td>\n    </tr>\n    <tr>\n      <th>Lurie G et al. (2012) [PMID: 22879204]</th>\n      <td>-0.3169</td>\n      <td>0.1552</td>\n      <td>-0.6211</td>\n      <td>-0.0127</td>\n      <td>706.0</td>\n      <td>1412.0</td>\n    </tr>\n    <tr>\n      <th>Zhang SM et al. (2008) [PMID: 18984888]</th>\n      <td>-0.1747</td>\n      <td>0.1543</td>\n      <td>-0.4772</td>\n      <td>0.1278</td>\n      <td>-</td>\n      <td>5442.0</td>\n    </tr>\n    <tr>\n      <th>Fu WD et al. (2025) [PMID: 40772270]</th>\n      <td>0.2078</td>\n      <td>0.0970</td>\n      <td>0.0177</td>\n      <td>0.3979</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Hatami M et al. (2020) [PMID: 30758268]</th>\n      <td>-2.0843</td>\n      <td>0.4220</td>\n      <td>-2.9114</td>\n      <td>-1.2572</td>\n      <td>151.0</td>\n      <td>305.0</td>\n    </tr>\n    <tr>\n      <th>Zhang CX et al. (2011) [PMID: 21736840]</th>\n      <td>-0.7037</td>\n      <td>0.1986</td>\n      <td>-1.0931</td>\n      <td>-0.3144</td>\n      <td>438.0</td>\n      <td>876.0</td>\n    </tr>\n    <tr>\n      <th>Song H et al. (2022) [PMID: 35807825]</th>\n      <td>-0.6984</td>\n      <td>0.3127</td>\n      <td>-1.3113</td>\n      <td>-0.0855</td>\n      <td>-</td>\n      <td>40432.0</td>\n    </tr>\n    <tr>\n      <th>Cancarini I et al. (2015) [PMID: 26376452]</th>\n      <td>-0.5276</td>\n      <td>0.2133</td>\n      <td>-0.9457</td>\n      <td>-0.1095</td>\n      <td>391.0</td>\n      <td>10786.0</td>\n    </tr>\n    <tr>\n      <th>Zhang SM et al. (2003) [PMID: 12618502]</th>\n      <td>-0.3567</td>\n      <td>0.1923</td>\n      <td>-0.7336</td>\n      <td>0.0202</td>\n      <td>712.0</td>\n      <td>32826.0</td>\n    </tr>\n    <tr>\n      <th>Lurie G et al. (2012) [PMID: 22879204]</th>\n      <td>-0.3169</td>\n      <td>0.1552</td>\n      <td>-0.6211</td>\n      <td>-0.0127</td>\n      <td>706.0</td>\n      <td>1412.0</td>\n    </tr>\n    <tr>\n      <th>Zhang SM et al. (2008) [PMID: 18984888]</th>\n      <td>-0.1747</td>\n      <td>0.1543</td>\n      <td>-0.4772</td>\n      <td>0.1278</td>\n      <td>-</td>\n      <td>5442.0</td>\n    </tr>\n    <tr>\n      <th>Fu WD et al. (2025) [PMID: 40772270]</th>\n      <td>0.2078</td>\n      <td>0.0970</td>\n      <td>0.0177</td>\n      <td>0.3979</td>\n      <td>-</td>\n      <td>244109.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 0.62,
         "ci_low": 0.44,
@@ -403,8 +400,8 @@
         "interpretation": "Statistically significant (decreased risk/odds)",
         "i2": 86.06,
         "tau2": 0.2,
-        "eggers_p": 0.0003230528771021319,
-        "funnel_interpretation": "The significant funnel plot asymmetry (egger's p=0.0003) indicates substantial publication bias in this meta-analysis on Vitamin B6 and breast cancer. This specific pattern suggests that smaller studies with smaller or null effects may be underrepresented, compromising the reliability of the pooled estimate and potentially leading to an overestimation of the true association.",
+        "eggers_p": 0.0003230528771021327,
+        "funnel_interpretation": "Egger\u2019s test is generally not recommended when fewer than 10 studies are available.",
         "loo_results": [
             {
                 "omitted": "Hatami M et al. (2020) [PMID: 30758268]",
@@ -463,7 +460,7 @@
                 "is_significant": true
             }
         ],
-        "results_interpretation": "The pooled analysis of 8 studies yielded an overall effect size of 0.62 (95% CI: 0.44\u20130.87), suggesting that Vitamin B6 is associated with a lower risk of breast cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 86.06%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 8 studies yielded an overall effect size of 0.62 (95% CI: 0.44\u20130.87), suggesting that vitamin_b6 is associated with a lower risk of breast cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 86.06%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 4,
@@ -482,8 +479,8 @@
         },
         "extracted": 8
     },
-    "plot_url": "static/vitamin_b6/forest_breast_cancer_incidence_primary.png?t=3918",
-    "funnel_plot_url": "static/vitamin_b6/funnel_breast_cancer_incidence_primary.png?t=5860",
-    "baujat_plot_url": "static\\vitamin_b6\\baujat_breast_cancer_incidence_primary.png?t=2310",
+    "plot_url": "static/vitamin_b6/forest_breast_cancer_incidence_primary.png?t=305",
+    "funnel_plot_url": "static/vitamin_b6/funnel_breast_cancer_incidence_primary.png?t=5734",
+    "baujat_plot_url": "static/vitamin_b6/baujat_breast_cancer_incidence_primary.png?t=2124",
     "last_run": "2026-06-15 08:44:15"
 }

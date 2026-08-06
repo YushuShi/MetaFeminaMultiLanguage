@@ -143,7 +143,7 @@ class MultiLanguagePageTests(unittest.TestCase):
         self.assertIn(b'<option value="Moderate+" selected>Moderate and above</option>', response.data)
         self.assertIn("const quality = elements.filterQuality ? elements.filterQuality.value : 'Moderate+';", script)
         self.assertIn('const qualityIsEligible = meetsDefaultJbiThreshold(study);', script)
-        self.assertIn('qualityIsEligible && !isARR', script)
+        self.assertIn('qualityIsEligible && eligibleEffectMeasurement', script)
         self.assertIn('displayedAnalysis = await requestReanalysis(selectedStudies, analysisContext);', script)
         self.assertIn("quality_filter: elements.filterQuality ? elements.filterQuality.value : 'Moderate+'", script)
 

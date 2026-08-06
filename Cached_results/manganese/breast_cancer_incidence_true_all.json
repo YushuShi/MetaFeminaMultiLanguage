@@ -46,9 +46,48 @@
                 "outcome_definition": "breast cancer (BC) risk",
                 "exposure_definition": "blood heavy metals...manganese (Mn)"
             }
+        },
+        {
+            "Study": "White AJ et al. (2019) [PMID: 30760301]",
+            "PMID": "30760301",
+            "Effect Size": 1.22,
+            "Lower CI": 1.2,
+            "Upper CI": 1.24,
+            "Population": "General",
+            "Reference": "Airborne metals and polycyclic aromatic hydrocarbons in relation to mammographic breast density.",
+            "Authors": "White AJ, Weinberg CR, O'Meara ES, Sandler DP, Sprague BL",
+            "Journal": "Breast cancer research : BCR",
+            "Year": "2019",
+            "Link": "https://pubmed.ncbi.nlm.nih.gov/30760301/",
+            "Effect Type": "OR",
+            "SE": 0.01020408163265307,
+            "Sample Size": 222581,
+            "Cases": "null",
+            "Design": "Cross-Sectional",
+            "Timing": "Retrospective",
+            "Continent": "North America",
+            "Stage": "null",
+            "Quality %": 100.0,
+            "Quality Score": "Good",
+            "comparison_type": "Highest vs Lowest",
+            "JBI": {
+                "q1": "Yes",
+                "q2": "Yes",
+                "q3": "Yes",
+                "q4": "Yes",
+                "q5": "Yes",
+                "q6": "Yes",
+                "q7": "Yes",
+                "q8": "Yes"
+            },
+            "exclusions": 2,
+            "extraction_supporting_text": {
+                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=6.435e-125."
+            },
+            "P Value": 6.434550652926473e-125
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>None</td>\n      <td>2939</td>\n      <td>0.848758</td>\n      <td>0.728408</td>\n      <td>0.991289</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>NaN</td>\n      <td>2939</td>\n      <td>0.848758</td>\n      <td>0.728408</td>\n      <td>0.991289</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 0.85,
         "ci_low": 0.73,
@@ -72,8 +111,8 @@
         },
         "extracted": 1
     },
-    "plot_url": "static/manganese/forest_breast_cancer_incidence_primary.png?t=1418",
-    "funnel_plot_url": "static/manganese/funnel_breast_cancer_incidence_primary.png?t=5280",
+    "plot_url": "static/manganese/forest_breast_cancer_incidence_primary.png?t=1643",
+    "funnel_plot_url": "static/manganese/funnel_breast_cancer_incidence_primary.png?t=5106",
     "baujat_plot_url": null,
     "last_run": "2026-06-15 02:22:50"
 }

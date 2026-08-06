@@ -113,33 +113,33 @@
             "Link": "https://pubmed.ncbi.nlm.nih.gov/24722953/",
             "Effect Type": "HR",
             "SE": 0.10714285714285718,
-            "Sample Size": null,
+            "Sample Size": 164599,
             "Cases": 764.0,
             "Estimated Cases": null,
             "Design": "Cohort",
             "Timing": "Prospective",
             "Continent": "North America",
             "Stage": null,
-            "Quality %": 63.6,
-            "Quality Score": "Moderate",
+            "Quality %": 100.0,
+            "Quality Score": "Good",
             "comparison_type": "Highest vs Lowest",
             "JBI": {
                 "q1": "Yes",
                 "q2": "Yes",
-                "q3": "Unclear",
+                "q3": "Yes",
                 "q4": "Yes",
                 "q5": "Yes",
                 "q6": "Yes",
-                "q7": "Unclear",
+                "q7": "Yes",
                 "q8": "Yes",
-                "q9": "Unclear",
-                "q10": "Unclear",
+                "q9": "Yes",
+                "q10": "Yes",
                 "q11": "Yes"
             },
             "exposure_measurement_type": "dietary_intake",
             "exposure_measurement_supporting_text": "We assessed the association of dairy food and nutrient intake with risk of EOC. We examined dietary intake in adulthood overall.",
             "extraction_supporting_text": {
-                "sample_size": "including 764 cases in the Nurses' Health Study (NHS) and NHSII.",
+                "sample_size": "The analytic population after exclusions comprised 76,243 NHS and 88,356 NHSII participants; the reported pooled adult cumulative-average lactose estimate was analyzed in these NHS/NHSII cohorts.",
                 "effect_size": "HR 0.87",
                 "effect_direction": "non-significant inverse association with lactose intake",
                 "p_value": "p(trend) = 0.22",
@@ -590,105 +590,84 @@
             "P Value": 6.418220238781876e-05
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Koralek DO et al. (2006) [PMID: 17176214]</th>\n      <td>-0.8675</td>\n      <td>0.3808</td>\n      <td>-1.6139</td>\n      <td>-0.1211</td>\n      <td>146.0</td>\n      <td>31925.0</td>\n    </tr>\n    <tr>\n      <th>Yen ML et al. (2003) [PMID: 12713998]</th>\n      <td>-0.7243</td>\n      <td>0.2316</td>\n      <td>-1.1783</td>\n      <td>-0.2703</td>\n      <td>86.0</td>\n      <td>455.0</td>\n    </tr>\n    <tr>\n      <th>Goodman MT et al. (2002) [PMID: 12117706]</th>\n      <td>-0.7037</td>\n      <td>0.2467</td>\n      <td>-1.1872</td>\n      <td>-0.2203</td>\n      <td>558.0</td>\n      <td>1165.0</td>\n    </tr>\n    <tr>\n      <th>Merritt MA et al. (2014) [PMID: 24722953]</th>\n      <td>-0.1304</td>\n      <td>0.1140</td>\n      <td>-0.3538</td>\n      <td>0.0930</td>\n      <td>764.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Huusom LD et al. (2006) [PMID: 16783610]</th>\n      <td>0.0340</td>\n      <td>0.0085</td>\n      <td>0.0174</td>\n      <td>0.0507</td>\n      <td>202.0</td>\n      <td>1766.0</td>\n    </tr>\n    <tr>\n      <th>Faber MT et al. (2012) [PMID: 22397392]</th>\n      <td>0.0902</td>\n      <td>0.0158</td>\n      <td>0.0592</td>\n      <td>0.1211</td>\n      <td>554.0</td>\n      <td>2108.0</td>\n    </tr>\n    <tr>\n      <th>Genkinger JM et al. (2006) [PMID: 16492930]</th>\n      <td>0.1740</td>\n      <td>0.0833</td>\n      <td>0.0107</td>\n      <td>0.3372</td>\n      <td>2132.0</td>\n      <td>553217.0</td>\n    </tr>\n    <tr>\n      <th>Gallus S et al. (2006) [PMID: 16596295]</th>\n      <td>0.1912</td>\n      <td>0.0668</td>\n      <td>0.0603</td>\n      <td>0.3220</td>\n      <td>1031.0</td>\n      <td>3442.0</td>\n    </tr>\n    <tr>\n      <th>Qin B et al. (2016) [PMID: 27632371]</th>\n      <td>0.5593</td>\n      <td>0.1783</td>\n      <td>0.2098</td>\n      <td>0.9087</td>\n      <td>490.0</td>\n      <td>1146.0</td>\n    </tr>\n    <tr>\n      <th>Larsson SC et al. (2004) [PMID: 15531686]</th>\n      <td>0.6931</td>\n      <td>0.3094</td>\n      <td>0.0866</td>\n      <td>1.2996</td>\n      <td>125.0</td>\n      <td>61084.0</td>\n    </tr>\n    <tr>\n      <th>Fairfield KM et al. (2004) [PMID: 15069693]</th>\n      <td>0.7275</td>\n      <td>0.2512</td>\n      <td>0.2352</td>\n      <td>1.2199</td>\n      <td>301.0</td>\n      <td>80326.0</td>\n    </tr>\n    <tr>\n      <th>Mettlin CJ et al. (1990) [PMID: 2239901]</th>\n      <td>1.1314</td>\n      <td>0.2849</td>\n      <td>0.5729</td>\n      <td>1.6899</td>\n      <td>303.0</td>\n      <td>909.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Koralek DO et al. (2006) [PMID: 17176214]</th>\n      <td>-0.8675</td>\n      <td>0.3808</td>\n      <td>-1.6139</td>\n      <td>-0.1211</td>\n      <td>146.0</td>\n      <td>31925.0</td>\n    </tr>\n    <tr>\n      <th>Yen ML et al. (2003) [PMID: 12713998]</th>\n      <td>-0.7243</td>\n      <td>0.2316</td>\n      <td>-1.1783</td>\n      <td>-0.2703</td>\n      <td>86.0</td>\n      <td>455.0</td>\n    </tr>\n    <tr>\n      <th>Merritt MA et al. (2014) [PMID: 24722953]</th>\n      <td>-0.1304</td>\n      <td>0.1140</td>\n      <td>-0.3538</td>\n      <td>0.0930</td>\n      <td>764.0</td>\n      <td>164599.0</td>\n    </tr>\n    <tr>\n      <th>Huusom LD et al. (2006) [PMID: 16783610]</th>\n      <td>0.0340</td>\n      <td>0.0085</td>\n      <td>0.0174</td>\n      <td>0.0507</td>\n      <td>202.0</td>\n      <td>1766.0</td>\n    </tr>\n    <tr>\n      <th>Faber MT et al. (2012) [PMID: 22397392]</th>\n      <td>0.0902</td>\n      <td>0.0158</td>\n      <td>0.0592</td>\n      <td>0.1211</td>\n      <td>554.0</td>\n      <td>2108.0</td>\n    </tr>\n    <tr>\n      <th>Genkinger JM et al. (2006) [PMID: 16492930]</th>\n      <td>0.1740</td>\n      <td>0.0833</td>\n      <td>0.0107</td>\n      <td>0.3372</td>\n      <td>2132.0</td>\n      <td>553217.0</td>\n    </tr>\n    <tr>\n      <th>Qin B et al. (2016) [PMID: 27632371]</th>\n      <td>0.5593</td>\n      <td>0.1783</td>\n      <td>0.2098</td>\n      <td>0.9087</td>\n      <td>490.0</td>\n      <td>1146.0</td>\n    </tr>\n    <tr>\n      <th>Larsson SC et al. (2004) [PMID: 15531686]</th>\n      <td>0.6931</td>\n      <td>0.3094</td>\n      <td>0.0866</td>\n      <td>1.2996</td>\n      <td>125.0</td>\n      <td>61084.0</td>\n    </tr>\n    <tr>\n      <th>Fairfield KM et al. (2004) [PMID: 15069693]</th>\n      <td>0.7275</td>\n      <td>0.2512</td>\n      <td>0.2352</td>\n      <td>1.2199</td>\n      <td>301.0</td>\n      <td>80326.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 1.1,
-        "ci_low": 1.01,
-        "ci_upp": 1.21,
+        "pooled_es": 1.08,
+        "ci_low": 0.99,
+        "ci_upp": 1.18,
         "pi_low": 0.87,
-        "pi_upp": 1.4,
-        "interpretation": "Statistically significant (increased risk/odds)",
-        "i2": 86.19,
+        "pi_upp": 1.34,
+        "interpretation": "Not statistically significant",
+        "i2": 84.42,
         "tau2": 0.01,
-        "eggers_p": 0.520477629217017,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.5205). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "eggers_p": 0.670221817796779,
+        "funnel_interpretation": "Egger\u2019s test is generally not recommended when fewer than 10 studies are available.",
         "loo_results": [
             {
                 "omitted": "Koralek DO et al. (2006) [PMID: 17176214]",
-                "pooled_es": 1.116435461255397,
-                "ci_low": 0.9166552120356214,
-                "ci_upp": 1.3597567796299344,
+                "pooled_es": 1.0926688706193182,
+                "ci_low": 0.9168766216619401,
+                "ci_upp": 1.3021656705090536,
                 "is_significant": false
             },
             {
                 "omitted": "Yen ML et al. (2003) [PMID: 12713998]",
-                "pooled_es": 1.1306881775178186,
-                "ci_low": 0.9401028915744422,
-                "ci_upp": 1.3599104589897237,
-                "is_significant": false
-            },
-            {
-                "omitted": "Goodman MT et al. (2002) [PMID: 12117706]",
-                "pooled_es": 1.1275609679061924,
-                "ci_low": 0.9331685161523784,
-                "ci_upp": 1.3624481691557004,
+                "pooled_es": 1.1043302165953204,
+                "ci_low": 0.9463640420128526,
+                "ci_upp": 1.288663952924053,
                 "is_significant": false
             },
             {
                 "omitted": "Merritt MA et al. (2014) [PMID: 24722953]",
-                "pooled_es": 1.1288487892325387,
-                "ci_low": 0.9090430688919064,
-                "ci_upp": 1.4018033166515398,
+                "pooled_es": 1.1065275688034013,
+                "ci_low": 0.9059385488071028,
+                "ci_upp": 1.3515301475295456,
                 "is_significant": false
             },
             {
                 "omitted": "Huusom LD et al. (2006) [PMID: 16783610]",
-                "pooled_es": 1.1225430295940597,
-                "ci_low": 0.8123605560790635,
-                "ci_upp": 1.5511620349616901,
+                "pooled_es": 1.101749716335376,
+                "ci_low": 0.7756012853802654,
+                "ci_upp": 1.5650469646268677,
                 "is_significant": false
             },
             {
                 "omitted": "Faber MT et al. (2012) [PMID: 22397392]",
-                "pooled_es": 1.1132820797293357,
-                "ci_low": 0.8044982224074386,
-                "ci_upp": 1.54058387517329,
+                "pooled_es": 1.0894745243514128,
+                "ci_low": 0.7663579782814571,
+                "ci_upp": 1.5488254482225916,
                 "is_significant": false
             },
             {
                 "omitted": "Genkinger JM et al. (2006) [PMID: 16492930]",
-                "pooled_es": 1.090697203848421,
-                "ci_low": 0.8697844755318535,
-                "ci_upp": 1.3677185831068535,
-                "is_significant": false
-            },
-            {
-                "omitted": "Gallus S et al. (2006) [PMID: 16596295]",
-                "pooled_es": 1.0848072395261483,
-                "ci_low": 0.8639515063479283,
-                "ci_upp": 1.3621212976442472,
+                "pooled_es": 1.0628542558475074,
+                "ci_low": 0.8599791496089472,
+                "ci_upp": 1.313589020951079,
                 "is_significant": false
             },
             {
                 "omitted": "Qin B et al. (2016) [PMID: 27632371]",
-                "pooled_es": 1.0763758553152527,
-                "ci_low": 0.880971045791622,
-                "ci_upp": 1.3151226563462841,
+                "pooled_es": 1.0540954284289463,
+                "ci_low": 0.885894489553024,
+                "ci_upp": 1.2542319489936278,
                 "is_significant": false
             },
             {
                 "omitted": "Larsson SC et al. (2004) [PMID: 15531686]",
-                "pooled_es": 1.0895074170212593,
-                "ci_low": 0.8882073733085175,
-                "ci_upp": 1.3364293603223947,
+                "pooled_es": 1.067825416997517,
+                "ci_low": 0.8881846262501504,
+                "ci_upp": 1.283799659987335,
                 "is_significant": false
             },
             {
                 "omitted": "Fairfield KM et al. (2004) [PMID: 15069693]",
-                "pooled_es": 1.0826444946593892,
-                "ci_low": 0.8877860765730828,
-                "ci_upp": 1.3202720032969506,
-                "is_significant": false
-            },
-            {
-                "omitted": "Mettlin CJ et al. (1990) [PMID: 2239901]",
-                "pooled_es": 1.0776634117861368,
-                "ci_low": 0.9011248755809235,
-                "ci_upp": 1.2887874484142385,
+                "pooled_es": 1.0611810767422827,
+                "ci_low": 0.8919905628607877,
+                "ci_upp": 1.2624632193689036,
                 "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled analysis of 12 studies yielded an overall effect size of 1.1 (95% CI: 1.01\u20131.21), suggesting that dairy is associated with a higher risk of ovarian cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 86.19%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 9 studies yielded an effect size of 1.08 (95% CI: 0.99\u20131.18), indicating no statistically significant association between dairy and ovarian cancer. Although the point estimate suggests a potential positive relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 84.42%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 180,
@@ -707,8 +686,8 @@
         },
         "extracted": 14
     },
-    "plot_url": "static/dairy/forest_ovarian_cancer_incidence_primary.png?t=8485",
-    "funnel_plot_url": "static/dairy/funnel_ovarian_cancer_incidence_primary.png?t=1611",
-    "baujat_plot_url": "static\\dairy\\baujat_ovarian_cancer_incidence_primary.png?t=7527",
+    "plot_url": "static/dairy/forest_ovarian_cancer_incidence_primary.png?t=6641",
+    "funnel_plot_url": "static/dairy/funnel_ovarian_cancer_incidence_primary.png?t=3024",
+    "baujat_plot_url": "static/dairy/baujat_ovarian_cancer_incidence_primary.png?t=6134",
     "last_run": "2026-06-16 17:46:21"
 }

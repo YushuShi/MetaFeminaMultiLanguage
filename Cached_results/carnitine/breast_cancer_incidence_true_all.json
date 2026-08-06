@@ -211,33 +211,33 @@
             "Link": "https://pubmed.ncbi.nlm.nih.gov/41105334/",
             "Effect Type": "OR",
             "SE": 0.048469387755102025,
-            "Sample Size": null,
+            "Sample Size": 416388,
             "Cases": null,
-            "Estimated Cases": null,
+            "Estimated Cases": 54130,
             "Design": "Mendelian randomization (two-sample)",
             "Timing": "Prospective",
             "Continent": "Europe",
             "Stage": null,
-            "Quality %": 63.6,
+            "Quality %": 62.5,
             "Quality Score": "Moderate",
             "comparison_type": "per genetically determined increase",
             "JBI": {
-                "q1": "Unclear",
+                "q1": "No",
                 "q2": "Yes",
                 "q3": "Yes",
-                "q4": "Yes",
+                "q4": "Unclear",
                 "q5": "Yes",
-                "q6": "Yes",
+                "q6": "Unclear",
                 "q7": "Yes",
-                "q8": "Unclear",
-                "q9": "Unclear",
-                "q10": "Unclear",
+                "q8": "NA",
+                "q9": "NA",
+                "q10": "NA",
                 "q11": "Yes"
             },
             "exposure_measurement_type": "human_biospecimen",
             "exposure_measurement_supporting_text": "genetically determined plasma metabolites",
             "extraction_supporting_text": {
-                "sample_size": null,
+                "sample_size": "The reported meta-analysis pooled three breast cancer outcome GWAS cohorts: FinnGen (n=201,713), BCAC OncoArray (n=138,508), and BCAC iCOGS (n=76,167), totaling 416,388 participants.",
                 "effect_size": "carnitine C14 (OR: 0.72; 95% CI 0.64-0.83; p\u2009<\u20090.001)",
                 "effect_direction": "carnitine C14 as a novel protective biomarker",
                 "p_value": "p\u2009<\u20090.001",
@@ -247,7 +247,7 @@
             }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Chen H et al. (2025) [PMID: 41105334]</th>\n      <td>-0.2914</td>\n      <td>0.0598</td>\n      <td>-0.4086</td>\n      <td>-0.1742</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Larnder AH et al. (2026) [PMID: 42114757]</th>\n      <td>-0.1978</td>\n      <td>0.0831</td>\n      <td>-0.3606</td>\n      <td>-0.0349</td>\n      <td>306.0</td>\n      <td>2762.0</td>\n    </tr>\n    <tr>\n      <th>Zhang J et al. (2022) [PMID: 35875107]</th>\n      <td>0.0978</td>\n      <td>0.0409</td>\n      <td>0.0177</td>\n      <td>0.1780</td>\n      <td>991.0</td>\n      <td>1982.0</td>\n    </tr>\n    <tr>\n      <th>Mahamat-Saleh Y et al. (2025) [PMID: 40528579]</th>\n      <td>0.3204</td>\n      <td>0.1489</td>\n      <td>0.0285</td>\n      <td>0.6122</td>\n      <td>396.0</td>\n      <td>792.0</td>\n    </tr>\n    <tr>\n      <th>Liang G et al. (2025) [PMID: 40190311]</th>\n      <td>0.3847</td>\n      <td>0.1630</td>\n      <td>0.0652</td>\n      <td>0.7043</td>\n      <td>138389.0</td>\n      <td>378730.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Chen H et al. (2025) [PMID: 41105334]</th>\n      <td>-0.2914</td>\n      <td>0.0598</td>\n      <td>-0.4086</td>\n      <td>-0.1742</td>\n      <td>-</td>\n      <td>416388.0</td>\n    </tr>\n    <tr>\n      <th>Larnder AH et al. (2026) [PMID: 42114757]</th>\n      <td>-0.1978</td>\n      <td>0.0831</td>\n      <td>-0.3606</td>\n      <td>-0.0349</td>\n      <td>306.0</td>\n      <td>2762.0</td>\n    </tr>\n    <tr>\n      <th>Zhang J et al. (2022) [PMID: 35875107]</th>\n      <td>0.0978</td>\n      <td>0.0409</td>\n      <td>0.0177</td>\n      <td>0.1780</td>\n      <td>991.0</td>\n      <td>1982.0</td>\n    </tr>\n    <tr>\n      <th>Mahamat-Saleh Y et al. (2025) [PMID: 40528579]</th>\n      <td>0.3204</td>\n      <td>0.1489</td>\n      <td>0.0285</td>\n      <td>0.6122</td>\n      <td>396.0</td>\n      <td>792.0</td>\n    </tr>\n    <tr>\n      <th>Liang G et al. (2025) [PMID: 40190311]</th>\n      <td>0.3847</td>\n      <td>0.1630</td>\n      <td>0.0652</td>\n      <td>0.7043</td>\n      <td>138389.0</td>\n      <td>378730.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 1.03,
         "ci_low": 0.82,
@@ -258,7 +258,7 @@
         "i2": 91.09,
         "tau2": 0.06,
         "eggers_p": 0.8134382130434087,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.8134). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "funnel_interpretation": "Egger\u2019s test is generally not recommended when fewer than 10 studies are available.",
         "loo_results": [
             {
                 "omitted": "Chen H et al. (2025) [PMID: 41105334]",
@@ -315,8 +315,8 @@
         },
         "extracted": 5
     },
-    "plot_url": "static/carnitine/forest_breast_cancer_incidence_primary.png?t=7827",
-    "funnel_plot_url": "static/carnitine/funnel_breast_cancer_incidence_primary.png?t=3384",
-    "baujat_plot_url": "static\\carnitine\\baujat_breast_cancer_incidence_primary.png?t=9061",
+    "plot_url": "static/carnitine/forest_breast_cancer_incidence_primary.png?t=8718",
+    "funnel_plot_url": "static/carnitine/funnel_breast_cancer_incidence_primary.png?t=6224",
+    "baujat_plot_url": "static/carnitine/baujat_breast_cancer_incidence_primary.png?t=6453",
     "last_run": "2026-06-14 16:06:02"
 }
