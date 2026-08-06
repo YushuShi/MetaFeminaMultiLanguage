@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         filterExposureType: document.getElementById('filter-exposure-type'),
         selectAllCheckbox: document.getElementById('select-all-checkbox'),
         selectAllBtn: document.getElementById('select-all-btn'),
+        exportStudiesBtn: document.getElementById('export-studies-btn'),
         deselectAllBtn: document.getElementById('deselect-all-btn'),
         studiesTbody: document.querySelector('#studies-table tbody'),
         forestPlot: document.getElementById('forest-plot'),
@@ -757,7 +758,110 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     });
 
-    // Select All / Deselect All Buttons
+    function firstStudyValue(study, keys) {
+        for (const key of keys) {
+            const value = study[key];
+            if (value !== undefined && value !== null && String(value).trim()) {
+                return String(value).trim();
+            }
+        }
+        return '';
+    }
+
+    function studyIdentifier(study, type) {
+        const isPmcid = type === 'PMCID';
+        const direct = firstStudyValue(study, isPmcid
+            ? ['PMCID', 'pmcid', 'PMC ID', 'pmc_id']
+            : ['PMID', 'pmid']);
+        const searchable = [
+            direct,
+            study.Study,
+            study.Reference,
+            study.Link,
+            study.full_text_url,
+            study['Full Text Link']
+        ].filter(Boolean).join(' ');
+        if (isPmcid) {
+            const match = searchable.match(/\bPMC\s*:?\s*(\d+)\b/i);
+            if (match) return `PMC${match[1]}`;
+            return /^\d+$/.test(direct) ? `PMC${direct}` : '';
+        }
+        if (direct) {
+            const directMatch = direct.match(/\d+/);
+            if (directMatch) return directMatch[0];
+        }
+        const match = searchable.match(/(?:\bPMID\s*:?\s*|pubmed\.ncbi\.nlm\.nih\.gov\/)(\d+)\b/i);
+        return match ? match[1] : '';
+    }
+
+    function csvCell(value) {
+        let text = value === undefined || value === null ? '' : String(value);
+        if (/^[\s]*[=+@]/.test(text) || (/^[\s]*-/.test(text) && Number.isNaN(Number(text)))) {
+            text = `'${text}`;
+        }
+        return `"${text.replace(/"/g, '""')}"`;
+    }
+
+    function exportStudiesToCsv() {
+        if (!currentStudies.length) {
+            alert(uiText('No studies to export.'));
+            return;
+        }
+        const columns = [
+            'Row', 'Selected', 'Study', 'PMID', 'PMCID', 'Effect Type', 'Effect Size',
+            'Lower CI', 'Upper CI', 'Sample Size', 'Cases', 'Estimated Cases',
+            'Quality Score', 'Verified', 'Exclusion Flags', 'Article', 'Comparison',
+            'Design', 'Timing', 'Continent', 'Exposure Measurement', 'Journal', 'Year', 'Link'
+        ].map(column => uiText(column));
+        const rows = currentStudies.map((study, index) => {
+            const checkbox = document.querySelector(`.study-checkbox[data-index="${index}"]`);
+            return [
+                index + 1,
+                uiText(checkbox && checkbox.checked ? 'Yes' : 'No'),
+                study.Study,
+                studyIdentifier(study, 'PMID'),
+                studyIdentifier(study, 'PMCID'),
+                study['Effect Type'],
+                study['Effect Size'],
+                study['Lower CI'],
+                study['Upper CI'],
+                study.Participants || study['Sample Size'],
+                study.Cases,
+                study['Estimated Cases'],
+                study['Quality Score'],
+                study.verifications || 0,
+                study.exclusion_flags || 0,
+                study.Reference,
+                study.comparison_type,
+                study.Design,
+                study.Timing,
+                study.Continent,
+                study.exposure_measurement_type || 'unclear',
+                study.Journal,
+                study.Year,
+                study.Link
+            ];
+        });
+        const csv = [columns, ...rows].map(row => row.map(csvCell).join(',')).join('\r\n');
+        const blob = new Blob([`\uFEFF${csv}`], { type: 'text/csv;charset=utf-8' });
+        const scope = [selectedDiseaseValue(), selectedExposureValue()]
+            .filter(Boolean)
+            .join('_')
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, '_')
+            .replace(/^_+|_+$/g, '');
+        const downloadUrl = URL.createObjectURL(blob);
+        const anchor = document.createElement('a');
+        anchor.href = downloadUrl;
+        anchor.download = `metafemina_extracted_studies${scope ? `_${scope}` : ''}.csv`;
+        anchor.style.display = 'none';
+        document.body.appendChild(anchor);
+        anchor.click();
+        anchor.remove();
+        setTimeout(() => URL.revokeObjectURL(downloadUrl), 0);
+    }
+
+    // Select All / Export / Deselect All Buttons
     if (elements.selectAllBtn) {
         elements.selectAllBtn.addEventListener('click', () => {
             const checkboxes = document.querySelectorAll('.study-checkbox');
@@ -767,6 +871,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 elements.selectAllCheckbox.indeterminate = false;
             }
         });
+    }
+    if (elements.exportStudiesBtn) {
+        elements.exportStudiesBtn.addEventListener('click', exportStudiesToCsv);
     }
     if (elements.deselectAllBtn) {
         elements.deselectAllBtn.addEventListener('click', () => {
