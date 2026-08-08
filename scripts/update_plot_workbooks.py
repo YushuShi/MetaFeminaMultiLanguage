@@ -54,6 +54,9 @@ def filtered_result(exposure: str, cancer: str) -> dict:
     with cache_path.open(encoding="utf-8") as handle:
         cache = json.load(handle)
     frame = pd.DataFrame(cache.get("studies", []))
+    frame = meta_analysis.filter_curated_meta_analysis_exclusions(
+        frame, cancer, exposure, "Incidence"
+    )
     for column in ("Effect Size", "Lower CI", "Upper CI", "Cases", "Sample Size", "Estimated Cases"):
         if column in frame:
             frame[column] = pd.to_numeric(

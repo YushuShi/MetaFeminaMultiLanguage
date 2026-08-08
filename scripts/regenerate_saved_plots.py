@@ -61,7 +61,13 @@ def regenerate(exposure, disease, outcome):
 
     for path in paths:
         payload = json.loads(path.read_text(encoding="utf-8"))
-        studies = payload.get("studies", [])
+        studies = [
+            study for study in payload.get("studies", [])
+            if not meta_analysis.is_curated_meta_analysis_exclusion(
+                study.get("PMID"), disease, exposure, outcome
+            )
+        ]
+        payload["studies"] = studies
         eligible = analysis_frame(studies)
         if eligible.empty:
             print(f"Skipped {path.relative_to(ROOT)}: no default-eligible studies")

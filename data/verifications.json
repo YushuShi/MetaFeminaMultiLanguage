@@ -2548,6 +2548,18 @@
             }
         }
     },
+    "20574916": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S1-EXPOSURE-MISMATCH",
+            "context": "breast_cancer_folic_acid_incidence",
+            "reason": "The reported estimate concerns dietary nitrate relative to antioxidant vitamins and is not a direct folic-acid effect estimate."
+        },
+        "context_exclusions": {}
+    },
     "25078601": {
         "submissions": [],
         "consensus_data": null,

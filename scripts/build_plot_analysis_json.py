@@ -25,6 +25,11 @@ def summarize_cache(path: Path, disease: str, exposure: str, dietary: bool) -> d
     frame = pd.DataFrame(payload.get("studies", []))
     if frame.empty:
         return None
+    frame = meta_analysis.filter_curated_meta_analysis_exclusions(
+        frame, disease, exposure, "Incidence"
+    )
+    if frame.empty:
+        return None
     if dietary:
         if "exposure_measurement_type" not in frame:
             return None

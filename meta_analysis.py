@@ -14,7 +14,7 @@ import forestplot
 from openai import OpenAI
 import json
 from google import genai
-from functools import partial
+from functools import lru_cache, partial
 
 _original_print = print
 def safe_print(*args, **kwargs):
@@ -73,6 +73,54 @@ def normalize_effect_type(effect_type):
 def is_eligible_effect_type(effect_type):
     """Only RR, OR, and HR measurements may enter a meta-analysis."""
     return normalize_effect_type(effect_type) is not None
+
+
+def analysis_context_key(disease, exposure, outcome="Incidence"):
+    """Return the stable key used for context-specific curated exclusions."""
+    parts = (disease, exposure, outcome)
+    return "_".join(
+        re.sub(r"[^a-zA-Z0-9]+", "_", str(part or "").lower()).strip("_")
+        for part in parts
+    )
+
+
+@lru_cache(maxsize=1)
+def curated_meta_analysis_exclusions():
+    """Load only explicit, curator-approved exclusions from the review log."""
+    path = os.path.join(DATA_DIR, "verifications.json")
+    try:
+        with open(path, encoding="utf-8") as handle:
+            verifications = json.load(handle)
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+    exclusions = {}
+    for pmid, verification in verifications.items():
+        if not isinstance(verification, dict):
+            continue
+        curated = verification.get("curated_exclusion")
+        if isinstance(curated, dict) and curated.get("excluded_from_meta_analysis") is True:
+            exclusions[str(pmid)] = curated
+    return exclusions
+
+
+def is_curated_meta_analysis_exclusion(pmid, disease, exposure, outcome="Incidence"):
+    """Return whether a PMID was explicitly excluded for this analysis context."""
+    exclusion = curated_meta_analysis_exclusions().get(str(pmid or "").strip())
+    if not exclusion:
+        return False
+    context = str(exclusion.get("context") or "").strip()
+    return context in {"*", analysis_context_key(disease, exposure, outcome)}
+
+
+def filter_curated_meta_analysis_exclusions(frame, disease, exposure, outcome="Incidence"):
+    """Remove curator-approved context exclusions without consulting user flags."""
+    if frame is None or frame.empty or "PMID" not in frame.columns:
+        return frame.copy() if frame is not None else frame
+    excluded = frame["PMID"].map(
+        lambda pmid: is_curated_meta_analysis_exclusion(pmid, disease, exposure, outcome)
+    )
+    return frame.loc[~excluded].copy()
 
 
 def p_value_from_effect_ci(effect, lower, upper, effect_type=None):
@@ -685,10 +733,14 @@ def perform_meta_analysis(
     if df_all is None:
         df_all = df_clean
 
-    # Keep every saved article in the returned study list, but only RR, OR, and
-    # HR measurements may be pooled or drawn in meta-analysis diagnostics.
-    df_all = df_all.copy()
-    df_clean = df_clean.copy()
+    # Curator-approved context exclusions are removed here; otherwise keep every
+    # saved article in the returned list. Only RR, OR, and HR may be pooled.
+    df_all = filter_curated_meta_analysis_exclusions(
+        df_all, disease, exposure, outcome
+    )
+    df_clean = filter_curated_meta_analysis_exclusions(
+        df_clean, disease, exposure, outcome
+    )
     if 'Effect Type' in df_clean.columns:
         eligible_effect = df_clean['Effect Type'].map(is_eligible_effect_type)
         df_clean = df_clean.loc[eligible_effect].copy()

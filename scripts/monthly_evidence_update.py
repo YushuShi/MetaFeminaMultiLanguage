@@ -1824,6 +1824,9 @@ def apply_to_saved_results(output_dir: Path) -> dict[str, Any]:
     included = [
         item for item in final_packet.get("results", [])
         if item.get("full_text_status") == "INCLUDE_META"
+        and not meta_analysis.is_curated_meta_analysis_exclusion(
+            item.get("pmid"), item.get("cancer"), item.get("exposure"), "Incidence"
+        )
     ]
     changes = []
     grouped: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
