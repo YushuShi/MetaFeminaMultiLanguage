@@ -7,7 +7,7 @@ import meta_analysis
 
 class CuratedExclusionTests(unittest.TestCase):
     def test_explicit_folate_exclusions_match_only_the_curated_context(self):
-        for pmid in ("20574916", "25078601"):
+        for pmid in ("20030812", "20574916", "25078601"):
             self.assertTrue(
                 meta_analysis.is_curated_meta_analysis_exclusion(
                     pmid, "Breast cancer", "folic_acid", "Incidence"
@@ -22,6 +22,7 @@ class CuratedExclusionTests(unittest.TestCase):
     def test_filter_does_not_use_crowdsourced_exclusion_counts(self):
         frame = pd.DataFrame(
             [
+                {"PMID": "20030812", "Effect Size": 0.6173},
                 {"PMID": "20574916", "Effect Size": 2.03},
                 {"PMID": "20410093", "Effect Size": 1.11},
             ]

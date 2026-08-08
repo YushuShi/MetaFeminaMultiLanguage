@@ -2050,6 +2050,12 @@
         "legacy_count": 0,
         "submissions": [],
         "context_exclusions": {},
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S2-GENETIC-FOCUS",
+            "context": "breast_cancer_folic_acid_incidence",
+            "reason": "The study evaluates folate associations within MTHFR C677T genotype strata rather than folate exposure in the general population."
+        },
         "contexts": {
             "breast_cancer_folic_acid_incidence": {
                 "submissions": [
