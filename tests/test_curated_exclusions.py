@@ -1,4 +1,6 @@
+import json
 import unittest
+from pathlib import Path
 
 import pandas as pd
 
@@ -33,6 +35,68 @@ class CuratedExclusionTests(unittest.TestCase):
         )
 
         self.assertEqual(filtered["PMID"].tolist(), ["20410093"])
+
+    def test_curated_vitamin_e_and_antioxidant_exclusions(self):
+        for pmid in ("12131659", "12891146", "30373451"):
+            self.assertTrue(
+                meta_analysis.is_curated_meta_analysis_exclusion(
+                    pmid, "Breast cancer", "vitamin_e", "Incidence"
+                )
+            )
+            self.assertFalse(
+                meta_analysis.is_curated_meta_analysis_exclusion(
+                    pmid, "Breast cancer", "alcohol", "Incidence"
+                )
+            )
+
+        self.assertTrue(
+            meta_analysis.is_curated_meta_analysis_exclusion(
+                "14659342", "Breast cancer", "vitamin_e", "Incidence"
+            )
+        )
+        self.assertTrue(
+            meta_analysis.is_curated_meta_analysis_exclusion(
+                "14659342", "Breast cancer", "antioxidants", "Incidence"
+            )
+        )
+
+    def test_male_breast_cancer_records_are_excluded_only_from_alcohol_context(self):
+        for pmid in ("15280636", "25515550", "28225200"):
+            self.assertTrue(
+                meta_analysis.is_curated_meta_analysis_exclusion(
+                    pmid, "Breast cancer", "alcohol", "Incidence"
+                )
+            )
+            self.assertFalse(
+                meta_analysis.is_curated_meta_analysis_exclusion(
+                    pmid, "Breast cancer", "vitamin_e", "Incidence"
+                )
+            )
+
+    def test_dietary_measurement_corrections_and_zhu_excerpts_are_saved(self):
+        cache_path = (
+            Path(__file__).resolve().parents[1]
+            / "Cached_results"
+            / "vitamin_e"
+            / "breast_cancer_incidence_true_all.json"
+        )
+        payload = json.loads(cache_path.read_text(encoding="utf-8"))
+        by_pmid = {str(study.get("PMID")): study for study in payload["studies"]}
+
+        for pmid in ("11713032", "16599372", "19358284"):
+            self.assertEqual(by_pmid[pmid]["exposure_measurement_type"], "dietary_intake")
+
+        zhu_support = by_pmid["16599372"]["extraction_supporting_text"]
+        for field in (
+            "sample_size",
+            "effect_size",
+            "effect_direction",
+            "p_value",
+            "confidence_interval",
+            "outcome_definition",
+            "exposure_definition",
+        ):
+            self.assertTrue(zhu_support[field])
 
 
 if __name__ == "__main__":

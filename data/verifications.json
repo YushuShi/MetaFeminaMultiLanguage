@@ -164,6 +164,12 @@
     "12891146": {
         "legacy_count": 0,
         "submissions": [],
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S1-OUTCOME-MISMATCH",
+            "context": "breast_cancer_vitamin_e_incidence",
+            "reason": "The reported outcome is recurrence or mortality after hematopoietic stem-cell transplantation, not breast-cancer incidence."
+        },
         "context_exclusions": {
             "breast_cancer_vitamin_e_incidence": 3
         },
@@ -172,6 +178,12 @@
     "14659342": {
         "legacy_count": 0,
         "submissions": [],
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S1-EXPOSURE-MISMATCH",
+            "context": "*",
+            "reason": "The extracted estimate is an arachidonic-acid association stratified by vitamin E intake, not an independent vitamin E or antioxidant exposure effect."
+        },
         "context_exclusions": {
             "breast_cancer_vitamin_e_incidence": 2
         },
@@ -706,6 +718,12 @@
     "30373451": {
         "legacy_count": 0,
         "submissions": [],
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S1-EXPOSURE-OUTCOME-MISMATCH",
+            "context": "breast_cancer_vitamin_e_incidence",
+            "reason": "The study evaluates a composite cardiovascular lifestyle score and cause-specific mortality, not vitamin E exposure and breast-cancer incidence."
+        },
         "context_exclusions": {
             "breast_cancer_vitamin_e_incidence": 2
         },
@@ -2784,6 +2802,12 @@
         "submissions": [],
         "consensus_data": null,
         "legacy_count": 0,
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S1-POPULATION-MISMATCH",
+            "context": "breast_cancer_vitamin_e_incidence",
+            "reason": "The study population and reported outcome are male breast cancer."
+        },
         "context_exclusions": {
             "breast_cancer_vitamin_e_incidence": 2
         }
@@ -4134,5 +4158,41 @@
         "context_exclusions": {
             "uterine_cancer_alcohol_incidence": 2
         }
+    },
+    "15280636": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S1-POPULATION-MISMATCH",
+            "context": "breast_cancer_alcohol_incidence",
+            "reason": "The extracted estimate is for alcohol consumption and male breast cancer."
+        },
+        "context_exclusions": {}
+    },
+    "25515550": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S1-POPULATION-MISMATCH",
+            "context": "breast_cancer_alcohol_incidence",
+            "reason": "The study population and reported outcome are male breast cancer."
+        },
+        "context_exclusions": {}
+    },
+    "28225200": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S1-POPULATION-MISMATCH",
+            "context": "breast_cancer_alcohol_incidence",
+            "reason": "The extracted estimate is for alcohol-dependent men and breast cancer in men."
+        },
+        "context_exclusions": {}
     }
 }
