@@ -50,18 +50,20 @@ EGGERS_FEWER_THAN_TEN_MESSAGE = (
 )
 
 RATIO_EFFECT_TYPES = {
-    'OR', 'RR', 'HR', 'ODDS RATIO', 'RISK RATIO', 'RELATIVE RISK',
-    'HAZARD RATIO',
+    'OR', 'RR', 'IRR', 'HR', 'ODDS RATIO', 'RISK RATIO', 'RELATIVE RISK',
+    'INCIDENCE RATE RATIO', 'HAZARD RATIO',
 }
 
 
 def normalize_effect_type(effect_type):
-    """Return a canonical RR/OR/HR label, or ``None`` when not poolable."""
+    """Return a canonical RR/OR/HR label (with IRR treated as RR), or ``None``."""
     normalized = re.sub(r'[^A-Z]+', ' ', str(effect_type or '').upper()).strip()
     aliases = {
         'RR': 'RR',
+        'IRR': 'RR',
         'RISK RATIO': 'RR',
         'RELATIVE RISK': 'RR',
+        'INCIDENCE RATE RATIO': 'RR',
         'OR': 'OR',
         'ODDS RATIO': 'OR',
         'HR': 'HR',
@@ -71,7 +73,7 @@ def normalize_effect_type(effect_type):
 
 
 def is_eligible_effect_type(effect_type):
-    """Only RR, OR, and HR measurements may enter a meta-analysis."""
+    """Only RR (including IRR), OR, and HR measurements may enter a meta-analysis."""
     return normalize_effect_type(effect_type) is not None
 
 
@@ -734,7 +736,7 @@ def perform_meta_analysis(
         df_all = df_clean
 
     # Curator-approved context exclusions are removed here; otherwise keep every
-    # saved article in the returned list. Only RR, OR, and HR may be pooled.
+    # saved article in the returned list. IRR is pooled on the RR scale.
     df_all = filter_curated_meta_analysis_exclusions(
         df_all, disease, exposure, outcome
     )
@@ -759,7 +761,7 @@ def perform_meta_analysis(
         ].copy()
 
     if df_clean.empty:
-        return {"error": "No studies with eligible RR, OR, or HR measurements were available for meta-analysis."}
+        return {"error": "No studies with eligible RR, IRR, OR, or HR measurements were available for meta-analysis."}
 
     safe_disease = re.sub(r'[^a-zA-Z0-9]+', '_', disease.lower()).strip('_')
     safe_exposure = re.sub(r'[^a-zA-Z0-9]+', '_', exposure.lower()).strip('_')

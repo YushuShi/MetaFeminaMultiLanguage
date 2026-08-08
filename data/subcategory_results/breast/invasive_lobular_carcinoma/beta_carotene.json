@@ -4,36 +4,39 @@
       "available": false,
       "reason": "baujat_requires_3_studies"
     },
-    "eligible_study_count": 0,
+    "eligible_study_count": 1,
     "forest": {
-      "available": false,
-      "reason": "forest_requires_1_study"
+      "available": true,
+      "reason": null
     },
     "formal_egger": {
       "available": false,
       "reason": "egger_requires_10_studies"
     },
     "funnel": {
-      "available": false,
-      "reason": "no_eligible_studies"
+      "available": true,
+      "reason": "egger_requires_10_studies"
     }
   },
   "baujat_plot_url": "Plot/subcategories/breast/invasive_lobular_carcinoma/beta_carotene_baujat.png",
   "exposure": "Beta-carotene",
   "funnel_plot_url": "Plot/subcategories/breast/invasive_lobular_carcinoma/beta_carotene_funnel.png",
   "headline": {
-    "ci_low": null,
-    "ci_upp": null,
+    "ci_low": 0.5698351409943826,
+    "ci_upp": 0.9097368040436635,
     "eggers_intercept": null,
     "eggers_p": null,
-    "i2": null,
+    "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+    "i2": 0.0,
+    "interpretation": "The pooled subtype-specific estimate is 0.72, indicating a lower relative association for this exposure.",
     "loo_results": [],
-    "n_studies": 0,
-    "pooled_es": null,
-    "q": null,
-    "tau2": null
+    "n_studies": 1,
+    "pooled_es": 0.72,
+    "q": 0.0,
+    "results_interpretation": "This saved analysis contains 1 separately reported Invasive lobular carcinoma estimate.",
+    "tau2": 0.0
   },
-  "input_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "input_fingerprint": "4092900ac8d2a857d42352b789356e1a095608fe591ef6767083ec3b36b59c1a",
   "plot_url": "Plot/subcategories/breast/invasive_lobular_carcinoma/beta_carotene_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/invasive_lobular_carcinoma/beta_carotene_baujat.png",
@@ -48,6 +51,78 @@
     "subcategory_label": "Invasive lobular carcinoma",
     "subcategory_slug": "invasive_lobular_carcinoma"
   },
-  "skipped_annotation_count_for_build": 1,
-  "studies": []
+  "skipped_annotation_count_for_build": 0,
+  "studies": [
+    {
+      "Authors": "Roswall N, Olsen A, Christensen J, Dragsted LO, Overvad K, Tjønneland A",
+      "Cases": 1072.0,
+      "Effect Size": 0.72,
+      "Effect Type": "IRR",
+      "JBI": {
+        "q1": "Yes",
+        "q10": "Unclear",
+        "q11": "Yes",
+        "q2": "Yes",
+        "q3": "Yes",
+        "q4": "Yes",
+        "q5": "Yes",
+        "q6": "Yes",
+        "q7": "Yes",
+        "q8": "Yes",
+        "q9": "Unclear"
+      },
+      "Journal": "European journal of cancer prevention : the official journal of the European Cancer Prevention Organisation (ECP)",
+      "Link": "https://pubmed.ncbi.nlm.nih.gov/20698054/",
+      "Lower CI": 0.57,
+      "PMID": "20698054",
+      "Participants": 26224.0,
+      "Quality %": 81.8,
+      "Quality Score": "Good",
+      "Reference": "Micronutrient intake and breast cancer characteristics among postmenopausal women.",
+      "Sample Size": 26224.0,
+      "Study": "Roswall N et al. (2010) [PMID: 20698054]",
+      "Upper CI": 0.91,
+      "Year": "2010",
+      "authors": "Roswall N, Olsen A, Christensen J, Dragsted LO, Overvad K, Tjønneland A",
+      "cases": 1072.0,
+      "comparison_type": "Highest vs Lowest (dietary beta-carotene)",
+      "context_id": "20698054|breast|beta_carotene|0",
+      "effect_size": 0.72,
+      "effect_type": "IRR",
+      "evidence_locator": "Dietary but not supplemental beta-carotene showed a protective effect against lobular breast cancer [IRR: 0.72; 95% CI: 0.57-0.91].",
+      "evidence_source": "terra",
+      "exposure_measurement_supporting_text": "information on diet, supplements and lifestyle was collected through questionnaires",
+      "exposure_measurement_type": "dietary_intake",
+      "extraction_supporting_text": {
+        "confidence_interval": "Dietary but not supplemental beta-carotene showed a protective effect against lobular breast cancer [IRR: 0.72; 95% CI: 0.57-0.91].",
+        "effect_size": "Dietary but not supplemental beta-carotene showed a protective effect against lobular breast cancer [IRR: 0.72; 95% CI: 0.57-0.91].",
+        "outcome_definition": ""
+      },
+      "jbi": {
+        "q1": "Yes",
+        "q10": "Unclear",
+        "q11": "Yes",
+        "q2": "Yes",
+        "q3": "Yes",
+        "q4": "Yes",
+        "q5": "Yes",
+        "q6": "Yes",
+        "q7": "Yes",
+        "q8": "Yes",
+        "q9": "Unclear"
+      },
+      "journal": "European journal of cancer prevention : the official journal of the European Cancer Prevention Organisation (ECP)",
+      "lower_ci": 0.57,
+      "outcome_definition": null,
+      "pmid": "20698054",
+      "quality_percent": 81.8,
+      "quality_score": "Good",
+      "reference": "Micronutrient intake and breast cancer characteristics among postmenopausal women.",
+      "sample_size": 26224.0,
+      "se": null,
+      "study": "Roswall N et al. (2010) [PMID: 20698054]",
+      "upper_ci": 0.91,
+      "year": "2010"
+    }
+  ]
 }

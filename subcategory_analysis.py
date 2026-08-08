@@ -38,8 +38,8 @@ SCHEMA_VERSION = "1.0"
 FORMAL_EGGER_MIN_STUDIES = 10
 TERRA_INPUT_USD_PER_MILLION = 2.0
 ELIGIBLE_EFFECT_TYPES = {
-    "OR", "RR", "HR", "ODDS RATIO", "RISK RATIO", "RELATIVE RISK",
-    "HAZARD RATIO",
+    "OR", "RR", "IRR", "HR", "ODDS RATIO", "RISK RATIO", "RELATIVE RISK",
+    "INCIDENCE RATE RATIO", "HAZARD RATIO",
 }
 SUMMARY_PLOT_LOCALES = ("zh-CN", "zh-TW", "nl", "ko")
 SUMMARY_TRANSLATIONS = MODULE_DIR / "static" / "i18n-translations.json"
@@ -707,7 +707,7 @@ def _forest_plot(path: Path, title: str, rows: list[dict[str, Any]], pooled: dic
         })
     frame = pd.DataFrame.from_records(records)
     n_studies = len(frame)
-    dynamic_height = max(7, 0.35 * n_studies + 3.5)
+    dynamic_height = min(18, max(3.8, 0.35 * n_studies + 3.1))
     font_size = 10 if n_studies < 15 else 8 if n_studies < 30 else 6 if n_studies < 60 else 5
     with plt.rc_context({"font.size": font_size}):
         forest_ax = forestplot.forestplot(

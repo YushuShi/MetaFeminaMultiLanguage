@@ -50,7 +50,7 @@ class SummaryPageTests(unittest.TestCase):
         self.assertNotIn('isCrowdExcluded', script)
         self.assertNotIn('automatically deselected', script)
 
-    def test_only_rr_or_hr_are_sent_to_reanalysis(self):
+    def test_only_rr_irr_or_hr_are_sent_to_reanalysis(self):
         studies = [
             {'PMID': '1', 'Quality Score': 'Good', 'Effect Type': 'RR', 'Effect Size': 1.1, 'Lower CI': 1.0, 'Upper CI': 1.2},
             {'PMID': '2', 'Quality Score': 'Good', 'Effect Type': 'PAF', 'Effect Size': 5.6, 'Lower CI': 1.9, 'Upper CI': 9.3},
@@ -62,13 +62,21 @@ class SummaryPageTests(unittest.TestCase):
 
         self.assertEqual(response.status_code, 200)
         analyzed = perform.call_args.args[0]
-        self.assertEqual(list(analyzed['PMID']), ['1'])
+        self.assertEqual(list(analyzed['PMID']), ['1', '3'])
 
     def test_p_value_is_computed_on_the_effect_measure_scale(self):
         from meta_analysis import p_value_from_effect_ci
 
         self.assertAlmostEqual(p_value_from_effect_ci(0.5, 0.2083, 1.25, 'OR'), 0.1294365, places=6)
+        self.assertIsNotNone(p_value_from_effect_ci(1.3, 1.1, 1.5, 'IRR'))
         self.assertIsNone(p_value_from_effect_ci(5.6, 1.9, 9.3, 'PAF'))
+
+    def test_homepage_offers_irr_as_an_effect_measure(self):
+        response = self.client.get('/')
+        script = (Path(__file__).resolve().parents[1] / 'static' / 'script.js').read_text()
+
+        self.assertIn(b'<option value="IRR">Incidence Rate Ratio (IRR)</option>', response.data)
+        self.assertIn("['RR', 'IRR', 'OR', 'HR']", script)
 
     def test_reanalysis_rejects_fair_studies_by_default(self):
         studies = [

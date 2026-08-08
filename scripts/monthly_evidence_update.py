@@ -118,7 +118,7 @@ Mixed animal-human work is eligible when human results are separable. Multiple
 cancers are eligible when target-cancer results are separable.
 
 For each INCLUDE context, extract only explicitly supported abstract data:
-effect_size, effect_type (RR/OR/HR), ci_lower, ci_upper, p_value, total_n, cases,
+effect_size, effect_type (RR/IRR/OR/HR), ci_lower, ci_upper, p_value, total_n, cases,
 comparison_type, design, timing, continent, exposure_measurement_type
 (dietary_intake/human_biospecimen/unclear), needs_inversion, and concise supporting
 text. Use null when absent. abstract_sufficient_for_meta is true only when a
@@ -172,7 +172,7 @@ protocol. Prefer the most fully adjusted target-context estimate. Standardize to
 higher versus lower exposure and flag needs_inversion when the published contrast
 is lower versus higher. Never invent values.
 
-Extract: effect_size, effect_type (RR/OR/HR), ci_lower, ci_upper, p_value, total_n,
+Extract: effect_size, effect_type (RR/IRR/OR/HR), ci_lower, ci_upper, p_value, total_n,
 cases, comparison_type, design, timing, continent, exposure_measurement_type,
 needs_inversion, and concise supporting_text. Reperform JBI using cohort q1-q11,
 case_control q1-q10, cross_sectional q1-q8, or rct q1-q13, with Yes/No/Unclear/NA.

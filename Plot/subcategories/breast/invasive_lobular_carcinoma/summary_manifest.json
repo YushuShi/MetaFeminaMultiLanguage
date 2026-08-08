@@ -1,5 +1,5 @@
 {
-  "eligible_exposure_count": 3,
+  "eligible_exposure_count": 4,
   "exposure_count": 4,
   "exposures": [
     {
@@ -81,32 +81,35 @@
           "available": false,
           "reason": "baujat_requires_3_studies"
         },
-        "eligible_study_count": 0,
+        "eligible_study_count": 1,
         "forest": {
-          "available": false,
-          "reason": "forest_requires_1_study"
+          "available": true,
+          "reason": null
         },
         "formal_egger": {
           "available": false,
           "reason": "egger_requires_10_studies"
         },
         "funnel": {
-          "available": false,
-          "reason": "no_eligible_studies"
+          "available": true,
+          "reason": "egger_requires_10_studies"
         }
       },
       "exposure": "Beta-carotene",
       "headline": {
-        "ci_low": null,
-        "ci_upp": null,
+        "ci_low": 0.5698351409943826,
+        "ci_upp": 0.9097368040436635,
         "eggers_intercept": null,
         "eggers_p": null,
-        "i2": null,
+        "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
+        "i2": 0.0,
+        "interpretation": "The pooled subtype-specific estimate is 0.72, indicating a lower relative association for this exposure.",
         "loo_results": [],
-        "n_studies": 0,
-        "pooled_es": null,
-        "q": null,
-        "tau2": null
+        "n_studies": 1,
+        "pooled_es": 0.72,
+        "q": 0.0,
+        "results_interpretation": "This saved analysis contains 1 separately reported Invasive lobular carcinoma estimate.",
+        "tau2": 0.0
       }
     },
     {

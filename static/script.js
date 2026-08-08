@@ -94,13 +94,24 @@ document.addEventListener('DOMContentLoaded', async () => {
         return rating === 'good' || rating === 'moderate';
     }
 
-    function hasEligibleEffectMeasurement(study) {
-        const effectType = String(study['Effect Type'] || '')
+    function canonicalEffectMeasure(value) {
+        const effectType = String(value || '')
             .toUpperCase()
             .replace(/[^A-Z]+/g, ' ')
             .trim();
-        const eligibleType = ['RR', 'RISK RATIO', 'RELATIVE RISK', 'OR', 'ODDS RATIO', 'HR', 'HAZARD RATIO']
-            .includes(effectType);
+        const aliases = {
+            'RISK RATIO': 'RR',
+            'RELATIVE RISK': 'RR',
+            'INCIDENCE RATE RATIO': 'IRR',
+            'ODDS RATIO': 'OR',
+            'HAZARD RATIO': 'HR'
+        };
+        return aliases[effectType] || effectType;
+    }
+
+    function hasEligibleEffectMeasurement(study) {
+        const eligibleType = ['RR', 'IRR', 'OR', 'HR']
+            .includes(canonicalEffectMeasure(study['Effect Type']));
         const effect = Number(study['Effect Size']);
         const lower = Number(study['Lower CI']);
         const upper = Number(study['Upper CI']);
@@ -920,7 +931,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (quality === 'Moderate+') {
                 if (!meetsDefaultJbiThreshold(study)) return false;
             } else if (quality !== 'All' && quality !== 'Fair+' && (study['Quality Score'] || 'Fair') !== quality) return false;
-            if (measure !== 'All' && (study['Effect Type'] || '').toUpperCase() !== measure) return false;
+            if (measure !== 'All' && canonicalEffectMeasure(study['Effect Type']) !== measure) return false;
             
             const studyExpType = study.exposure_measurement_type || 'unclear';
             if (exposureType === 'Dietary intake only') {
@@ -1170,7 +1181,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             let unselectedReason = "";
             if (!isChecked) {
                 if (!qualityIsEligible) unselectedReason = uiText('Excluded by default: JBI rating is below Moderate');
-                else if (!eligibleEffectMeasurement) unselectedReason = uiText('Excluded from meta-analysis: effect measurement must be RR, OR, or HR');
+                else if (!eligibleEffectMeasurement) unselectedReason = uiText('Excluded from meta-analysis: effect measurement must be RR, IRR, OR, or HR');
                 else if (isNaN(finalCasesVal)) unselectedReason = uiText('Excluded: Cases not specified or invalid');
                 else if (finalCasesVal <= minCases) {
                     const isEst = isNaN(casesVal);

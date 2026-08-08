@@ -16,12 +16,12 @@ from subcategory_analysis import (
 
 
 class SubcategoryAnalysisTests(unittest.TestCase):
-    def test_only_rr_or_hr_subcategory_estimates_are_eligible(self):
+    def test_only_rr_irr_or_hr_subcategory_estimates_are_eligible(self):
         base = {"effect_size": 1.2, "lower_ci": 1.0, "upper_ci": 1.4}
         self.assertIsNotNone(_estimate({**base, "effect_type": "RR"}))
         self.assertIsNotNone(_estimate({**base, "effect_type": "OR"}))
         self.assertIsNotNone(_estimate({**base, "effect_type": "HR"}))
-        self.assertIsNone(_estimate({**base, "effect_type": "IRR"}))
+        self.assertIsNotNone(_estimate({**base, "effect_type": "IRR"}))
         self.assertIsNone(_estimate({**base, "effect_type": "PAF"}))
 
     def setUp(self):
