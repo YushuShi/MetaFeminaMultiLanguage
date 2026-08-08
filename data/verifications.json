@@ -2552,6 +2552,12 @@
         "submissions": [],
         "consensus_data": null,
         "legacy_count": 0,
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S2-GENETIC-FOCUS",
+            "context": "breast_cancer_folic_acid_incidence",
+            "reason": "The reported estimate is for an MTHFR genotype and folate interaction rather than folate exposure in the general population."
+        },
         "context_exclusions": {
             "breast_cancer_folic_acid_incidence": 2
         }

@@ -96,7 +96,8 @@ jobs:
         if: steps.changed.outputs.value == 'true'
         run: |
           set -o pipefail
-          Rscript Plot/PlotsPaper.R 2>&1 | tee -a monthly_update.log
+          python scripts/build_plot_analysis_json.py --output /tmp/metafemina-summary-analysis.json 2>&1 | tee -a monthly_update.log
+          METAFEMINA_ANALYSIS_JSON=/tmp/metafemina-summary-analysis.json Rscript Plot/PlotsPaper.R 2>&1 | tee -a monthly_update.log
           Rscript Plot/DumbellPlot.R 2>&1 | tee -a monthly_update.log
 
       - name: Refresh saved-study cancer subcategories and plots
