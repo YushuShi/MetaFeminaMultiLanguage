@@ -329,7 +329,7 @@ p <- ggplot() +
     aes(x = ci_low, xend = ci_high,
         y = Exposure_label, yend = Exposure_label,
         color = cancer, group = cancer),
-    linewidth = 0.45, alpha = 0.5, lineend = "round",
+    linewidth = 1.75, alpha = 0.5, lineend = "round",
     position = position_dodge(width = 0.4)
   ) +
   # Main dots
@@ -349,7 +349,7 @@ p <- ggplot() +
     aes(x = Inf, y = Exposure_label,
         label = as.character(Group),
         color = Group),
-    hjust = -0.05, size = 4.1, fontface = "italic",
+    hjust = -0.05, size = 4.5, fontface = "bold",
     inherit.aes = FALSE
   ) +
   scale_color_manual(
@@ -377,21 +377,21 @@ p <- ggplot() +
     x        = "Pooled RR (log scale)",
     y        = NULL
   ) +
-  theme_minimal(base_size = 16) +   # was 11
+  theme_minimal(base_size = 17) +
   theme(
-    plot.title         = element_text(face = "bold", size = 20, color = "#1A1A2E"),
-    plot.subtitle      = element_text(size = 13, color = "#607D8B"),
-    axis.text.y        = element_text(size = 13, color = "#1A1A2E"),
-    axis.text.x        = element_text(size = 13, color = "#37474F", face = "bold"),
-    axis.title.x       = element_text(size = 14, color = "#37474F", margin = margin(t = 6)),
+    plot.title         = element_text(face = "bold", size = 21, color = "#1A1A2E"),
+    plot.subtitle      = element_text(size = 14, color = "#607D8B"),
+    axis.text.y        = element_text(size = 14, color = "#1A1A2E", face = "bold"),
+    axis.text.x        = element_text(size = 14, color = "#37474F", face = "bold"),
+    axis.title.x       = element_text(size = 15, color = "#37474F", margin = margin(t = 6)),
     panel.grid.major.y = element_blank(),
     panel.grid.major.x = element_line(color = "#ECEFF1", linewidth = 0.4),
     panel.grid.minor   = element_blank(),
     legend.position    = "bottom",
     legend.box         = "horizontal",
-    legend.text        = element_text(size = 13),
-    legend.title       = element_text(size = 14, face = "bold"),
-    plot.margin        = margin(10, 160, 10, 10),
+    legend.text        = element_text(size = 14),
+    legend.title       = element_text(size = 15, face = "bold"),
+    plot.margin        = margin(10, 210, 10, 10),
     plot.background    = element_rect(fill = "white", color = NA)
   )
 
@@ -402,7 +402,7 @@ p <- ggplot() +
 ggsave(
   "comparison_dumbbell.pdf",
   plot   = p,
-  width  = 430,      # was 320
+  width  = 480,
   height = 380,      # was 300
   units  = "mm",
   device = "pdf",

@@ -1291,12 +1291,16 @@ def _diagnostic_plot(
             textcoords="offset points",
             ha="right" if right_side else "left",
             va="bottom",
-            fontsize=8,
+            fontsize=10,
+            fontweight="bold",
             **exposure_font_args,
         )
-    ax.set_xlabel(x_label)
-    ax.set_ylabel("I² (%)")
-    ax.set_title(title)
+    ax.set_xlabel(x_label, fontsize=13, fontweight="bold")
+    ax.set_ylabel("I² (%)", fontsize=13, fontweight="bold")
+    ax.set_title(title, fontsize=15, fontweight="bold")
+    ax.tick_params(axis="both", labelsize=12)
+    for tick_label in (*ax.get_xticklabels(), *ax.get_yticklabels()):
+        tick_label.set_fontweight("bold")
     ax.grid(alpha=0.2)
     path.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(path, bbox_inches="tight", metadata={"Date": None})

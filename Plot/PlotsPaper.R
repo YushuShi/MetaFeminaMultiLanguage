@@ -778,7 +778,7 @@ make_es_heterogeneity_plot <- function(dat_clean, min_studies = 3,
               aes(x = pooled_es_num, y = I2, color = as.character(Group))) +
     geom_point(aes(size = n_studies), alpha = 0.85) +
     geom_text_repel(
-      aes(label = exposure_label), size = 3, max.overlaps = 20,
+      aes(label = exposure_label), size = 4, fontface = "bold", max.overlaps = 20,
       family = font_family
     ) +
     geom_vline(xintercept = 1, linetype = "dashed") +
@@ -792,10 +792,12 @@ make_es_heterogeneity_plot <- function(dat_clean, min_studies = 3,
       x     = "Effect Size (Pooled RR)",
       y     = expression(I^2)
     ) +
-    theme_minimal(base_size = 15, base_family = font_family) +
+    theme_minimal(base_size = 18, base_family = font_family) +
     theme(
       legend.position = "none",
-      plot.title      = element_text(face = "bold")
+      plot.title      = element_text(face = "bold", size = 19),
+      axis.text       = element_text(face = "bold"),
+      axis.title      = element_text(face = "bold")
     )
   
   save_plot_pdf(
@@ -824,7 +826,7 @@ make_eggers_heterogeneity_plot <- function(dat_clean, min_studies = 3,
               aes(x = log_eggers_p, y = I2, color = as.character(Group))) +
     geom_point(aes(size = n_studies), alpha = 0.85) +
     geom_text_repel(
-      aes(label = exposure_label), size = 3, max.overlaps = 20,
+      aes(label = exposure_label), size = 4, fontface = "bold", max.overlaps = 20,
       family = font_family
     ) +
     geom_vline(xintercept = log(0.05), linetype = "dashed") +   # log(0.05) ≈ -2.996
@@ -839,10 +841,12 @@ make_eggers_heterogeneity_plot <- function(dat_clean, min_studies = 3,
       x     = "log(Egger's p-value)",
       y     = expression(I^2)
     ) +
-    theme_minimal(base_size = 15, base_family = font_family) +
+    theme_minimal(base_size = 18, base_family = font_family) +
     theme(
       legend.position = "none",
-      plot.title      = element_text(face = "bold")
+      plot.title      = element_text(face = "bold", size = 19),
+      axis.text       = element_text(face = "bold"),
+      axis.title      = element_text(face = "bold")
     )
   
   save_plot_pdf(
