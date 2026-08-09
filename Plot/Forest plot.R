@@ -294,7 +294,7 @@ make_table_panel <- function(df, label_df, total_rows, title_text, fs = 3.8) {
       hjust = 0.5, size = fs - 0.2, inherit.aes = FALSE
     ) +
     
-    # N
+    # Sample size
     geom_text(
       data = df,
       aes(x = 2.4, y = plot_row, label = N_lab, color = as.character(Group)),
@@ -322,9 +322,9 @@ make_table_panel <- function(df, label_df, total_rows, title_text, fs = 3.8) {
              fill = "#1A1A2E", alpha = 0.93) +
     annotate("text", x = 0.0,  y = header_y, label = "Exposure",
              hjust = 0,   fontface = "bold", size = fs + 0.5, color = "white") +
-    annotate("text", x = 1.2,  y = header_y, label = "k",
+    annotate("text", x = 1.2,  y = header_y, label = "# of studies",
              hjust = 0.5, fontface = "bold", size = fs + 0.5, color = "white") +
-    annotate("text", x = 2.4,  y = header_y, label = "N",
+    annotate("text", x = 2.4,  y = header_y, label = "Sample size",
              hjust = 1,   fontface = "bold", size = fs + 0.5, color = "white") +
     annotate("text", x = 3.5,  y = header_y, label = "Cases",
              hjust = 1,   fontface = "bold", size = fs + 0.5, color = "white") +
@@ -505,7 +505,7 @@ make_caption <- function(direction) {
     side <- "OR > 1 = positively associated with breast cancer risk."
   }
   paste0(
-    "\u25c6 pooled OR (size \u221d k studies)  |  ",
+    "\u25c6 pooled OR (size \u221d # of studies)  |  ",
     "\u25c7 red outline = statistically significant (95% CI excludes 1.0)  |  ",
     "\u25c6 faded = non-significant  |  k = number of studies  |  ",
     side

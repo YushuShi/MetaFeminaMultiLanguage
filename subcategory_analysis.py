@@ -1166,8 +1166,8 @@ def _cross_exposure_forest(
     for y_line in np.arange(0.5, total_rows + 0.6, 1):
         table_ax.axhline(y_line, color="white", linewidth=0.6)
     table_ax.add_patch(Rectangle((-0.05, -0.60), 4.8, 1.1, facecolor="#1A1A2E", alpha=0.93, linewidth=0))
-    for x, label, align in ((0.0, "Exposure", "left"), (1.2, "N studies", "center"),
-                            (2.4, "N", "right"), (3.5, "Cases", "right"),
+    for x, label, align in ((0.0, "Exposure", "left"), (1.2, "# of studies", "center"),
+                            (2.4, "Sample size", "right"), (3.5, "Cases", "right"),
                             (4.7, "Pooled RR (95% CI)", "right")):
         table_ax.text(x, 0, label, ha=align, va="center", fontsize=9.2, fontweight="bold", color="white")
 
@@ -1241,7 +1241,7 @@ def _cross_exposure_forest(
     )
     fig.text(
         0.04, 0.035,
-        side + "  |  diamond = pooled RR (size proportional to k studies)  |  "
+        side + "  |  diamond = pooled RR (size proportional to # of studies)  |  "
         "red outline = statistically significant (95% CI excludes 1.0)  |  faded = non-significant",
         ha="left", va="bottom", fontsize=7.2, color="#607D8B", fontstyle="italic",
     )

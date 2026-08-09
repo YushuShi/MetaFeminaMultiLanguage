@@ -373,6 +373,19 @@ class SummaryPageTests(unittest.TestCase):
         self.assertIn('height = figure_height', paper_plot_source)
         self.assertIn('figsize=(11.69, _summary_forest_height(total_rows))', analysis_source)
 
+    def test_cross_exposure_forest_headers_are_descriptive(self):
+        root = Path(__file__).resolve().parents[1]
+        sources = (
+            (root / 'subcategory_analysis.py').read_text(),
+            (root / 'Plot' / 'PlotsPaper.R').read_text(),
+        )
+
+        for source in sources:
+            self.assertIn('"# of studies"', source)
+            self.assertIn('"Sample size"', source)
+            self.assertNotIn('"N studies"', source)
+            self.assertNotIn('k studies', source)
+
     def test_named_summary_rows_match_saved_study_recalculation(self):
         root = Path(__file__).resolve().parents[1]
         checks = (

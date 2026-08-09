@@ -287,9 +287,9 @@ make_table_panel <- function(df, label_df, total_rows, title_text, fs = 3.8) {
              fill = "#1A1A2E", alpha = 0.93) +
     annotate("text", x = 0.0, y = header_y, label = "Exposure",
              hjust = 0, fontface = "bold", size = fs + 0.5, color = "white") +
-    annotate("text", x = 1.2, y = header_y, label = "N studies",
+    annotate("text", x = 1.2, y = header_y, label = "# of studies",
              hjust = 0.5, fontface = "bold", size = fs + 0.5, color = "white") +
-    annotate("text", x = 2.4, y = header_y, label = "N",
+    annotate("text", x = 2.4, y = header_y, label = "Sample size",
              hjust = 1, fontface = "bold", size = fs + 0.5, color = "white") +
     annotate("text", x = 3.5, y = header_y, label = "Cases",
              hjust = 1, fontface = "bold", size = fs + 0.5, color = "white") +
@@ -428,7 +428,7 @@ make_caption <- function(direction) {
     "RR > 1 = positively associated with breast cancer risk."
   }
   paste0(
-    "[*] pooled RR (size proportional to k studies)  |  ",
+    "[*] pooled RR (size proportional to # of studies)  |  ",
     "[ ] red outline = statistically significant (95% CI excludes 1.0)  |  ",
     "[*] faded = non-significant  |  dashed line = 95% prediction interval  |  "
   )
