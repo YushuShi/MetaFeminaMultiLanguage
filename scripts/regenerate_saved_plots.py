@@ -18,13 +18,27 @@ import meta_analysis  # noqa: E402
 
 ANALYSIS_KEYS = ("headline", "summary_html", "plot_url", "funnel_plot_url", "baujat_plot_url")
 ELIGIBLE_QUALITY = {"good", "moderate"}
+DISEASE_PREVALENCE = {
+    "breast cancer": 0.13,
+    "ovarian cancer": 0.013,
+    "uterine cancer": 0.031,
+}
 
 
 def safe_component(value):
     return re.sub(r"[^a-zA-Z0-9]+", "_", value.lower()).strip("_")
 
 
-def analysis_frame(studies):
+def remove_generated_plots(exposure, disease, outcome):
+    folder = ROOT / "static" / safe_component(exposure)
+    suffix = (
+        f"{safe_component(disease)}_{safe_component(outcome)}_primary.png"
+    )
+    for prefix in ("forest", "funnel", "baujat"):
+        (folder / f"{prefix}_{suffix}").unlink(missing_ok=True)
+
+
+def analysis_frame(studies, disease):
     frame = pd.DataFrame(studies)
     for column in ("Effect Size", "Lower CI", "Upper CI", "SE", "Cases", "Estimated Cases", "Sample Size"):
         if column in frame.columns:
@@ -39,7 +53,12 @@ def analysis_frame(studies):
     )
     cases = frame.get("Cases", pd.Series(float("nan"), index=frame.index))
     estimated_cases = frame.get("Estimated Cases", pd.Series(float("nan"), index=frame.index))
-    final_cases = cases.where(cases.notna(), estimated_cases)
+    sample_size = frame.get("Sample Size", pd.Series(float("nan"), index=frame.index))
+    prevalence = DISEASE_PREVALENCE[disease.strip().lower()]
+    derived_cases = (sample_size * prevalence + 0.5).floordiv(1)
+    final_cases = cases.where(cases.notna(), estimated_cases).where(
+        cases.notna() | estimated_cases.notna(), derived_cases
+    )
 
     return frame.loc[
         quality.isin(ELIGIBLE_QUALITY)
@@ -61,16 +80,23 @@ def regenerate(exposure, disease, outcome):
 
     for path in paths:
         payload = json.loads(path.read_text(encoding="utf-8"))
-        studies = [
-            study for study in payload.get("studies", [])
-            if not meta_analysis.is_curated_meta_analysis_exclusion(
-                study.get("PMID"), disease, exposure, outcome
-            )
-        ]
+        frame = pd.DataFrame(payload.get("studies", []))
+        frame = meta_analysis.filter_curated_meta_analysis_exclusions(
+            frame, disease, exposure, outcome
+        )
+        studies = frame.to_dict(orient="records")
         payload["studies"] = studies
-        eligible = analysis_frame(studies)
+        eligible = analysis_frame(studies, disease)
         if eligible.empty:
-            print(f"Skipped {path.relative_to(ROOT)}: no default-eligible studies")
+            remove_generated_plots(exposure, disease, outcome)
+            for key in ANALYSIS_KEYS:
+                payload.pop(key, None)
+            payload["error"] = "No relevant evidence was identified in the reviewed sources."
+            path.write_text(
+                json.dumps(app.sanitize_data(payload), indent=4) + "\n",
+                encoding="utf-8",
+            )
+            print(f"Regenerated {path.relative_to(ROOT)} with no default-eligible studies")
             continue
 
         result = meta_analysis.perform_meta_analysis(
@@ -84,6 +110,7 @@ def regenerate(exposure, disease, outcome):
         if result.get("error"):
             raise RuntimeError(f"{path}: {result['error']}")
 
+        payload.pop("error", None)
         for key in ANALYSIS_KEYS:
             payload[key] = result.get(key)
         path.write_text(json.dumps(app.sanitize_data(payload), indent=4) + "\n", encoding="utf-8")

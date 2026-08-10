@@ -47,7 +47,8 @@
                 "confidence_interval": "OR 1.12; 95% CI 1.02-1.23",
                 "outcome_definition": "breast cancer cases ... using pathological testing",
                 "exposure_definition": "targeted metabolomics technology to measure 16 types of whole blood carnitine compounds"
-            }
+            },
+            "P Value": null
         },
         {
             "Study": "Larnder AH et al. (2026) [PMID: 42114757]",
@@ -145,158 +146,46 @@
                 "confidence_interval": "octenoylcarnitine (OR\u2009=\u20091.46, 95% CI\u2009=\u20091.02-2.08)",
                 "outcome_definition": "incidence of breast cancer",
                 "exposure_definition": "Serum levels of octenoylcarnitine"
-            }
-        },
-        {
-            "Study": "Liang G et al. (2025) [PMID: 40190311]",
-            "PMID": "40190311",
-            "Effect Size": 1.58,
-            "Lower CI": 1.06,
-            "Upper CI": 2.34,
-            "Population": "General",
-            "Reference": "Causal associations between blood metabolites and breast cancer.",
-            "Authors": "Liang G, Miao D, Du C",
-            "Journal": "Archives of medical science : AMS",
-            "Year": "2025",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/40190311/",
-            "Effect Type": "OR",
-            "SE": 0.32653061224489793,
-            "Sample Size": 378730.0,
-            "Cases": 138389.0,
-            "Estimated Cases": null,
-            "Design": "Cohort",
-            "Timing": "Prospective",
-            "Continent": "Europe",
-            "Stage": "",
-            "Quality %": 72.7,
-            "Quality Score": "Moderate",
-            "comparison_type": "per SD increase",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Unclear",
-                "q9": "Unclear",
-                "q10": "Unclear",
-                "q11": "Yes"
             },
-            "exposure_measurement_type": "human_biospecimen",
-            "exposure_measurement_supporting_text": "Instrumental variables were selected from a cohort study of 453 metabolic profiles from 7,824 participants.",
-            "extraction_supporting_text": {
-                "sample_size": "Breast cancer incidence data were obtained from a large cohort study involving 138,389 cases and 240,341 controls.",
-                "effect_size": "succinyl carnitine (OR = 1.58; 95% CI: 1.06-2.34)",
-                "effect_direction": "succinyl carnitine (OR = 1.58; 95% CI: 1.06-2.34)",
-                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.024.",
-                "confidence_interval": "succinyl carnitine (OR = 1.58; 95% CI: 1.06-2.34)",
-                "outcome_definition": "Breast cancer incidence data were obtained from a large cohort study",
-                "exposure_definition": "succinyl carnitine"
-            },
-            "P Value": 0.023552026542002634
-        },
-        {
-            "Study": "Chen H et al. (2025) [PMID: 41105334]",
-            "PMID": "41105334",
-            "Effect Size": 0.72,
-            "Lower CI": 0.64,
-            "Upper CI": 0.83,
-            "Population": "General",
-            "Reference": "Causal plasma metabolites for breast cancer risk: a two-sample Mendelian randomization study with colocalization evidence.",
-            "Authors": "Chen H, Xu Y, Wang Z, Cheng X",
-            "Journal": "Discover oncology",
-            "Year": "2025",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/41105334/",
-            "Effect Type": "OR",
-            "SE": 0.048469387755102025,
-            "Sample Size": 416388,
-            "Cases": null,
-            "Estimated Cases": 54130,
-            "Design": "Mendelian randomization (two-sample)",
-            "Timing": "Prospective",
-            "Continent": "Europe",
-            "Stage": null,
-            "Quality %": 62.5,
-            "Quality Score": "Moderate",
-            "comparison_type": "per genetically determined increase",
-            "JBI": {
-                "q1": "No",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Unclear",
-                "q5": "Yes",
-                "q6": "Unclear",
-                "q7": "Yes",
-                "q8": "NA",
-                "q9": "NA",
-                "q10": "NA",
-                "q11": "Yes"
-            },
-            "exposure_measurement_type": "human_biospecimen",
-            "exposure_measurement_supporting_text": "genetically determined plasma metabolites",
-            "extraction_supporting_text": {
-                "sample_size": "The reported meta-analysis pooled three breast cancer outcome GWAS cohorts: FinnGen (n=201,713), BCAC OncoArray (n=138,508), and BCAC iCOGS (n=76,167), totaling 416,388 participants.",
-                "effect_size": "carnitine C14 (OR: 0.72; 95% CI 0.64-0.83; p\u2009<\u20090.001)",
-                "effect_direction": "carnitine C14 as a novel protective biomarker",
-                "p_value": "p\u2009<\u20090.001",
-                "confidence_interval": "95% CI 0.64-0.83",
-                "outcome_definition": "breast cancer (BC) risk",
-                "exposure_definition": "genetically determined plasma metabolites; carnitine C14"
-            }
+            "P Value": null
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Chen H et al. (2025) [PMID: 41105334]</th>\n      <td>-0.2914</td>\n      <td>0.0598</td>\n      <td>-0.4086</td>\n      <td>-0.1742</td>\n      <td>-</td>\n      <td>416388.0</td>\n    </tr>\n    <tr>\n      <th>Larnder AH et al. (2026) [PMID: 42114757]</th>\n      <td>-0.1978</td>\n      <td>0.0831</td>\n      <td>-0.3606</td>\n      <td>-0.0349</td>\n      <td>306.0</td>\n      <td>2762.0</td>\n    </tr>\n    <tr>\n      <th>Zhang J et al. (2022) [PMID: 35875107]</th>\n      <td>0.0978</td>\n      <td>0.0409</td>\n      <td>0.0177</td>\n      <td>0.1780</td>\n      <td>991.0</td>\n      <td>1982.0</td>\n    </tr>\n    <tr>\n      <th>Mahamat-Saleh Y et al. (2025) [PMID: 40528579]</th>\n      <td>0.3204</td>\n      <td>0.1489</td>\n      <td>0.0285</td>\n      <td>0.6122</td>\n      <td>396.0</td>\n      <td>792.0</td>\n    </tr>\n    <tr>\n      <th>Liang G et al. (2025) [PMID: 40190311]</th>\n      <td>0.3847</td>\n      <td>0.1630</td>\n      <td>0.0652</td>\n      <td>0.7043</td>\n      <td>138389.0</td>\n      <td>378730.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Larnder AH et al. (2026) [PMID: 42114757]</th>\n      <td>-0.1978</td>\n      <td>0.0831</td>\n      <td>-0.3606</td>\n      <td>-0.0349</td>\n      <td>306.0</td>\n      <td>2762.0</td>\n    </tr>\n    <tr>\n      <th>Zhang J et al. (2022) [PMID: 35875107]</th>\n      <td>0.0978</td>\n      <td>0.0409</td>\n      <td>0.0177</td>\n      <td>0.1780</td>\n      <td>991.0</td>\n      <td>1982.0</td>\n    </tr>\n    <tr>\n      <th>Mahamat-Saleh Y et al. (2025) [PMID: 40528579]</th>\n      <td>0.3204</td>\n      <td>0.1489</td>\n      <td>0.0285</td>\n      <td>0.6122</td>\n      <td>396.0</td>\n      <td>792.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 1.03,
-        "ci_low": 0.82,
-        "ci_upp": 1.3,
-        "pi_low": 0.44,
-        "pi_upp": 2.45,
+        "pooled_es": 1.05,
+        "ci_low": 0.83,
+        "ci_upp": 1.35,
+        "pi_low": 0.06,
+        "pi_upp": 19.83,
         "interpretation": "Not statistically significant",
-        "i2": 91.09,
-        "tau2": 0.06,
-        "eggers_p": 0.8134382130434087,
+        "i2": 85.21,
+        "tau2": 0.04,
+        "eggers_p": 0.9420533281673373,
         "funnel_interpretation": "Egger\u2019s test is generally not recommended when fewer than 10 studies are available.",
         "loo_results": [
             {
-                "omitted": "Chen H et al. (2025) [PMID: 41105334]",
-                "pooled_es": 1.1257118595844926,
-                "ci_low": 0.8728859054339562,
-                "ci_upp": 1.4517672732717262,
-                "is_significant": false
-            },
-            {
                 "omitted": "Larnder AH et al. (2026) [PMID: 42114757]",
-                "pooled_es": 1.1059211688120303,
-                "ci_low": 0.818477986011174,
-                "ci_upp": 1.4943121898575655,
+                "pooled_es": 1.1770661154885154,
+                "ci_low": 0.9651739854909477,
+                "ci_upp": 1.4354765680163653,
                 "is_significant": false
             },
             {
                 "omitted": "Zhang J et al. (2022) [PMID: 35875107]",
-                "pooled_es": 1.022422780909391,
-                "ci_low": 0.7282047616371898,
-                "ci_upp": 1.4355142921233905,
+                "pooled_es": 1.0476542145653889,
+                "ci_low": 0.6310455608290589,
+                "ci_upp": 1.7393028672202957,
                 "is_significant": false
             },
             {
                 "omitted": "Mahamat-Saleh Y et al. (2025) [PMID: 40528579]",
-                "pooled_es": 0.9739200752874175,
-                "ci_low": 0.7315897858254377,
-                "ci_upp": 1.296519349265727,
-                "is_significant": false
-            },
-            {
-                "omitted": "Liang G et al. (2025) [PMID: 40190311]",
-                "pooled_es": 0.964860167587452,
-                "ci_low": 0.7402487921524089,
-                "ci_upp": 1.2576246700652673,
+                "pooled_es": 0.9597210271324069,
+                "ci_low": 0.7187126938930745,
+                "ci_upp": 1.2815474914334992,
                 "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled analysis of 5 studies yielded an effect size of 1.03 (95% CI: 0.82\u20131.3), indicating no statistically significant association between carnitine and breast cancer. Although the point estimate suggests a potential positive relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 91.09%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 3 studies yielded an effect size of 1.05 (95% CI: 0.83\u20131.35), indicating no statistically significant association between carnitine and breast cancer. Although the point estimate suggests a potential positive relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 85.21%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 41,
@@ -315,8 +204,8 @@
         },
         "extracted": 5
     },
-    "plot_url": "static/carnitine/forest_breast_cancer_incidence_primary.png?t=8718",
-    "funnel_plot_url": "static/carnitine/funnel_breast_cancer_incidence_primary.png?t=6224",
-    "baujat_plot_url": "static/carnitine/baujat_breast_cancer_incidence_primary.png?t=6453",
+    "plot_url": "static/carnitine/forest_breast_cancer_incidence_primary.png?t=976",
+    "funnel_plot_url": "static/carnitine/funnel_breast_cancer_incidence_primary.png?t=7283",
+    "baujat_plot_url": "static/carnitine/baujat_breast_cancer_incidence_primary.png?t=3900",
     "last_run": "2026-06-14 16:06:02"
 }

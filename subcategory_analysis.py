@@ -37,6 +37,11 @@ DEFAULT_CACHE_ROOT = MODULE_DIR / "Cached_results"
 SCHEMA_VERSION = "1.0"
 FORMAL_EGGER_MIN_STUDIES = 10
 TERRA_INPUT_USD_PER_MILLION = 2.0
+MENDELIAN_RANDOMIZATION_PATTERN = re.compile(
+    r"\b(?:mendelian\s+randomi[sz](?:ation|ed)|genetically\s+predicted|"
+    r"genetic\s+risk\s+score|instrumental\s+variables?)\b",
+    re.IGNORECASE,
+)
 ELIGIBLE_EFFECT_TYPES = {
     "OR", "RR", "IRR", "HR", "ODDS RATIO", "RISK RATIO", "RELATIVE RISK",
     "INCIDENCE RATE RATIO", "HAZARD RATIO",
@@ -167,6 +172,7 @@ def _cached_study_metadata(cache_root: Path) -> dict[str, dict[str, Any]]:
                 "Journal": _first(study, "Journal", "journal"),
                 "Year": _first(study, "Year", "year", "publication_year"),
                 "Reference": _first(study, "Reference", "reference", "Title", "title"),
+                "Design": _first(study, "Design", "design"),
                 "exposure_measurement_type": _first(
                     study, "exposure_measurement_type"
                 ),
@@ -228,6 +234,41 @@ def _study_label(metadata: dict[str, Any], source: dict[str, Any], pmid: str) ->
             author_label = "Author unavailable"
     year_label = f" ({year})" if year else ""
     return f"{author_label}{year_label} [PMID: {pmid}]"
+
+
+def _is_mendelian_randomization_record(*records: dict[str, Any]) -> bool:
+    searchable = " ".join(
+        str(
+            _first(
+                record,
+                "Design", "design", "Reference", "reference", "Study", "study",
+                "Title", "title", "exposure_measurement_supporting_text",
+                "extraction_supporting_text",
+            )
+            or ""
+        )
+        for record in records
+        if isinstance(record, dict)
+    )
+    return bool(MENDELIAN_RANDOMIZATION_PATTERN.search(searchable))
+
+
+def _globally_curated_excluded_pmids(annotations_path: Path) -> set[str]:
+    path = annotations_path.with_name("verifications.json")
+    if not path.is_file():
+        return set()
+    try:
+        payload = _read_json(path)
+    except (OSError, json.JSONDecodeError):
+        return set()
+    return {
+        str(pmid)
+        for pmid, verification in payload.items()
+        if isinstance(verification, dict)
+        and isinstance(verification.get("curated_exclusion"), dict)
+        and verification["curated_exclusion"].get("excluded_from_meta_analysis") is True
+        and str(verification["curated_exclusion"].get("context") or "").strip() == "*"
+    }
 
 
 def _registry_records(registry_csv: Path = DEFAULT_REGISTRY_CSV) -> list[dict[str, Any]]:
@@ -503,6 +544,7 @@ def extract_eligible_rows(
     contexts = _extract_contexts(payload, annotations_path)
     active_source_hashes = _active_source_hashes(payload, annotations_path)
     study_metadata = study_metadata or {}
+    globally_excluded_pmids = _globally_curated_excluded_pmids(annotations_path)
     rows: list[dict[str, Any]] = []
     skipped: list[dict[str, Any]] = []
     for annotation in _extract_annotations(payload, active_source_hashes):
@@ -545,6 +587,22 @@ def extract_eligible_rows(
                             f"{pmid}|{category['major_site_id']}|{slugify(exposure)}", {}
                         ),
                     }
+                    if pmid in globally_excluded_pmids:
+                        skipped.append({
+                            "context_id": context_id,
+                            "reason": "globally_curated_exclusion",
+                            "subcategory_id": category_id,
+                            "pmid": pmid,
+                        })
+                        continue
+                    if _is_mendelian_randomization_record(metadata, source, estimate_item):
+                        skipped.append({
+                            "context_id": context_id,
+                            "reason": "mendelian_randomization",
+                            "subcategory_id": category_id,
+                            "pmid": pmid,
+                        })
+                        continue
                     reference = _first(metadata, "Reference", "reference") or _first(
                         source, "Reference", "reference", "title", "Title"
                     )
@@ -577,6 +635,7 @@ def extract_eligible_rows(
                         "authors": _first(metadata, "Authors", "authors"),
                         "journal": _first(metadata, "Journal", "journal"),
                         "year": _first(metadata, "Year", "year", "publication_year"),
+                        "design": _first(metadata, "Design", "design") or _first(source, "Design", "design"),
                         "quality_score": quality_score,
                         "quality_percent": _first(metadata, "Quality %", "quality_percent"),
                         "jbi": metadata.get("JBI") if isinstance(metadata.get("JBI"), dict) else {},
@@ -816,7 +875,7 @@ def _availability(rows: list[dict[str, Any]], funnel_reason: str | None, baujat_
 
 def _compact_study(row: dict[str, Any]) -> dict[str, Any]:
     compact = {key: row.get(key) for key in (
-        "context_id", "study", "pmid", "authors", "journal", "year", "reference",
+        "context_id", "study", "pmid", "authors", "journal", "year", "reference", "design",
         "effect_size", "lower_ci", "upper_ci", "effect_type", "se", "comparison_type",
         "cases", "sample_size", "exposure_measurement_type",
         "exposure_measurement_supporting_text", "evidence_source", "evidence_locator",
@@ -1318,7 +1377,7 @@ def _render_summary_plot_set(
 ) -> None:
     _cross_exposure_forest(
         plot_paths["forest_protective"],
-        f"Exposures inversely associated with {category['label']} risk",
+        f"Exposures negatively associated with {category['label']} risk",
         protective,
         "Protective",
         category["label"],
@@ -1443,6 +1502,11 @@ def build_subcategory_outputs(
     rows, skipped = extract_eligible_rows(
         annotations_path, registry, _cached_study_metadata(cache_root)
     )
+    excluded_requested_contexts = {
+        (str(item.get("context_id") or ""), str(item.get("subcategory_id") or ""))
+        for item in skipped
+        if item.get("reason") in {"globally_curated_exclusion", "mendelian_randomization"}
+    }
     by_group: dict[tuple[str, str, str], list[dict[str, Any]]] = defaultdict(list)
     for row in rows:
         by_group[(row["major_site_id"], row["subcategory_id"], row["exposure"])].append(row)
@@ -1462,6 +1526,8 @@ def build_subcategory_outputs(
                     represented.add((registry[category_id]["major_site_id"], category_id))
                     for estimate_item in _estimate_items(annotation, subtype):
                         context_id = _context_id(estimate_item) or _context_id(annotation)
+                        if (str(context_id or ""), category_id) in excluded_requested_contexts:
+                            continue
                         context = contexts.get(context_id or "")
                         source = _study_source(context) if context else {}
                         exposure = _exposure(context or {}, annotation, source)
@@ -1529,7 +1595,7 @@ def build_subcategory_outputs(
     _write_json(summary_manifest_path, ui_summary_manifest)
     build_manifest = {
         "schema_version": SCHEMA_VERSION,
-        "annotations_path": str(annotations_path),
+        "annotations_path": _plot_path_url(annotations_path),
         "result_count": sum(len(values) for values in category_entries.values()),
         "eligible_estimate_count": len(rows),
         "skipped_annotations": skipped,

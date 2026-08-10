@@ -36,7 +36,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "afdb7ecee89181a2ce60a62c3fac69f63c15da098beb2a2b5f98ce3fe28a7691",
+  "input_fingerprint": "f370ad319a0b8eeec96aabbde75ff9baa3a8c17cb089a07ccd38ca5bb3e2068f",
   "plot_url": "Plot/subcategories/ovary/endometrioid_carcinoma/dairy_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/ovary/endometrioid_carcinoma/dairy_baujat.png",
@@ -51,7 +51,7 @@
     "subcategory_label": "Endometrioid carcinoma",
     "subcategory_slug": "endometrioid_carcinoma"
   },
-  "skipped_annotation_count_for_build": 1,
+  "skipped_annotation_count_for_build": 8,
   "studies": [
     {
       "Authors": "Merritt MA, Poole EM, Hankinson SE, Willett WC, Tworoger SS",
@@ -87,6 +87,7 @@
       "cases": 764.0,
       "comparison_type": "Lactose intake in adulthood, highest versus lowest category",
       "context_id": "24722953|ovary|dairy|0",
+      "design": "Cohort",
       "effect_size": 0.32,
       "effect_type": "HR",
       "evidence_locator": "Lactose intake in adulthood was inversely associated with risk of endometrioid EOC (HR 0.32, 95% CI 0.16-0.65, p(trend) < 0.001).",

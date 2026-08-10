@@ -219,7 +219,7 @@
         },
         "endometrioid_carcinoma": {
           "availability": {
-            "eligible_exposure_count": 8,
+            "eligible_exposure_count": 6,
             "formal_egger_exposure_count": 0
           },
           "estimated_lifetime_probability_us_women_percent": 0.11,
@@ -254,7 +254,7 @@
         },
         "high_grade_serous_carcinoma": {
           "availability": {
-            "eligible_exposure_count": 2,
+            "eligible_exposure_count": 0,
             "formal_egger_exposure_count": 0
           },
           "estimated_lifetime_probability_us_women_percent": 0.66,
@@ -363,7 +363,7 @@
       "subcategories": {
         "endometrioid_carcinoma": {
           "availability": {
-            "eligible_exposure_count": 4,
+            "eligible_exposure_count": 1,
             "formal_egger_exposure_count": 0
           },
           "estimated_lifetime_probability_us_women_percent": 2.3,
@@ -388,10 +388,10 @@
               "reason": "no_harmful_eligible_exposures"
             },
             "forest-protective": {
-              "available": true,
+              "available": false,
               "filename": "forest_protective.pdf",
               "path": "Plot/subcategories/uterus/endometrioid_carcinoma/forest_protective.pdf",
-              "reason": null
+              "reason": "no_protective_eligible_exposures"
             }
           },
           "subcategory_id": "uterus_endometrioid_carcinoma"

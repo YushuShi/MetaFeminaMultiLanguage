@@ -36,7 +36,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Invasive lobular carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "0c0a93123096bc317ee5ae0662c62f3b624ae9a1ebad3380e85ad4bc21cfa04f",
+  "input_fingerprint": "52945d7891b45bc112ce7fd72771d13fb227a2440ed52dbaa85b239e4f06b86c",
   "plot_url": "Plot/subcategories/breast/invasive_lobular_carcinoma/fish_oil_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/invasive_lobular_carcinoma/fish_oil_baujat.png",
@@ -51,7 +51,7 @@
     "subcategory_label": "Invasive lobular carcinoma",
     "subcategory_slug": "invasive_lobular_carcinoma"
   },
-  "skipped_annotation_count_for_build": 1,
+  "skipped_annotation_count_for_build": 8,
   "studies": [
     {
       "Authors": "Brasky TM, Lampe JW, Potter JD, Patterson RE, White E",
@@ -87,6 +87,7 @@
       "cases": 172.0,
       "comparison_type": "Current use vs No use",
       "context_id": "20615886|breast|fish_oil|0",
+      "design": "Cohort",
       "effect_size": 1.08,
       "effect_type": "HR",
       "evidence_locator": "For lobular carcinoma, current fish oil users had HR 1.08 (95% CI 0.59-1.96) versus non-users; Table 4 reports 13 cases among current users and 153 among non-users.",

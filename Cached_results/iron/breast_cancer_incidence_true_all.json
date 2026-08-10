@@ -48,7 +48,9 @@
                 "confidence_interval": "1.01 (95% CI: 0.89, 1.14)",
                 "outcome_definition": "risk of postmenopausal breast cancer",
                 "exposure_definition": "intakes of total dietary iron, iron from meat, iron from red meat, and heme iron"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Ferrucci LM et al. (2009) [PMID: 19513076]",
@@ -97,7 +99,9 @@
                 "confidence_interval": "HR=1.25; 95% CI=1.02-1.52",
                 "outcome_definition": "1205 invasive breast cancer cases were identified",
                 "exposure_definition": "We estimated meat mutagen and haem iron intake with databases accounting for cooking practices"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Cui Y et al. (2007) [PMID: 17684146]",
@@ -145,7 +149,9 @@
                 "confidence_interval": "95% CL, 1.02, 2.44",
                 "outcome_definition": "risk of subsequent breast cancer",
                 "exposure_definition": "directly measuring elemental levels in breast tissue using X-ray fluorescence spectroscopy"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Moore AB et al. (2009) [PMID: 19444907]",
@@ -193,7 +199,9 @@
                 "confidence_interval": "95% CI: 1.04-6.68",
                 "outcome_definition": "risk of breast cancer",
                 "exposure_definition": "dietary iron intake"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Kallianpur AR et al. (2008) [PMID: 17431764]",
@@ -241,7 +249,9 @@
                 "confidence_interval": "95% confidence interval [CI] 1.25-1.78",
                 "outcome_definition": "risk of breast cancer",
                 "exposure_definition": "Animal-derived (largely heme) iron intake"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Von Holle A et al. (2021) [PMID: 33293341]",
@@ -291,7 +301,8 @@
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "iron, ferritin, percent transferrin saturation, and their first principal component (PC)"
             },
-            "P Value": 0.48685731605413385
+            "P Value": 0.48685731605413385,
+            "exclusions": null
         },
         {
             "Study": "Inoue-Choi M et al. (2016) [PMID: 26505173]",
@@ -340,7 +351,9 @@
                 "confidence_interval": "HR for Q5 vs Q1\u2009=\u20091.23, 95% CI\u2009=\u20091.09-1.39",
                 "outcome_definition": "identified 9,305 incident breast cancers (1995-2006)",
                 "exposure_definition": "heme iron intake"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Stevens RG et al. (2011) [PMID: 21883693]",
@@ -389,7 +402,8 @@
                 "outcome_definition": "a nested case-control study of breast cancer was conducted in Japanese atomic bomb survivors",
                 "exposure_definition": "Stored serum samples ... were assayed for ferritin levels"
             },
-            "P Value": 8.227706610434655e-05
+            "P Value": 8.227706610434655e-05,
+            "exclusions": null
         },
         {
             "Study": "Diallo A et al. (2016) [PMID: 27738321]",
@@ -438,7 +452,9 @@
                 "confidence_interval": "HRT3vs.T1=1.67 (1.02-2.71)",
                 "outcome_definition": "188 incident breast cancers were diagnosed (median follow-up=12.6y).",
                 "exposure_definition": "Dietary iron intake was assessed using repeated 24h dietary records."
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Kim EY et al. (2025) [PMID: 40920348]",
@@ -488,7 +504,8 @@
                 "outcome_definition": "Breast cancer incidence until December 2022 was tracked through the National Cancer Registry.",
                 "exposure_definition": "Iron-related markers, including serum ferritin, iron, total iron-binding capacity, and transferrin saturation, were measured."
             },
-            "P Value": 0.0011046686120359146
+            "P Value": 0.0011046686120359146,
+            "exclusions": null
         },
         {
             "Study": "De Troy J et al. (2025) [PMID: 39927294]",
@@ -538,7 +555,8 @@
                 "outcome_definition": "risk of developing metastatic disease",
                 "exposure_definition": "plasma iron levels at diagnosis of early-stage breast cancer"
             },
-            "P Value": 0.027140120542068956
+            "P Value": 0.027140120542068956,
+            "exclusions": null
         },
         {
             "Study": "Al Khamees M et al. (2023) [PMID: 37223318]",
@@ -584,55 +602,9 @@
                 "confidence_interval": "95% CI 0.86-0.97",
                 "outcome_definition": "having a positive cancer screening test (radiological or histocytological)",
                 "exposure_definition": "low total serum Iron levels (below 8\u2009\u03bcmol/L)"
-            }
-        },
-        {
-            "Study": "Hou C et al. (2021) [PMID: 34229617]",
-            "PMID": "34229617",
-            "Effect Size": 1.225,
-            "Lower CI": 1.064,
-            "Upper CI": 1.41,
-            "Population": "General",
-            "Reference": "Serum iron status and the risk of breast cancer in the European population: a two-sample Mendelian randomisation study.",
-            "Authors": "Hou C, Hou Q, Xie X, Wang H, Chen Y, Lu T, Wu Q, Liang Y, Hu Y, Mao Y",
-            "Journal": "Genes & nutrition",
-            "Year": "2021",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/34229617/",
-            "Effect Type": "OR",
-            "SE": 0.08826530612244894,
-            "Sample Size": 228951.0,
-            "Cases": 122977.0,
-            "Estimated Cases": null,
-            "Design": "Mendelian Randomization",
-            "Timing": "Prospective",
-            "Continent": "Europe",
-            "Stage": "ER-negative breast cancer",
-            "Quality %": 70.0,
-            "Quality Score": "Moderate",
-            "comparison_type": "Continuous",
-            "JBI": {
-                "q1": "Unclear",
-                "q2": "Unclear",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Unclear",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Yes",
-                "q10": "Yes"
             },
-            "exposure_measurement_type": "human_biospecimen",
-            "exposure_measurement_supporting_text": "serum iron status, transferrin levels",
-            "extraction_supporting_text": {
-                "sample_size": "122,977 individuals of European descent with breast cancer and 105,974 peers without breast cancer.",
-                "effect_size": "OR for MR, 1.225",
-                "effect_direction": "positively associated with the risk of ER-negative breast cancer",
-                "p_value": "P = 0.030",
-                "confidence_interval": "95% CI, 1.064, 1.410",
-                "outcome_definition": "risk of ER-negative breast cancer",
-                "exposure_definition": "transferrin levels"
-            }
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Chang VC et al. (2020) [PMID: 32022258]",
@@ -680,7 +652,9 @@
                 "confidence_interval": "95% CI: 1.16-2.47",
                 "outcome_definition": "breast cancer risk, overall and by menopausal and estrogen receptor/progesterone receptor (ER/PR) status",
                 "exposure_definition": "Iron intake (total, dietary, supplemental, heme, nonheme) was assessed using a validated food frequency questionnaire."
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Rajizadeh A et al. (2017) [PMID: 29951415]",
@@ -728,7 +702,9 @@
                 "confidence_interval": "odds ratio of 0.19% (95% CI: 0.45-0.7)",
                 "outcome_definition": "26 were new cases of breast cancer (confirmed by biopsy) as the case, and 29 without cancer (confirmed by mammography) as the control group",
                 "exposure_definition": "The use of iron supplements was significantly higher in the control than in the case group"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Quintana Pacheco DA et al. (2018) [PMID: 29574909]",
@@ -778,7 +754,8 @@
                 "outcome_definition": "incident cases of breast cancer (n\u2009=\u2009627)",
                 "exposure_definition": "prediagnostic serum concentrations of ferritin, iron and transferrin as well as transferrin saturation (TSAT)"
             },
-            "P Value": 0.01270310844367521
+            "P Value": 0.01270310844367521,
+            "exclusions": null
         },
         {
             "Study": "Chua AC et al. (2016) [PMID: 27488234]",
@@ -827,7 +804,9 @@
                 "confidence_interval": "95% CI:1.12, 5.34",
                 "outcome_definition": "incident ... breast cancer",
                 "exposure_definition": "serum iron concentrations"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Wen CP et al. (2014) [PMID: 25228650]",
@@ -877,56 +856,8 @@
                 "outcome_definition": "the breast ... significant cancer risks were observed for serum iron",
                 "exposure_definition": "serum iron levels tested at the time of recruitment"
             },
-            "P Value": 0.04205870030662824
-        },
-        {
-            "Study": "Lu Y et al. (2024) [PMID: 38965945]",
-            "PMID": "38965945",
-            "Effect Size": 0.791,
-            "Lower CI": 0.649,
-            "Upper CI": 0.962,
-            "Population": "General",
-            "Reference": "Ferritin and Serum Iron in a Causal Relationship with Estrogen Receptor-Negative Breast Cancer: a Two-Sample Mendelian Randomization Study.",
-            "Authors": "Lu Y, Lin L, Shen J",
-            "Journal": "Clinical laboratory",
-            "Year": "2024",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/38965945/",
-            "Effect Type": "OR",
-            "SE": 0.07984693877551019,
-            "Sample Size": null,
-            "Cases": null,
-            "Estimated Cases": null,
-            "Design": "Mendelian randomization (MR)",
-            "Timing": "Prospective",
-            "Continent": "Europe",
-            "Stage": "ER-negative",
-            "Quality %": 63.6,
-            "Quality Score": "Moderate",
-            "comparison_type": "per unit increase in serum iron (continuous)",
-            "JBI": {
-                "q1": "Unclear",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Unclear",
-                "q9": "Unclear",
-                "q10": "Unclear",
-                "q11": "Yes"
-            },
-            "exposure_measurement_type": "human_biospecimen",
-            "exposure_measurement_supporting_text": "serum iron status exposure were gathered from the IEU OpenGWAS Project, the UK Biobank, and other databases",
-            "extraction_supporting_text": {
-                "sample_size": "",
-                "effect_size": "OR (IVW) = 0.791",
-                "effect_direction": "an increase in the serum iron level is linked to a reduced risk of ER-negative breast cancer",
-                "p_value": "p = 0.019",
-                "confidence_interval": "95% CI (0.649, 0.962)",
-                "outcome_definition": "ER-negative breast cancer",
-                "exposure_definition": "serum iron level"
-            }
+            "P Value": 0.04205870030662824,
+            "exclusions": null
         },
         {
             "Study": "Liu KY et al. (2021) [PMID: 33618790]",
@@ -974,7 +905,9 @@
                 "confidence_interval": "OR of 0\u00b765 (95 % CI 0\u00b747, 0\u00b789)",
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "Fe from plants ... intake"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Garland M et al. (1996) [PMID: 8823061]",
@@ -1024,7 +957,8 @@
                 "outcome_definition": "433 cases of breast cancer identified during 4 years of follow-up",
                 "exposure_definition": "toenail levels of five trace elements"
             },
-            "P Value": 0.6180996548006779
+            "P Value": 0.6180996548006779,
+            "exclusions": null
         },
         {
             "Study": "Gaur A et al. (2013) [PMID: 23649231]",
@@ -1074,7 +1008,8 @@
                 "outcome_definition": "Similar analyses were performed for specific cancers (pancreatic, colon, liver, respiratory, kidney, prostate, stomach, and breast cancer).",
                 "exposure_definition": "baseline measurements of serum SI, TIBC, and CRP"
             },
-            "P Value": 0.004861161558046744
+            "P Value": 0.004861161558046744,
+            "exclusions": null
         },
         {
             "Study": "Kotsopoulos J et al. (2012) [PMID: 22576580]",
@@ -1122,7 +1057,9 @@
                 "confidence_interval": "95 % CI 0.18-1.04",
                 "outcome_definition": "breast cancer risk among BRCA1 mutation carriers",
                 "exposure_definition": "plasma levels for each of 14 micronutrients"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Krusinska B et al. (2019) [PMID: 31540424]",
@@ -1170,7 +1107,9 @@
                 "confidence_interval": "95% Cl: 0.02-0.88",
                 "outcome_definition": "breast cancer (BC) risk",
                 "exposure_definition": "serum 'Iron-Calcium' profile"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Zhang Y et al. (2022) [PMID: 36568176]",
@@ -1217,193 +1156,158 @@
                 "outcome_definition": "prevalence of cancers, especially in sex-specific cancers. ... breast, cervix, ovary and uterus",
                 "exposure_definition": "serum soluble transferrin receptor (sTfR), a promising marker representing unmet cellular iron demands"
             },
-            "exclusions": 2,
-            "P Value": 0.020614667961501534
+            "P Value": 0.020614667961501534,
+            "exclusions": 2.0
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Krusinska B et al. (2019) [PMID: 31540424]</th>\n      <td>-1.9988</td>\n      <td>0.9346</td>\n      <td>-3.8306</td>\n      <td>-0.1670</td>\n      <td>47.0</td>\n      <td>129.0</td>\n    </tr>\n    <tr>\n      <th>Rajizadeh A et al. (2017) [PMID: 29951415]</th>\n      <td>-1.5495</td>\n      <td>0.1039</td>\n      <td>-1.7532</td>\n      <td>-1.3458</td>\n      <td>26.0</td>\n      <td>55.0</td>\n    </tr>\n    <tr>\n      <th>Kotsopoulos J et al. (2012) [PMID: 22576580]</th>\n      <td>-0.7670</td>\n      <td>0.4174</td>\n      <td>-1.5850</td>\n      <td>0.0511</td>\n      <td>48.0</td>\n      <td>144.0</td>\n    </tr>\n    <tr>\n      <th>Liu KY et al. (2021) [PMID: 33618790]</th>\n      <td>-0.3842</td>\n      <td>0.1483</td>\n      <td>-0.6750</td>\n      <td>-0.0935</td>\n      <td>1591.0</td>\n      <td>3213.0</td>\n    </tr>\n    <tr>\n      <th>Quintana Pacheco DA et al. (2018) [PMID: 29574909]</th>\n      <td>-0.3779</td>\n      <td>0.1532</td>\n      <td>-0.6782</td>\n      <td>-0.0777</td>\n      <td>627.0</td>\n      <td>2738.0</td>\n    </tr>\n    <tr>\n      <th>Kim EY et al. (2025) [PMID: 40920348]</th>\n      <td>-0.2581</td>\n      <td>0.0798</td>\n      <td>-0.4144</td>\n      <td>-0.1017</td>\n      <td>1437.0</td>\n      <td>140747.0</td>\n    </tr>\n    <tr>\n      <th>Lu Y et al. (2024) [PMID: 38965945]</th>\n      <td>-0.2069</td>\n      <td>0.0898</td>\n      <td>-0.3828</td>\n      <td>-0.0310</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Garland M et al. (1996) [PMID: 8823061]</th>\n      <td>-0.1021</td>\n      <td>0.2058</td>\n      <td>-0.5055</td>\n      <td>0.3012</td>\n      <td>433.0</td>\n      <td>62641.0</td>\n    </tr>\n    <tr>\n      <th>Al Khamees M et al. (2023) [PMID: 37223318]</th>\n      <td>-0.0923</td>\n      <td>0.0270</td>\n      <td>-0.1452</td>\n      <td>-0.0393</td>\n      <td>-</td>\n      <td>357.0</td>\n    </tr>\n    <tr>\n      <th>Kabat GC et al. (2010) [PMID: 20962158]</th>\n      <td>0.0093</td>\n      <td>0.0588</td>\n      <td>-0.1060</td>\n      <td>0.1246</td>\n      <td>3396.0</td>\n      <td>116674.0</td>\n    </tr>\n    <tr>\n      <th>De Troy J et al. (2025) [PMID: 39927294]</th>\n      <td>0.0542</td>\n      <td>0.0245</td>\n      <td>0.0062</td>\n      <td>0.1021</td>\n      <td>111.0</td>\n      <td>1113.0</td>\n    </tr>\n    <tr>\n      <th>Von Holle A et al. (2021) [PMID: 33293341]</th>\n      <td>0.0542</td>\n      <td>0.0777</td>\n      <td>-0.0982</td>\n      <td>0.2066</td>\n      <td>3011.0</td>\n      <td>6008.0</td>\n    </tr>\n    <tr>\n      <th>Gaur A et al. (2013) [PMID: 23649231]</th>\n      <td>0.0801</td>\n      <td>0.0284</td>\n      <td>0.0245</td>\n      <td>0.1356</td>\n      <td>-</td>\n      <td>220642.0</td>\n    </tr>\n    <tr>\n      <th>Hou C et al. (2021) [PMID: 34229617]</th>\n      <td>0.1741</td>\n      <td>0.0607</td>\n      <td>0.0552</td>\n      <td>0.2931</td>\n      <td>122977.0</td>\n      <td>228951.0</td>\n    </tr>\n    <tr>\n      <th>Inoue-Choi M et al. (2016) [PMID: 26505173]</th>\n      <td>0.1914</td>\n      <td>0.0568</td>\n      <td>0.0800</td>\n      <td>0.3028</td>\n      <td>9305.0</td>\n      <td>193742.0</td>\n    </tr>\n    <tr>\n      <th>Ferrucci LM et al. (2009) [PMID: 19513076]</th>\n      <td>0.2062</td>\n      <td>0.0931</td>\n      <td>0.0236</td>\n      <td>0.3887</td>\n      <td>1205.0</td>\n      <td>52158.0</td>\n    </tr>\n    <tr>\n      <th>Wen CP et al. (2014) [PMID: 25228650]</th>\n      <td>0.2490</td>\n      <td>0.1210</td>\n      <td>0.0120</td>\n      <td>0.4861</td>\n      <td>-</td>\n      <td>309443.0</td>\n    </tr>\n    <tr>\n      <th>Kallianpur AR et al. (2008) [PMID: 17431764]</th>\n      <td>0.3370</td>\n      <td>0.0737</td>\n      <td>0.1926</td>\n      <td>0.4815</td>\n      <td>3452.0</td>\n      <td>6926.0</td>\n    </tr>\n    <tr>\n      <th>Cui Y et al. (2007) [PMID: 17684146]</th>\n      <td>0.3847</td>\n      <td>0.1794</td>\n      <td>0.0331</td>\n      <td>0.7363</td>\n      <td>252.0</td>\n      <td>9315.0</td>\n    </tr>\n    <tr>\n      <th>Stevens RG et al. (2011) [PMID: 21883693]</th>\n      <td>0.4947</td>\n      <td>0.1256</td>\n      <td>0.2485</td>\n      <td>0.7409</td>\n      <td>107.0</td>\n      <td>319.0</td>\n    </tr>\n    <tr>\n      <th>Diallo A et al. (2016) [PMID: 27738321]</th>\n      <td>0.4676</td>\n      <td>0.2206</td>\n      <td>0.0353</td>\n      <td>0.8999</td>\n      <td>188.0</td>\n      <td>4646.0</td>\n    </tr>\n    <tr>\n      <th>Chang VC et al. (2020) [PMID: 32022258]</th>\n      <td>0.4388</td>\n      <td>0.1534</td>\n      <td>0.1381</td>\n      <td>0.7396</td>\n      <td>3030.0</td>\n      <td>6432.0</td>\n    </tr>\n    <tr>\n      <th>Chua AC et al. (2016) [PMID: 27488234]</th>\n      <td>0.7992</td>\n      <td>0.3291</td>\n      <td>0.1542</td>\n      <td>1.4441</td>\n      <td>-</td>\n      <td>3392.0</td>\n    </tr>\n    <tr>\n      <th>Moore AB et al. (2009) [PMID: 19444907]</th>\n      <td>0.7748</td>\n      <td>0.3347</td>\n      <td>0.1187</td>\n      <td>1.4308</td>\n      <td>248.0</td>\n      <td>1634.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Liu KY et al. (2021) [PMID: 33618790]</th>\n      <td>-0.3842</td>\n      <td>0.1483</td>\n      <td>-0.6750</td>\n      <td>-0.0935</td>\n      <td>1591.0</td>\n      <td>3213.0</td>\n    </tr>\n    <tr>\n      <th>Quintana Pacheco DA et al. (2018) [PMID: 29574909]</th>\n      <td>-0.3779</td>\n      <td>0.1532</td>\n      <td>-0.6782</td>\n      <td>-0.0777</td>\n      <td>627.0</td>\n      <td>2738.0</td>\n    </tr>\n    <tr>\n      <th>Kim EY et al. (2025) [PMID: 40920348]</th>\n      <td>-0.2581</td>\n      <td>0.0798</td>\n      <td>-0.4144</td>\n      <td>-0.1017</td>\n      <td>1437.0</td>\n      <td>140747.0</td>\n    </tr>\n    <tr>\n      <th>Garland M et al. (1996) [PMID: 8823061]</th>\n      <td>-0.1021</td>\n      <td>0.2058</td>\n      <td>-0.5055</td>\n      <td>0.3012</td>\n      <td>433.0</td>\n      <td>62641.0</td>\n    </tr>\n    <tr>\n      <th>Kabat GC et al. (2010) [PMID: 20962158]</th>\n      <td>0.0093</td>\n      <td>0.0588</td>\n      <td>-0.1060</td>\n      <td>0.1246</td>\n      <td>3396.0</td>\n      <td>116674.0</td>\n    </tr>\n    <tr>\n      <th>Von Holle A et al. (2021) [PMID: 33293341]</th>\n      <td>0.0542</td>\n      <td>0.0777</td>\n      <td>-0.0982</td>\n      <td>0.2066</td>\n      <td>3011.0</td>\n      <td>6008.0</td>\n    </tr>\n    <tr>\n      <th>De Troy J et al. (2025) [PMID: 39927294]</th>\n      <td>0.0542</td>\n      <td>0.0245</td>\n      <td>0.0062</td>\n      <td>0.1021</td>\n      <td>111.0</td>\n      <td>1113.0</td>\n    </tr>\n    <tr>\n      <th>Gaur A et al. (2013) [PMID: 23649231]</th>\n      <td>0.0801</td>\n      <td>0.0284</td>\n      <td>0.0245</td>\n      <td>0.1356</td>\n      <td>-</td>\n      <td>220642.0</td>\n    </tr>\n    <tr>\n      <th>Inoue-Choi M et al. (2016) [PMID: 26505173]</th>\n      <td>0.1914</td>\n      <td>0.0568</td>\n      <td>0.0800</td>\n      <td>0.3028</td>\n      <td>9305.0</td>\n      <td>193742.0</td>\n    </tr>\n    <tr>\n      <th>Ferrucci LM et al. (2009) [PMID: 19513076]</th>\n      <td>0.2062</td>\n      <td>0.0931</td>\n      <td>0.0236</td>\n      <td>0.3887</td>\n      <td>1205.0</td>\n      <td>52158.0</td>\n    </tr>\n    <tr>\n      <th>Wen CP et al. (2014) [PMID: 25228650]</th>\n      <td>0.2490</td>\n      <td>0.1210</td>\n      <td>0.0120</td>\n      <td>0.4861</td>\n      <td>-</td>\n      <td>309443.0</td>\n    </tr>\n    <tr>\n      <th>Kallianpur AR et al. (2008) [PMID: 17431764]</th>\n      <td>0.3370</td>\n      <td>0.0737</td>\n      <td>0.1926</td>\n      <td>0.4815</td>\n      <td>3452.0</td>\n      <td>6926.0</td>\n    </tr>\n    <tr>\n      <th>Cui Y et al. (2007) [PMID: 17684146]</th>\n      <td>0.3847</td>\n      <td>0.1794</td>\n      <td>0.0331</td>\n      <td>0.7363</td>\n      <td>252.0</td>\n      <td>9315.0</td>\n    </tr>\n    <tr>\n      <th>Stevens RG et al. (2011) [PMID: 21883693]</th>\n      <td>0.4947</td>\n      <td>0.1256</td>\n      <td>0.2485</td>\n      <td>0.7409</td>\n      <td>107.0</td>\n      <td>319.0</td>\n    </tr>\n    <tr>\n      <th>Diallo A et al. (2016) [PMID: 27738321]</th>\n      <td>0.4676</td>\n      <td>0.2206</td>\n      <td>0.0353</td>\n      <td>0.8999</td>\n      <td>188.0</td>\n      <td>4646.0</td>\n    </tr>\n    <tr>\n      <th>Chang VC et al. (2020) [PMID: 32022258]</th>\n      <td>0.4388</td>\n      <td>0.1534</td>\n      <td>0.1381</td>\n      <td>0.7396</td>\n      <td>3030.0</td>\n      <td>6432.0</td>\n    </tr>\n    <tr>\n      <th>Zhang Y et al. (2022) [PMID: 36568176]</th>\n      <td>0.5394</td>\n      <td>0.2174</td>\n      <td>0.1133</td>\n      <td>0.9655</td>\n      <td>-</td>\n      <td>5480.0</td>\n    </tr>\n    <tr>\n      <th>Chua AC et al. (2016) [PMID: 27488234]</th>\n      <td>0.7992</td>\n      <td>0.3291</td>\n      <td>0.1542</td>\n      <td>1.4441</td>\n      <td>-</td>\n      <td>3392.0</td>\n    </tr>\n    <tr>\n      <th>Moore AB et al. (2009) [PMID: 19444907]</th>\n      <td>0.7748</td>\n      <td>0.3347</td>\n      <td>0.1187</td>\n      <td>1.4308</td>\n      <td>248.0</td>\n      <td>1634.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 1.01,
-        "ci_low": 0.9,
-        "ci_upp": 1.14,
-        "pi_low": 0.59,
-        "pi_upp": 1.76,
-        "interpretation": "Not statistically significant",
-        "i2": 93.88,
-        "tau2": 0.07,
-        "eggers_p": 0.8753647175045232,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.8754). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "pooled_es": 1.15,
+        "ci_low": 1.05,
+        "ci_upp": 1.25,
+        "pi_low": 0.83,
+        "pi_upp": 1.6,
+        "interpretation": "Statistically significant (increased risk/odds)",
+        "i2": 81.19,
+        "tau2": 0.02,
+        "eggers_p": 0.19314235538087213,
+        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.1931). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
         "loo_results": [
             {
-                "omitted": "Krusinska B et al. (2019) [PMID: 31540424]",
-                "pooled_es": 1.022139981543112,
-                "ci_low": 0.842396189240047,
-                "ci_upp": 1.24023607325607,
-                "is_significant": false
-            },
-            {
-                "omitted": "Rajizadeh A et al. (2017) [PMID: 29951415]",
-                "pooled_es": 1.089010936609801,
-                "ci_low": 0.965225168524226,
-                "ci_upp": 1.2286716703305594,
-                "is_significant": false
-            },
-            {
-                "omitted": "Kotsopoulos J et al. (2012) [PMID: 22576580]",
-                "pooled_es": 1.02651301484849,
-                "ci_low": 0.842587736961142,
-                "ci_upp": 1.250586643301612,
-                "is_significant": false
-            },
-            {
                 "omitted": "Liu KY et al. (2021) [PMID: 33618790]",
-                "pooled_es": 1.0318580065620302,
-                "ci_low": 0.8437393977180974,
-                "ci_upp": 1.2619191999161632,
-                "is_significant": false
+                "pooled_es": 1.1744467750775776,
+                "ci_low": 1.0401166426980555,
+                "ci_upp": 1.32612552368373,
+                "is_significant": true
             },
             {
                 "omitted": "Quintana Pacheco DA et al. (2018) [PMID: 29574909]",
-                "pooled_es": 1.0312878720796586,
-                "ci_low": 0.8431933573389971,
-                "ci_upp": 1.2613413825448332,
-                "is_significant": false
+                "pooled_es": 1.1734821401423807,
+                "ci_low": 1.038475219295116,
+                "ci_upp": 1.3260406292293105,
+                "is_significant": true
             },
             {
                 "omitted": "Kim EY et al. (2025) [PMID: 40920348]",
-                "pooled_es": 1.0290488652469318,
-                "ci_low": 0.8394137668177154,
-                "ci_upp": 1.2615251368589413,
-                "is_significant": false
-            },
-            {
-                "omitted": "Lu Y et al. (2024) [PMID: 38965945]",
-                "pooled_es": 1.026013813861577,
-                "ci_low": 0.8364067682478801,
-                "ci_upp": 1.2586033329692,
-                "is_significant": false
+                "pooled_es": 1.1790903008116582,
+                "ci_low": 1.0432887579403194,
+                "ci_upp": 1.3325686938415713,
+                "is_significant": true
             },
             {
                 "omitted": "Garland M et al. (1996) [PMID: 8823061]",
-                "pooled_es": 1.0184026037370475,
-                "ci_low": 0.8308554966415942,
-                "ci_upp": 1.2482842894951567,
-                "is_significant": false
-            },
-            {
-                "omitted": "Al Khamees M et al. (2023) [PMID: 37223318]",
-                "pooled_es": 1.0215632754093458,
-                "ci_low": 0.8295488032028517,
-                "ci_upp": 1.258023062218654,
-                "is_significant": false
+                "pooled_es": 1.1581242840639707,
+                "ci_low": 1.0147209035703442,
+                "ci_upp": 1.3217938574236774,
+                "is_significant": true
             },
             {
                 "omitted": "Kabat GC et al. (2010) [PMID: 20962158]",
-                "pooled_es": 1.0148999553538887,
-                "ci_low": 0.825573173399557,
-                "ci_upp": 1.2476446093032387,
-                "is_significant": false
-            },
-            {
-                "omitted": "De Troy J et al. (2025) [PMID: 39927294]",
-                "pooled_es": 1.0136875568441812,
-                "ci_low": 0.8219586764961695,
-                "ci_upp": 1.2501388357879493,
-                "is_significant": false
+                "pooled_es": 1.163680894986919,
+                "ci_low": 1.0147799055759723,
+                "ci_upp": 1.3344304690276283,
+                "is_significant": true
             },
             {
                 "omitted": "Von Holle A et al. (2021) [PMID: 33293341]",
-                "pooled_es": 1.012288023238642,
-                "ci_low": 0.8239155319526077,
-                "ci_upp": 1.2437282734115767,
-                "is_significant": false
+                "pooled_es": 1.1580486771891678,
+                "ci_low": 1.0098756958563304,
+                "ci_upp": 1.3279621880615784,
+                "is_significant": true
+            },
+            {
+                "omitted": "De Troy J et al. (2025) [PMID: 39927294]",
+                "pooled_es": 1.1687760668827938,
+                "ci_low": 1.0138256489985298,
+                "ci_upp": 1.3474086948455117,
+                "is_significant": true
             },
             {
                 "omitted": "Gaur A et al. (2013) [PMID: 23649231]",
-                "pooled_es": 1.0118741119590133,
-                "ci_low": 0.8212799589237886,
-                "ci_upp": 1.246699383477656,
-                "is_significant": false
-            },
-            {
-                "omitted": "Hou C et al. (2021) [PMID: 34229617]",
-                "pooled_es": 1.0055623471787385,
-                "ci_low": 0.8187392928092917,
-                "ci_upp": 1.23501539860643,
-                "is_significant": false
+                "pooled_es": 1.16553772517698,
+                "ci_low": 1.0110257904127244,
+                "ci_upp": 1.3436632395462107,
+                "is_significant": true
             },
             {
                 "omitted": "Inoue-Choi M et al. (2016) [PMID: 26505173]",
-                "pooled_es": 1.0045373422724613,
-                "ci_low": 0.8179983751079253,
-                "ci_upp": 1.2336152524590058,
+                "pooled_es": 1.1457614463570187,
+                "ci_low": 0.9982646300404298,
+                "ci_upp": 1.315051392640206,
                 "is_significant": false
             },
             {
                 "omitted": "Ferrucci LM et al. (2009) [PMID: 19513076]",
-                "pooled_es": 1.0043206270284837,
-                "ci_low": 0.8184737803967554,
-                "ci_upp": 1.232366810071715,
+                "pooled_es": 1.1444204435433436,
+                "ci_low": 0.998694147884637,
+                "ci_upp": 1.3114106599843935,
                 "is_significant": false
             },
             {
                 "omitted": "Wen CP et al. (2014) [PMID: 25228650]",
-                "pooled_es": 1.0029728834666818,
-                "ci_low": 0.8180480366830116,
-                "ci_upp": 1.2297011420605255,
+                "pooled_es": 1.1420616086779198,
+                "ci_low": 0.9979651121492669,
+                "ci_upp": 1.3069642436767985,
                 "is_significant": false
             },
             {
                 "omitted": "Kallianpur AR et al. (2008) [PMID: 17431764]",
-                "pooled_es": 0.9965537653595111,
-                "ci_low": 0.813620440135807,
-                "ci_upp": 1.2206175733324143,
+                "pooled_es": 1.129100158439927,
+                "ci_low": 0.9889313953556206,
+                "ci_upp": 1.2891361056755861,
                 "is_significant": false
             },
             {
                 "omitted": "Cui Y et al. (2007) [PMID: 17684146]",
-                "pooled_es": 0.9997174408005504,
-                "ci_low": 0.8171851508550533,
-                "ci_upp": 1.223021441829986,
+                "pooled_es": 1.138017485236874,
+                "ci_low": 0.9974261992808597,
+                "ci_upp": 1.2984256856683822,
                 "is_significant": false
             },
             {
                 "omitted": "Stevens RG et al. (2011) [PMID: 21883693]",
-                "pooled_es": 0.9914479673859823,
-                "ci_low": 0.8120617369608798,
-                "ci_upp": 1.2104610121301027,
+                "pooled_es": 1.1242632185590364,
+                "ci_low": 0.9899842017541195,
+                "ci_upp": 1.2767555102042456,
                 "is_significant": false
             },
             {
                 "omitted": "Diallo A et al. (2016) [PMID: 27738321]",
-                "pooled_es": 0.9991035028628877,
-                "ci_low": 0.817702207666382,
-                "ci_upp": 1.2207473577473276,
+                "pooled_es": 1.1377209332687135,
+                "ci_low": 0.9985634324285363,
+                "ci_upp": 1.2962711030282685,
                 "is_significant": false
             },
             {
                 "omitted": "Chang VC et al. (2020) [PMID: 32022258]",
-                "pooled_es": 0.9959403936195161,
-                "ci_low": 0.8147394993593496,
-                "ci_upp": 1.2174409960765995,
+                "pooled_es": 1.1325254893844858,
+                "ci_low": 0.9941731942312805,
+                "ci_upp": 1.2901313287744778,
+                "is_significant": false
+            },
+            {
+                "omitted": "Zhang Y et al. (2022) [PMID: 36568176]",
+                "pooled_es": 1.1347865779090895,
+                "ci_low": 0.9976222967183636,
+                "ci_upp": 1.2908097399572869,
                 "is_significant": false
             },
             {
                 "omitted": "Chua AC et al. (2016) [PMID: 27488234]",
-                "pooled_es": 0.9972307969548229,
-                "ci_low": 0.8195268444387421,
-                "ci_upp": 1.2134675869906608,
-                "is_significant": false
+                "pooled_es": 1.1364894767384008,
+                "ci_low": 1.0018698774167165,
+                "ci_upp": 1.289197689092607,
+                "is_significant": true
             },
             {
                 "omitted": "Moore AB et al. (2009) [PMID: 19444907]",
-                "pooled_es": 0.9980999635284549,
-                "ci_low": 0.8198646001098795,
-                "ci_upp": 1.2150829991464323,
-                "is_significant": false
+                "pooled_es": 1.137326473461521,
+                "ci_low": 1.0019652059988713,
+                "ci_upp": 1.2909744764509086,
+                "is_significant": true
             }
         ],
-        "results_interpretation": "The pooled analysis of 24 studies yielded an effect size of 1.01 (95% CI: 0.9\u20131.14), indicating no statistically significant association between iron and breast cancer. Although the point estimate suggests a potential positive relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 93.88%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 19 studies yielded an overall effect size of 1.15 (95% CI: 1.05\u20131.25), suggesting that iron is associated with a higher risk of breast cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 81.19%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 626,
@@ -1422,8 +1326,8 @@
         },
         "extracted": 26
     },
-    "plot_url": "static/iron/forest_breast_cancer_incidence_primary.png?t=7155",
-    "funnel_plot_url": "static/iron/funnel_breast_cancer_incidence_primary.png?t=4592",
-    "baujat_plot_url": "static/iron/baujat_breast_cancer_incidence_primary.png?t=7292",
+    "plot_url": "static/iron/forest_breast_cancer_incidence_primary.png?t=6588",
+    "funnel_plot_url": "static/iron/funnel_breast_cancer_incidence_primary.png?t=1398",
+    "baujat_plot_url": "static/iron/baujat_breast_cancer_incidence_primary.png?t=9897",
     "last_run": "2026-06-15 01:22:24"
 }

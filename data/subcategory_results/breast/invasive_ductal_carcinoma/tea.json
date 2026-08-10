@@ -36,7 +36,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Invasive ductal carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "fe51892f030b342c5cb7f267e08adc875ea9f0e77443ec3af1ac1935a9452ebb",
+  "input_fingerprint": "23229fa6ec6ee738517ae10a5f195726d94b98f172330525e2832687b9d4c0f7",
   "plot_url": "Plot/subcategories/breast/invasive_ductal_carcinoma/tea_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/invasive_ductal_carcinoma/tea_baujat.png",
@@ -51,7 +51,7 @@
     "subcategory_label": "Invasive ductal carcinoma",
     "subcategory_slug": "invasive_ductal_carcinoma"
   },
-  "skipped_annotation_count_for_build": 1,
+  "skipped_annotation_count_for_build": 8,
   "studies": [
     {
       "Authors": "Kumar N, Titus-Ernstoff L, Newcomb PA, Trentham-Dietz A, Anic G, Egan KM",
@@ -86,6 +86,7 @@
       "cases": 5082.0,
       "comparison_type": "3 or more cups/day vs none (women up to 50 years)",
       "context_id": "19124518|breast|tea|0",
+      "design": "Case-Control",
       "effect_size": 0.69,
       "effect_type": "OR",
       "evidence_locator": "Age- and study site-adjusted OR 0.69 (95% CI 0.48–0.99) for invasive ductal breast cancer.",

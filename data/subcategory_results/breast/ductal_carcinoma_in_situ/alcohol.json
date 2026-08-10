@@ -36,7 +36,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Ductal carcinoma in situ estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "5b6d82b1eeb7d72c04c768cd36dd99b973ca037fbb2e641f4d10b99eb66d4a08",
+  "input_fingerprint": "484e96d3ee17b332b193ae7893066970c1b85c0e0ebd00ecbf7150e97a17e3c5",
   "plot_url": "Plot/subcategories/breast/ductal_carcinoma_in_situ/alcohol_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/ductal_carcinoma_in_situ/alcohol_baujat.png",
@@ -51,7 +51,7 @@
     "subcategory_label": "Ductal carcinoma in situ",
     "subcategory_slug": "ductal_carcinoma_in_situ"
   },
-  "skipped_annotation_count_for_build": 1,
+  "skipped_annotation_count_for_build": 8,
   "studies": [
     {
       "Authors": "Kabat GC, Kim M, Shikany JM, Rodgers AK, Wactawski-Wende J, Lane D, Powell L, Stefanick ML, Freiberg MS, Kazlauskaite R, Chlebowski RT, Wassertheil-Smoller S, Rohan TE",
@@ -87,6 +87,7 @@
       "cases": 489.0,
       "comparison_type": "14 or more servings of alcohol per week versus nondrinkers",
       "context_id": "20647412|breast|alcohol|0",
+      "design": "Cohort",
       "effect_size": 0.87,
       "effect_type": "HR",
       "evidence_locator": "After adjustment for covariates, the hazard ratio for DCIS among women who consumed 14 or more servings of alcohol per week, relative to nondrinkers, was 0.87 (95% confidence interval, 0.50-1.51).",

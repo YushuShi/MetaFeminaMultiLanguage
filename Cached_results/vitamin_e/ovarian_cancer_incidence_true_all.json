@@ -345,128 +345,65 @@
                 "exposure_definition": "Women in the highest vs. the lowest quartile of vitamin E intake"
             },
             "P Value": 0.010996344600056348
-        },
-        {
-            "Study": "Guo Y et al. (2020) [PMID: 32355161]",
-            "PMID": "32355161",
-            "Effect Size": 0.21,
-            "Lower CI": 0.06,
-            "Upper CI": 0.76,
-            "Population": "General",
-            "Reference": "Appraising the role of circulating concentrations of micro-nutrients in epithelial ovarian cancer risk: A Mendelian randomization analysis.",
-            "Authors": "Guo Y, Lu Y, Jin H",
-            "Journal": "Scientific reports",
-            "Year": "2020",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/32355161/",
-            "Effect Type": "OR",
-            "SE": 0.17857142857142858,
-            "Sample Size": "66450",
-            "Cases": 25509,
-            "Estimated Cases": null,
-            "Design": "Mendelian Randomization",
-            "Timing": "Prospective",
-            "Continent": "Multiple",
-            "Stage": "Low malignant potential tumours",
-            "Quality %": 100.0,
-            "Quality Score": "Good",
-            "comparison_type": "per 6 mg/L (about one SD) increase",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "NA",
-                "q10": "NA",
-                "q11": "Yes"
-            },
-            "exposure_measurement_type": "human_biospecimen",
-            "exposure_measurement_supporting_text": "Analyses were conducted using summary statistics data for SNPs robustly associated with concentrations of thirteen micro-nutrients including vitamin E. Genetically predicted vitamin E concentration was used.",
-            "extraction_supporting_text": {
-                "sample_size": "25,509 cases and 40,941 controls",
-                "effect_size": "The OR of low malignant potential tumours were 0.21 (95% CI, 0.06-0.76; P = 0.02) per 6 mg/L (about one SD) increase in vitamin E concentration.",
-                "effect_direction": "increased concentrations of vitamin E could lower the risk of low malignant potential tumours",
-                "p_value": "P = 0.02",
-                "confidence_interval": "95% CI, 0.06-0.76",
-                "outcome_definition": "low malignant potential tumours; invasive epithelial ovarian cancer; ovarian cancer data obtained from the Ovarian Cancer Association Consortium",
-                "exposure_definition": "genetically predicted vitamin E concentration; per 6 mg/L (about one SD) increase in vitamin E concentration"
-            }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Guo Y et al. (2020) [PMID: 32355161]</th>\n      <td>-1.4523</td>\n      <td>0.6225</td>\n      <td>-2.6724</td>\n      <td>-0.2321</td>\n      <td>25509.0</td>\n      <td>66450.0</td>\n    </tr>\n    <tr>\n      <th>Jeong NH et al. (2009) [PMID: 19266359]</th>\n      <td>-1.3642</td>\n      <td>0.4098</td>\n      <td>-2.1674</td>\n      <td>-0.5611</td>\n      <td>45.0</td>\n      <td>180.0</td>\n    </tr>\n    <tr>\n      <th>Zhang M et al. (2004) [PMID: 14751177]</th>\n      <td>-0.8118</td>\n      <td>0.3017</td>\n      <td>-1.4032</td>\n      <td>-0.2204</td>\n      <td>254.0</td>\n      <td>906.0</td>\n    </tr>\n    <tr>\n      <th>Pan SY et al. (2004) [PMID: 15342455]</th>\n      <td>-0.6447</td>\n      <td>0.2354</td>\n      <td>-1.1062</td>\n      <td>-0.1833</td>\n      <td>442.0</td>\n      <td>2577.0</td>\n    </tr>\n    <tr>\n      <th>McCann SE et al. (2001) [PMID: 11588898]</th>\n      <td>-0.4886</td>\n      <td>0.1968</td>\n      <td>-0.8743</td>\n      <td>-0.1029</td>\n      <td>496.0</td>\n      <td>1921.0</td>\n    </tr>\n    <tr>\n      <th>Bidoli E et al. (2001) [PMID: 11822759]</th>\n      <td>-0.4574</td>\n      <td>0.1095</td>\n      <td>-0.6720</td>\n      <td>-0.2429</td>\n      <td>1031.0</td>\n      <td>3442.0</td>\n    </tr>\n    <tr>\n      <th>Fairfield KM et al. (2001) [PMID: 11745286]</th>\n      <td>-0.1278</td>\n      <td>0.1871</td>\n      <td>-0.4945</td>\n      <td>0.2388</td>\n      <td>301.0</td>\n      <td>80326.0</td>\n    </tr>\n    <tr>\n      <th>Koushik A et al. (2015) [PMID: 26169298]</th>\n      <td>0.0198</td>\n      <td>0.0226</td>\n      <td>-0.0246</td>\n      <td>0.0642</td>\n      <td>1973.0</td>\n      <td>501857.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Zhang M et al. (2004) [PMID: 14751177]</th>\n      <td>-0.8118</td>\n      <td>0.3017</td>\n      <td>-1.4032</td>\n      <td>-0.2204</td>\n      <td>254.0</td>\n      <td>906.0</td>\n    </tr>\n    <tr>\n      <th>Pan SY et al. (2004) [PMID: 15342455]</th>\n      <td>-0.6447</td>\n      <td>0.2354</td>\n      <td>-1.1062</td>\n      <td>-0.1833</td>\n      <td>442.0</td>\n      <td>2577.0</td>\n    </tr>\n    <tr>\n      <th>McCann SE et al. (2001) [PMID: 11588898]</th>\n      <td>-0.4886</td>\n      <td>0.1968</td>\n      <td>-0.8743</td>\n      <td>-0.1029</td>\n      <td>496.0</td>\n      <td>1921.0</td>\n    </tr>\n    <tr>\n      <th>Bidoli E et al. (2001) [PMID: 11822759]</th>\n      <td>-0.4574</td>\n      <td>0.1095</td>\n      <td>-0.6720</td>\n      <td>-0.2429</td>\n      <td>1031.0</td>\n      <td>3442.0</td>\n    </tr>\n    <tr>\n      <th>Fairfield KM et al. (2001) [PMID: 11745286]</th>\n      <td>-0.1278</td>\n      <td>0.1871</td>\n      <td>-0.4945</td>\n      <td>0.2388</td>\n      <td>301.0</td>\n      <td>80326.0</td>\n    </tr>\n    <tr>\n      <th>Koushik A et al. (2015) [PMID: 26169298]</th>\n      <td>0.0198</td>\n      <td>0.0226</td>\n      <td>-0.0246</td>\n      <td>0.0642</td>\n      <td>1973.0</td>\n      <td>501857.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.6,
-        "ci_low": 0.44,
-        "ci_upp": 0.82,
-        "pi_low": 0.22,
-        "pi_upp": 1.64,
+        "pooled_es": 0.69,
+        "ci_low": 0.51,
+        "ci_upp": 0.93,
+        "pi_low": 0.25,
+        "pi_upp": 1.88,
         "interpretation": "Statistically significant (decreased risk/odds)",
-        "i2": 87.28,
-        "tau2": 0.14,
-        "eggers_p": 0.0009729135807248274,
-        "funnel_interpretation": "The significant funnel plot asymmetry (egger's p=0.0010) indicates substantial publication bias in this meta-analysis on vitamin_e and ovarian cancer. This specific pattern suggests that smaller studies with smaller or null effects may be underrepresented, compromising the reliability of the pooled estimate and potentially leading to an overestimation of the true association.",
+        "i2": 87.17,
+        "tau2": 0.11,
+        "eggers_p": 0.01413592378341302,
+        "funnel_interpretation": "Egger\u2019s test is generally not recommended when fewer than 10 studies are available.",
         "loo_results": [
             {
-                "omitted": "Guo Y et al. (2020) [PMID: 32355161]",
-                "pooled_es": 0.6289777031396194,
-                "ci_low": 0.4619704857521615,
-                "ci_upp": 0.8563597962382171,
-                "is_significant": true
-            },
-            {
-                "omitted": "Jeong NH et al. (2009) [PMID: 19266359]",
-                "pooled_es": 0.6516770455257815,
-                "ci_low": 0.48879684432627163,
-                "ci_upp": 0.8688332925933047,
-                "is_significant": true
-            },
-            {
                 "omitted": "Zhang M et al. (2004) [PMID: 14751177]",
-                "pooled_es": 0.6224803501380661,
-                "ci_low": 0.43682704858816385,
-                "ci_upp": 0.8870370723616141,
+                "pooled_es": 0.7320367988599071,
+                "ci_low": 0.5735530146066294,
+                "ci_upp": 0.934312716066171,
                 "is_significant": true
             },
             {
                 "omitted": "Pan SY et al. (2004) [PMID: 15342455]",
-                "pooled_es": 0.6100393566837486,
-                "ci_low": 0.4221890594798511,
-                "ci_upp": 0.8814724312411574,
+                "pooled_es": 0.7225975509811408,
+                "ci_low": 0.5486620359336521,
+                "ci_upp": 0.9516736834095147,
                 "is_significant": true
             },
             {
                 "omitted": "McCann SE et al. (2001) [PMID: 11588898]",
-                "pooled_es": 0.5916060943448488,
-                "ci_low": 0.4064745097574753,
-                "ci_upp": 0.8610571203463503,
+                "pooled_es": 0.7034175804640869,
+                "ci_low": 0.5220227139268075,
+                "ci_upp": 0.9478443740195664,
                 "is_significant": true
             },
             {
                 "omitted": "Bidoli E et al. (2001) [PMID: 11822759]",
-                "pooled_es": 0.5784873082974782,
-                "ci_low": 0.39416607451585306,
-                "ci_upp": 0.8490014425323211,
+                "pooled_es": 0.7014877387504609,
+                "ci_low": 0.5163751129783001,
+                "ci_upp": 0.9529604259566902,
                 "is_significant": true
             },
             {
                 "omitted": "Fairfield KM et al. (2001) [PMID: 11745286]",
-                "pooled_es": 0.5505679780225547,
-                "ci_low": 0.3871354854193753,
-                "ci_upp": 0.7829948683094126,
+                "pooled_es": 0.6506989429009559,
+                "ci_low": 0.4920841701510531,
+                "ci_upp": 0.8604404286414034,
                 "is_significant": true
             },
             {
                 "omitted": "Koushik A et al. (2015) [PMID: 26169298]",
-                "pooled_es": 0.5636544445391553,
-                "ci_low": 0.42535301438752715,
-                "ci_upp": 0.7469239010947512,
+                "pooled_es": 0.6346855543732633,
+                "ci_low": 0.5254772151804326,
+                "ci_upp": 0.7665903321645997,
                 "is_significant": true
             }
         ],
-        "results_interpretation": "The pooled analysis of 8 studies yielded an overall effect size of 0.6 (95% CI: 0.44\u20130.82), suggesting that vitamin_e is associated with a lower risk of ovarian cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 87.28%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 6 studies yielded an overall effect size of 0.69 (95% CI: 0.51\u20130.93), suggesting that vitamin_e is associated with a lower risk of ovarian cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 87.17%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 47,
@@ -486,8 +423,8 @@
         },
         "extracted": 8
     },
-    "plot_url": "static/vitamin_e/forest_ovarian_cancer_incidence_primary.png?t=830",
-    "funnel_plot_url": "static/vitamin_e/funnel_ovarian_cancer_incidence_primary.png?t=7203",
-    "baujat_plot_url": "static\\vitamin_e\\baujat_ovarian_cancer_incidence_primary.png?t=9167",
+    "plot_url": "static/vitamin_e/forest_ovarian_cancer_incidence_primary.png?t=3618",
+    "funnel_plot_url": "static/vitamin_e/funnel_ovarian_cancer_incidence_primary.png?t=1083",
+    "baujat_plot_url": "static/vitamin_e/baujat_ovarian_cancer_incidence_primary.png?t=6805",
     "last_run": "2026-06-22 13:46:31"
 }

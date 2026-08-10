@@ -36,7 +36,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Mucinous carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "7d808da6475324c60cfbef35f7bb2331dd62136c929e6ef74ea9daf0b8c1676a",
+  "input_fingerprint": "bdee5125749938bc78b84e53a6267d0bf5cb205993dfd56356ba7cafcbd7f4d7",
   "plot_url": "Plot/subcategories/ovary/mucinous_carcinoma/calcium_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/ovary/mucinous_carcinoma/calcium_baujat.png",
@@ -51,7 +51,7 @@
     "subcategory_label": "Mucinous carcinoma",
     "subcategory_slug": "mucinous_carcinoma"
   },
-  "skipped_annotation_count_for_build": 1,
+  "skipped_annotation_count_for_build": 8,
   "studies": [
     {
       "Authors": "Merritt MA, Cramer DW, Vitonis AF, Titus LJ, Terry KL",
@@ -86,6 +86,7 @@
       "cases": 217.0,
       "comparison_type": "Q4 vs Q1",
       "context_id": "22740148|ovary|calcium|0",
+      "design": "Case-Control",
       "effect_size": 0.46,
       "effect_type": "OR",
       "evidence_locator": "For mucinous tumors, total calcium Q4 vs Q1 OR=0.46, 95% CI 0.29–0.72.",

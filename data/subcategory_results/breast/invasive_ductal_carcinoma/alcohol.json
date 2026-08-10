@@ -24,8 +24,8 @@
   "headline": {
     "ci_low": 0.9633974824946023,
     "ci_upp": 1.7957866859460045,
-    "eggers_intercept": 2.5437961385670236,
-    "eggers_p": 0.7685996329077701,
+    "eggers_intercept": 2.543796138567023,
+    "eggers_p": 0.76859963290777,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
     "i2": 79.1870680590318,
     "interpretation": "The pooled subtype-specific estimate is 1.32, indicating a higher relative association for this exposure.",
@@ -65,7 +65,7 @@
     "results_interpretation": "This saved analysis contains 4 separately reported Invasive ductal carcinoma estimates.",
     "tau2": 0.0791074667080679
   },
-  "input_fingerprint": "1049bbbcd479c4656222ff769f228a5aa24785c6fca322bb7bd7edfa8d8758e0",
+  "input_fingerprint": "a5b5c19f7ade088e22905f5ee255ee48253841163b3faa3b5032cd9405073f07",
   "plot_url": "Plot/subcategories/breast/invasive_ductal_carcinoma/alcohol_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/invasive_ductal_carcinoma/alcohol_baujat.png",
@@ -80,7 +80,7 @@
     "subcategory_label": "Invasive ductal carcinoma",
     "subcategory_slug": "invasive_ductal_carcinoma"
   },
-  "skipped_annotation_count_for_build": 1,
+  "skipped_annotation_count_for_build": 8,
   "studies": [
     {
       "Authors": "Li CI, Malone KE, Porter PL, Weiss NS, Tang MT, Daling JR",
@@ -115,6 +115,7 @@
       "cases": 975.0,
       "comparison_type": "Ever-use of alcohol vs never-use",
       "context_id": "14578143|breast|alcohol|0",
+      "design": "Case-Control",
       "effect_size": 1.2,
       "effect_type": "OR",
       "evidence_locator": "\"ever-use of alcohol was associated with a ... 1.2-fold (95% CI, 0.9-1.4) increased risk of ductal cancer\"",
@@ -184,6 +185,7 @@
       "cases": 72.0,
       "comparison_type": "Recent alcohol consumption >10 g/day vs None",
       "context_id": "16507159|breast|alcohol|0",
+      "design": "Case-Control",
       "effect_size": 1.0,
       "effect_type": "OR",
       "evidence_locator": "Table 3 reports ductal cancer OR 1.0 (95% CI 0.7–1.4) for recent alcohol consumption >10 g/day versus no alcohol.",
@@ -254,6 +256,7 @@
       "cases": 2944.0,
       "comparison_type": "7+ drinks/week vs never drinkers",
       "context_id": "20733117|breast|alcohol|0",
+      "design": "Cohort",
       "effect_size": 1.14,
       "effect_type": "HR",
       "evidence_locator": "\"HR = 1.14; 95% CI = 0.87 to 1.50\" for hormone receptor-positive invasive ductal carcinoma compared with never drinkers.",
@@ -324,6 +327,7 @@
       "cases": 1766.0,
       "comparison_type": "Highest vs Lowest",
       "context_id": "26835221|breast|alcohol|0",
+      "design": "Case-Control",
       "effect_size": 2.21,
       "effect_type": "OR",
       "evidence_locator": "\"ductal type breast cancers (OR 2.21, 95% CI 1.61-3.03)\"",

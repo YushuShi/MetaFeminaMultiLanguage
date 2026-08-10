@@ -36,7 +36,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Clear cell carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "8ce2a4e896f0bcd169802f19dc48b9376dc29696de2bb6d78df821c44507667a",
+  "input_fingerprint": "be7cd25e2bbd480197482ba916c347a7e9c2e8eb98a1e6c12acf8b888066fef0",
   "plot_url": "Plot/subcategories/ovary/clear_cell_carcinoma/calcium_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/ovary/clear_cell_carcinoma/calcium_baujat.png",
@@ -51,7 +51,7 @@
     "subcategory_label": "Clear cell carcinoma",
     "subcategory_slug": "clear_cell_carcinoma"
   },
-  "skipped_annotation_count_for_build": 1,
+  "skipped_annotation_count_for_build": 8,
   "studies": [
     {
       "Authors": "Merritt MA, Cramer DW, Vitonis AF, Titus LJ, Terry KL",
@@ -86,6 +86,7 @@
       "cases": 243.0,
       "comparison_type": "Q4 vs Q1",
       "context_id": "22740148|ovary|calcium|0",
+      "design": "Case-Control",
       "effect_size": 0.69,
       "effect_type": "OR",
       "evidence_locator": "For clear cell tumors, total calcium Q4 vs Q1 OR=0.69, 95% CI 0.46–1.02.",

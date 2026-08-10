@@ -149,7 +149,8 @@
                 "outcome_definition": "incident endometrial cancer (n = 1,491)",
                 "exposure_definition": "alcohol intake",
                 "jbi_checklist_type": "cohort"
-            }
+            },
+            "P Value": null
         },
         {
             "Study": "Setiawan VW et al. (2008) [PMID: 17764072]",
@@ -198,7 +199,8 @@
                 "confidence_interval": "95% CI: 1.30, 3.11",
                 "outcome_definition": "324 incident invasive endometrial cancer cases were identified.",
                 "exposure_definition": "Data on alcohol intake were obtained from the baseline questionnaire."
-            }
+            },
+            "P Value": null
         },
         {
             "Study": "Loerbroks A et al. (2007) [PMID: 17437180]",
@@ -395,7 +397,8 @@
                 "confidence_interval": "95% confidence interval (CI) 0.78-2.07",
                 "outcome_definition": "We analyzed data from a population-based case-control study of Wisconsin women to evaluate the relationship of alcohol consumption to endometrial cancer risk.",
                 "exposure_definition": "Alcohol consumption and other factors were ascertained by telephone interview."
-            }
+            },
+            "P Value": null
         },
         {
             "Study": "Parazzini F et al. (1995) [PMID: 7739915]",
@@ -443,7 +446,8 @@
                 "confidence_interval": "95% confidence interval 1.1-1.5",
                 "outcome_definition": "Cases... with histologically confirmed endometrial cancer.",
                 "exposure_definition": "When total consumption of all alcoholic beverages was considered."
-            }
+            },
+            "P Value": null
         },
         {
             "Study": "Swanson CA et al. (1993) [PMID: 8268282]",
@@ -491,7 +495,8 @@
                 "confidence_interval": "The relative risk of endometrial cancer was 0.82 (95% confidence interval = 0.6-1.2) among women who drank, compared with lifelong abstainers.",
                 "outcome_definition": "We examined the relation of moderate alcohol consumption to risk of endometrial cancer.",
                 "exposure_definition": "We estimated average weekly intake of alcohol during adulthood from the reported frequency of intake of beer, wine, and liquor."
-            }
+            },
+            "P Value": null
         },
         {
             "Study": "T\u00f8nnesen H et al. (1994) [PMID: 8297729]",
@@ -589,7 +594,8 @@
                 "confidence_interval": "95% CI, 0.23-0.79",
                 "outcome_definition": "148 histologically diagnosed incident endometrial cancer cases.",
                 "exposure_definition": "Weekly alcohol consumption (non-drinkers, 1-24 g/week, 25-175 g/week, and >175 g/week)."
-            }
+            },
+            "P Value": null
         },
         {
             "Study": "Weiderpass E et al. (2001) [PMID: 11405329]",
@@ -638,53 +644,8 @@
                 "outcome_definition": "endometrial cancer",
                 "exposure_definition": "Alcohol consumption",
                 "comparison_type": "for women consuming more than 4 g per day"
-            }
-        },
-        {
-            "Study": "Yang J et al. (2024) [PMID: 38347022]",
-            "PMID": "38347022",
-            "Effect Size": 0.57,
-            "Lower CI": 0.41,
-            "Upper CI": 0.79,
-            "Population": "General",
-            "Reference": "The causal effects of genetically predicted alcohol consumption on endometrial cancer risk from a Mendelian randomization study.",
-            "Authors": "Yang J, Qu X, Zheng AJ, Jiang F, Chang H, Zhang JR, Yan LJ, Ning P",
-            "Journal": "Scientific reports",
-            "Year": "2024",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/38347022/",
-            "Effect Type": "OR",
-            "SE": 0.09693877551020409,
-            "Sample Size": 941287.0,
-            "Cases": 121885.0,
-            "Estimated Cases": null,
-            "Design": "Mendelian Randomization",
-            "Timing": "Prospective",
-            "Continent": "Europe",
-            "Stage": "All stages",
-            "Quality %": 100.0,
-            "Quality Score": "Good",
-            "comparison_type": "per SD increase",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes"
             },
-            "exposure_measurement_type": "unclear",
-            "exposure_measurement_supporting_text": "Fifty-seven single nucleotide polymorphisms (SNPs) were extracted as instrumental variables for alcohol exposure from the GWAS and Sequencing Consortium of Alcohol and Nicotine GWAS summary data.",
-            "extraction_supporting_text": {
-                "sample_size": "941,287 participants of European ancestry.",
-                "effect_size": "An increase of 1 standard deviation of genetically predicted log-transformed alcoholic drinks per day was associated with a 43% reduction in EC risk [odds ratio (OR)\u2009=\u20090.57, 95% confidence interval (CI) 0.41-0.79, P\u2009<\u20090.001].",
-                "effect_direction": "An increase of 1 standard deviation of genetically predicted log-transformed alcoholic drinks per day was associated with a 43% reduction in EC risk.",
-                "p_value": "P\u2009<\u20090.001",
-                "confidence_interval": "95% confidence interval (CI) 0.41-0.79",
-                "outcome_definition": "Endometrial cancer (EC) is a common gynecological tumor in females with an increasing incidence over the past few decades.",
-                "exposure_definition": "Fifty-seven single nucleotide polymorphisms (SNPs) were extracted as instrumental variables for alcohol exposure from the GWAS and Sequencing Consortium of Alcohol and Nicotine GWAS summary data."
-            }
+            "P Value": null
         },
         {
             "Study": "Kato I et al. (1989) [PMID: 2810820]",
@@ -734,104 +695,6 @@
                 "exposure_definition": "Daily alcohol drinkers compared to non-drinkers."
             },
             "P Value": 0.14700842428024394
-        },
-        {
-            "Study": "Larsson SC et al. (2025) [PMID: 41398582]",
-            "PMID": "41398582",
-            "Effect Size": 0.56,
-            "Lower CI": 0.4,
-            "Upper CI": 0.78,
-            "Population": "General",
-            "Reference": "Alcohol consumption and risk of cancer: a Mendelian randomization analysis of four biobanks and consortium data.",
-            "Authors": "Larsson SC, Mason AM, Cronj\u00e9 HT, Bassett E, Horta G, Kar S, Burgess S",
-            "Journal": "BMC medicine",
-            "Year": "2025",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/41398582/",
-            "Effect Type": "OR",
-            "SE": 0.09693877551020408,
-            "Sample Size": 1484509.0,
-            "Cases": null,
-            "Estimated Cases": 46020.0,
-            "Design": "Mendelian randomization",
-            "Timing": "Prospective",
-            "Continent": "Europe, North America",
-            "Stage": null,
-            "Quality %": 100.0,
-            "Quality Score": "Good",
-            "comparison_type": "per SD increase",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Yes",
-                "q10": "Yes",
-                "q11": "Yes"
-            },
-            "exposure_measurement_type": "human_biospecimen",
-            "exposure_measurement_supporting_text": "We used 95 genetic variants associated with alcohol consumption at genome-wide significance.",
-            "extraction_supporting_text": {
-                "sample_size": "Primary analyses were conducted in European ancestry participants from UK Biobank (367,643 individuals), FinnGen (500,348 individuals), All of US (169,312 individuals), and Million Veteran Program (451,206 individuals).",
-                "effect_size": "multiply-corrected significant negative estimates for endometrial cancer (OR 0.56, p\u2009=\u20090.0006)",
-                "effect_direction": "multiply-corrected significant negative estimates for endometrial cancer",
-                "p_value": "p\u2009=\u20090.0006",
-                "confidence_interval": "OR 0.56 (0.40-0.78)",
-                "outcome_definition": "endometrial cancer",
-                "exposure_definition": "genetically-predicted alcohol consumption"
-            }
-        },
-        {
-            "Study": "Miao J et al. (2025) [PMID: 40487677]",
-            "PMID": "40487677",
-            "Effect Size": 1.262,
-            "Lower CI": 1.051,
-            "Upper CI": 1.517,
-            "Population": "General",
-            "Reference": "Causal Effects of Smoking, Alcohol, Coffee, and Tea Intake on Gynecologic Cancers: A Mendelian Randomization Study.",
-            "Authors": "Miao J, Xu Y",
-            "Journal": "International journal of women's health",
-            "Year": "2025",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/40487677/",
-            "Effect Type": "OR",
-            "SE": 0.11887755102040816,
-            "Sample Size": 121885,
-            "Cases": null,
-            "Estimated Cases": 3778,
-            "Design": "Mendelian Randomization",
-            "Timing": "Unclear",
-            "Continent": "Unclear",
-            "Stage": null,
-            "Quality %": 75.0,
-            "Quality Score": "Moderate",
-            "comparison_type": "Continuous",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Unclear",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Unclear",
-                "q7": "Yes",
-                "q8": "NA",
-                "q9": "NA",
-                "q10": "NA",
-                "q11": "Yes"
-            },
-            "exposure_measurement_type": "unclear",
-            "exposure_measurement_supporting_text": "The two-sample Mendelian randomization (MR) approach was used to evaluate the causal association between modifiable lifestyle and gynecological tumors.",
-            "extraction_supporting_text": {
-                "sample_size": "The endometrial cancer outcome meta-GWAS comprised 12,906 cases and 108,979 controls, totaling 121,885 participants; the alcohol exposure GWAS source was stated as aggregated UK Biobank data without a participant count.",
-                "effect_size": "alcohol intake (OR: 1.262, 95% CI: 1.051-1.517, P= 0.010) was a risk factor for endometrial cancer.",
-                "effect_direction": "alcohol intake ... was a risk factor for endometrial cancer.",
-                "p_value": "P= 0.010",
-                "confidence_interval": "95% CI: 1.051-1.517",
-                "outcome_definition": "the outcomes were cervical, ovarian and endometrial cancer.",
-                "exposure_definition": "The exposures were ... alcohol intake."
-            }
         },
         {
             "Study": "Liu JJ et al. (2013) [PMID: 23299529]",
@@ -934,53 +797,6 @@
             "P Value": 5.701362990325907e-06
         },
         {
-            "Study": "Zhang X et al. (2024) [PMID: 39427281]",
-            "PMID": "39427281",
-            "Effect Size": 1.23,
-            "Lower CI": 1.04,
-            "Upper CI": 1.45,
-            "Population": "General",
-            "Reference": "Unraveling the causal association between lifestyle and metabolic factors with endometrial cancer: evidence from a Mendelian randomization study.",
-            "Authors": "Zhang X, Pu C, Wang L, Lin X, Lai H, Wu S, Wan J",
-            "Journal": "Discover oncology",
-            "Year": "2024",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/39427281/",
-            "Effect Type": "OR",
-            "SE": 0.10459183673469385,
-            "Sample Size": 121885.0,
-            "Cases": 12906.0,
-            "Estimated Cases": null,
-            "Design": "Mendelian Randomization",
-            "Timing": "Unclear",
-            "Continent": "Unclear",
-            "Stage": "Overall Endometrial Cancer",
-            "Quality %": 87.5,
-            "Quality Score": "Good",
-            "comparison_type": "Continuous",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Unclear",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes"
-            },
-            "exposure_measurement_type": "unclear",
-            "exposure_measurement_supporting_text": "Independent genetic variants strongly associated with lifestyle factors were used as instrumental variables.",
-            "extraction_supporting_text": {
-                "sample_size": "This GWAS encompassed 12,906 EC patients and 108,979 healthy controls.",
-                "effect_size": "frequency of alcohol consumption (OR:1.23; 95% CI 1.04-1.45)",
-                "effect_direction": "Our study revealed the relationship among EC with ... frequency of alcohol consumption.",
-                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.015.",
-                "confidence_interval": "frequency of alcohol consumption (OR:1.23; 95% CI 1.04-1.45)",
-                "outcome_definition": "Endometrial carcinoma (EC) remain a malignancy with incompletely understood risk factors.",
-                "exposure_definition": "frequency of alcohol consumption"
-            },
-            "P Value": 0.014616580323458363
-        },
-        {
             "Study": "Zhu G et al. (2022) [PMID: 36501056]",
             "PMID": "36501056",
             "Effect Size": 0.971,
@@ -1024,150 +840,123 @@
                 "confidence_interval": "0.971 (0.950, 0.992)",
                 "outcome_definition": "endometrial cancer",
                 "exposure_definition": "alcohol"
-            }
+            },
+            "P Value": null
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Hosono S et al. (2008) [PMID: 18422741]</th>\n      <td>-0.7891</td>\n      <td>0.2949</td>\n      <td>-1.3672</td>\n      <td>-0.2110</td>\n      <td>148.0</td>\n      <td>1616.0</td>\n    </tr>\n    <tr>\n      <th>Kato I et al. (1989) [PMID: 2810820]</th>\n      <td>-0.8210</td>\n      <td>0.5661</td>\n      <td>-1.9306</td>\n      <td>0.2886</td>\n      <td>239.0</td>\n      <td>10939.0</td>\n    </tr>\n    <tr>\n      <th>Webster LA et al. (1989) [PMID: 2695474]</th>\n      <td>-0.5436</td>\n      <td>0.2346</td>\n      <td>-1.0035</td>\n      <td>-0.0837</td>\n      <td>351.0</td>\n      <td>2598.0</td>\n    </tr>\n    <tr>\n      <th>Larsson SC et al. (2025) [PMID: 41398582]</th>\n      <td>-0.5209</td>\n      <td>0.1571</td>\n      <td>-0.8287</td>\n      <td>-0.2131</td>\n      <td>-</td>\n      <td>1484509.0</td>\n    </tr>\n    <tr>\n      <th>Yang J et al. (2024) [PMID: 38347022]</th>\n      <td>-0.5046</td>\n      <td>0.1540</td>\n      <td>-0.8065</td>\n      <td>-0.2027</td>\n      <td>121885.0</td>\n      <td>941287.0</td>\n    </tr>\n    <tr>\n      <th>Liu JJ et al. (2013) [PMID: 23299529]</th>\n      <td>-0.2095</td>\n      <td>0.0781</td>\n      <td>-0.3625</td>\n      <td>-0.0565</td>\n      <td>788.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Je Y et al. (2014) [PMID: 24853180]</th>\n      <td>-0.2107</td>\n      <td>0.0880</td>\n      <td>-0.3831</td>\n      <td>-0.0383</td>\n      <td>794.0</td>\n      <td>68067.0</td>\n    </tr>\n    <tr>\n      <th>Weiderpass E et al. (2001) [PMID: 11405329]</th>\n      <td>-0.0729</td>\n      <td>0.1208</td>\n      <td>-0.3097</td>\n      <td>0.1638</td>\n      <td>709.0</td>\n      <td>4077.0</td>\n    </tr>\n    <tr>\n      <th>Yang HP et al. (2011) [PMID: 20725997]</th>\n      <td>-0.0726</td>\n      <td>0.1339</td>\n      <td>-0.3350</td>\n      <td>0.1898</td>\n      <td>1491.0</td>\n      <td>114414.0</td>\n    </tr>\n    <tr>\n      <th>Zhu G et al. (2022) [PMID: 36501056]</th>\n      <td>-0.0257</td>\n      <td>0.0096</td>\n      <td>-0.0445</td>\n      <td>-0.0068</td>\n      <td>-</td>\n      <td>12437.0</td>\n    </tr>\n    <tr>\n      <th>Gapstur SM et al. (1993) [PMID: 8347781]</th>\n      <td>0.0000</td>\n      <td>0.2109</td>\n      <td>-0.4133</td>\n      <td>0.4133</td>\n      <td>167.0</td>\n      <td>25170.0</td>\n    </tr>\n    <tr>\n      <th>Loerbroks A et al. (2007) [PMID: 17437180]</th>\n      <td>0.0583</td>\n      <td>0.1546</td>\n      <td>-0.2448</td>\n      <td>0.3613</td>\n      <td>280.0</td>\n      <td>62573.0</td>\n    </tr>\n    <tr>\n      <th>Friberg E et al. (2009) [PMID: 19124521]</th>\n      <td>0.0862</td>\n      <td>0.2182</td>\n      <td>-0.3415</td>\n      <td>0.5138</td>\n      <td>687.0</td>\n      <td>61226.0</td>\n    </tr>\n    <tr>\n      <th>Zhang X et al. (2024) [PMID: 39427281]</th>\n      <td>0.1776</td>\n      <td>0.0716</td>\n      <td>0.0372</td>\n      <td>0.3179</td>\n      <td>12906.0</td>\n      <td>121885.0</td>\n    </tr>\n    <tr>\n      <th>Miao J et al. (2025) [PMID: 40487677]</th>\n      <td>0.1992</td>\n      <td>0.0787</td>\n      <td>0.0449</td>\n      <td>0.3535</td>\n      <td>-</td>\n      <td>121885.0</td>\n    </tr>\n    <tr>\n      <th>Newcomb PA et al. (1997) [PMID: 9332758]</th>\n      <td>0.2390</td>\n      <td>0.2490</td>\n      <td>-0.2490</td>\n      <td>0.7270</td>\n      <td>739.0</td>\n      <td>3052.0</td>\n    </tr>\n    <tr>\n      <th>Parazzini F et al. (1995) [PMID: 7739915]</th>\n      <td>0.2624</td>\n      <td>0.0791</td>\n      <td>0.1073</td>\n      <td>0.4174</td>\n      <td>726.0</td>\n      <td>2849.0</td>\n    </tr>\n    <tr>\n      <th>Setiawan VW et al. (2008) [PMID: 17764072]</th>\n      <td>0.6981</td>\n      <td>0.2225</td>\n      <td>0.2620</td>\n      <td>1.1343</td>\n      <td>324.0</td>\n      <td>41574.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Hosono S et al. (2008) [PMID: 18422741]</th>\n      <td>-0.7891</td>\n      <td>0.2949</td>\n      <td>-1.3672</td>\n      <td>-0.2110</td>\n      <td>148.0</td>\n      <td>1616.0</td>\n    </tr>\n    <tr>\n      <th>Kato I et al. (1989) [PMID: 2810820]</th>\n      <td>-0.8210</td>\n      <td>0.5661</td>\n      <td>-1.9306</td>\n      <td>0.2886</td>\n      <td>239.0</td>\n      <td>10939.0</td>\n    </tr>\n    <tr>\n      <th>Webster LA et al. (1989) [PMID: 2695474]</th>\n      <td>-0.5436</td>\n      <td>0.2346</td>\n      <td>-1.0035</td>\n      <td>-0.0837</td>\n      <td>351.0</td>\n      <td>2598.0</td>\n    </tr>\n    <tr>\n      <th>Liu JJ et al. (2013) [PMID: 23299529]</th>\n      <td>-0.2095</td>\n      <td>0.0781</td>\n      <td>-0.3625</td>\n      <td>-0.0565</td>\n      <td>788.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Je Y et al. (2014) [PMID: 24853180]</th>\n      <td>-0.2107</td>\n      <td>0.0880</td>\n      <td>-0.3831</td>\n      <td>-0.0383</td>\n      <td>794.0</td>\n      <td>68067.0</td>\n    </tr>\n    <tr>\n      <th>Weiderpass E et al. (2001) [PMID: 11405329]</th>\n      <td>-0.0729</td>\n      <td>0.1208</td>\n      <td>-0.3097</td>\n      <td>0.1638</td>\n      <td>709.0</td>\n      <td>4077.0</td>\n    </tr>\n    <tr>\n      <th>Yang HP et al. (2011) [PMID: 20725997]</th>\n      <td>-0.0726</td>\n      <td>0.1339</td>\n      <td>-0.3350</td>\n      <td>0.1898</td>\n      <td>1491.0</td>\n      <td>114414.0</td>\n    </tr>\n    <tr>\n      <th>Zhu G et al. (2022) [PMID: 36501056]</th>\n      <td>-0.0257</td>\n      <td>0.0096</td>\n      <td>-0.0445</td>\n      <td>-0.0068</td>\n      <td>-</td>\n      <td>12437.0</td>\n    </tr>\n    <tr>\n      <th>Gapstur SM et al. (1993) [PMID: 8347781]</th>\n      <td>0.0000</td>\n      <td>0.2109</td>\n      <td>-0.4133</td>\n      <td>0.4133</td>\n      <td>167.0</td>\n      <td>25170.0</td>\n    </tr>\n    <tr>\n      <th>Loerbroks A et al. (2007) [PMID: 17437180]</th>\n      <td>0.0583</td>\n      <td>0.1546</td>\n      <td>-0.2448</td>\n      <td>0.3613</td>\n      <td>280.0</td>\n      <td>62573.0</td>\n    </tr>\n    <tr>\n      <th>Friberg E et al. (2009) [PMID: 19124521]</th>\n      <td>0.0862</td>\n      <td>0.2182</td>\n      <td>-0.3415</td>\n      <td>0.5138</td>\n      <td>687.0</td>\n      <td>61226.0</td>\n    </tr>\n    <tr>\n      <th>Newcomb PA et al. (1997) [PMID: 9332758]</th>\n      <td>0.2390</td>\n      <td>0.2490</td>\n      <td>-0.2490</td>\n      <td>0.7270</td>\n      <td>739.0</td>\n      <td>3052.0</td>\n    </tr>\n    <tr>\n      <th>Parazzini F et al. (1995) [PMID: 7739915]</th>\n      <td>0.2624</td>\n      <td>0.0791</td>\n      <td>0.1073</td>\n      <td>0.4174</td>\n      <td>726.0</td>\n      <td>2849.0</td>\n    </tr>\n    <tr>\n      <th>Setiawan VW et al. (2008) [PMID: 17764072]</th>\n      <td>0.6981</td>\n      <td>0.2225</td>\n      <td>0.2620</td>\n      <td>1.1343</td>\n      <td>324.0</td>\n      <td>41574.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.95,
+        "pooled_es": 0.96,
         "ci_low": 0.85,
-        "ci_upp": 1.05,
-        "pi_low": 0.64,
+        "ci_upp": 1.08,
+        "pi_low": 0.66,
         "pi_upp": 1.4,
         "interpretation": "Not statistically significant",
-        "i2": 80.02,
+        "i2": 73.64,
         "tau2": 0.03,
-        "eggers_p": 0.6977704271423141,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.6978). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "eggers_p": 0.7559650135603323,
+        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.7560). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
         "loo_results": [
             {
                 "omitted": "Hosono S et al. (2008) [PMID: 18422741]",
-                "pooled_es": 0.9661195667738751,
-                "ci_low": 0.838615832534798,
-                "ci_upp": 1.1130090574155833,
+                "pooled_es": 0.98466422456284,
+                "ci_low": 0.8523023764027701,
+                "ci_upp": 1.1375817573407248,
                 "is_significant": false
             },
             {
                 "omitted": "Kato I et al. (1989) [PMID: 2810820]",
-                "pooled_es": 0.9536262302947001,
-                "ci_low": 0.821963830328432,
-                "ci_upp": 1.1063783509095653,
+                "pooled_es": 0.9692720026552099,
+                "ci_low": 0.8277452933760534,
+                "ci_upp": 1.1349967467642512,
                 "is_significant": false
             },
             {
                 "omitted": "Webster LA et al. (1989) [PMID: 2695474]",
-                "pooled_es": 0.9645063726284795,
-                "ci_low": 0.8325467583136646,
-                "ci_upp": 1.1173817368831365,
-                "is_significant": false
-            },
-            {
-                "omitted": "Larsson SC et al. (2025) [PMID: 41398582]",
-                "pooled_es": 0.974093039068588,
-                "ci_low": 0.8431914502650486,
-                "ci_upp": 1.125316496584037,
-                "is_significant": false
-            },
-            {
-                "omitted": "Yang J et al. (2024) [PMID: 38347022]",
-                "pooled_es": 0.9736012049076567,
-                "ci_low": 0.8421691403862527,
-                "ci_upp": 1.1255450487806953,
+                "pooled_es": 0.9840621337747929,
+                "ci_low": 0.8439995068090951,
+                "ci_upp": 1.1473683045035672,
                 "is_significant": false
             },
             {
                 "omitted": "Liu JJ et al. (2013) [PMID: 23299529]",
-                "pooled_es": 0.958855836892165,
-                "ci_low": 0.8187845258500702,
-                "ci_upp": 1.122889462264372,
+                "pooled_es": 0.9814225492968858,
+                "ci_low": 0.8258502241981406,
+                "ci_upp": 1.166301336545144,
                 "is_significant": false
             },
             {
                 "omitted": "Je Y et al. (2014) [PMID: 24853180]",
-                "pooled_es": 0.958654643757295,
-                "ci_low": 0.8189654382648505,
-                "ci_upp": 1.122170342065423,
+                "pooled_es": 0.9807124379854306,
+                "ci_low": 0.8259401393273552,
+                "ci_upp": 1.1644874007486954,
                 "is_significant": false
             },
             {
                 "omitted": "Weiderpass E et al. (2001) [PMID: 11405329]",
-                "pooled_es": 0.9473492310842611,
-                "ci_low": 0.8086134986406815,
-                "ci_upp": 1.1098881816153603,
+                "pooled_es": 0.9638079148831886,
+                "ci_low": 0.8096932942220721,
+                "ci_upp": 1.1472562554491232,
                 "is_significant": false
             },
             {
                 "omitted": "Yang HP et al. (2011) [PMID: 20725997]",
-                "pooled_es": 0.9474193716594616,
-                "ci_low": 0.8090901917547175,
-                "ci_upp": 1.1093985255820837,
+                "pooled_es": 0.9636346141369029,
+                "ci_low": 0.8103447125807353,
+                "ci_upp": 1.1459217974107057,
                 "is_significant": false
             },
             {
                 "omitted": "Zhu G et al. (2022) [PMID: 36501056]",
-                "pooled_es": 0.9326001118013749,
-                "ci_low": 0.7875323979942842,
-                "ci_upp": 1.1043900806456084,
+                "pooled_es": 0.9527837856854243,
+                "ci_low": 0.7865998626753179,
+                "ci_upp": 1.1540771685079187,
                 "is_significant": false
             },
             {
                 "omitted": "Gapstur SM et al. (1993) [PMID: 8347781]",
-                "pooled_es": 0.9446129030661088,
-                "ci_low": 0.8084925589427121,
-                "ci_upp": 1.1036508954465316,
+                "pooled_es": 0.958893444183311,
+                "ci_low": 0.8094110508823822,
+                "ci_upp": 1.1359823124423147,
                 "is_significant": false
             },
             {
                 "omitted": "Loerbroks A et al. (2007) [PMID: 17437180]",
-                "pooled_es": 0.9404021228967054,
-                "ci_low": 0.8041701907049164,
-                "ci_upp": 1.099712676458978,
+                "pooled_es": 0.953438620891694,
+                "ci_low": 0.8034716137646841,
+                "ci_upp": 1.1313967889276184,
                 "is_significant": false
             },
             {
                 "omitted": "Friberg E et al. (2009) [PMID: 19124521]",
-                "pooled_es": 0.9415549882044538,
-                "ci_low": 0.806466062258291,
-                "ci_upp": 1.099272290925935,
-                "is_significant": false
-            },
-            {
-                "omitted": "Zhang X et al. (2024) [PMID: 39427281]",
-                "pooled_es": 0.9268514206540499,
-                "ci_low": 0.7932164235086121,
-                "ci_upp": 1.0830002134456609,
-                "is_significant": false
-            },
-            {
-                "omitted": "Miao J et al. (2025) [PMID: 40487677]",
-                "pooled_es": 0.926134690717083,
-                "ci_low": 0.7936503399230657,
-                "ci_upp": 1.0807347041932505,
+                "pooled_es": 0.9546851564702992,
+                "ci_low": 0.8067793774721498,
+                "ci_upp": 1.1297063031537171,
                 "is_significant": false
             },
             {
                 "omitted": "Newcomb PA et al. (1997) [PMID: 9332758]",
-                "pooled_es": 0.9379149806408571,
-                "ci_low": 0.8052784897970059,
-                "ci_upp": 1.0923978748423913,
+                "pooled_es": 0.9496445299498243,
+                "ci_low": 0.8056957907010153,
+                "ci_upp": 1.1193117100425312,
                 "is_significant": false
             },
             {
                 "omitted": "Parazzini F et al. (1995) [PMID: 7739915]",
-                "pooled_es": 0.9222173611904603,
-                "ci_low": 0.793467222607306,
-                "ci_upp": 1.0718588456451068,
+                "pooled_es": 0.9245301426112372,
+                "ci_low": 0.7901271435949214,
+                "ci_upp": 1.081795495225977,
                 "is_significant": false
             },
             {
                 "omitted": "Setiawan VW et al. (2008) [PMID: 17764072]",
-                "pooled_es": 0.9235406675676604,
-                "ci_low": 0.8068890955013203,
-                "ci_upp": 1.0570565018249451,
+                "pooled_es": 0.9301896242187666,
+                "ci_low": 0.8141306556394174,
+                "ci_upp": 1.062793460743327,
                 "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled analysis of 18 studies yielded an effect size of 0.95 (95% CI: 0.85\u20131.05), indicating no statistically significant association between alcohol and uterine cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 80.02%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 14 studies yielded an effect size of 0.96 (95% CI: 0.85\u20131.08), indicating no statistically significant association between alcohol and uterine cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by substantial heterogeneity (I\u00b2 = 73.64%), reflecting considerable variability across studies."
     },
     "screening_stats": {
         "llm_screened_out": 365,
@@ -1186,8 +975,8 @@
         },
         "extracted": 28
     },
-    "plot_url": "static/alcohol/forest_uterine_cancer_incidence_primary.png?t=3241",
-    "funnel_plot_url": "static/alcohol/funnel_uterine_cancer_incidence_primary.png?t=330",
-    "baujat_plot_url": "static/alcohol/baujat_uterine_cancer_incidence_primary.png?t=3757",
+    "plot_url": "static/alcohol/forest_uterine_cancer_incidence_primary.png?t=930",
+    "funnel_plot_url": "static/alcohol/funnel_uterine_cancer_incidence_primary.png?t=7687",
+    "baujat_plot_url": "static/alcohol/baujat_uterine_cancer_incidence_primary.png?t=4282",
     "last_run": "2026-06-16 15:39:53"
 }

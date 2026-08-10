@@ -36,7 +36,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "661a5e8de9dcd5cea20bf66d98f1192601ffd110893be6524bbb46a9e1a0b6bf",
+  "input_fingerprint": "5a180d1dbe325ced2abee23bdc27a769adcde8db260282d23f1a980f5448187a",
   "plot_url": "Plot/subcategories/uterus/endometrioid_carcinoma/green_tea_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/uterus/endometrioid_carcinoma/green_tea_baujat.png",
@@ -51,7 +51,7 @@
     "subcategory_label": "Endometrioid carcinoma",
     "subcategory_slug": "endometrioid_carcinoma"
   },
-  "skipped_annotation_count_for_build": 1,
+  "skipped_annotation_count_for_build": 8,
   "studies": [
     {
       "Authors": "Kakuta Y, Nakaya N, Nagase S, Fujita M, Koizumi T, Okamura C, Niikura H, Ohmori K, Kuriyama S, Tase T, Ito K, Minami Y, Yaegashi N, Tsuji I",
@@ -86,6 +86,7 @@
       "cases": 152.0,
       "comparison_type": "Highest vs Lowest",
       "context_id": "19067194|uterus|green_tea|0",
+      "design": "Case-Control",
       "effect_size": 0.33,
       "effect_type": "OR",
       "evidence_locator": "The multivariate-adjusted OR of EEA was 0.33 (0.15-0.75) in the highest quartile (>=4 cups/day), referenced with the lowest quartile (<=4 cups/week).",

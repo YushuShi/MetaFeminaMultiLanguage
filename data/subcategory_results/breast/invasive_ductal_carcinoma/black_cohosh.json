@@ -36,7 +36,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Invasive ductal carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "cbd6552b31d7d3fd7f45d9fcfc8b7bf35d7bfa65be19027c7064eea63e694cbf",
+  "input_fingerprint": "f611a7d47c24bfd4ca89993c940617a4c813bc3ee76487ce194c71960e9c6bbd",
   "plot_url": "Plot/subcategories/breast/invasive_ductal_carcinoma/black_cohosh_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/invasive_ductal_carcinoma/black_cohosh_baujat.png",
@@ -51,7 +51,7 @@
     "subcategory_label": "Invasive ductal carcinoma",
     "subcategory_slug": "invasive_ductal_carcinoma"
   },
-  "skipped_annotation_count_for_build": 1,
+  "skipped_annotation_count_for_build": 8,
   "studies": [
     {
       "Authors": "Obi N, Chang-Claude J, Berger J, Braendle W, Slanger T, Schmidt M, Steindorf K, Ahrens W, Flesch-Janys D",
@@ -86,6 +86,7 @@
       "cases": 3464.0,
       "comparison_type": "Any herbal preparation use vs no use",
       "context_id": "19661079|breast|black_cohosh|0",
+      "design": "Case-Control",
       "effect_size": 0.72,
       "effect_type": "OR",
       "evidence_locator": "\"Risks for invasive ductal (OR, 0.72; 95% CI, 0.60-0.87)\"",

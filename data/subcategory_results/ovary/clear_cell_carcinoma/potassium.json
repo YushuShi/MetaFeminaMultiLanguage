@@ -36,7 +36,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Clear cell carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "a17ed854ab787af5221561d1363b5d611d059a23572048a50721292474e53782",
+  "input_fingerprint": "ec47c467d6acefb5a5d107e5b1851436eb6f3db53b42e017f728a4fe42175145",
   "plot_url": "Plot/subcategories/ovary/clear_cell_carcinoma/potassium_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/ovary/clear_cell_carcinoma/potassium_baujat.png",
@@ -51,7 +51,7 @@
     "subcategory_label": "Clear cell carcinoma",
     "subcategory_slug": "clear_cell_carcinoma"
   },
-  "skipped_annotation_count_for_build": 1,
+  "skipped_annotation_count_for_build": 8,
   "studies": [
     {
       "Authors": "Hathaway CA, Townsend MK, Sklar EM, Thomas-Purcell KB, Terry KL, Trabert B, Tworoger SS",
@@ -87,6 +87,7 @@
       "cases": 1110.0,
       "comparison_type": "Potassium Q4 vs Q1 (clear cell histology)",
       "context_id": "37540498|ovary|potassium|0",
+      "design": "Cohort",
       "effect_size": 4.74,
       "effect_type": "HR",
       "evidence_locator": "“Potassium was associated with ... clear cell (4.74, 1.39-16.16) tumors.”",

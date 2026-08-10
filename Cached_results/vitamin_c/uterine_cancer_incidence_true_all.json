@@ -2,54 +2,6 @@
     "success": true,
     "studies": [
         {
-            "Study": "Peng H et al. (2022) [PMID: 35402429]",
-            "PMID": "35402429",
-            "Effect Size": 1.374,
-            "Lower CI": 1.128,
-            "Upper CI": 1.674,
-            "Population": "General",
-            "Reference": "Plasma Circulating Vitamin C Levels and Risk of Endometrial Cancer: A Bi-Directional Mendelian Randomization Analysis.",
-            "Authors": "Peng H, Wu X, Wen Y",
-            "Journal": "Frontiers in medicine",
-            "Year": "2022",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/35402429/",
-            "Effect Type": "OR",
-            "SE": 0.1392857142857143,
-            "Sample Size": 120885.0,
-            "Cases": 12906.0,
-            "Estimated Cases": null,
-            "Design": "Case-Control",
-            "Timing": "Retrospective",
-            "Continent": "Europe",
-            "Stage": "",
-            "Quality %": 80.0,
-            "Quality Score": "Moderate",
-            "comparison_type": "per SD increase",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Unclear",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Unclear",
-                "q10": "Yes"
-            },
-            "exposure_measurement_type": "human_biospecimen",
-            "exposure_measurement_supporting_text": "11 single nucleotide polymorphisms (SNPs) robustly correlated with plasma VitC levels were extracted from the latest genome-wide association study (GWAS)",
-            "extraction_supporting_text": {
-                "sample_size": "Genetic data of EC were obtained from the Endometrial Cancer Association Consortium (ECAC) (12,906 cases and 108,979 controls).",
-                "effect_size": "Genetically predicted higher plasma VitC levels (per 1 SD increase, approximately 20 \u03bcmol/L) were causally associated with an increased risk of EC overall [odds ratio (OR) 1.374, 95% CI 1.128-1.674, p = 0.0016]",
-                "effect_direction": "causally associated with an increased risk of EC overall",
-                "p_value": "p = 0.0016",
-                "confidence_interval": "95% CI 1.128-1.674",
-                "outcome_definition": "risk of endometrial cancer (EC)",
-                "exposure_definition": "circulating vitamin C (VitC) levels"
-            }
-        },
-        {
             "Study": "McCann SE et al. (2000) [PMID: 11142531]",
             "PMID": "11142531",
             "Effect Size": 0.5,
@@ -99,20 +51,12 @@
             "P Value": 0.005601420919945472
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>McCann SE et al. (2000) [PMID: 11142531]</th>\n      <td>-0.6259</td>\n      <td>0.2326</td>\n      <td>-1.0818</td>\n      <td>-0.1701</td>\n      <td>232.0</td>\n      <td>871.0</td>\n    </tr>\n    <tr>\n      <th>Peng H et al. (2022) [PMID: 35402429]</th>\n      <td>0.2703</td>\n      <td>0.0835</td>\n      <td>0.1066</td>\n      <td>0.4339</td>\n      <td>12906.0</td>\n      <td>120885.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>232.0</td>\n      <td>871.0</td>\n      <td>0.534759</td>\n      <td>0.330033</td>\n      <td>0.821355</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.86,
-        "ci_low": 0.36,
-        "ci_upp": 2.07,
-        "pi_low": null,
-        "pi_upp": null,
-        "interpretation": "Not statistically significant",
-        "i2": 92.4,
-        "tau2": 0.37,
-        "eggers_p": null,
-        "funnel_interpretation": "Insufficient studies to perform formal publication bias testing.",
-        "loo_results": [],
-        "results_interpretation": "The pooled analysis of 2 studies yielded an effect size of 0.86 (95% CI: 0.36\u20132.07), indicating no statistically significant association between Vitamin C and uterine cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 92.40%), reflecting highly inconsistent results across studies."
+        "pooled_es": 0.53,
+        "ci_low": 0.33,
+        "ci_upp": 0.82,
+        "interpretation": "statistically significant (decreased risk/odds)"
     },
     "screening_stats": {
         "llm_screened_out": 26,
@@ -131,8 +75,8 @@
         },
         "extracted": 16
     },
-    "plot_url": "static/vitamin_c/forest_uterine_cancer_incidence_primary.png?t=5535",
-    "funnel_plot_url": "static/vitamin_c/funnel_uterine_cancer_incidence_primary.png?t=9356",
+    "plot_url": "static/vitamin_c/forest_uterine_cancer_incidence_primary.png?t=6958",
+    "funnel_plot_url": "static/vitamin_c/funnel_uterine_cancer_incidence_primary.png?t=4944",
     "baujat_plot_url": null,
     "last_run": "2026-06-15 16:00:23"
 }

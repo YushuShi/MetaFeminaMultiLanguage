@@ -36,6 +36,48 @@ class CuratedExclusionTests(unittest.TestCase):
 
         self.assertEqual(filtered["PMID"].tolist(), ["20410093"])
 
+    def test_genotype_and_family_history_records_are_globally_excluded(self):
+        for pmid in ("30624689", "16599372", "8547538"):
+            self.assertTrue(
+                meta_analysis.is_curated_meta_analysis_exclusion(
+                    pmid, "Breast cancer", "vitamin_e", "Incidence"
+                )
+            )
+            self.assertTrue(
+                meta_analysis.is_curated_meta_analysis_exclusion(
+                    pmid, "Uterine cancer", "vitamin_e", "Incidence"
+                )
+            )
+
+    def test_mendelian_randomization_records_are_removed_from_meta_analysis(self):
+        frame = pd.DataFrame([
+            {
+                "PMID": "mr-study",
+                "Design": "Two-sample Mendelian randomization",
+                "Reference": "A causal analysis",
+            },
+            {
+                "PMID": "genetic-proxy-study",
+                "Reference": "Genetically predicted nutrient levels and cancer risk",
+            },
+            {
+                "PMID": "instrumental-variable-study",
+                "Reference": "Causal associations between blood metabolites and cancer",
+                "exposure_measurement_supporting_text": "Instrumental variables were selected from GWAS data.",
+            },
+            {
+                "PMID": "observational-study",
+                "Design": "Prospective cohort",
+                "Reference": "Dietary exposure and cancer risk",
+            },
+        ])
+
+        filtered = meta_analysis.filter_curated_meta_analysis_exclusions(
+            frame, "Breast cancer", "vitamin_e", "Incidence"
+        )
+
+        self.assertEqual(filtered["PMID"].tolist(), ["observational-study"])
+
     def test_curated_vitamin_e_and_antioxidant_exclusions(self):
         for pmid in ("12131659", "12891146", "30373451"):
             self.assertTrue(
@@ -73,7 +115,7 @@ class CuratedExclusionTests(unittest.TestCase):
                 )
             )
 
-    def test_dietary_measurement_corrections_and_zhu_excerpts_are_saved(self):
+    def test_dietary_measurement_corrections_are_saved_after_exclusions(self):
         cache_path = (
             Path(__file__).resolve().parents[1]
             / "Cached_results"
@@ -83,20 +125,10 @@ class CuratedExclusionTests(unittest.TestCase):
         payload = json.loads(cache_path.read_text(encoding="utf-8"))
         by_pmid = {str(study.get("PMID")): study for study in payload["studies"]}
 
-        for pmid in ("11713032", "16599372", "19358284"):
+        for pmid in ("11713032", "19358284"):
             self.assertEqual(by_pmid[pmid]["exposure_measurement_type"], "dietary_intake")
 
-        zhu_support = by_pmid["16599372"]["extraction_supporting_text"]
-        for field in (
-            "sample_size",
-            "effect_size",
-            "effect_direction",
-            "p_value",
-            "confidence_interval",
-            "outcome_definition",
-            "exposure_definition",
-        ):
-            self.assertTrue(zhu_support[field])
+        self.assertTrue({"30624689", "16599372", "8547538"}.isdisjoint(by_pmid))
 
 
 if __name__ == "__main__":

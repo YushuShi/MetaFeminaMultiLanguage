@@ -97,7 +97,8 @@
                 "confidence_interval": "95% CI = 0.53-1.35",
                 "outcome_definition": "366 cases of incident invasive breast cancer",
                 "exposure_definition": "Serum ... retinol concentrations were assessed by high pressure liquid chromatography"
-            }
+            },
+            "P Value": null
         },
         {
             "Study": "Kabat GC et al. (2009) [PMID: 19474140]",
@@ -146,7 +147,8 @@
                 "confidence_interval": "95% CI: 0.34, 0.90",
                 "outcome_definition": "risk of invasive breast cancer",
                 "exposure_definition": "baseline serum alpha-carotene concentrations"
-            }
+            },
+            "P Value": null
         },
         {
             "Study": "Bakker MF et al. (2016) [PMID: 26791185]",
@@ -194,7 +196,8 @@
                 "confidence_interval": "OR: 2.37; 95% CI: 1.20, 4.67",
                 "outcome_definition": "risk of breast cancer",
                 "exposure_definition": "Prediagnostic samples were analyzed for ... retinol ..."
-            }
+            },
+            "P Value": null
         },
         {
             "Study": "Pouchieu C et al. (2014) [PMID: 25072980]",
@@ -242,7 +245,8 @@
                 "confidence_interval": "95% CI = 0.71-0.96",
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "Plasma \u03b2-cryptoxanthin concentration"
-            }
+            },
+            "P Value": null
         },
         {
             "Study": "Wald NJ et al. (1988) [PMID: 3358917]",
@@ -339,7 +343,8 @@
                 "confidence_interval": "95% CI: 0.67-1.00",
                 "outcome_definition": "breast cancer risks among Black women by estrogen receptor (ER) and menopausal statuses",
                 "exposure_definition": "dietary vitamin A (retinol and carotenoids) intake"
-            }
+            },
+            "P Value": null
         },
         {
             "Study": "Hunter DJ et al. (1993) [PMID: 8292129]",
@@ -388,7 +393,8 @@
                 "confidence_interval": "relative risk was 0.84 (95 percent confidence interval, 0.71 to 0.98)",
                 "outcome_definition": "Breast cancer was diagnosed in 1439 women during eight years of follow-up.",
                 "exposure_definition": "intakes of vitamins C, E, and A from foods and supplements were assessed"
-            }
+            },
+            "P Value": null
         },
         {
             "Study": "Mignone LI et al. (2009) [PMID: 19330841]",
@@ -436,7 +442,8 @@
                 "confidence_interval": "95% CI: 0.68-0.98",
                 "outcome_definition": "incident invasive breast cancer",
                 "exposure_definition": "high levels of vitamin A"
-            }
+            },
+            "P Value": null
         },
         {
             "Study": "Cho E et al. (2003) [PMID: 12917201]",
@@ -485,7 +492,8 @@
                 "confidence_interval": "0.28 (95% confidence interval 0.12-0.62)",
                 "outcome_definition": "714 incident cases of invasive breast cancer",
                 "exposure_definition": "intake of vitamin A, including preformed vitamin A and carotenoids"
-            }
+            },
+            "P Value": null
         },
         {
             "Study": "Ikeda S et al. (2025) [PMID: 40944135]",
@@ -583,7 +591,8 @@
                 "confidence_interval": "1.07 (0.64-1.77)",
                 "outcome_definition": "biennial follow-up information about incident BC diagnosis was collected. Cases were ascertained through revision of medical charts and consultation of the National Death Index.",
                 "exposure_definition": "dietary intake of vitamins A, C, and E, selenium, and zinc"
-            }
+            },
+            "P Value": null
         },
         {
             "Study": "Katsouyanni K et al. (1988) [PMID: 3334945]",
@@ -731,183 +740,121 @@
                 "exposure_definition": "Serum samples were analyzed for retinol ... by HPLC."
             },
             "P Value": 0.0523924062731236
-        },
-        {
-            "Study": "Zhao H et al. (2022) [PMID: 35027466]",
-            "PMID": "35027466",
-            "Effect Size": 0.87,
-            "Lower CI": 0.49,
-            "Upper CI": 1.55,
-            "Population": "General",
-            "Reference": "Genetically Predicted Circulating Levels of Antioxidants and Risk of Breast and Ovarian Cancer.",
-            "Authors": "Zhao H, Zhu J, Tse LA, Kinra S, Li Y",
-            "Journal": "Cancer prevention research (Philadelphia, Pa.)",
-            "Year": "2022",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/35027466/",
-            "Effect Type": "OR",
-            "SE": 0.27040816326530615,
-            "Sample Size": 228951,
-            "Cases": 122977.0,
-            "Estimated Cases": null,
-            "Design": "Case-Control",
-            "Timing": "Retrospective",
-            "Continent": "Europe",
-            "Stage": "",
-            "Quality %": 90.0,
-            "Quality Score": "Good",
-            "comparison_type": "Continuous",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Unclear",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Yes",
-                "q10": "Yes"
-            },
-            "exposure_measurement_type": "human_biospecimen",
-            "exposure_measurement_supporting_text": "genetically predicted circulating antioxidants ... assessed by absolute levels [retinol: OR, 0.87; 95% CI, 0.49-1.55; P = 0.645]",
-            "extraction_supporting_text": {
-                "sample_size": "Breast (122,977 cases and 105,974 controls)",
-                "effect_size": "retinol: OR, 0.87; 95% confidence interval (CI), 0.49-1.55; P = 0.645",
-                "effect_direction": "No evidence of causal association between genetically predicted circulating antioxidants and breast cancer",
-                "p_value": "P = 0.645",
-                "confidence_interval": "95% confidence interval (CI), 0.49-1.55",
-                "outcome_definition": "risk of breast and ovarian cancer",
-                "exposure_definition": "genetically predicted circulating antioxidants ... retinol"
-            }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Cho E et al. (2003) [PMID: 12917201]</th>\n      <td>-1.2730</td>\n      <td>0.4189</td>\n      <td>-2.0941</td>\n      <td>-0.4519</td>\n      <td>714.0</td>\n      <td>90655</td>\n    </tr>\n    <tr>\n      <th>Katsouyanni K et al. (1988) [PMID: 3334945]</th>\n      <td>-0.7037</td>\n      <td>0.2733</td>\n      <td>-1.2393</td>\n      <td>-0.1682</td>\n      <td>120.0</td>\n      <td>240</td>\n    </tr>\n    <tr>\n      <th>Ching S et al. (2002) [PMID: 11823595]</th>\n      <td>-0.5718</td>\n      <td>0.3019</td>\n      <td>-1.1635</td>\n      <td>0.0198</td>\n      <td>153.0</td>\n      <td>304</td>\n    </tr>\n    <tr>\n      <th>Kabat GC et al. (2009) [PMID: 19474140]</th>\n      <td>-0.5671</td>\n      <td>0.2385</td>\n      <td>-1.0346</td>\n      <td>-0.0996</td>\n      <td>190.0</td>\n      <td>5450</td>\n    </tr>\n    <tr>\n      <th>Zhang S et al. (1997) [PMID: 9280184]</th>\n      <td>-0.3041</td>\n      <td>0.4565</td>\n      <td>-1.1987</td>\n      <td>0.5906</td>\n      <td>46.0</td>\n      <td>109</td>\n    </tr>\n    <tr>\n      <th>Bitsie KR et al. (2021) [PMID: 34494098]</th>\n      <td>-0.1748</td>\n      <td>0.0910</td>\n      <td>-0.3531</td>\n      <td>0.0035</td>\n      <td>3564.0</td>\n      <td>15407</td>\n    </tr>\n    <tr>\n      <th>Mignone LI et al. (2009) [PMID: 19330841]</th>\n      <td>-0.1748</td>\n      <td>0.0831</td>\n      <td>-0.3376</td>\n      <td>-0.0120</td>\n      <td>5707.0</td>\n      <td>12096</td>\n    </tr>\n    <tr>\n      <th>Pouchieu C et al. (2014) [PMID: 25072980]</th>\n      <td>-0.1640</td>\n      <td>0.0685</td>\n      <td>-0.2982</td>\n      <td>-0.0298</td>\n      <td>159.0</td>\n      <td>318</td>\n    </tr>\n    <tr>\n      <th>Hunter DJ et al. (1993) [PMID: 8292129]</th>\n      <td>-0.1744</td>\n      <td>0.0822</td>\n      <td>-0.3355</td>\n      <td>-0.0132</td>\n      <td>1439.0</td>\n      <td>89494</td>\n    </tr>\n    <tr>\n      <th>Maillard V et al. (2010) [PMID: 20039325]</th>\n      <td>-0.1428</td>\n      <td>0.2111</td>\n      <td>-0.5565</td>\n      <td>0.2709</td>\n      <td>366.0</td>\n      <td>19934</td>\n    </tr>\n    <tr>\n      <th>Zhao H et al. (2022) [PMID: 35027466]</th>\n      <td>-0.1222</td>\n      <td>0.2587</td>\n      <td>-0.6292</td>\n      <td>0.3847</td>\n      <td>122977.0</td>\n      <td>228951</td>\n    </tr>\n    <tr>\n      <th>Wald NJ et al. (1988) [PMID: 3358917]</th>\n      <td>0.0000</td>\n      <td>0.1138</td>\n      <td>-0.2231</td>\n      <td>0.2231</td>\n      <td>1954.0</td>\n      <td>5851</td>\n    </tr>\n    <tr>\n      <th>Fernandez-Lazaro CI et al. (2021) [PMID: 33668391]</th>\n      <td>0.0629</td>\n      <td>0.2400</td>\n      <td>-0.4075</td>\n      <td>0.5333</td>\n      <td>107.0</td>\n      <td>9983</td>\n    </tr>\n    <tr>\n      <th>Verhoeven DT et al. (1997) [PMID: 9000614]</th>\n      <td>0.2151</td>\n      <td>0.2017</td>\n      <td>-0.1802</td>\n      <td>0.6104</td>\n      <td>650.0</td>\n      <td>62573</td>\n    </tr>\n    <tr>\n      <th>Ikeda S et al. (2025) [PMID: 40944135]</th>\n      <td>0.5936</td>\n      <td>0.0844</td>\n      <td>0.4282</td>\n      <td>0.7590</td>\n      <td>3758.0</td>\n      <td>6753</td>\n    </tr>\n    <tr>\n      <th>Bakker MF et al. (2016) [PMID: 26791185]</th>\n      <td>0.6990</td>\n      <td>0.2537</td>\n      <td>0.2018</td>\n      <td>1.1962</td>\n      <td>1502.0</td>\n      <td>3004</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Cho E et al. (2003) [PMID: 12917201]</th>\n      <td>-1.2730</td>\n      <td>0.4189</td>\n      <td>-2.0941</td>\n      <td>-0.4519</td>\n      <td>714.0</td>\n      <td>90655.0</td>\n    </tr>\n    <tr>\n      <th>Katsouyanni K et al. (1988) [PMID: 3334945]</th>\n      <td>-0.7037</td>\n      <td>0.2733</td>\n      <td>-1.2393</td>\n      <td>-0.1682</td>\n      <td>120.0</td>\n      <td>240.0</td>\n    </tr>\n    <tr>\n      <th>Ching S et al. (2002) [PMID: 11823595]</th>\n      <td>-0.5718</td>\n      <td>0.3019</td>\n      <td>-1.1635</td>\n      <td>0.0198</td>\n      <td>153.0</td>\n      <td>304.0</td>\n    </tr>\n    <tr>\n      <th>Kabat GC et al. (2009) [PMID: 19474140]</th>\n      <td>-0.5671</td>\n      <td>0.2385</td>\n      <td>-1.0346</td>\n      <td>-0.0996</td>\n      <td>190.0</td>\n      <td>5450.0</td>\n    </tr>\n    <tr>\n      <th>Bitsie KR et al. (2021) [PMID: 34494098]</th>\n      <td>-0.1748</td>\n      <td>0.0910</td>\n      <td>-0.3531</td>\n      <td>0.0035</td>\n      <td>3564.0</td>\n      <td>15407.0</td>\n    </tr>\n    <tr>\n      <th>Mignone LI et al. (2009) [PMID: 19330841]</th>\n      <td>-0.1748</td>\n      <td>0.0831</td>\n      <td>-0.3376</td>\n      <td>-0.0120</td>\n      <td>5707.0</td>\n      <td>12096.0</td>\n    </tr>\n    <tr>\n      <th>Pouchieu C et al. (2014) [PMID: 25072980]</th>\n      <td>-0.1640</td>\n      <td>0.0685</td>\n      <td>-0.2982</td>\n      <td>-0.0298</td>\n      <td>159.0</td>\n      <td>318.0</td>\n    </tr>\n    <tr>\n      <th>Hunter DJ et al. (1993) [PMID: 8292129]</th>\n      <td>-0.1744</td>\n      <td>0.0822</td>\n      <td>-0.3355</td>\n      <td>-0.0132</td>\n      <td>1439.0</td>\n      <td>89494.0</td>\n    </tr>\n    <tr>\n      <th>Maillard V et al. (2010) [PMID: 20039325]</th>\n      <td>-0.1428</td>\n      <td>0.2111</td>\n      <td>-0.5565</td>\n      <td>0.2709</td>\n      <td>366.0</td>\n      <td>19934.0</td>\n    </tr>\n    <tr>\n      <th>Wald NJ et al. (1988) [PMID: 3358917]</th>\n      <td>0.0000</td>\n      <td>0.1138</td>\n      <td>-0.2231</td>\n      <td>0.2231</td>\n      <td>1954.0</td>\n      <td>5851.0</td>\n    </tr>\n    <tr>\n      <th>Fernandez-Lazaro CI et al. (2021) [PMID: 33668391]</th>\n      <td>0.0629</td>\n      <td>0.2400</td>\n      <td>-0.4075</td>\n      <td>0.5333</td>\n      <td>107.0</td>\n      <td>9983.0</td>\n    </tr>\n    <tr>\n      <th>Verhoeven DT et al. (1997) [PMID: 9000614]</th>\n      <td>0.2151</td>\n      <td>0.2017</td>\n      <td>-0.1802</td>\n      <td>0.6104</td>\n      <td>650.0</td>\n      <td>62573.0</td>\n    </tr>\n    <tr>\n      <th>Ikeda S et al. (2025) [PMID: 40944135]</th>\n      <td>0.5936</td>\n      <td>0.0844</td>\n      <td>0.4282</td>\n      <td>0.7590</td>\n      <td>3758.0</td>\n      <td>6753.0</td>\n    </tr>\n    <tr>\n      <th>Bakker MF et al. (2016) [PMID: 26791185]</th>\n      <td>0.6990</td>\n      <td>0.2537</td>\n      <td>0.2018</td>\n      <td>1.1962</td>\n      <td>1502.0</td>\n      <td>3004.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.89,
+        "pooled_es": 0.9,
         "ci_low": 0.74,
-        "ci_upp": 1.07,
-        "pi_low": 0.44,
-        "pi_upp": 1.81,
+        "ci_upp": 1.09,
+        "pi_low": 0.43,
+        "pi_upp": 1.88,
         "interpretation": "Not statistically significant",
-        "i2": 85.11,
+        "i2": 87.04,
         "tau2": 0.1,
-        "eggers_p": 0.4612744847090421,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.4613). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "eggers_p": 0.5117296187637113,
+        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.5117). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
         "loo_results": [
             {
                 "omitted": "Cho E et al. (2003) [PMID: 12917201]",
-                "pooled_es": 0.9297527758476313,
-                "ci_low": 0.769582667789622,
-                "ci_upp": 1.1232584365227472,
+                "pooled_es": 0.9386778351788762,
+                "ci_low": 0.7591548515433892,
+                "ci_upp": 1.1606539515156369,
                 "is_significant": false
             },
             {
                 "omitted": "Katsouyanni K et al. (1988) [PMID: 3334945]",
-                "pooled_es": 0.9230282894949499,
-                "ci_low": 0.7484416799282105,
-                "ci_upp": 1.1383401620413414,
+                "pooled_es": 0.9311685081209706,
+                "ci_low": 0.7350307619597023,
+                "ci_upp": 1.1796442208819704,
                 "is_significant": false
             },
             {
                 "omitted": "Ching S et al. (2002) [PMID: 11823595]",
-                "pooled_es": 0.9137609045448194,
-                "ci_low": 0.736699061293802,
-                "ci_upp": 1.133378654247501,
+                "pooled_es": 0.9209858521481069,
+                "ci_low": 0.7221648671755446,
+                "ci_upp": 1.1745447312805781,
                 "is_significant": false
             },
             {
                 "omitted": "Kabat GC et al. (2009) [PMID: 19474140]",
-                "pooled_es": 0.9186136565086331,
-                "ci_low": 0.7409734606095251,
-                "ci_upp": 1.1388411256052393,
-                "is_significant": false
-            },
-            {
-                "omitted": "Zhang S et al. (1997) [PMID: 9280184]",
-                "pooled_es": 0.898005386566034,
-                "ci_low": 0.7208079619537382,
-                "ci_upp": 1.1187635498862152,
+                "pooled_es": 0.9262821359144786,
+                "ci_low": 0.7266858956894757,
+                "ci_upp": 1.1807007682462642,
                 "is_significant": false
             },
             {
                 "omitted": "Bitsie KR et al. (2021) [PMID: 34494098]",
-                "pooled_es": 0.8940671148215222,
-                "ci_low": 0.7116069923343944,
-                "ci_upp": 1.123311061324777,
+                "pooled_es": 0.8995157864433839,
+                "ci_low": 0.6944055311227312,
+                "ci_upp": 1.1652105488742888,
                 "is_significant": false
             },
             {
                 "omitted": "Mignone LI et al. (2009) [PMID: 19330841]",
-                "pooled_es": 0.893472593143993,
-                "ci_low": 0.7108506851977122,
-                "ci_upp": 1.1230111911299885,
+                "pooled_es": 0.8989024316146755,
+                "ci_low": 0.6935639101883776,
+                "ci_upp": 1.165034064911639,
                 "is_significant": false
             },
             {
                 "omitted": "Pouchieu C et al. (2014) [PMID: 25072980]",
-                "pooled_es": 0.8909690851868455,
-                "ci_low": 0.7081571758432713,
-                "ci_upp": 1.120974181774546,
+                "pooled_es": 0.8962675301203161,
+                "ci_low": 0.6906151987483209,
+                "ci_upp": 1.1631592918949278,
                 "is_significant": false
             },
             {
                 "omitted": "Hunter DJ et al. (1993) [PMID: 8292129]",
-                "pooled_es": 0.8933622984956959,
-                "ci_low": 0.7107272462734358,
-                "ci_upp": 1.122928944342826,
+                "pooled_es": 0.89878642395859,
+                "ci_low": 0.6934279693597007,
+                "ci_upp": 1.1649617142472553,
                 "is_significant": false
             },
             {
                 "omitted": "Maillard V et al. (2010) [PMID: 20039325]",
-                "pooled_es": 0.8939362567684024,
-                "ci_low": 0.7140773613012531,
-                "ci_upp": 1.1190972777919668,
-                "is_significant": false
-            },
-            {
-                "omitted": "Zhao H et al. (2022) [PMID: 35027466]",
-                "pooled_es": 0.8928963373405973,
-                "ci_low": 0.714004926915773,
-                "ci_upp": 1.1166083582645951,
+                "pooled_es": 0.8991073821130675,
+                "ci_low": 0.6972679614284452,
+                "ci_upp": 1.1593736257637766,
                 "is_significant": false
             },
             {
                 "omitted": "Wald NJ et al. (1988) [PMID: 3358917]",
-                "pooled_es": 0.8816660879505189,
-                "ci_low": 0.7026608107784064,
-                "ci_upp": 1.1062735799664731,
+                "pooled_es": 0.885799311400105,
+                "ci_low": 0.6848415518436672,
+                "ci_upp": 1.1457254863764672,
                 "is_significant": false
             },
             {
                 "omitted": "Fernandez-Lazaro CI et al. (2021) [PMID: 33668391]",
-                "pooled_es": 0.8829963726440027,
-                "ci_low": 0.7066702776008813,
-                "ci_upp": 1.1033187878644892,
+                "pooled_es": 0.8869257895983972,
+                "ci_low": 0.6892798911051188,
+                "ci_upp": 1.141245184149401,
                 "is_significant": false
             },
             {
                 "omitted": "Verhoeven DT et al. (1997) [PMID: 9000614]",
-                "pooled_es": 0.8730238430478883,
-                "ci_low": 0.7007334124476066,
-                "ci_upp": 1.0876755938722855,
+                "pooled_es": 0.8759287642785245,
+                "ci_low": 0.6829088767627214,
+                "ci_upp": 1.123504505795268,
                 "is_significant": false
             },
             {
                 "omitted": "Ikeda S et al. (2025) [PMID: 40944135]",
-                "pooled_es": 0.8555955023684237,
-                "ci_low": 0.7262585673486812,
-                "ci_upp": 1.0079656152567174,
+                "pooled_es": 0.8554982651265433,
+                "ci_low": 0.7102576350104747,
+                "ci_upp": 1.030439161169639,
                 "is_significant": false
             },
             {
                 "omitted": "Bakker MF et al. (2016) [PMID: 26791185]",
-                "pooled_es": 0.8552549617464357,
-                "ci_low": 0.702812410300862,
-                "ci_upp": 1.040762853460102,
+                "pooled_es": 0.8558555834266673,
+                "ci_low": 0.6855584147866275,
+                "ci_upp": 1.0684556762541968,
                 "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled analysis of 16 studies yielded an effect size of 0.89 (95% CI: 0.74\u20131.07), indicating no statistically significant association between Vitamin A and breast cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 85.11%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 14 studies yielded an effect size of 0.9 (95% CI: 0.74\u20131.09), indicating no statistically significant association between vitamin_a and breast cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 87.04%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 630,
@@ -926,8 +873,8 @@
         },
         "extracted": 23
     },
-    "plot_url": "static/vitamin_a/forest_breast_cancer_incidence_primary.png?t=8526",
-    "funnel_plot_url": "static/vitamin_a/funnel_breast_cancer_incidence_primary.png?t=424",
-    "baujat_plot_url": "static/vitamin_a/baujat_breast_cancer_incidence_primary.png?t=7826",
+    "plot_url": "static/vitamin_a/forest_breast_cancer_incidence_primary.png?t=958",
+    "funnel_plot_url": "static/vitamin_a/funnel_breast_cancer_incidence_primary.png?t=8049",
+    "baujat_plot_url": "static/vitamin_a/baujat_breast_cancer_incidence_primary.png?t=6526",
     "last_run": "2026-06-15 08:32:34"
 }

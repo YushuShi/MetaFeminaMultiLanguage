@@ -47,7 +47,9 @@
                 "confidence_interval": "4.0 [95% confidence interval (CI), 1.3-11.8)",
                 "outcome_definition": "diagnosed with breast cancer up to 10 years later (median, 2.9 years)",
                 "exposure_definition": "relationship of serum DHEA...with breast cancer risk"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Kaaks R et al. (2005) [PMID: 16322344]",
@@ -96,7 +98,8 @@
                 "outcome_definition": "677 postmenopausal women who subsequently developed breast cancer",
                 "exposure_definition": "Levels of DHEA sulphate (DHEAS) were measured in prediagnostic serum samples."
             },
-            "P Value": 0.0012831269612271195
+            "P Value": 0.0012831269612271195,
+            "exclusions": null
         },
         {
             "Study": "Kaaks R et al. (2005) [PMID: 15900045]",
@@ -144,7 +147,9 @@
                 "confidence_interval": "95% confidence interval [CI] = 1.02 to 2.14",
                 "outcome_definition": "subsequent breast cancer risk",
                 "exposure_definition": "Levels of DHEAS ... were measured in single prediagnostic serum samples"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Missmer SA et al. (2004) [PMID: 15601642]",
@@ -193,7 +198,8 @@
                 "outcome_definition": "risk of breast cancer among postmenopausal women",
                 "exposure_definition": "Endogenous hormone levels were measured in blood plasma."
             },
-            "P Value": 0.004475588766656241
+            "P Value": 0.004475588766656241,
+            "exclusions": null
         },
         {
             "Study": "Zeleniuch-Jacquotte A et al. (2005) [PMID: 15540225]",
@@ -242,7 +248,8 @@
                 "outcome_definition": "risk of breast carcinoma in situ",
                 "exposure_definition": "postmenopausal serum levels of sex hormones"
             },
-            "P Value": 0.9801940931960837
+            "P Value": 0.9801940931960837,
+            "exclusions": null
         },
         {
             "Study": "Sturgeon SR et al. (2004) [PMID: 14970734]",
@@ -291,7 +298,8 @@
                 "outcome_definition": "cases of breast cancer under age 45 were identified",
                 "exposure_definition": "levels of serum ... dehydroepiandrosterone (DHEA)"
             },
-            "P Value": 0.025730278758086696
+            "P Value": 0.025730278758086696,
+            "exclusions": null
         },
         {
             "Study": "Zeleniuch-Jacquotte A et al. (2004) [PMID: 14710223]",
@@ -339,7 +347,9 @@
                 "confidence_interval": "1.74 (1.05-2.89)",
                 "outcome_definition": "breast cancer risk in a case-control study nested within the cohort",
                 "exposure_definition": "dehydroepiandrosterone sulphate (DHEAS)"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Key TJ et al. (2013) [PMID: 23890780]",
@@ -388,7 +398,8 @@
                 "outcome_definition": "Breast cancer risk was associated with a doubling in concentrations ... diagnosed before age 50 years.",
                 "exposure_definition": "circulating concentrations of ... androgens ... dehydroepiandrosterone sulphate"
             },
-            "P Value": 0.009837601002752702
+            "P Value": 0.009837601002752702,
+            "exclusions": null
         },
         {
             "Study": "Fortner RT et al. (2013) [PMID: 23497468]",
@@ -436,7 +447,9 @@
                 "confidence_interval": "DHEAS OR: 1.3 (0.8 to 2.0)",
                 "outcome_definition": "developed breast cancer between 1999 and 2009",
                 "exposure_definition": "dehydroepiandrosterone sulfate (DHEAS)"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Albers FEM et al. (2024) [PMID: 38363402]",
@@ -486,7 +499,8 @@
                 "outcome_definition": "risk ratios for sex-steroid hormone biomarkers in relation to postmenopausal estrogen receptor (ER)-positive breast cancer",
                 "exposure_definition": "per doubling plasma concentration of ... dehydroepiandrosterone"
             },
-            "P Value": 0.061211663211424766
+            "P Value": 0.061211663211424766,
+            "exclusions": null
         },
         {
             "Study": "Albers FE et al. (2023) [PMID: 37886482]",
@@ -536,58 +550,8 @@
                 "outcome_definition": "postmenopausal ER-positive breast cancer",
                 "exposure_definition": "per doubling plasma concentration of ... dehydroepiandrosterone"
             },
-            "exclusions": 2,
-            "P Value": 0.061211663211424766
-        },
-        {
-            "Study": "Nounu A et al. (2022) [PMID: 36209141]",
-            "PMID": "36209141",
-            "Effect Size": 1.09,
-            "Lower CI": 1.03,
-            "Upper CI": 1.16,
-            "Population": "General",
-            "Reference": "Sex steroid hormones and risk of breast cancer: a two-sample Mendelian randomization study.",
-            "Authors": "Nounu A, Kar SP, Relton CL, Richmond RC",
-            "Journal": "Breast cancer research : BCR",
-            "Year": "2022",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/36209141/",
-            "Effect Type": "OR",
-            "SE": 0.03316326530612242,
-            "Sample Size": 228951.0,
-            "Cases": 122977.0,
-            "Estimated Cases": null,
-            "Design": "Mendelian randomization (two-sample, using GWAS summary statistics)",
-            "Timing": "Prospective",
-            "Continent": "Europe",
-            "Stage": "ER+ Breast cancer",
-            "Quality %": 72.7,
-            "Quality Score": "Moderate",
-            "comparison_type": "per SD increase",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Unclear",
-                "q9": "Unclear",
-                "q10": "Unclear",
-                "q11": "Yes"
-            },
-            "exposure_measurement_type": "human_biospecimen",
-            "exposure_measurement_supporting_text": "Genetic instruments for DHEAS were obtained from GWAS; DHEAS measured in human biospecimens.",
-            "extraction_supporting_text": {
-                "sample_size": "DHEAS N: 9722 ... Outcome GWAS summary statistics were obtained from the Breast Cancer Association Consortium (BCAC) for overall BC risk (N: 122,977 cases and 105,974 controls)",
-                "effect_size": "An SD increase in DHEAS also increased ER\u2009+\u2009BC risk (OR 1.09, 95% CI 1.03-1.16).",
-                "effect_direction": "An SD increase in DHEAS also increased ER\u2009+\u2009BC risk",
-                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.004.",
-                "confidence_interval": "OR 1.09, 95% CI 1.03-1.16",
-                "outcome_definition": "Outcome GWAS summary statistics were obtained from the Breast Cancer Association Consortium (BCAC) for overall BC risk (N: 122,977 cases and 105,974 controls) and subtype-specific analyses.",
-                "exposure_definition": "Genetic instruments for ... dehydroepiandrosterone sulphate (DHEAS) ... were obtained from genome-wide association studies (GWAS)"
-            },
-            "P Value": 0.004481607779948184
+            "P Value": 0.061211663211424766,
+            "exclusions": 2.0
         },
         {
             "Study": "Secreto G et al. (1991) [PMID: 2021938]",
@@ -635,7 +599,9 @@
                 "confidence_interval": "2.8 (1.1-7.4)",
                 "outcome_definition": "75 women with breast carcinoma and 150 age-matched healthy controls",
                 "exposure_definition": "Serum levels of ... dehydroepiandrosterone sulfate"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Chatterton RT et al. (2016) [PMID: 26902826]",
@@ -684,7 +650,8 @@
                 "outcome_definition": "Incident breast cancer cases and mammography controls were recruited.",
                 "exposure_definition": "Sex steroids were measured in NAF from the unaffected breasts of cases and one breast of controls."
             },
-            "P Value": 0.0241129302580717
+            "P Value": 0.0241129302580717,
+            "exclusions": null
         },
         {
             "Study": "Watts EL et al. (2025) [PMID: 39383198]",
@@ -733,7 +700,8 @@
                 "outcome_definition": "odds ratios (ORs) and 95% confidence intervals (CIs) of metabolites with postmenopausal breast cancer in a nested case-control study",
                 "exposure_definition": "higher physical activity was associated with lower 16alpha-hydroxy dehydroepiandrosterone 3-sulfate (sulfated steroid)"
             },
-            "P Value": 7.547279233027379e-05
+            "P Value": 7.547279233027379e-05,
+            "exclusions": null
         },
         {
             "Study": "Haiman CA et al. (1999) [PMID: 10070957]",
@@ -751,6 +719,7 @@
             "SE": 0.11989795918367349,
             "Sample Size": "N/A",
             "Cases": "N/A",
+            "Estimated Cases": null,
             "Design": "Case-Control",
             "Timing": "Prospective",
             "Continent": "North America",
@@ -770,11 +739,13 @@
                 "q9": "Unclear",
                 "q10": "Yes"
             },
-            "exclusions": 2,
+            "exposure_measurement_type": null,
+            "exposure_measurement_supporting_text": null,
             "extraction_supporting_text": {
                 "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.242."
             },
-            "P Value": 0.2416582371822193
+            "P Value": 0.2416582371822193,
+            "exclusions": 2.0
         },
         {
             "Study": "McCann SE et al. (2014) [PMID: 24669750]",
@@ -792,6 +763,7 @@
             "SE": 0.6122448979591837,
             "Sample Size": 24,
             "Cases": "NA",
+            "Estimated Cases": null,
             "Design": "Cohort",
             "Timing": "Prospective",
             "Continent": "North America",
@@ -812,8 +784,11 @@
                 "q10": "Yes",
                 "q11": "Yes"
             },
-            "exclusions": 2,
-            "extraction_supporting_text": {}
+            "exposure_measurement_type": null,
+            "exposure_measurement_supporting_text": null,
+            "extraction_supporting_text": {},
+            "P Value": null,
+            "exclusions": 2.0
         },
         {
             "Study": "Boccardo F et al. (1988) [PMID: 2971432]",
@@ -831,6 +806,7 @@
             "SE": 2.5510204081632654e-05,
             "Sample Size": 86,
             "Cases": "Unclear",
+            "Estimated Cases": null,
             "Design": "Cross-Sectional",
             "Timing": "Retrospective",
             "Continent": "North America",
@@ -848,11 +824,13 @@
                 "q7": "Yes",
                 "q8": "Yes"
             },
-            "exclusions": 2,
+            "exposure_measurement_type": null,
+            "exposure_measurement_supporting_text": null,
             "extraction_supporting_text": {
                 "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p<1e-300."
             },
-            "P Value": 0.0
+            "P Value": 0.0,
+            "exclusions": 2.0
         },
         {
             "Study": "Toh YL et al. (2019) [PMID: 30892712]",
@@ -870,6 +848,7 @@
             "SE": 0.22448979591836735,
             "Sample Size": 81,
             "Cases": 0,
+            "Estimated Cases": null,
             "Design": "Cohort",
             "Timing": "Prospective",
             "Continent": "Asia",
@@ -890,11 +869,13 @@
                 "q10": "Yes",
                 "q11": "Yes"
             },
-            "exclusions": 2,
+            "exposure_measurement_type": null,
+            "exposure_measurement_supporting_text": null,
             "extraction_supporting_text": {
                 "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.039."
             },
-            "P Value": 0.038875261776760484
+            "P Value": 0.038875261776760484,
+            "exclusions": 2.0
         },
         {
             "Study": "Wu Y et al. (2019) [PMID: 31694190]",
@@ -912,6 +893,7 @@
             "SE": 5.408163265306122,
             "Sample Size": "NA",
             "Cases": "NA",
+            "Estimated Cases": null,
             "Design": "Cohort",
             "Timing": "Prospective",
             "Continent": "North America",
@@ -932,8 +914,11 @@
                 "q10": "Yes",
                 "q11": "Yes"
             },
-            "exclusions": 2,
-            "extraction_supporting_text": {}
+            "exposure_measurement_type": null,
+            "exposure_measurement_supporting_text": null,
+            "extraction_supporting_text": {},
+            "P Value": null,
+            "exclusions": 2.0
         },
         {
             "Study": "Gan C et al. (2026) [PMID: 41482078]",
@@ -951,6 +936,7 @@
             "SE": 0.2193877551020409,
             "Sample Size": "Not specified",
             "Cases": "Not specified",
+            "Estimated Cases": null,
             "Design": "In vitro",
             "Timing": "Not applicable",
             "Continent": "Not specified",
@@ -968,133 +954,128 @@
                 "q7": "Yes",
                 "q8": "Yes"
             },
-            "exclusions": 2,
+            "exposure_measurement_type": null,
+            "exposure_measurement_supporting_text": null,
             "extraction_supporting_text": {
                 "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=4.111e-106."
             },
-            "P Value": 4.1114381397500566e-106
+            "P Value": 4.1114381397500566e-106,
+            "exclusions": 2.0
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Zeleniuch-Jacquotte A et al. (2005) [PMID: 15540225]</th>\n      <td>-0.0087</td>\n      <td>0.3489</td>\n      <td>-0.6926</td>\n      <td>0.6751</td>\n      <td>69.0</td>\n      <td>203.0</td>\n    </tr>\n    <tr>\n      <th>Nounu A et al. (2022) [PMID: 36209141]</th>\n      <td>0.0745</td>\n      <td>0.0261</td>\n      <td>0.0235</td>\n      <td>0.1256</td>\n      <td>122977.0</td>\n      <td>228951.0</td>\n    </tr>\n    <tr>\n      <th>Albers FEM et al. (2024) [PMID: 38363402]</th>\n      <td>0.1398</td>\n      <td>0.0747</td>\n      <td>-0.0066</td>\n      <td>0.2861</td>\n      <td>-</td>\n      <td>1208.0</td>\n    </tr>\n    <tr>\n      <th>Albers FE et al. (2023) [PMID: 37886482]</th>\n      <td>0.1398</td>\n      <td>0.0747</td>\n      <td>-0.0066</td>\n      <td>0.2861</td>\n      <td>-</td>\n      <td>1208.0</td>\n    </tr>\n    <tr>\n      <th>Key TJ et al. (2013) [PMID: 23890780]</th>\n      <td>0.1351</td>\n      <td>0.0517</td>\n      <td>0.0337</td>\n      <td>0.2366</td>\n      <td>767.0</td>\n      <td>2466.0</td>\n    </tr>\n    <tr>\n      <th>Chatterton RT et al. (2016) [PMID: 26902826]</th>\n      <td>0.1424</td>\n      <td>0.0624</td>\n      <td>0.0201</td>\n      <td>0.2647</td>\n      <td>160.0</td>\n      <td>317.0</td>\n    </tr>\n    <tr>\n      <th>Fortner RT et al. (2013) [PMID: 23497468]</th>\n      <td>0.2241</td>\n      <td>0.1958</td>\n      <td>-0.1598</td>\n      <td>0.6080</td>\n      <td>634.0</td>\n      <td>1898.0</td>\n    </tr>\n    <tr>\n      <th>Watts EL et al. (2025) [PMID: 39383198]</th>\n      <td>0.2494</td>\n      <td>0.0616</td>\n      <td>0.1287</td>\n      <td>0.3701</td>\n      <td>621.0</td>\n      <td>1242.0</td>\n    </tr>\n    <tr>\n      <th>Kaaks R et al. (2005) [PMID: 15900045]</th>\n      <td>0.3315</td>\n      <td>0.1544</td>\n      <td>0.0288</td>\n      <td>0.6342</td>\n      <td>370.0</td>\n      <td>1096.0</td>\n    </tr>\n    <tr>\n      <th>Kaaks R et al. (2005) [PMID: 16322344]</th>\n      <td>0.5247</td>\n      <td>0.1630</td>\n      <td>0.2053</td>\n      <td>0.8441</td>\n      <td>677.0</td>\n      <td>1986.0</td>\n    </tr>\n    <tr>\n      <th>Zeleniuch-Jacquotte A et al. (2004) [PMID: 14710223]</th>\n      <td>0.4620</td>\n      <td>0.2039</td>\n      <td>0.0624</td>\n      <td>0.8617</td>\n      <td>297.0</td>\n      <td>7054.0</td>\n    </tr>\n    <tr>\n      <th>Missmer SA et al. (2004) [PMID: 15601642]</th>\n      <td>0.8329</td>\n      <td>0.2930</td>\n      <td>0.2586</td>\n      <td>1.4072</td>\n      <td>322.0</td>\n      <td>965.0</td>\n    </tr>\n    <tr>\n      <th>Sturgeon SR et al. (2004) [PMID: 14970734]</th>\n      <td>0.8838</td>\n      <td>0.3963</td>\n      <td>0.1071</td>\n      <td>1.6604</td>\n      <td>169.0</td>\n      <td>364.0</td>\n    </tr>\n    <tr>\n      <th>Secreto G et al. (1991) [PMID: 2021938]</th>\n      <td>0.8194</td>\n      <td>0.3351</td>\n      <td>0.1625</td>\n      <td>1.4762</td>\n      <td>75.0</td>\n      <td>225.0</td>\n    </tr>\n    <tr>\n      <th>Dorgan JF et al. (1997) [PMID: 9138660]</th>\n      <td>1.3863</td>\n      <td>0.5627</td>\n      <td>0.2834</td>\n      <td>2.4891</td>\n      <td>71.0</td>\n      <td>213.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Zeleniuch-Jacquotte A et al. (2005) [PMID: 15540225]</th>\n      <td>-0.0087</td>\n      <td>0.3489</td>\n      <td>-0.6926</td>\n      <td>0.6751</td>\n      <td>69.0</td>\n      <td>203.0</td>\n    </tr>\n    <tr>\n      <th>Albers FEM et al. (2024) [PMID: 38363402]</th>\n      <td>0.1398</td>\n      <td>0.0747</td>\n      <td>-0.0066</td>\n      <td>0.2861</td>\n      <td>-</td>\n      <td>1208.0</td>\n    </tr>\n    <tr>\n      <th>Albers FE et al. (2023) [PMID: 37886482]</th>\n      <td>0.1398</td>\n      <td>0.0747</td>\n      <td>-0.0066</td>\n      <td>0.2861</td>\n      <td>-</td>\n      <td>1208.0</td>\n    </tr>\n    <tr>\n      <th>Key TJ et al. (2013) [PMID: 23890780]</th>\n      <td>0.1351</td>\n      <td>0.0517</td>\n      <td>0.0337</td>\n      <td>0.2366</td>\n      <td>767.0</td>\n      <td>2466.0</td>\n    </tr>\n    <tr>\n      <th>Chatterton RT et al. (2016) [PMID: 26902826]</th>\n      <td>0.1424</td>\n      <td>0.0624</td>\n      <td>0.0201</td>\n      <td>0.2647</td>\n      <td>160.0</td>\n      <td>317.0</td>\n    </tr>\n    <tr>\n      <th>Fortner RT et al. (2013) [PMID: 23497468]</th>\n      <td>0.2241</td>\n      <td>0.1958</td>\n      <td>-0.1598</td>\n      <td>0.6080</td>\n      <td>634.0</td>\n      <td>1898.0</td>\n    </tr>\n    <tr>\n      <th>Watts EL et al. (2025) [PMID: 39383198]</th>\n      <td>0.2494</td>\n      <td>0.0616</td>\n      <td>0.1287</td>\n      <td>0.3701</td>\n      <td>621.0</td>\n      <td>1242.0</td>\n    </tr>\n    <tr>\n      <th>Kaaks R et al. (2005) [PMID: 15900045]</th>\n      <td>0.3315</td>\n      <td>0.1544</td>\n      <td>0.0288</td>\n      <td>0.6342</td>\n      <td>370.0</td>\n      <td>1096.0</td>\n    </tr>\n    <tr>\n      <th>Kaaks R et al. (2005) [PMID: 16322344]</th>\n      <td>0.5247</td>\n      <td>0.1630</td>\n      <td>0.2053</td>\n      <td>0.8441</td>\n      <td>677.0</td>\n      <td>1986.0</td>\n    </tr>\n    <tr>\n      <th>Zeleniuch-Jacquotte A et al. (2004) [PMID: 14710223]</th>\n      <td>0.4620</td>\n      <td>0.2039</td>\n      <td>0.0624</td>\n      <td>0.8617</td>\n      <td>297.0</td>\n      <td>7054.0</td>\n    </tr>\n    <tr>\n      <th>Missmer SA et al. (2004) [PMID: 15601642]</th>\n      <td>0.8329</td>\n      <td>0.2930</td>\n      <td>0.2586</td>\n      <td>1.4072</td>\n      <td>322.0</td>\n      <td>965.0</td>\n    </tr>\n    <tr>\n      <th>Sturgeon SR et al. (2004) [PMID: 14970734]</th>\n      <td>0.8838</td>\n      <td>0.3963</td>\n      <td>0.1071</td>\n      <td>1.6604</td>\n      <td>169.0</td>\n      <td>364.0</td>\n    </tr>\n    <tr>\n      <th>Secreto G et al. (1991) [PMID: 2021938]</th>\n      <td>0.8194</td>\n      <td>0.3351</td>\n      <td>0.1625</td>\n      <td>1.4762</td>\n      <td>75.0</td>\n      <td>225.0</td>\n    </tr>\n    <tr>\n      <th>Dorgan JF et al. (1997) [PMID: 9138660]</th>\n      <td>1.3863</td>\n      <td>0.5627</td>\n      <td>0.2834</td>\n      <td>2.4891</td>\n      <td>71.0</td>\n      <td>213.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 1.25,
-        "ci_low": 1.15,
-        "ci_upp": 1.36,
-        "pi_low": 0.97,
-        "pi_upp": 1.61,
+        "pooled_es": 1.29,
+        "ci_low": 1.17,
+        "ci_upp": 1.41,
+        "pi_low": 1.0,
+        "pi_upp": 1.66,
         "interpretation": "Statistically significant (increased risk/odds)",
-        "i2": 62.67,
+        "i2": 51.1,
         "tau2": 0.01,
-        "eggers_p": 6.586804402476428e-05,
-        "funnel_interpretation": "The significant funnel plot asymmetry (egger's p=0.0001) indicates substantial publication bias in this meta-analysis on dehydroepiandrosterone and breast cancer. This specific pattern suggests that smaller studies with smaller or null effects may be underrepresented, compromising the reliability of the pooled estimate and potentially leading to an overestimation of the true association.",
+        "eggers_p": 0.0009428631078015095,
+        "funnel_interpretation": "The significant funnel plot asymmetry (egger's p=0.0009) indicates substantial publication bias in this meta-analysis on dehydroepiandrosterone and breast cancer. This specific pattern suggests that smaller studies with smaller or null effects may be underrepresented, compromising the reliability of the pooled estimate and potentially leading to an overestimation of the true association.",
         "loo_results": [
             {
                 "omitted": "Zeleniuch-Jacquotte A et al. (2005) [PMID: 15540225]",
-                "pooled_es": 1.2582015630410652,
-                "ci_low": 1.1274022362352054,
-                "ci_upp": 1.4041760095539761,
-                "is_significant": true
-            },
-            {
-                "omitted": "Nounu A et al. (2022) [PMID: 36209141]",
-                "pooled_es": 1.2864946104212216,
-                "ci_low": 1.1497304156133905,
-                "ci_upp": 1.4395273536882631,
+                "pooled_es": 1.2950270024330373,
+                "ci_low": 1.1514151903444094,
+                "ci_upp": 1.4565509914186974,
                 "is_significant": true
             },
             {
                 "omitted": "Albers FEM et al. (2024) [PMID: 38363402]",
-                "pooled_es": 1.2740787262762798,
-                "ci_low": 1.1322270348808108,
-                "ci_upp": 1.4337023854236706,
+                "pooled_es": 1.3190688637631738,
+                "ci_low": 1.1617711613131485,
+                "ci_upp": 1.4976638474850892,
                 "is_significant": true
             },
             {
                 "omitted": "Albers FE et al. (2023) [PMID: 37886482]",
-                "pooled_es": 1.2740787262762798,
-                "ci_low": 1.1322270348808108,
-                "ci_upp": 1.4337023854236706,
+                "pooled_es": 1.3190688637631738,
+                "ci_low": 1.1617711613131485,
+                "ci_upp": 1.4976638474850892,
                 "is_significant": true
             },
             {
                 "omitted": "Key TJ et al. (2013) [PMID: 23890780]",
-                "pooled_es": 1.28535893655221,
-                "ci_low": 1.1380224281475533,
-                "ci_upp": 1.4517706812368856,
+                "pooled_es": 1.327748945713635,
+                "ci_low": 1.1672321416986977,
+                "ci_upp": 1.5103398885829673,
                 "is_significant": true
             },
             {
                 "omitted": "Chatterton RT et al. (2016) [PMID: 26902826]",
-                "pooled_es": 1.278139088419628,
-                "ci_low": 1.1338090656868474,
-                "ci_upp": 1.4408418302393087,
+                "pooled_es": 1.323710559183791,
+                "ci_low": 1.163810681563616,
+                "ci_upp": 1.5055796206823917,
                 "is_significant": true
             },
             {
                 "omitted": "Fortner RT et al. (2013) [PMID: 23497468]",
-                "pooled_es": 1.254442305660709,
-                "ci_low": 1.1209754984261573,
-                "ci_upp": 1.4038000834458169,
+                "pooled_es": 1.2929668161194852,
+                "ci_low": 1.1446087762031536,
+                "ci_upp": 1.4605542280845152,
                 "is_significant": true
             },
             {
                 "omitted": "Watts EL et al. (2025) [PMID: 39383198]",
-                "pooled_es": 1.2501693287725653,
-                "ci_low": 1.1114663358289463,
-                "ci_upp": 1.4061814561733867,
+                "pooled_es": 1.3015672962958635,
+                "ci_low": 1.1402952468232261,
+                "ci_upp": 1.4856480648380253,
                 "is_significant": true
             },
             {
                 "omitted": "Kaaks R et al. (2005) [PMID: 15900045]",
-                "pooled_es": 1.2442818147678383,
-                "ci_low": 1.1131919308591074,
-                "ci_upp": 1.3908088907607254,
+                "pooled_es": 1.2823415319439135,
+                "ci_low": 1.1354448708790006,
+                "ci_upp": 1.448242752001915,
                 "is_significant": true
             },
             {
                 "omitted": "Kaaks R et al. (2005) [PMID: 16322344]",
-                "pooled_es": 1.2238867759023717,
-                "ci_low": 1.106844946725953,
-                "ci_upp": 1.3533050357771306,
+                "pooled_es": 1.2558769668329146,
+                "ci_low": 1.1267261334390974,
+                "ci_upp": 1.3998316973506988,
                 "is_significant": true
             },
             {
                 "omitted": "Zeleniuch-Jacquotte A et al. (2004) [PMID: 14710223]",
-                "pooled_es": 1.2384645482830334,
-                "ci_low": 1.1127717902123753,
-                "ci_upp": 1.3783548889760853,
+                "pooled_es": 1.2733385992199786,
+                "ci_low": 1.1337867332399432,
+                "ci_upp": 1.4300671728889973,
                 "is_significant": true
             },
             {
                 "omitted": "Missmer SA et al. (2004) [PMID: 15601642]",
-                "pooled_es": 1.2283330801897994,
-                "ci_low": 1.1164907803749284,
-                "ci_upp": 1.351378965603182,
+                "pooled_es": 1.2579155049744581,
+                "ci_low": 1.137417175353685,
+                "ci_upp": 1.3911794651448857,
                 "is_significant": true
             },
             {
                 "omitted": "Sturgeon SR et al. (2004) [PMID: 14970734]",
-                "pooled_es": 1.237748502847307,
-                "ci_low": 1.1192909163089158,
-                "ci_upp": 1.3687427763220799,
+                "pooled_es": 1.269518173630748,
+                "ci_low": 1.1406701925160334,
+                "ci_upp": 1.4129205827880837,
                 "is_significant": true
             },
             {
                 "omitted": "Secreto G et al. (1991) [PMID: 2021938]",
-                "pooled_es": 1.2345457326984113,
-                "ci_low": 1.117706821336702,
-                "ci_upp": 1.3635983399485139,
+                "pooled_es": 1.2657921574391326,
+                "ci_low": 1.138835721168227,
+                "ci_upp": 1.4069015890991141,
                 "is_significant": true
             },
             {
                 "omitted": "Dorgan JF et al. (1997) [PMID: 9138660]",
-                "pooled_es": 1.2357864427550749,
-                "ci_low": 1.123747277295636,
-                "ci_upp": 1.3589960687357232,
+                "pooled_es": 1.2653462113276468,
+                "ci_low": 1.145548488085148,
+                "ci_upp": 1.3976719895964984,
                 "is_significant": true
             }
         ],
-        "results_interpretation": "The pooled analysis of 15 studies yielded an overall effect size of 1.25 (95% CI: 1.15\u20131.36), suggesting that dehydroepiandrosterone is associated with a higher risk of breast cancer. However, this association should be interpreted with caution, as there was substantial between-study heterogeneity (I\u00b2 = 62.67%), reflecting considerable variability across studies."
+        "results_interpretation": "The pooled analysis of 14 studies yielded an overall effect size of 1.29 (95% CI: 1.17\u20131.41), suggesting that dehydroepiandrosterone is associated with a higher risk of breast cancer. However, this association should be interpreted with caution, as there was substantial between-study heterogeneity (I\u00b2 = 51.10%), reflecting considerable variability across studies."
     },
     "screening_stats": {
         "llm_screened_out": 56,
@@ -1113,8 +1094,8 @@
         },
         "extracted": 18
     },
-    "plot_url": "static/dehydroepiandrosterone/forest_breast_cancer_incidence_primary.png?t=2784",
-    "funnel_plot_url": "static/dehydroepiandrosterone/funnel_breast_cancer_incidence_primary.png?t=677",
-    "baujat_plot_url": "static/dehydroepiandrosterone/baujat_breast_cancer_incidence_primary.png?t=2246",
+    "plot_url": "static/dehydroepiandrosterone/forest_breast_cancer_incidence_primary.png?t=9878",
+    "funnel_plot_url": "static/dehydroepiandrosterone/funnel_breast_cancer_incidence_primary.png?t=6263",
+    "baujat_plot_url": "static/dehydroepiandrosterone/baujat_breast_cancer_incidence_primary.png?t=7829",
     "last_run": "2026-06-14 22:59:53"
 }

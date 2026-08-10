@@ -36,7 +36,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "b87e2837f83c0892f5c2b809ee6ef6ccaa501c71a9c5b7af53a222d685f0cb7a",
+  "input_fingerprint": "1274fc3bbfec8520bd98ffd0de77155adb5023f9ca804c45685e572cc9c1e1a1",
   "plot_url": "Plot/subcategories/ovary/endometrioid_carcinoma/vitamin_d_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/ovary/endometrioid_carcinoma/vitamin_d_baujat.png",
@@ -51,7 +51,7 @@
     "subcategory_label": "Endometrioid carcinoma",
     "subcategory_slug": "endometrioid_carcinoma"
   },
-  "skipped_annotation_count_for_build": 1,
+  "skipped_annotation_count_for_build": 8,
   "studies": [
     {
       "Authors": "Merritt MA, Cramer DW, Vitonis AF, Titus LJ, Terry KL",
@@ -86,6 +86,7 @@
       "cases": 305.0,
       "comparison_type": "Q4 vs Q1",
       "context_id": "22740148|ovary|vitamin_d|0",
+      "design": "Case-Control",
       "effect_size": 0.55,
       "effect_type": "OR",
       "evidence_locator": "For endometrioid tumors, total vitamin D Q4 vs Q1 OR=0.55, 95% CI 0.39–0.80.",

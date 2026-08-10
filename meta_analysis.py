@@ -77,6 +77,29 @@ def is_eligible_effect_type(effect_type):
     return normalize_effect_type(effect_type) is not None
 
 
+MENDELIAN_RANDOMIZATION_PATTERN = re.compile(
+    r"\b(?:mendelian\s+randomi[sz](?:ation|ed)|genetically\s+predicted|"
+    r"genetic\s+risk\s+score|instrumental\s+variables?)\b",
+    re.IGNORECASE,
+)
+
+
+def is_mendelian_randomization_study(study):
+    """Return whether a saved record is a Mendelian-randomization study."""
+    if study is None:
+        return False
+    getter = study.get if hasattr(study, "get") else lambda _key, _default=None: None
+    searchable = " ".join(
+        str(getter(key) or "")
+        for key in (
+            "Design", "design", "Reference", "reference", "Study", "study",
+            "Title", "title", "exposure_measurement_supporting_text",
+            "extraction_supporting_text",
+        )
+    )
+    return bool(MENDELIAN_RANDOMIZATION_PATTERN.search(searchable))
+
+
 def analysis_context_key(disease, exposure, outcome="Incidence"):
     """Return the stable key used for context-specific curated exclusions."""
     parts = (disease, exposure, outcome)
@@ -116,12 +139,17 @@ def is_curated_meta_analysis_exclusion(pmid, disease, exposure, outcome="Inciden
 
 
 def filter_curated_meta_analysis_exclusions(frame, disease, exposure, outcome="Incidence"):
-    """Remove curator-approved context exclusions without consulting user flags."""
-    if frame is None or frame.empty or "PMID" not in frame.columns:
+    """Remove curator-approved records and Mendelian-randomization studies."""
+    if frame is None or frame.empty:
         return frame.copy() if frame is not None else frame
-    excluded = frame["PMID"].map(
-        lambda pmid: is_curated_meta_analysis_exclusion(pmid, disease, exposure, outcome)
-    )
+    excluded = pd.Series(False, index=frame.index)
+    if "PMID" in frame.columns:
+        excluded |= frame["PMID"].map(
+            lambda pmid: is_curated_meta_analysis_exclusion(
+                pmid, disease, exposure, outcome
+            )
+        )
+    excluded |= frame.apply(is_mendelian_randomization_study, axis=1)
     return frame.loc[~excluded].copy()
 
 

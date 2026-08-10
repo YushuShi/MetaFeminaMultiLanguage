@@ -48,7 +48,9 @@
                 "confidence_interval": "95% CI: 1.06, 1.53",
                 "outcome_definition": "Breast cancer cases (n = 7119) were observed",
                 "exposure_definition": "butter consumption"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Fraser GE et al. (2020) [PMID: 32095830]",
@@ -98,7 +100,8 @@
                 "outcome_definition": "Incident invasive breast cancers were detected mainly by matching with cancer registries.",
                 "exposure_definition": "Dietary intakes were estimated from food frequency questionnaires and, for 1011 calibration study subjects, from six structured 24-h dietary recalls."
             },
-            "P Value": 0.0001097260655832021
+            "P Value": 0.0001097260655832021,
+            "exclusions": null
         },
         {
             "Study": "Hjart\u00e5ker A et al. (2010) [PMID: 20658314]",
@@ -149,7 +152,8 @@
                 "exposure_definition": "consumption of dairy products",
                 "jbi_checklist_type": "cohort"
             },
-            "P Value": 0.013389245512567143
+            "P Value": 0.013389245512567143,
+            "exclusions": null
         },
         {
             "Study": "Kesse-Guyot E et al. (2007) [PMID: 17536191]",
@@ -198,7 +202,9 @@
                 "confidence_interval": "RR = 0.55, 95% CI = 0.29-1.03",
                 "outcome_definition": "92 developed breast cancer during the follow-up period",
                 "exposure_definition": "dairy products (total and their subgroups)"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "McCullough ML et al. (2005) [PMID: 16365007]",
@@ -247,7 +253,9 @@
                 "confidence_interval": "95% CI, 0.69-0.95",
                 "outcome_definition": "During follow-up through August 31, 2001, we identified 2,855 incident cases of breast cancer.",
                 "exposure_definition": "Consumption starting at two or more servings of dairy products per day"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Shin MH et al. (2002) [PMID: 12208895]",
@@ -297,7 +305,8 @@
                 "outcome_definition": "incident invasive breast cancer",
                 "exposure_definition": "consumption of dairy products, especially of low-fat dairy foods and skim/low-fat milk"
             },
-            "P Value": 0.0007196295675126695
+            "P Value": 0.0007196295675126695,
+            "exclusions": null
         },
         {
             "Study": "Hjart\u00e5ker A et al. (2001) [PMID: 11519053]",
@@ -346,7 +355,9 @@
                 "confidence_interval": "95% confidence interval 0.31-1.01",
                 "outcome_definition": "317 incident cases of breast cancer were diagnosed",
                 "exposure_definition": "childhood and adult milk consumption"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Shin WK et al. (2019) [PMID: 31877693]",
@@ -395,7 +406,9 @@
                 "confidence_interval": "0.58 (0.35-0.97)",
                 "outcome_definition": "Information on cancer diagnosis in the eligible cohort was retrieved from the Korea Central Cancer Registry",
                 "exposure_definition": "milk consumption"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Kaluza J et al. (2021) [PMID: 33004231]",
@@ -445,7 +458,8 @@
                 "outcome_definition": "risk of breast cancer by estrogen (ER) and progesterone receptor (PR) status",
                 "exposure_definition": "Long-term consumption of milk and fermented dairy products"
             },
-            "P Value": 0.03249171512604297
+            "P Value": 0.03249171512604297,
+            "exclusions": null
         },
         {
             "Study": "Farvid MS et al. (2018) [PMID: 29716928]",
@@ -495,7 +509,8 @@
                 "outcome_definition": "incident breast cancer",
                 "exposure_definition": "dairy consumption during adolescence"
             },
-            "P Value": 0.4288543402587516
+            "P Value": 0.4288543402587516,
+            "exclusions": null
         },
         {
             "Study": "Genkinger JM et al. (2013) [PMID: 23329367]",
@@ -545,56 +560,8 @@
                 "outcome_definition": "risk of breast cancer",
                 "exposure_definition": "intake of dairy"
             },
-            "P Value": 0.7783647307314849
-        },
-        {
-            "Study": "Huang Y et al. (2024) [PMID: 39487869]",
-            "PMID": "39487869",
-            "Effect Size": 0.34,
-            "Lower CI": 0.12,
-            "Upper CI": 1.0,
-            "Population": "General",
-            "Reference": "Skimmed milk intake reduces the risk of ER- breast cancer: a Mendelian randomization analysis.",
-            "Authors": "Huang Y, Zhang W, Chen J, Qiu S, Xue C, Wu H",
-            "Journal": "Discover oncology",
-            "Year": "2024",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/39487869/",
-            "Effect Type": "OR",
-            "SE": 0.22448979591836735,
-            "Sample Size": 360806,
-            "Cases": null,
-            "Estimated Cases": 46905.0,
-            "Design": "Mendelian randomization (two-sample MR)",
-            "Timing": "Prospective",
-            "Continent": "Europe",
-            "Stage": "",
-            "Quality %": 72.7,
-            "Quality Score": "Moderate",
-            "comparison_type": "Higher vs Lower skimmed milk intake (genetically predicted, MR analysis)",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Unclear",
-                "q9": "Unclear",
-                "q10": "Unclear",
-                "q11": "Yes"
-            },
-            "exposure_measurement_type": "dietary_intake",
-            "exposure_measurement_supporting_text": "we analyzed single nucleotide polymorphisms associated with skimmed and full-cream milk consumption in a cohort of 360,806 individuals from European populations",
-            "extraction_supporting_text": {
-                "sample_size": "a cohort of 360,806 individuals from European populations",
-                "effect_size": "IVW analysis suggests a potential inverse causal relationship between skimmed milk and BC [OR 0.34, 95% CI (0.12-1.00), P\u2009=\u20090.05]",
-                "effect_direction": "potential inverse causal relationship between skimmed milk and BC",
-                "p_value": "P\u2009=\u20090.05",
-                "confidence_interval": "95% CI (0.12-1.00)",
-                "outcome_definition": "incidence of breast cancer (BC)",
-                "exposure_definition": "consumption of skimmed milk"
-            }
+            "P Value": 0.7783647307314849,
+            "exclusions": null
         },
         {
             "Study": "Riseberg E et al. (2024) [PMID: 38042408]",
@@ -644,7 +611,8 @@
                 "outcome_definition": "incidence of breast cancer",
                 "exposure_definition": "dairy consumption from adolescence through later adulthood"
             },
-            "P Value": 0.26634323019469014
+            "P Value": 0.26634323019469014,
+            "exclusions": null
         },
         {
             "Study": "Wu Y et al. (2021) [PMID: 33964859]",
@@ -661,7 +629,7 @@
             "Effect Type": "HR",
             "SE": 0.005102040816326535,
             "Sample Size": "over 1 million",
-            "Cases": 37861,
+            "Cases": 37861.0,
             "Estimated Cases": null,
             "Design": "Cohort",
             "Timing": "Prospective",
@@ -693,7 +661,9 @@
                 "confidence_interval": "pooled HR = 0.98, 95% CI: 0.97, 0.99",
                 "outcome_definition": "risk of incident invasive breast cancer overall (n = 37,861 cases)",
                 "exposure_definition": "dairy product and calcium intakes"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Aguilera-Buenosvinos I et al. (2021) [PMID: 33669972]",
@@ -742,7 +712,9 @@
                 "confidence_interval": "HRQ3vs.Q1 = 0.49 (95% CI 0.29-0.84)",
                 "outcome_definition": "Incident BC was reported in biennial follow-up questionnaires and confirmed with revision of medical records and consultation of the National Death Index.",
                 "exposure_definition": "Dairy product consumption was estimated through a previously validated 136-item food frequency questionnaire (FFQ)."
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "van't Veer P et al. (1989) [PMID: 2736542]",
@@ -790,7 +762,9 @@
                 "confidence_interval": "95% confidence interval, 0.23-1.08",
                 "outcome_definition": "133 incident breast cancer cases",
                 "exposure_definition": "fermented milk products (predominantly yogurt and buttermilk)"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Knekt P et al. (1996) [PMID: 8605108]",
@@ -840,7 +814,8 @@
                 "outcome_definition": "88 breast cancers were diagnosed.",
                 "exposure_definition": "Intakes of foods were calculated from dietary history interviews covering the habitual diet of examinees over the preceding year."
             },
-            "P Value": 0.0025273895406413907
+            "P Value": 0.0025273895406413907,
+            "exclusions": null
         },
         {
             "Study": "Yu L et al. (2019) [PMID: 30854047]",
@@ -888,7 +863,9 @@
                 "confidence_interval": "95% CI=0.39-0.72",
                 "outcome_definition": "risk of breast cancer among women in Northern and Eastern China",
                 "exposure_definition": "weekly frequency of dairy intake ... obtained using a food-frequency questionnaire (FFQ)"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "McCann SE et al. (2017) [PMID: 29955696]",
@@ -936,7 +913,9 @@
                 "confidence_interval": "",
                 "outcome_definition": "women diagnosed with breast cancer",
                 "exposure_definition": "Intakes of dairy foods were queried with a self-administered food-frequency questionnaire"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Bahadoran Z et al. (2013) [PMID: 24066929]",
@@ -984,57 +963,9 @@
                 "confidence_interval": "95% CI = 0.04-0.38",
                 "outcome_definition": "odds of breast cancer",
                 "exposure_definition": "consumption of dairy products"
-            }
-        },
-        {
-            "Study": "Lumsden AL et al. (2023) [PMID: 36473423]",
-            "PMID": "36473423",
-            "Effect Size": 1.12,
-            "Lower CI": 1.03,
-            "Upper CI": 1.23,
-            "Population": "General",
-            "Reference": "Milk consumption and risk of twelve cancers: A large-scale observational and Mendelian randomisation study.",
-            "Authors": "Lumsden AL, Mulugeta A, Hypp\u00f6nen E",
-            "Journal": "Clinical nutrition (Edinburgh, Scotland)",
-            "Year": "2023",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/36473423/",
-            "Effect Type": "OR",
-            "SE": 0.05102040816326529,
-            "Sample Size": 255196,
-            "Cases": null,
-            "Estimated Cases": 33175.0,
-            "Design": "Cohort",
-            "Timing": "Prospective",
-            "Continent": "Europe",
-            "Stage": "",
-            "Quality %": 81.8,
-            "Quality Score": "Good",
-            "comparison_type": "per additional 50 g/day (genetically predicted milk consumption)",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Unclear",
-                "q10": "Unclear",
-                "q11": "Yes"
             },
-            "exposure_measurement_type": "dietary_intake",
-            "exposure_measurement_supporting_text": "genetic variant (rs4988235) near the lactase gene (LCT) locus that proxies milk consumption",
-            "extraction_supporting_text": {
-                "sample_size": "white British participants of the UK Biobank (n\u00a0=\u00a0up to 255,196)",
-                "effect_size": "in the UK Biobank greater risk of female breast cancer (1.12, 1.03-1.23)",
-                "effect_direction": "greater risk of female breast cancer",
-                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.012.",
-                "confidence_interval": "(1.12, 1.03-1.23)",
-                "outcome_definition": "female breast cancer",
-                "exposure_definition": "genetically predicted milk consumption"
-            },
-            "P Value": 0.01229933510724801
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Kakkoura MG et al. (2022) [PMID: 35513801]",
@@ -1084,7 +1015,8 @@
                 "outcome_definition": "female breast cancer (n = 2582)",
                 "exposure_definition": "dairy products (mainly milk)"
             },
-            "P Value": 0.04097188370782051
+            "P Value": 0.04097188370782051,
+            "exclusions": null
         },
         {
             "Study": "Dashti F et al. (2022) [PMID: 35083630]",
@@ -1101,7 +1033,7 @@
             "Effect Type": "OR",
             "SE": 2.747448979591837,
             "Sample Size": 1050,
-            "Cases": 350,
+            "Cases": 350.0,
             "Estimated Cases": null,
             "Design": "Case-Control",
             "Timing": "Retrospective",
@@ -1133,7 +1065,8 @@
                 "outcome_definition": "patients with pathologically confirmed cases of breast cancer",
                 "exposure_definition": "Consumption of low- and high-fat dairy products as well as dietary intakes of pasteurized milk, cheese and yogurt were computed"
             },
-            "P Value": 0.007309780705282905
+            "P Value": 0.007309780705282905,
+            "exclusions": null
         },
         {
             "Study": "Jabbari M et al. (2022) [PMID: 35048753]",
@@ -1181,7 +1114,9 @@
                 "confidence_interval": "95% CI: 0.26-1.45",
                 "outcome_definition": "risk of ER/PR/HER2 negative BC among Iranian women",
                 "exposure_definition": "total dairy intake"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Larsson SC et al. (2009) [PMID: 19491389]",
@@ -1231,8 +1166,8 @@
                 "outcome_definition": "incidence of invasive breast cancer",
                 "exposure_definition": "CLA intake estimated from food-frequency questionnaire"
             },
-            "exclusions": 0,
-            "P Value": 0.5224469640308758
+            "P Value": 0.5224469640308758,
+            "exclusions": 0.0
         },
         {
             "Study": "Jayalekshmi P et al. (2009) [PMID: 19548367]",
@@ -1280,7 +1215,9 @@
                 "confidence_interval": "95% CI=1.17-2.69",
                 "outcome_definition": "breast cancer cases with age > or = 20 years were selected from 438 breast cancer cases reported during the period 1990-2004",
                 "exposure_definition": "milk drinking"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Gallus S et al. (2006) [PMID: 16596295]",
@@ -1329,7 +1266,8 @@
                 "outcome_definition": "breast (2569 cases, 2588 controls)",
                 "exposure_definition": "highest consumption level of any type of milk"
             },
-            "P Value": 0.3173748575379613
+            "P Value": 0.3173748575379613,
+            "exclusions": null
         },
         {
             "Study": "Michels KB et al. (2006) [PMID: 16094624]",
@@ -1378,7 +1316,8 @@
                 "outcome_definition": "adult risk of breast cancer",
                 "exposure_definition": "Consumption of whole milk"
             },
-            "P Value": 0.028364524572871565
+            "P Value": 0.028364524572871565,
+            "exclusions": null
         },
         {
             "Study": "Cho E et al. (2003) [PMID: 12865454]",
@@ -1428,7 +1367,8 @@
                 "outcome_definition": "714 women developed incident invasive breast cancer.",
                 "exposure_definition": "Among food groups contributing to animal fat, red meat and high-fat dairy foods were each associated with an increased risk of breast cancer."
             },
-            "exclusions": 0
+            "P Value": null,
+            "exclusions": 0.0
         },
         {
             "Study": "Voorrips LE et al. (2002) [PMID: 12324303]",
@@ -1478,7 +1418,8 @@
                 "outcome_definition": "breast cancer incidence",
                 "exposure_definition": "intakes of CLA (conjugated linoleic acid), which is present in milk products and meat from ruminants, and CLA-containing food groups (eg, butter, cheese, milk, other milk products, and meat)"
             },
-            "exclusions": 0
+            "P Value": null,
+            "exclusions": 0.0
         },
         {
             "Study": "Liu R et al. (2020) [PMID: 32885537]",
@@ -1528,57 +1469,8 @@
                 "outcome_definition": "breast cancer",
                 "exposure_definition": "ingested contaminated milk when they were aged \u2264 2 y"
             },
-            "exclusions": 0,
-            "P Value": 0.016563048283995945
-        },
-        {
-            "Study": "Larsson SC et al. (2020) [PMID: 33261611]",
-            "PMID": "33261611",
-            "Effect Size": 1.01,
-            "Lower CI": 1.0,
-            "Upper CI": 1.02,
-            "Population": "General",
-            "Reference": "Genetically proxied milk consumption and risk of colorectal, bladder, breast, and prostate cancer: a two-sample Mendelian randomization study.",
-            "Authors": "Larsson SC, Mason AM, Kar S, Vithayathil M, Carter P, Baron JA, Micha\u00eblsson K, Burgess S",
-            "Journal": "BMC medicine",
-            "Year": "2020",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/33261611/",
-            "Effect Type": "OR",
-            "SE": 0.005102040816326535,
-            "Sample Size": 228951,
-            "Cases": null,
-            "Estimated Cases": 29764.0,
-            "Design": "Cohort",
-            "Timing": "Prospective",
-            "Continent": "Europe",
-            "Stage": null,
-            "Quality %": 63.6,
-            "Quality Score": "Moderate",
-            "comparison_type": "per additional milk intake increasing allele (genetically proxied milk consumption)",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Unclear",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Unclear",
-                "q9": "Unclear",
-                "q10": "Unclear",
-                "q11": "Yes"
-            },
-            "exposure_measurement_type": "unclear",
-            "exposure_measurement_supporting_text": "Milk consumption was proxied by a genetic variant (rs4988235 or rs182549) upstream of the gene encoding lactase.",
-            "extraction_supporting_text": {
-                "sample_size": "Breast Cancer Association Consortium (n\u2009=\u2009228,951 women)",
-                "effect_size": "breast (OR 1.01; 95% CI 1.00-1.02; P\u2009=\u20090.113)",
-                "effect_direction": "There was no overall association of genetically predicted milk consumption with ... breast ... cancer",
-                "p_value": "P\u2009=\u20090.113",
-                "confidence_interval": "95% CI 1.00-1.02",
-                "outcome_definition": "risk of ... breast ... cancer",
-                "exposure_definition": "Milk consumption was proxied by a genetic variant (rs4988235 or rs182549) upstream of the gene encoding lactase"
-            }
+            "P Value": 0.016563048283995945,
+            "exclusions": 0.0
         },
         {
             "Study": "Hirko KA et al. (2018) [PMID: 29071721]",
@@ -1627,7 +1519,8 @@
                 "outcome_definition": "breast cancer risk in a nested case-control study",
                 "exposure_definition": "dairy-derived fatty acids (SFA 15:0\u2009+\u200917:0\u2009+\u2009TFA 16:1n-7t)"
             },
-            "exclusions": 0
+            "P Value": null,
+            "exclusions": 0.0
         },
         {
             "Study": "Bao PP et al. (2012) [PMID: 22860889]",
@@ -1675,7 +1568,9 @@
                 "confidence_interval": "adjusted OR for the highest quintile of 0.80 (95% CI = 0.67-0.95; P trend = 0.02)",
                 "outcome_definition": "risk for breast cancer overall",
                 "exposure_definition": "intakes of eggs and milk"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Lin X et al. (2025) [PMID: 40121496]",
@@ -1725,7 +1620,8 @@
                 "outcome_definition": "BC cases were identified through cancer registry linkage over a mean follow-up of 14.8\u00a0years",
                 "exposure_definition": "Weekly consumption of\u2009>\u20096 portions of dairy-based milk"
             },
-            "P Value": 0.06070462000019809
+            "P Value": 0.06070462000019809,
+            "exclusions": null
         },
         {
             "Study": "Pryor M et al. (1989) [PMID: 2539254]",
@@ -1774,7 +1670,8 @@
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "fat from milk, cheese and yogurt"
             },
-            "P Value": 0.1341535618997597
+            "P Value": 0.1341535618997597,
+            "exclusions": null
         },
         {
             "Study": "Aro A et al. (2000) [PMID: 11525591]",
@@ -1823,8 +1720,8 @@
                 "outcome_definition": "breast cancer",
                 "exposure_definition": "dietary CLA, serum CLA, myristic acid, and trans-vaccenic acid"
             },
-            "exclusions": 0,
-            "P Value": 0.016936577390460263
+            "P Value": 0.016936577390460263,
+            "exclusions": 0.0
         },
         {
             "Study": "Bessaoud F et al. (2008) [PMID: 18444149]",
@@ -1873,7 +1770,8 @@
                 "outcome_definition": "breast cancer",
                 "exposure_definition": "dairy consumption between (134.3 and 271.2 g/day) vs. (< 134.3 g/day)"
             },
-            "P Value": 0.023983179703865085
+            "P Value": 0.023983179703865085,
+            "exclusions": null
         },
         {
             "Study": "Knight JA et al. (2007) [PMID: 17372236]",
@@ -1921,7 +1819,9 @@
                 "confidence_interval": "OR, 0.62 95% CI 0.45-0.86",
                 "outcome_definition": "Women with newly diagnosed invasive breast cancer were identified from the Ontario Cancer Registry.",
                 "exposure_definition": "increasing milk consumption"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "McCann SE et al. (2004) [PMID: 15342449]",
@@ -1971,8 +1871,8 @@
                 "exposure_definition": "dietary CLA intake",
                 "jbi_checklist_type": "case_control"
             },
-            "exclusions": 0,
-            "P Value": 0.051245848974322876
+            "P Value": 0.051245848974322876,
+            "exclusions": 0.0
         },
         {
             "Study": "Yuan G et al. (2020) [PMID: 33133556]",
@@ -2021,7 +1921,8 @@
                 "outcome_definition": "retrospective cases were confirmed by pathological diagnosis with breast cancer",
                 "exposure_definition": "individual dietary intake, by food frequency questionnaire (FFQ)"
             },
-            "P Value": 0.00906989475367146
+            "P Value": 0.00906989475367146,
+            "exclusions": null
         },
         {
             "Study": "Plagens-Rotman K et al. (2017) [PMID: 29693885]",
@@ -2070,7 +1971,8 @@
                 "outcome_definition": "women diagnosed with breast cancer on basis of histopathological examination",
                 "exposure_definition": "Women consuming one milk product a day in amount of 125 grams"
             },
-            "P Value": 0.10265833600074015
+            "P Value": 0.10265833600074015,
+            "exclusions": null
         },
         {
             "Study": "Ahmadnia Z et al. (2016) [PMID: 27221892]",
@@ -2118,7 +2020,9 @@
                 "confidence_interval": "(OR=0.6,95%CI= 0.4-0.9)",
                 "outcome_definition": "450 women with breast cancer and one of their relatives (third-rank) were investigated.",
                 "exposure_definition": "consumption of milk and dairy items"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Jordan I et al. (2013) [PMID: 22729968]",
@@ -2167,7 +2071,8 @@
                 "outcome_definition": "Breast cancer is the second most common cancer among women in the Kilimanjaro Region of Tanzania.",
                 "exposure_definition": "Fatty Diet, characterized by a higher consumption of milk, vegetable oils and fats, butter, lard and red meat"
             },
-            "exclusions": 0
+            "P Value": null,
+            "exclusions": 0.0
         },
         {
             "Study": "Wirf\u00e4lt E et al. (2011) [PMID: 21767080]",
@@ -2217,7 +2122,8 @@
                 "outcome_definition": "incident breast cancer, defined by estrogen receptor (ER) and progesterone receptor (PR) status",
                 "exposure_definition": "food intakes ... yogurt"
             },
-            "P Value": 0.03205518878616076
+            "P Value": 0.03205518878616076,
+            "exclusions": null
         },
         {
             "Study": "Lamchabbek N et al. (2025) [PMID: 41417097]",
@@ -2265,7 +2171,9 @@
                 "confidence_interval": "95% CI 1.41-2.29",
                 "outcome_definition": "Breast cancer (BC) is the most prevalent cancer among women worldwide.",
                 "exposure_definition": "For the dairy-rich diet, higher adherence showed lower BC odds in mid-quartiles, but the highest quartile was associated with higher odds after adjustment"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Yeo W et al. (2025) [PMID: 39868354]",
@@ -2314,7 +2222,8 @@
                 "outcome_definition": "breast cancer patients from the Hong Kong Breast Cancer Registry",
                 "exposure_definition": "dairy-rich diet"
             },
-            "P Value": 3.043855675917923e-06
+            "P Value": 3.043855675917923e-06,
+            "exclusions": null
         },
         {
             "Study": "Jacobs I et al. (2021) [PMID: 34836361]",
@@ -2362,7 +2271,9 @@
                 "confidence_interval": "95%CI: 0.59-0.90",
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "cereal-dairy breakfast dietary pattern"
-            }
+            },
+            "P Value": null,
+            "exclusions": null
         },
         {
             "Study": "Van 't Veer P et al. (1991) [PMID: 1848533]",
@@ -2411,368 +2322,347 @@
                 "outcome_definition": "breast-cancer occurrence",
                 "exposure_definition": "high intake of fermented milk products"
             },
-            "exclusions": 0,
-            "P Value": 0.08732529597313352
+            "P Value": 0.08732529597313352,
+            "exclusions": 0.0
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Bahadoran Z et al. (2013) [PMID: 24066929]</th>\n      <td>-1.8476</td>\n      <td>0.5617</td>\n      <td>-2.9485</td>\n      <td>-0.7466</td>\n      <td>100.0</td>\n      <td>275.0</td>\n    </tr>\n    <tr>\n      <th>Huang Y et al. (2024) [PMID: 39487869]</th>\n      <td>-0.9891</td>\n      <td>0.5099</td>\n      <td>-1.9885</td>\n      <td>0.0103</td>\n      <td>-</td>\n      <td>360806.0</td>\n    </tr>\n    <tr>\n      <th>Pryor M et al. (1989) [PMID: 2539254]</th>\n      <td>-0.8351</td>\n      <td>0.5767</td>\n      <td>-1.9653</td>\n      <td>0.2952</td>\n      <td>172.0</td>\n      <td>362.0</td>\n    </tr>\n    <tr>\n      <th>Aro A et al. (2000) [PMID: 11525591]</th>\n      <td>-0.8351</td>\n      <td>0.3590</td>\n      <td>-1.5387</td>\n      <td>-0.1314</td>\n      <td>195.0</td>\n      <td>403.0</td>\n    </tr>\n    <tr>\n      <th>McCann SE et al. (2004) [PMID: 15342449]</th>\n      <td>-0.8351</td>\n      <td>0.4402</td>\n      <td>-1.6979</td>\n      <td>0.0277</td>\n      <td>1122.0</td>\n      <td>3158.0</td>\n    </tr>\n    <tr>\n      <th>Knekt P et al. (1996) [PMID: 8605108]</th>\n      <td>-0.8675</td>\n      <td>0.2872</td>\n      <td>-1.4305</td>\n      <td>-0.3045</td>\n      <td>88.0</td>\n      <td>4697.0</td>\n    </tr>\n    <tr>\n      <th>Van 't Veer P et al. (1991) [PMID: 1848533]</th>\n      <td>-0.6640</td>\n      <td>0.3974</td>\n      <td>-1.4428</td>\n      <td>0.1149</td>\n      <td>133.0</td>\n      <td>422.0</td>\n    </tr>\n    <tr>\n      <th>Aguilera-Buenosvinos I et al. (2021) [PMID: 33669972]</th>\n      <td>-0.6785</td>\n      <td>0.2617</td>\n      <td>-1.1913</td>\n      <td>-0.1656</td>\n      <td>119.0</td>\n      <td>10930.0</td>\n    </tr>\n    <tr>\n      <th>van't Veer P et al. (1989) [PMID: 2736542]</th>\n      <td>-0.6259</td>\n      <td>0.3650</td>\n      <td>-1.3413</td>\n      <td>0.0895</td>\n      <td>133.0</td>\n      <td>422.0</td>\n    </tr>\n    <tr>\n      <th>Hjart\u00e5ker A et al. (2010) [PMID: 20658314]</th>\n      <td>-0.6589</td>\n      <td>0.2701</td>\n      <td>-1.1883</td>\n      <td>-0.1296</td>\n      <td>1407.0</td>\n      <td>64904.0</td>\n    </tr>\n    <tr>\n      <th>Yu L et al. (2019) [PMID: 30854047]</th>\n      <td>-0.5718</td>\n      <td>0.1448</td>\n      <td>-0.8556</td>\n      <td>-0.2881</td>\n      <td>1286.0</td>\n      <td>2747.0</td>\n    </tr>\n    <tr>\n      <th>Kesse-Guyot E et al. (2007) [PMID: 17536191]</th>\n      <td>-0.5978</td>\n      <td>0.3233</td>\n      <td>-1.2315</td>\n      <td>0.0359</td>\n      <td>92.0</td>\n      <td>3627.0</td>\n    </tr>\n    <tr>\n      <th>Hjart\u00e5ker A et al. (2001) [PMID: 11519053]</th>\n      <td>-0.5798</td>\n      <td>0.3013</td>\n      <td>-1.1704</td>\n      <td>0.0107</td>\n      <td>317.0</td>\n      <td>48844.0</td>\n    </tr>\n    <tr>\n      <th>Plagens-Rotman K et al. (2017) [PMID: 29693885]</th>\n      <td>-0.4886</td>\n      <td>0.3058</td>\n      <td>-1.0879</td>\n      <td>0.1108</td>\n      <td>-</td>\n      <td>762.0</td>\n    </tr>\n    <tr>\n      <th>Shin WK et al. (2019) [PMID: 31877693]</th>\n      <td>-0.5160</td>\n      <td>0.2492</td>\n      <td>-1.0044</td>\n      <td>-0.0276</td>\n      <td>359.0</td>\n      <td>93306.0</td>\n    </tr>\n    <tr>\n      <th>Ahmadnia Z et al. (2016) [PMID: 27221892]</th>\n      <td>-0.4574</td>\n      <td>0.1895</td>\n      <td>-0.8288</td>\n      <td>-0.0860</td>\n      <td>225.0</td>\n      <td>450.0</td>\n    </tr>\n    <tr>\n      <th>Jabbari M et al. (2022) [PMID: 35048753]</th>\n      <td>-0.4423</td>\n      <td>0.3981</td>\n      <td>-1.2226</td>\n      <td>0.3380</td>\n      <td>134.0</td>\n      <td>401.0</td>\n    </tr>\n    <tr>\n      <th>Knight JA et al. (2007) [PMID: 17372236]</th>\n      <td>-0.4274</td>\n      <td>0.1510</td>\n      <td>-0.7233</td>\n      <td>-0.1314</td>\n      <td>972.0</td>\n      <td>2107.0</td>\n    </tr>\n    <tr>\n      <th>Shin MH et al. (2002) [PMID: 12208895]</th>\n      <td>-0.3857</td>\n      <td>0.1140</td>\n      <td>-0.6092</td>\n      <td>-0.1622</td>\n      <td>827.0</td>\n      <td>88691.0</td>\n    </tr>\n    <tr>\n      <th>Liu R et al. (2020) [PMID: 32885537]</th>\n      <td>-0.3285</td>\n      <td>0.1371</td>\n      <td>-0.5972</td>\n      <td>-0.0598</td>\n      <td>524.0</td>\n      <td>6223.0</td>\n    </tr>\n    <tr>\n      <th>Jacobs I et al. (2021) [PMID: 34836361]</th>\n      <td>-0.2790</td>\n      <td>0.0971</td>\n      <td>-0.4693</td>\n      <td>-0.0887</td>\n      <td>396.0</td>\n      <td>792.0</td>\n    </tr>\n    <tr>\n      <th>Bao PP et al. (2012) [PMID: 22860889]</th>\n      <td>-0.1968</td>\n      <td>0.0796</td>\n      <td>-0.3527</td>\n      <td>-0.0409</td>\n      <td>3443.0</td>\n      <td>6917.0</td>\n    </tr>\n    <tr>\n      <th>McCullough ML et al. (2005) [PMID: 16365007]</th>\n      <td>-0.2107</td>\n      <td>0.0816</td>\n      <td>-0.3706</td>\n      <td>-0.0508</td>\n      <td>2855.0</td>\n      <td>68567.0</td>\n    </tr>\n    <tr>\n      <th>McCann SE et al. (2017) [PMID: 29955696]</th>\n      <td>-0.1428</td>\n      <td>0.0809</td>\n      <td>-0.3014</td>\n      <td>0.0157</td>\n      <td>1941.0</td>\n      <td>3178.0</td>\n    </tr>\n    <tr>\n      <th>Wirf\u00e4lt E et al. (2011) [PMID: 21767080]</th>\n      <td>-0.1090</td>\n      <td>0.0511</td>\n      <td>-0.2091</td>\n      <td>-0.0090</td>\n      <td>544.0</td>\n      <td>17000.0</td>\n    </tr>\n    <tr>\n      <th>Wu Y et al. (2021) [PMID: 33964859]</th>\n      <td>-0.0986</td>\n      <td>0.0398</td>\n      <td>-0.1765</td>\n      <td>-0.0206</td>\n      <td>37861.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Michels KB et al. (2006) [PMID: 16094624]</th>\n      <td>-0.0923</td>\n      <td>0.0424</td>\n      <td>-0.1753</td>\n      <td>-0.0093</td>\n      <td>582.0</td>\n      <td>2151.0</td>\n    </tr>\n    <tr>\n      <th>Gallus S et al. (2006) [PMID: 16596295]</th>\n      <td>-0.0825</td>\n      <td>0.0829</td>\n      <td>-0.2451</td>\n      <td>0.0800</td>\n      <td>2569.0</td>\n      <td>5157.0</td>\n    </tr>\n    <tr>\n      <th>Riseberg E et al. (2024) [PMID: 38042408]</th>\n      <td>-0.0284</td>\n      <td>0.0255</td>\n      <td>-0.0784</td>\n      <td>0.0216</td>\n      <td>5733.0</td>\n      <td>63847.0</td>\n    </tr>\n    <tr>\n      <th>Yuan G et al. (2020) [PMID: 33133556]</th>\n      <td>-0.0017</td>\n      <td>0.0007</td>\n      <td>-0.0031</td>\n      <td>-0.0004</td>\n      <td>210.0</td>\n      <td>630.0</td>\n    </tr>\n    <tr>\n      <th>Larsson SC et al. (2020) [PMID: 33261611]</th>\n      <td>0.0087</td>\n      <td>0.0044</td>\n      <td>0.0000</td>\n      <td>0.0173</td>\n      <td>-</td>\n      <td>228951.0</td>\n    </tr>\n    <tr>\n      <th>Farvid MS et al. (2018) [PMID: 29716928]</th>\n      <td>0.0184</td>\n      <td>0.0233</td>\n      <td>-0.0272</td>\n      <td>0.0641</td>\n      <td>1318.0</td>\n      <td>44264.0</td>\n    </tr>\n    <tr>\n      <th>Larsson SC et al. (2009) [PMID: 19491389]</th>\n      <td>0.0392</td>\n      <td>0.0613</td>\n      <td>-0.0810</td>\n      <td>0.1594</td>\n      <td>2952.0</td>\n      <td>61433.0</td>\n    </tr>\n    <tr>\n      <th>Genkinger JM et al. (2013) [PMID: 23329367]</th>\n      <td>0.0488</td>\n      <td>0.1734</td>\n      <td>-0.2910</td>\n      <td>0.3886</td>\n      <td>1268.0</td>\n      <td>52062.0</td>\n    </tr>\n    <tr>\n      <th>Lumsden AL et al. (2023) [PMID: 36473423]</th>\n      <td>0.0978</td>\n      <td>0.0387</td>\n      <td>0.0219</td>\n      <td>0.1738</td>\n      <td>-</td>\n      <td>255196.0</td>\n    </tr>\n    <tr>\n      <th>Kakkoura MG et al. (2022) [PMID: 35513801]</th>\n      <td>0.1611</td>\n      <td>0.0782</td>\n      <td>0.0078</td>\n      <td>0.3143</td>\n      <td>2582.0</td>\n      <td>510146.0</td>\n    </tr>\n    <tr>\n      <th>Voorrips LE et al. (2002) [PMID: 12324303]</th>\n      <td>0.2151</td>\n      <td>0.1579</td>\n      <td>-0.0944</td>\n      <td>0.5246</td>\n      <td>941.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Pala V et al. (2009) [PMID: 19491385]</th>\n      <td>0.2279</td>\n      <td>0.0855</td>\n      <td>0.0603</td>\n      <td>0.3955</td>\n      <td>7119.0</td>\n      <td>319826.0</td>\n    </tr>\n    <tr>\n      <th>Kaluza J et al. (2021) [PMID: 33004231]</th>\n      <td>0.2420</td>\n      <td>0.1119</td>\n      <td>0.0228</td>\n      <td>0.4613</td>\n      <td>1870.0</td>\n      <td>33780.0</td>\n    </tr>\n    <tr>\n      <th>Cho E et al. (2003) [PMID: 12865454]</th>\n      <td>0.2852</td>\n      <td>0.1348</td>\n      <td>0.0210</td>\n      <td>0.5493</td>\n      <td>714.0</td>\n      <td>90655.0</td>\n    </tr>\n    <tr>\n      <th>Lin X et al. (2025) [PMID: 40121496]</th>\n      <td>0.3158</td>\n      <td>0.1654</td>\n      <td>-0.0083</td>\n      <td>0.6399</td>\n      <td>243.0</td>\n      <td>13567.0</td>\n    </tr>\n    <tr>\n      <th>Jordan I et al. (2013) [PMID: 22729968]</th>\n      <td>0.2975</td>\n      <td>0.1154</td>\n      <td>0.0714</td>\n      <td>0.5236</td>\n      <td>115.0</td>\n      <td>345.0</td>\n    </tr>\n    <tr>\n      <th>Fraser GE et al. (2020) [PMID: 32095830]</th>\n      <td>0.3717</td>\n      <td>0.0942</td>\n      <td>0.1870</td>\n      <td>0.5563</td>\n      <td>1057.0</td>\n      <td>52795.0</td>\n    </tr>\n    <tr>\n      <th>Bessaoud F et al. (2008) [PMID: 18444149]</th>\n      <td>0.3796</td>\n      <td>0.1614</td>\n      <td>0.0632</td>\n      <td>0.6959</td>\n      <td>437.0</td>\n      <td>1359.0</td>\n    </tr>\n    <tr>\n      <th>Dashti F et al. (2022) [PMID: 35083630]</th>\n      <td>0.4711</td>\n      <td>0.1664</td>\n      <td>0.1449</td>\n      <td>0.7973</td>\n      <td>350.0</td>\n      <td>1050.0</td>\n    </tr>\n    <tr>\n      <th>Jayalekshmi P et al. (2009) [PMID: 19548367]</th>\n      <td>0.4800</td>\n      <td>0.1673</td>\n      <td>0.1521</td>\n      <td>0.8079</td>\n      <td>264.0</td>\n      <td>359619.0</td>\n    </tr>\n    <tr>\n      <th>Lamchabbek N et al. (2025) [PMID: 41417097]</th>\n      <td>0.4845</td>\n      <td>0.0974</td>\n      <td>0.2935</td>\n      <td>0.6754</td>\n      <td>-</td>\n      <td>2800.0</td>\n    </tr>\n    <tr>\n      <th>Hirko KA et al. (2018) [PMID: 29071721]</th>\n      <td>0.5018</td>\n      <td>0.1821</td>\n      <td>0.1450</td>\n      <td>0.8587</td>\n      <td>794.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Yeo W et al. (2025) [PMID: 39868354]</th>\n      <td>0.9384</td>\n      <td>0.1713</td>\n      <td>0.6027</td>\n      <td>1.2741</td>\n      <td>5186.0</td>\n      <td>10757.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Bahadoran Z et al. (2013) [PMID: 24066929]</th>\n      <td>-1.8476</td>\n      <td>0.5617</td>\n      <td>-2.9485</td>\n      <td>-0.7466</td>\n      <td>100.0</td>\n      <td>275.0</td>\n    </tr>\n    <tr>\n      <th>Pryor M et al. (1989) [PMID: 2539254]</th>\n      <td>-0.8351</td>\n      <td>0.5767</td>\n      <td>-1.9653</td>\n      <td>0.2952</td>\n      <td>172.0</td>\n      <td>362.0</td>\n    </tr>\n    <tr>\n      <th>Aro A et al. (2000) [PMID: 11525591]</th>\n      <td>-0.8351</td>\n      <td>0.3590</td>\n      <td>-1.5387</td>\n      <td>-0.1314</td>\n      <td>195.0</td>\n      <td>403.0</td>\n    </tr>\n    <tr>\n      <th>McCann SE et al. (2004) [PMID: 15342449]</th>\n      <td>-0.8351</td>\n      <td>0.4402</td>\n      <td>-1.6979</td>\n      <td>0.0277</td>\n      <td>1122.0</td>\n      <td>3158.0</td>\n    </tr>\n    <tr>\n      <th>Knekt P et al. (1996) [PMID: 8605108]</th>\n      <td>-0.8675</td>\n      <td>0.2872</td>\n      <td>-1.4305</td>\n      <td>-0.3045</td>\n      <td>88.0</td>\n      <td>4697.0</td>\n    </tr>\n    <tr>\n      <th>Van 't Veer P et al. (1991) [PMID: 1848533]</th>\n      <td>-0.6640</td>\n      <td>0.3974</td>\n      <td>-1.4428</td>\n      <td>0.1149</td>\n      <td>133.0</td>\n      <td>422.0</td>\n    </tr>\n    <tr>\n      <th>Aguilera-Buenosvinos I et al. (2021) [PMID: 33669972]</th>\n      <td>-0.6785</td>\n      <td>0.2617</td>\n      <td>-1.1913</td>\n      <td>-0.1656</td>\n      <td>119.0</td>\n      <td>10930.0</td>\n    </tr>\n    <tr>\n      <th>van't Veer P et al. (1989) [PMID: 2736542]</th>\n      <td>-0.6259</td>\n      <td>0.3650</td>\n      <td>-1.3413</td>\n      <td>0.0895</td>\n      <td>133.0</td>\n      <td>422.0</td>\n    </tr>\n    <tr>\n      <th>Hjart\u00e5ker A et al. (2010) [PMID: 20658314]</th>\n      <td>-0.6589</td>\n      <td>0.2701</td>\n      <td>-1.1883</td>\n      <td>-0.1296</td>\n      <td>1407.0</td>\n      <td>64904.0</td>\n    </tr>\n    <tr>\n      <th>Yu L et al. (2019) [PMID: 30854047]</th>\n      <td>-0.5718</td>\n      <td>0.1448</td>\n      <td>-0.8556</td>\n      <td>-0.2881</td>\n      <td>1286.0</td>\n      <td>2747.0</td>\n    </tr>\n    <tr>\n      <th>Kesse-Guyot E et al. (2007) [PMID: 17536191]</th>\n      <td>-0.5978</td>\n      <td>0.3233</td>\n      <td>-1.2315</td>\n      <td>0.0359</td>\n      <td>92.0</td>\n      <td>3627.0</td>\n    </tr>\n    <tr>\n      <th>Hjart\u00e5ker A et al. (2001) [PMID: 11519053]</th>\n      <td>-0.5798</td>\n      <td>0.3013</td>\n      <td>-1.1704</td>\n      <td>0.0107</td>\n      <td>317.0</td>\n      <td>48844.0</td>\n    </tr>\n    <tr>\n      <th>Plagens-Rotman K et al. (2017) [PMID: 29693885]</th>\n      <td>-0.4886</td>\n      <td>0.3058</td>\n      <td>-1.0879</td>\n      <td>0.1108</td>\n      <td>-</td>\n      <td>762.0</td>\n    </tr>\n    <tr>\n      <th>Shin WK et al. (2019) [PMID: 31877693]</th>\n      <td>-0.5160</td>\n      <td>0.2492</td>\n      <td>-1.0044</td>\n      <td>-0.0276</td>\n      <td>359.0</td>\n      <td>93306.0</td>\n    </tr>\n    <tr>\n      <th>Ahmadnia Z et al. (2016) [PMID: 27221892]</th>\n      <td>-0.4574</td>\n      <td>0.1895</td>\n      <td>-0.8288</td>\n      <td>-0.0860</td>\n      <td>225.0</td>\n      <td>450.0</td>\n    </tr>\n    <tr>\n      <th>Jabbari M et al. (2022) [PMID: 35048753]</th>\n      <td>-0.4423</td>\n      <td>0.3981</td>\n      <td>-1.2226</td>\n      <td>0.3380</td>\n      <td>134.0</td>\n      <td>401.0</td>\n    </tr>\n    <tr>\n      <th>Knight JA et al. (2007) [PMID: 17372236]</th>\n      <td>-0.4274</td>\n      <td>0.1510</td>\n      <td>-0.7233</td>\n      <td>-0.1314</td>\n      <td>972.0</td>\n      <td>2107.0</td>\n    </tr>\n    <tr>\n      <th>Shin MH et al. (2002) [PMID: 12208895]</th>\n      <td>-0.3857</td>\n      <td>0.1140</td>\n      <td>-0.6092</td>\n      <td>-0.1622</td>\n      <td>827.0</td>\n      <td>88691.0</td>\n    </tr>\n    <tr>\n      <th>Liu R et al. (2020) [PMID: 32885537]</th>\n      <td>-0.3285</td>\n      <td>0.1371</td>\n      <td>-0.5972</td>\n      <td>-0.0598</td>\n      <td>524.0</td>\n      <td>6223.0</td>\n    </tr>\n    <tr>\n      <th>Jacobs I et al. (2021) [PMID: 34836361]</th>\n      <td>-0.2790</td>\n      <td>0.0971</td>\n      <td>-0.4693</td>\n      <td>-0.0887</td>\n      <td>396.0</td>\n      <td>792.0</td>\n    </tr>\n    <tr>\n      <th>Bao PP et al. (2012) [PMID: 22860889]</th>\n      <td>-0.1968</td>\n      <td>0.0796</td>\n      <td>-0.3527</td>\n      <td>-0.0409</td>\n      <td>3443.0</td>\n      <td>6917.0</td>\n    </tr>\n    <tr>\n      <th>McCullough ML et al. (2005) [PMID: 16365007]</th>\n      <td>-0.2107</td>\n      <td>0.0816</td>\n      <td>-0.3706</td>\n      <td>-0.0508</td>\n      <td>2855.0</td>\n      <td>68567.0</td>\n    </tr>\n    <tr>\n      <th>McCann SE et al. (2017) [PMID: 29955696]</th>\n      <td>-0.1428</td>\n      <td>0.0809</td>\n      <td>-0.3014</td>\n      <td>0.0157</td>\n      <td>1941.0</td>\n      <td>3178.0</td>\n    </tr>\n    <tr>\n      <th>Wirf\u00e4lt E et al. (2011) [PMID: 21767080]</th>\n      <td>-0.1090</td>\n      <td>0.0511</td>\n      <td>-0.2091</td>\n      <td>-0.0090</td>\n      <td>544.0</td>\n      <td>17000.0</td>\n    </tr>\n    <tr>\n      <th>Wu Y et al. (2021) [PMID: 33964859]</th>\n      <td>-0.0986</td>\n      <td>0.0398</td>\n      <td>-0.1765</td>\n      <td>-0.0206</td>\n      <td>37861.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Michels KB et al. (2006) [PMID: 16094624]</th>\n      <td>-0.0923</td>\n      <td>0.0424</td>\n      <td>-0.1753</td>\n      <td>-0.0093</td>\n      <td>582.0</td>\n      <td>2151.0</td>\n    </tr>\n    <tr>\n      <th>Gallus S et al. (2006) [PMID: 16596295]</th>\n      <td>-0.0825</td>\n      <td>0.0829</td>\n      <td>-0.2451</td>\n      <td>0.0800</td>\n      <td>2569.0</td>\n      <td>5157.0</td>\n    </tr>\n    <tr>\n      <th>Riseberg E et al. (2024) [PMID: 38042408]</th>\n      <td>-0.0284</td>\n      <td>0.0255</td>\n      <td>-0.0784</td>\n      <td>0.0216</td>\n      <td>5733.0</td>\n      <td>63847.0</td>\n    </tr>\n    <tr>\n      <th>Yuan G et al. (2020) [PMID: 33133556]</th>\n      <td>-0.0017</td>\n      <td>0.0007</td>\n      <td>-0.0031</td>\n      <td>-0.0004</td>\n      <td>210.0</td>\n      <td>630.0</td>\n    </tr>\n    <tr>\n      <th>Farvid MS et al. (2018) [PMID: 29716928]</th>\n      <td>0.0184</td>\n      <td>0.0233</td>\n      <td>-0.0272</td>\n      <td>0.0641</td>\n      <td>1318.0</td>\n      <td>44264.0</td>\n    </tr>\n    <tr>\n      <th>Larsson SC et al. (2009) [PMID: 19491389]</th>\n      <td>0.0392</td>\n      <td>0.0613</td>\n      <td>-0.0810</td>\n      <td>0.1594</td>\n      <td>2952.0</td>\n      <td>61433.0</td>\n    </tr>\n    <tr>\n      <th>Genkinger JM et al. (2013) [PMID: 23329367]</th>\n      <td>0.0488</td>\n      <td>0.1734</td>\n      <td>-0.2910</td>\n      <td>0.3886</td>\n      <td>1268.0</td>\n      <td>52062.0</td>\n    </tr>\n    <tr>\n      <th>Kakkoura MG et al. (2022) [PMID: 35513801]</th>\n      <td>0.1611</td>\n      <td>0.0782</td>\n      <td>0.0078</td>\n      <td>0.3143</td>\n      <td>2582.0</td>\n      <td>510146.0</td>\n    </tr>\n    <tr>\n      <th>Voorrips LE et al. (2002) [PMID: 12324303]</th>\n      <td>0.2151</td>\n      <td>0.1579</td>\n      <td>-0.0944</td>\n      <td>0.5246</td>\n      <td>941.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Pala V et al. (2009) [PMID: 19491385]</th>\n      <td>0.2279</td>\n      <td>0.0855</td>\n      <td>0.0603</td>\n      <td>0.3955</td>\n      <td>7119.0</td>\n      <td>319826.0</td>\n    </tr>\n    <tr>\n      <th>Kaluza J et al. (2021) [PMID: 33004231]</th>\n      <td>0.2420</td>\n      <td>0.1119</td>\n      <td>0.0228</td>\n      <td>0.4613</td>\n      <td>1870.0</td>\n      <td>33780.0</td>\n    </tr>\n    <tr>\n      <th>Cho E et al. (2003) [PMID: 12865454]</th>\n      <td>0.2852</td>\n      <td>0.1348</td>\n      <td>0.0210</td>\n      <td>0.5493</td>\n      <td>714.0</td>\n      <td>90655.0</td>\n    </tr>\n    <tr>\n      <th>Lin X et al. (2025) [PMID: 40121496]</th>\n      <td>0.3158</td>\n      <td>0.1654</td>\n      <td>-0.0083</td>\n      <td>0.6399</td>\n      <td>243.0</td>\n      <td>13567.0</td>\n    </tr>\n    <tr>\n      <th>Jordan I et al. (2013) [PMID: 22729968]</th>\n      <td>0.2975</td>\n      <td>0.1154</td>\n      <td>0.0714</td>\n      <td>0.5236</td>\n      <td>115.0</td>\n      <td>345.0</td>\n    </tr>\n    <tr>\n      <th>Fraser GE et al. (2020) [PMID: 32095830]</th>\n      <td>0.3717</td>\n      <td>0.0942</td>\n      <td>0.1870</td>\n      <td>0.5563</td>\n      <td>1057.0</td>\n      <td>52795.0</td>\n    </tr>\n    <tr>\n      <th>Bessaoud F et al. (2008) [PMID: 18444149]</th>\n      <td>0.3796</td>\n      <td>0.1614</td>\n      <td>0.0632</td>\n      <td>0.6959</td>\n      <td>437.0</td>\n      <td>1359.0</td>\n    </tr>\n    <tr>\n      <th>Dashti F et al. (2022) [PMID: 35083630]</th>\n      <td>0.4711</td>\n      <td>0.1664</td>\n      <td>0.1449</td>\n      <td>0.7973</td>\n      <td>350.0</td>\n      <td>1050.0</td>\n    </tr>\n    <tr>\n      <th>Jayalekshmi P et al. (2009) [PMID: 19548367]</th>\n      <td>0.4800</td>\n      <td>0.1673</td>\n      <td>0.1521</td>\n      <td>0.8079</td>\n      <td>264.0</td>\n      <td>359619.0</td>\n    </tr>\n    <tr>\n      <th>Lamchabbek N et al. (2025) [PMID: 41417097]</th>\n      <td>0.4845</td>\n      <td>0.0974</td>\n      <td>0.2935</td>\n      <td>0.6754</td>\n      <td>-</td>\n      <td>2800.0</td>\n    </tr>\n    <tr>\n      <th>Hirko KA et al. (2018) [PMID: 29071721]</th>\n      <td>0.5018</td>\n      <td>0.1821</td>\n      <td>0.1450</td>\n      <td>0.8587</td>\n      <td>794.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Yeo W et al. (2025) [PMID: 39868354]</th>\n      <td>0.9384</td>\n      <td>0.1713</td>\n      <td>0.6027</td>\n      <td>1.2741</td>\n      <td>5186.0</td>\n      <td>10757.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.99,
-        "ci_low": 0.96,
-        "ci_upp": 1.02,
-        "pi_low": 0.9,
-        "pi_upp": 1.09,
+        "pooled_es": 0.97,
+        "ci_low": 0.92,
+        "ci_upp": 1.03,
+        "pi_low": 0.75,
+        "pi_upp": 1.27,
         "interpretation": "Not statistically significant",
-        "i2": 84.1,
-        "tau2": 0.0,
-        "eggers_p": 0.314801545381515,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.3148). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "i2": 84.27,
+        "tau2": 0.02,
+        "eggers_p": 0.24022966031251877,
+        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.2402). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
         "loo_results": [
             {
                 "omitted": "Bahadoran Z et al. (2013) [PMID: 24066929]",
-                "pooled_es": 0.992346831376257,
-                "ci_low": 0.9293446089049634,
-                "ci_upp": 1.0596201068006628,
-                "is_significant": false
-            },
-            {
-                "omitted": "Huang Y et al. (2024) [PMID: 39487869]",
-                "pooled_es": 0.9918762656303739,
-                "ci_low": 0.927679329512474,
-                "ci_upp": 1.0605157353650265,
+                "pooled_es": 0.9791944517321216,
+                "ci_low": 0.8864145087342538,
+                "ci_upp": 1.0816855600345596,
                 "is_significant": false
             },
             {
                 "omitted": "Pryor M et al. (1989) [PMID: 2539254]",
-                "pooled_es": 0.9915921275716009,
-                "ci_low": 0.9271351677199766,
-                "ci_upp": 1.060530310677361,
+                "pooled_es": 0.9763293031380752,
+                "ci_low": 0.8809985818555798,
+                "ci_upp": 1.0819755307192298,
                 "is_significant": false
             },
             {
                 "omitted": "Aro A et al. (2000) [PMID: 11525591]",
-                "pooled_es": 0.9924395035799112,
-                "ci_low": 0.9284536198054607,
-                "ci_upp": 1.0608350780864149,
+                "pooled_es": 0.9789854104946849,
+                "ci_low": 0.8841941144252969,
+                "ci_upp": 1.0839389431860103,
                 "is_significant": false
             },
             {
                 "omitted": "McCann SE et al. (2004) [PMID: 15342449]",
-                "pooled_es": 0.991979289704677,
-                "ci_low": 0.9277360012764304,
-                "ci_upp": 1.0606712576089776,
+                "pooled_es": 0.9775780881706707,
+                "ci_low": 0.8824966672675728,
+                "ci_upp": 1.0829037138807325,
                 "is_significant": false
             },
             {
                 "omitted": "Knekt P et al. (1996) [PMID: 8605108]",
-                "pooled_es": 0.9932796243500207,
-                "ci_low": 0.9298340566754505,
-                "ci_upp": 1.0610542871234956,
+                "pooled_es": 0.9814189988840312,
+                "ci_low": 0.887261422877247,
+                "ci_upp": 1.0855687247700736,
                 "is_significant": false
             },
             {
                 "omitted": "Van 't Veer P et al. (1991) [PMID: 1848533]",
-                "pooled_es": 0.9919489409312838,
-                "ci_low": 0.9275598678733237,
-                "ci_upp": 1.0608077553750688,
+                "pooled_es": 0.9773892638313783,
+                "ci_low": 0.8820197379372844,
+                "ci_upp": 1.0830707431637645,
                 "is_significant": false
             },
             {
                 "omitted": "Aguilera-Buenosvinos I et al. (2021) [PMID: 33669972]",
-                "pooled_es": 0.9931332157825179,
-                "ci_low": 0.9292657246026687,
-                "ci_upp": 1.0613902548834984,
+                "pooled_es": 0.9806823165538271,
+                "ci_low": 0.8857702984457002,
+                "ci_upp": 1.0857643428425903,
                 "is_significant": false
             },
             {
                 "omitted": "van't Veer P et al. (1989) [PMID: 2736542]",
-                "pooled_es": 0.9920509226278568,
-                "ci_low": 0.9276709512349295,
-                "ci_upp": 1.0608988367875987,
+                "pooled_es": 0.977664313892337,
+                "ci_low": 0.882261468867222,
+                "ci_upp": 1.0833834916148009,
                 "is_significant": false
             },
             {
                 "omitted": "Hjart\u00e5ker A et al. (2010) [PMID: 20658314]",
-                "pooled_es": 0.992952187795072,
-                "ci_low": 0.9289733467878888,
-                "ci_upp": 1.0613372823409342,
+                "pooled_es": 0.9801791752342752,
+                "ci_low": 0.8851381758151247,
+                "ci_upp": 1.0854251254931888,
                 "is_significant": false
             },
             {
                 "omitted": "Yu L et al. (2019) [PMID: 30854047]",
-                "pooled_es": 0.9963694883631157,
-                "ci_low": 0.9334863299906494,
-                "ci_upp": 1.0634886933490726,
+                "pooled_es": 0.9865814473420192,
+                "ci_low": 0.8919347171527444,
+                "ci_upp": 1.0912715174341485,
                 "is_significant": false
             },
             {
                 "omitted": "Kesse-Guyot E et al. (2007) [PMID: 17536191]",
-                "pooled_es": 0.9922624305916083,
-                "ci_low": 0.9279331056975045,
-                "ci_upp": 1.0610514110534706,
+                "pooled_es": 0.978240084572646,
+                "ci_low": 0.882835191917222,
+                "ci_upp": 1.0839550482650278,
                 "is_significant": false
             },
             {
                 "omitted": "Hjart\u00e5ker A et al. (2001) [PMID: 11519053]",
-                "pooled_es": 0.992399208663322,
-                "ci_low": 0.9280973394753008,
-                "ci_upp": 1.0611561389803954,
+                "pooled_es": 0.9785915130787665,
+                "ci_low": 0.883174429563353,
+                "ci_upp": 1.0843173414149383,
                 "is_significant": false
             },
             {
                 "omitted": "Plagens-Rotman K et al. (2017) [PMID: 29693885]",
-                "pooled_es": 0.9921491863176863,
-                "ci_low": 0.9276714252017088,
-                "ci_upp": 1.061108471349985,
+                "pooled_es": 0.9777953184393656,
+                "ci_low": 0.8821345366413659,
+                "ci_upp": 1.0838297845157814,
                 "is_significant": false
             },
             {
                 "omitted": "Shin WK et al. (2019) [PMID: 31877693]",
-                "pooled_es": 0.9927829762861163,
-                "ci_low": 0.9285136724350656,
-                "ci_upp": 1.061500834358955,
+                "pooled_es": 0.9794507676066367,
+                "ci_low": 0.883911926006667,
+                "ci_upp": 1.0853160568827918,
                 "is_significant": false
             },
             {
                 "omitted": "Ahmadnia Z et al. (2016) [PMID: 27221892]",
-                "pooled_es": 0.9936379395515259,
-                "ci_low": 0.9294767958324592,
-                "ci_upp": 1.0622280828774646,
+                "pooled_es": 0.9810889833640993,
+                "ci_low": 0.8853791943481484,
+                "ci_upp": 1.0871450327981327,
                 "is_significant": false
             },
             {
                 "omitted": "Jabbari M et al. (2022) [PMID: 35048753]",
-                "pooled_es": 0.9916378703883538,
-                "ci_low": 0.9270044576287575,
-                "ci_upp": 1.060777710286001,
+                "pooled_es": 0.9763238444661695,
+                "ci_low": 0.8805843836405141,
+                "ci_upp": 1.0824723524308315,
                 "is_significant": false
             },
             {
                 "omitted": "Knight JA et al. (2007) [PMID: 17372236]",
-                "pooled_es": 0.9947354544503492,
-                "ci_low": 0.9307374642780266,
-                "ci_upp": 1.0631339795783303,
+                "pooled_es": 0.9827695415514459,
+                "ci_low": 0.8869301236722109,
+                "ci_upp": 1.0889651236585915,
                 "is_significant": false
             },
             {
                 "omitted": "Shin MH et al. (2002) [PMID: 12208895]",
-                "pooled_es": 0.9965268660874875,
-                "ci_low": 0.9327125106215854,
-                "ci_upp": 1.0647072742407442,
+                "pooled_es": 0.9845504270583951,
+                "ci_low": 0.8884594255506374,
+                "ci_upp": 1.0910341153959888,
                 "is_significant": false
             },
             {
                 "omitted": "Liu R et al. (2020) [PMID: 32885537]",
-                "pooled_es": 0.9944107295431505,
-                "ci_low": 0.9299943751697579,
-                "ci_upp": 1.0632889030646437,
+                "pooled_es": 0.9813652433651039,
+                "ci_low": 0.8849615049039267,
+                "ci_upp": 1.0882707728508523,
                 "is_significant": false
             },
             {
                 "omitted": "Jacobs I et al. (2021) [PMID: 34836361]",
-                "pooled_es": 0.9962245110337969,
-                "ci_low": 0.9317293504534255,
-                "ci_upp": 1.0651840858094104,
+                "pooled_es": 0.9824241860213734,
+                "ci_low": 0.8855499162452188,
+                "ci_upp": 1.0898959658559721,
                 "is_significant": false
             },
             {
                 "omitted": "Bao PP et al. (2012) [PMID: 22860889]",
-                "pooled_es": 0.996004054224029,
-                "ci_low": 0.9309088912711087,
-                "ci_upp": 1.065651091457666,
+                "pooled_es": 0.9804029046612175,
+                "ci_low": 0.8829591507898599,
+                "ci_upp": 1.0886005933664207,
                 "is_significant": false
             },
             {
                 "omitted": "McCullough ML et al. (2005) [PMID: 16365007]",
-                "pooled_es": 0.9961691703513738,
-                "ci_low": 0.9311837544495599,
-                "ci_upp": 1.0656897859490069,
+                "pooled_es": 0.9808472311915796,
+                "ci_low": 0.883485997438955,
+                "ci_upp": 1.0889377915722567,
                 "is_significant": false
             },
             {
                 "omitted": "McCann SE et al. (2017) [PMID: 29955696]",
-                "pooled_es": 0.9944888656939892,
-                "ci_low": 0.9290886497838471,
-                "ci_upp": 1.0644927200643453,
+                "pooled_es": 0.978306523373664,
+                "ci_low": 0.8807269177873532,
+                "ci_upp": 1.08669740227759,
                 "is_significant": false
             },
             {
                 "omitted": "Wirf\u00e4lt E et al. (2011) [PMID: 21767080]",
-                "pooled_es": 0.9958500096756496,
-                "ci_low": 0.9297074722893351,
-                "ci_upp": 1.0666981511173206,
+                "pooled_es": 0.977299864889543,
+                "ci_low": 0.879087218269392,
+                "ci_upp": 1.0864849426356107,
                 "is_significant": false
             },
             {
                 "omitted": "Wu Y et al. (2021) [PMID: 33964859]",
-                "pooled_es": 0.9966033501840764,
-                "ci_low": 0.9300185782404944,
-                "ci_upp": 1.0679552654498559,
+                "pooled_es": 0.976511071726871,
+                "ci_low": 0.8778827854809387,
+                "ci_upp": 1.0862200386840448,
                 "is_significant": false
             },
             {
                 "omitted": "Michels KB et al. (2006) [PMID: 16094624]",
-                "pooled_es": 0.9959127184168698,
-                "ci_low": 0.9293728999763172,
-                "ci_upp": 1.0672165529355913,
+                "pooled_es": 0.9763028359387252,
+                "ci_low": 0.8777684401932284,
+                "ci_upp": 1.0858982663493473,
                 "is_significant": false
             },
             {
                 "omitted": "Gallus S et al. (2006) [PMID: 16596295]",
-                "pooled_es": 0.9928611386868107,
-                "ci_low": 0.9273044990729581,
-                "ci_upp": 1.0630523648919687,
+                "pooled_es": 0.9760948121716502,
+                "ci_low": 0.8785238337825194,
+                "ci_upp": 1.084502259029511,
                 "is_significant": false
             },
             {
                 "omitted": "Riseberg E et al. (2024) [PMID: 38042408]",
-                "pooled_es": 0.992622124898839,
-                "ci_low": 0.9249232718869486,
-                "ci_upp": 1.0652761291523838,
+                "pooled_es": 0.9704551013394379,
+                "ci_low": 0.8702850012140706,
+                "ci_upp": 1.0821548141148318,
                 "is_significant": false
             },
             {
                 "omitted": "Yuan G et al. (2020) [PMID: 33133556]",
-                "pooled_es": 0.9769024700593616,
-                "ci_low": 0.8844106518932293,
-                "ci_upp": 1.0790670984854833,
-                "is_significant": false
-            },
-            {
-                "omitted": "Larsson SC et al. (2020) [PMID: 33261611]",
-                "pooled_es": 0.9778593831218525,
-                "ci_low": 0.8863399918732145,
-                "ci_upp": 1.0788286458095753,
+                "pooled_es": 0.9546666874536117,
+                "ci_low": 0.8494273836368057,
+                "ci_upp": 1.0729445526368142,
                 "is_significant": false
             },
             {
                 "omitted": "Farvid MS et al. (2018) [PMID: 29716928]",
-                "pooled_es": 0.9886237943666174,
-                "ci_low": 0.921028670283998,
-                "ci_upp": 1.0611797855179415,
+                "pooled_es": 0.9673554649502623,
+                "ci_low": 0.8668827829024695,
+                "ci_upp": 1.079473042982813,
                 "is_significant": false
             },
             {
                 "omitted": "Larsson SC et al. (2009) [PMID: 19491389]",
-                "pooled_es": 0.9891997400522807,
-                "ci_low": 0.9233896924716675,
-                "ci_upp": 1.0597000742993714,
+                "pooled_es": 0.971369445081085,
+                "ci_low": 0.8738196644385374,
+                "ci_upp": 1.0798092984590908,
                 "is_significant": false
             },
             {
                 "omitted": "Genkinger JM et al. (2013) [PMID: 23329367]",
-                "pooled_es": 0.9906485291834108,
-                "ci_low": 0.9257137644749237,
-                "ci_upp": 1.060138183134728,
-                "is_significant": false
-            },
-            {
-                "omitted": "Lumsden AL et al. (2023) [PMID: 36473423]",
-                "pooled_es": 0.9843451834951965,
-                "ci_low": 0.9186925669566621,
-                "ci_upp": 1.0546895393743836,
+                "pooled_es": 0.9731377364253729,
+                "ci_low": 0.8767844677516818,
+                "ci_upp": 1.0800796420167675,
                 "is_significant": false
             },
             {
                 "omitted": "Kakkoura MG et al. (2022) [PMID: 35513801]",
-                "pooled_es": 0.986499552617522,
-                "ci_low": 0.9218303353384173,
-                "ci_upp": 1.0557055132681243,
+                "pooled_es": 0.9678961648546824,
+                "ci_low": 0.8716634973740622,
+                "ci_upp": 1.0747530311440563,
                 "is_significant": false
             },
             {
                 "omitted": "Voorrips LE et al. (2002) [PMID: 12324303]",
-                "pooled_es": 0.9892428334397902,
-                "ci_low": 0.9246665516613977,
-                "ci_upp": 1.0583289530195283,
+                "pooled_es": 0.9699841765074108,
+                "ci_low": 0.8743109871926125,
+                "ci_upp": 1.0761265916328744,
                 "is_significant": false
             },
             {
                 "omitted": "Pala V et al. (2009) [PMID: 19491385]",
-                "pooled_es": 0.9855716912797651,
-                "ci_low": 0.921532995257742,
-                "ci_upp": 1.0540605313653266,
+                "pooled_es": 0.9662790318319225,
+                "ci_low": 0.8708378911838133,
+                "ci_upp": 1.0721802264354579,
                 "is_significant": false
             },
             {
                 "omitted": "Kaluza J et al. (2021) [PMID: 33004231]",
-                "pooled_es": 0.9873179905565823,
-                "ci_low": 0.9230972213325118,
-                "ci_upp": 1.0560066609988776,
+                "pooled_es": 0.9673965906803847,
+                "ci_low": 0.8720128669221174,
+                "ci_upp": 1.0732137095215781,
                 "is_significant": false
             },
             {
                 "omitted": "Cho E et al. (2003) [PMID: 12865454]",
-                "pooled_es": 0.9879083045353042,
-                "ci_low": 0.9237665891221536,
-                "ci_upp": 1.056503698728991,
+                "pooled_es": 0.9676736925338176,
+                "ci_low": 0.8725892567754369,
+                "ci_upp": 1.073119303213031,
                 "is_significant": false
             },
             {
                 "omitted": "Lin X et al. (2025) [PMID: 40121496]",
-                "pooled_es": 0.9886645456767906,
-                "ci_low": 0.9244528260450964,
-                "ci_upp": 1.0573363576159513,
+                "pooled_es": 0.9685993146662132,
+                "ci_low": 0.8735858262105965,
+                "ci_upp": 1.073946719627395,
                 "is_significant": false
             },
             {
                 "omitted": "Jordan I et al. (2013) [PMID: 22729968]",
-                "pooled_es": 0.986755517725149,
-                "ci_low": 0.9229213412130394,
-                "ci_upp": 1.055004807323303,
+                "pooled_es": 0.9662951846616387,
+                "ci_low": 0.871478282083396,
+                "ci_upp": 1.0714281733654467,
                 "is_significant": false
             },
             {
                 "omitted": "Fraser GE et al. (2020) [PMID: 32095830]",
-                "pooled_es": 0.98366071893201,
-                "ci_low": 0.9212153644033108,
-                "ci_upp": 1.0503389840838846,
+                "pooled_es": 0.9629963128487986,
+                "ci_low": 0.8695535664972679,
+                "ci_upp": 1.0664804726130634,
                 "is_significant": false
             },
             {
                 "omitted": "Bessaoud F et al. (2008) [PMID: 18444149]",
-                "pooled_es": 0.9880837702158667,
-                "ci_low": 0.9242162607195888,
-                "ci_upp": 1.0563648124994613,
+                "pooled_es": 0.9673933319462735,
+                "ci_low": 0.8729283808390318,
+                "ci_upp": 1.0720809166435887,
                 "is_significant": false
             },
             {
                 "omitted": "Dashti F et al. (2022) [PMID: 35083630]",
-                "pooled_es": 0.9876173571439747,
-                "ci_low": 0.9242152151870997,
-                "ci_upp": 1.0553689531443062,
+                "pooled_es": 0.9662741045166662,
+                "ci_low": 0.8725989737986306,
+                "ci_upp": 1.0700054355953799,
                 "is_significant": false
             },
             {
                 "omitted": "Jayalekshmi P et al. (2009) [PMID: 19548367]",
-                "pooled_es": 0.9875898548413141,
-                "ci_low": 0.9242295317495964,
-                "ci_upp": 1.0552938289465277,
+                "pooled_es": 0.9661952030946332,
+                "ci_low": 0.8725944159076049,
+                "ci_upp": 1.0698362875862446,
                 "is_significant": false
             },
             {
                 "omitted": "Lamchabbek N et al. (2025) [PMID: 41417097]",
-                "pooled_es": 0.9821663371377192,
-                "ci_low": 0.9213365828934754,
-                "ci_upp": 1.0470122772906938,
+                "pooled_es": 0.9605456646576911,
+                "ci_low": 0.8690876316537361,
+                "ci_upp": 1.0616282412592073,
                 "is_significant": false
             },
             {
                 "omitted": "Hirko KA et al. (2018) [PMID: 29071721]",
-                "pooled_es": 0.9879646223602677,
-                "ci_low": 0.9245123801708411,
-                "ci_upp": 1.0557717949164696,
+                "pooled_es": 0.9667496381207418,
+                "ci_low": 0.873105471166061,
+                "ci_upp": 1.0704375286509082,
                 "is_significant": false
             },
             {
                 "omitted": "Yeo W et al. (2025) [PMID: 39868354]",
-                "pooled_es": 0.9850239032083546,
-                "ci_low": 0.9255550295034856,
-                "ci_upp": 1.0483137781794833,
+                "pooled_es": 0.9606633092491891,
+                "ci_low": 0.8732068103152923,
+                "ci_upp": 1.0568790609917222,
                 "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled analysis of 49 studies yielded an effect size of 0.99 (95% CI: 0.96\u20131.02), indicating no statistically significant association between dairy and breast cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 84.10%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 46 studies yielded an effect size of 0.97 (95% CI: 0.92\u20131.03), indicating no statistically significant association between dairy and breast cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 84.27%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 1278,
@@ -2791,8 +2681,8 @@
         },
         "extracted": 63
     },
-    "plot_url": "static/dairy/forest_breast_cancer_incidence_primary.png?t=5091",
-    "funnel_plot_url": "static/dairy/funnel_breast_cancer_incidence_primary.png?t=3900",
-    "baujat_plot_url": "static/dairy/baujat_breast_cancer_incidence_primary.png?t=9954",
+    "plot_url": "static/dairy/forest_breast_cancer_incidence_primary.png?t=5399",
+    "funnel_plot_url": "static/dairy/funnel_breast_cancer_incidence_primary.png?t=589",
+    "baujat_plot_url": "static/dairy/baujat_breast_cancer_incidence_primary.png?t=1400",
     "last_run": "2026-06-14 22:38:33"
 }

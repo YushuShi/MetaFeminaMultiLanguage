@@ -1,64 +1,6 @@
 {
     "success": true,
-    "studies": [
-        {
-            "Study": "Yang C et al. (2025) [PMID: 39939905]",
-            "PMID": "39939905",
-            "Effect Size": 0.87,
-            "Lower CI": 0.77,
-            "Upper CI": 0.99,
-            "Population": "General",
-            "Reference": "The causal relationship between the gut microbiota and endometrial cancer: a mendelian randomization study.",
-            "Authors": "Yang C, Qin LH, Li L, Wei QY, Long L, Liao JY",
-            "Journal": "BMC cancer",
-            "Year": "2025",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/39939905/",
-            "Effect Type": "OR",
-            "SE": 0.05612244897959183,
-            "Sample Size": 73224,
-            "Cases": null,
-            "Estimated Cases": 2270,
-            "Design": "Mendelian randomization (two-sample MR)",
-            "Timing": "Prospective (genetic instrument, population-based)",
-            "Continent": "Europe",
-            "Stage": "Endometrioid histology (subtype of endometrial/uterine cancer)",
-            "Quality %": 57.1,
-            "Quality Score": "Moderate",
-            "comparison_type": "Continuous (per genetically predicted increase in genus.Lactobacillus abundance)",
-            "JBI": {
-                "q1": "No",
-                "q2": "No",
-                "q3": "Yes",
-                "q4": "Unclear",
-                "q5": "Yes",
-                "q6": "NA",
-                "q7": "Yes",
-                "q8": "NA",
-                "q9": "NA",
-                "q10": "NA",
-                "q11": "Yes"
-            },
-            "exposure_measurement_type": "human_biospecimen",
-            "exposure_measurement_supporting_text": "MiBioGen's gut microbiota data as the exposure ... Single nucleotide polymorphism (SNP) was used as the instrumental variable.",
-            "extraction_supporting_text": {
-                "sample_size": "The exposure GWAS (MiBioGen) included 18,340 individuals, and the endometrioid endometrial-cancer outcome GWAS included 8,758 cases plus 46,126 controls (54,884); combined reported participants contributing source data total 73,224.",
-                "effect_size": "genus.Lactobacillus ... identified as protective factors",
-                "effect_direction": "genus.Lactobacillus ... identified as protective factors",
-                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.030.",
-                "confidence_interval": "",
-                "outcome_definition": "endometrioid histology EC (ID: ebi-a-GCST006465)",
-                "exposure_definition": "genus.Lactobacillus"
-            },
-            "P Value": 0.029839949844769047
-        }
-    ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>NaN</td>\n      <td>73224</td>\n      <td>0.884956</td>\n      <td>0.793733</td>\n      <td>0.991289</td>\n    </tr>\n  </tbody>\n</table>",
-    "headline": {
-        "pooled_es": 0.88,
-        "ci_low": 0.79,
-        "ci_upp": 0.99,
-        "interpretation": "statistically significant (decreased risk/odds)"
-    },
+    "studies": [],
     "screening_stats": {
         "llm_screened_out": 14,
         "consensus_bypassed": 0,
@@ -76,8 +18,6 @@
         },
         "extracted": 4
     },
-    "plot_url": "static/lactobacillus/forest_uterine_cancer_incidence_primary.png?t=3223",
-    "funnel_plot_url": "static/lactobacillus/funnel_uterine_cancer_incidence_primary.png?t=2292",
-    "baujat_plot_url": null,
-    "last_run": "2026-06-15 14:23:16"
+    "last_run": "2026-06-15 14:23:16",
+    "error": "No relevant evidence was identified in the reviewed sources."
 }

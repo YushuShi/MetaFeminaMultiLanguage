@@ -24,8 +24,8 @@
   "headline": {
     "ci_low": 0.7993028662776337,
     "ci_upp": 1.5285959868192904,
-    "eggers_intercept": -0.04307807961947408,
-    "eggers_p": 0.9775798369059039,
+    "eggers_intercept": -0.043078079619474186,
+    "eggers_p": 0.9775798369059038,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
     "i2": 78.80073199671503,
     "interpretation": "The pooled subtype-specific estimate is 1.11, indicating a higher relative association for this exposure.",
@@ -79,7 +79,7 @@
     "results_interpretation": "This saved analysis contains 6 separately reported Triple-negative breast cancer estimates.",
     "tau2": 0.11486393204315415
   },
-  "input_fingerprint": "3d2faf11025e96206d55870223dfbdaf3392f248ecc42a0c32032c18f32b50e6",
+  "input_fingerprint": "b0cbee26b7665f17e0a572f8d517224fd5c544202a4b337b224d573ec3ac939b",
   "plot_url": "Plot/subcategories/breast/triple_negative_breast_cancer/alcohol_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/triple_negative_breast_cancer/alcohol_baujat.png",
@@ -94,7 +94,7 @@
     "subcategory_label": "Triple-negative breast cancer",
     "subcategory_slug": "triple_negative_breast_cancer"
   },
-  "skipped_annotation_count_for_build": 1,
+  "skipped_annotation_count_for_build": 8,
   "studies": [
     {
       "Authors": "Kabat GC, Kim M, Phipps AI, Li CI, Messina CR, Wactawski-Wende J, Kuller L, Simon MS, Yasmeen S, Wassertheil-Smoller S, Rohan TE",
@@ -130,6 +130,7 @@
       "cases": 27.0,
       "comparison_type": "≥7 drinks per week vs never drinkers",
       "context_id": "21360045|breast|alcohol|0",
+      "design": "Cohort",
       "effect_size": 0.57,
       "effect_type": "HR",
       "evidence_locator": "Table 3 reports for TNBC cases: ≥7 drinks/week, 27 cases, HR 0.57, 95% CI 0.34–0.95, with never drank as the reference.",
@@ -201,6 +202,7 @@
       "cases": 226.0,
       "comparison_type": "per 10 g/day increase in alcohol intake",
       "context_id": "25677034|breast|alcohol|0",
+      "design": "Cohort",
       "effect_size": 1.12,
       "effect_type": "HR",
       "evidence_locator": "For ER-/PR-/HER2- breast tumors, HR was 1.12 (95% CI 1.03-1.23) per 10g/day; Table 2 reports 226 cases.",
@@ -271,6 +273,7 @@
       "cases": 1795.0,
       "comparison_type": ">7 drinks/week versus light drinking (0 to ≤2 drinks/week), African American women",
       "context_id": "26705260|breast|alcohol|0",
+      "design": "Case-Control",
       "effect_size": 2.12,
       "effect_type": "OR",
       "evidence_locator": "\"The association of >7 drinks per week with ... triple-negative [adjusted OR, 95% CI 2.12 (1.12-4.04)] breast cancers was significant for African American\" women.",
@@ -340,6 +343,7 @@
       "cases": 1766.0,
       "comparison_type": "Highest vs Lowest",
       "context_id": "26835221|breast|alcohol|0",
+      "design": "Case-Control",
       "effect_size": 1.93,
       "effect_type": "OR",
       "evidence_locator": "\"TNBC: OR 1.93, 95% CI 1.07-3.47\"",
@@ -409,6 +413,7 @@
       "cases": 5108.0,
       "comparison_type": "≥7 dpw (reference group not specified for subtype estimate)",
       "context_id": "28420652|breast|alcohol|0",
+      "design": "Case-Control",
       "effect_size": 1.39,
       "effect_type": "OR",
       "evidence_locator": "\"triple-negative [OR adj, 1.39; 95% CI, 0.98-2.00] molecular subtype\"",
@@ -478,6 +483,7 @@
       "cases": 1812.0,
       "comparison_type": "< 18 years vs. no consumption",
       "context_id": "37787924|breast|alcohol|0",
+      "design": "Case-Control",
       "effect_size": 0.62,
       "effect_type": "OR",
       "evidence_locator": "Younger age at alcohol use initiation (<18 years vs. no consumption) was associated with triple-negative YOBC: aOR 0.62 (95% CI 0.42, 0.93).",

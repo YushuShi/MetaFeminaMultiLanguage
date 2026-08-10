@@ -48,73 +48,16 @@
                 "confidence_interval": "95% CI = 1.01-1.98",
                 "outcome_definition": "adenocarcinoma of the endometrium",
                 "exposure_definition": "Milk and dairy consumption were assessed ... as servings per day"
-            }
-        },
-        {
-            "Study": "Lumsden AL et al. (2023) [PMID: 36473423]",
-            "PMID": "36473423",
-            "Effect Size": 3.98,
-            "Lower CI": 1.48,
-            "Upper CI": 10.7,
-            "Population": "General",
-            "Reference": "Milk consumption and risk of twelve cancers: A large-scale observational and Mendelian randomisation study.",
-            "Authors": "Lumsden AL, Mulugeta A, Hypp\u00f6nen E",
-            "Journal": "Clinical nutrition (Edinburgh, Scotland)",
-            "Year": "2023",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/36473423/",
-            "Effect Type": "OR",
-            "SE": 2.3520408163265305,
-            "Sample Size": 255196,
-            "Cases": null,
-            "Estimated Cases": 7911.0,
-            "Design": "Cohort (Mendelian randomisation analysis within UK Biobank)",
-            "Timing": "Prospective",
-            "Continent": "Europe",
-            "Stage": "Premenopausal",
-            "Quality %": 63.6,
-            "Quality Score": "Moderate",
-            "comparison_type": "Continuous (per genetically predicted increase in milk consumption in pre-menopausal females)",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Unclear",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Unclear",
-                "q9": "Unclear",
-                "q10": "Unclear",
-                "q11": "Yes"
             },
-            "exposure_measurement_type": "unclear",
-            "exposure_measurement_supporting_text": "Milk consumption was proxied using a genetic variant (rs4988235) near the lactase gene (LCT) locus.",
-            "extraction_supporting_text": {
-                "sample_size": "white British participants of the UK Biobank (n\u00a0=\u00a0up to 255,196)",
-                "effect_size": "uterine cancer in pre-menopausal females (3.98, 1.48-10.7)",
-                "effect_direction": "greater risk of uterine cancer in pre-menopausal females",
-                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.006.",
-                "confidence_interval": "3.98, 1.48-10.7",
-                "outcome_definition": "uterine cancer in pre-menopausal females",
-                "exposure_definition": "Milk consumption was proxied using a genetic variant (rs4988235) near the lactase gene (LCT) locus."
-            },
-            "P Value": 0.006197497282321578
+            "P Value": null
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Ganmaa D et al. (2012) [PMID: 21717454]</th>\n      <td>0.3436</td>\n      <td>0.1717</td>\n      <td>0.0070</td>\n      <td>0.6802</td>\n      <td>-</td>\n      <td>68019.0</td>\n    </tr>\n    <tr>\n      <th>Lumsden AL et al. (2023) [PMID: 36473423]</th>\n      <td>1.0539</td>\n      <td>0.3120</td>\n      <td>0.4424</td>\n      <td>1.6653</td>\n      <td>-</td>\n      <td>255196.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>NaN</td>\n      <td>68019</td>\n      <td>1.41</td>\n      <td>1.01</td>\n      <td>1.98</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 1.92,
-        "ci_low": 0.96,
-        "ci_upp": 3.82,
-        "pi_low": null,
-        "pi_upp": null,
-        "interpretation": "Not statistically significant",
-        "i2": 74.86,
-        "tau2": 0.19,
-        "eggers_p": null,
-        "funnel_interpretation": "Insufficient studies to perform formal publication bias testing.",
-        "loo_results": [],
-        "results_interpretation": "The pooled analysis of 2 studies yielded an effect size of 1.92 (95% CI: 0.96\u20133.82), indicating no statistically significant association between dairy and uterine cancer. Although the point estimate suggests a potential positive relationship, the confidence interval includes the null. These findings were accompanied by substantial heterogeneity (I\u00b2 = 74.86%), reflecting considerable variability across studies."
+        "pooled_es": 1.41,
+        "ci_low": 1.01,
+        "ci_upp": 1.98,
+        "interpretation": "statistically significant (increased risk/odds)"
     },
     "screening_stats": {
         "llm_screened_out": 143,
@@ -133,8 +76,8 @@
         },
         "extracted": 7
     },
-    "plot_url": "static/dairy/forest_uterine_cancer_incidence_primary.png?t=2297",
-    "funnel_plot_url": "static/dairy/funnel_uterine_cancer_incidence_primary.png?t=2027",
+    "plot_url": "static/dairy/forest_uterine_cancer_incidence_primary.png?t=3996",
+    "funnel_plot_url": "static/dairy/funnel_uterine_cancer_incidence_primary.png?t=5406",
     "baujat_plot_url": null,
     "last_run": "2026-06-15 13:09:08"
 }

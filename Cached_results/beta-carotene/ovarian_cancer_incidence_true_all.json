@@ -443,141 +443,79 @@
                 "exposure_definition": "higher intakes of ... beta-carotene"
             },
             "P Value": 0.04562250602502864
-        },
-        {
-            "Study": "Guo Y et al. (2020) [PMID: 32355161]",
-            "PMID": "32355161",
-            "Effect Size": 1.04,
-            "Lower CI": 1.0,
-            "Upper CI": 1.09,
-            "Population": "General",
-            "Reference": "Appraising the role of circulating concentrations of micro-nutrients in epithelial ovarian cancer risk: A Mendelian randomization analysis.",
-            "Authors": "Guo Y, Lu Y, Jin H",
-            "Journal": "Scientific reports",
-            "Year": "2020",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/32355161/",
-            "Effect Type": "OR",
-            "SE": 0.02295918367346941,
-            "Sample Size": 66450,
-            "Cases": 25509,
-            "Estimated Cases": null,
-            "Design": "Case-Control",
-            "Timing": "Unclear",
-            "Continent": "Unclear",
-            "Stage": "invasive epithelial ovarian cancer",
-            "Quality %": 10.0,
-            "Quality Score": "Fair",
-            "comparison_type": "per 0.3 \u03bcmol/liter (about one SD) increase",
-            "JBI": {
-                "q1": "Unclear",
-                "q2": "Unclear",
-                "q3": "Unclear",
-                "q4": "Unclear",
-                "q5": "Unclear",
-                "q6": "Unclear",
-                "q7": "Unclear",
-                "q8": "Unclear",
-                "q9": "Unclear",
-                "q10": "Yes"
-            },
-            "exposure_measurement_type": "human_biospecimen",
-            "exposure_measurement_supporting_text": "genetically predicted \u03b2-carotene concentration",
-            "extraction_supporting_text": {
-                "sample_size": "25,509 cases and 40,941 controls",
-                "effect_size": "1.04",
-                "effect_direction": "an increased risk of invasive epithelial ovarian cancer was observed with a genetically higher concentration of \u03b2-carotene",
-                "p_value": "P\u2009=\u20090.03",
-                "confidence_interval": "95% CI, 1.00-1.09",
-                "outcome_definition": "invasive epithelial ovarian cancer",
-                "exposure_definition": "genetically predicted \u03b2-carotene concentration"
-            }
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Jeong NH et al. (2009) [PMID: 19266359]</th>\n      <td>-1.9988</td>\n      <td>0.5487</td>\n      <td>-3.0741</td>\n      <td>-0.9234</td>\n      <td>45.0</td>\n      <td>180.0</td>\n    </tr>\n    <tr>\n      <th>Engle A et al. (1991) [PMID: 1866317]</th>\n      <td>-1.1086</td>\n      <td>0.5054</td>\n      <td>-2.0992</td>\n      <td>-0.1179</td>\n      <td>71.0</td>\n      <td>212.0</td>\n    </tr>\n    <tr>\n      <th>Pan SY et al. (2004) [PMID: 15342455]</th>\n      <td>-1.0772</td>\n      <td>0.5107</td>\n      <td>-2.0781</td>\n      <td>-0.0763</td>\n      <td>442.0</td>\n      <td>2577.0</td>\n    </tr>\n    <tr>\n      <th>Slattery ML et al. (1989) [PMID: 2763995]</th>\n      <td>-0.6259</td>\n      <td>0.2828</td>\n      <td>-1.1802</td>\n      <td>-0.0717</td>\n      <td>85.0</td>\n      <td>577.0</td>\n    </tr>\n    <tr>\n      <th>Zhang M et al. (2007) [PMID: 17367574]</th>\n      <td>-0.6075</td>\n      <td>0.2357</td>\n      <td>-1.0695</td>\n      <td>-0.1456</td>\n      <td>254.0</td>\n      <td>906.0</td>\n    </tr>\n    <tr>\n      <th>McCann SE et al. (2001) [PMID: 11588898]</th>\n      <td>-0.3432</td>\n      <td>0.1750</td>\n      <td>-0.6862</td>\n      <td>-0.0001</td>\n      <td>496.0</td>\n      <td>1921.0</td>\n    </tr>\n    <tr>\n      <th>Bidoli E et al. (2001) [PMID: 11822759]</th>\n      <td>-0.1968</td>\n      <td>0.1167</td>\n      <td>-0.4255</td>\n      <td>0.0319</td>\n      <td>1031.0</td>\n      <td>3442.0</td>\n    </tr>\n    <tr>\n      <th>Koushik A et al. (2006) [PMID: 16823847]</th>\n      <td>-0.0408</td>\n      <td>0.0261</td>\n      <td>-0.0919</td>\n      <td>0.0102</td>\n      <td>2012.0</td>\n      <td>521911.0</td>\n    </tr>\n    <tr>\n      <th>Guo Y et al. (2020) [PMID: 32355161]</th>\n      <td>0.0340</td>\n      <td>0.0190</td>\n      <td>-0.0032</td>\n      <td>0.0713</td>\n      <td>25509.0</td>\n      <td>66450.0</td>\n    </tr>\n    <tr>\n      <th>Fairfield KM et al. (2001) [PMID: 11745286]</th>\n      <td>0.0953</td>\n      <td>0.1883</td>\n      <td>-0.2738</td>\n      <td>0.4644</td>\n      <td>301.0</td>\n      <td>80326.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Engle A et al. (1991) [PMID: 1866317]</th>\n      <td>-1.1086</td>\n      <td>0.5054</td>\n      <td>-2.0992</td>\n      <td>-0.1179</td>\n      <td>71.0</td>\n      <td>212.0</td>\n    </tr>\n    <tr>\n      <th>Pan SY et al. (2004) [PMID: 15342455]</th>\n      <td>-1.0772</td>\n      <td>0.5107</td>\n      <td>-2.0781</td>\n      <td>-0.0763</td>\n      <td>442.0</td>\n      <td>2577.0</td>\n    </tr>\n    <tr>\n      <th>Slattery ML et al. (1989) [PMID: 2763995]</th>\n      <td>-0.6259</td>\n      <td>0.2828</td>\n      <td>-1.1802</td>\n      <td>-0.0717</td>\n      <td>85.0</td>\n      <td>577.0</td>\n    </tr>\n    <tr>\n      <th>Zhang M et al. (2007) [PMID: 17367574]</th>\n      <td>-0.6075</td>\n      <td>0.2357</td>\n      <td>-1.0695</td>\n      <td>-0.1456</td>\n      <td>254.0</td>\n      <td>906.0</td>\n    </tr>\n    <tr>\n      <th>McCann SE et al. (2001) [PMID: 11588898]</th>\n      <td>-0.3432</td>\n      <td>0.1750</td>\n      <td>-0.6862</td>\n      <td>-0.0001</td>\n      <td>496.0</td>\n      <td>1921.0</td>\n    </tr>\n    <tr>\n      <th>Bidoli E et al. (2001) [PMID: 11822759]</th>\n      <td>-0.1968</td>\n      <td>0.1167</td>\n      <td>-0.4255</td>\n      <td>0.0319</td>\n      <td>1031.0</td>\n      <td>3442.0</td>\n    </tr>\n    <tr>\n      <th>Koushik A et al. (2006) [PMID: 16823847]</th>\n      <td>-0.0408</td>\n      <td>0.0261</td>\n      <td>-0.0919</td>\n      <td>0.0102</td>\n      <td>2012.0</td>\n      <td>521911.0</td>\n    </tr>\n    <tr>\n      <th>Fairfield KM et al. (2001) [PMID: 11745286]</th>\n      <td>0.0953</td>\n      <td>0.1883</td>\n      <td>-0.2738</td>\n      <td>0.4644</td>\n      <td>301.0</td>\n      <td>80326.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.83,
-        "ci_low": 0.73,
-        "ci_upp": 0.95,
-        "pi_low": 0.59,
-        "pi_upp": 1.17,
+        "pooled_es": 0.74,
+        "ci_low": 0.6,
+        "ci_upp": 0.92,
+        "pi_low": 0.41,
+        "pi_upp": 1.36,
         "interpretation": "Statistically significant (decreased risk/odds)",
-        "i2": 80.67,
-        "tau2": 0.02,
-        "eggers_p": 0.001331443817882502,
-        "funnel_interpretation": "The significant funnel plot asymmetry (egger's p=0.0013) indicates substantial publication bias in this meta-analysis on beta-carotene and ovarian cancer. This specific pattern suggests that smaller studies with smaller or null effects may be underrepresented, compromising the reliability of the pooled estimate and potentially leading to an overestimation of the true association.",
+        "i2": 69.31,
+        "tau2": 0.05,
+        "eggers_p": 0.007405482745728637,
+        "funnel_interpretation": "Egger\u2019s test is generally not recommended when fewer than 10 studies are available.",
         "loo_results": [
             {
-                "omitted": "Jeong NH et al. (2009) [PMID: 19266359]",
-                "pooled_es": 0.8731042048363419,
-                "ci_low": 0.7324156335486306,
-                "ci_upp": 1.040817423311166,
-                "is_significant": false
-            },
-            {
                 "omitted": "Engle A et al. (1991) [PMID: 1866317]",
-                "pooled_es": 0.8487993928070875,
-                "ci_low": 0.6788296149494357,
-                "ci_upp": 1.0613273100693252,
-                "is_significant": false
+                "pooled_es": 0.777019101462211,
+                "ci_low": 0.6178433044869719,
+                "ci_upp": 0.9772035719290907,
+                "is_significant": true
             },
             {
                 "omitted": "Pan SY et al. (2004) [PMID: 15342455]",
-                "pooled_es": 0.8475008975993906,
-                "ci_low": 0.6766007539234674,
-                "ci_upp": 1.0615680920642563,
-                "is_significant": false
+                "pooled_es": 0.774705288688458,
+                "ci_low": 0.6136215400858985,
+                "ci_upp": 0.9780756461675904,
+                "is_significant": true
             },
             {
                 "omitted": "Slattery ML et al. (1989) [PMID: 2763995]",
-                "pooled_es": 0.8536659802816418,
-                "ci_low": 0.6769786588945338,
-                "ci_upp": 1.0764676202352006,
+                "pooled_es": 0.7754938321095509,
+                "ci_low": 0.5991055975787526,
+                "ci_upp": 1.0038141624288586,
                 "is_significant": false
             },
             {
                 "omitted": "Zhang M et al. (2007) [PMID: 17367574]",
-                "pooled_es": 0.8621521514959892,
-                "ci_low": 0.6861456459408094,
-                "ci_upp": 1.083306928676896,
+                "pooled_es": 0.7847294718981832,
+                "ci_low": 0.60768653055539,
+                "ci_upp": 1.013351971949742,
                 "is_significant": false
             },
             {
                 "omitted": "McCann SE et al. (2001) [PMID: 11588898]",
-                "pooled_es": 0.846957890904009,
-                "ci_low": 0.661020975260745,
-                "ci_upp": 1.0851965305361264,
-                "is_significant": false
-            },
-            {
-                "omitted": "Bidoli E et al. (2001) [PMID: 11822759]",
-                "pooled_es": 0.8305758028920851,
-                "ci_low": 0.6392891042050852,
-                "ci_upp": 1.079098892523162,
-                "is_significant": false
-            },
-            {
-                "omitted": "Koushik A et al. (2006) [PMID: 16823847]",
-                "pooled_es": 0.6636454538566209,
-                "ci_low": 0.46682650344004817,
-                "ci_upp": 0.9434453382125111,
+                "pooled_es": 0.7446832767414098,
+                "ci_low": 0.5573145402734259,
+                "ci_upp": 0.9950452439052676,
                 "is_significant": true
             },
             {
-                "omitted": "Guo Y et al. (2020) [PMID: 32355161]",
-                "pooled_es": 0.6701129016970448,
-                "ci_low": 0.48040157770175446,
-                "ci_upp": 0.9347415201446648,
+                "omitted": "Bidoli E et al. (2001) [PMID: 11822759]",
+                "pooled_es": 0.6999455479995124,
+                "ci_low": 0.5165831570092259,
+                "ci_upp": 0.9483928454051161,
+                "is_significant": true
+            },
+            {
+                "omitted": "Koushik A et al. (2006) [PMID: 16823847]",
+                "pooled_es": 0.6823114425183926,
+                "ci_low": 0.5174172055579072,
+                "ci_upp": 0.8997553610331723,
                 "is_significant": true
             },
             {
                 "omitted": "Fairfield KM et al. (2001) [PMID: 11745286]",
-                "pooled_es": 0.8045791803802274,
-                "ci_low": 0.6287028267337319,
-                "ci_upp": 1.0296560313947547,
-                "is_significant": false
+                "pooled_es": 0.6876595214871077,
+                "ci_low": 0.5327848273211189,
+                "ci_upp": 0.8875545872233847,
+                "is_significant": true
             }
         ],
-        "results_interpretation": "The pooled analysis of 10 studies yielded an overall effect size of 0.83 (95% CI: 0.73\u20130.95), suggesting that beta-carotene is associated with a lower risk of ovarian cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 80.67%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 8 studies yielded an overall effect size of 0.74 (95% CI: 0.6\u20130.92), suggesting that beta-carotene is associated with a lower risk of ovarian cancer. However, this association should be interpreted with caution, as there was substantial between-study heterogeneity (I\u00b2 = 69.31%), reflecting considerable variability across studies."
     },
     "screening_stats": {
         "llm_screened_out": 11,
@@ -596,8 +534,8 @@
         },
         "extracted": 10
     },
-    "plot_url": "static/beta_carotene/forest_ovarian_cancer_incidence_primary.png?t=5761",
-    "funnel_plot_url": "static/beta_carotene/funnel_ovarian_cancer_incidence_primary.png?t=7120",
-    "baujat_plot_url": "static\\beta_carotene\\baujat_ovarian_cancer_incidence_primary.png?t=530",
+    "plot_url": "static/beta_carotene/forest_ovarian_cancer_incidence_primary.png?t=3616",
+    "funnel_plot_url": "static/beta_carotene/funnel_ovarian_cancer_incidence_primary.png?t=5563",
+    "baujat_plot_url": "static/beta_carotene/baujat_ovarian_cancer_incidence_primary.png?t=5135",
     "last_run": "2026-06-16 11:20:43"
 }

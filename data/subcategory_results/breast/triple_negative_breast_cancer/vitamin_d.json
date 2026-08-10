@@ -24,8 +24,8 @@
   "headline": {
     "ci_low": 0.40224255609350307,
     "ci_upp": 2.4395906133154215,
-    "eggers_intercept": -1.618384551991823,
-    "eggers_p": 0.7547171336579687,
+    "eggers_intercept": -1.6183845519918212,
+    "eggers_p": 0.7547171336579688,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
     "i2": 92.73379258069934,
     "interpretation": "The pooled subtype-specific estimate is 0.99, indicating a lower relative association for this exposure.",
@@ -65,7 +65,7 @@
     "results_interpretation": "This saved analysis contains 4 separately reported Triple-negative breast cancer estimates.",
     "tau2": 0.7369695207883898
   },
-  "input_fingerprint": "7e0021fedd92d3212cf4cab834eb81faf4be66111c5e6a1708b4e195c2353a95",
+  "input_fingerprint": "4f635b0b0bc2bdbae823340c65b17e4aacea6de20b205f104c43a045b3ba70d4",
   "plot_url": "Plot/subcategories/breast/triple_negative_breast_cancer/vitamin_d_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/triple_negative_breast_cancer/vitamin_d_baujat.png",
@@ -80,7 +80,7 @@
     "subcategory_label": "Triple-negative breast cancer",
     "subcategory_slug": "triple_negative_breast_cancer"
   },
-  "skipped_annotation_count_for_build": 1,
+  "skipped_annotation_count_for_build": 8,
   "studies": [
     {
       "Authors": "Yao S, Sucheston LE, Millen AE, Johnson CS, Trump DL, Nesline MK, Davis W, Hong CC, McCann SE, Hwang H, Kulkarni S, Edge SB, O'Connor TL, Ambrosone CB",
@@ -115,6 +115,7 @@
       "cases": 579.0,
       "comparison_type": "per 10 ng/mL increase in serum 25-hydroxyvitamin D among premenopausal women",
       "context_id": "21386992|breast|vitamin_d|0",
+      "design": "Case-Control",
       "effect_size": 0.36,
       "effect_type": "OR",
       "evidence_locator": "\"every 10 ng/mL increase in serum 25OHD concentrations was associated with a 64% lower odds of having triple-negative cancer (OR = 0.36, 95% CI = 0.22-0.56)\"",
@@ -184,6 +185,7 @@
       "cases": 3634.0,
       "comparison_type": "Deficient vs sufficient serum 25(OH)D",
       "context_id": "26037255|breast|vitamin_d|0",
+      "design": "Case-Control",
       "effect_size": 1.45,
       "effect_type": "OR",
       "evidence_locator": "\"particularly with triple-negative breast cancer patients (1.45, 95 % CI 1.15-1.82)\"",
@@ -253,6 +255,7 @@
       "cases": 243.0,
       "comparison_type": "25(OH)D3 below 20 ng/mL vs above 20 ng/mL, African-American women",
       "context_id": "29064397|breast|vitamin_d|0",
+      "design": "Case-Control",
       "effect_size": 5.4,
       "effect_type": "OR",
       "evidence_locator": "\"The 25(OH)D3 below 20 ng/mL was significantly associated with triple negative breast cancer (TNBC) in African-Americans (OR = 5.4, p = 0.02, 95% CI = 1.4-15)\"",
@@ -322,6 +325,7 @@
       "cases": 1724.0,
       "comparison_type": "Highest vs lowest quartile of daylight hours spent outdoors",
       "context_id": "31826233|breast|vitamin_d|0",
+      "design": "Case-Control",
       "effect_size": 0.53,
       "effect_type": "OR",
       "evidence_locator": "\"highest compared with lowest quartile: TNBC OR: 0.53; 95% CI: 0.31, 0.91\"",

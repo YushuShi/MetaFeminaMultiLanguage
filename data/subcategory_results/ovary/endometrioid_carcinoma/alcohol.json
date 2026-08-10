@@ -36,7 +36,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "be36597ea38ca1901a3774488cbdc8f6abd63634dda93ccade157eb3012c66b7",
+  "input_fingerprint": "d1b55b9f446763b1537c01bf4ddc665a3d7cbf83062e192b3335af16a9e38745",
   "plot_url": "Plot/subcategories/ovary/endometrioid_carcinoma/alcohol_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/ovary/endometrioid_carcinoma/alcohol_baujat.png",
@@ -51,7 +51,7 @@
     "subcategory_label": "Endometrioid carcinoma",
     "subcategory_slug": "endometrioid_carcinoma"
   },
-  "skipped_annotation_count_for_build": 1,
+  "skipped_annotation_count_for_build": 8,
   "studies": [
     {
       "Authors": "Genkinger JM, Hunter DJ, Spiegelman D, Anderson KE, Buring JE, Freudenheim JL, Goldbohm RA, Harnack L, Hankinson SE, Larsson SC, Leitzmann M, McCullough ML, Marshall J, Miller AB, Rodriguez C, Rohan TE, Schatzkin A, Schouten LJ, Wolk A, Zhang SM, Smith-Warner SA",
@@ -87,6 +87,7 @@
       "cases": 260.0,
       "comparison_type": "Highest vs Lowest",
       "context_id": "16495916|ovary|alcohol|0",
+      "design": "Cohort",
       "effect_size": 1.05,
       "effect_type": "RR",
       "evidence_locator": "Endometrioid ovarian cancers: pooled multivariate RR=1.05, 95% CI 0.87–1.26.",

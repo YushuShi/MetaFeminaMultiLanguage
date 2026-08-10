@@ -36,7 +36,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Invasive lobular carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "3895c6f887483024d9582c34e094b960b3ac50497fcc3180da63ea438429cd59",
+  "input_fingerprint": "e30802ef00e4658c29b95be9adca93365bd7a1957eaa83a3f299c0faf9f8323f",
   "plot_url": "Plot/subcategories/breast/invasive_lobular_carcinoma/tea_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/invasive_lobular_carcinoma/tea_baujat.png",
@@ -51,7 +51,7 @@
     "subcategory_label": "Invasive lobular carcinoma",
     "subcategory_slug": "invasive_lobular_carcinoma"
   },
-  "skipped_annotation_count_for_build": 1,
+  "skipped_annotation_count_for_build": 8,
   "studies": [
     {
       "Authors": "Kumar N, Titus-Ernstoff L, Newcomb PA, Trentham-Dietz A, Anic G, Egan KM",
@@ -86,6 +86,7 @@
       "cases": 5082.0,
       "comparison_type": "3 or more cups/day vs none (women up to 50 years)",
       "context_id": "19124518|breast|tea|0",
+      "design": "Case-Control",
       "effect_size": 0.33,
       "effect_type": "OR",
       "evidence_locator": "Age- and study site-adjusted OR 0.33 (95% CI 0.10–1.07) for invasive lobular breast cancer.",

@@ -36,7 +36,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Invasive lobular carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "4092900ac8d2a857d42352b789356e1a095608fe591ef6767083ec3b36b59c1a",
+  "input_fingerprint": "ea0c88065a8148d1b1b311bb2e71da73e599c6993fd29a5a5140278584de0e47",
   "plot_url": "Plot/subcategories/breast/invasive_lobular_carcinoma/beta_carotene_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/invasive_lobular_carcinoma/beta_carotene_baujat.png",
@@ -51,7 +51,7 @@
     "subcategory_label": "Invasive lobular carcinoma",
     "subcategory_slug": "invasive_lobular_carcinoma"
   },
-  "skipped_annotation_count_for_build": 0,
+  "skipped_annotation_count_for_build": 8,
   "studies": [
     {
       "Authors": "Roswall N, Olsen A, Christensen J, Dragsted LO, Overvad K, Tjønneland A",
@@ -87,6 +87,7 @@
       "cases": 1072.0,
       "comparison_type": "Highest vs Lowest (dietary beta-carotene)",
       "context_id": "20698054|breast|beta_carotene|0",
+      "design": "Cohort",
       "effect_size": 0.72,
       "effect_type": "IRR",
       "evidence_locator": "Dietary but not supplemental beta-carotene showed a protective effect against lobular breast cancer [IRR: 0.72; 95% CI: 0.57-0.91].",

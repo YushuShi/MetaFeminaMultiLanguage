@@ -9,6 +9,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from subcategory_analysis import (
     _estimate,
+    _is_mendelian_randomization_record,
     _localized_exposure,
     _summary_forest_height,
     build_subcategory_outputs,
@@ -23,6 +24,20 @@ class SubcategoryAnalysisTests(unittest.TestCase):
         self.assertIsNotNone(_estimate({**base, "effect_type": "HR"}))
         self.assertIsNotNone(_estimate({**base, "effect_type": "IRR"}))
         self.assertIsNone(_estimate({**base, "effect_type": "PAF"}))
+
+    def test_mendelian_randomization_records_are_recognized(self):
+        self.assertTrue(_is_mendelian_randomization_record({
+            "Reference": "A two-sample Mendelian randomisation study"
+        }))
+        self.assertTrue(_is_mendelian_randomization_record({
+            "Reference": "Genetically predicted nutrient levels and cancer risk"
+        }))
+        self.assertTrue(_is_mendelian_randomization_record({
+            "exposure_measurement_supporting_text": "Instrumental variables were selected from GWAS data."
+        }))
+        self.assertFalse(_is_mendelian_randomization_record({
+            "Reference": "A prospective dietary cohort study"
+        }))
 
     def setUp(self):
         self.tempdir = tempfile.TemporaryDirectory()
@@ -138,6 +153,23 @@ class SubcategoryAnalysisTests(unittest.TestCase):
         manifest = self._build()
         self.assertEqual(manifest["eligible_estimate_count"], 0)
         self.assertIn("unknown_context_id", [item["reason"] for item in manifest["skipped_annotations"]])
+
+    def test_mendelian_randomization_estimate_is_removed_from_subcategory_outputs(self):
+        self._write_annotations()
+        payload = json.loads(self.annotations.read_text(encoding="utf-8"))
+        payload["contexts"][0]["study"]["Reference"] = (
+            "A two-sample Mendelian randomization study"
+        )
+        self.annotations.write_text(json.dumps(payload), encoding="utf-8")
+
+        manifest = self._build()
+
+        self.assertEqual(manifest["eligible_estimate_count"], 0)
+        self.assertEqual(manifest["result_count"], 0)
+        self.assertIn(
+            "mendelian_randomization",
+            [item["reason"] for item in manifest["skipped_annotations"]],
+        )
 
     def test_reads_append_only_event_ledger_and_context_source_index(self):
         sources = {

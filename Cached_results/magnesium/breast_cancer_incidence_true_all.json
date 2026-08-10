@@ -48,7 +48,8 @@
                 "outcome_definition": "Study outcomes included incident cancer and its subtypes... similar trends were found for gastrointestinal cancer, esophageal cancer, gastric cancer, breast cancer, lung cancer, and other cancers.",
                 "exposure_definition": "baseline plasma magnesium concentrations"
             },
-            "P Value": 0.02015391415569333
+            "P Value": 0.02015391415569333,
+            "exclusions": null
         },
         {
             "Study": "Huang WQ et al. (2019) [PMID: 30962499]",
@@ -97,55 +98,8 @@
                 "outcome_definition": "breast cancer risk",
                 "exposure_definition": "dietary magnesium intake"
             },
-            "P Value": 0.037613049894670875
-        },
-        {
-            "Study": "Papadimitriou N et al. (2021) [PMID: 32761610]",
-            "PMID": "32761610",
-            "Effect Size": 1.17,
-            "Lower CI": 1.1,
-            "Upper CI": 1.25,
-            "Population": "General",
-            "Reference": "Genetically predicted circulating concentrations of micronutrients and risk of breast cancer: A Mendelian randomization study.",
-            "Authors": "Papadimitriou N, Dimou N, Gill D, Tzoulaki I, Murphy N, Riboli E, Lewis SJ, Martin RM, Gunter MJ, Tsilidis KK",
-            "Journal": "International journal of cancer",
-            "Year": "2021",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/32761610/",
-            "Effect Type": "OR",
-            "SE": 0.03826530612244896,
-            "Sample Size": 228951,
-            "Cases": 122977.0,
-            "Estimated Cases": null,
-            "Design": "Case-Control",
-            "Timing": "Retrospective",
-            "Continent": "Europe",
-            "Stage": "",
-            "Quality %": 100.0,
-            "Quality Score": "Good",
-            "comparison_type": "per SD increase",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Yes",
-                "q10": "Yes"
-            },
-            "exposure_measurement_type": "human_biospecimen",
-            "exposure_measurement_supporting_text": "genetically predicted concentrations of 11 micronutrients",
-            "extraction_supporting_text": {
-                "sample_size": "122\u2009977 women with breast cancer and 105\u2009974 controls",
-                "effect_size": "odds ratio [OR]: 1.17, 95% confidence interval [CI]: 1.10-1.25",
-                "effect_direction": "associated with a 17% ... higher risk of overall ... breast cancer",
-                "p_value": "P value = 9.1 \u00d7 10^-7",
-                "confidence_interval": "95% confidence interval [CI]: 1.10-1.25",
-                "outcome_definition": "breast cancer risk",
-                "exposure_definition": "genetically predicted concentration of magnesium"
-            }
+            "P Value": 0.037613049894670875,
+            "exclusions": null
         },
         {
             "Study": "Xu W et al. (2025) [PMID: 41668722]",
@@ -195,102 +149,46 @@
                 "outcome_definition": "breast cancer incidence",
                 "exposure_definition": "Higher intakes of vitamins B2 and C, calcium, and magnesium"
             },
-            "exclusions": 2,
-            "P Value": 0.027450380874470576
-        },
-        {
-            "Study": "Kim JY et al. (2023) [PMID: 37605270]",
-            "PMID": "37605270",
-            "Effect Size": 1.281,
-            "Lower CI": 1.151,
-            "Upper CI": 1.426,
-            "Population": "General",
-            "Reference": "An atlas of associations between 14 micronutrients and 22 cancer outcomes: Mendelian randomization analyses.",
-            "Authors": "Kim JY, Song M, Kim MS, Natarajan P, Do R, Myung W, Won HH",
-            "Journal": "BMC medicine",
-            "Year": "2023",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/37605270/",
-            "Effect Type": "OR",
-            "SE": 0.07015306122448978,
-            "Sample Size": 940633,
-            "Cases": 133384.0,
-            "Estimated Cases": null,
-            "Design": "Mendelian randomization (MR) using two-sample genetic instrumental variables",
-            "Timing": "Prospective",
-            "Continent": "Europe",
-            "Stage": null,
-            "Quality %": 72.7,
-            "Quality Score": "Moderate",
-            "comparison_type": "per SD increase",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Unclear",
-                "q9": "Unclear",
-                "q10": "Unclear",
-                "q11": "Yes"
-            },
-            "exposure_measurement_type": "human_biospecimen",
-            "exposure_measurement_supporting_text": "single-nucleotide polymorphisms associated with micronutrient levels as instrumental variables",
-            "extraction_supporting_text": {
-                "sample_size": "including up to 940,633 participants of European descent with 133,384 cancer cases",
-                "effect_size": "increased risk of breast cancer with magnesium levels (odds ratio [OR]\u2009=\u20091.281 per 1 standard deviation [SD] higher magnesium level",
-                "effect_direction": "increased risk of breast cancer with magnesium levels",
-                "p_value": "P\u2009<\u20090.0001",
-                "confidence_interval": "95% confidence interval [CI]\u2009=\u20091.151 to 1.426",
-                "outcome_definition": "breast cancer",
-                "exposure_definition": "magnesium levels"
-            }
+            "P Value": 0.027450380874470576,
+            "exclusions": 2.0
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Huang WQ et al. (2019) [PMID: 30962499]</th>\n      <td>-0.1968</td>\n      <td>0.0958</td>\n      <td>-0.3845</td>\n      <td>-0.0091</td>\n      <td>1050.0</td>\n      <td>2279.0</td>\n    </tr>\n    <tr>\n      <th>Papadimitriou N et al. (2021) [PMID: 32761610]</th>\n      <td>0.1351</td>\n      <td>0.0277</td>\n      <td>0.0808</td>\n      <td>0.1895</td>\n      <td>122977.0</td>\n      <td>228951.0</td>\n    </tr>\n    <tr>\n      <th>Kim JY et al. (2023) [PMID: 37605270]</th>\n      <td>0.2118</td>\n      <td>0.0459</td>\n      <td>0.1219</td>\n      <td>0.3017</td>\n      <td>133384.0</td>\n      <td>940633.0</td>\n    </tr>\n    <tr>\n      <th>Lin T et al. (2020) [PMID: 33271534]</th>\n      <td>0.5899</td>\n      <td>0.2347</td>\n      <td>0.1299</td>\n      <td>1.0499</td>\n      <td>228.0</td>\n      <td>456.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Huang WQ et al. (2019) [PMID: 30962499]</th>\n      <td>-0.1968</td>\n      <td>0.0958</td>\n      <td>-0.3845</td>\n      <td>-0.0091</td>\n      <td>1050.0</td>\n      <td>2279.0</td>\n    </tr>\n    <tr>\n      <th>Xu W et al. (2025) [PMID: 41668722]</th>\n      <td>-0.0381</td>\n      <td>0.0173</td>\n      <td>-0.0720</td>\n      <td>-0.0042</td>\n      <td>-</td>\n      <td>67045.0</td>\n    </tr>\n    <tr>\n      <th>Lin T et al. (2020) [PMID: 33271534]</th>\n      <td>0.5899</td>\n      <td>0.2347</td>\n      <td>0.1299</td>\n      <td>1.0499</td>\n      <td>228.0</td>\n      <td>456.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 1.13,
-        "ci_low": 0.97,
-        "ci_upp": 1.32,
-        "pi_low": 0.58,
-        "pi_upp": 2.19,
+        "pooled_es": 1.01,
+        "ci_low": 0.8,
+        "ci_upp": 1.29,
+        "pi_low": 0.06,
+        "pi_upp": 15.95,
         "interpretation": "Not statistically significant",
-        "i2": 83.8,
-        "tau2": 0.02,
-        "eggers_p": 0.9619708795552824,
-        "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.9620). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
+        "i2": 79.79,
+        "tau2": 0.03,
+        "eggers_p": 0.807342335170024,
+        "funnel_interpretation": "Egger\u2019s test is generally not recommended when fewer than 10 studies are available.",
         "loo_results": [
             {
                 "omitted": "Huang WQ et al. (2019) [PMID: 30962499]",
-                "pooled_es": 1.208903241214453,
-                "ci_low": 1.0558255912754972,
-                "ci_upp": 1.384174676854819,
-                "is_significant": true
-            },
-            {
-                "omitted": "Papadimitriou N et al. (2021) [PMID: 32761610]",
-                "pooled_es": 1.1660604251390594,
-                "ci_low": 0.766372521022256,
-                "ci_upp": 1.7741984188861561,
+                "pooled_es": 1.261471680958369,
+                "ci_low": 0.6857989813255637,
+                "ci_upp": 2.3203749862446985,
                 "is_significant": false
             },
             {
-                "omitted": "Kim JY et al. (2023) [PMID: 37605270]",
-                "pooled_es": 1.1180359835368097,
-                "ci_low": 0.7478365575111929,
-                "ci_upp": 1.6714941893762827,
+                "omitted": "Xu W et al. (2025) [PMID: 41668722]",
+                "pooled_es": 1.1821897096495269,
+                "ci_low": 0.5480185521010678,
+                "ci_upp": 2.5502284626004537,
                 "is_significant": false
             },
             {
                 "omitted": "Lin T et al. (2020) [PMID: 33271534]",
-                "pooled_es": 1.0818239943757095,
-                "ci_low": 0.862314084060356,
-                "ci_upp": 1.3572121532519223,
+                "pooled_es": 0.9143991029279889,
+                "ci_low": 0.790543345824877,
+                "ci_upp": 1.0576595500441177,
                 "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled analysis of 4 studies yielded an effect size of 1.13 (95% CI: 0.97\u20131.32), indicating no statistically significant association between magnesium and breast cancer. Although the point estimate suggests a potential positive relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 83.80%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 3 studies yielded an effect size of 1.01 (95% CI: 0.8\u20131.29), indicating no statistically significant association between magnesium and breast cancer. Although the point estimate suggests a potential positive relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 79.79%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 51,
@@ -309,8 +207,8 @@
         },
         "extracted": 5
     },
-    "plot_url": "static/magnesium/forest_breast_cancer_incidence_primary.png?t=877",
-    "funnel_plot_url": "static/magnesium/funnel_breast_cancer_incidence_primary.png?t=4068",
-    "baujat_plot_url": "static\\magnesium\\baujat_breast_cancer_incidence_primary.png?t=5677",
+    "plot_url": "static/magnesium/forest_breast_cancer_incidence_primary.png?t=9427",
+    "funnel_plot_url": "static/magnesium/funnel_breast_cancer_incidence_primary.png?t=4156",
+    "baujat_plot_url": "static/magnesium/baujat_breast_cancer_incidence_primary.png?t=5287",
     "last_run": "2026-06-15 02:16:29"
 }

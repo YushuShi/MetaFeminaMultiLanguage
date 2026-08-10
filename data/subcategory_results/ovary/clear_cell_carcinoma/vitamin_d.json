@@ -36,7 +36,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Clear cell carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "583671d939bd8c1b8f50d59d2500c5f451039e77440dfee9050390c815faef29",
+  "input_fingerprint": "f84c88ea5182f275e44d6761fdc97ac6600487d17c183730da3f03efacbf3d61",
   "plot_url": "Plot/subcategories/ovary/clear_cell_carcinoma/vitamin_d_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/ovary/clear_cell_carcinoma/vitamin_d_baujat.png",
@@ -51,7 +51,7 @@
     "subcategory_label": "Clear cell carcinoma",
     "subcategory_slug": "clear_cell_carcinoma"
   },
-  "skipped_annotation_count_for_build": 1,
+  "skipped_annotation_count_for_build": 8,
   "studies": [
     {
       "Authors": "Merritt MA, Cramer DW, Vitonis AF, Titus LJ, Terry KL",
@@ -86,6 +86,7 @@
       "cases": 243.0,
       "comparison_type": "Q4 vs Q1",
       "context_id": "22740148|ovary|vitamin_d|0",
+      "design": "Case-Control",
       "effect_size": 0.93,
       "effect_type": "OR",
       "evidence_locator": "For clear cell tumors, total vitamin D Q4 vs Q1 OR=0.93, 95% CI 0.64–1.36.",

@@ -36,7 +36,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Mucinous carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "4d84b3a69eab5419fa397fe0e17e0c51e541d9b8c2f442de9a4f643f14c5b33d",
+  "input_fingerprint": "408bed8f37e7c2ac29725d6921a215b0720e263bedbf4b82bde2ff8bfc240538",
   "plot_url": "Plot/subcategories/ovary/mucinous_carcinoma/vitamin_d_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/ovary/mucinous_carcinoma/vitamin_d_baujat.png",
@@ -51,7 +51,7 @@
     "subcategory_label": "Mucinous carcinoma",
     "subcategory_slug": "mucinous_carcinoma"
   },
-  "skipped_annotation_count_for_build": 1,
+  "skipped_annotation_count_for_build": 8,
   "studies": [
     {
       "Authors": "Merritt MA, Cramer DW, Vitonis AF, Titus LJ, Terry KL",
@@ -86,6 +86,7 @@
       "cases": 217.0,
       "comparison_type": "Q4 vs Q1",
       "context_id": "22740148|ovary|vitamin_d|0",
+      "design": "Case-Control",
       "effect_size": 0.71,
       "effect_type": "OR",
       "evidence_locator": "For mucinous tumors, total vitamin D Q4 vs Q1 OR=0.71, 95% CI 0.48–1.07.",

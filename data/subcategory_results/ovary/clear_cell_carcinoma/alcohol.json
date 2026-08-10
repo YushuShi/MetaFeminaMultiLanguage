@@ -36,7 +36,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Clear cell carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "4f8e3f7c9533624602b6aa86db7071970edbfa8b19542ec61e0f6dd9f351e55e",
+  "input_fingerprint": "376a74f51e30bc8e720538c0719b2c5572e5abbf7ec0142eae65acc8a8c4c3f7",
   "plot_url": "Plot/subcategories/ovary/clear_cell_carcinoma/alcohol_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/ovary/clear_cell_carcinoma/alcohol_baujat.png",
@@ -51,7 +51,7 @@
     "subcategory_label": "Clear cell carcinoma",
     "subcategory_slug": "clear_cell_carcinoma"
   },
-  "skipped_annotation_count_for_build": 1,
+  "skipped_annotation_count_for_build": 8,
   "studies": [
     {
       "Authors": "Kelemen LE, Bandera EV, Terry KL, Rossing MA, Brinton LA, Doherty JA, Ness RB, Kjaer SK, Chang-Claude J, Köbel M, Lurie G, Thompson PJ, Carney ME, Moysich K, Edwards R, Bunker C, Jensen A, Høgdall E, Cramer DW, Vitonis AF, Olson SH, King M, Chandran U, Lissowska J, Garcia-Closas M, Yang H, Webb PM, Schildkraut JM, Goodman MT, Risch HA,  ,  ",
@@ -86,6 +86,7 @@
       "cases": 10.0,
       "comparison_type": "Wine consumption >8 oz/d vs none",
       "context_id": "23339562|ovary|alcohol|0",
+      "design": "Case-Control",
       "effect_size": 0.43,
       "effect_type": "OR",
       "evidence_locator": "\"more apparent among women with clear cell OC (OR, 0.43; 95% CI, 0.22-0.83; P trend=0.02), although based on only 10 cases\"",

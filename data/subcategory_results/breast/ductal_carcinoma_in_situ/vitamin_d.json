@@ -24,8 +24,8 @@
   "headline": {
     "ci_low": 0.6877471677611354,
     "ci_upp": 0.891367408974545,
-    "eggers_intercept": -0.30208665695149844,
-    "eggers_p": 0.9063591543931837,
+    "eggers_intercept": -0.3020866569514974,
+    "eggers_p": 0.9063591543931842,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
     "i2": 0.0,
     "interpretation": "The pooled subtype-specific estimate is 0.78, indicating a lower relative association for this exposure.",
@@ -58,7 +58,7 @@
     "results_interpretation": "This saved analysis contains 3 separately reported Ductal carcinoma in situ estimates.",
     "tau2": 0.0
   },
-  "input_fingerprint": "f5edb36e531a0157f43560d56827d0c602a25023b3e2c874c4ed8ac1c1cce149",
+  "input_fingerprint": "b4d67c84302c4520cfa2e5682bc3961048f203d1e2cf37e0db1bfa17bffa0870",
   "plot_url": "Plot/subcategories/breast/ductal_carcinoma_in_situ/vitamin_d_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/ductal_carcinoma_in_situ/vitamin_d_baujat.png",
@@ -73,7 +73,7 @@
     "subcategory_label": "Ductal carcinoma in situ",
     "subcategory_slug": "ductal_carcinoma_in_situ"
   },
-  "skipped_annotation_count_for_build": 1,
+  "skipped_annotation_count_for_build": 8,
   "studies": [
     {
       "Authors": "Peila R, Xue X, Cauley JA, Chlebowski R, Manson JE, Nassir R, Saquib N, Shadyab AH, Zhang Z, Wassertheil-Smoller S, Rohan TE",
@@ -111,6 +111,7 @@
       "cases": 595.0,
       "comparison_type": "Intervention group (calcium plus vitamin D supplementation) vs placebo group",
       "context_id": "34476342|breast|vitamin_d|0",
+      "design": "Randomized Controlled Trial",
       "effect_size": 0.82,
       "effect_type": "HR",
       "evidence_locator": "The intervention group had a lower risk of DCIS throughout follow-up (HR = 0.82, 95% CI = 0.70 to 0.96).",
@@ -184,6 +185,7 @@
       "cases": 3502.0,
       "comparison_type": "Recent vitamin D supplement use (≥1/month) vs nonrecent use",
       "context_id": "34847083|breast|vitamin_d|0",
+      "design": "Cohort",
       "effect_size": 0.67,
       "effect_type": "HR",
       "evidence_locator": "Recent use of vitamin D supplements ≥1/month was inversely associated with breast cancer; the association was stronger for ductal carcinoma in situ (HR = 0.67, 95% CI = 0.52, 0.87).",
@@ -255,6 +257,7 @@
       "cases": 96.0,
       "comparison_type": "Above vs ≤20 ng/mL (clinical cut point for deficiency)",
       "context_id": "35466399|breast|vitamin_d|0",
+      "design": "Cohort",
       "effect_size": 0.88,
       "effect_type": "HR",
       "evidence_locator": "Table 4: Ductal carcinoma in situ; deficient (≤20 ng/mL) 42 cases, non-deficient (>20 ng/mL) 54 cases, HR 0.88 (95% CI 0.54–1.42).",

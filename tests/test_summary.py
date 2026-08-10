@@ -390,18 +390,23 @@ class SummaryPageTests(unittest.TestCase):
         source = (
             Path(__file__).resolve().parents[1] / 'Plot' / 'PlotsPaper.R'
         ).read_text()
+        subcategory_source = (
+            Path(__file__).resolve().parents[1] / 'subcategory_analysis.py'
+        ).read_text()
 
         self.assertEqual(
             source.count('"Exposures negatively associated with ", cancer_label'),
             2,
         )
         self.assertNotIn('"Exposures inversely associated with ", cancer_label', source)
+        self.assertIn('f"Exposures negatively associated with {category[\'label\']} risk"', subcategory_source)
+        self.assertNotIn('f"Exposures inversely associated with {category[\'label\']} risk"', subcategory_source)
 
     def test_vitamin_e_summary_uses_the_same_case_estimates_as_the_ui(self):
         result = filtered_result('vitamin_e', 'Breast cancer')
 
-        self.assertEqual(result['number studies'], 27)
-        self.assertEqual(result['total Cases'], 160975)
+        self.assertEqual(result['number studies'], 23)
+        self.assertEqual(result['total Cases'], 33624)
 
     def test_named_summary_rows_match_saved_study_recalculation(self):
         root = Path(__file__).resolve().parents[1]

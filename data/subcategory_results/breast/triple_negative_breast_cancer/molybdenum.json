@@ -36,7 +36,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Triple-negative breast cancer estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "6ccedd4d1c8b9bf4901dd6bc649af30036293d8cf2dc51138262dab2b26e5c9f",
+  "input_fingerprint": "efbbe8aeef01ef0adb7e5a0580cf150bd01d43e8ebd08a533c1d36dc312c461c",
   "plot_url": "Plot/subcategories/breast/triple_negative_breast_cancer/molybdenum_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/triple_negative_breast_cancer/molybdenum_baujat.png",
@@ -51,7 +51,7 @@
     "subcategory_label": "Triple-negative breast cancer",
     "subcategory_slug": "triple_negative_breast_cancer"
   },
-  "skipped_annotation_count_for_build": 1,
+  "skipped_annotation_count_for_build": 8,
   "studies": [
     {
       "Authors": "Mérida-Ortega Á, Ugalde-Resano R, Cebrián ME, López-Carrillo L",
@@ -86,6 +86,7 @@
       "cases": 336.0,
       "comparison_type": "Highest vs Lowest (mixture mainly constituted by p'p DDE, cis-nonachlor and molybdenum)",
       "context_id": "41092495|breast|molybdenum|0",
+      "design": "Case-Control",
       "effect_size": 0.19,
       "effect_type": "OR",
       "evidence_locator": "Triple negative cases: OR=0.19; 95% CI 0.05,0.70 for mixtures mainly constituted by p'p DDE, cis-nonachlor and molybdenum.",

@@ -1996,6 +1996,12 @@
         "context_exclusions": {
             "breast_cancer_vitamin_e_incidence": 2
         },
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S2-GENETIC-FOCUS",
+            "context": "*",
+            "reason": "The reported estimate is specific to CYP1A1 genotype strata rather than a population-wide vitamin E effect."
+        },
         "contexts": {
             "breast_cancer_folic_acid_incidence": {
                 "submissions": [
@@ -3064,6 +3070,12 @@
         "context_exclusions": {
             "breast_cancer_vitamin_e_incidence": 2
         },
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S2-GENETIC-FOCUS",
+            "context": "*",
+            "reason": "The reported estimate is specific to a COMT genotype and gene-supplement interaction rather than a population-wide vitamin E effect."
+        },
         "contexts": {
             "breast_cancer_vitamin_e_incidence": {
                 "submissions": [
@@ -3116,6 +3128,12 @@
         "legacy_count": 0,
         "context_exclusions": {
             "breast_cancer_vitamin_e_incidence": 2
+        },
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S2-FAMILY-HISTORY-FOCUS",
+            "context": "*",
+            "reason": "The reported estimate is specific to family-history strata and interaction rather than a population-wide vitamin E effect."
         },
         "contexts": {
             "breast_cancer_vitamin_e_incidence": {

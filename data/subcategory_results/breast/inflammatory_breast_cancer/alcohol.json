@@ -36,7 +36,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Inflammatory breast cancer estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "6003e3f36cf1666105390dcca9b25ee8672860f549c02a4aba9d4ac863b06a42",
+  "input_fingerprint": "795e15b646ea7b2cc0ee4a583e4d1ae361a5d5bdd30a41ec8a5d73dd9f34bb75",
   "plot_url": "Plot/subcategories/breast/inflammatory_breast_cancer/alcohol_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/inflammatory_breast_cancer/alcohol_baujat.png",
@@ -51,7 +51,7 @@
     "subcategory_label": "Inflammatory breast cancer",
     "subcategory_slug": "inflammatory_breast_cancer"
   },
-  "skipped_annotation_count_for_build": 1,
+  "skipped_annotation_count_for_build": 8,
   "studies": [
     {
       "Authors": "Moslehi R, Freedman E, Zeinomar N, Veneroso C, Levine PH",
@@ -86,6 +86,7 @@
       "cases": 141.0,
       "comparison_type": "≥1 drink per day vs None",
       "context_id": "27229687|breast|alcohol|0",
+      "design": "Case-Control",
       "effect_size": 1.84,
       "effect_type": "OR",
       "evidence_locator": "IBC cases had a significantly higher frequency of regular alcohol consumption (≥1 drink per day) compared to WHI controls (OR=1.84, 95% CI:1.20-2.82).",

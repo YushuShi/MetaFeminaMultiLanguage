@@ -36,7 +36,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "5f62d9b2b2fa1cb29e65abd5c7a5705d619f722b0569cea430ef67bf20fea981",
+  "input_fingerprint": "f45702a9965258edf66550962290f0508b083da88c141aaeadf2a24da6aeb44f",
   "plot_url": "Plot/subcategories/ovary/endometrioid_carcinoma/potassium_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/ovary/endometrioid_carcinoma/potassium_baujat.png",
@@ -51,7 +51,7 @@
     "subcategory_label": "Endometrioid carcinoma",
     "subcategory_slug": "endometrioid_carcinoma"
   },
-  "skipped_annotation_count_for_build": 1,
+  "skipped_annotation_count_for_build": 8,
   "studies": [
     {
       "Authors": "Hathaway CA, Townsend MK, Sklar EM, Thomas-Purcell KB, Terry KL, Trabert B, Tworoger SS",
@@ -87,6 +87,7 @@
       "cases": 1110.0,
       "comparison_type": "Potassium Q4 vs Q1 (endometrioid histology)",
       "context_id": "37540498|ovary|potassium|0",
+      "design": "Cohort",
       "effect_size": 0.33,
       "effect_type": "HR",
       "evidence_locator": "“Potassium was associated with endometrioid (Q4 vs. Q1: 0.33, 0.11-0.98) tumors.”",
