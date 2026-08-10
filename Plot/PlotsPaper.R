@@ -844,7 +844,7 @@ make_eggers_heterogeneity_plot <- function(dat_clean, min_studies = 3,
     theme_minimal(base_size = 18, base_family = font_family) +
     theme(
       legend.position = "none",
-      plot.title      = element_text(face = "bold", size = 19),
+      plot.title      = element_text(face = "bold", size = 16),
       axis.text       = element_text(face = "bold"),
       axis.title      = element_text(face = "bold")
     )
@@ -903,7 +903,7 @@ if (!eggers_only && !diagnostics_only) {
         direction    = "Protective",
         cancer_label = cancer_label,
         title_text   = paste0(
-          "Exposures inversely associated with ", cancer_label, " risk",
+          "Exposures negatively associated with ", cancer_label, " risk",
           analysis_subtitle
         ),
         xlim_max     = 2.2,
@@ -929,7 +929,7 @@ if (!eggers_only && !diagnostics_only) {
         direction    = "Protective",
         cancer_label = cancer_label,
         title_text   = paste0(
-          "Exposures inversely associated with ", cancer_label, " risk",
+          "Exposures negatively associated with ", cancer_label, " risk",
           analysis_subtitle
         ),
         xlim_max     = 2.2,

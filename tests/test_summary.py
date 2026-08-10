@@ -386,6 +386,23 @@ class SummaryPageTests(unittest.TestCase):
             self.assertNotIn('"N studies"', source)
             self.assertNotIn('k studies', source)
 
+    def test_protective_forest_titles_use_negative_association_language(self):
+        source = (
+            Path(__file__).resolve().parents[1] / 'Plot' / 'PlotsPaper.R'
+        ).read_text()
+
+        self.assertEqual(
+            source.count('"Exposures negatively associated with ", cancer_label'),
+            2,
+        )
+        self.assertNotIn('"Exposures inversely associated with ", cancer_label', source)
+
+    def test_vitamin_e_summary_uses_the_same_case_estimates_as_the_ui(self):
+        result = filtered_result('vitamin_e', 'Breast cancer')
+
+        self.assertEqual(result['number studies'], 27)
+        self.assertEqual(result['total Cases'], 160975)
+
     def test_named_summary_rows_match_saved_study_recalculation(self):
         root = Path(__file__).resolve().parents[1]
         checks = (

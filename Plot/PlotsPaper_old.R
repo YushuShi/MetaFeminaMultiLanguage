@@ -561,7 +561,7 @@ make_eggers_heterogeneity_plot <- function(dat_clean, min_studies = 2,
 
 save_forest_figure(
   direction  = "Protective",
-  title_text = "Exposures inversely associated with breast cancer risk",
+  title_text = "Exposures negatively associated with breast cancer risk",
   xlim_max   = 2.2,
   filename   = "forest_protective_breast.pdf"
 )

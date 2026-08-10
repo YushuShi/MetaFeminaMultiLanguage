@@ -9,14 +9,12 @@ import re
 import sys
 from pathlib import Path
 
-import numpy as np
-import pandas as pd
 from openpyxl import load_workbook
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT))
-import meta_analysis  # noqa: E402
+from scripts.build_plot_analysis_json import summarize_cache  # noqa: E402
 
 
 WORKBOOKS = {
@@ -51,58 +49,10 @@ def filtered_result(exposure: str, cancer: str) -> dict:
         / safe_name(exposure)
         / f"{safe_name(cancer)}_incidence_true_all.json"
     )
-    with cache_path.open(encoding="utf-8") as handle:
-        cache = json.load(handle)
-    frame = pd.DataFrame(cache.get("studies", []))
-    frame = meta_analysis.filter_curated_meta_analysis_exclusions(
-        frame, cancer, exposure, "Incidence"
-    )
-    for column in ("Effect Size", "Lower CI", "Upper CI", "Cases", "Sample Size", "Estimated Cases"):
-        if column in frame:
-            frame[column] = pd.to_numeric(
-                frame[column].astype(str).str.replace(",", "", regex=False).str.strip(),
-                errors="coerce",
-            )
-    cases = frame["Cases"].fillna(frame.get("Estimated Cases", np.nan))
-    eligible_effect = frame.get("Effect Type", pd.Series("", index=frame.index)).map(
-        meta_analysis.is_eligible_effect_type
-    )
-    quality_scores = frame.get("Quality Score", pd.Series("Fair", index=frame.index)).fillna("Fair").astype(str).str.strip().str.lower()
-    valid = frame[
-        (frame["Effect Size"] > 0)
-        & (frame["Lower CI"] > 0)
-        & (frame["Upper CI"] > 0)
-        & (cases >= 50)
-        & eligible_effect
-        & quality_scores.isin({"good", "moderate"})
-    ].copy()
-    if valid.empty:
-        raise RuntimeError(f"No studies pass the paper filter for {exposure}/{cancer}")
-
-    # This calculation only supplies the paper/Summary workbook row. Avoid
-    # generating the per-exposure web plots as a side effect.
-    result = meta_analysis.perform_meta_analysis(
-        valid,
-        cancer,
-        exposure,
-        generate_plots=False,
-    )
-    headline = result.get("headline")
-    if not headline:
+    result = summarize_cache(cache_path, cancer, safe_name(exposure), dietary=False)
+    if not result:
         raise RuntimeError(f"Paper meta-analysis failed for {exposure}/{cancer}")
-    return {
-        "Exposure": safe_name(exposure),
-        "number studies": int(len(valid)),
-        "Pooled RR": headline.get("pooled_es"),
-        "lower CI RR": headline.get("ci_low"),
-        "upper CI RR": headline.get("ci_upp"),
-        "lower PI RR": headline.get("pi_low"),
-        "upper PI RR": headline.get("pi_upp"),
-        "I^2 (%)": round(float(headline.get("i2") or 0), 1),
-        "eggers p-value": headline.get("eggers_p"),
-        "total N": int(valid["Sample Size"].sum()),
-        "total Cases": int(valid["Cases"].fillna(valid.get("Estimated Cases", 0)).sum()),
-    }
+    return result
 
 
 def update_workbook(path: Path, row: dict) -> None:

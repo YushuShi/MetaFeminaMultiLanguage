@@ -102,7 +102,7 @@ group_map <- tribble(
   "soy",                      "Phytoestrogens",
   "pantothenic_acid",         "B Vitamins",
   "resveratrol",              "Polyphenols & Flavonoids",
-  "vitamin_a",                "Vitamins A, C, D, E",
+  "vitamin_a",                "Vitamins A, C, D, E, K",
   "vitamin_b1",               "B Vitamins",
   "mediterranean_diet",       "Other",
   "cod_liver_oil",            "Fatty Acids & Lipids",
@@ -112,7 +112,7 @@ group_map <- tribble(
   "choline",                  "Metabolites & Amino Acids",
   "magnesium",                "Minerals & Trace Elements",
   "olive",                    "Fruits & Vegetables",
-  "vitamin_c",                "Vitamins A, C, D, E",
+  "vitamin_c",                "Vitamins A, C, D, E, K",
   "flaxseed",                 "Phytoestrogens",
   "iodine",                   "Minerals & Trace Elements",
   "green_tea",                "Polyphenols & Flavonoids",
@@ -127,8 +127,8 @@ group_map <- tribble(
   "mineral_supplements",      "Minerals & Trace Elements",
   "papaya",                   "Fruits & Vegetables",
   "bcaas",                    "Metabolites & Amino Acids",
-  "vitamin_e",                "Vitamins A, C, D, E",
-  "vitamin_d",                "Vitamins A, C, D, E",
+  "vitamin_e",                "Vitamins A, C, D, E, K",
+  "vitamin_d",                "Vitamins A, C, D, E, K",
   "omega-3_fatty_acids",      "Fatty Acids & Lipids",
   "caffeine",                 "Other",
   "alcohol",                  "Other",
@@ -142,7 +142,7 @@ group_map <- tribble(
   "chromium",                 "Minerals & Trace Elements",
   "glutamine",                "Metabolites & Amino Acids",
   "melatonin",                "Hormones & Endogenous",
-  "vitamin_k",                "Vitamins A, C, D, E",
+  "vitamin_k",                "Vitamins A, C, D, E, K",
   "zinc",                     "Minerals & Trace Elements",
   "carnitine",                "Metabolites & Amino Acids",
   "dehydroepiandrosterone",   "Hormones & Endogenous",
@@ -168,7 +168,7 @@ group_map <- tribble(
 
 group_order <- c(
   "Carotenoids",
-  "Vitamins A, C, D, E",
+  "Vitamins A, C, D, E, K",
   "B Vitamins",
   "Antioxidants",
   "Minerals & Trace Elements",
@@ -188,7 +188,7 @@ group_colors <- c(
   "Carotenoids"              = "#E55300",
   "Minerals & Trace Elements"= "#007C7C",
   "Fruits & Vegetables"      = "#2E7D32",
-  "Vitamins A, C, D, E"     = "#C79000",
+  "Vitamins A, C, D, E, K"     = "#C79000",
   "Polyphenols & Flavonoids" = "#6A0DAD",
   "Fermented Foods & Probiotics" = "#00838F",
   "Fatty Acids & Lipids"     = "#B5001F",
@@ -205,7 +205,7 @@ group_bg <- c(
   "Carotenoids"              = "#FDEEE6",
   "Minerals & Trace Elements"= "#DFF2F2",
   "Fruits & Vegetables"      = "#E6F4E6",
-  "Vitamins A, C, D, E"     = "#FBF6E0",
+  "Vitamins A, C, D, E, K"     = "#FBF6E0",
   "Polyphenols & Flavonoids" = "#F2E8FB",
   "Fermented Foods & Probiotics" = "#E0F7FA",
   "Fatty Acids & Lipids"     = "#FBEAED",
@@ -218,7 +218,7 @@ group_bg <- c(
 )
 
 group_order <- c(
-  "Carotenoids", "Vitamins A, C, D, E", "B Vitamins", "Antioxidants",
+  "Carotenoids", "Vitamins A, C, D, E, K", "B Vitamins", "Antioxidants",
   "Minerals & Trace Elements", "Polyphenols & Flavonoids",
   "Fruits & Vegetables", "Fatty Acids & Lipids", "Phytoestrogens",
   "Herbal & Botanical", "Other", "Metabolites & Amino Acids",
@@ -289,6 +289,9 @@ dumbbell_range <- dat_plot %>%
     .groups = "drop"
   )
 
+stripe_x_min <- min(dat_plot$ci_low, dumbbell_range$es_min, na.rm = TRUE)
+stripe_x_max <- max(dat_plot$ci_high, dumbbell_range$es_max, na.rm = TRUE)
+
 # Group stripe backgrounds
 group_stripes <- dat_plot %>%
   distinct(Exposure_label, Group) %>%
@@ -310,7 +313,8 @@ p <- ggplot() +
   # Group background stripes
   geom_rect(
     data = group_stripes,
-    aes(xmin = -Inf, xmax = Inf, ymin = y_min, ymax = y_max, fill = Group),
+    aes(ymin = y_min, ymax = y_max, fill = Group),
+    xmin = stripe_x_min, xmax = stripe_x_max,
     alpha = 0.35, inherit.aes = FALSE
   ) +
   scale_fill_manual(values = group_bg, guide = "none") +
