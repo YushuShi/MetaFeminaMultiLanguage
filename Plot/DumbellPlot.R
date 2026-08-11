@@ -376,7 +376,7 @@ p <- ggplot() +
   ) +
   coord_cartesian(clip = "off") +
   labs(
-    title    = "Comparison of exposure effects across gynecological cancers",
+    title    = "Comparison of exposure effects across breast, ovarian, and uterine cancers",
     subtitle = "Exposures present in >=2 cancer datasets  |  filled circle = significant (95% CI excludes 1.0)",
     x        = "Pooled RR (log scale)",
     y        = NULL
