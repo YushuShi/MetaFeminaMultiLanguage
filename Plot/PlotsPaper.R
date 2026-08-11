@@ -749,6 +749,8 @@ save_forest_figure <- function(dat_clean, direction, cancer_label,
 # =============================================================================
 
 # Shared helper: build the filtered + labelled data frame
+EGGER_MIN_STUDIES <- 10
+
 build_scatter_df <- function(dat_clean, min_studies = 3, locale = NULL) {
   dat_clean %>%
     filter(
@@ -809,7 +811,7 @@ make_es_heterogeneity_plot <- function(dat_clean, min_studies = 3,
 }
 
 # ---- Plot 2: log(Egger's p-value) vs I² ----
-make_eggers_heterogeneity_plot <- function(dat_clean, min_studies = 3,
+make_eggers_heterogeneity_plot <- function(dat_clean, min_studies = EGGER_MIN_STUDIES,
                                            filename = "plot_eggers_vs_heterogeneity.pdf",
                                            cancer_label = NULL,
                                            locale = NULL) {
@@ -1002,7 +1004,7 @@ if (!forests_only) {
     if (!locales_only) {
       make_eggers_heterogeneity_plot(
         dat_clean    = plot_data,
-        min_studies  = 3,
+        min_studies  = EGGER_MIN_STUDIES,
         filename     = eggers_filename,
         cancer_label = cancer_label
       )
@@ -1010,7 +1012,7 @@ if (!forests_only) {
     for (locale in summary_plot_locales) {
       make_eggers_heterogeneity_plot(
         dat_clean    = plot_data,
-        min_studies  = 3,
+        min_studies  = EGGER_MIN_STUDIES,
         filename     = file.path("locales", locale, eggers_filename),
         cancer_label = cancer_label,
         locale       = locale

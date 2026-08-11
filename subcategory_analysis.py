@@ -1409,6 +1409,16 @@ def _render_summary_plot_set(
     )
 
 
+def _egger_heterogeneity_entries(entries: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    return [
+        entry for entry in entries
+        if entry["headline"].get("n_studies", 0) >= FORMAL_EGGER_MIN_STUDIES
+        and entry["headline"].get("eggers_p") is not None
+        and entry["headline"].get("i2") is not None
+        and entry["headline"]["i2"] > 0
+    ]
+
+
 def _summary_outputs(category: dict[str, Any], entries: list[dict[str, Any]], plot_root: Path) -> dict[str, Any]:
     folder = plot_root / category["major_site_id"] / category["subcategory_slug"]
     plot_paths = {
@@ -1427,10 +1437,7 @@ def _summary_outputs(category: dict[str, Any], entries: list[dict[str, Any]], pl
     forest_eligible = [entry for entry in eligible if entry["headline"].get("n_studies", 0) > 1]
     protective = [entry for entry in forest_eligible if entry["headline"]["pooled_es"] < 1]
     harmful = [entry for entry in forest_eligible if entry["headline"]["pooled_es"] >= 1]
-    egger_heterogeneity_eligible = [
-        entry for entry in diagnostic_eligible
-        if entry["headline"].get("eggers_p") is not None
-    ]
+    egger_heterogeneity_eligible = _egger_heterogeneity_entries(eligible)
     formal_egger = [entry for entry in eligible if entry["availability"]["formal_egger"]["available"]]
     # Direction uses the pooled point estimate. This mirrors the summary's
     # visual grouping and does not assert statistical significance.
@@ -1470,7 +1477,8 @@ def _summary_outputs(category: dict[str, Any], entries: list[dict[str, Any]], pl
             "Lifetime-risk percent is taxonomy metadata only and is not pooled or aggregated.",
             "Protective/harmful grouping is by the pooled point estimate relative to 1.0.",
             "Summary forest plots follow the broad-cancer format and require at least 2 studies per exposure.",
-            "Cross-exposure heterogeneity plots require at least 3 studies and I² greater than 0% per exposure.",
+            "Effect-estimate vs heterogeneity plots require at least 3 studies and I² greater than 0% per exposure.",
+            f"Egger's p-value vs heterogeneity plots require at least {FORMAL_EGGER_MIN_STUDIES} studies and I² greater than 0% per exposure.",
             f"Formal per-exposure Egger interpretation requires at least {FORMAL_EGGER_MIN_STUDIES} studies.",
         ],
     }

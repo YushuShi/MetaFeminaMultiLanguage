@@ -230,7 +230,8 @@
     "Lifetime-risk percent is taxonomy metadata only and is not pooled or aggregated.",
     "Protective/harmful grouping is by the pooled point estimate relative to 1.0.",
     "Summary forest plots follow the broad-cancer format and require at least 2 studies per exposure.",
-    "Cross-exposure heterogeneity plots require at least 3 studies and I² greater than 0% per exposure.",
+    "Effect-estimate vs heterogeneity plots require at least 3 studies and I² greater than 0% per exposure.",
+    "Egger's p-value vs heterogeneity plots require at least 10 studies and I² greater than 0% per exposure.",
     "Formal per-exposure Egger interpretation requires at least 10 studies."
   ],
   "plots": {

@@ -8,6 +8,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from subcategory_analysis import (
+    _egger_heterogeneity_entries,
     _estimate,
     _is_mendelian_randomization_record,
     _localized_exposure,
@@ -17,6 +18,18 @@ from subcategory_analysis import (
 
 
 class SubcategoryAnalysisTests(unittest.TestCase):
+    def test_egger_heterogeneity_requires_at_least_ten_studies(self):
+        entries = [
+            {"exposure": "Nine", "headline": {"n_studies": 9, "eggers_p": 0.1, "i2": 50}},
+            {"exposure": "Ten", "headline": {"n_studies": 10, "eggers_p": 0.2, "i2": 60}},
+            {"exposure": "No p-value", "headline": {"n_studies": 12, "eggers_p": None, "i2": 70}},
+        ]
+
+        self.assertEqual(
+            [entry["exposure"] for entry in _egger_heterogeneity_entries(entries)],
+            ["Ten"],
+        )
+
     def test_only_rr_irr_or_hr_subcategory_estimates_are_eligible(self):
         base = {"effect_size": 1.2, "lower_ci": 1.0, "upper_ci": 1.4}
         self.assertIsNotNone(_estimate({**base, "effect_type": "RR"}))

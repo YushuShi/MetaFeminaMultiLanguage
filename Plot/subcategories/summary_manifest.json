@@ -158,10 +158,10 @@
               "reason": null
             },
             "egger-heterogeneity": {
-              "available": true,
+              "available": false,
               "filename": "egger_vs_i2.pdf",
               "path": "Plot/subcategories/breast/triple_negative_breast_cancer/egger_vs_i2.pdf",
-              "reason": null
+              "reason": "requires_2_eligible_exposures"
             },
             "forest-harmful": {
               "available": true,
