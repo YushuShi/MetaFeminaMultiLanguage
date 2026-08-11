@@ -1012,56 +1012,6 @@
             "exclusions": null
         },
         {
-            "Study": "Kotsopoulos J et al. (2012) [PMID: 22576580]",
-            "PMID": "22576580",
-            "Effect Size": 0.43,
-            "Lower CI": 0.18,
-            "Upper CI": 1.04,
-            "Population": "General",
-            "Reference": "Plasma micronutrients, trace elements, and breast cancer in BRCA1 mutation carriers: an exploratory study.",
-            "Authors": "Kotsopoulos J, Sukiennicki G, Muszy\u0144ska M, Gackowski D, K\u0105klewski K, Durda K, Jaworska K, Huzarski T, Gronwald J, Byrski T, Ashuryk O, D\u0119bniak T, To\u0142oczko-Grabarek A, Stawicka M, Godlewski D, Oli\u0144ski R, Jakubowska A, Narod SA, Lubinski J",
-            "Journal": "Cancer causes & control : CCC",
-            "Year": "2012",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/22576580/",
-            "Effect Type": "OR",
-            "SE": 0.21938775510204084,
-            "Sample Size": 144.0,
-            "Cases": 48.0,
-            "Estimated Cases": null,
-            "Design": "Case-Control",
-            "Timing": "Retrospective",
-            "Continent": "Europe",
-            "Stage": "",
-            "Quality %": 90.0,
-            "Quality Score": "Good",
-            "comparison_type": "Highest vs Lowest tertile",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Unclear",
-                "q10": "Yes"
-            },
-            "exposure_measurement_type": "human_biospecimen",
-            "exposure_measurement_supporting_text": "plasma levels for each of 14 micronutrients",
-            "extraction_supporting_text": {
-                "sample_size": "matched case-control design (n = 48 cases and 96 controls)",
-                "effect_size": "Women in the highest tertile of plasma iron had a 57 % lower risk, compared with those in the lowest quartile (OR = 0.43; 95 % CI 0.18-1.04; p for trend = 0.06)",
-                "effect_direction": "57 % lower risk",
-                "p_value": "p = 0.009",
-                "confidence_interval": "95 % CI 0.18-1.04",
-                "outcome_definition": "breast cancer risk among BRCA1 mutation carriers",
-                "exposure_definition": "plasma levels for each of 14 micronutrients"
-            },
-            "P Value": null,
-            "exclusions": null
-        },
-        {
             "Study": "Krusinska B et al. (2019) [PMID: 31540424]",
             "PMID": "31540424",
             "Effect Size": 0.12,
@@ -1170,21 +1120,21 @@
         "interpretation": "Statistically significant (increased risk/odds)",
         "i2": 81.19,
         "tau2": 0.02,
-        "eggers_p": 0.19314235538087213,
+        "eggers_p": 0.19314235538087246,
         "funnel_interpretation": "Egger's test indicates no significant funnel plot asymmetry (p=0.1931). The distribution of studies appears symmetric, suggesting a lower risk of publication bias.",
         "loo_results": [
             {
                 "omitted": "Liu KY et al. (2021) [PMID: 33618790]",
-                "pooled_es": 1.1744467750775776,
+                "pooled_es": 1.1744467750775773,
                 "ci_low": 1.0401166426980555,
-                "ci_upp": 1.32612552368373,
+                "ci_upp": 1.3261255236837297,
                 "is_significant": true
             },
             {
                 "omitted": "Quintana Pacheco DA et al. (2018) [PMID: 29574909]",
-                "pooled_es": 1.1734821401423807,
-                "ci_low": 1.038475219295116,
-                "ci_upp": 1.3260406292293105,
+                "pooled_es": 1.1734821401423805,
+                "ci_low": 1.0384752192951159,
+                "ci_upp": 1.3260406292293103,
                 "is_significant": true
             },
             {
@@ -1245,7 +1195,7 @@
             },
             {
                 "omitted": "Wen CP et al. (2014) [PMID: 25228650]",
-                "pooled_es": 1.1420616086779198,
+                "pooled_es": 1.1420616086779196,
                 "ci_low": 0.9979651121492669,
                 "ci_upp": 1.3069642436767985,
                 "is_significant": false
@@ -1254,7 +1204,7 @@
                 "omitted": "Kallianpur AR et al. (2008) [PMID: 17431764]",
                 "pooled_es": 1.129100158439927,
                 "ci_low": 0.9889313953556206,
-                "ci_upp": 1.2891361056755861,
+                "ci_upp": 1.289136105675586,
                 "is_significant": false
             },
             {
@@ -1267,7 +1217,7 @@
             {
                 "omitted": "Stevens RG et al. (2011) [PMID: 21883693]",
                 "pooled_es": 1.1242632185590364,
-                "ci_low": 0.9899842017541195,
+                "ci_low": 0.9899842017541196,
                 "ci_upp": 1.2767555102042456,
                 "is_significant": false
             },
@@ -1275,12 +1225,12 @@
                 "omitted": "Diallo A et al. (2016) [PMID: 27738321]",
                 "pooled_es": 1.1377209332687135,
                 "ci_low": 0.9985634324285363,
-                "ci_upp": 1.2962711030282685,
+                "ci_upp": 1.2962711030282683,
                 "is_significant": false
             },
             {
                 "omitted": "Chang VC et al. (2020) [PMID: 32022258]",
-                "pooled_es": 1.1325254893844858,
+                "pooled_es": 1.1325254893844856,
                 "ci_low": 0.9941731942312805,
                 "ci_upp": 1.2901313287744778,
                 "is_significant": false
@@ -1296,7 +1246,7 @@
                 "omitted": "Chua AC et al. (2016) [PMID: 27488234]",
                 "pooled_es": 1.1364894767384008,
                 "ci_low": 1.0018698774167165,
-                "ci_upp": 1.289197689092607,
+                "ci_upp": 1.2891976890926067,
                 "is_significant": true
             },
             {
@@ -1307,6 +1257,8 @@
                 "is_significant": true
             }
         ],
+        "baseline_risk": 0.13,
+        "baseline_risk_percent": 13.0,
         "results_interpretation": "The pooled analysis of 19 studies yielded an overall effect size of 1.15 (95% CI: 1.05\u20131.25), suggesting that iron is associated with a higher risk of breast cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 81.19%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
@@ -1326,8 +1278,8 @@
         },
         "extracted": 26
     },
-    "plot_url": "static/iron/forest_breast_cancer_incidence_primary.png?t=6588",
-    "funnel_plot_url": "static/iron/funnel_breast_cancer_incidence_primary.png?t=1398",
-    "baujat_plot_url": "static/iron/baujat_breast_cancer_incidence_primary.png?t=9897",
+    "plot_url": "static/iron/forest_breast_cancer_incidence_primary.png?t=6309",
+    "funnel_plot_url": "static/iron/funnel_breast_cancer_incidence_primary.png?t=779",
+    "baujat_plot_url": "static/iron/baujat_breast_cancer_incidence_primary.png?t=5241",
     "last_run": "2026-06-15 01:22:24"
 }

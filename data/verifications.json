@@ -292,6 +292,12 @@
         "context_exclusions": {
             "breast_cancer_bcaas_incidence": 3
         },
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S2-GENETIC-FOCUS",
+            "context": "*",
+            "reason": "The article evaluates the HER2 codon 655 genotype and contains no nutritional BCAA association."
+        },
         "contexts": {}
     },
     "15860438": {
@@ -2116,6 +2122,12 @@
         "legacy_count": 0,
         "submissions": [],
         "context_exclusions": {},
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S2-GENETIC-FOCUS",
+            "context": "*",
+            "reason": "The cached estimate is the cSHMT C1420T genotype association from an epistatic one-carbon metabolism analysis, not a population-wide folic-acid effect."
+        },
         "contexts": {
             "breast_cancer_folic_acid_incidence": {
                 "submissions": [
@@ -2494,6 +2506,12 @@
         "legacy_count": 0,
         "context_exclusions": {
             "breast_cancer_folic_acid_incidence": 3
+        },
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S2-GENETIC-FOCUS",
+            "context": "*",
+            "reason": "The reported estimate combines multiple genetic variants and nutritional risk factors rather than estimating an independent folic-acid effect."
         },
         "contexts": {
             "breast_cancer_folic_acid_incidence": {
@@ -4222,6 +4240,138 @@
             "code": "S1-DUPLICATE-COHORT",
             "context": "breast_cancer_vitamin_e_incidence",
             "reason": "This report repeats the vitamin E estimate from PMID 3170022 (OR 4.2, 95% CI 1.9-9.0; 319 cases and 344 controls); PMID 3170022 is retained as the primary report."
+        },
+        "context_exclusions": {}
+    },
+    "19775332": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S2-GENETIC-FOCUS",
+            "context": "*",
+            "reason": "The alcohol association was evaluated only in women genetically selected as noncarriers of common BRCA1/2 mutations."
+        },
+        "context_exclusions": {}
+    },
+    "22576580": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S2-GENETIC-FOCUS",
+            "context": "*",
+            "reason": "The micronutrient association was evaluated exclusively in BRCA1 mutation carriers."
+        },
+        "context_exclusions": {}
+    },
+    "25935583": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S2-GENETIC-FOCUS",
+            "context": "*",
+            "reason": "The alcohol association was evaluated exclusively in BRCA1/2 mutation carriers."
+        },
+        "context_exclusions": {}
+    },
+    "27465373": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S2-GENETIC-FOCUS",
+            "context": "*",
+            "reason": "The folate and B-vitamin associations were evaluated exclusively in BRCA1/2 mutation carriers."
+        },
+        "context_exclusions": {}
+    },
+    "30603998": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S2-GENETIC-FOCUS",
+            "context": "*",
+            "reason": "The folic-acid and vitamin-B12 supplement associations were evaluated exclusively in BRCA mutation carriers."
+        },
+        "context_exclusions": {}
+    },
+    "37345127": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S2-GENETIC-FOCUS",
+            "context": "*",
+            "reason": "The vitamin-D supplement association was evaluated exclusively in BRCA1/2 mutation carriers."
+        },
+        "context_exclusions": {}
+    },
+    "38473316": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S2-GENETIC-FOCUS",
+            "context": "*",
+            "reason": "The alcohol association was evaluated exclusively in women with inherited PTEN Hamartoma Tumor Syndrome."
+        },
+        "context_exclusions": {}
+    },
+    "38790714": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S2-GENETIC-FOCUS",
+            "context": "*",
+            "reason": "The zinc association was evaluated exclusively in BRCA1 mutation carriers."
+        },
+        "context_exclusions": {}
+    },
+    "38892720": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S2-GENETIC-FOCUS",
+            "context": "*",
+            "reason": "The iodine associations with breast and ovarian cancer were evaluated exclusively in BRCA1 mutation carriers."
+        },
+        "context_exclusions": {}
+    },
+    "39300540": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S2-GENETIC-FOCUS",
+            "context": "*",
+            "reason": "The molybdenum associations with breast and ovarian cancer were evaluated exclusively in BRCA1 mutation carriers."
+        },
+        "context_exclusions": {}
+    },
+    "39676351": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S2-GENETIC-FOCUS",
+            "context": "*",
+            "reason": "The primary objective was the interaction between alcohol intake and a breast-cancer polygenic risk score."
         },
         "context_exclusions": {}
     }

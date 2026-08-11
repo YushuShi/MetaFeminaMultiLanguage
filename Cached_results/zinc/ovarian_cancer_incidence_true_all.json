@@ -1,63 +1,6 @@
 {
     "success": true,
-    "studies": [
-        {
-            "Study": "Matuszczak M et al. (2024) [PMID: 38790714]",
-            "PMID": "38790714",
-            "Effect Size": 0.6061,
-            "Lower CI": 0.2907,
-            "Upper CI": 1.25,
-            "Population": "General",
-            "Reference": "Zinc and Its Antioxidant Properties: The Potential Use of Blood Zinc Levels as a Marker of Cancer Risk in BRCA1 Mutation Carriers.",
-            "Authors": "Matuszczak M, Kilja\u0144czyk A, Marciniak W, Derkacz R, Stempa K, Baszuk P, Bry\u015bkiewicz M, Sun P, Cheriyan A, Cybulski C, D\u0119bniak T, Gronwald J, Huzarski T, Lener MR, Jakubowska A, Szwiec M, Stawicka-Nie\u0142acna M, Godlewski D, Prusaczyk A, Jasiewicz A, Kluz T, Tomiczek-Szwiec J, Kilar-Kobierzycka E, Sio\u0142ek M, Wi\u015bniowski R, Posmyk R, Jarkiewicz-Tretyn J, Scott RJ, Narod SA, Lubi\u0144ski J",
-            "Journal": "Antioxidants (Basel, Switzerland)",
-            "Year": "2024",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/38790714/",
-            "Effect Type": "HR",
-            "SE": 0.24471938775510205,
-            "Sample Size": 989,
-            "Cases": 29,
-            "Estimated Cases": null,
-            "Design": "Cohort",
-            "Timing": "Prospective",
-            "Continent": null,
-            "Stage": null,
-            "Quality %": 45.5,
-            "Quality Score": "Fair",
-            "comparison_type": "Lowest tertile vs Upper two tertiles [inverted \u21d2 high vs low]",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Unclear",
-                "q4": "No",
-                "q5": "No",
-                "q6": "Yes",
-                "q7": "Unclear",
-                "q8": "Yes",
-                "q9": "Unclear",
-                "q10": "No",
-                "q11": "Yes"
-            },
-            "exposure_measurement_type": "human_biospecimen",
-            "exposure_measurement_supporting_text": "A zinc level in the lowest tertile was associated... We took a blood sample",
-            "extraction_supporting_text": {
-                "sample_size": "989 female BRCA1 mutation carriers",
-                "effect_size": "HR = 1.65",
-                "effect_direction": "modestly higher risk",
-                "p_value": "p = 0.18",
-                "confidence_interval": "95% CI 0.80 to 3.44",
-                "outcome_definition": "29 cases of ovarian cancers",
-                "exposure_definition": "A zinc level in the lowest tertile"
-            }
-        }
-    ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>29</td>\n      <td>989</td>\n      <td>0.622636</td>\n      <td>0.305192</td>\n      <td>1.228987</td>\n    </tr>\n  </tbody>\n</table>",
-    "headline": {
-        "pooled_es": 0.62,
-        "ci_low": 0.31,
-        "ci_upp": 1.23,
-        "interpretation": "not statistically significant"
-    },
+    "studies": [],
     "screening_stats": {
         "llm_screened_out": 85,
         "consensus_bypassed": 0,
@@ -76,8 +19,6 @@
         },
         "extracted": 1
     },
-    "plot_url": "static/zinc/forest_ovarian_cancer_incidence_primary.png?t=1685",
-    "funnel_plot_url": "static/zinc/funnel_ovarian_cancer_incidence_primary.png?t=6271",
-    "baujat_plot_url": null,
-    "last_run": "2026-06-22 13:53:54"
+    "last_run": "2026-06-22 13:53:54",
+    "error": "No relevant evidence was identified in the reviewed sources."
 }

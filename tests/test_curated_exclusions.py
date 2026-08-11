@@ -49,6 +49,38 @@ class CuratedExclusionTests(unittest.TestCase):
                 )
             )
 
+    def test_luna_genetic_focus_records_are_globally_excluded(self):
+        pmids = (
+            "15693849", "19775332", "21161404", "22576580", "25023197",
+            "25935583", "27465373", "30603998", "37345127", "38473316",
+            "38790714", "38892720", "39300540", "39676351",
+        )
+        for pmid in pmids:
+            self.assertTrue(
+                meta_analysis.is_curated_meta_analysis_exclusion(
+                    pmid, "Breast cancer", "folic_acid", "Incidence"
+                )
+            )
+            self.assertTrue(
+                meta_analysis.is_curated_meta_analysis_exclusion(
+                    pmid, "Ovarian cancer", "zinc", "Incidence"
+                )
+            )
+
+    def test_requested_molecular_marker_records_remain_eligible(self):
+        contexts = (
+            ("12588696", "Breast cancer", "beta-carotene"),
+            ("12588696", "Breast cancer", "lutein"),
+            ("14682440", "Breast cancer", "folic_acid"),
+            ("19089916", "Breast cancer", "vitamin_e"),
+        )
+        for pmid, disease, exposure in contexts:
+            self.assertFalse(
+                meta_analysis.is_curated_meta_analysis_exclusion(
+                    pmid, disease, exposure, "Incidence"
+                )
+            )
+
     def test_mendelian_randomization_records_are_removed_from_meta_analysis(self):
         frame = pd.DataFrame([
             {

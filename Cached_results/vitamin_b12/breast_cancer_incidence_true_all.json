@@ -96,7 +96,8 @@
                 "confidence_interval": "95% CI 1.02-1.62",
                 "outcome_definition": "risk of BC",
                 "exposure_definition": "Plasma concentrations of folate and vitamin B12"
-            }
+            },
+            "P Value": null
         },
         {
             "Study": "Wu K et al. (1999) [PMID: 10090298]",
@@ -144,7 +145,8 @@
                 "confidence_interval": "95% confidence interval = 1.05-15.20",
                 "outcome_definition": "incidence of breast cancer",
                 "exposure_definition": "prediagnostic serum levels of ... B12"
-            }
+            },
+            "P Value": null
         },
         {
             "Study": "Zhang SM et al. (2008) [PMID: 18984888]",
@@ -195,55 +197,8 @@
                 "confidence_interval": "95% CI, 0.60-1.14",
                 "outcome_definition": "Confirmed newly diagnosed ... breast cancer",
                 "exposure_definition": "Daily supplementation of a combination of ... 1 mg of vitamin B(12)"
-            }
-        },
-        {
-            "Study": "Kim SJ et al. (2019) [PMID: 30603998]",
-            "PMID": "30603998",
-            "Effect Size": 0.48,
-            "Lower CI": 0.24,
-            "Upper CI": 0.96,
-            "Population": "General",
-            "Reference": "Folic acid supplement use and breast cancer risk in BRCA1 and BRCA2 mutation carriers: a case-control study.",
-            "Authors": "Kim SJ, Zhang CXW, Demsky R, Armel S, Kim YI, Narod SA, Kotsopoulos J",
-            "Journal": "Breast cancer research and treatment",
-            "Year": "2019",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/30603998/",
-            "Effect Type": "OR",
-            "SE": 0.1836734693877551,
-            "Sample Size": 400,
-            "Cases": 129.0,
-            "Estimated Cases": null,
-            "Design": "Case-Control",
-            "Timing": "Retrospective",
-            "Continent": "North America",
-            "Stage": null,
-            "Quality %": 80.0,
-            "Quality Score": "Moderate",
-            "comparison_type": "Moderate vitamin B12 supplement intake vs never use",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Unclear",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Unclear",
-                "q10": "Yes"
             },
-            "exposure_measurement_type": "dietary_intake",
-            "exposure_measurement_supporting_text": "dietary supplement use was collected from BRCA mutation carriers living in Canada",
-            "extraction_supporting_text": {
-                "sample_size": "We included 129 breast cancer cases and 271 controls.",
-                "effect_size": "Moderate vitamin B12 supplement intake was associated with decreased risk of breast cancer compared to never use (OR 0.48; 95%CI 0.24, 0.96; P\u2009=\u20090.04).",
-                "effect_direction": "decreased risk of breast cancer compared to never use",
-                "p_value": "P\u2009=\u20090.04",
-                "confidence_interval": "95%CI 0.24, 0.96",
-                "outcome_definition": "breast cancer risk among BRCA mutation carriers",
-                "exposure_definition": "vitamin B12 supplement use"
-            }
+            "P Value": null
         },
         {
             "Study": "Bassett JK et al. (2013) [PMID: 23686442]",
@@ -292,7 +247,8 @@
                 "confidence_interval": "HR Q4 vs. Q1 = 1.21 (1.00, 1.46)",
                 "outcome_definition": "we ascertained 936 incident breast cancers",
                 "exposure_definition": "dietary intakes of ... B vitamins ... including ... vitamin B12"
-            }
+            },
+            "P Value": null
         },
         {
             "Study": "Le NT et al. (2025) [PMID: 39397378]",
@@ -340,7 +296,8 @@
                 "confidence_interval": "OR = 2.07, 95% CI: 1.58-2.71",
                 "outcome_definition": "The excess risk of cancer associated with low intakes of vitamin B12 was observed among esophageal, lung, and breast cancer patients",
                 "exposure_definition": "Vitamin B12 intake was derived from the validated food frequency questionnaire."
-            }
+            },
+            "P Value": null
         },
         {
             "Study": "Hatami M et al. (2020) [PMID: 30758268]",
@@ -388,7 +345,8 @@
                 "confidence_interval": "95% CI, 0.09-0.43",
                 "outcome_definition": "odds of BrCa",
                 "exposure_definition": "total intake of vitamin B12"
-            }
+            },
+            "P Value": null
         },
         {
             "Study": "Yang D et al. (2013) [PMID: 23408942]",
@@ -436,87 +394,83 @@
                 "confidence_interval": "95% CI 0.53-1.00",
                 "outcome_definition": "Primary breast cancer cases (n\u200a=\u200a2,325)... diagnosed between October 1999 and May 2004",
                 "exposure_definition": "Vitamin B12 intake was inversely associated with breast cancer"
-            }
+            },
+            "P Value": null
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Hatami M et al. (2020) [PMID: 30758268]</th>\n      <td>-1.4996</td>\n      <td>0.3865</td>\n      <td>-2.2571</td>\n      <td>-0.7421</td>\n      <td>151.0</td>\n      <td>305.0</td>\n    </tr>\n    <tr>\n      <th>Wu K et al. (1999) [PMID: 10090298]</th>\n      <td>-1.2837</td>\n      <td>0.6503</td>\n      <td>-2.5582</td>\n      <td>-0.0092</td>\n      <td>195.0</td>\n      <td>12450.0</td>\n    </tr>\n    <tr>\n      <th>Zhang SM et al. (2003) [PMID: 12618502]</th>\n      <td>-1.0217</td>\n      <td>0.4455</td>\n      <td>-1.8948</td>\n      <td>-0.1485</td>\n      <td>712.0</td>\n      <td>32826.0</td>\n    </tr>\n    <tr>\n      <th>Kim SJ et al. (2019) [PMID: 30603998]</th>\n      <td>-0.6640</td>\n      <td>0.3284</td>\n      <td>-1.3077</td>\n      <td>-0.0202</td>\n      <td>129.0</td>\n      <td>400.0</td>\n    </tr>\n    <tr>\n      <th>Le NT et al. (2025) [PMID: 39397378]</th>\n      <td>-0.6580</td>\n      <td>0.1283</td>\n      <td>-0.9094</td>\n      <td>-0.4066</td>\n      <td>3758.0</td>\n      <td>6753.0</td>\n    </tr>\n    <tr>\n      <th>Yang D et al. (2013) [PMID: 23408942]</th>\n      <td>-0.2790</td>\n      <td>0.1459</td>\n      <td>-0.5649</td>\n      <td>0.0069</td>\n      <td>2325.0</td>\n      <td>4850.0</td>\n    </tr>\n    <tr>\n      <th>Zhang SM et al. (2008) [PMID: 18984888]</th>\n      <td>-0.1747</td>\n      <td>0.1543</td>\n      <td>-0.4772</td>\n      <td>0.1278</td>\n      <td>-</td>\n      <td>5442.0</td>\n    </tr>\n    <tr>\n      <th>Bassett JK et al. (2013) [PMID: 23686442]</th>\n      <td>0.1764</td>\n      <td>0.0886</td>\n      <td>0.0027</td>\n      <td>0.3500</td>\n      <td>936.0</td>\n      <td>20756.0</td>\n    </tr>\n    <tr>\n      <th>Matejcic M et al. (2017) [PMID: 27905104]</th>\n      <td>0.1979</td>\n      <td>0.0981</td>\n      <td>0.0055</td>\n      <td>0.3902</td>\n      <td>2491.0</td>\n      <td>5012.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Hatami M et al. (2020) [PMID: 30758268]</th>\n      <td>-1.4996</td>\n      <td>0.3865</td>\n      <td>-2.2571</td>\n      <td>-0.7421</td>\n      <td>151.0</td>\n      <td>305.0</td>\n    </tr>\n    <tr>\n      <th>Wu K et al. (1999) [PMID: 10090298]</th>\n      <td>-1.2837</td>\n      <td>0.6503</td>\n      <td>-2.5582</td>\n      <td>-0.0092</td>\n      <td>195.0</td>\n      <td>12450.0</td>\n    </tr>\n    <tr>\n      <th>Zhang SM et al. (2003) [PMID: 12618502]</th>\n      <td>-1.0217</td>\n      <td>0.4455</td>\n      <td>-1.8948</td>\n      <td>-0.1485</td>\n      <td>712.0</td>\n      <td>32826.0</td>\n    </tr>\n    <tr>\n      <th>Le NT et al. (2025) [PMID: 39397378]</th>\n      <td>-0.6580</td>\n      <td>0.1283</td>\n      <td>-0.9094</td>\n      <td>-0.4066</td>\n      <td>3758.0</td>\n      <td>6753.0</td>\n    </tr>\n    <tr>\n      <th>Yang D et al. (2013) [PMID: 23408942]</th>\n      <td>-0.2790</td>\n      <td>0.1459</td>\n      <td>-0.5649</td>\n      <td>0.0069</td>\n      <td>2325.0</td>\n      <td>4850.0</td>\n    </tr>\n    <tr>\n      <th>Zhang SM et al. (2008) [PMID: 18984888]</th>\n      <td>-0.1747</td>\n      <td>0.1543</td>\n      <td>-0.4772</td>\n      <td>0.1278</td>\n      <td>-</td>\n      <td>5442.0</td>\n    </tr>\n    <tr>\n      <th>Bassett JK et al. (2013) [PMID: 23686442]</th>\n      <td>0.1764</td>\n      <td>0.0886</td>\n      <td>0.0027</td>\n      <td>0.3500</td>\n      <td>936.0</td>\n      <td>20756.0</td>\n    </tr>\n    <tr>\n      <th>Matejcic M et al. (2017) [PMID: 27905104]</th>\n      <td>0.1979</td>\n      <td>0.0981</td>\n      <td>0.0055</td>\n      <td>0.3902</td>\n      <td>2491.0</td>\n      <td>5012.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.66,
+        "pooled_es": 0.68,
         "ci_low": 0.48,
-        "ci_upp": 0.91,
-        "pi_low": 0.23,
-        "pi_upp": 1.9,
+        "ci_upp": 0.95,
+        "pi_low": 0.22,
+        "pi_upp": 2.04,
         "interpretation": "Statistically significant (decreased risk/odds)",
-        "i2": 87.35,
+        "i2": 88.39,
         "tau2": 0.17,
-        "eggers_p": 0.022200923320673846,
-        "funnel_interpretation": "The significant funnel plot asymmetry (egger's p=0.0222) indicates substantial publication bias in this meta-analysis on Vitamin B12 and breast cancer. This specific pattern suggests that smaller studies with smaller or null effects may be underrepresented, compromising the reliability of the pooled estimate and potentially leading to an overestimation of the true association.",
+        "eggers_p": 0.038822892619664734,
+        "funnel_interpretation": "Egger\u2019s test is generally not recommended when fewer than 10 studies are available.",
         "loo_results": [
             {
                 "omitted": "Hatami M et al. (2020) [PMID: 30758268]",
-                "pooled_es": 0.7378730737653363,
-                "ci_low": 0.5329668171204487,
-                "ci_upp": 1.0215582949976791,
+                "pooled_es": 0.7683142795656875,
+                "ci_low": 0.5383738548078251,
+                "ci_upp": 1.096462666069202,
                 "is_significant": false
             },
             {
                 "omitted": "Wu K et al. (1999) [PMID: 10090298]",
-                "pooled_es": 0.6877329248251242,
-                "ci_low": 0.47004256025560515,
-                "ci_upp": 1.006242021214673,
+                "pooled_es": 0.7100803356567255,
+                "ci_low": 0.4641066341816595,
+                "ci_upp": 1.086418607170803,
                 "is_significant": false
             },
             {
                 "omitted": "Zhang SM et al. (2003) [PMID: 12618502]",
-                "pooled_es": 0.6926072143414199,
-                "ci_low": 0.4685405268949201,
-                "ci_upp": 1.023827664464477,
-                "is_significant": false
-            },
-            {
-                "omitted": "Kim SJ et al. (2019) [PMID: 30603998]",
-                "pooled_es": 0.6760668755542045,
-                "ci_low": 0.4471580942179469,
-                "ci_upp": 1.022158440452714,
+                "pooled_es": 0.7164669776004328,
+                "ci_low": 0.4627733598148606,
+                "ci_upp": 1.1092361284522998,
                 "is_significant": false
             },
             {
                 "omitted": "Le NT et al. (2025) [PMID: 39397378]",
-                "pooled_es": 0.7045552099490163,
-                "ci_low": 0.4655185663609681,
-                "ci_upp": 1.0663335036166741,
+                "pooled_es": 0.7354805783694103,
+                "ci_low": 0.46335612541626625,
+                "ci_upp": 1.167421021298994,
                 "is_significant": false
             },
             {
                 "omitted": "Yang D et al. (2013) [PMID: 23408942]",
-                "pooled_es": 0.633827647862277,
-                "ci_low": 0.4127610506868906,
-                "ci_upp": 0.9732931111743239,
-                "is_significant": true
+                "pooled_es": 0.6506760013801925,
+                "ci_low": 0.3994768556143239,
+                "ci_upp": 1.0598342627911066,
+                "is_significant": false
             },
             {
                 "omitted": "Zhang SM et al. (2008) [PMID: 18984888]",
-                "pooled_es": 0.6235392500034733,
-                "ci_low": 0.40814822964204395,
-                "ci_upp": 0.9525980221349536,
-                "is_significant": true
+                "pooled_es": 0.6385634824635713,
+                "ci_low": 0.39410428357742927,
+                "ci_upp": 1.0346584346523373,
+                "is_significant": false
             },
             {
                 "omitted": "Bassett JK et al. (2013) [PMID: 23686442]",
-                "pooled_es": 0.5878342454403483,
-                "ci_low": 0.4000913941039642,
-                "ci_upp": 0.8636754131798005,
+                "pooled_es": 0.5959429116719622,
+                "ci_low": 0.3836638922230869,
+                "ci_upp": 0.9256746886296775,
                 "is_significant": true
             },
             {
                 "omitted": "Matejcic M et al. (2017) [PMID: 27905104]",
-                "pooled_es": 0.5866066145308038,
-                "ci_low": 0.4006740651864046,
-                "ci_upp": 0.8588210471052146,
+                "pooled_es": 0.5948008473224027,
+                "ci_low": 0.38454180120213083,
+                "ci_upp": 0.9200249410323087,
                 "is_significant": true
             }
         ],
-        "results_interpretation": "The pooled analysis of 9 studies yielded an overall effect size of 0.66 (95% CI: 0.48\u20130.91), suggesting that Vitamin B12 is associated with a lower risk of breast cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 87.35%), reflecting highly inconsistent results across studies."
+        "baseline_risk": 0.13,
+        "baseline_risk_percent": 13.0,
+        "results_interpretation": "The pooled analysis of 8 studies yielded an overall effect size of 0.68 (95% CI: 0.48\u20130.95), suggesting that vitamin_b12 is associated with a lower risk of breast cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 88.39%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 19,
@@ -535,8 +489,8 @@
         },
         "extracted": 10
     },
-    "plot_url": "static/vitamin_b12/forest_breast_cancer_incidence_primary.png?t=764",
-    "funnel_plot_url": "static/vitamin_b12/funnel_breast_cancer_incidence_primary.png?t=2574",
-    "baujat_plot_url": "static\\vitamin_b12\\baujat_breast_cancer_incidence_primary.png?t=5507",
+    "plot_url": "static/vitamin_b12/forest_breast_cancer_incidence_primary.png?t=8517",
+    "funnel_plot_url": "static/vitamin_b12/funnel_breast_cancer_incidence_primary.png?t=5591",
+    "baujat_plot_url": "static/vitamin_b12/baujat_breast_cancer_incidence_primary.png?t=7876",
     "last_run": "2026-06-15 08:40:28"
 }
