@@ -22,8 +22,10 @@
   "exposure": "Dairy",
   "funnel_plot_url": "Plot/subcategories/ovary/endometrioid_carcinoma/dairy_funnel.png",
   "headline": {
-    "ci_low": 0.1587644602741868,
-    "ci_upp": 0.644980619863884,
+    "baseline_risk": 0.0011,
+    "baseline_risk_percent": 0.11,
+    "ci_low": 0.15884528793525357,
+    "ci_upp": 0.6451350121269087,
     "eggers_intercept": null,
     "eggers_p": null,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
@@ -31,12 +33,12 @@
     "interpretation": "The pooled subtype-specific estimate is 0.32, indicating a lower relative association for this exposure.",
     "loo_results": [],
     "n_studies": 1,
-    "pooled_es": 0.32,
+    "pooled_es": 0.3201197537772577,
     "q": 0.0,
     "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "f370ad319a0b8eeec96aabbde75ff9baa3a8c17cb089a07ccd38ca5bb3e2068f",
+  "input_fingerprint": "9bd20c0d3c935015063246bfc29563404c95092083232fbb293edc21ae3def58",
   "plot_url": "Plot/subcategories/ovary/endometrioid_carcinoma/dairy_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/ovary/endometrioid_carcinoma/dairy_baujat.png",

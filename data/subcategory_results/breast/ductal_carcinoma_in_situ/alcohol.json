@@ -22,8 +22,10 @@
   "exposure": "Alcohol",
   "funnel_plot_url": "Plot/subcategories/breast/ductal_carcinoma_in_situ/alcohol_funnel.png",
   "headline": {
-    "ci_low": 0.5006287437541393,
-    "ci_upp": 1.5118988061375007,
+    "baseline_risk": 0.024,
+    "baseline_risk_percent": 2.4,
+    "ci_low": 0.5044893802965252,
+    "ci_upp": 1.5050565160490739,
     "eggers_intercept": null,
     "eggers_p": null,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
@@ -31,12 +33,12 @@
     "interpretation": "The pooled subtype-specific estimate is 0.87, indicating a lower relative association for this exposure.",
     "loo_results": [],
     "n_studies": 1,
-    "pooled_es": 0.87,
+    "pooled_es": 0.8713696282823062,
     "q": 0.0,
     "results_interpretation": "This saved analysis contains 1 separately reported Ductal carcinoma in situ estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "484e96d3ee17b332b193ae7893066970c1b85c0e0ebd00ecbf7150e97a17e3c5",
+  "input_fingerprint": "2025a907e562097ad3037263e3faa20833816760c0533acc1dc6971587c626c9",
   "plot_url": "Plot/subcategories/breast/ductal_carcinoma_in_situ/alcohol_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/ductal_carcinoma_in_situ/alcohol_baujat.png",

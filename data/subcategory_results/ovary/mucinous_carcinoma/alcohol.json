@@ -22,43 +22,45 @@
   "exposure": "Alcohol",
   "funnel_plot_url": "Plot/subcategories/ovary/mucinous_carcinoma/alcohol_funnel.png",
   "headline": {
-    "ci_low": 0.874902741140634,
-    "ci_upp": 3.429313754575854,
-    "eggers_intercept": 3.1598917095779697,
-    "eggers_p": 0.043800124149738336,
+    "baseline_risk": 0.0003,
+    "baseline_risk_percent": 0.03,
+    "ci_low": 0.8750622931608625,
+    "ci_upp": 3.427992179870294,
+    "eggers_intercept": 3.1625607341783617,
+    "eggers_p": 0.043974798693140485,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
-    "i2": 75.96093310590761,
+    "i2": 75.97729330143939,
     "interpretation": "The pooled subtype-specific estimate is 1.73, indicating a higher relative association for this exposure.",
     "loo_results": [
       {
-        "ci_low": 0.5428722239408661,
-        "ci_upp": 5.89931259467863,
+        "ci_low": 0.5431543182127377,
+        "ci_upp": 5.893811316215391,
         "is_significant": false,
         "omitted": "Modugno F et al. (2003) [PMID: 14662224]",
-        "pooled_es": 1.789573398325855
+        "pooled_es": 1.789203472815065
       },
       {
-        "ci_low": 1.3285629534245866,
-        "ci_upp": 4.262988691859873,
+        "ci_low": 1.3286743478123795,
+        "ci_upp": 4.260559951084066,
         "is_significant": true,
         "omitted": "Genkinger JM et al. (2006) [PMID: 16495916]",
-        "pooled_es": 2.379842189489246
+        "pooled_es": 2.379263901781844
       },
       {
-        "ci_low": 0.7509868534510991,
-        "ci_upp": 2.3380673347663548,
+        "ci_low": 0.751121155966705,
+        "ci_upp": 2.337341401963752,
         "is_significant": false,
         "omitted": "Sung S et al. (2023) [PMID: 36789760]",
-        "pooled_es": 1.3250878578015053
+        "pooled_es": 1.3250005946156598
       }
     ],
     "n_studies": 3,
-    "pooled_es": 1.7321420276956778,
-    "q": 8.319790484428085,
+    "pooled_es": 1.731966136463067,
+    "q": 8.325456515355263,
     "results_interpretation": "This saved analysis contains 3 separately reported Mucinous carcinoma estimates.",
-    "tau2": 0.2659744797484085
+    "tau2": 0.26582667383537434
   },
-  "input_fingerprint": "1a82f3fb01210dcd65bbedbb61dfe40737c3a161f0100e3bf236e6241a9f414e",
+  "input_fingerprint": "486ab594f8b99c9d14dc3bd379856b5ec69ad6ab9ec46e00b34c64ad9b68ad3c",
   "plot_url": "Plot/subcategories/ovary/mucinous_carcinoma/alcohol_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/ovary/mucinous_carcinoma/alcohol_baujat.png",

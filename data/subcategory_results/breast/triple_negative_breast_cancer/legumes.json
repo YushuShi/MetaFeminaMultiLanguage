@@ -22,8 +22,10 @@
   "exposure": "Legumes",
   "funnel_plot_url": "Plot/subcategories/breast/triple_negative_breast_cancer/legumes_funnel.png",
   "headline": {
-    "ci_low": 0.2768773241556249,
-    "ci_upp": 0.9394052069565841,
+    "baseline_risk": 0.013000000000000001,
+    "baseline_risk_percent": 1.3,
+    "ci_low": 0.2798746556072101,
+    "ci_upp": 0.9412985490182555,
     "eggers_intercept": null,
     "eggers_p": null,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
@@ -31,12 +33,12 @@
     "interpretation": "The pooled subtype-specific estimate is 0.51, indicating a lower relative association for this exposure.",
     "loo_results": [],
     "n_studies": 1,
-    "pooled_es": 0.51,
+    "pooled_es": 0.5132695268862655,
     "q": 0.0,
     "results_interpretation": "This saved analysis contains 1 separately reported Triple-negative breast cancer estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "cc14ce6a77b3a5b04622865237ece669626cd53a623ef45dc6e7a86162ef881f",
+  "input_fingerprint": "78e73a91f50bfa4fcab4fa4a8c4ece888f04b9e3726bf247bbab32aef87dc0ee",
   "plot_url": "Plot/subcategories/breast/triple_negative_breast_cancer/legumes_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/triple_negative_breast_cancer/legumes_baujat.png",

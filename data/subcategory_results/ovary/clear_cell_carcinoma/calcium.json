@@ -22,8 +22,10 @@
   "exposure": "Calcium",
   "funnel_plot_url": "Plot/subcategories/ovary/clear_cell_carcinoma/calcium_funnel.png",
   "headline": {
-    "ci_low": 0.46337000842294734,
-    "ci_upp": 1.0274726273726225,
+    "baseline_risk": 0.0011,
+    "baseline_risk_percent": 0.11,
+    "ci_low": 0.4636709009897137,
+    "ci_upp": 1.0275065037352142,
     "eggers_intercept": null,
     "eggers_p": null,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
@@ -31,12 +33,12 @@
     "interpretation": "The pooled subtype-specific estimate is 0.69, indicating a lower relative association for this exposure.",
     "loo_results": [],
     "n_studies": 1,
-    "pooled_es": 0.69,
+    "pooled_es": 0.690235370261259,
     "q": 0.0,
     "results_interpretation": "This saved analysis contains 1 separately reported Clear cell carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "be7cd25e2bbd480197482ba916c347a7e9c2e8eb98a1e6c12acf8b888066fef0",
+  "input_fingerprint": "a582fab9ce7a95eabad9d8684e1ccc6e935cc7d589c239dbb87358e49a4f84d9",
   "plot_url": "Plot/subcategories/ovary/clear_cell_carcinoma/calcium_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/ovary/clear_cell_carcinoma/calcium_baujat.png",

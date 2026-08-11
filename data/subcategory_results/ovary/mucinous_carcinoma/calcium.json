@@ -22,8 +22,10 @@
   "exposure": "Calcium",
   "funnel_plot_url": "Plot/subcategories/ovary/mucinous_carcinoma/calcium_funnel.png",
   "headline": {
-    "ci_low": 0.2919379690581165,
-    "ci_upp": 0.7248115093856686,
+    "baseline_risk": 0.0003,
+    "baseline_risk_percent": 0.03,
+    "ci_low": 0.29200410712663244,
+    "ci_upp": 0.7248821845217979,
     "eggers_intercept": null,
     "eggers_p": null,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
@@ -31,12 +33,12 @@
     "interpretation": "The pooled subtype-specific estimate is 0.46, indicating a lower relative association for this exposure.",
     "loo_results": [],
     "n_studies": 1,
-    "pooled_es": 0.46,
+    "pooled_es": 0.460074532074196,
     "q": 0.0,
     "results_interpretation": "This saved analysis contains 1 separately reported Mucinous carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "bdee5125749938bc78b84e53a6267d0bf5cb205993dfd56356ba7cafcbd7f4d7",
+  "input_fingerprint": "039c78a5f52161ac36544bcd104c2e12e049798bf69fb785655dedb5d1899500",
   "plot_url": "Plot/subcategories/ovary/mucinous_carcinoma/calcium_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/ovary/mucinous_carcinoma/calcium_baujat.png",

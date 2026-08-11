@@ -26,6 +26,7 @@ import forestplot
 from matplotlib import font_manager
 from matplotlib.lines import Line2D
 from matplotlib.patches import Rectangle
+from effect_measure import baseline_risk_from_percent, convert_ratio_to_rr
 
 
 MODULE_DIR = Path(__file__).resolve().parent
@@ -330,7 +331,7 @@ def _normalize_registry(records: Iterable[dict[str, Any]]) -> dict[str, dict[str
             "major_site_id": major,
             "subcategory_slug": slugify(category_slug),
             "label": str(label),
-            # Taxonomy metadata only. It is never used by the pooling code.
+            # This subtype-specific risk is the baseline for ratio-to-RR conversion.
             "estimated_lifetime_probability_us_women_percent": risk,
         }
     if not normalized:
@@ -667,14 +668,46 @@ def extract_eligible_rows(
     return rows, skipped
 
 
+def _converted_ratio_arrays(
+    rows: list[dict[str, Any]],
+) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, float]:
+    """Return subtype estimates and SEs converted to a common RR scale."""
+    baseline_risks = {
+        baseline_risk_from_percent(row.get("lifetime_risk_percent"))
+        for row in rows
+    }
+    if len(baseline_risks) != 1:
+        raise ValueError("A subtype analysis must use one consistent baseline risk.")
+    baseline_risk = baseline_risks.pop()
+    effects = np.asarray([
+        convert_ratio_to_rr(row["effect_size"], row["effect_type"], baseline_risk)
+        for row in rows
+    ], dtype=float)
+    lowers = np.asarray([
+        convert_ratio_to_rr(row["lower_ci"], row["effect_type"], baseline_risk)
+        for row in rows
+    ], dtype=float)
+    uppers = np.asarray([
+        convert_ratio_to_rr(row["upper_ci"], row["effect_type"], baseline_risk)
+        for row in rows
+    ], dtype=float)
+    standard_errors = (np.log(uppers) - np.log(lowers)) / 3.92
+    if (
+        np.any(standard_errors <= 0)
+        or not np.all(np.isfinite(standard_errors))
+        or not np.all(lowers <= effects)
+        or not np.all(effects <= uppers)
+    ):
+        raise ValueError("Eligible subtype estimate has an invalid converted confidence interval.")
+    return effects, lowers, uppers, standard_errors, baseline_risk
+
+
 def _pool(rows: list[dict[str, Any]]) -> dict[str, Any]:
     n = len(rows)
     if not n:
         return {"n_studies": 0, "pooled_es": None, "ci_low": None, "ci_upp": None, "i2": None, "tau2": None, "q": None, "eggers_p": None, "eggers_intercept": None}
-    y = np.asarray([math.log(row["effect_size"]) for row in rows], dtype=float)
-    se = np.asarray([(math.log(row["upper_ci"]) - math.log(row["lower_ci"])) / 3.92 for row in rows], dtype=float)
-    if np.any(se <= 0) or not np.all(np.isfinite(se)):
-        raise ValueError("Eligible subtype estimate has an invalid confidence interval width.")
+    effects, _, _, se, baseline_risk = _converted_ratio_arrays(rows)
+    y = np.log(effects)
     variances = se ** 2
     weights = 1.0 / variances
     fixed = float(np.sum(weights * y) / np.sum(weights))
@@ -705,6 +738,8 @@ def _pool(rows: list[dict[str, Any]]) -> dict[str, Any]:
         "q": q,
         "eggers_p": pvalue,
         "eggers_intercept": intercept,
+        "baseline_risk": baseline_risk,
+        "baseline_risk_percent": baseline_risk * 100,
     }
 
 
@@ -749,19 +784,24 @@ def _forest_plot(path: Path, title: str, rows: list[dict[str, Any]], pooled: dic
     if not rows:
         _save_placeholder(path, title, "No eligible subtype-specific estimates were available.")
         return False
-    ordered = sorted(rows, key=lambda row: (row["effect_size"], row["study"]))
+    effects, lowers, uppers, _, _ = _converted_ratio_arrays(rows)
+    converted_rows = [
+        (row, float(effect), float(lower), float(upper))
+        for row, effect, lower, upper in zip(rows, effects, lowers, uppers)
+    ]
+    ordered = sorted(converted_rows, key=lambda item: (item[1], item[0]["study"]))
     records = []
-    for row in ordered:
+    for row, effect, lower, upper in ordered:
         study = re.sub(r"\s+", " ", str(row["study"])).strip()
         if len(study) > 92:
             study = study[:89].rstrip() + "..."
         records.append({
             "label": study,
-            "est": math.log(row["effect_size"]),
-            "lb": math.log(row["lower_ci"]),
-            "ub": math.log(row["upper_ci"]),
+            "est": math.log(effect),
+            "lb": math.log(lower),
+            "ub": math.log(upper),
             "Est. RR (95% CI)": (
-                f"{row['effect_size']:.2f} ({row['lower_ci']:.2f}, {row['upper_ci']:.2f})"
+                f"{effect:.2f} ({lower:.2f}, {upper:.2f})"
             ),
         })
     frame = pd.DataFrame.from_records(records)
@@ -794,8 +834,8 @@ def _funnel_plot(path: Path, title: str, rows: list[dict[str, Any]], pooled: dic
         _save_placeholder(path, title, "No eligible subtype-specific estimates were available.")
         return False, "no_eligible_studies"
     fig, ax = plt.subplots(figsize=(8, 6))
-    x = np.asarray([math.log(row["effect_size"]) for row in rows])
-    se = np.asarray([(math.log(row["upper_ci"]) - math.log(row["lower_ci"])) / 3.92 for row in rows])
+    effects, _, _, se, _ = _converted_ratio_arrays(rows)
+    x = np.log(effects)
     ax.scatter(x, se, color="#215a8e", edgecolor="black", alpha=0.75)
     pooled_log = math.log(pooled["pooled_es"])
     ax.axvline(pooled_log, color="#9b1c31", linestyle="--", label="Pooled effect")
@@ -826,8 +866,9 @@ def _baujat_plot(path: Path, title: str, rows: list[dict[str, Any]], pooled: dic
     if len(rows) < 3:
         _save_placeholder(path, title, f"Baujat diagnostic requires at least 3 studies; {len(rows)} eligible study/studies available.")
         return False, "baujat_requires_3_studies"
-    y = np.asarray([math.log(row["effect_size"]) for row in rows])
-    variances = np.asarray([((math.log(row["upper_ci"]) - math.log(row["lower_ci"])) / 3.92) ** 2 for row in rows])
+    effects, _, _, se, _ = _converted_ratio_arrays(rows)
+    y = np.log(effects)
+    variances = se ** 2
     pooled_log = math.log(pooled["pooled_es"])
     q_contribution = (y - pooled_log) ** 2 / variances
     influence = []
@@ -915,7 +956,7 @@ def _compact_study(row: dict[str, Any]) -> dict[str, Any]:
 
 
 def _input_fingerprint(rows: list[dict[str, Any]]) -> str:
-    stable = [{key: row.get(key) for key in sorted(row) if key != "lifetime_risk_percent"} for row in rows]
+    stable = [{key: row.get(key) for key in sorted(row)} for row in rows]
     return hashlib.sha256(json.dumps(stable, sort_keys=True, default=_json_default).encode("utf-8")).hexdigest()
 
 
@@ -1014,7 +1055,7 @@ def _result_payload(category: dict[str, Any], exposure: str, rows: list[dict[str
             "subcategory_id": category["subcategory_id"],
             "subcategory_slug": category["subcategory_slug"],
             "subcategory_label": category["label"],
-            # Metadata only; not a pooling input or an aggregate total.
+            # Baseline for converting this subtype's OR/HR/IRR estimates to RR.
             "estimated_lifetime_probability_us_women_percent": category["estimated_lifetime_probability_us_women_percent"],
         },
         "exposure": exposure,
@@ -1474,7 +1515,7 @@ def _summary_outputs(category: dict[str, Any], entries: list[dict[str, Any]], pl
         "plots": plot_metadata,
         "exposures": [{"exposure": entry["exposure"], "headline": entry["headline"], "availability": entry["availability"]} for entry in sorted(entries, key=lambda item: slugify(item["exposure"]))],
         "notes": [
-            "Lifetime-risk percent is taxonomy metadata only and is not pooled or aggregated.",
+            "Each subtype lifetime-risk percent is used as the baseline risk when converting OR, HR, and IRR estimates to RR before pooling.",
             "Protective/harmful grouping is by the pooled point estimate relative to 1.0.",
             "Summary forest plots follow the broad-cancer format and require at least 2 studies per exposure.",
             "Effect-estimate vs heterogeneity plots require at least 3 studies and I² greater than 0% per exposure.",

@@ -24,62 +24,64 @@
       },
       "exposure": "Alcohol",
       "headline": {
-        "ci_low": 0.7993028662776337,
-        "ci_upp": 1.5285959868192904,
-        "eggers_intercept": -0.043078079619474186,
-        "eggers_p": 0.9775798369059038,
+        "baseline_risk": 0.013000000000000001,
+        "baseline_risk_percent": 1.3,
+        "ci_low": 0.8029525622405096,
+        "ci_upp": 1.5213279580745507,
+        "eggers_intercept": -0.04378194132532898,
+        "eggers_p": 0.9773200839673486,
         "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
-        "i2": 78.80073199671503,
+        "i2": 78.85396471478342,
         "interpretation": "The pooled subtype-specific estimate is 1.11, indicating a higher relative association for this exposure.",
         "loo_results": [
           {
-            "ci_low": 0.8887247059025511,
-            "ci_upp": 1.7100598452635514,
+            "ci_low": 0.8920091789849822,
+            "ci_upp": 1.6982395897765954,
             "is_significant": false,
             "omitted": "Kabat GC et al. (2011) [PMID: 21360045]",
-            "pooled_es": 1.232790506557222
+            "pooled_es": 1.2307905192177968
           },
           {
-            "ci_low": 0.6686882072800457,
-            "ci_upp": 1.8845841125462408,
+            "ci_low": 0.672235185692227,
+            "ci_upp": 1.8670970153400144,
             "is_significant": false,
             "omitted": "Romieu I et al. (2015) [PMID: 25677034]",
-            "pooled_es": 1.1225859306471828
+            "pooled_es": 1.1203250906823863
           },
           {
-            "ci_low": 0.7202363411643543,
-            "ci_upp": 1.4132302924934512,
+            "ci_low": 0.7239873757347495,
+            "ci_upp": 1.4077441058320326,
             "is_significant": false,
             "omitted": "Williams LA et al. (2016) [PMID: 26705260]",
-            "pooled_es": 1.008890388044268
+            "pooled_es": 1.0095488897955338
           },
           {
-            "ci_low": 0.7177328335826437,
-            "ci_upp": 1.433582720395338,
+            "ci_low": 0.7216450826963262,
+            "ci_upp": 1.4282861822367163,
             "is_significant": false,
             "omitted": "Gago-Dominguez M et al. (2016) [PMID: 26835221]",
-            "pooled_es": 1.0143615667425796
+            "pooled_es": 1.0152416954076675
           },
           {
-            "ci_low": 0.7029250221307904,
-            "ci_upp": 1.5931837563301017,
+            "ci_low": 0.7068790944359948,
+            "ci_upp": 1.585102932554823,
             "is_significant": false,
             "omitted": "Williams LA et al. (2017) [PMID: 28420652]",
-            "pooled_es": 1.0582479516525192
+            "pooled_es": 1.0585254487031444
           },
           {
-            "ci_low": 0.8952889441838572,
-            "ci_upp": 1.7284439892556358,
+            "ci_low": 0.8986521389398586,
+            "ci_upp": 1.7167242441015167,
             "is_significant": false,
             "omitted": "Hirko KA et al. (2024) [PMID: 37787924]",
-            "pooled_es": 1.2439681644727136
+            "pooled_es": 1.2420700116868373
           }
         ],
         "n_studies": 6,
-        "pooled_es": 1.1053556683914671,
-        "q": 23.585720031584188,
+        "pooled_es": 1.1052394229053193,
+        "q": 23.64509437613373,
         "results_interpretation": "This saved analysis contains 6 separately reported Triple-negative breast cancer estimates.",
-        "tau2": 0.11486393204315415
+        "tau2": 0.11184515693280331
       }
     },
     {
@@ -104,8 +106,10 @@
       },
       "exposure": "Legumes",
       "headline": {
-        "ci_low": 0.2768773241556249,
-        "ci_upp": 0.9394052069565841,
+        "baseline_risk": 0.013000000000000001,
+        "baseline_risk_percent": 1.3,
+        "ci_low": 0.2798746556072101,
+        "ci_upp": 0.9412985490182555,
         "eggers_intercept": null,
         "eggers_p": null,
         "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
@@ -113,7 +117,7 @@
         "interpretation": "The pooled subtype-specific estimate is 0.51, indicating a lower relative association for this exposure.",
         "loo_results": [],
         "n_studies": 1,
-        "pooled_es": 0.51,
+        "pooled_es": 0.5132695268862655,
         "q": 0.0,
         "results_interpretation": "This saved analysis contains 1 separately reported Triple-negative breast cancer estimate.",
         "tau2": 0.0
@@ -141,8 +145,10 @@
       },
       "exposure": "Mediterranean diet",
       "headline": {
-        "ci_low": 0.15255401427929477,
-        "ci_upp": 0.6712376628288971,
+        "baseline_risk": 0.013000000000000001,
+        "baseline_risk_percent": 1.3,
+        "ci_low": 0.1544296856643891,
+        "ci_upp": 0.6749655935297108,
         "eggers_intercept": null,
         "eggers_p": null,
         "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
@@ -150,7 +156,7 @@
         "interpretation": "The pooled subtype-specific estimate is 0.32, indicating a lower relative association for this exposure.",
         "loo_results": [],
         "n_studies": 1,
-        "pooled_es": 0.32,
+        "pooled_es": 0.3228540296218572,
         "q": 0.0,
         "results_interpretation": "This saved analysis contains 1 separately reported Triple-negative breast cancer estimate.",
         "tau2": 0.0
@@ -178,8 +184,10 @@
       },
       "exposure": "Molybdenum",
       "headline": {
-        "ci_low": 0.05077963596336064,
-        "ci_upp": 0.7109149034870488,
+        "baseline_risk": 0.013000000000000001,
+        "baseline_risk_percent": 1.3,
+        "ci_low": 0.051539106817422055,
+        "ci_upp": 0.7154265474100758,
         "eggers_intercept": null,
         "eggers_p": null,
         "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
@@ -187,7 +195,7 @@
         "interpretation": "The pooled subtype-specific estimate is 0.19, indicating a lower relative association for this exposure.",
         "loo_results": [],
         "n_studies": 1,
-        "pooled_es": 0.19,
+        "pooled_es": 0.19202199157124522,
         "q": 0.0,
         "results_interpretation": "This saved analysis contains 1 separately reported Triple-negative breast cancer estimate.",
         "tau2": 0.0
@@ -215,54 +223,56 @@
       },
       "exposure": "Vitamin D",
       "headline": {
-        "ci_low": 0.40224255609350307,
-        "ci_upp": 2.4395906133154215,
-        "eggers_intercept": -1.6183845519918212,
-        "eggers_p": 0.7547171336579688,
+        "baseline_risk": 0.013000000000000001,
+        "baseline_risk_percent": 1.3,
+        "ci_low": 0.4084940483272002,
+        "ci_upp": 2.423556440213379,
+        "eggers_intercept": -1.6657542072819738,
+        "eggers_p": 0.7500727433996219,
         "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
-        "i2": 92.73379258069934,
+        "i2": 92.80515746310269,
         "interpretation": "The pooled subtype-specific estimate is 0.99, indicating a lower relative association for this exposure.",
         "loo_results": [
           {
-            "ci_low": 0.5492338576668793,
-            "ci_upp": 3.5504177300697206,
+            "ci_low": 0.5582167606630393,
+            "ci_upp": 3.5040275342774176,
             "is_significant": false,
             "omitted": "Yao S et al. (2011) [PMID: 21386992]",
-            "pooled_es": 1.3964274511105392
+            "pooled_es": 1.3985731655721259
           },
           {
-            "ci_low": 0.28498061328921936,
-            "ci_upp": 2.614711405277407,
+            "ci_low": 0.2847250716507479,
+            "ci_upp": 2.697249368572358,
             "is_significant": false,
             "omitted": "Park S et al. (2015) [PMID: 26037255]",
-            "pooled_es": 0.8632161142206927
+            "pooled_es": 0.8763415542622061
           },
           {
-            "ci_low": 0.25550161617146916,
-            "ci_upp": 1.724250741289681,
+            "ci_low": 0.25868603328920997,
+            "ci_upp": 1.7132014951863594,
             "is_significant": false,
             "omitted": "Wu Y et al. (2017) [PMID: 29064397]",
-            "pooled_es": 0.6637385412075807
+            "pooled_es": 0.6657186335193742
           },
           {
-            "ci_low": 0.38532465172602437,
-            "ci_upp": 4.1639652433214085,
+            "ci_low": 0.391962491412512,
+            "ci_upp": 4.075377927943672,
             "is_significant": false,
             "omitted": "Qin B et al. (2020) [PMID: 31826233]",
-            "pooled_es": 1.2666800926761628
+            "pooled_es": 1.2638810411127948
           }
         ],
         "n_studies": 4,
-        "pooled_es": 0.9906094912334082,
-        "q": 41.2870129750402,
+        "pooled_es": 0.9949916490163229,
+        "q": 41.69653449140959,
         "results_interpretation": "This saved analysis contains 4 separately reported Triple-negative breast cancer estimates.",
-        "tau2": 0.7369695207883898
+        "tau2": 0.7245867432177271
       }
     }
   ],
   "formal_egger_exposure_count": 0,
   "notes": [
-    "Lifetime-risk percent is taxonomy metadata only and is not pooled or aggregated.",
+    "Each subtype lifetime-risk percent is used as the baseline risk when converting OR, HR, and IRR estimates to RR before pooling.",
     "Protective/harmful grouping is by the pooled point estimate relative to 1.0.",
     "Summary forest plots follow the broad-cancer format and require at least 2 studies per exposure.",
     "Effect-estimate vs heterogeneity plots require at least 3 studies and I² greater than 0% per exposure.",

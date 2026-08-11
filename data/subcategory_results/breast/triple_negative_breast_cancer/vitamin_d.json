@@ -22,50 +22,52 @@
   "exposure": "Vitamin D",
   "funnel_plot_url": "Plot/subcategories/breast/triple_negative_breast_cancer/vitamin_d_funnel.png",
   "headline": {
-    "ci_low": 0.40224255609350307,
-    "ci_upp": 2.4395906133154215,
-    "eggers_intercept": -1.6183845519918212,
-    "eggers_p": 0.7547171336579688,
+    "baseline_risk": 0.013000000000000001,
+    "baseline_risk_percent": 1.3,
+    "ci_low": 0.4084940483272002,
+    "ci_upp": 2.423556440213379,
+    "eggers_intercept": -1.6657542072819738,
+    "eggers_p": 0.7500727433996219,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
-    "i2": 92.73379258069934,
+    "i2": 92.80515746310269,
     "interpretation": "The pooled subtype-specific estimate is 0.99, indicating a lower relative association for this exposure.",
     "loo_results": [
       {
-        "ci_low": 0.5492338576668793,
-        "ci_upp": 3.5504177300697206,
+        "ci_low": 0.5582167606630393,
+        "ci_upp": 3.5040275342774176,
         "is_significant": false,
         "omitted": "Yao S et al. (2011) [PMID: 21386992]",
-        "pooled_es": 1.3964274511105392
+        "pooled_es": 1.3985731655721259
       },
       {
-        "ci_low": 0.28498061328921936,
-        "ci_upp": 2.614711405277407,
+        "ci_low": 0.2847250716507479,
+        "ci_upp": 2.697249368572358,
         "is_significant": false,
         "omitted": "Park S et al. (2015) [PMID: 26037255]",
-        "pooled_es": 0.8632161142206927
+        "pooled_es": 0.8763415542622061
       },
       {
-        "ci_low": 0.25550161617146916,
-        "ci_upp": 1.724250741289681,
+        "ci_low": 0.25868603328920997,
+        "ci_upp": 1.7132014951863594,
         "is_significant": false,
         "omitted": "Wu Y et al. (2017) [PMID: 29064397]",
-        "pooled_es": 0.6637385412075807
+        "pooled_es": 0.6657186335193742
       },
       {
-        "ci_low": 0.38532465172602437,
-        "ci_upp": 4.1639652433214085,
+        "ci_low": 0.391962491412512,
+        "ci_upp": 4.075377927943672,
         "is_significant": false,
         "omitted": "Qin B et al. (2020) [PMID: 31826233]",
-        "pooled_es": 1.2666800926761628
+        "pooled_es": 1.2638810411127948
       }
     ],
     "n_studies": 4,
-    "pooled_es": 0.9906094912334082,
-    "q": 41.2870129750402,
+    "pooled_es": 0.9949916490163229,
+    "q": 41.69653449140959,
     "results_interpretation": "This saved analysis contains 4 separately reported Triple-negative breast cancer estimates.",
-    "tau2": 0.7369695207883898
+    "tau2": 0.7245867432177271
   },
-  "input_fingerprint": "4f635b0b0bc2bdbae823340c65b17e4aacea6de20b205f104c43a045b3ba70d4",
+  "input_fingerprint": "f17c5ea353d95f31c7eb6ce3a32359d8c6963e1f002cc2a8b31681c7283e23ba",
   "plot_url": "Plot/subcategories/breast/triple_negative_breast_cancer/vitamin_d_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/triple_negative_breast_cancer/vitamin_d_baujat.png",

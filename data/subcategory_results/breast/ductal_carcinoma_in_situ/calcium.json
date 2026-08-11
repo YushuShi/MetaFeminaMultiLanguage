@@ -22,8 +22,10 @@
   "exposure": "Calcium",
   "funnel_plot_url": "Plot/subcategories/breast/ductal_carcinoma_in_situ/calcium_funnel.png",
   "headline": {
-    "ci_low": 0.7002083023405725,
-    "ci_upp": 0.9602856717813566,
+    "baseline_risk": 0.024,
+    "baseline_risk_percent": 2.4,
+    "ci_low": 0.7028404227391892,
+    "ci_upp": 0.9608664055849624,
     "eggers_intercept": null,
     "eggers_p": null,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
@@ -31,12 +33,12 @@
     "interpretation": "The pooled subtype-specific estimate is 0.82, indicating a lower relative association for this exposure.",
     "loo_results": [],
     "n_studies": 1,
-    "pooled_es": 0.82,
+    "pooled_es": 0.821788142222325,
     "q": 0.0,
     "results_interpretation": "This saved analysis contains 1 separately reported Ductal carcinoma in situ estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "69cbc3e4baff99efa3d108d5919609344ae69d10d6e6052ddc6f2c1fa934667c",
+  "input_fingerprint": "9eeb5acb73a1d894cec28468c1572a0afe15b9e76c88ea336d6e0ac5f7ad737a",
   "plot_url": "Plot/subcategories/breast/ductal_carcinoma_in_situ/calcium_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/ductal_carcinoma_in_situ/calcium_baujat.png",

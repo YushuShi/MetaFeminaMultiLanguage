@@ -24,41 +24,43 @@
       },
       "exposure": "Alcohol",
       "headline": {
-        "ci_low": 0.874902741140634,
-        "ci_upp": 3.429313754575854,
-        "eggers_intercept": 3.1598917095779697,
-        "eggers_p": 0.043800124149738336,
+        "baseline_risk": 0.0003,
+        "baseline_risk_percent": 0.03,
+        "ci_low": 0.8750622931608625,
+        "ci_upp": 3.427992179870294,
+        "eggers_intercept": 3.1625607341783617,
+        "eggers_p": 0.043974798693140485,
         "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
-        "i2": 75.96093310590761,
+        "i2": 75.97729330143939,
         "interpretation": "The pooled subtype-specific estimate is 1.73, indicating a higher relative association for this exposure.",
         "loo_results": [
           {
-            "ci_low": 0.5428722239408661,
-            "ci_upp": 5.89931259467863,
+            "ci_low": 0.5431543182127377,
+            "ci_upp": 5.893811316215391,
             "is_significant": false,
             "omitted": "Modugno F et al. (2003) [PMID: 14662224]",
-            "pooled_es": 1.789573398325855
+            "pooled_es": 1.789203472815065
           },
           {
-            "ci_low": 1.3285629534245866,
-            "ci_upp": 4.262988691859873,
+            "ci_low": 1.3286743478123795,
+            "ci_upp": 4.260559951084066,
             "is_significant": true,
             "omitted": "Genkinger JM et al. (2006) [PMID: 16495916]",
-            "pooled_es": 2.379842189489246
+            "pooled_es": 2.379263901781844
           },
           {
-            "ci_low": 0.7509868534510991,
-            "ci_upp": 2.3380673347663548,
+            "ci_low": 0.751121155966705,
+            "ci_upp": 2.337341401963752,
             "is_significant": false,
             "omitted": "Sung S et al. (2023) [PMID: 36789760]",
-            "pooled_es": 1.3250878578015053
+            "pooled_es": 1.3250005946156598
           }
         ],
         "n_studies": 3,
-        "pooled_es": 1.7321420276956778,
-        "q": 8.319790484428085,
+        "pooled_es": 1.731966136463067,
+        "q": 8.325456515355263,
         "results_interpretation": "This saved analysis contains 3 separately reported Mucinous carcinoma estimates.",
-        "tau2": 0.2659744797484085
+        "tau2": 0.26582667383537434
       }
     },
     {
@@ -83,8 +85,10 @@
       },
       "exposure": "Calcium",
       "headline": {
-        "ci_low": 0.2919379690581165,
-        "ci_upp": 0.7248115093856686,
+        "baseline_risk": 0.0003,
+        "baseline_risk_percent": 0.03,
+        "ci_low": 0.29200410712663244,
+        "ci_upp": 0.7248821845217979,
         "eggers_intercept": null,
         "eggers_p": null,
         "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
@@ -92,7 +96,7 @@
         "interpretation": "The pooled subtype-specific estimate is 0.46, indicating a lower relative association for this exposure.",
         "loo_results": [],
         "n_studies": 1,
-        "pooled_es": 0.46,
+        "pooled_es": 0.460074532074196,
         "q": 0.0,
         "results_interpretation": "This saved analysis contains 1 separately reported Mucinous carcinoma estimate.",
         "tau2": 0.0
@@ -120,8 +124,10 @@
       },
       "exposure": "Vitamin D",
       "headline": {
-        "ci_low": 0.4755400275024273,
-        "ci_upp": 1.060057977974161,
+        "baseline_risk": 0.0003,
+        "baseline_risk_percent": 0.03,
+        "ci_low": 0.4756234967427173,
+        "ci_upp": 1.0600563855672183,
         "eggers_intercept": null,
         "eggers_p": null,
         "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
@@ -129,8 +135,8 @@
         "interpretation": "The pooled subtype-specific estimate is 0.71, indicating a lower relative association for this exposure.",
         "loo_results": [],
         "n_studies": 1,
-        "pooled_es": 0.71,
-        "q": 7.368634872282193e-32,
+        "pooled_es": 0.7100617753744575,
+        "q": 0.0,
         "results_interpretation": "This saved analysis contains 1 separately reported Mucinous carcinoma estimate.",
         "tau2": 0.0
       }
@@ -138,7 +144,7 @@
   ],
   "formal_egger_exposure_count": 0,
   "notes": [
-    "Lifetime-risk percent is taxonomy metadata only and is not pooled or aggregated.",
+    "Each subtype lifetime-risk percent is used as the baseline risk when converting OR, HR, and IRR estimates to RR before pooling.",
     "Protective/harmful grouping is by the pooled point estimate relative to 1.0.",
     "Summary forest plots follow the broad-cancer format and require at least 2 studies per exposure.",
     "Effect-estimate vs heterogeneity plots require at least 3 studies and I² greater than 0% per exposure.",

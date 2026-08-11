@@ -15,6 +15,13 @@ from openai import OpenAI
 import json
 from google import genai
 from functools import lru_cache, partial
+from effect_measure import (
+    RATIO_EFFECT_TYPES,
+    baseline_risk_for_disease,
+    convert_ratio_to_rr,
+    is_eligible_effect_type,
+    normalize_effect_type,
+)
 
 _original_print = print
 def safe_print(*args, **kwargs):
@@ -48,34 +55,6 @@ EGGERS_MIN_STUDIES = 10
 EGGERS_FEWER_THAN_TEN_MESSAGE = (
     "Egger’s test is generally not recommended when fewer than 10 studies are available."
 )
-
-RATIO_EFFECT_TYPES = {
-    'OR', 'RR', 'IRR', 'HR', 'ODDS RATIO', 'RISK RATIO', 'RELATIVE RISK',
-    'INCIDENCE RATE RATIO', 'HAZARD RATIO',
-}
-
-
-def normalize_effect_type(effect_type):
-    """Return a canonical RR/OR/HR label (with IRR treated as RR), or ``None``."""
-    normalized = re.sub(r'[^A-Z]+', ' ', str(effect_type or '').upper()).strip()
-    aliases = {
-        'RR': 'RR',
-        'IRR': 'RR',
-        'RISK RATIO': 'RR',
-        'RELATIVE RISK': 'RR',
-        'INCIDENCE RATE RATIO': 'RR',
-        'OR': 'OR',
-        'ODDS RATIO': 'OR',
-        'HR': 'HR',
-        'HAZARD RATIO': 'HR',
-    }
-    return aliases.get(normalized)
-
-
-def is_eligible_effect_type(effect_type):
-    """Only RR (including IRR), OR, and HR measurements may enter a meta-analysis."""
-    return normalize_effect_type(effect_type) is not None
-
 
 MENDELIAN_RANDOMIZATION_PATTERN = re.compile(
     r"\b(?:mendelian\s+randomi[sz](?:ation|ed)|genetically\s+predicted|"
@@ -764,7 +743,8 @@ def perform_meta_analysis(
         df_all = df_clean
 
     # Curator-approved context exclusions are removed here; otherwise keep every
-    # saved article in the returned list. IRR is pooled on the RR scale.
+    # saved article in the returned list. All eligible ratio measures are
+    # converted to cumulative RR before pooling.
     df_all = filter_curated_meta_analysis_exclusions(
         df_all, disease, exposure, outcome
     )
@@ -800,18 +780,12 @@ def perform_meta_analysis(
     df_clean = df_clean.sort_values(by='Effect Size', ascending=True)
 
     # Meta-Analysis
-    # Log transformation logic (using Estimated RR for pooling)
-    p0 = 0.13
-    
+    # Convert every eligible ratio to a cumulative RR using the baseline risk
+    # for the selected cancer site, then compute heterogeneity on log(RR).
+    p0 = baseline_risk_for_disease(disease)
+
     def convert_to_rr(es, eff_type):
-        if es is None or np.isnan(es) or es <= 0:
-            return es
-        eff_type_str = normalize_effect_type(eff_type)
-        if eff_type_str == 'OR':
-            return es / (1 - p0 + (p0 * es))
-        elif eff_type_str == 'HR':
-            return (1 / p0) * (1 - np.exp(es * np.log(1 - p0)))
-        return es
+        return convert_ratio_to_rr(es, eff_type, p0)
 
     df_clean['converted_ES'] = df_clean.apply(lambda x: convert_to_rr(x['Effect Size'], x['Effect Type']), axis=1)
     df_clean['converted_Lower_CI'] = df_clean.apply(lambda x: convert_to_rr(x['Lower CI'], x['Effect Type']), axis=1)
@@ -897,7 +871,9 @@ def perform_meta_analysis(
                  "pooled_es": sanitize(pooled_es),
                  "ci_low": sanitize(pooled_lower),
                  "ci_upp": sanitize(pooled_upper),
-                 "interpretation": interpretation
+                 "interpretation": interpretation,
+                 "baseline_risk": p0,
+                 "baseline_risk_percent": p0 * 100,
             }
             
         else:
@@ -1077,7 +1053,9 @@ def perform_meta_analysis(
                     "tau2": sanitize(tau2),
                     "eggers_p": sanitize_pvalue(eggers_p),
                     "funnel_interpretation": funnel_interpretation,
-                    "loo_results": loo_results
+                    "loo_results": loo_results,
+                    "baseline_risk": p0,
+                    "baseline_risk_percent": p0 * 100,
                 }
 
                 # Generate LLM interpretation (non-fatal)
@@ -2224,14 +2202,9 @@ def add_estimated_cases_to_row(row, disease_keyword):
 
     estimated_cases = None
     if clean_cases is None and clean_n is not None:
-        d_lower = str(disease_keyword or "").lower()
-        if "breast" in d_lower:
-            prev = 0.13
-        elif "ovarian" in d_lower or "ovary" in d_lower:
-            prev = 0.013
-        elif "uterine" in d_lower or "uterus" in d_lower or "endometrial" in d_lower:
-            prev = 0.031
-        else:
+        try:
+            prev = baseline_risk_for_disease(disease_keyword)
+        except ValueError:
             prev = 0.0
             
         if prev > 0:

@@ -964,23 +964,27 @@ document.addEventListener('DOMContentLoaded', async () => {
         return option && option.dataset.subcategory ? option.dataset.subcategory : null;
     }
 
-    function updateBaselineIncidence() {
-        if (!elements.disease || !elements.pooledIncidence) return;
+    function selectedBaselineRisk() {
         const option = selectedDiseaseOption();
-        const disease = selectedDiseaseValue().toLowerCase();
-        let val = 13.0; // default/breast cancer
-        if (disease.includes('uterine') || disease.includes('uterus') || disease.includes('endometrial')) {
-            val = 3.1;
-        } else if (disease.includes('ovarian') || disease.includes('ovary')) {
-            val = 1.3;
-        }
         if (option && option.dataset.subcategory) {
-            const subtypeLifetimeRisk = Number(option.dataset.risk);
-            if (Number.isFinite(subtypeLifetimeRisk) && subtypeLifetimeRisk > 0) {
-                val = subtypeLifetimeRisk;
+            const subtypeLifetimeRiskPercent = Number(option.dataset.risk);
+            if (Number.isFinite(subtypeLifetimeRiskPercent) && subtypeLifetimeRiskPercent > 0) {
+                return subtypeLifetimeRiskPercent / 100;
             }
         }
-        elements.pooledIncidence.value = val;
+        const disease = selectedDiseaseValue().toLowerCase();
+        if (disease.includes('uterine') || disease.includes('uterus') || disease.includes('endometrial')) {
+            return 0.031;
+        }
+        if (disease.includes('ovarian') || disease.includes('ovary')) {
+            return 0.013;
+        }
+        return 0.13;
+    }
+
+    function updateBaselineIncidence() {
+        if (!elements.disease || !elements.pooledIncidence) return;
+        elements.pooledIncidence.value = selectedBaselineRisk() * 100;
         updatePooledPowerAnalysis();
     }
 
@@ -1235,18 +1239,12 @@ document.addEventListener('DOMContentLoaded', async () => {
                             const es = parseFloat(study['Effect Size']);
                             const type = (study['Effect Type'] || 'OR').toUpperCase();
                             if (!isNaN(es)) {
-                                const dScope = selectedDiseaseValue().toLowerCase() || 'breast cancer';
-                                let p0 = 0.13;
-                                if (dScope.includes('uterine') || dScope.includes('uterus') || dScope.includes('endometrial')) {
-                                    p0 = 0.031;
-                                } else if (dScope.includes('ovarian') || dScope.includes('ovary')) {
-                                    p0 = 0.013;
-                                }
+                                const p0 = selectedBaselineRisk();
                                 const pctText = (p0 * 100).toFixed(1).replace('.0', '') + '%';
                                 if (type === 'OR' || type === 'ODDS RATIO') {
                                     const rr = es / (1 - p0 + (p0 * es));
                                     return `<div style="font-size: 0.65em; color: #777; padding-left: 2px;" title="${uiText('Estimated Relative Risk (assuming {risk} baseline risk)', { risk: pctText })}">${uiText('Est. RR:')} <span class="notranslate" translate="no">${rr.toFixed(3)}</span></div>`;
-                                } else if (type === 'HR' || type === 'HAZARD RATIO') {
+                                } else if (type === 'HR' || type === 'HAZARD RATIO' || type === 'IRR' || type === 'INCIDENCE RATE RATIO') {
                                     const rr = (1 / p0) * (1 - Math.exp(es * Math.log(1 - p0)));
                                     return `<div style="font-size: 0.65em; color: #777; padding-left: 2px;" title="${uiText('Estimated Relative Risk (assuming {risk} baseline risk)', { risk: pctText })}">${uiText('Est. RR:')} <span class="notranslate" translate="no">${rr.toFixed(3)}</span></div>`;
                                 }
@@ -1588,17 +1586,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             elements.pooledEs.textContent = data.headline.pooled_es;
             elements.pooledCi.textContent = `${data.headline.ci_low}, ${data.headline.ci_upp}`;
 
-            // Estimated RR
-            const dScope = selectedDiseaseValue().toLowerCase() || 'breast cancer';
-            let p0 = 0.13;
-            if (dScope.includes('uterine') || dScope.includes('uterus') || dScope.includes('endometrial')) {
-                p0 = 0.031;
-            } else if (dScope.includes('ovarian') || dScope.includes('ovary')) {
-                p0 = 0.013;
-            }
-            const es = parseFloat(data.headline.pooled_es);
-            const ciLow = parseFloat(data.headline.ci_low);
-            const ciUpp = parseFloat(data.headline.ci_upp);
             // Since the pooled result is now explicitly calculated as an RR in the backend,
             // we no longer need to show the estimated OR/HR conversions for the headline.
             const rrContainer = document.getElementById('estimated-rr-container');
@@ -1700,13 +1687,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (!lastHeadlineData || !elements.pooledEs || !elements.pooledCi) return;
 
         const measure = elements.displayMeasure ? elements.displayMeasure.value : 'RR';
-        const dScope = selectedDiseaseValue().toLowerCase() || 'breast cancer';
-        let p0 = 0.13;
-        if (dScope.includes('uterine') || dScope.includes('uterus') || dScope.includes('endometrial')) {
-            p0 = 0.031;
-        } else if (dScope.includes('ovarian') || dScope.includes('ovary')) {
-            p0 = 0.013;
-        }
+        const savedBaselineRisk = Number(lastHeadlineData.baseline_risk);
+        const p0 = Number.isFinite(savedBaselineRisk) && savedBaselineRisk > 0
+            ? savedBaselineRisk
+            : selectedBaselineRisk();
         let es = parseFloat(lastHeadlineData.pooled_es);
         let low = parseFloat(lastHeadlineData.ci_low);
         let upp = parseFloat(lastHeadlineData.ci_upp);

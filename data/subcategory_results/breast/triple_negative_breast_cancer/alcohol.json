@@ -22,64 +22,66 @@
   "exposure": "Alcohol",
   "funnel_plot_url": "Plot/subcategories/breast/triple_negative_breast_cancer/alcohol_funnel.png",
   "headline": {
-    "ci_low": 0.7993028662776337,
-    "ci_upp": 1.5285959868192904,
-    "eggers_intercept": -0.043078079619474186,
-    "eggers_p": 0.9775798369059038,
+    "baseline_risk": 0.013000000000000001,
+    "baseline_risk_percent": 1.3,
+    "ci_low": 0.8029525622405096,
+    "ci_upp": 1.5213279580745507,
+    "eggers_intercept": -0.04378194132532898,
+    "eggers_p": 0.9773200839673486,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
-    "i2": 78.80073199671503,
+    "i2": 78.85396471478342,
     "interpretation": "The pooled subtype-specific estimate is 1.11, indicating a higher relative association for this exposure.",
     "loo_results": [
       {
-        "ci_low": 0.8887247059025511,
-        "ci_upp": 1.7100598452635514,
+        "ci_low": 0.8920091789849822,
+        "ci_upp": 1.6982395897765954,
         "is_significant": false,
         "omitted": "Kabat GC et al. (2011) [PMID: 21360045]",
-        "pooled_es": 1.232790506557222
+        "pooled_es": 1.2307905192177968
       },
       {
-        "ci_low": 0.6686882072800457,
-        "ci_upp": 1.8845841125462408,
+        "ci_low": 0.672235185692227,
+        "ci_upp": 1.8670970153400144,
         "is_significant": false,
         "omitted": "Romieu I et al. (2015) [PMID: 25677034]",
-        "pooled_es": 1.1225859306471828
+        "pooled_es": 1.1203250906823863
       },
       {
-        "ci_low": 0.7202363411643543,
-        "ci_upp": 1.4132302924934512,
+        "ci_low": 0.7239873757347495,
+        "ci_upp": 1.4077441058320326,
         "is_significant": false,
         "omitted": "Williams LA et al. (2016) [PMID: 26705260]",
-        "pooled_es": 1.008890388044268
+        "pooled_es": 1.0095488897955338
       },
       {
-        "ci_low": 0.7177328335826437,
-        "ci_upp": 1.433582720395338,
+        "ci_low": 0.7216450826963262,
+        "ci_upp": 1.4282861822367163,
         "is_significant": false,
         "omitted": "Gago-Dominguez M et al. (2016) [PMID: 26835221]",
-        "pooled_es": 1.0143615667425796
+        "pooled_es": 1.0152416954076675
       },
       {
-        "ci_low": 0.7029250221307904,
-        "ci_upp": 1.5931837563301017,
+        "ci_low": 0.7068790944359948,
+        "ci_upp": 1.585102932554823,
         "is_significant": false,
         "omitted": "Williams LA et al. (2017) [PMID: 28420652]",
-        "pooled_es": 1.0582479516525192
+        "pooled_es": 1.0585254487031444
       },
       {
-        "ci_low": 0.8952889441838572,
-        "ci_upp": 1.7284439892556358,
+        "ci_low": 0.8986521389398586,
+        "ci_upp": 1.7167242441015167,
         "is_significant": false,
         "omitted": "Hirko KA et al. (2024) [PMID: 37787924]",
-        "pooled_es": 1.2439681644727136
+        "pooled_es": 1.2420700116868373
       }
     ],
     "n_studies": 6,
-    "pooled_es": 1.1053556683914671,
-    "q": 23.585720031584188,
+    "pooled_es": 1.1052394229053193,
+    "q": 23.64509437613373,
     "results_interpretation": "This saved analysis contains 6 separately reported Triple-negative breast cancer estimates.",
-    "tau2": 0.11486393204315415
+    "tau2": 0.11184515693280331
   },
-  "input_fingerprint": "b0cbee26b7665f17e0a572f8d517224fd5c544202a4b337b224d573ec3ac939b",
+  "input_fingerprint": "6b4fa47b061895ae9f37f737c169c2b5393b39cb926ef77462f98337dd87691b",
   "plot_url": "Plot/subcategories/breast/triple_negative_breast_cancer/alcohol_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/triple_negative_breast_cancer/alcohol_baujat.png",

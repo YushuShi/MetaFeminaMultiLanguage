@@ -12,6 +12,7 @@ from subcategory_analysis import (
     _estimate,
     _is_mendelian_randomization_record,
     _localized_exposure,
+    _pool,
     _summary_forest_height,
     build_subcategory_outputs,
 )
@@ -37,6 +38,21 @@ class SubcategoryAnalysisTests(unittest.TestCase):
         self.assertIsNotNone(_estimate({**base, "effect_type": "HR"}))
         self.assertIsNotNone(_estimate({**base, "effect_type": "IRR"}))
         self.assertIsNone(_estimate({**base, "effect_type": "PAF"}))
+
+    def test_subcategory_pool_uses_its_own_lifetime_risk(self):
+        estimates = [
+            {"study": "A", "effect_type": "RR", "effect_size": 1.31, "lower_ci": 1.07, "upper_ci": 1.61},
+            {"study": "B", "effect_type": "OR", "effect_size": 1.90, "lower_ci": 1.40, "upper_ci": 2.70},
+            {"study": "C", "effect_type": "OR", "effect_size": 1.70, "lower_ci": 0.90, "upper_ci": 3.30},
+            {"study": "D", "effect_type": "OR", "effect_size": 1.66, "lower_ci": 1.02, "upper_ci": 2.69},
+        ]
+        uterine = _pool([{**row, "lifetime_risk_percent": 3.1} for row in estimates])
+        breast = _pool([{**row, "lifetime_risk_percent": 13.0} for row in estimates])
+
+        self.assertEqual(uterine["baseline_risk"], 0.031)
+        self.assertGreater(uterine["pooled_es"], breast["pooled_es"])
+        self.assertGreater(uterine["i2"], 0)
+        self.assertGreater(uterine["tau2"], 0)
 
     def test_mendelian_randomization_records_are_recognized(self):
         self.assertTrue(_is_mendelian_randomization_record({
@@ -133,6 +149,7 @@ class SubcategoryAnalysisTests(unittest.TestCase):
         result = json.loads((self.results / "breast" / "triple_negative_breast_cancer" / "coffee.json").read_text())
         self.assertEqual(manifest["result_count"], 1)
         self.assertEqual(result["headline"]["n_studies"], 1)
+        self.assertAlmostEqual(result["headline"]["baseline_risk"], 0.013)
         self.assertEqual(result["scope"]["estimated_lifetime_probability_us_women_percent"], 1.3)
         self.assertTrue((self.root / result["plot_urls"]["forest"]).is_file())
         self.assertFalse(result["availability"]["baujat"]["available"])

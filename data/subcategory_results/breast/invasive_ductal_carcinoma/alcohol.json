@@ -22,50 +22,52 @@
   "exposure": "Alcohol",
   "funnel_plot_url": "Plot/subcategories/breast/invasive_ductal_carcinoma/alcohol_funnel.png",
   "headline": {
-    "ci_low": 0.9633974824946023,
-    "ci_upp": 1.7957866859460045,
-    "eggers_intercept": 2.543796138567023,
-    "eggers_p": 0.76859963290777,
+    "baseline_risk": 0.091,
+    "baseline_risk_percent": 9.1,
+    "ci_low": 0.9644727080832578,
+    "ci_upp": 1.7025777365404178,
+    "eggers_intercept": -0.19197660458138532,
+    "eggers_p": 0.9836833697568259,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
-    "i2": 79.1870680590318,
-    "interpretation": "The pooled subtype-specific estimate is 1.32, indicating a higher relative association for this exposure.",
+    "i2": 80.15029803204078,
+    "interpretation": "The pooled subtype-specific estimate is 1.28, indicating a higher relative association for this exposure.",
     "loo_results": [
       {
-        "ci_low": 0.8516428599409217,
-        "ci_upp": 2.176856597207699,
+        "ci_low": 0.8656929851231617,
+        "ci_upp": 2.0075709229075533,
         "is_significant": false,
         "omitted": "Li CI et al. (2003) [PMID: 14578143]",
-        "pooled_es": 1.3615815723368276
+        "pooled_es": 1.3183095482845828
       },
       {
-        "ci_low": 0.97988188220311,
-        "ci_upp": 2.0834283729192573,
+        "ci_low": 0.982485139288997,
+        "ci_upp": 1.9353191044107685,
         "is_significant": false,
         "omitted": "Rosenberg LU et al. (2006) [PMID: 16507159]",
-        "pooled_es": 1.4288154938589812
+        "pooled_es": 1.3789206865754355
       },
       {
-        "ci_low": 0.8955278211700549,
-        "ci_upp": 2.13539784970251,
+        "ci_low": 0.9057007724105764,
+        "ci_upp": 1.964301762127457,
         "is_significant": false,
         "omitted": "Li CI et al. (2010) [PMID: 20733117]",
-        "pooled_es": 1.3828623155163746
+        "pooled_es": 1.3338176873944558
       },
       {
-        "ci_low": 0.9766012164883852,
-        "ci_upp": 1.328231329863584,
+        "ci_low": 0.9791838485574383,
+        "ci_upp": 1.2973013717399704,
         "is_significant": false,
         "omitted": "Gago-Dominguez M et al. (2016) [PMID: 26835221]",
-        "pooled_es": 1.1389259556805094
+        "pooled_es": 1.1270743320292536
       }
     ],
     "n_studies": 4,
-    "pooled_es": 1.3153160731693756,
-    "q": 14.414115265013653,
+    "pooled_es": 1.2814405020458033,
+    "q": 15.113577044343074,
     "results_interpretation": "This saved analysis contains 4 separately reported Invasive ductal carcinoma estimates.",
-    "tau2": 0.0791074667080679
+    "tau2": 0.0667524249862126
   },
-  "input_fingerprint": "a5b5c19f7ade088e22905f5ee255ee48253841163b3faa3b5032cd9405073f07",
+  "input_fingerprint": "bf436084313ab355185b713a4205ef9b76f9fba5f4f25fd6000e95fd08088ae9",
   "plot_url": "Plot/subcategories/breast/invasive_ductal_carcinoma/alcohol_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/invasive_ductal_carcinoma/alcohol_baujat.png",

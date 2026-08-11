@@ -22,8 +22,10 @@
   "exposure": "Vitamin D",
   "funnel_plot_url": "Plot/subcategories/ovary/mucinous_carcinoma/vitamin_d_funnel.png",
   "headline": {
-    "ci_low": 0.4755400275024273,
-    "ci_upp": 1.060057977974161,
+    "baseline_risk": 0.0003,
+    "baseline_risk_percent": 0.03,
+    "ci_low": 0.4756234967427173,
+    "ci_upp": 1.0600563855672183,
     "eggers_intercept": null,
     "eggers_p": null,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
@@ -31,12 +33,12 @@
     "interpretation": "The pooled subtype-specific estimate is 0.71, indicating a lower relative association for this exposure.",
     "loo_results": [],
     "n_studies": 1,
-    "pooled_es": 0.71,
-    "q": 7.368634872282193e-32,
+    "pooled_es": 0.7100617753744575,
+    "q": 0.0,
     "results_interpretation": "This saved analysis contains 1 separately reported Mucinous carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "408bed8f37e7c2ac29725d6921a215b0720e263bedbf4b82bde2ff8bfc240538",
+  "input_fingerprint": "c34d9a2c134d3fd27674891d9dac3e19a4f72e00166d9f139b49fb32c6199e32",
   "plot_url": "Plot/subcategories/ovary/mucinous_carcinoma/vitamin_d_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/ovary/mucinous_carcinoma/vitamin_d_baujat.png",

@@ -24,8 +24,10 @@
       },
       "exposure": "Alcohol",
       "headline": {
-        "ci_low": 1.2002836544183337,
-        "ci_upp": 2.820666587883084,
+        "baseline_risk": 0.0013,
+        "baseline_risk_percent": 0.13,
+        "ci_low": 1.2002359025750635,
+        "ci_upp": 2.814628304619143,
         "eggers_intercept": null,
         "eggers_p": null,
         "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
@@ -33,7 +35,7 @@
         "interpretation": "The pooled subtype-specific estimate is 1.84, indicating a higher relative association for this exposure.",
         "loo_results": [],
         "n_studies": 1,
-        "pooled_es": 1.84,
+        "pooled_es": 1.8379929117403795,
         "q": 0.0,
         "results_interpretation": "This saved analysis contains 1 separately reported Inflammatory breast cancer estimate.",
         "tau2": 0.0
@@ -42,7 +44,7 @@
   ],
   "formal_egger_exposure_count": 0,
   "notes": [
-    "Lifetime-risk percent is taxonomy metadata only and is not pooled or aggregated.",
+    "Each subtype lifetime-risk percent is used as the baseline risk when converting OR, HR, and IRR estimates to RR before pooling.",
     "Protective/harmful grouping is by the pooled point estimate relative to 1.0.",
     "Summary forest plots follow the broad-cancer format and require at least 2 studies per exposure.",
     "Effect-estimate vs heterogeneity plots require at least 3 studies and I² greater than 0% per exposure.",

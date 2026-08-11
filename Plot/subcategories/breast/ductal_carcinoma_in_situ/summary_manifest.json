@@ -24,8 +24,10 @@
       },
       "exposure": "Alcohol",
       "headline": {
-        "ci_low": 0.5006287437541393,
-        "ci_upp": 1.5118988061375007,
+        "baseline_risk": 0.024,
+        "baseline_risk_percent": 2.4,
+        "ci_low": 0.5044893802965252,
+        "ci_upp": 1.5050565160490739,
         "eggers_intercept": null,
         "eggers_p": null,
         "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
@@ -33,7 +35,7 @@
         "interpretation": "The pooled subtype-specific estimate is 0.87, indicating a lower relative association for this exposure.",
         "loo_results": [],
         "n_studies": 1,
-        "pooled_es": 0.87,
+        "pooled_es": 0.8713696282823062,
         "q": 0.0,
         "results_interpretation": "This saved analysis contains 1 separately reported Ductal carcinoma in situ estimate.",
         "tau2": 0.0
@@ -61,8 +63,10 @@
       },
       "exposure": "Calcium",
       "headline": {
-        "ci_low": 0.7002083023405725,
-        "ci_upp": 0.9602856717813566,
+        "baseline_risk": 0.024,
+        "baseline_risk_percent": 2.4,
+        "ci_low": 0.7028404227391892,
+        "ci_upp": 0.9608664055849624,
         "eggers_intercept": null,
         "eggers_p": null,
         "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
@@ -70,7 +74,7 @@
         "interpretation": "The pooled subtype-specific estimate is 0.82, indicating a lower relative association for this exposure.",
         "loo_results": [],
         "n_studies": 1,
-        "pooled_es": 0.82,
+        "pooled_es": 0.821788142222325,
         "q": 0.0,
         "results_interpretation": "This saved analysis contains 1 separately reported Ductal carcinoma in situ estimate.",
         "tau2": 0.0
@@ -98,39 +102,41 @@
       },
       "exposure": "Vitamin D",
       "headline": {
-        "ci_low": 0.6877471677611354,
-        "ci_upp": 0.891367408974545,
-        "eggers_intercept": -0.3020866569514974,
-        "eggers_p": 0.9063591543931842,
+        "baseline_risk": 0.024,
+        "baseline_risk_percent": 2.4,
+        "ci_low": 0.6904944222505481,
+        "ci_upp": 0.8927021980370334,
+        "eggers_intercept": -0.3053777291662715,
+        "eggers_p": 0.9053049948471039,
         "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
         "i2": 0.0,
-        "interpretation": "The pooled subtype-specific estimate is 0.78, indicating a lower relative association for this exposure.",
+        "interpretation": "The pooled subtype-specific estimate is 0.79, indicating a lower relative association for this exposure.",
         "loo_results": [
           {
-            "ci_low": 0.5669789612216276,
-            "ci_upp": 0.8930387065553684,
+            "ci_low": 0.570222685250467,
+            "ci_upp": 0.8945433452648005,
             "is_significant": true,
             "omitted": "Peila R et al. (2021) [PMID: 34476342]",
-            "pooled_es": 0.7115716114162148
+            "pooled_es": 0.7142050884793738
           },
           {
-            "ci_low": 0.7105186270287335,
-            "ci_upp": 0.9593279962932533,
+            "ci_low": 0.7131040901844766,
+            "ci_upp": 0.9599134173879544,
             "is_significant": true,
             "omitted": "O'Brien KM et al. (2022) [PMID: 34847083]",
-            "pooled_es": 0.8256030588584978
+            "pooled_es": 0.8273561410676233
           },
           {
-            "ci_low": 0.6288439678688963,
-            "ci_upp": 0.9213927308494286,
+            "ci_low": 0.6318138525339898,
+            "ci_upp": 0.9224755136588066,
             "is_significant": true,
             "omitted": "O'Brien KM et al. (2022) [PMID: 35466399]",
-            "pooled_es": 0.7611913431147996
+            "pooled_es": 0.7634348748603522
           }
         ],
         "n_studies": 3,
-        "pooled_es": 0.7829657789180988,
-        "q": 1.9617532026716953,
+        "pooled_es": 0.7851152071354724,
+        "q": 1.9608165720456665,
         "results_interpretation": "This saved analysis contains 3 separately reported Ductal carcinoma in situ estimates.",
         "tau2": 0.0
       }
@@ -138,7 +144,7 @@
   ],
   "formal_egger_exposure_count": 0,
   "notes": [
-    "Lifetime-risk percent is taxonomy metadata only and is not pooled or aggregated.",
+    "Each subtype lifetime-risk percent is used as the baseline risk when converting OR, HR, and IRR estimates to RR before pooling.",
     "Protective/harmful grouping is by the pooled point estimate relative to 1.0.",
     "Summary forest plots follow the broad-cancer format and require at least 2 studies per exposure.",
     "Effect-estimate vs heterogeneity plots require at least 3 studies and I² greater than 0% per exposure.",

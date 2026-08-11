@@ -22,8 +22,10 @@
   "exposure": "Beta-carotene",
   "funnel_plot_url": "Plot/subcategories/breast/invasive_lobular_carcinoma/beta_carotene_funnel.png",
   "headline": {
-    "ci_low": 0.5698351409943826,
-    "ci_upp": 0.9097368040436635,
+    "baseline_risk": 0.013000000000000001,
+    "baseline_risk_percent": 1.3,
+    "ci_low": 0.5715123202241503,
+    "ci_upp": 0.9103902726710744,
     "eggers_intercept": null,
     "eggers_p": null,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
@@ -31,12 +33,12 @@
     "interpretation": "The pooled subtype-specific estimate is 0.72, indicating a lower relative association for this exposure.",
     "loo_results": [],
     "n_studies": 1,
-    "pooled_es": 0.72,
+    "pooled_es": 0.721317722674095,
     "q": 0.0,
     "results_interpretation": "This saved analysis contains 1 separately reported Invasive lobular carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "ea0c88065a8148d1b1b311bb2e71da73e599c6993fd29a5a5140278584de0e47",
+  "input_fingerprint": "800c66edc4486426bdaebbaad16810085e9cd5c6c9265cf582cf42555cf42bb6",
   "plot_url": "Plot/subcategories/breast/invasive_lobular_carcinoma/beta_carotene_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/invasive_lobular_carcinoma/beta_carotene_baujat.png",

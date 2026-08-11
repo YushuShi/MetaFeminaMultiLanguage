@@ -22,8 +22,10 @@
   "exposure": "Molybdenum",
   "funnel_plot_url": "Plot/subcategories/breast/triple_negative_breast_cancer/molybdenum_funnel.png",
   "headline": {
-    "ci_low": 0.05077963596336064,
-    "ci_upp": 0.7109149034870488,
+    "baseline_risk": 0.013000000000000001,
+    "baseline_risk_percent": 1.3,
+    "ci_low": 0.051539106817422055,
+    "ci_upp": 0.7154265474100758,
     "eggers_intercept": null,
     "eggers_p": null,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
@@ -31,12 +33,12 @@
     "interpretation": "The pooled subtype-specific estimate is 0.19, indicating a lower relative association for this exposure.",
     "loo_results": [],
     "n_studies": 1,
-    "pooled_es": 0.19,
+    "pooled_es": 0.19202199157124522,
     "q": 0.0,
     "results_interpretation": "This saved analysis contains 1 separately reported Triple-negative breast cancer estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "efbbe8aeef01ef0adb7e5a0580cf150bd01d43e8ebd08a533c1d36dc312c461c",
+  "input_fingerprint": "6b30c71bd15540ea78da167a1916c92083b84b697ccacb5de687303fab12ebb8",
   "plot_url": "Plot/subcategories/breast/triple_negative_breast_cancer/molybdenum_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/triple_negative_breast_cancer/molybdenum_baujat.png",

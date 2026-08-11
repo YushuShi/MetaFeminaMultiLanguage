@@ -22,8 +22,10 @@
   "exposure": "Potassium",
   "funnel_plot_url": "Plot/subcategories/ovary/endometrioid_carcinoma/potassium_funnel.png",
   "headline": {
-    "ci_low": 0.11055980005298083,
-    "ci_upp": 0.9849873095629201,
+    "baseline_risk": 0.0011,
+    "baseline_risk_percent": 0.11,
+    "ci_low": 0.11062704257640164,
+    "ci_upp": 0.9851146767500316,
     "eggers_intercept": null,
     "eggers_p": null,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
@@ -31,12 +33,12 @@
     "interpretation": "The pooled subtype-specific estimate is 0.33, indicating a lower relative association for this exposure.",
     "loo_results": [],
     "n_studies": 1,
-    "pooled_es": 0.33,
+    "pooled_es": 0.3301216795175135,
     "q": 0.0,
     "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "f45702a9965258edf66550962290f0508b083da88c141aaeadf2a24da6aeb44f",
+  "input_fingerprint": "52eea020525797352d9572a695d3a7ffe8b46cb7c7bd32947c739bf67ff78427",
   "plot_url": "Plot/subcategories/ovary/endometrioid_carcinoma/potassium_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/ovary/endometrioid_carcinoma/potassium_baujat.png",

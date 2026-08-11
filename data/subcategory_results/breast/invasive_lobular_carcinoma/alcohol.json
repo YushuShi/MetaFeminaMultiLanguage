@@ -22,57 +22,59 @@
   "exposure": "Alcohol",
   "funnel_plot_url": "Plot/subcategories/breast/invasive_lobular_carcinoma/alcohol_funnel.png",
   "headline": {
-    "ci_low": 1.3073986347571511,
-    "ci_upp": 2.2138744806249617,
-    "eggers_intercept": 3.223615535151568,
-    "eggers_p": 0.11291900617806704,
+    "baseline_risk": 0.013000000000000001,
+    "baseline_risk_percent": 1.3,
+    "ci_low": 1.3040267629007674,
+    "ci_upp": 2.18936873090488,
+    "eggers_intercept": 3.2443706083195325,
+    "eggers_p": 0.11816310764236143,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
-    "i2": 56.05602426705886,
-    "interpretation": "The pooled subtype-specific estimate is 1.70, indicating a higher relative association for this exposure.",
+    "i2": 56.52850186329685,
+    "interpretation": "The pooled subtype-specific estimate is 1.69, indicating a higher relative association for this exposure.",
     "loo_results": [
       {
-        "ci_low": 1.2007026598796495,
-        "ci_upp": 2.4095539126089283,
+        "ci_low": 1.1988706786801187,
+        "ci_upp": 2.382506362087237,
         "is_significant": true,
         "omitted": "Li CI et al. (2003) [PMID: 14578143]",
-        "pooled_es": 1.7009285087836459
+        "pooled_es": 1.6900642056665263
       },
       {
-        "ci_low": 1.268261823635351,
-        "ci_upp": 2.3808395072922517,
+        "ci_low": 1.265662733900771,
+        "ci_upp": 2.3514766286737214,
         "is_significant": true,
         "omitted": "Rosenberg LU et al. (2006) [PMID: 16507159]",
-        "pooled_es": 1.7376788700164256
+        "pooled_es": 1.7251598008738063
       },
       {
-        "ci_low": 1.2235491206184954,
-        "ci_upp": 2.346679368565324,
+        "ci_low": 1.2216051451082375,
+        "ci_upp": 2.3137112282097902,
         "is_significant": true,
         "omitted": "Li CI et al. (2010) [PMID: 20733117]",
-        "pooled_es": 1.6944844283089968
+        "pooled_es": 1.681202409192831
       },
       {
-        "ci_low": 1.235289357767004,
-        "ci_upp": 1.8961251046184362,
+        "ci_low": 1.232179265361797,
+        "ci_upp": 1.8798036080729625,
         "is_significant": true,
         "omitted": "Gago-Dominguez M et al. (2016) [PMID: 26835221]",
-        "pooled_es": 1.5304454131820584
+        "pooled_es": 1.5219247776482905
       },
       {
-        "ci_low": 1.533823960848084,
-        "ci_upp": 2.3655026651421354,
+        "ci_low": 1.527856761666708,
+        "ci_upp": 2.333245822992544,
         "is_significant": true,
         "omitted": "Baglia ML et al. (2017) [PMID: 28567703]",
-        "pooled_es": 1.9048004271432242
+        "pooled_es": 1.8880851165373242
       }
     ],
     "n_studies": 5,
-    "pooled_es": 1.7012984669048439,
-    "q": 9.102499110023704,
+    "pooled_es": 1.6896731692721088,
+    "q": 9.201431216889176,
     "results_interpretation": "This saved analysis contains 5 separately reported Invasive lobular carcinoma estimates.",
-    "tau2": 0.04798793934946252
+    "tau2": 0.04686718857645526
   },
-  "input_fingerprint": "9361c10aaa09e39d1a63d277388b1e01f52bda52361f506688e2499034a4f9b3",
+  "input_fingerprint": "cb25f31e342f3f24fec3728d1e80cc2125c8630d056faf4b68ae732c73f2ab6a",
   "plot_url": "Plot/subcategories/breast/invasive_lobular_carcinoma/alcohol_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/invasive_lobular_carcinoma/alcohol_baujat.png",

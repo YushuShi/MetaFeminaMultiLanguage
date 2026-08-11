@@ -22,8 +22,10 @@
   "exposure": "Fish oil",
   "funnel_plot_url": "Plot/subcategories/breast/invasive_lobular_carcinoma/fish_oil_funnel.png",
   "headline": {
-    "ci_low": 0.5925455291212927,
-    "ci_upp": 1.9684563340300572,
+    "baseline_risk": 0.013000000000000001,
+    "baseline_risk_percent": 1.3,
+    "ci_low": 0.5948889341216941,
+    "ci_upp": 1.9586553533602946,
     "eggers_intercept": null,
     "eggers_p": null,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
@@ -31,12 +33,12 @@
     "interpretation": "The pooled subtype-specific estimate is 1.08, indicating a higher relative association for this exposure.",
     "loo_results": [],
     "n_studies": 1,
-    "pooled_es": 1.08,
+    "pooled_es": 1.0794361470102136,
     "q": 0.0,
     "results_interpretation": "This saved analysis contains 1 separately reported Invasive lobular carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "52945d7891b45bc112ce7fd72771d13fb227a2440ed52dbaa85b239e4f06b86c",
+  "input_fingerprint": "080cf0ec9b5b4d50102eea864f27067a0731ebe30f4b48faaa7cb0fd1a49d783",
   "plot_url": "Plot/subcategories/breast/invasive_lobular_carcinoma/fish_oil_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/invasive_lobular_carcinoma/fish_oil_baujat.png",

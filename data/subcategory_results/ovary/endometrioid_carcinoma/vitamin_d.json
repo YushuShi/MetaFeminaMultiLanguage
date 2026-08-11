@@ -22,8 +22,10 @@
   "exposure": "Vitamin D",
   "funnel_plot_url": "Plot/subcategories/ovary/endometrioid_carcinoma/vitamin_d_funnel.png",
   "headline": {
-    "ci_low": 0.3840166012036459,
-    "ci_upp": 0.7877263614433763,
+    "baseline_risk": 0.0011,
+    "baseline_risk_percent": 0.11,
+    "ci_low": 0.38429347058533553,
+    "ci_upp": 0.7879386996761293,
     "eggers_intercept": null,
     "eggers_p": null,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
@@ -31,12 +33,12 @@
     "interpretation": "The pooled subtype-specific estimate is 0.55, indicating a lower relative association for this exposure.",
     "loo_results": [],
     "n_studies": 1,
-    "pooled_es": 0.55,
+    "pooled_es": 0.5502723848304911,
     "q": 0.0,
     "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "1274fc3bbfec8520bd98ffd0de77155adb5023f9ca804c45685e572cc9c1e1a1",
+  "input_fingerprint": "564301d04ef1b8713c7b4c29fedf115d21b3e26266e20577777c5bd11ac6dc6b",
   "plot_url": "Plot/subcategories/ovary/endometrioid_carcinoma/vitamin_d_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/ovary/endometrioid_carcinoma/vitamin_d_baujat.png",

@@ -22,8 +22,10 @@
   "exposure": "Alcohol",
   "funnel_plot_url": "Plot/subcategories/breast/inflammatory_breast_cancer/alcohol_funnel.png",
   "headline": {
-    "ci_low": 1.2002836544183337,
-    "ci_upp": 2.820666587883084,
+    "baseline_risk": 0.0013,
+    "baseline_risk_percent": 0.13,
+    "ci_low": 1.2002359025750635,
+    "ci_upp": 2.814628304619143,
     "eggers_intercept": null,
     "eggers_p": null,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
@@ -31,12 +33,12 @@
     "interpretation": "The pooled subtype-specific estimate is 1.84, indicating a higher relative association for this exposure.",
     "loo_results": [],
     "n_studies": 1,
-    "pooled_es": 1.84,
+    "pooled_es": 1.8379929117403795,
     "q": 0.0,
     "results_interpretation": "This saved analysis contains 1 separately reported Inflammatory breast cancer estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "795e15b646ea7b2cc0ee4a583e4d1ae361a5d5bdd30a41ec8a5d73dd9f34bb75",
+  "input_fingerprint": "78369c20fabf47d5a7b97120c675d7663af54163003476b30e1a1ab364f26a1b",
   "plot_url": "Plot/subcategories/breast/inflammatory_breast_cancer/alcohol_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/inflammatory_breast_cancer/alcohol_baujat.png",

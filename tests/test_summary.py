@@ -135,11 +135,12 @@ class SummaryPageTests(unittest.TestCase):
         self.assertIn(b'data-risk="9.1"', response.data)
         self.assertIn(b'&#160;&#160;&#160;Invasive ductal carcinoma', response.data)
 
-    def test_subcategory_lifetime_risk_is_used_only_for_sample_size_baseline(self):
+    def test_subcategory_lifetime_risk_is_used_for_rr_conversion_and_sample_size_baseline(self):
         script = (Path(__file__).resolve().parents[1] / 'static' / 'script.js').read_text()
 
-        self.assertIn('const subtypeLifetimeRisk = Number(option.dataset.risk);', script)
-        self.assertIn('val = subtypeLifetimeRisk;', script)
+        self.assertIn('const subtypeLifetimeRiskPercent = Number(option.dataset.risk);', script)
+        self.assertIn('return subtypeLifetimeRiskPercent / 100;', script)
+        self.assertIn('const p0 = selectedBaselineRisk();', script)
         self.assertNotIn('estimated lifetime risk', script)
 
     def test_summary_requires_a_disease_choice_before_showing_plots(self):

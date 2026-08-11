@@ -22,8 +22,10 @@
   "exposure": "Calcium",
   "funnel_plot_url": "Plot/subcategories/ovary/endometrioid_carcinoma/calcium_funnel.png",
   "headline": {
-    "ci_low": 0.45005494170095556,
-    "ci_upp": 0.9101111043285992,
+    "baseline_risk": 0.0011,
+    "baseline_risk_percent": 0.11,
+    "ci_low": 0.4503471976032406,
+    "ci_upp": 0.9102412498155283,
     "eggers_intercept": null,
     "eggers_p": null,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
@@ -31,12 +33,12 @@
     "interpretation": "The pooled subtype-specific estimate is 0.64, indicating a lower relative association for this exposure.",
     "loo_results": [],
     "n_studies": 1,
-    "pooled_es": 0.64,
+    "pooled_es": 0.6402535404019992,
     "q": 0.0,
     "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "1ffde08dee0ba2338bfb467a9723d7c91512dffbe0e0da114d2b0c8cbd217a06",
+  "input_fingerprint": "68ed04d63eea81729a35b8f71170e9e87a2375ee705cb3dc660a51eff2758980",
   "plot_url": "Plot/subcategories/ovary/endometrioid_carcinoma/calcium_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/ovary/endometrioid_carcinoma/calcium_baujat.png",

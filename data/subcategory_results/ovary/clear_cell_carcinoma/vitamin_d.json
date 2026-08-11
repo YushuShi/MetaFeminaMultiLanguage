@@ -22,8 +22,10 @@
   "exposure": "Vitamin D",
   "funnel_plot_url": "Plot/subcategories/ovary/clear_cell_carcinoma/vitamin_d_funnel.png",
   "headline": {
-    "ci_low": 0.6379747367301329,
-    "ci_upp": 1.3556963155515325,
+    "baseline_risk": 0.0011,
+    "baseline_risk_percent": 0.11,
+    "ci_low": 0.6382765720640649,
+    "ci_upp": 1.3552639213878763,
     "eggers_intercept": null,
     "eggers_p": null,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
@@ -31,12 +33,12 @@
     "interpretation": "The pooled subtype-specific estimate is 0.93, indicating a lower relative association for this exposure.",
     "loo_results": [],
     "n_studies": 1,
-    "pooled_es": 0.93,
+    "pooled_es": 0.9300716155143947,
     "q": 0.0,
     "results_interpretation": "This saved analysis contains 1 separately reported Clear cell carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "f84c88ea5182f275e44d6761fdc97ac6600487d17c183730da3f03efacbf3d61",
+  "input_fingerprint": "203c4a6d2fa758fdd9c547523cbe1c29f4a91982e4f84d02452e42969a0fe068",
   "plot_url": "Plot/subcategories/ovary/clear_cell_carcinoma/vitamin_d_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/ovary/clear_cell_carcinoma/vitamin_d_baujat.png",
