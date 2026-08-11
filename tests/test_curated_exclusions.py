@@ -79,7 +79,7 @@ class CuratedExclusionTests(unittest.TestCase):
         self.assertEqual(filtered["PMID"].tolist(), ["observational-study"])
 
     def test_curated_vitamin_e_and_antioxidant_exclusions(self):
-        for pmid in ("12131659", "12891146", "30373451"):
+        for pmid in ("12131659", "12891146", "2399562", "30373451"):
             self.assertTrue(
                 meta_analysis.is_curated_meta_analysis_exclusion(
                     pmid, "Breast cancer", "vitamin_e", "Incidence"

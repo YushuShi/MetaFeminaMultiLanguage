@@ -4212,5 +4212,17 @@
             "reason": "The extracted estimate is for alcohol-dependent men and breast cancer in men."
         },
         "context_exclusions": {}
+    },
+    "2399562": {
+        "submissions": [],
+        "consensus_data": null,
+        "legacy_count": 0,
+        "curated_exclusion": {
+            "excluded_from_meta_analysis": true,
+            "code": "S1-DUPLICATE-COHORT",
+            "context": "breast_cancer_vitamin_e_incidence",
+            "reason": "This report repeats the vitamin E estimate from PMID 3170022 (OR 4.2, 95% CI 1.9-9.0; 319 cases and 344 controls); PMID 3170022 is retained as the primary report."
+        },
+        "context_exclusions": {}
     }
 }

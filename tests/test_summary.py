@@ -409,8 +409,8 @@ class SummaryPageTests(unittest.TestCase):
     def test_vitamin_e_summary_uses_the_same_case_estimates_as_the_ui(self):
         result = filtered_result('vitamin_e', 'Breast cancer')
 
-        self.assertEqual(result['number studies'], 23)
-        self.assertEqual(result['total Cases'], 33624)
+        self.assertEqual(result['number studies'], 22)
+        self.assertEqual(result['total Cases'], 33305)
 
     def test_named_summary_rows_match_saved_study_recalculation(self):
         root = Path(__file__).resolve().parents[1]
