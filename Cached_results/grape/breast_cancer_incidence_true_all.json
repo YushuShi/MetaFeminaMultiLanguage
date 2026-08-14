@@ -48,63 +48,14 @@
                 "outcome_definition": "breast cancer risk in Korean women",
                 "exposure_definition": "High grape intake"
             }
-        },
-        {
-            "Study": "Toniolo P et al. (1989) [PMID: 2766288]",
-            "PMID": "2766288",
-            "Effect Size": 1.9,
-            "Lower CI": 1.1,
-            "Upper CI": 3.3,
-            "Population": "General",
-            "Reference": "Breast cancer and alcohol consumption: a case-control study in northern Italy.",
-            "Authors": "Toniolo P, Riboli E, Protta F, Charrel M, Cappa AP",
-            "Journal": "Cancer research",
-            "Year": "1989",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/2766288/",
-            "Effect Type": "RR",
-            "SE": 0.5612244897959183,
-            "Sample Size": 749,
-            "Cases": 250,
-            "Design": "Case-Control",
-            "Timing": "Retrospective",
-            "Continent": "Europe",
-            "Stage": "NA",
-            "Quality %": 90.0,
-            "Quality Score": "Good",
-            "comparison_type": "High vs Low",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Unclear",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Yes",
-                "q10": "Yes"
-            },
-            "exclusions": 2,
-            "extraction_supporting_text": {
-                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.022."
-            },
-            "P Value": 0.02200838740027603
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Do MH et al. (2007) [PMID: 17896586]</th>\n      <td>-0.4729</td>\n      <td>0.2339</td>\n      <td>-0.9312</td>\n      <td>-0.0145</td>\n      <td>359.0</td>\n      <td>1067.0</td>\n    </tr>\n    <tr>\n      <th>Toniolo P et al. (1989) [PMID: 2766288]</th>\n      <td>0.6419</td>\n      <td>0.2803</td>\n      <td>0.0926</td>\n      <td>1.1911</td>\n      <td>250.0</td>\n      <td>749.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>359</td>\n      <td>1067</td>\n      <td>0.623217</td>\n      <td>0.382305</td>\n      <td>0.956215</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 1.08,
-        "ci_low": 0.36,
-        "ci_upp": 3.21,
-        "pi_low": null,
-        "pi_upp": null,
-        "interpretation": "Not statistically significant",
-        "i2": 89.28,
-        "tau2": 0.55,
-        "eggers_p": null,
-        "funnel_interpretation": "Egger\u2019s test is generally not recommended when fewer than 10 studies are available.",
-        "loo_results": [],
-        "results_interpretation": "The pooled analysis of 2 studies yielded an effect size of 1.08 (95% CI: 0.36\u20133.21), indicating no statistically significant association between grape and breast cancer. Although the point estimate suggests a potential positive relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 89.28%), reflecting highly inconsistent results across studies."
+        "pooled_es": 0.62,
+        "ci_low": 0.38,
+        "ci_upp": 0.96,
+        "interpretation": "statistically significant (decreased risk/odds)"
     },
     "screening_stats": {
         "llm_screened_out": 15,
@@ -123,8 +74,8 @@
         },
         "extracted": 1
     },
-    "plot_url": "static/grape/forest_breast_cancer_incidence_primary.png?t=1436",
-    "funnel_plot_url": "static/grape/funnel_breast_cancer_incidence_primary.png?t=4716",
+    "plot_url": "static/grape/forest_breast_cancer_incidence_primary.png?t=1540",
+    "funnel_plot_url": "static/grape/funnel_breast_cancer_incidence_primary.png?t=2441",
     "baujat_plot_url": null,
     "last_run": "2026-06-15 00:14:08"
 }

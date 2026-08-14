@@ -218,7 +218,9 @@ class SubcategoryAnalysisTests(unittest.TestCase):
                 "event_id": "event-1", "created_at": "2026-08-04T00:00:00Z", "pmid": "10", "stage": "terra", "status": "complete", "source_hash": "source-1",
                 "result": {"pmid": "10", "major_outcomes": [{"major_site_id": "breast", "general_outcome_reported": True, "subcategory_outcomes": [{
                     "subcategory_id": "breast_triple_negative_breast_cancer", "status": "reported_separate_estimate", "estimates": [{
-                        "context_id": "ctx-1", "effect_size": 0.75, "lower_ci": 0.60, "upper_ci": 0.95, "effect_type": "RR"
+                        "context_id": "ctx-1", "effect_size": 0.75, "lower_ci": 0.60, "upper_ci": 0.95, "effect_type": "RR",
+                        "exposure_measurement_type": "dietary_questionnaire",
+                        "exposure_measurement_supporting_text": "Tea intake was assessed with a questionnaire."
                     }]
                 }]}]},
             }],
@@ -234,8 +236,12 @@ class SubcategoryAnalysisTests(unittest.TestCase):
             "Journal": "Journal of Saved Studies",
             "Year": "2020",
             "Reference": "Saved article",
+            "Sample Size": 200,
             "exposure_measurement_type": "human_biospecimen",
             "exposure_measurement_supporting_text": "Tea exposure was measured in plasma.",
+            "extraction_supporting_text": {
+                "sample_size": "The cohort included 200 participants.",
+            },
         }]}), encoding="utf-8")
         self._build()
         result = json.loads((self.results / "breast" / "triple_negative_breast_cancer" / "tea.json").read_text())
@@ -245,12 +251,17 @@ class SubcategoryAnalysisTests(unittest.TestCase):
         self.assertEqual(result["studies"][0]["Journal"], "Journal of Saved Studies")
         self.assertEqual(result["studies"][0]["Year"], "2020")
         self.assertEqual(result["studies"][0]["Reference"], "Saved article")
-        self.assertEqual(result["studies"][0]["exposure_measurement_type"], "human_biospecimen")
+        self.assertEqual(result["studies"][0]["exposure_measurement_type"], "dietary_questionnaire")
         self.assertEqual(
             result["studies"][0]["exposure_measurement_supporting_text"],
-            "Tea exposure was measured in plasma.",
+            "Tea intake was assessed with a questionnaire.",
         )
         self.assertEqual(result["studies"][0]["effect_size"], 0.75)
+        self.assertEqual(result["studies"][0]["Sample Size"], 200)
+        self.assertEqual(
+            result["studies"][0]["extraction_supporting_text"]["sample_size"],
+            "The cohort included 200 participants.",
+        )
 
 
 if __name__ == "__main__":

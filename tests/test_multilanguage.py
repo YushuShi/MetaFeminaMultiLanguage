@@ -169,6 +169,23 @@ class MultiLanguagePageTests(unittest.TestCase):
         self.assertNotIn("elements.funnelInterpretation.setAttribute('translate', 'no')", script)
         self.assertNotIn("elements.resultsInterpretation.setAttribute('translate', 'no')", script)
 
+    def test_review_reporting_messages_are_translated(self):
+        catalog = json.loads((ROOT / 'static' / 'i18n-translations.json').read_text())
+        script = (ROOT / 'static' / 'script.js').read_text()
+        messages = (
+            'Article flag status is temporarily unavailable. The evidence results are still shown, but do not rely on the displayed flag counts.',
+            'Two matching submissions were saved and the review email is pending; results remain unchanged.',
+            'The review request was saved and its email notification is pending. Results remain unchanged.',
+            'Your flag was already recorded for this article.',
+            'The verification was not saved: {message}',
+            'The flag was not saved: {message}',
+        )
+
+        for message in messages:
+            self.assertIn(message, catalog)
+            self.assertEqual(set(catalog[message]), {'zh-CN', 'zh-TW', 'nl', 'ko'})
+            self.assertIn(f"uiText('{message}'", script)
+
     def test_brand_name_and_language_choice_persist(self):
         engine = (ROOT / 'static' / 'i18n.js').read_text()
         index = (ROOT / 'templates' / 'index.html').read_text()

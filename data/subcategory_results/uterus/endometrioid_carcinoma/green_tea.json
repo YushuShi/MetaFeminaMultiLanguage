@@ -38,7 +38,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "9320d6d7c5b1dcdfae5ff5045a10f3ba21c7f45757259b7aa29627e9aad41438",
+  "input_fingerprint": "ef0abc4ab4436e35d00241219e2333857eb6d1ff661a7880ff9e89d0266bbc1f",
   "plot_url": "Plot/subcategories/uterus/endometrioid_carcinoma/green_tea_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/uterus/endometrioid_carcinoma/green_tea_baujat.png",
@@ -98,7 +98,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "The multivariate-adjusted OR of EEA was 0.33 (0.15-0.75) in the highest quartile (>=4 cups/day), referenced with the lowest quartile (<=4 cups/week).",
         "effect_size": "The multivariate-adjusted OR of EEA was 0.33 (0.15-0.75) in the highest quartile (>=4 cups/day), referenced with the lowest quartile (<=4 cups/week).",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "The cases were 152 patients ... and the controls were 285 healthy women ..."
       },
       "jbi": {
         "q1": "Yes",
@@ -120,6 +121,7 @@
       "quality_score": "Good",
       "reference": "Case-control study of green tea consumption and the risk of endometrial endometrioid adenocarcinoma.",
       "sample_size": 437.0,
+      "sample_size_supporting_text": "The cases were 152 patients ... and the controls were 285 healthy women ...",
       "se": null,
       "study": "Kakuta Y et al. (2009) [PMID: 19067194]",
       "upper_ci": 0.75,

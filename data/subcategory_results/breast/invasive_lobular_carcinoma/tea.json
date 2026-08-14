@@ -38,7 +38,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Invasive lobular carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "45f4c509c33bf043270bdbb380815e1ad91d385ff9cbfc91bd1ad069e1b261c8",
+  "input_fingerprint": "c80428c9fc80040ead4cc97e25f090b24937ed8d5519dcb470ea93a498d9c3ab",
   "plot_url": "Plot/subcategories/breast/invasive_lobular_carcinoma/tea_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/invasive_lobular_carcinoma/tea_baujat.png",
@@ -98,7 +98,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "Age- and study site-adjusted OR 0.33 (95% CI 0.10–1.07) for invasive lobular breast cancer.",
         "effect_size": "Age- and study site-adjusted OR 0.33 (95% CI 0.10–1.07) for invasive lobular breast cancer.",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "Five thousand and eighty-two women with incident breast cancer ... and 4,501 age-matched controls"
       },
       "jbi": {
         "q1": "Yes",
@@ -120,6 +121,7 @@
       "quality_score": "Good",
       "reference": "Tea consumption and risk of breast cancer.",
       "sample_size": 9583.0,
+      "sample_size_supporting_text": "Five thousand and eighty-two women with incident breast cancer ... and 4,501 age-matched controls",
       "se": null,
       "study": "Kumar N et al. (2009) [PMID: 19124518]",
       "upper_ci": 1.07,

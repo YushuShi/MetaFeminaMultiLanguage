@@ -38,7 +38,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Invasive ductal carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "c7d9bad44780de8e9208e5455556b022396d555204e6d1af7d6800d9da63bb99",
+  "input_fingerprint": "ce598c3a781ec326f3621e4ed60bde4420d6a3404381e9b4eff5aef47e2607b5",
   "plot_url": "Plot/subcategories/breast/invasive_ductal_carcinoma/tea_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/invasive_ductal_carcinoma/tea_baujat.png",
@@ -98,7 +98,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "Age- and study site-adjusted OR 0.69 (95% CI 0.48–0.99) for invasive ductal breast cancer.",
         "effect_size": "Age- and study site-adjusted OR 0.69 (95% CI 0.48–0.99) for invasive ductal breast cancer.",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "Five thousand and eighty-two women with incident breast cancer ... and 4,501 age-matched controls"
       },
       "jbi": {
         "q1": "Yes",
@@ -120,6 +121,7 @@
       "quality_score": "Good",
       "reference": "Tea consumption and risk of breast cancer.",
       "sample_size": 9583.0,
+      "sample_size_supporting_text": "Five thousand and eighty-two women with incident breast cancer ... and 4,501 age-matched controls",
       "se": null,
       "study": "Kumar N et al. (2009) [PMID: 19124518]",
       "upper_ci": 0.99,

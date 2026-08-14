@@ -88,7 +88,7 @@
             "exposure_measurement_type": "dietary_intake",
             "exposure_measurement_supporting_text": "The relationships between 30 dietary factors ... were assessed.",
             "extraction_supporting_text": {
-                "sample_size": "A total of 12,437 women aged over 20 years from the National Health and Nutrition Examination Survey (NHANES), conducted from 2007\u22122016, were included in this study.",
+                "sample_size": "A total of 12,437 women aged over 20 years from the National Health and Nutrition Examination Survey (NHANES), conducted from 2007−2016, were included in this study.",
                 "effect_size": "intake of copper (2.754 (1.313, 5.778), p = 0.009) with endometrial cancer.",
                 "effect_direction": "positive associations of intake of copper ... with endometrial cancer.",
                 "p_value": "p = 0.009",
@@ -96,85 +96,14 @@
                 "outcome_definition": "endometrial cancer",
                 "exposure_definition": "intake of copper"
             }
-        },
-        {
-            "Study": "Lassise DL et al. (1991) [PMID: 1800424]",
-            "PMID": "1800424",
-            "Effect Size": 0.6,
-            "Lower CI": 0.3,
-            "Upper CI": 1.2,
-            "Population": "General",
-            "Reference": "Invasive cervical cancer and intrauterine device use.",
-            "Authors": "Lassise DL, Savitz DA, Hamman RF, Bar\u00f3n AE, Brinton LA, Levines RS",
-            "Journal": "International journal of epidemiology",
-            "Year": "1991",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/1800424/",
-            "Effect Type": "OR",
-            "SE": 0.22959183673469385,
-            "Sample Size": 1282.0,
-            "Cases": 481,
-            "Design": "Case-Control",
-            "Timing": "Retrospective",
-            "Continent": "North America",
-            "Stage": "NA",
-            "Quality %": 90.0,
-            "Quality Score": "Good",
-            "comparison_type": "Copper IUD use vs No IUD use",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Unclear",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Yes",
-                "q10": "Yes"
-            },
-            "exclusions": 2,
-            "extraction_supporting_text": {
-                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.149."
-            },
-            "P Value": 0.14861171380303773
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Lassise DL et al. (1991) [PMID: 1800424]</th>\n      <td>-0.4574</td>\n      <td>0.3228</td>\n      <td>-1.0900</td>\n      <td>0.1752</td>\n      <td>481.0</td>\n      <td>1282.0</td>\n    </tr>\n    <tr>\n      <th>Sturgeon SR et al. (1997) [PMID: 9222773]</th>\n      <td>0.0770</td>\n      <td>0.9142</td>\n      <td>-1.7148</td>\n      <td>1.8687</td>\n      <td>405.0</td>\n      <td>702.0</td>\n    </tr>\n    <tr>\n      <th>Zhu G et al. (2022) [PMID: 36501056]</th>\n      <td>0.8077</td>\n      <td>0.2649</td>\n      <td>0.2884</td>\n      <td>1.3269</td>\n      <td>-</td>\n      <td>12437.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>None</td>\n      <td>12437</td>\n      <td>2.242634</td>\n      <td>1.261663</td>\n      <td>3.564159</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 1.19,
-        "ci_low": 0.44,
-        "ci_upp": 3.21,
-        "pi_low": 0.0,
-        "pi_upp": 106863.06,
-        "interpretation": "Not statistically significant",
-        "i2": 78.34,
-        "tau2": 0.55,
-        "eggers_p": 0.8203014741020929,
-        "funnel_interpretation": "Egger\u2019s test is generally not recommended when fewer than 10 studies are available.",
-        "loo_results": [
-            {
-                "omitted": "Lassise DL et al. (1991) [PMID: 1800424]",
-                "pooled_es": 2.627762462246845,
-                "ci_low": null,
-                "ci_upp": null,
-                "is_significant": false
-            },
-            {
-                "omitted": "Sturgeon SR et al. (1997) [PMID: 9222773]",
-                "pooled_es": 1.2074938154983585,
-                "ci_low": 0.34961413029521166,
-                "ci_upp": 4.170430163207717,
-                "is_significant": false
-            },
-            {
-                "omitted": "Zhu G et al. (2022) [PMID: 36501056]",
-                "pooled_es": 0.41699480846033543,
-                "ci_low": null,
-                "ci_upp": null,
-                "is_significant": false
-            }
-        ],
-        "results_interpretation": "The pooled analysis of 3 studies yielded an effect size of 1.19 (95% CI: 0.44\u20133.21), indicating no statistically significant association between copper and uterine cancer. Although the point estimate suggests a potential positive relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 78.34%), reflecting highly inconsistent results across studies."
+        "pooled_es": 2.24,
+        "ci_low": 1.26,
+        "ci_upp": 3.56,
+        "interpretation": "statistically significant (increased risk/odds)"
     },
     "screening_stats": {
         "llm_screened_out": 91,
@@ -193,8 +122,8 @@
         },
         "extracted": 6
     },
-    "plot_url": "static/copper/forest_uterine_cancer_incidence_primary.png?t=4468",
-    "funnel_plot_url": "static/copper/funnel_uterine_cancer_incidence_primary.png?t=37",
-    "baujat_plot_url": "static/copper/baujat_uterine_cancer_incidence_primary.png?t=6219",
+    "plot_url": "static/copper/forest_uterine_cancer_incidence_primary.png?t=4286",
+    "funnel_plot_url": "static/copper/funnel_uterine_cancer_incidence_primary.png?t=6275",
+    "baujat_plot_url": null,
     "last_run": "2026-06-15 13:02:08"
 }

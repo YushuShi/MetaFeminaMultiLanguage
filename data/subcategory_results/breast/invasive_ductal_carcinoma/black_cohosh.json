@@ -38,7 +38,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Invasive ductal carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "6339060b1ad12508a7dca18329e200a86857f9cf8c33638b62785bf7d84f74d1",
+  "input_fingerprint": "74fafeae3054d6b81a690bc3ec3361503a1bb2064c5cafce76bd2ab71b709677",
   "plot_url": "Plot/subcategories/breast/invasive_ductal_carcinoma/black_cohosh_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/invasive_ductal_carcinoma/black_cohosh_baujat.png",
@@ -98,7 +98,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "\"Risks for invasive ductal (OR, 0.72; 95% CI, 0.60-0.87)\"",
         "effect_size": "\"Risks for invasive ductal (OR, 0.72; 95% CI, 0.60-0.87)\"",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "10,121 postmenopausal women (3,464 cases, 6,657 controls)"
       },
       "jbi": {
         "q1": "Yes",
@@ -120,6 +121,7 @@
       "quality_score": "Good",
       "reference": "The use of herbal preparations to alleviate climacteric disorders and risk of postmenopausal breast cancer in a German case-control study.",
       "sample_size": 10121.0,
+      "sample_size_supporting_text": "10,121 postmenopausal women (3,464 cases, 6,657 controls)",
       "se": null,
       "study": "Obi N et al. (2009) [PMID: 19661079]",
       "upper_ci": 0.87,

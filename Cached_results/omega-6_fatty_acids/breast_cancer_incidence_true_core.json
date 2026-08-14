@@ -2,55 +2,6 @@
     "success": true,
     "studies": [
         {
-            "Study": "Simonsen N et al. (1998) [PMID: 9508101]",
-            "PMID": "9508101",
-            "Effect Size": 3.125,
-            "Lower CI": 1.22,
-            "Upper CI": 7.69,
-            "Population": "General",
-            "Reference": "Adipose tissue omega-3 and omega-6 fatty acid content and breast cancer in the EURAMIC study. European Community Multicenter Study on Antioxidants, Myocardial Infarction, and Breast Cancer.",
-            "Authors": "Simonsen N, van't Veer P, Strain JJ, Martin-Moreno JM, Huttunen JK, Navajas JF, Martin BC, Thamm M, Kardinaal AF, Kok FJ, Kohlmeier L",
-            "Journal": "American journal of epidemiology",
-            "Year": "1998",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/9508101/",
-            "Effect Type": "OR",
-            "SE": 1.6505102040816328,
-            "Sample Size": 684,
-            "Cases": 317,
-            "Estimated Cases": null,
-            "Design": "Case-Control",
-            "Timing": "Retrospective",
-            "Continent": "Europe",
-            "Stage": null,
-            "Quality %": 90.0,
-            "Quality Score": "Good",
-            "comparison_type": "Highest vs Lowest",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Unclear",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Yes",
-                "q10": "Yes"
-            },
-            "exposure_measurement_type": "human_biospecimen",
-            "exposure_measurement_supporting_text": "The fatty acid content of adipose tissue in postmenopausal breast cancer cases and controls from five European countries.",
-            "extraction_supporting_text": {
-                "sample_size": "",
-                "effect_size": "In Malaga, Spain, the odds ratio for the highest tertile relative to the lowest reached 0.32 (95% confidence interval 0.13-0.82).",
-                "effect_direction": "The ratio of long-chain omega-3 fatty acids to total omega-6 fat showed an inverse association with breast cancer in four of five centers.",
-                "p_value": "A downward trend bordering on statistical significance (p for trend = 0.055).",
-                "confidence_interval": "95% confidence interval 0.13-0.82.",
-                "outcome_definition": "Breast cancer incidence in postmenopausal women.",
-                "exposure_definition": "Fatty acid content of adipose tissue, specifically omega-6 polyunsaturates."
-            },
-            "Participants": 684
-        },
-        {
             "Study": "Dydjow-Bendek D et al. (2020) [PMID: 31882509]",
             "PMID": "31882509",
             "Effect Size": 2.04,
@@ -58,7 +9,7 @@
             "Upper CI": 4.17,
             "Population": "General",
             "Reference": "Total Dietary Fats, Fatty Acids, and Omega-3/Omega-6 Ratio as Risk Factors of Breast Cancer in the Polish Population - a Case-Control Study.",
-            "Authors": "Dydjow-Bendek D, Zago\u017ad\u017aon P",
+            "Authors": "Dydjow-Bendek D, Zagoźdźon P",
             "Journal": "In vivo (Athens, Greece)",
             "Year": "2020",
             "Link": "https://pubmed.ncbi.nlm.nih.gov/31882509/",
@@ -122,7 +73,7 @@
             "Stage": null,
             "Quality %": 50.0,
             "Quality Score": "Fair",
-            "comparison_type": "low \u03c9-3/high \u03c9-6 vs high \u03c9-3/low \u03c9-6",
+            "comparison_type": "low ω-3/high ω-6 vs high ω-3/low ω-6",
             "JBI": {
                 "q1": "Unclear",
                 "q2": "Unclear",
@@ -136,27 +87,27 @@
                 "q10": "Yes"
             },
             "exposure_measurement_type": "dietary_intake",
-            "exposure_measurement_supporting_text": "\u03c9-3 and \u03c9-6 intake",
+            "exposure_measurement_supporting_text": "ω-3 and ω-6 intake",
             "extraction_supporting_text": {
                 "sample_size": "1463 breast cancer cases and 1500 controls",
                 "effect_size": "odds ratio = 1.20",
-                "effect_direction": "Breast cancer risk reduction may be possible for U.S. women with dietary consumption of higher \u03c9-3, which has anti-inflammatory properties, in concert with lower \u03c9-6, which induces inflammation.",
+                "effect_direction": "Breast cancer risk reduction may be possible for U.S. women with dietary consumption of higher ω-3, which has anti-inflammatory properties, in concert with lower ω-6, which induces inflammation.",
                 "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.298.",
                 "confidence_interval": "95% confidence interval = 0.85-1.69",
                 "outcome_definition": "breast cancer incidence",
-                "exposure_definition": "\u03c9-6 intake"
+                "exposure_definition": "ω-6 intake"
             },
             "P Value": 0.29836481554361194
         },
         {
-            "Study": "Chaj\u00e8s V et al. (2012) [PMID: 22194528]",
+            "Study": "Chajès V et al. (2012) [PMID: 22194528]",
             "PMID": "22194528",
             "Effect Size": 1.92,
             "Lower CI": 1.13,
             "Upper CI": 3.26,
             "Population": "General",
-            "Reference": "\u03c9-3 and \u03c9-6 Polyunsaturated fatty acid intakes and the risk of breast cancer in Mexican women: impact of obesity status.",
-            "Authors": "Chaj\u00e8s V, Torres-Mej\u00eda G, Biessy C, Ortega-Olvera C, Angeles-Llerenas A, Ferrari P, Lazcano-Ponce E, Romieu I",
+            "Reference": "ω-3 and ω-6 Polyunsaturated fatty acid intakes and the risk of breast cancer in Mexican women: impact of obesity status.",
+            "Authors": "Chajès V, Torres-Mejía G, Biessy C, Ortega-Olvera C, Angeles-Llerenas A, Ferrari P, Lazcano-Ponce E, Romieu I",
             "Journal": "Cancer epidemiology, biomarkers & prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology",
             "Year": "2012",
             "Link": "https://pubmed.ncbi.nlm.nih.gov/22194528/",
@@ -188,55 +139,16 @@
             "exposure_measurement_supporting_text": "Women provided information on health and diet by in-person interview.",
             "extraction_supporting_text": {
                 "sample_size": "A population-based case-control study was conducted in Mexico, including 1,000 incident breast cancer cases and 1,074 controls.",
-                "effect_size": "An increased risk of breast cancer was associated with increasing \u03c9-6 PUFA intake in premenopausal women [OR = 1.92, 95% confidence interval (CI) = 1.13-3.26; P = 0.04].",
-                "effect_direction": "An increased risk of breast cancer was associated with increasing \u03c9-6 PUFA intake in premenopausal women.",
+                "effect_size": "An increased risk of breast cancer was associated with increasing ω-6 PUFA intake in premenopausal women [OR = 1.92, 95% confidence interval (CI) = 1.13-3.26; P = 0.04].",
+                "effect_direction": "An increased risk of breast cancer was associated with increasing ω-6 PUFA intake in premenopausal women.",
                 "p_value": "P = 0.04",
                 "confidence_interval": "95% confidence interval (CI) = 1.13-3.26",
-                "outcome_definition": "We evaluated the association between \u03c9-3 and \u03c9-6 PUFA intake and breast cancer risk.",
-                "exposure_definition": "\u03c9-6 PUFA intake was assessed through dietary information provided by in-person interview."
+                "outcome_definition": "We evaluated the association between ω-3 and ω-6 PUFA intake and breast cancer risk.",
+                "exposure_definition": "ω-6 PUFA intake was assessed through dietary information provided by in-person interview."
             }
-        },
-        {
-            "Study": "Grill S et al. (2021) [PMID: 33543354]",
-            "PMID": "33543354",
-            "Effect Size": -37.9,
-            "Lower CI": -0.653,
-            "Upper CI": -0.151,
-            "Population": "General",
-            "Reference": "Precursor fractions of neurotensin and enkephalin might point to molecular mechanisms of cancer risk modulation during a lifestyle-intervention in germline BRCA1/2 gene mutation carriers.",
-            "Authors": "Grill S, Yahiaoui-Doktor M, Basrai M, Struck J, Schulte J, Berling-Ernst A, Engel C, Ullrich M, Lammert J, Bischoff SC, Schmidt T, Niederberger U, Chronas D, Rhiem K, Schmutzler R, Halle M, Kiechle M",
-            "Journal": "Breast cancer research and treatment",
-            "Year": "2021",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/33543354/",
-            "Effect Type": "NA",
-            "SE": 0.12806122448979593,
-            "Sample Size": 68,
-            "Cases": "NA",
-            "Design": "Cohort",
-            "Timing": "Prospective",
-            "Continent": "Europe",
-            "Stage": "NA",
-            "Quality %": 81.8,
-            "Quality Score": "Good",
-            "comparison_type": "Continuous",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Unclear",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Unclear",
-                "q10": "Yes",
-                "q11": "Yes"
-            },
-            "exclusions": 2,
-            "extraction_supporting_text": {}
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Chaj\u00e8s V et al. (2012) [PMID: 22194528]</th>\n      <td>0.5394</td>\n      <td>0.2088</td>\n      <td>0.1300</td>\n      <td>0.9487</td>\n      <td>1000.0</td>\n      <td>2074.0</td>\n    </tr>\n    <tr>\n      <th>Dydjow-Bendek D et al. (2020) [PMID: 31882509]</th>\n      <td>0.5861</td>\n      <td>0.2771</td>\n      <td>0.0430</td>\n      <td>1.1293</td>\n      <td>201.0</td>\n      <td>402.0</td>\n    </tr>\n    <tr>\n      <th>Simonsen N et al. (1998) [PMID: 9508101]</th>\n      <td>0.8955</td>\n      <td>0.3172</td>\n      <td>0.2738</td>\n      <td>1.5172</td>\n      <td>317.0</td>\n      <td>684.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Chajès V et al. (2012) [PMID: 22194528]</th>\n      <td>0.5394</td>\n      <td>0.2088</td>\n      <td>0.1300</td>\n      <td>0.9487</td>\n      <td>1000.0</td>\n      <td>2074.0</td>\n    </tr>\n    <tr>\n      <th>Dydjow-Bendek D et al. (2020) [PMID: 31882509]</th>\n      <td>0.5861</td>\n      <td>0.2771</td>\n      <td>0.0430</td>\n      <td>1.1293</td>\n      <td>201.0</td>\n      <td>402.0</td>\n    </tr>\n    <tr>\n      <th>Simonsen N et al. (1998) [PMID: 9508101]</th>\n      <td>0.8955</td>\n      <td>0.3172</td>\n      <td>0.2738</td>\n      <td>1.5172</td>\n      <td>317.0</td>\n      <td>684.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 1.88,
         "ci_low": 1.41,
@@ -247,10 +159,10 @@
         "i2": 0.0,
         "tau2": 0.0,
         "eggers_p": 0.35585476736359334,
-        "funnel_interpretation": "Egger\u2019s test is generally not recommended when fewer than 10 studies are available.",
+        "funnel_interpretation": "Egger’s test is generally not recommended when fewer than 10 studies are available.",
         "loo_results": [
             {
-                "omitted": "Chaj\u00e8s V et al. (2012) [PMID: 22194528]",
+                "omitted": "Chajès V et al. (2012) [PMID: 22194528]",
                 "pooled_es": 2.018414335909403,
                 "ci_low": 1.504837459654178,
                 "ci_upp": 2.7072667584583043,
@@ -271,7 +183,7 @@
                 "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled analysis of 3 studies yielded an overall effect size of 1.88 (95% CI: 1.41\u20132.51), suggesting that omega-6_fatty_acids is associated with a higher risk of breast cancer. These findings were supported by low between-study heterogeneity (I\u00b2 = 0.00%), indicating consistent findings across the included studies."
+        "results_interpretation": "The pooled analysis of 3 studies yielded an overall effect size of 1.88 (95% CI: 1.41–2.51), suggesting that omega-6_fatty_acids is associated with a higher risk of breast cancer. These findings were supported by low between-study heterogeneity (I² = 0.00%), indicating consistent findings across the included studies."
     },
     "screening_stats": {
         "llm_screened_out": 22,
@@ -291,8 +203,8 @@
         },
         "extracted": 6
     },
-    "plot_url": "static/omega_6_fatty_acids/forest_breast_cancer_incidence_primary.png?t=3608",
-    "funnel_plot_url": "static/omega_6_fatty_acids/funnel_breast_cancer_incidence_primary.png?t=2939",
-    "baujat_plot_url": "static/omega_6_fatty_acids/baujat_breast_cancer_incidence_primary.png?t=3867",
+    "plot_url": "static/omega_6_fatty_acids/forest_breast_cancer_incidence_primary.png?t=5731",
+    "funnel_plot_url": "static/omega_6_fatty_acids/funnel_breast_cancer_incidence_primary.png?t=1607",
+    "baujat_plot_url": "static/omega_6_fatty_acids/baujat_breast_cancer_incidence_primary.png?t=1315",
     "last_run": "2026-06-23 14:14:14"
 }

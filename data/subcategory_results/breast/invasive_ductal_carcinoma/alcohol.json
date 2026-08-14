@@ -26,8 +26,8 @@
     "baseline_risk_percent": 9.1,
     "ci_low": 0.9644727080832578,
     "ci_upp": 1.7025777365404178,
-    "eggers_intercept": -0.19197660458138532,
-    "eggers_p": 0.9836833697568259,
+    "eggers_intercept": -0.1919766045813846,
+    "eggers_p": 0.983683369756826,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
     "i2": 80.15029803204078,
     "interpretation": "The pooled subtype-specific estimate is 1.28, indicating a higher relative association for this exposure.",
@@ -67,7 +67,7 @@
     "results_interpretation": "This saved analysis contains 4 separately reported Invasive ductal carcinoma estimates.",
     "tau2": 0.0667524249862126
   },
-  "input_fingerprint": "bf436084313ab355185b713a4205ef9b76f9fba5f4f25fd6000e95fd08088ae9",
+  "input_fingerprint": "4f4108d49d21ab5529b616872b94d3347846138f69f29e3fd658b9fcb44a0699",
   "plot_url": "Plot/subcategories/breast/invasive_ductal_carcinoma/alcohol_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/invasive_ductal_carcinoma/alcohol_baujat.png",
@@ -127,7 +127,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "\"ever-use of alcohol was associated with a ... 1.2-fold (95% CI, 0.9-1.4) increased risk of ductal cancer\"",
         "effect_size": "\"ever-use of alcohol was associated with a ... 1.2-fold (95% CI, 0.9-1.4) increased risk of ductal cancer\"",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "Women (975) diagnosed with invasive breast cancer during 1997-1999 were compared with 1007 controls."
       },
       "jbi": {
         "q1": "Yes",
@@ -149,6 +150,7 @@
       "quality_score": "Good",
       "reference": "The relationship between alcohol use and risk of breast cancer by histology and hormone receptor status among women 65-79 years of age.",
       "sample_size": 1982.0,
+      "sample_size_supporting_text": "Women (975) diagnosed with invasive breast cancer during 1997-1999 were compared with 1007 controls.",
       "se": null,
       "study": "Li CI et al. (2003) [PMID: 14578143]",
       "upper_ci": 1.4,
@@ -156,7 +158,7 @@
     },
     {
       "Authors": "Rosenberg LU, Magnusson C, Lindström E, Wedrén S, Hall P, Dickman PW",
-      "Cases": 72.0,
+      "Cases": 1888.0,
       "Effect Size": 1.0,
       "Effect Type": "OR",
       "JBI": {
@@ -175,29 +177,30 @@
       "Link": "https://pubmed.ncbi.nlm.nih.gov/16507159/",
       "Lower CI": 0.7,
       "PMID": "16507159",
-      "Participants": 3065.0,
+      "Participants": 4953.0,
       "Quality %": 100.0,
       "Quality Score": "Good",
       "Reference": "Menopausal hormone therapy and other breast cancer risk factors in relation to the risk of different histological subtypes of breast cancer: a case-control study.",
-      "Sample Size": 3065.0,
+      "Sample Size": 4953.0,
       "Study": "Rosenberg LU et al. (2006) [PMID: 16507159]",
       "Upper CI": 1.4,
       "Year": "2006",
       "authors": "Rosenberg LU, Magnusson C, Lindström E, Wedrén S, Hall P, Dickman PW",
-      "cases": 72.0,
+      "cases": 1888.0,
       "comparison_type": "Recent alcohol consumption >10 g/day vs None",
       "context_id": "16507159|breast|alcohol|0",
       "design": "Case-Control",
       "effect_size": 1.0,
       "effect_type": "OR",
       "evidence_locator": "Table 3 reports ductal cancer OR 1.0 (95% CI 0.7–1.4) for recent alcohol consumption >10 g/day versus no alcohol.",
-      "evidence_source": "luna",
-      "exposure_measurement_supporting_text": "Recent alcohol consumption of > 10 g alcohol/day was associated with increased risk only for tubular cancer.",
+      "evidence_source": "manual_source_review",
+      "exposure_measurement_supporting_text": "Recent alcohol consumption >10 g/day versus none (Table 3).",
       "exposure_measurement_type": "dietary_intake",
       "extraction_supporting_text": {
         "confidence_interval": "Table 3 reports ductal cancer OR 1.0 (95% CI 0.7–1.4) for recent alcohol consumption >10 g/day versus no alcohol.",
         "effect_size": "Table 3 reports ductal cancer OR 1.0 (95% CI 0.7–1.4) for recent alcohol consumption >10 g/day versus no alcohol.",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "Women aged 50 to 74 years, diagnosed with invasive ductal (n = 1,888), lobular (n = 308) or tubular (n = 93) breast cancer in Sweden in 1993 to 1995 were compared with 3,065 age-frequency matched controls."
       },
       "jbi": {
         "q1": "Yes",
@@ -218,7 +221,8 @@
       "quality_percent": 100.0,
       "quality_score": "Good",
       "reference": "Menopausal hormone therapy and other breast cancer risk factors in relation to the risk of different histological subtypes of breast cancer: a case-control study.",
-      "sample_size": 3065.0,
+      "sample_size": 4953.0,
+      "sample_size_supporting_text": "Women aged 50 to 74 years, diagnosed with invasive ductal (n = 1,888), lobular (n = 308) or tubular (n = 93) breast cancer in Sweden in 1993 to 1995 were compared with 3,065 age-frequency matched controls.",
       "se": null,
       "study": "Rosenberg LU et al. (2006) [PMID: 16507159]",
       "upper_ci": 1.4,
@@ -268,7 +272,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "\"HR = 1.14; 95% CI = 0.87 to 1.50\" for hormone receptor-positive invasive ductal carcinoma compared with never drinkers.",
         "effect_size": "\"HR = 1.14; 95% CI = 0.87 to 1.50\" for hormone receptor-positive invasive ductal carcinoma compared with never drinkers.",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "87 724 women in the Women's Health Initiative Observational Study prospective cohort"
       },
       "jbi": {
         "q1": "Yes",
@@ -291,6 +296,7 @@
       "quality_score": "Good",
       "reference": "Alcohol consumption and risk of postmenopausal breast cancer by subtype: the women's health initiative observational study.",
       "sample_size": 87724.0,
+      "sample_size_supporting_text": "87 724 women in the Women's Health Initiative Observational Study prospective cohort",
       "se": null,
       "study": "Li CI et al. (2010) [PMID: 20733117]",
       "upper_ci": 1.5,
@@ -339,7 +345,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "\"ductal type breast cancers (OR 2.21, 95% CI 1.61-3.03)\"",
         "effect_size": "\"ductal type breast cancers (OR 2.21, 95% CI 1.61-3.03)\"",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "A total of 1766 women diagnosed with invasive breast cancer between 1997 and 2014 and 833 controls participated in the study."
       },
       "jbi": {
         "q1": "Yes",
@@ -361,6 +368,7 @@
       "quality_score": "Good",
       "reference": "Alcohol and breast cancer tumor subtypes in a Spanish Cohort.",
       "sample_size": 2599.0,
+      "sample_size_supporting_text": "A total of 1766 women diagnosed with invasive breast cancer between 1997 and 2014 and 833 controls participated in the study.",
       "se": null,
       "study": "Gago-Dominguez M et al. (2016) [PMID: 26835221]",
       "upper_ci": 3.03,

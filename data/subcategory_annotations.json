@@ -29635,6 +29635,247 @@
         "gateway_reported_cost_usd": 0.014015,
         "terra_input_cost_usd": 0.00388
       }
+    },
+    {
+      "event_id": "63008a3ca766479cad7157a105b55aa672953156e06e9e0beff9d68232bf9a05",
+      "created_at": "2026-08-14T14:08:00+08:00",
+      "pmid": "27229687",
+      "stage": "manual_source_review",
+      "model": null,
+      "status": "complete",
+      "source_hash": "4e7dfd4a6b0ee86cbefb53301b6265832876191cbbad7e153798c7f1ada28783",
+      "result": {
+        "pmid": "27229687",
+        "major_outcomes": [
+          {
+            "major_site_id": "breast",
+            "general_outcome_reported": true,
+            "subcategory_outcomes": [
+              {
+                "subcategory_id": "breast_inflammatory_breast_cancer",
+                "status": "reported_separate_estimate",
+                "evidence_text": "IBC cases had significantly higher regular alcohol consumption compared with WHI controls (OR=1.84, 95% CI:1.20-2.82).",
+                "needs_full_text": false,
+                "estimates": [
+                  {
+                    "context_id": "27229687|breast|alcohol|0",
+                    "effect_size": 1.84,
+                    "lower_ci": 1.2,
+                    "upper_ci": 2.82,
+                    "effect_type": "OR",
+                    "cases": 141,
+                    "sample_size": 9458,
+                    "sample_size_supporting_text": "IBC cases (n = 141) ... controls (n = 9317) from the Women's Health Initiative.",
+                    "comparison_type": "≥1 drink per day vs None",
+                    "supporting_text": "IBC cases had a significantly higher frequency of regular alcohol consumption (≥1 drink per day) compared to WHI controls (OR=1.84, 95% CI:1.20-2.82)."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "model": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "gateway_reported_cost_usd": 0
+      }
+    },
+    {
+      "event_id": "ec4a17f359cf56e5f39dbb56a70c56cd31b306ab16a2bd785359aa9dd1716ee1",
+      "created_at": "2026-08-14T14:08:01+08:00",
+      "pmid": "22740148",
+      "stage": "manual_source_review",
+      "model": null,
+      "status": "complete",
+      "source_hash": "a0ea7669d1f39a624391093b4dfefc94ab6064d296991748e1e9bd0c207471c9",
+      "result": {
+        "pmid": "22740148",
+        "major_outcomes": [
+          {
+            "major_site_id": "ovary",
+            "general_outcome_reported": true,
+            "subcategory_outcomes": [
+              {
+                "subcategory_id": "ovary_endometrioid_carcinoma",
+                "status": "reported_separate_estimate",
+                "evidence_text": "Table 5 reports separate total calcium and total vitamin D estimates for endometrioid ovarian tumors.",
+                "needs_full_text": false,
+                "estimates": [
+                  {
+                    "context_id": "22740148|ovary|calcium|0",
+                    "effect_size": 0.64,
+                    "lower_ci": 0.45,
+                    "upper_ci": 0.91,
+                    "effect_type": "OR",
+                    "cases": 305,
+                    "sample_size": 2294,
+                    "sample_size_supporting_text": "Controls (N=1989) ... Endometrioid (N=305).",
+                    "comparison_type": "Q4 vs Q1",
+                    "supporting_text": "For endometrioid tumors, total calcium Q4 vs Q1 OR=0.64, 95% CI 0.45–0.91."
+                  },
+                  {
+                    "context_id": "22740148|ovary|vitamin_d|0",
+                    "effect_size": 0.55,
+                    "lower_ci": 0.39,
+                    "upper_ci": 0.8,
+                    "effect_type": "OR",
+                    "cases": 305,
+                    "sample_size": 2294,
+                    "sample_size_supporting_text": "Controls (N=1989) ... Endometrioid (N=305).",
+                    "comparison_type": "Q4 vs Q1",
+                    "supporting_text": "For endometrioid tumors, total vitamin D Q4 vs Q1 OR=0.55, 95% CI 0.39–0.80."
+                  }
+                ]
+              },
+              {
+                "subcategory_id": "ovary_mucinous_carcinoma",
+                "status": "reported_separate_estimate",
+                "evidence_text": "Table 5 reports separate total calcium and total vitamin D estimates for mucinous ovarian tumors.",
+                "needs_full_text": false,
+                "estimates": [
+                  {
+                    "context_id": "22740148|ovary|calcium|0",
+                    "effect_size": 0.46,
+                    "lower_ci": 0.29,
+                    "upper_ci": 0.72,
+                    "effect_type": "OR",
+                    "cases": 217,
+                    "sample_size": 2206,
+                    "sample_size_supporting_text": "Controls (N=1989) ... Mucinous (N=217).",
+                    "comparison_type": "Q4 vs Q1",
+                    "supporting_text": "For mucinous tumors, total calcium Q4 vs Q1 OR=0.46, 95% CI 0.29–0.72."
+                  },
+                  {
+                    "context_id": "22740148|ovary|vitamin_d|0",
+                    "effect_size": 0.71,
+                    "lower_ci": 0.48,
+                    "upper_ci": 1.07,
+                    "effect_type": "OR",
+                    "cases": 217,
+                    "sample_size": 2206,
+                    "sample_size_supporting_text": "Controls (N=1989) ... Mucinous (N=217).",
+                    "comparison_type": "Q4 vs Q1",
+                    "supporting_text": "For mucinous tumors, total vitamin D Q4 vs Q1 OR=0.71, 95% CI 0.48–1.07."
+                  }
+                ]
+              },
+              {
+                "subcategory_id": "ovary_clear_cell_carcinoma",
+                "status": "reported_separate_estimate",
+                "evidence_text": "Table 5 reports separate total calcium and total vitamin D estimates for clear cell ovarian tumors.",
+                "needs_full_text": false,
+                "estimates": [
+                  {
+                    "context_id": "22740148|ovary|calcium|0",
+                    "effect_size": 0.69,
+                    "lower_ci": 0.46,
+                    "upper_ci": 1.02,
+                    "effect_type": "OR",
+                    "cases": 243,
+                    "sample_size": 2232,
+                    "sample_size_supporting_text": "Controls (N=1989) ... Clear cell (N=243).",
+                    "comparison_type": "Q4 vs Q1",
+                    "supporting_text": "For clear cell tumors, total calcium Q4 vs Q1 OR=0.69, 95% CI 0.46–1.02."
+                  },
+                  {
+                    "context_id": "22740148|ovary|vitamin_d|0",
+                    "effect_size": 0.93,
+                    "lower_ci": 0.64,
+                    "upper_ci": 1.36,
+                    "effect_type": "OR",
+                    "cases": 243,
+                    "sample_size": 2232,
+                    "sample_size_supporting_text": "Controls (N=1989) ... Clear cell (N=243).",
+                    "comparison_type": "Q4 vs Q1",
+                    "supporting_text": "For clear cell tumors, total vitamin D Q4 vs Q1 OR=0.93, 95% CI 0.64–1.36."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "model": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "gateway_reported_cost_usd": 0
+      }
+    },
+    {
+      "event_id": "d76053335d8b19af8b487a24cdd48017dd8068488e173ca0993d24d7afa51040",
+      "created_at": "2026-08-14T15:05:31+08:00",
+      "pmid": "16507159",
+      "stage": "manual_source_review",
+      "model": null,
+      "status": "complete",
+      "source_hash": "077472bfa1fd4a0577432ad6f591c0b44ad6ea8c213e41aa12d1b159740230c2",
+      "result": {
+        "pmid": "16507159",
+        "major_outcomes": [
+          {
+            "major_site_id": "breast",
+            "general_outcome_reported": true,
+            "subcategory_outcomes": [
+              {
+                "subcategory_id": "breast_invasive_ductal_carcinoma",
+                "status": "reported_separate_estimate",
+                "evidence_text": "For recent alcohol consumption >10 g/day, ductal breast cancer had OR 1.0 (95% CI 0.7–1.4) versus no alcohol.",
+                "needs_full_text": false,
+                "estimates": [
+                  {
+                    "context_id": "16507159|breast|alcohol|0",
+                    "effect_size": 1.0,
+                    "lower_ci": 0.7,
+                    "upper_ci": 1.4,
+                    "effect_type": "OR",
+                    "cases": 1888,
+                    "sample_size": 4953,
+                    "sample_size_supporting_text": "Women aged 50 to 74 years, diagnosed with invasive ductal (n = 1,888), lobular (n = 308) or tubular (n = 93) breast cancer in Sweden in 1993 to 1995 were compared with 3,065 age-frequency matched controls.",
+                    "exposure_measurement_type": "dietary_intake",
+                    "exposure_measurement_supporting_text": "Recent alcohol consumption >10 g/day versus none (Table 3).",
+                    "comparison_type": "Recent alcohol consumption >10 g/day vs None",
+                    "supporting_text": "Table 3 reports ductal cancer OR 1.0 (95% CI 0.7–1.4) for recent alcohol consumption >10 g/day versus no alcohol."
+                  }
+                ]
+              },
+              {
+                "subcategory_id": "breast_invasive_lobular_carcinoma",
+                "status": "reported_separate_estimate",
+                "evidence_text": "For recent alcohol consumption >10 g/day, lobular breast cancer had OR 1.6 (95% CI 0.9–2.8) versus no alcohol.",
+                "needs_full_text": false,
+                "estimates": [
+                  {
+                    "context_id": "16507159|breast|alcohol|0",
+                    "effect_size": 1.6,
+                    "lower_ci": 0.9,
+                    "upper_ci": 2.8,
+                    "effect_type": "OR",
+                    "cases": 308,
+                    "sample_size": 3373,
+                    "sample_size_supporting_text": "Women aged 50 to 74 years, diagnosed with invasive ductal (n = 1,888), lobular (n = 308) or tubular (n = 93) breast cancer in Sweden in 1993 to 1995 were compared with 3,065 age-frequency matched controls.",
+                    "exposure_measurement_type": "dietary_intake",
+                    "exposure_measurement_supporting_text": "Recent alcohol consumption >10 g/day versus none (Table 3).",
+                    "comparison_type": "Recent alcohol consumption >10 g/day vs None",
+                    "supporting_text": "Table 3 reports lobular cancer OR 1.6 (95% CI 0.9–2.8) for recent alcohol consumption >10 g/day versus no alcohol."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "model": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "gateway_reported_cost_usd": 0
+      }
     }
   ]
 }

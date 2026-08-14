@@ -38,7 +38,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Ductal carcinoma in situ estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "9eeb5acb73a1d894cec28468c1572a0afe15b9e76c88ea336d6e0ac5f7ad737a",
+  "input_fingerprint": "2afd1e91d4bf660dba5fc23e14cffdc4dc7a08cc0c4c9935871325b685e7fca9",
   "plot_url": "Plot/subcategories/breast/ductal_carcinoma_in_situ/calcium_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/ductal_carcinoma_in_situ/calcium_baujat.png",
@@ -101,7 +101,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "The intervention group had a lower risk of DCIS throughout follow-up (HR = 0.82, 95% CI = 0.70 to 0.96).",
         "effect_size": "The intervention group had a lower risk of DCIS throughout follow-up (HR = 0.82, 95% CI = 0.70 to 0.96).",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "A total of 36 282 cancer-free postmenopausal women (50-79 years) were randomly assigned."
       },
       "jbi": {
         "q1": "Yes",
@@ -126,6 +127,7 @@
       "quality_score": "Good",
       "reference": "A Randomized Trial of Calcium Plus Vitamin D Supplementation and Risk of Ductal Carcinoma In Situ of the Breast.",
       "sample_size": 36282.0,
+      "sample_size_supporting_text": "A total of 36 282 cancer-free postmenopausal women (50-79 years) were randomly assigned.",
       "se": null,
       "study": "Peila R et al. (2021) [PMID: 34476342]",
       "upper_ci": 0.96,

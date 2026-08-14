@@ -40,7 +40,7 @@
             "exposure_measurement_type": "dietary_intake",
             "exposure_measurement_supporting_text": "Analyzing data from food frequency questionnaires",
             "extraction_supporting_text": {
-                "sample_size": "",
+                "sample_size": "each of the 74 breast cancer cases ... were matched with four controls randomly selected from the cohort, totaling 296 controls",
                 "effect_size": "RR: 2.30",
                 "effect_direction": "this level of dietary phosphorus was associated with a 2.3-fold increased risk of breast cancer incidence",
                 "p_value": "p = 0.07",
@@ -48,7 +48,8 @@
                 "outcome_definition": "self-reported breast cancer",
                 "exposure_definition": "highest level of daily dietary phosphorus intake, >1800 mg of phosphorus"
             },
-            "P Value": null
+            "P Value": null,
+            "evidence_excerpt_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10490459/"
         },
         {
             "Study": "Brown RB (2026) [PMID: 42074990]",
@@ -89,7 +90,7 @@
             "exposure_measurement_type": "dietary_intake",
             "exposure_measurement_supporting_text": "middle-aged women consuming >1800 mg/day of dietary phosphorus (compared with 800-1000 mg/day)",
             "extraction_supporting_text": {
-                "sample_size": "For the reported >1800 mg/day versus 800\u20131000 mg/day estimate, Table 1 lists 10 cases and 25 controls in the highest category and 6 cases and 44 controls in the reference category, totaling 85 participants.",
+                "sample_size": "For the reported >1800 mg/day versus 800–1000 mg/day estimate, Table 1 lists 10 cases and 25 controls in the highest category and 6 cases and 44 controls in the reference category, totaling 85 participants.",
                 "effect_size": "relative risk (RR) of breast cancer incidence among middle-aged women consuming >1800 mg/day of dietary phosphorus (compared with 800-1000 mg/day) from RR: 2.30 to 2.38",
                 "effect_direction": "association between high dietary phosphorus intake and increased cancer risk",
                 "p_value": "p = 0.06",
@@ -171,8 +172,8 @@
         },
         "extracted": 4
     },
-    "plot_url": "static/phosphorus/forest_breast_cancer_incidence_primary.png?t=6171",
-    "funnel_plot_url": "static/phosphorus/funnel_breast_cancer_incidence_primary.png?t=7130",
+    "plot_url": "static/phosphorus/forest_breast_cancer_incidence_primary.png?t=7985",
+    "funnel_plot_url": "static/phosphorus/funnel_breast_cancer_incidence_primary.png?t=1340",
     "baujat_plot_url": null,
     "last_run": "2026-06-15 04:26:29"
 }

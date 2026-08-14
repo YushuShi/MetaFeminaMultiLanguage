@@ -26,8 +26,8 @@
     "baseline_risk_percent": 1.3,
     "ci_low": 0.8029525622405096,
     "ci_upp": 1.5213279580745507,
-    "eggers_intercept": -0.04378194132532898,
-    "eggers_p": 0.9773200839673486,
+    "eggers_intercept": -0.0437819413253287,
+    "eggers_p": 0.9773200839673487,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
     "i2": 78.85396471478342,
     "interpretation": "The pooled subtype-specific estimate is 1.11, indicating a higher relative association for this exposure.",
@@ -81,7 +81,7 @@
     "results_interpretation": "This saved analysis contains 6 separately reported Triple-negative breast cancer estimates.",
     "tau2": 0.11184515693280331
   },
-  "input_fingerprint": "6b4fa47b061895ae9f37f737c169c2b5393b39cb926ef77462f98337dd87691b",
+  "input_fingerprint": "c4145e70c20ccda517c215150872e51223da59c11174beaa8987e6ca2272c9b8",
   "plot_url": "Plot/subcategories/breast/triple_negative_breast_cancer/alcohol_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/triple_negative_breast_cancer/alcohol_baujat.png",
@@ -142,7 +142,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "Table 3 reports for TNBC cases: ≥7 drinks/week, 27 cases, HR 0.57, 95% CI 0.34–0.95, with never drank as the reference.",
         "effect_size": "Table 3 reports for TNBC cases: ≥7 drinks/week, 27 cases, HR 0.57, 95% CI 0.34–0.95, with never drank as the reference.",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "Among 148,030 women enrolled in the Women's Health Initiative."
       },
       "jbi": {
         "q1": "Yes",
@@ -165,6 +166,7 @@
       "quality_score": "Good",
       "reference": "Smoking and alcohol consumption in relation to risk of triple-negative breast cancer in a cohort of postmenopausal women.",
       "sample_size": 148030.0,
+      "sample_size_supporting_text": "Among 148,030 women enrolled in the Women's Health Initiative.",
       "se": null,
       "study": "Kabat GC et al. (2011) [PMID: 21360045]",
       "upper_ci": 0.95,
@@ -214,7 +216,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "For ER-/PR-/HER2- breast tumors, HR was 1.12 (95% CI 1.03-1.23) per 10g/day; Table 2 reports 226 cases.",
         "effect_size": "For ER-/PR-/HER2- breast tumors, HR was 1.12 (95% CI 1.03-1.23) per 10g/day; Table 2 reports 226 cases.",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "Up to 334,850 women, aged 35-70 years at baseline, were recruited in ten European countries and followed up an average of 11 years."
       },
       "jbi": {
         "q1": "Yes",
@@ -237,6 +240,7 @@
       "quality_score": "Good",
       "reference": "Alcohol intake and breast cancer in the European prospective investigation into cancer and nutrition.",
       "sample_size": 334850.0,
+      "sample_size_supporting_text": "Up to 334,850 women, aged 35-70 years at baseline, were recruited in ten European countries and followed up an average of 11 years.",
       "se": null,
       "study": "Romieu I et al. (2015) [PMID: 25677034]",
       "upper_ci": 1.23,
@@ -285,7 +289,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "\"The association of >7 drinks per week with ... triple-negative [adjusted OR, 95% CI 2.12 (1.12-4.04)] breast cancers was significant for African American\" women.",
         "effect_size": "\"The association of >7 drinks per week with ... triple-negative [adjusted OR, 95% CI 2.12 (1.12-4.04)] breast cancers was significant for African American\" women.",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "Invasive breast cancers (n = 1,795; 1,014 white, 781 African American) and age- and race-matched controls (n = 1,558; 844 white, 714 African American)."
       },
       "jbi": {
         "q1": "Yes",
@@ -307,6 +312,7 @@
       "quality_score": "Good",
       "reference": "Alcohol intake and invasive breast cancer risk by molecular subtype and race in the Carolina Breast Cancer Study.",
       "sample_size": 3353.0,
+      "sample_size_supporting_text": "Invasive breast cancers (n = 1,795; 1,014 white, 781 African American) and age- and race-matched controls (n = 1,558; 844 white, 714 African American).",
       "se": null,
       "study": "Williams LA et al. (2016) [PMID: 26705260]",
       "upper_ci": 4.04,
@@ -355,7 +361,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "\"TNBC: OR 1.93, 95% CI 1.07-3.47\"",
         "effect_size": "\"TNBC: OR 1.93, 95% CI 1.07-3.47\"",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "A total of 1766 women diagnosed with invasive breast cancer between 1997 and 2014 and 833 controls participated in the study."
       },
       "jbi": {
         "q1": "Yes",
@@ -377,6 +384,7 @@
       "quality_score": "Good",
       "reference": "Alcohol and breast cancer tumor subtypes in a Spanish Cohort.",
       "sample_size": 2599.0,
+      "sample_size_supporting_text": "A total of 1766 women diagnosed with invasive breast cancer between 1997 and 2014 and 833 controls participated in the study.",
       "se": null,
       "study": "Gago-Dominguez M et al. (2016) [PMID: 26835221]",
       "upper_ci": 3.47,
@@ -425,7 +433,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "\"triple-negative [OR adj, 1.39; 95% CI, 0.98-2.00] molecular subtype\"",
         "effect_size": "\"triple-negative [OR adj, 1.39; 95% CI, 0.98-2.00] molecular subtype\"",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "The current analysis included 22,338 women (5,108 cases of invasive breast cancer)."
       },
       "jbi": {
         "q1": "Yes",
@@ -447,6 +456,7 @@
       "quality_score": "Good",
       "reference": "Alcohol Intake and Breast Cancer Risk in African American Women from the AMBER Consortium.",
       "sample_size": 22338.0,
+      "sample_size_supporting_text": "The current analysis included 22,338 women (5,108 cases of invasive breast cancer).",
       "se": null,
       "study": "Williams LA et al. (2017) [PMID: 28420652]",
       "upper_ci": 2.0,
@@ -495,7 +505,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "Younger age at alcohol use initiation (<18 years vs. no consumption) was associated with triple-negative YOBC: aOR 0.62 (95% CI 0.42, 0.93).",
         "effect_size": "Younger age at alcohol use initiation (<18 years vs. no consumption) was associated with triple-negative YOBC: aOR 0.62 (95% CI 0.42, 0.93).",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "Breast cancer cases (n = 1,812)... Controls (n = 1,381)"
       },
       "jbi": {
         "q1": "Yes",
@@ -517,6 +528,7 @@
       "quality_score": "Moderate",
       "reference": "Lifetime alcohol consumption patterns and young-onset breast cancer by subtype among Non-Hispanic Black and White women in the Young Women's Health History Study.",
       "sample_size": 3193.0,
+      "sample_size_supporting_text": "Breast cancer cases (n = 1,812)... Controls (n = 1,381)",
       "se": null,
       "study": "Hirko KA et al. (2024) [PMID: 37787924]",
       "upper_ci": 0.93,

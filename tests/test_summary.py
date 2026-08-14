@@ -13,7 +13,9 @@ from scripts.update_plot_workbooks import filtered_result
 
 class SummaryPageTests(unittest.TestCase):
     def setUp(self):
+        app.config['TESTING'] = True
         self.client = app.test_client()
+        self.client.get('/')
 
     def test_jbi_hover_uses_pointer_cursor(self):
         root = Path(__file__).resolve().parents[1]
@@ -26,29 +28,148 @@ class SummaryPageTests(unittest.TestCase):
 
     def test_exclusion_flags_request_review_without_changing_results(self):
         script = (Path(__file__).resolve().parents[1] / 'static' / 'script.js').read_text()
-        verification_data = {}
-        with (
-            patch('app.load_json', return_value=verification_data),
-            patch('app.save_json'),
-            patch('app.send_developer_notification', return_value=(True, None)) as notify,
-            patch('app.update_cache_from_verifications') as update_cache,
-        ):
-            first = self.client.post('/exclude', json={
-                'pmid': '123', 'disease': 'Breast cancer',
-                'exposure': 'Alcohol', 'outcome': 'Incidence',
-            })
-            second = self.client.post('/exclude', json={
-                'pmid': '123', 'disease': 'Breast cancer',
-                'exposure': 'Alcohol', 'outcome': 'Incidence',
-            })
+        with tempfile.TemporaryDirectory() as tempdir:
+            verification_file = str(Path(tempdir) / 'verifications.json')
+            Path(verification_file).write_text('{}', encoding='utf-8')
+            second_client = app.test_client()
+            second_client.get('/')
+            with (
+                patch('app.VERIFICATIONS_FILE', verification_file),
+                patch('app.find_review_study', return_value={'PMID': '123', 'Authors': 'Doe AB'}),
+                patch('app.send_developer_notification', return_value=(True, None)) as notify,
+            ):
+                first = self.client.post('/exclude', json={
+                    'pmid': '123', 'disease': 'Breast cancer',
+                    'exposure': 'Alcohol', 'outcome': 'Incidence',
+                })
+                duplicate = self.client.post('/exclude', json={
+                    'pmid': '123', 'disease': 'Breast cancer',
+                    'exposure': 'Alcohol', 'outcome': 'Incidence',
+                })
+                second = second_client.post('/exclude', json={
+                    'pmid': '123', 'disease': 'Breast cancer',
+                    'exposure': 'Alcohol', 'outcome': 'Incidence',
+                })
 
         self.assertFalse(first.get_json()['results_changed'])
+        self.assertEqual(duplicate.get_json()['exclusions'], 1)
+        self.assertTrue(duplicate.get_json()['already_flagged'])
         self.assertFalse(second.get_json()['results_changed'])
         self.assertEqual(second.get_json()['exclusions'], 2)
         notify.assert_called_once()
-        update_cache.assert_not_called()
         self.assertNotIn('isCrowdExcluded', script)
         self.assertNotIn('automatically deselected', script)
+
+    def test_subcategory_flag_survives_refresh_and_two_reporters_trigger_email(self):
+        request_payload = {
+            'disease': 'Breast cancer',
+            'subcategory': 'triple_negative_breast_cancer',
+            'exposure': 'Alcohol',
+            'outcome': 'Incidence',
+        }
+        with tempfile.TemporaryDirectory() as tempdir:
+            verification_file = str(Path(tempdir) / 'verifications.json')
+            Path(verification_file).write_text('{}', encoding='utf-8')
+            second_client = app.test_client()
+            second_client.get('/')
+            with (
+                patch('app.VERIFICATIONS_FILE', verification_file),
+                patch('app.send_developer_notification', return_value=(True, None)) as notify,
+            ):
+                initial = self.client.post('/analyze', json=request_payload).get_json()
+                study = initial['studies'][0]
+                report = {**request_payload, 'pmid': study['PMID'], 'study_data': study}
+
+                first = self.client.post('/exclude', json=report)
+                refreshed = app.test_client().post('/analyze', json=request_payload)
+                second = second_client.post('/exclude', json=report)
+                refreshed_after_second = app.test_client().post('/analyze', json=request_payload)
+
+        self.assertEqual(first.status_code, 200)
+        self.assertEqual(first.get_json()['context_key'], (
+            'breast_cancer_alcohol_incidence_triple_negative_breast_cancer'
+        ))
+        first_refreshed_study = next(
+            row for row in refreshed.get_json()['studies']
+            if str(row['PMID']) == str(study['PMID'])
+        )
+        self.assertEqual(first_refreshed_study['exclusion_flags'], 1)
+        self.assertEqual(second.get_json()['exclusions'], 2)
+        second_refreshed_study = next(
+            row for row in refreshed_after_second.get_json()['studies']
+            if str(row['PMID']) == str(study['PMID'])
+        )
+        self.assertEqual(second_refreshed_study['exclusion_flags'], 2)
+        self.assertEqual(second_refreshed_study['verification_status'], 'review_requested')
+        notify.assert_called_once()
+
+    def test_flag_save_failure_is_not_reported_as_success(self):
+        with tempfile.TemporaryDirectory() as tempdir:
+            verification_file = str(Path(tempdir) / 'verifications.json')
+            Path(verification_file).write_text('{}', encoding='utf-8')
+            with (
+                patch('app.VERIFICATIONS_FILE', verification_file),
+                patch('app.find_review_study', return_value={'PMID': '123'}),
+                patch('app._atomic_save_verifications', side_effect=OSError('disk full')),
+            ):
+                response = self.client.post('/exclude', json={
+                    'pmid': '123', 'disease': 'Breast cancer',
+                    'exposure': 'Alcohol', 'outcome': 'Incidence',
+                })
+
+        self.assertEqual(response.status_code, 500)
+        self.assertFalse(response.get_json()['success'])
+        self.assertIn('could not be saved', response.get_json()['error'])
+
+    def test_smtp_notification_targets_the_review_team(self):
+        from app import send_developer_notification
+
+        class FakeSMTP:
+            message = None
+            started_tls = False
+            login_args = None
+
+            def __init__(self, host, port, timeout):
+                self.host, self.port, self.timeout = host, port, timeout
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *_args):
+                return False
+
+            def starttls(self):
+                type(self).started_tls = True
+
+            def login(self, username, password):
+                type(self).login_args = (username, password)
+
+            def send_message(self, message):
+                type(self).message = message
+
+        smtp_env = {
+            'SMTP_HOST': 'smtp.example.test',
+            'SMTP_PORT': '587',
+            'SMTP_USE_TLS': 'true',
+            'SMTP_USE_SSL': 'false',
+            'SMTP_USERNAME': 'sender@example.test',
+            'SMTP_PASSWORD': 'app-password',
+            'SMTP_FROM': 'sender@example.test',
+        }
+        with (
+            patch.dict('os.environ', smtp_env, clear=False),
+            patch('app.smtplib.SMTP', FakeSMTP),
+        ):
+            sent, error = send_developer_notification(
+                'exclusion_flags', 'Alcohol', 'Breast cancer', 'Incidence', '123',
+                {'Authors': 'Doe AB, Roe CD'},
+            )
+
+        self.assertTrue(sent)
+        self.assertIsNone(error)
+        self.assertTrue(FakeSMTP.started_tls)
+        self.assertEqual(FakeSMTP.login_args, ('sender@example.test', 'app-password'))
+        self.assertIn('shiyushu2006@gmail.com', FakeSMTP.message['To'])
 
     def test_only_rr_irr_or_hr_are_sent_to_reanalysis(self):
         studies = [
@@ -409,8 +530,8 @@ class SummaryPageTests(unittest.TestCase):
     def test_vitamin_e_summary_uses_the_same_case_estimates_as_the_ui(self):
         result = filtered_result('vitamin_e', 'Breast cancer')
 
-        self.assertEqual(result['number studies'], 22)
-        self.assertEqual(result['total Cases'], 33305)
+        self.assertEqual(result['number studies'], 17)
+        self.assertEqual(result['total Cases'], 30662)
 
     def test_named_summary_rows_match_saved_study_recalculation(self):
         root = Path(__file__).resolve().parents[1]

@@ -13,6 +13,7 @@ function uiText(source, variables = {}) {
         Object.prototype.hasOwnProperty.call(variables, key) ? String(variables[key]) : match
     ));
 }
+let reviewStoreWarningShown = false;
 
 // Global Error Handler for Debugging
 window.onerror = function (msg, url, line, col, error) {
@@ -1080,6 +1081,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                 elements.errorMsg.textContent = data.error;
                 elements.errorMsg.classList.remove('hidden');
             } else {
+                if (data.review_store_available === false && !reviewStoreWarningShown) {
+                    reviewStoreWarningShown = true;
+                    alert(uiText('Article flag status is temporarily unavailable. The evidence results are still shown, but do not rely on the displayed flag counts.'));
+                }
                 allStudies = Array.isArray(data.studies) ? data.studies : [];
                 applyFilters();
                 const analysisContext = { disease, exposure };
@@ -1437,18 +1442,22 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (!pmid) return;
         const study = currentStudies.find(s => String(s.PMID) === String(pmid));
         const disease = selectedDiseaseValue();
+        const subcategory = selectedSubcategoryValue();
         const exposure = selectedExposureValue();
         const outcome = elements.outcome.value;
-        const context_key = `${disease}_${exposure}_${outcome}`.toLowerCase().replace(/ /g, "_");
         
+        btn.disabled = true;
         try {
             const res = await fetch('/verify', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ pmid, study_data: study, disease, exposure, outcome })
+                body: JSON.stringify({ pmid, study_data: study, disease, exposure, outcome, subcategory })
             });
+            const data = await res.json();
+            if (!res.ok) {
+                throw new Error(data.error || `Server returned ${res.status}`);
+            }
             if (res.ok) {
-                const data = await res.json();
                 btn.textContent = `✓ ${data.count}`;
                 if (study) study.verifications = data.count;
                 if (data.review_requested) {
@@ -1456,6 +1465,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                     btn.style.background = '#f57c00';
                     if (data.notification_sent) {
                         alert(uiText('Two matching submissions were received. Developers have been emailed for review; results remain unchanged.'));
+                    } else if (data.notification_pending) {
+                        alert(uiText('Two matching submissions were saved and the review email is pending; results remain unchanged.'));
                     } else if (!data.notification_already_sent) {
                         alert(uiText('Developer review was requested, but the notification email could not be sent. Results remain unchanged.'));
                     }
@@ -1463,6 +1474,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         } catch (e) {
             console.error("Verify error:", e);
+            alert(uiText('The verification was not saved: {message}', { message: e.message }));
+        } finally {
+            btn.disabled = false;
         }
     };
 
@@ -1470,29 +1484,38 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (!pmid) return;
         if (!confirm(uiText('Flag this study for developer review? Two flags will email developers but will not change the results.'))) return;
 
+        btn.disabled = true;
         try {
             const disease = selectedDiseaseValue();
+            const subcategory = selectedSubcategoryValue();
             const exposure = selectedExposureValue();
             const outcome = elements.outcome.value;
-            const context_key = `${disease}_${exposure}_${outcome}`.toLowerCase().replace(/ /g, "_");
 
             const res = await fetch('/exclude', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ pmid, study_data: currentStudies.find(s => String(s.PMID) === String(pmid)), disease, exposure, outcome })
+                body: JSON.stringify({ pmid, study_data: currentStudies.find(s => String(s.PMID) === String(pmid)), disease, exposure, outcome, subcategory })
             });
+            const data = await res.json();
+            if (!res.ok) {
+                throw new Error(data.error || `Server returned ${res.status}`);
+            }
             if (res.ok) {
-                const data = await res.json();
                 const study = currentStudies.find(s => String(s.PMID) === String(pmid));
                 if (study) study.exclusion_flags = data.exclusions;
                 btn.textContent = `⚑ ${data.exclusions}`;
                 btn.style.background = '#f57c00';
+                if (data.already_flagged) {
+                    alert(uiText('Your flag was already recorded for this article.'));
+                }
                 if (data.review_requested) {
                     if (study) study.verification_status = 'review_requested';
                     if (data.notification_sent) {
                         alert(uiText('The review threshold was reached. Developers have been emailed; results remain unchanged.'));
                     } else if (data.notification_already_sent) {
                         alert(uiText('Developers were already notified about these flags. Results remain unchanged.'));
+                    } else if (data.notification_pending) {
+                        alert(uiText('The review request was saved and its email notification is pending. Results remain unchanged.'));
                     } else {
                         alert(uiText('Developer review was requested, but the notification email could not be sent. Results remain unchanged.'));
                     }
@@ -1500,6 +1523,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         } catch (e) {
             console.error("Exclude error:", e);
+            alert(uiText('The flag was not saved: {message}', { message: e.message }));
+        } finally {
+            btn.disabled = false;
         }
     };
 

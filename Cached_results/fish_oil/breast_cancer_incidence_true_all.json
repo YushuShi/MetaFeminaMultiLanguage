@@ -41,11 +41,11 @@
             "exposure_measurement_type": "dietary_intake",
             "exposure_measurement_supporting_text": "self-report regular fish oil supplementation",
             "extraction_supporting_text": {
-                "sample_size": "From the UK Biobank cohort, 470\u2009804 participants with fish oil supplementation data were included.",
-                "effect_size": "a higher risk of breast cancer was observed (HR\u00a0=\u00a01.16, 95%\u00a0CI\u00a0=\u00a01.01-1.32)",
+                "sample_size": "From the UK Biobank cohort, 470 804 participants with fish oil supplementation data were included.",
+                "effect_size": "a higher risk of breast cancer was observed (HR = 1.16, 95% CI = 1.01-1.32)",
                 "effect_direction": "a higher risk of breast cancer was observed",
                 "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.030.",
-                "confidence_interval": "HR\u00a0=\u00a01.16, 95%\u00a0CI\u00a0=\u00a01.01-1.32",
+                "confidence_interval": "HR = 1.16, 95% CI = 1.01-1.32",
                 "outcome_definition": "a higher risk of breast cancer was observed",
                 "exposure_definition": "self-report regular fish oil supplementation"
             },
@@ -109,7 +109,7 @@
             "Upper CI": 1.43,
             "Population": "General",
             "Reference": "Marine n-3 polyunsaturated fatty acids in adipose tissue and breast cancer risk: a case-cohort study from Denmark.",
-            "Authors": "Witt PM, Christensen JH, Schmidt EB, Dethlefsen C, Tj\u00f8nneland A, Overvad K, Ewertz M",
+            "Authors": "Witt PM, Christensen JH, Schmidt EB, Dethlefsen C, Tjønneland A, Overvad K, Ewertz M",
             "Journal": "Cancer causes & control : CCC",
             "Year": "2009",
             "Link": "https://pubmed.ncbi.nlm.nih.gov/19711189/",
@@ -297,170 +297,6 @@
                 "exposure_definition": "erythrocyte phospholipid n-3 index"
             },
             "P Value": 0.018111995923672165
-        },
-        {
-            "Study": "Blackmore KM et al. (2008) [PMID: 18756015]",
-            "PMID": "18756015",
-            "Effect Size": 0.76,
-            "Lower CI": 0.59,
-            "Upper CI": 0.97,
-            "Population": "General",
-            "Reference": "Vitamin D from dietary intake and sunlight exposure and the risk of hormone-receptor-defined breast cancer.",
-            "Authors": "Blackmore KM, Lesosky M, Barnett H, Raboud JM, Vieth R, Knight JA",
-            "Journal": "American journal of epidemiology",
-            "Year": "2008",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/18756015/",
-            "Effect Type": "OR",
-            "SE": 0.09693877551020408,
-            "Sample Size": 1894,
-            "Cases": 759,
-            "Design": "Case-Control",
-            "Timing": "Retrospective",
-            "Continent": "North America",
-            "Stage": "ER+/PR+ tumors",
-            "Quality %": 20.0,
-            "Quality Score": "Fair",
-            "comparison_type": "Yes vs No",
-            "JBI": {
-                "q1": "Unclear",
-                "q2": "Unclear",
-                "q3": "Unclear",
-                "q4": "Unclear",
-                "q5": "Unclear",
-                "q6": "No",
-                "q7": "No",
-                "q8": "Unclear",
-                "q9": "Yes",
-                "q10": "Yes"
-            },
-            "exclusions": 2,
-            "extraction_supporting_text": {
-                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.030."
-            },
-            "P Value": 0.03047841404442408
-        },
-        {
-            "Study": "Patterson RE et al. (2011) [PMID: 21178081]",
-            "PMID": "21178081",
-            "Effect Size": 0.72,
-            "Lower CI": 0.57,
-            "Upper CI": 0.9,
-            "Population": "General",
-            "Reference": "Marine fatty acid intake is associated with breast cancer prognosis.",
-            "Authors": "Patterson RE, Flatt SW, Newman VA, Natarajan L, Rock CL, Thomson CA, Caan BJ, Parker BA, Pierce JP",
-            "Journal": "The Journal of nutrition",
-            "Year": "2011",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/21178081/",
-            "Effect Type": "HR",
-            "SE": 0.08418367346938778,
-            "Sample Size": 3081,
-            "Cases": "Not specified",
-            "Design": "Cohort",
-            "Timing": "Prospective",
-            "Continent": "North America",
-            "Stage": "Early",
-            "Quality %": 100.0,
-            "Quality Score": "Good",
-            "comparison_type": "Highest vs Lowest",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Yes",
-                "q10": "Yes",
-                "q11": "Yes"
-            },
-            "exclusions": 2,
-            "extraction_supporting_text": {
-                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.005."
-            },
-            "P Value": 0.004812950516164946
-        },
-        {
-            "Study": "Ghoreishi Z et al. (2012) [PMID: 22894640]",
-            "PMID": "22894640",
-            "Effect Size": 0.3,
-            "Lower CI": 0.1,
-            "Upper CI": 0.88,
-            "Population": "General",
-            "Reference": "Omega-3 fatty acids are protective against paclitaxel-induced peripheral neuropathy: a randomized double-blind placebo controlled trial.",
-            "Authors": "Ghoreishi Z, Esfahani A, Djazayeri A, Djalali M, Golestan B, Ayromlou H, Hashemzade S, Asghari Jafarabadi M, Montazeri V, Keshavarz SA, Darabi M",
-            "Journal": "BMC cancer",
-            "Year": "2012",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/22894640/",
-            "Effect Type": "OR",
-            "SE": 0.1989795918367347,
-            "Sample Size": 57,
-            "Cases": 21,
-            "Design": "Cohort",
-            "Timing": "Prospective",
-            "Continent": "Not specified",
-            "Stage": "Not specified",
-            "Quality %": 100.0,
-            "Quality Score": "Good",
-            "comparison_type": "Yes vs No",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Yes",
-                "q10": "Yes",
-                "q11": "Yes"
-            },
-            "exclusions": 2,
-            "extraction_supporting_text": {
-                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.030."
-            },
-            "P Value": 0.02999423276860858
-        },
-        {
-            "Study": "Roy S et al. (2015) [PMID: 26137879]",
-            "PMID": "26137879",
-            "Effect Size": 1.73,
-            "Lower CI": 1.31,
-            "Upper CI": 2.28,
-            "Population": "General",
-            "Reference": "Associations of erythrocyte \u03c9-3 fatty acids with biomarkers of \u03c9-3 fatty acids and inflammation in breast tissue.",
-            "Authors": "Roy S, Brasky TM, Belury MA, Krishnan S, Cole RM, Marian C, Yee LD, Llanos AA, Freudenheim JL, Shields PG",
-            "Journal": "International journal of cancer",
-            "Year": "2015",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/26137879/",
-            "Effect Type": "RR",
-            "SE": 0.24744897959183668,
-            "Sample Size": 85,
-            "Cases": "None",
-            "Design": "Cross-Sectional",
-            "Timing": "Retrospective",
-            "Continent": "North America",
-            "Stage": "NA",
-            "Quality %": 87.5,
-            "Quality Score": "Good",
-            "comparison_type": "Highest vs Lowest",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Unclear",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes"
-            },
-            "exclusions": 2,
-            "extraction_supporting_text": {
-                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.056e-04."
-            },
-            "P Value": 0.00010559335529181899
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Kuriki K et al. (2007) [PMID: 17354239]</th>\n      <td>-0.6075</td>\n      <td>0.3041</td>\n      <td>-1.2035</td>\n      <td>-0.0115</td>\n      <td>103.0</td>\n      <td>412.0</td>\n    </tr>\n    <tr>\n      <th>Bassett JK et al. (2016) [PMID: 27146840]</th>\n      <td>-0.5327</td>\n      <td>0.1758</td>\n      <td>-0.8772</td>\n      <td>-0.1882</td>\n      <td>470.0</td>\n      <td>2021.0</td>\n    </tr>\n    <tr>\n      <th>Li J et al. (2021) [PMID: 34296713]</th>\n      <td>-0.4574</td>\n      <td>0.1993</td>\n      <td>-0.8481</td>\n      <td>-0.0667</td>\n      <td>104.0</td>\n      <td>174.0</td>\n    </tr>\n    <tr>\n      <th>Brasky TM et al. (2010) [PMID: 20615886]</th>\n      <td>-0.3638</td>\n      <td>0.1482</td>\n      <td>-0.6543</td>\n      <td>-0.0733</td>\n      <td>880.0</td>\n      <td>35016.0</td>\n    </tr>\n    <tr>\n      <th>Witt PM et al. (2009) [PMID: 19711189]</th>\n      <td>-0.0381</td>\n      <td>0.1914</td>\n      <td>-0.4132</td>\n      <td>0.3370</td>\n      <td>463.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Liu Z et al. (2022) [PMID: 34558660]</th>\n      <td>0.1376</td>\n      <td>0.0629</td>\n      <td>0.0142</td>\n      <td>0.2609</td>\n      <td>-</td>\n      <td>470804.0</td>\n    </tr>\n  </tbody>\n</table>",
@@ -473,8 +309,8 @@
         "interpretation": "Not statistically significant",
         "i2": 82.42,
         "tau2": 0.11,
-        "eggers_p": 0.020008893854598482,
-        "funnel_interpretation": "Egger\u2019s test is generally not recommended when fewer than 10 studies are available.",
+        "eggers_p": 0.02000889385459846,
+        "funnel_interpretation": "Egger’s test is generally not recommended when fewer than 10 studies are available.",
         "loo_results": [
             {
                 "omitted": "Kuriki K et al. (2007) [PMID: 17354239]",
@@ -519,7 +355,7 @@
                 "is_significant": true
             }
         ],
-        "results_interpretation": "The pooled analysis of 6 studies yielded an effect size of 0.76 (95% CI: 0.56\u20131.02), indicating no statistically significant association between fish_oil and breast cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 82.42%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 6 studies yielded an effect size of 0.76 (95% CI: 0.56–1.02), indicating no statistically significant association between fish oil and breast cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I² = 82.42%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 213,
@@ -538,8 +374,8 @@
         },
         "extracted": 6
     },
-    "plot_url": "static/fish_oil/forest_breast_cancer_incidence_primary.png?t=4336",
-    "funnel_plot_url": "static/fish_oil/funnel_breast_cancer_incidence_primary.png?t=5369",
-    "baujat_plot_url": "static/fish_oil/baujat_breast_cancer_incidence_primary.png?t=3493",
+    "plot_url": "static/fish_oil/forest_breast_cancer_incidence_primary.png?t=313",
+    "funnel_plot_url": "static/fish_oil/funnel_breast_cancer_incidence_primary.png?t=3201",
+    "baujat_plot_url": "static\\fish_oil\\baujat_breast_cancer_incidence_primary.png?t=120",
     "last_run": "2026-06-14 23:26:02"
 }

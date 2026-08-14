@@ -38,7 +38,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Inflammatory breast cancer estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "78369c20fabf47d5a7b97120c675d7663af54163003476b30e1a1ab364f26a1b",
+  "input_fingerprint": "71326bf0c1bb0d1cbf12e6209738e30f03c247404e6e9418699ee4b76ff69f5f",
   "plot_url": "Plot/subcategories/breast/inflammatory_breast_cancer/alcohol_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/inflammatory_breast_cancer/alcohol_baujat.png",
@@ -92,13 +92,14 @@
       "effect_size": 1.84,
       "effect_type": "OR",
       "evidence_locator": "IBC cases had a significantly higher frequency of regular alcohol consumption (≥1 drink per day) compared to WHI controls (OR=1.84, 95% CI:1.20-2.82).",
-      "evidence_source": "terra",
+      "evidence_source": "manual_source_review",
       "exposure_measurement_supporting_text": "IBC cases had a significantly higher frequency of regular alcohol consumption (≥1 drink per day) compared to WHI controls.",
       "exposure_measurement_type": "dietary_intake",
       "extraction_supporting_text": {
         "confidence_interval": "IBC cases had a significantly higher frequency of regular alcohol consumption (≥1 drink per day) compared to WHI controls (OR=1.84, 95% CI:1.20-2.82).",
         "effect_size": "IBC cases had a significantly higher frequency of regular alcohol consumption (≥1 drink per day) compared to WHI controls (OR=1.84, 95% CI:1.20-2.82).",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "IBC cases (n = 141) ... controls (n = 9317) from the Women's Health Initiative."
       },
       "jbi": {
         "q1": "Yes",
@@ -120,6 +121,7 @@
       "quality_score": "Good",
       "reference": "Importance of hereditary and selected environmental risk factors in the etiology of inflammatory breast cancer: a case-comparison study.",
       "sample_size": 9458.0,
+      "sample_size_supporting_text": "IBC cases (n = 141) ... controls (n = 9317) from the Women's Health Initiative.",
       "se": null,
       "study": "Moslehi R et al. (2016) [PMID: 27229687]",
       "upper_ci": 2.82,

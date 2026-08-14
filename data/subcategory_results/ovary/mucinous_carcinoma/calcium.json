@@ -38,7 +38,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Mucinous carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "039c78a5f52161ac36544bcd104c2e12e049798bf69fb785655dedb5d1899500",
+  "input_fingerprint": "8d05524768c98dc8c07033b150b20fc8b67f1e3ff1f97df9bfb433a53aae54cd",
   "plot_url": "Plot/subcategories/ovary/mucinous_carcinoma/calcium_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/ovary/mucinous_carcinoma/calcium_baujat.png",
@@ -92,13 +92,14 @@
       "effect_size": 0.46,
       "effect_type": "OR",
       "evidence_locator": "For mucinous tumors, total calcium Q4 vs Q1 OR=0.46, 95% CI 0.29–0.72.",
-      "evidence_source": "luna",
+      "evidence_source": "manual_source_review",
       "exposure_measurement_supporting_text": "In models that were simultaneously adjusted for total (dietary plus supplements) calcium, total vitamin D and lactose, we observed a decreased overall risk of ovarian cancer with high intake of total calcium.",
       "exposure_measurement_type": "dietary_intake",
       "extraction_supporting_text": {
         "confidence_interval": "For mucinous tumors, total calcium Q4 vs Q1 OR=0.46, 95% CI 0.29–0.72.",
         "effect_size": "For mucinous tumors, total calcium Q4 vs Q1 OR=0.46, 95% CI 0.29–0.72.",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "Controls (N=1989) ... Mucinous (N=217)."
       },
       "jbi": {
         "q1": "Yes",
@@ -120,6 +121,7 @@
       "quality_score": "Good",
       "reference": "Dairy foods and nutrients in relation to risk of ovarian cancer and major histological subtypes.",
       "sample_size": 2206.0,
+      "sample_size_supporting_text": "Controls (N=1989) ... Mucinous (N=217).",
       "se": null,
       "study": "Merritt MA et al. (2013) [PMID: 22740148]",
       "upper_ci": 0.72,

@@ -38,7 +38,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Clear cell carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "4d4ac7007f922620348b9407071ca1106e3f3a0fa29f12512eb7161e1c3d8891",
+  "input_fingerprint": "c736f7c5b9d497a3ba501200d8ae6e7eba1dacc9c131c7a4ff45dd5d8cb4da79",
   "plot_url": "Plot/subcategories/ovary/clear_cell_carcinoma/alcohol_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/ovary/clear_cell_carcinoma/alcohol_baujat.png",
@@ -98,7 +98,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "\"more apparent among women with clear cell OC (OR, 0.43; 95% CI, 0.22-0.83; P trend=0.02), although based on only 10 cases\"",
         "effect_size": "\"more apparent among women with clear cell OC (OR, 0.43; 95% CI, 0.22-0.83; P trend=0.02), although based on only 10 cases\"",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "We pooled data from 12 case-control studies in the Ovarian Cancer Association Consortium comprising 5,342 OC cases, 1,455 borderline tumors and 10,358 controls."
       },
       "jbi": {
         "q1": "Yes",
@@ -120,6 +121,7 @@
       "quality_score": "Good",
       "reference": "Recent alcohol consumption and risk of incident ovarian carcinoma: a pooled analysis of 5,342 cases and 10,358 controls from the Ovarian Cancer Association Consortium.",
       "sample_size": 17155.0,
+      "sample_size_supporting_text": "We pooled data from 12 case-control studies in the Ovarian Cancer Association Consortium comprising 5,342 OC cases, 1,455 borderline tumors and 10,358 controls.",
       "se": null,
       "study": "Kelemen LE et al. (2013) [PMID: 23339562]",
       "upper_ci": 0.83,

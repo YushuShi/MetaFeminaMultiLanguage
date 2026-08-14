@@ -38,7 +38,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Clear cell carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "a8e022ae9619e9a9998cc50e8dc6aa0208d08eb665c84be278c7d3b83ebc9773",
+  "input_fingerprint": "3815996be8b726ed6d6ebf797edaac21562567776d8fc8d90e15506f0822f000",
   "plot_url": "Plot/subcategories/ovary/clear_cell_carcinoma/potassium_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/ovary/clear_cell_carcinoma/potassium_baujat.png",
@@ -99,7 +99,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "“Potassium was associated with ... clear cell (4.74, 1.39-16.16) tumors.”",
         "effect_size": "“Potassium was associated with ... clear cell (4.74, 1.39-16.16) tumors.”",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "Among 232,908 women (1,110 ovarian cancer cases diagnosed from 2006-2020)"
       },
       "jbi": {
         "q1": "Yes",
@@ -122,6 +123,7 @@
       "quality_score": "Good",
       "reference": "The Association of Kidney Function and Inflammatory Biomarkers with Epithelial Ovarian Cancer Risk.",
       "sample_size": 232908.0,
+      "sample_size_supporting_text": "Among 232,908 women (1,110 ovarian cancer cases diagnosed from 2006-2020)",
       "se": null,
       "study": "Hathaway CA et al. (2023) [PMID: 37540498]",
       "upper_ci": 16.16,

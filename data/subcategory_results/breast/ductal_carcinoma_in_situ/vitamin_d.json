@@ -26,7 +26,7 @@
     "baseline_risk_percent": 2.4,
     "ci_low": 0.6904944222505481,
     "ci_upp": 0.8927021980370334,
-    "eggers_intercept": -0.3053777291662715,
+    "eggers_intercept": -0.3053777291662722,
     "eggers_p": 0.9053049948471039,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
     "i2": 0.0,
@@ -60,7 +60,7 @@
     "results_interpretation": "This saved analysis contains 3 separately reported Ductal carcinoma in situ estimates.",
     "tau2": 0.0
   },
-  "input_fingerprint": "07ea9203934d1227b8d2d9dd5bd205d598d3504031be7aee3ad226b93a0c5908",
+  "input_fingerprint": "86cd11c79adf5b85c2d83efdd33c3c62ace6a35cfc1b6b5b2692607242da82a2",
   "plot_url": "Plot/subcategories/breast/ductal_carcinoma_in_situ/vitamin_d_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/ductal_carcinoma_in_situ/vitamin_d_baujat.png",
@@ -123,7 +123,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "The intervention group had a lower risk of DCIS throughout follow-up (HR = 0.82, 95% CI = 0.70 to 0.96).",
         "effect_size": "The intervention group had a lower risk of DCIS throughout follow-up (HR = 0.82, 95% CI = 0.70 to 0.96).",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "A total of 36 282 cancer-free postmenopausal women (50-79 years) were randomly assigned"
       },
       "jbi": {
         "q1": "Yes",
@@ -148,6 +149,7 @@
       "quality_score": "Good",
       "reference": "A Randomized Trial of Calcium Plus Vitamin D Supplementation and Risk of Ductal Carcinoma In Situ of the Breast.",
       "sample_size": 36282.0,
+      "sample_size_supporting_text": "A total of 36 282 cancer-free postmenopausal women (50-79 years) were randomly assigned",
       "se": null,
       "study": "Peila R et al. (2021) [PMID: 34476342]",
       "upper_ci": 0.96,
@@ -197,7 +199,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "Recent use of vitamin D supplements ≥1/month was inversely associated with breast cancer; the association was stronger for ductal carcinoma in situ (HR = 0.67, 95% CI = 0.52, 0.87).",
         "effect_size": "Recent use of vitamin D supplements ≥1/month was inversely associated with breast cancer; the association was stronger for ductal carcinoma in situ (HR = 0.67, 95% CI = 0.52, 0.87).",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "The Sister Study is a prospective cohort of 50,884 women"
       },
       "jbi": {
         "q1": "Yes",
@@ -220,6 +223,7 @@
       "quality_score": "Good",
       "reference": "Vitamin D Supplement Use and Risk of Breast Cancer by Race-Ethnicity.",
       "sample_size": 50884.0,
+      "sample_size_supporting_text": "The Sister Study is a prospective cohort of 50,884 women",
       "se": null,
       "study": "O'Brien KM et al. (2022) [PMID: 34847083]",
       "upper_ci": 0.87,
@@ -269,7 +273,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "Table 4: Ductal carcinoma in situ; deficient (≤20 ng/mL) 42 cases, non-deficient (>20 ng/mL) 54 cases, HR 0.88 (95% CI 0.54–1.42).",
         "effect_size": "Table 4: Ductal carcinoma in situ; deficient (≤20 ng/mL) 42 cases, non-deficient (>20 ng/mL) 54 cases, HR 0.88 (95% CI 0.54–1.42).",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "blood samples collected at the baseline from 415 women ... who developed breast cancer ... compared to concentrations in 1545 women ... randomly selected from the cohort"
       },
       "jbi": {
         "q1": "Yes",
@@ -292,6 +297,7 @@
       "quality_score": "Good",
       "reference": "Vitamin D concentrations and breast cancer incidence among Black/African American and non-Black Hispanic/Latina women.",
       "sample_size": 1960.0,
+      "sample_size_supporting_text": "blood samples collected at the baseline from 415 women ... who developed breast cancer ... compared to concentrations in 1545 women ... randomly selected from the cohort",
       "se": null,
       "study": "O'Brien KM et al. (2022) [PMID: 35466399]",
       "upper_ci": 1.42,

@@ -38,7 +38,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Triple-negative breast cancer estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "78e73a91f50bfa4fcab4fa4a8c4ece888f04b9e3726bf247bbab32aef87dc0ee",
+  "input_fingerprint": "0936416c51f46156f6db61ad0f84476c35e94edf2ac657b6d7a5427e25b659ed",
   "plot_url": "Plot/subcategories/breast/triple_negative_breast_cancer/legumes_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/triple_negative_breast_cancer/legumes_baujat.png",
@@ -98,7 +98,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "\"triple-negative (OR = 0.51 95%CI: 0.28-0.95, p-trend = 0.02)\" for beans_alone high vs none",
         "effect_size": "\"triple-negative (OR = 0.51 95%CI: 0.28-0.95, p-trend = 0.02)\" for beans_alone high vs none",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "472 newly diagnosed patients with primary invasive breast cancer were age-matched (± 5 years) with 472 controls"
       },
       "jbi": {
         "q1": "Yes",
@@ -120,6 +121,7 @@
       "quality_score": "Good",
       "reference": "A matched case-control study of bean intake and breast cancer risk in urbanized Nigerian women.",
       "sample_size": 944.0,
+      "sample_size_supporting_text": "472 newly diagnosed patients with primary invasive breast cancer were age-matched (± 5 years) with 472 controls",
       "se": null,
       "study": "Bigman G et al. (2022) [PMID: 35511324]",
       "upper_ci": 0.95,

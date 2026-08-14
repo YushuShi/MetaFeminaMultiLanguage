@@ -169,7 +169,7 @@
             "Stage": null,
             "Quality %": 100.0,
             "Quality Score": "Good",
-            "comparison_type": "Q1 vs Q4 [inverted \u21d2 high vs low]",
+            "comparison_type": "Q1 vs Q4 [inverted ⇒ high vs low]",
             "JBI": {
                 "q1": "Yes",
                 "q2": "Yes",
@@ -203,7 +203,7 @@
             "Upper CI": 1.01,
             "Population": "General",
             "Reference": "Circulating carotenoids and risk of breast cancer: pooled analysis of eight prospective studies.",
-            "Authors": "Eliassen AH, Hendrickson SJ, Brinton LA, Buring JE, Campos H, Dai Q, Dorgan JF, Franke AA, Gao YT, Goodman MT, Hallmans G, Helzlsouer KJ, Hoffman-Bolton J, Hult\u00e9n K, Sesso HD, Sowell AL, Tamimi RM, Toniolo P, Wilkens LR, Winkvist A, Zeleniuch-Jacquotte A, Zheng W, Hankinson SE",
+            "Authors": "Eliassen AH, Hendrickson SJ, Brinton LA, Buring JE, Campos H, Dai Q, Dorgan JF, Franke AA, Gao YT, Goodman MT, Hallmans G, Helzlsouer KJ, Hoffman-Bolton J, Hultén K, Sesso HD, Sowell AL, Tamimi RM, Toniolo P, Wilkens LR, Winkvist A, Zeleniuch-Jacquotte A, Zheng W, Hankinson SE",
             "Journal": "Journal of the National Cancer Institute",
             "Year": "2012",
             "Link": "https://pubmed.ncbi.nlm.nih.gov/23221879/",
@@ -572,13 +572,13 @@
                 "q10": "Yes"
             },
             "exposure_measurement_type": "human_biospecimen",
-            "exposure_measurement_supporting_text": "Concentrations of \u03b1-carotene, \u03b2-carotene, \u03b2-cryptoxanthin, lycopene and lutein/zeaxanthin were measured using HPLC.",
+            "exposure_measurement_supporting_text": "Concentrations of α-carotene, β-carotene, β-cryptoxanthin, lycopene and lutein/zeaxanthin were measured using HPLC.",
             "extraction_supporting_text": {
                 "sample_size": "A total of 521 women with breast cancer and age-matched controls (5-year interval) were selected",
-                "effect_size": "The multivariate OR for the highest quartile of serum concentration compared with the lowest quartile were ... 0\u00b726 (95% CI 0\u00b717, 0\u00b738) for lutein/zeaxanthin.",
+                "effect_size": "The multivariate OR for the highest quartile of serum concentration compared with the lowest quartile were ... 0·26 (95% CI 0·17, 0·38) for lutein/zeaxanthin.",
                 "effect_direction": "Significant inverse associations were observed between serum ... lutein/zeaxanthin and the risk for breast cancer.",
                 "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=5.211e-11.",
-                "confidence_interval": "0\u00b726 (95% CI 0\u00b717, 0\u00b738) for lutein/zeaxanthin.",
+                "confidence_interval": "0·26 (95% CI 0·17, 0·38) for lutein/zeaxanthin.",
                 "outcome_definition": "risk for breast cancer",
                 "exposure_definition": "serum ... lutein/zeaxanthin"
             },
@@ -624,10 +624,10 @@
             "exposure_measurement_supporting_text": "Dietary intake information was collected by a face-to-face interview using a validated FFQ.",
             "extraction_supporting_text": {
                 "sample_size": "A total of 561 cases and 561 controls ... were recruited",
-                "effect_size": "OR ... 0\u00b749 (95\u00a0% CI 0\u00b734, 0\u00b771) for lutein/zeaxanthin",
+                "effect_size": "OR ... 0·49 (95 % CI 0·34, 0·71) for lutein/zeaxanthin",
                 "effect_direction": "An inverse association was observed between the consumption of ... lutein/zeaxanthin and the risk of breast cancer.",
                 "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.460e-04.",
-                "confidence_interval": "0\u00b749 (95\u00a0% CI 0\u00b734, 0\u00b771)",
+                "confidence_interval": "0·49 (95 % CI 0·34, 0·71)",
                 "outcome_definition": "the risk of breast cancer",
                 "exposure_definition": "dietary carotenoid intake ... lutein/zeaxanthin"
             },
@@ -673,10 +673,10 @@
             "exposure_measurement_supporting_text": "Dietary carotenoid intake was assessed using a validated 168-item food frequency questionnaire.",
             "extraction_supporting_text": {
                 "sample_size": "This population-based case-control study recruited 600 patients with newly diagnosed BC and 600 healthy controls.",
-                "effect_size": "total carotenoid (Q4 OR\u2009=\u20090.34, 95% CI: 0.20-0.56, p\u2009<\u20090.001)",
-                "effect_direction": "Higher intake of lycopene, phytoene, phytofluene, total non-provitamin A and provitamin A, \u03b2-carotene, lutein/zeaxanthin, as well as total carotenoids was significantly associated with reduced BC risk",
-                "p_value": "p\u2009<\u20090.001",
-                "confidence_interval": "Q4 OR\u2009=\u20090.34, 95% CI: 0.20-0.56",
+                "effect_size": "total carotenoid (Q4 OR = 0.34, 95% CI: 0.20-0.56, p < 0.001)",
+                "effect_direction": "Higher intake of lycopene, phytoene, phytofluene, total non-provitamin A and provitamin A, β-carotene, lutein/zeaxanthin, as well as total carotenoids was significantly associated with reduced BC risk",
+                "p_value": "p < 0.001",
+                "confidence_interval": "Q4 OR = 0.34, 95% CI: 0.20-0.56",
                 "outcome_definition": "patients with newly diagnosed BC",
                 "exposure_definition": "lutein/zeaxanthin"
             },
@@ -729,156 +729,107 @@
                 "outcome_definition": "breast cancer cases",
                 "exposure_definition": "individual carotenoids, including lutein"
             }
-        },
-        {
-            "Study": "Chang Y et al. (2026) [PMID: 41830449]",
-            "PMID": "41830449",
-            "Effect Size": 0.45,
-            "Lower CI": 0.3,
-            "Upper CI": 0.67,
-            "Population": "General",
-            "Reference": "Fabrication of COS-Modified Corn Peptide-Lutein Nanoparticles: Enhancement of Stability and Bioactivity.",
-            "Authors": "Chang Y, Cui LL, Jiao Y",
-            "Journal": "Journal of food science",
-            "Year": "2026",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/41830449/",
-            "Effect Type": "OR",
-            "SE": 0.09438775510204084,
-            "Sample Size": 200,
-            "Cases": 50,
-            "Design": "Cohort",
-            "Timing": "Prospective",
-            "Continent": "North America",
-            "Stage": "Early",
-            "Quality %": 100.0,
-            "Quality Score": "Good",
-            "comparison_type": "Highest vs Lowest",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Yes",
-                "q10": "Yes",
-                "q11": "Yes"
-            },
-            "exclusions": 2,
-            "extraction_supporting_text": {
-                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=9.793e-05."
-            },
-            "P Value": 9.792871486187452e-05
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Yan B et al. (2016) [PMID: 26482064]</th>\n      <td>-1.2459</td>\n      <td>0.1975</td>\n      <td>-1.6330</td>\n      <td>-0.8588</td>\n      <td>521.0</td>\n      <td>1042.0</td>\n    </tr>\n    <tr>\n      <th>Kim MK et al. (2002) [PMID: 12588696]</th>\n      <td>-0.9891</td>\n      <td>0.8168</td>\n      <td>-2.5900</td>\n      <td>0.6118</td>\n      <td>92.0</td>\n      <td>214.0</td>\n    </tr>\n    <tr>\n      <th>Darouei B et al. (2025) [PMID: 41029403]</th>\n      <td>-0.9891</td>\n      <td>0.2497</td>\n      <td>-1.4784</td>\n      <td>-0.4998</td>\n      <td>600.0</td>\n      <td>1200.0</td>\n    </tr>\n    <tr>\n      <th>Freudenheim JL et al. (1996) [PMID: 8609642]</th>\n      <td>-0.6836</td>\n      <td>0.2407</td>\n      <td>-1.1555</td>\n      <td>-0.2118</td>\n      <td>297.0</td>\n      <td>608.0</td>\n    </tr>\n    <tr>\n      <th>Toniolo P et al. (2001) [PMID: 11415946]</th>\n      <td>-0.6624</td>\n      <td>0.2979</td>\n      <td>-1.2464</td>\n      <td>-0.0785</td>\n      <td>270.0</td>\n      <td>540.0</td>\n    </tr>\n    <tr>\n      <th>Wang L et al. (2014) [PMID: 24502868]</th>\n      <td>-0.6447</td>\n      <td>0.1748</td>\n      <td>-0.9873</td>\n      <td>-0.3022</td>\n      <td>561.0</td>\n      <td>1122.0</td>\n    </tr>\n    <tr>\n      <th>Tamimi RM et al. (2009) [PMID: 19934322]</th>\n      <td>-0.6259</td>\n      <td>0.2326</td>\n      <td>-1.0818</td>\n      <td>-0.1701</td>\n      <td>604.0</td>\n      <td>1230.0</td>\n    </tr>\n    <tr>\n      <th>Bitsie KR et al. (2021) [PMID: 34494098]</th>\n      <td>-0.4127</td>\n      <td>0.1536</td>\n      <td>-0.7138</td>\n      <td>-0.1117</td>\n      <td>3564.0</td>\n      <td>15407.0</td>\n    </tr>\n    <tr>\n      <th>Gaudet MM et al. (2004) [PMID: 15342450]</th>\n      <td>-0.3703</td>\n      <td>0.1458</td>\n      <td>-0.6562</td>\n      <td>-0.0845</td>\n      <td>1463.0</td>\n      <td>2963.0</td>\n    </tr>\n    <tr>\n      <th>Tamimi RM et al. (2005) [PMID: 15632265]</th>\n      <td>-0.2667</td>\n      <td>0.1393</td>\n      <td>-0.5398</td>\n      <td>0.0064</td>\n      <td>969.0</td>\n      <td>969.0</td>\n    </tr>\n    <tr>\n      <th>Mignone LI et al. (2009) [PMID: 19330841]</th>\n      <td>-0.1640</td>\n      <td>0.0853</td>\n      <td>-0.3312</td>\n      <td>0.0032</td>\n      <td>5707.0</td>\n      <td>12096.0</td>\n    </tr>\n    <tr>\n      <th>Eliassen AH et al. (2012) [PMID: 23221879]</th>\n      <td>-0.1744</td>\n      <td>0.0935</td>\n      <td>-0.3577</td>\n      <td>0.0090</td>\n      <td>3055.0</td>\n      <td>7011.0</td>\n    </tr>\n    <tr>\n      <th>Zhang X et al. (2012) [PMID: 22277553]</th>\n      <td>-0.1393</td>\n      <td>0.0470</td>\n      <td>-0.2315</td>\n      <td>-0.0470</td>\n      <td>33380.0</td>\n      <td>1028438.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Kato I et al. (2006) [PMID: 16317581]</th>\n      <td>-1.6578</td>\n      <td>0.6891</td>\n      <td>-3.0084</td>\n      <td>-0.3071</td>\n      <td>-</td>\n      <td>71.0</td>\n    </tr>\n    <tr>\n      <th>Yan B et al. (2016) [PMID: 26482064]</th>\n      <td>-1.2459</td>\n      <td>0.1975</td>\n      <td>-1.6330</td>\n      <td>-0.8588</td>\n      <td>521.0</td>\n      <td>1042.0</td>\n    </tr>\n    <tr>\n      <th>Kim MK et al. (2002) [PMID: 12588696]</th>\n      <td>-0.9891</td>\n      <td>0.8168</td>\n      <td>-2.5900</td>\n      <td>0.6118</td>\n      <td>92.0</td>\n      <td>214.0</td>\n    </tr>\n    <tr>\n      <th>Freudenheim JL et al. (1996) [PMID: 8609642]</th>\n      <td>-0.6836</td>\n      <td>0.2407</td>\n      <td>-1.1555</td>\n      <td>-0.2118</td>\n      <td>297.0</td>\n      <td>608.0</td>\n    </tr>\n    <tr>\n      <th>Toniolo P et al. (2001) [PMID: 11415946]</th>\n      <td>-0.6624</td>\n      <td>0.2979</td>\n      <td>-1.2464</td>\n      <td>-0.0785</td>\n      <td>270.0</td>\n      <td>540.0</td>\n    </tr>\n    <tr>\n      <th>Wang L et al. (2014) [PMID: 24502868]</th>\n      <td>-0.6447</td>\n      <td>0.1748</td>\n      <td>-0.9873</td>\n      <td>-0.3022</td>\n      <td>561.0</td>\n      <td>1122.0</td>\n    </tr>\n    <tr>\n      <th>Bitsie KR et al. (2021) [PMID: 34494098]</th>\n      <td>-0.4127</td>\n      <td>0.1536</td>\n      <td>-0.7138</td>\n      <td>-0.1117</td>\n      <td>3564.0</td>\n      <td>15407.0</td>\n    </tr>\n    <tr>\n      <th>Zhang S et al. (1997) [PMID: 9280184]</th>\n      <td>-0.3432</td>\n      <td>0.4253</td>\n      <td>-1.1767</td>\n      <td>0.4904</td>\n      <td>46.0</td>\n      <td>109.0</td>\n    </tr>\n    <tr>\n      <th>Tamimi RM et al. (2005) [PMID: 15632265]</th>\n      <td>-0.2667</td>\n      <td>0.1393</td>\n      <td>-0.5398</td>\n      <td>0.0064</td>\n      <td>969.0</td>\n      <td>969.0</td>\n    </tr>\n    <tr>\n      <th>Mignone LI et al. (2009) [PMID: 19330841]</th>\n      <td>-0.1640</td>\n      <td>0.0853</td>\n      <td>-0.3312</td>\n      <td>0.0032</td>\n      <td>5707.0</td>\n      <td>12096.0</td>\n    </tr>\n    <tr>\n      <th>Eliassen AH et al. (2012) [PMID: 23221879]</th>\n      <td>-0.1744</td>\n      <td>0.0935</td>\n      <td>-0.3577</td>\n      <td>0.0090</td>\n      <td>3055.0</td>\n      <td>7011.0</td>\n    </tr>\n    <tr>\n      <th>Zhang X et al. (2012) [PMID: 22277553]</th>\n      <td>-0.1393</td>\n      <td>0.0470</td>\n      <td>-0.2315</td>\n      <td>-0.0470</td>\n      <td>33380.0</td>\n      <td>1028438.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.62,
-        "ci_low": 0.52,
-        "ci_upp": 0.74,
+        "pooled_es": 0.64,
+        "ci_low": 0.53,
+        "ci_upp": 0.77,
         "pi_low": 0.35,
-        "pi_upp": 1.11,
+        "pi_upp": 1.15,
         "interpretation": "Statistically significant (decreased risk/odds)",
-        "i2": 78.85,
+        "i2": 77.56,
         "tau2": 0.06,
-        "eggers_p": 0.0008471154848143979,
-        "funnel_interpretation": "The significant funnel plot asymmetry (egger's p=0.0008) indicates substantial publication bias in this meta-analysis on lutein and breast cancer. This specific pattern suggests that smaller studies with smaller or null effects may be underrepresented, compromising the reliability of the pooled estimate and potentially leading to an overestimation of the true association.",
+        "eggers_p": 0.0053017307878869425,
+        "funnel_interpretation": "The significant funnel plot asymmetry (egger's p=0.0053) indicates substantial publication bias in this meta-analysis on lutein and breast cancer. This specific pattern suggests that smaller studies with smaller or null effects may be underrepresented, compromising the reliability of the pooled estimate and potentially leading to an overestimation of the true association.",
         "loo_results": [
             {
+                "omitted": "Kato I et al. (2006) [PMID: 16317581]",
+                "pooled_es": 0.6516408087215871,
+                "ci_low": 0.5307997346730237,
+                "ci_upp": 0.7999923810303007,
+                "is_significant": true
+            },
+            {
                 "omitted": "Yan B et al. (2016) [PMID: 26482064]",
-                "pooled_es": 0.6835452994800941,
-                "ci_low": 0.5899988625878826,
-                "ci_upp": 0.7919238596358059,
+                "pooled_es": 0.7247900956013656,
+                "ci_low": 0.6235677100588591,
+                "ci_upp": 0.8424436900882042,
                 "is_significant": true
             },
             {
                 "omitted": "Kim MK et al. (2002) [PMID: 12588696]",
-                "pooled_es": 0.6243476981539547,
-                "ci_low": 0.5143031712965577,
-                "ci_upp": 0.7579382549935111,
-                "is_significant": true
-            },
-            {
-                "omitted": "Darouei B et al. (2025) [PMID: 41029403]",
-                "pooled_es": 0.6462243196010083,
-                "ci_low": 0.5373567713224253,
-                "ci_upp": 0.7771482440168488,
+                "pooled_es": 0.6401700600583544,
+                "ci_low": 0.5115538597670815,
+                "ci_upp": 0.801123279534463,
                 "is_significant": true
             },
             {
                 "omitted": "Freudenheim JL et al. (1996) [PMID: 8609642]",
-                "pooled_es": 0.6303553493704187,
-                "ci_low": 0.5166271403034535,
-                "ci_upp": 0.7691192263854175,
+                "pooled_es": 0.6492332730776763,
+                "ci_low": 0.5156400525732503,
+                "ci_upp": 0.8174381349309071,
                 "is_significant": true
             },
             {
                 "omitted": "Toniolo P et al. (2001) [PMID: 11415946]",
-                "pooled_es": 0.6272501679139886,
-                "ci_low": 0.5142080045108276,
-                "ci_upp": 0.7651432293871305,
+                "pooled_es": 0.6447871255177713,
+                "ci_low": 0.5121244168047291,
+                "ci_upp": 0.8118153003276819,
                 "is_significant": true
             },
             {
                 "omitted": "Wang L et al. (2014) [PMID: 24502868]",
-                "pooled_es": 0.631516952512604,
-                "ci_low": 0.5164222416113016,
-                "ci_upp": 0.7722627516321883,
-                "is_significant": true
-            },
-            {
-                "omitted": "Tamimi RM et al. (2009) [PMID: 19934322]",
-                "pooled_es": 0.6276783483032552,
-                "ci_low": 0.513634197053091,
-                "ci_upp": 0.7670441555276339,
+                "pooled_es": 0.6516775211411556,
+                "ci_low": 0.5162129721683407,
+                "ci_upp": 0.8226906615244629,
                 "is_significant": true
             },
             {
                 "omitted": "Bitsie KR et al. (2021) [PMID: 34494098]",
-                "pooled_es": 0.6151516346058433,
-                "ci_low": 0.5014524911397951,
-                "ci_upp": 0.7546308777888738,
+                "pooled_es": 0.6300847440074923,
+                "ci_low": 0.4957157065812433,
+                "ci_upp": 0.8008759443371021,
                 "is_significant": true
             },
             {
-                "omitted": "Gaudet MM et al. (2004) [PMID: 15342450]",
-                "pooled_es": 0.6119556206930827,
-                "ci_low": 0.49904610841279284,
-                "ci_upp": 0.7504109848464982,
+                "omitted": "Zhang S et al. (1997) [PMID: 9280184]",
+                "pooled_es": 0.632188662084834,
+                "ci_low": 0.5021239775973954,
+                "ci_upp": 0.7959438750185781,
                 "is_significant": true
             },
             {
                 "omitted": "Tamimi RM et al. (2005) [PMID: 15632265]",
-                "pooled_es": 0.6048820273056591,
-                "ci_low": 0.49474828840271773,
-                "ci_upp": 0.7395321530846436,
+                "pooled_es": 0.61670670768074,
+                "ci_low": 0.48637541746193974,
+                "ci_upp": 0.7819621420899203,
                 "is_significant": true
             },
             {
                 "omitted": "Mignone LI et al. (2009) [PMID: 19330841]",
-                "pooled_es": 0.5924482683088432,
-                "ci_low": 0.4872141122960523,
-                "ci_upp": 0.7204121181302471,
+                "pooled_es": 0.5998096576307015,
+                "ci_low": 0.47457732786219736,
+                "ci_upp": 0.7580885227023021,
                 "is_significant": true
             },
             {
                 "omitted": "Eliassen AH et al. (2012) [PMID: 23221879]",
-                "pooled_es": 0.5942561647728604,
-                "ci_low": 0.48833253247711955,
-                "ci_upp": 0.7231555669232319,
+                "pooled_es": 0.602434070529689,
+                "ci_low": 0.4765361185008606,
+                "ci_upp": 0.7615934978374884,
                 "is_significant": true
             },
             {
                 "omitted": "Zhang X et al. (2012) [PMID: 22277553]",
-                "pooled_es": 0.5903492093885652,
-                "ci_low": 0.48658252074921754,
-                "ci_upp": 0.7162447769169366,
+                "pooled_es": 0.595673042983958,
+                "ci_low": 0.47225752450667663,
+                "ci_upp": 0.7513408590120872,
                 "is_significant": true
             }
         ],
-        "results_interpretation": "The pooled analysis of 13 studies yielded an overall effect size of 0.62 (95% CI: 0.52\u20130.74), suggesting that lutein is associated with a lower risk of breast cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 78.85%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 12 studies yielded an overall effect size of 0.64 (95% CI: 0.53–0.77), suggesting that lutein is associated with a lower risk of breast cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I² = 77.56%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 4,
@@ -897,8 +848,8 @@
         },
         "extracted": 15
     },
-    "plot_url": "static/lutein/forest_breast_cancer_incidence_primary.png?t=8713",
-    "funnel_plot_url": "static/lutein/funnel_breast_cancer_incidence_primary.png?t=7144",
-    "baujat_plot_url": "static/lutein/baujat_breast_cancer_incidence_primary.png?t=453",
+    "plot_url": "static/lutein/forest_breast_cancer_incidence_primary.png?t=7786",
+    "funnel_plot_url": "static/lutein/funnel_breast_cancer_incidence_primary.png?t=4051",
+    "baujat_plot_url": "static\\lutein\\baujat_breast_cancer_incidence_primary.png?t=9513",
     "last_run": "2026-06-15 01:58:32"
 }

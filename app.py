@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, jsonify, send_from_directory
+from contextlib import contextmanager
 import meta_analysis
 import os
 import pandas as pd
@@ -6,11 +7,21 @@ import numpy as np
 import json
 import hashlib
 import re
+import secrets
 import smtplib
+import tempfile
+import threading
 import time
 from email.message import EmailMessage
 from functools import partial
 from datetime import datetime
+from itsdangerous import BadSignature, URLSafeSerializer
+from urllib.parse import urlsplit
+
+try:
+    import fcntl
+except ImportError:  # pragma: no cover - Windows development fallback
+    fcntl = None
 
 try:
     import subcategory_registry
@@ -33,7 +44,12 @@ def log_event(message):
     is_verbose = "Checking cache candidate:" in message or "Cache hit found:" in message
     if not is_verbose or debug_enabled:
         print(line)
-        
+
+    # Test clients should never mutate the tracked runtime audit log.
+    flask_app = globals().get('app')
+    if flask_app is not None and flask_app.testing:
+        return
+
     try:
         with open(LOG_FILE, 'a', encoding='utf-8') as f:
             f.write(line + "\n")
@@ -59,8 +75,24 @@ SUBCATEGORY_RESULTS_DIR = os.path.join(DATA_DIR, 'subcategory_results')
 SUBCATEGORY_PLOT_ROOT = os.path.join(PLOT_DIR, 'subcategories')
 SUBCATEGORY_SUMMARY_MANIFEST = os.path.join(DATA_DIR, 'subcategory_summary_manifest.json')
 SUBCATEGORY_PLOT_MANIFEST = os.path.join(PLOT_DIR, 'subcategories', 'summary_manifest.json')
-VERIFICATIONS_FILE = os.path.join(DATA_DIR, 'verifications.json')
+BUNDLED_VERIFICATIONS_FILE = os.path.join(DATA_DIR, 'verifications.json')
+# Production deployments should point this at durable storage (for example a
+# mounted Render disk). The bundled JSON remains the local-development default
+# and the seed for an empty external store.
+VERIFICATIONS_FILE = os.environ.get('VERIFICATIONS_FILE', BUNDLED_VERIFICATIONS_FILE)
 USAGE_FILE = os.path.join(DATA_DIR, 'usage_stats.json')
+
+REPORTER_COOKIE_NAME = "metafemina_reporter"
+REPORTER_COOKIE_MAX_AGE = 60 * 60 * 24 * 365 * 2
+REPORTER_ID_SECRET = os.environ.get("REPORTER_ID_SECRET") or secrets.token_hex(32)
+REPORTER_ID_SECRET_IS_EPHEMERAL = not bool(os.environ.get("REPORTER_ID_SECRET"))
+_REPORTER_SERIALIZER = URLSafeSerializer(
+    REPORTER_ID_SECRET, salt="metafemina-anonymous-reviewer-v1"
+)
+NOTIFICATION_RETRY_SECONDS = max(
+    1, int(os.environ.get("NOTIFICATION_RETRY_SECONDS", "300"))
+)
+_VERIFICATIONS_THREAD_LOCK = threading.RLock()
 
 os.makedirs(CACHE_DIR, exist_ok=True)
 
@@ -417,19 +449,123 @@ def _normalise_consensus_value(value):
     text = str(value).strip().lower()
     return "none" if text in {"", "null", "none", "nan"} else text
 
-def matching_submission_signature(submissions):
-    """Return a stable signature when any two crowdsourced submissions match."""
-    seen = set()
-    for submission in reversed(submissions or []):
+def matching_submission_signature(submissions, include_legacy=False):
+    """Return a stable signature when two distinct reporters submit a match."""
+    seen = {}
+    for index, submission in enumerate(submissions or []):
         values = tuple(
             _normalise_consensus_value((submission.get("data") or {}).get(field))
             for field in CONSENSUS_FIELDS
         )
-        if values in seen:
+        reporter_hash = submission.get("reporter_hash")
+        if not reporter_hash and not include_legacy:
+            continue
+        # Legacy records can preserve a historical review badge, but they can
+        # never satisfy the stricter threshold for a new email notification.
+        reporter_hash = reporter_hash or f"legacy:{index}"
+        if values in seen and seen[values] != reporter_hash:
             payload = json.dumps(dict(zip(CONSENSUS_FIELDS, values)), sort_keys=True)
             return hashlib.sha256(payload.encode("utf-8")).hexdigest()
-        seen.add(values)
+        seen[values] = reporter_hash
     return None
+
+
+def build_context_key(disease, exposure, outcome, subcategory=None):
+    """Build the one canonical key used by reads and crowdsourced writes."""
+    canonical_exp = (
+        meta_analysis.get_canonical_name(exposure)
+        if exposure else "unknown_exposure"
+    )
+    parts = [disease or DEFAULT_DISEASE, canonical_exp, outcome or "incidence"]
+    if subcategory:
+        parts.append(str(subcategory).strip())
+    return "_".join(str(part).strip() for part in parts).lower().replace(" ", "_")
+
+
+def _decode_reporter_cookie():
+    """Return the server-signed anonymous browser ID, or ``None``."""
+    signed_value = str(request.cookies.get(REPORTER_COOKIE_NAME) or "").strip()
+    if not signed_value:
+        return None
+    try:
+        payload = _REPORTER_SERIALIZER.loads(signed_value)
+    except BadSignature:
+        return None
+    raw_id = payload.get("id") if isinstance(payload, dict) else None
+    if not isinstance(raw_id, str) or not re.fullmatch(r"[A-Za-z0-9_-]{20,128}", raw_id):
+        return None
+    return raw_id
+
+
+def _new_reporter_cookie():
+    raw_id = secrets.token_urlsafe(24)
+    return raw_id, _REPORTER_SERIALIZER.dumps({"id": raw_id})
+
+
+def _reporter_identity():
+    """Return a stable signed-browser identity, rejecting missing cookies."""
+    raw_id = _decode_reporter_cookie()
+    if raw_id is None:
+        return None
+    return hashlib.sha256(raw_id.encode("utf-8")).hexdigest()
+
+
+def _set_reporter_cookie(response, signed_value):
+    force_secure = os.environ.get("REPORTER_COOKIE_SECURE", "false").lower() == "true"
+    response.set_cookie(
+        REPORTER_COOKIE_NAME,
+        signed_value,
+        max_age=REPORTER_COOKIE_MAX_AGE,
+        httponly=True,
+        secure=force_secure or request.is_secure,
+        samesite="Lax",
+    )
+    return response
+
+
+def _json_response(payload, status=200):
+    response = jsonify(payload)
+    response.status_code = status
+    return response
+
+
+def _review_request_context(data):
+    """Resolve untrusted review input to the same canonical scope as analyze."""
+    scopes = get_scope_config()
+    major_key = get_major_scope_key(data.get("disease", DEFAULT_DISEASE), scopes)
+    if not major_key:
+        raise ValueError("Unknown disease scope")
+    disease = scopes[major_key]["disease"]
+
+    raw_subcategory = str(data.get("subcategory") or "").strip()
+    subcategory = None
+    if raw_subcategory:
+        matched = get_subcategory_scope(major_key, raw_subcategory, scopes)
+        if not matched:
+            raise ValueError("Unknown cancer subcategory")
+        subcategory = matched["slug"]
+
+    exposure = str(data.get("exposure") or "").strip()
+    if not exposure or len(exposure) > 160:
+        raise ValueError("Invalid exposure")
+    outcome = str(data.get("outcome") or "incidence").strip().lower()
+    if outcome not in {"incidence", "survival"}:
+        raise ValueError("Invalid outcome")
+    return disease, exposure, outcome, subcategory
+
+
+def _review_origin_allowed():
+    """Reject browser review mutations initiated by another web origin."""
+    fetch_site = str(request.headers.get("Sec-Fetch-Site") or "").lower()
+    if fetch_site == "cross-site":
+        return False
+    origin = str(request.headers.get("Origin") or "").strip()
+    if not origin:
+        return True
+    try:
+        return urlsplit(origin).netloc.casefold() == request.host.casefold()
+    except ValueError:
+        return False
 
 def find_saved_study(pmid, exposure=None):
     """Find local author metadata when the browser did not send a study record."""
@@ -445,6 +581,32 @@ def find_saved_study(pmid, exposure=None):
             for study in cached.get("studies", []) if isinstance(cached, dict) else []:
                 if str(study.get("PMID")) == str(pmid):
                     return study
+    return {}
+
+
+def find_review_study(pmid, disease, exposure, outcome, subcategory=None):
+    """Resolve a review target from the exact saved UI context."""
+    if subcategory:
+        scopes = get_scope_config()
+        major_key = get_major_scope_key(disease, scopes)
+        if not major_key:
+            return {}
+        result_path = get_subcategory_result_path(major_key, subcategory, exposure)
+        payload = load_json(result_path, {})
+        for study in payload.get("studies", []) if isinstance(payload, dict) else []:
+            if str(study.get("PMID")) == str(pmid):
+                return study
+        return {}
+
+    candidates = (
+        get_cache_path(disease, exposure, outcome, True, False, DEFAULT_MODEL),
+        get_cache_path(disease, exposure, outcome, True, True, DEFAULT_MODEL),
+    )
+    for cache_path in candidates:
+        payload = load_json(cache_path, {})
+        for study in payload.get("studies", []) if isinstance(payload, dict) else []:
+            if str(study.get("PMID")) == str(pmid):
+                return study
     return {}
 
 def send_developer_notification(event_type, exposure, disease, outcome, pmid, study_data=None):
@@ -496,7 +658,9 @@ def send_developer_notification(event_type, exposure, disease, outcome, pmid, st
                 server.starttls()
             if smtp_username and smtp_password:
                 server.login(smtp_username, smtp_password)
-            server.send_message(email)
+            refused = server.send_message(email)
+            if refused:
+                raise RuntimeError(f"SMTP rejected {len(refused)} review recipient(s)")
         log_event(f"[MetaFemina] Developer notification sent for PMID {safe_pmid}: {event_type}")
         return True, None
     except Exception as exc:
@@ -562,6 +726,164 @@ def save_json(filepath, data):
     except Exception as e:
         print(f"Error saving {filepath}: {e}")
 
+
+def _load_verifications_for_update():
+    """Load the writable review store, seeding it from bundled history."""
+    source = VERIFICATIONS_FILE
+    if not os.path.isfile(source) and source != BUNDLED_VERIFICATIONS_FILE:
+        source = BUNDLED_VERIFICATIONS_FILE
+    if not os.path.isfile(source):
+        return {}
+    with open(source, 'r', encoding='utf-8') as handle:
+        payload = json.load(handle)
+    if not isinstance(payload, dict):
+        raise ValueError("The verification store must contain a JSON object")
+    return payload
+
+
+def load_verifications():
+    try:
+        return _load_verifications_for_update()
+    except Exception as exc:
+        log_event(f"[MetaFemina] Could not read verification store: {exc}")
+        return {}
+
+
+def _atomic_save_verifications(data):
+    """Durably replace the review JSON or raise instead of claiming success."""
+    directory = os.path.dirname(VERIFICATIONS_FILE) or BASE_DIR
+    os.makedirs(directory, exist_ok=True)
+    temporary_path = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode='w', encoding='utf-8', dir=directory,
+            prefix='.verifications-', suffix='.tmp', delete=False,
+        ) as handle:
+            temporary_path = handle.name
+            json.dump(sanitize_data(data), handle, indent=4)
+            handle.write('\n')
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(temporary_path, VERIFICATIONS_FILE)
+        temporary_path = None
+        if hasattr(os, 'O_DIRECTORY'):
+            directory_fd = os.open(directory, os.O_RDONLY | os.O_DIRECTORY)
+            try:
+                os.fsync(directory_fd)
+            finally:
+                os.close(directory_fd)
+    finally:
+        if temporary_path and os.path.exists(temporary_path):
+            try:
+                os.unlink(temporary_path)
+            except OSError:
+                pass
+
+
+@contextmanager
+def locked_verifications():
+    """Serialize cross-thread/process review updates and commit atomically."""
+    directory = os.path.dirname(VERIFICATIONS_FILE) or BASE_DIR
+    os.makedirs(directory, exist_ok=True)
+    lock_path = f"{VERIFICATIONS_FILE}.lock"
+    with _VERIFICATIONS_THREAD_LOCK:
+        with open(lock_path, 'a+', encoding='utf-8') as lock_handle:
+            if fcntl is not None:
+                fcntl.flock(lock_handle.fileno(), fcntl.LOCK_EX)
+            try:
+                payload = _load_verifications_for_update()
+                yield payload
+                _atomic_save_verifications(payload)
+            finally:
+                if fcntl is not None:
+                    fcntl.flock(lock_handle.fileno(), fcntl.LOCK_UN)
+
+
+def _verification_entry(verifications, pmid):
+    current = verifications.get(pmid)
+    if isinstance(current, int):
+        current = {
+            "submissions": [],
+            "consensus_data": None,
+            "legacy_count": current,
+            "context_exclusions": {},
+            "contexts": {},
+        }
+        verifications[pmid] = current
+    elif not isinstance(current, dict):
+        current = {
+            "submissions": [],
+            "consensus_data": None,
+            "legacy_count": 0,
+            "context_exclusions": {},
+            "contexts": {},
+        }
+        verifications[pmid] = current
+    current.setdefault("legacy_count", 0)
+    current.setdefault("context_exclusions", {})
+    current.setdefault("contexts", {})
+    return current
+
+
+def _verification_context(entry, context_key):
+    context = entry["contexts"].setdefault(context_key, {
+        "submissions": [],
+        "consensus_data": None,
+        "notifications": {},
+    })
+    context.setdefault("submissions", [])
+    context.setdefault("notifications", {})
+    context["consensus_data"] = None
+    return context
+
+
+def _claim_notification(state, event_id):
+    """Persist a delivery claim before SMTP is contacted.
+
+    A fresh pending claim prevents parallel requests from sending the same
+    message.  An abandoned claim can be retried after the bounded lease.
+    """
+    now = time.time()
+    if state.get("sent_at"):
+        return False
+    pending_at = state.get("pending_at_epoch")
+    try:
+        pending_is_fresh = pending_at is not None and (
+            now - float(pending_at) < NOTIFICATION_RETRY_SECONDS
+        )
+    except (TypeError, ValueError):
+        pending_is_fresh = False
+    if state.get("pending_event_id") and pending_is_fresh:
+        return False
+    try:
+        if now < float(state.get("next_retry_at_epoch") or 0):
+            return False
+    except (TypeError, ValueError):
+        pass
+    state["event_id"] = event_id
+    state["pending_event_id"] = event_id
+    state["pending_at_epoch"] = now
+    state["attempts"] = int(state.get("attempts", 0)) + 1
+    return True
+
+
+def _finish_notification(state, event_id, sent, error=None):
+    """Record an SMTP result without persisting sensitive transport errors."""
+    if state.get("pending_event_id") != event_id:
+        return
+    state.pop("pending_event_id", None)
+    state.pop("pending_at_epoch", None)
+    state["last_attempt_at"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    if sent:
+        state["sent_at"] = state["last_attempt_at"]
+        state["last_error_code"] = None
+        state.pop("next_retry_at_epoch", None)
+    else:
+        state["last_error_code"] = "delivery_failed"
+        state["next_retry_at_epoch"] = time.time() + NOTIFICATION_RETRY_SECONDS
+        if error:
+            log_event(f"[MetaFemina] Notification delivery detail: {error}")
+
 def sanitize_data(data):
     """Recursively replace NaN/Inf values and convert numpy types for JSON compatibility."""
     if isinstance(data, dict):
@@ -597,14 +919,25 @@ def update_cache_from_verifications(disease, exposure, outcome):
 
 @app.route('/')
 def index():
-    return render_template('index.html', scope_config=get_scope_config())
-
-@app.after_request
-def add_cors_headers(response):
-    response.headers['Access-Control-Allow-Origin'] = '*'
-    response.headers['Access-Control-Allow-Methods'] = 'GET,POST,OPTIONS'
-    response.headers['Access-Control-Allow-Headers'] = 'Content-Type,Authorization'
+    response = app.make_response(
+        render_template('index.html', scope_config=get_scope_config())
+    )
+    if _decode_reporter_cookie() is None:
+        _, signed_value = _new_reporter_cookie()
+        _set_reporter_cookie(response, signed_value)
     return response
+
+
+@app.route('/api/review-readiness')
+def review_readiness():
+    """Expose non-secret deployment checks for the review workflow."""
+    smtp_from = os.environ.get("SMTP_FROM") or os.environ.get("SMTP_USERNAME")
+    return jsonify({
+        "durable_store_configured": os.path.abspath(VERIFICATIONS_FILE) != os.path.abspath(BUNDLED_VERIFICATIONS_FILE),
+        "reporter_secret_configured": not REPORTER_ID_SECRET_IS_EPHEMERAL,
+        "smtp_configured": bool(os.environ.get("SMTP_HOST") and smtp_from),
+        "review_recipient_count": len(DEVELOPER_NOTIFICATION_EMAILS),
+    })
 
 @app.route('/about')
 def about():
@@ -839,9 +1172,19 @@ def analyze():
             log_event(f"[MetaFemina] Analysis returned an error; not caching: {result.get('error')}")
     
     # Inject advisory crowdsourcing counts. Reports never alter study data or results.
-    verifications = load_json(VERIFICATIONS_FILE, {})
-    canonical_exp = meta_analysis.get_canonical_name(exposure)
-    context_key = f"{disease}_{canonical_exp}_{outcome}_{subcategory_slug or 'all'}".lower().replace(" ", "_")
+    review_store_available = True
+    try:
+        verifications = _load_verifications_for_update()
+    except Exception as exc:
+        review_store_available = False
+        verifications = {}
+        log_event(f"[MetaFemina] Review status unavailable during analyze: {exc}")
+    result['review_store_available'] = review_store_available
+    canonical_context_disease = scopes[major_key]['disease'] if major_key else disease
+    canonical_context_subcategory = subcategory['slug'] if subcategory else None
+    context_key = build_context_key(
+        canonical_context_disease, exposure, outcome, canonical_context_subcategory
+    )
     
     if "studies" in result:
         saved_quality_by_pmid = {}
@@ -899,7 +1242,7 @@ def analyze():
                     submissions = []
                 
                 study['verifications'] = len(submissions)
-                if matching_submission_signature(submissions) or study['exclusion_flags'] >= 2:
+                if matching_submission_signature(submissions, include_legacy=True) or study['exclusion_flags'] >= 2:
                     study['verification_status'] = 'review_requested'
                 elif study['verifications'] > 0:
                     study['verification_status'] = 'partial'
@@ -919,175 +1262,263 @@ def analyze():
 
 @app.route('/verify', methods=['POST'])
 def verify():
-    data = request.json or {}
+    if not _review_origin_allowed():
+        return _json_response({"error": "Cross-site review requests are not allowed"}, status=403)
+    data = request.get_json(silent=True) or {}
     pmid = str(data.get('pmid') or '').strip()
-    study_data = data.get('study_data') or {}
-    exposure = data.get('exposure')
-    
-    # Resolve canonical name for context key consistency
-    canonical_exp = meta_analysis.get_canonical_name(exposure) if exposure else "unknown_exposure"
-    disease = data.get('disease', DEFAULT_DISEASE)
-    outcome = data.get('outcome', 'incidence')
-    context_key = f"{disease}_{canonical_exp}_{outcome}".lower().replace(" ", "_")
-    
-    if not pmid:
-        return jsonify({"error": "No PMID provided"}), 400
-
+    if not re.fullmatch(r"\d{1,12}", pmid):
+        return _json_response({"error": "A valid PMID is required"}, status=400)
+    reporter_hash = _reporter_identity()
+    if reporter_hash is None:
+        return _json_response({
+            "error": "Your review session is missing or invalid. Refresh the page and try again."
+        }, status=428)
+    try:
+        disease, exposure, outcome, subcategory = _review_request_context(data)
+    except ValueError as exc:
+        return _json_response({"error": str(exc)}, status=400)
+    context_key = build_context_key(disease, exposure, outcome, subcategory)
+    study_data = find_review_study(
+        pmid, disease, exposure, outcome, subcategory
+    )
     if not study_data:
-        study_data = find_saved_study(pmid, exposure)
-    
-    # Load verifications
-    verifications = load_json(VERIFICATIONS_FILE, {})
-    
-    # Initialize entry if not exists or if legacy
-    if pmid not in verifications or isinstance(verifications[pmid], int):
-        legacy_count = verifications.get(pmid, 0) if isinstance(verifications.get(pmid), int) else 0
-        verifications[pmid] = {
-            "submissions": [],
-            "consensus_data": None,
-            "legacy_count": legacy_count,
-            "context_exclusions": {},
-            "contexts": {}
-        }
-    
-    if "contexts" not in verifications[pmid]:
-        verifications[pmid]["contexts"] = {}
-        
-    if context_key not in verifications[pmid]["contexts"]:
-        verifications[pmid]["contexts"][context_key] = {
-            "submissions": [],
-            "consensus_data": None,
-            "notifications": {}
-        }
+        return _json_response({"error": "The article is not in this saved evidence set"}, status=404)
 
-    context = verifications[pmid]["contexts"][context_key]
-    context.setdefault("submissions", [])
-    context.setdefault("notifications", {})
-    # Clear legacy automatic overlays for this context. Runtime analysis also
-    # ignores all historical consensus_data values.
-    context["consensus_data"] = None
-    
-    # Extract only the fields we want to track/compare for consensus
-    if study_data:
-        metrics = {
-            "Effect Size": study_data.get("Effect Size"),
-            "Lower CI": study_data.get("Lower CI"),
-            "Upper CI": study_data.get("Upper CI"),
-            "Cases": study_data.get("Cases"),
-            "Sample Size": study_data.get("Sample Size"),
-            "Design": study_data.get("Design"),
-            "Timing": study_data.get("Timing"),
-            "Comparison Type": study_data.get("comparison_type"),
-            "exposure_measurement_type": study_data.get("exposure_measurement_type")
-        }
-        
-        # Add new submission
-        context["submissions"].append({
-            "data": metrics,
-            "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        })
+    should_notify = False
+    notification_event_id = None
+    notification_already_sent = False
+    notification_pending = False
 
-    matching_signature = matching_submission_signature(context["submissions"])
-    notified_signatures = context["notifications"].setdefault("matching_submission_signatures", [])
+    try:
+        with locked_verifications() as verifications:
+            entry = _verification_entry(verifications, pmid)
+            context = _verification_context(entry, context_key)
+
+            if study_data:
+                metrics = {
+                    "Effect Size": study_data.get("Effect Size"),
+                    "Lower CI": study_data.get("Lower CI"),
+                    "Upper CI": study_data.get("Upper CI"),
+                    "Cases": study_data.get("Cases"),
+                    "Sample Size": study_data.get("Sample Size"),
+                    "Design": study_data.get("Design"),
+                    "Timing": study_data.get("Timing"),
+                    "Comparison Type": study_data.get("comparison_type"),
+                    "exposure_measurement_type": study_data.get("exposure_measurement_type"),
+                }
+                submission = next((
+                    item for item in context["submissions"]
+                    if item.get("reporter_hash") == reporter_hash
+                ), None)
+                if submission is None:
+                    context["submissions"].append({
+                        "reporter_hash": reporter_hash,
+                        "data": metrics,
+                        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                    })
+                else:
+                    submission["data"] = metrics
+                    submission["timestamp"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+            matching_signature = matching_submission_signature(context["submissions"])
+            notifications = context["notifications"]
+            notified_signatures = notifications.setdefault(
+                "matching_submission_signatures", []
+            )
+            matching_state = notifications.setdefault("matching_submissions", {})
+            signature_events = matching_state.setdefault("events", {})
+            notification_already_sent = bool(
+                matching_signature and matching_signature in notified_signatures
+            )
+            if matching_signature and not notification_already_sent:
+                event_state = signature_events.setdefault(matching_signature, {})
+                notification_event_id = hashlib.sha256(
+                    f"matching|{pmid}|{context_key}|{matching_signature}".encode("utf-8")
+                ).hexdigest()
+                should_notify = _claim_notification(
+                    event_state, notification_event_id
+                )
+                notification_pending = not should_notify
+
+            total_count = len(context["submissions"]) + entry.get("legacy_count", 0)
+            review_requested = matching_signature is not None
+    except Exception as exc:
+        log_event(f"[MetaFemina] Verification write failed for PMID {pmid}: {exc}")
+        return _json_response({
+            "success": False,
+            "error": "The verification could not be saved. Please try again.",
+        }, status=500)
+
     notification_sent = False
-    notification_already_sent = bool(matching_signature and matching_signature in notified_signatures)
-    if matching_signature and not notification_already_sent:
-        notification_sent, _ = send_developer_notification(
+    notification_error_code = None
+    if should_notify and notification_event_id:
+        notification_sent, transport_error = send_developer_notification(
             "matching_submissions", exposure, disease, outcome, pmid, study_data
         )
-        if notification_sent:
-            notified_signatures.append(matching_signature)
-            context["notifications"]["matching_submission_last_sent_at"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        notification_error_code = None if notification_sent else "email_unavailable"
+        try:
+            with locked_verifications() as verifications:
+                entry = _verification_entry(verifications, pmid)
+                context = _verification_context(entry, context_key)
+                notifications = context["notifications"]
+                notified_signatures = notifications.setdefault(
+                    "matching_submission_signatures", []
+                )
+                matching_state = notifications.setdefault("matching_submissions", {})
+                event_state = matching_state.setdefault("events", {}).setdefault(
+                    matching_signature, {}
+                )
+                _finish_notification(
+                    event_state, notification_event_id, notification_sent, transport_error
+                )
+                if notification_sent and matching_signature not in notified_signatures:
+                    notified_signatures.append(matching_signature)
+        except Exception as exc:
+            # The report and pending delivery claim were already committed.
+            # Keep the claim so an immediate retry cannot duplicate the email.
+            log_event(
+                f"[MetaFemina] Could not persist verification email result for PMID {pmid}: {exc}"
+            )
+            notification_pending = True
 
-    save_json(VERIFICATIONS_FILE, verifications)
-    
-    # Count includes legacy count + new structured submissions
-    total_count = len(context["submissions"]) + verifications[pmid].get("legacy_count", 0)
-    review_requested = matching_signature is not None
+    update_cache_from_verifications(disease, exposure, outcome)
     status = "review_requested" if review_requested else "partial"
-    
-    return jsonify({
-        "success": True, 
-        "count": total_count, 
+    return _json_response({
+        "success": True,
+        "count": total_count,
         "status": status,
         "consensus_reached": False,
         "review_requested": review_requested,
         "notification_sent": notification_sent,
         "notification_already_sent": notification_already_sent,
-        "results_changed": False
+        "notification_pending": notification_pending,
+        "notification_error_code": notification_error_code,
+        "results_changed": False,
     })
 
 @app.route('/exclude', methods=['POST'])
 def exclude():
-    data = request.json or {}
+    if not _review_origin_allowed():
+        return _json_response({"error": "Cross-site review requests are not allowed"}, status=403)
+    data = request.get_json(silent=True) or {}
     pmid = str(data.get('pmid') or '').strip()
-    exposure = data.get('exposure')
-    study_data = data.get('study_data') or {}
-    canonical_exp = meta_analysis.get_canonical_name(exposure) if exposure else "unknown_exposure"
-    disease = data.get('disease', DEFAULT_DISEASE)
-    outcome = data.get('outcome', 'incidence')
-    context_key = f"{disease}_{canonical_exp}_{outcome}".lower().replace(" ", "_")
-    
-    if not pmid:
-        return jsonify({"error": "No PMID provided"}), 400
-
+    if not re.fullmatch(r"\d{1,12}", pmid):
+        return _json_response({"error": "A valid PMID is required"}, status=400)
+    reporter_hash = _reporter_identity()
+    if reporter_hash is None:
+        return _json_response({
+            "error": "Your review session is missing or invalid. Refresh the page and try again."
+        }, status=428)
+    try:
+        disease, exposure, outcome, subcategory = _review_request_context(data)
+    except ValueError as exc:
+        return _json_response({"error": str(exc)}, status=400)
+    context_key = build_context_key(disease, exposure, outcome, subcategory)
+    study_data = find_review_study(
+        pmid, disease, exposure, outcome, subcategory
+    )
     if not study_data:
-        study_data = find_saved_study(pmid, exposure)
-    
-    verifications = load_json(VERIFICATIONS_FILE, {})
-    
-    # Initialize entry if not exists or if legacy
-    if pmid not in verifications or isinstance(verifications[pmid], int):
-        legacy_count = verifications.get(pmid, 0) if isinstance(verifications.get(pmid), int) else 0
-        verifications[pmid] = {
-            "submissions": [],
-            "consensus_data": None,
-            "legacy_count": legacy_count,
-            "context_exclusions": {},
-            "contexts": {}
-        }
-    
-    if "context_exclusions" not in verifications[pmid]:
-        verifications[pmid]["context_exclusions"] = {}
-    if "contexts" not in verifications[pmid]:
-        verifications[pmid]["contexts"] = {}
-    if context_key not in verifications[pmid]["contexts"]:
-        verifications[pmid]["contexts"][context_key] = {
-            "submissions": [],
-            "consensus_data": None,
-            "notifications": {}
-        }
+        return _json_response({"error": "The article is not in this saved evidence set"}, status=404)
 
-    context = verifications[pmid]["contexts"][context_key]
-    context.setdefault("notifications", {})
-    context["consensus_data"] = None
-        
-    if context_key not in verifications[pmid]["context_exclusions"]:
-        verifications[pmid]["context_exclusions"][context_key] = 0
-            
-    verifications[pmid]["context_exclusions"][context_key] += 1
-    exclusion_count = verifications[pmid]["context_exclusions"][context_key]
+    should_notify = False
+    notification_event_id = None
+    notification_pending = False
+
+    try:
+        with locked_verifications() as verifications:
+            entry = _verification_entry(verifications, pmid)
+            context = _verification_context(entry, context_key)
+            reports = context.setdefault("exclusion_reports", [])
+            if not isinstance(reports, list):
+                reports = []
+                context["exclusion_reports"] = reports
+
+            current_total = entry["context_exclusions"].get(context_key, 0)
+            try:
+                current_total = max(0, int(current_total))
+            except (TypeError, ValueError):
+                current_total = 0
+            if "legacy_exclusion_count" not in context:
+                context["legacy_exclusion_count"] = max(0, current_total - len(reports))
+
+            already_flagged = any(
+                report.get("reporter_hash") == reporter_hash for report in reports
+            )
+            if not already_flagged:
+                reports.append({
+                    "reporter_hash": reporter_hash,
+                    "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                })
+
+            exclusion_count = context["legacy_exclusion_count"] + len(reports)
+            entry["context_exclusions"][context_key] = exclusion_count
+
+            notifications = context["notifications"]
+            notification_state = notifications.setdefault("exclusion_flags", {})
+            if not isinstance(notification_state, dict):
+                notification_state = {}
+                notifications["exclusion_flags"] = notification_state
+            if notifications.get("exclusion_flags_sent_at") and not notification_state.get("sent_at"):
+                notification_state["sent_at"] = notifications["exclusion_flags_sent_at"]
+
+            notification_already_sent = bool(notification_state.get("sent_at"))
+            # Historical integer counts have no reporter identity.  They remain
+            # visible for audit, but only two new signed-browser reports can
+            # trigger a new email.
+            if len(reports) >= 2 and not notification_already_sent:
+                notification_event_id = hashlib.sha256(
+                    f"exclude|{pmid}|{context_key}".encode("utf-8")
+                ).hexdigest()
+                should_notify = _claim_notification(
+                    notification_state, notification_event_id
+                )
+                notification_pending = not should_notify
+    except Exception as exc:
+        log_event(f"[MetaFemina] Exclusion flag write failed for PMID {pmid}: {exc}")
+        return _json_response({
+            "success": False,
+            "error": "The flag could not be saved. Please try again.",
+        }, status=500)
 
     notification_sent = False
-    notification_already_sent = bool(context["notifications"].get("exclusion_flags_sent_at"))
-    if exclusion_count >= 2 and not notification_already_sent:
-        notification_sent, _ = send_developer_notification(
+    notification_error_code = None
+    if should_notify and notification_event_id:
+        notification_sent, transport_error = send_developer_notification(
             "exclusion_flags", exposure, disease, outcome, pmid, study_data
         )
-        if notification_sent:
-            context["notifications"]["exclusion_flags_sent_at"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        notification_error_code = None if notification_sent else "email_unavailable"
+        try:
+            with locked_verifications() as verifications:
+                entry = _verification_entry(verifications, pmid)
+                context = _verification_context(entry, context_key)
+                notifications = context["notifications"]
+                notification_state = notifications.setdefault("exclusion_flags", {})
+                _finish_notification(
+                    notification_state, notification_event_id,
+                    notification_sent, transport_error,
+                )
+                if notification_sent:
+                    # Retain the historical marker for readers during a rolling
+                    # deployment while the nested state becomes canonical.
+                    notifications["exclusion_flags_sent_at"] = notification_state["sent_at"]
+        except Exception as exc:
+            log_event(
+                f"[MetaFemina] Could not persist exclusion email result for PMID {pmid}: {exc}"
+            )
+            notification_pending = True
 
-    save_json(VERIFICATIONS_FILE, verifications)
-    
-    return jsonify({
+    return _json_response({
         "success": True,
         "pmid": pmid,
         "context_key": context_key,
         "exclusions": exclusion_count,
+        "already_flagged": already_flagged,
         "review_requested": exclusion_count >= 2,
         "notification_sent": notification_sent,
         "notification_already_sent": notification_already_sent,
-        "results_changed": False
+        "notification_pending": notification_pending,
+        "notification_error_code": notification_error_code,
+        "results_changed": False,
     })
 
 @app.route('/reanalyze', methods=['POST'])

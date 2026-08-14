@@ -92,7 +92,7 @@
             "exposure_measurement_type": "human_biospecimen",
             "exposure_measurement_supporting_text": "BCAAs were quantified via NMR spectroscopy, log-transformed, and standardized.",
             "extraction_supporting_text": {
-                "sample_size": "N\u2009=\u200926,711",
+                "sample_size": "N = 26,711",
                 "effect_size": "modest association for leucine with obesity-related cancers (1.04 [1.00-1.08])",
                 "effect_direction": "positive associations between leucine and postmenopausal breast cancer",
                 "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.046.",
@@ -152,93 +152,6 @@
             },
             "exclusions": null,
             "P Value": 0.00029304285749023033
-        },
-        {
-            "Study": "Yang PJ et al. (2024) [PMID: 38652345]",
-            "PMID": "38652345",
-            "Effect Size": 0.36,
-            "Lower CI": 0.18,
-            "Upper CI": 0.72,
-            "Population": "General",
-            "Reference": "Global untargeted and individual targeted plasma metabolomics of breast cancer recurrence modified by hormone receptors.",
-            "Authors": "Yang PJ, Tsai EM, Hou MF, Lee YJ, Wang TN",
-            "Journal": "Breast cancer (Tokyo, Japan)",
-            "Year": "2024",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/38652345/",
-            "Effect Type": "HR",
-            "SE": 0.13775510204081634,
-            "Sample Size": 289,
-            "Cases": 41.0,
-            "Estimated Cases": null,
-            "Design": "Cohort",
-            "Timing": "Prospective",
-            "Continent": "Asia",
-            "Stage": "Recurrent",
-            "Quality %": 100.0,
-            "Quality Score": "Good",
-            "comparison_type": "High vs Low",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Yes",
-                "q10": "Yes",
-                "q11": "Yes"
-            },
-            "exposure_measurement_type": null,
-            "exposure_measurement_supporting_text": null,
-            "extraction_supporting_text": {
-                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.004."
-            },
-            "exclusions": 2.0,
-            "P Value": 0.003865856884492467
-        },
-        {
-            "Study": "Sharma S et al. (2025) [PMID: 41189935]",
-            "PMID": "41189935",
-            "Effect Size": 0.57,
-            "Lower CI": 0.36,
-            "Upper CI": 0.91,
-            "Population": "General",
-            "Reference": "Plasma branched-chain amino acids and risk of radiation-induced acute skin toxicity in women with breast cancer: results from the ATHENA project.",
-            "Authors": "Sharma S, Bracone F, Di Castelnuovo A, Ruggiero E, De Curtis A, Cerletti C, de Gaetano G, Deodato F, Macchia G, Boccardi M, Cilla S, Morganti AG, Mattivi F, Anesi A, Petroni K, Tonelli C, Donati MB, Iacoviello L, Bonaccio M",
-            "Journal": "Frontiers in oncology",
-            "Year": "2025",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/41189935/",
-            "Effect Type": "OR",
-            "SE": 0.1403061224489796,
-            "Sample Size": 161,
-            "Cases": 45.0,
-            "Estimated Cases": null,
-            "Design": "Observational",
-            "Timing": "Prospective",
-            "Continent": "Europe",
-            "Stage": "NA",
-            "Quality %": 87.5,
-            "Quality Score": "Good",
-            "comparison_type": "per SD increase",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Unclear",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes"
-            },
-            "exposure_measurement_type": null,
-            "exposure_measurement_supporting_text": null,
-            "extraction_supporting_text": {
-                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.017."
-            },
-            "exclusions": 2.0,
-            "P Value": 0.017494049387755922
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Nouri-Majd S et al. (2022) [PMID: 35794412]</th>\n      <td>-0.6259</td>\n      <td>0.1780</td>\n      <td>-0.9748</td>\n      <td>-0.2771</td>\n      <td>350.0</td>\n      <td>1050.0</td>\n    </tr>\n    <tr>\n      <th>Tobias DK et al. (2020) [PMID: 33024201]</th>\n      <td>0.0365</td>\n      <td>0.0182</td>\n      <td>0.0007</td>\n      <td>0.0723</td>\n      <td>-</td>\n      <td>26711.0</td>\n    </tr>\n    <tr>\n      <th>Tobias DK et al. (2021) [PMID: 34632269]</th>\n      <td>0.0454</td>\n      <td>0.0316</td>\n      <td>-0.0166</td>\n      <td>0.1074</td>\n      <td>10046.0</td>\n      <td>196161.0</td>\n    </tr>\n  </tbody>\n</table>",
@@ -252,7 +165,7 @@
         "i2": 85.61,
         "tau2": 0.01,
         "eggers_p": 0.29415827301234365,
-        "funnel_interpretation": "Egger\u2019s test is generally not recommended when fewer than 10 studies are available.",
+        "funnel_interpretation": "Egger’s test is generally not recommended when fewer than 10 studies are available.",
         "loo_results": [
             {
                 "omitted": "Nouri-Majd S et al. (2022) [PMID: 35794412]",
@@ -278,7 +191,7 @@
         ],
         "baseline_risk": 0.13,
         "baseline_risk_percent": 13.0,
-        "results_interpretation": "The pooled analysis of 3 studies yielded an effect size of 0.98 (95% CI: 0.87\u20131.1), indicating no statistically significant association between BCAAs and breast cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 85.61%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 3 studies yielded an effect size of 0.98 (95% CI: 0.87–1.1), indicating no statistically significant association between BCAAs and breast cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I² = 85.61%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 0,
@@ -297,8 +210,8 @@
         },
         "extracted": 3
     },
-    "plot_url": "static/bcaas/forest_breast_cancer_incidence_primary.png?t=6787",
-    "funnel_plot_url": "static/bcaas/funnel_breast_cancer_incidence_primary.png?t=4504",
-    "baujat_plot_url": "static/bcaas/baujat_breast_cancer_incidence_primary.png?t=5841",
+    "plot_url": "static/bcaas/forest_breast_cancer_incidence_primary.png?t=7807",
+    "funnel_plot_url": "static/bcaas/funnel_breast_cancer_incidence_primary.png?t=3887",
+    "baujat_plot_url": "static/bcaas/baujat_breast_cancer_incidence_primary.png?t=4303",
     "last_run": "2026-06-14 13:54:24"
 }

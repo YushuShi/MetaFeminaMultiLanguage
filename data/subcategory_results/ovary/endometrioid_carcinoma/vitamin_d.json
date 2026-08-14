@@ -38,7 +38,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "564301d04ef1b8713c7b4c29fedf115d21b3e26266e20577777c5bd11ac6dc6b",
+  "input_fingerprint": "72f39611cfbd5fba7470546279c46e4051625267f37ee8a60d7e5970e0b6dec1",
   "plot_url": "Plot/subcategories/ovary/endometrioid_carcinoma/vitamin_d_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/ovary/endometrioid_carcinoma/vitamin_d_baujat.png",
@@ -92,13 +92,14 @@
       "effect_size": 0.55,
       "effect_type": "OR",
       "evidence_locator": "For endometrioid tumors, total vitamin D Q4 vs Q1 OR=0.55, 95% CI 0.39–0.80.",
-      "evidence_source": "luna",
+      "evidence_source": "manual_source_review",
       "exposure_measurement_supporting_text": "total (dietary plus supplements) calcium, total vitamin D and lactose",
       "exposure_measurement_type": "dietary_intake",
       "extraction_supporting_text": {
         "confidence_interval": "For endometrioid tumors, total vitamin D Q4 vs Q1 OR=0.55, 95% CI 0.39–0.80.",
         "effect_size": "For endometrioid tumors, total vitamin D Q4 vs Q1 OR=0.55, 95% CI 0.39–0.80.",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "Controls (N=1989) ... Endometrioid (N=305)."
       },
       "jbi": {
         "q1": "Yes",
@@ -120,6 +121,7 @@
       "quality_score": "Good",
       "reference": "Dairy foods and nutrients in relation to risk of ovarian cancer and major histological subtypes.",
       "sample_size": 2294.0,
+      "sample_size_supporting_text": "Controls (N=1989) ... Endometrioid (N=305).",
       "se": null,
       "study": "Merritt MA et al. (2013) [PMID: 22740148]",
       "upper_ci": 0.8,

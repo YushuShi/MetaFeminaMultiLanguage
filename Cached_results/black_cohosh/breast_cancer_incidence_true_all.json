@@ -97,86 +97,22 @@
                 "outcome_definition": "incident breast cancer were investigated",
                 "exposure_definition": "herbal preparations (HEP) containing phytoestrogens and black cohosh"
             }
-        },
-        {
-            "Study": "Henneicke-von Zepelin HH et al. (2007) [PMID: 17416109]",
-            "PMID": "17416109",
-            "Effect Size": 0.83,
-            "Lower CI": 0.69,
-            "Upper CI": 0.99,
-            "Population": "General",
-            "Reference": "Isopropanolic black cohosh extract and recurrence-free survival after breast cancer.",
-            "Authors": "Henneicke-von Zepelin HH, Meden H, Kostev K, Schr\u00f6der-Bernhardi D, Stammwitz U, Becher H",
-            "Journal": "International journal of clinical pharmacology and therapeutics",
-            "Year": "2007",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/17416109/",
-            "Effect Type": "HR",
-            "SE": 0.07653061224489797,
-            "Sample Size": 18861,
-            "Cases": 1102,
-            "Design": "Cohort",
-            "Timing": "Retrospective",
-            "Continent": "Europe",
-            "Stage": "Not specified",
-            "Quality %": 100.0,
-            "Quality Score": "Good",
-            "comparison_type": "Yes vs No",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Yes",
-                "q10": "Yes",
-                "q11": "Yes"
-            },
-            "exclusions": 2,
-            "extraction_supporting_text": {
-                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.043."
-            },
-            "P Value": 0.04304974963005617
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Rebbeck TR et al. (2007) [PMID: 17205521]</th>\n      <td>-0.8590</td>\n      <td>0.2781</td>\n      <td>-1.4041</td>\n      <td>-0.3138</td>\n      <td>949.0</td>\n      <td>2473.0</td>\n    </tr>\n    <tr>\n      <th>Obi N et al. (2009) [PMID: 19661079]</th>\n      <td>-0.2667</td>\n      <td>0.0741</td>\n      <td>-0.4120</td>\n      <td>-0.1215</td>\n      <td>3464.0</td>\n      <td>10121.0</td>\n    </tr>\n    <tr>\n      <th>Henneicke-von Zepelin HH et al. (2007) [PMID: 17416109]</th>\n      <td>-0.1747</td>\n      <td>0.0869</td>\n      <td>-0.3450</td>\n      <td>-0.0045</td>\n      <td>1102.0</td>\n      <td>18861.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Rebbeck TR et al. (2007) [PMID: 17205521]</th>\n      <td>-0.8590</td>\n      <td>0.2781</td>\n      <td>-1.4041</td>\n      <td>-0.3138</td>\n      <td>949.0</td>\n      <td>2473.0</td>\n    </tr>\n    <tr>\n      <th>Obi N et al. (2009) [PMID: 19661079]</th>\n      <td>-0.2667</td>\n      <td>0.0741</td>\n      <td>-0.4120</td>\n      <td>-0.1215</td>\n      <td>3464.0</td>\n      <td>10121.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
-        "pooled_es": 0.74,
-        "ci_low": 0.6,
-        "ci_upp": 0.92,
-        "pi_low": 0.07,
-        "pi_upp": 7.42,
-        "interpretation": "Statistically significant (decreased risk/odds)",
-        "i2": 64.24,
-        "tau2": 0.02,
-        "eggers_p": 0.3220215410089055,
-        "funnel_interpretation": "Egger\u2019s test is generally not recommended when fewer than 10 studies are available.",
-        "loo_results": [
-            {
-                "omitted": "Rebbeck TR et al. (2007) [PMID: 17205521]",
-                "pooled_es": 0.7930282669065518,
-                "ci_low": 0.7266314191589176,
-                "ci_upp": 0.8654922090222295,
-                "is_significant": true
-            },
-            {
-                "omitted": "Obi N et al. (2009) [PMID: 19661079]",
-                "pooled_es": 0.6276024808163707,
-                "ci_low": 0.32338954310060636,
-                "ci_upp": 1.2179889001677633,
-                "is_significant": false
-            },
-            {
-                "omitted": "Henneicke-von Zepelin HH et al. (2007) [PMID: 17416109]",
-                "pooled_es": 0.6052097159310026,
-                "ci_low": 0.34291315520753396,
-                "ci_upp": 1.06813866629179,
-                "is_significant": false
-            }
-        ],
-        "results_interpretation": "The pooled analysis of 3 studies yielded an overall effect size of 0.74 (95% CI: 0.6\u20130.92), suggesting that black_cohosh is associated with a lower risk of breast cancer. However, this association should be interpreted with caution, as there was substantial between-study heterogeneity (I\u00b2 = 64.24%), reflecting considerable variability across studies."
+        "pooled_es": 0.61,
+        "ci_low": 0.34,
+        "ci_upp": 1.07,
+        "pi_low": null,
+        "pi_upp": null,
+        "interpretation": "Not statistically significant",
+        "i2": 76.38,
+        "tau2": 0.13,
+        "eggers_p": null,
+        "funnel_interpretation": "Insufficient studies to perform formal publication bias testing.",
+        "loo_results": [],
+        "results_interpretation": "The pooled analysis of 2 studies yielded an effect size of 0.61 (95% CI: 0.34–1.07), indicating no statistically significant association between black cohosh and breast cancer. Although the point estimate suggests a potential inverse relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I² = 76.38%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 7,
@@ -195,8 +131,8 @@
         },
         "extracted": 2
     },
-    "plot_url": "static/black_cohosh/forest_breast_cancer_incidence_primary.png?t=5654",
-    "funnel_plot_url": "static/black_cohosh/funnel_breast_cancer_incidence_primary.png?t=8850",
-    "baujat_plot_url": "static/black_cohosh/baujat_breast_cancer_incidence_primary.png?t=3855",
+    "plot_url": "static/black_cohosh/forest_breast_cancer_incidence_primary.png?t=2191",
+    "funnel_plot_url": "static/black_cohosh/funnel_breast_cancer_incidence_primary.png?t=385",
+    "baujat_plot_url": null,
     "last_run": "2026-06-14 14:23:06"
 }

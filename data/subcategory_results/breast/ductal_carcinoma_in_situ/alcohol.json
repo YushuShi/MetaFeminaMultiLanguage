@@ -38,7 +38,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Ductal carcinoma in situ estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "2025a907e562097ad3037263e3faa20833816760c0533acc1dc6971587c626c9",
+  "input_fingerprint": "6cd9f36d25f7f61dd14f7471beb622b6b1d53d56a9899b1cdb2b3f72fdc652d0",
   "plot_url": "Plot/subcategories/breast/ductal_carcinoma_in_situ/alcohol_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/ductal_carcinoma_in_situ/alcohol_baujat.png",
@@ -99,7 +99,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "After adjustment for covariates, the hazard ratio for DCIS among women who consumed 14 or more servings of alcohol per week, relative to nondrinkers, was 0.87 (95% confidence interval, 0.50-1.51).",
         "effect_size": "After adjustment for covariates, the hazard ratio for DCIS among women who consumed 14 or more servings of alcohol per week, relative to nondrinkers, was 0.87 (95% confidence interval, 0.50-1.51).",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "The cohort consisted of 63,822 women with information on alcohol intake."
       },
       "jbi": {
         "q1": "Yes",
@@ -122,6 +123,7 @@
       "quality_score": "Good",
       "reference": "Alcohol consumption and risk of ductal carcinoma in situ of the breast in a cohort of postmenopausal women.",
       "sample_size": 63822.0,
+      "sample_size_supporting_text": "The cohort consisted of 63,822 women with information on alcohol intake.",
       "se": null,
       "study": "Kabat GC et al. (2010) [PMID: 20647412]",
       "upper_ci": 1.51,

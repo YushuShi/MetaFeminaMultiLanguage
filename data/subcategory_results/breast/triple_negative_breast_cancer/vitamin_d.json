@@ -26,8 +26,8 @@
     "baseline_risk_percent": 1.3,
     "ci_low": 0.4084940483272002,
     "ci_upp": 2.423556440213379,
-    "eggers_intercept": -1.6657542072819738,
-    "eggers_p": 0.7500727433996219,
+    "eggers_intercept": -1.6657542072819744,
+    "eggers_p": 0.7500727433996217,
     "funnel_interpretation": "Formal Egger's testing requires at least 10 eligible studies.",
     "i2": 92.80515746310269,
     "interpretation": "The pooled subtype-specific estimate is 0.99, indicating a lower relative association for this exposure.",
@@ -67,7 +67,7 @@
     "results_interpretation": "This saved analysis contains 4 separately reported Triple-negative breast cancer estimates.",
     "tau2": 0.7245867432177271
   },
-  "input_fingerprint": "f17c5ea353d95f31c7eb6ce3a32359d8c6963e1f002cc2a8b31681c7283e23ba",
+  "input_fingerprint": "19c2bba5cea0d224f901d24898663d1909922913893306b2dfb2fb59e7d0be12",
   "plot_url": "Plot/subcategories/breast/triple_negative_breast_cancer/vitamin_d_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/triple_negative_breast_cancer/vitamin_d_baujat.png",
@@ -127,7 +127,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "\"every 10 ng/mL increase in serum 25OHD concentrations was associated with a 64% lower odds of having triple-negative cancer (OR = 0.36, 95% CI = 0.22-0.56)\"",
         "effect_size": "\"every 10 ng/mL increase in serum 25OHD concentrations was associated with a 64% lower odds of having triple-negative cancer (OR = 0.36, 95% CI = 0.22-0.56)\"",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "579 women with incident breast cancer and 574 controls matched on age and time of blood draw"
       },
       "jbi": {
         "q1": "Yes",
@@ -149,6 +150,7 @@
       "quality_score": "Good",
       "reference": "Pretreatment serum concentrations of 25-hydroxyvitamin D and breast cancer prognostic characteristics: a case-control and a case-series study.",
       "sample_size": 1153.0,
+      "sample_size_supporting_text": "579 women with incident breast cancer and 574 controls matched on age and time of blood draw",
       "se": null,
       "study": "Yao S et al. (2011) [PMID: 21386992]",
       "upper_ci": 0.56,
@@ -197,7 +199,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "\"particularly with triple-negative breast cancer patients (1.45, 95 % CI 1.15-1.82)\"",
         "effect_size": "\"particularly with triple-negative breast cancer patients (1.45, 95 % CI 1.15-1.82)\"",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "breast cancer patients (N = 3634) and general population (N = 17,133)"
       },
       "jbi": {
         "q1": "Yes",
@@ -219,6 +222,7 @@
       "quality_score": "Good",
       "reference": "Serum 25-hydroxyvitamin D deficiency and increased risk of breast cancer among Korean women: a case-control study.",
       "sample_size": 20767.0,
+      "sample_size_supporting_text": "breast cancer patients (N = 3634) and general population (N = 17,133)",
       "se": null,
       "study": "Park S et al. (2015) [PMID: 26037255]",
       "upper_ci": 1.82,
@@ -267,7 +271,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "\"The 25(OH)D3 below 20 ng/mL was significantly associated with triple negative breast cancer (TNBC) in African-Americans (OR = 5.4, p = 0.02, 95% CI = 1.4-15)\"",
         "effect_size": "\"The 25(OH)D3 below 20 ng/mL was significantly associated with triple negative breast cancer (TNBC) in African-Americans (OR = 5.4, p = 0.02, 95% CI = 1.4-15)\"",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "A total of 237 African-American (Cases = 119, Control = 118) and 423 Hispanic women (Cases = 124, Control = 299) were recruited in the study."
       },
       "jbi": {
         "q1": "Yes",
@@ -289,6 +294,7 @@
       "quality_score": "Good",
       "reference": "Association of Vitamin D3 Level with Breast Cancer Risk and Prognosis in African-American and Hispanic Women.",
       "sample_size": 660.0,
+      "sample_size_supporting_text": "A total of 237 African-American (Cases = 119, Control = 118) and 423 Hispanic women (Cases = 124, Control = 299) were recruited in the study.",
       "se": null,
       "study": "Wu Y et al. (2017) [PMID: 29064397]",
       "upper_ci": 15.0,
@@ -337,7 +343,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "\"highest compared with lowest quartile: TNBC OR: 0.53; 95% CI: 0.31, 0.91\"",
         "effect_size": "\"highest compared with lowest quartile: TNBC OR: 0.53; 95% CI: 0.31, 0.91\"",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "This study was conducted among 1724 black cases and 1233 controls"
       },
       "jbi": {
         "q1": "Yes",
@@ -359,6 +366,7 @@
       "quality_score": "Good",
       "reference": "Intake of vitamin D and calcium, sun exposure, and risk of breast cancer subtypes among black women.",
       "sample_size": 2957.0,
+      "sample_size_supporting_text": "This study was conducted among 1724 black cases and 1233 controls",
       "se": null,
       "study": "Qin B et al. (2020) [PMID: 31826233]",
       "upper_ci": 0.91,

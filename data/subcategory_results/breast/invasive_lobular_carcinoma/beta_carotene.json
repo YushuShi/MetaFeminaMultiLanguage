@@ -38,7 +38,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Invasive lobular carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "800c66edc4486426bdaebbaad16810085e9cd5c6c9265cf582cf42555cf42bb6",
+  "input_fingerprint": "344ce1d968a8e3a3e76c294dca75b35ce0626ca996354bfce74a40f283e7b0ac",
   "plot_url": "Plot/subcategories/breast/invasive_lobular_carcinoma/beta_carotene_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/invasive_lobular_carcinoma/beta_carotene_baujat.png",
@@ -99,7 +99,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "Dietary but not supplemental beta-carotene showed a protective effect against lobular breast cancer [IRR: 0.72; 95% CI: 0.57-0.91].",
         "effect_size": "Dietary but not supplemental beta-carotene showed a protective effect against lobular breast cancer [IRR: 0.72; 95% CI: 0.57-0.91].",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "In a prospective cohort study of 26,224 postmenopausal women"
       },
       "jbi": {
         "q1": "Yes",
@@ -122,6 +123,7 @@
       "quality_score": "Good",
       "reference": "Micronutrient intake and breast cancer characteristics among postmenopausal women.",
       "sample_size": 26224.0,
+      "sample_size_supporting_text": "In a prospective cohort study of 26,224 postmenopausal women",
       "se": null,
       "study": "Roswall N et al. (2010) [PMID: 20698054]",
       "upper_ci": 0.91,

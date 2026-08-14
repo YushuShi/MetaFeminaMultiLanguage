@@ -41,6 +41,24 @@ MetaFemina conducts nutritional exposure meta-analyses across breast, ovarian, a
       SMTP_FROM=your_sender@gmail.com
       ```
       For Gmail, use an app password rather than the account's normal password.
+    - Keep review identities and flags stable across restarts:
+      ```
+      REPORTER_ID_SECRET=a-long-random-secret-kept-stable-across-deploys
+      VERIFICATIONS_FILE=/path/on/persistent-storage/verifications.json
+      ```
+      The anonymous identity distinguishes signed browser installations, not
+      authenticated people. Clearing cookies or changing devices creates a new
+      reviewer identity. Use authenticated user IDs if person-level identity is
+      required.
+
+### Render review storage
+
+`render.yaml` mounts a persistent disk at `/var/data` and writes review state to
+`/var/data/verifications.json`. Set the three `SMTP_*` secret values and
+`REPORTER_ID_SECRET` in the Render dashboard; entries marked `sync: false` are
+declarations, not secret values. A Render disk is attached to one service
+instance, so move review state to a transactional shared database before
+scaling the web service to multiple instances.
 
 ## Usage
 

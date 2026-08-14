@@ -38,7 +38,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Triple-negative breast cancer estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "be2688f45e5d0559a470638e82ed6c523d6841e410acb57ae163c6593a21d216",
+  "input_fingerprint": "361dd4fc64dc64da32ff9285fdb049acea918ca2933fb101c41b416240eb5765",
   "plot_url": "Plot/subcategories/breast/triple_negative_breast_cancer/mediterranean_diet_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/breast/triple_negative_breast_cancer/mediterranean_diet_baujat.png",
@@ -98,7 +98,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "The Mediterranean pattern was related to lower breast cancer risk for top versus bottom quartile, and its protective effect was stronger for triple-negative tumours (OR=0.32; 95% CI 0.15-0.66).",
         "effect_size": "The Mediterranean pattern was related to lower breast cancer risk for top versus bottom quartile, and its protective effect was stronger for triple-negative tumours (OR=0.32; 95% CI 0.15-0.66).",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "We recruited 1017 incident BC cases and 1017 matched healthy controls"
       },
       "jbi": {
         "q1": "Yes",
@@ -120,6 +121,7 @@
       "quality_score": "Good",
       "reference": "Spanish Mediterranean diet and other dietary patterns and breast cancer risk: case-control EpiGEICAM study.",
       "sample_size": 2034.0,
+      "sample_size_supporting_text": "We recruited 1017 incident BC cases and 1017 matched healthy controls",
       "se": null,
       "study": "Castelló A et al. (2014) [PMID: 25101568]",
       "upper_ci": 0.66,

@@ -91,7 +91,7 @@
                 "sample_size": "1186 incident cases were identified and matched to an equal number of controls.",
                 "effect_size": "The adjusted OR for breast cancer in serum zinc Q4 compared to Q1 was 1.09 (0.85-1.41).",
                 "effect_direction": "No associations were found between zinc, measured in serum or diet pre-diagnostically, and breast cancer risk.",
-                "p_value": "P\u2009=\u20090.022",
+                "p_value": "P = 0.022",
                 "confidence_interval": "1.09 (0.85-1.41)",
                 "outcome_definition": "Breast cancer risk was assessed in relation to serum zinc levels.",
                 "exposure_definition": "Serum zinc was measured as a marker of dietary intake."
@@ -251,7 +251,7 @@
             "Upper CI": 1.69,
             "Population": "General",
             "Reference": "Dietary Antioxidant Vitamins and Minerals and Breast Cancer Risk: Prospective Results from the SUN Cohort.",
-            "Authors": "Fernandez-Lazaro CI, Mart\u00ednez-Gonz\u00e1lez M\u00c1, Aguilera-Buenosvinos I, Gea A, Ruiz-Canela M, Romanos-Nanclares A, Toledo E",
+            "Authors": "Fernandez-Lazaro CI, Martínez-González MÁ, Aguilera-Buenosvinos I, Gea A, Ruiz-Canela M, Romanos-Nanclares A, Toledo E",
             "Journal": "Antioxidants (Basel, Switzerland)",
             "Year": "2021",
             "Link": "https://pubmed.ncbi.nlm.nih.gov/33668391/",
@@ -438,48 +438,9 @@
                 "exposure_definition": "10 years or longer supplementation of zinc."
             },
             "P Value": 0.012868835609721303
-        },
-        {
-            "Study": "Lubi\u0144ski J et al. (2023) [PMID: 37299574]",
-            "PMID": "37299574",
-            "Effect Size": 0.55,
-            "Lower CI": 0.41,
-            "Upper CI": 0.75,
-            "Population": "General",
-            "Reference": "Serum Essential Elements and Survival after Cancer Diagnosis.",
-            "Authors": "Lubi\u0144ski J, Lener MR, Marciniak W, Pietrzak S, Derkacz R, Cybulski C, Gronwald J, D\u0119bniak T, Jakubowska A, Huzarski T, Matuszczak M, Pullella K, Sun P, Narod SA",
-            "Journal": "Nutrients",
-            "Year": "2023",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/37299574/",
-            "Effect Type": "RR",
-            "SE": 0.08673469387755103,
-            "Sample Size": 1475,
-            "Cases": 514,
-            "Estimated Cases": null,
-            "Design": "Cohort",
-            "Timing": "Prospective",
-            "Continent": "Other",
-            "Stage": "NA",
-            "Quality %": 0.0,
-            "Quality Score": "Fair",
-            "comparison_type": "Highest vs Lowest quartile",
-            "JBI": {},
-            "exposure_measurement_type": "unclear",
-            "exposure_measurement_supporting_text": "",
-            "extraction_supporting_text": {
-                "sample_size": "",
-                "effect_size": "",
-                "effect_direction": "",
-                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.042e-04.",
-                "confidence_interval": "",
-                "outcome_definition": "",
-                "exposure_definition": ""
-            },
-            "exclusions": 0,
-            "P Value": 0.00010422432833989704
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Adzersen KH et al. (2003) [PMID: 14690788]</th>\n      <td>-0.9615</td>\n      <td>0.3981</td>\n      <td>-1.7418</td>\n      <td>-0.1813</td>\n      <td>310.0</td>\n      <td>663.0</td>\n    </tr>\n    <tr>\n      <th>Pan SY et al. (2011) [PMID: 21864361]</th>\n      <td>-0.7037</td>\n      <td>0.2910</td>\n      <td>-1.2742</td>\n      <td>-0.1333</td>\n      <td>2362.0</td>\n      <td>4824.0</td>\n    </tr>\n    <tr>\n      <th>Lubi\u0144ski J et al. (2023) [PMID: 37299574]</th>\n      <td>-0.5978</td>\n      <td>0.1541</td>\n      <td>-0.8998</td>\n      <td>-0.2959</td>\n      <td>514.0</td>\n      <td>1475.0</td>\n    </tr>\n    <tr>\n      <th>Tu K et al. (2023) [PMID: 37513671]</th>\n      <td>-0.2427</td>\n      <td>0.1014</td>\n      <td>-0.4415</td>\n      <td>-0.0440</td>\n      <td>1591.0</td>\n      <td>3213.0</td>\n    </tr>\n    <tr>\n      <th>Fernandez-Lazaro CI et al. (2021) [PMID: 33668391]</th>\n      <td>0.0093</td>\n      <td>0.2413</td>\n      <td>-0.4636</td>\n      <td>0.4822</td>\n      <td>107.0</td>\n      <td>9983.0</td>\n    </tr>\n    <tr>\n      <th>Bengtsson Y et al. (2021) [PMID: 34224055]</th>\n      <td>0.0745</td>\n      <td>0.1108</td>\n      <td>-0.1427</td>\n      <td>0.2918</td>\n      <td>1186.0</td>\n      <td>2372.0</td>\n    </tr>\n    <tr>\n      <th>Garland M et al. (1996) [PMID: 8823061]</th>\n      <td>0.0745</td>\n      <td>0.1940</td>\n      <td>-0.3057</td>\n      <td>0.4548</td>\n      <td>433.0</td>\n      <td>62641.0</td>\n    </tr>\n    <tr>\n      <th>Cui Y et al. (2007) [PMID: 17684146]</th>\n      <td>0.2678</td>\n      <td>0.1715</td>\n      <td>-0.0684</td>\n      <td>0.6040</td>\n      <td>252.0</td>\n      <td>9315.0</td>\n    </tr>\n    <tr>\n      <th>Cavallo F et al. (1991) [PMID: 1985767]</th>\n      <td>1.5070</td>\n      <td>0.1398</td>\n      <td>1.2330</td>\n      <td>1.7810</td>\n      <td>261.0</td>\n      <td>522.0</td>\n    </tr>\n    <tr>\n      <th>Gerber M et al. (1990) [PMID: 2399562]</th>\n      <td>1.6029</td>\n      <td>0.1505</td>\n      <td>1.3080</td>\n      <td>1.8978</td>\n      <td>319.0</td>\n      <td>663.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Adzersen KH et al. (2003) [PMID: 14690788]</th>\n      <td>-0.9615</td>\n      <td>0.3981</td>\n      <td>-1.7418</td>\n      <td>-0.1813</td>\n      <td>310.0</td>\n      <td>663.0</td>\n    </tr>\n    <tr>\n      <th>Pan SY et al. (2011) [PMID: 21864361]</th>\n      <td>-0.7037</td>\n      <td>0.2910</td>\n      <td>-1.2742</td>\n      <td>-0.1333</td>\n      <td>2362.0</td>\n      <td>4824.0</td>\n    </tr>\n    <tr>\n      <th>Lubiński J et al. (2023) [PMID: 37299574]</th>\n      <td>-0.5978</td>\n      <td>0.1541</td>\n      <td>-0.8998</td>\n      <td>-0.2959</td>\n      <td>514.0</td>\n      <td>1475.0</td>\n    </tr>\n    <tr>\n      <th>Tu K et al. (2023) [PMID: 37513671]</th>\n      <td>-0.2427</td>\n      <td>0.1014</td>\n      <td>-0.4415</td>\n      <td>-0.0440</td>\n      <td>1591.0</td>\n      <td>3213.0</td>\n    </tr>\n    <tr>\n      <th>Fernandez-Lazaro CI et al. (2021) [PMID: 33668391]</th>\n      <td>0.0093</td>\n      <td>0.2413</td>\n      <td>-0.4636</td>\n      <td>0.4822</td>\n      <td>107.0</td>\n      <td>9983.0</td>\n    </tr>\n    <tr>\n      <th>Bengtsson Y et al. (2021) [PMID: 34224055]</th>\n      <td>0.0745</td>\n      <td>0.1108</td>\n      <td>-0.1427</td>\n      <td>0.2918</td>\n      <td>1186.0</td>\n      <td>2372.0</td>\n    </tr>\n    <tr>\n      <th>Garland M et al. (1996) [PMID: 8823061]</th>\n      <td>0.0745</td>\n      <td>0.1940</td>\n      <td>-0.3057</td>\n      <td>0.4548</td>\n      <td>433.0</td>\n      <td>62641.0</td>\n    </tr>\n    <tr>\n      <th>Cui Y et al. (2007) [PMID: 17684146]</th>\n      <td>0.2678</td>\n      <td>0.1715</td>\n      <td>-0.0684</td>\n      <td>0.6040</td>\n      <td>252.0</td>\n      <td>9315.0</td>\n    </tr>\n    <tr>\n      <th>Cavallo F et al. (1991) [PMID: 1985767]</th>\n      <td>1.5070</td>\n      <td>0.1398</td>\n      <td>1.2330</td>\n      <td>1.7810</td>\n      <td>261.0</td>\n      <td>522.0</td>\n    </tr>\n    <tr>\n      <th>Gerber M et al. (1990) [PMID: 2399562]</th>\n      <td>1.6029</td>\n      <td>0.1505</td>\n      <td>1.3080</td>\n      <td>1.8978</td>\n      <td>319.0</td>\n      <td>663.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 1.14,
         "ci_low": 0.68,
@@ -507,7 +468,7 @@
                 "is_significant": false
             },
             {
-                "omitted": "Lubi\u0144ski J et al. (2023) [PMID: 37299574]",
+                "omitted": "Lubiński J et al. (2023) [PMID: 37299574]",
                 "pooled_es": 1.2367827700418217,
                 "ci_low": 0.7017055277077175,
                 "ci_upp": 2.1798768284884615,
@@ -563,7 +524,7 @@
                 "is_significant": false
             }
         ],
-        "results_interpretation": "The pooled analysis of 10 studies yielded an effect size of 1.14 (95% CI: 0.68\u20131.91), indicating no statistically significant association between zinc and uterine cancer. Although the point estimate suggests a potential positive relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I\u00b2 = 96.25%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 10 studies yielded an effect size of 1.14 (95% CI: 0.68–1.91), indicating no statistically significant association between zinc and uterine cancer. Although the point estimate suggests a potential positive relationship, the confidence interval includes the null. These findings were accompanied by very high heterogeneity (I² = 96.25%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 299,

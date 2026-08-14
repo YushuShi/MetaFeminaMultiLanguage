@@ -38,7 +38,7 @@
     "results_interpretation": "This saved analysis contains 1 separately reported Endometrioid carcinoma estimate.",
     "tau2": 0.0
   },
-  "input_fingerprint": "9bd20c0d3c935015063246bfc29563404c95092083232fbb293edc21ae3def58",
+  "input_fingerprint": "3150255ec36c12f37b37eee7008f8093ebb8fa1f4a0685b5ede5ee1a3dee18fb",
   "plot_url": "Plot/subcategories/ovary/endometrioid_carcinoma/dairy_forest.png",
   "plot_urls": {
     "baujat": "Plot/subcategories/ovary/endometrioid_carcinoma/dairy_baujat.png",
@@ -99,7 +99,8 @@
       "extraction_supporting_text": {
         "confidence_interval": "Lactose intake in adulthood was inversely associated with risk of endometrioid EOC (HR 0.32, 95% CI 0.16-0.65, p(trend) < 0.001).",
         "effect_size": "Lactose intake in adulthood was inversely associated with risk of endometrioid EOC (HR 0.32, 95% CI 0.16-0.65, p(trend) < 0.001).",
-        "outcome_definition": ""
+        "outcome_definition": "",
+        "sample_size": "The analytic population after exclusions comprised 76,243 NHS and 88,356 NHSII participants; the reported pooled adult cumulative-average lactose estimate was analyzed in these NHS/NHSII cohorts."
       },
       "jbi": {
         "q1": "Yes",
@@ -122,6 +123,7 @@
       "quality_score": "Good",
       "reference": "Dairy food and nutrient intake in different life periods in relation to risk of ovarian cancer.",
       "sample_size": 164599.0,
+      "sample_size_supporting_text": "The analytic population after exclusions comprised 76,243 NHS and 88,356 NHSII participants; the reported pooled adult cumulative-average lactose estimate was analyzed in these NHS/NHSII cohorts.",
       "se": null,
       "study": "Merritt MA et al. (2014) [PMID: 24722953]",
       "upper_ci": 0.65,

@@ -58,7 +58,7 @@
             "Upper CI": 0.91,
             "Population": "General",
             "Reference": "Mediterranean dietary pattern is associated with lower incidence of premenopausal breast cancer in the Seguimiento Universidad de Navarra (SUN) Project.",
-            "Authors": "Gardeazabal I, Romanos-Nanclares A, Mart\u00ednez-Gonz\u00e1lez M\u00c1, Castell\u00f3 A, S\u00e1nchez-Bayona R, P\u00e9rez-G\u00f3mez B, Razquin C, Aramendia-Beitia JM, Poll\u00e1n M, Toledo E",
+            "Authors": "Gardeazabal I, Romanos-Nanclares A, Martínez-González MÁ, Castelló A, Sánchez-Bayona R, Pérez-Gómez B, Razquin C, Aramendia-Beitia JM, Pollán M, Toledo E",
             "Journal": "Public health nutrition",
             "Year": "2020",
             "Link": "https://pubmed.ncbi.nlm.nih.gov/32090723/",
@@ -91,10 +91,10 @@
             "exposure_measurement_supporting_text": "DPs were ascertained through a principal component analysis based on 31 predefined food groups.",
             "extraction_supporting_text": {
                 "sample_size": "We included 10 713 young and middle-aged - mainly premenopausal - women.",
-                "effect_size": "adherence to a MDP was inversely associated with premenopausal BC (multivariable-adjusted HR Q4 v. Q1 0\u00b733; 95 % CI 0\u00b712, 0\u00b791)",
+                "effect_size": "adherence to a MDP was inversely associated with premenopausal BC (multivariable-adjusted HR Q4 v. Q1 0·33; 95 % CI 0·12, 0·91)",
                 "effect_direction": "adherence to a MDP was inversely associated with premenopausal BC",
                 "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.032.",
-                "confidence_interval": "HR Q4 v. Q1 0\u00b733; 95 % CI 0\u00b712, 0\u00b791",
+                "confidence_interval": "HR Q4 v. Q1 0·33; 95 % CI 0·12, 0·91",
                 "outcome_definition": "BC cases were initially identified through self-report or, if deceased, from death certificates or by notification by the next kin.",
                 "exposure_definition": "'Mediterranean dietary pattern' (MDP)"
             },
@@ -108,7 +108,7 @@
             "Upper CI": 1.0,
             "Population": "General",
             "Reference": "Adherence to the mediterranean diet and risk of breast cancer in the European prospective investigation into cancer and nutrition cohort study.",
-            "Authors": "Buckland G, Travier N, Cottet V, Gonz\u00e1lez CA, Luj\u00e1n-Barroso L, Agudo A, Trichopoulou A, Lagiou P, Trichopoulos D, Peeters PH, May A, Bueno-de-Mesquita HB, Bvan Duijnhoven FJ, Key TJ, Allen N, Khaw KT, Wareham N, Romieu I, McCormack V, Boutron-Ruault M, Clavel-Chapelon F, Panico S, Agnoli C, Palli D, Tumino R, Vineis P, Amiano P, Barricarte A, Rodr\u00edguez L, Sanchez MJ, Chirlaque MD, Kaaks R, Teucher B, Boeing H, Bergmann MM, Overvad K, Dahm CC, Tj\u00f8nneland A, Olsen A, Manjer J, Wirf\u00e4lt E, Hallmans G, Johansson I, Lund E, Hjart\u00e5ker A, Skeie G, Vergnaud AC, Norat T, Romaguera D, Riboli E",
+            "Authors": "Buckland G, Travier N, Cottet V, González CA, Luján-Barroso L, Agudo A, Trichopoulou A, Lagiou P, Trichopoulos D, Peeters PH, May A, Bueno-de-Mesquita HB, Bvan Duijnhoven FJ, Key TJ, Allen N, Khaw KT, Wareham N, Romieu I, McCormack V, Boutron-Ruault M, Clavel-Chapelon F, Panico S, Agnoli C, Palli D, Tumino R, Vineis P, Amiano P, Barricarte A, Rodríguez L, Sanchez MJ, Chirlaque MD, Kaaks R, Teucher B, Boeing H, Bergmann MM, Overvad K, Dahm CC, Tjønneland A, Olsen A, Manjer J, Wirfält E, Hallmans G, Johansson I, Lund E, Hjartåker A, Skeie G, Vergnaud AC, Norat T, Romaguera D, Riboli E",
             "Journal": "International journal of cancer",
             "Year": "2013",
             "Link": "https://pubmed.ncbi.nlm.nih.gov/23180513/",
@@ -157,7 +157,7 @@
             "Upper CI": 1.15,
             "Population": "General",
             "Reference": "Mediterranean dietary pattern and risk of breast cancer.",
-            "Authors": "Couto E, Sandin S, L\u00f6f M, Ursin G, Adami HO, Weiderpass E",
+            "Authors": "Couto E, Sandin S, Löf M, Ursin G, Adami HO, Weiderpass E",
             "Journal": "PloS one",
             "Year": "2013",
             "Link": "https://pubmed.ncbi.nlm.nih.gov/23390532/",
@@ -337,7 +337,7 @@
             "exposure_measurement_type": "dietary_intake",
             "exposure_measurement_supporting_text": "Dietary data were derived from semiquantitative food frequency questionnaires collected in 1991-95.",
             "extraction_supporting_text": {
-                "sample_size": "Participants included 1579 women aged \u2264 30 years who were free of prevalent cancer.",
+                "sample_size": "Participants included 1579 women aged ≤ 30 years who were free of prevalent cancer.",
                 "effect_size": "HR = 0.45",
                 "effect_direction": "Women in the highest (vs. lowest) score category of the pyramid-based scores (i.e., MeDiet or MSDP) had approximately 45% statistically significantly lower breast cancer risks.",
                 "p_value": "statistically significantly lower breast cancer risks Computed from the reported effect and 95% CI using a normal approximation: p=0.026.",
@@ -444,14 +444,14 @@
             }
         },
         {
-            "Study": "Castell\u00f3 A et al. (2017) [PMID: 28778338]",
+            "Study": "Castelló A et al. (2017) [PMID: 28778338]",
             "PMID": "28778338",
             "Effect Size": 0.72,
             "Lower CI": 0.53,
             "Upper CI": 0.98,
             "Population": "General",
             "Reference": "Adherence to the Western, Prudent and Mediterranean dietary patterns and breast cancer risk: MCC-Spain study.",
-            "Authors": "Castell\u00f3 A, Boldo E, P\u00e9rez-G\u00f3mez B, Lope V, Altzibar JM, Mart\u00edn V, Casta\u00f1o-Vinyals G, Guevara M, Dierssen-Sotos T, Tard\u00f3n A, Moreno V, Puig-Vives M, Llorens-Ivorra C, Alguacil J, G\u00f3mez-Acebo I, Castilla J, Gr\u00e0cia-Laved\u00e1n E, D\u00e1vila-Batista V, Kogevinas M, Aragon\u00e9s N, Amiano P, Poll\u00e1n M",
+            "Authors": "Castelló A, Boldo E, Pérez-Gómez B, Lope V, Altzibar JM, Martín V, Castaño-Vinyals G, Guevara M, Dierssen-Sotos T, Tardón A, Moreno V, Puig-Vives M, Llorens-Ivorra C, Alguacil J, Gómez-Acebo I, Castilla J, Gràcia-Lavedán E, Dávila-Batista V, Kogevinas M, Aragonés N, Amiano P, Pollán M",
             "Journal": "Maturitas",
             "Year": "2017",
             "Link": "https://pubmed.ncbi.nlm.nih.gov/28778338/",
@@ -499,7 +499,7 @@
             "Upper CI": 0.79,
             "Population": "General",
             "Reference": "Mediterranean Diet and Invasive Breast Cancer Risk Among Women at High Cardiovascular Risk in the PREDIMED Trial: A Randomized Clinical Trial.",
-            "Authors": "Toledo E, Salas-Salvad\u00f3 J, Donat-Vargas C, Buil-Cosiales P, Estruch R, Ros E, Corella D, Fit\u00f3 M, Hu FB, Ar\u00f3s F, G\u00f3mez-Gracia E, Romaguera D, Ortega-Calvo M, Serra-Majem L, Pint\u00f3 X, Schr\u00f6der H, Basora J, Sorl\u00ed JV, Bull\u00f3 M, Serra-Mir M, Mart\u00ednez-Gonz\u00e1lez MA",
+            "Authors": "Toledo E, Salas-Salvadó J, Donat-Vargas C, Buil-Cosiales P, Estruch R, Ros E, Corella D, Fitó M, Hu FB, Arós F, Gómez-Gracia E, Romaguera D, Ortega-Calvo M, Serra-Majem L, Pintó X, Schröder H, Basora J, Sorlí JV, Bulló M, Serra-Mir M, Martínez-González MA",
             "Journal": "JAMA internal medicine",
             "Year": "2015",
             "Link": "https://pubmed.ncbi.nlm.nih.gov/26365989/",
@@ -544,14 +544,14 @@
             "P Value": 0.013314345846812488
         },
         {
-            "Study": "Castell\u00f3 A et al. (2014) [PMID: 25101568]",
+            "Study": "Castelló A et al. (2014) [PMID: 25101568]",
             "PMID": "25101568",
             "Effect Size": 0.56,
             "Lower CI": 0.4,
             "Upper CI": 0.79,
             "Population": "General",
             "Reference": "Spanish Mediterranean diet and other dietary patterns and breast cancer risk: case-control EpiGEICAM study.",
-            "Authors": "Castell\u00f3 A, Poll\u00e1n M, Buijsse B, Ruiz A, Casas AM, Baena-Ca\u00f1ada JM, Lope V, Antol\u00edn S, Ramos M, Mu\u00f1oz M, Lluch A, de Juan-Ferr\u00e9 A, Jara C, Jimeno MA, Rosado P, D\u00edaz E, Guillem V, Carrasco E, P\u00e9rez-G\u00f3mez B, Vioque J, Boeing H, Mart\u00edn M,  ",
+            "Authors": "Castelló A, Pollán M, Buijsse B, Ruiz A, Casas AM, Baena-Cañada JM, Lope V, Antolín S, Ramos M, Muñoz M, Lluch A, de Juan-Ferré A, Jara C, Jimeno MA, Rosado P, Díaz E, Guillem V, Carrasco E, Pérez-Gómez B, Vioque J, Boeing H, Martín M,  ",
             "Journal": "British journal of cancer",
             "Year": "2014",
             "Link": "https://pubmed.ncbi.nlm.nih.gov/25101568/",
@@ -712,7 +712,7 @@
             "Stage": null,
             "Quality %": 80.0,
             "Quality Score": "Moderate",
-            "comparison_type": "MD Score >6 vs \u22646",
+            "comparison_type": "MD Score >6 vs ≤6",
             "JBI": {
                 "q1": "Yes",
                 "q2": "Unclear",
@@ -879,7 +879,7 @@
                 "sample_size": "The article states that the final dataset included 101,291 women, and Table 2 reports the aMED Q5-versus-Q1 hazard ratio among women (N=101,291).",
                 "effect_size": "1.01",
                 "effect_direction": "null association for DQIs",
-                "p_value": "p<sub>trend</sub>\u2009>\u20090.05",
+                "p_value": "p<sub>trend</sub> > 0.05",
                 "confidence_interval": "95% CI, 0.94-1.09",
                 "outcome_definition": "breast cancer incidence",
                 "exposure_definition": "alternate Mediterranean diet score (aMED)"
@@ -956,7 +956,7 @@
             "Stage": "",
             "Quality %": 100.0,
             "Quality Score": "Good",
-            "comparison_type": "Q1 vs Q3 [inverted \u21d2 high vs low]",
+            "comparison_type": "Q1 vs Q3 [inverted ⇒ high vs low]",
             "JBI": {
                 "q1": "Yes",
                 "q2": "Yes",
@@ -1079,14 +1079,14 @@
             }
         },
         {
-            "Study": "M\u00e4nnist\u00f6 S et al. (2021) [PMID: 34408173]",
+            "Study": "Männistö S et al. (2021) [PMID: 34408173]",
             "PMID": "34408173",
             "Effect Size": 0.88,
             "Lower CI": 0.59,
             "Upper CI": 1.3,
             "Population": "General",
             "Reference": "Association between overall diet quality and postmenopausal breast cancer risk in five Finnish cohort studies.",
-            "Authors": "M\u00e4nnist\u00f6 S, Harald K, H\u00e4rk\u00e4nen T, Maukonen M, Eriksson JG, Heikkinen S, Jousilahti P, Kaartinen NE, Kanerva N, Knekt P, Koskinen S, Laaksonen MA, Malila N, Rissanen H, Pitk\u00e4niemi J",
+            "Authors": "Männistö S, Harald K, Härkänen T, Maukonen M, Eriksson JG, Heikkinen S, Jousilahti P, Kaartinen NE, Kanerva N, Knekt P, Koskinen S, Laaksonen MA, Malila N, Rissanen H, Pitkäniemi J",
             "Journal": "Scientific reports",
             "Year": "2021",
             "Link": "https://pubmed.ncbi.nlm.nih.gov/34408173/",
@@ -1265,58 +1265,16 @@
             "exposure_measurement_supporting_text": "Data were collected using a validated FFQ adapted to the Moroccan context, and Principal component analysis (PCA) was applied to identify dietary patterns.",
             "extraction_supporting_text": {
                 "sample_size": "A total of 2.800 women from Morocco participated in this case control study.",
-                "effect_size": "\"Plant-Based and Mediterranean Diet\" was inversely associated with BC risk (OR\u2009=\u20090.26; 95% CI 0.20-0.34; p\u2009<\u20090.001).",
+                "effect_size": "\"Plant-Based and Mediterranean Diet\" was inversely associated with BC risk (OR = 0.26; 95% CI 0.20-0.34; p < 0.001).",
                 "effect_direction": "\"Plant-Based and Mediterranean Diet\" was inversely associated with BC risk",
-                "p_value": "p\u2009<\u20090.001",
+                "p_value": "p < 0.001",
                 "confidence_interval": "95% CI 0.20-0.34",
                 "outcome_definition": "Breast cancer (BC) is the most prevalent cancer among women worldwide.",
                 "exposure_definition": "\"Plant-Based and Mediterranean Diet\""
             }
-        },
-        {
-            "Study": "Peguero-Mart\u00ednez C et al. (2026) [PMID: 41960842]",
-            "PMID": "41960842",
-            "Effect Size": 0.76,
-            "Lower CI": 0.6,
-            "Upper CI": 0.96,
-            "Population": "General",
-            "Reference": "[Impacto de la dieta mediterr\u00e1nea en la prevenci\u00f3n, pron\u00f3stico y manejo cl\u00ednico de los c\u00e1nceres ginecol\u00f3gicos y de mama: revisi\u00f3n sistem\u00e1tica].",
-            "Authors": "Peguero-Mart\u00ednez C, Zaragoza-Mart\u00ed A, Moya-Yeste AM, Hurtado-S\u00e1nchez JA, Mart\u00edn-Manchado L",
-            "Journal": "Nutricion hospitalaria",
-            "Year": "2026",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/41960842/",
-            "Effect Type": "HR",
-            "SE": 0.09183673469387756,
-            "Sample Size": "Not specified",
-            "Cases": "Not specified",
-            "Design": "Cohort",
-            "Timing": "Prospective",
-            "Continent": "Europe",
-            "Stage": "Not specified",
-            "Quality %": 90.9,
-            "Quality Score": "Good",
-            "comparison_type": "High vs Low",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Unclear",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Yes",
-                "q10": "Yes",
-                "q11": "Yes"
-            },
-            "exclusions": 2,
-            "extraction_supporting_text": {
-                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=0.022."
-            },
-            "P Value": 0.02208502377358048
         }
     ],
-    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Bakhshimoghaddam F et al. (2026) [PMID: 42004208]</th>\n      <td>-1.2837</td>\n      <td>0.4540</td>\n      <td>-2.1736</td>\n      <td>-0.3938</td>\n      <td>106.0</td>\n      <td>213.0</td>\n    </tr>\n    <tr>\n      <th>Lamchabbek N et al. (2025) [PMID: 41417097]</th>\n      <td>-1.2459</td>\n      <td>0.1302</td>\n      <td>-1.5012</td>\n      <td>-0.9907</td>\n      <td>-</td>\n      <td>2800.0</td>\n    </tr>\n    <tr>\n      <th>La Torre G et al. (2021) [PMID: 34286496]</th>\n      <td>-1.1410</td>\n      <td>0.4257</td>\n      <td>-1.9754</td>\n      <td>-0.3066</td>\n      <td>94.0</td>\n      <td>182.0</td>\n    </tr>\n    <tr>\n      <th>Gardeazabal I et al. (2020) [PMID: 32090723]</th>\n      <td>-1.0627</td>\n      <td>0.5030</td>\n      <td>-2.0485</td>\n      <td>-0.0769</td>\n      <td>268.0</td>\n      <td>10713.0</td>\n    </tr>\n    <tr>\n      <th>Krusinska B et al. (2018) [PMID: 29641468]</th>\n      <td>-0.9088</td>\n      <td>0.2689</td>\n      <td>-1.4358</td>\n      <td>-0.3818</td>\n      <td>140.0</td>\n      <td>280.0</td>\n    </tr>\n    <tr>\n      <th>Sadeghi O et al. (2023) [PMID: 37533568]</th>\n      <td>-0.7670</td>\n      <td>0.2087</td>\n      <td>-1.1760</td>\n      <td>-0.3580</td>\n      <td>350.0</td>\n      <td>1050.0</td>\n    </tr>\n    <tr>\n      <th>Yiannakou I et al. (2023) [PMID: 37025613]</th>\n      <td>-0.7609</td>\n      <td>0.3475</td>\n      <td>-1.4419</td>\n      <td>-0.0799</td>\n      <td>87.0</td>\n      <td>1579.0</td>\n    </tr>\n    <tr>\n      <th>Castell\u00f3 A et al. (2014) [PMID: 25101568]</th>\n      <td>-0.5209</td>\n      <td>0.1600</td>\n      <td>-0.8344</td>\n      <td>-0.2074</td>\n      <td>1017.0</td>\n      <td>2034.0</td>\n    </tr>\n    <tr>\n      <th>Cao S et al. (2022) [PMID: 35425800]</th>\n      <td>-0.5046</td>\n      <td>0.1569</td>\n      <td>-0.8121</td>\n      <td>-0.1971</td>\n      <td>818.0</td>\n      <td>1753.0</td>\n    </tr>\n    <tr>\n      <th>Wu AH et al. (2009) [PMID: 19211822]</th>\n      <td>-0.3842</td>\n      <td>0.1787</td>\n      <td>-0.7345</td>\n      <td>-0.0339</td>\n      <td>1248.0</td>\n      <td>2396.0</td>\n    </tr>\n    <tr>\n      <th>Cade JE et al. (2011) [PMID: 21587285]</th>\n      <td>-0.4069</td>\n      <td>0.2159</td>\n      <td>-0.8300</td>\n      <td>0.0162</td>\n      <td>828.0</td>\n      <td>33731.0</td>\n    </tr>\n    <tr>\n      <th>Castell\u00f3 A et al. (2017) [PMID: 28778338]</th>\n      <td>-0.2914</td>\n      <td>0.1414</td>\n      <td>-0.5685</td>\n      <td>-0.0143</td>\n      <td>1181.0</td>\n      <td>2863.0</td>\n    </tr>\n    <tr>\n      <th>Quartiroli M et al. (2024) [PMID: 38674877]</th>\n      <td>-0.2581</td>\n      <td>0.1161</td>\n      <td>-0.4856</td>\n      <td>-0.0305</td>\n      <td>-</td>\n      <td>9144.0</td>\n    </tr>\n    <tr>\n      <th>Trichopoulou A et al. (2010) [PMID: 20631204]</th>\n      <td>-0.2335</td>\n      <td>0.1105</td>\n      <td>-0.4501</td>\n      <td>-0.0168</td>\n      <td>240.0</td>\n      <td>14807.0</td>\n    </tr>\n    <tr>\n      <th>Fung TT et al. (2006) [PMID: 16424129]</th>\n      <td>-0.2357</td>\n      <td>0.1379</td>\n      <td>-0.5059</td>\n      <td>0.0345</td>\n      <td>575.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Turati F et al. (2018) [PMID: 29518016]</th>\n      <td>-0.1748</td>\n      <td>0.0661</td>\n      <td>-0.3044</td>\n      <td>-0.0451</td>\n      <td>3034.0</td>\n      <td>6426.0</td>\n    </tr>\n    <tr>\n      <th>Pot GK et al. (2014) [PMID: 25052230]</th>\n      <td>-0.1605</td>\n      <td>0.1197</td>\n      <td>-0.3950</td>\n      <td>0.0741</td>\n      <td>610.0</td>\n      <td>2501.0</td>\n    </tr>\n    <tr>\n      <th>M\u00e4nnist\u00f6 S et al. (2021) [PMID: 34408173]</th>\n      <td>-0.1197</td>\n      <td>0.1892</td>\n      <td>-0.4905</td>\n      <td>0.2512</td>\n      <td>274.0</td>\n      <td>6374.0</td>\n    </tr>\n    <tr>\n      <th>Haridass V et al. (2018) [PMID: 30247577]</th>\n      <td>-0.0882</td>\n      <td>0.0522</td>\n      <td>-0.1905</td>\n      <td>0.0141</td>\n      <td>3523.0</td>\n      <td>54442.0</td>\n    </tr>\n    <tr>\n      <th>Mourouti N et al. (2014) [PMID: 24847911]</th>\n      <td>-0.0825</td>\n      <td>0.0270</td>\n      <td>-0.1355</td>\n      <td>-0.0296</td>\n      <td>250.0</td>\n      <td>500.0</td>\n    </tr>\n    <tr>\n      <th>Buckland G et al. (2013) [PMID: 23180513]</th>\n      <td>-0.0578</td>\n      <td>0.0305</td>\n      <td>-0.1176</td>\n      <td>0.0020</td>\n      <td>10225.0</td>\n      <td>335062.0</td>\n    </tr>\n    <tr>\n      <th>Voevodina O et al. (2013) [PMID: 23497280]</th>\n      <td>-0.0448</td>\n      <td>0.0229</td>\n      <td>-0.0896</td>\n      <td>0.0001</td>\n      <td>-</td>\n      <td>424.0</td>\n    </tr>\n    <tr>\n      <th>Dela Cruz R et al. (2020) [PMID: 32286532]</th>\n      <td>0.0093</td>\n      <td>0.0352</td>\n      <td>-0.0597</td>\n      <td>0.0782</td>\n      <td>-</td>\n      <td>101291.0</td>\n    </tr>\n    <tr>\n      <th>Couto E et al. (2013) [PMID: 23390532]</th>\n      <td>0.0770</td>\n      <td>0.0357</td>\n      <td>0.0071</td>\n      <td>0.1468</td>\n      <td>1278.0</td>\n      <td>49258.0</td>\n    </tr>\n  </tbody>\n</table>",
+    "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Effect</th>\n      <th>SD Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Bakhshimoghaddam F et al. (2026) [PMID: 42004208]</th>\n      <td>-1.2837</td>\n      <td>0.4540</td>\n      <td>-2.1736</td>\n      <td>-0.3938</td>\n      <td>106.0</td>\n      <td>213.0</td>\n    </tr>\n    <tr>\n      <th>Lamchabbek N et al. (2025) [PMID: 41417097]</th>\n      <td>-1.2459</td>\n      <td>0.1302</td>\n      <td>-1.5012</td>\n      <td>-0.9907</td>\n      <td>-</td>\n      <td>2800.0</td>\n    </tr>\n    <tr>\n      <th>La Torre G et al. (2021) [PMID: 34286496]</th>\n      <td>-1.1410</td>\n      <td>0.4257</td>\n      <td>-1.9754</td>\n      <td>-0.3066</td>\n      <td>94.0</td>\n      <td>182.0</td>\n    </tr>\n    <tr>\n      <th>Gardeazabal I et al. (2020) [PMID: 32090723]</th>\n      <td>-1.0627</td>\n      <td>0.5030</td>\n      <td>-2.0485</td>\n      <td>-0.0769</td>\n      <td>268.0</td>\n      <td>10713.0</td>\n    </tr>\n    <tr>\n      <th>Krusinska B et al. (2018) [PMID: 29641468]</th>\n      <td>-0.9088</td>\n      <td>0.2689</td>\n      <td>-1.4358</td>\n      <td>-0.3818</td>\n      <td>140.0</td>\n      <td>280.0</td>\n    </tr>\n    <tr>\n      <th>Sadeghi O et al. (2023) [PMID: 37533568]</th>\n      <td>-0.7670</td>\n      <td>0.2087</td>\n      <td>-1.1760</td>\n      <td>-0.3580</td>\n      <td>350.0</td>\n      <td>1050.0</td>\n    </tr>\n    <tr>\n      <th>Yiannakou I et al. (2023) [PMID: 37025613]</th>\n      <td>-0.7609</td>\n      <td>0.3475</td>\n      <td>-1.4419</td>\n      <td>-0.0799</td>\n      <td>87.0</td>\n      <td>1579.0</td>\n    </tr>\n    <tr>\n      <th>Castelló A et al. (2014) [PMID: 25101568]</th>\n      <td>-0.5209</td>\n      <td>0.1600</td>\n      <td>-0.8344</td>\n      <td>-0.2074</td>\n      <td>1017.0</td>\n      <td>2034.0</td>\n    </tr>\n    <tr>\n      <th>Cao S et al. (2022) [PMID: 35425800]</th>\n      <td>-0.5046</td>\n      <td>0.1569</td>\n      <td>-0.8121</td>\n      <td>-0.1971</td>\n      <td>818.0</td>\n      <td>1753.0</td>\n    </tr>\n    <tr>\n      <th>Wu AH et al. (2009) [PMID: 19211822]</th>\n      <td>-0.3842</td>\n      <td>0.1787</td>\n      <td>-0.7345</td>\n      <td>-0.0339</td>\n      <td>1248.0</td>\n      <td>2396.0</td>\n    </tr>\n    <tr>\n      <th>Cade JE et al. (2011) [PMID: 21587285]</th>\n      <td>-0.4069</td>\n      <td>0.2159</td>\n      <td>-0.8300</td>\n      <td>0.0162</td>\n      <td>828.0</td>\n      <td>33731.0</td>\n    </tr>\n    <tr>\n      <th>Castelló A et al. (2017) [PMID: 28778338]</th>\n      <td>-0.2914</td>\n      <td>0.1414</td>\n      <td>-0.5685</td>\n      <td>-0.0143</td>\n      <td>1181.0</td>\n      <td>2863.0</td>\n    </tr>\n    <tr>\n      <th>Quartiroli M et al. (2024) [PMID: 38674877]</th>\n      <td>-0.2581</td>\n      <td>0.1161</td>\n      <td>-0.4856</td>\n      <td>-0.0305</td>\n      <td>-</td>\n      <td>9144.0</td>\n    </tr>\n    <tr>\n      <th>Trichopoulou A et al. (2010) [PMID: 20631204]</th>\n      <td>-0.2335</td>\n      <td>0.1105</td>\n      <td>-0.4501</td>\n      <td>-0.0168</td>\n      <td>240.0</td>\n      <td>14807.0</td>\n    </tr>\n    <tr>\n      <th>Fung TT et al. (2006) [PMID: 16424129]</th>\n      <td>-0.2357</td>\n      <td>0.1379</td>\n      <td>-0.5059</td>\n      <td>0.0345</td>\n      <td>575.0</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <th>Turati F et al. (2018) [PMID: 29518016]</th>\n      <td>-0.1748</td>\n      <td>0.0661</td>\n      <td>-0.3044</td>\n      <td>-0.0451</td>\n      <td>3034.0</td>\n      <td>6426.0</td>\n    </tr>\n    <tr>\n      <th>Pot GK et al. (2014) [PMID: 25052230]</th>\n      <td>-0.1605</td>\n      <td>0.1197</td>\n      <td>-0.3950</td>\n      <td>0.0741</td>\n      <td>610.0</td>\n      <td>2501.0</td>\n    </tr>\n    <tr>\n      <th>Männistö S et al. (2021) [PMID: 34408173]</th>\n      <td>-0.1197</td>\n      <td>0.1892</td>\n      <td>-0.4905</td>\n      <td>0.2512</td>\n      <td>274.0</td>\n      <td>6374.0</td>\n    </tr>\n    <tr>\n      <th>Haridass V et al. (2018) [PMID: 30247577]</th>\n      <td>-0.0882</td>\n      <td>0.0522</td>\n      <td>-0.1905</td>\n      <td>0.0141</td>\n      <td>3523.0</td>\n      <td>54442.0</td>\n    </tr>\n    <tr>\n      <th>Mourouti N et al. (2014) [PMID: 24847911]</th>\n      <td>-0.0825</td>\n      <td>0.0270</td>\n      <td>-0.1355</td>\n      <td>-0.0296</td>\n      <td>250.0</td>\n      <td>500.0</td>\n    </tr>\n    <tr>\n      <th>Buckland G et al. (2013) [PMID: 23180513]</th>\n      <td>-0.0578</td>\n      <td>0.0305</td>\n      <td>-0.1176</td>\n      <td>0.0020</td>\n      <td>10225.0</td>\n      <td>335062.0</td>\n    </tr>\n    <tr>\n      <th>Voevodina O et al. (2013) [PMID: 23497280]</th>\n      <td>-0.0448</td>\n      <td>0.0229</td>\n      <td>-0.0896</td>\n      <td>0.0001</td>\n      <td>-</td>\n      <td>424.0</td>\n    </tr>\n    <tr>\n      <th>Dela Cruz R et al. (2020) [PMID: 32286532]</th>\n      <td>0.0093</td>\n      <td>0.0352</td>\n      <td>-0.0597</td>\n      <td>0.0782</td>\n      <td>-</td>\n      <td>101291.0</td>\n    </tr>\n    <tr>\n      <th>Couto E et al. (2013) [PMID: 23390532]</th>\n      <td>0.0770</td>\n      <td>0.0357</td>\n      <td>0.0071</td>\n      <td>0.1468</td>\n      <td>1278.0</td>\n      <td>49258.0</td>\n    </tr>\n  </tbody>\n</table>",
     "headline": {
         "pooled_es": 0.76,
         "ci_low": 0.7,
@@ -1379,7 +1337,7 @@
                 "is_significant": true
             },
             {
-                "omitted": "Castell\u00f3 A et al. (2014) [PMID: 25101568]",
+                "omitted": "Castelló A et al. (2014) [PMID: 25101568]",
                 "pooled_es": 0.769164599577608,
                 "ci_low": 0.6683261420110609,
                 "ci_upp": 0.8852177762539039,
@@ -1407,7 +1365,7 @@
                 "is_significant": true
             },
             {
-                "omitted": "Castell\u00f3 A et al. (2017) [PMID: 28778338]",
+                "omitted": "Castelló A et al. (2017) [PMID: 28778338]",
                 "pooled_es": 0.7607642381215466,
                 "ci_low": 0.6594998889356717,
                 "ci_upp": 0.8775774427175231,
@@ -1449,7 +1407,7 @@
                 "is_significant": true
             },
             {
-                "omitted": "M\u00e4nnist\u00f6 S et al. (2021) [PMID: 34408173]",
+                "omitted": "Männistö S et al. (2021) [PMID: 34408173]",
                 "pooled_es": 0.755976398575085,
                 "ci_low": 0.656085332626964,
                 "ci_upp": 0.8710761950953392,
@@ -1498,7 +1456,7 @@
                 "is_significant": true
             }
         ],
-        "results_interpretation": "The pooled analysis of 24 studies yielded an overall effect size of 0.76 (95% CI: 0.7\u20130.83), suggesting that mediterranean_diet is associated with a lower risk of breast cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I\u00b2 = 87.25%), reflecting highly inconsistent results across studies."
+        "results_interpretation": "The pooled analysis of 24 studies yielded an overall effect size of 0.76 (95% CI: 0.7–0.83), suggesting that mediterranean_diet is associated with a lower risk of breast cancer. However, this association should be interpreted with caution, as there was very high between-study heterogeneity (I² = 87.25%), reflecting highly inconsistent results across studies."
     },
     "screening_stats": {
         "llm_screened_out": 51,
@@ -1517,8 +1475,8 @@
         },
         "extracted": 28
     },
-    "plot_url": "static/mediterranean_diet/forest_breast_cancer_incidence_primary.png?t=9014",
-    "funnel_plot_url": "static/mediterranean_diet/funnel_breast_cancer_incidence_primary.png?t=2588",
-    "baujat_plot_url": "static/mediterranean_diet/baujat_breast_cancer_incidence_primary.png?t=9809",
+    "plot_url": "static/mediterranean_diet/forest_breast_cancer_incidence_primary.png?t=4119",
+    "funnel_plot_url": "static/mediterranean_diet/funnel_breast_cancer_incidence_primary.png?t=8267",
+    "baujat_plot_url": "static/mediterranean_diet/baujat_breast_cancer_incidence_primary.png?t=3098",
     "last_run": "2026-06-15 02:41:03"
 }

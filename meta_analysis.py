@@ -90,7 +90,7 @@ def analysis_context_key(disease, exposure, outcome="Incidence"):
 
 @lru_cache(maxsize=1)
 def curated_meta_analysis_exclusions():
-    """Load only explicit, curator-approved exclusions from the review log."""
+    """Load explicit curator and source-integrity exclusions."""
     path = os.path.join(DATA_DIR, "verifications.json")
     try:
         with open(path, encoding="utf-8") as handle:
@@ -104,17 +104,34 @@ def curated_meta_analysis_exclusions():
             continue
         curated = verification.get("curated_exclusion")
         if isinstance(curated, dict) and curated.get("excluded_from_meta_analysis") is True:
-            exclusions[str(pmid)] = curated
+            context = str(curated.get("context") or "").strip()
+            exclusions.setdefault(str(pmid), set()).add(context)
+
+    quarantine_path = os.path.join(DATA_DIR, "evidence_review_quarantine.json")
+    try:
+        with open(quarantine_path, encoding="utf-8") as handle:
+            quarantine = json.load(handle)
+    except (OSError, json.JSONDecodeError):
+        quarantine = {}
+    for record in quarantine.get("records", []) if isinstance(quarantine, dict) else []:
+        if not isinstance(record, dict):
+            continue
+        pmid = str(record.get("pmid") or "").strip()
+        if not pmid:
+            continue
+        context = analysis_context_key(
+            record.get("disease"), record.get("exposure"), "Incidence"
+        )
+        exclusions.setdefault(pmid, set()).add(context)
     return exclusions
 
 
 def is_curated_meta_analysis_exclusion(pmid, disease, exposure, outcome="Incidence"):
     """Return whether a PMID was explicitly excluded for this analysis context."""
-    exclusion = curated_meta_analysis_exclusions().get(str(pmid or "").strip())
-    if not exclusion:
+    contexts = curated_meta_analysis_exclusions().get(str(pmid or "").strip())
+    if not contexts:
         return False
-    context = str(exclusion.get("context") or "").strip()
-    return context in {"*", analysis_context_key(disease, exposure, outcome)}
+    return bool({"*", analysis_context_key(disease, exposure, outcome)} & set(contexts))
 
 
 def filter_curated_meta_analysis_exclusions(frame, disease, exposure, outcome="Incidence"):

@@ -185,6 +185,11 @@ def _cached_study_metadata(cache_root: Path) -> dict[str, dict[str, Any]]:
                 "JBI": study.get("JBI") if isinstance(study.get("JBI"), dict) else {},
                 "Sample Size": _first(study, "Sample Size", "sample_size"),
                 "Cases": _first(study, "Cases", "cases", "Estimated Cases"),
+                "extraction_supporting_text": (
+                    dict(study["extraction_supporting_text"])
+                    if isinstance(study.get("extraction_supporting_text"), dict)
+                    else {}
+                ),
             }
             completeness = sum(value not in (None, "") for value in candidate.values())
             # PMID-only entries provide the bibliographic fallback.
@@ -528,6 +533,12 @@ def _estimate(outcome: dict[str, Any]) -> dict[str, Any] | None:
         "comparison_type": _first(candidate, "comparison_type", "comparison"),
         "cases": _as_float(_first(candidate, "cases", "Cases")),
         "sample_size": _as_float(_first(candidate, "sample_size", "Sample Size", "participants", "Participants")),
+        "sample_size_supporting_text": _first(
+            candidate,
+            "sample_size_supporting_text",
+            "sample_size_evidence",
+            "sample_size_quote",
+        ),
     }
 
 
@@ -620,9 +631,27 @@ def extract_eligible_rows(
                             "quality_score": quality_score or None,
                         })
                         continue
+                    metadata_sample_size = _as_float(
+                        _first(metadata, "Sample Size", "sample_size")
+                    )
+                    metadata_support = metadata.get("extraction_supporting_text")
+                    if not isinstance(metadata_support, dict):
+                        metadata_support = {}
                     if estimate.get("sample_size") is None:
-                        estimate["sample_size"] = _as_float(
-                            _first(metadata, "Sample Size", "sample_size")
+                        estimate["sample_size"] = metadata_sample_size
+                    if (
+                        not estimate.get("sample_size_supporting_text")
+                        and estimate.get("sample_size") is not None
+                        and metadata_sample_size is not None
+                        and math.isclose(
+                            float(estimate["sample_size"]),
+                            float(metadata_sample_size),
+                            rel_tol=0,
+                            abs_tol=1e-9,
+                        )
+                    ):
+                        estimate["sample_size_supporting_text"] = (
+                            metadata_support.get("sample_size") or ""
                         )
                     if estimate.get("cases") is None:
                         estimate["cases"] = _as_float(
@@ -641,9 +670,13 @@ def extract_eligible_rows(
                         "quality_percent": _first(metadata, "Quality %", "quality_percent"),
                         "jbi": metadata.get("JBI") if isinstance(metadata.get("JBI"), dict) else {},
                         "exposure_measurement_type": _first(
+                            estimate_item, "exposure_measurement_type"
+                        ) or _first(
                             metadata, "exposure_measurement_type"
                         ) or "unclear",
                         "exposure_measurement_supporting_text": _first(
+                            estimate_item, "exposure_measurement_supporting_text"
+                        ) or _first(
                             metadata, "exposure_measurement_supporting_text"
                         ) or "",
                         "reference": reference,
@@ -918,7 +951,7 @@ def _compact_study(row: dict[str, Any]) -> dict[str, Any]:
     compact = {key: row.get(key) for key in (
         "context_id", "study", "pmid", "authors", "journal", "year", "reference", "design",
         "effect_size", "lower_ci", "upper_ci", "effect_type", "se", "comparison_type",
-        "cases", "sample_size", "exposure_measurement_type",
+        "cases", "sample_size", "sample_size_supporting_text", "exposure_measurement_type",
         "exposure_measurement_supporting_text", "evidence_source", "evidence_locator",
         "outcome_definition", "quality_score", "quality_percent", "jbi",
     )}
@@ -947,6 +980,7 @@ def _compact_study(row: dict[str, Any]) -> dict[str, Any]:
             "exposure_measurement_supporting_text"
         ),
         "extraction_supporting_text": {
+            "sample_size": row.get("sample_size_supporting_text") or "",
             "effect_size": row.get("evidence_locator") or "",
             "confidence_interval": row.get("evidence_locator") or "",
             "outcome_definition": row.get("outcome_definition") or "",

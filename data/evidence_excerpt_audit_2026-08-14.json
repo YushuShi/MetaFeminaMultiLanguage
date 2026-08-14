@@ -1,0 +1,60 @@
+{
+    "schema_version": 1,
+    "audit_date": "2026-08-14",
+    "cache_resolution_rule": "For each exposure and disease, inspect *_true_core.json when present; otherwise inspect *_true_all.json, matching the default UI.",
+    "before_repair": {
+        "any_numeric_field_missing_its_support": {
+            "affected_exposure_count": 22,
+            "affected_cache_file_count": 23,
+            "affected_row_count": 47,
+            "unique_pmid_count": 43,
+            "affected_exposures": [
+                "bcaas",
+                "black_cohosh",
+                "cannabidiol",
+                "coenzyme_q10",
+                "copper",
+                "dehydroepiandrosterone",
+                "fermented_foods",
+                "fish_oil",
+                "flaxseed",
+                "folic_acid",
+                "glutamine",
+                "grape",
+                "isoleucine",
+                "lutein",
+                "lycopene",
+                "manganese",
+                "mediterranean_diet",
+                "omega-3_fatty_acids",
+                "omega-6_fatty_acids",
+                "phosphorus",
+                "vitamin_e",
+                "zinc"
+            ]
+        },
+        "rows_with_both_numeric_sample_and_effect_values": {
+            "affected_exposure_count": 20,
+            "affected_row_count": 41,
+            "unique_pmid_count": 37
+        },
+        "subcategory_outputs": {
+            "affected_exposure_count": 13,
+            "affected_result_file_count": 31,
+            "affected_row_count": 50,
+            "unique_pmid_count": 35,
+            "issue": "All numeric sample sizes lacked sample-size supporting text; effect-size support was present."
+        }
+    },
+    "source_review": {
+        "broad_context_rows_repaired_from_primary_source": 1,
+        "broad_context_rows_quarantined": 46,
+        "physical_cache_records_archived": 48,
+        "repair": "Phosphorus / breast cancer / PMID 37686766",
+        "quarantine_policy": "The primary source did not support the selected exposure, incidence endpoint, or stored ratio metric."
+    },
+    "after_repair": {
+        "preferred_broad_cache_gaps": 0,
+        "subcategory_result_gaps": 0
+    }
+}

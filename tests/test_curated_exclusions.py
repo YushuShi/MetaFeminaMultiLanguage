@@ -67,12 +67,11 @@ class CuratedExclusionTests(unittest.TestCase):
                 )
             )
 
-    def test_requested_molecular_marker_records_remain_eligible(self):
+    def test_requested_molecular_marker_records_remain_eligible_unless_source_audit_rejects_context(self):
         contexts = (
             ("12588696", "Breast cancer", "beta-carotene"),
             ("12588696", "Breast cancer", "lutein"),
             ("14682440", "Breast cancer", "folic_acid"),
-            ("19089916", "Breast cancer", "vitamin_e"),
         )
         for pmid, disease, exposure in contexts:
             self.assertFalse(
@@ -80,6 +79,11 @@ class CuratedExclusionTests(unittest.TestCase):
                     pmid, disease, exposure, "Incidence"
                 )
             )
+        self.assertTrue(
+            meta_analysis.is_curated_meta_analysis_exclusion(
+                "19089916", "Breast cancer", "vitamin_e", "Incidence"
+            )
+        )
 
     def test_mendelian_randomization_records_are_removed_from_meta_analysis(self):
         frame = pd.DataFrame([
@@ -147,7 +151,7 @@ class CuratedExclusionTests(unittest.TestCase):
                 )
             )
 
-    def test_dietary_measurement_corrections_are_saved_after_exclusions(self):
+    def test_source_mismatches_are_quarantined_after_prior_measurement_corrections(self):
         cache_path = (
             Path(__file__).resolve().parents[1]
             / "Cached_results"
@@ -157,10 +161,21 @@ class CuratedExclusionTests(unittest.TestCase):
         payload = json.loads(cache_path.read_text(encoding="utf-8"))
         by_pmid = {str(study.get("PMID")): study for study in payload["studies"]}
 
-        for pmid in ("11713032", "19358284"):
-            self.assertEqual(by_pmid[pmid]["exposure_measurement_type"], "dietary_intake")
+        self.assertTrue({
+            "11713032", "19358284", "30624689", "16599372", "8547538"
+        }.isdisjoint(by_pmid))
 
-        self.assertTrue({"30624689", "16599372", "8547538"}.isdisjoint(by_pmid))
+        quarantine = json.loads((
+            Path(__file__).resolve().parents[1]
+            / "data" / "evidence_review_quarantine.json"
+        ).read_text(encoding="utf-8"))
+        archived = {
+            str(record["pmid"]): record["reason_code"]
+            for record in quarantine["records"]
+            if record["exposure"] == "vitamin_e"
+        }
+        self.assertEqual(archived["11713032"], "wrong_exposure")
+        self.assertEqual(archived["19358284"], "wrong_exposure")
 
 
 if __name__ == "__main__":

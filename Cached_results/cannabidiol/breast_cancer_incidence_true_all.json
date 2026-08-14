@@ -63,7 +63,7 @@
             "Journal": "Environmental epigenetics",
             "Year": "2022",
             "Link": "https://pubmed.ncbi.nlm.nih.gov/35386387/",
-            "Effect Type": "\u03b2-est.",
+            "Effect Type": "β-est.",
             "SE": 0.47959183673469385,
             "Sample Size": null,
             "Cases": null,
@@ -86,58 +86,16 @@
                 "q8": "Yes"
             },
             "exposure_measurement_type": "unclear",
-            "exposure_measurement_supporting_text": "In bivariate analysis BCI was shown to be significantly linked with rising cannabis exposure {\u03b2-est. = 3.93 [95% confidence interval 2.99, 4.87], P = 1.10 \u00d7 10-15}.",
+            "exposure_measurement_supporting_text": "In bivariate analysis BCI was shown to be significantly linked with rising cannabis exposure {β-est. = 3.93 [95% confidence interval 2.99, 4.87], P = 1.10 × 10-15}.",
             "extraction_supporting_text": {
                 "sample_size": "Age-adjusted state-based BCI 2003-2017 was taken from the Surveillance Epidemiology and End Results database",
-                "effect_size": "In bivariate analysis BCI was shown to be significantly linked with rising cannabis exposure {\u03b2-est. = 3.93 [95% confidence interval 2.99, 4.87], P = 1.10 \u00d7 10-15}.",
+                "effect_size": "In bivariate analysis BCI was shown to be significantly linked with rising cannabis exposure {β-est. = 3.93 [95% confidence interval 2.99, 4.87], P = 1.10 × 10-15}.",
                 "effect_direction": "BCI was shown to be significantly linked with rising cannabis exposure",
-                "p_value": "P = 1.10 \u00d7 10-15",
+                "p_value": "P = 1.10 × 10-15",
                 "confidence_interval": "95% confidence interval 2.99, 4.87",
                 "outcome_definition": "Breast cancer (BC) is the commonest human cancer and its incidence (BC incidence, BCI) is rising worldwide.",
                 "exposure_definition": "rising cannabis exposure"
             }
-        },
-        {
-            "Study": "Fleege NMG et al. (2025) [PMID: 40751295]",
-            "PMID": "40751295",
-            "Effect Size": 0.436,
-            "Lower CI": 0.28,
-            "Upper CI": 0.6,
-            "Population": "General",
-            "Reference": "Pilot Study of Cannabidiol for Treatment of Aromatase Inhibitor-Associated Musculoskeletal Symptoms in Breast Cancer.",
-            "Authors": "Fleege NMG, Miller EA, Kidwell KM, Zacharias ZR, Houtman J, Scheu K, Kemmer K, Boehnke KF, Henry NL",
-            "Journal": "Cancer medicine",
-            "Year": "2025",
-            "Link": "https://pubmed.ncbi.nlm.nih.gov/40751295/",
-            "Effect Type": "RR",
-            "SE": 0.08163265306122448,
-            "Sample Size": 39,
-            "Cases": 17,
-            "Design": "Cohort",
-            "Timing": "Prospective",
-            "Continent": "North America",
-            "Stage": "Early",
-            "Quality %": 100.0,
-            "Quality Score": "Good",
-            "comparison_type": "Yes vs No",
-            "JBI": {
-                "q1": "Yes",
-                "q2": "Yes",
-                "q3": "Yes",
-                "q4": "Yes",
-                "q5": "Yes",
-                "q6": "Yes",
-                "q7": "Yes",
-                "q8": "Yes",
-                "q9": "Yes",
-                "q10": "Yes",
-                "q11": "Yes"
-            },
-            "exclusions": 2,
-            "extraction_supporting_text": {
-                "p_value": "Computed from the reported effect and 95% CI using a normal approximation: p=1.958e-05."
-            },
-            "P Value": 1.9581239586107817e-05
         }
     ],
     "summary_html": "<table border=\"1\" class=\"dataframe table table-striped\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Cases</th>\n      <th>Sample Size</th>\n      <th>Effect</th>\n      <th>95% CI lower</th>\n      <th>95% CI upper</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Pooled Result (Single Study)</th>\n      <td>51623922.0</td>\n      <td>1.248964e+11</td>\n      <td>1.397</td>\n      <td>1.392</td>\n      <td>1.402</td>\n    </tr>\n  </tbody>\n</table>",
@@ -164,8 +122,8 @@
         },
         "extracted": 2
     },
-    "plot_url": "static/cannabidiol/forest_breast_cancer_incidence_primary.png?t=8103",
-    "funnel_plot_url": "static/cannabidiol/funnel_breast_cancer_incidence_primary.png?t=9855",
+    "plot_url": "static/cannabidiol/forest_breast_cancer_incidence_primary.png?t=5260",
+    "funnel_plot_url": "static/cannabidiol/funnel_breast_cancer_incidence_primary.png?t=5978",
     "baujat_plot_url": null,
     "last_run": "2026-06-14 16:00:47"
 }
