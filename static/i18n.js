@@ -296,7 +296,7 @@
 
     async function initialize() {
         try {
-            const response = await fetch('/static/i18n-translations.json');
+            const response = await fetch('/static/i18n-translations.json?v=1.3');
             if (!response.ok) throw new Error('Translation catalogue could not be loaded.');
             translations = await response.json();
             prepareTranslationTemplates();

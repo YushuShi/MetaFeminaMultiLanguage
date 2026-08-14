@@ -557,11 +557,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 });
             });
 
-            // Show Read-Only banner
-            const banner = document.getElementById('read-only-banner');
-            if (banner) banner.classList.remove('hidden');
-
-
         }
 
         // Show synonyms for current exposure value on load
@@ -1482,7 +1477,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     window.excludeStudy = async (pmid, btn) => {
         if (!pmid) return;
-        if (!confirm(uiText('Flag this study for developer review? Two flags will email developers but will not change the results.'))) return;
+        if (!confirm(uiText('Flag this study for developer review? Two flags will email developers.'))) return;
 
         btn.disabled = true;
         try {

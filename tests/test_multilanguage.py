@@ -35,6 +35,18 @@ class MultiLanguagePageTests(unittest.TestCase):
         self.assertIn('data-language="en"', html)
         self.assertIn('aria-label="Choose language"', html)
 
+    def test_homepage_uses_current_subtitle_without_demo_banner(self):
+        response = self.client.get('/')
+        html = response.get_data(as_text=True)
+
+        self.assertIn(
+            'Look for evidence of associations between nutritional exposures and breast, uterine, and ovarian cancers',
+            html,
+        )
+        self.assertNotIn('Public Cached Demonstration Mode', html)
+        self.assertNotIn('Live PubMed searches and LLM extraction are locked.', html)
+        self.assertNotIn('id="read-only-banner"', html)
+
     def test_language_picker_and_engine_are_available_on_all_pages(self):
         for url in ('/', '/summary', '/about'):
             response = self.client.get(url)
@@ -174,6 +186,7 @@ class MultiLanguagePageTests(unittest.TestCase):
         script = (ROOT / 'static' / 'script.js').read_text()
         messages = (
             'Article flag status is temporarily unavailable. The evidence results are still shown, but do not rely on the displayed flag counts.',
+            'Flag this study for developer review? Two flags will email developers.',
             'Two matching submissions were saved and the review email is pending; results remain unchanged.',
             'The review request was saved and its email notification is pending. Results remain unchanged.',
             'Your flag was already recorded for this article.',
@@ -185,6 +198,11 @@ class MultiLanguagePageTests(unittest.TestCase):
             self.assertIn(message, catalog)
             self.assertEqual(set(catalog[message]), {'zh-CN', 'zh-TW', 'nl', 'ko'})
             self.assertIn(f"uiText('{message}'", script)
+
+        self.assertNotIn(
+            'Flag this study for developer review? Two flags will email developers but will not change the results.',
+            script,
+        )
 
     def test_brand_name_and_language_choice_persist(self):
         engine = (ROOT / 'static' / 'i18n.js').read_text()
