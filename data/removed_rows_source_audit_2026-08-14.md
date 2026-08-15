@@ -1,7 +1,7 @@
 # Removed Extracted Studies: source audit
 
-**Audit date:** 2026-08-14
-**Scope:** 46 unique exposure–cancer–PMID rows removed from the default served “Extracted Studies” tables. The archive contains 48 physical cache records because two omega-6 rows appeared in both `core` and `all` variants.
+**Audit date:** 2026-08-14; updated 2026-08-15
+**Scope:** 47 unique exposure–cancer–PMID rows removed from the default served “Extracted Studies” tables. The archive contains 50 physical cache records because some rows appeared in more than one cache variant.
 
 ## How to read this report
 
@@ -10,7 +10,7 @@
 - Most rows were removed precisely because the source concerned another exposure, outcome, metric, postdiagnosis endpoint, nonhuman experiment, or secondary review.
 - PMID 2766288 is the one access exception: the official PubMed record was CAPTCHA-blocked during this audit, so its original article title is quoted from official record metadata.
 
-## The 46 removed rows
+## The 47 removed rows
 
 | # | Exposure | Cancer context | First author | Year | PMID | Effect shown (95% CI) | Sample size shown | Cases shown | Removal reason | Short primary-source excerpt | Source interpretation |
 |---:|---|---|---|---:|---:|---|---:|---:|---|---|---|
@@ -60,6 +60,7 @@
 | 44 | Zinc | Breast cancer incidence | Lubiński | 2023 | [37299574](https://pubmed.ncbi.nlm.nih.gov/37299574/) | RR 0.55 (0.41–0.75) | 1475 | 514 | Postdiagnosis/prognosis | “Zn level in the highest quartile was also associated with reduced mortality (HR = 0.55; 95%CI 0.41-0.75; p = 0.0001).” | Serum was collected after cancer diagnosis, and the reported endpoint is subsequent all-cause mortality, so this is prognosis rather than incidence. |
 | 45 | Zinc | Uterine/endometrial cancer incidence | Genkinger | 2012 | [22952183](https://pubmed.ncbi.nlm.nih.gov/22952183/) | RR 1.24 (1.01–1.53) | 60,895 | 720 | Wrong exposure | “20-30% higher risk of endometrial cancer for higher intakes of heme iron (RR: 1.24; 95% CI: 1.01, 1.53)” | The RR 1.24 is for dietary heme iron, while zinc appears only in a stratified analysis; it is not the exposure. |
 | 46 | Zinc | Uterine/endometrial cancer incidence | Peng | 2019 | [31599404](https://pubmed.ncbi.nlm.nih.gov/31599404/) | OR 1.31 (1.08–1.6) | N/A | N/A | Wrong exposure | “Minor allele of rs9261204 was significantly associated with increased risk of EC (OR: 1.31; 95% CI: 1.08-1.6; p=0.007)” | The OR 1.31 is for the rs9261204 cis-eQTL allele in ZNRD1-AS1, not zinc intake or zinc status. |
+| 47 | Folic Acid | Breast cancer incidence | Beasley | 2010 | [20155314](https://pubmed.ncbi.nlm.nih.gov/20155314/) | OR 0.5025 (0.3165–0.7937) | 2074 | 1000 | Wrong exposure | “There was evidence for interaction in the association between ever consuming any alcohol and breast cancer by folate” | The stored reciprocal estimate treats the alcohol association in the low-folate stratum as a folic-acid effect; the article's modeled exposure is alcohol. |
 
 ## PMID 16507159 correction
 

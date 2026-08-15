@@ -47,6 +47,13 @@ QUARANTINE_TARGETS = (
     ("fish_oil", "breast_cancer", "26137879", "wrong_outcome", "Displayed ratio is a breast-tissue fatty-acid biomarker difference."),
     ("flaxseed", "breast_cancer", "24669750", "wrong_metric", "Stored RR is a postdiagnosis biomarker regression coefficient."),
     ("flaxseed", "breast_cancer", "30375890", "wrong_outcome", "Stored ratio concerns circulating sex hormones, not cancer incidence."),
+    (
+        "folic_acid",
+        "breast_cancer",
+        "20155314",
+        "wrong_exposure",
+        "Source estimate is for alcohol use within folate strata, not a folic-acid main effect.",
+    ),
     ("folic_acid", "breast_cancer", "40890881", "wrong_exposure", "Source estimate is for folate-receptor-alpha protein, not folic-acid intake."),
     ("glutamine", "breast_cancer", "26315396", "wrong_outcome", "Endpoint is overall survival from an EMT metabolite signature."),
     ("grape", "breast_cancer", "2766288", "wrong_exposure", "Source estimate is alcohol/wine consumption, not grape exposure."),
@@ -173,7 +180,7 @@ def main() -> int:
 
     quarantine_payload = {
         "schema_version": 1,
-        "audit_date": "2026-08-14",
+        "audit_date": "2026-08-15",
         "policy": (
             "Rows are removed from served caches only when the primary source "
             "does not support the selected exposure, incidence endpoint, or ratio metric."

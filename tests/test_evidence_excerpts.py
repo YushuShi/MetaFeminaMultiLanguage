@@ -22,7 +22,7 @@ class EvidenceExcerptTests(unittest.TestCase):
         payload = json.loads(quarantine_path.read_text(encoding="utf-8"))
         records = payload["records"]
 
-        self.assertEqual(len(records), 48)
+        self.assertEqual(len(records), 50)
         self.assertTrue(all(record.get("study") for record in records))
         self.assertTrue(all(record.get("reason_code") for record in records))
         self.assertIn(
@@ -32,6 +32,54 @@ class EvidenceExcerptTests(unittest.TestCase):
                 for record in records
             },
         )
+
+    def test_alcohol_effect_modifier_is_not_served_as_folic_acid(self):
+        folic_acid_cache = json.loads((
+            ROOT / "Cached_results" / "folic_acid"
+            / "breast_cancer_incidence_true_all.json"
+        ).read_text(encoding="utf-8"))
+        alcohol_cache = json.loads((
+            ROOT / "Cached_results" / "alcohol"
+            / "breast_cancer_incidence_true_core.json"
+        ).read_text(encoding="utf-8"))
+
+        self.assertNotIn(
+            "20155314",
+            {str(study.get("PMID")) for study in folic_acid_cache["studies"]},
+        )
+        self.assertNotIn("20155314", json.dumps(folic_acid_cache))
+        self.assertEqual(len(folic_acid_cache["studies"]), 37)
+        self.assertEqual(
+            {
+                key: folic_acid_cache["headline"][key]
+                for key in ("pooled_es", "ci_low", "ci_upp", "pi_low", "pi_upp")
+            },
+            {
+                "pooled_es": 0.81,
+                "ci_low": 0.73,
+                "ci_upp": 0.9,
+                "pi_low": 0.48,
+                "pi_upp": 1.37,
+            },
+        )
+        self.assertIn(
+            "pooled analysis of 36 studies",
+            folic_acid_cache["headline"]["results_interpretation"],
+        )
+        self.assertIn(
+            "20155314",
+            {str(study.get("PMID")) for study in alcohol_cache["studies"]},
+        )
+
+        quarantine = json.loads((
+            ROOT / "data" / "evidence_review_quarantine.json"
+        ).read_text(encoding="utf-8"))["records"]
+        record = next(
+            row for row in quarantine
+            if row["exposure"] == "folic_acid" and row["pmid"] == "20155314"
+        )
+        self.assertEqual(record["reason_code"], "wrong_exposure")
+        self.assertIn("alcohol", record["note"].lower())
 
     def test_phosphorus_sample_size_has_primary_source_support(self):
         cache_path = (
@@ -100,12 +148,12 @@ class EvidenceExcerptTests(unittest.TestCase):
             for row in audit
         }
 
-        self.assertEqual(len(quarantine), 48)
-        self.assertEqual(len(quarantined_contexts), 46)
+        self.assertEqual(len(quarantine), 50)
+        self.assertEqual(len(quarantined_contexts), 47)
         self.assertEqual(audited_contexts, quarantined_contexts)
         self.assertEqual(
             [row["row_number"] for row in audit],
-            list(range(1, 47)),
+            list(range(1, 48)),
         )
         self.assertTrue(
             all(

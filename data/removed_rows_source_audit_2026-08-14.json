@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "audit_date": "2026-08-14",
-  "scope": "46 unique exposure-cancer-PMID rows removed from the default served Extracted Studies tables; 48 physical cache records because two omega-6 rows occurred in both core and all variants.",
+  "audit_date": "2026-08-15",
+  "scope": "47 unique exposure-cancer-PMID rows removed from the default served Extracted Studies tables; 50 physical cache records because some rows occurred in more than one cache variant.",
   "interpretation": "Displayed effect/sample/case values are historical table values. The short source excerpt verifies the article context and usually demonstrates why the cached row did not support those values.",
   "rows": [
     {
@@ -1108,6 +1108,31 @@
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/31599404/",
       "cache_paths": [
         "Cached_results/zinc/uterine_cancer_incidence_true_all.json"
+      ]
+    },
+    {
+      "row_number": 47,
+      "exposure": "folic_acid",
+      "cancer_context": "breast_cancer",
+      "first_author_last_name": "Beasley",
+      "pmid": "20155314",
+      "study_label": "Beasley JM et al. (2010) [PMID: 20155314]",
+      "year": "2010",
+      "effect_type_shown": "OR",
+      "effect_size_shown": 0.5025,
+      "lower_ci_shown": 0.3165,
+      "upper_ci_shown": 0.7937,
+      "sample_size_shown": 2074.0,
+      "cases_shown": 1000.0,
+      "removal_reason_code": "wrong_exposure",
+      "removal_note": "Source estimate is for alcohol use within folate strata, not a folic-acid main effect.",
+      "source_excerpt": "There was evidence for interaction in the association between ever consuming any alcohol and breast cancer by folate",
+      "excerpt_location": "PubMed abstract—Results",
+      "source_verification_note": "The stored reciprocal estimate treats the alcohol association in the low-folate stratum as a folic-acid effect; the article's modeled exposure is alcohol.",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/20155314/",
+      "cache_paths": [
+        "Cached_results/folic_acid/breast_cancer_incidence_true_all - Copy.json",
+        "Cached_results/folic_acid/breast_cancer_incidence_true_all.json"
       ]
     }
   ]
